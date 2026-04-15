@@ -1,3 +1,3 @@
 OUTPUT_ARCH(arm)
 
-entry_point = 0x080000c0;
+func_0800024C = 0x0800024C + 1;

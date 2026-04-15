@@ -5,3 +5,4 @@ build/
 *.gba
 tools/agbcc/
 decomp.py
+*.bak
