@@ -1,0 +1,7 @@
+build/
+*.o
+*.elf
+*.map
+*.gba
+tools/agbcc/
+decomp.py
