@@ -1,0 +1,53 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_080075DC
+.thumb_func
+/* 080075DC */ PUSH {R4, R5, LR}
+/* 080075DE */ ADDS R5, R0, #0
+/* 080075E0 */ MOVS R1, #0
+/* 080075E2 */ LDRSH R0, [R5, R1]
+/* 080075E4 */ CMP R0, #0
+/* 080075E6 */ BLT _0800762A
+/* 080075E8 */ MOVS R0, #0X14
+/* 080075EA */ BL func_08006174
+/* 080075EE */ ADDS R4, R0, #0
+/* 080075F0 */ LDRH R0, [R5]
+/* 080075F2 */ MOVS R2, #0
+/* 080075F4 */ STRH R0, [R4]
+/* 080075F6 */ LDRH R0, [R5, #2]
+/* 080075F8 */ STRH R0, [R4, #2]
+/* 080075FA */ LDRH R0, [R5, #4]
+/* 080075FC */ STRH R0, [R4, #4]
+/* 080075FE */ LDRH R0, [R5, #6]
+/* 08007600 */ LDRH R1, [R5, #2]
+/* 08007602 */ SUBS R0, R0, R1
+/* 08007604 */ STRH R0, [R4, #6]
+/* 08007606 */ LDRH R0, [R5, #8]
+/* 08007608 */ LDRH R1, [R5, #4]
+/* 0800760A */ SUBS R0, R0, R1
+/* 0800760C */ STRH R0, [R4, #8]
+/* 0800760E */ LDRH R0, [R5, #0XA]
+/* 08007610 */ LSLS R0, R0, #4
+/* 08007612 */ STRH R0, [R4, #0XA]
+/* 08007614 */ LDRH R0, [R5, #0XC]
+/* 08007616 */ LSLS R0, R0, #4
+/* 08007618 */ STRH R0, [R4, #0XC]
+/* 0800761A */ STRH R2, [R4, #0XE]
+/* 0800761C */ LDRH R0, [R5, #0XE]
+/* 0800761E */ STRH R0, [R4, #0X10]
+/* 08007620 */ ADDS R0, R4, #0
+/* 08007622 */ BL func_0800755C
+/* 08007626 */ ADDS R0, R4, #0
+/* 08007628 */ B _0800762E
+_0800762A:
+/* 0800762A */ MOVS R0, #1
+/* 0800762C */ RSBS R0, R0, #0
+_0800762E:
+/* 0800762E */ POP {R4, R5}
+/* 08007630 */ POP {R1}
+/* 08007632 */ BX R1
+.ltorg
+.end

@@ -1,0 +1,37 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_08006700
+.thumb_func
+/* 08006700 */ PUSH {R4, LR}
+/* 08006702 */ ADDS R4, R0, #0
+/* 08006704 */ LDRH R0, [R4, #0X1C]
+/* 08006706 */ LSLS R0, R0, #0X14
+/* 08006708 */ LSRS R0, R0, #0X14
+/* 0800670A */ CMP R0, #1
+/* 0800670C */ BNE _0800672A
+/* 0800670E */ ADDS R0, R4, #0
+/* 08006710 */ BL func_08006648
+/* 08006714 */ LDR R2, [R4, #0X28]
+/* 08006716 */ CMP R2, #0
+/* 08006718 */ BEQ _08006722
+/* 0800671A */ LDR R1, [R4, #0X2C]
+/* 0800671C */ ADDS R0, R4, #0
+/* 0800671E */ BL func_080F41BC
+_08006722:
+/* 08006722 */ LDRH R1, [R4, #0X1C]
+/* 08006724 */ LDR R0, _08006730
+/* 08006726 */ ANDS R0, R1
+/* 08006728 */ STRH R0, [R4, #0X1C]
+_0800672A:
+/* 0800672A */ POP {R4}
+/* 0800672C */ POP {R0}
+/* 0800672E */ BX R0
+
+.balign 4, 0
+_08006730:
+/* 08006730 */ .word 0xFFFFF000
+.ltorg
+.end

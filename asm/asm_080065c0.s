@@ -1,0 +1,49 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_080065C0
+.thumb_func
+/* 080065C0 */ PUSH {R4, R5, LR}
+/* 080065C2 */ ADDS R5, R0, #0
+/* 080065C4 */ LDRH R0, [R5, #0X1C]
+/* 080065C6 */ LSLS R0, R0, #0X14
+/* 080065C8 */ LSRS R0, R0, #0X14
+/* 080065CA */ CMP R0, #1
+/* 080065CC */ BNE _080065D4
+/* 080065CE */ ADDS R0, R5, #0
+/* 080065D0 */ BL func_08006700
+_080065D4:
+/* 080065D4 */ LDR R0, [R5, #0X18]
+/* 080065D6 */ LDR R0, [R0, #0X1C]
+/* 080065D8 */ CMP R0, #0
+/* 080065DA */ BEQ _080065F0
+/* 080065DC */ ADDS R4, R0, #0
+/* 080065DE */ B _080065EA
+_080065E0:
+/* 080065E0 */ LDR R0, [R5]
+/* 080065E2 */ LDR R1, [R4, #4]
+/* 080065E4 */ BL func_08005148
+/* 080065E8 */ ADDS R4, #8
+_080065EA:
+/* 080065EA */ LDR R0, [R4, #4]
+/* 080065EC */ CMP R0, #0
+/* 080065EE */ BNE _080065E0
+_080065F0:
+/* 080065F0 */ LDR R0, [R5, #8]
+/* 080065F2 */ BL func_08005FA0
+/* 080065F6 */ LDR R0, [R5, #0X14]
+/* 080065F8 */ BL func_08005FA0
+/* 080065FC */ LDR R0, [R5, #0X10]
+/* 080065FE */ BL func_08006240
+/* 08006602 */ ADDS R0, R5, #0
+/* 08006604 */ BL func_08006240
+/* 08006608 */ POP {R4, R5}
+/* 0800660A */ POP {R0}
+/* 0800660C */ BX R0
+
+/* 0800660E */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end

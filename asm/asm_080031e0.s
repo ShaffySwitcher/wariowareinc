@@ -1,0 +1,47 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_080031E0
+.thumb_func
+/* 080031E0 */ PUSH {R4, R5, LR}
+/* 080031E2 */ ADDS R4, R0, #0
+/* 080031E4 */ ADDS R5, R2, #0
+/* 080031E6 */ LSLS R1, R1, #0X10
+/* 080031E8 */ ASRS R1, R1, #0X10
+/* 080031EA */ CMP R1, #0
+/* 080031EC */ BLT _08003220
+/* 080031EE */ LSLS R0, R1, #4
+/* 080031F0 */ SUBS R0, R0, R1
+/* 080031F2 */ LSLS R0, R0, #3
+/* 080031F4 */ LDR R1, [R4, #8]
+/* 080031F6 */ ADDS R3, R1, R0
+/* 080031F8 */ LDRB R0, [R3, #5]
+/* 080031FA */ CMP R0, #0
+/* 080031FC */ BEQ _08003220
+/* 080031FE */ MOVS R0, #0X27
+/* 08003200 */ ADDS R0, R0, R3
+/* 08003202 */ MOV IP, R0
+/* 08003204 */ LSLS R2, R5, #1
+/* 08003206 */ LDRB R1, [R0]
+/* 08003208 */ MOVS R0, #1
+/* 0800320A */ ANDS R0, R1
+/* 0800320C */ ORRS R0, R2
+/* 0800320E */ MOV R1, IP
+/* 08003210 */ STRB R0, [R1]
+/* 08003212 */ LDR R0, [R4]
+/* 08003214 */ MOVS R2, #0
+/* 08003216 */ LDRSH R1, [R3, R2]
+/* 08003218 */ LSLS R2, R5, #0X10
+/* 0800321A */ LSRS R2, R2, #0X10
+/* 0800321C */ BL func_080EF5C4
+_08003220:
+/* 08003220 */ POP {R4, R5}
+/* 08003222 */ POP {R0}
+/* 08003224 */ BX R0
+
+/* 08003226 */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end

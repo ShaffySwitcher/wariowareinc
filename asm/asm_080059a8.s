@@ -1,0 +1,46 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_080059A8
+.thumb_func
+/* 080059A8 */ PUSH {R4, R5, R6, LR}
+/* 080059AA */ ADDS R4, R0, #0
+/* 080059AC */ LSLS R1, R1, #0X10
+/* 080059AE */ LSRS R5, R1, #0X10
+/* 080059B0 */ CMP R4, #0
+/* 080059B2 */ BLT _080059DC
+/* 080059B4 */ MOVS R3, #0
+/* 080059B6 */ LDR R2, _080059D0
+/* 080059B8 */ MOVS R6, #1
+_080059BA:
+/* 080059BA */ LDRB R1, [R2]
+/* 080059BC */ ADDS R0, R6, #0
+/* 080059BE */ ANDS R0, R1
+/* 080059C0 */ CMP R0, #0
+/* 080059C2 */ BEQ _080059D4
+/* 080059C4 */ LDR R0, [R2, #8]
+/* 080059C6 */ CMP R0, R4
+/* 080059C8 */ BNE _080059D4
+/* 080059CA */ STRH R5, [R2, #0X18]
+/* 080059CC */ B _080059DC
+/* 080059CE */ MOVS R0, R0
+
+.balign 4, 0
+_080059D0:
+/* 080059D0 */ .word D_030006A0
+_080059D4:
+/* 080059D4 */ ADDS R3, #1
+/* 080059D6 */ ADDS R2, #0X1C
+/* 080059D8 */ CMP R3, #0X2F
+/* 080059DA */ BLS _080059BA
+_080059DC:
+/* 080059DC */ POP {R4, R5, R6}
+/* 080059DE */ POP {R0}
+/* 080059E0 */ BX R0
+
+/* 080059E2 */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end

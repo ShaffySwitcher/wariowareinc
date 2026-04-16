@@ -1,0 +1,32 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_080031B4
+.thumb_func
+/* 080031B4 */ PUSH {R4, R5, LR}
+/* 080031B6 */ ADDS R5, R0, #0
+/* 080031B8 */ MOVS R0, #0
+/* 080031BA */ LDRH R1, [R5, #4]
+/* 080031BC */ CMP R0, R1
+/* 080031BE */ BGE _080031DA
+_080031C0:
+/* 080031C0 */ LSLS R4, R0, #0X10
+/* 080031C2 */ ASRS R4, R4, #0X10
+/* 080031C4 */ ADDS R0, R5, #0
+/* 080031C6 */ ADDS R1, R4, #0
+/* 080031C8 */ BL func_0800317C
+/* 080031CC */ ADDS R4, #1
+/* 080031CE */ LSLS R4, R4, #0X10
+/* 080031D0 */ LSRS R0, R4, #0X10
+/* 080031D2 */ ASRS R4, R4, #0X10
+/* 080031D4 */ LDRH R1, [R5, #4]
+/* 080031D6 */ CMP R4, R1
+/* 080031D8 */ BLT _080031C0
+_080031DA:
+/* 080031DA */ POP {R4, R5}
+/* 080031DC */ POP {R0}
+/* 080031DE */ BX R0
+.ltorg
+.end
