@@ -1,0 +1,35 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_0800A768
+.thumb_func
+/* 0800A768 */ PUSH {LR}
+/* 0800A76A */ MOVS R2, #0
+_0800A76C:
+/* 0800A76C */ LDRB R1, [R0]
+/* 0800A76E */ ADDS R0, #0XC
+/* 0800A770 */ CMP R1, #0X27
+/* 0800A772 */ BLT _0800A76C
+/* 0800A774 */ CMP R1, #0X29
+/* 0800A776 */ BLE _0800A77E
+/* 0800A778 */ CMP R1, #0X2A
+/* 0800A77A */ BEQ _0800A782
+/* 0800A77C */ B _0800A76C
+_0800A77E:
+/* 0800A77E */ ADDS R2, #1
+/* 0800A780 */ B _0800A76C
+_0800A782:
+/* 0800A782 */ CMP R2, #0
+/* 0800A784 */ BEQ _0800A78A
+/* 0800A786 */ SUBS R2, #1
+/* 0800A788 */ B _0800A76C
+_0800A78A:
+/* 0800A78A */ POP {R1}
+/* 0800A78C */ BX R1
+
+/* 0800A78E */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end
