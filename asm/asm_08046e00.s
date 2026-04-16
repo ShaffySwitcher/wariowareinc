@@ -1,0 +1,50 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_08046E00
+/* 08046E00 */ PUSH {R4, R5, LR}
+/* 08046E02 */ LDR R5, _08046E24
+/* 08046E04 */ LDR R1, [R5]
+/* 08046E06 */ LDR R4, [R1, #0X6C]
+/* 08046E08 */ CMP R4, #8
+/* 08046E0A */ BHI _08046E3E
+/* 08046E0C */ LDR R0, [R1, #0X74]
+/* 08046E0E */ CMP R0, #0
+/* 08046E10 */ BNE _08046E28
+/* 08046E12 */ LDR R0, [R1, #0X70]
+/* 08046E14 */ ADDS R0, #1
+/* 08046E16 */ STR R0, [R1, #0X70]
+/* 08046E18 */ CMP R0, #0X51
+/* 08046E1A */ BNE _08046E3E
+/* 08046E1C */ MOVS R0, #1
+/* 08046E1E */ STR R0, [R1, #0X74]
+/* 08046E20 */ B _08046E3E
+
+.balign 4, 0
+_08046E24:
+/* 08046E24 */ .word D_03003850
+_08046E28:
+/* 08046E28 */ CMP R4, #0
+/* 08046E2A */ BNE _08046E32
+/* 08046E2C */ LDR R0, =D_083FCC38
+/* 08046E2E */ BL func_0800C7FC
+_08046E32:
+/* 08046E32 */ CMP R4, #0
+/* 08046E34 */ BLT _08046E3E
+/* 08046E36 */ LDR R1, [R5]
+/* 08046E38 */ LDR R0, [R1, #0X6C]
+/* 08046E3A */ SUBS R0, #1
+/* 08046E3C */ STR R0, [R1, #0X6C]
+_08046E3E:
+/* 08046E3E */ POP {R4, R5}
+/* 08046E40 */ POP {R0}
+/* 08046E42 */ BX R0
+
+.balign 4, 0
+_08046E44:
+/* 08046E44 */ @ literal emitted by .ltorg for '=...' 
+.ltorg
+.end

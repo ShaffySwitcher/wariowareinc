@@ -1,0 +1,91 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0806907C
+/* 0806907C */ PUSH {R4, R5, LR}
+/* 0806907E */ LDR R0, _080690A0
+/* 08069080 */ LDR R0, [R0]
+/* 08069082 */ LDR R1, _080690A4
+/* 08069084 */ ADDS R0, R1
+/* 08069086 */ LDRB R2, [R0]
+/* 08069088 */ CMP R2, #1
+/* 0806908A */ BNE _0806910E
+/* 0806908C */ LDR R5, _080690A8
+/* 0806908E */ LDR R1, [R5]
+/* 08069090 */ LDR R0, [R1, #8]
+/* 08069092 */ CMP R0, #0
+/* 08069094 */ BLE _080690AC
+/* 08069096 */ BL func_08068F3C
+/* 0806909A */ BL func_08069004
+/* 0806909E */ B _0806910E
+
+.balign 4, 0
+_080690A0:
+/* 080690A0 */ .word D_083A3D90
+
+.balign 4, 0
+_080690A4:
+/* 080690A4 */ .word 0x00000173
+
+.balign 4, 0
+_080690A8:
+/* 080690A8 */ .word D_03003850
+_080690AC:
+/* 080690AC */ LDR R0, [R1, #0X1C]
+/* 080690AE */ CMP R0, #0
+/* 080690B0 */ BNE _0806910E
+/* 080690B2 */ STR R2, [R1, #0X1C]
+/* 080690B4 */ MOVS R0, #0X18
+/* 080690B6 */ BL func_0800C9A4
+/* 080690BA */ MOVS R0, #0
+/* 080690BC */ BL func_0800A128
+/* 080690C0 */ LDR R4, _08069114
+/* 080690C2 */ LDR R0, [R4]
+/* 080690C4 */ LDR R1, [R5]
+/* 080690C6 */ MOVS R2, #0X12
+/* 080690C8 */ LDRSH R1, [R1, R2]
+/* 080690CA */ MOVS R2, #0
+/* 080690CC */ BL func_080EF3BC
+/* 080690D0 */ LDR R0, [R4]
+/* 080690D2 */ LDR R1, [R5]
+/* 080690D4 */ MOVS R2, #0XC
+/* 080690D6 */ LDRSH R1, [R1, R2]
+/* 080690D8 */ MOVS R2, #0
+/* 080690DA */ BL func_080EF3BC
+/* 080690DE */ LDR R0, [R4]
+/* 080690E0 */ LDR R1, [R5]
+/* 080690E2 */ MOVS R2, #0
+/* 080690E4 */ LDRSH R1, [R1, R2]
+/* 080690E6 */ MOVS R2, #0
+/* 080690E8 */ BL func_080EF3BC
+/* 080690EC */ LDR R0, [R4]
+/* 080690EE */ LDR R1, [R5]
+/* 080690F0 */ MOVS R2, #4
+/* 080690F2 */ LDRSH R1, [R1, R2]
+/* 080690F4 */ MOVS R2, #1
+/* 080690F6 */ BL func_080EF3BC
+/* 080690FA */ LDR R0, [R4]
+/* 080690FC */ LDR R1, [R5]
+/* 080690FE */ MOVS R2, #0XE
+/* 08069100 */ LDRSH R1, [R1, R2]
+/* 08069102 */ MOVS R2, #0
+/* 08069104 */ BL func_080EF5C4
+/* 08069108 */ LDR R0, =D_083FC6D4
+/* 0806910A */ BL func_0800C7FC
+_0806910E:
+/* 0806910E */ POP {R4, R5}
+/* 08069110 */ POP {R0}
+/* 08069112 */ BX R0
+
+.balign 4, 0
+_08069118:
+/* 08069118 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_08069114:
+/* 08069114 */ .word D_083A4A7C
+.ltorg
+.end

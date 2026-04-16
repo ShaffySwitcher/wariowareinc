@@ -1,0 +1,101 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_08062BFC
+/* 08062BFC */ PUSH {R4, LR}
+/* 08062BFE */ MOVS R3, #0
+/* 08062C00 */ LDR R2, _08062C1C
+/* 08062C02 */ LDR R1, [R2]
+/* 08062C04 */ LDR R4, _08062C20
+/* 08062C06 */ ADDS R1, R4
+/* 08062C08 */ LDRB R4, [R1]
+/* 08062C0A */ ADDS R0, #0X21
+/* 08062C0C */ LDRB R0, [R0]
+/* 08062C0E */ CMP R0, #4
+/* 08062C10 */ BHI _08062C78
+/* 08062C12 */ LSLS R0, R0, #2
+/* 08062C14 */ LDR R1, _08062C24
+/* 08062C16 */ ADDS R0, R1
+/* 08062C18 */ LDR R0, [R0]
+/* 08062C1A */ MOV PC, R0
+
+.balign 4, 0
+_08062C1C:
+/* 08062C1C */ .word D_03003850
+
+.balign 4, 0
+_08062C20:
+/* 08062C20 */ .word 0x00000BD8
+
+.balign 4, 0
+_08062C24:
+/* 08062C24 */ .word D_08062C28
+
+.balign 4, 0
+D_08062C28:
+/* 08062C28 */ .word _08062C78
+
+.balign 4, 0
+/* 08062C2C */ .word _08062C3C
+
+.balign 4, 0
+/* 08062C30 */ .word _08062C5C
+
+.balign 4, 0
+/* 08062C34 */ .word _08062C3C
+
+.balign 4, 0
+/* 08062C38 */ .word _08062C3C
+_08062C3C:
+/* 08062C3C */ LDR R0, [R2]
+/* 08062C3E */ ADDS R0, #0XE4
+/* 08062C40 */ LDR R0, [R0]
+/* 08062C42 */ CMP R0, #0
+/* 08062C44 */ BEQ _08062C54
+/* 08062C46 */ LDR R1, _08062C50
+/* 08062C48 */ LSLS R0, R4, #1
+/* 08062C4A */ ADDS R0, R1
+/* 08062C4C */ B _08062C76
+
+.balign 4, 0
+_08062C50:
+/* 08062C50 */ .word D_083D52EE
+_08062C54:
+/* 08062C54 */ LDR R0, _08062C58
+/* 08062C56 */ B _08062C76
+
+.balign 4, 0
+_08062C58:
+/* 08062C58 */ .word D_083D52EE
+_08062C5C:
+/* 08062C5C */ LDR R0, [R2]
+/* 08062C5E */ ADDS R0, #0XE4
+/* 08062C60 */ LDR R0, [R0]
+/* 08062C62 */ CMP R0, #0
+/* 08062C64 */ BEQ _08062C74
+/* 08062C66 */ LDR R1, _08062C70
+/* 08062C68 */ LSLS R0, R4, #1
+/* 08062C6A */ ADDS R0, R1
+/* 08062C6C */ B _08062C76
+
+.balign 4, 0
+_08062C70:
+/* 08062C70 */ .word D_083D52F4
+_08062C74:
+/* 08062C74 */ LDR R0, =D_083D52F4
+_08062C76:
+/* 08062C76 */ LDRH R3, [R0]
+_08062C78:
+/* 08062C78 */ ADDS R0, R3, #0
+/* 08062C7A */ POP {R4}
+/* 08062C7C */ POP {R1}
+/* 08062C7E */ BX R1
+
+.balign 4, 0
+_08062C80:
+/* 08062C80 */ @ literal emitted by .ltorg for '=...' 
+.ltorg
+.end

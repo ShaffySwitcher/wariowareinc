@@ -1,0 +1,79 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0804B538
+/* 0804B538 */ PUSH {R4, R5, R6, R7, LR}
+/* 0804B53A */ MOVS R0, #0
+/* 0804B53C */ MOV IP, R0
+/* 0804B53E */ LDR R7, _0804B5A4
+/* 0804B540 */ LDR R0, _0804B5A8
+/* 0804B542 */ LDR R0, [R0]
+/* 0804B544 */ MOVS R1, #0XBA
+/* 0804B546 */ LSLS R1, R1, #1
+/* 0804B548 */ ADDS R5, R0, R1
+/* 0804B54A */ LDRB R0, [R5]
+/* 0804B54C */ ADDS R0, R7
+/* 0804B54E */ LDRB R0, [R0]
+/* 0804B550 */ LSRS R0, R0, #1
+/* 0804B552 */ ADDS R0, #0X78
+/* 0804B554 */ LSLS R4, R0, #8
+/* 0804B556 */ LDR R6, _0804B5AC
+/* 0804B558 */ LDR R3, [R6]
+/* 0804B55A */ ADDS R2, R3, #0
+/* 0804B55C */ ADDS R2, #0X74
+/* 0804B55E */ MOVS R0, #0
+/* 0804B560 */ LDRSH R1, [R2, R0]
+/* 0804B562 */ LDR R0, [R3, #0X6C]
+/* 0804B564 */ SUBS R0, R1
+/* 0804B566 */ STR R0, [R3, #0X6C]
+/* 0804B568 */ MOVS R0, #0
+/* 0804B56A */ LDRSH R1, [R2, R0]
+/* 0804B56C */ LDR R0, [R3, #0X70]
+/* 0804B56E */ ADDS R0, R1
+/* 0804B570 */ STR R0, [R3, #0X70]
+/* 0804B572 */ CMP R0, R4
+/* 0804B574 */ BLT _0804B588
+/* 0804B576 */ STR R4, [R3, #0X70]
+/* 0804B578 */ LDRB R0, [R5]
+/* 0804B57A */ ADDS R0, R7
+/* 0804B57C */ LDRB R0, [R0]
+/* 0804B57E */ LSLS R0, R0, #8
+/* 0804B580 */ SUBS R0, R4, R0
+/* 0804B582 */ STR R0, [R3, #0X6C]
+/* 0804B584 */ MOVS R1, #1
+/* 0804B586 */ MOV IP, R1
+_0804B588:
+/* 0804B588 */ LDR R2, =D_03004000
+/* 0804B58A */ LDR R1, [R6]
+/* 0804B58C */ LDR R0, [R1, #0X6C]
+/* 0804B58E */ ASRS R0, R0, #8
+/* 0804B590 */ LSLS R0, R0, #8
+/* 0804B592 */ LDR R1, [R1, #0X70]
+/* 0804B594 */ ASRS R1, R1, #8
+/* 0804B596 */ ORRS R0, R1
+/* 0804B598 */ STRH R0, [R2, #0X3C]
+/* 0804B59A */ MOV R0, IP
+/* 0804B59C */ POP {R4, R5, R6, R7}
+/* 0804B59E */ POP {R1}
+/* 0804B5A0 */ BX R1
+
+.balign 4, 0
+_0804B5B0:
+/* 0804B5B0 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_0804B5A4:
+/* 0804B5A4 */ .word D_083D2728
+
+.balign 4, 0
+_0804B5A8:
+/* 0804B5A8 */ .word D_083A3D90
+
+.balign 4, 0
+_0804B5AC:
+/* 0804B5AC */ .word D_03003850
+.ltorg
+.end

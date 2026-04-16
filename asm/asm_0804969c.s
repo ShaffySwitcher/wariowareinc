@@ -1,0 +1,91 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0804969C
+/* 0804969C */ PUSH {R4, R5, R6, LR}
+/* 0804969E */ SUB SP, #0XC
+/* 080496A0 */ LDR R0, _08049718
+/* 080496A2 */ LDR R0, [R0]
+/* 080496A4 */ LDR R1, _0804971C
+/* 080496A6 */ ADDS R0, R1
+/* 080496A8 */ LDRB R6, [R0]
+/* 080496AA */ CMP R6, #1
+/* 080496AC */ BNE _08049710
+/* 080496AE */ BL func_08049584
+/* 080496B2 */ BL func_080491F4
+/* 080496B6 */ BL func_08049360
+/* 080496BA */ ADDS R4, R0, #0
+/* 080496BC */ BL func_080494A0
+/* 080496C0 */ ORRS R4, R0
+/* 080496C2 */ CMP R4, #0
+/* 080496C4 */ BEQ _08049710
+/* 080496C6 */ LDR R5, _08049720
+/* 080496C8 */ LDR R0, [R5]
+/* 080496CA */ LDR R4, _08049724
+/* 080496CC */ LDR R1, [R4]
+/* 080496CE */ MOVS R2, #0
+/* 080496D0 */ LDRSH R1, [R1, R2]
+/* 080496D2 */ LDR R2, _08049728
+/* 080496D4 */ STR R6, [SP]
+/* 080496D6 */ MOVS R3, #2
+/* 080496D8 */ STR R3, [SP, #4]
+/* 080496DA */ MOVS R3, #0
+/* 080496DC */ STR R3, [SP, #8]
+/* 080496DE */ BL func_080EF50C
+/* 080496E2 */ LDR R0, [R5]
+/* 080496E4 */ LDR R1, [R4]
+/* 080496E6 */ MOVS R5, #0
+/* 080496E8 */ LDRSH R1, [R1, R5]
+/* 080496EA */ LDR R3, _0804972C
+/* 080496EC */ MOVS R5, #0
+/* 080496EE */ LDRSH R2, [R3, R5]
+/* 080496F0 */ MOVS R5, #2
+/* 080496F2 */ LDRSH R3, [R3, R5]
+/* 080496F4 */ BL func_080EF224
+/* 080496F8 */ LDR R1, [R4]
+/* 080496FA */ MOVS R0, #3
+/* 080496FC */ STR R0, [R1, #4]
+/* 080496FE */ MOVS R0, #0X30
+/* 08049700 */ BL func_0800C9A4
+/* 08049704 */ MOVS R0, #1
+/* 08049706 */ BL func_0800A128
+/* 0804970A */ LDR R0, =D_083FCB48
+/* 0804970C */ BL func_0800C7FC
+_08049710:
+/* 08049710 */ ADD SP, #0XC
+/* 08049712 */ POP {R4, R5, R6}
+/* 08049714 */ POP {R0}
+/* 08049716 */ BX R0
+
+.balign 4, 0
+_08049730:
+/* 08049730 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_08049718:
+/* 08049718 */ .word D_083A3D90
+
+.balign 4, 0
+_0804971C:
+/* 0804971C */ .word 0x00000173
+
+.balign 4, 0
+_08049720:
+/* 08049720 */ .word D_083A4A7C
+
+.balign 4, 0
+_08049724:
+/* 08049724 */ .word D_03003850
+
+.balign 4, 0
+_08049728:
+/* 08049728 */ .word D_0835C86C
+
+.balign 4, 0
+_0804972C:
+/* 0804972C */ .word D_086FA55C
+.ltorg
+.end

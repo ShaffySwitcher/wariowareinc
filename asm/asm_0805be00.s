@@ -1,0 +1,53 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0805BE00
+/* 0805BE00 */ PUSH {R4, LR}
+/* 0805BE02 */ ADDS R3, R0, #0
+/* 0805BE04 */ LDR R0, [R3, #8]
+/* 0805BE06 */ ASRS R1, R0, #8
+/* 0805BE08 */ MOVS R0, #0XFA
+/* 0805BE0A */ LSLS R0, R0, #2
+/* 0805BE0C */ CMP R1, R0
+/* 0805BE0E */ BGT _0805BE18
+/* 0805BE10 */ MOVS R0, #0XE1
+/* 0805BE12 */ LSLS R0, R0, #2
+/* 0805BE14 */ CMP R1, R0
+/* 0805BE16 */ BLE _0805BE1C
+_0805BE18:
+/* 0805BE18 */ MOVS R2, #5
+/* 0805BE1A */ B _0805BE3A
+_0805BE1C:
+/* 0805BE1C */ MOVS R0, #0X96
+/* 0805BE1E */ LSLS R0, R0, #1
+/* 0805BE20 */ MOVS R2, #4
+/* 0805BE22 */ CMP R1, R0
+/* 0805BE24 */ BGT _0805BE3A
+/* 0805BE26 */ MOVS R2, #3
+/* 0805BE28 */ CMP R1, #0XC8
+/* 0805BE2A */ BGT _0805BE3A
+/* 0805BE2C */ MOVS R2, #2
+/* 0805BE2E */ CMP R1, #0X96
+/* 0805BE30 */ BGT _0805BE3A
+/* 0805BE32 */ MOVS R2, #0
+/* 0805BE34 */ CMP R1, #0X64
+/* 0805BE36 */ BLE _0805BE3A
+/* 0805BE38 */ MOVS R2, #1
+_0805BE3A:
+/* 0805BE3A */ LDR R0, =D_083A4A7C
+/* 0805BE3C */ LDR R0, [R0]
+/* 0805BE3E */ MOVS R4, #0
+/* 0805BE40 */ LDRSH R1, [R3, R4]
+/* 0805BE42 */ BL func_080EE9B8
+/* 0805BE46 */ POP {R4}
+/* 0805BE48 */ POP {R0}
+/* 0805BE4A */ BX R0
+
+.balign 4, 0
+_0805BE4C:
+/* 0805BE4C */ @ literal emitted by .ltorg for '=...' 
+.ltorg
+.end

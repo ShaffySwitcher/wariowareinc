@@ -1,0 +1,40 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0804C5B0
+/* 0804C5B0 */ PUSH {R4, LR}
+/* 0804C5B2 */ LSLS R0, R0, #0X10
+/* 0804C5B4 */ LSRS R3, R0, #0X10
+/* 0804C5B6 */ LSLS R1, R1, #0X10
+/* 0804C5B8 */ LSRS R0, R1, #0X10
+/* 0804C5BA */ ADDS R4, R0, #0
+/* 0804C5BC */ LSLS R2, R2, #0X10
+/* 0804C5BE */ LSRS R2, R2, #0X10
+/* 0804C5C0 */ CMP R3, R0
+/* 0804C5C2 */ BHI _0804C5DE
+/* 0804C5C4 */ SUBS R0, R2, R0
+/* 0804C5C6 */ LSLS R0, R0, #0X10
+/* 0804C5C8 */ LSRS R1, R0, #0X10
+/* 0804C5CA */ CMP R3, R1
+/* 0804C5CC */ BLO _0804C5D8
+/* 0804C5CE */ ADDS R0, R3, #0
+/* 0804C5D0 */ BL func_080F4890
+/* 0804C5D4 */ LSLS R0, R0, #0X10
+/* 0804C5D6 */ LSRS R3, R0, #0X10
+_0804C5D8:
+/* 0804C5D8 */ ADDS R0, R3, R4
+/* 0804C5DA */ LSLS R0, R0, #0X10
+/* 0804C5DC */ LSRS R3, R0, #0X10
+_0804C5DE:
+/* 0804C5DE */ ADDS R0, R3, #0
+/* 0804C5E0 */ POP {R4}
+/* 0804C5E2 */ POP {R1}
+/* 0804C5E4 */ BX R1
+
+/* 0804C5E6 */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end

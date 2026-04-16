@@ -1,0 +1,57 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_08061FDC
+/* 08061FDC */ PUSH {R4, LR}
+/* 08061FDE */ LDR R1, _0806201C
+/* 08061FE0 */ LDR R3, _08062020
+/* 08061FE2 */ LDR R2, [R3]
+/* 08061FE4 */ LDR R4, _08062024
+/* 08061FE6 */ ADDS R0, R2, R4
+/* 08061FE8 */ LDRB R0, [R0]
+/* 08061FEA */ ADDS R0, R1
+/* 08061FEC */ SUBS R4, #0X62
+/* 08061FEE */ ADDS R1, R2, R4
+/* 08061FF0 */ LDRB R1, [R1]
+/* 08061FF2 */ LSLS R1, R1, #0X18
+/* 08061FF4 */ ASRS R1, R1, #0X18
+/* 08061FF6 */ LDRB R0, [R0]
+/* 08061FF8 */ CMP R1, R0
+/* 08061FFA */ BNE _08062014
+/* 08061FFC */ LDR R0, _08062028
+/* 08061FFE */ ADDS R2, R0
+/* 08062000 */ LDRB R0, [R2]
+/* 08062002 */ MOVS R1, #1
+/* 08062004 */ ORRS R0, R1
+/* 08062006 */ STRB R0, [R2]
+/* 08062008 */ LDR R1, [R3]
+/* 0806200A */ ADDS R4, #0X62
+/* 0806200C */ ADDS R1, R4
+/* 0806200E */ LDRB R0, [R1]
+/* 08062010 */ ADDS R0, #1
+/* 08062012 */ STRB R0, [R1]
+_08062014:
+/* 08062014 */ POP {R4}
+/* 08062016 */ POP {R0}
+/* 08062018 */ BX R0
+
+.balign 4, 0
+_0806201C:
+/* 0806201C */ .word D_083D54BE
+
+.balign 4, 0
+_08062020:
+/* 08062020 */ .word D_03003850
+
+.balign 4, 0
+_08062024:
+/* 08062024 */ .word 0x00000C1C
+
+.balign 4, 0
+_08062028:
+/* 08062028 */ .word 0x00000C1D
+.ltorg
+.end

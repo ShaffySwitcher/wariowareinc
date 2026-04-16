@@ -1,0 +1,81 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_08072E1C
+/* 08072E1C */ PUSH {R4, R5, LR}
+/* 08072E1E */ LDR R0, _08072EA8
+/* 08072E20 */ LDR R0, [R0]
+/* 08072E22 */ LDR R1, _08072EAC
+/* 08072E24 */ LDR R1, [R1]
+/* 08072E26 */ MOVS R2, #0XF8
+/* 08072E28 */ LSLS R2, R2, #1
+/* 08072E2A */ ADDS R1, R2
+/* 08072E2C */ LDR R1, [R1]
+/* 08072E2E */ MOVS R2, #0
+/* 08072E30 */ BL func_080EF9CC
+/* 08072E34 */ MOVS R0, #1
+/* 08072E36 */ BL func_08072720
+/* 08072E3A */ MOVS R0, #1
+/* 08072E3C */ BL func_0807281C
+/* 08072E40 */ BL func_08073348
+/* 08072E44 */ LDR R5, =D_03003850
+/* 08072E46 */ LDR R0, [R5]
+/* 08072E48 */ MOVS R1, #0XED
+/* 08072E4A */ LSLS R1, R1, #3
+/* 08072E4C */ ADDS R0, R1
+/* 08072E4E */ MOVS R1, #3
+/* 08072E50 */ STR R1, [R0]
+/* 08072E52 */ MOVS R0, #0
+/* 08072E54 */ BL func_08070D30
+/* 08072E58 */ LDR R0, [R5]
+/* 08072E5A */ MOVS R2, #0XFF
+/* 08072E5C */ LSLS R2, R2, #3
+/* 08072E5E */ ADDS R1, R0, R2
+/* 08072E60 */ MOVS R4, #0
+/* 08072E62 */ STR R4, [R1]
+/* 08072E64 */ MOVS R1, #0XE7
+/* 08072E66 */ LSLS R1, R1, #3
+/* 08072E68 */ ADDS R0, R1
+/* 08072E6A */ STR R4, [R0]
+/* 08072E6C */ BL func_0807249C
+/* 08072E70 */ BL func_08072600
+/* 08072E74 */ BL func_08072ABC
+/* 08072E78 */ LDR R1, [R5]
+/* 08072E7A */ MOVS R2, #0X81
+/* 08072E7C */ LSLS R2, R2, #4
+/* 08072E7E */ ADDS R0, R1, R2
+/* 08072E80 */ STR R4, [R0]
+/* 08072E82 */ ADDS R2, #0X38
+/* 08072E84 */ ADDS R0, R1, R2
+/* 08072E86 */ STR R4, [R0]
+/* 08072E88 */ ADDS R2, #4
+/* 08072E8A */ ADDS R0, R1, R2
+/* 08072E8C */ STR R4, [R0]
+/* 08072E8E */ MOVS R0, #0X85
+/* 08072E90 */ LSLS R0, R0, #4
+/* 08072E92 */ ADDS R1, R0
+/* 08072E94 */ MOVS R0, #1
+/* 08072E96 */ RSBS R0, R0, #0
+/* 08072E98 */ STR R0, [R1]
+/* 08072E9A */ MOVS R0, #3
+/* 08072E9C */ BL func_0800BF0C
+/* 08072EA0 */ POP {R4, R5}
+/* 08072EA2 */ POP {R0}
+/* 08072EA4 */ BX R0
+
+.balign 4, 0
+_08072EB0:
+/* 08072EB0 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_08072EA8:
+/* 08072EA8 */ .word D_083A4A7C
+
+.balign 4, 0
+_08072EAC:
+/* 08072EAC */ .word D_083A3D90
+.ltorg
+.end
