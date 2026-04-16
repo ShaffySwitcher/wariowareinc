@@ -34,6 +34,10 @@ SECTIONS {
         build/asm/asm_08000778.s.o(.text*);
         build/asm/asm_0800079c.s.o(.text*);
         build/asm/asm_080007c0.s.o(.text*);
+        build/asm/asm_080007e4.s.o(.text*);
+        build/asm/asm_08000910.s.o(.text*);
+        build/asm/asm_08000ae0.s.o(.text*);
+        build/asm/asm_08000cec.s.o(.text*);
         build/bin/data.bin.o(.rodata*);
     }
 
