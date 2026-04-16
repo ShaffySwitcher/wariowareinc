@@ -1,0 +1,6 @@
+.ifndef UNDEFINED_SYMS_HEADER
+.set func_UNDEFINED_SYMS_HEADER, 0
+
+.set func_0800024C, 0x0800024C + 1;
+
+.endif
