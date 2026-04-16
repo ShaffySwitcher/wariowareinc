@@ -22,6 +22,7 @@ _080000F4:
 _080000F8:
 /* 080000F8 */ .word 0x03007FA0
 
+glabel interrupt_handler_rom
 /* 080000FC */ MOV R3, #0x4000000
 /* 08000100 */ ADD R3, R3, #0x200
 /* 08000104 */ LDR R2, [R3, #0x0]
