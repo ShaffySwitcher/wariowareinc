@@ -1,0 +1,44 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0800BEC0
+/* 0800BEC0 */ PUSH {LR}
+/* 0800BEC2 */ LDR R0, _0800BED8
+/* 0800BEC4 */ LDR R0, [R0]
+/* 0800BEC6 */ LDR R1, _0800BEDC
+/* 0800BEC8 */ ADDS R0, R0, R1
+/* 0800BECA */ LDRB R0, [R0]
+/* 0800BECC */ CMP R0, #3
+/* 0800BECE */ BGT _0800BEE0
+/* 0800BED0 */ CMP R0, #1
+/* 0800BED2 */ BGE _0800BEE6
+/* 0800BED4 */ B _0800BEEE
+/* 0800BED6 */ MOVS R0, R0
+
+.balign 4, 0
+_0800BED8:
+/* 0800BED8 */ .word D_083A3D90
+
+.balign 4, 0
+_0800BEDC:
+/* 0800BEDC */ .word 0x00000195
+_0800BEE0:
+/* 0800BEE0 */ CMP R0, #4
+/* 0800BEE2 */ BEQ _0800BEEA
+/* 0800BEE4 */ B _0800BEEE
+_0800BEE6:
+/* 0800BEE6 */ MOVS R0, #1
+/* 0800BEE8 */ B _0800BEF0
+_0800BEEA:
+/* 0800BEEA */ MOVS R0, #2
+/* 0800BEEC */ B _0800BEF0
+_0800BEEE:
+/* 0800BEEE */ MOVS R0, #0
+_0800BEF0:
+/* 0800BEF0 */ POP {R1}
+/* 0800BEF2 */ BX R1
+.ltorg
+.end
