@@ -3,8 +3,8 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_0800024C
 .thumb_func
+glabel func_0800024C
 /* 0800024C */ PUSH {R4, R5, R6, R7, LR}
 /* 0800024E */ MOV R7, SB
 /* 08000250 */ MOV R6, R8

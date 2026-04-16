@@ -1,3 +1,1 @@
 OUTPUT_ARCH(arm)
-
-func_0800024C = 0x0800024C + 1;
