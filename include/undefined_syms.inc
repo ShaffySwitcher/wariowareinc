@@ -22,9 +22,6 @@
 .set func_080003C2, 0x080003C2 + 1;
 .set func_080003D4, 0x080003D4 + 1;
 .set func_080003F0, 0x080003F0 + 1;
-.set func_080005F0, 0x080005F0 + 1;
-.set func_08000634, 0x08000634 + 1;
-.set func_08000648, 0x08000648 + 1;
 .set func_08000F10, 0x08000F10 + 1;
 .set func_08000F48, 0x08000F48 + 1;
 .set func_08000F80, 0x08000F80 + 1;
@@ -53,6 +50,7 @@
 .set func_08016D88, 0x08016D88 + 1;
 .set func_08016E6C, 0x08016E6C + 1;
 .set func_080EE644, 0x080EE644 + 1;
+.set func_080EE6A8, 0x080EE6A8 + 1;
 .set func_080F3A90, 0x080F3A90 + 1;
 .set func_080F3C60, 0x080F3C60 + 1;
 .set func_080F3C78, 0x080F3C78 + 1;
@@ -61,6 +59,7 @@
 .set D_080F6140, 0x080F6140;
 .set D_083A3D94, 0x083A3D94;
 .set D_083A3D98, 0x083A3D98;
+.set D_083A3D9C, 0x083A3D9C;
 .set D_083A3DA4, 0x083A3DA4;
 
 .endif
