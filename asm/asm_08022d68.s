@@ -1,0 +1,90 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_08022D68
+/* 08022D68 */ PUSH {R4, R5, R6, R7, LR}
+/* 08022D6A */ SUB SP, #0XC
+/* 08022D6C */ LDR R1, _08022DB4
+/* 08022D6E */ LDR R1, [R1]
+/* 08022D70 */ LDR R2, _08022DB8
+/* 08022D72 */ ADDS R1, R2
+/* 08022D74 */ LDRB R1, [R1]
+/* 08022D76 */ ADDS R6, R1, R0
+/* 08022D78 */ CMP R6, #4
+/* 08022D7A */ BLE _08022D7E
+/* 08022D7C */ MOVS R6, #4
+_08022D7E:
+/* 08022D7E */ CMP R6, #0
+/* 08022D80 */ BGE _08022D84
+/* 08022D82 */ MOVS R6, #0
+_08022D84:
+/* 08022D84 */ MOVS R4, #0
+/* 08022D86 */ LDR R7, _08022DBC
+/* 08022D88 */ MOVS R5, #0
+_08022D8A:
+/* 08022D8A */ LDR R0, _08022DC0
+/* 08022D8C */ LDR R1, [R0]
+/* 08022D8E */ LSLS R0, R4, #1
+/* 08022D90 */ ADDS R0, R1
+/* 08022D92 */ LDRH R1, [R0, #2]
+/* 08022D94 */ CMP R4, R6
+/* 08022D96 */ BGE _08022DC8
+/* 08022D98 */ LDR R0, [R7]
+/* 08022D9A */ LSLS R1, R1, #0X10
+/* 08022D9C */ ASRS R1, R1, #0X10
+/* 08022D9E */ MOVS R2, #1
+/* 08022DA0 */ STR R2, [SP]
+/* 08022DA2 */ MOVS R2, #0X7F
+/* 08022DA4 */ STR R2, [SP, #4]
+/* 08022DA6 */ STR R5, [SP, #8]
+/* 08022DA8 */ LDR R2, _08022DC4
+/* 08022DAA */ MOVS R3, #0X7F
+/* 08022DAC */ BL func_080EF50C
+/* 08022DB0 */ B _08022DDC
+
+.balign 4, 0
+_08022DB4:
+/* 08022DB4 */ .word D_083A3D90
+
+.balign 4, 0
+_08022DB8:
+/* 08022DB8 */ .word 0x00000175
+
+.balign 4, 0
+_08022DBC:
+/* 08022DBC */ .word D_083A4A7C
+
+.balign 4, 0
+_08022DC0:
+/* 08022DC0 */ .word D_03003854
+
+.balign 4, 0
+_08022DC4:
+/* 08022DC4 */ .word D_0833F85C
+_08022DC8:
+/* 08022DC8 */ LDR R0, [R7]
+/* 08022DCA */ LSLS R1, R1, #0X10
+/* 08022DCC */ ASRS R1, R1, #0X10
+/* 08022DCE */ STR R5, [SP]
+/* 08022DD0 */ STR R5, [SP, #4]
+/* 08022DD2 */ STR R5, [SP, #8]
+/* 08022DD4 */ LDR R2, =D_0833F8A4
+/* 08022DD6 */ MOVS R3, #0
+/* 08022DD8 */ BL func_080EF50C
+_08022DDC:
+/* 08022DDC */ ADDS R4, #1
+/* 08022DDE */ CMP R4, #3
+/* 08022DE0 */ BLE _08022D8A
+/* 08022DE2 */ ADD SP, #0XC
+/* 08022DE4 */ POP {R4, R5, R6, R7}
+/* 08022DE6 */ POP {R0}
+/* 08022DE8 */ BX R0
+
+.balign 4, 0
+_08022DEC:
+/* 08022DEC */ @ literal emitted by .ltorg for '=...' 
+.ltorg
+.end

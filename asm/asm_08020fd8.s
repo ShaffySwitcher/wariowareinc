@@ -1,0 +1,86 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_08020FD8
+/* 08020FD8 */ PUSH {R4, R5, LR}
+/* 08020FDA */ SUB SP, #0X54
+/* 08020FDC */ BL func_0800A088
+/* 08020FE0 */ LSLS R0, R0, #0X10
+/* 08020FE2 */ LSRS R0, R0, #0X10
+/* 08020FE4 */ LDR R1, _0802105C
+/* 08020FE6 */ MOVS R2, #0X80
+/* 08020FE8 */ LSLS R2, R2, #5
+/* 08020FEA */ BL func_08002598
+/* 08020FEE */ MOVS R4, #0X80
+/* 08020FF0 */ LSLS R4, R4, #2
+/* 08020FF2 */ ADDS R0, R4, #0
+/* 08020FF4 */ BL func_0800A228
+/* 08020FF8 */ LDR R5, _08021060
+/* 08020FFA */ LDR R1, [R5]
+/* 08020FFC */ STR R0, [R1, #4]
+/* 08020FFE */ ADDS R0, R4, #0
+/* 08021000 */ BL func_0800A228
+/* 08021004 */ LDR R1, [R5]
+/* 08021006 */ STR R0, [R1, #8]
+/* 08021008 */ LDR R0, _08021064
+/* 0802100A */ MOVS R1, #0
+/* 0802100C */ STRH R1, [R0]
+/* 0802100E */ ADDS R0, #0X54
+/* 08021010 */ STRH R1, [R0]
+/* 08021012 */ BL func_0800A088
+/* 08021016 */ LSLS R0, R0, #0X10
+/* 08021018 */ LSRS R0, R0, #0X10
+/* 0802101A */ LDR R1, _08021068
+/* 0802101C */ MOVS R2, #0XC0
+/* 0802101E */ LSLS R2, R2, #2
+/* 08021020 */ MOVS R3, #0X80
+/* 08021022 */ LSLS R3, R3, #1
+/* 08021024 */ STR R3, [SP]
+/* 08021026 */ MOVS R3, #0XA
+/* 08021028 */ STR R3, [SP, #4]
+/* 0802102A */ MOVS R3, #4
+/* 0802102C */ BL func_080042F4
+/* 08021030 */ LDR R1, [R5]
+/* 08021032 */ STR R0, [R1]
+/* 08021034 */ LDR R1, =D_083BED48
+/* 08021036 */ MOVS R2, #0X80
+/* 08021038 */ LSLS R2, R2, #4
+/* 0802103A */ MOVS R3, #0XE
+/* 0802103C */ STR R3, [SP]
+/* 0802103E */ MOVS R3, #0XF
+/* 08021040 */ STR R3, [SP, #4]
+/* 08021042 */ MOVS R3, #0XD
+/* 08021044 */ BL func_080247F8
+/* 08021048 */ MOVS R0, #0
+/* 0802104A */ BL func_0800A200
+/* 0802104E */ MOVS R0, #0
+/* 08021050 */ BL func_08009EE0
+/* 08021054 */ ADD SP, #0X54
+/* 08021056 */ POP {R4, R5}
+/* 08021058 */ POP {R0}
+/* 0802105A */ BX R0
+
+.balign 4, 0
+_0802106C:
+/* 0802106C */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_0802105C:
+/* 0802105C */ .word D_083BED3C
+
+.balign 4, 0
+_08021060:
+/* 08021060 */ .word D_03003850
+
+.balign 4, 0
+_08021064:
+/* 08021064 */ .word D_03004000
+
+.balign 4, 0
+_08021068:
+/* 08021068 */ .word D_083ADADC
+.ltorg
+.end

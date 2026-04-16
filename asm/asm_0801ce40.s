@@ -1,0 +1,81 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0801CE40
+/* 0801CE40 */ PUSH {R4, R5, R6, R7, LR}
+/* 0801CE42 */ MOV R7, R8
+/* 0801CE44 */ PUSH {R7}
+/* 0801CE46 */ SUB SP, #0X14
+/* 0801CE48 */ LDR R0, _0801CEA8
+/* 0801CE4A */ LDR R1, [R0]
+/* 0801CE4C */ MOVS R0, #0
+/* 0801CE4E */ STRH R0, [R1, #0X10]
+/* 0801CE50 */ LDR R0, _0801CEAC
+/* 0801CE52 */ LDRH R1, [R0]
+/* 0801CE54 */ MOVS R4, #0
+/* 0801CE56 */ LDRH R2, [R0, #2]
+/* 0801CE58 */ MOV R8, R2
+/* 0801CE5A */ MOVS R2, #2
+/* 0801CE5C */ LDRSH R7, [R0, R2]
+/* 0801CE5E */ LSLS R6, R1, #0X10
+_0801CE60:
+/* 0801CE60 */ LDR R0, _0801CEB0
+/* 0801CE62 */ LDR R0, [R0]
+/* 0801CE64 */ STR R7, [SP]
+/* 0801CE66 */ LDR R1, _0801CEB4
+/* 0801CE68 */ STR R1, [SP, #4]
+/* 0801CE6A */ MOVS R1, #1
+/* 0801CE6C */ STR R1, [SP, #8]
+/* 0801CE6E */ MOVS R5, #0
+/* 0801CE70 */ STR R5, [SP, #0XC]
+/* 0801CE72 */ MOVS R1, #0X80
+/* 0801CE74 */ LSLS R1, R1, #8
+/* 0801CE76 */ STR R1, [SP, #0X10]
+/* 0801CE78 */ LDR R1, =D_0832FAD0
+/* 0801CE7A */ MOVS R2, #0
+/* 0801CE7C */ ASRS R3, R6, #0X10
+/* 0801CE7E */ BL func_080EEDE0
+/* 0801CE82 */ LDR R1, _0801CEA8
+/* 0801CE84 */ LDR R3, [R1]
+/* 0801CE86 */ LSLS R2, R4, #1
+/* 0801CE88 */ ADDS R1, R3, #0
+/* 0801CE8A */ ADDS R1, #0X12
+/* 0801CE8C */ ADDS R1, R2
+/* 0801CE8E */ STRH R0, [R1]
+/* 0801CE90 */ ADDS R4, #1
+/* 0801CE92 */ CMP R4, #4
+/* 0801CE94 */ BLS _0801CE60
+/* 0801CE96 */ STRH R5, [R3, #0X20]
+/* 0801CE98 */ MOV R0, R8
+/* 0801CE9A */ STRH R0, [R3, #0X22]
+/* 0801CE9C */ ADD SP, #0X14
+/* 0801CE9E */ POP {R3}
+/* 0801CEA0 */ MOV R8, R3
+/* 0801CEA2 */ POP {R4, R5, R6, R7}
+/* 0801CEA4 */ POP {R0}
+/* 0801CEA6 */ BX R0
+
+.balign 4, 0
+_0801CEB8:
+/* 0801CEB8 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_0801CEA8:
+/* 0801CEA8 */ .word D_03003850
+
+.balign 4, 0
+_0801CEAC:
+/* 0801CEAC */ .word D_085FA2B4
+
+.balign 4, 0
+_0801CEB0:
+/* 0801CEB0 */ .word D_083A4A7C
+
+.balign 4, 0
+_0801CEB4:
+/* 0801CEB4 */ .word 0x000007F6
+.ltorg
+.end
