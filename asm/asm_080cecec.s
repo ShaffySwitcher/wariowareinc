@@ -1,0 +1,90 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080CECEC
+/* 080CECEC */ PUSH {R4, R5, LR}
+/* 080CECEE */ SUB SP, #0X18
+/* 080CECF0 */ LDR R0, _080CED74
+/* 080CECF2 */ LDR R4, [R0]
+/* 080CECF4 */ BL func_0800A218
+/* 080CECF8 */ ADDS R5, R0, #0
+/* 080CECFA */ MOVS R1, #0X80
+/* 080CECFC */ LSLS R1, R1, #1
+/* 080CECFE */ MOVS R2, #0
+/* 080CED00 */ BL func_08001BA4
+/* 080CED04 */ STR R5, [R4]
+/* 080CED06 */ LDR R0, _080CED78
+/* 080CED08 */ LDR R0, [R0]
+/* 080CED0A */ LDR R1, _080CED7C
+/* 080CED0C */ MOVS R2, #0X18
+/* 080CED0E */ STR R2, [SP]
+/* 080CED10 */ MOVS R2, #0X81
+/* 080CED12 */ LSLS R2, R2, #8
+/* 080CED14 */ STR R2, [SP, #4]
+/* 080CED16 */ MOVS R5, #0
+/* 080CED18 */ STR R5, [SP, #8]
+/* 080CED1A */ STR R5, [SP, #0XC]
+/* 080CED1C */ STR R5, [SP, #0X10]
+/* 080CED1E */ LDR R2, [R4]
+/* 080CED20 */ LSLS R2, R2, #9
+/* 080CED22 */ MOVS R3, #3
+/* 080CED24 */ ORRS R2, R3
+/* 080CED26 */ STR R2, [SP, #0X14]
+/* 080CED28 */ MOVS R2, #0
+/* 080CED2A */ MOVS R3, #0X58
+/* 080CED2C */ BL func_080EEF0C
+/* 080CED30 */ STRH R0, [R4, #4]
+/* 080CED32 */ MOVS R0, #0XF0
+/* 080CED34 */ LSLS R0, R0, #7
+/* 080CED36 */ STR R0, [R4, #8]
+/* 080CED38 */ MOVS R0, #0XA0
+/* 080CED3A */ LSLS R0, R0, #6
+/* 080CED3C */ STR R0, [R4, #0XC]
+/* 080CED3E */ MOVS R0, #0X80
+/* 080CED40 */ LSLS R0, R0, #7
+/* 080CED42 */ STR R0, [R4, #0X10]
+/* 080CED44 */ STR R5, [R4, #0X1C]
+/* 080CED46 */ STR R5, [R4, #0X18]
+/* 080CED48 */ STR R5, [R4, #0X14]
+/* 080CED4A */ LDR R0, =D_083A3D90
+/* 080CED4C */ LDR R2, [R0]
+/* 080CED4E */ LDRH R1, [R2, #0X16]
+/* 080CED50 */ LSLS R0, R1, #2
+/* 080CED52 */ ADDS R0, R1
+/* 080CED54 */ LSRS R0, R0, #1
+/* 080CED56 */ STR R0, [R4, #0X20]
+/* 080CED58 */ LDRH R1, [R2, #0X16]
+/* 080CED5A */ LSLS R0, R1, #2
+/* 080CED5C */ ADDS R0, R1
+/* 080CED5E */ LSRS R0, R0, #1
+/* 080CED60 */ STR R0, [R4, #0X24]
+/* 080CED62 */ STRH R5, [R4, #0X28]
+/* 080CED64 */ LDRH R0, [R2, #0X16]
+/* 080CED66 */ LSRS R0, R0, #7
+/* 080CED68 */ STRH R0, [R4, #0X2A]
+/* 080CED6A */ STR R5, [R4, #0X2C]
+/* 080CED6C */ ADD SP, #0X18
+/* 080CED6E */ POP {R4, R5}
+/* 080CED70 */ POP {R0}
+/* 080CED72 */ BX R0
+
+.balign 4, 0
+_080CED80:
+/* 080CED80 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080CED74:
+/* 080CED74 */ .word D_03003850
+
+.balign 4, 0
+_080CED78:
+/* 080CED78 */ .word D_083A4A7C
+
+.balign 4, 0
+_080CED7C:
+/* 080CED7C */ .word D_08395BD8
+.ltorg
+.end

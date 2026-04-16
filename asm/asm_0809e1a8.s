@@ -1,0 +1,63 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0809E1A8
+/* 0809E1A8 */ PUSH {LR}
+/* 0809E1AA */ LDR R0, _0809E1C4
+/* 0809E1AC */ LDR R0, [R0]
+/* 0809E1AE */ LDR R2, _0809E1C8
+/* 0809E1B0 */ ADDS R1, R0, R2
+/* 0809E1B2 */ LDRB R0, [R1]
+/* 0809E1B4 */ CMP R0, #1
+/* 0809E1B6 */ BEQ _0809E1EC
+/* 0809E1B8 */ CMP R0, #1
+/* 0809E1BA */ BGT _0809E1CC
+/* 0809E1BC */ CMP R0, #0
+/* 0809E1BE */ BEQ _0809E1D2
+/* 0809E1C0 */ B _0809E1F6
+
+.balign 4, 0
+_0809E1C4:
+/* 0809E1C4 */ .word D_03003850
+
+.balign 4, 0
+_0809E1C8:
+/* 0809E1C8 */ .word 0x00000286
+_0809E1CC:
+/* 0809E1CC */ CMP R0, #2
+/* 0809E1CE */ BEQ _0809E1F2
+/* 0809E1D0 */ B _0809E1F6
+_0809E1D2:
+/* 0809E1D2 */ LDR R0, _0809E1E4
+/* 0809E1D4 */ LDR R0, [R0]
+/* 0809E1D6 */ LDR R2, _0809E1E8
+/* 0809E1D8 */ ADDS R0, R2
+/* 0809E1DA */ LDRB R0, [R0]
+/* 0809E1DC */ CMP R0, #1
+/* 0809E1DE */ BNE _0809E1F6
+/* 0809E1E0 */ STRB R0, [R1]
+/* 0809E1E2 */ B _0809E1F6
+
+.balign 4, 0
+_0809E1E4:
+/* 0809E1E4 */ .word D_083A3D90
+
+.balign 4, 0
+_0809E1E8:
+/* 0809E1E8 */ .word 0x00000173
+_0809E1EC:
+/* 0809E1EC */ BL func_0809E05C
+/* 0809E1F0 */ B _0809E1F6
+_0809E1F2:
+/* 0809E1F2 */ BL func_0809E0A8
+_0809E1F6:
+/* 0809E1F6 */ POP {R0}
+/* 0809E1F8 */ BX R0
+
+/* 0809E1FA */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end

@@ -1,0 +1,88 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080AFEA0
+/* 080AFEA0 */ PUSH {R4, R5, R6, LR}
+/* 080AFEA2 */ SUB SP, #0X14
+/* 080AFEA4 */ BL func_0800A27C
+/* 080AFEA8 */ LDR R5, _080AFF20
+/* 080AFEAA */ LDR R1, [R5]
+/* 080AFEAC */ LDR R2, _080AFF24
+/* 080AFEAE */ ADDS R1, R2
+/* 080AFEB0 */ MOVS R4, #0
+/* 080AFEB2 */ STRB R0, [R1]
+/* 080AFEB4 */ LDR R1, _080AFF28
+/* 080AFEB6 */ SUBS R2, #0X7E
+/* 080AFEB8 */ MOVS R0, #0X80
+/* 080AFEBA */ LSLS R0, R0, #1
+/* 080AFEBC */ STR R0, [SP]
+/* 080AFEBE */ MOVS R0, #0XA
+/* 080AFEC0 */ STR R0, [SP, #4]
+/* 080AFEC2 */ MOVS R0, #2
+/* 080AFEC4 */ MOVS R3, #2
+/* 080AFEC6 */ BL func_080042F4
+/* 080AFECA */ LDR R1, [R5]
+/* 080AFECC */ MOVS R2, #0X9D
+/* 080AFECE */ LSLS R2, R2, #2
+/* 080AFED0 */ ADDS R1, R2
+/* 080AFED2 */ STR R0, [R1]
+/* 080AFED4 */ LDR R1, _080AFF2C
+/* 080AFED6 */ BL func_080049BC
+/* 080AFEDA */ ADDS R1, R0, #0
+/* 080AFEDC */ LDR R0, [R5]
+/* 080AFEDE */ MOVS R2, #0X9E
+/* 080AFEE0 */ LSLS R2, R2, #2
+/* 080AFEE2 */ ADDS R0, R2
+/* 080AFEE4 */ STR R1, [R0]
+/* 080AFEE6 */ LDR R6, =D_083A4A7C
+/* 080AFEE8 */ LDR R0, [R6]
+/* 080AFEEA */ MOVS R2, #0X50
+/* 080AFEEC */ STR R2, [SP]
+/* 080AFEEE */ MOVS R2, #0X80
+/* 080AFEF0 */ LSLS R2, R2, #7
+/* 080AFEF2 */ STR R2, [SP, #4]
+/* 080AFEF4 */ STR R4, [SP, #8]
+/* 080AFEF6 */ STR R4, [SP, #0XC]
+/* 080AFEF8 */ STR R4, [SP, #0X10]
+/* 080AFEFA */ MOVS R2, #0
+/* 080AFEFC */ MOVS R3, #0X78
+/* 080AFEFE */ BL func_080EEDE0
+/* 080AFF02 */ LDR R1, [R5]
+/* 080AFF04 */ MOVS R2, #0X9F
+/* 080AFF06 */ LSLS R2, R2, #2
+/* 080AFF08 */ ADDS R1, R2
+/* 080AFF0A */ STRH R0, [R1]
+/* 080AFF0C */ LDR R0, [R6]
+/* 080AFF0E */ MOVS R2, #0
+/* 080AFF10 */ LDRSH R1, [R1, R2]
+/* 080AFF12 */ MOVS R2, #0
+/* 080AFF14 */ BL func_080EF3BC
+/* 080AFF18 */ ADD SP, #0X14
+/* 080AFF1A */ POP {R4, R5, R6}
+/* 080AFF1C */ POP {R0}
+/* 080AFF1E */ BX R0
+
+.balign 4, 0
+_080AFF30:
+/* 080AFF30 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080AFF20:
+/* 080AFF20 */ .word D_03003850
+
+.balign 4, 0
+_080AFF24:
+/* 080AFF24 */ .word 0x0000027E
+
+.balign 4, 0
+_080AFF28:
+/* 080AFF28 */ .word D_083ADADC
+
+.balign 4, 0
+_080AFF2C:
+/* 080AFF2C */ .word D_0811FF40
+.ltorg
+.end

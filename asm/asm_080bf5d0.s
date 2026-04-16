@@ -1,0 +1,89 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080BF5D0
+/* 080BF5D0 */ PUSH {R4, R5, R6, R7, LR}
+/* 080BF5D2 */ MOV R7, R8
+/* 080BF5D4 */ PUSH {R7}
+/* 080BF5D6 */ SUB SP, #8
+/* 080BF5D8 */ LDR R0, _080BF650
+/* 080BF5DA */ LDR R0, [R0]
+/* 080BF5DC */ ADDS R6, R0, #0
+/* 080BF5DE */ ADDS R6, #0XC
+/* 080BF5E0 */ MOVS R7, #0
+/* 080BF5E2 */ LDR R0, _080BF654
+/* 080BF5E4 */ MOV R8, R0
+_080BF5E6:
+/* 080BF5E6 */ MOV R1, R8
+/* 080BF5E8 */ LDR R0, [R1]
+/* 080BF5EA */ MOVS R2, #0
+/* 080BF5EC */ LDRSH R1, [R6, R2]
+/* 080BF5EE */ MOVS R2, #4
+/* 080BF5F0 */ BL func_080EF784
+/* 080BF5F4 */ ADDS R5, R0, #0
+/* 080BF5F6 */ MOV R1, R8
+/* 080BF5F8 */ LDR R0, [R1]
+/* 080BF5FA */ MOVS R2, #0
+/* 080BF5FC */ LDRSH R1, [R6, R2]
+/* 080BF5FE */ MOVS R2, #5
+/* 080BF600 */ BL func_080EF784
+/* 080BF604 */ ADDS R2, R0, #0
+/* 080BF606 */ MOVS R1, #0
+/* 080BF608 */ LDRSH R0, [R6, R1]
+/* 080BF60A */ LSLS R5, R5, #0X10
+/* 080BF60C */ ASRS R5, R5, #0X10
+/* 080BF60E */ MOV IP, R5
+/* 080BF610 */ LSLS R2, R2, #0X10
+/* 080BF612 */ ASRS R2, R2, #0X10
+/* 080BF614 */ LDR R1, _080BF658
+/* 080BF616 */ LSLS R4, R7, #1
+/* 080BF618 */ ADDS R1, R4, R1
+/* 080BF61A */ MOVS R5, #0
+/* 080BF61C */ LDRSH R3, [R1, R5]
+/* 080BF61E */ LDR R1, _080BF65C
+/* 080BF620 */ ADDS R4, R1
+/* 080BF622 */ MOVS R5, #0
+/* 080BF624 */ LDRSH R1, [R4, R5]
+/* 080BF626 */ STR R1, [SP]
+/* 080BF628 */ MOVS R1, #0XC0
+/* 080BF62A */ STR R1, [SP, #4]
+/* 080BF62C */ MOV R1, IP
+/* 080BF62E */ BL func_0800C110
+/* 080BF632 */ ADDS R7, #1
+/* 080BF634 */ ADDS R6, #4
+/* 080BF636 */ CMP R7, #3
+/* 080BF638 */ BLE _080BF5E6
+/* 080BF63A */ LDR R1, =func_080BF664
+/* 080BF63C */ MOVS R2, #0
+/* 080BF63E */ BL func_0800596C
+/* 080BF642 */ ADD SP, #8
+/* 080BF644 */ POP {R3}
+/* 080BF646 */ MOV R8, R3
+/* 080BF648 */ POP {R4, R5, R6, R7}
+/* 080BF64A */ POP {R0}
+/* 080BF64C */ BX R0
+
+.balign 4, 0
+_080BF660:
+/* 080BF660 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080BF650:
+/* 080BF650 */ .word D_03003850
+
+.balign 4, 0
+_080BF654:
+/* 080BF654 */ .word D_083A4A7C
+
+.balign 4, 0
+_080BF658:
+/* 080BF658 */ .word D_083E1928
+
+.balign 4, 0
+_080BF65C:
+/* 080BF65C */ .word D_083E1930
+.ltorg
+.end

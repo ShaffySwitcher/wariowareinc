@@ -1,0 +1,73 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080C8F34
+/* 080C8F34 */ PUSH {R4, LR}
+/* 080C8F36 */ BL func_0800A088
+/* 080C8F3A */ LSLS R0, R0, #0X10
+/* 080C8F3C */ LSRS R0, R0, #0X10
+/* 080C8F3E */ LDR R1, _080C8FC8
+/* 080C8F40 */ MOVS R2, #0X80
+/* 080C8F42 */ LSLS R2, R2, #6
+/* 080C8F44 */ BL func_08002598
+/* 080C8F48 */ MOVS R0, #0
+/* 080C8F4A */ BL func_0800BEF4
+/* 080C8F4E */ MOVS R0, #1
+/* 080C8F50 */ BL func_0800BF0C
+/* 080C8F54 */ MOVS R0, #2
+/* 080C8F56 */ BL func_0800BF0C
+/* 080C8F5A */ MOVS R0, #3
+/* 080C8F5C */ BL func_0800BF0C
+/* 080C8F60 */ MOVS R0, #1
+/* 080C8F62 */ MOVS R1, #0
+/* 080C8F64 */ MOVS R2, #0
+/* 080C8F66 */ BL func_0800BF34
+/* 080C8F6A */ MOVS R0, #2
+/* 080C8F6C */ MOVS R1, #0
+/* 080C8F6E */ MOVS R2, #0
+/* 080C8F70 */ BL func_0800BF34
+/* 080C8F74 */ MOVS R0, #3
+/* 080C8F76 */ MOVS R1, #0
+/* 080C8F78 */ MOVS R2, #0
+/* 080C8F7A */ BL func_0800BF34
+/* 080C8F7E */ MOVS R0, #1
+/* 080C8F80 */ MOVS R1, #2
+/* 080C8F82 */ MOVS R2, #0X1D
+/* 080C8F84 */ MOVS R3, #1
+/* 080C8F86 */ BL func_0800BF44
+/* 080C8F8A */ MOVS R0, #2
+/* 080C8F8C */ MOVS R1, #0
+/* 080C8F8E */ MOVS R2, #0X1E
+/* 080C8F90 */ MOVS R3, #3
+/* 080C8F92 */ BL func_0800BF44
+/* 080C8F96 */ MOVS R0, #3
+/* 080C8F98 */ MOVS R1, #0
+/* 080C8F9A */ MOVS R2, #0X1F
+/* 080C8F9C */ MOVS R3, #2
+/* 080C8F9E */ BL func_0800BF44
+/* 080C8FA2 */ MOVS R0, #1
+/* 080C8FA4 */ BL func_0800A0C4
+/* 080C8FA8 */ BL func_080C9CF0
+/* 080C8FAC */ BL func_080C9EC8
+/* 080C8FB0 */ LDR R4, =D_083E3398
+/* 080C8FB2 */ BL func_0800A27C
+/* 080C8FB6 */ LSLS R0, R0, #2
+/* 080C8FB8 */ ADDS R0, R4
+/* 080C8FBA */ LDR R0, [R0]
+/* 080C8FBC */ BL func_0800BB74
+/* 080C8FC0 */ POP {R4}
+/* 080C8FC2 */ POP {R0}
+/* 080C8FC4 */ BX R0
+
+.balign 4, 0
+_080C8FCC:
+/* 080C8FCC */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080C8FC8:
+/* 080C8FC8 */ .word D_083E3314
+.ltorg
+.end

@@ -1,0 +1,80 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080C3BD8
+/* 080C3BD8 */ PUSH {R4, R5, LR}
+/* 080C3BDA */ SUB SP, #4
+/* 080C3BDC */ ADDS R4, R0, #0
+/* 080C3BDE */ LDR R0, _080C3C54
+/* 080C3BE0 */ LDR R5, [R0]
+/* 080C3BE2 */ MOVS R0, #0X86
+/* 080C3BE4 */ LSLS R0, R0, #1
+/* 080C3BE6 */ ADDS R2, R5, R0
+/* 080C3BE8 */ MOVS R1, #0X84
+/* 080C3BEA */ LSLS R1, R1, #1
+/* 080C3BEC */ ADDS R0, R5, R1
+/* 080C3BEE */ LDR R3, [R0]
+/* 080C3BF0 */ LSLS R1, R3, #0XC
+/* 080C3BF2 */ LDR R0, [R2]
+/* 080C3BF4 */ ADDS R0, R1
+/* 080C3BF6 */ MOVS R2, #0X80
+/* 080C3BF8 */ LSLS R2, R2, #5
+/* 080C3BFA */ ADDS R1, R0, R2
+/* 080C3BFC */ CMP R0, R4
+/* 080C3BFE */ BGT _080C3C4C
+/* 080C3C00 */ CMP R4, R1
+/* 080C3C02 */ BGE _080C3C4C
+/* 080C3C04 */ LSLS R4, R3, #1
+/* 080C3C06 */ ADDS R4, R3
+/* 080C3C08 */ LSLS R4, R4, #2
+/* 080C3C0A */ ADDS R4, #0XA4
+/* 080C3C0C */ ADDS R4, R5, R4
+/* 080C3C0E */ MOVS R1, #0
+/* 080C3C10 */ LDRSH R0, [R4, R1]
+/* 080C3C12 */ LDR R1, [R4, #4]
+/* 080C3C14 */ LSLS R1, R1, #8
+/* 080C3C16 */ ASRS R1, R1, #0X10
+/* 080C3C18 */ LDR R2, [R4, #8]
+/* 080C3C1A */ LSLS R2, R2, #8
+/* 080C3C1C */ ASRS R2, R2, #0X10
+/* 080C3C1E */ MOVS R3, #8
+/* 080C3C20 */ STR R3, [SP]
+/* 080C3C22 */ BL func_0800C5A0
+/* 080C3C26 */ LDR R1, _080C3C58
+/* 080C3C28 */ MOVS R2, #0
+/* 080C3C2A */ BL func_0800596C
+/* 080C3C2E */ LDR R5, =D_083A4A7C
+/* 080C3C30 */ LDR R0, [R5]
+/* 080C3C32 */ MOVS R2, #0
+/* 080C3C34 */ LDRSH R1, [R4, R2]
+/* 080C3C36 */ MOVS R2, #0
+/* 080C3C38 */ BL func_080EE9B8
+/* 080C3C3C */ LDR R0, [R5]
+/* 080C3C3E */ MOVS R2, #0
+/* 080C3C40 */ LDRSH R1, [R4, R2]
+/* 080C3C42 */ MOVS R2, #0
+/* 080C3C44 */ STR R2, [SP]
+/* 080C3C46 */ MOVS R3, #0
+/* 080C3C48 */ BL func_080EF644
+_080C3C4C:
+/* 080C3C4C */ ADD SP, #4
+/* 080C3C4E */ POP {R4, R5}
+/* 080C3C50 */ POP {R0}
+/* 080C3C52 */ BX R0
+
+.balign 4, 0
+_080C3C5C:
+/* 080C3C5C */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080C3C54:
+/* 080C3C54 */ .word D_03003850
+
+.balign 4, 0
+_080C3C58:
+/* 080C3C58 */ .word func_080C3C60
+.ltorg
+.end

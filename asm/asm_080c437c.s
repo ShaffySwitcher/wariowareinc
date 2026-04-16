@@ -1,0 +1,35 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080C437C
+/* 080C437C */ PUSH {LR}
+/* 080C437E */ ADDS R2, R0, #0
+/* 080C4380 */ ADDS R3, R1, #0
+/* 080C4382 */ LDR R1, [R2]
+/* 080C4384 */ LDR R0, [R3, #8]
+/* 080C4386 */ CMP R1, R0
+/* 080C4388 */ BGT _080C43A6
+/* 080C438A */ LDR R1, [R2, #8]
+/* 080C438C */ LDR R0, [R3]
+/* 080C438E */ CMP R1, R0
+/* 080C4390 */ BLT _080C43A6
+/* 080C4392 */ LDR R1, [R2, #4]
+/* 080C4394 */ LDR R0, [R3, #0XC]
+/* 080C4396 */ CMP R1, R0
+/* 080C4398 */ BGT _080C43A6
+/* 080C439A */ LDR R1, [R2, #0XC]
+/* 080C439C */ LDR R0, [R3, #4]
+/* 080C439E */ CMP R1, R0
+/* 080C43A0 */ BLT _080C43A6
+/* 080C43A2 */ MOVS R0, #1
+/* 080C43A4 */ B _080C43A8
+_080C43A6:
+/* 080C43A6 */ MOVS R0, #0
+_080C43A8:
+/* 080C43A8 */ POP {R1}
+/* 080C43AA */ BX R1
+.ltorg
+.end

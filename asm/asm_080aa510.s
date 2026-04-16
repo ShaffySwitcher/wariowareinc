@@ -1,0 +1,536 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080AA510
+/* 080AA510 */ PUSH {R4, R5, R6, R7, LR}
+/* 080AA512 */ MOV R7, SB
+/* 080AA514 */ MOV R6, R8
+/* 080AA516 */ PUSH {R6, R7}
+/* 080AA518 */ LDR R0, _080AA594
+/* 080AA51A */ LDR R2, [R0]
+/* 080AA51C */ MOVS R1, #0XD4
+/* 080AA51E */ LSLS R1, R1, #1
+/* 080AA520 */ ADDS R0, R2, R1
+/* 080AA522 */ MOVS R3, #0XD8
+/* 080AA524 */ LSLS R3, R3, #1
+/* 080AA526 */ ADDS R1, R2, R3
+/* 080AA528 */ LDR R3, [R0]
+/* 080AA52A */ LDR R0, [R1]
+/* 080AA52C */ CMP R3, R0
+/* 080AA52E */ BNE _080AA532
+/* 080AA530 */ B _080AA84A
+_080AA532:
+/* 080AA532 */ MOVS R1, #0XFA
+/* 080AA534 */ LSLS R1, R1, #1
+/* 080AA536 */ ADDS R0, R2, R1
+/* 080AA538 */ LDR R6, [R0]
+/* 080AA53A */ LDR R7, [R0, #4]
+/* 080AA53C */ MOV SB, R3
+/* 080AA53E */ MOVS R4, #0
+_080AA540:
+/* 080AA540 */ ADDS R1, R4, #1
+/* 080AA542 */ LSLS R0, R1, #5
+/* 080AA544 */ SUBS R0, R1
+/* 080AA546 */ LSLS R0, R0, #2
+/* 080AA548 */ ADDS R0, R1
+/* 080AA54A */ LSLS R0, R0, #3
+/* 080AA54C */ MOV R8, R1
+/* 080AA54E */ CMP SB, R0
+/* 080AA550 */ BHS _080AA554
+/* 080AA552 */ B _080AA834
+_080AA554:
+/* 080AA554 */ ADDS R1, R7, #0
+/* 080AA556 */ ADDS R0, R6, #0
+/* 080AA558 */ ADDS R2, R4, #0
+/* 080AA55A */ BL func_080F42CC
+/* 080AA55E */ MOVS R2, #1
+/* 080AA560 */ ANDS R0, R2
+/* 080AA562 */ MOVS R1, #0
+/* 080AA564 */ ORRS R0, R1
+/* 080AA566 */ CMP R0, #0
+/* 080AA568 */ BEQ _080AA56C
+/* 080AA56A */ B _080AA834
+_080AA56C:
+/* 080AA56C */ MOVS R0, #1
+/* 080AA56E */ MOVS R1, #0
+/* 080AA570 */ ADDS R2, R4, #0
+/* 080AA572 */ BL func_080F4180
+/* 080AA576 */ ADDS R2, R6, #0
+/* 080AA578 */ ORRS R2, R0
+/* 080AA57A */ ADDS R3, R7, #0
+/* 080AA57C */ ORRS R3, R1
+/* 080AA57E */ ADDS R7, R3, #0
+/* 080AA580 */ ADDS R6, R2, #0
+/* 080AA582 */ CMP R4, #0X31
+/* 080AA584 */ BLS _080AA588
+/* 080AA586 */ B _080AA834
+_080AA588:
+/* 080AA588 */ LSLS R0, R4, #2
+/* 080AA58A */ LDR R1, _080AA598
+/* 080AA58C */ ADDS R0, R1
+/* 080AA58E */ LDR R0, [R0]
+/* 080AA590 */ MOV PC, R0
+
+.balign 4, 0
+_080AA594:
+/* 080AA594 */ .word D_03003850
+
+.balign 4, 0
+_080AA598:
+/* 080AA598 */ .word D_080AA59C
+
+.balign 4, 0
+D_080AA59C:
+/* 080AA59C */ .word _080AA664
+
+.balign 4, 0
+/* 080AA5A0 */ .word _080AA678
+
+.balign 4, 0
+/* 080AA5A4 */ .word _080AA68C
+
+.balign 4, 0
+/* 080AA5A8 */ .word _080AA6A0
+
+.balign 4, 0
+/* 080AA5AC */ .word _080AA6B4
+
+.balign 4, 0
+/* 080AA5B0 */ .word _080AA6D8
+
+.balign 4, 0
+/* 080AA5B4 */ .word _080AA6EC
+
+.balign 4, 0
+/* 080AA5B8 */ .word _080AA700
+
+.balign 4, 0
+/* 080AA5BC */ .word _080AA714
+
+.balign 4, 0
+/* 080AA5C0 */ .word _080AA728
+
+.balign 4, 0
+/* 080AA5C4 */ .word _080AA760
+
+.balign 4, 0
+/* 080AA5C8 */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5CC */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5D0 */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5D4 */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5D8 */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5DC */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5E0 */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5E4 */ .word _080AA772
+
+.balign 4, 0
+/* 080AA5E8 */ .word _080AA780
+
+.balign 4, 0
+/* 080AA5EC */ .word _080AA834
+
+.balign 4, 0
+/* 080AA5F0 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA5F4 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA5F8 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA5FC */ .word _080AA834
+
+.balign 4, 0
+/* 080AA600 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA604 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA608 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA60C */ .word _080AA834
+
+.balign 4, 0
+/* 080AA610 */ .word _080AA7B8
+
+.balign 4, 0
+/* 080AA614 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA618 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA61C */ .word _080AA834
+
+.balign 4, 0
+/* 080AA620 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA624 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA628 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA62C */ .word _080AA834
+
+.balign 4, 0
+/* 080AA630 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA634 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA638 */ .word _080AA818
+
+.balign 4, 0
+/* 080AA63C */ .word _080AA834
+
+.balign 4, 0
+/* 080AA640 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA644 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA648 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA64C */ .word _080AA834
+
+.balign 4, 0
+/* 080AA650 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA654 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA658 */ .word _080AA834
+
+.balign 4, 0
+/* 080AA65C */ .word _080AA834
+
+.balign 4, 0
+/* 080AA660 */ .word _080AA824
+_080AA664:
+/* 080AA664 */ LDR R0, _080AA674
+/* 080AA666 */ LDR R0, [R0]
+/* 080AA668 */ MOVS R2, #8
+/* 080AA66A */ LDRSH R0, [R0, R2]
+/* 080AA66C */ BL func_080AA2EC
+/* 080AA670 */ B _080AA834
+
+.balign 4, 0
+_080AA674:
+/* 080AA674 */ .word D_03003854
+_080AA678:
+/* 080AA678 */ LDR R0, _080AA688
+/* 080AA67A */ LDR R0, [R0]
+/* 080AA67C */ MOVS R3, #0XA
+/* 080AA67E */ LDRSH R0, [R0, R3]
+/* 080AA680 */ BL func_080AA2EC
+/* 080AA684 */ B _080AA834
+
+.balign 4, 0
+_080AA688:
+/* 080AA688 */ .word D_03003854
+_080AA68C:
+/* 080AA68C */ LDR R0, _080AA69C
+/* 080AA68E */ LDR R0, [R0]
+/* 080AA690 */ MOVS R1, #0XC
+/* 080AA692 */ LDRSH R0, [R0, R1]
+/* 080AA694 */ BL func_080AA2EC
+/* 080AA698 */ B _080AA834
+
+.balign 4, 0
+_080AA69C:
+/* 080AA69C */ .word D_03003854
+_080AA6A0:
+/* 080AA6A0 */ LDR R0, _080AA6B0
+/* 080AA6A2 */ LDR R0, [R0]
+/* 080AA6A4 */ MOVS R2, #0XE
+/* 080AA6A6 */ LDRSH R0, [R0, R2]
+/* 080AA6A8 */ BL func_080AA2EC
+/* 080AA6AC */ B _080AA834
+
+.balign 4, 0
+_080AA6B0:
+/* 080AA6B0 */ .word D_03003854
+_080AA6B4:
+/* 080AA6B4 */ LDR R2, _080AA6CC
+/* 080AA6B6 */ LDR R1, [R2]
+/* 080AA6B8 */ MOVS R0, #8
+/* 080AA6BA */ STRB R0, [R1, #0X10]
+/* 080AA6BC */ LDR R2, [R2]
+/* 080AA6BE */ LDRB R0, [R2, #6]
+/* 080AA6C0 */ LDR R1, _080AA6D0
+/* 080AA6C2 */ CMP R0, #0
+/* 080AA6C4 */ BNE _080AA6C8
+/* 080AA6C6 */ LDR R1, _080AA6D4
+_080AA6C8:
+/* 080AA6C8 */ STR R1, [R2, #0XC]
+/* 080AA6CA */ B _080AA818
+
+.balign 4, 0
+_080AA6CC:
+/* 080AA6CC */ .word D_03003850
+
+.balign 4, 0
+_080AA6D0:
+/* 080AA6D0 */ .word D_08383814
+
+.balign 4, 0
+_080AA6D4:
+/* 080AA6D4 */ .word D_083836F4
+_080AA6D8:
+/* 080AA6D8 */ LDR R0, _080AA6E8
+/* 080AA6DA */ LDR R0, [R0]
+/* 080AA6DC */ MOVS R3, #0X10
+/* 080AA6DE */ LDRSH R0, [R0, R3]
+/* 080AA6E0 */ BL func_080AA2EC
+/* 080AA6E4 */ B _080AA834
+
+.balign 4, 0
+_080AA6E8:
+/* 080AA6E8 */ .word D_03003854
+_080AA6EC:
+/* 080AA6EC */ LDR R0, _080AA6FC
+/* 080AA6EE */ LDR R0, [R0]
+/* 080AA6F0 */ MOVS R1, #0X12
+/* 080AA6F2 */ LDRSH R0, [R0, R1]
+/* 080AA6F4 */ BL func_080AA2EC
+/* 080AA6F8 */ B _080AA834
+
+.balign 4, 0
+_080AA6FC:
+/* 080AA6FC */ .word D_03003854
+_080AA700:
+/* 080AA700 */ LDR R0, _080AA710
+/* 080AA702 */ LDR R0, [R0]
+/* 080AA704 */ MOVS R2, #0X14
+/* 080AA706 */ LDRSH R0, [R0, R2]
+/* 080AA708 */ BL func_080AA2EC
+/* 080AA70C */ B _080AA834
+
+.balign 4, 0
+_080AA710:
+/* 080AA710 */ .word D_03003854
+_080AA714:
+/* 080AA714 */ LDR R0, _080AA724
+/* 080AA716 */ LDR R0, [R0]
+/* 080AA718 */ MOVS R3, #0X16
+/* 080AA71A */ LDRSH R0, [R0, R3]
+/* 080AA71C */ BL func_080AA2EC
+/* 080AA720 */ B _080AA834
+
+.balign 4, 0
+_080AA724:
+/* 080AA724 */ .word D_03003854
+_080AA728:
+/* 080AA728 */ LDR R0, _080AA750
+/* 080AA72A */ LDR R0, [R0]
+/* 080AA72C */ MOVS R1, #0X18
+/* 080AA72E */ LDRSH R0, [R0, R1]
+/* 080AA730 */ BL func_080AA2EC
+/* 080AA734 */ LDR R2, _080AA754
+/* 080AA736 */ LDR R1, [R2]
+/* 080AA738 */ MOVS R0, #8
+/* 080AA73A */ STRB R0, [R1, #0X10]
+/* 080AA73C */ LDR R2, [R2]
+/* 080AA73E */ LDRB R0, [R2, #6]
+/* 080AA740 */ LDR R1, _080AA758
+/* 080AA742 */ CMP R0, #0
+/* 080AA744 */ BNE _080AA748
+/* 080AA746 */ LDR R1, _080AA75C
+_080AA748:
+/* 080AA748 */ STR R1, [R2, #0XC]
+/* 080AA74A */ MOVS R0, #2
+/* 080AA74C */ B _080AA81A
+
+.balign 4, 0
+_080AA750:
+/* 080AA750 */ .word D_03003854
+
+.balign 4, 0
+_080AA754:
+/* 080AA754 */ .word D_03003850
+
+.balign 4, 0
+_080AA758:
+/* 080AA758 */ .word D_08383AF4
+
+.balign 4, 0
+_080AA75C:
+/* 080AA75C */ .word D_083835D4
+_080AA760:
+/* 080AA760 */ LDR R0, _080AA778
+/* 080AA762 */ LDR R0, [R0]
+/* 080AA764 */ LDR R1, _080AA77C
+/* 080AA766 */ LDR R1, [R1]
+/* 080AA768 */ MOVS R2, #0X18
+/* 080AA76A */ LDRSH R1, [R1, R2]
+/* 080AA76C */ MOVS R2, #0
+/* 080AA76E */ BL func_080EF400
+_080AA772:
+/* 080AA772 */ BL func_080AA3DC
+/* 080AA776 */ B _080AA834
+
+.balign 4, 0
+_080AA778:
+/* 080AA778 */ .word D_083A4A7C
+
+.balign 4, 0
+_080AA77C:
+/* 080AA77C */ .word D_03003854
+_080AA780:
+/* 080AA780 */ LDR R4, _080AA7A8
+/* 080AA782 */ LDR R1, [R4]
+/* 080AA784 */ MOVS R5, #0
+/* 080AA786 */ MOVS R0, #8
+/* 080AA788 */ STRB R0, [R1, #0X10]
+/* 080AA78A */ LDR R1, [R4]
+/* 080AA78C */ LDR R0, _080AA7AC
+/* 080AA78E */ STR R0, [R1, #0XC]
+/* 080AA790 */ BL func_080AAA2C
+/* 080AA794 */ LDR R1, _080AA7B0
+/* 080AA796 */ MOVS R0, #0
+/* 080AA798 */ BL func_080AA9A0
+/* 080AA79C */ LDR R0, [R4]
+/* 080AA79E */ LDR R3, _080AA7B4
+/* 080AA7A0 */ ADDS R0, R3
+/* 080AA7A2 */ STRB R5, [R0]
+/* 080AA7A4 */ B _080AA834
+
+.balign 4, 0
+_080AA7A8:
+/* 080AA7A8 */ .word D_03003850
+
+.balign 4, 0
+_080AA7AC:
+/* 080AA7AC */ .word D_083839D4
+
+.balign 4, 0
+_080AA7B0:
+/* 080AA7B0 */ .word D_083FA758
+
+.balign 4, 0
+_080AA7B4:
+/* 080AA7B4 */ .word 0x0000021B
+_080AA7B8:
+/* 080AA7B8 */ LDR R4, _080AA800
+/* 080AA7BA */ LDR R1, [R4]
+/* 080AA7BC */ MOVS R5, #0
+/* 080AA7BE */ MOVS R0, #8
+/* 080AA7C0 */ STRB R0, [R1, #0X10]
+/* 080AA7C2 */ LDR R1, [R4]
+/* 080AA7C4 */ LDR R0, _080AA804
+/* 080AA7C6 */ STR R0, [R1, #0XC]
+/* 080AA7C8 */ BL func_080AAA2C
+/* 080AA7CC */ LDR R1, _080AA808
+/* 080AA7CE */ MOVS R0, #0
+/* 080AA7D0 */ BL func_080AA9A0
+/* 080AA7D4 */ LDR R1, _080AA80C
+/* 080AA7D6 */ MOVS R0, #1
+/* 080AA7D8 */ BL func_080AA9A0
+/* 080AA7DC */ LDR R1, _080AA810
+/* 080AA7DE */ MOVS R0, #2
+/* 080AA7E0 */ BL func_080AA9A0
+/* 080AA7E4 */ MOVS R0, #1
+/* 080AA7E6 */ MOVS R1, #0
+/* 080AA7E8 */ BL func_080AAA40
+/* 080AA7EC */ MOVS R0, #2
+/* 080AA7EE */ MOVS R1, #0
+/* 080AA7F0 */ BL func_080AAA40
+/* 080AA7F4 */ LDR R0, [R4]
+/* 080AA7F6 */ LDR R1, _080AA814
+/* 080AA7F8 */ ADDS R0, R1
+/* 080AA7FA */ STRB R5, [R0]
+/* 080AA7FC */ B _080AA834
+
+.balign 4, 0
+_080AA800:
+/* 080AA800 */ .word D_03003850
+
+.balign 4, 0
+_080AA804:
+/* 080AA804 */ .word D_08383394
+
+.balign 4, 0
+_080AA808:
+/* 080AA808 */ .word D_083FA76C
+
+.balign 4, 0
+_080AA80C:
+/* 080AA80C */ .word D_083FA780
+
+.balign 4, 0
+_080AA810:
+/* 080AA810 */ .word D_083FA794
+
+.balign 4, 0
+_080AA814:
+/* 080AA814 */ .word 0x0000021B
+_080AA818:
+/* 080AA818 */ MOVS R0, #1
+_080AA81A:
+/* 080AA81A */ MOVS R1, #1
+/* 080AA81C */ MOVS R2, #2
+/* 080AA81E */ BL func_080AAA58
+/* 080AA822 */ B _080AA834
+_080AA824:
+/* 080AA824 */ LDR R0, _080AA858
+/* 080AA826 */ BL func_08002530
+/* 080AA82A */ MOVS R0, #2
+/* 080AA82C */ MOVS R1, #1
+/* 080AA82E */ MOVS R2, #2
+/* 080AA830 */ BL func_080AAA58
+_080AA834:
+/* 080AA834 */ MOV R4, R8
+/* 080AA836 */ CMP R4, #0X31
+/* 080AA838 */ BHI _080AA83C
+/* 080AA83A */ B _080AA540
+_080AA83C:
+/* 080AA83C */ LDR R0, =D_03003850
+/* 080AA83E */ LDR R0, [R0]
+/* 080AA840 */ MOVS R2, #0XFA
+/* 080AA842 */ LSLS R2, R2, #1
+/* 080AA844 */ ADDS R0, R2
+/* 080AA846 */ STR R6, [R0]
+/* 080AA848 */ STR R7, [R0, #4]
+_080AA84A:
+/* 080AA84A */ POP {R3, R4}
+/* 080AA84C */ MOV R8, R3
+/* 080AA84E */ MOV SB, R4
+/* 080AA850 */ POP {R4, R5, R6, R7}
+/* 080AA852 */ POP {R0}
+/* 080AA854 */ BX R0
+
+.balign 4, 0
+_080AA85C:
+/* 080AA85C */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080AA858:
+/* 080AA858 */ .word D_083DCF64
+.ltorg
+.end
