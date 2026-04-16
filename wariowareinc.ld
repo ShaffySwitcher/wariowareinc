@@ -478,6 +478,16 @@ SECTIONS {
         build/asm/asm_0800c038.s.o(.text*);
         build/asm/asm_0800c080.s.o(.text*);
         build/asm/asm_0800c0bc.s.o(.text*);
+        build/asm/asm_0800c110.s.o(.text*);
+        build/asm/asm_0800c15c.s.o(.text*);
+        build/asm/asm_0800c1c0.s.o(.text*);
+        build/asm/asm_0800c218.s.o(.text*);
+        build/asm/asm_0800c298.s.o(.text*);
+        build/asm/asm_0800c2e4.s.o(.text*);
+        build/asm/asm_0800c344.s.o(.text*);
+        build/asm/asm_0800c3ac.s.o(.text*);
+        build/asm/asm_0800c430.s.o(.text*);
+        build/asm/asm_0800c4e0.s.o(.text*);
         build/bin/data.bin.o(.rodata*);
     }
 
