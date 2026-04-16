@@ -1,0 +1,80 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0803D7B4
+/* 0803D7B4 */ PUSH {R4, R5, R6, LR}
+/* 0803D7B6 */ SUB SP, #0XC
+/* 0803D7B8 */ ADDS R4, R0, #0
+/* 0803D7BA */ ADDS R5, R1, #0
+/* 0803D7BC */ LSLS R4, R4, #0X18
+/* 0803D7BE */ LSRS R4, R4, #0X18
+/* 0803D7C0 */ LSLS R5, R5, #0X10
+/* 0803D7C2 */ LSRS R5, R5, #0X10
+/* 0803D7C4 */ LDR R6, _0803D834
+/* 0803D7C6 */ LDR R1, [R6]
+/* 0803D7C8 */ LDR R0, [R1, #0X5C]
+/* 0803D7CA */ LDR R1, [R1, #0X7C]
+/* 0803D7CC */ BL func_08004B78
+/* 0803D7D0 */ LDR R1, [R6]
+/* 0803D7D2 */ LDR R0, [R1, #0X5C]
+/* 0803D7D4 */ LDR R2, _0803D838
+/* 0803D7D6 */ LSLS R4, R4, #2
+/* 0803D7D8 */ ADDS R4, R2
+/* 0803D7DA */ ADDS R1, #0X7A
+/* 0803D7DC */ LDRB R1, [R1]
+/* 0803D7DE */ LDR R2, [R4]
+/* 0803D7E0 */ LSLS R1, R1, #2
+/* 0803D7E2 */ ADDS R1, R2
+/* 0803D7E4 */ LSLS R5, R5, #0X10
+/* 0803D7E6 */ LDR R1, [R1]
+/* 0803D7E8 */ ASRS R5, R5, #0XE
+/* 0803D7EA */ ADDS R5, R1
+/* 0803D7EC */ LDR R1, [R5]
+/* 0803D7EE */ BL func_080049BC
+/* 0803D7F2 */ ADDS R2, R0, #0
+/* 0803D7F4 */ LDR R1, [R6]
+/* 0803D7F6 */ STR R2, [R1, #0X7C]
+/* 0803D7F8 */ LDR R5, =D_083A4A7C
+/* 0803D7FA */ LDR R0, [R5]
+/* 0803D7FC */ ADDS R1, #0X68
+/* 0803D7FE */ MOVS R3, #0
+/* 0803D800 */ LDRSH R1, [R1, R3]
+/* 0803D802 */ MOVS R4, #0
+/* 0803D804 */ STR R4, [SP]
+/* 0803D806 */ STR R4, [SP, #4]
+/* 0803D808 */ STR R4, [SP, #8]
+/* 0803D80A */ MOVS R3, #0
+/* 0803D80C */ BL func_080EF50C
+/* 0803D810 */ LDR R0, [R5]
+/* 0803D812 */ LDR R1, [R6]
+/* 0803D814 */ ADDS R1, #0X68
+/* 0803D816 */ MOVS R2, #0
+/* 0803D818 */ LDRSH R1, [R1, R2]
+/* 0803D81A */ MOVS R2, #1
+/* 0803D81C */ BL func_080EF3BC
+/* 0803D820 */ LDR R0, [R6]
+/* 0803D822 */ STR R4, [R0, #0X74]
+/* 0803D824 */ ADDS R0, #0X7B
+/* 0803D826 */ MOVS R1, #1
+/* 0803D828 */ STRB R1, [R0]
+/* 0803D82A */ ADD SP, #0XC
+/* 0803D82C */ POP {R4, R5, R6}
+/* 0803D82E */ POP {R0}
+/* 0803D830 */ BX R0
+
+.balign 4, 0
+_0803D83C:
+/* 0803D83C */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_0803D834:
+/* 0803D834 */ .word D_03003850
+
+.balign 4, 0
+_0803D838:
+/* 0803D838 */ .word D_083CFF5C
+.ltorg
+.end
