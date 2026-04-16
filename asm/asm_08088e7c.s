@@ -1,0 +1,78 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_08088E7C
+/* 08088E7C */ PUSH {R4, R5, R6, R7, LR}
+/* 08088E7E */ ADDS R5, R0, #0
+/* 08088E80 */ LDR R7, _08088EEC
+/* 08088E82 */ LDR R0, [R7]
+/* 08088E84 */ LDRB R6, [R0, #1]
+/* 08088E86 */ MOVS R2, #0
+/* 08088E88 */ LDR R1, _08088EF0
+/* 08088E8A */ LDRB R0, [R1, #4]
+/* 08088E8C */ LSLS R4, R0, #8
+/* 08088E8E */ LDRB R0, [R1, #5]
+/* 08088E90 */ LSLS R1, R0, #8
+/* 08088E92 */ LDR R0, [R5, #4]
+/* 08088E94 */ CMP R0, R4
+/* 08088E96 */ BLE _08088EE2
+/* 08088E98 */ LDR R0, [R5, #8]
+/* 08088E9A */ CMP R0, R1
+/* 08088E9C */ BLE _08088EE2
+/* 08088E9E */ STR R4, [R5, #4]
+/* 08088EA0 */ STR R1, [R5, #8]
+/* 08088EA2 */ LDR R0, _08088EF4
+/* 08088EA4 */ ADDS R0, R6, R0
+/* 08088EA6 */ LDRB R0, [R0]
+/* 08088EA8 */ LSLS R4, R0, #8
+/* 08088EAA */ ADDS R0, R4, #0
+/* 08088EAC */ BL func_08089620
+/* 08088EB0 */ STR R0, [R5, #0X28]
+/* 08088EB2 */ LDR R2, =D_083D9D28
+/* 08088EB4 */ LSLS R1, R6, #2
+/* 08088EB6 */ ADDS R1, R2
+/* 08088EB8 */ MOVS R3, #0
+/* 08088EBA */ LDRSH R1, [R1, R3]
+/* 08088EBC */ LSLS R4, R1, #8
+/* 08088EBE */ LSLS R1, R6, #1
+/* 08088EC0 */ ADDS R1, #1
+/* 08088EC2 */ LSLS R1, R1, #1
+/* 08088EC4 */ ADDS R1, R2
+/* 08088EC6 */ MOVS R2, #0
+/* 08088EC8 */ LDRSH R1, [R1, R2]
+/* 08088ECA */ LSLS R1, R1, #8
+/* 08088ECC */ BL func_080895D8
+/* 08088ED0 */ ADDS R1, R0, #0
+/* 08088ED2 */ LDR R0, [R7]
+/* 08088ED4 */ STR R1, [R0, #0X3C]
+/* 08088ED6 */ ADDS R0, R5, #0
+/* 08088ED8 */ ADDS R2, R4, #0
+/* 08088EDA */ BL func_08089614
+/* 08088EDE */ STR R0, [R5, #0X24]
+/* 08088EE0 */ MOVS R2, #1
+_08088EE2:
+/* 08088EE2 */ ADDS R0, R2, #0
+/* 08088EE4 */ POP {R4, R5, R6, R7}
+/* 08088EE6 */ POP {R1}
+/* 08088EE8 */ BX R1
+
+.balign 4, 0
+_08088EF8:
+/* 08088EF8 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_08088EEC:
+/* 08088EEC */ .word D_03003850
+
+.balign 4, 0
+_08088EF0:
+/* 08088EF0 */ .word D_083D9D1C
+
+.balign 4, 0
+_08088EF4:
+/* 08088EF4 */ .word D_083D9D34
+.ltorg
+.end

@@ -1,0 +1,50 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080899C8
+/* 080899C8 */ PUSH {R4, R5, LR}
+/* 080899CA */ ADDS R4, R0, #0
+/* 080899CC */ LDR R0, [SP, #0XC]
+/* 080899CE */ LSLS R1, R1, #0X18
+/* 080899D0 */ STR R2, [R4, #4]
+/* 080899D2 */ STR R3, [R4, #8]
+/* 080899D4 */ STR R0, [R4, #0XC]
+/* 080899D6 */ MOVS R5, #0
+/* 080899D8 */ MOVS R0, #0X80
+/* 080899DA */ LSLS R0, R0, #1
+/* 080899DC */ STRH R0, [R4, #0X1C]
+/* 080899DE */ STRH R5, [R4, #0X1E]
+/* 080899E0 */ CMP R1, #0
+/* 080899E2 */ BEQ _080899FA
+/* 080899E4 */ BL func_0800A218
+/* 080899E8 */ STRH R0, [R4, #0X10]
+/* 080899EA */ ADDS R0, R4, #0
+/* 080899EC */ ADDS R0, #0X10
+/* 080899EE */ MOVS R2, #0X1C
+/* 080899F0 */ LDRSH R1, [R4, R2]
+/* 080899F2 */ MOVS R3, #0X1E
+/* 080899F4 */ LDRSH R2, [R4, R3]
+/* 080899F6 */ BL func_08007000
+_080899FA:
+/* 080899FA */ STRH R5, [R4, #0X2C]
+/* 080899FC */ STR R5, [R4, #0X28]
+/* 080899FE */ STR R5, [R4, #0X24]
+/* 08089A00 */ STR R5, [R4, #0X20]
+/* 08089A02 */ STR R5, [R4, #0X30]
+/* 08089A04 */ STR R5, [R4, #0X34]
+/* 08089A06 */ STR R5, [R4, #0X38]
+/* 08089A08 */ ADDS R1, R4, #0
+/* 08089A0A */ ADDS R1, #0X3C
+/* 08089A0C */ MOVS R0, #0
+/* 08089A0E */ STRB R0, [R1]
+/* 08089A10 */ POP {R4, R5}
+/* 08089A12 */ POP {R0}
+/* 08089A14 */ BX R0
+
+/* 08089A16 */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end
