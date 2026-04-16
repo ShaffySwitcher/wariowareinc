@@ -1,0 +1,88 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080E4814
+/* 080E4814 */ PUSH {R4, LR}
+/* 080E4816 */ LDR R4, _080E4850
+/* 080E4818 */ LDR R2, [R4]
+/* 080E481A */ ADDS R0, R2, #0
+/* 080E481C */ ADDS R0, #0X21
+/* 080E481E */ LDRB R0, [R0]
+/* 080E4820 */ CMP R0, #1
+/* 080E4822 */ BEQ _080E4882
+/* 080E4824 */ LDR R0, _080E4854
+/* 080E4826 */ LDR R0, [R0]
+/* 080E4828 */ LDR R1, [R2, #4]
+/* 080E482A */ LDRH R0, [R0, #0X16]
+/* 080E482C */ CMP R1, R0
+/* 080E482E */ BNE _080E4864
+/* 080E4830 */ MOVS R0, #0XC0
+/* 080E4832 */ LSLS R0, R0, #1
+/* 080E4834 */ MOVS R1, #2
+/* 080E4836 */ BL func_0800A3FC
+/* 080E483A */ ADDS R1, R0, #0
+/* 080E483C */ LDR R0, [R4]
+/* 080E483E */ STR R1, [R0, #0XC]
+/* 080E4840 */ LDR R0, _080E4858
+/* 080E4842 */ LDR R0, [R0]
+/* 080E4844 */ LDR R2, _080E485C
+/* 080E4846 */ LDR R3, _080E4860
+/* 080E4848 */ LDR R3, [R3]
+/* 080E484A */ BL func_08005538
+/* 080E484E */ B _080E4882
+
+.balign 4, 0
+_080E4850:
+/* 080E4850 */ .word D_03003850
+
+.balign 4, 0
+_080E4854:
+/* 080E4854 */ .word D_083A3D90
+
+.balign 4, 0
+_080E4858:
+/* 080E4858 */ .word D_083A4A7C
+
+.balign 4, 0
+_080E485C:
+/* 080E485C */ .word D_083E86EC
+
+.balign 4, 0
+_080E4860:
+/* 080E4860 */ .word D_03003854
+_080E4864:
+/* 080E4864 */ LSRS R0, R1, #8
+/* 080E4866 */ CMP R0, #0X32
+/* 080E4868 */ BLS _080E4882
+/* 080E486A */ LDR R0, _080E4888
+/* 080E486C */ LDR R0, [R0]
+/* 080E486E */ LDR R1, [R2, #0XC]
+/* 080E4870 */ LDR R2, _080E488C
+/* 080E4872 */ LDR R3, =D_03003854
+/* 080E4874 */ LDR R3, [R3]
+/* 080E4876 */ BL func_08005600
+/* 080E487A */ LDR R0, [R4]
+/* 080E487C */ ADDS R0, #0X21
+/* 080E487E */ MOVS R1, #1
+/* 080E4880 */ STRB R1, [R0]
+_080E4882:
+/* 080E4882 */ POP {R4}
+/* 080E4884 */ POP {R0}
+/* 080E4886 */ BX R0
+
+.balign 4, 0
+_080E4890:
+/* 080E4890 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080E4888:
+/* 080E4888 */ .word D_083A4A7C
+
+.balign 4, 0
+_080E488C:
+/* 080E488C */ .word D_083E86EC
+.ltorg
+.end

@@ -1,0 +1,38 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080EED24
+/* 080EED24 */ PUSH {R4, LR}
+/* 080EED26 */ ADDS R3, R0, #0
+/* 080EED28 */ LDRH R4, [R3, #0X10]
+/* 080EED2A */ MOVS R0, #0X10
+/* 080EED2C */ LDRSH R2, [R3, R0]
+/* 080EED2E */ CMP R2, #0
+/* 080EED30 */ BLT _080EED4A
+/* 080EED32 */ LDR R0, [R3, #8]
+/* 080EED34 */ LSLS R1, R2, #3
+/* 080EED36 */ SUBS R1, R2
+/* 080EED38 */ LSLS R1, R1, #3
+/* 080EED3A */ ADDS R1, R0
+/* 080EED3C */ LDRH R0, [R1, #0X1A]
+/* 080EED3E */ STRH R0, [R3, #0X10]
+/* 080EED40 */ LSLS R0, R0, #0X10
+/* 080EED42 */ CMP R0, #0
+/* 080EED44 */ BGE _080EED4A
+/* 080EED46 */ LDR R0, _080EED54
+/* 080EED48 */ STRH R0, [R3, #0X12]
+_080EED4A:
+/* 080EED4A */ LSLS R0, R4, #0X10
+/* 080EED4C */ ASRS R0, R0, #0X10
+/* 080EED4E */ POP {R4}
+/* 080EED50 */ POP {R1}
+/* 080EED52 */ BX R1
+
+.balign 4, 0
+_080EED54:
+/* 080EED54 */ .word 0x0000FFFF
+.ltorg
+.end

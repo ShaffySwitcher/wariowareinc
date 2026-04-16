@@ -1,0 +1,42 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080EFC50
+/* 080EFC50 */ PUSH {R4, R5, LR}
+/* 080EFC52 */ ADDS R4, R1, #0
+/* 080EFC54 */ MOVS R3, #0
+/* 080EFC56 */ LDR R1, [R0, #8]
+/* 080EFC58 */ MOVS R5, #0XC
+/* 080EFC5A */ LDRSH R2, [R0, R5]
+/* 080EFC5C */ MOVS R0, #1
+/* 080EFC5E */ RSBS R0, R0, #0
+/* 080EFC60 */ CMP R2, R0
+/* 080EFC62 */ BEQ _080EFC7E
+/* 080EFC64 */ ADDS R5, R0, #0
+_080EFC66:
+/* 080EFC66 */ LSLS R0, R2, #3
+/* 080EFC68 */ SUBS R0, R2
+/* 080EFC6A */ LSLS R0, R0, #3
+/* 080EFC6C */ ADDS R2, R0, R1
+/* 080EFC6E */ LDR R0, [R2, #0X30]
+/* 080EFC70 */ CMP R0, R4
+/* 080EFC72 */ BNE _080EFC76
+/* 080EFC74 */ ADDS R3, #1
+_080EFC76:
+/* 080EFC76 */ MOVS R0, #0X1A
+/* 080EFC78 */ LDRSH R2, [R2, R0]
+/* 080EFC7A */ CMP R2, R5
+/* 080EFC7C */ BNE _080EFC66
+_080EFC7E:
+/* 080EFC7E */ ADDS R0, R3, #0
+/* 080EFC80 */ POP {R4, R5}
+/* 080EFC82 */ POP {R1}
+/* 080EFC84 */ BX R1
+
+/* 080EFC86 */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end

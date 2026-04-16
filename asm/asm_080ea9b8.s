@@ -1,0 +1,78 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080EA9B8
+/* 080EA9B8 */ PUSH {R4, R5, LR}
+/* 080EA9BA */ LDR R5, _080EAA2C
+/* 080EA9BC */ LDR R4, [R5]
+/* 080EA9BE */ LDR R0, _080EAA30
+/* 080EA9C0 */ LDR R2, [R0]
+/* 080EA9C2 */ LDRH R0, [R4, #0X18]
+/* 080EA9C4 */ LDRH R1, [R2, #0X16]
+/* 080EA9C6 */ ADDS R0, R1
+/* 080EA9C8 */ STRH R0, [R4, #0X18]
+/* 080EA9CA */ MOVS R0, #0X1A
+/* 080EA9CC */ LDRSH R1, [R4, R0]
+/* 080EA9CE */ LDR R0, [R4, #4]
+/* 080EA9D0 */ ADDS R0, R1
+/* 080EA9D2 */ STR R0, [R4, #4]
+/* 080EA9D4 */ LDRH R1, [R2, #0X16]
+/* 080EA9D6 */ LSLS R2, R1, #1
+/* 080EA9D8 */ ADDS R2, R1
+/* 080EA9DA */ LSLS R2, R2, #3
+/* 080EA9DC */ ADDS R2, R1
+/* 080EA9DE */ LSRS R2, R2, #3
+/* 080EA9E0 */ LDRH R3, [R4, #0X18]
+/* 080EA9E2 */ LSLS R0, R1, #4
+/* 080EA9E4 */ SUBS R0, R1
+/* 080EA9E6 */ ASRS R0, R0, #6
+/* 080EA9E8 */ ADDS R1, R3, #0
+/* 080EA9EA */ MULS R1, R0, R1
+/* 080EA9EC */ ASRS R1, R1, #8
+/* 080EA9EE */ SUBS R1, R2
+/* 080EA9F0 */ LDR R0, [R4, #8]
+/* 080EA9F2 */ ADDS R0, R1
+/* 080EA9F4 */ STR R0, [R4, #8]
+/* 080EA9F6 */ ASRS R0, R0, #8
+/* 080EA9F8 */ CMP R0, #0X8F
+/* 080EA9FA */ BLE _080EAA0A
+/* 080EA9FC */ MOVS R0, #0X90
+/* 080EA9FE */ LSLS R0, R0, #8
+/* 080EAA00 */ STR R0, [R4, #8]
+/* 080EAA02 */ MOVS R0, #0
+/* 080EAA04 */ STRH R0, [R4, #0X18]
+/* 080EAA06 */ MOVS R0, #1
+/* 080EAA08 */ STRB R0, [R4, #0X1C]
+_080EAA0A:
+/* 080EAA0A */ LDR R0, =D_083A4A7C
+/* 080EAA0C */ LDR R0, [R0]
+/* 080EAA0E */ LDR R3, [R5]
+/* 080EAA10 */ MOVS R2, #2
+/* 080EAA12 */ LDRSH R1, [R3, R2]
+/* 080EAA14 */ LDR R2, [R3, #4]
+/* 080EAA16 */ LSLS R2, R2, #8
+/* 080EAA18 */ ASRS R2, R2, #0X10
+/* 080EAA1A */ LDR R3, [R3, #8]
+/* 080EAA1C */ LSLS R3, R3, #8
+/* 080EAA1E */ ASRS R3, R3, #0X10
+/* 080EAA20 */ BL func_080EF224
+/* 080EAA24 */ POP {R4, R5}
+/* 080EAA26 */ POP {R0}
+/* 080EAA28 */ BX R0
+
+.balign 4, 0
+_080EAA34:
+/* 080EAA34 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080EAA2C:
+/* 080EAA2C */ .word D_03003850
+
+.balign 4, 0
+_080EAA30:
+/* 080EAA30 */ .word D_083A3D90
+.ltorg
+.end

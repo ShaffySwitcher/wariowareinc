@@ -1,0 +1,94 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080EAF98
+/* 080EAF98 */ PUSH {R4, LR}
+/* 080EAF9A */ LDR R0, _080EAFC0
+/* 080EAF9C */ LDR R0, [R0]
+/* 080EAF9E */ LDR R1, _080EAFC4
+/* 080EAFA0 */ ADDS R0, R1
+/* 080EAFA2 */ LDRB R0, [R0]
+/* 080EAFA4 */ CMP R0, #1
+/* 080EAFA6 */ BNE _080EB01E
+/* 080EAFA8 */ LDR R1, _080EAFC8
+/* 080EAFAA */ LDR R0, [R1]
+/* 080EAFAC */ LDRB R0, [R0]
+/* 080EAFAE */ ADDS R4, R1, #0
+/* 080EAFB0 */ CMP R0, #4
+/* 080EAFB2 */ BHI _080EB01E
+/* 080EAFB4 */ LSLS R0, R0, #2
+/* 080EAFB6 */ LDR R1, _080EAFCC
+/* 080EAFB8 */ ADDS R0, R1
+/* 080EAFBA */ LDR R0, [R0]
+/* 080EAFBC */ MOV PC, R0
+
+.balign 4, 0
+_080EAFC0:
+/* 080EAFC0 */ .word D_083A3D90
+
+.balign 4, 0
+_080EAFC4:
+/* 080EAFC4 */ .word 0x00000173
+
+.balign 4, 0
+_080EAFC8:
+/* 080EAFC8 */ .word D_03003850
+
+.balign 4, 0
+_080EAFCC:
+/* 080EAFCC */ .word D_080EAFD0
+
+.balign 4, 0
+D_080EAFD0:
+/* 080EAFD0 */ .word _080EAFE4
+
+.balign 4, 0
+/* 080EAFD4 */ .word _080EB008
+
+.balign 4, 0
+/* 080EAFD8 */ .word _080EB00E
+
+.balign 4, 0
+/* 080EAFDC */ .word _080EB014
+
+.balign 4, 0
+/* 080EAFE0 */ .word _080EB01A
+_080EAFE4:
+/* 080EAFE4 */ LDR R0, _080EB004
+/* 080EAFE6 */ LDRH R1, [R0]
+/* 080EAFE8 */ MOVS R0, #1
+/* 080EAFEA */ ANDS R0, R1
+/* 080EAFEC */ CMP R0, #0
+/* 080EAFEE */ BEQ _080EB01E
+/* 080EAFF0 */ LDR R0, [R4]
+/* 080EAFF2 */ LDR R0, [R0, #0X3C]
+/* 080EAFF4 */ BL func_08001E58
+/* 080EAFF8 */ LDR R1, [R4]
+/* 080EAFFA */ LDRB R0, [R1]
+/* 080EAFFC */ ADDS R0, #1
+/* 080EAFFE */ STRB R0, [R1]
+/* 080EB000 */ B _080EB01E
+
+.balign 4, 0
+_080EB004:
+/* 080EB004 */ .word D_03003FF4
+_080EB008:
+/* 080EB008 */ BL func_080EAD74
+/* 080EB00C */ B _080EB01E
+_080EB00E:
+/* 080EB00E */ BL func_080EADF4
+/* 080EB012 */ B _080EB01E
+_080EB014:
+/* 080EB014 */ BL func_080EAEB0
+/* 080EB018 */ B _080EB01E
+_080EB01A:
+/* 080EB01A */ BL func_080EAF30
+_080EB01E:
+/* 080EB01E */ POP {R4}
+/* 080EB020 */ POP {R0}
+/* 080EB022 */ BX R0
+.ltorg
+.end

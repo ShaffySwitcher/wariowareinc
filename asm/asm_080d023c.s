@@ -1,0 +1,87 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080D023C
+/* 080D023C */ PUSH {R4, R5, R6, LR}
+/* 080D023E */ SUB SP, #0XC
+/* 080D0240 */ LDR R6, _080D0284
+/* 080D0242 */ LDR R0, [R6]
+/* 080D0244 */ LDR R5, _080D0288
+/* 080D0246 */ LDR R1, [R5]
+/* 080D0248 */ MOVS R2, #4
+/* 080D024A */ LDRSH R1, [R1, R2]
+/* 080D024C */ BL func_080EF31C
+/* 080D0250 */ LSLS R0, R0, #0X18
+/* 080D0252 */ LSRS R4, R0, #0X18
+/* 080D0254 */ CMP R4, #0
+/* 080D0256 */ BNE _080D0290
+/* 080D0258 */ LDR R0, [R5]
+/* 080D025A */ MOVS R3, #1
+/* 080D025C */ STRB R3, [R0, #0X13]
+/* 080D025E */ LDR R0, [R6]
+/* 080D0260 */ LDR R1, [R5]
+/* 080D0262 */ MOVS R2, #4
+/* 080D0264 */ LDRSH R1, [R1, R2]
+/* 080D0266 */ LDR R2, _080D028C
+/* 080D0268 */ STR R3, [SP]
+/* 080D026A */ STR R4, [SP, #4]
+/* 080D026C */ STR R4, [SP, #8]
+/* 080D026E */ MOVS R3, #0
+/* 080D0270 */ BL func_080EF50C
+/* 080D0274 */ LDR R0, [R6]
+/* 080D0276 */ LDR R1, [R5]
+/* 080D0278 */ MOVS R2, #8
+/* 080D027A */ LDRSH R1, [R1, R2]
+/* 080D027C */ MOVS R2, #0
+/* 080D027E */ BL func_080EF3BC
+/* 080D0282 */ B _080D02C2
+
+.balign 4, 0
+_080D0284:
+/* 080D0284 */ .word D_083A4A7C
+
+.balign 4, 0
+_080D0288:
+/* 080D0288 */ .word D_03003850
+
+.balign 4, 0
+_080D028C:
+/* 080D028C */ .word D_08399110
+_080D0290:
+/* 080D0290 */ CMP R4, #2
+/* 080D0292 */ BNE _080D02C2
+/* 080D0294 */ LDR R0, [R5]
+/* 080D0296 */ MOVS R3, #0
+/* 080D0298 */ MOVS R4, #1
+/* 080D029A */ STRB R4, [R0, #0X13]
+/* 080D029C */ LDR R0, [R6]
+/* 080D029E */ LDR R1, [R5]
+/* 080D02A0 */ MOVS R2, #4
+/* 080D02A2 */ LDRSH R1, [R1, R2]
+/* 080D02A4 */ LDR R2, =D_08399138
+/* 080D02A6 */ STR R4, [SP]
+/* 080D02A8 */ STR R3, [SP, #4]
+/* 080D02AA */ STR R3, [SP, #8]
+/* 080D02AC */ BL func_080EF50C
+/* 080D02B0 */ LDR R0, [R6]
+/* 080D02B2 */ LDR R1, [R5]
+/* 080D02B4 */ MOVS R2, #8
+/* 080D02B6 */ LDRSH R1, [R1, R2]
+/* 080D02B8 */ MOVS R2, #0
+/* 080D02BA */ BL func_080EF3BC
+/* 080D02BE */ LDR R0, [R5]
+/* 080D02C0 */ STRB R4, [R0, #0X12]
+_080D02C2:
+/* 080D02C2 */ ADD SP, #0XC
+/* 080D02C4 */ POP {R4, R5, R6}
+/* 080D02C6 */ POP {R0}
+/* 080D02C8 */ BX R0
+
+.balign 4, 0
+_080D02CC:
+/* 080D02CC */ @ literal emitted by .ltorg for '=...' 
+.ltorg
+.end

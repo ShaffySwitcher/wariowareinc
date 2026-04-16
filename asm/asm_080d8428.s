@@ -1,0 +1,85 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080D8428
+/* 080D8428 */ PUSH {R4, R5, LR}
+/* 080D842A */ SUB SP, #0XC
+/* 080D842C */ LDR R5, _080D84A4
+/* 080D842E */ LDR R2, [R5]
+/* 080D8430 */ LDR R0, _080D84A8
+/* 080D8432 */ LDR R0, [R0]
+/* 080D8434 */ LDRH R0, [R0, #0X16]
+/* 080D8436 */ LDR R1, [R2, #8]
+/* 080D8438 */ SUBS R1, R0
+/* 080D843A */ STR R1, [R2, #8]
+/* 080D843C */ ASRS R1, R1, #8
+/* 080D843E */ LDRB R0, [R2, #0XD]
+/* 080D8440 */ LSLS R0, R0, #4
+/* 080D8442 */ ADDS R0, #0X38
+/* 080D8444 */ CMP R1, R0
+/* 080D8446 */ BGT _080D8472
+/* 080D8448 */ LSLS R0, R0, #8
+/* 080D844A */ STR R0, [R2, #8]
+/* 080D844C */ LDRB R0, [R2, #0XD]
+/* 080D844E */ SUBS R0, #1
+/* 080D8450 */ MOVS R4, #0
+/* 080D8452 */ STRB R0, [R2, #0XD]
+/* 080D8454 */ LDR R0, _080D84AC
+/* 080D8456 */ LDR R0, [R0]
+/* 080D8458 */ LDR R1, [R5]
+/* 080D845A */ MOVS R2, #0
+/* 080D845C */ LDRSH R1, [R1, R2]
+/* 080D845E */ LDR R2, =D_08399790
+/* 080D8460 */ MOVS R3, #1
+/* 080D8462 */ RSBS R3, R3, #0
+/* 080D8464 */ STR R4, [SP]
+/* 080D8466 */ STR R4, [SP, #4]
+/* 080D8468 */ STR R4, [SP, #8]
+/* 080D846A */ BL func_080EF50C
+/* 080D846E */ LDR R0, [R5]
+/* 080D8470 */ STRB R4, [R0, #0XC]
+_080D8472:
+/* 080D8472 */ LDR R4, _080D84AC
+/* 080D8474 */ LDR R0, [R4]
+/* 080D8476 */ LDR R2, [R5]
+/* 080D8478 */ MOVS R3, #0
+/* 080D847A */ LDRSH R1, [R2, R3]
+/* 080D847C */ LDR R2, [R2, #8]
+/* 080D847E */ LSLS R2, R2, #8
+/* 080D8480 */ ASRS R2, R2, #0X10
+/* 080D8482 */ BL func_080EF298
+/* 080D8486 */ LDR R0, [R4]
+/* 080D8488 */ LDR R2, [R5]
+/* 080D848A */ ADDS R1, R2, #0
+/* 080D848C */ ADDS R1, #0X40
+/* 080D848E */ MOVS R3, #0
+/* 080D8490 */ LDRSH R1, [R1, R3]
+/* 080D8492 */ LDR R2, [R2, #8]
+/* 080D8494 */ LSLS R2, R2, #8
+/* 080D8496 */ ASRS R2, R2, #0X10
+/* 080D8498 */ BL func_080EF298
+/* 080D849C */ ADD SP, #0XC
+/* 080D849E */ POP {R4, R5}
+/* 080D84A0 */ POP {R0}
+/* 080D84A2 */ BX R0
+
+.balign 4, 0
+_080D84B0:
+/* 080D84B0 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080D84A4:
+/* 080D84A4 */ .word D_03003850
+
+.balign 4, 0
+_080D84A8:
+/* 080D84A8 */ .word D_083A3D90
+
+.balign 4, 0
+_080D84AC:
+/* 080D84AC */ .word D_083A4A7C
+.ltorg
+.end

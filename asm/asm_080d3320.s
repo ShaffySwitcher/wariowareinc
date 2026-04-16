@@ -1,0 +1,93 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080D3320
+/* 080D3320 */ PUSH {R4, R5, R6, LR}
+/* 080D3322 */ MOV R6, SB
+/* 080D3324 */ MOV R5, R8
+/* 080D3326 */ PUSH {R5, R6}
+/* 080D3328 */ SUB SP, #0XC
+/* 080D332A */ LDR R0, _080D33A8
+/* 080D332C */ LDR R6, [R0]
+/* 080D332E */ MOVS R0, #8
+/* 080D3330 */ ADDS R0, R6
+/* 080D3332 */ MOV R8, R0
+/* 080D3334 */ MOVS R2, #8
+/* 080D3336 */ LDRSH R1, [R6, R2]
+/* 080D3338 */ MOV SB, R1
+/* 080D333A */ LDR R5, [R0, #4]
+/* 080D333C */ LSLS R5, R5, #8
+/* 080D333E */ ASRS R5, R5, #0X10
+/* 080D3340 */ LDR R4, [R0, #8]
+/* 080D3342 */ LSLS R4, R4, #8
+/* 080D3344 */ ASRS R4, R4, #0X10
+/* 080D3346 */ LDR R1, _080D33AC
+/* 080D3348 */ ADDS R0, R6, R1
+/* 080D334A */ LDRH R1, [R0]
+/* 080D334C */ MOVS R0, #0XA0
+/* 080D334E */ LSLS R0, R0, #5
+/* 080D3350 */ BL func_080F41F0
+/* 080D3354 */ LSLS R0, R0, #0X10
+/* 080D3356 */ LSRS R0, R0, #0X10
+/* 080D3358 */ STR R0, [SP]
+/* 080D335A */ MOV R0, SB
+/* 080D335C */ ADDS R1, R5, #0
+/* 080D335E */ ADDS R2, R4, #0
+/* 080D3360 */ MOVS R3, #0X20
+/* 080D3362 */ BL func_0800C5A0
+/* 080D3366 */ ADDS R5, R0, #0
+/* 080D3368 */ MOVS R4, #0
+/* 080D336A */ MOVS R0, #3
+/* 080D336C */ MOV R2, R8
+/* 080D336E */ STRB R0, [R2, #0X1E]
+/* 080D3370 */ MOVS R0, #0XB
+/* 080D3372 */ STRB R0, [R2, #0X1C]
+/* 080D3374 */ LDR R0, _080D33B0
+/* 080D3376 */ LDR R0, [R0]
+/* 080D3378 */ MOVS R2, #8
+/* 080D337A */ LDRSH R1, [R6, R2]
+/* 080D337C */ LDR R2, _080D33B4
+/* 080D337E */ ADDS R2, #0X84
+/* 080D3380 */ LDR R2, [R2]
+/* 080D3382 */ MOVS R3, #1
+/* 080D3384 */ STR R3, [SP]
+/* 080D3386 */ STR R4, [SP, #4]
+/* 080D3388 */ STR R4, [SP, #8]
+/* 080D338A */ MOVS R3, #0
+/* 080D338C */ BL func_080EF50C
+/* 080D3390 */ LDR R1, =func_080D330C + 1
+/* 080D3392 */ ADDS R0, R5, #0
+/* 080D3394 */ MOV R2, R8
+/* 080D3396 */ BL func_0800596C
+/* 080D339A */ ADD SP, #0XC
+/* 080D339C */ POP {R3, R4}
+/* 080D339E */ MOV R8, R3
+/* 080D33A0 */ MOV SB, R4
+/* 080D33A2 */ POP {R4, R5, R6}
+/* 080D33A4 */ POP {R0}
+/* 080D33A6 */ BX R0
+
+.balign 4, 0
+_080D33B8:
+/* 080D33B8 */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080D33A8:
+/* 080D33A8 */ .word D_03003850
+
+.balign 4, 0
+_080D33AC:
+/* 080D33AC */ .word 0x000003EE
+
+.balign 4, 0
+_080D33B0:
+/* 080D33B0 */ .word D_083A4A7C
+
+.balign 4, 0
+_080D33B4:
+/* 080D33B4 */ .word D_083E4E70
+.ltorg
+.end

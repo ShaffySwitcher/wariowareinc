@@ -1,0 +1,79 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080E410C
+/* 080E410C */ PUSH {R4, R5, R6, R7, LR}
+/* 080E410E */ LDR R0, _080E4188
+/* 080E4110 */ LDR R0, [R0]
+/* 080E4112 */ MOVS R7, #0
+/* 080E4114 */ ADDS R5, R0, #0
+/* 080E4116 */ ADDS R5, #0X78
+/* 080E4118 */ MOVS R1, #0X96
+/* 080E411A */ LSLS R1, R1, #2
+/* 080E411C */ ADDS R4, R0, R1
+/* 080E411E */ MOVS R2, #0XB4
+/* 080E4120 */ LSLS R2, R2, #1
+/* 080E4122 */ ADDS R6, R0, R2
+_080E4124:
+/* 080E4124 */ LDR R1, [R6]
+/* 080E4126 */ LDR R0, [R4]
+/* 080E4128 */ ADDS R1, R0
+/* 080E412A */ LDR R0, [R5]
+/* 080E412C */ ADDS R0, R1
+/* 080E412E */ STR R0, [R5]
+/* 080E4130 */ LDR R1, [R6, #4]
+/* 080E4132 */ LDR R0, [R4, #4]
+/* 080E4134 */ ADDS R1, R0
+/* 080E4136 */ LDR R0, [R5, #4]
+/* 080E4138 */ ADDS R0, R1
+/* 080E413A */ STR R0, [R5, #4]
+/* 080E413C */ LDR R1, [R4]
+/* 080E413E */ LSLS R0, R1, #4
+/* 080E4140 */ SUBS R0, R1
+/* 080E4142 */ LSLS R0, R0, #4
+/* 080E4144 */ ASRS R0, R0, #8
+/* 080E4146 */ STR R0, [R4]
+/* 080E4148 */ LDR R1, [R4, #4]
+/* 080E414A */ LSLS R0, R1, #4
+/* 080E414C */ SUBS R0, R1
+/* 080E414E */ LSLS R0, R0, #4
+/* 080E4150 */ ASRS R0, R0, #8
+/* 080E4152 */ STR R0, [R4, #4]
+/* 080E4154 */ LDR R0, =D_083A4A7C
+/* 080E4156 */ LDR R0, [R0]
+/* 080E4158 */ LDR R1, _080E4188
+/* 080E415A */ LDR R1, [R1]
+/* 080E415C */ LSLS R2, R7, #1
+/* 080E415E */ ADDS R1, #0X3C
+/* 080E4160 */ ADDS R1, R2
+/* 080E4162 */ MOVS R2, #0
+/* 080E4164 */ LDRSH R1, [R1, R2]
+/* 080E4166 */ LDR R2, [R5]
+/* 080E4168 */ LSLS R2, R2, #8
+/* 080E416A */ ASRS R2, R2, #0X10
+/* 080E416C */ LDR R3, [R5, #4]
+/* 080E416E */ LSLS R3, R3, #8
+/* 080E4170 */ ASRS R3, R3, #0X10
+/* 080E4172 */ BL func_080EF224
+/* 080E4176 */ ADDS R5, #8
+/* 080E4178 */ ADDS R4, #8
+/* 080E417A */ ADDS R6, #8
+/* 080E417C */ ADDS R7, #1
+/* 080E417E */ CMP R7, #0X1D
+/* 080E4180 */ BLS _080E4124
+/* 080E4182 */ POP {R4, R5, R6, R7}
+/* 080E4184 */ POP {R0}
+/* 080E4186 */ BX R0
+
+.balign 4, 0
+_080E418C:
+/* 080E418C */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_080E4188:
+/* 080E4188 */ .word D_03003850
+.ltorg
+.end

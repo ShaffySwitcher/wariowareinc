@@ -1,0 +1,84 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080D5DEC
+/* 080D5DEC */ PUSH {R4, R5, R6, LR}
+/* 080D5DEE */ SUB SP, #4
+/* 080D5DF0 */ LDR R0, _080D5E5C
+/* 080D5DF2 */ LDR R4, [R0]
+/* 080D5DF4 */ LDR R1, _080D5E60
+/* 080D5DF6 */ ADDS R0, R4, R1
+/* 080D5DF8 */ LDRB R1, [R0]
+/* 080D5DFA */ LSLS R0, R1, #2
+/* 080D5DFC */ ADDS R0, R1
+/* 080D5DFE */ LSLS R0, R0, #3
+/* 080D5E00 */ ADDS R0, #0X54
+/* 080D5E02 */ ADDS R4, R0
+/* 080D5E04 */ LDR R6, _080D5E64
+/* 080D5E06 */ LDR R0, [R6]
+/* 080D5E08 */ MOVS R2, #0
+/* 080D5E0A */ LDRSH R1, [R4, R2]
+/* 080D5E0C */ MOVS R5, #0
+/* 080D5E0E */ STR R5, [SP]
+/* 080D5E10 */ MOVS R2, #1
+/* 080D5E12 */ MOVS R3, #2
+/* 080D5E14 */ BL func_080EF644
+/* 080D5E18 */ MOVS R0, #8
+/* 080D5E1A */ STRB R0, [R4, #0X18]
+/* 080D5E1C */ MOVS R2, #0
+/* 080D5E1E */ STRH R5, [R4, #0XE]
+/* 080D5E20 */ LDR R0, _080D5E68
+/* 080D5E22 */ LDR R0, [R0]
+/* 080D5E24 */ LDRH R1, [R0, #0X16]
+/* 080D5E26 */ LSLS R0, R1, #2
+/* 080D5E28 */ ADDS R0, R1
+/* 080D5E2A */ LSRS R0, R0, #6
+/* 080D5E2C */ MULS R0, R1, R0
+/* 080D5E2E */ ASRS R0, R0, #8
+/* 080D5E30 */ STRH R0, [R4, #0X12]
+/* 080D5E32 */ STRB R2, [R4, #0X1A]
+/* 080D5E34 */ LDR R0, _080D5E6C
+/* 080D5E36 */ BL func_0800C7FC
+/* 080D5E3A */ LDR R0, [R6]
+/* 080D5E3C */ MOVS R2, #0
+/* 080D5E3E */ LDRSH R1, [R4, R2]
+/* 080D5E40 */ LDR R2, _080D5E70
+/* 080D5E42 */ BL func_080EF2CC
+/* 080D5E46 */ LDR R0, [R6]
+/* 080D5E48 */ MOVS R2, #0
+/* 080D5E4A */ LDRSH R1, [R4, R2]
+/* 080D5E4C */ MOVS R2, #2
+/* 080D5E4E */ BL func_080EF4D8
+/* 080D5E52 */ ADD SP, #4
+/* 080D5E54 */ POP {R4, R5, R6}
+/* 080D5E56 */ POP {R0}
+/* 080D5E58 */ BX R0
+
+.balign 4, 0
+_080D5E5C:
+/* 080D5E5C */ .word D_03003850
+
+.balign 4, 0
+_080D5E60:
+/* 080D5E60 */ .word 0x00000406
+
+.balign 4, 0
+_080D5E64:
+/* 080D5E64 */ .word D_083A4A7C
+
+.balign 4, 0
+_080D5E68:
+/* 080D5E68 */ .word D_083A3D90
+
+.balign 4, 0
+_080D5E6C:
+/* 080D5E6C */ .word D_083FE04C
+
+.balign 4, 0
+_080D5E70:
+/* 080D5E70 */ .word 0x00004014
+.ltorg
+.end
