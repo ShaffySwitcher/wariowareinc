@@ -1,0 +1,50 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+glabel func_08001E58
+.thumb_func
+/* 08001E58 */ PUSH {R4, R5, LR}
+/* 08001E5A */ ADDS R5, R0, #0
+/* 08001E5C */ CMP R5, #0
+/* 08001E5E */ BEQ _08001E8C
+/* 08001E60 */ ADDS R0, R5, #0
+/* 08001E62 */ BL func_08001E54
+/* 08001E66 */ ADDS R4, R0, #0
+/* 08001E68 */ LSLS R4, R4, #0X10
+/* 08001E6A */ LSRS R4, R4, #0X10
+/* 08001E6C */ ADDS R0, R4, #0
+/* 08001E6E */ BL func_080F2E48
+/* 08001E72 */ LDR R2, _08001E90
+/* 08001E74 */ LDR R0, _08001E94
+/* 08001E76 */ LSLS R4, R4, #3
+/* 08001E78 */ ADDS R4, R4, R0
+/* 08001E7A */ LDRH R1, [R4, #4]
+/* 08001E7C */ LSLS R0, R1, #1
+/* 08001E7E */ ADDS R0, R0, R1
+/* 08001E80 */ LSLS R0, R0, #2
+/* 08001E82 */ ADDS R0, R0, R2
+/* 08001E84 */ LDR R1, [R0]
+/* 08001E86 */ LDR R0, [R1, #0XC]
+/* 08001E88 */ CMP R0, R5
+/* 08001E8A */ BEQ _08001E98
+_08001E8C:
+/* 08001E8C */ MOVS R0, #0
+/* 08001E8E */ B _08001E9A
+
+.balign 4, 0
+_08001E90:
+/* 08001E90 */ .word D_08406430
+
+.balign 4, 0
+_08001E94:
+/* 08001E94 */ .word D_08402990
+_08001E98:
+/* 08001E98 */ ADDS R0, R1, #0
+_08001E9A:
+/* 08001E9A */ POP {R4, R5}
+/* 08001E9C */ POP {R1}
+/* 08001E9E */ BX R1
+.ltorg
+.end
