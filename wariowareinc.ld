@@ -9,6 +9,8 @@ SECTIONS {
         build/asm/rom_header.s.o(.text*);
         build/asm/asm_080000c0.s.o(.text*);
         build/asm/asm_080000d0.s.o(.text*);
+        build/asm/asm_080001d4.s.o(.text*);
+        build/asm/asm_0800024c.s.o(.text*);
         build/bin/data.bin.o(.rodata*);
     }
 
