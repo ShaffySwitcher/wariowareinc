@@ -77,4 +77,11 @@ glabel label_080001b0
 /* 080001BC */ LDR R0, [R1, #0x0]
 /* 080001C0 */ BX R0
 
+.ltorg
+
+.thumb
+_080001d0:
+/* 080001D0 */ BX LR
+.short 0x0000
+
 .end

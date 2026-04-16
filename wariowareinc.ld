@@ -6,10 +6,10 @@ SECTIONS {
     . = 0x08000000;
     .cartrom . : SUBALIGN(4) {
         build/asm/rom_header.s.o(.text*);
-        build/asm/asm_080000c0.s.o(.text*);
-        build/asm/asm_080000d0.s.o(.text*);
+        build/asm/boot.s.o(.text*);
         build/src/main.c.o(.text);
         build/asm/asm_0800024c.s.o(.text*);
+        build/asm/asm_0800043c.s.o(.text*);
         build/asm/asm_0800048c.s.o(.text*);
         build/asm/asm_080004bc.s.o(.text*);
         build/asm/asm_080004dc.s.o(.text*);

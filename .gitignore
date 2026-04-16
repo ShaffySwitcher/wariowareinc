@@ -6,3 +6,4 @@ build/
 tools/agbcc/
 decomp.py
 *.bak
+ctx.c

@@ -15,3 +15,5 @@ typedef enum Boolean {
     FALSE,
     TRUE
 } boolean;
+
+#include "gba/gba.h"
