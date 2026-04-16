@@ -36,7 +36,7 @@ glabel func_08006A04
 /* 08006A3C */ MOVS R0, #0
 /* 08006A3E */ MOVS R2, #0X50
 /* 08006A40 */ MOVS R3, #0X20
-/* 08006A42 */ BL func_08001080
+/* 08006A42 */ BL dma3_fill
 /* 08006A46 */ ADD SP, #4
 /* 08006A48 */ POP {R4}
 /* 08006A4A */ POP {R0}

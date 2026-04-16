@@ -8,11 +8,7 @@ SECTIONS {
         build/asm/rom_header.s.o(.text*);
         build/asm/boot.s.o(.text*);
         build/src/main.c.o(.text);
-        build/asm/asm_0800024c.s.o(.text*);
-        build/asm/asm_0800043c.s.o(.text*);
-        build/asm/asm_0800048c.s.o(.text*);
-        build/asm/asm_080004bc.s.o(.text*);
-        build/asm/asm_080004dc.s.o(.text*);
+        build/src/memory.c.o(.text);
         build/asm/asm_080004f0.s.o(.text*);
         build/asm/asm_08000590.s.o(.text*);
         build/asm/asm_080005dc.s.o(.text*);

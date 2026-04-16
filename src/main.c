@@ -1,5 +1,7 @@
 #include "main.h"
 
+asm(".include \"include/gba.inc\"");
+
 void func_080001D4(void) {
     func_0800774C();
     func_08002620();
@@ -25,3 +27,8 @@ void func_080001D4(void) {
     func_08000F10();
     D_03006514 = 1;
 }
+
+// AgbMain
+#include "asm/main/asm_0800024c.s"
+
+#include "asm/main/asm_0800043c.s"

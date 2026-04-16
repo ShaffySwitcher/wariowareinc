@@ -60,7 +60,7 @@ glabel func_08006DB8
 /* 08006E20 */ LSLS R3, R3, #1
 /* 08006E22 */ STR R3, [SP]
 /* 08006E24 */ MOVS R3, #0X10
-/* 08006E26 */ BL func_08001080
+/* 08006E26 */ BL dma3_fill
 /* 08006E2A */ LDRB R1, [R7]
 /* 08006E2C */ MOVS R0, #3
 /* 08006E2E */ RSBS R0, R0, #0

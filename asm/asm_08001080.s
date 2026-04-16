@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08001080
+glabel dma3_fill
 .thumb_func
 /* 08001080 */ PUSH {R4, R5, R6, R7, LR}
 /* 08001082 */ MOV R7, SB

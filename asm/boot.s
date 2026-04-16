@@ -12,7 +12,7 @@ glabel entry_point
 /* 080000D8 */ LDR R1, =0x03007FFC
 /* 080000DC */ ADD R0, PC, 0x18
 /* 080000E0 */ STR R0, [R1]
-/* 080000E4 */ LDR R1, =func_0800024C
+/* 080000E4 */ LDR R1, =AgbMain
 /* 080000E8 */ MOV LR, PC
 /* 080000EC */ BX R1
 /* 080000F0 */ B entry_point

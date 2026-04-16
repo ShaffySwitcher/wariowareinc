@@ -18,7 +18,7 @@ glabel func_08006B90
 /* 08006BA4 */ STR R0, [SP]
 /* 08006BA6 */ ADDS R0, R3, #0
 /* 08006BA8 */ MOVS R3, #0X20
-/* 08006BAA */ BL func_08001080
+/* 08006BAA */ BL dma3_fill
 /* 08006BAE */ ADD SP, #4
 /* 08006BB0 */ POP {R0}
 /* 08006BB2 */ BX R0
