@@ -11,6 +11,11 @@ SECTIONS {
         build/asm/asm_080000d0.s.o(.text*);
         build/asm/asm_080001d4.s.o(.text*);
         build/asm/asm_0800024c.s.o(.text*);
+        build/asm/asm_080003a0.s.o(.text*);
+        build/asm/asm_0800048c.s.o(.text*);
+        build/asm/asm_080004bc.s.o(.text*);
+        build/asm/asm_080004dc.s.o(.text*);
+        build/asm/asm_080004f0.s.o(.text*);
         build/bin/data.bin.o(.rodata*);
     }
 
