@@ -1,0 +1,39 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0808190C
+/* 0808190C */ PUSH {R4, LR}
+/* 0808190E */ ADDS R4, R0, #0
+/* 08081910 */ LDR R0, [R4, #0X1C]
+/* 08081912 */ MOVS R1, #0XF
+/* 08081914 */ ANDS R1, R0
+/* 08081916 */ ADDS R0, #1
+/* 08081918 */ STR R0, [R4, #0X1C]
+/* 0808191A */ CMP R1, #0
+/* 0808191C */ BNE _0808193C
+/* 0808191E */ MOVS R0, #3
+/* 08081920 */ BL func_08001120
+/* 08081924 */ LSLS R0, R0, #0X10
+/* 08081926 */ LSRS R0, R0, #8
+/* 08081928 */ LDR R1, _08081944
+/* 0808192A */ ADDS R0, R1
+/* 0808192C */ STR R0, [R4, #0XC]
+/* 0808192E */ MOVS R0, #3
+/* 08081930 */ BL func_08001120
+/* 08081934 */ LSLS R0, R0, #0X10
+/* 08081936 */ LSRS R0, R0, #9
+/* 08081938 */ SUBS R0, #0X80
+/* 0808193A */ STR R0, [R4, #0X10]
+_0808193C:
+/* 0808193C */ POP {R4}
+/* 0808193E */ POP {R0}
+/* 08081940 */ BX R0
+
+.balign 4, 0
+_08081944:
+/* 08081944 */ .word 0xFFFFFF00
+.ltorg
+.end
