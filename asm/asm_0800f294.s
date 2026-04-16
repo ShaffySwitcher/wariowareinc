@@ -1,0 +1,51 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0800F294
+/* 0800F294 */ PUSH {LR}
+/* 0800F296 */ LDR R0, _0800F2D0
+/* 0800F298 */ LDR R2, [R0]
+/* 0800F29A */ LDR R1, _0800F2D4
+/* 0800F29C */ ADDS R0, R2, R1
+/* 0800F29E */ MOVS R1, #0
+/* 0800F2A0 */ LDRSH R3, [R0, R1]
+/* 0800F2A2 */ LDR R1, _0800F2D8
+/* 0800F2A4 */ ADDS R0, R2, R1
+/* 0800F2A6 */ ADDS R0, R3
+/* 0800F2A8 */ LDRB R0, [R0]
+/* 0800F2AA */ MOVS R1, #2
+/* 0800F2AC */ CMP R0, #0
+/* 0800F2AE */ BEQ _0800F2B2
+/* 0800F2B0 */ MOVS R1, #3
+_0800F2B2:
+/* 0800F2B2 */ LSLS R1, R1, #1
+/* 0800F2B4 */ MOVS R0, #0X1A
+/* 0800F2B6 */ MULS R0, R3, R0
+/* 0800F2B8 */ ADDS R1, R0
+/* 0800F2BA */ MOVS R3, #0XB8
+/* 0800F2BC */ LSLS R3, R3, #1
+/* 0800F2BE */ ADDS R0, R2, R3
+/* 0800F2C0 */ ADDS R0, R1
+/* 0800F2C2 */ MOVS R1, #0
+/* 0800F2C4 */ LDRSH R0, [R0, R1]
+/* 0800F2C6 */ MOVS R1, #0XA
+/* 0800F2C8 */ BL func_0800EA5C
+/* 0800F2CC */ POP {R0}
+/* 0800F2CE */ BX R0
+
+.balign 4, 0
+_0800F2D0:
+/* 0800F2D0 */ .word D_083A3D90
+
+.balign 4, 0
+_0800F2D4:
+/* 0800F2D4 */ .word 0x00000282
+
+.balign 4, 0
+_0800F2D8:
+/* 0800F2D8 */ .word 0x0000027E
+.ltorg
+.end

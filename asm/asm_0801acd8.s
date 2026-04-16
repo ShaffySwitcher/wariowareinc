@@ -1,0 +1,75 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0801ACD8
+/* 0801ACD8 */ PUSH {R4, LR}
+/* 0801ACDA */ SUB SP, #8
+/* 0801ACDC */ MOVS R0, #5
+/* 0801ACDE */ BL func_0801720C
+/* 0801ACE2 */ BL func_08006A04
+/* 0801ACE6 */ MOVS R0, #0
+/* 0801ACE8 */ BL func_08006B90
+/* 0801ACEC */ LDR R1, _0801AD58
+/* 0801ACEE */ MOVS R2, #0XC0
+/* 0801ACF0 */ LSLS R2, R2, #1
+/* 0801ACF2 */ MOVS R0, #0X80
+/* 0801ACF4 */ LSLS R0, R0, #1
+/* 0801ACF6 */ STR R0, [SP]
+/* 0801ACF8 */ MOVS R0, #0XA
+/* 0801ACFA */ STR R0, [SP, #4]
+/* 0801ACFC */ MOVS R0, #1
+/* 0801ACFE */ MOVS R3, #4
+/* 0801AD00 */ BL func_080042F4
+/* 0801AD04 */ LDR R4, =D_03003850
+/* 0801AD06 */ LDR R2, [R4]
+/* 0801AD08 */ ADDS R1, R2, #0
+/* 0801AD0A */ ADDS R1, #0XC0
+/* 0801AD0C */ STR R0, [R1]
+/* 0801AD0E */ LDRB R1, [R2, #0X18]
+/* 0801AD10 */ MOVS R0, #0X3D
+/* 0801AD12 */ RSBS R0, R0, #0
+/* 0801AD14 */ ANDS R0, R1
+/* 0801AD16 */ STRB R0, [R2, #0X18]
+/* 0801AD18 */ LDR R3, [R4]
+/* 0801AD1A */ LDRB R2, [R3, #0X19]
+/* 0801AD1C */ MOVS R1, #3
+/* 0801AD1E */ RSBS R1, R1, #0
+/* 0801AD20 */ ADDS R0, R1, #0
+/* 0801AD22 */ ANDS R0, R2
+/* 0801AD24 */ STRB R0, [R3, #0X19]
+/* 0801AD26 */ LDR R2, [R4]
+/* 0801AD28 */ LDRB R0, [R2, #0X18]
+/* 0801AD2A */ ANDS R1, R0
+/* 0801AD2C */ STRB R1, [R2, #0X18]
+/* 0801AD2E */ LDR R2, [R4]
+/* 0801AD30 */ LDRB R0, [R2, #0X18]
+/* 0801AD32 */ MOVS R1, #0X80
+/* 0801AD34 */ ORRS R0, R1
+/* 0801AD36 */ STRB R0, [R2, #0X18]
+/* 0801AD38 */ LDR R2, [R4]
+/* 0801AD3A */ LDRB R1, [R2, #0X19]
+/* 0801AD3C */ MOVS R0, #5
+/* 0801AD3E */ RSBS R0, R0, #0
+/* 0801AD40 */ ANDS R0, R1
+/* 0801AD42 */ STRB R0, [R2, #0X19]
+/* 0801AD44 */ MOVS R0, #0
+/* 0801AD46 */ BL func_0800A200
+/* 0801AD4A */ MOVS R0, #1
+/* 0801AD4C */ BL func_08009EE0
+/* 0801AD50 */ ADD SP, #8
+/* 0801AD52 */ POP {R4}
+/* 0801AD54 */ POP {R0}
+/* 0801AD56 */ BX R0
+
+.balign 4, 0
+_0801AD5C:
+/* 0801AD5C */ @ literal emitted by .ltorg for '=...' 
+
+.balign 4, 0
+_0801AD58:
+/* 0801AD58 */ .word D_083ADADC
+.ltorg
+.end

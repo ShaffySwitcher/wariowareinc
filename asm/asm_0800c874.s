@@ -1,0 +1,45 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0800C874
+/* 0800C874 */ PUSH {R4, LR}
+/* 0800C876 */ ADDS R4, R0, #0
+/* 0800C878 */ CMP R4, #0
+/* 0800C87A */ BEQ _0800C8AA
+/* 0800C87C */ MOVS R2, #0
+/* 0800C87E */ LDR R0, [R4]
+/* 0800C880 */ CMP R0, #0
+/* 0800C882 */ BEQ _0800C890
+/* 0800C884 */ ADDS R1, R4, #0
+_0800C886:
+/* 0800C886 */ ADDS R1, #4
+/* 0800C888 */ ADDS R2, #1
+/* 0800C88A */ LDR R0, [R1]
+/* 0800C88C */ CMP R0, #0
+/* 0800C88E */ BNE _0800C886
+_0800C890:
+/* 0800C890 */ CMP R2, #0
+/* 0800C892 */ BEQ _0800C8AA
+/* 0800C894 */ LSLS R0, R2, #0X10
+/* 0800C896 */ LSRS R0, R0, #0X10
+/* 0800C898 */ BL func_08001120
+/* 0800C89C */ LSLS R0, R0, #0X10
+/* 0800C89E */ LSRS R0, R0, #0XE
+/* 0800C8A0 */ ADDS R0, R0, R4
+/* 0800C8A2 */ LDR R0, [R0]
+/* 0800C8A4 */ BL func_08001E58
+/* 0800C8A8 */ B _0800C8AC
+_0800C8AA:
+/* 0800C8AA */ MOVS R0, #0
+_0800C8AC:
+/* 0800C8AC */ POP {R4}
+/* 0800C8AE */ POP {R1}
+/* 0800C8B0 */ BX R1
+
+/* 0800C8B2 */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end

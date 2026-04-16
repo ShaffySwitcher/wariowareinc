@@ -1,0 +1,46 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_0800C934
+/* 0800C934 */ PUSH {LR}
+/* 0800C936 */ ADDS R3, R0, #0
+/* 0800C938 */ LSLS R1, R1, #0X10
+/* 0800C93A */ LDR R0, _0800C96C
+/* 0800C93C */ ADDS R1, R1, R0
+/* 0800C93E */ ASRS R1, R1, #0X10
+/* 0800C940 */ LSLS R0, R1, #1
+/* 0800C942 */ ADDS R0, R0, R1
+/* 0800C944 */ LSLS R0, R0, #0XE
+/* 0800C946 */ LSRS R2, R0, #0X10
+/* 0800C948 */ ASRS R0, R0, #0X10
+/* 0800C94A */ MOVS R1, #0X80
+/* 0800C94C */ RSBS R1, R1, #0
+/* 0800C94E */ CMP R0, R1
+/* 0800C950 */ BGE _0800C954
+/* 0800C952 */ LDR R2, _0800C970
+_0800C954:
+/* 0800C954 */ LSLS R0, R2, #0X10
+/* 0800C956 */ ASRS R0, R0, #0X10
+/* 0800C958 */ CMP R0, #0X7F
+/* 0800C95A */ BLE _0800C95E
+/* 0800C95C */ MOVS R2, #0X7F
+_0800C95E:
+/* 0800C95E */ LSLS R1, R2, #0X18
+/* 0800C960 */ ASRS R1, R1, #0X18
+/* 0800C962 */ ADDS R0, R3, #0
+/* 0800C964 */ BL func_080020E0
+/* 0800C968 */ POP {R0}
+/* 0800C96A */ BX R0
+
+.balign 4, 0
+_0800C96C:
+/* 0800C96C */ .word 0xFF880000
+
+.balign 4, 0
+_0800C970:
+/* 0800C970 */ .word 0x0000FF80
+.ltorg
+.end
