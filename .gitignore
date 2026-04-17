@@ -7,3 +7,4 @@ tools/agbcc/
 decomp.py
 *.bak
 ctx.c
+wrapper.py
