@@ -140,7 +140,7 @@ $(OUTPUT).elf: $(OFILES) | $(BUILD)/$(LD_SCRIPT)
 	$(V)echo "Linking..."
 	$(V)$(LD) $(OFILES) tools/agbcc/lib/libgcc.a tools/agbcc/lib/libc.a \
 	    -T $(BUILD)/$(LD_SCRIPT) -T $(UNDEFINED_SYMS) \
-	    -Wl,--no-warn-rwx-segments,-Map $(@:.elf=.map) \
+	    -Wl,--no-warn-rwx-segments,-z,noexecstack,--no-warn-execstack,-Map $(@:.elf=.map) \
 	    -nostartfiles -o $@
 
 #---------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ $(OUTPUT).elf: $(OFILES) | $(BUILD)/$(LD_SCRIPT)
 
 $(BUILD)/%.bin.o $(BUILD)/%.bin.h: %.bin | $(BUILD_DIRS)
 	$(call print,Bin2s:,$<,$@)
-	$(V)bin2s -a 4 -H $(BUILD)/$<.h $< | $(AS) -o $(BUILD)/$<.o
+	$(V){ bin2s -a 4 -H $(BUILD)/$<.h $<; printf '\n'; } | $(AS) -o $(BUILD)/$<.o
 
 #---------------------------------------------------------------------------------
 # C files (agbcc pipeline: cpp -> agbcc -> as)
@@ -161,6 +161,7 @@ define build_c_file
 	$(V)$(CPP) -MMD -MF $(BUILD)/$*.d -MT $@ $(CPPFLAGS) $< -o $(BUILD)/$*.i
 	$(V)$(CC1) $(CFLAGS) $(BUILD)/$*.i -o $(BUILD)/$*.s
 	$(V)printf ".text\n\t.align\t2, 0\n" >> $(BUILD)/$*.s
+	$(V)printf ".section .note.GNU-stack,\"\",%%progbits\n" >> $(BUILD)/$*.s
 	$(V)$(AS) -march=armv4t -o $@ $(BUILD)/$*.s
 endef
 

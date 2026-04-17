@@ -54,4 +54,4 @@ _08000488: \n\
 /* 08000488 */ @ literal emitted by .ltorg for '=...'  \n\
 .ltorg \n\
  \n\
-.end");
+");

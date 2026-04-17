@@ -1,0 +1,49 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080F4288
+/* 080F4288 */ PUSH {R4, R5, LR}
+/* 080F428A */ ADDS R5, R1, #0
+/* 080F428C */ ADDS R4, R0, #0
+/* 080F428E */ LDR R3, _080F42A8
+/* 080F4290 */ LDR R2, _080F42A4
+/* 080F4292 */ BL func_080F5484
+/* 080F4296 */ CMP R0, #0
+/* 080F4298 */ BGE _080F42AC
+/* 080F429A */ ADDS R1, R5, #0
+/* 080F429C */ ADDS R0, R4, #0
+/* 080F429E */ BL func_080F55E4
+/* 080F42A2 */ B _080F42C2
+
+.balign 4, 0
+_080F42A4:
+/* 080F42A4 */ .word 0x41E00000
+
+.balign 4, 0
+_080F42A8:
+/* 080F42A8 */ .word 0x00000000
+_080F42AC:
+/* 080F42AC */ LDR R3, _080F42C8
+/* 080F42AE */ LDR R2, _080F42C4
+/* 080F42B0 */ ADDS R1, R5, #0
+/* 080F42B2 */ ADDS R0, R4, #0
+/* 080F42B4 */ BL func_080F4DDC
+/* 080F42B8 */ BL func_080F55E4
+/* 080F42BC */ MOVS R1, #0X80
+/* 080F42BE */ LSLS R1, R1, #0X18
+/* 080F42C0 */ ADDS R0, R1
+_080F42C2:
+/* 080F42C2 */ POP {R4, R5, PC}
+
+.balign 4, 0
+_080F42C4:
+/* 080F42C4 */ .word 0xC1E00000
+
+.balign 4, 0
+_080F42C8:
+/* 080F42C8 */ .word 0x00000000
+.ltorg
+.end

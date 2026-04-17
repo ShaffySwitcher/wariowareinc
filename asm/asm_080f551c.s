@@ -1,0 +1,51 @@
+.section .text
+.thumb
+.syntax unified
+.include "include/gba.inc"
+
+.thumb_func
+glabel func_080F551C
+/* 080F551C */ PUSH {R4, LR}
+/* 080F551E */ SUB SP, #0X38
+/* 080F5520 */ STR R0, [SP, #0X28]
+/* 080F5522 */ STR R1, [SP, #0X2C]
+/* 080F5524 */ STR R2, [SP, #0X30]
+/* 080F5526 */ STR R3, [SP, #0X34]
+/* 080F5528 */ ADD R0, SP, #0X28
+/* 080F552A */ MOV R1, SP
+/* 080F552C */ BL func_080F4A98
+/* 080F5530 */ ADD R0, SP, #0X30
+/* 080F5532 */ ADD R4, SP, #0X14
+/* 080F5534 */ ADDS R1, R4, #0
+/* 080F5536 */ BL func_080F4A98
+/* 080F553A */ MOVS R1, #0
+/* 080F553C */ LDR R0, [SP]
+/* 080F553E */ CMP R0, #1
+/* 080F5540 */ BHI _080F5544
+/* 080F5542 */ MOVS R1, #1
+_080F5544:
+/* 080F5544 */ CMP R1, #0
+/* 080F5546 */ BNE _080F5556
+/* 080F5548 */ MOVS R1, #0
+/* 080F554A */ LDR R0, [SP, #0X14]
+/* 080F554C */ CMP R0, #1
+/* 080F554E */ BHI _080F5552
+/* 080F5550 */ MOVS R1, #1
+_080F5552:
+/* 080F5552 */ CMP R1, #0
+/* 080F5554 */ BEQ _080F555A
+_080F5556:
+/* 080F5556 */ MOVS R0, #1
+/* 080F5558 */ B _080F5562
+_080F555A:
+/* 080F555A */ MOV R0, SP
+/* 080F555C */ ADDS R1, R4, #0
+/* 080F555E */ BL func_080F5274
+_080F5562:
+/* 080F5562 */ ADD SP, #0X38
+/* 080F5564 */ POP {R4, PC}
+
+/* 080F5566 */ .short 0x0000
+.balign 4, 0
+.ltorg
+.end
