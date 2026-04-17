@@ -2,16 +2,21 @@
 
 extern u32* D_03003860;
 
-extern struct SaveBuffer {
-    u32 unk0;
-    u32 unk4;
-    u32 unk8;
-    u32 unkC;
-    u8 padding[0x10];
-    u8 unk20;
-} *D_03003BBC;
+struct SaveBuffer {
+    u32 unk0;           // 0x00
+    u32 unk4;           // 0x04
+    u32 unk8;           // 0x08   
+    u32 unkC;           // 0x0C
+    u8 padding[0x10];   // 0x10 - 0x1F
+    u8 flags1[28][8];   // 0x20 - 0xFF
+    u8 flags2[0x100];  // 0x100 - 0x1FF
+    u16 values[0x100];  // 0x200 - 0x3FF
+    u32 unlocked;       // 0x400
+};
 
+extern struct SaveBuffer* D_03003BBC[];
 extern struct SaveBuffer* D_083A3D94;
+extern u8* D_083A3DA4;
 
 void func_0800048C(u8 arg0);
 u32 func_080004BC(const void *data, u32 size);

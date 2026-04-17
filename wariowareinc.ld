@@ -4,7 +4,7 @@ SECTIONS {
     _start = . ;
 
     . = 0x08000000;
-    .cartrom . : SUBALIGN(4) {
+    .cartrom . : SUBALIGN(2) {
         build/asm/rom_header.s.o(.text*);
         build/asm/boot.s.o(.text*);
         build/src/main.c.o(.text);
@@ -5583,6 +5583,8 @@ SECTIONS {
         build/asm/asm_080efa60.s.o(.text*);
         build/asm/asm_080efc20.s.o(.text*);
         build/asm/asm_080efc50.s.o(.text*);
+        build/asm/asm_080efc88.s.o(.text*);
+        build/bin/data_080EFDAC.bin.o(.rodata*);
         build/bin/data.bin.o(.rodata*);
     }
 

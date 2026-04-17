@@ -22,11 +22,35 @@ u32 func_080004BC(const void *data, u32 size) {
 
 // Load default save-file(?)
 void func_080004DC(void) {
-    D_03003BBC = D_083A3D94;
+    D_03003BBC[0] = D_083A3D94;
 }
 
-// Initialize save file with default data
-#include "asm/memory/asm_080004f0.s"
+// void init_save_slot();
+void func_080004F0(void)
+{
+    u8 state;
+    struct SaveBuffer* save = *D_03003BBC;
+    
+    dma3_fill(0, save, 0x404, 0x20, 0x100);
+    func_080F60B0(save, &D_083A3DA4);
+    
+    save->unk4 = 0x404;
+    save->unk8 = 0;
+    save->unkC = 0x311F0000;
+    
+    state = save->flags1[0][0];
+    save->flags1[0][0] = state | 2;
+    
+    func_080089D8(0x0F, 0x0000C350);
+    func_080089D8(0x10, 0x00002710);
+    func_080089D8(0x11, 0x00000064);
+    func_080089D8(0x12, 0x00002710);
+    func_080089D8(0x13, 0x00002710);
+    func_080089D8(0x14, 0x00000032);
+    func_080089D8(0x15, 0x0000001E);
+    func_080089D8(0x16, 0x00000028);
+    func_080109B4();
+}
 
 #include "asm/memory/asm_08000590.s"
 
@@ -65,3 +89,4 @@ void func_080004DC(void) {
 #include "asm/memory/asm_0800079c.s"
 
 #include "asm/memory/asm_080007c0.s"
+
