@@ -282,7 +282,7 @@ _080B4DE4:
 
 .balign 4, 0
 _080B4DE8:
-/* 080B4DE8 */ .word 0x00000000
+/* 080B4DE8 */ .word BIOSROMBase
 
 .balign 4, 0
 _080B4DEC:
@@ -290,7 +290,7 @@ _080B4DEC:
 
 .balign 4, 0
 _080B4DF0:
-/* 080B4DF0 */ .word 0x00000000
+/* 080B4DF0 */ .word BIOSROMBase
 
 .balign 4, 0
 _080B4DF4:

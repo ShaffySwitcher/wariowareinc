@@ -157,7 +157,7 @@ _080E8C08:
 
 .balign 4, 0
 _080E8C0C:
-/* 080E8C0C */ .word 0x00000000
+/* 080E8C0C */ .word BIOSROMBase
 
 .balign 4, 0
 _080E8C10:
@@ -769,7 +769,7 @@ _080E9084:
 
 .balign 4, 0
 _080E9088:
-/* 080E9088 */ .word 0x00000000
+/* 080E9088 */ .word BIOSROMBase
 
 .balign 4, 0
 _080E908C:
@@ -781,7 +781,7 @@ _080E9090:
 
 .balign 4, 0
 _080E9094:
-/* 080E9094 */ .word 0x00000000
+/* 080E9094 */ .word BIOSROMBase
 
 .balign 4, 0
 _080E9098:

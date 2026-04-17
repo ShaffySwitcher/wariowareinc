@@ -148,86 +148,86 @@ glabel func_0801DCEC
 
 .balign 4, 0
 _0801DE04:
-/* 0801DE04 */ .word 0x06008000
+/* 0801DE04 */ .word VRAMBase + 0x8000
 
 .balign 4, 0
 _0801DE08:
-/* 0801DE08 */ .word 0x06008080
+/* 0801DE08 */ .word VRAMBase + 0x8080
 
 .balign 4, 0
 _0801DE0C:
-/* 0801DE0C */ .word 0x060080A0
+/* 0801DE0C */ .word VRAMBase + 0x80A0
 
 .balign 4, 0
 _0801DE10:
-/* 0801DE10 */ .word 0x060080C0
+/* 0801DE10 */ .word VRAMBase + 0x80C0
 
 .balign 4, 0
 _0801DE14:
-/* 0801DE14 */ .word 0x060080E0
+/* 0801DE14 */ .word VRAMBase + 0x80E0
 
 .balign 4, 0
 _0801DE18:
-/* 0801DE18 */ .word 0x06008100
+/* 0801DE18 */ .word VRAMBase + 0x8100
 
 .balign 4, 0
 _0801DE1C:
-/* 0801DE1C */ .word 0x06008120
+/* 0801DE1C */ .word VRAMBase + 0x8120
 
 .balign 4, 0
 _0801DE20:
-/* 0801DE20 */ .word 0x06008140
+/* 0801DE20 */ .word VRAMBase + 0x8140
 
 .balign 4, 0
 _0801DE24:
-/* 0801DE24 */ .word 0x06008160
+/* 0801DE24 */ .word VRAMBase + 0x8160
 
 .balign 4, 0
 _0801DE28:
-/* 0801DE28 */ .word 0x06008180
+/* 0801DE28 */ .word VRAMBase + 0x8180
 
 .balign 4, 0
 _0801DE2C:
-/* 0801DE2C */ .word 0x060081A0
+/* 0801DE2C */ .word VRAMBase + 0x81A0
 
 .balign 4, 0
 _0801DE30:
-/* 0801DE30 */ .word 0x060081C0
+/* 0801DE30 */ .word VRAMBase + 0x81C0
 
 .balign 4, 0
 _0801DE34:
-/* 0801DE34 */ .word 0x060081E0
+/* 0801DE34 */ .word VRAMBase + 0x81E0
 
 .balign 4, 0
 _0801DE38:
-/* 0801DE38 */ .word 0x06008200
+/* 0801DE38 */ .word VRAMBase + 0x8200
 
 .balign 4, 0
 _0801DE3C:
-/* 0801DE3C */ .word 0x06008220
+/* 0801DE3C */ .word VRAMBase + 0x8220
 
 .balign 4, 0
 _0801DE40:
-/* 0801DE40 */ .word 0x06008240
+/* 0801DE40 */ .word VRAMBase + 0x8240
 
 .balign 4, 0
 _0801DE44:
-/* 0801DE44 */ .word 0x06008260
+/* 0801DE44 */ .word VRAMBase + 0x8260
 
 .balign 4, 0
 _0801DE48:
-/* 0801DE48 */ .word 0x060082C0
+/* 0801DE48 */ .word VRAMBase + 0x82C0
 
 .balign 4, 0
 _0801DE4C:
-/* 0801DE4C */ .word 0x060082E0
+/* 0801DE4C */ .word VRAMBase + 0x82E0
 
 .balign 4, 0
 _0801DE50:
-/* 0801DE50 */ .word 0x06008300
+/* 0801DE50 */ .word VRAMBase + 0x8300
 
 .balign 4, 0
 _0801DE54:
-/* 0801DE54 */ .word 0x06008320
+/* 0801DE54 */ .word VRAMBase + 0x8320
 .ltorg
 .end

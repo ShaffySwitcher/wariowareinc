@@ -90,7 +90,7 @@ _080911CC:
 
 .balign 4, 0
 _080911D0:
-/* 080911D0 */ .word 0x00000000
+/* 080911D0 */ .word BIOSROMBase
 
 .balign 4, 0
 _080911D4:

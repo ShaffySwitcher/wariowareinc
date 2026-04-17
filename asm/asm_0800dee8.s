@@ -500,7 +500,7 @@ _0800E2F8:
 
 .balign 4, 0
 _0800E2FC:
-/* 0800E2FC */ .word 0x04000018
+/* 0800E2FC */ .word IORAMBase + 0x18
 
 .balign 4, 0
 _0800E300:

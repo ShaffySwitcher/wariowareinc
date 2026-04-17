@@ -190,7 +190,7 @@ _080E87EC:
 
 .balign 4, 0
 _080E87F0:
-/* 080E87F0 */ .word 0x00000000
+/* 080E87F0 */ .word BIOSROMBase
 
 .balign 4, 0
 _080E87F4:

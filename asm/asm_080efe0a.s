@@ -28,5 +28,5 @@ _080EFE28:
 /* 080EFE28 */ .word D_080EFDE0
 
 _080EFE2C:
-/* 080EFE2C */ .word 0x080EFE30
+/* 080EFE2C */ .word D_080EFE30
 .end

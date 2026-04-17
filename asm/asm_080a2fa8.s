@@ -205,7 +205,7 @@ _080A3138:
 
 .balign 4, 0
 _080A313C:
-/* 080A313C */ .word 0x00000000
+/* 080A313C */ .word BIOSROMBase
 
 .balign 4, 0
 _080A3140:
@@ -213,7 +213,7 @@ _080A3140:
 
 .balign 4, 0
 _080A3144:
-/* 080A3144 */ .word 0x00000000
+/* 080A3144 */ .word BIOSROMBase
 
 .balign 4, 0
 _080A3148:

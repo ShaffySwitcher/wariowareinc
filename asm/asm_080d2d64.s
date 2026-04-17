@@ -71,6 +71,6 @@ _080D2DD4:
 
 .balign 4, 0
 _080D2DD8:
-/* 080D2DD8 */ .word 0x080D2D65
+/* 080D2DD8 */ .word func_080D2D64 + 1
 .ltorg
 .end

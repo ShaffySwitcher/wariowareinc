@@ -17,6 +17,6 @@ glabel func_080CAAEC
 
 .balign 4, 0
 _080CAB04:
-/* 080CAB04 */ .word 0x04000100
+/* 080CAB04 */ .word IORAMBase + 0x100
 .ltorg
 .end

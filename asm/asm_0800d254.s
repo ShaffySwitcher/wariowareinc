@@ -106,6 +106,6 @@ _0800D318:
 
 .balign 4, 0
 _0800D31C:
-/* 0800D31C */ .word 0x04000020
+/* 0800D31C */ .word IORAMBase + 0x20
 .ltorg
 .end

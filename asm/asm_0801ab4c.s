@@ -46,7 +46,7 @@ _0801AB98:
 
 .balign 4, 0
 _0801AB9C:
-/* 0801AB9C */ .word 0x06008000
+/* 0801AB9C */ .word VRAMBase + 0x8000
 
 .balign 4, 0
 _0801ABA0:
@@ -58,7 +58,7 @@ _0801ABA4:
 
 .balign 4, 0
 _0801ABA8:
-/* 0801ABA8 */ .word 0x0600B0C0
+/* 0801ABA8 */ .word VRAMBase + 0xB0C0
 
 .balign 4, 0
 _0801ABAC:

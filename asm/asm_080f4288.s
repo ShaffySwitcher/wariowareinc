@@ -24,7 +24,7 @@ _080F42A4:
 
 .balign 4, 0
 _080F42A8:
-/* 080F42A8 */ .word 0x00000000
+/* 080F42A8 */ .word BIOSROMBase
 _080F42AC:
 /* 080F42AC */ LDR R3, _080F42C8
 /* 080F42AE */ LDR R2, _080F42C4
@@ -44,6 +44,6 @@ _080F42C4:
 
 .balign 4, 0
 _080F42C8:
-/* 080F42C8 */ .word 0x00000000
+/* 080F42C8 */ .word BIOSROMBase
 .ltorg
 .end

@@ -92,7 +92,7 @@ _080F29A0:
 
 .balign 4, 0
 _080F29A4:
-/* 080F29A4 */ .word 0x04000084
+/* 080F29A4 */ .word REG_SOUNDCNT_X
 
 .balign 4, 0
 _080F29A8:
@@ -244,7 +244,7 @@ _080F2AA8:
 
 .balign 4, 0
 _080F2AAC:
-/* 080F2AAC */ .word 0x04000060
+/* 080F2AAC */ .word IORAMBase + 0x60
 _080F2AB0:
 /* 080F2AB0 */ LDR R0, [R6, #0X20]
 /* 080F2AB2 */ LSLS R0, R0, #0XF
@@ -331,7 +331,7 @@ _080F2B48:
 
 .balign 4, 0
 _080F2B4C:
-/* 080F2B4C */ .word 0x04000080
+/* 080F2B4C */ .word IORAMBase + 0x80
 
 .balign 4, 0
 _080F2B50:
@@ -343,11 +343,11 @@ _080F2B54:
 
 .balign 4, 0
 _080F2B58:
-/* 080F2B58 */ .word 0x04000090
+/* 080F2B58 */ .word IORAMBase + 0x90
 
 .balign 4, 0
 _080F2B5C:
-/* 080F2B5C */ .word 0x04000070
+/* 080F2B5C */ .word IORAMBase + 0x70
 
 .balign 4, 0
 _080F2B60:

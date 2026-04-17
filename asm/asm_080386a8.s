@@ -24,7 +24,7 @@ glabel func_080386A8
 
 .balign 4, 0
 _080386D0:
-/* 080386D0 */ .word 0x04000100
+/* 080386D0 */ .word IORAMBase + 0x100
 _080386D4:
 /* 080386D4 */ MOVS R0, #1
 _080386D6:

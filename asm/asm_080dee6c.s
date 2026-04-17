@@ -88,7 +88,7 @@ _080DEE7A:
 
 .balign 4, 0
 _080DEF14:
-/* 080DEF14 */ .word 0x04000100
+/* 080DEF14 */ .word IORAMBase + 0x100
 
 .balign 4, 0
 _080DEF18:

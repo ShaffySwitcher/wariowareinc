@@ -37,6 +37,6 @@ _080BCE24:
 
 .balign 4, 0
 _080BCE28:
-/* 080BCE28 */ .word 0x06002000
+/* 080BCE28 */ .word VRAMBase + 0x2000
 .ltorg
 .end

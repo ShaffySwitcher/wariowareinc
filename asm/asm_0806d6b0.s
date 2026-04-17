@@ -61,7 +61,7 @@ _0806D71C:
 
 .balign 4, 0
 _0806D720:
-/* 0806D720 */ .word 0x00000000
+/* 0806D720 */ .word BIOSROMBase
 
 .balign 4, 0
 _0806D724:
@@ -69,7 +69,7 @@ _0806D724:
 
 .balign 4, 0
 _0806D728:
-/* 0806D728 */ .word 0x00000000
+/* 0806D728 */ .word BIOSROMBase
 
 .balign 4, 0
 _0806D72C:

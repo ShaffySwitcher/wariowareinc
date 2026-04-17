@@ -9,7 +9,7 @@ glabel entry_point
 /* 080000CC */ MOV R0, #0x1F
 /* 080000D0 */ MSR CPSR_all, R0
 /* 080000D4 */ LDR SP, _080000F4
-/* 080000D8 */ LDR R1, =0x03007FFC
+/* 080000D8 */ LDR R1, =REG_INTERRUPT
 /* 080000DC */ ADD R0, PC, 0x18
 /* 080000E0 */ STR R0, [R1]
 /* 080000E4 */ LDR R1, =AgbMain
@@ -18,9 +18,9 @@ glabel entry_point
 /* 080000F0 */ B entry_point
 
 _080000F4:
-/* 080000F4 */ .word 0x03007F00
+/* 080000F4 */ .word D_03007F00
 _080000F8:
-/* 080000F8 */ .word 0x03007FA0
+/* 080000F8 */ .word D_03007FA0
 
 glabel interrupt_handler_rom
 /* 080000FC */ MOV R3, #0x4000000
@@ -72,7 +72,7 @@ glabel label_08000110
 
 glabel label_080001b0
 /* 080001B0 */ STRH R0, [R3, #0x2]
-/* 080001B4 */ LDR R1, =0x030035F0
+/* 080001B4 */ LDR R1, =D_030035F0
 /* 080001B8 */ ADD R1, R1, R2
 /* 080001BC */ LDR R0, [R1, #0x0]
 /* 080001C0 */ BX R0

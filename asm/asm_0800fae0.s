@@ -32,6 +32,6 @@ _0800FB0C:
 
 .balign 4, 0
 _0800FB10:
-/* 0800FB10 */ .word 0x0600D800
+/* 0800FB10 */ .word VRAMBase + 0xD800
 .ltorg
 .end

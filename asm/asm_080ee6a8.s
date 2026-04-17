@@ -37,7 +37,7 @@ _080EE6D8:
 
 .balign 4, 0
 _080EE6E0:
-/* 080EE6E0 */ .word 0x04000204
+/* 080EE6E0 */ .word IORAMBase + 0x204
 
 .balign 4, 0
 _080EE6E4:

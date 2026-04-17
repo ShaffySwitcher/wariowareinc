@@ -70,7 +70,7 @@ _080C7434:
 
 .balign 4, 0
 _080C7438:
-/* 080C7438 */ .word 0x00000000
+/* 080C7438 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C743C:
@@ -78,7 +78,7 @@ _080C743C:
 
 .balign 4, 0
 _080C7440:
-/* 080C7440 */ .word 0x00000000
+/* 080C7440 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C7444:
@@ -133,7 +133,7 @@ _080C74A8:
 
 .balign 4, 0
 _080C74AC:
-/* 080C74AC */ .word 0x00000000
+/* 080C74AC */ .word BIOSROMBase
 
 .balign 4, 0
 _080C74B0:
@@ -141,7 +141,7 @@ _080C74B0:
 
 .balign 4, 0
 _080C74B4:
-/* 080C74B4 */ .word 0x00000000
+/* 080C74B4 */ .word BIOSROMBase
 _080C74B8:
 /* 080C74B8 */ LDR R0, _080C7528
 /* 080C74BA */ LDR R4, [R0]
@@ -212,6 +212,6 @@ _080C7534:
 
 .balign 4, 0
 _080C7538:
-/* 080C7538 */ .word 0x00000000
+/* 080C7538 */ .word BIOSROMBase
 .ltorg
 .end

@@ -127,7 +127,7 @@ _080F4B64:
 
 .balign 4, 0
 _080F4B68:
-/* 080F4B68 */ .word 0x00000000
+/* 080F4B68 */ .word BIOSROMBase
 
 .balign 4, 0
 _080F4B6C:

@@ -300,7 +300,7 @@ _080C73A4:
 
 .balign 4, 0
 _080C73A8:
-/* 080C73A8 */ .word 0x00000000
+/* 080C73A8 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C73AC:

@@ -324,7 +324,7 @@ _080DE56C:
 
 .balign 4, 0
 _080DE570:
-/* 080DE570 */ .word 0x04000100
+/* 080DE570 */ .word IORAMBase + 0x100
 
 .balign 4, 0
 _080DE574:

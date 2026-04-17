@@ -37,10 +37,10 @@ _08003F44:
 
 .balign 4, 0
 _08003F48:
-/* 08003F48 */ .word 0x040000D4
+/* 08003F48 */ .word REG_DMA3SAD
 
 .balign 4, 0
 _08003F4C:
-/* 08003F4C */ .word 0x040000DC
+/* 08003F4C */ .word IORAMBase + 0xDC
 .ltorg
 .end

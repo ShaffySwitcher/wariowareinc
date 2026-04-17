@@ -38,7 +38,7 @@ _080C2CD0:
 
 .balign 4, 0
 _080C2CDC:
-/* 080C2CDC */ .word 0x04000100
+/* 080C2CDC */ .word IORAMBase + 0x100
 
 .balign 4, 0
 _080C2CE0:

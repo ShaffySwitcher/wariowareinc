@@ -193,7 +193,7 @@ _080DBB84:
 
 .balign 4, 0
 _080DBB88:
-/* 080DBB88 */ .word 0x00000000
+/* 080DBB88 */ .word BIOSROMBase
 
 .balign 4, 0
 _080DBB8C:

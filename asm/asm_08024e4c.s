@@ -42,10 +42,10 @@ _08024E8C:
 
 .balign 4, 0
 _08024E90:
-/* 08024E90 */ .word 0x06008000
+/* 08024E90 */ .word VRAMBase + 0x8000
 
 .balign 4, 0
 _08024E94:
-/* 08024E94 */ .word 0x0600E000
+/* 08024E94 */ .word VRAMBase + 0xE000
 .ltorg
 .end

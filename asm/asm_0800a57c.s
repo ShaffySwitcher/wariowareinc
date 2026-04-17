@@ -26,181 +26,181 @@ _0800A598:
 
 .balign 4, 0
 D_0800A59C:
-/* 0800A59C */ .word 0x0800A688
+/* 0800A59C */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5A0 */ .word 0x0800A688
+/* 0800A5A0 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5A4 */ .word 0x0800A688
+/* 0800A5A4 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5A8 */ .word 0x0800A688
+/* 0800A5A8 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5AC */ .word 0x0800A688
+/* 0800A5AC */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5B0 */ .word 0x0800A688
+/* 0800A5B0 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5B4 */ .word 0x0800A584
+/* 0800A5B4 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5B8 */ .word 0x0800A68C
+/* 0800A5B8 */ .word _0800A68C
 
 .balign 4, 0
-/* 0800A5BC */ .word 0x0800A584
+/* 0800A5BC */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5C0 */ .word 0x0800A584
+/* 0800A5C0 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5C4 */ .word 0x0800A584
+/* 0800A5C4 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5C8 */ .word 0x0800A584
+/* 0800A5C8 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5CC */ .word 0x0800A688
+/* 0800A5CC */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5D0 */ .word 0x0800A688
+/* 0800A5D0 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A5D4 */ .word 0x0800A584
+/* 0800A5D4 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5D8 */ .word 0x0800A584
+/* 0800A5D8 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5DC */ .word 0x0800A584
+/* 0800A5DC */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5E0 */ .word 0x0800A584
+/* 0800A5E0 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5E4 */ .word 0x0800A584
+/* 0800A5E4 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5E8 */ .word 0x0800A584
+/* 0800A5E8 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5EC */ .word 0x0800A584
+/* 0800A5EC */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5F0 */ .word 0x0800A584
+/* 0800A5F0 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5F4 */ .word 0x0800A584
+/* 0800A5F4 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5F8 */ .word 0x0800A584
+/* 0800A5F8 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A5FC */ .word 0x0800A688
+/* 0800A5FC */ .word _0800A688
 
 .balign 4, 0
-/* 0800A600 */ .word 0x0800A584
+/* 0800A600 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A604 */ .word 0x0800A584
+/* 0800A604 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A608 */ .word 0x0800A584
+/* 0800A608 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A60C */ .word 0x0800A584
+/* 0800A60C */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A610 */ .word 0x0800A584
+/* 0800A610 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A614 */ .word 0x0800A584
+/* 0800A614 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A618 */ .word 0x0800A584
+/* 0800A618 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A61C */ .word 0x0800A584
+/* 0800A61C */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A620 */ .word 0x0800A584
+/* 0800A620 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A624 */ .word 0x0800A584
+/* 0800A624 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A628 */ .word 0x0800A584
+/* 0800A628 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A62C */ .word 0x0800A688
+/* 0800A62C */ .word _0800A688
 
 .balign 4, 0
-/* 0800A630 */ .word 0x0800A688
+/* 0800A630 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A634 */ .word 0x0800A584
+/* 0800A634 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A638 */ .word 0x0800A584
+/* 0800A638 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A63C */ .word 0x0800A584
+/* 0800A63C */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A640 */ .word 0x0800A584
+/* 0800A640 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A644 */ .word 0x0800A584
+/* 0800A644 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A648 */ .word 0x0800A688
+/* 0800A648 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A64C */ .word 0x0800A584
+/* 0800A64C */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A650 */ .word 0x0800A688
+/* 0800A650 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A654 */ .word 0x0800A584
+/* 0800A654 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A658 */ .word 0x0800A584
+/* 0800A658 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A65C */ .word 0x0800A584
+/* 0800A65C */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A660 */ .word 0x0800A584
+/* 0800A660 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A664 */ .word 0x0800A584
+/* 0800A664 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A668 */ .word 0x0800A584
+/* 0800A668 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A66C */ .word 0x0800A584
+/* 0800A66C */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A670 */ .word 0x0800A584
+/* 0800A670 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A674 */ .word 0x0800A584
+/* 0800A674 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A678 */ .word 0x0800A584
+/* 0800A678 */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A67C */ .word 0x0800A584
+/* 0800A67C */ .word D_0800A584
 
 .balign 4, 0
-/* 0800A680 */ .word 0x0800A688
+/* 0800A680 */ .word _0800A688
 
 .balign 4, 0
-/* 0800A684 */ .word 0x0800A688
+/* 0800A684 */ .word _0800A688
 _0800A688:
 /* 0800A688 */ ADDS R2, #1
 /* 0800A68A */ B _0800A584

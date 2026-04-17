@@ -418,7 +418,7 @@ _0801A4F0:
 
 .balign 4, 0
 _0801A4F4:
-/* 0801A4F4 */ .word 0x0600E500
+/* 0801A4F4 */ .word VRAMBase + 0xE500
 
 .balign 4, 0
 _0801A4F8:

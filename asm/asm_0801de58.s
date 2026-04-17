@@ -186,7 +186,7 @@ glabel func_0801DE58
 
 .balign 4, 0
 _0801DFBC:
-/* 0801DFBC */ .word 0x06008000
+/* 0801DFBC */ .word VRAMBase + 0x8000
 
 .balign 4, 0
 _0801DFC0:
@@ -194,98 +194,98 @@ _0801DFC0:
 
 .balign 4, 0
 _0801DFC4:
-/* 0801DFC4 */ .word 0x06008080
+/* 0801DFC4 */ .word VRAMBase + 0x8080
 
 .balign 4, 0
 _0801DFC8:
-/* 0801DFC8 */ .word 0x060080A0
+/* 0801DFC8 */ .word VRAMBase + 0x80A0
 
 .balign 4, 0
 _0801DFCC:
-/* 0801DFCC */ .word 0x060080E0
+/* 0801DFCC */ .word VRAMBase + 0x80E0
 
 .balign 4, 0
 _0801DFD0:
-/* 0801DFD0 */ .word 0x06008120
+/* 0801DFD0 */ .word VRAMBase + 0x8120
 
 .balign 4, 0
 _0801DFD4:
-/* 0801DFD4 */ .word 0x06008140
+/* 0801DFD4 */ .word VRAMBase + 0x8140
 
 .balign 4, 0
 _0801DFD8:
-/* 0801DFD8 */ .word 0x06008160
+/* 0801DFD8 */ .word VRAMBase + 0x8160
 
 .balign 4, 0
 _0801DFDC:
-/* 0801DFDC */ .word 0x06008180
+/* 0801DFDC */ .word VRAMBase + 0x8180
 
 .balign 4, 0
 _0801DFE0:
-/* 0801DFE0 */ .word 0x060081A0
+/* 0801DFE0 */ .word VRAMBase + 0x81A0
 
 .balign 4, 0
 _0801DFE4:
-/* 0801DFE4 */ .word 0x060081C0
+/* 0801DFE4 */ .word VRAMBase + 0x81C0
 
 .balign 4, 0
 _0801DFE8:
-/* 0801DFE8 */ .word 0x060081E0
+/* 0801DFE8 */ .word VRAMBase + 0x81E0
 
 .balign 4, 0
 _0801DFEC:
-/* 0801DFEC */ .word 0x06008200
+/* 0801DFEC */ .word VRAMBase + 0x8200
 
 .balign 4, 0
 _0801DFF0:
-/* 0801DFF0 */ .word 0x06008220
+/* 0801DFF0 */ .word VRAMBase + 0x8220
 
 .balign 4, 0
 _0801DFF4:
-/* 0801DFF4 */ .word 0x06008240
+/* 0801DFF4 */ .word VRAMBase + 0x8240
 
 .balign 4, 0
 _0801DFF8:
-/* 0801DFF8 */ .word 0x06008260
+/* 0801DFF8 */ .word VRAMBase + 0x8260
 
 .balign 4, 0
 _0801DFFC:
-/* 0801DFFC */ .word 0x06008280
+/* 0801DFFC */ .word VRAMBase + 0x8280
 
 .balign 4, 0
 _0801E000:
-/* 0801E000 */ .word 0x060082A0
+/* 0801E000 */ .word VRAMBase + 0x82A0
 
 .balign 4, 0
 _0801E004:
-/* 0801E004 */ .word 0x060082C0
+/* 0801E004 */ .word VRAMBase + 0x82C0
 
 .balign 4, 0
 _0801E008:
-/* 0801E008 */ .word 0x060082E0
+/* 0801E008 */ .word VRAMBase + 0x82E0
 
 .balign 4, 0
 _0801E00C:
-/* 0801E00C */ .word 0x06008300
+/* 0801E00C */ .word VRAMBase + 0x8300
 
 .balign 4, 0
 _0801E010:
-/* 0801E010 */ .word 0x06008320
+/* 0801E010 */ .word VRAMBase + 0x8320
 
 .balign 4, 0
 _0801E014:
-/* 0801E014 */ .word 0x06008340
+/* 0801E014 */ .word VRAMBase + 0x8340
 
 .balign 4, 0
 _0801E018:
-/* 0801E018 */ .word 0x06008360
+/* 0801E018 */ .word VRAMBase + 0x8360
 
 .balign 4, 0
 _0801E01C:
-/* 0801E01C */ .word 0x06008380
+/* 0801E01C */ .word VRAMBase + 0x8380
 
 .balign 4, 0
 _0801E020:
-/* 0801E020 */ .word 0x060083A0
+/* 0801E020 */ .word VRAMBase + 0x83A0
 .ltorg
 .end

@@ -34,7 +34,7 @@ _080F497C:
 
 .balign 4, 0
 _080F4980:
-/* 080F4980 */ .word 0x00000000
+/* 080F4980 */ .word BIOSROMBase
 
 .balign 4, 0
 _080F4984:

@@ -167,7 +167,7 @@ _080A5FD0:
 
 .balign 4, 0
 _080A5FD4:
-/* 080A5FD4 */ .word 0x00000000
+/* 080A5FD4 */ .word BIOSROMBase
 
 .balign 4, 0
 _080A5FD8:

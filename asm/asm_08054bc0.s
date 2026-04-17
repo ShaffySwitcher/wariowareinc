@@ -33,6 +33,6 @@ _08054BE8:
 
 .balign 4, 0
 _08054BEC:
-/* 08054BEC */ .word 0x04000054
+/* 08054BEC */ .word IORAMBase + 0x54
 .ltorg
 .end

@@ -137,6 +137,6 @@ _080942AC:
 
 .balign 4, 0
 _080942CC:
-/* 080942CC */ .word 0x0600E956
+/* 080942CC */ .word VRAMBase + 0xE956
 .ltorg
 .end

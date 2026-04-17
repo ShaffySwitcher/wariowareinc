@@ -363,11 +363,11 @@ _080F50CA:
 
 .balign 4, 0
 _080F50DC:
-/* 080F50DC */ .word 0x00000000
+/* 080F50DC */ .word BIOSROMBase
 
 .balign 4, 0
 _080F50E0:
-/* 080F50E0 */ .word 0x00000001
+/* 080F50E0 */ .word BIOSROMBase + 1
 
 .balign 4, 0
 _080F50E4:

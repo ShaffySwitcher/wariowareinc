@@ -125,7 +125,7 @@ _080917F8:
 
 .balign 4, 0
 _080917FC:
-/* 080917FC */ .word 0x00000000
+/* 080917FC */ .word BIOSROMBase
 
 .balign 4, 0
 _08091800:

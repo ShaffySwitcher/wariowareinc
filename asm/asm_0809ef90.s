@@ -155,7 +155,7 @@ _0809F0A8:
 
 .balign 4, 0
 _0809F0AC:
-/* 0809F0AC */ .word 0x00000000
+/* 0809F0AC */ .word BIOSROMBase
 
 .balign 4, 0
 _0809F0B0:
@@ -163,6 +163,6 @@ _0809F0B0:
 
 .balign 4, 0
 _0809F0B4:
-/* 0809F0B4 */ .word 0x00000000
+/* 0809F0B4 */ .word BIOSROMBase
 .ltorg
 .end

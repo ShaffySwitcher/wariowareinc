@@ -239,7 +239,7 @@ _0801DA18:
 
 .balign 4, 0
 _0801DA1C:
-/* 0801DA1C */ .word 0x0600E500
+/* 0801DA1C */ .word VRAMBase + 0xE500
 
 .balign 4, 0
 _0801DA20:

@@ -164,7 +164,7 @@ _0809FB50:
 
 .balign 4, 0
 _0809FB54:
-/* 0809FB54 */ .word 0x00000000
+/* 0809FB54 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FB58:
@@ -172,7 +172,7 @@ _0809FB58:
 
 .balign 4, 0
 _0809FB5C:
-/* 0809FB5C */ .word 0x00000000
+/* 0809FB5C */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FB60:
@@ -180,7 +180,7 @@ _0809FB60:
 
 .balign 4, 0
 _0809FB64:
-/* 0809FB64 */ .word 0x00000000
+/* 0809FB64 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FB68:
@@ -188,7 +188,7 @@ _0809FB68:
 
 .balign 4, 0
 _0809FB6C:
-/* 0809FB6C */ .word 0x00000000
+/* 0809FB6C */ .word BIOSROMBase
 _0809FB70:
 /* 0809FB70 */ CMP R0, #1
 /* 0809FB72 */ BNE _0809FBAC
@@ -368,7 +368,7 @@ _0809FCE4:
 
 .balign 4, 0
 _0809FCE8:
-/* 0809FCE8 */ .word 0x00000000
+/* 0809FCE8 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FCEC:
@@ -376,7 +376,7 @@ _0809FCEC:
 
 .balign 4, 0
 _0809FCF0:
-/* 0809FCF0 */ .word 0x00000000
+/* 0809FCF0 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FCF4:
@@ -384,7 +384,7 @@ _0809FCF4:
 
 .balign 4, 0
 _0809FCF8:
-/* 0809FCF8 */ .word 0x00000000
+/* 0809FCF8 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FCFC:
@@ -392,7 +392,7 @@ _0809FCFC:
 
 .balign 4, 0
 _0809FD00:
-/* 0809FD00 */ .word 0x00000000
+/* 0809FD00 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FD04:
@@ -400,7 +400,7 @@ _0809FD04:
 
 .balign 4, 0
 _0809FD08:
-/* 0809FD08 */ .word 0x00000000
+/* 0809FD08 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FD0C:
@@ -408,7 +408,7 @@ _0809FD0C:
 
 .balign 4, 0
 _0809FD10:
-/* 0809FD10 */ .word 0x00000000
+/* 0809FD10 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FD14:
@@ -416,7 +416,7 @@ _0809FD14:
 
 .balign 4, 0
 _0809FD18:
-/* 0809FD18 */ .word 0x00000000
+/* 0809FD18 */ .word BIOSROMBase
 
 .balign 4, 0
 _0809FD1C:
@@ -424,6 +424,6 @@ _0809FD1C:
 
 .balign 4, 0
 _0809FD20:
-/* 0809FD20 */ .word 0x00000000
+/* 0809FD20 */ .word BIOSROMBase
 .ltorg
 .end

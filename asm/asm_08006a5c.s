@@ -63,7 +63,7 @@ _08006AC4:
 
 .balign 4, 0
 _08006AC8:
-/* 08006AC8 */ .word 0x04000008
+/* 08006AC8 */ .word IORAMBase + 0x8
 
 .balign 4, 0
 _08006ACC:

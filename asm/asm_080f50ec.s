@@ -220,7 +220,7 @@ _080F5260:
 
 .balign 4, 0
 _080F526C:
-/* 080F526C */ .word 0x00000000
+/* 080F526C */ .word BIOSROMBase
 
 .balign 4, 0
 _080F5270:

@@ -31,6 +31,6 @@ _08072E00:
 
 .balign 4, 0
 _08072E18:
-/* 08072E18 */ .word 0x0600F0CE
+/* 08072E18 */ .word VRAMBase + 0xF0CE
 .ltorg
 .end

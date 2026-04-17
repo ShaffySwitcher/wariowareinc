@@ -326,7 +326,7 @@ _08074C58:
 
 .balign 4, 0
 _08074C5C:
-/* 08074C5C */ .word 0x00000000
+/* 08074C5C */ .word BIOSROMBase
 
 .balign 4, 0
 _08074C60:

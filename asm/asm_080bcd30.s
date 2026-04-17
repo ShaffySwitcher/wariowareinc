@@ -73,7 +73,7 @@ _080BCD9C:
 
 .balign 4, 0
 _080BCDA0:
-/* 080BCDA0 */ .word 0x00000000
+/* 080BCDA0 */ .word BIOSROMBase
 _080BCDA4:
 /* 080BCDA4 */ ADDS R0, R1, #0
 /* 080BCDA6 */ BL func_080F5568
@@ -113,6 +113,6 @@ _080BCDE4:
 
 .balign 4, 0
 _080BCDE8:
-/* 080BCDE8 */ .word 0x00000000
+/* 080BCDE8 */ .word BIOSROMBase
 .ltorg
 .end

@@ -47,7 +47,7 @@ glabel func_080DE770
 
 .balign 4, 0
 _080DE7C4:
-/* 080DE7C4 */ .word 0x04000100
+/* 080DE7C4 */ .word IORAMBase + 0x100
 
 .balign 4, 0
 _080DE7C8:

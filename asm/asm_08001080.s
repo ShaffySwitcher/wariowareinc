@@ -63,18 +63,18 @@ _080010D8:
 
 .balign 4, 0
 _080010E8:
-/* 080010E8 */ .word 0x040000D4
+/* 080010E8 */ .word REG_DMA3SAD
 
 .balign 4, 0
 _080010EC:
-/* 080010EC */ .word 0x040000DC
+/* 080010EC */ .word IORAMBase + 0xDC
 
 .balign 4, 0
 _080010F0:
-/* 080010F0 */ .word 0x040000D8
+/* 080010F0 */ .word IORAMBase + 0xD8
 
 .balign 4, 0
 _080010F4:
-/* 080010F4 */ .word 0x040000DE
+/* 080010F4 */ .word IORAMBase + 0xDE
 .ltorg
 .end

@@ -29,7 +29,7 @@ glabel func_080EE718
 
 .balign 4, 0
 _080EE744:
-/* 080EE744 */ .word 0x04000204
+/* 080EE744 */ .word IORAMBase + 0x204
 
 .balign 4, 0
 _080EE748:
@@ -41,7 +41,7 @@ _080EE74C:
 
 .balign 4, 0
 _080EE750:
-/* 080EE750 */ .word 0x080EE719
+/* 080EE750 */ .word func_080EE718 + 1
 _080EE754:
 /* 080EE754 */ LDRH R0, [R3]
 /* 080EE756 */ STRH R0, [R2]

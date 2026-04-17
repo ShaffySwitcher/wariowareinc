@@ -47,7 +47,7 @@ _080DE008:
 
 .balign 4, 0
 _080DE00C:
-/* 080DE00C */ .word 0x06007000
+/* 080DE00C */ .word VRAMBase + 0x7000
 _080DE010:
 /* 080DE010 */ LDR R0, [R7]
 /* 080DE012 */ ADDS R0, #0XE4
@@ -92,6 +92,6 @@ _080DE054:
 
 .balign 4, 0
 _080DE058:
-/* 080DE058 */ .word 0x06007000
+/* 080DE058 */ .word VRAMBase + 0x7000
 .ltorg
 .end

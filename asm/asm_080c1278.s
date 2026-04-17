@@ -196,7 +196,7 @@ _080C13E0:
 
 .balign 4, 0
 _080C13E4:
-/* 080C13E4 */ .word 0x00000000
+/* 080C13E4 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C13E8:
@@ -277,7 +277,7 @@ _080C147C:
 
 .balign 4, 0
 _080C1480:
-/* 080C1480 */ .word 0x00000000
+/* 080C1480 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C1484:
@@ -404,7 +404,7 @@ _080C155C:
 
 .balign 4, 0
 _080C1560:
-/* 080C1560 */ .word 0x00000000
+/* 080C1560 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C1564:
@@ -443,7 +443,7 @@ _080C1598:
 
 .balign 4, 0
 _080C159C:
-/* 080C159C */ .word 0x00000000
+/* 080C159C */ .word BIOSROMBase
 
 .balign 4, 0
 _080C15A0:
@@ -483,7 +483,7 @@ _080C15DC:
 
 .balign 4, 0
 _080C15E0:
-/* 080C15E0 */ .word 0x00000000
+/* 080C15E0 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C15E4:
@@ -599,7 +599,7 @@ _080C16B0:
 
 .balign 4, 0
 _080C16B4:
-/* 080C16B4 */ .word 0x00000000
+/* 080C16B4 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C16B8:
@@ -671,7 +671,7 @@ _080C1728:
 
 .balign 4, 0
 _080C172C:
-/* 080C172C */ .word 0x00000000
+/* 080C172C */ .word BIOSROMBase
 
 .balign 4, 0
 _080C1730:
@@ -710,7 +710,7 @@ _080C1764:
 
 .balign 4, 0
 _080C1768:
-/* 080C1768 */ .word 0x00000000
+/* 080C1768 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C176C:
@@ -756,7 +756,7 @@ _080C17B4:
 
 .balign 4, 0
 _080C17B8:
-/* 080C17B8 */ .word 0x00000000
+/* 080C17B8 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C17BC:
@@ -852,7 +852,7 @@ _080C1860:
 
 .balign 4, 0
 _080C1864:
-/* 080C1864 */ .word 0x00000000
+/* 080C1864 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C1868:
@@ -888,7 +888,7 @@ _080C18A0:
 
 .balign 4, 0
 _080C18A4:
-/* 080C18A4 */ .word 0x00000000
+/* 080C18A4 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C18A8:
@@ -946,7 +946,7 @@ _080C1904:
 
 .balign 4, 0
 _080C1908:
-/* 080C1908 */ .word 0x00000000
+/* 080C1908 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C190C:
@@ -985,7 +985,7 @@ _080C1940:
 
 .balign 4, 0
 _080C1944:
-/* 080C1944 */ .word 0x00000000
+/* 080C1944 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C1948:
@@ -1031,7 +1031,7 @@ _080C1994:
 
 .balign 4, 0
 _080C1998:
-/* 080C1998 */ .word 0x00000000
+/* 080C1998 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C199C:
@@ -1075,7 +1075,7 @@ _080C19D8:
 
 .balign 4, 0
 _080C19DC:
-/* 080C19DC */ .word 0x00000000
+/* 080C19DC */ .word BIOSROMBase
 
 .balign 4, 0
 _080C19E0:
@@ -1163,7 +1163,7 @@ _080C1A7C:
 
 .balign 4, 0
 _080C1A80:
-/* 080C1A80 */ .word 0x00000000
+/* 080C1A80 */ .word BIOSROMBase
 
 .balign 4, 0
 _080C1A84:

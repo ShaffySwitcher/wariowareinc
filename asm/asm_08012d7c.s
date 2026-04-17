@@ -42,7 +42,7 @@ _08012DC8:
 
 .balign 4, 0
 _08012DC0:
-/* 08012DC0 */ .word 0x06008000
+/* 08012DC0 */ .word VRAMBase + 0x8000
 
 .balign 4, 0
 _08012DC4:

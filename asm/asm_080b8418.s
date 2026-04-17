@@ -24,7 +24,7 @@ glabel func_080B8418
 
 .balign 4, 0
 _080B8440:
-/* 080B8440 */ .word 0x04000100
+/* 080B8440 */ .word IORAMBase + 0x100
 _080B8444:
 /* 080B8444 */ MOVS R0, #1
 _080B8446:

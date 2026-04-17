@@ -119,7 +119,7 @@ _080BECEA:
 
 .balign 4, 0
 _080BED14:
-/* 080BED14 */ .word 0x06002000
+/* 080BED14 */ .word VRAMBase + 0x2000
 _080BED18:
 /* 080BED18 */ MOVS R0, #0
 /* 080BED1A */ STRB R0, [R1, #5]

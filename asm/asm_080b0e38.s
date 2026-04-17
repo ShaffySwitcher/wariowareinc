@@ -39,10 +39,10 @@ _080B0E74:
 
 .balign 4, 0
 _080B0E78:
-/* 080B0E78 */ .word 0x0600E800
+/* 080B0E78 */ .word VRAMBase + 0xE800
 
 .balign 4, 0
 _080B0E7C:
-/* 080B0E7C */ .word 0x0600E940
+/* 080B0E7C */ .word VRAMBase + 0xE940
 .ltorg
 .end

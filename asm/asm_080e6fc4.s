@@ -937,7 +937,7 @@ _080E76CC:
 
 .balign 4, 0
 _080E76D0:
-/* 080E76D0 */ .word 0x0600F800
+/* 080E76D0 */ .word VRAMBase + 0xF800
 
 .balign 4, 0
 _080E76D4:

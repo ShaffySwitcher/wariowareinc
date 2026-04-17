@@ -23,7 +23,7 @@ glabel func_08050860
 
 .balign 4, 0
 _08050880:
-/* 08050880 */ .word 0x05000020
+/* 08050880 */ .word PaletteRAMBase + 0x20
 
 .balign 4, 0
 _08050884:
@@ -55,7 +55,7 @@ _080508A0:
 
 .balign 4, 0
 _080508B0:
-/* 080508B0 */ .word 0x05000040
+/* 080508B0 */ .word PaletteRAMBase + 0x40
 _080508B4:
 /* 080508B4 */ LDR R3, _080508D4
 /* 080508B6 */ MOVS R2, #0XF
@@ -76,6 +76,6 @@ _080508C6:
 
 .balign 4, 0
 _080508D4:
-/* 080508D4 */ .word 0x05000060
+/* 080508D4 */ .word PaletteRAMBase + 0x60
 .ltorg
 .end

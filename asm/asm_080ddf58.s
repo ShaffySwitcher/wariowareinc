@@ -62,6 +62,6 @@ _080DDFB8:
 
 .balign 4, 0
 _080DDFBC:
-/* 080DDFBC */ .word 0x06007000
+/* 080DDFBC */ .word VRAMBase + 0x7000
 .ltorg
 .end

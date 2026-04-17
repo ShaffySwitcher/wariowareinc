@@ -159,6 +159,6 @@ _0801C4C0:
 
 .balign 4, 0
 _0801C4C4:
-/* 0801C4C4 */ .word 0x0600E192
+/* 0801C4C4 */ .word VRAMBase + 0xE192
 .ltorg
 .end

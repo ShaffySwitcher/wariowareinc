@@ -74,7 +74,7 @@ _080DE0D4:
 
 .balign 4, 0
 _080DE0D8:
-/* 080DE0D8 */ .word 0x06004000
+/* 080DE0D8 */ .word VRAMBase + 0x4000
 
 .balign 4, 0
 _080DE0DC:

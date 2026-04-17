@@ -32,7 +32,7 @@ glabel func_08000F80
 
 .balign 4, 0
 _08000FB0:
-/* 08000FB0 */ .word 0x04000130
+/* 08000FB0 */ .word IORAMBase + 0x130
 
 .balign 4, 0
 _08000FB4:

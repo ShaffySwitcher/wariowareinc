@@ -38,7 +38,7 @@ _080F3AC0:
 
 .balign 4, 0
 _080F3AC4:
-/* 080F3AC4 */ .word 0x04000006
+/* 080F3AC4 */ .word IORAMBase + 0x6
 _080F3AC8:
 /* 080F3AC8 */ LDR R1, _080F3C38
 /* 080F3ACA */ LSLS R0, R5, #2
@@ -264,6 +264,6 @@ _080F3C58:
 
 .balign 4, 0
 _080F3C5C:
-/* 080F3C5C */ .word 0x04000006
+/* 080F3C5C */ .word IORAMBase + 0x6
 .ltorg
 .end

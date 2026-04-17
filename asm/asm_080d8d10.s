@@ -134,7 +134,7 @@ _080D8E04:
 
 .balign 4, 0
 _080D8E08:
-/* 080D8E08 */ .word 0x00000000
+/* 080D8E08 */ .word BIOSROMBase
 
 .balign 4, 0
 _080D8E0C:

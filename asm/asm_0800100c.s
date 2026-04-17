@@ -61,18 +61,18 @@ _08001062:
 
 .balign 4, 0
 _08001070:
-/* 08001070 */ .word 0x040000D4
+/* 08001070 */ .word REG_DMA3SAD
 
 .balign 4, 0
 _08001074:
-/* 08001074 */ .word 0x040000D8
+/* 08001074 */ .word IORAMBase + 0xD8
 
 .balign 4, 0
 _08001078:
-/* 08001078 */ .word 0x040000DC
+/* 08001078 */ .word IORAMBase + 0xDC
 
 .balign 4, 0
 _0800107C:
-/* 0800107C */ .word 0x040000DE
+/* 0800107C */ .word IORAMBase + 0xDE
 .ltorg
 .end

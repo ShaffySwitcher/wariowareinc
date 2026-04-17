@@ -29,6 +29,6 @@ _0801FAA0:
 
 .balign 4, 0
 _0801FAA4:
-/* 0801FAA4 */ .word 0x0600E000
+/* 0801FAA4 */ .word VRAMBase + 0xE000
 .ltorg
 .end

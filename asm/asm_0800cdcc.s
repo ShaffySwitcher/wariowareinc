@@ -49,6 +49,6 @@ _0800CE10:
 
 .balign 4, 0
 _0800CE14:
-/* 0800CE14 */ .word 0x06008000
+/* 0800CE14 */ .word VRAMBase + 0x8000
 .ltorg
 .end

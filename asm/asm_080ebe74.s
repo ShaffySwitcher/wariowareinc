@@ -51,6 +51,6 @@ _080EBEBC:
 
 .balign 4, 0
 _080EBEC0:
-/* 080EBEC0 */ .word 0x06004000
+/* 080EBEC0 */ .word VRAMBase + 0x4000
 .ltorg
 .end

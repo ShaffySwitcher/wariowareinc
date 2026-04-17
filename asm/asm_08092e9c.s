@@ -132,7 +132,7 @@ _08092F88:
 
 .balign 4, 0
 _08092F8C:
-/* 08092F8C */ .word 0x00000000
+/* 08092F8C */ .word BIOSROMBase
 
 .balign 4, 0
 _08092F90:
@@ -156,7 +156,7 @@ _08092FA0:
 
 .balign 4, 0
 _08092FA4:
-/* 08092FA4 */ .word 0x00000000
+/* 08092FA4 */ .word BIOSROMBase
 
 .balign 4, 0
 _08092FA8:

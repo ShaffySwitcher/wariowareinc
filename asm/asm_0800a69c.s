@@ -27,106 +27,106 @@ _0800A6B8:
 
 .balign 4, 0
 D_0800A6BC:
-/* 0800A6BC */ .word 0x0800A744
+/* 0800A6BC */ .word _0800A744
 
 .balign 4, 0
-/* 0800A6C0 */ .word 0x0800A744
+/* 0800A6C0 */ .word _0800A744
 
 .balign 4, 0
-/* 0800A6C4 */ .word 0x0800A744
+/* 0800A6C4 */ .word _0800A744
 
 .balign 4, 0
-/* 0800A6C8 */ .word 0x0800A758
+/* 0800A6C8 */ .word _0800A758
 
 .balign 4, 0
-/* 0800A6CC */ .word 0x0800A748
+/* 0800A6CC */ .word _0800A748
 
 .balign 4, 0
-/* 0800A6D0 */ .word 0x0800A6A4
+/* 0800A6D0 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6D4 */ .word 0x0800A6A4
+/* 0800A6D4 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6D8 */ .word 0x0800A6A4
+/* 0800A6D8 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6DC */ .word 0x0800A6A4
+/* 0800A6DC */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6E0 */ .word 0x0800A6A4
+/* 0800A6E0 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6E4 */ .word 0x0800A6A4
+/* 0800A6E4 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6E8 */ .word 0x0800A6A4
+/* 0800A6E8 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6EC */ .word 0x0800A6A4
+/* 0800A6EC */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6F0 */ .word 0x0800A6A4
+/* 0800A6F0 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6F4 */ .word 0x0800A6A4
+/* 0800A6F4 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6F8 */ .word 0x0800A6A4
+/* 0800A6F8 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A6FC */ .word 0x0800A6A4
+/* 0800A6FC */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A700 */ .word 0x0800A6A4
+/* 0800A700 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A704 */ .word 0x0800A6A4
+/* 0800A704 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A708 */ .word 0x0800A6A4
+/* 0800A708 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A70C */ .word 0x0800A6A4
+/* 0800A70C */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A710 */ .word 0x0800A6A4
+/* 0800A710 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A714 */ .word 0x0800A6A4
+/* 0800A714 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A718 */ .word 0x0800A6A4
+/* 0800A718 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A71C */ .word 0x0800A6A4
+/* 0800A71C */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A720 */ .word 0x0800A6A4
+/* 0800A720 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A724 */ .word 0x0800A6A4
+/* 0800A724 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A728 */ .word 0x0800A6A4
+/* 0800A728 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A72C */ .word 0x0800A6A4
+/* 0800A72C */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A730 */ .word 0x0800A6A4
+/* 0800A730 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A734 */ .word 0x0800A6A4
+/* 0800A734 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A738 */ .word 0x0800A6A4
+/* 0800A738 */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A73C */ .word 0x0800A6A4
+/* 0800A73C */ .word D_0800A6A4
 
 .balign 4, 0
-/* 0800A740 */ .word 0x0800A752
+/* 0800A740 */ .word _0800A752
 _0800A744:
 /* 0800A744 */ ADDS R3, #1
 /* 0800A746 */ B _0800A6A4

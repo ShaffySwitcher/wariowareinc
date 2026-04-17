@@ -167,7 +167,7 @@ _080EAB64:
 
 .balign 4, 0
 _080EAB68:
-/* 080EAB68 */ .word 0x00000000
+/* 080EAB68 */ .word BIOSROMBase
 
 .balign 4, 0
 _080EAB6C:

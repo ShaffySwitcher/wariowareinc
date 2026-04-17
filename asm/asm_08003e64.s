@@ -40,11 +40,11 @@ _08003E9C:
 
 .balign 4, 0
 _08003EA0:
-/* 08003EA0 */ .word 0x040000B0
+/* 08003EA0 */ .word IORAMBase + 0xB0
 
 .balign 4, 0
 _08003EA4:
-/* 08003EA4 */ .word 0x040000BA
+/* 08003EA4 */ .word IORAMBase + 0xBA
 
 .balign 4, 0
 _08003EA8:

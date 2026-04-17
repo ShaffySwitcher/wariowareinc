@@ -260,7 +260,7 @@ _0807E8D0:
 
 .balign 4, 0
 _0807E8D4:
-/* 0807E8D4 */ .word 0x04000100
+/* 0807E8D4 */ .word IORAMBase + 0x100
 
 .balign 4, 0
 _0807E8D8:

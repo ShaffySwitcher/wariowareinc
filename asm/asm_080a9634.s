@@ -31,10 +31,10 @@ _080A9658:
 
 .balign 4, 0
 _080A965C:
-/* 080A965C */ .word 0x0600F000
+/* 080A965C */ .word VRAMBase + 0xF000
 
 .balign 4, 0
 _080A9660:
-/* 080A9660 */ .word 0x0600F48A
+/* 080A9660 */ .word VRAMBase + 0xF48A
 .ltorg
 .end

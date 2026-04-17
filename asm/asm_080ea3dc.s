@@ -163,7 +163,7 @@ _080EA514:
 
 .balign 4, 0
 _080EA518:
-/* 080EA518 */ .word 0x00000000
+/* 080EA518 */ .word BIOSROMBase
 
 .balign 4, 0
 _080EA51C:
@@ -171,7 +171,7 @@ _080EA51C:
 
 .balign 4, 0
 _080EA520:
-/* 080EA520 */ .word 0x00000000
+/* 080EA520 */ .word BIOSROMBase
 
 .balign 4, 0
 _080EA524:

@@ -166,7 +166,7 @@ _080B78FC:
 
 .balign 4, 0
 _080B7900:
-/* 080B7900 */ .word 0x04000100
+/* 080B7900 */ .word IORAMBase + 0x100
 
 .balign 4, 0
 _080B7904:
@@ -431,6 +431,6 @@ _080B7AFC:
 
 .balign 4, 0
 _080B7B00:
-/* 080B7B00 */ .word 0x04000100
+/* 080B7B00 */ .word IORAMBase + 0x100
 .ltorg
 .end

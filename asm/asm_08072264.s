@@ -45,7 +45,7 @@ glabel func_08072264
 
 .balign 4, 0
 _080722BC:
-/* 080722BC */ .word 0x060125C0
+/* 080722BC */ .word VRAMBase + 0x125C0
 
 .balign 4, 0
 _080722C0:
@@ -53,42 +53,42 @@ _080722C0:
 
 .balign 4, 0
 _080722C4:
-/* 080722C4 */ .word 0x06010000
+/* 080722C4 */ .word VRAMBase + 0x10000
 
 .balign 4, 0
 _080722C8:
-/* 080722C8 */ .word 0x06012580
+/* 080722C8 */ .word VRAMBase + 0x12580
 
 .balign 4, 0
 _080722CC:
-/* 080722CC */ .word 0x06012000
+/* 080722CC */ .word VRAMBase + 0x12000
 
 .balign 4, 0
 _080722D0:
-/* 080722D0 */ .word 0x060120A0
+/* 080722D0 */ .word VRAMBase + 0x120A0
 
 .balign 4, 0
 _080722D4:
-/* 080722D4 */ .word 0x06012400
+/* 080722D4 */ .word VRAMBase + 0x12400
 
 .balign 4, 0
 _080722D8:
-/* 080722D8 */ .word 0x060124A0
+/* 080722D8 */ .word VRAMBase + 0x124A0
 
 .balign 4, 0
 _080722DC:
-/* 080722DC */ .word 0x06012060
+/* 080722DC */ .word VRAMBase + 0x12060
 
 .balign 4, 0
 _080722E0:
-/* 080722E0 */ .word 0x06012020
+/* 080722E0 */ .word VRAMBase + 0x12020
 
 .balign 4, 0
 _080722E4:
-/* 080722E4 */ .word 0x06012460
+/* 080722E4 */ .word VRAMBase + 0x12460
 
 .balign 4, 0
 _080722E8:
-/* 080722E8 */ .word 0x06012420
+/* 080722E8 */ .word VRAMBase + 0x12420
 .ltorg
 .end

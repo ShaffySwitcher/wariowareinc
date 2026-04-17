@@ -49,7 +49,7 @@ _08003EFA:
 
 .balign 4, 0
 _08003F00:
-/* 08003F00 */ .word 0x040000B8
+/* 08003F00 */ .word IORAMBase + 0xB8
 
 .balign 4, 0
 _08003F04:
@@ -57,11 +57,11 @@ _08003F04:
 
 .balign 4, 0
 _08003F08:
-/* 08003F08 */ .word 0x040000B0
+/* 08003F08 */ .word IORAMBase + 0xB0
 
 .balign 4, 0
 _08003F0C:
-/* 08003F0C */ .word 0x040000B4
+/* 08003F0C */ .word IORAMBase + 0xB4
 
 .balign 4, 0
 _08003F10:

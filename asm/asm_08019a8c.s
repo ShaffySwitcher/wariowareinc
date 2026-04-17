@@ -15,6 +15,6 @@ glabel func_08019A8C
 
 .balign 4, 0
 _08019AA0:
-/* 08019AA0 */ .word 0x06008000
+/* 08019AA0 */ .word VRAMBase + 0x8000
 .ltorg
 .end

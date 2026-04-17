@@ -33,7 +33,7 @@ glabel func_08019514
 
 .balign 4, 0
 _0801954C:
-/* 0801954C */ .word 0x06008000
+/* 0801954C */ .word VRAMBase + 0x8000
 
 .balign 4, 0
 _08019550:

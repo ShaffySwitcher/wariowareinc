@@ -29,7 +29,7 @@ glabel func_080EE644
 
 .balign 4, 0
 _080EE670:
-/* 080EE670 */ .word 0x04000204
+/* 080EE670 */ .word IORAMBase + 0x204
 
 .balign 4, 0
 _080EE674:

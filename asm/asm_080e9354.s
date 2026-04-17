@@ -129,7 +129,7 @@ _080E9428:
 
 .balign 4, 0
 _080E942C:
-/* 080E942C */ .word 0x0600F800
+/* 080E942C */ .word VRAMBase + 0xF800
 
 .balign 4, 0
 _080E9430:

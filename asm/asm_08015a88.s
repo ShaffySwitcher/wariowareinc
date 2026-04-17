@@ -110,6 +110,6 @@ _08015B48:
 
 .balign 4, 0
 _08015B4C:
-/* 08015B4C */ .word 0x06006500
+/* 08015B4C */ .word VRAMBase + 0x6500
 .ltorg
 .end

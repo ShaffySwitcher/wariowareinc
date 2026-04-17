@@ -57,6 +57,6 @@ _080F2C3C:
 
 .balign 4, 0
 _080F2C40:
-/* 080F2C40 */ .word 0x04000080
+/* 080F2C40 */ .word IORAMBase + 0x80
 .ltorg
 .end

@@ -362,6 +362,6 @@ _0805BA88:
 
 .balign 4, 0
 _0805BA8C:
-/* 0805BA8C */ .word 0x04000018
+/* 0805BA8C */ .word IORAMBase + 0x18
 .ltorg
 .end

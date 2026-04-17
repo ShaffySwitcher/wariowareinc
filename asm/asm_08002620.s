@@ -24,7 +24,7 @@ glabel func_08002620
 
 .balign 4, 0
 _08002640:
-/* 08002640 */ .word 0x040000D4
+/* 08002640 */ .word REG_DMA3SAD
 
 .balign 4, 0
 _08002644:

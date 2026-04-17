@@ -92,18 +92,18 @@ _08031054:
 
 .balign 4, 0
 _08031058:
-/* 08031058 */ .word 0x0600F000
+/* 08031058 */ .word VRAMBase + 0xF000
 
 .balign 4, 0
 _0803105C:
-/* 0803105C */ .word 0x0600F002
+/* 0803105C */ .word VRAMBase + 0xF002
 
 .balign 4, 0
 _08031060:
-/* 08031060 */ .word 0x0600F040
+/* 08031060 */ .word VRAMBase + 0xF040
 
 .balign 4, 0
 _08031064:
-/* 08031064 */ .word 0x0600F042
+/* 08031064 */ .word VRAMBase + 0xF042
 .ltorg
 .end

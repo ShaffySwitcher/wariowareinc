@@ -122,11 +122,11 @@ _08015C24:
 
 .balign 4, 0
 _08015C28:
-/* 08015C28 */ .word 0x06006500
+/* 08015C28 */ .word VRAMBase + 0x6500
 
 .balign 4, 0
 _08015C2C:
-/* 08015C2C */ .word 0x06006540
+/* 08015C2C */ .word VRAMBase + 0x6540
 
 .balign 4, 0
 _08015C30:

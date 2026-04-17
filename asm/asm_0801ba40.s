@@ -88,6 +88,6 @@ _0801BAD4:
 
 .balign 4, 0
 _0801BAD8:
-/* 0801BAD8 */ .word 0x04000016
+/* 0801BAD8 */ .word IORAMBase + 0x16
 .ltorg
 .end
