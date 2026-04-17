@@ -12,15 +12,15 @@ void func_080001D4(void) {
     func_08003E64();
     func_08006F28();
     func_08007EA0();
-    func_080004DC();
-    if (func_080005DC() != 0) {
-        if (func_080005F0() != 0) {
-            func_080004F0();
+    load_default_save();
+    if (validate_save_main() != 0) {
+        if (validate_save_backup() != 0) {
+            init_save_buffer();
         } else {
-            func_08000634();
+            write_save_main();
         }
     }
-    func_08000648();
+    write_save_backup();
     func_0800A27C();
     func_08005570();
     func_080109B4();

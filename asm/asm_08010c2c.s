@@ -31,7 +31,7 @@ glabel func_08010C2C
 /* 08010C5C */ STRB R0, [R1, #1]
 /* 08010C5E */ STRB R0, [R1, #2]
 _08010C60:
-/* 08010C60 */ BL func_08000634
+/* 08010C60 */ BL write_save_main
 /* 08010C64 */ LDR R3, _08010F04
 /* 08010C66 */ MOVS R7, #0
 /* 08010C68 */ STRB R7, [R3, #6]

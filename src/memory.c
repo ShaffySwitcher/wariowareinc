@@ -2,14 +2,12 @@
 
 asm(".include \"include/gba.inc\"");
 
-// Fill memory with a byte value using DMA3
-void func_0800048C(u8 value) {
+void fill_memory_dma(u8 value) {
     s32 pattern = (value << 8) | value;
     dma3_fill(pattern | (pattern << 0x10), &D_03003860, 0x35C, 0x20, 0x100);
 }
 
-// Calculate checksum of a 32-bit block of data
-u32 func_080004BC(const void *data, u32 size) {
+u32 calc_checksum(const void *data, u32 size) {
     const u32 *p = data;
     u32 sum = 0;
     u32 i;
@@ -20,26 +18,21 @@ u32 func_080004BC(const void *data, u32 size) {
     return sum;
 }
 
-// Load default save-file(?)
-void func_080004DC(void) {
-    D_03003BBC[0] = D_083A3D94;
+void load_default_save(void) {
+    gSaveBuffer = D_083A3D94;
 }
 
-// void init_save_slot();
-void func_080004F0(void)
-{
-    u8 state;
-    struct SaveBuffer* save = *D_03003BBC;
+void init_save_buffer(void) {
+    struct SaveBuffer* save = gSaveBuffer;
     
-    dma3_fill(0, save, 0x404, 0x20, 0x100);
+    dma3_fill(0, save, SAVE_BUFFER_SIZE, 0x20, 0x100);
     func_080F60B0(save, &D_083A3DA4);
     
-    save->unk4 = 0x404;
-    save->unk8 = 0;
+    save->size = SAVE_BUFFER_SIZE;
+    save->checksum = 0;
     save->unkC = 0x311F0000;
     
-    state = save->flags1[0][0];
-    save->flags1[0][0] = state | 2;
+    save->flags[STAGE_INTRODUCTION].flag = TRUE;
     
     func_080089D8(0x0F, 0x0000C350);
     func_080089D8(0x10, 0x00002710);
@@ -52,41 +45,94 @@ void func_080004F0(void)
     func_080109B4();
 }
 
-#include "asm/memory/asm_08000590.s"
+u32 validate_save(u8* base) {
+    func_080EE644(base, gSaveBuffer, SAVE_BUFFER_SIZE);
+    if (func_08007B5C(gSaveBuffer, &D_083A3DA4, 4) != 0) {
+        return 1;
+    }
+    if (calc_checksum(gSaveBuffer, SAVE_BUFFER_SIZE) - gSaveBuffer->checksum != gSaveBuffer->checksum) {
+        return 2;
+    }
+    return 0;
+}
 
-#include "asm/memory/asm_080005dc.s"
+u32 validate_save_main(void) {
+    return validate_save(main_save_memory_base);
+}
 
-#include "asm/memory/asm_080005f0.s"
+u32 validate_save_backup(void) {
+    return validate_save(backup_save_memory_base);
+}
 
-#include "asm/memory/asm_08000604.s"
+void write_save(u8* base) {
+    gSaveBuffer->checksum = 0;
+    gSaveBuffer->checksum = calc_checksum(gSaveBuffer, SAVE_BUFFER_SIZE);
+    func_080EE6A8(gSaveBuffer, base, SAVE_BUFFER_SIZE);
+}
 
-#include "asm/memory/asm_08000634.s"
+void write_save_main(void) {
+    write_save(main_save_memory_base);
+}
 
-#include "asm/memory/asm_08000648.s"
+void write_save_backup(void) {
+    write_save(backup_save_memory_base);
+}
 
-#include "asm/memory/asm_0800065c.s"
+u32 func_0800065C(u32 arg0) {
+    return gSaveBuffer->flags[arg0].flag;
+}
 
-#include "asm/memory/asm_08000674.s"
+void func_08000674(u32 arg0) {
+    gSaveBuffer->flags[arg0].flag = TRUE;
+}
 
-#include "asm/memory/asm_0800068c.s"
+u32 func_0800068C(u32 arg0) {
+    return gSaveBuffer->flags[arg0].unk0;
+}
 
-#include "asm/memory/asm_080006a4.s"
+void func_080006A4(u32 arg0) {
+    gSaveBuffer->flags[arg0].unk0 = TRUE;
+}
 
-#include "asm/memory/asm_080006bc.s"
+u32 func_080006BC(u32 arg0) {
+    if ((gSaveBuffer->flags2[arg0] & 1) != 0) {
+        return 1;
+    }
+    return 0;
+}
 
-#include "asm/memory/asm_080006e4.s"
+u32 func_080006E4(u32 arg0) {
+    u32 index = arg0;
+    gSaveBuffer->flags2[index] |= TRUE;
+}
 
-#include "asm/memory/asm_08000700.s"
+u32 func_08000700(u32 arg0) {
+    if ((gSaveBuffer->flags2[arg0] & 2) != 0) {
+        return 1;
+    }
+    return 0;
+}
 
-#include "asm/memory/asm_08000728.s"
+u32 func_08000728(u32 arg0) {
+    gSaveBuffer->flags2[arg0] |= 2;
+}
 
-#include "asm/memory/asm_08000744.s"
+u16 func_08000744(u32 arg0) {
+    return gSaveBuffer->values[arg0];
+}
 
-#include "asm/memory/asm_0800075c.s"
+void func_0800075c(u32 arg0) {
+    func_080EE6A8(&arg0, D_083A3DA0, 4);
+}
 
-#include "asm/memory/asm_08000778.s"
+void func_08000778(u32 arg0) {
+    gSaveBuffer->unlocked[arg0 >> 5] |= (1 << (arg0 & 0x1F));
+}
 
-#include "asm/memory/asm_0800079c.s"
+void func_0800079C(u32 arg0) {
+    gSaveBuffer->unlocked[arg0 >> 5] &= ~(1 << (arg0 & 0x1F));
+}
 
-#include "asm/memory/asm_080007c0.s"
-
+u32 func_080007C0(u32 arg0) {
+    return (gSaveBuffer->unlocked[arg0 >> 5] >> (arg0 & 0x1F)) & 1;
+}

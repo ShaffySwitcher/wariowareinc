@@ -1,42 +1,59 @@
 #include "global.h"
+#include "levels.h"
+
+#define gSaveBuffer (*D_03003BBC)
+#define SAVE_BUFFER_SIZE 0x404
 
 extern u32* D_03003860;
 
+struct SaveFlagsEntry {
+    u8 unk0 : 1;
+    u8 flag : 1;
+    u8 unk2 : 6;
+    u8 pad[7];
+};
+
 struct SaveBuffer {
-    u32 unk0;           // 0x00
-    u32 unk4;           // 0x04
-    u32 unk8;           // 0x08   
-    u32 unkC;           // 0x0C
-    u8 padding[0x10];   // 0x10 - 0x1F
-    u8 flags1[28][8];   // 0x20 - 0xFF
-    u8 flags2[0x100];  // 0x100 - 0x1FF
-    u16 values[0x100];  // 0x200 - 0x3FF
-    u32 unlocked;       // 0x400
+    u32 unk0; // 0x00
+    u32 size; // 0x04
+    u32 checksum; // 0x08   
+    u32 unkC; // 0x0C
+    u8 padding[0x10]; // 0x10 - 0x1F
+    struct SaveFlagsEntry flags[TOTAL_STAGES]; // 0x20 - 0xFF
+    u8 flags2[0x100]; // 0x100 - 0x1FF
+    u16 values[0x100]; // 0x200 - 0x3FF
+    u32 unlocked[1]; // 0x400
 };
 
 extern struct SaveBuffer* D_03003BBC[];
 extern struct SaveBuffer* D_083A3D94;
+extern u8* main_save_memory_base; // 0x0E000000
+extern u8* backup_save_memory_base; // 0x0E004000
+extern u32 D_083A3DA0;
 extern u8* D_083A3DA4;
 
-void func_0800048C(u8 arg0);
-u32 func_080004BC(const void *data, u32 size);
-void func_080004DC(void);
-void func_080004F0();
-void func_080005DC();
-void func_080005F0();
-void func_08000604();
-void func_08000634();
-void func_08000648();
-void func_0800065C();
-void func_08000674();
-void func_0800068C();
-void func_080006A4();
-void func_080006BC();
-void func_080006E4();
-void func_08000700();
-void func_08000728();
-void func_08000744();
-void func_0800075C();
-void func_08000778();
-void func_0800079C();
-void func_080007C0();
+void fill_memory_dma(u8 arg0);
+u32 calc_checksum(const void *data, u32 size);
+void load_default_save(void);
+void init_save_buffer();
+u32 validate_save(u8* base);
+u32 validate_save_main();
+u32 validate_save_backup();
+void write_save(u8* base);
+void write_save_main();
+void write_save_backup();
+u32 func_0800065C(u32 arg0);
+void func_08000674(u32 arg0);
+u32 func_0800068C(u32 arg0);
+void func_080006A4(u32 arg0);
+u32 func_080006BC(u32 arg0);
+u32 func_080006E4();
+u32 func_08000700(u32 arg0);
+u32 func_08000728(u32 arg0);
+u16 func_08000744(u32 arg0);
+void func_0800075C(u32 arg0);
+void func_08000778(u32 arg0);
+void func_0800079C(u32 arg0);
+u32 func_080007C0(u32 arg0);
+u32 func_08007B5C(struct SaveBuffer*, u8**, u32);
+void func_080EE64(u32, struct SaveBuffer*, u32);

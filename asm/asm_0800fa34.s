@@ -39,7 +39,7 @@ glabel func_0800FA34
 /* 0800FA7A */ LDRB R1, [R1]
 /* 0800FA7C */ STRB R1, [R0, #0XC]
 /* 0800FA7E */ BL func_0800F9DC
-/* 0800FA82 */ BL func_08000634
+/* 0800FA82 */ BL write_save_main
 /* 0800FA86 */ LDR R2, [R4]
 /* 0800FA88 */ LDR R0, _0800FADC
 /* 0800FA8A */ ADDS R2, R0

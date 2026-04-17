@@ -1790,8 +1790,8 @@
 .set D_083A3B90, 0x083A3B90;
 .set D_083A3D90, 0x083A3D90;
 .set D_083A3D94, 0x083A3D94;
-.set D_083A3D98, 0x083A3D98;
-.set D_083A3D9C, 0x083A3D9C;
+.set main_save_memory_base, 0x083A3D98;
+.set backup_save_memory_base, 0x083A3D9C;
 .set D_083A3DA0, 0x083A3DA0;
 .set D_083A3DA4, 0x083A3DA4;
 .set D_083A404C, 0x083A404C;

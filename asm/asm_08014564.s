@@ -31,8 +31,8 @@ _08014588:
 /* 0801458A */ BL func_0800C7A4
 /* 0801458E */ BL func_08014354
 /* 08014592 */ BL func_08015C38
-/* 08014596 */ BL func_080004F0
-/* 0801459A */ BL func_08000634
+/* 08014596 */ BL init_save_buffer
+/* 0801459A */ BL write_save_main
 /* 0801459E */ BL func_080109B4
 /* 080145A2 */ LDR R4, _080145C8
 /* 080145A4 */ BL func_0800A27C
