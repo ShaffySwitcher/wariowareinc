@@ -5585,6 +5585,7 @@ SECTIONS {
         build/asm/asm_080efc50.s.o(.text*);
         build/asm/asm_080efc88.s.o(.text*);
         build/bin/data_080EFDAC.bin.o(.rodata*);
+        build/asm/asm_080efe0a.s.o(.text*);
         build/bin/data.bin.o(.rodata*);
     }
 
