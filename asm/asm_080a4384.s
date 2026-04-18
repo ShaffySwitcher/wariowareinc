@@ -65,7 +65,7 @@ _080A43C0:
 
 .balign 4, 0
 _080A43EC:
-/* 080A43EC */ .word D_03003FF4
+/* 080A43EC */ .word gPressedKeys
 
 .balign 4, 0
 _080A43F0:

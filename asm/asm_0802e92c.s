@@ -164,7 +164,7 @@ _0802EA36:
 
 .balign 4, 0
 _0802EA54:
-/* 0802EA54 */ .word D_03003FC8
+/* 0802EA54 */ .word gCurrentKeys
 
 .balign 4, 0
 _0802EA58:
@@ -271,7 +271,7 @@ _0802EAFE:
 
 .balign 4, 0
 _0802EB1C:
-/* 0802EB1C */ .word D_03003FC8
+/* 0802EB1C */ .word gCurrentKeys
 
 .balign 4, 0
 _0802EB20:
@@ -367,7 +367,7 @@ _0802EB94:
 
 .balign 4, 0
 _0802EBD8:
-/* 0802EBD8 */ .word D_03003FC8
+/* 0802EBD8 */ .word gCurrentKeys
 
 .balign 4, 0
 _0802EBDC:

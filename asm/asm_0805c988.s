@@ -117,11 +117,11 @@ _0805CA4C:
 
 .balign 4, 0
 _0805CA50:
-/* 0805CA50 */ .word D_03003FF4
+/* 0805CA50 */ .word gPressedKeys
 
 .balign 4, 0
 _0805CA54:
-/* 0805CA54 */ .word D_03003FC8
+/* 0805CA54 */ .word gCurrentKeys
 
 .balign 4, 0
 _0805CA58:

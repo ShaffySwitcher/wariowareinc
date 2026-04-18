@@ -86,7 +86,7 @@ _080CFA2C:
 
 .balign 4, 0
 _080CFA30:
-/* 080CFA30 */ .word D_03003FF4
+/* 080CFA30 */ .word gPressedKeys
 
 .balign 4, 0
 _080CFA34:

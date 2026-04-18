@@ -54,7 +54,7 @@ _0804A5FC:
 
 .balign 4, 0
 _0804A608:
-/* 0804A608 */ .word D_03003FF4
+/* 0804A608 */ .word gPressedKeys
 
 .balign 4, 0
 _0804A60C:

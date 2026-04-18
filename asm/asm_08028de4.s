@@ -80,6 +80,6 @@ _08028E68:
 
 .balign 4, 0
 _08028E6C:
-/* 08028E6C */ .word D_03003FF4
+/* 08028E6C */ .word gPressedKeys
 .ltorg
 .end

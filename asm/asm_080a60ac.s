@@ -20,7 +20,7 @@ glabel func_080A60AC
 
 .balign 4, 0
 _080A60C4:
-/* 080A60C4 */ .word D_03003FC8
+/* 080A60C4 */ .word gCurrentKeys
 
 .balign 4, 0
 _080A60C8:

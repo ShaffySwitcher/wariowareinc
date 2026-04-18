@@ -163,11 +163,11 @@ _0803A4B0:
 
 .balign 4, 0
 _0803A4B4:
-/* 0803A4B4 */ .word D_03003FC8
+/* 0803A4B4 */ .word gCurrentKeys
 
 .balign 4, 0
 _0803A4B8:
-/* 0803A4B8 */ .word D_03003FF4
+/* 0803A4B8 */ .word gPressedKeys
 
 .balign 4, 0
 _0803A4BC:

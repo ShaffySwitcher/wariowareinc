@@ -29,7 +29,7 @@ glabel func_080A1A80
 
 .balign 4, 0
 _080A1AAC:
-/* 080A1AAC */ .word D_03003FF4
+/* 080A1AAC */ .word gPressedKeys
 
 .balign 4, 0
 _080A1AB0:

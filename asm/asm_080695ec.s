@@ -30,7 +30,7 @@ glabel func_080695EC
 
 .balign 4, 0
 _08069618:
-/* 08069618 */ .word D_03003FC8
+/* 08069618 */ .word gCurrentKeys
 
 .balign 4, 0
 _0806961C:

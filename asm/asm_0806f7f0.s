@@ -54,7 +54,7 @@ _0806F844:
 
 .balign 4, 0
 _0806F848:
-/* 0806F848 */ .word D_03003FF4
+/* 0806F848 */ .word gPressedKeys
 
 .balign 4, 0
 _0806F84C:

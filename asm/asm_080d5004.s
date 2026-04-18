@@ -94,11 +94,11 @@ _080D5064:
 
 .balign 4, 0
 _080D5094:
-/* 080D5094 */ .word D_03003FF4
+/* 080D5094 */ .word gPressedKeys
 
 .balign 4, 0
 _080D5098:
-/* 080D5098 */ .word D_03003FC8
+/* 080D5098 */ .word gCurrentKeys
 _080D509C:
 /* 080D509C */ MOVS R0, #0XE
 /* 080D509E */ BL func_080D4D80
@@ -161,11 +161,11 @@ _080D50E6:
 
 .balign 4, 0
 _080D510C:
-/* 080D510C */ .word D_03003FF4
+/* 080D510C */ .word gPressedKeys
 
 .balign 4, 0
 _080D5110:
-/* 080D5110 */ .word D_03003FC8
+/* 080D5110 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D5114:
@@ -188,7 +188,7 @@ _080D512E:
 
 .balign 4, 0
 _080D5134:
-/* 080D5134 */ .word D_03003FF4
+/* 080D5134 */ .word gPressedKeys
 _080D5138:
 /* 080D5138 */ LDR R0, _080D5160
 /* 080D513A */ LDRH R1, [R0]
@@ -212,7 +212,7 @@ _080D5138:
 
 .balign 4, 0
 _080D5160:
-/* 080D5160 */ .word D_03003FC8
+/* 080D5160 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D5164:

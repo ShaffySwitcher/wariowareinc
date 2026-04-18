@@ -77,7 +77,7 @@ _080BFF24:
 
 .balign 4, 0
 _080BFF28:
-/* 080BFF28 */ .word D_03003FC8
+/* 080BFF28 */ .word gCurrentKeys
 
 .balign 4, 0
 _080BFF2C:

@@ -228,7 +228,7 @@ _080300E8:
 
 .balign 4, 0
 _080300D0:
-/* 080300D0 */ .word D_03003FC8
+/* 080300D0 */ .word gCurrentKeys
 
 .balign 4, 0
 _080300D4:

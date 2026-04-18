@@ -54,7 +54,7 @@ _0803C460:
 
 .balign 4, 0
 _0803C464:
-/* 0803C464 */ .word D_03003FC8
+/* 0803C464 */ .word gCurrentKeys
 
 .balign 4, 0
 _0803C468:

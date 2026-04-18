@@ -157,7 +157,7 @@ _080DB154:
 
 .balign 4, 0
 _080DB1A0:
-/* 080DB1A0 */ .word D_03003FF4
+/* 080DB1A0 */ .word gPressedKeys
 
 .balign 4, 0
 _080DB1A4:
@@ -238,7 +238,7 @@ _080DB22C:
 
 .balign 4, 0
 _080DB230:
-/* 080DB230 */ .word D_03003FF4
+/* 080DB230 */ .word gPressedKeys
 
 .balign 4, 0
 _080DB234:

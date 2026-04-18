@@ -67,7 +67,7 @@ _080AC5E0:
 
 .balign 4, 0
 _080AC5E4:
-/* 080AC5E4 */ .word D_03003FC8
+/* 080AC5E4 */ .word gCurrentKeys
 _080AC5E8:
 /* 080AC5E8 */ MOVS R0, #0X20
 /* 080AC5EA */ ANDS R0, R1

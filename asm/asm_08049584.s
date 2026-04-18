@@ -85,7 +85,7 @@ _08049608:
 
 .balign 4, 0
 _0804960C:
-/* 0804960C */ .word D_03003FF4
+/* 0804960C */ .word gPressedKeys
 
 .balign 4, 0
 _08049610:
@@ -114,7 +114,7 @@ _08049614:
 
 .balign 4, 0
 _08049640:
-/* 08049640 */ .word D_03003FC8
+/* 08049640 */ .word gCurrentKeys
 
 .balign 4, 0
 _08049644:
@@ -174,6 +174,6 @@ _08049690:
 
 .balign 4, 0
 _08049694:
-/* 08049694 */ .word D_03003FF4
+/* 08049694 */ .word gPressedKeys
 .ltorg
 .end

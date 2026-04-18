@@ -56,7 +56,7 @@ _080E534C:
 
 .balign 4, 0
 _080E533C:
-/* 080E533C */ .word D_03003FF4
+/* 080E533C */ .word gPressedKeys
 
 .balign 4, 0
 _080E5340:

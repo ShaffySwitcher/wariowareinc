@@ -29,7 +29,7 @@ _080CEDA8:
 
 .balign 4, 0
 _080CEDAC:
-/* 080CEDAC */ .word D_03003FC8
+/* 080CEDAC */ .word gCurrentKeys
 _080CEDB0:
 /* 080CEDB0 */ MOVS R0, #0
 _080CEDB2:
@@ -126,7 +126,7 @@ _080CEE2E:
 
 .balign 4, 0
 _080CEE58:
-/* 080CEE58 */ .word D_03003FC8
+/* 080CEE58 */ .word gCurrentKeys
 _080CEE5C:
 /* 080CEE5C */ MOVS R0, #0
 _080CEE5E:

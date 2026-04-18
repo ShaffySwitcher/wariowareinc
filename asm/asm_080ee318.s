@@ -82,7 +82,7 @@ _080EE390:
 
 .balign 4, 0
 _080EE394:
-/* 080EE394 */ .word D_03003FF4
+/* 080EE394 */ .word gPressedKeys
 
 .balign 4, 0
 _080EE398:

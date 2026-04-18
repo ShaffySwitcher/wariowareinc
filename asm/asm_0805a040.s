@@ -45,7 +45,7 @@ _0805A084:
 
 .balign 4, 0
 _0805A088:
-/* 0805A088 */ .word D_03003FC8
+/* 0805A088 */ .word gCurrentKeys
 _0805A08C:
 /* 0805A08C */ MOVS R0, #0X10
 /* 0805A08E */ ANDS R0, R1

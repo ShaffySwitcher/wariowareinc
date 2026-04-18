@@ -35,7 +35,7 @@ _0803BDE0:
 
 .balign 4, 0
 _0803BDE4:
-/* 0803BDE4 */ .word D_03003FC8
+/* 0803BDE4 */ .word gCurrentKeys
 _0803BDE8:
 /* 0803BDE8 */ MOVS R0, #0X10
 /* 0803BDEA */ ANDS R0, R1
@@ -126,7 +126,7 @@ _0803BE8C:
 
 .balign 4, 0
 _0803BE90:
-/* 0803BE90 */ .word D_03003FF4
+/* 0803BE90 */ .word gPressedKeys
 _0803BE94:
 /* 0803BE94 */ CMP R0, #2
 /* 0803BE96 */ BEQ _0803BEB4

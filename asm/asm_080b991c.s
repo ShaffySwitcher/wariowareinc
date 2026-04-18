@@ -68,7 +68,7 @@ _080B9988:
 
 .balign 4, 0
 _080B998C:
-/* 080B998C */ .word D_03003FC8
+/* 080B998C */ .word gCurrentKeys
 _080B9990:
 /* 080B9990 */ LDRH R1, [R2]
 /* 080B9992 */ MOVS R0, #0X10
@@ -157,7 +157,7 @@ _080B99FE:
 
 .balign 4, 0
 _080B9A3C:
-/* 080B9A3C */ .word D_03003FF4
+/* 080B9A3C */ .word gPressedKeys
 
 .balign 4, 0
 _080B9A40:

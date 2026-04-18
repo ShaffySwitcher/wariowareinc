@@ -37,7 +37,7 @@ _080ABD0C:
 
 .balign 4, 0
 _080ABD10:
-/* 080ABD10 */ .word D_03003FC8
+/* 080ABD10 */ .word gCurrentKeys
 _080ABD14:
 /* 080ABD14 */ MOVS R0, #0X10
 /* 080ABD16 */ ANDS R0, R1

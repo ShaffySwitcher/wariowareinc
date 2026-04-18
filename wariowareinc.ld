@@ -11,10 +11,6 @@ SECTIONS {
         build/src/memory.c.o(.text);
         build/asm/math.s.o(.text*);
         build/src/code_08000f10.c.o(.text);
-        build/asm/asm_08000f28.s.o(.text*);
-        build/asm/asm_08000f48.s.o(.text*);
-        build/asm/asm_08000f74.s.o(.text*);
-        build/asm/asm_08000f80.s.o(.text*);
         build/asm/asm_0800100c.s.o(.text*);
         build/asm/asm_08001080.s.o(.text*);
         build/asm/asm_080010f8.s.o(.text*);

@@ -106,7 +106,7 @@ _0800FF70:
 
 .balign 4, 0
 _0800FF74:
-/* 0800FF74 */ .word D_03003FF4
+/* 0800FF74 */ .word gPressedKeys
 
 .balign 4, 0
 _0800FF78:

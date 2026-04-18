@@ -28,7 +28,7 @@ _080C30F4:
 
 .balign 4, 0
 _080C30F8:
-/* 080C30F8 */ .word D_03003FF4
+/* 080C30F8 */ .word gPressedKeys
 _080C30FC:
 /* 080C30FC */ MOVS R0, #0X10
 /* 080C30FE */ ANDS R0, R2

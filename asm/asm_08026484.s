@@ -60,6 +60,6 @@ _080264E0:
 
 .balign 4, 0
 _080264DC:
-/* 080264DC */ .word D_03003FC8
+/* 080264DC */ .word gCurrentKeys
 .ltorg
 .end

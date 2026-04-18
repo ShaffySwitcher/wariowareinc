@@ -160,7 +160,7 @@ _0802E3B4:
 
 .balign 4, 0
 _0802E3B8:
-/* 0802E3B8 */ .word D_03003FC8
+/* 0802E3B8 */ .word gCurrentKeys
 
 .balign 4, 0
 _0802E3BC:
@@ -168,7 +168,7 @@ _0802E3BC:
 
 .balign 4, 0
 _0802E3C0:
-/* 0802E3C0 */ .word D_03003FF4
+/* 0802E3C0 */ .word gPressedKeys
 
 .balign 4, 0
 _0802E3C4:
@@ -252,7 +252,7 @@ _0802E432:
 
 .balign 4, 0
 _0802E450:
-/* 0802E450 */ .word D_03003FC8
+/* 0802E450 */ .word gCurrentKeys
 
 .balign 4, 0
 _0802E454:

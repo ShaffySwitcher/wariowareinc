@@ -99,7 +99,7 @@ _080E23F4:
 
 .balign 4, 0
 _080E23F8:
-/* 080E23F8 */ .word D_03003FF4
+/* 080E23F8 */ .word gPressedKeys
 
 .balign 4, 0
 _080E23FC:

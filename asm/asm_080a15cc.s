@@ -149,7 +149,7 @@ _080A16C4:
 
 .balign 4, 0
 _080A16C8:
-/* 080A16C8 */ .word D_03003FC8
+/* 080A16C8 */ .word gCurrentKeys
 
 .balign 4, 0
 _080A16CC:

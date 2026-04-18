@@ -30,7 +30,7 @@ glabel func_080A6B6C
 
 .balign 4, 0
 _080A6B9C:
-/* 080A6B9C */ .word D_03003FF4
+/* 080A6B9C */ .word gPressedKeys
 
 .balign 4, 0
 _080A6BA0:
@@ -51,7 +51,7 @@ _080A6BA4:
 
 .balign 4, 0
 _080A6BC0:
-/* 080A6BC0 */ .word D_03003FF4
+/* 080A6BC0 */ .word gPressedKeys
 
 .balign 4, 0
 _080A6BC4:
@@ -76,7 +76,7 @@ _080A6BD6:
 
 .balign 4, 0
 _080A6BE8:
-/* 080A6BE8 */ .word D_03003FC8
+/* 080A6BE8 */ .word gCurrentKeys
 _080A6BEC:
 /* 080A6BEC */ CMP R4, #2
 /* 080A6BEE */ BEQ _080A6C52

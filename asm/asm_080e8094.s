@@ -93,7 +93,7 @@ _080E8112:
 
 .balign 4, 0
 _080E813C:
-/* 080E813C */ .word D_03003FC8
+/* 080E813C */ .word gCurrentKeys
 
 .balign 4, 0
 _080E8140:
@@ -259,7 +259,7 @@ _080E8264:
 
 .balign 4, 0
 _080E8268:
-/* 080E8268 */ .word D_03003FF4
+/* 080E8268 */ .word gPressedKeys
 
 .balign 4, 0
 _080E826C:
@@ -342,7 +342,7 @@ _080E82E0:
 
 .balign 4, 0
 _080E82E4:
-/* 080E82E4 */ .word D_03003FC8
+/* 080E82E4 */ .word gCurrentKeys
 
 .balign 4, 0
 _080E82E8:

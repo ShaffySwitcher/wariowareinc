@@ -32,7 +32,7 @@ _080674AC:
 
 .balign 4, 0
 _080674B0:
-/* 080674B0 */ .word D_03003FC8
+/* 080674B0 */ .word gCurrentKeys
 _080674B4:
 /* 080674B4 */ MOVS R0, #0X80
 /* 080674B6 */ ANDS R0, R1

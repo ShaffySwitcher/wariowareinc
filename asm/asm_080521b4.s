@@ -58,7 +58,7 @@ _080521E6:
 
 .balign 4, 0
 _08052218:
-/* 08052218 */ .word D_03003FC8
+/* 08052218 */ .word gCurrentKeys
 
 .balign 4, 0
 _0805221C:

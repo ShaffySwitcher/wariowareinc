@@ -32,7 +32,7 @@ glabel func_080B2F54
 /* 080B2F84 */ LSLS R5, R5, #0X10
 /* 080B2F86 */ LSRS R5, R5, #0X10
 /* 080B2F88 */ RSBS R5, R5, #0
-/* 080B2F8A */ LDR R1, =D_03003FF4
+/* 080B2F8A */ LDR R1, =gPressedKeys
 /* 080B2F8C */ LDRH R1, [R1]
 /* 080B2F8E */ MOV SL, R1
 /* 080B2F90 */ MOVS R1, #1
@@ -98,6 +98,6 @@ _080B3004:
 
 .balign 4, 0
 _080B3000:
-/* 080B3000 */ .word D_03003FC8
+/* 080B3000 */ .word gCurrentKeys
 .ltorg
 .end

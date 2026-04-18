@@ -68,7 +68,7 @@ _080BD586:
 
 .balign 4, 0
 _080BD5A4:
-/* 080BD5A4 */ .word D_03003FC8
+/* 080BD5A4 */ .word gCurrentKeys
 
 .balign 4, 0
 _080BD5A8:
@@ -184,7 +184,7 @@ _080BD668:
 
 .balign 4, 0
 _080BD66C:
-/* 080BD66C */ .word D_03003FC8
+/* 080BD66C */ .word gCurrentKeys
 
 .balign 4, 0
 _080BD670:

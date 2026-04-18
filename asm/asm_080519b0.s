@@ -57,11 +57,11 @@ _08051A08:
 
 .balign 4, 0
 _08051A0C:
-/* 08051A0C */ .word D_03003FC8
+/* 08051A0C */ .word gCurrentKeys
 
 .balign 4, 0
 _08051A10:
-/* 08051A10 */ .word D_03003FF4
+/* 08051A10 */ .word gPressedKeys
 
 .balign 4, 0
 _08051A14:

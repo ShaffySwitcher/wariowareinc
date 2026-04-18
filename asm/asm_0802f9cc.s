@@ -103,7 +103,7 @@ _0802FA74:
 
 .balign 4, 0
 _0802FA78:
-/* 0802FA78 */ .word D_03003FF4
+/* 0802FA78 */ .word gPressedKeys
 
 .balign 4, 0
 _0802FA7C:

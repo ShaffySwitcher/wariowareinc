@@ -129,7 +129,7 @@ _080092C4:
 
 .balign 4, 0
 _080092C8:
-/* 080092C8 */ .word D_03003FF4
+/* 080092C8 */ .word gPressedKeys
 
 .balign 4, 0
 _080092CC:

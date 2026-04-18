@@ -73,7 +73,7 @@ _0807A6EC:
 
 .balign 4, 0
 _0807A728:
-/* 0807A728 */ .word D_03003FF4
+/* 0807A728 */ .word gPressedKeys
 
 .balign 4, 0
 _0807A72C:
@@ -210,7 +210,7 @@ _0807A80A:
 /* 0807A824 */ ADDS R0, R7
 /* 0807A826 */ MOVS R1, #0
 /* 0807A828 */ LDRSH R3, [R0, R1]
-/* 0807A82A */ LDR R0, =D_03003FF4
+/* 0807A82A */ LDR R0, =gPressedKeys
 /* 0807A82C */ LDRH R1, [R0]
 /* 0807A82E */ MOVS R0, #0X20
 /* 0807A830 */ ANDS R0, R1

@@ -42,7 +42,7 @@ _0808AFE4:
 
 .balign 4, 0
 _0808AFE8:
-/* 0808AFE8 */ .word D_03003FC8
+/* 0808AFE8 */ .word gCurrentKeys
 _0808AFEC:
 /* 0808AFEC */ ADDS R0, R3, #0
 /* 0808AFEE */ ADDS R0, #0XB4

@@ -48,7 +48,7 @@ _0804E482:
 
 .balign 4, 0
 _0804E488:
-/* 0804E488 */ .word D_03003FF4
+/* 0804E488 */ .word gPressedKeys
 _0804E48C:
 /* 0804E48C */ LDR R4, _0804E4AC
 /* 0804E48E */ LDRH R1, [R4]
@@ -70,9 +70,9 @@ _0804E49A:
 
 .balign 4, 0
 _0804E4AC:
-/* 0804E4AC */ .word D_03003FF4
+/* 0804E4AC */ .word gPressedKeys
 _0804E4B0:
-/* 0804E4B0 */ LDR R4, =D_03003FF4
+/* 0804E4B0 */ LDR R4, =gPressedKeys
 /* 0804E4B2 */ LDRH R1, [R4]
 /* 0804E4B4 */ MOVS R0, #0X20
 /* 0804E4B6 */ ANDS R0, R1

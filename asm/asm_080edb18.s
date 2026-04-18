@@ -261,7 +261,7 @@ _080EDCE6:
 
 .balign 4, 0
 _080EDCEC:
-/* 080EDCEC */ .word D_03003FF4
+/* 080EDCEC */ .word gPressedKeys
 _080EDCF0:
 /* 080EDCF0 */ MOVS R0, #0
 _080EDCF2:

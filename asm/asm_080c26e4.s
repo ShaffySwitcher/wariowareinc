@@ -133,7 +133,7 @@ _080C2754:
 
 .balign 4, 0
 _080C27DC:
-/* 080C27DC */ .word D_03003FC8
+/* 080C27DC */ .word gCurrentKeys
 
 .balign 4, 0
 _080C27E0:

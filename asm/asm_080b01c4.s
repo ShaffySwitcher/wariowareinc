@@ -150,7 +150,7 @@ _080B02A4:
 
 .balign 4, 0
 _080B02D0:
-/* 080B02D0 */ .word D_03003FF4
+/* 080B02D0 */ .word gPressedKeys
 
 .balign 4, 0
 _080B02D4:
@@ -199,7 +199,7 @@ _080B0324:
 
 .balign 4, 0
 _080B0328:
-/* 080B0328 */ .word D_03003FF4
+/* 080B0328 */ .word gPressedKeys
 
 .balign 4, 0
 _080B032C:

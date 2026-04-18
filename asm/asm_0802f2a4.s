@@ -119,7 +119,7 @@ _0802F374:
 
 .balign 4, 0
 _0802F378:
-/* 0802F378 */ .word D_03003FC8
+/* 0802F378 */ .word gCurrentKeys
 
 .balign 4, 0
 _0802F37C:

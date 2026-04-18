@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0802645C
 /* 0802645C */ PUSH {LR}
-/* 0802645E */ LDR R0, =D_03003FC8
+/* 0802645E */ LDR R0, =gCurrentKeys
 /* 08026460 */ LDRH R0, [R0]
 /* 08026462 */ LSRS R0, R0, #8
 /* 08026464 */ MOVS R1, #1

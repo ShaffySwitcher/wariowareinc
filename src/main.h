@@ -14,7 +14,7 @@ extern u8 D_03003638;
 extern s16 D_03003844;
 extern u16 D_030035E0;
 extern u16 D_03003840;
-extern u16 D_03003FC8;
+extern u16 gCurrentKeys;
 
 extern void func_0800774C();
 extern void func_08002620();

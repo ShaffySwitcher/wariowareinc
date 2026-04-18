@@ -36,7 +36,7 @@ _080BD170:
 
 .balign 4, 0
 _080BD174:
-/* 080BD174 */ .word D_03003FF4
+/* 080BD174 */ .word gPressedKeys
 
 .balign 4, 0
 _080BD178:

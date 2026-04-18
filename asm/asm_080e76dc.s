@@ -34,7 +34,7 @@ glabel func_080E76DC
 
 .balign 4, 0
 _080E7714:
-/* 080E7714 */ .word D_03003FF4
+/* 080E7714 */ .word gPressedKeys
 
 .balign 4, 0
 _080E7718:

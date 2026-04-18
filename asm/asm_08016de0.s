@@ -70,7 +70,7 @@ _08016E44:
 
 .balign 4, 0
 _08016E54:
-/* 08016E54 */ .word D_03003FC8
+/* 08016E54 */ .word gCurrentKeys
 _08016E58:
 /* 08016E58 */ BL func_08006F68
 /* 08016E5C */ BL func_08006B00

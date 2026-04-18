@@ -111,7 +111,7 @@ _080E10CC:
 
 .balign 4, 0
 _080E10E0:
-/* 080E10E0 */ .word D_03003FF4
+/* 080E10E0 */ .word gPressedKeys
 
 .balign 4, 0
 _080E10E4:

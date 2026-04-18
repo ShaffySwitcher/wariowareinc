@@ -59,7 +59,7 @@ _080D2FCA:
 
 .balign 4, 0
 _080D3004:
-/* 080D3004 */ .word D_03003FC8
+/* 080D3004 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D3008:
@@ -151,7 +151,7 @@ _080D3098:
 
 .balign 4, 0
 _080D30A4:
-/* 080D30A4 */ .word D_03003FC8
+/* 080D30A4 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D30A8:
@@ -226,7 +226,7 @@ _080D3114:
 
 .balign 4, 0
 _080D3128:
-/* 080D3128 */ .word D_03003FC8
+/* 080D3128 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D312C:

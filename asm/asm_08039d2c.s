@@ -24,7 +24,7 @@ glabel func_08039D2C
 
 .balign 4, 0
 _08039D4C:
-/* 08039D4C */ .word D_03003FC8
+/* 08039D4C */ .word gCurrentKeys
 
 .balign 4, 0
 _08039D50:

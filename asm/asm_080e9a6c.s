@@ -128,7 +128,7 @@ _080E9B38:
 
 .balign 4, 0
 _080E9B3C:
-/* 080E9B3C */ .word D_03003FC8
+/* 080E9B3C */ .word gCurrentKeys
 _080E9B40:
 /* 080E9B40 */ BL func_080E9900
 /* 080E9B44 */ BL func_080E9840

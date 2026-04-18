@@ -36,7 +36,7 @@ _0805BE80:
 
 .balign 4, 0
 _0805BE84:
-/* 0805BE84 */ .word D_03003FC8
+/* 0805BE84 */ .word gCurrentKeys
 _0805BE88:
 /* 0805BE88 */ CMP R3, #0
 /* 0805BE8A */ BGE _0805BE8E

@@ -114,7 +114,7 @@ _0800F39A:
 
 .balign 4, 0
 _0800F3B8:
-/* 0800F3B8 */ .word D_03003FC8
+/* 0800F3B8 */ .word gCurrentKeys
 
 .balign 4, 0
 _0800F3BC:
@@ -214,11 +214,11 @@ _0800F45C:
 
 .balign 4, 0
 _0800F460:
-/* 0800F460 */ .word D_03003FF4
+/* 0800F460 */ .word gPressedKeys
 
 .balign 4, 0
 _0800F464:
-/* 0800F464 */ .word D_03003FC8
+/* 0800F464 */ .word gCurrentKeys
 
 .balign 4, 0
 _0800F468:

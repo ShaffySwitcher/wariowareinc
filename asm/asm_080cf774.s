@@ -53,7 +53,7 @@ _080CF7C8:
 
 .balign 4, 0
 _080CF7CC:
-/* 080CF7CC */ .word D_03003FC8
+/* 080CF7CC */ .word gCurrentKeys
 
 .balign 4, 0
 _080CF7D0:

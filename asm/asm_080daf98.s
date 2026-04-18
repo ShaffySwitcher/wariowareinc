@@ -32,7 +32,7 @@ glabel func_080DAF98
 
 .balign 4, 0
 _080DAFCC:
-/* 080DAFCC */ .word D_03003FF4
+/* 080DAFCC */ .word gPressedKeys
 
 .balign 4, 0
 _080DAFD0:

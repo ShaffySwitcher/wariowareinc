@@ -59,7 +59,7 @@ _080E885E:
 
 .balign 4, 0
 _080E8864:
-/* 080E8864 */ .word D_03003FC8
+/* 080E8864 */ .word gCurrentKeys
 
 .balign 4, 0
 _080E8868:

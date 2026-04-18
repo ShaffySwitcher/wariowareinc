@@ -22,7 +22,7 @@ glabel func_080D9F10
 
 .balign 4, 0
 _080D9F30:
-/* 080D9F30 */ .word D_03003FF4
+/* 080D9F30 */ .word gPressedKeys
 _080D9F34:
 /* 080D9F34 */ MOVS R0, #0X80
 /* 080D9F36 */ ANDS R0, R1

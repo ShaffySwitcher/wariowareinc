@@ -74,7 +74,7 @@ _080EAFE4:
 
 .balign 4, 0
 _080EB004:
-/* 080EB004 */ .word D_03003FF4
+/* 080EB004 */ .word gPressedKeys
 _080EB008:
 /* 080EB008 */ BL func_080EAD74
 /* 080EB00C */ B _080EB01E

@@ -80,7 +80,7 @@ _080DB804:
 
 .balign 4, 0
 _080DB85C:
-/* 080DB85C */ .word D_03003FF4
+/* 080DB85C */ .word gPressedKeys
 
 .balign 4, 0
 _080DB860:
@@ -100,7 +100,7 @@ _080DB86C:
 
 .balign 4, 0
 _080DB870:
-/* 080DB870 */ .word D_03003FC8
+/* 080DB870 */ .word gCurrentKeys
 
 .balign 4, 0
 _080DB874:
@@ -247,6 +247,6 @@ _080DB978:
 
 .balign 4, 0
 _080DB97C:
-/* 080DB97C */ .word D_03003FF4
+/* 080DB97C */ .word gPressedKeys
 .ltorg
 .end

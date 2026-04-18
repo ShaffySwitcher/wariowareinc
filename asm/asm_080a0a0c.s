@@ -64,7 +64,7 @@ _080A0A4C:
 
 .balign 4, 0
 _080A0A60:
-/* 080A0A60 */ .word D_03003FF4
+/* 080A0A60 */ .word gPressedKeys
 _080A0A64:
 /* 080A0A64 */ MOVS R0, #0X80
 /* 080A0A66 */ ANDS R0, R1
@@ -133,7 +133,7 @@ _080A0AC6:
 
 .balign 4, 0
 _080A0ADC:
-/* 080A0ADC */ .word D_03003FF4
+/* 080A0ADC */ .word gPressedKeys
 _080A0AE0:
 /* 080A0AE0 */ MOVS R0, #0X80
 /* 080A0AE2 */ ANDS R0, R1

@@ -7,7 +7,7 @@
 glabel func_080227F0
 /* 080227F0 */ PUSH {LR}
 /* 080227F2 */ BL func_08022B28
-/* 080227F6 */ LDR R0, =D_03003FC8
+/* 080227F6 */ LDR R0, =gCurrentKeys
 /* 080227F8 */ LDRH R0, [R0]
 /* 080227FA */ LSRS R0, R0, #8
 /* 080227FC */ MOVS R1, #1

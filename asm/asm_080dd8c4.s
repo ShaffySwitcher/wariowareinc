@@ -74,7 +74,7 @@ _080DD904:
 
 .balign 4, 0
 _080DD930:
-/* 080DD930 */ .word D_03003FC8
+/* 080DD930 */ .word gCurrentKeys
 
 .balign 4, 0
 _080DD934:
@@ -173,7 +173,7 @@ _080DD9E0:
 
 .balign 4, 0
 _080DD9E4:
-/* 080DD9E4 */ .word D_03003FF4
+/* 080DD9E4 */ .word gPressedKeys
 
 .balign 4, 0
 _080DD9E8:
@@ -319,7 +319,7 @@ _080DDAD8:
 
 .balign 4, 0
 _080DDADC:
-/* 080DDADC */ .word D_03003FC8
+/* 080DDADC */ .word gCurrentKeys
 _080DDAE0:
 /* 080DDAE0 */ MOVS R0, #0X20
 /* 080DDAE2 */ ANDS R0, R1
@@ -492,7 +492,7 @@ _080DDC10:
 
 .balign 4, 0
 _080DDC14:
-/* 080DDC14 */ .word D_03003FC8
+/* 080DDC14 */ .word gCurrentKeys
 _080DDC18:
 /* 080DDC18 */ MOVS R0, #0X20
 /* 080DDC1A */ ANDS R0, R1

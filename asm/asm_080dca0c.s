@@ -155,6 +155,6 @@ _080DCB24:
 
 .balign 4, 0
 _080DCB20:
-/* 080DCB20 */ .word D_03003FF4
+/* 080DCB20 */ .word gPressedKeys
 .ltorg
 .end

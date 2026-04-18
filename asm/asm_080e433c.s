@@ -153,7 +153,7 @@ _080E4426:
 
 .balign 4, 0
 _080E4438:
-/* 080E4438 */ .word D_03003FC8
+/* 080E4438 */ .word gCurrentKeys
 _080E443C:
 /* 080E443C */ BL func_080E4190
 /* 080E4440 */ BL func_080E410C

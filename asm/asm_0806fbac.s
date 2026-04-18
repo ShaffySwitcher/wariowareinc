@@ -75,6 +75,6 @@ _0806FC1C:
 
 .balign 4, 0
 _0806FC20:
-/* 0806FC20 */ .word D_03003FF4
+/* 0806FC20 */ .word gPressedKeys
 .ltorg
 .end

@@ -53,7 +53,7 @@ _08099A78:
 
 .balign 4, 0
 _08099A7C:
-/* 08099A7C */ .word D_03003FC8
+/* 08099A7C */ .word gCurrentKeys
 
 .balign 4, 0
 _08099A80:

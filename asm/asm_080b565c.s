@@ -54,7 +54,7 @@ glabel func_080B565C
 
 .balign 4, 0
 _080B56BC:
-/* 080B56BC */ .word D_03003FC8
+/* 080B56BC */ .word gCurrentKeys
 
 .balign 4, 0
 _080B56C0:

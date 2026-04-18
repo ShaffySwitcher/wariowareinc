@@ -37,7 +37,7 @@ glabel func_0809E254
 
 .balign 4, 0
 _0809E290:
-/* 0809E290 */ .word D_03003FC8
+/* 0809E290 */ .word gCurrentKeys
 
 .balign 4, 0
 _0809E294:
@@ -88,7 +88,7 @@ _0809E2DC:
 
 .balign 4, 0
 _0809E2E0:
-/* 0809E2E0 */ .word D_03003FC8
+/* 0809E2E0 */ .word gCurrentKeys
 
 .balign 4, 0
 _0809E2E4:
@@ -135,7 +135,7 @@ _0809E328:
 
 .balign 4, 0
 _0809E32C:
-/* 0809E32C */ .word D_03003FC8
+/* 0809E32C */ .word gCurrentKeys
 
 .balign 4, 0
 _0809E330:
@@ -182,7 +182,7 @@ _0809E374:
 
 .balign 4, 0
 _0809E378:
-/* 0809E378 */ .word D_03003FC8
+/* 0809E378 */ .word gCurrentKeys
 
 .balign 4, 0
 _0809E37C:

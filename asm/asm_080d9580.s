@@ -54,7 +54,7 @@ _080D95D0:
 
 .balign 4, 0
 _080D95D4:
-/* 080D95D4 */ .word D_03003FC8
+/* 080D95D4 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D95D8:

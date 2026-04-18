@@ -181,7 +181,7 @@ _080AE2E0:
 
 .balign 4, 0
 _080AE2E4:
-/* 080AE2E4 */ .word D_03003FC8
+/* 080AE2E4 */ .word gCurrentKeys
 _080AE2E8:
 /* 080AE2E8 */ ADDS R0, R2, #0
 /* 080AE2EA */ ADDS R0, #0X5C
@@ -465,7 +465,7 @@ _080AE4F8:
 
 .balign 4, 0
 _080AE4FC:
-/* 080AE4FC */ .word D_03003FC8
+/* 080AE4FC */ .word gCurrentKeys
 _080AE500:
 /* 080AE500 */ ADDS R0, R2, #0
 /* 080AE502 */ ADDS R0, #0XD4

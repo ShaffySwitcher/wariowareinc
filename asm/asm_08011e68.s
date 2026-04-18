@@ -128,7 +128,7 @@ _08011F5C:
 
 .balign 4, 0
 _08011F60:
-/* 08011F60 */ .word D_03003FC8
+/* 08011F60 */ .word gCurrentKeys
 
 .balign 4, 0
 _08011F64:
@@ -174,7 +174,7 @@ _08011F80:
 
 .balign 4, 0
 _08011F9C:
-/* 08011F9C */ .word D_03003FF4
+/* 08011F9C */ .word gPressedKeys
 _08011FA0:
 /* 08011FA0 */ CMP R5, #2
 /* 08011FA2 */ BEQ _08012010

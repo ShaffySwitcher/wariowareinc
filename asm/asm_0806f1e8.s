@@ -90,7 +90,7 @@ _0806F264:
 
 .balign 4, 0
 _0806F268:
-/* 0806F268 */ .word D_03003FC8
+/* 0806F268 */ .word gCurrentKeys
 
 .balign 4, 0
 _0806F26C:
@@ -105,7 +105,7 @@ _0806F270:
 
 .balign 4, 0
 _0806F280:
-/* 0806F280 */ .word D_03003FC8
+/* 0806F280 */ .word gCurrentKeys
 _0806F284:
 /* 0806F284 */ BL func_0806F0D4
 /* 0806F288 */ BL func_0806F0A0
@@ -125,7 +125,7 @@ _0806F292:
 
 .balign 4, 0
 _0806F2A4:
-/* 0806F2A4 */ .word D_03003FC8
+/* 0806F2A4 */ .word gCurrentKeys
 
 .balign 4, 0
 _0806F2A8:

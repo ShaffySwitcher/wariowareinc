@@ -49,7 +49,7 @@ _0809F9BC:
 
 .balign 4, 0
 _0809F9AC:
-/* 0809F9AC */ .word D_03003FF4
+/* 0809F9AC */ .word gPressedKeys
 
 .balign 4, 0
 _0809F9B0:

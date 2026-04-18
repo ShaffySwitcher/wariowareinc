@@ -127,6 +127,6 @@ _08010530:
 
 .balign 4, 0
 _08010534:
-/* 08010534 */ .word D_03003FF4
+/* 08010534 */ .word gPressedKeys
 .ltorg
 .end

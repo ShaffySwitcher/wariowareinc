@@ -65,7 +65,7 @@ _0807E240:
 
 .balign 4, 0
 _0807E238:
-/* 0807E238 */ .word D_03003FC8
+/* 0807E238 */ .word gCurrentKeys
 
 .balign 4, 0
 _0807E23C:

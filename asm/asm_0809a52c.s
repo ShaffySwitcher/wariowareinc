@@ -39,7 +39,7 @@ _0809A564:
 
 .balign 4, 0
 _0809A568:
-/* 0809A568 */ .word D_03003FC8
+/* 0809A568 */ .word gCurrentKeys
 
 .balign 4, 0
 _0809A56C:

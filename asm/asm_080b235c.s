@@ -103,7 +103,7 @@ _080B2404:
 
 .balign 4, 0
 _080B2408:
-/* 080B2408 */ .word D_03003FF4
+/* 080B2408 */ .word gPressedKeys
 _080B240C:
 /* 080B240C */ BL func_080B2170
 /* 080B2410 */ LDR R0, [R6]

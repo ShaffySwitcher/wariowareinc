@@ -37,6 +37,6 @@ _080C0A90:
 
 .balign 4, 0
 _080C0A94:
-/* 080C0A94 */ .word D_03003FF4
+/* 080C0A94 */ .word gPressedKeys
 .ltorg
 .end

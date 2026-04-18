@@ -31,7 +31,7 @@ _080A8DBC:
 
 .balign 4, 0
 _080A8DC0:
-/* 080A8DC0 */ .word D_03003FF4
+/* 080A8DC0 */ .word gPressedKeys
 
 .balign 4, 0
 _080A8DC4:
@@ -61,7 +61,7 @@ _080A8DCE:
 
 .balign 4, 0
 _080A8DF4:
-/* 080A8DF4 */ .word D_03003FC8
+/* 080A8DF4 */ .word gCurrentKeys
 
 .balign 4, 0
 _080A8DF8:

@@ -170,7 +170,7 @@ _08032C54:
 
 .balign 4, 0
 _08032C64:
-/* 08032C64 */ .word D_03003FC8
+/* 08032C64 */ .word gCurrentKeys
 
 .balign 4, 0
 _08032C68:

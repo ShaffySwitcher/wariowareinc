@@ -55,7 +55,7 @@ _0805EA98:
 
 .balign 4, 0
 _0805EA9C:
-/* 0805EA9C */ .word D_03003FF4
+/* 0805EA9C */ .word gPressedKeys
 
 .balign 4, 0
 _0805EAA0:
@@ -63,7 +63,7 @@ _0805EAA0:
 
 .balign 4, 0
 _0805EAA4:
-/* 0805EAA4 */ .word D_03003FC8
+/* 0805EAA4 */ .word gCurrentKeys
 _0805EAA8:
 /* 0805EAA8 */ LDR R0, _0805EAE4
 /* 0805EAAA */ LDR R3, [R0]

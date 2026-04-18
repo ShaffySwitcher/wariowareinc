@@ -28,7 +28,7 @@ glabel func_0800DD40
 
 .balign 4, 0
 _0800DD6C:
-/* 0800DD6C */ .word D_03003FF4
+/* 0800DD6C */ .word gPressedKeys
 
 .balign 4, 0
 _0800DD70:

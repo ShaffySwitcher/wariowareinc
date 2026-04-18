@@ -35,7 +35,7 @@ _080E5BE8:
 
 .balign 4, 0
 _080E5BEC:
-/* 080E5BEC */ .word D_03003FC8
+/* 080E5BEC */ .word gCurrentKeys
 _080E5BF0:
 /* 080E5BF0 */ SUBS R0, R3, R4
 _080E5BF2:
@@ -166,7 +166,7 @@ _080E5CC2:
 
 .balign 4, 0
 _080E5CD4:
-/* 080E5CD4 */ .word D_03003FF4
+/* 080E5CD4 */ .word gPressedKeys
 
 .balign 4, 0
 _080E5CD8:

@@ -32,7 +32,7 @@ _080C11C8:
 
 .balign 4, 0
 _080C11CC:
-/* 080C11CC */ .word D_03003FF4
+/* 080C11CC */ .word gPressedKeys
 
 .balign 4, 0
 _080C11D0:

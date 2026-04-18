@@ -69,7 +69,7 @@ _0804E304:
 
 .balign 4, 0
 _0804E308:
-/* 0804E308 */ .word D_03003FF4
+/* 0804E308 */ .word gPressedKeys
 _0804E30C:
 /* 0804E30C */ CMP R0, #2
 /* 0804E30E */ BEQ _0804E35A

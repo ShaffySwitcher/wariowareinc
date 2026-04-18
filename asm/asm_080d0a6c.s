@@ -77,7 +77,7 @@ _080D0AAC:
 
 .balign 4, 0
 _080D0AE0:
-/* 080D0AE0 */ .word D_03003FC8
+/* 080D0AE0 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D0AE4:
@@ -156,7 +156,7 @@ _080D0B60:
 
 .balign 4, 0
 _080D0B64:
-/* 080D0B64 */ .word D_03003FC8
+/* 080D0B64 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D0B68:
@@ -164,7 +164,7 @@ _080D0B68:
 
 .balign 4, 0
 _080D0B6C:
-/* 080D0B6C */ .word D_03003FF4
+/* 080D0B6C */ .word gPressedKeys
 _080D0B70:
 /* 080D0B70 */ LDRH R0, [R5, #0X1A]
 /* 080D0B72 */ LDRH R1, [R5, #0X16]
@@ -261,11 +261,11 @@ _080D0BF0:
 
 .balign 4, 0
 _080D0C20:
-/* 080D0C20 */ .word D_03003FF4
+/* 080D0C20 */ .word gPressedKeys
 
 .balign 4, 0
 _080D0C24:
-/* 080D0C24 */ .word D_03003FC8
+/* 080D0C24 */ .word gCurrentKeys
 
 .balign 4, 0
 _080D0C28:
@@ -316,11 +316,11 @@ _080D0C44:
 
 .balign 4, 0
 _080D0C78:
-/* 080D0C78 */ .word D_03003FF4
+/* 080D0C78 */ .word gPressedKeys
 
 .balign 4, 0
 _080D0C7C:
-/* 080D0C7C */ .word D_03003FC8
+/* 080D0C7C */ .word gCurrentKeys
 
 .balign 4, 0
 _080D0C80:
@@ -341,7 +341,7 @@ _080D0C94:
 
 .balign 4, 0
 _080D0C9C:
-/* 080D0C9C */ .word D_03003FF4
+/* 080D0C9C */ .word gPressedKeys
 _080D0CA0:
 /* 080D0CA0 */ LDR R0, _080D0CDC
 /* 080D0CA2 */ LDRH R1, [R0]
@@ -377,7 +377,7 @@ _080D0CD2:
 
 .balign 4, 0
 _080D0CDC:
-/* 080D0CDC */ .word D_03003FC8
+/* 080D0CDC */ .word gCurrentKeys
 
 .balign 4, 0
 _080D0CE0:

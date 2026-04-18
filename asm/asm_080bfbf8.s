@@ -53,7 +53,7 @@ _080BFC48:
 
 .balign 4, 0
 _080BFC4C:
-/* 080BFC4C */ .word D_03003FC8
+/* 080BFC4C */ .word gCurrentKeys
 
 .balign 4, 0
 _080BFC50:
@@ -94,7 +94,7 @@ _080BFC66:
 
 .balign 4, 0
 _080BFC94:
-/* 080BFC94 */ .word D_03003FF4
+/* 080BFC94 */ .word gPressedKeys
 
 .balign 4, 0
 _080BFC98:

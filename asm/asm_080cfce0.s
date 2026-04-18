@@ -65,7 +65,7 @@ glabel func_080CFCE0
 
 .balign 4, 0
 _080CFD5C:
-/* 080CFD5C */ .word D_03003FF4
+/* 080CFD5C */ .word gPressedKeys
 
 .balign 4, 0
 _080CFD60:

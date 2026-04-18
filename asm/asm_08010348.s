@@ -37,7 +37,7 @@ glabel func_08010348
 
 .balign 4, 0
 _0801038C:
-/* 0801038C */ .word D_03003FF4
+/* 0801038C */ .word gPressedKeys
 
 .balign 4, 0
 _08010390:
@@ -78,6 +78,6 @@ _080103C8:
 
 .balign 4, 0
 _080103C4:
-/* 080103C4 */ .word D_03003FF4
+/* 080103C4 */ .word gPressedKeys
 .ltorg
 .end

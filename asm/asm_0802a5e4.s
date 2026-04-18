@@ -63,7 +63,7 @@ _0802A63C:
 
 .balign 4, 0
 _0802A640:
-/* 0802A640 */ .word D_03003FC8
+/* 0802A640 */ .word gCurrentKeys
 _0802A644:
 /* 0802A644 */ LSLS R4, R2, #1
 /* 0802A646 */ ADDS R0, R4, R2
@@ -174,7 +174,7 @@ _0802A6E8:
 /* 0802A706 */ ADDS R0, R4
 /* 0802A708 */ LSLS R0, R0, #1
 /* 0802A70A */ ASRS R2, R0, #8
-/* 0802A70C */ LDR R3, =D_03003FC8
+/* 0802A70C */ LDR R3, =gCurrentKeys
 /* 0802A70E */ LDRH R1, [R3]
 /* 0802A710 */ MOVS R0, #0X20
 /* 0802A712 */ ANDS R0, R1
@@ -238,7 +238,7 @@ _0802A78C:
 
 .balign 4, 0
 _0802A780:
-/* 0802A780 */ .word D_03003FF4
+/* 0802A780 */ .word gPressedKeys
 
 .balign 4, 0
 _0802A784:

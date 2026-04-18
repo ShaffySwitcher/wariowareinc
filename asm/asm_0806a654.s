@@ -53,7 +53,7 @@ _0806A696:
 
 .balign 4, 0
 _0806A6A8:
-/* 0806A6A8 */ .word D_03003FF4
+/* 0806A6A8 */ .word gPressedKeys
 _0806A6AC:
 /* 0806A6AC */ MOVS R0, #1
 /* 0806A6AE */ BL func_0806A548
@@ -87,11 +87,11 @@ _0806A6D8:
 
 .balign 4, 0
 _0806A6E8:
-/* 0806A6E8 */ .word D_03003FC8
+/* 0806A6E8 */ .word gCurrentKeys
 
 .balign 4, 0
 _0806A6EC:
-/* 0806A6EC */ .word D_03003FF4
+/* 0806A6EC */ .word gPressedKeys
 _0806A6F0:
 /* 0806A6F0 */ MOVS R0, #1
 /* 0806A6F2 */ RSBS R0, R0, #0
@@ -107,7 +107,7 @@ _0806A6F0:
 /* 0806A708 */ LDR R0, [R5]
 /* 0806A70A */ STRB R1, [R0, #0X16]
 _0806A70C:
-/* 0806A70C */ LDR R2, =D_03003FF4
+/* 0806A70C */ LDR R2, =gPressedKeys
 /* 0806A70E */ LDRH R1, [R2]
 /* 0806A710 */ MOVS R0, #0X10
 /* 0806A712 */ ANDS R0, R1
@@ -134,6 +134,6 @@ _0806A738:
 
 .balign 4, 0
 _0806A734:
-/* 0806A734 */ .word D_03003FC8
+/* 0806A734 */ .word gCurrentKeys
 .ltorg
 .end

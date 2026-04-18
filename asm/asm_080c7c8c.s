@@ -90,7 +90,7 @@ _080C7CEC:
 
 .balign 4, 0
 _080C7D30:
-/* 080C7D30 */ .word D_03003FF4
+/* 080C7D30 */ .word gPressedKeys
 
 .balign 4, 0
 _080C7D34:

@@ -147,7 +147,7 @@ _0804AF84:
 
 .balign 4, 0
 _0804AF88:
-/* 0804AF88 */ .word D_03003FC8
+/* 0804AF88 */ .word gCurrentKeys
 
 .balign 4, 0
 _0804AF8C:
@@ -276,7 +276,7 @@ _0804B064:
 
 .balign 4, 0
 _0804B068:
-/* 0804B068 */ .word D_03003FF4
+/* 0804B068 */ .word gPressedKeys
 
 .balign 4, 0
 _0804B06C:

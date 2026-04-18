@@ -98,10 +98,10 @@ thumb_func_start AgbMain \n\
 /* 0800030E */ MOVS R7, #1 \n\
 \n\
 _08000310: \n\
-/* 08000310 */ BL func_08000F48 \n\
+/* 08000310 */ BL vblank_wait \n\
 /* 08000314 */ BL func_08001104 \n\
 /* 08000318 */ BL func_080F3C78 \n\
-/* 0800031C */ BL func_08000F80 \n\
+/* 0800031C */ BL update_key_buffers \n\
 /* 08000320 */ LDR R1, =D_03003840 \n\
 /* 08000322 */ LDRH R0, [R1] \n\
 /* 08000324 */ ADDS R0, #1 \n\
@@ -297,7 +297,7 @@ _08000430: \n\
  \n\
 .balign 4, 0 \n\
 _08000434: \n\
-/* 08000434 */ .word D_03003FC8 \n\
+/* 08000434 */ .word gCurrentKeys \n\
  \n\
 .balign 4, 0 \n\
 _08000438: \n\

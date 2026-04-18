@@ -101,7 +101,7 @@ _080EB8BC:
 
 .balign 4, 0
 _080EB8C0:
-/* 080EB8C0 */ .word D_03003FC8
+/* 080EB8C0 */ .word gCurrentKeys
 
 .balign 4, 0
 _080EB8C4:

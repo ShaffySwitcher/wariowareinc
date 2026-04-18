@@ -169,7 +169,7 @@ _08024CDA:
 
 .balign 4, 0
 _08024CF8:
-/* 08024CF8 */ .word D_03003FF4
+/* 08024CF8 */ .word gPressedKeys
 
 .balign 4, 0
 _08024CFC:

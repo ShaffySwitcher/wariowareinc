@@ -383,7 +383,7 @@ _0802CA5C:
 
 .balign 4, 0
 _0802CA60:
-/* 0802CA60 */ .word D_03003FF4
+/* 0802CA60 */ .word gPressedKeys
 
 .balign 4, 0
 _0802CA64:

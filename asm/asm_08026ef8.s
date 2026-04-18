@@ -404,7 +404,7 @@ _080271FC:
 
 .balign 4, 0
 _08027200:
-/* 08027200 */ .word D_03003FC8
+/* 08027200 */ .word gCurrentKeys
 
 .balign 4, 0
 _08027204:
@@ -416,7 +416,7 @@ _08027208:
 
 .balign 4, 0
 _0802720C:
-/* 0802720C */ .word D_03003FF4
+/* 0802720C */ .word gPressedKeys
 
 .balign 4, 0
 _08027210:

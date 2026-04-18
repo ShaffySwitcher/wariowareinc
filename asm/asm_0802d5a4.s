@@ -158,7 +158,7 @@ _0802D6B4:
 
 .balign 4, 0
 _0802D6B8:
-/* 0802D6B8 */ .word D_03003FC8
+/* 0802D6B8 */ .word gCurrentKeys
 
 .balign 4, 0
 _0802D6BC:

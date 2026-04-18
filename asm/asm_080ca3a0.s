@@ -27,7 +27,7 @@ glabel func_080CA3A0
 
 .balign 4, 0
 _080CA3C8:
-/* 080CA3C8 */ .word D_03003FF4
+/* 080CA3C8 */ .word gPressedKeys
 
 .balign 4, 0
 _080CA3CC:

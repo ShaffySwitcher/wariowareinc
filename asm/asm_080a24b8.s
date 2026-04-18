@@ -47,7 +47,7 @@ _080A24F8:
 
 .balign 4, 0
 _080A24FC:
-/* 080A24FC */ .word D_03003FF4
+/* 080A24FC */ .word gPressedKeys
 _080A2500:
 /* 080A2500 */ LDR R0, _080A2518
 /* 080A2502 */ LDR R0, [R0]

@@ -62,7 +62,7 @@ _0806ADFC:
 
 .balign 4, 0
 _0806AE00:
-/* 0806AE00 */ .word D_03003FF4
+/* 0806AE00 */ .word gPressedKeys
 
 .balign 4, 0
 _0806AE04:
@@ -125,7 +125,7 @@ _0806AE6C:
 
 .balign 4, 0
 _0806AE70:
-/* 0806AE70 */ .word D_03003FF4
+/* 0806AE70 */ .word gPressedKeys
 
 .balign 4, 0
 _0806AE74:

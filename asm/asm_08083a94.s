@@ -23,7 +23,7 @@ glabel func_08083A94
 
 .balign 4, 0
 _08083AB4:
-/* 08083AB4 */ .word D_03003FF4
+/* 08083AB4 */ .word gPressedKeys
 
 .balign 4, 0
 _08083AB8:
@@ -101,7 +101,7 @@ _08083B3E:
 
 .balign 4, 0
 _08083B44:
-/* 08083B44 */ .word D_03003FC8
+/* 08083B44 */ .word gCurrentKeys
 
 .balign 4, 0
 _08083B48:

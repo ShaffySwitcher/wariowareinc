@@ -280,7 +280,7 @@ _08033AA8:
 
 .balign 4, 0
 _08033AAC:
-/* 08033AAC */ .word D_03003FC8
+/* 08033AAC */ .word gCurrentKeys
 
 .balign 4, 0
 _08033AB0:

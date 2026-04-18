@@ -43,7 +43,7 @@ glabel func_080C2358
 
 .balign 4, 0
 _080C23A0:
-/* 080C23A0 */ .word D_03003FC8
+/* 080C23A0 */ .word gCurrentKeys
 
 .balign 4, 0
 _080C23A4:

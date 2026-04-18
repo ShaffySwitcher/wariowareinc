@@ -28,7 +28,7 @@ _08081BA8:
 
 .balign 4, 0
 _08081BAC:
-/* 08081BAC */ .word D_03003FF4
+/* 08081BAC */ .word gPressedKeys
 _08081BB0:
 /* 08081BB0 */ MOVS R0, #0X80
 /* 08081BB2 */ ANDS R0, R2

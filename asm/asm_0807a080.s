@@ -77,7 +77,7 @@ _0807A10C:
 
 .balign 4, 0
 _0807A110:
-/* 0807A110 */ .word D_03003FC8
+/* 0807A110 */ .word gCurrentKeys
 
 .balign 4, 0
 _0807A114:

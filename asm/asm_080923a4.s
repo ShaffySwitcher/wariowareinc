@@ -56,7 +56,7 @@ _080923F8:
 
 .balign 4, 0
 _080923FC:
-/* 080923FC */ .word D_03003FC8
+/* 080923FC */ .word gCurrentKeys
 
 .balign 4, 0
 _08092400:
@@ -277,7 +277,7 @@ _08092574:
 
 .balign 4, 0
 _08092578:
-/* 08092578 */ .word D_03003FF4
+/* 08092578 */ .word gPressedKeys
 
 .balign 4, 0
 _0809257C:
@@ -416,7 +416,7 @@ _08092658:
 
 .balign 4, 0
 _0809265C:
-/* 0809265C */ .word D_03003FF4
+/* 0809265C */ .word gPressedKeys
 
 .balign 4, 0
 _08092660:
@@ -512,7 +512,7 @@ _08092700:
 
 .balign 4, 0
 _08092704:
-/* 08092704 */ .word D_03003FF4
+/* 08092704 */ .word gPressedKeys
 
 .balign 4, 0
 _08092708:

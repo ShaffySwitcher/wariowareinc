@@ -102,7 +102,7 @@ _0809B868:
 
 .balign 4, 0
 _0809B8C0:
-/* 0809B8C0 */ .word D_03003FF4
+/* 0809B8C0 */ .word gPressedKeys
 
 .balign 4, 0
 _0809B8C4:
@@ -154,7 +154,7 @@ _0809B8E4:
 
 .balign 4, 0
 _0809B914:
-/* 0809B914 */ .word D_03003FF4
+/* 0809B914 */ .word gPressedKeys
 
 .balign 4, 0
 _0809B918:

@@ -127,6 +127,6 @@ _080E99DC:
 
 .balign 4, 0
 _080E99D8:
-/* 080E99D8 */ .word D_03003FF4
+/* 080E99D8 */ .word gPressedKeys
 .ltorg
 .end

@@ -161,7 +161,7 @@ _080DCD34:
 
 .balign 4, 0
 _080DCD38:
-/* 080DCD38 */ .word D_03003FC8
+/* 080DCD38 */ .word gCurrentKeys
 _080DCD3C:
 /* 080DCD3C */ BL func_080DCA0C
 /* 080DCD40 */ BL func_080DCB28

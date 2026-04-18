@@ -116,6 +116,6 @@ _080430E4:
 
 .balign 4, 0
 _080430E8:
-/* 080430E8 */ .word D_03003FC8
+/* 080430E8 */ .word gCurrentKeys
 .ltorg
 .end

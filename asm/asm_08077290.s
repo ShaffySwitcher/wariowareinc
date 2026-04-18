@@ -38,7 +38,7 @@ _080772C4:
 
 .balign 4, 0
 _080772C8:
-/* 080772C8 */ .word D_03003FC8
+/* 080772C8 */ .word gCurrentKeys
 _080772CC:
 /* 080772CC */ MOVS R0, #0X80
 /* 080772CE */ ANDS R0, R1
