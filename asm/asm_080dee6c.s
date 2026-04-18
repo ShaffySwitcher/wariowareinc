@@ -15,8 +15,8 @@ glabel func_080DEE6C
 _080DEE7A:
 /* 080DEE7A */ LDR R0, _080DEF14
 /* 080DEE7C */ LDRH R0, [R0]
-/* 080DEE7E */ BL func_080010F8
-/* 080DEE82 */ BL func_08001104
+/* 080DEE7E */ BL set_random_seed
+/* 080DEE82 */ BL get_random_u16
 /* 080DEE86 */ ADDS R5, R0, #0
 /* 080DEE88 */ LSLS R5, R5, #0X10
 /* 080DEE8A */ LSRS R5, R5, #0X10

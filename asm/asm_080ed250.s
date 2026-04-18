@@ -28,7 +28,7 @@ glabel func_080ED250
 /* 080ED27A */ STRB R0, [R4, #0X11]
 /* 080ED27C */ STRH R0, [R4, #0X1E]
 /* 080ED27E */ MOVS R0, #2
-/* 080ED280 */ BL func_08001120
+/* 080ED280 */ BL get_random_range
 /* 080ED284 */ LSLS R0, R0, #0X10
 /* 080ED286 */ MOVS R1, #1
 /* 080ED288 */ CMP R0, #0

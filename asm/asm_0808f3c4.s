@@ -7,7 +7,7 @@
 glabel func_0808F3C4
 /* 0808F3C4 */ PUSH {R4, LR}
 /* 0808F3C6 */ ADDS R4, R0, #0
-/* 0808F3C8 */ BL func_08001104
+/* 0808F3C8 */ BL get_random_u16
 /* 0808F3CC */ MOVS R1, #0
 /* 0808F3CE */ STRH R0, [R4, #0XE]
 /* 0808F3D0 */ STRB R1, [R4, #4]
@@ -28,7 +28,7 @@ glabel func_0808F3C4
 /* 0808F3EE */ ASRS R0, R0, #8
 /* 0808F3F0 */ STRH R0, [R4, #2]
 /* 0808F3F2 */ MOVS R0, #2
-/* 0808F3F4 */ BL func_08001120
+/* 0808F3F4 */ BL get_random_range
 /* 0808F3F8 */ LSLS R0, R0, #0X10
 /* 0808F3FA */ MOVS R1, #1
 /* 0808F3FC */ CMP R0, #0

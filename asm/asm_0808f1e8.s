@@ -19,7 +19,7 @@ glabel func_0808F1E8
 /* 0808F1FE */ STRB R1, [R4, #6]
 /* 0808F200 */ STRB R1, [R4, #5]
 /* 0808F202 */ MOVS R0, #2
-/* 0808F204 */ BL func_08001120
+/* 0808F204 */ BL get_random_range
 /* 0808F208 */ STRH R0, [R4, #0X10]
 /* 0808F20A */ POP {R4}
 /* 0808F20C */ POP {R0}

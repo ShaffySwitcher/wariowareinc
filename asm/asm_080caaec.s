@@ -8,8 +8,8 @@ glabel func_080CAAEC
 /* 080CAAEC */ PUSH {LR}
 /* 080CAAEE */ LDR R0, _080CAB04
 /* 080CAAF0 */ LDRH R0, [R0]
-/* 080CAAF2 */ BL func_080010F8
-/* 080CAAF6 */ BL func_08001104
+/* 080CAAF2 */ BL set_random_seed
+/* 080CAAF6 */ BL get_random_u16
 /* 080CAAFA */ LSLS R0, R0, #0X10
 /* 080CAAFC */ LSRS R0, R0, #0X10
 /* 080CAAFE */ POP {R1}

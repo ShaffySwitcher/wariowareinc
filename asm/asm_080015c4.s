@@ -24,7 +24,7 @@ glabel func_080015C4
 /* 080015E4 */ STR R1, [SP]
 /* 080015E6 */ ADDS R1, R3, #0
 /* 080015E8 */ MOVS R3, #0X20
-/* 080015EA */ BL func_0800100C
+/* 080015EA */ BL dma3_set
 _080015EE:
 /* 080015EE */ ADD SP, #4
 /* 080015F0 */ POP {R0}

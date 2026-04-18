@@ -18,7 +18,7 @@ glabel func_0801FA7C
 /* 0801FA90 */ LSLS R3, R3, #1
 /* 0801FA92 */ STR R3, [SP]
 /* 0801FA94 */ MOVS R3, #0X20
-/* 0801FA96 */ BL func_0800100C
+/* 0801FA96 */ BL dma3_set
 /* 0801FA9A */ ADD SP, #4
 /* 0801FA9C */ POP {R0}
 /* 0801FA9E */ BX R0

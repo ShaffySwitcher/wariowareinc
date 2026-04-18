@@ -34,11 +34,11 @@ glabel func_0801BEC0
 _0801BEFA:
 /* 0801BEFA */ MOVS R0, #0X80
 /* 0801BEFC */ LSLS R0, R0, #1
-/* 0801BEFE */ BL func_08001120
+/* 0801BEFE */ BL get_random_range
 /* 0801BF02 */ SUBS R0, #0X20
 /* 0801BF04 */ STRH R0, [R5]
 /* 0801BF06 */ MOVS R0, #0XA0
-/* 0801BF08 */ BL func_08001120
+/* 0801BF08 */ BL get_random_range
 /* 0801BF0C */ SUBS R0, #0X10
 /* 0801BF0E */ STRH R0, [R5, #2]
 /* 0801BF10 */ MOV R0, SB

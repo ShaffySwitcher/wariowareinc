@@ -16,7 +16,7 @@ glabel func_080CEEEC
 /* 080CEEFC */ ADDS R5, R0, #0
 /* 080CEEFE */ ADDS R5, #0X30
 /* 080CEF00 */ MOVS R0, #6
-/* 080CEF02 */ BL func_08001120
+/* 080CEF02 */ BL get_random_range
 /* 080CEF06 */ LSLS R0, R0, #0X10
 /* 080CEF08 */ LSRS R0, R0, #0X10
 /* 080CEF0A */ MOV SL, R0

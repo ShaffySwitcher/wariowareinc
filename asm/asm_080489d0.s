@@ -20,7 +20,7 @@ glabel func_080489D0
 /* 080489EA */ LSLS R3, R3, #1
 /* 080489EC */ STR R3, [SP]
 /* 080489EE */ MOVS R3, #0X10
-/* 080489F0 */ BL func_0800100C
+/* 080489F0 */ BL dma3_set
 /* 080489F4 */ ADD SP, #4
 /* 080489F6 */ POP {R4}
 /* 080489F8 */ POP {R0}

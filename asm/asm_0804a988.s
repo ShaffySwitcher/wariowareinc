@@ -12,7 +12,7 @@ glabel func_0804A988
 /* 0804A990 */ PUSH {R5, R6, R7}
 /* 0804A992 */ SUB SP, #0X14
 /* 0804A994 */ MOVS R0, #6
-/* 0804A996 */ BL func_08001120
+/* 0804A996 */ BL get_random_range
 /* 0804A99A */ LSLS R0, R0, #0X10
 /* 0804A99C */ LSRS R0, R0, #0X10
 /* 0804A99E */ MOV SB, R0

@@ -37,7 +37,7 @@ glabel func_080BF198
 /* 080BF1E2 */ MOVS R0, #1
 /* 080BF1E4 */ BL func_0800A0C4
 /* 080BF1E8 */ MOVS R0, #3
-/* 080BF1EA */ BL func_08001120
+/* 080BF1EA */ BL get_random_range
 /* 080BF1EE */ LDR R1, _080BF2E8
 /* 080BF1F0 */ MOV R8, R1
 /* 080BF1F2 */ LDR R1, [R1]

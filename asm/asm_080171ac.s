@@ -23,7 +23,7 @@ glabel func_080171AC
 /* 080171CA */ STR R0, [SP]
 /* 080171CC */ ADDS R0, R3, #0
 /* 080171CE */ MOVS R3, #0X20
-/* 080171D0 */ BL func_0800100C
+/* 080171D0 */ BL dma3_set
 /* 080171D4 */ B _080171E8
 
 .balign 4, 0

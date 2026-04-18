@@ -12,7 +12,7 @@ glabel func_080BCE2C
 /* 080BCE34 */ PUSH {R5, R6, R7}
 /* 080BCE36 */ SUB SP, #0XC
 /* 080BCE38 */ MOVS R0, #5
-/* 080BCE3A */ BL func_08001120
+/* 080BCE3A */ BL get_random_range
 /* 080BCE3E */ LDR R2, _080BD124
 /* 080BCE40 */ LDR R1, [R2]
 /* 080BCE42 */ STRB R0, [R1, #6]

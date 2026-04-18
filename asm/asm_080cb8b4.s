@@ -321,7 +321,7 @@ _080CBAD0:
 /* 080CBAEC */ MOVS R3, #4
 /* 080CBAEE */ LDRSH R5, [R2, R3]
 /* 080CBAF0 */ MOVS R0, #4
-/* 080CBAF2 */ BL func_08001120
+/* 080CBAF2 */ BL get_random_range
 /* 080CBAF6 */ ADDS R2, R0, #0
 /* 080CBAF8 */ LDR R1, [R7]
 /* 080CBAFA */ LDR R0, [R1, #0X24]

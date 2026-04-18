@@ -47,7 +47,7 @@ glabel func_0802B0D4
 /* 0802B132 */ MOVS R4, #0
 /* 0802B134 */ STR R4, [R7, #0X5C]
 /* 0802B136 */ MOVS R0, #0X60
-/* 0802B138 */ BL func_08001120
+/* 0802B138 */ BL get_random_range
 /* 0802B13C */ LSLS R0, R0, #0X10
 /* 0802B13E */ LSRS R0, R0, #8
 /* 0802B140 */ MOVS R2, #0XF0

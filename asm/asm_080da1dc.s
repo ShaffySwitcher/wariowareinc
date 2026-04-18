@@ -50,7 +50,7 @@ _080DA220:
 /* 080DA224 */ STR R0, [R1, #4]
 /* 080DA226 */ STR R0, [R1, #8]
 /* 080DA228 */ MOVS R0, #2
-/* 080DA22A */ BL func_08001120
+/* 080DA22A */ BL get_random_range
 /* 080DA22E */ LDR R1, [R4]
 /* 080DA230 */ LSLS R0, R0, #0X10
 /* 080DA232 */ LSRS R0, R0, #0X10

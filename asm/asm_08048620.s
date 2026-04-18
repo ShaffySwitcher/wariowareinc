@@ -179,7 +179,7 @@ glabel func_08048620
 /* 080487A6 */ LDRB R0, [R0]
 /* 080487A8 */ ADDS R0, R1
 /* 080487AA */ LDRB R0, [R0]
-/* 080487AC */ BL func_08001120
+/* 080487AC */ BL get_random_range
 /* 080487B0 */ LDR R2, =D_083D1F1C
 /* 080487B2 */ LDR R1, [R5]
 /* 080487B4 */ ADDS R1, R4

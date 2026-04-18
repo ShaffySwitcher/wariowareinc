@@ -31,7 +31,7 @@ glabel func_0809A340
 /* 0809A36E */ LSLS R0, R0, #0X10
 /* 0809A370 */ LSRS R4, R0, #0X18
 /* 0809A372 */ MOVS R0, #9
-/* 0809A374 */ BL func_08001120
+/* 0809A374 */ BL get_random_range
 /* 0809A378 */ LDR R1, [R6]
 /* 0809A37A */ LSLS R0, R0, #0X10
 /* 0809A37C */ LSRS R0, R0, #8
@@ -41,7 +41,7 @@ glabel func_0809A340
 /* 0809A384 */ ADDS R1, R0
 /* 0809A386 */ STR R1, [R5, #8]
 /* 0809A388 */ MOVS R0, #3
-/* 0809A38A */ BL func_08001120
+/* 0809A38A */ BL get_random_range
 /* 0809A38E */ LDR R1, [R6]
 /* 0809A390 */ LSLS R0, R0, #0X10
 /* 0809A392 */ LSRS R0, R0, #8
@@ -53,7 +53,7 @@ glabel func_0809A340
 /* 0809A39E */ STR R1, [R5, #4]
 /* 0809A3A0 */ LSLS R0, R4, #1
 /* 0809A3A2 */ ADDS R0, R4
-/* 0809A3A4 */ BL func_08001120
+/* 0809A3A4 */ BL get_random_range
 /* 0809A3A8 */ LSLS R1, R4, #2
 /* 0809A3AA */ ADDS R1, R4
 /* 0809A3AC */ SUBS R1, R0
@@ -76,7 +76,7 @@ _0809A3BC:
 /* 0809A3C6 */ LSLS R0, R0, #0X10
 /* 0809A3C8 */ LSRS R4, R0, #0X18
 /* 0809A3CA */ MOVS R0, #9
-/* 0809A3CC */ BL func_08001120
+/* 0809A3CC */ BL get_random_range
 /* 0809A3D0 */ LDR R1, [R6]
 /* 0809A3D2 */ LSLS R0, R0, #0X10
 /* 0809A3D4 */ LSRS R0, R0, #8
@@ -86,7 +86,7 @@ _0809A3BC:
 /* 0809A3DC */ ADDS R1, R0
 /* 0809A3DE */ STR R1, [R5, #8]
 /* 0809A3E0 */ MOVS R0, #3
-/* 0809A3E2 */ BL func_08001120
+/* 0809A3E2 */ BL get_random_range
 /* 0809A3E6 */ LDR R1, [R6]
 /* 0809A3E8 */ LSLS R0, R0, #0X10
 /* 0809A3EA */ LSRS R0, R0, #8
@@ -97,7 +97,7 @@ _0809A3BC:
 /* 0809A3F4 */ STR R1, [R5, #4]
 /* 0809A3F6 */ LSLS R0, R4, #1
 /* 0809A3F8 */ ADDS R0, R4
-/* 0809A3FA */ BL func_08001120
+/* 0809A3FA */ BL get_random_range
 /* 0809A3FE */ RSBS R2, R4, #0
 /* 0809A400 */ LSLS R1, R2, #2
 /* 0809A402 */ ADDS R1, R2
@@ -105,7 +105,7 @@ _0809A3BC:
 /* 0809A406 */ STRH R0, [R5, #0XC]
 _0809A408:
 /* 0809A408 */ MOVS R0, #0X64
-/* 0809A40A */ BL func_08001120
+/* 0809A40A */ BL get_random_range
 /* 0809A40E */ LDR R2, _0809A470
 /* 0809A410 */ ADDS R1, R2, #0
 /* 0809A412 */ SUBS R1, R0

@@ -16,7 +16,7 @@ glabel func_080324A4
 /* 080324B4 */ ADDS R0, R5, R1
 /* 080324B6 */ LDRB R4, [R0]
 /* 080324B8 */ ADDS R0, R4, #0
-/* 080324BA */ BL func_08001120
+/* 080324BA */ BL get_random_range
 /* 080324BE */ ADDS R0, #0X40
 /* 080324C0 */ LSRS R4, R4, #1
 /* 080324C2 */ SUBS R0, R4

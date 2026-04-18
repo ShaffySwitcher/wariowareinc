@@ -62,8 +62,8 @@ glabel func_080B77A8
 /* 080B782C */ LDR R0, _080B7900
 /* 080B782E */ MOV R8, R0
 /* 080B7830 */ LDRH R0, [R0]
-/* 080B7832 */ BL func_080010F8
-/* 080B7836 */ BL func_08001104
+/* 080B7832 */ BL set_random_seed
+/* 080B7836 */ BL get_random_u16
 /* 080B783A */ LDR R4, [R5]
 /* 080B783C */ LSLS R0, R0, #0X10
 /* 080B783E */ LSRS R0, R0, #0X10
@@ -72,7 +72,7 @@ glabel func_080B77A8
 /* 080B7846 */ ADDS R4, #0X64
 /* 080B7848 */ MOVS R6, #0
 /* 080B784A */ STRB R0, [R4]
-/* 080B784C */ BL func_08001104
+/* 080B784C */ BL get_random_u16
 /* 080B7850 */ LDR R2, [R5]
 /* 080B7852 */ MOVS R3, #0
 /* 080B7854 */ LSLS R0, R0, #0X10
@@ -132,8 +132,8 @@ _080B7864:
 /* 080B78C4 */ STR R0, [R1, #0X40]
 /* 080B78C6 */ MOV R1, R8
 /* 080B78C8 */ LDRH R0, [R1]
-/* 080B78CA */ BL func_080010F8
-/* 080B78CE */ BL func_08001104
+/* 080B78CA */ BL set_random_seed
+/* 080B78CE */ BL get_random_u16
 /* 080B78D2 */ LDR R1, [R5]
 /* 080B78D4 */ LSLS R0, R0, #0X10
 /* 080B78D6 */ LSRS R0, R0, #0X10
@@ -373,8 +373,8 @@ _080B7918:
 /* 080B7AA4 */ BL func_080B8128
 /* 080B7AA8 */ LDR R0, _080B7B00
 /* 080B7AAA */ LDRH R0, [R0]
-/* 080B7AAC */ BL func_080010F8
-/* 080B7AB0 */ BL func_08001104
+/* 080B7AAC */ BL set_random_seed
+/* 080B7AB0 */ BL get_random_u16
 /* 080B7AB4 */ LDR R2, [R6]
 /* 080B7AB6 */ LSLS R0, R0, #0X10
 /* 080B7AB8 */ LSRS R0, R0, #0X10

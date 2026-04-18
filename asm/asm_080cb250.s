@@ -402,7 +402,7 @@ _080CB500:
 /* 080CB51C */ MOVS R0, #0
 /* 080CB51E */ LDRSH R5, [R2, R0]
 /* 080CB520 */ MOVS R0, #4
-/* 080CB522 */ BL func_08001120
+/* 080CB522 */ BL get_random_range
 /* 080CB526 */ ADDS R2, R0, #0
 /* 080CB528 */ LDR R0, [R6]
 /* 080CB52A */ LDR R0, [R0, #0X18]

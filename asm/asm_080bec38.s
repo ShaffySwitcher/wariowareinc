@@ -114,7 +114,7 @@ _080BECEA:
 /* 080BED06 */ LSLS R3, R3, #1
 /* 080BED08 */ STR R3, [SP]
 /* 080BED0A */ MOVS R3, #0X20
-/* 080BED0C */ BL func_0800100C
+/* 080BED0C */ BL dma3_set
 /* 080BED10 */ B _080BEDCC
 
 .balign 4, 0

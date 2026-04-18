@@ -35,7 +35,7 @@ glabel func_0808C070
 /* 0808C0A6 */ ASRS R0, R0, #8
 /* 0808C0A8 */ STR R0, [R4, #4]
 /* 0808C0AA */ MOVS R0, #4
-/* 0808C0AC */ BL func_08001120
+/* 0808C0AC */ BL get_random_range
 /* 0808C0B0 */ ADDS R0, #0X7E
 /* 0808C0B2 */ LSLS R0, R0, #0X18
 /* 0808C0B4 */ LSRS R1, R0, #0X18
@@ -66,7 +66,7 @@ _0808C0BC:
 /* 0808C0E4 */ ASRS R0, R0, #8
 /* 0808C0E6 */ STR R0, [R4, #4]
 /* 0808C0E8 */ MOVS R0, #4
-/* 0808C0EA */ BL func_08001120
+/* 0808C0EA */ BL get_random_range
 /* 0808C0EE */ ADDS R0, #0X7E
 /* 0808C0F0 */ LSLS R0, R0, #0X18
 /* 0808C0F2 */ LSRS R1, R0, #0X18

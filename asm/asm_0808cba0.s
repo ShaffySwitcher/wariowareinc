@@ -64,7 +64,7 @@ glabel func_0808CBA0
 /* 0808CC10 */ ADDS R2, R0
 /* 0808CC12 */ STRH R6, [R2]
 /* 0808CC14 */ MOVS R0, #3
-/* 0808CC16 */ BL func_08001120
+/* 0808CC16 */ BL get_random_range
 /* 0808CC1A */ LDR R1, [R5]
 /* 0808CC1C */ LDR R2, _0808CCF8
 /* 0808CC1E */ ADDS R1, R2

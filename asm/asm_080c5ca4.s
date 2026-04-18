@@ -8,7 +8,7 @@ glabel func_080C5CA4
 /* 080C5CA4 */ PUSH {R4, LR}
 /* 080C5CA6 */ ADDS R4, R0, #0
 /* 080C5CA8 */ MOVS R0, #2
-/* 080C5CAA */ BL func_08001120
+/* 080C5CAA */ BL get_random_range
 /* 080C5CAE */ ADDS R1, R0, #0
 /* 080C5CB0 */ LSLS R1, R1, #0X10
 /* 080C5CB2 */ MOVS R2, #1

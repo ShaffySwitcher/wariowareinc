@@ -22,7 +22,7 @@ glabel func_080DD3B0
 /* 080DD3D6 */ MOVS R0, #3
 /* 080DD3D8 */ BL func_0800BF0C
 /* 080DD3DC */ MOVS R0, #3
-/* 080DD3DE */ BL func_08001120
+/* 080DD3DE */ BL get_random_range
 /* 080DD3E2 */ LDR R4, _080DD47C
 /* 080DD3E4 */ LDR R1, [R4]
 /* 080DD3E6 */ ADDS R1, #0X40

@@ -97,7 +97,7 @@ glabel func_0802A800
 /* 0802A8C6 */ ADDS R1, R7, #0
 /* 0802A8C8 */ ADDS R1, #0XD4
 /* 0802A8CA */ STRH R0, [R1]
-/* 0802A8CC */ BL func_08001104
+/* 0802A8CC */ BL get_random_u16
 /* 0802A8D0 */ ADDS R1, R7, #0
 /* 0802A8D2 */ ADDS R1, #0X6A
 /* 0802A8D4 */ STRH R0, [R1]

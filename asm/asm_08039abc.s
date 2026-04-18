@@ -213,7 +213,7 @@ glabel func_08039ABC
 /* 08039C78 */ ADDS R0, R1
 /* 08039C7A */ LDRB R4, [R0]
 /* 08039C7C */ MOVS R0, #2
-/* 08039C7E */ BL func_08001120
+/* 08039C7E */ BL get_random_range
 /* 08039C82 */ LDR R6, [R6]
 /* 08039C84 */ LSLS R0, R0, #0X10
 /* 08039C86 */ LSRS R0, R0, #0X10

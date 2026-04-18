@@ -21,7 +21,7 @@ glabel func_08079288
 /* 080792A2 */ ADDS R5, #0X20
 /* 080792A4 */ ADDS R5, R1, R5
 /* 080792A6 */ LDRH R0, [R1, #0X18]
-/* 080792A8 */ BL func_08001120
+/* 080792A8 */ BL get_random_range
 /* 080792AC */ ADDS R4, R0, #0
 /* 080792AE */ MOV R1, R8
 /* 080792B0 */ LDR R0, [R1]

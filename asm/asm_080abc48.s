@@ -14,7 +14,7 @@ glabel func_080ABC48
 /* 080ABC54 */ LSLS R1, R1, #2
 /* 080ABC56 */ ADDS R7, R0, R1
 /* 080ABC58 */ MOVS R0, #2
-/* 080ABC5A */ BL func_08001120
+/* 080ABC5A */ BL get_random_range
 /* 080ABC5E */ LSLS R0, R0, #0X10
 /* 080ABC60 */ LSRS R1, R0, #0X10
 /* 080ABC62 */ CMP R4, #0X77

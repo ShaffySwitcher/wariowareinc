@@ -79,7 +79,7 @@ glabel func_080477E8
 /* 0804788A */ ADDS R0, #0XD0
 /* 0804788C */ STRB R3, [R0]
 /* 0804788E */ MOVS R0, #8
-/* 08047890 */ BL func_08001120
+/* 08047890 */ BL get_random_range
 /* 08047894 */ LSLS R0, R0, #0X18
 /* 08047896 */ LSRS R0, R0, #0X18
 /* 08047898 */ MOV SL, R0

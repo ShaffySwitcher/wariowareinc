@@ -75,7 +75,7 @@ glabel func_080315F0
 /* 08031692 */ ADDS R1, #0X60
 /* 08031694 */ STRH R0, [R1]
 /* 08031696 */ MOVS R0, #4
-/* 08031698 */ BL func_08001120
+/* 08031698 */ BL get_random_range
 /* 0803169C */ MOVS R1, #0X66
 /* 0803169E */ ADDS R1, R7
 /* 080316A0 */ MOV R8, R1

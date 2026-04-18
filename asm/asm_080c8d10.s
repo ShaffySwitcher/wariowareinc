@@ -55,7 +55,7 @@ glabel func_080C8D10
 /* 080C8D6E */ MOVS R1, #0
 /* 080C8D70 */ LDRSH R4, [R0, R1]
 /* 080C8D72 */ MOVS R0, #6
-/* 080C8D74 */ BL func_08001120
+/* 080C8D74 */ BL get_random_range
 /* 080C8D78 */ ADDS R2, R0, #0
 /* 080C8D7A */ LSLS R2, R2, #0X18
 /* 080C8D7C */ ASRS R2, R2, #0X18

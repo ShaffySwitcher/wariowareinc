@@ -88,7 +88,7 @@ glabel func_080A2538
 /* 080A25EA */ SUBS R0, #0X18
 /* 080A25EC */ LSLS R0, R0, #0X10
 /* 080A25EE */ LSRS R0, R0, #0X10
-/* 080A25F0 */ BL func_08001120
+/* 080A25F0 */ BL get_random_range
 /* 080A25F4 */ LDR R2, [R7]
 /* 080A25F6 */ MOVS R3, #0
 /* 080A25F8 */ LDRSH R1, [R4, R3]
@@ -110,7 +110,7 @@ glabel func_080A2538
 /* 080A2618 */ LSRS R0, R0, #3
 /* 080A261A */ STRH R0, [R2, #0X2C]
 /* 080A261C */ MOVS R0, #0X30
-/* 080A261E */ BL func_08001120
+/* 080A261E */ BL get_random_range
 /* 080A2622 */ LDR R1, [R7]
 /* 080A2624 */ ADDS R0, #0X20
 /* 080A2626 */ ADDS R1, #0X2E

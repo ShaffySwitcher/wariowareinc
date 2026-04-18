@@ -9,7 +9,7 @@ glabel func_0801CB24
 /* 0801CB26 */ ADDS R4, R0, #0
 /* 0801CB28 */ LSLS R0, R4, #0X10
 /* 0801CB2A */ LSRS R0, R0, #0X10
-/* 0801CB2C */ BL func_08001120
+/* 0801CB2C */ BL get_random_range
 /* 0801CB30 */ LSRS R4, R4, #1
 /* 0801CB32 */ SUBS R4, R0
 /* 0801CB34 */ LSLS R4, R4, #0X10

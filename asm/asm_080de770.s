@@ -12,8 +12,8 @@ glabel func_080DE770
 /* 080DE778 */ PUSH {R5, R6, R7}
 /* 080DE77A */ LDR R0, _080DE7C4
 /* 080DE77C */ LDRH R0, [R0]
-/* 080DE77E */ BL func_080010F8
-/* 080DE782 */ BL func_08001104
+/* 080DE77E */ BL set_random_seed
+/* 080DE782 */ BL get_random_u16
 /* 080DE786 */ LSLS R0, R0, #0X10
 /* 080DE788 */ LSRS R0, R0, #0X10
 /* 080DE78A */ MOV R8, R0

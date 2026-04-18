@@ -7,7 +7,7 @@
 glabel func_080D1330
 /* 080D1330 */ PUSH {LR}
 /* 080D1332 */ MOVS R0, #2
-/* 080D1334 */ BL func_08001120
+/* 080D1334 */ BL get_random_range
 /* 080D1338 */ LSLS R0, R0, #0X18
 /* 080D133A */ LSRS R0, R0, #0X18
 /* 080D133C */ CMP R0, #0

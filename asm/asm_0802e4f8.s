@@ -82,7 +82,7 @@ glabel func_0802E4F8
 /* 0802E5A6 */ ADDS R1, #0X64
 /* 0802E5A8 */ STRH R0, [R1]
 /* 0802E5AA */ MOVS R0, #6
-/* 0802E5AC */ BL func_08001120
+/* 0802E5AC */ BL get_random_range
 /* 0802E5B0 */ ADDS R5, #0X10
 /* 0802E5B2 */ STRH R0, [R5]
 /* 0802E5B4 */ LDRH R0, [R5]

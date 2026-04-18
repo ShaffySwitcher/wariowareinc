@@ -155,7 +155,7 @@ glabel func_0803EA08
 /* 0803EB46 */ STR R0, [R2]
 _0803EB48:
 /* 0803EB48 */ MOVS R0, #0X80
-/* 0803EB4A */ BL func_08001120
+/* 0803EB4A */ BL get_random_range
 /* 0803EB4E */ LSLS R0, R0, #0X10
 /* 0803EB50 */ LSRS R7, R0, #0X10
 /* 0803EB52 */ ADDS R0, R7, #0

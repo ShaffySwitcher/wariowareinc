@@ -27,7 +27,7 @@ glabel func_0804EA94
 /* 0804EABA */ CMP R0, #0
 /* 0804EABC */ BNE _0804EB3A
 /* 0804EABE */ MOVS R0, #0XA
-/* 0804EAC0 */ BL func_08001120
+/* 0804EAC0 */ BL get_random_range
 /* 0804EAC4 */ LDR R1, [R4]
 /* 0804EAC6 */ LSLS R0, R0, #0X10
 /* 0804EAC8 */ LSRS R0, R0, #0X10

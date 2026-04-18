@@ -13,7 +13,7 @@ glabel func_08046F5C
 /* 08046F66 */ BNE _08046F98
 /* 08046F68 */ LDR R4, =D_083D19CC
 /* 08046F6A */ MOVS R0, #2
-/* 08046F6C */ BL func_08001120
+/* 08046F6C */ BL get_random_range
 /* 08046F70 */ LDR R1, [R5]
 /* 08046F72 */ LDR R1, [R1, #0X78]
 /* 08046F74 */ LSLS R1, R1, #1

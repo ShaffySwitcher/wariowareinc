@@ -3,6 +3,11 @@ SECTIONS {
     . = 0;
     _start = . ;
 
+    . = 0x03000000;
+    .bss . : SUBALIGN(4) {
+        build/src/code_08000f10.c.o(.bss);
+    }
+
     . = 0x08000000;
     .cartrom . : SUBALIGN(2) {
         build/asm/rom_header.s.o(.text*);
@@ -11,11 +16,6 @@ SECTIONS {
         build/src/memory.c.o(.text);
         build/asm/math.s.o(.text*);
         build/src/code_08000f10.c.o(.text);
-        build/asm/asm_0800100c.s.o(.text*);
-        build/asm/asm_08001080.s.o(.text*);
-        build/asm/asm_080010f8.s.o(.text*);
-        build/asm/asm_08001104.s.o(.text*);
-        build/asm/asm_08001120.s.o(.text*);
         build/asm/asm_08001144.s.o(.text*);
         build/asm/asm_08001184.s.o(.text*);
         build/asm/asm_080011c4.s.o(.text*);

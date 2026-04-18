@@ -23,7 +23,7 @@ glabel func_080BBB38
 /* 080BBB58 */ CMP R0, #0
 /* 080BBB5A */ BEQ _080BBBF4
 /* 080BBB5C */ MOVS R0, #2
-/* 080BBB5E */ BL func_08001120
+/* 080BBB5E */ BL get_random_range
 /* 080BBB62 */ LDR R1, [R5]
 /* 080BBB64 */ MOVS R4, #0
 /* 080BBB66 */ STRB R0, [R1, #0X15]

@@ -15,7 +15,7 @@ glabel func_08006F04
 /* 08006F12 */ LSLS R3, R3, #1
 /* 08006F14 */ STR R3, [SP]
 /* 08006F16 */ MOVS R3, #0X20
-/* 08006F18 */ BL func_0800100C
+/* 08006F18 */ BL dma3_set
 /* 08006F1C */ ADD SP, #4
 /* 08006F1E */ POP {R0}
 /* 08006F20 */ BX R0

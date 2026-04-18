@@ -14,7 +14,7 @@ glabel func_0800CF7C
 /* 0800CF88 */ LSLS R3, R3, #1
 /* 0800CF8A */ STR R3, [SP]
 /* 0800CF8C */ MOVS R3, #0X10
-/* 0800CF8E */ BL func_0800100C
+/* 0800CF8E */ BL dma3_set
 /* 0800CF92 */ ADD SP, #4
 /* 0800CF94 */ POP {R0}
 /* 0800CF96 */ BX R0

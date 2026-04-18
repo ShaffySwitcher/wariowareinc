@@ -36,7 +36,7 @@ glabel func_08079B88
 /* 08079BC4 */ MOVS R0, #1
 /* 08079BC6 */ BL func_0800A128
 /* 08079BCA */ MOVS R0, #2
-/* 08079BCC */ BL func_08001120
+/* 08079BCC */ BL get_random_range
 /* 08079BD0 */ ADDS R3, R0, #0
 /* 08079BD2 */ LDR R5, _08079C38
 /* 08079BD4 */ LDR R0, [R5]

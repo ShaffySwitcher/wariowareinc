@@ -15,8 +15,8 @@ glabel func_080C2C9C
 /* 080C2CAA */ STR R0, [SP, #0X14]
 /* 080C2CAC */ LDR R0, _080C2CDC
 /* 080C2CAE */ LDRH R0, [R0]
-/* 080C2CB0 */ BL func_080010F8
-/* 080C2CB4 */ BL func_08001104
+/* 080C2CB0 */ BL set_random_seed
+/* 080C2CB4 */ BL get_random_u16
 /* 080C2CB8 */ LSLS R0, R0, #0X10
 /* 080C2CBA */ LSRS R0, R0, #0X10
 /* 080C2CBC */ STR R0, [SP, #0X18]

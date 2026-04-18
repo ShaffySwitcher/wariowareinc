@@ -154,7 +154,7 @@ glabel func_0802C4F0
 /* 0802C62A */ MOVS R7, #0
 _0802C62C:
 /* 0802C62C */ MOVS R0, #4
-/* 0802C62E */ BL func_08001120
+/* 0802C62E */ BL get_random_range
 /* 0802C632 */ ADDS R2, R0, #0
 /* 0802C634 */ LSLS R2, R2, #0X18
 /* 0802C636 */ ASRS R2, R2, #0X18

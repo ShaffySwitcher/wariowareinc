@@ -87,7 +87,7 @@ glabel func_08022EF0
 /* 08022FA8 */ ADDS R0, R6, #0
 /* 08022FAA */ ADDS R2, R4, #0
 /* 08022FAC */ MOVS R3, #0X20
-/* 08022FAE */ BL func_0800100C
+/* 08022FAE */ BL dma3_set
 /* 08022FB2 */ LDR R0, [R5]
 /* 08022FB4 */ LDR R0, [R0, #0X24]
 /* 08022FB6 */ STR R0, [SP]

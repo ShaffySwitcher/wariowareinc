@@ -106,12 +106,12 @@ glabel func_0804B190
 /* 0804B26A */ ADDS R1, #0XB4
 /* 0804B26C */ STRH R0, [R1]
 /* 0804B26E */ MOVS R0, #6
-/* 0804B270 */ BL func_08001120
+/* 0804B270 */ BL get_random_range
 /* 0804B274 */ LDR R1, [R5]
 /* 0804B276 */ ADDS R1, #0X77
 /* 0804B278 */ STRB R0, [R1]
 /* 0804B27A */ MOVS R0, #4
-/* 0804B27C */ BL func_08001120
+/* 0804B27C */ BL get_random_range
 /* 0804B280 */ LDR R1, [R5]
 /* 0804B282 */ ADDS R1, #0X78
 /* 0804B284 */ STRB R0, [R1]

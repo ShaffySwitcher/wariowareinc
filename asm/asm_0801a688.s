@@ -8,7 +8,7 @@ glabel func_0801A688
 /* 0801A688 */ PUSH {R4, LR}
 /* 0801A68A */ LDR R4, =D_083B2040
 /* 0801A68C */ MOVS R0, #2
-/* 0801A68E */ BL func_08001120
+/* 0801A68E */ BL get_random_range
 /* 0801A692 */ LSLS R0, R0, #0X10
 /* 0801A694 */ LSRS R0, R0, #0XE
 /* 0801A696 */ ADDS R0, R4

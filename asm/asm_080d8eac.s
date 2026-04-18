@@ -88,7 +88,7 @@ glabel func_080D8EAC
 /* 080D8F66 */ STR R0, [R4, #0XC]
 /* 080D8F68 */ STR R6, [R4, #0X10]
 /* 080D8F6A */ MOVS R0, #3
-/* 080D8F6C */ BL func_08001120
+/* 080D8F6C */ BL get_random_range
 /* 080D8F70 */ MOV R2, SB
 /* 080D8F72 */ LDR R1, [R2]
 /* 080D8F74 */ LSLS R0, R0, #0X10

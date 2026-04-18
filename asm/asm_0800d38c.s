@@ -22,7 +22,7 @@ glabel func_0800D38C
 /* 0800D3A8 */ STR R0, [SP]
 /* 0800D3AA */ ADDS R0, R3, #0
 /* 0800D3AC */ MOVS R3, #0X20
-/* 0800D3AE */ BL func_0800100C
+/* 0800D3AE */ BL dma3_set
 /* 0800D3B2 */ ADD SP, #4
 /* 0800D3B4 */ POP {R0}
 /* 0800D3B6 */ BX R0

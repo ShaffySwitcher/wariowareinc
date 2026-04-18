@@ -71,7 +71,7 @@ glabel func_080D5298
 /* 080D5320 */ LDR R0, _080D5358
 /* 080D5322 */ BL func_0800C7FC
 /* 080D5326 */ MOVS R0, #3
-/* 080D5328 */ BL func_08001120
+/* 080D5328 */ BL get_random_range
 /* 080D532C */ LSLS R0, R0, #0X10
 /* 080D532E */ LSRS R0, R0, #0X10
 /* 080D5330 */ CMP R0, #0

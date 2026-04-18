@@ -96,7 +96,7 @@ _080CBE78:
 /* 080CBE94 */ MOVS R3, #0XA
 /* 080CBE96 */ LDRSH R5, [R2, R3]
 /* 080CBE98 */ MOVS R0, #4
-/* 080CBE9A */ BL func_08001120
+/* 080CBE9A */ BL get_random_range
 /* 080CBE9E */ ADDS R2, R0, #0
 /* 080CBEA0 */ LDR R0, [R6]
 /* 080CBEA2 */ LDR R0, [R0, #0X40]

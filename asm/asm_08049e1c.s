@@ -114,7 +114,7 @@ glabel func_08049E1C
 /* 08049F04 */ ADDS R0, R3, #0
 /* 08049F06 */ ADDS R0, #0X84
 /* 08049F08 */ STRH R4, [R0]
-/* 08049F0A */ BL func_08001104
+/* 08049F0A */ BL get_random_u16
 /* 08049F0E */ LDR R7, [R6]
 /* 08049F10 */ ADDS R1, R7, #0
 /* 08049F12 */ ADDS R1, #0X8E
@@ -131,7 +131,7 @@ glabel func_08049E1C
 /* 08049F2A */ ADDS R1, #0X88
 /* 08049F2C */ STRH R0, [R1]
 /* 08049F2E */ MOVS R0, #0X1E
-/* 08049F30 */ BL func_08001120
+/* 08049F30 */ BL get_random_range
 /* 08049F34 */ LDR R6, [R6]
 /* 08049F36 */ LSLS R0, R0, #0X10
 /* 08049F38 */ LSRS R0, R0, #8

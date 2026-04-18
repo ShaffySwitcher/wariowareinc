@@ -12,8 +12,8 @@ glabel func_080B8418
 /* 080B8420 */ BEQ _080B8444
 /* 080B8422 */ LDR R0, _080B8440
 /* 080B8424 */ LDRH R0, [R0]
-/* 080B8426 */ BL func_080010F8
-/* 080B842A */ BL func_08001104
+/* 080B8426 */ BL set_random_seed
+/* 080B842A */ BL get_random_u16
 /* 080B842E */ LSLS R0, R0, #0X10
 /* 080B8430 */ LSRS R0, R0, #0X10
 /* 080B8432 */ ADDS R1, R4, #0

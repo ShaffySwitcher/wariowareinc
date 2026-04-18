@@ -71,7 +71,7 @@ glabel func_08048A08
 /* 08048A9C */ MOV SB, R7
 /* 08048A9E */ STRH R0, [R4]
 /* 08048AA0 */ MOVS R0, #0X3C
-/* 08048AA2 */ BL func_08001120
+/* 08048AA2 */ BL get_random_range
 /* 08048AA6 */ LDR R1, _08048C30
 /* 08048AA8 */ LDR R1, [R1]
 /* 08048AAA */ MOV SL, R1

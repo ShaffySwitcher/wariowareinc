@@ -202,7 +202,7 @@ glabel func_08050358
 /* 08050506 */ ADDS R1, #0X68
 /* 08050508 */ STRH R0, [R1]
 /* 0805050A */ MOVS R0, #0X10
-/* 0805050C */ BL func_08001120
+/* 0805050C */ BL get_random_range
 /* 08050510 */ MOV R1, SL
 /* 08050512 */ LDR R5, [R1]
 /* 08050514 */ LSLS R0, R0, #0X10

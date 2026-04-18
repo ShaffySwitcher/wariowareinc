@@ -24,7 +24,7 @@ glabel func_0805D8E0
 /* 0805D900 */ STRB R0, [R1]
 /* 0805D902 */ LSLS R4, R5, #4
 /* 0805D904 */ MOVS R0, #0X10
-/* 0805D906 */ BL func_08001120
+/* 0805D906 */ BL get_random_range
 /* 0805D90A */ LSLS R0, R0, #0X10
 /* 0805D90C */ LSRS R0, R0, #0X10
 /* 0805D90E */ LDR R1, [R6]

@@ -52,7 +52,7 @@ glabel func_080B97A0
 /* 080B980C */ ADDS R4, R3, #0
 _080B980E:
 /* 080B980E */ MOVS R0, #0XC
-/* 080B9810 */ BL func_08001120
+/* 080B9810 */ BL get_random_range
 /* 080B9814 */ LSLS R0, R0, #0X10
 /* 080B9816 */ LSRS R7, R0, #0X10
 /* 080B9818 */ LDR R0, [R4]

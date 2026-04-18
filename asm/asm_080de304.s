@@ -185,8 +185,8 @@ glabel func_080DE304
 _080DE48E:
 /* 080DE48E */ LDR R0, _080DE570
 /* 080DE490 */ LDRH R0, [R0]
-/* 080DE492 */ BL func_080010F8
-/* 080DE496 */ BL func_08001104
+/* 080DE492 */ BL set_random_seed
+/* 080DE496 */ BL get_random_u16
 /* 080DE49A */ ADDS R5, R0, #0
 /* 080DE49C */ LSLS R5, R5, #0X10
 /* 080DE49E */ LSRS R5, R5, #0X10

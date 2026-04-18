@@ -48,7 +48,7 @@ glabel func_080C0ED0
 /* 080C0F32 */ STRH R1, [R0, #0X10]
 /* 080C0F34 */ STRB R2, [R0, #0X12]
 /* 080C0F36 */ MOVS R0, #3
-/* 080C0F38 */ BL func_08001120
+/* 080C0F38 */ BL get_random_range
 /* 080C0F3C */ LDR R1, [R4]
 /* 080C0F3E */ STRB R0, [R1, #0X18]
 /* 080C0F40 */ MOVS R1, #0

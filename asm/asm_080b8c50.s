@@ -73,7 +73,7 @@ glabel func_080B8C50
 /* 080B8CEC */ SUBS R0, #2
 /* 080B8CEE */ LSLS R0, R0, #0X10
 /* 080B8CF0 */ LSRS R0, R0, #0X10
-/* 080B8CF2 */ BL func_08001120
+/* 080B8CF2 */ BL get_random_range
 /* 080B8CF6 */ LDR R1, [R5]
 /* 080B8CF8 */ ADDS R0, #1
 /* 080B8CFA */ ADDS R1, #0X5C

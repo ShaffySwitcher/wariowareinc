@@ -19,7 +19,7 @@ glabel func_080E3B9C
 /* 080E3BB2 */ B _080E3DAA
 _080E3BB4:
 /* 080E3BB4 */ MOVS R0, #3
-/* 080E3BB6 */ BL func_08001120
+/* 080E3BB6 */ BL get_random_range
 /* 080E3BBA */ LSLS R0, R0, #0X18
 /* 080E3BBC */ LSRS R2, R0, #0X18
 /* 080E3BBE */ CMP R5, #4

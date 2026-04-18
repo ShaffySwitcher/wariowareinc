@@ -95,7 +95,7 @@ _080A1D72:
 /* 080A1D74 */ LDR R4, _080A1E98
 /* 080A1D76 */ LDR R0, [R4]
 /* 080A1D78 */ LDRB R0, [R0, #1]
-/* 080A1D7A */ BL func_08001120
+/* 080A1D7A */ BL get_random_range
 /* 080A1D7E */ LDR R1, [R4]
 /* 080A1D80 */ ADDS R1, #0X66
 /* 080A1D82 */ STRB R0, [R1]
@@ -164,7 +164,7 @@ _080A1DCC:
 _080A1DFC:
 /* 080A1DFC */ LDR R0, [R4]
 /* 080A1DFE */ LDRB R0, [R0, #1]
-/* 080A1E00 */ BL func_08001120
+/* 080A1E00 */ BL get_random_range
 /* 080A1E04 */ STRB R0, [R5]
 /* 080A1E06 */ LDR R1, [R4]
 /* 080A1E08 */ ADDS R2, R1, #0
@@ -201,7 +201,7 @@ _080A1E40:
 _080A1E44:
 /* 080A1E44 */ LDR R0, [R5]
 /* 080A1E46 */ LDRB R0, [R0, #1]
-/* 080A1E48 */ BL func_08001120
+/* 080A1E48 */ BL get_random_range
 /* 080A1E4C */ STRB R0, [R4, #2]
 /* 080A1E4E */ LDR R1, [R5]
 /* 080A1E50 */ ADDS R2, R1, #0

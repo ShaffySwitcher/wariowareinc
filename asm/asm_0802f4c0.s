@@ -48,7 +48,7 @@ glabel func_0802F4C0
 /* 0802F520 */ MOVS R2, #2
 /* 0802F522 */ BL func_08003A0C
 /* 0802F526 */ MOVS R0, #0XC
-/* 0802F528 */ BL func_08001120
+/* 0802F528 */ BL get_random_range
 /* 0802F52C */ ADDS R0, #0X64
 /* 0802F52E */ LSLS R0, R0, #0X10
 /* 0802F530 */ LSRS R0, R0, #8
@@ -60,7 +60,7 @@ glabel func_0802F4C0
 /* 0802F53E */ MOVS R6, #0
 /* 0802F540 */ STRH R0, [R1]
 /* 0802F542 */ MOVS R0, #0XC
-/* 0802F544 */ BL func_08001120
+/* 0802F544 */ BL get_random_range
 /* 0802F548 */ ADDS R0, #0X82
 /* 0802F54A */ LSLS R0, R0, #0X10
 /* 0802F54C */ LSRS R0, R0, #8
@@ -71,7 +71,7 @@ glabel func_0802F4C0
 /* 0802F558 */ ADDS R1, #0X70
 /* 0802F55A */ STRH R0, [R1]
 /* 0802F55C */ MOVS R0, #0XC
-/* 0802F55E */ BL func_08001120
+/* 0802F55E */ BL get_random_range
 /* 0802F562 */ ADDS R0, #0XA0
 /* 0802F564 */ LSLS R0, R0, #0X10
 /* 0802F566 */ LSRS R0, R0, #8

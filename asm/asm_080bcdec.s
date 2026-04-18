@@ -26,7 +26,7 @@ glabel func_080BCDEC
 /* 080BCE12 */ LSLS R3, R3, #1
 /* 080BCE14 */ STR R3, [SP]
 /* 080BCE16 */ MOVS R3, #0X20
-/* 080BCE18 */ BL func_0800100C
+/* 080BCE18 */ BL dma3_set
 /* 080BCE1C */ ADD SP, #4
 /* 080BCE1E */ POP {R0}
 /* 080BCE20 */ BX R0
