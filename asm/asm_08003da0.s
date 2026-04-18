@@ -29,7 +29,7 @@ glabel func_08003DA0
 
 .balign 4, 0
 _08003DCC:
-/* 08003DCC */ .word func_080007E4
+/* 08003DCC */ .word rle_decompression
 
 .balign 4, 0
 _08003DD0:
@@ -37,7 +37,7 @@ _08003DD0:
 
 .balign 4, 0
 _08003DD4:
-/* 08003DD4 */ .word func_08000910
+/* 08003DD4 */ .word math_sqrt_rom
 
 .balign 4, 0
 _08003DD8:

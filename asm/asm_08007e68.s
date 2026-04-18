@@ -13,7 +13,7 @@ glabel func_08007E68
 _08007E72:
 /* 08007E72 */ LDR R0, [R2, #0X20]
 /* 08007E74 */ STR R0, [R2, #0X1C]
-/* 08007E76 */ LDR R1, =func_08000CEC
+/* 08007E76 */ LDR R1, =gfx_decompress_rom
 /* 08007E78 */ ADDS R0, R2, #0
 /* 08007E7A */ BL func_080F41B8
 /* 08007E7E */ POP {R1}

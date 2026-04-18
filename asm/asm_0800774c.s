@@ -28,7 +28,7 @@ _0800776C:
 
 .balign 4, 0
 _08007770:
-/* 08007770 */ .word func_08000AE0
+/* 08007770 */ .word fast_udivsi3_rom
 
 .balign 4, 0
 _08007774:
@@ -36,7 +36,7 @@ _08007774:
 
 .balign 4, 0
 _08007778:
-/* 08007778 */ .word func_08000CEC
+/* 08007778 */ .word gfx_decompress_rom
 
 .balign 4, 0
 _0800777C:

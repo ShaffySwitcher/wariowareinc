@@ -28,7 +28,7 @@ _08002640:
 
 .balign 4, 0
 _08002644:
-/* 08002644 */ .word func_08000910
+/* 08002644 */ .word math_sqrt_rom
 
 .balign 4, 0
 _08002648:
@@ -36,7 +36,7 @@ _08002648:
 
 .balign 4, 0
 _0800264C:
-/* 0800264C */ .word func_08000AE0
+/* 0800264C */ .word fast_udivsi3_rom
 
 .balign 4, 0
 _08002650:

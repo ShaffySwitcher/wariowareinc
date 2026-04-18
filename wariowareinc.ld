@@ -9,11 +9,8 @@ SECTIONS {
         build/asm/boot.s.o(.text*);
         build/src/main.c.o(.text);
         build/src/memory.c.o(.text);
-        build/asm/asm_080007e4.s.o(.text*);
-        build/asm/asm_08000910.s.o(.text*);
-        build/asm/asm_08000ae0.s.o(.text*);
-        build/asm/asm_08000cec.s.o(.text*);
-        build/asm/asm_08000f10.s.o(.text*);
+        build/asm/math.s.o(.text*);
+        build/src/code_08000f10.c.o(.text);
         build/asm/asm_08000f28.s.o(.text*);
         build/asm/asm_08000f48.s.o(.text*);
         build/asm/asm_08000f74.s.o(.text*);

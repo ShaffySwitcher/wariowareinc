@@ -32,7 +32,7 @@ _08007E22:
 /* 08007E46 */ STR R0, [R3, #0X18]
 /* 08007E48 */ STR R2, [R3, #0X1C]
 /* 08007E4A */ STR R2, [R3, #0X20]
-/* 08007E4C */ LDR R1, =func_08000CEC
+/* 08007E4C */ LDR R1, =gfx_decompress_rom
 /* 08007E4E */ ADDS R0, R3, #0
 /* 08007E50 */ BL func_080F41B8
 /* 08007E54 */ POP {R4}
