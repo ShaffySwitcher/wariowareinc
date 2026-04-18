@@ -102,7 +102,7 @@ _08062B92:
 /* 08062BDA */ MULS R0, R7, R0
 /* 08062BDC */ ASRS R0, R0, #8
 /* 08062BDE */ STR R0, [R5, #0X28]
-/* 08062BE0 */ LDR R0, =D_083A4064
+/* 08062BE0 */ LDR R0, =gSineTable
 /* 08062BE2 */ ADDS R1, R0
 /* 08062BE4 */ MOVS R2, #0
 /* 08062BE6 */ LDRSH R0, [R1, R2]
@@ -119,6 +119,6 @@ _08062BF8:
 
 .balign 4, 0
 _08062BF4:
-/* 08062BF4 */ .word D_083A4264
+/* 08062BF4 */ .word gCosineTable
 .ltorg
 .end

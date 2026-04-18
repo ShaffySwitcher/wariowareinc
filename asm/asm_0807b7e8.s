@@ -12,7 +12,7 @@ glabel func_0807B7E8
 /* 0807B7F0 */ LSLS R0, R0, #1
 /* 0807B7F2 */ ADDS R1, R0, R1
 /* 0807B7F4 */ LDRH R4, [R1]
-/* 0807B7F6 */ LDR R1, =D_083A4264
+/* 0807B7F6 */ LDR R1, =gCosineTable
 /* 0807B7F8 */ ADDS R0, R1
 /* 0807B7FA */ MOVS R2, #0
 /* 0807B7FC */ LDRSH R1, [R0, R2]
@@ -49,6 +49,6 @@ _0807B83C:
 
 .balign 4, 0
 _0807B838:
-/* 0807B838 */ .word D_083A4064
+/* 0807B838 */ .word gSineTable
 .ltorg
 .end

@@ -81,11 +81,11 @@ _080A3ED8:
 
 .balign 4, 0
 _080A3EDC:
-/* 080A3EDC */ .word D_083A4064
+/* 080A3EDC */ .word gSineTable
 
 .balign 4, 0
 _080A3EE0:
-/* 080A3EE0 */ .word D_083A4264
+/* 080A3EE0 */ .word gCosineTable
 _080A3EE4:
 /* 080A3EE4 */ CMP R0, #1
 /* 080A3EE6 */ BNE _080A3F1C

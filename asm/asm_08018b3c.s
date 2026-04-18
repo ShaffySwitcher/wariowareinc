@@ -220,7 +220,7 @@ _08018CC8:
 
 .balign 4, 0
 _08018CCC:
-/* 08018CCC */ .word D_083A4264
+/* 08018CCC */ .word gCosineTable
 _08018CD0:
 /* 08018CD0 */ LSLS R0, R7, #0X10
 /* 08018CD2 */ LDR R6, _08018D40

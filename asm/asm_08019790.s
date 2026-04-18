@@ -66,7 +66,7 @@ _080197F4:
 
 .balign 4, 0
 _080197F8:
-/* 080197F8 */ .word D_083A4264
+/* 080197F8 */ .word gCosineTable
 
 .balign 4, 0
 _080197FC:

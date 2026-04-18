@@ -76,11 +76,11 @@ _080074F6:
 
 .balign 4, 0
 _08007500:
-/* 08007500 */ .word D_083A4064
+/* 08007500 */ .word gSineTable
 
 .balign 4, 0
 _08007504:
-/* 08007504 */ .word D_083A4264
+/* 08007504 */ .word gCosineTable
 
 .balign 4, 0
 _08007508:

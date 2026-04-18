@@ -109,7 +109,7 @@ _0809BED8:
 
 .balign 4, 0
 _0809BEC8:
-/* 0809BEC8 */ .word D_083A4064
+/* 0809BEC8 */ .word gSineTable
 
 .balign 4, 0
 _0809BECC:
@@ -117,7 +117,7 @@ _0809BECC:
 
 .balign 4, 0
 _0809BED0:
-/* 0809BED0 */ .word D_083A4264
+/* 0809BED0 */ .word gCosineTable
 
 .balign 4, 0
 _0809BED4:

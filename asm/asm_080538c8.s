@@ -36,7 +36,7 @@ glabel func_080538C8
 /* 08053902 */ MOV R4, SB
 /* 08053904 */ LDRH R1, [R4, #2]
 /* 08053906 */ LSLS R1, R1, #8
-/* 08053908 */ LDR R2, =D_083A4264
+/* 08053908 */ LDR R2, =gCosineTable
 /* 0805390A */ MOV R4, R8
 /* 0805390C */ LDR R0, [R4]
 /* 0805390E */ ANDS R0, R3
@@ -68,6 +68,6 @@ _08053930:
 
 .balign 4, 0
 _08053934:
-/* 08053934 */ .word D_083A4064
+/* 08053934 */ .word gSineTable
 .ltorg
 .end

@@ -44,11 +44,11 @@ _080BB120:
 
 .balign 4, 0
 _080BB124:
-/* 080BB124 */ .word D_083A4264
+/* 080BB124 */ .word gCosineTable
 
 .balign 4, 0
 _080BB128:
-/* 080BB128 */ .word D_083A4064
+/* 080BB128 */ .word gSineTable
 _080BB12C:
 /* 080BB12C */ ADDS R5, R2, #0
 _080BB12E:
@@ -65,7 +65,7 @@ _080BB12E:
 
 .balign 4, 0
 _080BB144:
-/* 080BB144 */ .word D_083A4064
+/* 080BB144 */ .word gSineTable
 _080BB148:
 /* 080BB148 */ CMP R2, #0
 /* 080BB14A */ BGE _080BB170
@@ -85,11 +85,11 @@ _080BB148:
 
 .balign 4, 0
 _080BB168:
-/* 080BB168 */ .word D_083A4264
+/* 080BB168 */ .word gCosineTable
 
 .balign 4, 0
 _080BB16C:
-/* 080BB16C */ .word D_083A4064
+/* 080BB16C */ .word gSineTable
 _080BB170:
 /* 080BB170 */ ADDS R5, R2, #0
 _080BB172:
@@ -113,11 +113,11 @@ _080BB184:
 
 .balign 4, 0
 _080BB194:
-/* 080BB194 */ .word D_083A4064
+/* 080BB194 */ .word gSineTable
 
 .balign 4, 0
 _080BB198:
-/* 080BB198 */ .word D_083A4264
+/* 080BB198 */ .word gCosineTable
 _080BB19C:
 /* 080BB19C */ ADDS R0, R3, #0
 _080BB19E:

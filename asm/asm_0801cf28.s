@@ -91,10 +91,10 @@ _0801CFBC:
 
 .balign 4, 0
 _0801CFC0:
-/* 0801CFC0 */ .word D_083A4264
+/* 0801CFC0 */ .word gCosineTable
 
 .balign 4, 0
 _0801CFC4:
-/* 0801CFC4 */ .word D_083A4064
+/* 0801CFC4 */ .word gSineTable
 .ltorg
 .end

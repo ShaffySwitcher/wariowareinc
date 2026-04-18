@@ -127,6 +127,6 @@ _080431D4:
 
 .balign 4, 0
 _080431D8:
-/* 080431D8 */ .word D_083A4264
+/* 080431D8 */ .word gCosineTable
 .ltorg
 .end

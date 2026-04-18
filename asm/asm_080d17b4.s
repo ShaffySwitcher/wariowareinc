@@ -220,6 +220,6 @@ _080D1934:
 
 .balign 4, 0
 _080D1938:
-/* 080D1938 */ .word D_083A4064
+/* 080D1938 */ .word gSineTable
 .ltorg
 .end

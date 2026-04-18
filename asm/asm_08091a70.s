@@ -526,11 +526,11 @@ _08091E58:
 
 .balign 4, 0
 _08091E5C:
-/* 08091E5C */ .word D_083A4064
+/* 08091E5C */ .word gSineTable
 
 .balign 4, 0
 _08091E60:
-/* 08091E60 */ .word D_083A4264
+/* 08091E60 */ .word gCosineTable
 
 .balign 4, 0
 _08091E64:

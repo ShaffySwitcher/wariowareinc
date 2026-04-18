@@ -333,11 +333,11 @@ _0804F682:
 
 .balign 4, 0
 _0804F700:
-/* 0804F700 */ .word D_083A4264
+/* 0804F700 */ .word gCosineTable
 
 .balign 4, 0
 _0804F704:
-/* 0804F704 */ .word D_083A4064
+/* 0804F704 */ .word gSineTable
 
 .balign 4, 0
 _0804F708:
@@ -731,7 +731,7 @@ _0804F9E8:
 
 .balign 4, 0
 _0804F9EC:
-/* 0804F9EC */ .word D_083A4264
+/* 0804F9EC */ .word gCosineTable
 
 .balign 4, 0
 _0804F9F0:
@@ -739,7 +739,7 @@ _0804F9F0:
 
 .balign 4, 0
 _0804F9F4:
-/* 0804F9F4 */ .word D_083A4064
+/* 0804F9F4 */ .word gSineTable
 
 .balign 4, 0
 _0804F9F8:

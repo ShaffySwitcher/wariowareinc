@@ -91,7 +91,7 @@ _08038CAC:
 
 .balign 4, 0
 _08038CB0:
-/* 08038CB0 */ .word D_083A4264
+/* 08038CB0 */ .word gCosineTable
 
 .balign 4, 0
 _08038CB4:
@@ -99,7 +99,7 @@ _08038CB4:
 
 .balign 4, 0
 _08038CB8:
-/* 08038CB8 */ .word D_083A4064
+/* 08038CB8 */ .word gSineTable
 
 .balign 4, 0
 _08038CBC:

@@ -108,7 +108,7 @@ _080DEF24:
 
 .balign 4, 0
 _080DEF28:
-/* 080DEF28 */ .word D_083A4064
+/* 080DEF28 */ .word gSineTable
 _080DEF2C:
 /* 080DEF2C */ SUBS R7, #0X80
 /* 080DEF2E */ B _080DEF32

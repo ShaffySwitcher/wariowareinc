@@ -123,3 +123,29 @@ u16 get_random_range(u16 max) {
     return (sRandomSeed * max) >> 16;
 }
 
+u32 sine_lerp(u32 fullAngle) {
+    u32 a0, a1, af;
+    u8 angle;
+
+    fullAngle &= 0xFFF;
+    angle = (fullAngle >> 4);
+
+    a0 = angle & 0xFF;
+    a1 = (angle + 1) & 0xFF;
+    af = fullAngle & 0xF;
+    return ((gSineTable[a0] * (0x10 - af)) + (gSineTable[a1] * af)) >> 4;
+}
+
+u32 cosine_lerp(u32 fullAngle) {
+    u32 a0, a1, af;
+    u8 angle;
+
+    fullAngle &= 0xFFF;
+    angle = (fullAngle >> 4);
+
+    a0 = angle & 0xFF;
+    a1 = (angle + 1) & 0xFF;
+    af = fullAngle & 0xF;
+
+    return ((gCosineTable[a0] * (0x10 - af)) + (gCosineTable[a1] * af)) >> 4;
+}

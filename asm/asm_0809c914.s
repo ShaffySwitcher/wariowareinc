@@ -113,10 +113,10 @@ _0809C9D8:
 
 .balign 4, 0
 _0809C9DC:
-/* 0809C9DC */ .word D_083A4264
+/* 0809C9DC */ .word gCosineTable
 
 .balign 4, 0
 _0809C9E0:
-/* 0809C9E0 */ .word D_083A4064
+/* 0809C9E0 */ .word gSineTable
 .ltorg
 .end

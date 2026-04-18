@@ -108,10 +108,10 @@ _0804BF3C:
 
 .balign 4, 0
 _0804BF40:
-/* 0804BF40 */ .word D_083A4264
+/* 0804BF40 */ .word gCosineTable
 
 .balign 4, 0
 _0804BF44:
-/* 0804BF44 */ .word D_083A4064
+/* 0804BF44 */ .word gSineTable
 .ltorg
 .end

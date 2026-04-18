@@ -343,11 +343,11 @@ _08029E30:
 
 .balign 4, 0
 _08029E34:
-/* 08029E34 */ .word D_083A4264
+/* 08029E34 */ .word gCosineTable
 
 .balign 4, 0
 _08029E38:
-/* 08029E38 */ .word D_083A4064
+/* 08029E38 */ .word gSineTable
 
 .balign 4, 0
 _08029E3C:

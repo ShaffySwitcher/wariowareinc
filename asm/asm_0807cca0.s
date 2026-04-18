@@ -277,7 +277,7 @@ _0807CE90:
 
 .balign 4, 0
 _0807CE94:
-/* 0807CE94 */ .word D_083A4264
+/* 0807CE94 */ .word gCosineTable
 _0807CE98:
 /* 0807CE98 */ LDR R0, [R1, #0XC]
 /* 0807CE9A */ ASRS R0, R0, #8

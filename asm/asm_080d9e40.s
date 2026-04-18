@@ -34,7 +34,7 @@ _080D9E62:
 /* 080D9E72 */ ADDS R0, R2, #0
 /* 080D9E74 */ ASRS R0, R0, #8
 /* 080D9E76 */ ADDS R6, R0
-/* 080D9E78 */ LDR R0, =D_083A4264
+/* 080D9E78 */ LDR R0, =gCosineTable
 /* 080D9E7A */ ADDS R1, R0
 /* 080D9E7C */ MOVS R2, #0
 /* 080D9E7E */ LDRSH R0, [R1, R2]
@@ -93,6 +93,6 @@ _080D9EDC:
 
 .balign 4, 0
 _080D9EE0:
-/* 080D9EE0 */ .word D_083A4064
+/* 080D9EE0 */ .word gSineTable
 .ltorg
 .end

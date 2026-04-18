@@ -120,7 +120,7 @@ _0805EEA4:
 
 .balign 4, 0
 _0805EEA8:
-/* 0805EEA8 */ .word D_083A4264
+/* 0805EEA8 */ .word gCosineTable
 
 .balign 4, 0
 _0805EEAC:
@@ -128,7 +128,7 @@ _0805EEAC:
 
 .balign 4, 0
 _0805EEB0:
-/* 0805EEB0 */ .word D_083A4064
+/* 0805EEB0 */ .word gSineTable
 _0805EEB4:
 /* 0805EEB4 */ SUBS R6, R2, #6
 /* 0805EEB6 */ SUBS R7, #0XE
@@ -201,7 +201,7 @@ _0805EF3A:
 /* 0805EF3E */ ADDS R0, R6, R0
 /* 0805EF40 */ LSLS R0, R0, #0X10
 /* 0805EF42 */ ASRS R2, R0, #0X10
-/* 0805EF44 */ LDR R0, =D_083A4064
+/* 0805EF44 */ LDR R0, =gSineTable
 /* 0805EF46 */ ADDS R0, R5, R0
 /* 0805EF48 */ MOVS R3, #0
 /* 0805EF4A */ LDRSH R0, [R0, R3]
@@ -252,6 +252,6 @@ _0805EF98:
 
 .balign 4, 0
 _0805EF9C:
-/* 0805EF9C */ .word D_083A4264
+/* 0805EF9C */ .word gCosineTable
 .ltorg
 .end

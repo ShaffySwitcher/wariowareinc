@@ -101,11 +101,11 @@ _0808B718:
 
 .balign 4, 0
 _0808B71C:
-/* 0808B71C */ .word D_083A4264
+/* 0808B71C */ .word gCosineTable
 
 .balign 4, 0
 _0808B720:
-/* 0808B720 */ .word D_083A4064
+/* 0808B720 */ .word gSineTable
 
 .balign 4, 0
 _0808B724:

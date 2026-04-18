@@ -84,7 +84,7 @@ _080DB682:
 
 .balign 4, 0
 _080DB694:
-/* 080DB694 */ .word D_083A4064
+/* 080DB694 */ .word gSineTable
 
 .balign 4, 0
 _080DB698:

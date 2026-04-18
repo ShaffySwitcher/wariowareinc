@@ -94,11 +94,11 @@ _080E30D8:
 
 .balign 4, 0
 _080E30DC:
-/* 080E30DC */ .word D_083A4264
+/* 080E30DC */ .word gCosineTable
 
 .balign 4, 0
 _080E30E0:
-/* 080E30E0 */ .word D_083A4064
+/* 080E30E0 */ .word gSineTable
 
 .balign 4, 0
 _080E30E4:

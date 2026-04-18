@@ -193,11 +193,11 @@ _080ABDA8:
 
 .balign 4, 0
 _080ABE24:
-/* 080ABE24 */ .word D_083A4264
+/* 080ABE24 */ .word gCosineTable
 
 .balign 4, 0
 _080ABE28:
-/* 080ABE28 */ .word D_083A4064
+/* 080ABE28 */ .word gSineTable
 _080ABE2C:
 /* 080ABE2C */ MOVS R7, #0X84
 /* 080ABE2E */ LSLS R7, R7, #4

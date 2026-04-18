@@ -215,11 +215,11 @@ _080A46D0:
 
 .balign 4, 0
 _080A46D4:
-/* 080A46D4 */ .word D_083A4264
+/* 080A46D4 */ .word gCosineTable
 
 .balign 4, 0
 _080A46D8:
-/* 080A46D8 */ .word D_083A4064
+/* 080A46D8 */ .word gSineTable
 
 .balign 4, 0
 _080A46DC:

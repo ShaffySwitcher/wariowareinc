@@ -99,11 +99,11 @@ _080C53B0:
 
 .balign 4, 0
 _080C53B4:
-/* 080C53B4 */ .word D_083A4064
+/* 080C53B4 */ .word gSineTable
 
 .balign 4, 0
 _080C53B8:
-/* 080C53B8 */ .word D_083A4264
+/* 080C53B8 */ .word gCosineTable
 
 .balign 4, 0
 _080C53BC:

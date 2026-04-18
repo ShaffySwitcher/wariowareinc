@@ -197,7 +197,7 @@ _0806FA6E:
 
 .balign 4, 0
 _0806FAB8:
-/* 0806FAB8 */ .word D_083A4264
+/* 0806FAB8 */ .word gCosineTable
 
 .balign 4, 0
 _0806FABC:
@@ -205,7 +205,7 @@ _0806FABC:
 
 .balign 4, 0
 _0806FAC0:
-/* 0806FAC0 */ .word D_083A4064
+/* 0806FAC0 */ .word gSineTable
 
 .balign 4, 0
 _0806FAC4:

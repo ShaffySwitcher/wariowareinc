@@ -46,7 +46,7 @@ _080E6074:
 
 .balign 4, 0
 _080E6088:
-/* 080E6088 */ .word D_083A4064
+/* 080E6088 */ .word gSineTable
 _080E608C:
 /* 080E608C */ LDR R1, _080E60A4
 /* 080E608E */ LSLS R0, R4, #1
@@ -62,7 +62,7 @@ _080E608C:
 
 .balign 4, 0
 _080E60A4:
-/* 080E60A4 */ .word D_083A4064
+/* 080E60A4 */ .word gSineTable
 _080E60A8:
 /* 080E60A8 */ LDR R1, _080E60FC
 /* 080E60AA */ LSLS R0, R4, #1
@@ -108,7 +108,7 @@ _080E60C0:
 
 .balign 4, 0
 _080E60FC:
-/* 080E60FC */ .word D_083A4064
+/* 080E60FC */ .word gSineTable
 
 .balign 4, 0
 _080E6100:

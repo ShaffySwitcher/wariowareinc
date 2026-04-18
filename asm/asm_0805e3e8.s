@@ -90,7 +90,7 @@ _0805E47C:
 
 .balign 4, 0
 _0805E480:
-/* 0805E480 */ .word D_083A4264
+/* 0805E480 */ .word gCosineTable
 
 .balign 4, 0
 _0805E484:

@@ -36,7 +36,7 @@ _0809E0D8:
 
 .balign 4, 0
 _0809E0DC:
-/* 0809E0DC */ .word D_083A4064
+/* 0809E0DC */ .word gSineTable
 _0809E0E0:
 /* 0809E0E0 */ MOVS R7, #0X9F
 /* 0809E0E2 */ LSLS R7, R7, #2

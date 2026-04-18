@@ -56,11 +56,11 @@ _08066684:
 
 .balign 4, 0
 _08066688:
-/* 08066688 */ .word D_083A4264
+/* 08066688 */ .word gCosineTable
 
 .balign 4, 0
 _0806668C:
-/* 0806668C */ .word D_083A4064
+/* 0806668C */ .word gSineTable
 
 .balign 4, 0
 _08066690:

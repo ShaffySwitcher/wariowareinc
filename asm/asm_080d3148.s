@@ -160,7 +160,7 @@ _080D3250:
 
 .balign 4, 0
 _080D3254:
-/* 080D3254 */ .word D_083A4064
+/* 080D3254 */ .word gSineTable
 
 .balign 4, 0
 _080D3258:

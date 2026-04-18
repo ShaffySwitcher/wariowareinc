@@ -189,11 +189,11 @@ _0807C5A4:
 
 .balign 4, 0
 _0807C5A8:
-/* 0807C5A8 */ .word D_083A4064
+/* 0807C5A8 */ .word gSineTable
 
 .balign 4, 0
 _0807C5AC:
-/* 0807C5AC */ .word D_083A4264
+/* 0807C5AC */ .word gCosineTable
 _0807C5B0:
 /* 0807C5B0 */ CMP R0, #2
 /* 0807C5B2 */ BEQ _0807C5B6

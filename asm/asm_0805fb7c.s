@@ -345,7 +345,7 @@ _0805FDE0:
 
 .balign 4, 0
 _0805FDE4:
-/* 0805FDE4 */ .word D_083A4264
+/* 0805FDE4 */ .word gCosineTable
 
 .balign 4, 0
 _0805FDE8:

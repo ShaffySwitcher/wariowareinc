@@ -171,11 +171,11 @@ _08090094:
 
 .balign 4, 0
 _08090098:
-/* 08090098 */ .word D_083A4264
+/* 08090098 */ .word gCosineTable
 
 .balign 4, 0
 _0809009C:
-/* 0809009C */ .word D_083A4064
+/* 0809009C */ .word gSineTable
 
 .balign 4, 0
 _080900A0:

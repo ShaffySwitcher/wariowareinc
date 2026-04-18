@@ -99,7 +99,7 @@ _0807AB24:
 
 .balign 4, 0
 _0807AB28:
-/* 0807AB28 */ .word D_083A4064
+/* 0807AB28 */ .word gSineTable
 
 .balign 4, 0
 _0807AB2C:

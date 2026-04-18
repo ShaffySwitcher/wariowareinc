@@ -178,11 +178,11 @@ _08035F6C:
 
 .balign 4, 0
 _08035F58:
-/* 08035F58 */ .word D_083A4264
+/* 08035F58 */ .word gCosineTable
 
 .balign 4, 0
 _08035F5C:
-/* 08035F5C */ .word D_083A4064
+/* 08035F5C */ .word gSineTable
 
 .balign 4, 0
 _08035F60:

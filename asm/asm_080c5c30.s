@@ -64,6 +64,6 @@ _080C5C98:
 
 .balign 4, 0
 _080C5C9C:
-/* 080C5C9C */ .word D_083A4264
+/* 080C5C9C */ .word gCosineTable
 .ltorg
 .end

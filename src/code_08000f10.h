@@ -22,5 +22,7 @@ extern void dma3_fill(u32 value, void *destination, u32 bytesToFill, u16 unit, u
 void set_random_seed(u16 seed);
 u16 get_random_u16(void);
 u16 get_random_range(u16 max);
+u32 sine_lerp(u32 fullAngle);
+u32 cosine_lerp(u32 fullAngle);
 
 extern void func_080F41B4(void);

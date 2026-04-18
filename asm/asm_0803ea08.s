@@ -396,11 +396,11 @@ _0803ED08:
 
 .balign 4, 0
 _0803ED0C:
-/* 0803ED0C */ .word D_083A4264
+/* 0803ED0C */ .word gCosineTable
 
 .balign 4, 0
 _0803ED10:
-/* 0803ED10 */ .word D_083A4064
+/* 0803ED10 */ .word gSineTable
 
 .balign 4, 0
 _0803ED14:

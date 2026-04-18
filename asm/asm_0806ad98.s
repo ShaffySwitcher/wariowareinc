@@ -194,7 +194,7 @@ _0806AEEC:
 
 .balign 4, 0
 _0806AEE4:
-/* 0806AEE4 */ .word D_083A4064
+/* 0806AEE4 */ .word gSineTable
 
 .balign 4, 0
 _0806AEE8:

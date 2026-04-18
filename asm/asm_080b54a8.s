@@ -71,6 +71,6 @@ _080B5518:
 
 .balign 4, 0
 _080B551C:
-/* 080B551C */ .word D_083A4064
+/* 080B551C */ .word gSineTable
 .ltorg
 .end

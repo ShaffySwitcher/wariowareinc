@@ -271,11 +271,11 @@ _080AC914:
 
 .balign 4, 0
 _080AC95C:
-/* 080AC95C */ .word D_083A4264
+/* 080AC95C */ .word gCosineTable
 
 .balign 4, 0
 _080AC960:
-/* 080AC960 */ .word D_083A4064
+/* 080AC960 */ .word gSineTable
 
 .balign 4, 0
 _080AC964:
@@ -314,11 +314,11 @@ _080AC996:
 
 .balign 4, 0
 _080AC9A0:
-/* 080AC9A0 */ .word D_083A4264
+/* 080AC9A0 */ .word gCosineTable
 
 .balign 4, 0
 _080AC9A4:
-/* 080AC9A4 */ .word D_083A4064
+/* 080AC9A4 */ .word gSineTable
 _080AC9A8:
 /* 080AC9A8 */ LDR R0, [R5, #0X30]
 /* 080AC9AA */ ADDS R0, R4

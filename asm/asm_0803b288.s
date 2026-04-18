@@ -159,11 +159,11 @@ _0803B384:
 
 .balign 4, 0
 _0803B388:
-/* 0803B388 */ .word D_083A4264
+/* 0803B388 */ .word gCosineTable
 
 .balign 4, 0
 _0803B38C:
-/* 0803B38C */ .word D_083A4064
+/* 0803B38C */ .word gSineTable
 _0803B390:
 /* 0803B390 */ LDR R2, [R5]
 /* 0803B392 */ ADDS R0, R2, #0

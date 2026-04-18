@@ -99,10 +99,10 @@ _0809A71C:
 
 .balign 4, 0
 _0809A714:
-/* 0809A714 */ .word D_083A4264
+/* 0809A714 */ .word gCosineTable
 
 .balign 4, 0
 _0809A718:
-/* 0809A718 */ .word D_083A4064
+/* 0809A718 */ .word gSineTable
 .ltorg
 .end

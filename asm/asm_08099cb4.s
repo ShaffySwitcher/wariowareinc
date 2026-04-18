@@ -42,6 +42,6 @@ _08099CEC:
 
 .balign 4, 0
 _08099CF0:
-/* 08099CF0 */ .word D_083A4064
+/* 08099CF0 */ .word gSineTable
 .ltorg
 .end

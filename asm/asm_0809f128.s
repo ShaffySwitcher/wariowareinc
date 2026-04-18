@@ -99,7 +99,7 @@ _0809F1CC:
 
 .balign 4, 0
 _0809F1D0:
-/* 0809F1D0 */ .word D_083A4064
+/* 0809F1D0 */ .word gSineTable
 
 .balign 4, 0
 _0809F1D4:
@@ -248,11 +248,11 @@ _0809F2E4:
 
 .balign 4, 0
 _0809F2E8:
-/* 0809F2E8 */ .word D_083A4064
+/* 0809F2E8 */ .word gSineTable
 
 .balign 4, 0
 _0809F2EC:
-/* 0809F2EC */ .word D_083A4264
+/* 0809F2EC */ .word gCosineTable
 
 .balign 4, 0
 _0809F2F0:

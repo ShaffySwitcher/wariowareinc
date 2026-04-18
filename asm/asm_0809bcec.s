@@ -86,7 +86,7 @@ _0809BD78:
 
 .balign 4, 0
 _0809BD7C:
-/* 0809BD7C */ .word D_083A4064
+/* 0809BD7C */ .word gSineTable
 
 .balign 4, 0
 _0809BD80:
@@ -94,6 +94,6 @@ _0809BD80:
 
 .balign 4, 0
 _0809BD84:
-/* 0809BD84 */ .word D_083A4264
+/* 0809BD84 */ .word gCosineTable
 .ltorg
 .end

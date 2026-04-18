@@ -76,7 +76,7 @@ _080A48CA:
 /* 080A4932 */ MOV R2, IP
 /* 080A4934 */ ADDS R2, #0X24
 /* 080A4936 */ ADDS R2, R5
-/* 080A4938 */ LDR R1, =D_083A4064
+/* 080A4938 */ LDR R1, =gSineTable
 /* 080A493A */ LDR R0, [R6]
 /* 080A493C */ ASRS R0, R0, #8
 /* 080A493E */ MOV R3, SL
@@ -124,6 +124,6 @@ _080A497C:
 
 .balign 4, 0
 _080A4980:
-/* 080A4980 */ .word D_083A4264
+/* 080A4980 */ .word gCosineTable
 .ltorg
 .end

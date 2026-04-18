@@ -61,8 +61,9 @@ SOURCES    := src $(shell find src -type d)
 ASM        := asm
 INCLUDES   := include
 BIN        := bin
+DATA	   := data
 
-C_DIRS     := $(sort $(SOURCES))
+C_DIRS     := $(sort $(SOURCES) $(DATA))
 ASM_DIRS   := $(sort $(ASM) $(DATA))
 
 ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS)

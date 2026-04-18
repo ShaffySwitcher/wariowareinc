@@ -75,7 +75,7 @@ _080D44A0:
 /* 080D44FA */ MULS R0, R1, R0
 /* 080D44FC */ ASRS R0, R0, #8
 /* 080D44FE */ STRH R0, [R6, #0XE]
-/* 080D4500 */ LDR R0, =D_083A4264
+/* 080D4500 */ LDR R0, =gCosineTable
 /* 080D4502 */ ADDS R2, R0
 /* 080D4504 */ MOVS R7, #0
 /* 080D4506 */ LDRSH R1, [R2, R7]
@@ -160,7 +160,7 @@ _080D4584:
 
 .balign 4, 0
 _080D4588:
-/* 080D4588 */ .word D_083A4064
+/* 080D4588 */ .word gSineTable
 
 .balign 4, 0
 _080D458C:

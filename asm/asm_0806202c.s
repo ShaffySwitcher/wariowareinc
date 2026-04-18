@@ -106,7 +106,7 @@ _080620DA:
 
 .balign 4, 0
 _080620E8:
-/* 080620E8 */ .word D_083A4264
+/* 080620E8 */ .word gCosineTable
 
 .balign 4, 0
 _080620EC:

@@ -61,6 +61,6 @@ _08076690:
 
 .balign 4, 0
 _08076694:
-/* 08076694 */ .word D_083A4064
+/* 08076694 */ .word gSineTable
 .ltorg
 .end

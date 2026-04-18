@@ -34,7 +34,7 @@ glabel func_080A4E58
 /* 080A4E8C */ LDRSH R2, [R7, R3]
 /* 080A4E8E */ ASRS R2, R2, #3
 /* 080A4E90 */ ADDS R2, #0X78
-/* 080A4E92 */ LDR R7, =D_083A4064
+/* 080A4E92 */ LDR R7, =gSineTable
 /* 080A4E94 */ MOV SB, R7
 /* 080A4E96 */ ADD R4, SB
 /* 080A4E98 */ MOVS R7, #0
@@ -126,6 +126,6 @@ _080A4F38:
 
 .balign 4, 0
 _080A4F3C:
-/* 080A4F3C */ .word D_083A4264
+/* 080A4F3C */ .word gCosineTable
 .ltorg
 .end

@@ -105,11 +105,11 @@ _080EB8C0:
 
 .balign 4, 0
 _080EB8C4:
-/* 080EB8C4 */ .word D_083A4264
+/* 080EB8C4 */ .word gCosineTable
 
 .balign 4, 0
 _080EB8C8:
-/* 080EB8C8 */ .word D_083A4064
+/* 080EB8C8 */ .word gSineTable
 
 .balign 4, 0
 _080EB8CC:

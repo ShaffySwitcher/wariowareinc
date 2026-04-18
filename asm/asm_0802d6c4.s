@@ -197,7 +197,7 @@ _0802D828:
 
 .balign 4, 0
 _0802D82C:
-/* 0802D82C */ .word D_083A4064
+/* 0802D82C */ .word gSineTable
 
 .balign 4, 0
 _0802D830:

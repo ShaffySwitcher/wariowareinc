@@ -117,7 +117,7 @@ _080C5A94:
 
 .balign 4, 0
 _080C5AD4:
-/* 080C5AD4 */ .word D_083A4064
+/* 080C5AD4 */ .word gSineTable
 _080C5AD8:
 /* 080C5AD8 */ LDR R0, _080C5AF0
 /* 080C5ADA */ LDR R0, [R0]

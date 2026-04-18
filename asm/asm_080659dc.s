@@ -390,11 +390,11 @@ _08065C90:
 
 .balign 4, 0
 _08065C94:
-/* 08065C94 */ .word D_083A4264
+/* 08065C94 */ .word gCosineTable
 
 .balign 4, 0
 _08065C98:
-/* 08065C98 */ .word D_083A4064
+/* 08065C98 */ .word gSineTable
 
 .balign 4, 0
 _08065C9C:

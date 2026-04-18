@@ -218,7 +218,7 @@ _08057F3E:
 
 .balign 4, 0
 _08057F68:
-/* 08057F68 */ .word D_083A4064
+/* 08057F68 */ .word gSineTable
 _08057F6C:
 /* 08057F6C */ MOVS R0, #0XEC
 /* 08057F6E */ LSLS R0, R0, #1

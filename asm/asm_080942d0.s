@@ -426,11 +426,11 @@ _080945B0:
 
 .balign 4, 0
 _080945B4:
-/* 080945B4 */ .word D_083A4064
+/* 080945B4 */ .word gSineTable
 
 .balign 4, 0
 _080945B8:
-/* 080945B8 */ .word D_083A4264
+/* 080945B8 */ .word gCosineTable
 
 .balign 4, 0
 _080945BC:

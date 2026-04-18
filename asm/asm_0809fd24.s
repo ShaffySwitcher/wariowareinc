@@ -117,11 +117,11 @@ _0809FDF4:
 
 .balign 4, 0
 _0809FDF8:
-/* 0809FDF8 */ .word D_083A4064
+/* 0809FDF8 */ .word gSineTable
 
 .balign 4, 0
 _0809FDFC:
-/* 0809FDFC */ .word D_083A4264
+/* 0809FDFC */ .word gCosineTable
 _0809FE00:
 /* 0809FE00 */ MOVS R7, #0
 _0809FE02:

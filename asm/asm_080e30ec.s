@@ -361,11 +361,11 @@ _080E3384:
 
 .balign 4, 0
 _080E3388:
-/* 080E3388 */ .word D_083A4264
+/* 080E3388 */ .word gCosineTable
 
 .balign 4, 0
 _080E338C:
-/* 080E338C */ .word D_083A4064
+/* 080E338C */ .word gSineTable
 
 .balign 4, 0
 _080E3390:

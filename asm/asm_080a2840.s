@@ -165,11 +165,11 @@ _080A296C:
 
 .balign 4, 0
 _080A2970:
-/* 080A2970 */ .word D_083A4264
+/* 080A2970 */ .word gCosineTable
 
 .balign 4, 0
 _080A2974:
-/* 080A2974 */ .word D_083A4064
+/* 080A2974 */ .word gSineTable
 
 .balign 4, 0
 _080A2978:

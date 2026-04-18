@@ -71,11 +71,11 @@ _08019A64:
 
 .balign 4, 0
 _08019A68:
-/* 08019A68 */ .word D_083A4264
+/* 08019A68 */ .word gCosineTable
 
 .balign 4, 0
 _08019A6C:
-/* 08019A6C */ .word D_083A4064
+/* 08019A6C */ .word gSineTable
 
 .balign 4, 0
 _08019A70:

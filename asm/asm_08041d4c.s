@@ -297,11 +297,11 @@ _08041F74:
 
 .balign 4, 0
 _08041F78:
-/* 08041F78 */ .word D_083A4064
+/* 08041F78 */ .word gSineTable
 
 .balign 4, 0
 _08041F7C:
-/* 08041F7C */ .word D_083A4264
+/* 08041F7C */ .word gCosineTable
 
 .balign 4, 0
 _08041F80:

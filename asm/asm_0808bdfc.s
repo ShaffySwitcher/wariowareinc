@@ -137,11 +137,11 @@ _0808BEFC:
 
 .balign 4, 0
 _0808BF00:
-/* 0808BF00 */ .word D_083A4264
+/* 0808BF00 */ .word gCosineTable
 
 .balign 4, 0
 _0808BF04:
-/* 0808BF04 */ .word D_083A4064
+/* 0808BF04 */ .word gSineTable
 
 .balign 4, 0
 _0808BF08:

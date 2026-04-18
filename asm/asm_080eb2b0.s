@@ -199,7 +199,7 @@ _080EB428:
 
 .balign 4, 0
 _080EB420:
-/* 080EB420 */ .word D_083A4064
+/* 080EB420 */ .word gSineTable
 
 .balign 4, 0
 _080EB424:

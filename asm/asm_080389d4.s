@@ -56,7 +56,7 @@ _08038A40:
 
 .balign 4, 0
 _08038A30:
-/* 08038A30 */ .word D_083A4264
+/* 08038A30 */ .word gCosineTable
 
 .balign 4, 0
 _08038A34:
@@ -64,7 +64,7 @@ _08038A34:
 
 .balign 4, 0
 _08038A38:
-/* 08038A38 */ .word D_083A4064
+/* 08038A38 */ .word gSineTable
 
 .balign 4, 0
 _08038A3C:

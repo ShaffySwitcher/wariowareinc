@@ -349,10 +349,10 @@ _08055EE4:
 
 .balign 4, 0
 _08055EE8:
-/* 08055EE8 */ .word D_083A4264
+/* 08055EE8 */ .word gCosineTable
 
 .balign 4, 0
 _08055EEC:
-/* 08055EEC */ .word D_083A4064
+/* 08055EEC */ .word gSineTable
 .ltorg
 .end

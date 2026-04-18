@@ -73,11 +73,11 @@ _0804D7F0:
 
 .balign 4, 0
 _0804D7F4:
-/* 0804D7F4 */ .word D_083A4264
+/* 0804D7F4 */ .word gCosineTable
 
 .balign 4, 0
 _0804D7F8:
-/* 0804D7F8 */ .word D_083A4064
+/* 0804D7F8 */ .word gSineTable
 
 .balign 4, 0
 _0804D7FC:

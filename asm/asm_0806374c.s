@@ -190,11 +190,11 @@ _0806389C:
 
 .balign 4, 0
 _080638A0:
-/* 080638A0 */ .word D_083A4264
+/* 080638A0 */ .word gCosineTable
 
 .balign 4, 0
 _080638A4:
-/* 080638A4 */ .word D_083A4064
+/* 080638A4 */ .word gSineTable
 
 .balign 4, 0
 _080638A8:

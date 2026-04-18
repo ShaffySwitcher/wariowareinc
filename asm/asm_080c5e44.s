@@ -180,7 +180,7 @@ _080C5F74:
 
 .balign 4, 0
 _080C5F78:
-/* 080C5F78 */ .word D_083A4264
+/* 080C5F78 */ .word gCosineTable
 
 .balign 4, 0
 _080C5F7C:

@@ -48,6 +48,6 @@ _0801815C:
 
 .balign 4, 0
 _08018160:
-/* 08018160 */ .word D_083A4264
+/* 08018160 */ .word gCosineTable
 .ltorg
 .end

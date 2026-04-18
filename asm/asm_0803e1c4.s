@@ -67,11 +67,11 @@ _0803E22C:
 
 .balign 4, 0
 _0803E230:
-/* 0803E230 */ .word D_083A4264
+/* 0803E230 */ .word gCosineTable
 
 .balign 4, 0
 _0803E234:
-/* 0803E234 */ .word D_083A4064
+/* 0803E234 */ .word gSineTable
 
 .balign 4, 0
 _0803E238:

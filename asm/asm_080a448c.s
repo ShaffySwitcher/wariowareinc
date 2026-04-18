@@ -50,7 +50,7 @@ _080A44DC:
 
 .balign 4, 0
 _080A44E0:
-/* 080A44E0 */ .word D_083A4264
+/* 080A44E0 */ .word gCosineTable
 
 .balign 4, 0
 _080A44E4:

@@ -103,7 +103,7 @@ _0806BC90:
 /* 0806BCA8 */ ADDS R2, R0, #0
 /* 0806BCAA */ MULS R2, R1, R2
 /* 0806BCAC */ ASRS R2, R2, #8
-/* 0806BCAE */ LDR R1, =D_083A4264
+/* 0806BCAE */ LDR R1, =gCosineTable
 /* 0806BCB0 */ LDR R3, [R7, #0X10]
 /* 0806BCB2 */ LSRS R0, R3, #8
 /* 0806BCB4 */ ANDS R0, R6
@@ -141,6 +141,6 @@ _0806BCE4:
 
 .balign 4, 0
 _0806BCE8:
-/* 0806BCE8 */ .word D_083A4064
+/* 0806BCE8 */ .word gSineTable
 .ltorg
 .end

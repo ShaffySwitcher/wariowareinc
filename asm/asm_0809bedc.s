@@ -54,7 +54,7 @@ _0809BF1E:
 /* 0809BF3A */ MULS R0, R6, R0
 /* 0809BF3C */ ASRS R0, R0, #8
 /* 0809BF3E */ STRH R0, [R3, #0X10]
-/* 0809BF40 */ LDR R0, =D_083A4064
+/* 0809BF40 */ LDR R0, =gSineTable
 /* 0809BF42 */ ADDS R1, R0
 /* 0809BF44 */ MOVS R7, #0
 /* 0809BF46 */ LDRSH R0, [R1, R7]
@@ -100,6 +100,6 @@ _0809BF7C:
 
 .balign 4, 0
 _0809BF80:
-/* 0809BF80 */ .word D_083A4264
+/* 0809BF80 */ .word gCosineTable
 .ltorg
 .end

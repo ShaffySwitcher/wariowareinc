@@ -175,11 +175,11 @@ _0803A4BC:
 
 .balign 4, 0
 _0803A4C0:
-/* 0803A4C0 */ .word D_083A4264
+/* 0803A4C0 */ .word gCosineTable
 
 .balign 4, 0
 _0803A4C4:
-/* 0803A4C4 */ .word D_083A4064
+/* 0803A4C4 */ .word gSineTable
 
 .balign 4, 0
 _0803A4C8:

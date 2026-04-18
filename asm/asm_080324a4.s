@@ -150,11 +150,11 @@ _080325AC:
 
 .balign 4, 0
 _080325B0:
-/* 080325B0 */ .word D_083A4264
+/* 080325B0 */ .word gCosineTable
 
 .balign 4, 0
 _080325B4:
-/* 080325B4 */ .word D_083A4064
+/* 080325B4 */ .word gSineTable
 
 .balign 4, 0
 _080325B8:

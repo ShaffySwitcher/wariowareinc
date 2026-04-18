@@ -93,11 +93,11 @@ _0805A548:
 
 .balign 4, 0
 _0805A54C:
-/* 0805A54C */ .word D_083A4264
+/* 0805A54C */ .word gCosineTable
 
 .balign 4, 0
 _0805A550:
-/* 0805A550 */ .word D_083A4064
+/* 0805A550 */ .word gSineTable
 
 .balign 4, 0
 _0805A554:

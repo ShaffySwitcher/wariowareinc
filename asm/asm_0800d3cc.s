@@ -136,11 +136,11 @@ glabel func_0800D3CC
 
 .balign 4, 0
 _0800D4D8:
-/* 0800D4D8 */ .word D_083A4064
+/* 0800D4D8 */ .word gSineTable
 
 .balign 4, 0
 _0800D4DC:
-/* 0800D4DC */ .word D_083A4264
+/* 0800D4DC */ .word gCosineTable
 _0800D4E0:
 /* 0800D4E0 */ LDR R4, [SP, #0X2C]
 /* 0800D4E2 */ ASRS R0, R4, #4
@@ -309,7 +309,7 @@ _0800D5B6:
 /* 0800D622 */ LSLS R0, R2, #4
 /* 0800D624 */ SUBS R0, R2
 /* 0800D626 */ LSLS R0, R0, #3
-/* 0800D628 */ LDR R5, =D_083A4064
+/* 0800D628 */ LDR R5, =gSineTable
 /* 0800D62A */ ADDS R1, R5
 /* 0800D62C */ MOVS R4, #0
 /* 0800D62E */ LDRSH R1, [R1, R4]
@@ -366,6 +366,6 @@ _0800D680:
 
 .balign 4, 0
 _0800D684:
-/* 0800D684 */ .word D_083A4264
+/* 0800D684 */ .word gCosineTable
 .ltorg
 .end

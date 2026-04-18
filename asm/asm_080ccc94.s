@@ -22,7 +22,7 @@ glabel func_080CCC94
 
 .balign 4, 0
 _080CCCB4:
-/* 080CCCB4 */ .word D_083A4264
+/* 080CCCB4 */ .word gCosineTable
 _080CCCB8:
 /* 080CCCB8 */ MOV R1, R8
 /* 080CCCBA */ ADDS R0, R5, R1
@@ -31,7 +31,7 @@ _080CCCB8:
 /* 080CCCC0 */ ADDS R2, R7, #0
 /* 080CCCC2 */ MULS R2, R0, R2
 /* 080CCCC4 */ ASRS R2, R2, #8
-/* 080CCCC6 */ LDR R0, =D_083A4064
+/* 080CCCC6 */ LDR R0, =gSineTable
 /* 080CCCC8 */ ADDS R0, R5, R0
 /* 080CCCCA */ MOVS R1, #0
 /* 080CCCCC */ LDRSH R0, [R0, R1]

@@ -211,7 +211,7 @@ _080B013E:
 
 .balign 4, 0
 _080B014C:
-/* 080B014C */ .word D_083A4064
+/* 080B014C */ .word gSineTable
 
 .balign 4, 0
 _080B0150:

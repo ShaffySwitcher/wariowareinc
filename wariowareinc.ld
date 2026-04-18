@@ -16,8 +16,6 @@ SECTIONS {
         build/src/memory.c.o(.text);
         build/asm/math.s.o(.text*);
         build/src/code_08000f10.c.o(.text);
-        build/asm/asm_08001144.s.o(.text*);
-        build/asm/asm_08001184.s.o(.text*);
         build/asm/asm_080011c4.s.o(.text*);
         build/asm/asm_080011c8.s.o(.text*);
         build/asm/asm_080013c8.s.o(.text*);
@@ -5759,6 +5757,8 @@ SECTIONS {
         build/asm/asm_080f6050.s.o(.text*);
         build/asm/asm_080f60b0.s.o(.text*);
         build/asm/asm_080f60fc.s.o(.text*);
+        build/bin/data_080F6140.bin.o(.rodata*);
+        build/data/math_tables.c.o(.data);
         build/bin/data.bin.o(.rodata*);
     }
 

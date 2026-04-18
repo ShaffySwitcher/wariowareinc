@@ -126,10 +126,10 @@ _0802D1A8:
 
 .balign 4, 0
 _0802D1AC:
-/* 0802D1AC */ .word D_083A4264
+/* 0802D1AC */ .word gCosineTable
 
 .balign 4, 0
 _0802D1B0:
-/* 0802D1B0 */ .word D_083A4064
+/* 0802D1B0 */ .word gSineTable
 .ltorg
 .end

@@ -79,10 +79,10 @@ _080AF204:
 
 .balign 4, 0
 _080AF1FC:
-/* 080AF1FC */ .word D_083A4064
+/* 080AF1FC */ .word gSineTable
 
 .balign 4, 0
 _080AF200:
-/* 080AF200 */ .word D_083A4264
+/* 080AF200 */ .word gCosineTable
 .ltorg
 .end

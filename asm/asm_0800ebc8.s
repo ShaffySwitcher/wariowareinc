@@ -103,7 +103,7 @@ _0800EC74:
 
 .balign 4, 0
 _0800EC78:
-/* 0800EC78 */ .word D_083A4064
+/* 0800EC78 */ .word gSineTable
 
 .balign 4, 0
 _0800EC7C:

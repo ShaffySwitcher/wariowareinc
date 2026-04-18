@@ -115,7 +115,7 @@ _0805F86E:
 
 .balign 4, 0
 _0805F878:
-/* 0805F878 */ .word D_083A4264
+/* 0805F878 */ .word gCosineTable
 
 .balign 4, 0
 _0805F87C:
@@ -161,7 +161,7 @@ _0805F880:
 
 .balign 4, 0
 _0805F8CC:
-/* 0805F8CC */ .word D_083A4264
+/* 0805F8CC */ .word gCosineTable
 _0805F8D0:
 /* 0805F8D0 */ STR R0, [R4]
 /* 0805F8D2 */ MOVS R1, #0

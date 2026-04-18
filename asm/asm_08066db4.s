@@ -26,7 +26,7 @@ _08066DD6:
 /* 08066DD6 */ ASRS R0, R0, #8
 /* 08066DD8 */ ADDS R0, #0X78
 /* 08066DDA */ STR R0, [R2, #8]
-/* 08066DDC */ LDR R1, =D_083A4064
+/* 08066DDC */ LDR R1, =gSineTable
 /* 08066DDE */ LSLS R0, R3, #1
 /* 08066DE0 */ ADDS R0, R1
 /* 08066DE2 */ MOVS R1, #0
@@ -51,6 +51,6 @@ _08066E04:
 
 .balign 4, 0
 _08066E00:
-/* 08066E00 */ .word D_083A4264
+/* 08066E00 */ .word gCosineTable
 .ltorg
 .end

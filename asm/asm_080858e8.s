@@ -23,7 +23,7 @@ glabel func_080858E8
 /* 08085906 */ ADDS R4, R5, #0
 /* 08085908 */ MULS R4, R3, R4
 /* 0808590A */ LSLS R4, R4, #8
-/* 0808590C */ LDR R3, =D_083A4064
+/* 0808590C */ LDR R3, =gSineTable
 /* 0808590E */ ADDS R0, R3
 /* 08085910 */ MOVS R3, #0
 /* 08085912 */ LDRSH R0, [R0, R3]
@@ -67,6 +67,6 @@ _08085950:
 
 .balign 4, 0
 _08085954:
-/* 08085954 */ .word D_083A4264
+/* 08085954 */ .word gCosineTable
 .ltorg
 .end

@@ -138,10 +138,10 @@ _080E254C:
 
 .balign 4, 0
 _080E2550:
-/* 080E2550 */ .word D_083A4064
+/* 080E2550 */ .word gSineTable
 
 .balign 4, 0
 _080E2554:
-/* 080E2554 */ .word D_083A4264
+/* 080E2554 */ .word gCosineTable
 .ltorg
 .end

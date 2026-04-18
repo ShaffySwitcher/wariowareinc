@@ -99,11 +99,11 @@ _080AF058:
 
 .balign 4, 0
 _080AF05C:
-/* 080AF05C */ .word D_083A4064
+/* 080AF05C */ .word gSineTable
 
 .balign 4, 0
 _080AF060:
-/* 080AF060 */ .word D_083A4264
+/* 080AF060 */ .word gCosineTable
 _080AF064:
 /* 080AF064 */ LDRB R0, [R4, #0X1D]
 /* 080AF066 */ CMP R0, #1

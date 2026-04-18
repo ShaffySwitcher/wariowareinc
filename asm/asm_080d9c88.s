@@ -118,11 +118,11 @@ _080D9D50:
 
 .balign 4, 0
 _080D9D54:
-/* 080D9D54 */ .word D_083A4264
+/* 080D9D54 */ .word gCosineTable
 
 .balign 4, 0
 _080D9D58:
-/* 080D9D58 */ .word D_083A4064
+/* 080D9D58 */ .word gSineTable
 _080D9D5C:
 /* 080D9D5C */ LDR R0, _080D9DCC
 /* 080D9D5E */ LDR R0, [R0]

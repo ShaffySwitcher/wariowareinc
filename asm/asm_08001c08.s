@@ -29,7 +29,7 @@ glabel func_08001C08
 /* 08001C32 */ MULS R0, R2, R0
 /* 08001C34 */ ASRS R0, R0, #8
 /* 08001C36 */ STRH R0, [R4]
-/* 08001C38 */ LDR R0, =D_083A4064
+/* 08001C38 */ LDR R0, =gSineTable
 /* 08001C3A */ ADDS R1, R1, R0
 /* 08001C3C */ MOVS R5, #0
 /* 08001C3E */ LDRSH R0, [R1, R5]
@@ -60,7 +60,7 @@ _08001C68:
 
 .balign 4, 0
 _08001C6C:
-/* 08001C6C */ .word D_083A4264
+/* 08001C6C */ .word gCosineTable
 
 .balign 4, 0
 _08001C70:

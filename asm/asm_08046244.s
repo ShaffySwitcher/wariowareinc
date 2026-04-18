@@ -57,10 +57,10 @@ _08046298:
 
 .balign 4, 0
 _0804629C:
-/* 0804629C */ .word D_083A4064
+/* 0804629C */ .word gSineTable
 
 .balign 4, 0
 _080462A0:
-/* 080462A0 */ .word D_083A4264
+/* 080462A0 */ .word gCosineTable
 .ltorg
 .end

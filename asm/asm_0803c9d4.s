@@ -224,11 +224,11 @@ _0803CB88:
 
 .balign 4, 0
 _0803CB8C:
-/* 0803CB8C */ .word D_083A4264
+/* 0803CB8C */ .word gCosineTable
 
 .balign 4, 0
 _0803CB90:
-/* 0803CB90 */ .word D_083A4064
+/* 0803CB90 */ .word gSineTable
 
 .balign 4, 0
 _0803CB94:

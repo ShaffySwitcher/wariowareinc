@@ -197,7 +197,7 @@ _080ADA48:
 
 .balign 4, 0
 _080ADA4C:
-/* 080ADA4C */ .word D_083A4264
+/* 080ADA4C */ .word gCosineTable
 
 .balign 4, 0
 _080ADA50:

@@ -55,6 +55,6 @@ _080C3178:
 
 .balign 4, 0
 _080C317C:
-/* 080C317C */ .word D_083A4064
+/* 080C317C */ .word gSineTable
 .ltorg
 .end

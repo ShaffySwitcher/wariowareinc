@@ -136,7 +136,7 @@ _08033970:
 /* 08033998 */ ADDS R2, R1, #0
 /* 0803399A */ MULS R2, R0, R2
 /* 0803399C */ ASRS R2, R2, #8
-/* 0803399E */ LDR R0, =D_083A4064
+/* 0803399E */ LDR R0, =gSineTable
 /* 080339A0 */ ADDS R3, R0
 /* 080339A2 */ MOVS R6, #0
 /* 080339A4 */ LDRSH R0, [R3, R6]
@@ -300,6 +300,6 @@ _08033ABC:
 
 .balign 4, 0
 _08033AC0:
-/* 08033AC0 */ .word D_083A4264
+/* 08033AC0 */ .word gCosineTable
 .ltorg
 .end

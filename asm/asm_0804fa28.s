@@ -77,11 +77,11 @@ _0804FAAC:
 
 .balign 4, 0
 _0804FAB0:
-/* 0804FAB0 */ .word D_083A4264
+/* 0804FAB0 */ .word gCosineTable
 
 .balign 4, 0
 _0804FAB4:
-/* 0804FAB4 */ .word D_083A4064
+/* 0804FAB4 */ .word gSineTable
 
 .balign 4, 0
 _0804FAB8:

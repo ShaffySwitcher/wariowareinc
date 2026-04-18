@@ -93,11 +93,11 @@ _0805A1B8:
 
 .balign 4, 0
 _0805A1BC:
-/* 0805A1BC */ .word D_083A4064
+/* 0805A1BC */ .word gSineTable
 
 .balign 4, 0
 _0805A1C0:
-/* 0805A1C0 */ .word D_083A4264
+/* 0805A1C0 */ .word gCosineTable
 _0805A1C4:
 /* 0805A1C4 */ MOVS R5, #0X2E
 /* 0805A1C6 */ SUBS R0, R1, #4
@@ -175,7 +175,7 @@ _0805A250:
 
 .balign 4, 0
 _0805A254:
-/* 0805A254 */ .word D_083A4064
+/* 0805A254 */ .word gSineTable
 
 .balign 4, 0
 _0805A258:
@@ -243,7 +243,7 @@ _0805A26C:
 
 .balign 4, 0
 _0805A2CC:
-/* 0805A2CC */ .word D_083A4264
+/* 0805A2CC */ .word gCosineTable
 
 .balign 4, 0
 _0805A2D0:
@@ -251,7 +251,7 @@ _0805A2D0:
 
 .balign 4, 0
 _0805A2D4:
-/* 0805A2D4 */ .word D_083A4064
+/* 0805A2D4 */ .word gSineTable
 
 .balign 4, 0
 _0805A2D8:
@@ -276,7 +276,7 @@ _0805A2E2:
 
 .balign 4, 0
 _0805A2FC:
-/* 0805A2FC */ .word D_083A4264
+/* 0805A2FC */ .word gCosineTable
 _0805A300:
 /* 0805A300 */ SUBS R1, #6
 /* 0805A302 */ LSLS R0, R1, #4
@@ -342,7 +342,7 @@ _0805A374:
 
 .balign 4, 0
 _0805A378:
-/* 0805A378 */ .word D_083A4064
+/* 0805A378 */ .word gSineTable
 
 .balign 4, 0
 _0805A37C:
@@ -367,7 +367,7 @@ _0805A386:
 
 .balign 4, 0
 _0805A3A0:
-/* 0805A3A0 */ .word D_083A4264
+/* 0805A3A0 */ .word gCosineTable
 _0805A3A4:
 /* 0805A3A4 */ CMP R1, #0XB
 /* 0805A3A6 */ BGT _0805A3B6
@@ -454,6 +454,6 @@ _0805A434:
 
 .balign 4, 0
 _0805A438:
-/* 0805A438 */ .word D_083A4064
+/* 0805A438 */ .word gSineTable
 .ltorg
 .end

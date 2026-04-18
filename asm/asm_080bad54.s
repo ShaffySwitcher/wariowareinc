@@ -49,7 +49,7 @@ _080BADA0:
 
 .balign 4, 0
 _080BADA4:
-/* 080BADA4 */ .word D_083A4064
+/* 080BADA4 */ .word gSineTable
 _080BADA8:
 /* 080BADA8 */ MOVS R0, #0XA6
 /* 080BADAA */ LSLS R0, R0, #1
@@ -119,11 +119,11 @@ _080BAE1A:
 
 .balign 4, 0
 _080BAE30:
-/* 080BAE30 */ .word D_083A4264
+/* 080BAE30 */ .word gCosineTable
 
 .balign 4, 0
 _080BAE34:
-/* 080BAE34 */ .word D_083A4064
+/* 080BAE34 */ .word gSineTable
 
 .balign 4, 0
 _080BAE38:
@@ -201,11 +201,11 @@ _080BAECC:
 
 .balign 4, 0
 _080BAEBC:
-/* 080BAEBC */ .word D_083A4264
+/* 080BAEBC */ .word gCosineTable
 
 .balign 4, 0
 _080BAEC0:
-/* 080BAEC0 */ .word D_083A4064
+/* 080BAEC0 */ .word gSineTable
 
 .balign 4, 0
 _080BAEC4:

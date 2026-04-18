@@ -48,11 +48,11 @@ _08066D5E:
 
 .balign 4, 0
 _08066D64:
-/* 08066D64 */ .word D_083A4064
+/* 08066D64 */ .word gSineTable
 
 .balign 4, 0
 _08066D68:
-/* 08066D68 */ .word D_083A4264
+/* 08066D68 */ .word gCosineTable
 _08066D6C:
 /* 08066D6C */ LDR R0, _08066DAC
 /* 08066D6E */ ADDS R0, R2, R0
@@ -67,7 +67,7 @@ _08066D7E:
 /* 08066D7E */ ASRS R0, R0, #3
 /* 08066D80 */ ADDS R0, #0X78
 /* 08066D82 */ STR R0, [R4, #8]
-/* 08066D84 */ LDR R1, =D_083A4264
+/* 08066D84 */ LDR R1, =gCosineTable
 /* 08066D86 */ LSLS R0, R3, #1
 /* 08066D88 */ ADDS R0, R1
 /* 08066D8A */ MOVS R3, #0
@@ -96,6 +96,6 @@ _08066DB0:
 
 .balign 4, 0
 _08066DAC:
-/* 08066DAC */ .word D_083A4064
+/* 08066DAC */ .word gSineTable
 .ltorg
 .end

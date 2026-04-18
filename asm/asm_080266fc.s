@@ -166,7 +166,7 @@ _080267DC:
 
 .balign 4, 0
 _0802681C:
-/* 0802681C */ .word D_083A4064
+/* 0802681C */ .word gSineTable
 
 .balign 4, 0
 _08026820:
@@ -514,7 +514,7 @@ _08026A54:
 
 .balign 4, 0
 _08026AB8:
-/* 08026AB8 */ .word D_083A4064
+/* 08026AB8 */ .word gSineTable
 
 .balign 4, 0
 _08026ABC:

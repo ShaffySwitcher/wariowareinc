@@ -67,7 +67,7 @@ _080C7208:
 
 .balign 4, 0
 _080C720C:
-/* 080C720C */ .word D_083A4064
+/* 080C720C */ .word gSineTable
 
 .balign 4, 0
 _080C7210:
@@ -152,7 +152,7 @@ _080C7274:
 
 .balign 4, 0
 _080C72A4:
-/* 080C72A4 */ .word D_083A4064
+/* 080C72A4 */ .word gSineTable
 
 .balign 4, 0
 _080C72A8:
@@ -284,7 +284,7 @@ _080C7394:
 
 .balign 4, 0
 _080C7398:
-/* 080C7398 */ .word D_083A4064
+/* 080C7398 */ .word gSineTable
 
 .balign 4, 0
 _080C739C:

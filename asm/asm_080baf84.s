@@ -142,7 +142,7 @@ _080BB06C:
 
 .balign 4, 0
 _080BB070:
-/* 080BB070 */ .word D_083A4064
+/* 080BB070 */ .word gSineTable
 _080BB074:
 /* 080BB074 */ MOV R0, SB
 /* 080BB076 */ ADDS R0, #0X74

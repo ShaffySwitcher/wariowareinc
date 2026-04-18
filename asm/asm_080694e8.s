@@ -146,6 +146,6 @@ _080695E0:
 
 .balign 4, 0
 _080695E4:
-/* 080695E4 */ .word D_083A4064
+/* 080695E4 */ .word gSineTable
 .ltorg
 .end
