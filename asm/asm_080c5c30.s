@@ -12,7 +12,7 @@ glabel func_080C5C30
 /* 080C5C38 */ LDRH R1, [R0, #0X16]
 /* 080C5C3A */ MOVS R0, #0XF0
 /* 080C5C3C */ LSLS R0, R0, #5
-/* 080C5C3E */ BL func_080F41F0
+/* 080C5C3E */ BL __divsi3
 /* 080C5C42 */ STRH R0, [R4, #0X20]
 /* 080C5C44 */ MOVS R0, #0X70
 /* 080C5C46 */ BL get_random_range

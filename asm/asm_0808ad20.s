@@ -15,7 +15,7 @@ glabel func_0808AD20
 /* 0808AD2E */ LDRH R1, [R0, #0XE]
 /* 0808AD30 */ MOVS R0, #0XB4
 /* 0808AD32 */ LSLS R0, R0, #7
-/* 0808AD34 */ BL func_080F41F0
+/* 0808AD34 */ BL __divsi3
 /* 0808AD38 */ STRH R0, [R4, #0X20]
 /* 0808AD3A */ POP {R4}
 /* 0808AD3C */ POP {R0}

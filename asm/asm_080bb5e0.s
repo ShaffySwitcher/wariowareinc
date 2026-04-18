@@ -32,7 +32,7 @@ glabel func_080BB5E0
 /* 080BB614 */ ASRS R1, R1, #0X10
 /* 080BB616 */ LSLS R4, R4, #8
 /* 080BB618 */ ADDS R0, R4, #0
-/* 080BB61A */ BL func_080F41F0
+/* 080BB61A */ BL __divsi3
 /* 080BB61E */ POP {R3}
 /* 080BB620 */ MOV R8, R3
 /* 080BB622 */ POP {R4, R5, R6}

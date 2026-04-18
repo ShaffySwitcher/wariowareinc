@@ -26,7 +26,7 @@ glabel func_0807EE78
 /* 0807EE9C */ LDRB R1, [R0]
 /* 0807EE9E */ LSRS R1, R1, #1
 /* 0807EEA0 */ LDR R0, [R4, #0X44]
-/* 0807EEA2 */ BL func_080F41F0
+/* 0807EEA2 */ BL __divsi3
 /* 0807EEA6 */ LDR R1, [R4, #0X38]
 /* 0807EEA8 */ ADDS R1, R0
 /* 0807EEAA */ STR R1, [R4, #0X38]

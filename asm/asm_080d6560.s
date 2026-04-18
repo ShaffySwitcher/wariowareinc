@@ -39,7 +39,7 @@ glabel func_080D6560
 /* 080D65A0 */ LDRH R1, [R0, #0X16]
 /* 080D65A2 */ MOVS R0, #0XA0
 /* 080D65A4 */ LSLS R0, R0, #5
-/* 080D65A6 */ BL func_080F41F0
+/* 080D65A6 */ BL __divsi3
 /* 080D65AA */ STRH R0, [R4, #6]
 /* 080D65AC */ ADD SP, #0XC
 /* 080D65AE */ POP {R4, R5}

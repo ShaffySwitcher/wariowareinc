@@ -34,7 +34,7 @@ glabel func_0809E894
 /* 0809E8C8 */ LDRB R0, [R0]
 /* 0809E8CA */ LSLS R0, R0, #8
 /* 0809E8CC */ LDRH R1, [R2, #0X16]
-/* 0809E8CE */ BL func_080F41F0
+/* 0809E8CE */ BL __divsi3
 /* 0809E8D2 */ STR R0, [R6, #0X3C]
 /* 0809E8D4 */ MOVS R3, #1
 /* 0809E8D6 */ STR R3, [R6, #0X40]

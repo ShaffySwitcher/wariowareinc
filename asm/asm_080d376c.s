@@ -46,7 +46,7 @@ glabel func_080D376C
 /* 080D37C0 */ LDRH R1, [R0]
 /* 080D37C2 */ MOVS R0, #0XF0
 /* 080D37C4 */ LSLS R0, R0, #7
-/* 080D37C6 */ BL func_080F41F0
+/* 080D37C6 */ BL __divsi3
 /* 080D37CA */ ADDS R1, R0, #0
 /* 080D37CC */ STRH R1, [R4, #2]
 /* 080D37CE */ POP {R4, R5}

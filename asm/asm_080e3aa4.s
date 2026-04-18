@@ -67,7 +67,7 @@ glabel func_080E3AA4
 /* 080E3B22 */ ADDS R0, R4
 /* 080E3B24 */ LSLS R0, R0, #1
 /* 080E3B26 */ MOVS R1, #6
-/* 080E3B28 */ BL func_080F41F0
+/* 080E3B28 */ BL __divsi3
 /* 080E3B2C */ ADDS R5, R0, #0
 /* 080E3B2E */ STRB R5, [R6, #3]
 /* 080E3B30 */ MOV R4, SP

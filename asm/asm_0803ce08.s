@@ -19,7 +19,7 @@ glabel func_0803CE08
 /* 0803CE1E */ SUBS R0, R1
 /* 0803CE20 */ LSLS R3, R3, #1
 /* 0803CE22 */ ADDS R1, R3, #0
-/* 0803CE24 */ BL func_080F41F0
+/* 0803CE24 */ BL __divsi3
 /* 0803CE28 */ POP {R1}
 /* 0803CE2A */ BX R1
 .ltorg

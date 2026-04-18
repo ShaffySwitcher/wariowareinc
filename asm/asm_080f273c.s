@@ -24,7 +24,7 @@ glabel func_080F273C
 /* 080F275C */ MOVS R0, #0X80
 /* 080F275E */ LSLS R0, R0, #9
 /* 080F2760 */ ADDS R1, R3, #0
-/* 080F2762 */ BL func_080F41F0
+/* 080F2762 */ BL __divsi3
 /* 080F2766 */ STRH R0, [R4, #2]
 /* 080F2768 */ STRB R5, [R4, #4]
 /* 080F276A */ STRB R6, [R4, #5]

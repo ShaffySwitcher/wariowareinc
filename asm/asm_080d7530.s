@@ -29,7 +29,7 @@ glabel func_080D7530
 /* 080D7560 */ LDRH R1, [R0]
 /* 080D7562 */ MOVS R0, #0XF0
 /* 080D7564 */ LSLS R0, R0, #7
-/* 080D7566 */ BL func_080F41F0
+/* 080D7566 */ BL __divsi3
 /* 080D756A */ ADDS R1, R0, #0
 /* 080D756C */ STRH R1, [R4, #6]
 /* 080D756E */ POP {R4}
