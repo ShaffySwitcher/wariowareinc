@@ -15,7 +15,7 @@ struct PaletteInterpolator {
     u16 paletteMask;
 };
 
-void func_080011C4(void);
+void func_080011C4(struct PaletteInterpolator *task);
 
 void func_080011C8(struct PaletteInterpolator *task, u32 paletteIndex);
 void pal_interp_update(struct PaletteInterpolator *task);

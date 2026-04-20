@@ -9,7 +9,7 @@ enum PaletteInterpolatorSourceTypesEnum {
     /* 03 */ SOURCE_TYPE_PAL_COL,
 };
 
-void func_080011C4(void) {
+void func_080011C4(struct PaletteInterpolator *task) {
 }
 
 // [https://decomp.me/scratch/ytKWQ]
@@ -76,6 +76,49 @@ void func_080014E4(struct PaletteInterpolator *task, u32 duration, u32 totalPale
         task->sourceType = SOURCE_TYPE_COL_PAL;
         task->isActive = TRUE;
         pal_interp_init_dest(task, 0);
+    }
+}
+
+void func_08001558(struct PaletteInterpolator *task, u32 duration, u32 totalPalettes, const u16 *sourceA, u32 valueB, u16 *outputBackup, u16 *outputDest) {
+    if (task != NULL) {
+        task->duration = duration;
+        task->runningTime = 0;
+        task->totalPalettes = totalPalettes;
+        task->sourceA = sourceA;
+        task->sourceB = (void *)valueB;
+        task->outputBackup = outputBackup;
+        task->outputDest = outputDest;
+        task->sourceType = SOURCE_TYPE_PAL_COL;
+        task->isActive = TRUE;
+        pal_interp_init_dest(task, 0);
+    }
+}
+
+void func_080015C4(struct PaletteInterpolator *task) {
+    if (task == NULL || !task->isActive || task->outputBackup == NULL) {
+        return;
+    }
+
+    dma3_set(task->outputDest, task->outputBackup, 0x200, 0x20, 0x80);
+}
+
+void func_080015F4(struct PaletteInterpolator* task) {
+    s32 i;
+
+    if (task == NULL || !task->isActive) {
+        return;
+    }
+
+    task->runningTime++;
+    if (task->runningTime > task->duration) {
+        task->isActive = FALSE;
+        return;
+    }
+
+    for (i = 0; i < 16; i++) {
+        if (((task->paletteMask >> i) & 1) != 0) {
+            func_080011C8(task, i * 16);
+        }
     }
 }
 
