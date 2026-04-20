@@ -63,12 +63,13 @@ INCLUDES   := include
 BIN        := bin
 DATA	   := data
 AUDIO      := audio
+MUSIC	:= $(AUDIO)/sequences
 SFX        := $(AUDIO)/samples
 
 C_DIRS     := $(sort $(SOURCES) $(AUDIO) $(DATA))
 ASM_DIRS   := $(sort $(ASM) $(DATA))
 
-ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS) $(SFX)
+ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS) $(SFX) $(MUSIC)
 ALL_DIRS   := $(sort $(ALL_DIRS))
 BUILD_DIRS := $(BUILD) $(addprefix $(BUILD)/,$(ALL_DIRS))
 
@@ -86,7 +87,8 @@ export OUTPUT := $(BUILD)/$(TARGET)
 
 CFILES   := $(foreach dir,$(C_DIRS),$(wildcard $(dir)/*.c))
 SFILES   := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
-BINFILES := $(foreach dir,$(BIN),$(wildcard $(dir)/*.bin))
+BINFILES := $(foreach dir,$(BIN),$(wildcard $(dir)/*.bin)) \
+			$(foreach dir,$(MUSIC),$(wildcard $(dir)/*.mid)) 
 WAVFILES    :=  $(foreach dir,$(SFX),$(wildcard $(dir)/*.wav))
 
 JSONFILES   :=  $(foreach dir,$(AUDIO),$(wildcard $(dir)/*.json))
@@ -145,7 +147,7 @@ $(OUTPUT).gba: $(OUTPUT).elf
 	$(V)$(OBJCOPY) --pad-to=0x800000 --gap-fill=0x00 -O binary $< $@
 	$(V)echo "ROM assembled!"
 
-$(OUTPUT).elf: $(OFILES) | $(BUILD)/$(LD_SCRIPT)
+$(OUTPUT).elf: $(OFILES) $(BUILD)/$(LD_SCRIPT)
 	$(V)echo "Linking..."
 	$(V)$(LD) $(OFILES) tools/agbcc/lib/libgcc.a tools/agbcc/lib/libc.a \
 	    -T $(BUILD)/$(LD_SCRIPT) -T $(UNDEFINED_SYMS) \
@@ -160,6 +162,11 @@ $(OUTPUT).elf: $(OFILES) | $(BUILD)/$(LD_SCRIPT)
 $(BUILD)/%.bin.o $(BUILD)/%.bin.h: %.bin | $(BUILD_DIRS)
 	$(call print,Bin2s:,$<,$@)
 	$(V){ bin2s -a 4 -H $(BUILD)/$<.h $<; printf '\n'; } | $(AS) -o $(BUILD)/$<.o
+
+$(BUILD)/%.mid.o	$(BUILD)/%.mid.h :	%.mid | $(BUILD_DIRS)
+	$(call print,Copying MIDI file:,$<,$@)
+	$(V){ bin2s -a 4 -H $(BUILD)/$<.h $<; printf '\n'; } | $(AS) -o $(BUILD)/$<.o
+
 
 # WAV files
 $(BUILD)/%.pcm : %.wav | $(BUILD_DIRS)
