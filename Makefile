@@ -62,11 +62,13 @@ ASM        := asm
 INCLUDES   := include
 BIN        := bin
 DATA	   := data
+AUDIO      := audio
+SFX        := $(AUDIO)/samples
 
-C_DIRS     := $(sort $(SOURCES) $(DATA))
+C_DIRS     := $(sort $(SOURCES) $(AUDIO) $(DATA))
 ASM_DIRS   := $(sort $(ASM) $(DATA))
 
-ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS)
+ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS) $(SFX)
 ALL_DIRS   := $(sort $(ALL_DIRS))
 BUILD_DIRS := $(BUILD) $(addprefix $(BUILD)/,$(ALL_DIRS))
 
@@ -85,14 +87,20 @@ export OUTPUT := $(BUILD)/$(TARGET)
 CFILES   := $(foreach dir,$(C_DIRS),$(wildcard $(dir)/*.c))
 SFILES   := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
 BINFILES := $(foreach dir,$(BIN),$(wildcard $(dir)/*.bin))
+WAVFILES    :=  $(foreach dir,$(SFX),$(wildcard $(dir)/*.wav))
+
+JSONFILES   :=  $(foreach dir,$(AUDIO),$(wildcard $(dir)/*.json))
 
 CFILES := $(filter-out %.inc.c, $(CFILES))
+
+PCMFILES       := $(addprefix $(BUILD)/,$(WAVFILES:.wav=.pcm))
+OFILES_GENERATED := $(addprefix $(BUILD)/,$(addsuffix .s.o,$(JSONFILES)))
 
 OFILES_SOURCES   := $(addprefix $(BUILD)/,$(addsuffix .o,$(SFILES)))  \
                     $(addprefix $(BUILD)/,$(addsuffix .o,$(CFILES)))  \
                     $(addprefix $(BUILD)/,$(addsuffix .o,$(BINFILES)))
 
-OFILES := $(OFILES_SOURCES)
+OFILES := $(OFILES_SOURCES) $(OFILES_GENERATED)
 
 #---------------------------------------------------------------------------------
 .PHONY: default clean distclean rebuild sha1
@@ -153,6 +161,11 @@ $(BUILD)/%.bin.o $(BUILD)/%.bin.h: %.bin | $(BUILD_DIRS)
 	$(call print,Bin2s:,$<,$@)
 	$(V){ bin2s -a 4 -H $(BUILD)/$<.h $<; printf '\n'; } | $(AS) -o $(BUILD)/$<.o
 
+# WAV files
+$(BUILD)/%.pcm : %.wav | $(BUILD_DIRS)
+	$(call print,Converting WAV file to raw PCM audio:,$<,$@)
+	$(V)ffmpeg -y -loglevel quiet -i $< -f s8 $@
+
 #---------------------------------------------------------------------------------
 # C files (agbcc pipeline: cpp -> agbcc -> as)
 #---------------------------------------------------------------------------------
@@ -176,6 +189,14 @@ $(BUILD)/%.c.o: %.c | $(BUILD_DIRS)
 $(BUILD)/%.s.o: %.s | $(BUILD_DIRS)
 	$(call print,Assembling:,$<,$@)
 	$(V)$(CPP) $(CPPFLAGS) -x assembler-with-cpp $< -o $(BUILD)/$*.s
+	$(V)$(AS) -MD $(BUILD)/$*.d -march=armv4t -o $@ $(BUILD)/$*.s
+
+$(BUILD)/%.json.s : %.json $(PCMFILES) tools/sample_parser.py | $(BUILD_DIRS)
+	$(call print,Generating data table from JSON:,$<,$@)
+	$(V)python3 tools/sample_parser.py $< $@
+
+$(OFILES_GENERATED): $(BUILD)/%.s.o : $(BUILD)/%.s | $(BUILD_DIRS)
+	$(call print,Assembling:,$<,$@)
 	$(V)$(AS) -MD $(BUILD)/$*.d -march=armv4t -o $@ $(BUILD)/$*.s
 
 #---------------------------------------------------------------------------------

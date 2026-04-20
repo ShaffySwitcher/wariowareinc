@@ -5718,10 +5718,14 @@ SECTIONS {
         build/asm/asm_080f60b0.s.o(.text*);
         build/asm/asm_080f60fc.s.o(.text*);
         build/bin/data_080F6140.bin.o(.rodata*);
+        build/audio/sample_table.json.s.o(.rodata);
+        build/bin/data_0830B500.bin.o(.rodata*);
 
         build/data/math_tables.c.o(.data);
         build/src/palette.c.o(.data);
 
+        build/bin/data_083A4494.bin.o(.rodata*);
+        build/audio/sample_table.json.s.o(.data);
         build/bin/data.bin.o(.rodata*);
     }
 
