@@ -70,7 +70,7 @@ _0806AF0A:
 /* 0806AF6E */ SUBS R0, #1
 /* 0806AF70 */ STR R0, [R1]
 /* 0806AF72 */ LDR R0, _0806AF94
-/* 0806AF74 */ BL func_08001E58
+/* 0806AF74 */ BL play_sound
 /* 0806AF78 */ B _0806AFA0
 
 .balign 4, 0

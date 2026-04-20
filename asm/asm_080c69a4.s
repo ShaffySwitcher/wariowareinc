@@ -18,7 +18,7 @@ glabel func_080C69A4
 /* 080C69B8 */ LSLS R1, R1, #1
 /* 080C69BA */ ADDS R0, R1
 /* 080C69BC */ LDR R0, [R0]
-/* 080C69BE */ BL func_08001FCC
+/* 080C69BE */ BL stop_soundplayer
 /* 080C69C2 */ POP {R0}
 /* 080C69C4 */ BX R0
 

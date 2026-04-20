@@ -47,7 +47,7 @@ glabel func_08041C24
 /* 08041C78 */ MOVS R1, #1
 /* 08041C7A */ STRB R1, [R0]
 /* 08041C7C */ LDR R0, =D_083FD41C
-/* 08041C7E */ BL func_08001E58
+/* 08041C7E */ BL play_sound
 _08041C82:
 /* 08041C82 */ POP {R4, R5}
 /* 08041C84 */ POP {R0}

@@ -21,7 +21,7 @@ glabel func_08075FB4
 /* 08075FD4 */ BL func_0800C7FC
 /* 08075FD8 */ LDR R0, [R4]
 /* 08075FDA */ LDR R0, [R0, #0X7C]
-/* 08075FDC */ BL func_08001FCC
+/* 08075FDC */ BL stop_soundplayer
 /* 08075FE0 */ POP {R4}
 /* 08075FE2 */ POP {R0}
 /* 08075FE4 */ BX R0

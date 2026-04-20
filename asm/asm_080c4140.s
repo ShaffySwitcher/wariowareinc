@@ -31,7 +31,7 @@ glabel func_080C4140
 /* 080C4170 */ MOVS R3, #0
 /* 080C4172 */ BL func_080EF644
 /* 080C4176 */ LDR R0, _080C4188
-/* 080C4178 */ BL func_08001E58
+/* 080C4178 */ BL play_sound
 /* 080C417C */ B _080C41A2
 
 .balign 4, 0

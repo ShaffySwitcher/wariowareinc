@@ -49,7 +49,7 @@ _0804A5EC:
 _0804A5FC:
 /* 0804A5FC */ STRH R0, [R4]
 /* 0804A5FE */ LDR R0, _0804A614
-/* 0804A600 */ BL func_08001E58
+/* 0804A600 */ BL play_sound
 /* 0804A604 */ B _0804A714
 
 .balign 4, 0

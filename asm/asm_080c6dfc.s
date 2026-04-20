@@ -94,7 +94,7 @@ _080C6E30:
 /* 080C6EA8 */ LSLS R1, R1, #1
 /* 080C6EAA */ ADDS R0, R1
 /* 080C6EAC */ LDR R0, [R0]
-/* 080C6EAE */ BL func_08001FCC
+/* 080C6EAE */ BL stop_soundplayer
 /* 080C6EB2 */ B _080C6EF8
 
 .balign 4, 0

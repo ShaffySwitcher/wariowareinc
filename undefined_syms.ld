@@ -23,3 +23,7 @@ D_080F6140 = 0x080F6140;
 D_080F67AC = 0x080F67AC;
 D_080F69AC = 0x080F69AC;
 D_083A3D94 = 0x083A3D94;
+
+song_header_table = 0x08402990;
+sound_player_count = 0x0840642C;
+sound_player_table = 0x08406430;

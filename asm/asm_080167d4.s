@@ -14,7 +14,7 @@ glabel func_080167D4
 /* 080167E0 */ ANDS R0, R1
 /* 080167E2 */ CMP R0, #0
 /* 080167E4 */ BEQ _080167F8
-/* 080167E6 */ BL func_08001FDC
+/* 080167E6 */ BL stop_all_soundplayers
 /* 080167EA */ LDR R0, =D_03004890
 /* 080167EC */ ADDS R0, #0X28
 /* 080167EE */ LDRB R2, [R0]

@@ -7,7 +7,7 @@
 glabel func_080D8E9C
 /* 080D8E9C */ PUSH {LR}
 /* 080D8E9E */ LDR R0, =D_083FDB88
-/* 080D8EA0 */ BL func_08001EF0
+/* 080D8EA0 */ BL stop_sound
 /* 080D8EA4 */ POP {R0}
 /* 080D8EA6 */ BX R0
 

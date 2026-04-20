@@ -161,7 +161,7 @@ _080A6FD4:
 /* 080A6FD8 */ B _080A7046
 _080A6FDA:
 /* 080A6FDA */ LDR R0, _080A7000
-/* 080A6FDC */ BL func_08001E58
+/* 080A6FDC */ BL play_sound
 /* 080A6FE0 */ MOVS R0, #2
 /* 080A6FE2 */ BL get_random_range
 /* 080A6FE6 */ ADDS R4, R0, #0
@@ -181,7 +181,7 @@ _080A7000:
 /* 080A7000 */ .word D_083FF4C4
 _080A7004:
 /* 080A7004 */ LDR R0, _080A7034
-/* 080A7006 */ BL func_08001E58
+/* 080A7006 */ BL play_sound
 /* 080A700A */ MOVS R0, #2
 /* 080A700C */ BL get_random_range
 /* 080A7010 */ ADDS R4, R0, #0

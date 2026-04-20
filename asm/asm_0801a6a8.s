@@ -16,7 +16,7 @@ glabel func_0801A6A8
 /* 0801A6BA */ ADDS R0, R4
 /* 0801A6BC */ ADDS R0, R5
 /* 0801A6BE */ LDR R0, [R0]
-/* 0801A6C0 */ BL func_08001E58
+/* 0801A6C0 */ BL play_sound
 /* 0801A6C4 */ POP {R4, R5}
 /* 0801A6C6 */ POP {R0}
 /* 0801A6C8 */ BX R0

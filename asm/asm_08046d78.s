@@ -50,7 +50,7 @@ _08046DB8:
 /* 08046DBE */ MOVS R0, #0
 /* 08046DC0 */ BL func_0800A0C4
 /* 08046DC4 */ LDR R0, _08046DCC
-/* 08046DC6 */ BL func_08001E58
+/* 08046DC6 */ BL play_sound
 /* 08046DCA */ B _08046DD8
 
 .balign 4, 0

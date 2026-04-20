@@ -16,7 +16,7 @@ glabel func_0809B5E8
 /* 0809B5F8 */ LSLS R0, R0, #2
 /* 0809B5FA */ ADDS R0, R1
 /* 0809B5FC */ LDR R0, [R0]
-/* 0809B5FE */ BL func_08001E58
+/* 0809B5FE */ BL play_sound
 /* 0809B602 */ LDR R1, [R5]
 /* 0809B604 */ ADDS R1, R4
 /* 0809B606 */ LDRB R0, [R1]

@@ -10,7 +10,7 @@ glabel func_080DF224
 /* 080DF228 */ ADDS R0, R1, #0
 /* 080DF22A */ LSLS R4, R2, #0X10
 /* 080DF22C */ LSRS R4, R4, #0X10
-/* 080DF22E */ BL func_08001E58
+/* 080DF22E */ BL play_sound
 /* 080DF232 */ STR R0, [R5]
 /* 080DF234 */ ADDS R1, R4, #0
 /* 080DF236 */ BL func_08002038

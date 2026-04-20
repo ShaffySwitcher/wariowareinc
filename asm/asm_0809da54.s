@@ -88,7 +88,7 @@ glabel func_0809DA54
 /* 0809DAFC */ LDR R0, [R0]
 /* 0809DAFE */ STR R0, [R1]
 /* 0809DB00 */ LDR R0, _0809DB14
-/* 0809DB02 */ BL func_08001E58
+/* 0809DB02 */ BL play_sound
 /* 0809DB06 */ B _0809DB1C
 
 .balign 4, 0

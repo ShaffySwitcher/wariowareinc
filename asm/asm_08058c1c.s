@@ -65,7 +65,7 @@ glabel func_08058C1C
 /* 08058C92 */ CMP R0, #0
 /* 08058C94 */ BEQ _08058CB8
 /* 08058C96 */ LDR R0, _08058CB4
-/* 08058C98 */ BL func_08001E58
+/* 08058C98 */ BL play_sound
 /* 08058C9C */ B _08058CBE
 
 .balign 4, 0

@@ -23,7 +23,7 @@ glabel func_08046F5C
 /* 08046F7C */ LSLS R1, R1, #2
 /* 08046F7E */ ADDS R1, R4
 /* 08046F80 */ LDR R0, [R1]
-/* 08046F82 */ BL func_08001E58
+/* 08046F82 */ BL play_sound
 /* 08046F86 */ LDR R1, [R5]
 /* 08046F88 */ ADDS R0, R1, #0
 /* 08046F8A */ ADDS R0, #0X80

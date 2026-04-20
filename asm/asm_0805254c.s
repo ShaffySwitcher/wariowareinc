@@ -50,7 +50,7 @@ glabel func_0805254C
 /* 080525A2 */ RSBS R0, R0, #0
 /* 080525A4 */ STR R0, [R5]
 /* 080525A6 */ LDR R0, _080525E4
-/* 080525A8 */ BL func_08001E58
+/* 080525A8 */ BL play_sound
 /* 080525AC */ LDR R0, _080525E8
 /* 080525AE */ LDRH R0, [R0]
 /* 080525B0 */ BL set_random_seed

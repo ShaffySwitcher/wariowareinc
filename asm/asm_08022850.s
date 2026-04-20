@@ -49,6 +49,6 @@ _0802288C:
 
 .balign 4, 0
 _08022890:
-/* 08022890 */ .word func_08001E58 + 1
+/* 08022890 */ .word play_sound + 1
 .ltorg
 .end

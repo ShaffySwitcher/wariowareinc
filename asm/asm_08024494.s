@@ -11,7 +11,7 @@ glabel func_08024494
 /* 0802449C */ MOVS R0, #2
 /* 0802449E */ BL func_0800C77C
 /* 080244A2 */ LDR R0, =D_083FC594
-/* 080244A4 */ BL func_08001E58
+/* 080244A4 */ BL play_sound
 /* 080244A8 */ POP {R0}
 /* 080244AA */ BX R0
 

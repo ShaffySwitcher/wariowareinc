@@ -8,7 +8,7 @@ glabel func_080F2E48
 /* 080F2E48 */ PUSH {LR}
 /* 080F2E4A */ LSLS R0, R0, #0X10
 /* 080F2E4C */ LDR R3, _080F2E6C
-/* 080F2E4E */ LDR R1, =D_08402990
+/* 080F2E4E */ LDR R1, =song_header_table
 /* 080F2E50 */ LSRS R0, R0, #0XD
 /* 080F2E52 */ ADDS R0, R1
 /* 080F2E54 */ LDRH R2, [R0, #4]
@@ -29,6 +29,6 @@ _080F2E70:
 
 .balign 4, 0
 _080F2E6C:
-/* 080F2E6C */ .word D_08406430
+/* 080F2E6C */ .word sound_player_table
 .ltorg
 .end

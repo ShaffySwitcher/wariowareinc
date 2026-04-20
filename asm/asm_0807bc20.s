@@ -21,7 +21,7 @@ glabel func_0807BC20
 /* 0807BC3A */ CMP R7, #4
 /* 0807BC3C */ BLE _0807BC50
 /* 0807BC3E */ LDR R0, _0807BC4C
-/* 0807BC40 */ BL func_08001E58
+/* 0807BC40 */ BL play_sound
 /* 0807BC44 */ B _0807BD0A
 
 .balign 4, 0
@@ -35,7 +35,7 @@ _0807BC50:
 /* 0807BC50 */ CMP R7, #0
 /* 0807BC52 */ BLE _0807BC60
 /* 0807BC54 */ LDR R0, _0807BC5C
-/* 0807BC56 */ BL func_08001E58
+/* 0807BC56 */ BL play_sound
 /* 0807BC5A */ B _0807BC66
 
 .balign 4, 0

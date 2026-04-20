@@ -7,7 +7,7 @@
 glabel func_0800B764
 /* 0800B764 */ PUSH {LR}
 /* 0800B766 */ ADDS R0, R2, #0
-/* 0800B768 */ BL func_08001E58
+/* 0800B768 */ BL play_sound
 /* 0800B76C */ POP {R0}
 /* 0800B76E */ BX R0
 .ltorg

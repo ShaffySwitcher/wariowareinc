@@ -66,7 +66,7 @@ glabel func_080C0524
 /* 080C05A2 */ LDR R0, [R6]
 /* 080C05A4 */ STR R7, [R0, #0X4C]
 /* 080C05A6 */ LDR R0, =D_083FD64C
-/* 080C05A8 */ BL func_08001E58
+/* 080C05A8 */ BL play_sound
 _080C05AC:
 /* 080C05AC */ ADD SP, #4
 /* 080C05AE */ POP {R4, R5, R6, R7}

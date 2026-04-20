@@ -14,7 +14,7 @@ glabel func_080C691C
 /* 080C6928 */ MOVS R1, #0
 /* 080C692A */ STRB R1, [R0]
 /* 080C692C */ LDR R0, =D_083FF348
-/* 080C692E */ BL func_08001E58
+/* 080C692E */ BL play_sound
 /* 080C6932 */ POP {R0}
 /* 080C6934 */ BX R0
 

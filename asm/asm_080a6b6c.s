@@ -25,7 +25,7 @@ glabel func_080A6B6C
 /* 080A6B8E */ BEQ _080A6BC8
 /* 080A6B90 */ MOVS R6, #1
 /* 080A6B92 */ LDR R0, _080A6BA0
-/* 080A6B94 */ BL func_08001E58
+/* 080A6B94 */ BL play_sound
 /* 080A6B98 */ B _080A6BD6
 
 .balign 4, 0
@@ -46,7 +46,7 @@ _080A6BA4:
 /* 080A6BB2 */ BEQ _080A6BC8
 /* 080A6BB4 */ MOVS R6, #1
 /* 080A6BB6 */ LDR R0, _080A6BC4
-/* 080A6BB8 */ BL func_08001E58
+/* 080A6BB8 */ BL play_sound
 /* 080A6BBC */ B _080A6BD6
 
 .balign 4, 0

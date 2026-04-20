@@ -8,7 +8,7 @@ glabel func_080AA9A0
 /* 080AA9A0 */ PUSH {R4, R5, LR}
 /* 080AA9A2 */ ADDS R4, R0, #0
 /* 080AA9A4 */ ADDS R0, R1, #0
-/* 080AA9A6 */ BL func_08001E58
+/* 080AA9A6 */ BL play_sound
 /* 080AA9AA */ LDR R1, _080AA9E8
 /* 080AA9AC */ LDR R1, [R1]
 /* 080AA9AE */ MOV IP, R1

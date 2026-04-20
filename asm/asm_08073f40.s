@@ -19,7 +19,7 @@ glabel func_08073F40
 /* 08073F58 */ MOVS R0, #0XB
 /* 08073F5A */ BL func_08072720
 /* 08073F5E */ LDR R0, =D_083FA6CC
-/* 08073F60 */ BL func_08001E58
+/* 08073F60 */ BL play_sound
 /* 08073F64 */ POP {R0}
 /* 08073F66 */ BX R0
 

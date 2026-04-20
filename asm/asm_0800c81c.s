@@ -45,7 +45,7 @@ _0800C838:
 
 .balign 4, 0
 _0800C868:
-/* 0800C868 */ .word D_08406430
+/* 0800C868 */ .word sound_player_table
 _0800C86C:
 /* 0800C86C */ MOVS R0, #0
 _0800C86E:

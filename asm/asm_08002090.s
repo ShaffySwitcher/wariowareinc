@@ -14,7 +14,7 @@ glabel func_08002090
 /* 0800209C */ BHS _080020B8
 /* 0800209E */ LSRS R0, R0, #0X14
 /* 080020A0 */ LSLS R6, R0, #0X10
-/* 080020A2 */ LDR R5, =D_08406430
+/* 080020A2 */ LDR R5, =sound_player_table
 /* 080020A4 */ ADDS R7, R1, #0
 _080020A6:
 /* 080020A6 */ LDR R0, [R5]
@@ -32,7 +32,7 @@ _080020B8:
 
 .balign 4, 0
 _080020C0:
-/* 080020C0 */ .word D_0840642C
+/* 080020C0 */ .word sound_player_count
 
 .balign 4, 0
 _080020C4:

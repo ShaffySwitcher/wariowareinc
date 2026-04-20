@@ -77,7 +77,7 @@ _080ED660:
 /* 080ED666 */ LSRS R0, R0, #0XE
 /* 080ED668 */ ADDS R0, R4
 /* 080ED66A */ LDR R0, [R0]
-/* 080ED66C */ BL func_08001E58
+/* 080ED66C */ BL play_sound
 /* 080ED670 */ B _080ED680
 
 .balign 4, 0

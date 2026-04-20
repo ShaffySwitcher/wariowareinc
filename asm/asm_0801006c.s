@@ -30,7 +30,7 @@ glabel func_0801006C
 /* 0801009A */ MOVS R0, #4
 /* 0801009C */ BL func_080108D8
 /* 080100A0 */ LDR R0, _080100B4
-/* 080100A2 */ BL func_08001E58
+/* 080100A2 */ BL play_sound
 /* 080100A6 */ B _080100F6
 
 .balign 4, 0
@@ -78,7 +78,7 @@ _080100EA:
 /* 080100EA */ MOVS R0, #2
 /* 080100EC */ BL func_080108D8
 /* 080100F0 */ LDR R0, =D_083FBBD0
-/* 080100F2 */ BL func_08001E58
+/* 080100F2 */ BL play_sound
 _080100F6:
 /* 080100F6 */ POP {R4}
 /* 080100F8 */ POP {R0}

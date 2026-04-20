@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0800C7CC
 /* 0800C7CC */ PUSH {R4, LR}
-/* 0800C7CE */ BL func_08001E58
+/* 0800C7CE */ BL play_sound
 /* 0800C7D2 */ ADDS R4, R0, #0
 /* 0800C7D4 */ BL func_0800A044
 /* 0800C7D8 */ ADDS R1, R0, #0

@@ -83,7 +83,7 @@ _08077D5C:
 /* 08077DE0 */ MOVS R0, #0
 /* 08077DE2 */ BL func_0800A128
 /* 08077DE6 */ LDR R0, _08077E00
-/* 08077DE8 */ BL func_08001E58
+/* 08077DE8 */ BL play_sound
 /* 08077DEC */ B _08077E18
 
 .balign 4, 0

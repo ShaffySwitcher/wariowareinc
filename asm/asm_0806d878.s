@@ -68,7 +68,7 @@ _0806D8B4:
 /* 0806D8EE */ SUBS R0, R2, #1
 /* 0806D8F0 */ STRB R0, [R3]
 /* 0806D8F2 */ LDR R0, _0806D904
-/* 0806D8F4 */ BL func_08001E58
+/* 0806D8F4 */ BL play_sound
 /* 0806D8F8 */ B _0806D910
 
 .balign 4, 0
@@ -174,7 +174,7 @@ _0806D9A4:
 /* 0806D9AA */ ADDS R1, #1
 /* 0806D9AC */ STRB R1, [R0]
 /* 0806D9AE */ LDR R0, _0806D9B8
-/* 0806D9B0 */ BL func_08001E58
+/* 0806D9B0 */ BL play_sound
 /* 0806D9B4 */ B _0806D9C4
 
 .balign 4, 0

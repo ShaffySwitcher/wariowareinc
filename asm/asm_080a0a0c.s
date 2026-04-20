@@ -94,7 +94,7 @@ _080A0A84:
 _080A0A92:
 /* 080A0A92 */ STRB R1, [R0]
 /* 080A0A94 */ LDR R0, _080A0A9C
-/* 080A0A96 */ BL func_08001E58
+/* 080A0A96 */ BL play_sound
 /* 080A0A9A */ B _080A0B16
 
 .balign 4, 0

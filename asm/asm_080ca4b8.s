@@ -179,7 +179,7 @@ _080CA5BA:
 /* 080CA5E8 */ ADDS R0, #1
 /* 080CA5EA */ STRH R0, [R1]
 /* 080CA5EC */ LDR R0, _080CA5F8
-/* 080CA5EE */ BL func_08001E58
+/* 080CA5EE */ BL play_sound
 /* 080CA5F2 */ B _080CA612
 
 .balign 4, 0

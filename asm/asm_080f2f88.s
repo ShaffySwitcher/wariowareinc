@@ -44,7 +44,7 @@ _080F2FCC:
 
 .balign 4, 0
 _080F2FC4:
-/* 080F2FC4 */ .word D_08402990
+/* 080F2FC4 */ .word song_header_table
 
 .balign 4, 0
 _080F2FC8:

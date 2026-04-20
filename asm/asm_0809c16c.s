@@ -298,7 +298,7 @@ _0809C34C:
 /* 0809C386 */ LSLS R2, R2, #1
 /* 0809C388 */ ADDS R0, R2
 /* 0809C38A */ LDR R0, [R0]
-/* 0809C38C */ BL func_08001FCC
+/* 0809C38C */ BL stop_soundplayer
 /* 0809C390 */ LDR R1, [R4]
 /* 0809C392 */ MOVS R0, #4
 /* 0809C394 */ STRB R0, [R1]

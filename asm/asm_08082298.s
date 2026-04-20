@@ -22,7 +22,7 @@ glabel func_08082298
 /* 080822B4 */ CMP R1, #4
 /* 080822B6 */ BLE _080822C8
 /* 080822B8 */ LDR R0, _080822C4
-/* 080822BA */ BL func_08001E58
+/* 080822BA */ BL play_sound
 /* 080822BE */ B _08082374
 
 .balign 4, 0
@@ -34,7 +34,7 @@ _080822C4:
 /* 080822C4 */ .word D_083FD480
 _080822C8:
 /* 080822C8 */ LDR R0, _08082384
-/* 080822CA */ BL func_08001E58
+/* 080822CA */ BL play_sound
 /* 080822CE */ MOVS R0, #2
 /* 080822D0 */ BL get_random_range
 /* 080822D4 */ LSLS R0, R0, #0X10

@@ -13,7 +13,7 @@ glabel func_0801A688
 /* 0801A694 */ LSRS R0, R0, #0XE
 /* 0801A696 */ ADDS R0, R4
 /* 0801A698 */ LDR R0, [R0]
-/* 0801A69A */ BL func_08001E58
+/* 0801A69A */ BL play_sound
 /* 0801A69E */ POP {R4}
 /* 0801A6A0 */ POP {R0}
 /* 0801A6A2 */ BX R0

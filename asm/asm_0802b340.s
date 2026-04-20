@@ -32,7 +32,7 @@ glabel func_0802B340
 /* 0802B372 */ MOVS R2, #0
 /* 0802B374 */ BL func_080EE9B8
 /* 0802B378 */ LDR R0, _0802B384
-/* 0802B37A */ BL func_08001E58
+/* 0802B37A */ BL play_sound
 /* 0802B37E */ B _0802B3F0
 
 .balign 4, 0

@@ -41,7 +41,7 @@ glabel func_0809D76C
 /* 0809D7B0 */ ADDS R0, #1
 /* 0809D7B2 */ STR R0, [R1]
 /* 0809D7B4 */ LDR R0, =D_083FD660
-/* 0809D7B6 */ BL func_08001E58
+/* 0809D7B6 */ BL play_sound
 _0809D7BA:
 /* 0809D7BA */ POP {R4, R5}
 /* 0809D7BC */ POP {R0}

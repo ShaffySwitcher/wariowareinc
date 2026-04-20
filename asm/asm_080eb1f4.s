@@ -15,7 +15,7 @@ glabel func_080EB1F4
 /* 080EB202 */ CMP R0, #1
 /* 080EB204 */ BNE _080EB20C
 /* 080EB206 */ ADDS R0, R1, #0
-/* 080EB208 */ BL func_08001E58
+/* 080EB208 */ BL play_sound
 _080EB20C:
 /* 080EB20C */ POP {R0}
 /* 080EB20E */ BX R0

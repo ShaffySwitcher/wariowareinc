@@ -59,7 +59,7 @@ glabel func_08034A6C
 /* 08034ADE */ MOVS R1, #0XFF
 /* 08034AE0 */ STRB R1, [R0]
 /* 08034AE2 */ LDR R0, _08034AF8
-/* 08034AE4 */ BL func_08001E58
+/* 08034AE4 */ BL play_sound
 /* 08034AE8 */ B _08034B38
 
 .balign 4, 0

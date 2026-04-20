@@ -43,7 +43,7 @@ glabel func_080C8978
 /* 080C89C2 */ MOVS R0, #1
 /* 080C89C4 */ BL func_0800A128
 /* 080C89C8 */ LDR R0, =D_083FCB34
-/* 080C89CA */ BL func_08001E58
+/* 080C89CA */ BL play_sound
 /* 080C89CE */ LDR R1, [R4]
 /* 080C89D0 */ MOVS R0, #2
 /* 080C89D2 */ STRB R0, [R1]

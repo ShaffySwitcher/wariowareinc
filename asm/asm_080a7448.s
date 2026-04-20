@@ -368,7 +368,7 @@ _080A76D4:
 /* 080A76EA */ ADDS R1, #1
 /* 080A76EC */ STRB R1, [R0]
 /* 080A76EE */ LDR R0, _080A76FC
-/* 080A76F0 */ BL func_08001E58
+/* 080A76F0 */ BL play_sound
 /* 080A76F4 */ B _080A7714
 
 .balign 4, 0

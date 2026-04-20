@@ -74,7 +74,7 @@ _080DE6BC:
 /* 080DE6DE */ MOVS R1, #2
 /* 080DE6E0 */ STRB R1, [R0]
 /* 080DE6E2 */ LDR R0, _080DE6F4
-/* 080DE6E4 */ BL func_08001E58
+/* 080DE6E4 */ BL play_sound
 /* 080DE6E8 */ B _080DE76A
 
 .balign 4, 0
@@ -108,7 +108,7 @@ _080DE6F8:
 /* 080DE71A */ MOVS R1, #3
 /* 080DE71C */ STRB R1, [R0]
 /* 080DE71E */ LDR R0, _080DE730
-/* 080DE720 */ BL func_08001E58
+/* 080DE720 */ BL play_sound
 /* 080DE724 */ B _080DE76A
 
 .balign 4, 0

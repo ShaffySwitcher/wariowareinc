@@ -26,7 +26,7 @@ glabel func_080B44B4
 /* 080B44DA */ MOVS R2, #0
 /* 080B44DC */ BL func_080EF5C4
 /* 080B44E0 */ LDR R0, _080B453C
-/* 080B44E2 */ BL func_08001E58
+/* 080B44E2 */ BL play_sound
 _080B44E6:
 /* 080B44E6 */ LDR R0, [R6, #4]
 /* 080B44E8 */ LDR R2, [R6, #8]

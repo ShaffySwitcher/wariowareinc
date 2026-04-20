@@ -98,7 +98,7 @@ _0802A644:
 /* 0802A682 */ MOVS R2, #1
 /* 0802A684 */ BL func_080EF3BC
 /* 0802A688 */ LDR R0, _0802A69C
-/* 0802A68A */ BL func_08001E58
+/* 0802A68A */ BL play_sound
 /* 0802A68E */ B _0802A6DA
 
 .balign 4, 0
