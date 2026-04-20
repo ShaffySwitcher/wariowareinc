@@ -1,5 +1,4 @@
 asm(".syntax unified \n\
- \n\
 thumb_func_start func_080011C8 \n\
 /* 080011C8 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080011CA */ MOV R7, SL \n\
@@ -265,4 +264,5 @@ _080013B8: \n\
 /* 080013C0 */ MOV SL, R5 \n\
 /* 080013C2 */ POP {R4, R5, R6, R7} \n\
 /* 080013C4 */ POP {R0} \n\
-/* 080013C6 */ BX R0");
+/* 080013C6 */ BX R0 \n\
+.syntax divided");

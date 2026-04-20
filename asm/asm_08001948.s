@@ -7,7 +7,7 @@ glabel func_08001948
 .thumb_func
 /* 08001948 */ PUSH {R4, LR}
 /* 0800194A */ ADDS R4, R0, #0
-/* 0800194C */ BL func_080013C8
+/* 0800194C */ BL pal_interp_update
 /* 08001950 */ MOVS R1, #0
 /* 08001952 */ LDRB R0, [R4]
 /* 08001954 */ LSLS R0, R0, #0X1F

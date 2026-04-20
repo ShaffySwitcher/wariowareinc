@@ -50,7 +50,7 @@ glabel func_08001558
 /* 080015AC */ STRB R0, [R4]
 /* 080015AE */ ADDS R0, R4, #0
 /* 080015B0 */ MOVS R1, #0
-/* 080015B2 */ BL func_08001418
+/* 080015B2 */ BL pal_interp_init_dest
 _080015B6:
 /* 080015B6 */ POP {R4, R5}
 /* 080015B8 */ POP {R0}
