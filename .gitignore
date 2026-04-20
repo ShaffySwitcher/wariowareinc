@@ -9,3 +9,4 @@ decomp.py
 ctx.c
 wrapper.py
 split.py
+progress.py
