@@ -49,4 +49,5 @@ _08001AB8: \n\
 .balign 4, 0 \n\
 _08001ABC: \n\
 /* 08001ABC */ @ literal emitted by .ltorg for '=...'  \n\
+.ltorg \n\
 .syntax divided");
