@@ -15,7 +15,7 @@ glabel func_0800FB58
 /* 0800FB66 */ MOVS R0, #1
 /* 0800FB68 */ MOVS R1, #0X20
 /* 0800FB6A */ MOVS R2, #0X10
-/* 0800FB6C */ BL func_080019D4
+/* 0800FB6C */ BL start_pal_interp_pal_col_task
 /* 0800FB70 */ LDR R3, =D_0830C964
 /* 0800FB72 */ STR R5, [SP]
 /* 0800FB74 */ MOVS R0, #0X80
@@ -25,7 +25,7 @@ glabel func_0800FB58
 /* 0800FB7C */ MOVS R0, #1
 /* 0800FB7E */ MOVS R1, #0X20
 /* 0800FB80 */ MOVS R2, #0X10
-/* 0800FB82 */ BL func_080019D4
+/* 0800FB82 */ BL start_pal_interp_pal_col_task
 /* 0800FB86 */ ADD SP, #8
 /* 0800FB88 */ POP {R4, R5}
 /* 0800FB8A */ POP {R0}

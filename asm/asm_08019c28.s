@@ -335,7 +335,7 @@ _08019E7A:
 /* 08019E88 */ MOVS R0, #0X10
 /* 08019E8A */ MOVS R1, #0XC
 /* 08019E8C */ MOVS R2, #0
-/* 08019E8E */ BL func_080017D0
+/* 08019E8E */ BL pal_interp_blend_now_col_pal
 /* 08019E92 */ LDR R2, _08019EE4
 /* 08019E94 */ LDRB R0, [R2]
 /* 08019E96 */ CMP R0, #9

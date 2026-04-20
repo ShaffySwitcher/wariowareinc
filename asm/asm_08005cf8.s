@@ -104,7 +104,7 @@ glabel func_08005CF8
 /* 08005DB8 */ ORRS R3, R0
 /* 08005DBA */ STRH R3, [R7, #0X10]
 /* 08005DBC */ B _08005DD6
-/* 08005DBE */ MOVS R0, R0
+/* 08005DBE */ // padding
 
 .balign 4, 0
 _08005DC0:

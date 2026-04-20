@@ -12,7 +12,7 @@ glabel func_080075DC
 /* 080075E4 */ CMP R0, #0
 /* 080075E6 */ BLT _0800762A
 /* 080075E8 */ MOVS R0, #0X14
-/* 080075EA */ BL func_08006174
+/* 080075EA */ BL mem_heap_alloc
 /* 080075EE */ ADDS R4, R0, #0
 /* 080075F0 */ LDRH R0, [R5]
 /* 080075F2 */ MOVS R2, #0

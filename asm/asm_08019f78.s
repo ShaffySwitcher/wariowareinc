@@ -51,7 +51,7 @@ _08019FA6:
 /* 08019FBE */ STR R4, [SP, #4]
 /* 08019FC0 */ MOVS R1, #0X20
 /* 08019FC2 */ MOVS R2, #0XC
-/* 08019FC4 */ BL func_08001964
+/* 08019FC4 */ BL start_pal_interp_pal_pal_task
 /* 08019FC8 */ BL func_0800A088
 /* 08019FCC */ LSLS R0, R0, #0X10
 /* 08019FCE */ LSRS R0, R0, #0X10
@@ -65,7 +65,7 @@ _08019FA6:
 /* 08019FDE */ STR R4, [SP, #4]
 /* 08019FE0 */ MOVS R1, #0X20
 /* 08019FE2 */ MOVS R2, #0XC
-/* 08019FE4 */ BL func_08001964
+/* 08019FE4 */ BL start_pal_interp_pal_pal_task
 /* 08019FE8 */ ADD SP, #8
 /* 08019FEA */ POP {R4, R5, R6, R7}
 /* 08019FEC */ POP {R0}

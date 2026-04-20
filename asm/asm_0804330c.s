@@ -111,7 +111,7 @@ _08043366:
 /* 080433DE */ MOVS R0, #2
 /* 080433E0 */ MOVS R1, #0X20
 /* 080433E2 */ MOVS R2, #1
-/* 080433E4 */ BL func_08001964
+/* 080433E4 */ BL start_pal_interp_pal_pal_task
 /* 080433E8 */ LDR R0, [R5]
 /* 080433EA */ ADDS R0, #0X8A
 /* 080433EC */ MOVS R1, #0X20

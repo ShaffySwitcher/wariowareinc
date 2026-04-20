@@ -12,7 +12,7 @@ glabel func_08001DE0
 /* 08001DE8 */ LDR R1, _08001DF0
 /* 08001DEA */ ADDS R0, R0, R1
 /* 08001DEC */ B _08001DF6
-/* 08001DEE */ MOVS R0, R0
+/* 08001DEE */ // padding
 
 .balign 4, 0
 _08001DF0:

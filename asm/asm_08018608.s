@@ -33,7 +33,7 @@ glabel func_08018608
 /* 0801863A */ MOVS R0, #1
 /* 0801863C */ MOVS R1, #0X20
 /* 0801863E */ MOVS R2, #1
-/* 08018640 */ BL func_08001964
+/* 08018640 */ BL start_pal_interp_pal_pal_task
 /* 08018644 */ LSLS R3, R5, #7
 /* 08018646 */ LDR R1, =D_0832A748
 /* 08018648 */ ADDS R3, R1
@@ -47,7 +47,7 @@ glabel func_08018608
 /* 08018658 */ MOVS R0, #1
 /* 0801865A */ MOVS R1, #0X20
 /* 0801865C */ MOVS R2, #4
-/* 0801865E */ BL func_08001964
+/* 0801865E */ BL start_pal_interp_pal_pal_task
 _08018662:
 /* 08018662 */ ADD SP, #8
 /* 08018664 */ POP {R4, R5, R6}

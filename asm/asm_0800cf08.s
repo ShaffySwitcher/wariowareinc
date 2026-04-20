@@ -21,7 +21,7 @@ _0800CF16:
 /* 0800CF22 */ LSRS R2, R2, #0X10
 /* 0800CF24 */ ADDS R0, R7, #0
 /* 0800CF26 */ ADDS R1, R6, #0
-/* 0800CF28 */ BL func_08001A0C
+/* 0800CF28 */ BL palette_blend_color
 /* 0800CF2C */ STRH R0, [R4]
 /* 0800CF2E */ ADDS R4, #2
 /* 0800CF30 */ ADDS R5, #1

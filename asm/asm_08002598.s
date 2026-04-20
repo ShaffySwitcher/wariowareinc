@@ -16,7 +16,7 @@ glabel func_08002598
 /* 080025A8 */ STR R2, [SP]
 /* 080025AA */ ADD R2, SP, #4
 /* 080025AC */ MOVS R3, #0
-/* 080025AE */ BL func_08005790
+/* 080025AE */ BL start_new_task
 /* 080025B2 */ ADD SP, #0XC
 /* 080025B4 */ POP {R1}
 /* 080025B6 */ BX R1

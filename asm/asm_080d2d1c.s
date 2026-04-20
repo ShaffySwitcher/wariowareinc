@@ -21,7 +21,7 @@ glabel func_080D2D1C
 /* 080D2D36 */ MOVS R0, #2
 /* 080D2D38 */ MOVS R1, #4
 /* 080D2D3A */ MOVS R2, #1
-/* 080D2D3C */ BL func_08001964
+/* 080D2D3C */ BL start_pal_interp_pal_pal_task
 /* 080D2D40 */ LDR R1, =func_080D2CC0 + 1
 /* 080D2D42 */ MOVS R2, #0
 /* 080D2D44 */ BL func_0800596C

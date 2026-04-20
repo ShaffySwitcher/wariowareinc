@@ -8,7 +8,7 @@ glabel func_08007DB0
 /* 08007DB0 */ PUSH {R4, LR}
 /* 08007DB2 */ ADDS R4, R0, #0
 /* 08007DB4 */ MOVS R0, #0XC
-/* 08007DB6 */ BL func_08006174
+/* 08007DB6 */ BL mem_heap_alloc
 /* 08007DBA */ LDR R1, [R4]
 /* 08007DBC */ STR R1, [R0]
 /* 08007DBE */ LDR R1, [R4, #4]

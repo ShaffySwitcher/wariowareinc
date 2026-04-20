@@ -17,7 +17,7 @@ _08009CB6:
 /* 08009CBC */ BEQ _08009CC8
 /* 08009CBE */ MOVS R0, #0
 /* 08009CC0 */ B _08009CD2
-/* 08009CC2 */ MOVS R0, R0
+/* 08009CC2 */ // padding
 
 .balign 4, 0
 _08009CC4:

@@ -29,7 +29,7 @@ glabel func_0801B6E8
 /* 0801B716 */ STR R0, [SP, #4]
 /* 0801B718 */ ADDS R0, R4, #0
 /* 0801B71A */ MOVS R2, #0X1A
-/* 0801B71C */ BL func_080019D4
+/* 0801B71C */ BL start_pal_interp_pal_col_task
 /* 0801B720 */ ADD SP, #8
 /* 0801B722 */ POP {R4, R5}
 /* 0801B724 */ POP {R0}

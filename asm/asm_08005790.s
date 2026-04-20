@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08005790
+glabel start_new_task
 .thumb_func
 /* 08005790 */ PUSH {R4, R5, R6, R7, LR}
 /* 08005792 */ MOV R7, R8
@@ -41,7 +41,7 @@ _080057C2:
 /* 080057CE */ BL func_080F41B8
 /* 080057D2 */ ADDS R1, R0, #0
 /* 080057D4 */ B _080057DE
-/* 080057D6 */ MOVS R0, R0
+/* 080057D6 */ // padding
 
 .balign 4, 0
 _080057D8:

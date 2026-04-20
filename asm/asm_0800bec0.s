@@ -16,7 +16,7 @@ glabel func_0800BEC0
 /* 0800BED0 */ CMP R0, #1
 /* 0800BED2 */ BGE _0800BEE6
 /* 0800BED4 */ B _0800BEEE
-/* 0800BED6 */ MOVS R0, R0
+/* 0800BED6 */ // padding
 
 .balign 4, 0
 _0800BED8:

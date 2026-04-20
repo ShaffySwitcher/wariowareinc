@@ -47,7 +47,7 @@ _080A7D2E:
 /* 080A7D40 */ MOVS R1, #0X10
 /* 080A7D42 */ MOVS R2, #7
 /* 080A7D44 */ MOVS R3, #0
-/* 080A7D46 */ BL func_0800199C
+/* 080A7D46 */ BL start_pal_interp_col_pal_task
 /* 080A7D4A */ BL func_0800A088
 /* 080A7D4E */ LSLS R0, R0, #0X10
 /* 080A7D50 */ LSRS R0, R0, #0X10
@@ -59,7 +59,7 @@ _080A7D2E:
 /* 080A7D5C */ MOVS R1, #0X10
 /* 080A7D5E */ MOVS R2, #7
 /* 080A7D60 */ MOVS R3, #0
-/* 080A7D62 */ BL func_0800199C
+/* 080A7D62 */ BL start_pal_interp_col_pal_task
 /* 080A7D66 */ MOVS R0, #0X30
 /* 080A7D68 */ MOVS R1, #0X31
 /* 080A7D6A */ MOVS R2, #0

@@ -27,7 +27,7 @@ glabel func_080DE23C
 /* 080DE264 */ ADDS R1, R4, #0
 /* 080DE266 */ MOVS R2, #0XA
 /* 080DE268 */ MOV R3, SB
-/* 080DE26A */ BL func_080019D4
+/* 080DE26A */ BL start_pal_interp_pal_col_task
 /* 080DE26E */ MOV R8, R0
 /* 080DE270 */ BL func_0800A088
 /* 080DE274 */ LSLS R0, R0, #0X10
@@ -40,7 +40,7 @@ glabel func_080DE23C
 /* 080DE282 */ ADDS R1, R4, #0
 /* 080DE284 */ MOVS R2, #0XA
 /* 080DE286 */ MOV R3, SB
-/* 080DE288 */ BL func_080019D4
+/* 080DE288 */ BL start_pal_interp_pal_col_task
 /* 080DE28C */ MOV R0, R8
 /* 080DE28E */ ADD SP, #8
 /* 080DE290 */ POP {R3, R4}

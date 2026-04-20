@@ -60,7 +60,7 @@ _08007A2C:
 /* 08007A44 */ ADDS R1, R5, #0
 /* 08007A46 */ ADD R2, SP, #4
 /* 08007A48 */ MOVS R3, #0
-/* 08007A4A */ BL func_08005790
+/* 08007A4A */ BL start_new_task
 /* 08007A4E */ STR R6, [SP, #8]
 /* 08007A50 */ LDR R0, [SP, #0X34]
 /* 08007A52 */ STR R0, [SP, #0XC]
@@ -71,7 +71,7 @@ _08007A2C:
 /* 08007A5C */ ADDS R1, R5, #0
 /* 08007A5E */ ADD R2, SP, #4
 /* 08007A60 */ MOVS R3, #0
-/* 08007A62 */ BL func_08005790
+/* 08007A62 */ BL start_new_task
 /* 08007A66 */ MOV R0, R8
 /* 08007A68 */ STR R0, [SP, #8]
 /* 08007A6A */ LDR R0, [SP, #0X38]
@@ -83,7 +83,7 @@ _08007A2C:
 /* 08007A76 */ ADDS R1, R5, #0
 /* 08007A78 */ ADD R2, SP, #4
 /* 08007A7A */ MOVS R3, #0
-/* 08007A7C */ BL func_08005790
+/* 08007A7C */ BL start_new_task
 /* 08007A80 */ MOV R1, SB
 /* 08007A82 */ STR R1, [SP, #8]
 /* 08007A84 */ LDR R0, [SP, #0X3C]
@@ -95,7 +95,7 @@ _08007A2C:
 /* 08007A90 */ ADDS R1, R5, #0
 /* 08007A92 */ ADD R2, SP, #4
 /* 08007A94 */ MOVS R3, #0
-/* 08007A96 */ BL func_08005790
+/* 08007A96 */ BL start_new_task
 /* 08007A9A */ LDR R2, =D_03004000
 /* 08007A9C */ MOVS R0, #0X80
 /* 08007A9E */ LSLS R0, R0, #6

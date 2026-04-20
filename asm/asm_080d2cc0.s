@@ -18,7 +18,7 @@ glabel func_080D2CC0
 /* 080D2CD6 */ MOVS R0, #2
 /* 080D2CD8 */ MOVS R1, #4
 /* 080D2CDA */ MOVS R2, #1
-/* 080D2CDC */ BL func_08001964
+/* 080D2CDC */ BL start_pal_interp_pal_pal_task
 /* 080D2CE0 */ ADDS R2, R0, #0
 /* 080D2CE2 */ LDR R0, _080D2D10
 /* 080D2CE4 */ LDR R1, [R0]

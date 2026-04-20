@@ -26,7 +26,7 @@ glabel func_0800DB5C
 /* 0800DB80 */ STR R1, [SP, #4]
 /* 0800DB82 */ STR R4, [SP, #8]
 /* 0800DB84 */ MOVS R1, #0X20
-/* 0800DB86 */ BL func_0800165C
+/* 0800DB86 */ BL pal_interp_init_masked
 /* 0800DB8A */ ADD SP, #0XC
 /* 0800DB8C */ POP {R4}
 /* 0800DB8E */ POP {R0}

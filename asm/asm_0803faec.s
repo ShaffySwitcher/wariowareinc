@@ -25,7 +25,7 @@ glabel func_0803FAEC
 /* 0803FB0E */ MOVS R0, #2
 /* 0803FB10 */ MOVS R1, #0X40
 /* 0803FB12 */ MOVS R2, #2
-/* 0803FB14 */ BL func_08001964
+/* 0803FB14 */ BL start_pal_interp_pal_pal_task
 _0803FB18:
 /* 0803FB18 */ ADD SP, #8
 /* 0803FB1A */ POP {R0}

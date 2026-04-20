@@ -31,7 +31,7 @@ _080EC2CE:
 /* 080EC2DC */ STR R3, [SP, #4]
 /* 080EC2DE */ MOVS R0, #2
 /* 080EC2E0 */ MOVS R2, #1
-/* 080EC2E2 */ BL func_08001964
+/* 080EC2E2 */ BL start_pal_interp_pal_pal_task
 /* 080EC2E6 */ ADD SP, #8
 /* 080EC2E8 */ POP {R0}
 /* 080EC2EA */ BX R0

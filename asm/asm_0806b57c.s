@@ -136,7 +136,7 @@ _0806B640:
 /* 0806B68C */ STR R0, [SP, #4]
 /* 0806B68E */ MOVS R0, #2
 /* 0806B690 */ MOVS R2, #1
-/* 0806B692 */ BL func_08001964
+/* 0806B692 */ BL start_pal_interp_pal_pal_task
 _0806B696:
 /* 0806B696 */ MOVS R0, #3
 /* 0806B698 */ ANDS R4, R0

@@ -50,7 +50,7 @@ _0809C4C0:
 /* 0809C4DC */ MOVS R0, #2
 /* 0809C4DE */ MOVS R1, #0X14
 /* 0809C4E0 */ MOVS R2, #1
-/* 0809C4E2 */ BL func_08001964
+/* 0809C4E2 */ BL start_pal_interp_pal_pal_task
 /* 0809C4E6 */ LDR R1, [R4]
 /* 0809C4E8 */ MOVS R0, #0X14
 /* 0809C4EA */ STRH R0, [R1, #0XE]

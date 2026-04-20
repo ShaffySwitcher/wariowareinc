@@ -22,7 +22,7 @@ glabel func_0800A0C4
 /* 0800A0E0 */ ADDS R0, R1, R2
 /* 0800A0E2 */ STRH R3, [R0]
 /* 0800A0E4 */ B _0800A118
-/* 0800A0E6 */ MOVS R0, R0
+/* 0800A0E6 */ // padding
 
 .balign 4, 0
 _0800A0E8:

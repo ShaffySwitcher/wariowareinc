@@ -16,7 +16,7 @@ glabel func_0809BA90
 /* 0809BAA2 */ MOVS R0, #2
 /* 0809BAA4 */ MOVS R1, #6
 /* 0809BAA6 */ MOVS R2, #1
-/* 0809BAA8 */ BL func_08001964
+/* 0809BAA8 */ BL start_pal_interp_pal_pal_task
 /* 0809BAAC */ LDR R1, _0809BAD0
 /* 0809BAAE */ LDR R1, [R1]
 /* 0809BAB0 */ MOVS R2, #0X88

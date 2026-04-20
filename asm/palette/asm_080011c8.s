@@ -1,5 +1,5 @@
 asm(".syntax unified \n\
-thumb_func_start func_080011C8 \n\
+thumb_func_start pal_interp_blend \n\
 /* 080011C8 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080011CA */ MOV R7, SL \n\
 /* 080011CC */ MOV R6, SB \n\

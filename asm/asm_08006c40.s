@@ -33,7 +33,7 @@ glabel func_08006C40
 /* 08006C72 */ BL __divsi3
 /* 08006C76 */ STRH R0, [R5]
 /* 08006C78 */ B _08006C92
-/* 08006C7A */ MOVS R0, R0
+/* 08006C7A */ // padding
 
 .balign 4, 0
 _08006C7C:

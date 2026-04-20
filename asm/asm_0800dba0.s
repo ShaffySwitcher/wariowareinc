@@ -31,7 +31,7 @@ _0800DBCA:
 /* 0800DBCA */ ADDS R4, R5, #0
 /* 0800DBCC */ ADDS R4, #0X60
 /* 0800DBCE */ ADDS R0, R4, #0
-/* 0800DBD0 */ BL func_080015C4
+/* 0800DBD0 */ BL pal_interp_save_output_backup
 /* 0800DBD4 */ LDR R0, [R5]
 /* 0800DBD6 */ CMP R0, #1
 /* 0800DBD8 */ BEQ _0800DBE0
@@ -55,7 +55,7 @@ _0800DBEE:
 /* 0800DBF8 */ B _0800DC02
 _0800DBFA:
 /* 0800DBFA */ ADDS R0, R4, #0
-/* 0800DBFC */ BL func_080015F4
+/* 0800DBFC */ BL pal_interp_update_masked
 _0800DC00:
 /* 0800DC00 */ MOVS R0, #0
 _0800DC02:

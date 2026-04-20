@@ -65,7 +65,7 @@ glabel func_08006DB8
 /* 08006E2C */ MOVS R0, #3
 /* 08006E2E */ RSBS R0, R0, #0
 /* 08006E30 */ B _08006E60
-/* 08006E32 */ MOVS R0, R0
+/* 08006E32 */ // padding
 
 .balign 4, 0
 _08006E34:

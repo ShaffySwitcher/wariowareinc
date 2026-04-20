@@ -18,7 +18,7 @@ glabel func_0809B728
 /* 0809B73C */ ADDS R1, R6, #0
 /* 0809B73E */ MOVS R2, #1
 /* 0809B740 */ ADDS R3, R5, #0
-/* 0809B742 */ BL func_08001964
+/* 0809B742 */ BL start_pal_interp_pal_pal_task
 /* 0809B746 */ SUBS R5, #0X40
 /* 0809B748 */ SUBS R4, #0X20
 /* 0809B74A */ STR R4, [SP]
@@ -27,7 +27,7 @@ glabel func_0809B728
 /* 0809B750 */ ADDS R1, R6, #0
 /* 0809B752 */ MOVS R2, #1
 /* 0809B754 */ ADDS R3, R5, #0
-/* 0809B756 */ BL func_08001964
+/* 0809B756 */ BL start_pal_interp_pal_pal_task
 /* 0809B75A */ ADD SP, #8
 /* 0809B75C */ POP {R4, R5, R6}
 /* 0809B75E */ POP {R0}

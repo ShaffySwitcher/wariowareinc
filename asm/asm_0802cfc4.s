@@ -35,7 +35,7 @@ glabel func_0802CFC4
 /* 0802CFFA */ MOVS R0, #2
 /* 0802CFFC */ MOVS R1, #0X20
 /* 0802CFFE */ MOVS R2, #1
-/* 0802D000 */ BL func_08001964
+/* 0802D000 */ BL start_pal_interp_pal_pal_task
 /* 0802D004 */ LDR R2, [R6]
 /* 0802D006 */ ADDS R2, #0X66
 /* 0802D008 */ MOVS R1, #7

@@ -118,7 +118,7 @@ _0801B518:
 /* 0801B592 */ MOVS R1, #0X1A
 /* 0801B594 */ MOVS R2, #0
 /* 0801B596 */ ADDS R3, R4, #0
-/* 0801B598 */ BL func_080017D0
+/* 0801B598 */ BL pal_interp_blend_now_col_pal
 /* 0801B59C */ MOVS R0, #0X18
 /* 0801B59E */ BL func_0801B454
 _0801B5A2:

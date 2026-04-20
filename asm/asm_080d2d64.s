@@ -38,7 +38,7 @@ _080D2D8A:
 /* 080D2DA0 */ MOVS R0, #2
 /* 080D2DA2 */ MOVS R1, #0X1E
 /* 080D2DA4 */ MOVS R2, #1
-/* 080D2DA6 */ BL func_08001964
+/* 080D2DA6 */ BL start_pal_interp_pal_pal_task
 /* 080D2DAA */ LDR R1, [R4]
 /* 080D2DAC */ LDR R2, _080D2DD4
 /* 080D2DAE */ ADDS R1, R2

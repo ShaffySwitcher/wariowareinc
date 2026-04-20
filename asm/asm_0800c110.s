@@ -31,7 +31,7 @@ glabel func_0800C110
 /* 0800C140 */ STR R2, [SP]
 /* 0800C142 */ ADD R2, SP, #4
 /* 0800C144 */ MOVS R3, #0
-/* 0800C146 */ BL func_08005790
+/* 0800C146 */ BL start_new_task
 /* 0800C14A */ ADD SP, #0X10
 /* 0800C14C */ POP {R3}
 /* 0800C14E */ MOV R8, R3

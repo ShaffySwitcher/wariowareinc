@@ -77,7 +77,7 @@ glabel func_0801E5C8
 /* 0801E662 */ MOVS R1, #0X10
 /* 0801E664 */ MOVS R2, #0
 /* 0801E666 */ ADDS R3, R6, #0
-/* 0801E668 */ BL func_080017D0
+/* 0801E668 */ BL pal_interp_blend_now_col_pal
 /* 0801E66C */ ADDS R0, R5, #0
 /* 0801E66E */ BL func_0800A228
 /* 0801E672 */ LDR R1, [R4]
@@ -111,7 +111,7 @@ glabel func_0801E5C8
 /* 0801E6AE */ MOVS R1, #4
 /* 0801E6B0 */ MOVS R2, #0
 /* 0801E6B2 */ ADDS R3, R6, #0
-/* 0801E6B4 */ BL func_080017D0
+/* 0801E6B4 */ BL pal_interp_blend_now_col_pal
 /* 0801E6B8 */ MOVS R0, #0
 /* 0801E6BA */ BL func_0800A200
 /* 0801E6BE */ MOVS R0, #0

@@ -95,7 +95,7 @@ glabel func_08022EF0
 /* 08022FBA */ MOVS R1, #0X1A
 /* 08022FBC */ MOVS R2, #0
 /* 08022FBE */ ADDS R3, R6, #0
-/* 08022FC0 */ BL func_080017D0
+/* 08022FC0 */ BL pal_interp_blend_now_col_pal
 /* 08022FC4 */ MOVS R0, #0
 /* 08022FC6 */ BL func_0800A200
 /* 08022FCA */ MOVS R0, #0

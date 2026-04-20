@@ -17,18 +17,6 @@ SECTIONS {
         build/asm/math.s.o(.text*);
         build/src/code_08000f10.c.o(.text);
         build/src/palette.c.o(.text);
-        build/asm/asm_0800165c.s.o(.text*);
-        build/asm/asm_08001760.s.o(.text*);
-        build/asm/asm_080017d0.s.o(.text*);
-        build/asm/asm_08001848.s.o(.text*);
-        build/asm/asm_080018b8.s.o(.text*);
-        build/asm/asm_080018e8.s.o(.text*);
-        build/asm/asm_08001918.s.o(.text*);
-        build/asm/asm_08001948.s.o(.text*);
-        build/asm/asm_08001964.s.o(.text*);
-        build/asm/asm_0800199c.s.o(.text*);
-        build/asm/asm_080019d4.s.o(.text*);
-        build/asm/asm_08001a0c.s.o(.text*);
         build/asm/asm_08001a70.s.o(.text*);
         build/asm/asm_08001ac0.s.o(.text*);
         build/asm/asm_08001b04.s.o(.text*);
@@ -5750,7 +5738,10 @@ SECTIONS {
         build/asm/asm_080f60b0.s.o(.text*);
         build/asm/asm_080f60fc.s.o(.text*);
         build/bin/data_080F6140.bin.o(.rodata*);
+
         build/data/math_tables.c.o(.data);
+        build/src/palette.c.o(.data);
+
         build/bin/data.bin.o(.rodata*);
     }
 

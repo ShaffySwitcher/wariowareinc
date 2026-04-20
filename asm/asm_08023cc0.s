@@ -83,7 +83,7 @@ glabel func_08023CC0
 /* 08023D6A */ MOVS R1, #0X1A
 /* 08023D6C */ MOVS R2, #0
 /* 08023D6E */ ADDS R3, R6, #0
-/* 08023D70 */ BL func_080017D0
+/* 08023D70 */ BL pal_interp_blend_now_col_pal
 /* 08023D74 */ MOVS R0, #0
 /* 08023D76 */ BL func_0800A200
 /* 08023D7A */ MOVS R0, #0

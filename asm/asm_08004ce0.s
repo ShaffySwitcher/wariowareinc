@@ -131,7 +131,7 @@ _08004DA6:
 /* 08004DCC */ LDRB R0, [R4]
 /* 08004DCE */ ADDS R0, #1
 /* 08004DD0 */ B _08004DFA
-/* 08004DD2 */ MOVS R0, R0
+/* 08004DD2 */ // padding
 
 .balign 4, 0
 _08004DD4:

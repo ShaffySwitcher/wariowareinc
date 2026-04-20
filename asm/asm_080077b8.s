@@ -8,7 +8,7 @@ glabel func_080077B8
 /* 080077B8 */ PUSH {R4, LR}
 /* 080077BA */ ADDS R4, R0, #0
 /* 080077BC */ MOVS R0, #0X10
-/* 080077BE */ BL func_08006174
+/* 080077BE */ BL mem_heap_alloc
 /* 080077C2 */ ADDS R3, R0, #0
 /* 080077C4 */ LDRB R1, [R4]
 /* 080077C6 */ LSLS R1, R1, #0X1E
@@ -47,7 +47,7 @@ glabel func_080077B8
 /* 08007808 */ CMP R0, #0
 /* 0800780A */ BEQ _0800781E
 /* 0800780C */ B _08007828
-/* 0800780E */ MOVS R0, R0
+/* 0800780E */ // padding
 
 .balign 4, 0
 _08007810:

@@ -35,7 +35,7 @@ glabel func_0801B5C4
 /* 0801B5FE */ STR R4, [SP]
 /* 0801B600 */ ADD R2, SP, #4
 /* 0801B602 */ MOVS R3, #0
-/* 0801B604 */ BL func_08005790
+/* 0801B604 */ BL start_new_task
 /* 0801B608 */ ADD SP, #0X10
 /* 0801B60A */ POP {R4}
 /* 0801B60C */ POP {R0}

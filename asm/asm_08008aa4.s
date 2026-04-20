@@ -27,7 +27,7 @@ glabel func_08008AA4
 _08008ACA:
 /* 08008ACA */ MOVS R0, #0
 /* 08008ACC */ B _08008AE4
-/* 08008ACE */ MOVS R0, R0
+/* 08008ACE */ // padding
 
 .balign 4, 0
 _08008AD0:

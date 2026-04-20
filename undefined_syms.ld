@@ -16,5 +16,10 @@ gCurrentKeys = 0x03003FC8;
 gPressedKeys = 0x03003FF4;
 gRepeatedKeys = 0x03004884;
 
+start_new_task = 0x08005790;
+mem_heap_alloc = 0x08006174;
+
 D_080F6140 = 0x080F6140;
+D_080F67AC = 0x080F67AC;
+D_080F69AC = 0x080F69AC;
 D_083A3D94 = 0x083A3D94;

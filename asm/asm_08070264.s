@@ -77,7 +77,7 @@ _080702A8:
 /* 080702DA */ MOVS R1, #0X18
 /* 080702DC */ MOVS R2, #1
 /* 080702DE */ ADDS R3, R5, #0
-/* 080702E0 */ BL func_080019D4
+/* 080702E0 */ BL start_pal_interp_pal_col_task
 /* 080702E4 */ BL func_0800A088
 /* 080702E8 */ LSLS R0, R0, #0X10
 /* 080702EA */ LSRS R0, R0, #0X10
@@ -89,7 +89,7 @@ _080702A8:
 /* 080702F6 */ MOVS R1, #0X18
 /* 080702F8 */ MOVS R2, #1
 /* 080702FA */ ADDS R3, R5, #0
-/* 080702FC */ BL func_080019D4
+/* 080702FC */ BL start_pal_interp_pal_col_task
 /* 08070300 */ LDR R1, [R7]
 /* 08070302 */ MOVS R0, #1
 /* 08070304 */ STRB R0, [R1, #1]
@@ -203,7 +203,7 @@ _08070384:
 /* 080703D2 */ MOVS R1, #0X18
 /* 080703D4 */ MOVS R2, #1
 /* 080703D6 */ MOVS R3, #0
-/* 080703D8 */ BL func_0800199C
+/* 080703D8 */ BL start_pal_interp_col_pal_task
 /* 080703DC */ BL func_0800A088
 /* 080703E0 */ LSLS R0, R0, #0X10
 /* 080703E2 */ LSRS R0, R0, #0X10
@@ -215,7 +215,7 @@ _08070384:
 /* 080703EE */ MOVS R1, #0X18
 /* 080703F0 */ MOVS R2, #1
 /* 080703F2 */ MOVS R3, #0
-/* 080703F4 */ BL func_0800199C
+/* 080703F4 */ BL start_pal_interp_col_pal_task
 /* 080703F8 */ B _08070484
 
 .balign 4, 0

@@ -31,7 +31,7 @@ glabel func_0808A5D0
 /* 0808A5FE */ MOVS R1, #6
 /* 0808A600 */ MOVS R2, #1
 /* 0808A602 */ ADDS R3, R5, #0
-/* 0808A604 */ BL func_08001964
+/* 0808A604 */ BL start_pal_interp_pal_pal_task
 /* 0808A608 */ STR R6, [SP]
 /* 0808A60A */ MOVS R0, #0X80
 /* 0808A60C */ LSLS R0, R0, #2
@@ -41,7 +41,7 @@ glabel func_0808A5D0
 /* 0808A614 */ MOVS R1, #6
 /* 0808A616 */ MOVS R2, #1
 /* 0808A618 */ ADDS R3, R5, #0
-/* 0808A61A */ BL func_08001964
+/* 0808A61A */ BL start_pal_interp_pal_pal_task
 /* 0808A61E */ LDR R0, [R7]
 /* 0808A620 */ ADDS R0, #0X3A
 /* 0808A622 */ MOVS R1, #0

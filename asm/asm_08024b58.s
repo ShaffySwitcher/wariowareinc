@@ -19,12 +19,12 @@ glabel func_08024B58
 /* 08024B6E */ MOVS R0, #0
 /* 08024B70 */ ADDS R1, R5, #0
 /* 08024B72 */ MOVS R2, #0XC6
-/* 08024B74 */ BL func_08001A0C
+/* 08024B74 */ BL palette_blend_color
 /* 08024B78 */ STRH R0, [R4, #2]
 /* 08024B7A */ MOVS R0, #0
 /* 08024B7C */ ADDS R1, R5, #0
 /* 08024B7E */ MOVS R2, #0XDF
-/* 08024B80 */ BL func_08001A0C
+/* 08024B80 */ BL palette_blend_color
 /* 08024B84 */ STRH R0, [R4, #4]
 /* 08024B86 */ STRH R5, [R4, #6]
 /* 08024B88 */ POP {R4, R5}

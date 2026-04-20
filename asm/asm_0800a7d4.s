@@ -1254,7 +1254,7 @@ _0800AFE6:
 /* 0800B00E */ STR R3, [SP]
 /* 0800B010 */ STR R6, [SP, #4]
 /* 0800B012 */ ADDS R3, R7, #0
-/* 0800B014 */ BL func_0800199C
+/* 0800B014 */ BL start_pal_interp_col_pal_task
 /* 0800B018 */ B _0800B74C
 
 .balign 4, 0
@@ -1277,7 +1277,7 @@ _0800B024:
 /* 0800B038 */ STR R4, [SP]
 /* 0800B03A */ STR R6, [SP, #4]
 /* 0800B03C */ ADDS R3, R7, #0
-/* 0800B03E */ BL func_080019D4
+/* 0800B03E */ BL start_pal_interp_pal_col_task
 /* 0800B042 */ B _0800B74C
 _0800B044:
 /* 0800B044 */ BL func_0800A088
@@ -1290,7 +1290,7 @@ _0800B044:
 /* 0800B054 */ STR R5, [SP]
 /* 0800B056 */ STR R6, [SP, #4]
 /* 0800B058 */ ADDS R3, R7, #0
-/* 0800B05A */ BL func_08001964
+/* 0800B05A */ BL start_pal_interp_pal_pal_task
 /* 0800B05E */ B _0800B74C
 _0800B060:
 /* 0800B060 */ MOVS R5, #3
@@ -1372,7 +1372,7 @@ _0800B0B0:
 /* 0800B0F2 */ STR R2, [SP]
 /* 0800B0F4 */ ADD R2, SP, #0XC
 /* 0800B0F6 */ MOVS R3, #0
-/* 0800B0F8 */ BL func_08005790
+/* 0800B0F8 */ BL start_new_task
 /* 0800B0FC */ B _0800B74C
 
 .balign 4, 0

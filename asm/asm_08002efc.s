@@ -92,7 +92,7 @@ _08002F6E:
 /* 08002F86 */ ADDS R0, R4, #0
 /* 08002F88 */ MOV R1, SL
 /* 08002F8A */ ADDS R3, R5, #0
-/* 08002F8C */ BL func_08001478
+/* 08002F8C */ BL pal_interp_init_pal_pal
 /* 08002F90 */ ADDS R4, #0X18
 /* 08002F92 */ MOV R1, R8
 /* 08002F94 */ MOV IP, R7

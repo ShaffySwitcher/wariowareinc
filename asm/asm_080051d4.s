@@ -9,7 +9,7 @@ glabel func_080051D4
 /* 080051D6 */ SUB SP, #4
 /* 080051D8 */ ADDS R5, R0, #0
 /* 080051DA */ MOVS R0, #0X14
-/* 080051DC */ BL func_08006174
+/* 080051DC */ BL mem_heap_alloc
 /* 080051E0 */ ADDS R4, R0, #0
 /* 080051E2 */ MOVS R0, #0X80
 /* 080051E4 */ LSLS R0, R0, #1

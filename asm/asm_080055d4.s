@@ -19,7 +19,7 @@ glabel func_080055D4
 /* 080055EA */ STR R2, [SP]
 /* 080055EC */ ADD R2, SP, #4
 /* 080055EE */ MOVS R3, #0
-/* 080055F0 */ BL func_08005790
+/* 080055F0 */ BL start_new_task
 /* 080055F4 */ ADD SP, #0X14
 /* 080055F6 */ POP {R4}
 /* 080055F8 */ POP {R1}

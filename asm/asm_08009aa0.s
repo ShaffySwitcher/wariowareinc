@@ -189,7 +189,7 @@ _08009B9A:
 /* 08009BEA */ LDR R1, [R4, #4]
 /* 08009BEC */ BL func_080F41BC
 /* 08009BF0 */ B _08009C10
-/* 08009BF2 */ MOVS R0, R0
+/* 08009BF2 */ // padding
 
 .balign 4, 0
 _08009BF4:

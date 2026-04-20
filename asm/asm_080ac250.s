@@ -29,7 +29,7 @@ _080AC26A:
 /* 080AC278 */ MOVS R1, #6
 /* 080AC27A */ MOVS R2, #1
 /* 080AC27C */ ADDS R3, R5, #0
-/* 080AC27E */ BL func_08001964
+/* 080AC27E */ BL start_pal_interp_pal_pal_task
 /* 080AC282 */ ADDS R4, #2
 /* 080AC284 */ CMP R4, #9
 /* 080AC286 */ BLE _080AC28A
@@ -44,7 +44,7 @@ _080AC28A:
 /* 080AC296 */ MOVS R0, #2
 /* 080AC298 */ MOVS R1, #6
 /* 080AC29A */ MOVS R2, #1
-/* 080AC29C */ BL func_08001964
+/* 080AC29C */ BL start_pal_interp_pal_pal_task
 /* 080AC2A0 */ ADD SP, #8
 /* 080AC2A2 */ POP {R4, R5, R6}
 /* 080AC2A4 */ POP {R0}

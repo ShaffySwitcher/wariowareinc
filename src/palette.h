@@ -2,6 +2,14 @@
 
 #include "global.h"
 
+struct PaletteInterpolatorInputs {
+    u8 duration;
+    u8 totalPalettes;
+    const u16 *sourceA;
+    const u16 *sourceB;
+    u16 *outputDest;
+};
+
 struct PaletteInterpolator {
     u32 isActive:1;
     u32 duration:8;
@@ -15,7 +23,26 @@ struct PaletteInterpolator {
     u16 paletteMask;
 };
 
-void func_080011C4(struct PaletteInterpolator *task);
-
-void func_080011C8(struct PaletteInterpolator *task, u32 paletteIndex);
+void pal_interp_finalize(struct PaletteInterpolator *task);
+void pal_interp_blend(struct PaletteInterpolator *task, u32 paletteIndex);
 void pal_interp_update(struct PaletteInterpolator *task);
+void pal_interp_init_dest(struct PaletteInterpolator *task, u32 startIndex);
+void pal_interp_init_pal_pal(struct PaletteInterpolator *task, u32 duration, u32 totalPalettes, const u16 *sourceA, const u16 *sourceB, u16 *outputBackup, u16 *outputDest);
+void pal_interp_init_col_pal(struct PaletteInterpolator *task, u32 duration, u32 totalPalettes, u32 valueA, const u16 *sourceB, u16 *outputBackup, u16 *outputDest);
+void pal_interp_init_pal_col(struct PaletteInterpolator *task, u32 duration, u32 totalPalettes, const u16 *sourceA, u32 valueB, u16 *outputBackup, u16 *outputDest);
+void pal_interp_save_output_backup(struct PaletteInterpolator *task);
+void pal_interp_update_masked(struct PaletteInterpolator* task);
+void pal_interp_init_masked(struct PaletteInterpolator *task, u32 duration, const u16 *sourceVar, u16 *outputBackup, u16 *outputDest, u16 paletteMask, u16 sourceType);
+void pal_interp_blend_now_pal_pal(u8 alpha, u8 totalPalettes, const u16 *sourceA, const u16 *sourceB, u16 *outputDest, u32 test);
+void pal_interp_blend_now_col_pal(u8 alpha, u8 totalPalettes, const u16 *sourceA, const u16 *sourceB, u16 *outputDest, u32 test);
+void pal_interp_blend_now_pal_col(u8 alpha, u8 totalPalettes, const u16 *sourceA, const u16 *sourceB, u16 *outputDest, u32 test);
+struct PaletteInterpolator* pal_interp_create_pal_pal(struct PaletteInterpolatorInputs *inputs);
+struct PaletteInterpolator* pal_interp_create_col_pal(struct PaletteInterpolatorInputs *inputs);
+struct PaletteInterpolator* pal_interp_create_pal_col(struct PaletteInterpolatorInputs *inputs);
+s32 start_pal_interp_pal_pal_task(u16 memID, u8 duration, u8 totalPalettes, const u16 *sourceA, u32 valueB, u16 *outputDest);
+s32 start_pal_interp_col_pal_task(u16 memID, u8 duration, u8 totalPalettes, const u16 *sourceA, u32 valueB, u16 *outputDest);
+s32 start_pal_interp_pal_col_task(u16 memID, u8 duration, u8 totalPalettes, const u16 *sourceA, u32 valueB, u16 *outputDest);
+u16 palette_blend_color(u16 col1, u16 col2, u16 blendAlpha);
+
+extern u16 D_080F67AC[];
+extern u16 D_080F69AC[];

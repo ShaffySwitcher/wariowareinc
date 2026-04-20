@@ -19,7 +19,7 @@ glabel func_080217D4
 /* 080217EC */ STR R4, [SP, #4]
 /* 080217EE */ MOVS R1, #0X1E
 /* 080217F0 */ MOVS R2, #0XC
-/* 080217F2 */ BL func_08001964
+/* 080217F2 */ BL start_pal_interp_pal_pal_task
 /* 080217F6 */ BL func_0800A088
 /* 080217FA */ LSLS R0, R0, #0X10
 /* 080217FC */ LSRS R0, R0, #0X10
@@ -32,7 +32,7 @@ glabel func_080217D4
 /* 0802180A */ STR R4, [SP, #4]
 /* 0802180C */ MOVS R1, #0X1E
 /* 0802180E */ MOVS R2, #0XC
-/* 08021810 */ BL func_08001964
+/* 08021810 */ BL start_pal_interp_pal_pal_task
 /* 08021814 */ ADD SP, #8
 /* 08021816 */ POP {R4, R5, R6}
 /* 08021818 */ POP {R0}

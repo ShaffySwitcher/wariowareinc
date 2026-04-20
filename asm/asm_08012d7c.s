@@ -28,7 +28,7 @@ glabel func_08012D7C
 /* 08012DA8 */ STR R2, [SP]
 /* 08012DAA */ ADD R2, SP, #4
 /* 08012DAC */ MOVS R3, #0
-/* 08012DAE */ BL func_08005790
+/* 08012DAE */ BL start_new_task
 /* 08012DB2 */ LDR R1, =func_08012D3C + 1
 /* 08012DB4 */ MOVS R2, #0
 /* 08012DB6 */ BL func_0800596C

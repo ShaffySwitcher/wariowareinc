@@ -33,7 +33,7 @@ glabel func_0801CC18
 /* 0801CC52 */ ADDS R1, R5, #0
 /* 0801CC54 */ MOVS R2, #1
 /* 0801CC56 */ MOVS R3, #0
-/* 0801CC58 */ BL func_0800199C
+/* 0801CC58 */ BL start_pal_interp_col_pal_task
 /* 0801CC5C */ ADD SP, #8
 /* 0801CC5E */ POP {R4, R5}
 /* 0801CC60 */ POP {R0}

@@ -18,7 +18,7 @@ glabel func_080B2600
 /* 080B2616 */ MOVS R0, #2
 /* 080B2618 */ MOVS R1, #4
 /* 080B261A */ MOVS R2, #1
-/* 080B261C */ BL func_08001964
+/* 080B261C */ BL start_pal_interp_pal_pal_task
 /* 080B2620 */ ADDS R6, R0, #0
 /* 080B2622 */ LDR R3, _080B2674
 /* 080B2624 */ ADDS R0, R3, #0
@@ -31,7 +31,7 @@ glabel func_080B2600
 /* 080B2632 */ MOVS R0, #2
 /* 080B2634 */ MOVS R1, #4
 /* 080B2636 */ MOVS R2, #1
-/* 080B2638 */ BL func_08001964
+/* 080B2638 */ BL start_pal_interp_pal_pal_task
 /* 080B263C */ LDR R5, _080B2678
 /* 080B263E */ LDR R0, [R5]
 /* 080B2640 */ MOVS R4, #0XE0

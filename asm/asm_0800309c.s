@@ -20,7 +20,7 @@ glabel func_0800309C
 /* 080030B4 */ BNE _080030C0
 /* 080030B6 */ MOVS R3, #0
 /* 080030B8 */ B _080030D8
-/* 080030BA */ MOVS R0, R0
+/* 080030BA */ // padding
 
 .balign 4, 0
 _080030BC:

@@ -87,7 +87,7 @@ _0800C4B8:
 /* 0800C4C4 */ STR R2, [SP]
 /* 0800C4C6 */ ADD R2, SP, #4
 /* 0800C4C8 */ MOVS R3, #0
-/* 0800C4CA */ BL func_08005790
+/* 0800C4CA */ BL start_new_task
 /* 0800C4CE */ ADD SP, #0X14
 /* 0800C4D0 */ POP {R4, R5, R6, R7}
 /* 0800C4D2 */ POP {R1}
