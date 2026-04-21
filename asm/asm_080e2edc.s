@@ -124,7 +124,7 @@ _080E2FA8:
 
 .balign 4, 0
 _080E2FAC:
-/* 080E2FAC */ .word D_03004000
+/* 080E2FAC */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080E2FB0:

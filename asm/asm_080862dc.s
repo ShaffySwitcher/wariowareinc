@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_080862DC
-/* 080862DC */ LDR R1, =D_03004000
+/* 080862DC */ LDR R1, =gGraphicsBuffer
 /* 080862DE */ ADDS R3, R1, #0
 /* 080862E0 */ ADDS R3, #0X4C
 /* 080862E2 */ MOVS R2, #0XC4

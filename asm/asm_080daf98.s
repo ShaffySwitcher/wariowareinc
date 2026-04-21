@@ -110,7 +110,7 @@ _080DB050:
 
 .balign 4, 0
 _080DB054:
-/* 080DB054 */ .word D_03004000
+/* 080DB054 */ .word gGraphicsBuffer
 _080DB058:
 /* 080DB058 */ LSLS R0, R1, #0X18
 /* 080DB05A */ LSRS R3, R0, #0X18

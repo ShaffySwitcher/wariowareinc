@@ -241,7 +241,7 @@ _0800EA20:
 
 .balign 4, 0
 _0800EA24:
-/* 0800EA24 */ .word D_03004000
+/* 0800EA24 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0800EA28:

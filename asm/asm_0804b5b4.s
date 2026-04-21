@@ -31,7 +31,7 @@ glabel func_0804B5B4
 /* 0804B5E2 */ STR R0, [R3, #0X6C]
 /* 0804B5E4 */ MOVS R6, #1
 _0804B5E6:
-/* 0804B5E6 */ LDR R2, =D_03004000
+/* 0804B5E6 */ LDR R2, =gGraphicsBuffer
 /* 0804B5E8 */ LDR R1, [R5]
 /* 0804B5EA */ LDR R0, [R1, #0X6C]
 /* 0804B5EC */ ASRS R0, R0, #8

@@ -41,7 +41,7 @@ _0801EFE8:
 
 .balign 4, 0
 _0801EFEC:
-/* 0801EFEC */ .word D_03004000
+/* 0801EFEC */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0801EFF0:

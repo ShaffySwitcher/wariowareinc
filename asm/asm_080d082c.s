@@ -27,7 +27,7 @@ glabel func_080D082C
 
 .balign 4, 0
 _080D0854:
-/* 080D0854 */ .word D_03004000
+/* 080D0854 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080D0858:

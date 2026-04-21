@@ -108,7 +108,7 @@ _080D2192:
 
 .balign 4, 0
 _080D2200:
-/* 080D2200 */ .word D_03004000
+/* 080D2200 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080D2204:

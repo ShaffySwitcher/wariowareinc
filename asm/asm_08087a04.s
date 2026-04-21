@@ -38,7 +38,7 @@ _08087A22:
 
 .balign 4, 0
 _08087A38:
-/* 08087A38 */ .word D_03004000
+/* 08087A38 */ .word gGraphicsBuffer
 _08087A3C:
 /* 08087A3C */ BL func_08087688
 /* 08087A40 */ MOVS R5, #0

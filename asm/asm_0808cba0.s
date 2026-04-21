@@ -235,7 +235,7 @@ _0808CD20:
 
 .balign 4, 0
 _0808CD24:
-/* 0808CD24 */ .word D_03004000
+/* 0808CD24 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0808CD28:

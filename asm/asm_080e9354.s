@@ -72,7 +72,7 @@ _080E93BA:
 
 .balign 4, 0
 _080E93C0:
-/* 080E93C0 */ .word D_03004000
+/* 080E93C0 */ .word gGraphicsBuffer
 _080E93C4:
 /* 080E93C4 */ LDR R1, _080E9428
 /* 080E93C6 */ ADDS R0, R4, R1
@@ -303,7 +303,7 @@ _080E9546:
 
 .balign 4, 0
 _080E9550:
-/* 080E9550 */ .word D_03004000
+/* 080E9550 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080E9554:

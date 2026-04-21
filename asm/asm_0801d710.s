@@ -15,7 +15,7 @@ glabel func_0801D710
 /* 0801D71E */ LDR R0, [R1, #0XC]
 /* 0801D720 */ ADDS R0, #1
 /* 0801D722 */ STR R0, [R1, #0XC]
-/* 0801D724 */ LDR R2, =D_03004000
+/* 0801D724 */ LDR R2, =gGraphicsBuffer
 /* 0801D726 */ MOVS R1, #2
 /* 0801D728 */ ANDS R0, R1
 /* 0801D72A */ STRH R0, [R2, #0XE]

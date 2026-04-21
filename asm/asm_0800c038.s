@@ -39,7 +39,7 @@ _0800C06C:
 
 .balign 4, 0
 _0800C074:
-/* 0800C074 */ .word D_03004000
+/* 0800C074 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0800C078:

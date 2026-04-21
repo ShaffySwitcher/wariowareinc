@@ -55,7 +55,7 @@ glabel func_08006A5C
 
 .balign 4, 0
 _08006AC0:
-/* 08006AC0 */ .word D_03004000
+/* 08006AC0 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _08006AC4:
@@ -88,7 +88,7 @@ _08006AD8:
 _08006AEA:
 /* 08006AEA */ MOVS R0, #0X80
 /* 08006AEC */ LSLS R0, R0, #0X13
-/* 08006AEE */ LDR R1, =D_03004000
+/* 08006AEE */ LDR R1, =gGraphicsBuffer
 /* 08006AF0 */ LDRH R1, [R1]
 /* 08006AF2 */ STRH R1, [R0]
 _08006AF4:

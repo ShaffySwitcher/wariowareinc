@@ -121,6 +121,6 @@ _0805C144:
 
 .balign 4, 0
 _0805C148:
-/* 0805C148 */ .word D_03004000
+/* 0805C148 */ .word gGraphicsBuffer
 .ltorg
 .end

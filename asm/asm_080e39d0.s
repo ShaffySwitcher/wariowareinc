@@ -47,7 +47,7 @@ _080E3A14:
 
 .balign 4, 0
 _080E3A18:
-/* 080E3A18 */ .word D_03004000
+/* 080E3A18 */ .word gGraphicsBuffer
 _080E3A1C:
 /* 080E3A1C */ CMP R3, #0X3C
 /* 080E3A1E */ BNE _080E3A3C
@@ -66,7 +66,7 @@ _080E3A1C:
 
 .balign 4, 0
 _080E3A38:
-/* 080E3A38 */ .word D_03004000
+/* 080E3A38 */ .word gGraphicsBuffer
 _080E3A3C:
 /* 080E3A3C */ CMP R3, #0X5A
 /* 080E3A3E */ BNE _080E3A60
@@ -88,9 +88,9 @@ _080E3A56:
 
 .balign 4, 0
 _080E3A5C:
-/* 080E3A5C */ .word D_03004000
+/* 080E3A5C */ .word gGraphicsBuffer
 _080E3A60:
-/* 080E3A60 */ LDR R4, =D_03004000
+/* 080E3A60 */ LDR R4, =gGraphicsBuffer
 /* 080E3A62 */ CMP R3, #0X78
 /* 080E3A64 */ BNE _080E3A7C
 /* 080E3A66 */ ADDS R0, R4, #0

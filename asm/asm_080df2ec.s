@@ -90,7 +90,7 @@ _080DF3A0:
 
 .balign 4, 0
 _080DF3A4:
-/* 080DF3A4 */ .word D_03004000
+/* 080DF3A4 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080DF3A8:

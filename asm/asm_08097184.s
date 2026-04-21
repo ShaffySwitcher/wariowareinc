@@ -233,7 +233,7 @@ _08097314:
 
 .balign 4, 0
 _08097318:
-/* 08097318 */ .word D_03004000
+/* 08097318 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0809731C:
@@ -310,7 +310,7 @@ _080973A4:
 
 .balign 4, 0
 _080973A8:
-/* 080973A8 */ .word D_03004000
+/* 080973A8 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080973AC:
@@ -383,7 +383,7 @@ _08097424:
 
 .balign 4, 0
 _08097428:
-/* 08097428 */ .word D_03004000
+/* 08097428 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0809742C:
@@ -486,7 +486,7 @@ _080974D0:
 
 .balign 4, 0
 _080974D4:
-/* 080974D4 */ .word D_03004000
+/* 080974D4 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080974D8:
@@ -552,7 +552,7 @@ _08097520:
 
 .balign 4, 0
 _08097548:
-/* 08097548 */ .word D_03004000
+/* 08097548 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0809754C:
@@ -949,7 +949,7 @@ _080977D4:
 
 .balign 4, 0
 _080977D8:
-/* 080977D8 */ .word D_03004000
+/* 080977D8 */ .word gGraphicsBuffer
 _080977DC:
 /* 080977DC */ LDR R2, _08097818
 /* 080977DE */ MOVS R1, #0XA0
@@ -984,7 +984,7 @@ _080977DC:
 
 .balign 4, 0
 _08097818:
-/* 08097818 */ .word D_03004000
+/* 08097818 */ .word gGraphicsBuffer
 _0809781C:
 /* 0809781C */ LDR R0, _0809782C
 /* 0809781E */ CMP R2, R0
@@ -1206,7 +1206,7 @@ _080979B0:
 
 .balign 4, 0
 _080979B4:
-/* 080979B4 */ .word D_03004000
+/* 080979B4 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080979B8:

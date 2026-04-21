@@ -46,7 +46,7 @@ _08020194:
 
 .balign 4, 0
 _0802018C:
-/* 0802018C */ .word D_03004000
+/* 0802018C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _08020190:

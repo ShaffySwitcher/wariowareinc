@@ -104,7 +104,7 @@ _08079DA4:
 
 .balign 4, 0
 _08079DA8:
-/* 08079DA8 */ .word D_03004000
+/* 08079DA8 */ .word gGraphicsBuffer
 _08079DAC:
 /* 08079DAC */ MOVS R5, #0
 /* 08079DAE */ MOVS R0, #0X10
@@ -156,6 +156,6 @@ _08079E08:
 
 .balign 4, 0
 _08079E04:
-/* 08079E04 */ .word D_03004000
+/* 08079E04 */ .word gGraphicsBuffer
 .ltorg
 .end

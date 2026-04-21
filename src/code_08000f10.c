@@ -1,11 +1,11 @@
 #include "code_08000f10.h"
 
 static volatile u16 sVBlankFlag;
-static u32 D_03000004;
+static void (*D_03000004)(void);
 
 void func_08000F10(void) {
     sVBlankFlag = FALSE;
-    D_03000004 = 0;
+    D_03000004 = NULL;
 }
 
 void func_08000F28(void) {
@@ -23,8 +23,8 @@ void vblank_wait(void) {
     sVBlankFlag = FALSE;
 }
 
-void func_08000F74(u32 arg0) {
-    D_03000004 = arg0;
+void func_08000F74(void (*callback)(void)) {
+    D_03000004 = callback;
 }
 
 void update_key_buffers() {

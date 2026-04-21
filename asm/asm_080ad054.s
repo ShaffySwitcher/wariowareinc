@@ -402,7 +402,7 @@ _080AD3C0:
 
 .balign 4, 0
 _080AD370:
-/* 080AD370 */ .word D_03004000
+/* 080AD370 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080AD374:

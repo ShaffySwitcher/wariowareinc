@@ -435,7 +435,7 @@ _0804B508:
 
 .balign 4, 0
 _0804B50C:
-/* 0804B50C */ .word D_03004000
+/* 0804B50C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0804B510:

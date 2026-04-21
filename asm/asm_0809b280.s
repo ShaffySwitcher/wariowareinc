@@ -32,7 +32,7 @@ _0809B2AC:
 
 .balign 4, 0
 _0809B2B0:
-/* 0809B2B0 */ .word D_03004000
+/* 0809B2B0 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0809B2B4:

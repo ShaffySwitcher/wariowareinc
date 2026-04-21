@@ -246,7 +246,7 @@ _080A1E98:
 
 .balign 4, 0
 _080A1E9C:
-/* 080A1E9C */ .word D_03004000
+/* 080A1E9C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080A1EA0:

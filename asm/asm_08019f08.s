@@ -57,7 +57,7 @@ _08019F74:
 
 .balign 4, 0
 _08019F6C:
-/* 08019F6C */ .word D_03004000
+/* 08019F6C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _08019F70:

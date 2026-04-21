@@ -34,7 +34,7 @@ glabel func_080E99E0
 
 .balign 4, 0
 _080E9A14:
-/* 080E9A14 */ .word D_03004000
+/* 080E9A14 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080E9A18:

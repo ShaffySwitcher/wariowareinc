@@ -7,7 +7,7 @@
 glabel func_0809F558
 /* 0809F558 */ PUSH {R4, R5, LR}
 /* 0809F55A */ MOVS R5, #4
-/* 0809F55C */ LDR R3, =D_03004000
+/* 0809F55C */ LDR R3, =gGraphicsBuffer
 /* 0809F55E */ ADDS R4, R3, #0
 /* 0809F560 */ ADDS R4, #0X54
 /* 0809F562 */ MOVS R0, #0XA2

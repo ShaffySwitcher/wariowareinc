@@ -40,7 +40,7 @@ _0800C026:
 
 .balign 4, 0
 _0800C02C:
-/* 0800C02C */ .word D_03004000
+/* 0800C02C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0800C030:

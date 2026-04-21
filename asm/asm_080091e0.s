@@ -133,7 +133,7 @@ _080092C8:
 
 .balign 4, 0
 _080092CC:
-/* 080092CC */ .word D_03004000
+/* 080092CC */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080092D0:

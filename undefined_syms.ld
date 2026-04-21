@@ -14,7 +14,13 @@ gPrevKeys = 0x03003FC0;
 gKeyRepeatTimer = 0x03003FC4;
 gCurrentKeys = 0x03003FC8;
 gPressedKeys = 0x03003FF4;
+gGraphicsBuffer = 0x03004000;
 gRepeatedKeys = 0x03004884;
+D_03006524 = 0x03006524;
+D_03006528 = 0x03006528;
+D_0300652C = 0x0300652C;
+
+func_08003FB8 = 0x08003FB8;
 
 start_new_task = 0x08005790;
 mem_heap_alloc = 0x08006174;

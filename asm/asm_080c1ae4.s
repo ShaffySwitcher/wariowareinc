@@ -28,9 +28,9 @@ _080C1B04:
 
 .balign 4, 0
 _080C1B08:
-/* 080C1B08 */ .word D_03004000
+/* 080C1B08 */ .word gGraphicsBuffer
 _080C1B0C:
-/* 080C1B0C */ LDR R0, =D_03004000
+/* 080C1B0C */ LDR R0, =gGraphicsBuffer
 /* 080C1B0E */ ADDS R1, R0, #0
 /* 080C1B10 */ ADDS R1, #0X94
 _080C1B12:

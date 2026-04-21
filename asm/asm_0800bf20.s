@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_0800BF20
-/* 0800BF20 */ LDR R2, =D_03004000
+/* 0800BF20 */ LDR R2, =gGraphicsBuffer
 /* 0800BF22 */ MOVS R1, #0X80
 /* 0800BF24 */ LSLS R1, R1, #1
 /* 0800BF26 */ LSLS R1, R0

@@ -114,7 +114,7 @@ _08018F94:
 
 .balign 4, 0
 _08018F98:
-/* 08018F98 */ .word D_03004000
+/* 08018F98 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _08018F9C:

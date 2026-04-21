@@ -45,7 +45,7 @@ glabel func_08020AFC
 
 .balign 4, 0
 _08020B54:
-/* 08020B54 */ .word D_03004000
+/* 08020B54 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _08020B58:

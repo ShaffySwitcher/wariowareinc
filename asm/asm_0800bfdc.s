@@ -14,7 +14,7 @@ glabel func_0800BFDC
 
 .balign 4, 0
 _0800BFE8:
-/* 0800BFE8 */ .word D_03004000
+/* 0800BFE8 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0800BFEC:

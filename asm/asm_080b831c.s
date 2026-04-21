@@ -28,6 +28,6 @@ _080B8340:
 
 .balign 4, 0
 _080B833C:
-/* 080B833C */ .word D_03004000
+/* 080B833C */ .word gGraphicsBuffer
 .ltorg
 .end

@@ -42,6 +42,6 @@ _08013A90:
 
 .balign 4, 0
 _08013A8C:
-/* 08013A8C */ .word D_03004000
+/* 08013A8C */ .word gGraphicsBuffer
 .ltorg
 .end

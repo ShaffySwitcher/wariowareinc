@@ -44,7 +44,7 @@ _080EC4C0:
 
 .balign 4, 0
 _080EC4C4:
-/* 080EC4C4 */ .word D_03004000
+/* 080EC4C4 */ .word gGraphicsBuffer
 _080EC4C8:
 /* 080EC4C8 */ MOVS R0, #1
 _080EC4CA:

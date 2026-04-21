@@ -484,7 +484,7 @@ _0800E2E8:
 
 .balign 4, 0
 _0800E2EC:
-/* 0800E2EC */ .word D_03004000
+/* 0800E2EC */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0800E2F0:

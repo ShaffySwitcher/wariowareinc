@@ -167,7 +167,7 @@ _080138DC:
 
 .balign 4, 0
 _080138E0:
-/* 080138E0 */ .word D_03004000
+/* 080138E0 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080138E4:

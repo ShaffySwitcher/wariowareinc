@@ -105,7 +105,7 @@ _08091F48:
 
 .balign 4, 0
 _08091F4C:
-/* 08091F4C */ .word D_03004000
+/* 08091F4C */ .word gGraphicsBuffer
 _08091F50:
 /* 08091F50 */ CMP R0, #1
 /* 08091F52 */ BNE _08091F6C
@@ -122,7 +122,7 @@ _08091F50:
 
 .balign 4, 0
 _08091F68:
-/* 08091F68 */ .word D_03004000
+/* 08091F68 */ .word gGraphicsBuffer
 _08091F6C:
 /* 08091F6C */ LDR R2, _08091FA4
 /* 08091F6E */ ADDS R0, R2, #0
@@ -154,7 +154,7 @@ _08091F7E:
 
 .balign 4, 0
 _08091FA4:
-/* 08091FA4 */ .word D_03004000
+/* 08091FA4 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _08091FA8:

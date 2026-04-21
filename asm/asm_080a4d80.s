@@ -101,11 +101,11 @@ _080A4E2C:
 
 .balign 4, 0
 _080A4E30:
-/* 080A4E30 */ .word D_03004000
+/* 080A4E30 */ .word gGraphicsBuffer
 _080A4E34:
 /* 080A4E34 */ LDR R0, _080A4E50
 /* 080A4E36 */ BL func_0800C7FC
-/* 080A4E3A */ LDR R0, =D_03004000
+/* 080A4E3A */ LDR R0, =gGraphicsBuffer
 /* 080A4E3C */ ADDS R1, R0, #0
 /* 080A4E3E */ ADDS R1, #0X94
 /* 080A4E40 */ LDRH R1, [R1]

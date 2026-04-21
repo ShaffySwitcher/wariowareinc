@@ -54,7 +54,7 @@ _080222CC:
 
 .balign 4, 0
 _080222C0:
-/* 080222C0 */ .word D_03004000
+/* 080222C0 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080222C4:

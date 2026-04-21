@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_080A2524
-/* 080A2524 */ LDR R0, =D_03004000
+/* 080A2524 */ LDR R0, =gGraphicsBuffer
 /* 080A2526 */ ADDS R1, R0, #0
 /* 080A2528 */ ADDS R1, #0X4C
 /* 080A252A */ MOVS R2, #0

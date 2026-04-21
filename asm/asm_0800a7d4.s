@@ -1321,7 +1321,7 @@ _0800B07A:
 
 .balign 4, 0
 _0800B094:
-/* 0800B094 */ .word D_03004000
+/* 0800B094 */ .word gGraphicsBuffer
 _0800B098:
 /* 0800B098 */ LDR R0, [R7]
 /* 0800B09A */ ADD R0, R8
@@ -1424,7 +1424,7 @@ _0800B140:
 
 .balign 4, 0
 _0800B150:
-/* 0800B150 */ .word D_03004000
+/* 0800B150 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0800B154:

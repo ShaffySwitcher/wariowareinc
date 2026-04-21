@@ -178,7 +178,7 @@ _080DC404:
 
 .balign 4, 0
 _080DC408:
-/* 080DC408 */ .word D_03004000
+/* 080DC408 */ .word gGraphicsBuffer
 _080DC40C:
 /* 080DC40C */ SUBS R0, R1, #5
 /* 080DC40E */ LSLS R0, R0, #0X18
@@ -198,7 +198,7 @@ _080DC40C:
 
 .balign 4, 0
 _080DC42C:
-/* 080DC42C */ .word D_03004000
+/* 080DC42C */ .word gGraphicsBuffer
 _080DC430:
 /* 080DC430 */ ADDS R0, R1, #0
 /* 080DC432 */ SUBS R0, #0XC
@@ -206,7 +206,7 @@ _080DC430:
 /* 080DC436 */ LSRS R0, R0, #0X18
 /* 080DC438 */ CMP R0, #2
 /* 080DC43A */ BHI _080DC452
-/* 080DC43C */ LDR R2, =D_03004000
+/* 080DC43C */ LDR R2, =gGraphicsBuffer
 /* 080DC43E */ ADDS R1, R2, #0
 /* 080DC440 */ ADDS R1, #0X4C
 /* 080DC442 */ MOVS R0, #0XC2

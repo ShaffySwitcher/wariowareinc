@@ -315,7 +315,7 @@ _0802E204:
 
 .balign 4, 0
 _0802E260:
-/* 0802E260 */ .word D_03004000
+/* 0802E260 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0802E264:

@@ -24,11 +24,11 @@ _080BE8F8:
 
 .balign 4, 0
 _080BE8FC:
-/* 080BE8FC */ .word D_03004000
+/* 080BE8FC */ .word gGraphicsBuffer
 _080BE900:
 /* 080BE900 */ CMP R0, #2
 /* 080BE902 */ BNE _080BE91A
-/* 080BE904 */ LDR R2, =D_03004000
+/* 080BE904 */ LDR R2, =gGraphicsBuffer
 /* 080BE906 */ ADDS R1, R2, #0
 /* 080BE908 */ ADDS R1, #0X4C
 /* 080BE90A */ MOVS R0, #0XC2

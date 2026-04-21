@@ -46,7 +46,7 @@ glabel func_0804B538
 /* 0804B584 */ MOVS R1, #1
 /* 0804B586 */ MOV IP, R1
 _0804B588:
-/* 0804B588 */ LDR R2, =D_03004000
+/* 0804B588 */ LDR R2, =gGraphicsBuffer
 /* 0804B58A */ LDR R1, [R6]
 /* 0804B58C */ LDR R0, [R1, #0X6C]
 /* 0804B58E */ ASRS R0, R0, #8

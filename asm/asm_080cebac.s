@@ -147,7 +147,7 @@ _080CECD4:
 
 .balign 4, 0
 _080CECD8:
-/* 080CECD8 */ .word D_03004000
+/* 080CECD8 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080CECDC:

@@ -56,7 +56,7 @@ _08024768:
 
 .balign 4, 0
 _0802475C:
-/* 0802475C */ .word D_03004000
+/* 0802475C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _08024760:

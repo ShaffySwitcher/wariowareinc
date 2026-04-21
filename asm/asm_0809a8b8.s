@@ -546,7 +546,7 @@ _0809ACE4:
 
 .balign 4, 0
 _0809ACE8:
-/* 0809ACE8 */ .word D_03004000
+/* 0809ACE8 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0809ACEC:

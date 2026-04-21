@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0808EBF8
 /* 0808EBF8 */ PUSH {LR}
-/* 0808EBFA */ LDR R0, =D_03004000
+/* 0808EBFA */ LDR R0, =gGraphicsBuffer
 /* 0808EBFC */ ADDS R1, R0, #0
 /* 0808EBFE */ ADDS R1, #0X4C
 /* 0808EC00 */ MOVS R2, #0

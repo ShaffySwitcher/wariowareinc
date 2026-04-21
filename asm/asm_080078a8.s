@@ -39,7 +39,7 @@ glabel func_080078A8
 
 .balign 4, 0
 _080078E8:
-/* 080078E8 */ .word D_03004000
+/* 080078E8 */ .word gGraphicsBuffer
 _080078EC:
 /* 080078EC */ CMP R0, #0X80
 /* 080078EE */ BEQ _08007910
@@ -50,7 +50,7 @@ _080078EC:
 
 .balign 4, 0
 _080078F8:
-/* 080078F8 */ .word D_03004000
+/* 080078F8 */ .word gGraphicsBuffer
 _080078FC:
 /* 080078FC */ LDR R1, _0800790C
 /* 080078FE */ LSLS R0, R3, #8
@@ -63,9 +63,9 @@ _080078FC:
 
 .balign 4, 0
 _0800790C:
-/* 0800790C */ .word D_03004000
+/* 0800790C */ .word gGraphicsBuffer
 _08007910:
-/* 08007910 */ LDR R1, =D_03004000
+/* 08007910 */ LDR R1, =gGraphicsBuffer
 /* 08007912 */ ADDS R0, R1, #0
 /* 08007914 */ ADDS R0, #0X50
 /* 08007916 */ STRH R3, [R0]

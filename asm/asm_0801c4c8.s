@@ -56,7 +56,7 @@ _0801C53C:
 
 .balign 4, 0
 _0801C530:
-/* 0801C530 */ .word D_03004000
+/* 0801C530 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0801C534:

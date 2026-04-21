@@ -13,7 +13,7 @@ glabel func_0805CB5C
 
 .balign 4, 0
 _0805CB68:
-/* 0805CB68 */ .word D_03004000
+/* 0805CB68 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0805CB6C:

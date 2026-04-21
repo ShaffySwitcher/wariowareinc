@@ -96,7 +96,7 @@ _08007A2C:
 /* 08007A92 */ ADD R2, SP, #4
 /* 08007A94 */ MOVS R3, #0
 /* 08007A96 */ BL start_new_task
-/* 08007A9A */ LDR R2, =D_03004000
+/* 08007A9A */ LDR R2, =gGraphicsBuffer
 /* 08007A9C */ MOVS R0, #0X80
 /* 08007A9E */ LSLS R0, R0, #6
 /* 08007AA0 */ MOV R1, SL

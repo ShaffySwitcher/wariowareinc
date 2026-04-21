@@ -123,7 +123,7 @@ _080E77A8:
 
 .balign 4, 0
 _080E77AC:
-/* 080E77AC */ .word D_03004000
+/* 080E77AC */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080E77B0:

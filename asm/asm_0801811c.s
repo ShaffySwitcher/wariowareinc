@@ -32,7 +32,7 @@ glabel func_0801811C
 /* 0801814C */ STRH R1, [R2]
 /* 0801814E */ ADDS R0, #0XDC
 /* 08018150 */ STRH R4, [R0]
-/* 08018152 */ LDR R0, =D_03004000
+/* 08018152 */ LDR R0, =gGraphicsBuffer
 /* 08018154 */ STRH R1, [R0, #0XC]
 /* 08018156 */ POP {R4, R5}
 /* 08018158 */ POP {R0}

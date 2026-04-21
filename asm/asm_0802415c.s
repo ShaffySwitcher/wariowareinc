@@ -32,6 +32,6 @@ _0802417C:
 
 .balign 4, 0
 _08024180:
-/* 08024180 */ .word D_03004000
+/* 08024180 */ .word gGraphicsBuffer
 .ltorg
 .end

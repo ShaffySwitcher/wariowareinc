@@ -500,7 +500,7 @@ _080B5C88:
 
 .balign 4, 0
 _080B5C8C:
-/* 080B5C8C */ .word D_03004000
+/* 080B5C8C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _080B5C90:

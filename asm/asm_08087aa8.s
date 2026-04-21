@@ -30,7 +30,7 @@ _08087ACC:
 
 .balign 4, 0
 _08087AD0:
-/* 08087AD0 */ .word D_03004000
+/* 08087AD0 */ .word gGraphicsBuffer
 _08087AD4:
 /* 08087AD4 */ ADDS R1, #0X34
 /* 08087AD6 */ MOVS R0, #0

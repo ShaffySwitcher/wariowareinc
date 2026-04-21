@@ -488,7 +488,7 @@ _0807AF38:
 
 .balign 4, 0
 _0807AF3C:
-/* 0807AF3C */ .word D_03004000
+/* 0807AF3C */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0807AF40:

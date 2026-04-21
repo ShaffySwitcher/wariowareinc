@@ -38,4 +38,4 @@ extern void func_080F3C60();
 extern void func_080F3C78();
 extern void func_080F3A90();
 
-void func_080001D4(void);
+extern void func_080001D4(void);

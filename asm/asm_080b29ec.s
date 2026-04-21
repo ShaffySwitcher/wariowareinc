@@ -44,7 +44,7 @@ _080B2A28:
 
 .balign 4, 0
 _080B2A2C:
-/* 080B2A2C */ .word D_03004000
+/* 080B2A2C */ .word gGraphicsBuffer
 _080B2A30:
 /* 080B2A30 */ LDR R0, =D_083A4A7C
 /* 080B2A32 */ LDR R0, [R0]

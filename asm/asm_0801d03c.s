@@ -87,7 +87,7 @@ _0801D0CC:
 
 .balign 4, 0
 _0801D0D0:
-/* 0801D0D0 */ .word D_03004000
+/* 0801D0D0 */ .word gGraphicsBuffer
 
 .balign 4, 0
 _0801D0D4:
