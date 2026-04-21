@@ -29,26 +29,7 @@ SECTIONS {
         build/asm/asm_080020c8.s.o(.text*);
         build/asm/asm_080020e0.s.o(.text*);
         build/asm/asm_080020fc.s.o(.text*);
-        build/asm/asm_0800210c.s.o(.text*);
-        build/asm/asm_08002124.s.o(.text*);
-        build/asm/asm_080021c8.s.o(.text*);
-        build/asm/asm_08002468.s.o(.text*);
-        build/asm/asm_08002470.s.o(.text*);
-        build/asm/asm_0800247c.s.o(.text*);
-        build/asm/asm_080024a4.s.o(.text*);
-        build/asm/asm_080024d0.s.o(.text*);
-        build/asm/asm_080024e4.s.o(.text*);
-        build/asm/asm_080024fc.s.o(.text*);
-        build/asm/asm_08002514.s.o(.text*);
-        build/asm/asm_08002530.s.o(.text*);
-        build/asm/asm_08002568.s.o(.text*);
-        build/asm/asm_08002584.s.o(.text*);
-        build/asm/asm_08002598.s.o(.text*);
-        build/asm/asm_080025bc.s.o(.text*);
-        build/asm/asm_080025f8.s.o(.text*);
-        build/asm/asm_08002600.s.o(.text*);
-        build/asm/asm_0800260c.s.o(.text*);
-        build/asm/asm_08002614.s.o(.text*);
+        build/src/graphics_table.c.o(.text);
         build/asm/asm_08002620.s.o(.text*);
         build/asm/asm_08002654.s.o(.text*);
         build/asm/asm_080026bc.s.o(.text*);
@@ -5725,11 +5706,13 @@ SECTIONS {
         build/src/palette.c.o(.data);
 
         build/bin/data_083A4494.bin.o(.rodata*);
-        build/audio/sample_table.json.s.o(.data);
+        build/audio/songs.c.o(.data);
     }
 
 /* to-do: fix this horrible hack */
 .midirom ALIGN(4) : SUBALIGN(4) {
+        build/bin/data_083FA3D0.bin.o(.rodata*);
+        build/audio/sample_table.json.s.o(.data);
         build/audio/sequences/x_TEST.mid.o(.rodata*);
         build/audio/sequences/m_x_BGM_BOMB_2bar.mid.o(.rodata*);
         build/audio/sequences/m_x_BGM_BOMB_4bar.mid.o(.rodata*);
