@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_08020C68
 /* 08020C68 */ PUSH {LR}
-/* 08020C6A */ LDR R0, =D_083A3D90
+/* 08020C6A */ LDR R0, =gGameplayDataPtr
 /* 08020C6C */ LDR R2, [R0]
 /* 08020C6E */ MOVS R1, #0XBE
 /* 08020C70 */ LSLS R1, R1, #1

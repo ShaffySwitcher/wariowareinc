@@ -200,7 +200,7 @@ _0803F4B8:
 
 .balign 4, 0
 _0803F4BC:
-/* 0803F4BC */ .word D_083A3D90
+/* 0803F4BC */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0803F4C0:

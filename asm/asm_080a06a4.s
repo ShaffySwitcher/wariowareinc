@@ -42,7 +42,7 @@ _080A06E4:
 
 .balign 4, 0
 _080A06E8:
-/* 080A06E8 */ .word D_083A3D90
+/* 080A06E8 */ .word gGameplayDataPtr
 _080A06EC:
 /* 080A06EC */ ADDS R4, #0X21
 /* 080A06EE */ LDR R0, _080A0770
@@ -114,6 +114,6 @@ _080A0774:
 
 .balign 4, 0
 _080A0770:
-/* 080A0770 */ .word D_083A3D90
+/* 080A0770 */ .word gGameplayDataPtr
 .ltorg
 .end

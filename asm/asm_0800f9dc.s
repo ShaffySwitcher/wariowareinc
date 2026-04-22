@@ -49,7 +49,7 @@ _0800FA1A:
 
 .balign 4, 0
 _0800FA2C:
-/* 0800FA2C */ .word D_083A3D90
+/* 0800FA2C */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800FA30:

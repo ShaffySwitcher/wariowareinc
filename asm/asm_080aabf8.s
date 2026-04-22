@@ -30,7 +30,7 @@ _080AAC1C:
 
 .balign 4, 0
 _080AAC20:
-/* 080AAC20 */ .word D_083A3D90
+/* 080AAC20 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080AAC24:
@@ -73,7 +73,7 @@ _080AAC6C:
 
 .balign 4, 0
 _080AAC64:
-/* 080AAC64 */ .word D_083A3D90
+/* 080AAC64 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080AAC68:

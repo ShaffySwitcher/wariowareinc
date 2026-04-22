@@ -32,7 +32,7 @@ _08020BC4:
 
 .balign 4, 0
 _08020BC8:
-/* 08020BC8 */ .word D_083A3D90
+/* 08020BC8 */ .word gGameplayDataPtr
 _08020BCC:
 /* 08020BCC */ LSLS R0, R4, #0X10
 /* 08020BCE */ LDR R1, _08020BD4

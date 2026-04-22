@@ -62,7 +62,7 @@ _080ACD28:
 
 .balign 4, 0
 _080ACD20:
-/* 080ACD20 */ .word D_083A3D90
+/* 080ACD20 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080ACD24:

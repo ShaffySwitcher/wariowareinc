@@ -107,7 +107,7 @@ _080BA0E4:
 
 .balign 4, 0
 _080BA0E8:
-/* 080BA0E8 */ .word D_083A3D90
+/* 080BA0E8 */ .word gGameplayDataPtr
 _080BA0EC:
 /* 080BA0EC */ MOVS R0, #0X96
 /* 080BA0EE */ LSLS R0, R0, #3
@@ -210,7 +210,7 @@ _080BA19C:
 
 .balign 4, 0
 _080BA1A0:
-/* 080BA1A0 */ .word D_083A3D90
+/* 080BA1A0 */ .word gGameplayDataPtr
 _080BA1A4:
 /* 080BA1A4 */ CMP R6, #4
 /* 080BA1A6 */ BLS _080BA1B4
@@ -393,7 +393,7 @@ _080BA304:
 
 .balign 4, 0
 _080BA308:
-/* 080BA308 */ .word D_083A3D90
+/* 080BA308 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080BA30C:

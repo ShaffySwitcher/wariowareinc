@@ -100,7 +100,7 @@ _080C1C60:
 
 .balign 4, 0
 _080C1C64:
-/* 080C1C64 */ .word D_083A3D90
+/* 080C1C64 */ .word gGameplayDataPtr
 _080C1C68:
 /* 080C1C68 */ CMP R0, #2
 /* 080C1C6A */ BNE _080C1C82
@@ -482,7 +482,7 @@ _080C1F4C:
 
 .balign 4, 0
 _080C1F50:
-/* 080C1F50 */ .word D_083A3D90
+/* 080C1F50 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080C1F54:

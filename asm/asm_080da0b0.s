@@ -7,7 +7,7 @@
 glabel func_080DA0B0
 /* 080DA0B0 */ LDR R0, _080DA0C4
 /* 080DA0B2 */ LDR R2, [R0]
-/* 080DA0B4 */ LDR R0, =D_083A3D90
+/* 080DA0B4 */ LDR R0, =gGameplayDataPtr
 /* 080DA0B6 */ LDR R0, [R0]
 /* 080DA0B8 */ LDRH R1, [R0, #0X16]
 /* 080DA0BA */ LDR R0, [R2, #0X14]

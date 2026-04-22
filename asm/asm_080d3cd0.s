@@ -91,7 +91,7 @@ _080D3D38:
 
 .balign 4, 0
 _080D3D6C:
-/* 080D3D6C */ .word D_083A3D90
+/* 080D3D6C */ .word gGameplayDataPtr
 _080D3D70:
 /* 080D3D70 */ CMP R0, #3
 /* 080D3D72 */ BGT _080D3D94

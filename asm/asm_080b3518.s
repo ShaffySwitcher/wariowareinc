@@ -33,7 +33,7 @@ glabel func_080B3518
 
 .balign 4, 0
 _080B354C:
-/* 080B354C */ .word D_083A3D90
+/* 080B354C */ .word gGameplayDataPtr
 _080B3550:
 /* 080B3550 */ LDR R2, _080B3554
 /* 080B3552 */ B _080B35EC

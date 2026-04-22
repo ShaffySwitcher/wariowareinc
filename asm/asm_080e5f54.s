@@ -27,7 +27,7 @@ _080E5F7C:
 
 .balign 4, 0
 _080E5F74:
-/* 080E5F74 */ .word D_083A3D90
+/* 080E5F74 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080E5F78:

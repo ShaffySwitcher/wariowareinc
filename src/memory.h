@@ -1,10 +1,9 @@
 #include "global.h"
 #include "levels.h"
+#include "gameplay.h"
 
 #define gSaveBuffer (*D_03003BBC)
 #define SAVE_BUFFER_SIZE 0x404
-
-extern u32* D_03003860;
 
 struct SaveFlagsEntry {
     u8 unk0 : 1;

@@ -185,7 +185,7 @@ _08057B1C:
 
 .balign 4, 0
 _08057B20:
-/* 08057B20 */ .word D_083A3D90
+/* 08057B20 */ .word gGameplayDataPtr
 _08057B24:
 /* 08057B24 */ ADDS R1, #1
 /* 08057B26 */ ADDS R5, #0X3C

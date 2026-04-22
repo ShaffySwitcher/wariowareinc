@@ -46,7 +46,7 @@ _080E66D0:
 
 .balign 4, 0
 _080E66D4:
-/* 080E66D4 */ .word D_083A3D90
+/* 080E66D4 */ .word gGameplayDataPtr
 _080E66D8:
 /* 080E66D8 */ CMP R2, #2
 /* 080E66DA */ BEQ _080E6728

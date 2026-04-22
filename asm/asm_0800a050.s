@@ -14,7 +14,7 @@ glabel func_0800A050
 
 .balign 4, 0
 _0800A05C:
-/* 0800A05C */ .word D_083A3D90
+/* 0800A05C */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800A060:

@@ -142,7 +142,7 @@ _080EAD70:
 
 .balign 4, 0
 _080EAD48:
-/* 080EAD48 */ .word D_083A3D90
+/* 080EAD48 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080EAD4C:

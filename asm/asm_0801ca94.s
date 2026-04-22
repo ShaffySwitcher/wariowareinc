@@ -42,7 +42,7 @@ _0801CAD0:
 
 .balign 4, 0
 _0801CAD4:
-/* 0801CAD4 */ .word D_083A3D90
+/* 0801CAD4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0801CAD8:

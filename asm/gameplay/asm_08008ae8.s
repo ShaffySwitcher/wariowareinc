@@ -1,7 +1,7 @@
 asm(".syntax unified \n\
  \n\
 thumb_func_start func_08008AE8 \n\
-/* 08008AE8 */ LDR R1, =D_083A3D90 \n\
+/* 08008AE8 */ LDR R1, =gGameplayDataPtr \n\
 /* 08008AEA */ LDR R3, [R1] \n\
 /* 08008AEC */ LDRB R1, [R3, #6] \n\
 /* 08008AEE */ MOVS R2, #0X3C \n\

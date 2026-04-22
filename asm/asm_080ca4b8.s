@@ -85,7 +85,7 @@ _080CA544:
 
 .balign 4, 0
 _080CA548:
-/* 080CA548 */ .word D_083A3D90
+/* 080CA548 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080CA54C:

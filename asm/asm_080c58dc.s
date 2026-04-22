@@ -86,7 +86,7 @@ _080C5934:
 
 .balign 4, 0
 _080C5960:
-/* 080C5960 */ .word D_083A3D90
+/* 080C5960 */ .word gGameplayDataPtr
 _080C5964:
 /* 080C5964 */ MOVS R2, #0X1A
 /* 080C5966 */ LDRSH R0, [R4, R2]
@@ -121,7 +121,7 @@ _080C598E:
 
 .balign 4, 0
 _080C59A0:
-/* 080C59A0 */ .word D_083A3D90
+/* 080C59A0 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080C59A4:

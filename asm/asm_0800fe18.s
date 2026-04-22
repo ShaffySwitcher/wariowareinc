@@ -70,7 +70,7 @@ _0800FE66:
 
 .balign 4, 0
 _0800FE9C:
-/* 0800FE9C */ .word D_083A3D90
+/* 0800FE9C */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800FEA0:

@@ -105,7 +105,7 @@ _0803CEE4:
 
 .balign 4, 0
 _0803CEE8:
-/* 0803CEE8 */ .word D_083A3D90
+/* 0803CEE8 */ .word gGameplayDataPtr
 _0803CEEC:
 /* 0803CEEC */ LDR R0, _0803CF10
 /* 0803CEEE */ ADDS R0, R2, R0
@@ -258,7 +258,7 @@ _0803CFFC:
 
 .balign 4, 0
 _0803D000:
-/* 0803D000 */ .word D_083A3D90
+/* 0803D000 */ .word gGameplayDataPtr
 _0803D004:
 /* 0803D004 */ MOV R2, SB
 /* 0803D006 */ LDR R0, [R2]

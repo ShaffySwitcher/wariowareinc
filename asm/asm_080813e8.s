@@ -27,7 +27,7 @@ _08081406:
 
 .balign 4, 0
 _0808140C:
-/* 0808140C */ .word D_083A3D90
+/* 0808140C */ .word gGameplayDataPtr
 _08081410:
 /* 08081410 */ LDR R0, _08081544
 /* 08081412 */ MOV SL, R0
@@ -203,6 +203,6 @@ _0808154C:
 
 .balign 4, 0
 _08081550:
-/* 08081550 */ .word D_083A3D90
+/* 08081550 */ .word gGameplayDataPtr
 .ltorg
 .end

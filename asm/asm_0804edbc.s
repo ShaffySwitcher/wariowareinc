@@ -33,7 +33,7 @@ _0804EDE8:
 
 .balign 4, 0
 _0804EDEC:
-/* 0804EDEC */ .word D_083A3D90
+/* 0804EDEC */ .word gGameplayDataPtr
 _0804EDF0:
 /* 0804EDF0 */ CMP R4, #2
 /* 0804EDF2 */ BEQ _0804EDFA

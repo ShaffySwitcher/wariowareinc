@@ -85,7 +85,7 @@ _080AE738:
 
 .balign 4, 0
 _080AE73C:
-/* 080AE73C */ .word D_083A3D90
+/* 080AE73C */ .word gGameplayDataPtr
 _080AE740:
 /* 080AE740 */ MOVS R5, #0
 /* 080AE742 */ ADDS R3, R6, #0
@@ -261,7 +261,7 @@ _080AE830:
 
 .balign 4, 0
 _080AE880:
-/* 080AE880 */ .word D_083A3D90
+/* 080AE880 */ .word gGameplayDataPtr
 _080AE884:
 /* 080AE884 */ MOVS R5, #0
 /* 080AE886 */ ADDS R3, R6, #0

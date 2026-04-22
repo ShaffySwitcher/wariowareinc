@@ -30,7 +30,7 @@ _080DED50:
 
 .balign 4, 0
 _080DED54:
-/* 080DED54 */ .word D_083A3D90
+/* 080DED54 */ .word gGameplayDataPtr
 _080DED58:
 /* 080DED58 */ LDR R0, _080DED8C
 /* 080DED5A */ LDR R0, [R0]
@@ -64,6 +64,6 @@ _080DED90:
 
 .balign 4, 0
 _080DED8C:
-/* 080DED8C */ .word D_083A3D90
+/* 080DED8C */ .word gGameplayDataPtr
 .ltorg
 .end

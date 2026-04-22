@@ -28,9 +28,9 @@ _080D9C44:
 
 .balign 4, 0
 _080D9C48:
-/* 080D9C48 */ .word D_083A3D90
+/* 080D9C48 */ .word gGameplayDataPtr
 _080D9C4C:
-/* 080D9C4C */ LDR R0, =D_083A3D90
+/* 080D9C4C */ LDR R0, =gGameplayDataPtr
 /* 080D9C4E */ LDR R0, [R0]
 /* 080D9C50 */ LDRH R0, [R0, #0X16]
 /* 080D9C52 */ MULS R0, R1, R0

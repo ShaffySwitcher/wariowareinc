@@ -25,7 +25,7 @@ glabel func_080D8E10
 
 .balign 4, 0
 _080D8E34:
-/* 080D8E34 */ .word D_083A3D90
+/* 080D8E34 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080D8E38:

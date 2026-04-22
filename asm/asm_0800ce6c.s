@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0800CE6C
 /* 0800CE6C */ PUSH {LR}
-/* 0800CE6E */ LDR R0, =D_083A3D90
+/* 0800CE6E */ LDR R0, =gGameplayDataPtr
 /* 0800CE70 */ LDR R0, [R0]
 /* 0800CE72 */ MOVS R2, #0XFA
 /* 0800CE74 */ LSLS R2, R2, #1

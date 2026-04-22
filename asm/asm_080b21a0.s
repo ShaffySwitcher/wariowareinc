@@ -29,7 +29,7 @@ _080B21C4:
 
 .balign 4, 0
 _080B21C8:
-/* 080B21C8 */ .word D_083A3D90
+/* 080B21C8 */ .word gGameplayDataPtr
 _080B21CC:
 /* 080B21CC */ CMP R0, #2
 /* 080B21CE */ BEQ _080B2260

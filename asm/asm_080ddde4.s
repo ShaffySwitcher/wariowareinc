@@ -42,7 +42,7 @@ _080DDE24:
 
 .balign 4, 0
 _080DDE28:
-/* 080DDE28 */ .word D_083A3D90
+/* 080DDE28 */ .word gGameplayDataPtr
 _080DDE2C:
 /* 080DDE2C */ MOVS R0, #0X15
 /* 080DDE2E */ LDRSB R0, [R4, R0]

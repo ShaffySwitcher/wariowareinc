@@ -28,7 +28,7 @@ glabel func_0809F5B4
 
 .balign 4, 0
 _0809F5DC:
-/* 0809F5DC */ .word D_083A3D90
+/* 0809F5DC */ .word gGameplayDataPtr
 _0809F5E0:
 /* 0809F5E0 */ CMP R0, #2
 /* 0809F5E2 */ BEQ _0809F620

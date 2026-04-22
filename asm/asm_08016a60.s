@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_08016A60
-/* 08016A60 */ LDR R1, =D_083A3D90
+/* 08016A60 */ LDR R1, =gGameplayDataPtr
 /* 08016A62 */ LDR R2, [R1]
 /* 08016A64 */ ADDS R2, #0X4A
 /* 08016A66 */ MOVS R1, #1

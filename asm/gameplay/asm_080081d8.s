@@ -175,7 +175,7 @@ thumb_func_start func_080081D8 \n\
  \n\
 .balign 4, 0 \n\
 _0800834C: \n\
-/* 0800834C */ .word D_083A3D90 \n\
+/* 0800834C */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _08008350: \n\

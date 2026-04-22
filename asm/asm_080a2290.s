@@ -49,7 +49,7 @@ _080A22D8:
 
 .balign 4, 0
 _080A22DC:
-/* 080A22DC */ .word D_083A3D90
+/* 080A22DC */ .word gGameplayDataPtr
 _080A22E0:
 /* 080A22E0 */ ADDS R0, R1, #0
 /* 080A22E2 */ SUBS R0, #0X88
@@ -93,7 +93,7 @@ _080A230E:
 
 .balign 4, 0
 _080A2328:
-/* 080A2328 */ .word D_083A3D90
+/* 080A2328 */ .word gGameplayDataPtr
 _080A232C:
 /* 080A232C */ LDR R2, [R5]
 /* 080A232E */ LSLS R0, R4, #3

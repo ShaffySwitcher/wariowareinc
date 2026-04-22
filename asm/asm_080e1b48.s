@@ -37,7 +37,7 @@ _080E1B7C:
 
 .balign 4, 0
 _080E1B80:
-/* 080E1B80 */ .word D_083A3D90
+/* 080E1B80 */ .word gGameplayDataPtr
 _080E1B84:
 /* 080E1B84 */ CMP R1, #2
 /* 080E1B86 */ BNE _080E1B8C

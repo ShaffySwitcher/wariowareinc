@@ -39,7 +39,7 @@ _080CA332:
 
 .balign 4, 0
 _080CA344:
-/* 080CA344 */ .word D_083A3D90
+/* 080CA344 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080CA348:
@@ -73,7 +73,7 @@ _080CA366:
 
 .balign 4, 0
 _080CA388:
-/* 080CA388 */ .word D_083A3D90
+/* 080CA388 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080CA38C:

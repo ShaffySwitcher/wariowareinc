@@ -46,7 +46,7 @@ _08066E48:
 
 .balign 4, 0
 _08066E4C:
-/* 08066E4C */ .word D_083A3D90
+/* 08066E4C */ .word gGameplayDataPtr
 _08066E50:
 /* 08066E50 */ CMP R0, #2
 /* 08066E52 */ BEQ _08066E66
@@ -208,7 +208,7 @@ _08066F52:
 
 .balign 4, 0
 _08066F80:
-/* 08066F80 */ .word D_083A3D90
+/* 08066F80 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08066F84:

@@ -52,7 +52,7 @@ _080A5B66:
 
 .balign 4, 0
 _080A5B80:
-/* 080A5B80 */ .word D_083A3D90
+/* 080A5B80 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080A5B84:
@@ -97,6 +97,6 @@ _080A5BC8:
 
 .balign 4, 0
 _080A5BC4:
-/* 080A5BC4 */ .word D_083A3D90
+/* 080A5BC4 */ .word gGameplayDataPtr
 .ltorg
 .end

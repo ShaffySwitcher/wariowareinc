@@ -147,7 +147,7 @@ _08008C3A: \n\
  \n\
 .balign 4, 0 \n\
 _08008C60: \n\
-/* 08008C60 */ .word D_083A3D90 \n\
+/* 08008C60 */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _08008C64: \n\

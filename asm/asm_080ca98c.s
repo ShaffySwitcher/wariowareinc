@@ -70,7 +70,7 @@ _080CA9F8:
 
 .balign 4, 0
 _080CA9FC:
-/* 080CA9FC */ .word D_083A3D90
+/* 080CA9FC */ .word gGameplayDataPtr
 _080CAA00:
 /* 080CAA00 */ CMP R0, #2
 /* 080CAA02 */ BEQ _080CAA1C

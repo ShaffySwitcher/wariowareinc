@@ -81,7 +81,7 @@ _080C5A88:
 
 .balign 4, 0
 _080C5A90:
-/* 080C5A90 */ .word D_083A3D90
+/* 080C5A90 */ .word gGameplayDataPtr
 _080C5A94:
 /* 080C5A94 */ MOVS R4, #0X1A
 /* 080C5A96 */ LDRSH R1, [R3, R4]

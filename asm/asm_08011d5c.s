@@ -17,7 +17,7 @@ glabel func_08011D5C
 
 .balign 4, 0
 _08011D70:
-/* 08011D70 */ .word D_083A3D90
+/* 08011D70 */ .word gGameplayDataPtr
 _08011D74:
 /* 08011D74 */ LDR R3, _08011D80
 /* 08011D76 */ LDR R0, _08011D84
@@ -32,7 +32,7 @@ _08011D80:
 
 .balign 4, 0
 _08011D84:
-/* 08011D84 */ .word D_083A3D90
+/* 08011D84 */ .word gGameplayDataPtr
 _08011D88:
 /* 08011D88 */ LDR R0, _08011D9C
 /* 08011D8A */ LDRB R0, [R0, #2]
@@ -55,7 +55,7 @@ _08011DA0:
 
 .balign 4, 0
 _08011DA4:
-/* 08011DA4 */ .word D_083A3D90
+/* 08011DA4 */ .word gGameplayDataPtr
 _08011DA8:
 /* 08011DA8 */ LDR R3, _08011DAC
 /* 08011DAA */ B _08011DB2
@@ -66,7 +66,7 @@ _08011DAC:
 _08011DB0:
 /* 08011DB0 */ LDR R3, _08011DF4
 _08011DB2:
-/* 08011DB2 */ LDR R0, =D_083A3D90
+/* 08011DB2 */ LDR R0, =gGameplayDataPtr
 /* 08011DB4 */ LDR R1, [R0]
 /* 08011DB6 */ ADDS R1, #0XFB
 /* 08011DB8 */ MOVS R2, #9

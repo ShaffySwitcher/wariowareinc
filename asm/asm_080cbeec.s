@@ -52,7 +52,7 @@ _080CBF3C:
 
 .balign 4, 0
 _080CBF40:
-/* 080CBF40 */ .word D_083A3D90
+/* 080CBF40 */ .word gGameplayDataPtr
 _080CBF44:
 /* 080CBF44 */ ADDS R4, R0, #0
 /* 080CBF46 */ ADDS R4, #0X8E
@@ -127,7 +127,7 @@ _080CBFD4:
 
 .balign 4, 0
 _080CBFCC:
-/* 080CBFCC */ .word D_083A3D90
+/* 080CBFCC */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080CBFD0:

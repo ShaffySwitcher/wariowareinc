@@ -31,7 +31,7 @@ _0805B54C:
 
 .balign 4, 0
 _0805B550:
-/* 0805B550 */ .word D_083A3D90
+/* 0805B550 */ .word gGameplayDataPtr
 _0805B554:
 /* 0805B554 */ CMP R1, #2
 /* 0805B556 */ BNE _0805B55C

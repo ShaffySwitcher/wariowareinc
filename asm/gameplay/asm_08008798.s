@@ -137,7 +137,7 @@ _080088A2: \n\
  \n\
 .balign 4, 0 \n\
 _080088AC: \n\
-/* 080088AC */ .word D_083A3D90 \n\
+/* 080088AC */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _080088B0: \n\

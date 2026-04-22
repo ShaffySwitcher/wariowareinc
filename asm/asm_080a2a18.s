@@ -43,7 +43,7 @@ _080A2A58:
 
 .balign 4, 0
 _080A2A5C:
-/* 080A2A5C */ .word D_083A3D90
+/* 080A2A5C */ .word gGameplayDataPtr
 _080A2A60:
 /* 080A2A60 */ BL func_080A2840
 _080A2A64:

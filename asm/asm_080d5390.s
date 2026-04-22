@@ -253,6 +253,6 @@ _080D5558:
 
 .balign 4, 0
 _080D5554:
-/* 080D5554 */ .word D_083A3D90
+/* 080D5554 */ .word gGameplayDataPtr
 .ltorg
 .end

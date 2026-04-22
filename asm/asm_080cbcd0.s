@@ -161,6 +161,6 @@ _080CBDEC:
 
 .balign 4, 0
 _080CBDE8:
-/* 080CBDE8 */ .word D_083A3D90
+/* 080CBDE8 */ .word gGameplayDataPtr
 .ltorg
 .end

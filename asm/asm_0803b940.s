@@ -49,7 +49,7 @@ _0803B988:
 
 .balign 4, 0
 _0803B98C:
-/* 0803B98C */ .word D_083A3D90
+/* 0803B98C */ .word gGameplayDataPtr
 _0803B990:
 /* 0803B990 */ CMP R0, #2
 /* 0803B992 */ BEQ _0803BA18

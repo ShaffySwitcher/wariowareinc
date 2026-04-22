@@ -45,7 +45,7 @@ _0800845E: \n\
  \n\
 .balign 4, 0 \n\
 _08008468: \n\
-/* 08008468 */ .word D_083A3D90 \n\
+/* 08008468 */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _0800846C: \n\
@@ -104,7 +104,7 @@ _080084B4: \n\
  \n\
 .balign 4, 0 \n\
 _080084C4: \n\
-/* 080084C4 */ .word D_083A3D90 \n\
+/* 080084C4 */ .word gGameplayDataPtr \n\
 _080084C8: \n\
 /* 080084C8 */ LDR R0, _080084E8 \n\
 /* 080084CA */ LDR R2, [R0] \n\
@@ -125,7 +125,7 @@ _080084D6: \n\
  \n\
 .balign 4, 0 \n\
 _080084E8: \n\
-/* 080084E8 */ .word D_083A3D90 \n\
+/* 080084E8 */ .word gGameplayDataPtr \n\
 _080084EC: \n\
 /* 080084EC */ LDR R6, _0800858C \n\
 /* 080084EE */ LDR R4, [R6] \n\
@@ -202,7 +202,7 @@ _0800855C: \n\
  \n\
 .balign 4, 0 \n\
 _0800858C: \n\
-/* 0800858C */ .word D_083A3D90 \n\
+/* 0800858C */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _08008590: \n\
@@ -244,7 +244,7 @@ _080085C8: \n\
  \n\
 .balign 4, 0 \n\
 _080085CC: \n\
-/* 080085CC */ .word D_083A3D90 \n\
+/* 080085CC */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _080085D0: \n\
@@ -302,7 +302,7 @@ _08008630: \n\
  \n\
 .balign 4, 0 \n\
 _08008634: \n\
-/* 08008634 */ .word D_083A3D90 \n\
+/* 08008634 */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _08008638: \n\
@@ -381,7 +381,7 @@ _08008680: \n\
  \n\
 .balign 4, 0 \n\
 _080086C4: \n\
-/* 080086C4 */ .word D_083A3D90 \n\
+/* 080086C4 */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _080086C8: \n\
@@ -439,7 +439,7 @@ _08008730: \n\
  \n\
 .balign 4, 0 \n\
 _08008734: \n\
-/* 08008734 */ .word D_083A3D90 \n\
+/* 08008734 */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _08008738: \n\
@@ -474,7 +474,7 @@ _08008768: \n\
 _0800876C: \n\
 /* 0800876C */ .word D_03004890 \n\
 _08008770: \n\
-/* 08008770 */ LDR R0, =D_083A3D90 \n\
+/* 08008770 */ LDR R0, =gGameplayDataPtr \n\
 /* 08008772 */ LDR R0, [R0] \n\
 /* 08008774 */ MOVS R3, #0XFA \n\
 /* 08008776 */ LSLS R3, R3, #1 \n\

@@ -2,7 +2,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_08008B18 \n\
 /* 08008B18 */ PUSH {R4, LR} \n\
-/* 08008B1A */ LDR R4, =D_083A3D90 \n\
+/* 08008B1A */ LDR R4, =gGameplayDataPtr \n\
 /* 08008B1C */ LDR R3, [R4] \n\
 /* 08008B1E */ LDRB R2, [R3, #6] \n\
 /* 08008B20 */ LSLS R1, R2, #0X1A \n\

@@ -25,7 +25,7 @@ _0807E47C:
 /* 0807E47E */ BL get_random_range
 /* 0807E482 */ LDR R4, [R4]
 /* 0807E484 */ LDR R2, _0807E4B0
-/* 0807E486 */ LDR R1, =D_083A3D90
+/* 0807E486 */ LDR R1, =gGameplayDataPtr
 /* 0807E488 */ LDR R3, [R1]
 /* 0807E48A */ MOVS R5, #0XBA
 /* 0807E48C */ LSLS R5, R5, #1

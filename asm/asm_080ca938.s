@@ -52,6 +52,6 @@ _080CA980:
 
 .balign 4, 0
 _080CA984:
-/* 080CA984 */ .word D_083A3D90
+/* 080CA984 */ .word gGameplayDataPtr
 .ltorg
 .end

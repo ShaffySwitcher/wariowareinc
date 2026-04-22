@@ -114,6 +114,6 @@ _080DEE60:
 
 .balign 4, 0
 _080DEE64:
-/* 080DEE64 */ .word D_083A3D90
+/* 080DEE64 */ .word gGameplayDataPtr
 .ltorg
 .end

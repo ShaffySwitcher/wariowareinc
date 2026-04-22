@@ -34,7 +34,7 @@ glabel func_08012FCC
 
 .balign 4, 0
 _08013004:
-/* 08013004 */ .word D_083A3D90
+/* 08013004 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08013008:
@@ -105,6 +105,6 @@ _08013080:
 
 .balign 4, 0
 _08013084:
-/* 08013084 */ .word D_083A3D90
+/* 08013084 */ .word gGameplayDataPtr
 .ltorg
 .end

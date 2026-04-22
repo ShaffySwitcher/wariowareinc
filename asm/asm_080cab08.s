@@ -311,7 +311,7 @@ _080CAD54:
 
 .balign 4, 0
 _080CAD58:
-/* 080CAD58 */ .word D_083A3D90
+/* 080CAD58 */ .word gGameplayDataPtr
 _080CAD5C:
 /* 080CAD5C */ CMP R0, #1
 /* 080CAD5E */ BNE _080CAD68

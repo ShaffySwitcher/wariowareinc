@@ -77,7 +77,7 @@ _080CF36C:
 
 .balign 4, 0
 _080CF370:
-/* 080CF370 */ .word D_083A3D90
+/* 080CF370 */ .word gGameplayDataPtr
 _080CF374:
 /* 080CF374 */ ADDS R1, #1
 /* 080CF376 */ ADDS R4, #0X2C

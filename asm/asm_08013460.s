@@ -227,6 +227,6 @@ _080135DC:
 
 .balign 4, 0
 _080135E0:
-/* 080135E0 */ .word D_083A3D90
+/* 080135E0 */ .word gGameplayDataPtr
 .ltorg
 .end

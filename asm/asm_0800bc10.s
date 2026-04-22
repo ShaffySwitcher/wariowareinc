@@ -34,7 +34,7 @@ _0800BC3E:
 
 .balign 4, 0
 _0800BC44:
-/* 0800BC44 */ .word D_083A3D90
+/* 0800BC44 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800BC48:

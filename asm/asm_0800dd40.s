@@ -36,7 +36,7 @@ _0800DD70:
 
 .balign 4, 0
 _0800DD74:
-/* 0800DD74 */ .word D_083A3D90
+/* 0800DD74 */ .word gGameplayDataPtr
 _0800DD78:
 /* 0800DD78 */ LDR R0, _0800DDE4
 /* 0800DD7A */ LDR R1, [R0]
@@ -98,7 +98,7 @@ _0800DDF0:
 
 .balign 4, 0
 _0800DDE4:
-/* 0800DDE4 */ .word D_083A3D90
+/* 0800DDE4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800DDE8:

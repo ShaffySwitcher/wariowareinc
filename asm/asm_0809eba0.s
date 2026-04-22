@@ -125,7 +125,7 @@ _0809EC94:
 
 .balign 4, 0
 _0809EC98:
-/* 0809EC98 */ .word D_083A3D90
+/* 0809EC98 */ .word gGameplayDataPtr
 _0809EC9C:
 /* 0809EC9C */ CMP R0, #1
 /* 0809EC9E */ BNE _0809ECA8
@@ -188,7 +188,7 @@ _0809ED04:
 
 .balign 4, 0
 _0809ED08:
-/* 0809ED08 */ .word D_083A3D90
+/* 0809ED08 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0809ED0C:

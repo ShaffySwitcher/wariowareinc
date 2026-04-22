@@ -119,7 +119,7 @@ glabel func_0800BA78
 
 .balign 4, 0
 _0800BB68:
-/* 0800BB68 */ .word D_083A3D90
+/* 0800BB68 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800BB6C:

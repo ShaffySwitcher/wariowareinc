@@ -172,7 +172,7 @@ _08049F78:
 
 .balign 4, 0
 _08049F7C:
-/* 08049F7C */ .word D_083A3D90
+/* 08049F7C */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08049F80:
@@ -220,7 +220,7 @@ _08049FC8:
 
 .balign 4, 0
 _08049FCC:
-/* 08049FCC */ .word D_083A3D90
+/* 08049FCC */ .word gGameplayDataPtr
 _08049FD0:
 /* 08049FD0 */ CMP R0, #2
 /* 08049FD2 */ BEQ _08049FFA

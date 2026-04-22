@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_0800BCAC
-/* 0800BCAC */ LDR R1, =D_083A3D90
+/* 0800BCAC */ LDR R1, =gGameplayDataPtr
 /* 0800BCAE */ LDR R3, [R1]
 /* 0800BCB0 */ MOVS R1, #1
 /* 0800BCB2 */ ANDS R0, R1

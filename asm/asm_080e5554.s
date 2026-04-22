@@ -39,7 +39,7 @@ _080E558C:
 
 .balign 4, 0
 _080E5590:
-/* 080E5590 */ .word D_083A3D90
+/* 080E5590 */ .word gGameplayDataPtr
 _080E5594:
 /* 080E5594 */ CMP R1, #2
 /* 080E5596 */ BNE _080E559C

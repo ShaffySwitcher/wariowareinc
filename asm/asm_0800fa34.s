@@ -75,7 +75,7 @@ _0800FAC0:
 
 .balign 4, 0
 _0800FAC8:
-/* 0800FAC8 */ .word D_083A3D90
+/* 0800FAC8 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800FACC:

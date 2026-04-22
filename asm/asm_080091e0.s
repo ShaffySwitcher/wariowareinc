@@ -121,7 +121,7 @@ _080092B4:
 
 .balign 4, 0
 _080092C0:
-/* 080092C0 */ .word D_083A3D90
+/* 080092C0 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080092C4:
@@ -280,7 +280,7 @@ _0800939C:
 
 .balign 4, 0
 _080093B4:
-/* 080093B4 */ .word D_083A3D90
+/* 080093B4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080093B8:
@@ -317,7 +317,7 @@ _080093C0:
 
 .balign 4, 0
 _080093F4:
-/* 080093F4 */ .word D_083A3D90
+/* 080093F4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080093F8:
@@ -358,7 +358,7 @@ _0800940C:
 
 .balign 4, 0
 _08009444:
-/* 08009444 */ .word D_083A3D90
+/* 08009444 */ .word gGameplayDataPtr
 _08009448:
 /* 08009448 */ MOVS R2, #0XB9
 /* 0800944A */ LSLS R2, R2, #1
@@ -476,7 +476,7 @@ _08009506:
 
 .balign 4, 0
 _08009510:
-/* 08009510 */ .word D_083A3D90
+/* 08009510 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08009514:
@@ -640,7 +640,7 @@ _0800960C:
 
 .balign 4, 0
 _08009610:
-/* 08009610 */ .word D_083A3D90
+/* 08009610 */ .word gGameplayDataPtr
 _08009614:
 /* 08009614 */ LDR R0, [R6]
 /* 08009616 */ LDR R0, [R0]
@@ -723,7 +723,7 @@ _08009696:
 
 .balign 4, 0
 _080096A4:
-/* 080096A4 */ .word D_083A3D90
+/* 080096A4 */ .word gGameplayDataPtr
 _080096A8:
 /* 080096A8 */ LDR R0, [R6]
 /* 080096AA */ MOVS R1, #0X9C
@@ -773,7 +773,7 @@ _080096E0:
 
 .balign 4, 0
 _080096F8:
-/* 080096F8 */ .word D_083A3D90
+/* 080096F8 */ .word gGameplayDataPtr
 _080096FC:
 /* 080096FC */ LDR R0, _0800971C
 /* 080096FE */ LDRB R0, [R0]
@@ -796,7 +796,7 @@ _0800971C:
 
 .balign 4, 0
 _08009720:
-/* 08009720 */ .word D_083A3D90
+/* 08009720 */ .word gGameplayDataPtr
 _08009724:
 /* 08009724 */ LDR R0, [R6]
 /* 08009726 */ MOVS R1, #0XA0

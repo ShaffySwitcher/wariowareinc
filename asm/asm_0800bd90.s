@@ -24,7 +24,7 @@ _0800BDA4:
 
 .balign 4, 0
 _0800BDB0:
-/* 0800BDB0 */ .word D_083A3D90
+/* 0800BDB0 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800BDB4:

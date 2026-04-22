@@ -39,7 +39,7 @@ _08011A0E:
 
 .balign 4, 0
 _08011A2C:
-/* 08011A2C */ .word D_083A3D90
+/* 08011A2C */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08011A30:
@@ -74,7 +74,7 @@ _08011A60:
 
 .balign 4, 0
 _08011A64:
-/* 08011A64 */ .word D_083A3D90
+/* 08011A64 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08011A68:
@@ -140,7 +140,7 @@ _08011AD8:
 
 .balign 4, 0
 _08011ADC:
-/* 08011ADC */ .word D_083A3D90
+/* 08011ADC */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08011AE0:
@@ -158,7 +158,7 @@ _08011AEC:
 _08011AEE:
 /* 08011AEE */ LDR R0, _08011B14
 /* 08011AF0 */ LDR R0, [R0]
-/* 08011AF2 */ LDR R1, =D_083A3D90
+/* 08011AF2 */ LDR R1, =gGameplayDataPtr
 /* 08011AF4 */ LDR R1, [R1]
 /* 08011AF6 */ LSLS R2, R4, #1
 /* 08011AF8 */ ADDS R1, #0X3A

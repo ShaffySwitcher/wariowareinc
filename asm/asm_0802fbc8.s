@@ -173,7 +173,7 @@ _0802FD10:
 
 .balign 4, 0
 _0802FD14:
-/* 0802FD14 */ .word D_083A3D90
+/* 0802FD14 */ .word gGameplayDataPtr
 _0802FD18:
 /* 0802FD18 */ MOVS R2, #1
 /* 0802FD1A */ STR R2, [SP, #0X14]
@@ -238,7 +238,7 @@ _0802FD80:
 
 .balign 4, 0
 _0802FD84:
-/* 0802FD84 */ .word D_083A3D90
+/* 0802FD84 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0802FD88:

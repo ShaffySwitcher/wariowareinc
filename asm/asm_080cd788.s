@@ -40,7 +40,7 @@ _080CD7C0:
 
 .balign 4, 0
 _080CD7C4:
-/* 080CD7C4 */ .word D_083A3D90
+/* 080CD7C4 */ .word gGameplayDataPtr
 _080CD7C8:
 /* 080CD7C8 */ CMP R1, #2
 /* 080CD7CA */ BEQ _080CD7D8

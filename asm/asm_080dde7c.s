@@ -41,7 +41,7 @@ _080DDEB4:
 
 .balign 4, 0
 _080DDEB8:
-/* 080DDEB8 */ .word D_083A3D90
+/* 080DDEB8 */ .word gGameplayDataPtr
 _080DDEBC:
 /* 080DDEBC */ RSBS R0, R1, #0
 /* 080DDEBE */ LSLS R0, R0, #0X10

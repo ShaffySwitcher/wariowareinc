@@ -16,7 +16,7 @@ glabel func_08016F60
 
 .balign 4, 0
 _08016F70:
-/* 08016F70 */ .word D_083A3D90
+/* 08016F70 */ .word gGameplayDataPtr
 _08016F74:
 /* 08016F74 */ MOVS R0, #1
 _08016F76:

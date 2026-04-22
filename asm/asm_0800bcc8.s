@@ -77,7 +77,7 @@ _0800BD14:
 
 .balign 4, 0
 _0800BD50:
-/* 0800BD50 */ .word D_083A3D90
+/* 0800BD50 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800BD54:

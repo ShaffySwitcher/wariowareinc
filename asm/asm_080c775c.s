@@ -39,7 +39,7 @@ glabel func_080C775C
 
 .balign 4, 0
 _080C77A0:
-/* 080C77A0 */ .word D_083A3D90
+/* 080C77A0 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080C77A4:

@@ -153,7 +153,7 @@ _080E49AC:
 
 .balign 4, 0
 _080E49B0:
-/* 080E49B0 */ .word D_083A3D90
+/* 080E49B0 */ .word gGameplayDataPtr
 _080E49B4:
 /* 080E49B4 */ LDRH R1, [R1]
 /* 080E49B6 */ MOVS R0, #0XF0

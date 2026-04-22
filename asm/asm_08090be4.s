@@ -241,7 +241,7 @@ _08090D8C:
 
 .balign 4, 0
 _08090D90:
-/* 08090D90 */ .word D_083A3D90
+/* 08090D90 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08090D94:
@@ -369,7 +369,7 @@ _08090E64:
 
 .balign 4, 0
 _08090E68:
-/* 08090E68 */ .word D_083A3D90
+/* 08090E68 */ .word gGameplayDataPtr
 _08090E6C:
 /* 08090E6C */ LDR R5, [R3, #0X14]
 /* 08090E6E */ MOVS R0, #0XA0

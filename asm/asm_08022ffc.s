@@ -40,7 +40,7 @@ _08023022:
 
 .balign 4, 0
 _08023038:
-/* 08023038 */ .word D_083A3D90
+/* 08023038 */ .word gGameplayDataPtr
 _0802303C:
 /* 0802303C */ MOVS R3, #0XBB
 /* 0802303E */ LSLS R3, R3, #1
@@ -115,7 +115,7 @@ _080230A2:
 
 .balign 4, 0
 _080230C4:
-/* 080230C4 */ .word D_083A3D90
+/* 080230C4 */ .word gGameplayDataPtr
 _080230C8:
 /* 080230C8 */ STRH R1, [R2, #0X10]
 /* 080230CA */ STRH R1, [R2, #0X12]

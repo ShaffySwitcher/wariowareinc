@@ -149,7 +149,7 @@ _08020DCC:
 
 .balign 4, 0
 _08020DB8:
-/* 08020DB8 */ .word D_083A3D90
+/* 08020DB8 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08020DBC:

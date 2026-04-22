@@ -61,7 +61,7 @@ _080083F8: \n\
  \n\
 .balign 4, 0 \n\
 _080083FC: \n\
-/* 080083FC */ .word D_083A3D90 \n\
+/* 080083FC */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _08008400: \n\

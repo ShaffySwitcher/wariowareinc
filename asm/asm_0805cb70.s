@@ -89,7 +89,7 @@ _0805CC00:
 
 .balign 4, 0
 _0805CC04:
-/* 0805CC04 */ .word D_083A3D90
+/* 0805CC04 */ .word gGameplayDataPtr
 _0805CC08:
 /* 0805CC08 */ CMP R2, #2
 /* 0805CC0A */ BEQ _0805CC44

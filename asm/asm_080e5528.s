@@ -23,7 +23,7 @@ _080E5540:
 
 .balign 4, 0
 _080E5544:
-/* 080E5544 */ .word D_083A3D90
+/* 080E5544 */ .word gGameplayDataPtr
 _080E5548:
 /* 080E5548 */ MOVS R0, #0
 /* 080E554A */ STR R0, [R1]

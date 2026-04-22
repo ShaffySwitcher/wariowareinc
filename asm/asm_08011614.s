@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_08011614
-/* 08011614 */ LDR R0, =D_083A3D90
+/* 08011614 */ LDR R0, =gGameplayDataPtr
 /* 08011616 */ LDR R0, [R0]
 /* 08011618 */ MOV IP, R0
 /* 0801161A */ ADDS R0, #0XDD

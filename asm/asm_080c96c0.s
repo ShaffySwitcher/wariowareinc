@@ -43,6 +43,6 @@ _080C96F8:
 
 .balign 4, 0
 _080C96FC:
-/* 080C96FC */ .word D_083A3D90
+/* 080C96FC */ .word gGameplayDataPtr
 .ltorg
 .end

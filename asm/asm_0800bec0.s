@@ -20,7 +20,7 @@ glabel func_0800BEC0
 
 .balign 4, 0
 _0800BED8:
-/* 0800BED8 */ .word D_083A3D90
+/* 0800BED8 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800BEDC:

@@ -198,7 +198,7 @@ _080B1854:
 
 .balign 4, 0
 _080B1858:
-/* 080B1858 */ .word D_083A3D90
+/* 080B1858 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080B185C:
@@ -292,7 +292,7 @@ _080B18CC:
 /* 080B18FC */ MOVS R2, #5
 /* 080B18FE */ MOVS R3, #0XC
 /* 080B1900 */ BL func_08005DE0
-/* 080B1904 */ LDR R0, =D_083A3D90
+/* 080B1904 */ LDR R0, =gGameplayDataPtr
 /* 080B1906 */ MOV R8, R0
 /* 080B1908 */ LDR R0, [R0]
 /* 080B190A */ MOVS R7, #0XBA

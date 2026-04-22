@@ -32,7 +32,7 @@ glabel func_0800912C
 
 .balign 4, 0
 _08009160:
-/* 08009160 */ .word D_083A3D90
+/* 08009160 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08009164:
@@ -47,7 +47,7 @@ _0800916C:
 /* 08009170 */ BL func_080089D8
 _08009174:
 /* 08009174 */ BL func_0800A270
-/* 08009178 */ LDR R2, =D_083A3D90
+/* 08009178 */ LDR R2, =gGameplayDataPtr
 /* 0800917A */ LDR R0, [R2]
 /* 0800917C */ MOVS R1, #0X8F
 /* 0800917E */ LSLS R1, R1, #2

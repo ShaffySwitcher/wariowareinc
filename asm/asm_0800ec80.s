@@ -41,7 +41,7 @@ _0800ECC4:
 
 .balign 4, 0
 _0800ECBC:
-/* 0800ECBC */ .word D_083A3D90
+/* 0800ECBC */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800ECC0:

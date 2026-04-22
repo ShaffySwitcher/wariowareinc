@@ -60,7 +60,7 @@ _080B328C:
 
 .balign 4, 0
 _080B3290:
-/* 080B3290 */ .word D_083A3D90
+/* 080B3290 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080B3294:

@@ -59,7 +59,7 @@ _0800892A: \n\
  \n\
 .balign 4, 0 \n\
 _08008934: \n\
-/* 08008934 */ .word D_083A3D90 \n\
+/* 08008934 */ .word gGameplayDataPtr \n\
  \n\
 .balign 4, 0 \n\
 _08008938: \n\

@@ -216,7 +216,7 @@ _0809814E:
 
 .balign 4, 0
 _08098160:
-/* 08098160 */ .word D_083A3D90
+/* 08098160 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08098164:
@@ -280,7 +280,7 @@ _080981C8:
 
 .balign 4, 0
 _080981CC:
-/* 080981CC */ .word D_083A3D90
+/* 080981CC */ .word gGameplayDataPtr
 _080981D0:
 /* 080981D0 */ MOVS R1, #0
 /* 080981D2 */ STR R1, [R4, #0X1C]
@@ -368,7 +368,7 @@ _08098222:
 
 .balign 4, 0
 _0809827C:
-/* 0809827C */ .word D_083A3D90
+/* 0809827C */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08098280:

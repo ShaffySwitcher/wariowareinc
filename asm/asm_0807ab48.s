@@ -480,7 +480,7 @@ _0807AF30:
 
 .balign 4, 0
 _0807AF34:
-/* 0807AF34 */ .word D_083A3D90
+/* 0807AF34 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0807AF38:

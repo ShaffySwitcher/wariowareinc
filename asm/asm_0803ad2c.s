@@ -153,7 +153,7 @@ _0803ADCA:
 
 .balign 4, 0
 _0803AE54:
-/* 0803AE54 */ .word D_083A3D90
+/* 0803AE54 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0803AE58:
@@ -295,7 +295,7 @@ _0803AF50:
 /* 0803AF54 */ ADD R1, SL
 /* 0803AF56 */ LSRS R2, R1, #0X10
 /* 0803AF58 */ ASRS R1, R1, #0X10
-/* 0803AF5A */ LDR R3, =D_083A3D90
+/* 0803AF5A */ LDR R3, =gGameplayDataPtr
 /* 0803AF5C */ LDR R0, [R3]
 /* 0803AF5E */ MOVS R3, #0XBA
 /* 0803AF60 */ LSLS R3, R3, #1

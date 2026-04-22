@@ -12,7 +12,7 @@ glabel func_08016DB8
 /* 08016DC2 */ LDR R0, [R0]
 /* 08016DC4 */ MOVS R1, #1
 /* 08016DC6 */ BL func_080EFA54
-/* 08016DCA */ LDR R0, =D_083A3D90
+/* 08016DCA */ LDR R0, =gGameplayDataPtr
 /* 08016DCC */ LDR R1, [R0]
 /* 08016DCE */ MOVS R0, #0
 /* 08016DD0 */ STRB R0, [R1]

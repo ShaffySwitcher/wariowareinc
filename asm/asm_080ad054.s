@@ -91,7 +91,7 @@ _080AD108:
 
 .balign 4, 0
 _080AD10C:
-/* 080AD10C */ .word D_083A3D90
+/* 080AD10C */ .word gGameplayDataPtr
 _080AD110:
 /* 080AD110 */ CMP R0, #1
 /* 080AD112 */ BNE _080AD120

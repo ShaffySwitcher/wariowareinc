@@ -23,7 +23,7 @@ glabel func_0801A600
 
 .balign 4, 0
 _0801A620:
-/* 0801A620 */ .word D_083A3D90
+/* 0801A620 */ .word gGameplayDataPtr
 _0801A624:
 /* 0801A624 */ LDR R1, _0801A65C
 /* 0801A626 */ ADDS R0, R2, R1

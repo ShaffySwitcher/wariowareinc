@@ -30,7 +30,7 @@ glabel func_080C9704
 
 .balign 4, 0
 _080C9734:
-/* 080C9734 */ .word D_083A3D90
+/* 080C9734 */ .word gGameplayDataPtr
 _080C9738:
 /* 080C9738 */ CMP R0, #2
 /* 080C973A */ BEQ _080C9798

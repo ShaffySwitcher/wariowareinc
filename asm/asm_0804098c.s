@@ -38,9 +38,9 @@ _080409C0:
 
 .balign 4, 0
 _080409C4:
-/* 080409C4 */ .word D_083A3D90
+/* 080409C4 */ .word gGameplayDataPtr
 _080409C8:
-/* 080409C8 */ LDR R0, =D_083A3D90
+/* 080409C8 */ LDR R0, =gGameplayDataPtr
 /* 080409CA */ LDR R0, [R0]
 /* 080409CC */ LDRH R1, [R0, #0X16]
 /* 080409CE */ LSLS R0, R1, #4

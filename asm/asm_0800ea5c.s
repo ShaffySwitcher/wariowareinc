@@ -113,7 +113,7 @@ _0800EAC4:
 
 .balign 4, 0
 _0800EB38:
-/* 0800EB38 */ .word D_083A3D90
+/* 0800EB38 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800EB3C:

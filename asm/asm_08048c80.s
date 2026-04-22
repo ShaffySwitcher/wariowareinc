@@ -41,7 +41,7 @@ _08048CB8:
 
 .balign 4, 0
 _08048CBC:
-/* 08048CBC */ .word D_083A3D90
+/* 08048CBC */ .word gGameplayDataPtr
 _08048CC0:
 /* 08048CC0 */ MOVS R0, #0
 _08048CC2:

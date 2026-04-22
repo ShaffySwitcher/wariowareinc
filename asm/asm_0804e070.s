@@ -31,7 +31,7 @@ glabel func_0804E070
 
 .balign 4, 0
 _0804E0A0:
-/* 0804E0A0 */ .word D_083A3D90
+/* 0804E0A0 */ .word gGameplayDataPtr
 _0804E0A4:
 /* 0804E0A4 */ CMP R1, #2
 /* 0804E0A6 */ BEQ _0804E0EC

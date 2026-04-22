@@ -49,7 +49,7 @@ glabel func_080CECEC
 /* 080CED44 */ STR R5, [R4, #0X1C]
 /* 080CED46 */ STR R5, [R4, #0X18]
 /* 080CED48 */ STR R5, [R4, #0X14]
-/* 080CED4A */ LDR R0, =D_083A3D90
+/* 080CED4A */ LDR R0, =gGameplayDataPtr
 /* 080CED4C */ LDR R2, [R0]
 /* 080CED4E */ LDRH R1, [R2, #0X16]
 /* 080CED50 */ LSLS R0, R1, #2

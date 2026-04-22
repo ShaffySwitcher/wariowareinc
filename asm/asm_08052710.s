@@ -206,7 +206,7 @@ _080528B0:
 
 .balign 4, 0
 _080528B4:
-/* 080528B4 */ .word D_083A3D90
+/* 080528B4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080528B8:
@@ -425,6 +425,6 @@ _08052A24:
 
 .balign 4, 0
 _08052A28:
-/* 08052A28 */ .word D_083A3D90
+/* 08052A28 */ .word gGameplayDataPtr
 .ltorg
 .end

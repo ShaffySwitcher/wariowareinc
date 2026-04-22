@@ -77,7 +77,7 @@ _0800FC34:
 
 .balign 4, 0
 _0800FC38:
-/* 0800FC38 */ .word D_083A3D90
+/* 0800FC38 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800FC3C:
@@ -281,7 +281,7 @@ _0800FDB0:
 
 .balign 4, 0
 _0800FDB4:
-/* 0800FDB4 */ .word D_083A3D90
+/* 0800FDB4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800FDB8:

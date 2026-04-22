@@ -180,7 +180,7 @@ glabel func_080EB034
 
 .balign 4, 0
 _080EB1AC:
-/* 080EB1AC */ .word D_083A3D90
+/* 080EB1AC */ .word gGameplayDataPtr
 
 .balign 4, 0
 _080EB1B0:

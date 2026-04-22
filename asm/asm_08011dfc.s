@@ -54,7 +54,7 @@ _08011E24:
 
 .balign 4, 0
 _08011E58:
-/* 08011E58 */ .word D_083A3D90
+/* 08011E58 */ .word gGameplayDataPtr
 _08011E5C:
 /* 08011E5C */ ADDS R4, #1
 /* 08011E5E */ CMP R4, R6

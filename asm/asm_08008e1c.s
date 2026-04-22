@@ -54,7 +54,7 @@ _08008E40:
 
 .balign 4, 0
 _08008E7C:
-/* 08008E7C */ .word D_083A3D90
+/* 08008E7C */ .word gGameplayDataPtr
 _08008E80:
 /* 08008E80 */ ADDS R3, R4, #0
 _08008E82:
@@ -159,7 +159,7 @@ _08008F08:
 
 .balign 4, 0
 _08008F40:
-/* 08008F40 */ .word D_083A3D90
+/* 08008F40 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08008F44:
@@ -250,7 +250,7 @@ _08008FB2:
 
 .balign 4, 0
 _08008FE4:
-/* 08008FE4 */ .word D_083A3D90
+/* 08008FE4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08008FE8:

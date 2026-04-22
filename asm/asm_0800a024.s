@@ -5,7 +5,7 @@
 
 glabel func_0800A024
 .thumb_func
-/* 0800A024 */ LDR R0, =D_083A3D90
+/* 0800A024 */ LDR R0, =gGameplayDataPtr
 /* 0800A026 */ LDR R0, [R0]
 /* 0800A028 */ MOVS R1, #0XBA
 /* 0800A02A */ LSLS R1, R1, #1

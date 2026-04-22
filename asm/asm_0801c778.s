@@ -217,7 +217,7 @@ _0801C892:
 
 .balign 4, 0
 _0801C928:
-/* 0801C928 */ .word D_083A3D90
+/* 0801C928 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0801C92C:

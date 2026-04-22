@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0800BC90
 /* 0800BC90 */ PUSH {LR}
-/* 0800BC92 */ LDR R0, =D_083A3D90
+/* 0800BC92 */ LDR R0, =gGameplayDataPtr
 /* 0800BC94 */ LDR R0, [R0]
 /* 0800BC96 */ LDRB R0, [R0, #7]
 /* 0800BC98 */ LSLS R0, R0, #0X1D

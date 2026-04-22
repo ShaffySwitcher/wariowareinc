@@ -52,7 +52,7 @@ _080DD5B0:
 
 .balign 4, 0
 _080DD5B4:
-/* 080DD5B4 */ .word D_083A3D90
+/* 080DD5B4 */ .word gGameplayDataPtr
 _080DD5B8:
 /* 080DD5B8 */ CMP R0, #2
 /* 080DD5BA */ BEQ _080DD5C2

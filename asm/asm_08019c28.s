@@ -388,7 +388,7 @@ _08019EE4:
 
 .balign 4, 0
 _08019EE8:
-/* 08019EE8 */ .word D_083A3D90
+/* 08019EE8 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _08019EEC:

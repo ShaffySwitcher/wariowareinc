@@ -7,7 +7,7 @@
 glabel func_080CD294
 /* 080CD294 */ PUSH {R4, R5, R6, LR}
 /* 080CD296 */ ADDS R2, R0, #0
-/* 080CD298 */ LDR R0, =D_083A3D90
+/* 080CD298 */ LDR R0, =gGameplayDataPtr
 /* 080CD29A */ LDR R0, [R0]
 /* 080CD29C */ LDRH R1, [R0, #0X16]
 /* 080CD29E */ LSLS R0, R1, #1

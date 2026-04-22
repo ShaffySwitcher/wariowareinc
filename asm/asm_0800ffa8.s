@@ -21,7 +21,7 @@ glabel func_0800FFA8
 
 .balign 4, 0
 _0800FFC4:
-/* 0800FFC4 */ .word D_083A3D90
+/* 0800FFC4 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800FFC8:

@@ -51,6 +51,6 @@ _08016B10:
 
 .balign 4, 0
 _08016B0C:
-/* 08016B0C */ .word D_083A3D90
+/* 08016B0C */ .word gGameplayDataPtr
 .ltorg
 .end

@@ -35,7 +35,7 @@ _08054EDC:
 
 .balign 4, 0
 _08054EE0:
-/* 08054EE0 */ .word D_083A3D90
+/* 08054EE0 */ .word gGameplayDataPtr
 _08054EE4:
 /* 08054EE4 */ LSLS R0, R4, #0X10
 /* 08054EE6 */ ASRS R1, R0, #0X10

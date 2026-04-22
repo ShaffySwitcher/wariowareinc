@@ -12,7 +12,7 @@ glabel func_0801FCDC
 /* 0801FCE4 */ LDR R1, [R1]
 /* 0801FCE6 */ MOVS R2, #6
 /* 0801FCE8 */ LDRSH R1, [R1, R2]
-/* 0801FCEA */ LDR R2, =D_083A3D90
+/* 0801FCEA */ LDR R2, =gGameplayDataPtr
 /* 0801FCEC */ LDR R2, [R2]
 /* 0801FCEE */ LDRB R2, [R2, #6]
 /* 0801FCF0 */ LSLS R2, R2, #0X1E

@@ -34,7 +34,7 @@ _0804BAB0:
 
 .balign 4, 0
 _0804BAB4:
-/* 0804BAB4 */ .word D_083A3D90
+/* 0804BAB4 */ .word gGameplayDataPtr
 _0804BAB8:
 /* 0804BAB8 */ LDRH R0, [R5]
 /* 0804BABA */ ADDS R0, #1

@@ -78,7 +78,7 @@ glabel func_0805D8E0
 
 .balign 4, 0
 _0805D970:
-/* 0805D970 */ .word D_083A3D90
+/* 0805D970 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0805D974:
@@ -211,7 +211,7 @@ _0805DA58:
 
 .balign 4, 0
 _0805DA5C:
-/* 0805DA5C */ .word D_083A3D90
+/* 0805DA5C */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0805DA60:

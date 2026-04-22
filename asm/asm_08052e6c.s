@@ -142,7 +142,7 @@ _08052F62:
 
 .balign 4, 0
 _08052F68:
-/* 08052F68 */ .word D_083A3D90
+/* 08052F68 */ .word gGameplayDataPtr
 _08052F6C:
 /* 08052F6C */ LDR R0, [R5]
 /* 08052F6E */ ADDS R0, #0X1A
@@ -171,7 +171,7 @@ _08052F6C:
 
 .balign 4, 0
 _08052FA4:
-/* 08052FA4 */ .word D_083A3D90
+/* 08052FA4 */ .word gGameplayDataPtr
 _08052FA8:
 /* 08052FA8 */ BL func_08052AD8
 _08052FAC:

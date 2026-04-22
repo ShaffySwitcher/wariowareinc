@@ -50,7 +50,7 @@ glabel func_0800B828
 
 .balign 4, 0
 _0800B880:
-/* 0800B880 */ .word D_083A3D90
+/* 0800B880 */ .word gGameplayDataPtr
 
 .balign 4, 0
 _0800B884:

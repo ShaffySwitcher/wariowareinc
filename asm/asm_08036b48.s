@@ -52,7 +52,7 @@ _08036B98:
 
 .balign 4, 0
 _08036B9C:
-/* 08036B9C */ .word D_083A3D90
+/* 08036B9C */ .word gGameplayDataPtr
 _08036BA0:
 /* 08036BA0 */ MOVS R0, #5
 /* 08036BA2 */ BL get_random_range

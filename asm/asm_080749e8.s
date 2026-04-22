@@ -100,7 +100,7 @@ _08074AAC:
 
 .balign 4, 0
 _08074AB0:
-/* 08074AB0 */ .word D_083A3D90
+/* 08074AB0 */ .word gGameplayDataPtr
 _08074AB4:
 /* 08074AB4 */ CMP R0, #1
 /* 08074AB6 */ BNE _08074AEC
@@ -350,7 +350,7 @@ _08074C70:
 
 .balign 4, 0
 _08074C74:
-/* 08074C74 */ .word D_083A3D90
+/* 08074C74 */ .word gGameplayDataPtr
 _08074C78:
 /* 08074C78 */ CMP R0, #1
 /* 08074C7A */ BNE _08074C88
