@@ -20,7 +20,7 @@ glabel func_0808B164
 /* 0808B17C */ ADDS R2, R0
 /* 0808B17E */ LDR R2, [R2]
 /* 0808B180 */ ADDS R0, R1, #0
-/* 0808B182 */ BL func_080F41BC
+/* 0808B182 */ BL _call_via_r2
 /* 0808B186 */ POP {R0}
 /* 0808B188 */ BX R0
 

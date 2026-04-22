@@ -26,7 +26,7 @@ glabel func_080C0524
 /* 080C0548 */ LDR R4, [R2, #0X14]
 /* 080C054A */ ADDS R0, R4, #0
 /* 080C054C */ MOVS R1, #3
-/* 080C054E */ BL func_080F4300
+/* 080C054E */ BL __modsi3
 /* 080C0552 */ LSLS R5, R0, #2
 /* 080C0554 */ ADDS R5, R0
 /* 080C0556 */ LSLS R5, R5, #3

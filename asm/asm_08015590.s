@@ -26,7 +26,7 @@ glabel func_08015590
 /* 080155B8 */ LSLS R1, R1, #1
 /* 080155BA */ ADDS R0, R1
 /* 080155BC */ LDR R0, [R0]
-/* 080155BE */ BL func_080F41B4
+/* 080155BE */ BL _call_via_r0
 /* 080155C2 */ POP {R4}
 /* 080155C4 */ POP {R0}
 /* 080155C6 */ BX R0

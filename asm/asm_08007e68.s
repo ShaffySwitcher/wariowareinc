@@ -15,7 +15,7 @@ _08007E72:
 /* 08007E74 */ STR R0, [R2, #0X1C]
 /* 08007E76 */ LDR R1, =gfx_decompress_rom
 /* 08007E78 */ ADDS R0, R2, #0
-/* 08007E7A */ BL func_080F41B8
+/* 08007E7A */ BL _call_via_r1
 /* 08007E7E */ POP {R1}
 /* 08007E80 */ BX R1
 

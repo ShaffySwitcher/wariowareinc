@@ -11,3 +11,4 @@ wrapper.py
 split.py
 progress.py
 tools/sample_extractor.py
+tools/find_archive_matches.py

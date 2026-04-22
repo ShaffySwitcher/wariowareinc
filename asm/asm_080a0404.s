@@ -35,7 +35,7 @@ glabel func_080A0404
 /* 080A043A */ BL __divsi3
 /* 080A043E */ ADDS R1, R0, #0
 /* 080A0440 */ ADDS R0, R5, #0
-/* 080A0442 */ BL func_080F4300
+/* 080A0442 */ BL __modsi3
 /* 080A0446 */ ADDS R5, R0, #0
 /* 080A0448 */ CMP R5, #0
 /* 080A044A */ BNE _080A04C8

@@ -34,7 +34,7 @@ _08007E22:
 /* 08007E4A */ STR R2, [R3, #0X20]
 /* 08007E4C */ LDR R1, =gfx_decompress_rom
 /* 08007E4E */ ADDS R0, R3, #0
-/* 08007E50 */ BL func_080F41B8
+/* 08007E50 */ BL _call_via_r1
 /* 08007E54 */ POP {R4}
 /* 08007E56 */ POP {R1}
 /* 08007E58 */ BX R1

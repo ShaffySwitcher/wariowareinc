@@ -53,7 +53,7 @@ glabel func_08077E60
 /* 08077EBC */ MULS R1, R6, R1
 /* 08077EBE */ ADDS R0, R1
 /* 08077EC0 */ LDR R1, [R2]
-/* 08077EC2 */ BL func_080F41B8
+/* 08077EC2 */ BL _call_via_r1
 /* 08077EC6 */ MOV SL, R0
 /* 08077EC8 */ LDR R4, [R4]
 /* 08077ECA */ LDR R2, [R4, #0X38]

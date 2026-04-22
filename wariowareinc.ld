@@ -5630,12 +5630,15 @@ SECTIONS {
         build/asm/asm_080f3fe0.s.o(.text*);
         build/asm/asm_080f4090.s.o(.text*);
         build/asm/asm_080f4180.s.o(.text*);
-        build/asm/asm_080f41b4.s.o(.text*);
-        build/asm/asm_080f41f0.s.o(.text*);
-        build/asm/asm_080f4284.s.o(.text*);
+
+        *libgcc.a:_call_via_rX.o(.text);
+        *libgcc.a:_divsi3.o(.text);
+        *libgcc.a:_dvmd_tls.o(.text);
+        
+
         build/asm/asm_080f4288.s.o(.text*);
         build/asm/asm_080f42cc.s.o(.text*);
-        build/asm/asm_080f4300.s.o(.text*);
+        *libgcc.a:_modsi3.o(.text);
         build/asm/asm_080f43d0.s.o(.text*);
         build/asm/asm_080f4440.s.o(.text*);
         build/asm/asm_080f4818.s.o(.text*);

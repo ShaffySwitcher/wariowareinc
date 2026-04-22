@@ -43,7 +43,7 @@ glabel func_0800727C
 /* 080072C4 */ ADDS R1, R6, #0
 /* 080072C6 */ ADDS R0, R0, R1
 /* 080072C8 */ LDR R1, [R2]
-/* 080072CA */ BL func_080F41B8
+/* 080072CA */ BL _call_via_r1
 /* 080072CE */ LSLS R0, R0, #8
 /* 080072D0 */ STR R0, [R4, #0X10]
 /* 080072D2 */ MOVS R1, #0XA

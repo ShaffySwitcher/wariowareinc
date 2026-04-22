@@ -126,7 +126,7 @@ void func_08008C9C(void) {
     gGameplayData.unk17e = 0;
     func_0800A330(0);
     if (unk4->unk0 != 0) {
-        func_080F41B8(&D_030049F0, (GameplayCallback)unk4->unk0);
+        ((GameplayCallback)unk4->unk0)(&D_030049F0);
     }
     gGameplayData.unk175 = gGameplayData.unk176;
     gGameplayData.unk6_7 = 0;

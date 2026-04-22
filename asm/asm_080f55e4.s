@@ -11,7 +11,7 @@ glabel func_080F55E4
 /* 080F55EA */ STR R1, [SP, #0X18]
 /* 080F55EC */ ADD R0, SP, #0X14
 /* 080F55EE */ MOV R1, SP
-/* 080F55F0 */ BL func_080F4A98
+/* 080F55F0 */ BL __unpack_d
 /* 080F55F4 */ MOVS R1, #0
 /* 080F55F6 */ LDR R0, [SP]
 /* 080F55F8 */ CMP R0, #2

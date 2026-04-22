@@ -23,7 +23,7 @@ glabel func_080EAA38
 /* 080EAA56 */ MULS R1, R4, R1
 /* 080EAA58 */ ADDS R0, R1
 /* 080EAA5A */ LDR R1, [R2]
-/* 080EAA5C */ BL func_080F41B8
+/* 080EAA5C */ BL _call_via_r1
 /* 080EAA60 */ ADDS R7, R0, #0
 /* 080EAA62 */ LDR R5, [R5]
 /* 080EAA64 */ LSLS R1, R4, #2

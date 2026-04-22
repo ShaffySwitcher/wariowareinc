@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_080747CC
 /* 080747CC */ PUSH {R4, LR}
-/* 080747CE */ BL func_080F41B4
+/* 080747CE */ BL _call_via_r0
 /* 080747D2 */ LDR R4, _08074808
 /* 080747D4 */ LDR R0, [R4]
 /* 080747D6 */ LDR R1, _0807480C

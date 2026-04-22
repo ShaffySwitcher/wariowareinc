@@ -13,11 +13,11 @@ glabel func_080F551C
 /* 080F5526 */ STR R3, [SP, #0X34]
 /* 080F5528 */ ADD R0, SP, #0X28
 /* 080F552A */ MOV R1, SP
-/* 080F552C */ BL func_080F4A98
+/* 080F552C */ BL __unpack_d
 /* 080F5530 */ ADD R0, SP, #0X30
 /* 080F5532 */ ADD R4, SP, #0X14
 /* 080F5534 */ ADDS R1, R4, #0
-/* 080F5536 */ BL func_080F4A98
+/* 080F5536 */ BL __unpack_d
 /* 080F553A */ MOVS R1, #0
 /* 080F553C */ LDR R0, [SP]
 /* 080F553E */ CMP R0, #1

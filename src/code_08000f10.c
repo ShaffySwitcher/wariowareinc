@@ -10,7 +10,7 @@ void func_08000F10(void) {
 
 void func_08000F28(void) {
     if (D_03000004 != 0) {
-        func_080F41B4();
+        D_03000004();
     }
     sVBlankFlag = TRUE;
 }

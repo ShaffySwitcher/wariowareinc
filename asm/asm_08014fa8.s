@@ -33,7 +33,7 @@ glabel func_08014FA8
 /* 08014FE0 */ LSLS R1, R1, #1
 /* 08014FE2 */ ADDS R0, R1
 /* 08014FE4 */ LDR R0, [R0]
-/* 08014FE6 */ BL func_080F41B4
+/* 08014FE6 */ BL _call_via_r0
 /* 08014FEA */ POP {R4}
 /* 08014FEC */ POP {R0}
 /* 08014FEE */ BX R0

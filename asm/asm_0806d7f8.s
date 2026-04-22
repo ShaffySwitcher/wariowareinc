@@ -27,7 +27,7 @@ glabel func_0806D7F8
 /* 0806D81E */ BL __divsi3
 /* 0806D822 */ ADDS R1, R0, #0
 /* 0806D824 */ ADDS R0, R4, #0
-/* 0806D826 */ BL func_080F4300
+/* 0806D826 */ BL __modsi3
 /* 0806D82A */ CMP R0, #0
 /* 0806D82C */ BNE _0806D862
 /* 0806D82E */ ADDS R1, R5, #0

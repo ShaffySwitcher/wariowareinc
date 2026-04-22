@@ -29,7 +29,7 @@ glabel func_080635C0
 /* 080635EA */ MULS R1, R5, R1
 /* 080635EC */ ADDS R0, R1
 /* 080635EE */ LDR R1, [R2]
-/* 080635F0 */ BL func_080F41B8
+/* 080635F0 */ BL _call_via_r1
 /* 080635F4 */ MOV SB, R0
 /* 080635F6 */ MOV R0, R8
 /* 080635F8 */ LDR R6, [R0, #0XC]

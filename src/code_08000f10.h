@@ -24,5 +24,3 @@ extern u16 get_random_u16(void);
 extern u16 get_random_range(u16 max);
 extern u32 sine_lerp(u32 fullAngle);
 extern u32 cosine_lerp(u32 fullAngle);
-
-extern void func_080F41B4(void);

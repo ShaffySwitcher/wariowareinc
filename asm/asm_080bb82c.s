@@ -19,7 +19,7 @@ glabel func_080BB82C
 /* 080BB842 */ MULS R1, R2, R1
 /* 080BB844 */ ADDS R0, R1
 /* 080BB846 */ LDR R1, [R4]
-/* 080BB848 */ BL func_080F41B8
+/* 080BB848 */ BL _call_via_r1
 /* 080BB84C */ POP {R4}
 /* 080BB84E */ POP {R1}
 /* 080BB850 */ BX R1
