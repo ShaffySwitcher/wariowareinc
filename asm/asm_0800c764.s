@@ -11,7 +11,7 @@ glabel func_0800C764
 /* 0800C76A */ LDRSH R0, [R4, R1]
 /* 0800C76C */ BL func_08001B28
 /* 0800C770 */ ADDS R0, R4, #0
-/* 0800C772 */ BL func_08006240
+/* 0800C772 */ BL mem_heap_dealloc
 /* 0800C776 */ POP {R4}
 /* 0800C778 */ POP {R0}
 /* 0800C77A */ BX R0

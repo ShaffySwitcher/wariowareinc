@@ -16,7 +16,7 @@ _0801DB26:
 /* 0801DB28 */ LDR R0, [R4]
 /* 0801DB2A */ ADDS R0, #0XB4
 /* 0801DB2C */ LDR R0, [R0]
-/* 0801DB2E */ BL func_08006240
+/* 0801DB2E */ BL mem_heap_dealloc
 /* 0801DB32 */ LDR R2, [R4]
 /* 0801DB34 */ LDRB R1, [R2, #0X10]
 /* 0801DB36 */ MOVS R0, #2

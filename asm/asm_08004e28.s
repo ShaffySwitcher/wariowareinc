@@ -13,7 +13,7 @@ glabel func_08004E28
 /* 08004E32 */ BL func_08004CE0
 /* 08004E36 */ ADDS R5, R0, #0
 /* 08004E38 */ LDR R0, [R4]
-/* 08004E3A */ BL func_08006240
+/* 08004E3A */ BL mem_heap_dealloc
 /* 08004E3E */ STR R5, [R4]
 /* 08004E40 */ POP {R4, R5}
 /* 08004E42 */ POP {R0}

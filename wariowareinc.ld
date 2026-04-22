@@ -180,9 +180,7 @@ SECTIONS {
         build/asm/asm_08005fb8.s.o(.text*);
         build/asm/asm_08006084.s.o(.text*);
         build/asm/asm_08006148.s.o(.text*);
-        build/asm/asm_08006174.s.o(.text*);
-        build/asm/asm_08006184.s.o(.text*);
-        build/asm/asm_08006240.s.o(.text*);
+        build/src/memory_heap.c.o(.text);
         build/asm/asm_080062e4.s.o(.text*);
         build/asm/asm_080063b4.s.o(.text*);
         build/asm/asm_08006410.s.o(.text*);

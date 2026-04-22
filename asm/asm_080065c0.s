@@ -36,9 +36,9 @@ _080065F0:
 /* 080065F6 */ LDR R0, [R5, #0X14]
 /* 080065F8 */ BL func_08005FA0
 /* 080065FC */ LDR R0, [R5, #0X10]
-/* 080065FE */ BL func_08006240
+/* 080065FE */ BL mem_heap_dealloc
 /* 08006602 */ ADDS R0, R5, #0
-/* 08006604 */ BL func_08006240
+/* 08006604 */ BL mem_heap_dealloc
 /* 08006608 */ POP {R4, R5}
 /* 0800660A */ POP {R0}
 /* 0800660C */ BX R0

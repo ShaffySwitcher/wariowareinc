@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0800CEF8
 /* 0800CEF8 */ PUSH {LR}
-/* 0800CEFA */ BL func_08006240
+/* 0800CEFA */ BL mem_heap_dealloc
 /* 0800CEFE */ BL func_08003FB8
 /* 0800CF02 */ POP {R0}
 /* 0800CF04 */ BX R0

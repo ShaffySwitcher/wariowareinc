@@ -33,7 +33,7 @@ enum BGLayersEnum {
     BG_LAYER_3
 };
 
-extern struct GraphicsBuffer {
+struct GraphicsBuffer {
     u16 DISPCNT;
     u8 pad[0xA];
     u16 unkC;
@@ -46,4 +46,6 @@ extern struct GraphicsBuffer {
     u16 unk1A;
     u8 pad1[0x30];
     u16 unk4C;
+    u8 pad4e[0x806];
+    u8 unk854;
 } gGraphicsBuffer;

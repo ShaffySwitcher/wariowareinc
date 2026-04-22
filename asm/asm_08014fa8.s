@@ -20,7 +20,7 @@ glabel func_08014FA8
 /* 08014FC4 */ LSLS R1, R1, #1
 /* 08014FC6 */ ADDS R0, R1
 /* 08014FC8 */ LDR R0, [R0]
-/* 08014FCA */ BL func_08006240
+/* 08014FCA */ BL mem_heap_dealloc
 /* 08014FCE */ LDR R1, [R4]
 /* 08014FD0 */ ADDS R1, #0XDE
 /* 08014FD2 */ LDRB R2, [R1]

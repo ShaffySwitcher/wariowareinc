@@ -28,28 +28,28 @@ _08008382: \n\
 /* 080083AE */ LSLS R1, R1, #2 \n\
 /* 080083B0 */ ADDS R0, R0, R1 \n\
 /* 080083B2 */ LDR R0, [R0] \n\
-/* 080083B4 */ BL func_08006240 \n\
+/* 080083B4 */ BL mem_heap_dealloc \n\
 /* 080083B8 */ LDR R0, [R4] \n\
 /* 080083BA */ MOVS R1, #0XA3 \n\
 /* 080083BC */ LSLS R1, R1, #2 \n\
 /* 080083BE */ ADDS R0, R0, R1 \n\
 /* 080083C0 */ LDR R0, [R0] \n\
-/* 080083C2 */ BL func_08006240 \n\
+/* 080083C2 */ BL mem_heap_dealloc \n\
 /* 080083C6 */ LDR R0, [R4] \n\
 /* 080083C8 */ MOVS R1, #0X86 \n\
 /* 080083CA */ LSLS R1, R1, #2 \n\
 /* 080083CC */ ADDS R0, R0, R1 \n\
 /* 080083CE */ LDR R0, [R0] \n\
-/* 080083D0 */ BL func_08006240 \n\
+/* 080083D0 */ BL mem_heap_dealloc \n\
 /* 080083D4 */ LDR R0, _08008400 \n\
 /* 080083D6 */ LDR R0, [R0] \n\
-/* 080083D8 */ BL func_08006240 \n\
+/* 080083D8 */ BL mem_heap_dealloc \n\
 /* 080083DC */ LDR R0, _08008404 \n\
 /* 080083DE */ LDR R0, [R0] \n\
-/* 080083E0 */ BL func_08006240 \n\
+/* 080083E0 */ BL mem_heap_dealloc \n\
 /* 080083E4 */ LDR R0, =D_0300652C \n\
 /* 080083E6 */ LDR R0, [R0] \n\
-/* 080083E8 */ BL func_08006240 \n\
+/* 080083E8 */ BL mem_heap_dealloc \n\
 /* 080083EC */ BL func_08007EAC \n\
 /* 080083F0 */ POP {R4, R5} \n\
 /* 080083F2 */ POP {R0} \n\

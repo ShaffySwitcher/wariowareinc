@@ -87,11 +87,11 @@ void func_08000674(u32 arg0) {
 }
 
 u32 func_0800068C(u32 arg0) {
-    return gSaveBuffer->flags[arg0].unk0;
+    return gSaveBuffer->flags[arg0].unk0_1;
 }
 
 void func_080006A4(u32 arg0) {
-    gSaveBuffer->flags[arg0].unk0 = TRUE;
+    gSaveBuffer->flags[arg0].unk0_1 = TRUE;
 }
 
 u32 func_080006BC(u32 arg0) {

@@ -32,17 +32,17 @@ glabel func_0801522C
 /* 08015260 */ LDR R0, [R4]
 /* 08015262 */ ADDS R0, R5
 /* 08015264 */ LDR R0, [R0]
-/* 08015266 */ BL func_08006240
+/* 08015266 */ BL mem_heap_dealloc
 /* 0801526A */ LDR R0, [R4]
 /* 0801526C */ MOVS R1, #0XCC
 /* 0801526E */ LSLS R1, R1, #1
 /* 08015270 */ ADDS R0, R1
 /* 08015272 */ LDR R0, [R0]
-/* 08015274 */ BL func_08006240
+/* 08015274 */ BL mem_heap_dealloc
 /* 08015278 */ LDR R0, [R4]
 /* 0801527A */ ADDS R0, R6
 /* 0801527C */ LDR R0, [R0]
-/* 0801527E */ BL func_08006240
+/* 0801527E */ BL mem_heap_dealloc
 /* 08015282 */ LDR R1, [R4]
 /* 08015284 */ ADDS R1, #0XDE
 /* 08015286 */ LDRB R0, [R1]

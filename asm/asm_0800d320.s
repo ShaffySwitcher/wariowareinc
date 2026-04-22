@@ -46,13 +46,13 @@ _0800D35A:
 /* 0800D36C */ BLO _0800D35A
 _0800D36E:
 /* 0800D36E */ LDR R0, [R5, #8]
-/* 0800D370 */ BL func_08006240
+/* 0800D370 */ BL mem_heap_dealloc
 /* 0800D374 */ LDR R0, [R5, #0X50]
-/* 0800D376 */ BL func_08006240
+/* 0800D376 */ BL mem_heap_dealloc
 /* 0800D37A */ LDR R0, [R5, #0X74]
-/* 0800D37C */ BL func_08006240
+/* 0800D37C */ BL mem_heap_dealloc
 /* 0800D380 */ ADDS R0, R5, #0
-/* 0800D382 */ BL func_08006240
+/* 0800D382 */ BL mem_heap_dealloc
 /* 0800D386 */ POP {R4, R5, R6, R7}
 /* 0800D388 */ POP {R0}
 /* 0800D38A */ BX R0

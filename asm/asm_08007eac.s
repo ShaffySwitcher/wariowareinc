@@ -13,9 +13,9 @@ glabel func_08007EAC
 _08007EB6:
 /* 08007EB6 */ LDR R4, [R5, #0X14]
 /* 08007EB8 */ LDR R0, [R5, #4]
-/* 08007EBA */ BL func_08006240
+/* 08007EBA */ BL mem_heap_dealloc
 /* 08007EBE */ ADDS R0, R5, #0
-/* 08007EC0 */ BL func_08006240
+/* 08007EC0 */ BL mem_heap_dealloc
 /* 08007EC4 */ ADDS R5, R4, #0
 /* 08007EC6 */ CMP R5, #0
 /* 08007EC8 */ BNE _08007EB6

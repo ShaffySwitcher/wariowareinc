@@ -3,13 +3,15 @@
 #include "gameplay.h"
 
 #define gSaveBuffer (*D_03003BBC)
-#define SAVE_BUFFER_SIZE 0x404
+#define SAVE_BUFFER_SIZE sizeof(struct SaveBuffer)
 
 struct SaveFlagsEntry {
-    u8 unk0 : 1;
+    u8 unk0_1 : 1;
     u8 flag : 1;
-    u8 unk2 : 6;
-    u8 pad[7];
+    u8 unk0_3 : 6;
+    u8 pad1;
+    u16 unk2[2];
+    u8 pad[2];
 };
 
 struct SaveBuffer {
