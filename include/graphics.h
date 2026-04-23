@@ -34,18 +34,20 @@ enum BGLayersEnum {
 };
 
 struct GraphicsBuffer {
-    u16 DISPCNT;
-    u8 pad[0xA];
-    u16 unkC;
-    u16 unkE;
-    u16 unk10;
-    u16 unk12;
-    u16 unk14;
-    u16 unk16;
-    u16 unk18;
-    u16 unk1A;
-    u8 pad1[0x30];
-    u16 unk4C;
-    u8 pad4e[0x806];
-    u8 unk854;
+    u16 DISPCNT;       // 0x0 size:0x2
+    u8 pad[0xA];       // 0x2 size:0xA
+    u16 unkC;          // 0xC size:0x2
+    u16 unkE;          // 0xE size:0x2
+    u16 unk10;         // 0x10 size:0x2
+    u16 unk12;         // 0x12 size:0x2
+    u16 unk14;         // 0x14 size:0x2
+    u16 unk16;         // 0x16 size:0x2
+    u16 unk18;         // 0x18 size:0x2
+    u16 unk1A;         // 0x1A size:0x2
+    u8 pad1[0x30];     // 0x1C size:0x30
+    u16 unk4C;         // 0x4C size:0x2
+    u8 pad4e[6];       // 0x4E size:0x6
+    u16 unk54;         // 0x54 size:0x2
+    u8 pad56[0x7FE];   // 0x56 size:0x7FE
+    u8 unk854;         // 0x854
 } gGraphicsBuffer;

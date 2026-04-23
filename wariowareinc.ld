@@ -270,13 +270,7 @@ SECTIONS {
         build/asm/asm_08008058.s.o(.text*);
         build/asm/asm_0800806c.s.o(.text*);
         build/asm/asm_08008130.s.o(.text*);
-        build/asm/asm_08008134.s.o(.text*);
-        build/asm/asm_08008174.s.o(.text*);
         build/src/gameplay.c.o(.text);
-        build/asm/asm_08008e1c.s.o(.text*);
-        build/asm/asm_0800912c.s.o(.text*);
-        build/asm/asm_080091b0.s.o(.text*);
-        build/asm/asm_080091e0.s.o(.text*);
         build/asm/asm_080097d4.s.o(.text*);
         build/asm/asm_0800986c.s.o(.text*);
         build/asm/asm_080099f8.s.o(.text*);
