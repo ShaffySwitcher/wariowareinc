@@ -85,7 +85,7 @@ void func_08001F38(struct SongHeader *song, u32 arg1) {
     }
 }
 
-void func_08001F80(struct SoundPlayer* song, u16 duration) {
+void func_08001F80(struct SongHeader* song, u16 duration) {
     struct SoundPlayer* soundPlayer;
     u32 isPlayingThisSound;
     u32 i;

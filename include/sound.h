@@ -8,9 +8,17 @@ enum PsgChannelsEnum {
     /* -- */ TOTAL_PSG_CHANNELS
 };
 
-/*enum SoundPlayersEnum {
-
-};*/
+enum SoundPlayersEnum {
+    /* 00 */ MUSIC_PLAYER_0,
+    /* 01 */ MUSIC_PLAYER_1,
+    /* 02 */ MUSIC_PLAYER_2,
+    /* 03 */ MUSIC_PLAYER_3,
+    /* 04 */ MUSIC_PLAYER_4,
+    /* 05 */ MUSIC_PLAYER_5,
+    /* 06 */ MUSIC_PLAYER_6,
+    /* 07 */ MUSIC_PLAYER_7,
+    /* 08 */ MUSIC_PLAYER_8
+};
 
 enum MidiTracksEnum {
     MIDI_TRACK_0    = (1 << 0),
@@ -37,9 +45,12 @@ enum DirectSoundModesEnum {
     /* 02 */ DIRECTSOUND_MODE_MONO2
 };
 
-/*enum InstrumentBanksEnum {
-
-};*/
+enum InstrumentBanksEnum {
+    /* 00 */ INST_BANK_UNUSED_0,
+    /* 01 */ INST_BANK_1,
+    /* 02 */ INST_BANK_2,
+    /* 03 */ INST_BANK_3,
+};
 
 
 /* INSTRUMENT DATA STRUCTURES */

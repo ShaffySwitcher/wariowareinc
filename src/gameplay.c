@@ -197,7 +197,7 @@ u32 gameplay_update_scene(void) {
                         func_08005A54((u16)i, 1);
                     }
                     gGameplayData.currentState = GAMEPLAY_STATE_PAUSED;
-                    play_sound((struct SongHeader *)&D_083FBAF4);
+                    play_sound(&s_BASIC_PAUSE_ON_seqData);
                     func_08008798();
                     break;
                 }
@@ -219,12 +219,12 @@ u32 gameplay_update_scene(void) {
                 if (gGameplayData.unk5_6 == 0) {
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
                     gGameplayData.currentState = GAMEPLAY_STATE_RESUMING;
-                    play_sound((struct SongHeader *)&D_083FBB08);
+                    play_sound(&s_BASIC_PAUSE_OFF_seqData);
                 } else {
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
                     func_08006C40(0x20, 0);
                     stop_all_soundplayers();
-                    play_sound((struct SongHeader *)&D_083FBB08);
+                    play_sound(&s_BASIC_PAUSE_OFF_seqData);
                     gGameplayData.currentState = GAMEPLAY_STATE_EXITING;
                 }
             } else if (gPressedKeys & (DPAD_LEFT | DPAD_RIGHT)) {
@@ -502,10 +502,10 @@ u32 gameplay_run_script(void) {
                     func_0800CE6C();
                     stop_all_soundplayers();
                     if (state == 1) {
-                        play_sound((struct SongHeader *)&D_083FBB44);
+                        play_sound(&s_BASIC_BUTTON_A_seqData);
                     }
                     if (state == 0x16) {
-                        play_sound((struct SongHeader *)&D_083FBBBC);
+                        play_sound(&s_BASIC_BUTTON_B_seqData);
                     }
                 }
             }

@@ -30,3 +30,4 @@ typedef s32 s24_8;
 
 #include "gba/gba.h"
 #include "types.h"
+#include "sequence_data.h"
