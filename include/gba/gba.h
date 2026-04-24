@@ -27,6 +27,9 @@
 #define D_0E000002		*(volatile u8*)(CartRAMBase + 2)
 #define D_0E000003		*(volatile u8*)(CartRAMBase + 3)
 
+#define PALETTE_RAM ((volatile u16 *)(PaletteRAMBase))
+#define IO_RAM ((volatile u16 *)(IORAMBase))
+
 #include "include/gba/gba_graphics_regs.h"
 #include "include/gba/gba_dma_regs.h"
 #include "include/gba/gba_input_regs.h"

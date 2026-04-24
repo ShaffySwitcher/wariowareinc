@@ -4,55 +4,10 @@
 #include "memory_heap.h"
 #include "code_08000f10.h"
 
-typedef void (*GameplayCallback)(void *);
-
 asm(".include \"include/gba.inc\"");
 
-#define PALETTE_RAM ((volatile u16 *)(PaletteRAMBase))
-
-extern void func_08003A70(void *);
-extern void func_08003B58(void *);
-extern void func_08003D28(void *, u32);
-extern void func_08003F14(void);
-extern void func_080041B4(void);
-extern void func_080056F4(void);
-extern void func_08005744(void);
-extern void func_08005914(u32);
-extern void func_08006A5C(void);
-extern void func_08006B00(void);
-extern void func_08006C40(u32, u32);
-extern void func_08006F68(void);
-extern void func_08005A54(u16, u32);
-extern u32 func_080091E0(void);
-extern void func_0800912C(u16);
-extern void *func_080091B0(void *, s32);
-extern void func_080099F8(void);
-extern void func_08009AA0(void);
-extern u32 func_08009CAC(void);
-extern void func_08009ECC(u32);
-extern void func_08009EE4(u32);
-extern void func_08009FEC(u32);
-extern void func_08009FB0(s32);
-extern void func_0800A098(void);
-extern void func_0800A200(u32);
-extern void func_0800A270(void);
-extern void func_0800CC9C(s32, s32);
-extern void func_0800CD94(s32, s32);
-extern void func_080EE9B8(void *, s32, s32);
-extern void func_080EFA54(void *, u32);
-extern void stop_soundplayer(struct SoundPlayer *);
-extern void stop_all_soundplayers(void);
-extern void func_08008130(void);
-extern void func_080006A4(u32);
-
-
-void func_08008374(void);
-u32 func_0800840C(void);
-void func_080088C0(void);
-void func_08008C9C(void);
-
 void func_08008134(void) {
-    if (*(s16 *)&D_030035E0 != 0) {
+    if (D_030035E0 != 0) {
         func_080081D8();
     } else {
         if (func_0800840C() == 2) {
@@ -100,10 +55,10 @@ void func_080081D8(void) {
     func_08006B90(0);
     func_08006B68();
     func_08006F28();
-    gGameplayData.unk176 = MAX_LIFE;
+    gGameplayData.maxLives = MAX_LIVES;
     dma3_set(D_03003BBC[0]->unk10, &gGameplayData.unk22c, 0x10, 0x10, 0x100);
     gGameplayData.unk0 = D_03003628;
-    gGameplayData.unk20 = (struct GameplayScriptCmd *)D_03003628->unk8;
+    gGameplayData.unk20 = D_03003628->unk8;
     gGameplayData.unk6_3 = 0;
     gGameplayData.unk1f4_1 = 0;
     gGameplayData.unk218 = mem_heap_alloc(0x8000);
@@ -123,7 +78,7 @@ void func_080081D8(void) {
     func_08000F74(func_08008940);
     gGameplayData.unk8 = -1;
     *PALETTE_RAM = 0;
-    *(volatile s16*) IORAMBase = 0;
+    *IO_RAM = 0;
     *PALETTE_RAM = 0; // very awesome
     
     gGameplayData.unk7_2 = 0;
@@ -212,7 +167,7 @@ u32 func_0800840C(void) {
             if (func_080091E0() == 1) {
                 *PALETTE_RAM = 0;
                 *(volatile s16*)IORAMBase = 0;
-                D_0300363C = gGameplayData.unk175;
+                D_0300363C = gGameplayData.currentLives;
                 return 2;
             }
             break;
@@ -361,7 +316,7 @@ void func_08008C9C(void) {
     u32 i;
     u32 args[3];
     struct GameplayData_struct_0* unk0 = gGameplayData.unk0; 
-    struct GameplayData_struct_0_struct_4* unk4 = unk0->unk4;
+    struct GameplayStageInfo* unk4 = unk0->unk4;
 
     D_03004890.unk8 = 0x8C;
     gGameplayData.unk1A = unk0->unk0;
@@ -384,13 +339,13 @@ void func_08008C9C(void) {
     gGraphicsBuffer.DISPCNT = 0x1000;
     gGameplayData.unk274 = 0;
     gGameplayData.unk278 = 0;
-    gGameplayData.unk17c = 0;
+    gGameplayData.currentScore = 0;
     gGameplayData.unk17e = 0;
     func_0800A330(0);
     if (unk4->unk0 != 0) {
-        ((GameplayCallback)unk4->unk0)(&D_030049F0);
+        unk4->unk0(&D_030049F0);
     }
-    gGameplayData.unk175 = gGameplayData.unk176;
+    gGameplayData.currentLives = gGameplayData.maxLives;
     gGameplayData.unk6_7 = 0;
     gGameplayData.unk6_8 = 1;
     gGameplayData.unk24 = 1;
@@ -398,7 +353,7 @@ void func_08008C9C(void) {
     args[1] = 0;
     if (*(u8*)&D_03003634 != 0) {
         func_08006E94(1);
-        gGameplayData.unk20 = (struct GameplayScriptCmd *)&D_083A4BCC;
+        gGameplayData.unk20 = &D_083A4BCC;
         args[0] = 0;
     }
     func_0800986C(args);
@@ -418,58 +373,45 @@ void func_08008DF4(void) {
 
 #include "asm/gameplay/asm_08008e1c.s"
 
-#include "asm/gameplay/asm_0800912c.s"
+void func_0800912C(u16 arg0) {
+    struct GameplayStageInfo *stageInfo = gGameplayData.unk0->unk4;
+    u32 args[3];
+    
+    if (D_03003848 != 0x63) {
+        if (func_0800068C(D_03003848) != 0) {
+            gGameplayData.unk23e = func_080089D8(D_03003848, arg0);
+        }
+    } else {
+        func_080089D8(D_03003848, arg0);
+    }
+    
+    func_0800A270();
+    gGameplayData.unk23c = 0xFF;
+    gGameplayData.unk6_8 = TRUE;
+    gGameplayData.unk24 = 0x10;
+    
+    args[0] = stageInfo->unk30;
+    args[1] = 0;
+    func_0800986C(args);
+}
 
-#include "asm/gameplay/asm_080091b0.s"
+struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd* script, s32 target) {
+    struct GameplayScriptCmd* cmd = script;
+    s32 step = -1;
 
-union FreeType { // convenience until casting mismatched are solved (or permanent?, since it's clean)
-    u32 u32;
-    s32 s32;
-    u16 u16;
-    s16 s16;
-    u8 u8;
-    s8 s8;
-    u32 *u32ptr;
-    s32 *s32ptr;
-    u16 *u16ptr;
-    s16 *s16ptr;
-    u8 *u8ptr;
-    s8 *s8ptr;
-    void *vptr;
-    u32 (*ufunc)();
-    void (*vfunc)();
-};
+    if (target < 0) {
+        step = 1;
+    }
 
-struct GameplayScriptState {
-    u8 unk0;
-    u8 pad1[7];
-    void *unk8;
-    u32 unkC;
-};
+    target &= 0x7fffffff;
 
-struct GameplayStageInfo {
-    u32 unk0;
-    u8 pad4[4];
-    u32 unk8;
-    u8 padc[0x18];
-    u32 unk24;
-    u32 unk28;
-    u32 unk2C;
-    u32 unk30;
-    u32 unk34;
-    u8 unk38;
-};
-
-struct GameplayScriptCmd {
-    u32 opcode;
-    union FreeType arg;
-};
-
-extern struct GameplayScriptState D_030048B8;
-extern u8 D_03003848;
-extern u8 D_083A4BE4[];
-extern void *D_083FBB44;
-extern void *D_083FBBBC;
+    while (TRUE) {
+        if (cmd->opcode == 0x11 && cmd->arg.s32 == target) {
+            return cmd;
+        }
+        cmd += step;
+    };
+}
 
 u32 func_080091E0(void) {
     struct GameplayStageInfo *stage;
@@ -480,7 +422,7 @@ u32 func_080091E0(void) {
     union FreeType value;
     u32 state;
 
-    stage = (struct GameplayStageInfo *)gGameplayData.unk0->unk4;
+    stage = gGameplayData.unk0->unk4;
     value.u32 = 0;
     while (value.u32 < 2) {
         args[value.u32] = 0;
@@ -535,36 +477,35 @@ u32 func_080091E0(void) {
     if (func_08009CAC()) {
         switch (gGameplayData.unk24 - 2) {
             case 4:
-                func_0800912C(gGameplayData.unk17c);
+                func_0800912C(gGameplayData.currentScore);
                 return 0;
 
             case 14:
                 func_08009ECC(0x100);
                 func_08009FEC(0);
                 func_08009FB0(0);
-                gGameplayData.unk175 = gGameplayData.unk176;
-                gGameplayData.unk17c = 0;
+                gGameplayData.currentLives = gGameplayData.maxLives;
+                gGameplayData.currentScore = 0;
                 gGameplayData.unk17e = 0;
                 gGameplayData.unk270 = 0;
 
                 value.u32 = (gGameplayData.unk23c == 0 ? 0x8000 : 0x8001);
 
-                gGameplayData.unk20 = (struct GameplayScriptCmd *)func_080091B0(
-                    gGameplayData.unk0->unk8, value.u32 | 0x80000000);
+                gGameplayData.unk20 = func_080091B0(gGameplayData.unk0->unk8, value.u32 | 0x80000000);
                 break;
 
             case 0:
                 func_08008DF4();
                 if (gGameplayData.unk178 == 1) {
-                    gGameplayData.unk175--;
-                    if (gGameplayData.unk175 == 0) {
+                    gGameplayData.currentLives--;
+                    if (gGameplayData.currentLives == 0) {
                         gGameplayData.unk5_4 = TRUE;
                     }
                 } else if (gGameplayData.unk270 != 0) {
                     func_0800A098();
                 }
 
-                if (gGameplayData.unk5_4 != 0) {
+                if (gGameplayData.unk5_4) {
                     gGameplayData.unk24 = 6;
                     func_0800A200(0);
                     func_0800CC9C(gGameplayData.unk0->unk0, 0x60);
@@ -576,12 +517,12 @@ u32 func_080091E0(void) {
                 }
 
                 if (gGameplayData.unk172 != 6) {
-                    gGameplayData.unk17e = gGameplayData.unk17c;
+                    gGameplayData.unk17e = gGameplayData.currentScore;
                     if (gGameplayData.unk178 == 0 || (*scriptTarget >> 9) == 0) {
                         gGameplayData.unk70++;
-                        gGameplayData.unk17c++;
-                        if (gGameplayData.unk17c > 0x3E7) {
-                            gGameplayData.unk17c = 0x3E7;
+                        gGameplayData.currentScore++;
+                        if (gGameplayData.currentScore > MAX_SCORE) {
+                            gGameplayData.currentScore = MAX_SCORE;
                         }
                         gGameplayData.unk221++;
                     }
@@ -651,7 +592,7 @@ u32 func_080091E0(void) {
 
                 case 4:
                     func_0800A200(0);
-                    func_080089D8(D_03003848, gGameplayData.unk17c);
+                    func_080089D8(D_03003848, gGameplayData.currentScore);
                     func_080006A4(D_03003848);
                     func_0800A270();
                     func_08009E20(gGameplayData.unk0->unk0);
@@ -708,7 +649,7 @@ u32 func_080091E0(void) {
                     break;
 
                 case 14:
-                    gGameplayData.unk20 = (struct GameplayScriptCmd *)func_08008B18();
+                    gGameplayData.unk20 = func_08008B18();
                     break;
 
                 case 19:
@@ -719,11 +660,11 @@ u32 func_080091E0(void) {
                     return 1;
 
                 case 28:
-                    gGameplayData.unk282 = value.u32;
+                    gGameplayData.unk282 = value.s32;
                     break;
 
                 case 29:
-                    func_0800CD94((s16)gGameplayData.unk282, value.u32);
+                    func_0800CD94(gGameplayData.unk282, value.u32);
                     break;
 
                 case 21:
@@ -735,12 +676,12 @@ u32 func_080091E0(void) {
 
                 case 22:
                     if (func_0800068C(D_03003848) != 0) {
-                        gGameplayData.unk20 = (struct GameplayScriptCmd *)((u8 *)func_080091B0(cmd, value.u32) + 8);
+                        gGameplayData.unk20 = func_080091B0(cmd, value.u32) + 1;
                     }
                     break;
 
                 case 17:
-                    gGameplayData.unk20 = (struct GameplayScriptCmd *)((u8 *)func_080091B0(cmd, value.u32) + 8);
+                    gGameplayData.unk20 = func_080091B0(cmd, value.u32) + 1;
                     break;
 
                 case 23:
