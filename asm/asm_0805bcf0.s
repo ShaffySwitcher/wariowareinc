@@ -74,7 +74,7 @@ _0805BD70:
 
 .balign 4, 0
 _0805BD74:
-/* 0805BD74 */ .word D_083A4A7C
+/* 0805BD74 */ .word gSpriteHandler
 _0805BD78:
 /* 0805BD78 */ ADDS R0, R5, #0
 /* 0805BD7A */ BL func_0805BFF0
@@ -145,7 +145,7 @@ _0805BDE8:
 
 .balign 4, 0
 _0805BDF8:
-/* 0805BDF8 */ .word D_083A4A7C
+/* 0805BDF8 */ .word gSpriteHandler
 
 .balign 4, 0
 _0805BDFC:

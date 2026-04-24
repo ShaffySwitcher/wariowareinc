@@ -85,7 +85,7 @@ _0809F384:
 
 .balign 4, 0
 _0809F388:
-/* 0809F388 */ .word D_083A4A7C
+/* 0809F388 */ .word gSpriteHandler
 _0809F38C:
 /* 0809F38C */ LDR R4, _0809F47C
 /* 0809F38E */ LDR R0, [R4]
@@ -205,7 +205,7 @@ _0809F474:
 
 .balign 4, 0
 _0809F47C:
-/* 0809F47C */ .word D_083A4A7C
+/* 0809F47C */ .word gSpriteHandler
 
 .balign 4, 0
 _0809F480:

@@ -49,7 +49,7 @@ glabel func_08034A6C
 /* 08034AC8 */ MOVS R2, #0
 /* 08034ACA */ LDRSH R1, [R1, R2]
 /* 08034ACC */ MOVS R2, #4
-/* 08034ACE */ BL func_080EF400
+/* 08034ACE */ BL sprite_attr_set
 /* 08034AD2 */ LDR R0, [R7]
 /* 08034AD4 */ ADDS R0, #0X6C
 /* 08034AD6 */ MOVS R1, #5
@@ -68,7 +68,7 @@ _08034AEC:
 
 .balign 4, 0
 _08034AF0:
-/* 08034AF0 */ .word D_083A4A7C
+/* 08034AF0 */ .word gSpriteHandler
 
 .balign 4, 0
 _08034AF4:
@@ -78,7 +78,7 @@ _08034AF4:
 _08034AF8:
 /* 08034AF8 */ .word D_083FC79C
 _08034AFC:
-/* 08034AFC */ LDR R4, =D_083A4A7C
+/* 08034AFC */ LDR R4, =gSpriteHandler
 /* 08034AFE */ LDR R0, [R4]
 /* 08034B00 */ LDR R1, [R7]
 /* 08034B02 */ ADDS R1, #0X60

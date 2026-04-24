@@ -215,7 +215,7 @@ _08031BFC:
 
 .balign 4, 0
 _08031C00:
-/* 08031C00 */ .word D_083A4A7C
+/* 08031C00 */ .word gSpriteHandler
 
 .balign 4, 0
 _08031C04:

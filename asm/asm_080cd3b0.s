@@ -33,9 +33,9 @@ _080CD3DC:
 
 .balign 4, 0
 _080CD3E0:
-/* 080CD3E0 */ .word D_083A4A7C
+/* 080CD3E0 */ .word gSpriteHandler
 _080CD3E4:
-/* 080CD3E4 */ LDR R0, =D_083A4A7C
+/* 080CD3E4 */ LDR R0, =gSpriteHandler
 /* 080CD3E6 */ LDR R0, [R0]
 /* 080CD3E8 */ MOVS R2, #0
 /* 080CD3EA */ LDRSH R1, [R1, R2]

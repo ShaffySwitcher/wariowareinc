@@ -33,7 +33,7 @@ _080BF774:
 
 .balign 4, 0
 _080BF778:
-/* 080BF778 */ .word D_083A4A7C
+/* 080BF778 */ .word gSpriteHandler
 _080BF77C:
 /* 080BF77C */ MOVS R4, #0
 _080BF77E:
@@ -65,6 +65,6 @@ _080BF7AC:
 
 .balign 4, 0
 _080BF7A8:
-/* 080BF7A8 */ .word D_083A4A7C
+/* 080BF7A8 */ .word gSpriteHandler
 .ltorg
 .end

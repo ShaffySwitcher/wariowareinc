@@ -101,9 +101,9 @@ _0805A550:
 
 .balign 4, 0
 _0805A554:
-/* 0805A554 */ .word D_083A4A7C
+/* 0805A554 */ .word gSpriteHandler
 _0805A558:
-/* 0805A558 */ LDR R4, =D_083A4A7C
+/* 0805A558 */ LDR R4, =gSpriteHandler
 /* 0805A55A */ LDR R0, [R4]
 /* 0805A55C */ MOV R1, IP
 /* 0805A55E */ ADDS R1, #0X6A

@@ -40,7 +40,7 @@ _080549C0:
 
 .balign 4, 0
 _080549C4:
-/* 080549C4 */ .word D_083A4A7C
+/* 080549C4 */ .word gSpriteHandler
 _080549C8:
 /* 080549C8 */ LDR R1, [R5]
 /* 080549CA */ LDR R0, [R1, #0X68]
@@ -53,7 +53,7 @@ _080549D6:
 /* 080549D6 */ MOVS R2, #0X14
 /* 080549D8 */ LDRSH R1, [R1, R2]
 _080549DA:
-/* 080549DA */ LDR R0, =D_083A4A7C
+/* 080549DA */ LDR R0, =gSpriteHandler
 /* 080549DC */ LDR R0, [R0]
 /* 080549DE */ MOVS R2, #1
 /* 080549E0 */ BL sprite_set_visible

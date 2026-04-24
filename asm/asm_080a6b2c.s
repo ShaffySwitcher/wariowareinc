@@ -25,7 +25,7 @@ glabel func_080A6B2C
 
 .balign 4, 0
 _080A6B54:
-/* 080A6B54 */ .word D_083A4A7C
+/* 080A6B54 */ .word gSpriteHandler
 
 .balign 4, 0
 _080A6B58:

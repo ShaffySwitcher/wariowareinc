@@ -245,7 +245,7 @@ _0800EA24:
 
 .balign 4, 0
 _0800EA28:
-/* 0800EA28 */ .word D_083A4A7C
+/* 0800EA28 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800EA2C:

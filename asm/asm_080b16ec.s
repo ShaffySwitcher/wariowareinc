@@ -55,7 +55,7 @@ _080B1744:
 
 .balign 4, 0
 _080B1748:
-/* 080B1748 */ .word D_083A4A7C
+/* 080B1748 */ .word gSpriteHandler
 _080B174C:
 /* 080B174C */ ADDS R0, #0X26
 /* 080B174E */ LDRB R0, [R0]

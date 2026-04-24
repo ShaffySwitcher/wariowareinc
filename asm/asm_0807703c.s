@@ -77,7 +77,7 @@ _08077080:
 
 .balign 4, 0
 _080770BC:
-/* 080770BC */ .word D_083A4A7C
+/* 080770BC */ .word gSpriteHandler
 _080770C0:
 /* 080770C0 */ LDRB R0, [R1, #4]
 /* 080770C2 */ LSLS R0, R0, #0X1E

@@ -19,7 +19,7 @@ glabel func_080B8344
 /* 080B835E */ ADDS R2, R0, #0
 /* 080B8360 */ LDR R1, [R5]
 /* 080B8362 */ STR R2, [R1, #0X3C]
-/* 080B8364 */ LDR R4, =D_083A4A7C
+/* 080B8364 */ LDR R4, =gSpriteHandler
 /* 080B8366 */ LDR R0, [R4]
 /* 080B8368 */ LDR R1, [R1, #0X5C]
 /* 080B836A */ LSLS R1, R1, #0X10

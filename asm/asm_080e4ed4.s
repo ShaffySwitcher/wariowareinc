@@ -47,7 +47,7 @@ _080E4F1C:
 
 .balign 4, 0
 _080E4F20:
-/* 080E4F20 */ .word D_083A4A7C
+/* 080E4F20 */ .word gSpriteHandler
 
 .balign 4, 0
 _080E4F24:

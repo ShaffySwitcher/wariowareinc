@@ -54,7 +54,7 @@ _080BF5C0:
 
 .balign 4, 0
 _080BF5C4:
-/* 080BF5C4 */ .word D_083A4A7C
+/* 080BF5C4 */ .word gSpriteHandler
 _080BF5C8:
 /* 080BF5C8 */ MOVS R0, #0
 _080BF5CA:

@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_080A8418
 /* 080A8418 */ PUSH {R4, LR}
-/* 080A841A */ LDR R0, =D_083A4A7C
+/* 080A841A */ LDR R0, =gSpriteHandler
 /* 080A841C */ LDR R4, [R0]
 /* 080A841E */ BL func_0800A088
 /* 080A8422 */ ADDS R1, R0, #0

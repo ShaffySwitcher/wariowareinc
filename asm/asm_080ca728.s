@@ -80,7 +80,7 @@ _080CA7AC:
 
 .balign 4, 0
 _080CA7B0:
-/* 080CA7B0 */ .word D_083A4A7C
+/* 080CA7B0 */ .word gSpriteHandler
 
 .balign 4, 0
 _080CA7B4:
@@ -133,7 +133,7 @@ _080CA804:
 
 .balign 4, 0
 _080CA808:
-/* 080CA808 */ .word D_083A4A7C
+/* 080CA808 */ .word gSpriteHandler
 _080CA80C:
 /* 080CA80C */ CMP R0, #0
 /* 080CA80E */ BEQ _080CA85A

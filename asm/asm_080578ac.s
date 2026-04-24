@@ -149,6 +149,6 @@ _080579B8:
 
 .balign 4, 0
 _080579BC:
-/* 080579BC */ .word D_083A4A7C
+/* 080579BC */ .word gSpriteHandler
 .ltorg
 .end

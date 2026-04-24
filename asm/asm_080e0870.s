@@ -30,7 +30,7 @@ glabel func_080E0870
 
 .balign 4, 0
 _080E08A0:
-/* 080E08A0 */ .word D_083A4A7C
+/* 080E08A0 */ .word gSpriteHandler
 
 .balign 4, 0
 _080E08A4:

@@ -159,7 +159,7 @@ _0804AF90:
 
 .balign 4, 0
 _0804AF94:
-/* 0804AF94 */ .word D_083A4A7C
+/* 0804AF94 */ .word gSpriteHandler
 _0804AF98:
 /* 0804AF98 */ LSLS R4, R0, #5
 /* 0804AF9A */ ADDS R4, #0X60
@@ -268,7 +268,7 @@ _0804B074:
 
 .balign 4, 0
 _0804B060:
-/* 0804B060 */ .word D_083A4A7C
+/* 0804B060 */ .word gSpriteHandler
 
 .balign 4, 0
 _0804B064:

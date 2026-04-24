@@ -57,7 +57,7 @@ _0806B178:
 
 .balign 4, 0
 _0806B17C:
-/* 0806B17C */ .word D_083A4A7C
+/* 0806B17C */ .word gSpriteHandler
 _0806B180:
 /* 0806B180 */ MOVS R0, #1
 /* 0806B182 */ ADD IP, R0

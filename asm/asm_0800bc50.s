@@ -38,7 +38,7 @@ _0800BC84:
 
 .balign 4, 0
 _0800BC88:
-/* 0800BC88 */ .word D_083A4A7C
+/* 0800BC88 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800BC8C:

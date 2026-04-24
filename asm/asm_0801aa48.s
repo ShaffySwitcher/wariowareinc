@@ -67,9 +67,9 @@ _0801AABC:
 
 .balign 4, 0
 _0801AAC0:
-/* 0801AAC0 */ .word D_083A4A7C
+/* 0801AAC0 */ .word gSpriteHandler
 _0801AAC4:
-/* 0801AAC4 */ LDR R0, =D_083A4A7C
+/* 0801AAC4 */ LDR R0, =gSpriteHandler
 /* 0801AAC6 */ LDR R0, [R0]
 /* 0801AAC8 */ LSLS R1, R1, #0X10
 /* 0801AACA */ ASRS R1, R1, #0X10

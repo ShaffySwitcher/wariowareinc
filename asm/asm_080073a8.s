@@ -46,7 +46,7 @@ glabel func_080073A8
 
 .balign 4, 0
 _080073F8:
-/* 080073F8 */ .word D_083A4A7C
+/* 080073F8 */ .word gSpriteHandler
 _080073FC:
 /* 080073FC */ MOVS R0, #1
 /* 080073FE */ RSBS R0, R0, #0

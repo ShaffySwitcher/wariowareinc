@@ -40,7 +40,7 @@ _080D1AAC:
 
 .balign 4, 0
 _080D1AB0:
-/* 080D1AB0 */ .word D_083A4A7C
+/* 080D1AB0 */ .word gSpriteHandler
 _080D1AB4:
 /* 080D1AB4 */ MOVS R0, #1
 _080D1AB6:

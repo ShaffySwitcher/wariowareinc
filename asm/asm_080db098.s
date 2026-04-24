@@ -118,7 +118,7 @@ _080DB14C:
 
 .balign 4, 0
 _080DB150:
-/* 080DB150 */ .word D_083A4A7C
+/* 080DB150 */ .word gSpriteHandler
 _080DB154:
 /* 080DB154 */ LDR R0, _080DB1A0
 /* 080DB156 */ LDRH R1, [R0]
@@ -165,7 +165,7 @@ _080DB1A4:
 
 .balign 4, 0
 _080DB1A8:
-/* 080DB1A8 */ .word D_083A4A7C
+/* 080DB1A8 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DB1AC:
@@ -230,7 +230,7 @@ _080DB1E2:
 
 .balign 4, 0
 _080DB228:
-/* 080DB228 */ .word D_083A4A7C
+/* 080DB228 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DB22C:
@@ -273,7 +273,7 @@ _080DB264:
 
 .balign 4, 0
 _080DB270:
-/* 080DB270 */ .word D_083A4A7C
+/* 080DB270 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DB274:
@@ -319,7 +319,7 @@ _080DB278:
 
 .balign 4, 0
 _080DB2CC:
-/* 080DB2CC */ .word D_083A4A7C
+/* 080DB2CC */ .word gSpriteHandler
 
 .balign 4, 0
 _080DB2D0:
@@ -385,7 +385,7 @@ _080DB314:
 /* 080DB330 */ LDR R0, _080DB3A8
 /* 080DB332 */ BL play_sound
 _080DB336:
-/* 080DB336 */ LDR R5, =D_083A4A7C
+/* 080DB336 */ LDR R5, =gSpriteHandler
 /* 080DB338 */ LDR R0, [R5]
 /* 080DB33A */ LDR R4, _080DB3A4
 /* 080DB33C */ LDR R2, [R4]

@@ -51,7 +51,7 @@ _0800F9D0:
 
 .balign 4, 0
 _0800F9D4:
-/* 0800F9D4 */ .word D_083A4A7C
+/* 0800F9D4 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800F9D8:

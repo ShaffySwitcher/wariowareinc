@@ -56,12 +56,12 @@ _08012A64:
 
 .balign 4, 0
 _08012A68:
-/* 08012A68 */ .word D_083A4A7C
+/* 08012A68 */ .word gSpriteHandler
 _08012A6C:
 /* 08012A6C */ MOV R7, SB
 /* 08012A6E */ MOVS R6, #0
 _08012A70:
-/* 08012A70 */ LDR R3, =D_083A4A7C
+/* 08012A70 */ LDR R3, =gSpriteHandler
 /* 08012A72 */ MOV SL, R3
 /* 08012A74 */ LDR R5, [R3]
 /* 08012A76 */ MOVS R0, #2

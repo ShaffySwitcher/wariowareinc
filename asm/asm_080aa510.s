@@ -390,14 +390,14 @@ _080AA760:
 /* 080AA768 */ MOVS R2, #0X18
 /* 080AA76A */ LDRSH R1, [R1, R2]
 /* 080AA76C */ MOVS R2, #0
-/* 080AA76E */ BL func_080EF400
+/* 080AA76E */ BL sprite_attr_set
 _080AA772:
 /* 080AA772 */ BL func_080AA3DC
 /* 080AA776 */ B _080AA834
 
 .balign 4, 0
 _080AA778:
-/* 080AA778 */ .word D_083A4A7C
+/* 080AA778 */ .word gSpriteHandler
 
 .balign 4, 0
 _080AA77C:

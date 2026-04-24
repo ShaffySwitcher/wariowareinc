@@ -75,7 +75,7 @@ _080D3EAC:
 
 .balign 4, 0
 _080D3EB0:
-/* 080D3EB0 */ .word D_083A4A7C
+/* 080D3EB0 */ .word gSpriteHandler
 _080D3EB4:
 /* 080D3EB4 */ MOVS R0, #5
 /* 080D3EB6 */ BL func_080D24BC

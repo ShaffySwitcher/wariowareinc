@@ -90,7 +90,7 @@ _080BECD8:
 
 .balign 4, 0
 _080BECDC:
-/* 080BECDC */ .word D_083A4A7C
+/* 080BECDC */ .word gSpriteHandler
 _080BECE0:
 /* 080BECE0 */ CMP R0, #0X21
 /* 080BECE2 */ BNE _080BECEA
@@ -230,6 +230,6 @@ _080BEDD8:
 
 .balign 4, 0
 _080BEDDC:
-/* 080BEDDC */ .word D_083A4A7C
+/* 080BEDDC */ .word gSpriteHandler
 .ltorg
 .end

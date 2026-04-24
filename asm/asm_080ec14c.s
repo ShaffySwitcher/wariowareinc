@@ -105,7 +105,7 @@ _080EC208:
 
 .balign 4, 0
 _080EC20C:
-/* 080EC20C */ .word D_083A4A7C
+/* 080EC20C */ .word gSpriteHandler
 
 .balign 4, 0
 _080EC210:

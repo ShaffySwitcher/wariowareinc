@@ -64,7 +64,7 @@ _080CFEBC:
 
 .balign 4, 0
 _080CFEC0:
-/* 080CFEC0 */ .word D_083A4A7C
+/* 080CFEC0 */ .word gSpriteHandler
 _080CFEC4:
 /* 080CFEC4 */ CMP R0, #0XA
 /* 080CFEC6 */ BNE _080CFF20
@@ -124,6 +124,6 @@ _080CFF2C:
 
 .balign 4, 0
 _080CFF28:
-/* 080CFF28 */ .word D_083A4A7C
+/* 080CFF28 */ .word gSpriteHandler
 .ltorg
 .end

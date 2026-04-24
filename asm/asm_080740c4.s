@@ -33,7 +33,7 @@ glabel func_080740C4
 
 .balign 4, 0
 _08074100:
-/* 08074100 */ .word D_083A4A7C
+/* 08074100 */ .word gSpriteHandler
 
 .balign 4, 0
 _08074104:

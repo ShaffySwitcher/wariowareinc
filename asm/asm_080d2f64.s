@@ -16,7 +16,7 @@ glabel func_080D2F64
 /* 080D2F74 */ ADDS R1, #0X84
 /* 080D2F76 */ LDM R1!, {R4, R5, R6}
 /* 080D2F78 */ STM R2!, {R4, R5, R6}
-/* 080D2F7A */ LDR R1, =D_083A4A7C
+/* 080D2F7A */ LDR R1, =gSpriteHandler
 /* 080D2F7C */ LDR R4, [R1]
 /* 080D2F7E */ MOVS R2, #0
 /* 080D2F80 */ LDRSH R1, [R0, R2]

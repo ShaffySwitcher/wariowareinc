@@ -32,8 +32,6 @@ extern void *D_083FBBBC;
 extern void** D_03006524;
 extern void** D_03006528;
 extern void** D_0300652C;
-extern void** D_083A4A7C;
-
 
 extern struct GameplayScriptCmd D_083A4BCC[];
 

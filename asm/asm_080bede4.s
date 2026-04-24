@@ -41,7 +41,7 @@ _080BEE1C:
 
 .balign 4, 0
 _080BEE20:
-/* 080BEE20 */ .word D_083A4A7C
+/* 080BEE20 */ .word gSpriteHandler
 _080BEE24:
 /* 080BEE24 */ LSLS R4, R7, #1
 /* 080BEE26 */ ADDS R3, R5, #0
@@ -234,7 +234,7 @@ _080BEF90:
 
 .balign 4, 0
 _080BEF94:
-/* 080BEF94 */ .word D_083A4A7C
+/* 080BEF94 */ .word gSpriteHandler
 _080BEF98:
 /* 080BEF98 */ LDR R0, [R4]
 /* 080BEF9A */ LDR R1, [R5]

@@ -103,7 +103,7 @@ _08058EAA:
 
 .balign 4, 0
 _08058EE0:
-/* 08058EE0 */ .word D_083A4A7C
+/* 08058EE0 */ .word gSpriteHandler
 
 .balign 4, 0
 _08058EE4:
@@ -143,7 +143,7 @@ _08058EEC:
 
 .balign 4, 0
 _08058F2C:
-/* 08058F2C */ .word D_083A4A7C
+/* 08058F2C */ .word gSpriteHandler
 _08058F30:
 /* 08058F30 */ CMP R4, #2
 /* 08058F32 */ BNE _08058FA4
@@ -198,7 +198,7 @@ _08058F50:
 
 .balign 4, 0
 _08058F9C:
-/* 08058F9C */ .word D_083A4A7C
+/* 08058F9C */ .word gSpriteHandler
 
 .balign 4, 0
 _08058FA0:

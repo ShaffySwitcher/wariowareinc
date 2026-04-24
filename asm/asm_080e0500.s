@@ -70,6 +70,6 @@ _080E0570:
 
 .balign 4, 0
 _080E0574:
-/* 080E0574 */ .word D_083A4A7C
+/* 080E0574 */ .word gSpriteHandler
 .ltorg
 .end

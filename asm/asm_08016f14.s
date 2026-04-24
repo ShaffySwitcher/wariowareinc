@@ -38,7 +38,7 @@ _08016F48:
 
 .balign 4, 0
 _08016F4C:
-/* 08016F4C */ .word D_083A4A7C
+/* 08016F4C */ .word gSpriteHandler
 
 .balign 4, 0
 _08016F50:

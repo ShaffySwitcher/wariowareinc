@@ -66,7 +66,7 @@ _0807DD28:
 
 .balign 4, 0
 _0807DD2C:
-/* 0807DD2C */ .word D_083A4A7C
+/* 0807DD2C */ .word gSpriteHandler
 _0807DD30:
 /* 0807DD30 */ SUBS R1, #1
 /* 0807DD32 */ ADDS R4, #0X18

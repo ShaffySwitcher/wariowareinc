@@ -110,7 +110,7 @@ _0808B7FC:
 
 .balign 4, 0
 _0808B800:
-/* 0808B800 */ .word D_083A4A7C
+/* 0808B800 */ .word gSpriteHandler
 _0808B804:
 /* 0808B804 */ ADDS R0, R2, #1
 /* 0808B806 */ LSLS R0, R0, #0X10

@@ -65,7 +65,7 @@ _08040C38:
 
 .balign 4, 0
 _08040C3C:
-/* 08040C3C */ .word D_083A4A7C
+/* 08040C3C */ .word gSpriteHandler
 _08040C40:
 /* 08040C40 */ LDR R0, =D_03003850
 /* 08040C42 */ LDR R0, [R0]

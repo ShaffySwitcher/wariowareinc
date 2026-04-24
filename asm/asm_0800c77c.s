@@ -22,7 +22,7 @@ glabel func_0800C77C
 
 .balign 4, 0
 _0800C79C:
-/* 0800C79C */ .word D_083A4A7C
+/* 0800C79C */ .word gSpriteHandler
 
 .balign 4, 0
 _0800C7A0:

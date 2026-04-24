@@ -121,7 +121,7 @@ _080E5056:
 
 .balign 4, 0
 _080E509C:
-/* 080E509C */ .word D_083A4A7C
+/* 080E509C */ .word gSpriteHandler
 
 .balign 4, 0
 _080E50A0:
@@ -182,7 +182,7 @@ _080E50A4:
 
 .balign 4, 0
 _080E5118:
-/* 080E5118 */ .word D_083A4A7C
+/* 080E5118 */ .word gSpriteHandler
 
 .balign 4, 0
 _080E511C:

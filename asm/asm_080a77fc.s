@@ -96,7 +96,7 @@ _080A78A8:
 
 .balign 4, 0
 _080A78AC:
-/* 080A78AC */ .word D_083A4A7C
+/* 080A78AC */ .word gSpriteHandler
 _080A78B0:
 /* 080A78B0 */ CMP R4, #0XB
 /* 080A78B2 */ BNE _080A78E0

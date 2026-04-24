@@ -55,7 +55,7 @@ _080DECE4:
 
 .balign 4, 0
 _080DECE8:
-/* 080DECE8 */ .word D_083A4A7C
+/* 080DECE8 */ .word gSpriteHandler
 _080DECEC:
 /* 080DECEC */ ADDS R0, R1, #0
 /* 080DECEE */ ADDS R0, #0X58
@@ -93,6 +93,6 @@ _080DED28:
 
 .balign 4, 0
 _080DED24:
-/* 080DED24 */ .word D_083A4A7C
+/* 080DED24 */ .word gSpriteHandler
 .ltorg
 .end

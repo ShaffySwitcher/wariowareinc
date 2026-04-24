@@ -41,7 +41,7 @@ _080310E4:
 
 .balign 4, 0
 _080310E8:
-/* 080310E8 */ .word D_083A4A7C
+/* 080310E8 */ .word gSpriteHandler
 _080310EC:
 /* 080310EC */ CMP R5, #3
 /* 080310EE */ BEQ _08031138

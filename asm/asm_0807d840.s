@@ -296,7 +296,7 @@ _0807DA30:
 
 .balign 4, 0
 _0807DA28:
-/* 0807DA28 */ .word D_083A4A7C
+/* 0807DA28 */ .word gSpriteHandler
 
 .balign 4, 0
 _0807DA2C:

@@ -129,7 +129,7 @@ _0806338C:
 
 .balign 4, 0
 _080633A8:
-/* 080633A8 */ .word D_083A4A7C
+/* 080633A8 */ .word gSpriteHandler
 _080633AC:
 /* 080633AC */ MOV R3, R8
 /* 080633AE */ ADDS R2, R7, R3
@@ -413,6 +413,6 @@ _080635B4:
 
 .balign 4, 0
 _080635B8:
-/* 080635B8 */ .word D_083A4A7C
+/* 080635B8 */ .word gSpriteHandler
 .ltorg
 .end

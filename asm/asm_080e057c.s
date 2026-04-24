@@ -27,7 +27,7 @@ glabel func_080E057C
 /* 080E05A2 */ STM R1!, {R3, R4, R5}
 /* 080E05A4 */ LDM R0!, {R3, R4}
 /* 080E05A6 */ STM R1!, {R3, R4}
-/* 080E05A8 */ LDR R0, =D_083A4A7C
+/* 080E05A8 */ LDR R0, =gSpriteHandler
 /* 080E05AA */ LDR R0, [R0]
 /* 080E05AC */ MOVS R5, #0
 /* 080E05AE */ LDRSH R1, [R2, R5]

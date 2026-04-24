@@ -70,7 +70,7 @@ _08056970:
 
 .balign 4, 0
 _08056974:
-/* 08056974 */ .word D_083A4A7C
+/* 08056974 */ .word gSpriteHandler
 _08056978:
 /* 08056978 */ CMP R4, #2
 /* 0805697A */ BNE _0805697E
@@ -493,6 +493,6 @@ _08056C84:
 
 .balign 4, 0
 _08056C88:
-/* 08056C88 */ .word D_083A4A7C
+/* 08056C88 */ .word gSpriteHandler
 .ltorg
 .end

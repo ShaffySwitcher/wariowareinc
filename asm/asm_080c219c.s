@@ -53,6 +53,6 @@ _080C21F0:
 
 .balign 4, 0
 _080C21F4:
-/* 080C21F4 */ .word D_083A4A7C
+/* 080C21F4 */ .word gSpriteHandler
 .ltorg
 .end

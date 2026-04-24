@@ -20,7 +20,7 @@ glabel func_08062F10
 /* 08062F28 */ STRB R4, [R0]
 /* 08062F2A */ SUBS R0, #1
 /* 08062F2C */ STRB R4, [R0]
-/* 08062F2E */ LDR R5, =D_083A4A7C
+/* 08062F2E */ LDR R5, =gSpriteHandler
 /* 08062F30 */ LDR R0, [R5]
 /* 08062F32 */ MOVS R2, #4
 /* 08062F34 */ LDRSH R1, [R6, R2]

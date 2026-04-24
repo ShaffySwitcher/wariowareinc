@@ -44,13 +44,13 @@ _080E4F84:
 
 .balign 4, 0
 _080E4F88:
-/* 080E4F88 */ .word D_083A4A7C
+/* 080E4F88 */ .word gSpriteHandler
 _080E4F8C:
 /* 080E4F8C */ MOVS R2, #0
 /* 080E4F8E */ MOVS R0, #1
 _080E4F90:
 /* 080E4F90 */ STR R0, [R1, #0X2C]
-/* 080E4F92 */ LDR R0, =D_083A4A7C
+/* 080E4F92 */ LDR R0, =gSpriteHandler
 /* 080E4F94 */ LDR R0, [R0]
 /* 080E4F96 */ MOVS R3, #0
 /* 080E4F98 */ LDRSH R1, [R5, R3]

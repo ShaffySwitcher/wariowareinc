@@ -38,7 +38,7 @@ _080B6CF0:
 
 .balign 4, 0
 _080B6CF4:
-/* 080B6CF4 */ .word D_083A4A7C
+/* 080B6CF4 */ .word gSpriteHandler
 _080B6CF8:
 /* 080B6CF8 */ CMP R7, #2
 /* 080B6CFA */ BEQ _080B6D78

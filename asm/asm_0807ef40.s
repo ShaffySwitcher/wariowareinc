@@ -120,7 +120,7 @@ _0807F010:
 
 .balign 4, 0
 _0807F014:
-/* 0807F014 */ .word D_083A4A7C
+/* 0807F014 */ .word gSpriteHandler
 
 .balign 4, 0
 _0807F018:
@@ -138,7 +138,7 @@ _0807F020:
 _0807F024:
 /* 0807F024 */ .word D_083FDE58
 _0807F028:
-/* 0807F028 */ LDR R4, =D_083A4A7C
+/* 0807F028 */ LDR R4, =gSpriteHandler
 /* 0807F02A */ LDR R0, [R4]
 /* 0807F02C */ MOVS R2, #0X86
 /* 0807F02E */ LSLS R2, R2, #3

@@ -44,7 +44,7 @@ glabel func_08076828
 /* 08076876 */ LSLS R1, R1, #1
 /* 08076878 */ BL func_080020C8
 _0807687C:
-/* 0807687C */ LDR R0, =D_083A4A7C
+/* 0807687C */ LDR R0, =gSpriteHandler
 /* 0807687E */ LDR R0, [R0]
 /* 08076880 */ LDR R3, [R4]
 /* 08076882 */ ADDS R1, R3, #0

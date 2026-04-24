@@ -94,7 +94,7 @@ _0805E480:
 
 .balign 4, 0
 _0805E484:
-/* 0805E484 */ .word D_083A4A7C
+/* 0805E484 */ .word gSpriteHandler
 
 .balign 4, 0
 _0805E488:

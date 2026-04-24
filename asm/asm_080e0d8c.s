@@ -59,7 +59,7 @@ _080E0DF0:
 
 .balign 4, 0
 _080E0DF4:
-/* 080E0DF4 */ .word D_083A4A7C
+/* 080E0DF4 */ .word gSpriteHandler
 _080E0DF8:
 /* 080E0DF8 */ CMP R0, #0X5B
 /* 080E0DFA */ BLE _080E0E14
@@ -116,7 +116,7 @@ _080E0E64:
 
 .balign 4, 0
 _080E0E5C:
-/* 080E0E5C */ .word D_083A4A7C
+/* 080E0E5C */ .word gSpriteHandler
 
 .balign 4, 0
 _080E0E60:

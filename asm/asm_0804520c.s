@@ -65,7 +65,7 @@ _0804522C:
 
 .balign 4, 0
 _08045280:
-/* 08045280 */ .word D_083A4A7C
+/* 08045280 */ .word gSpriteHandler
 _08045284:
 /* 08045284 */ MOV R2, IP
 /* 08045286 */ ADDS R2, #0X6E
@@ -144,6 +144,6 @@ _08045308:
 
 .balign 4, 0
 _0804530C:
-/* 0804530C */ .word D_083A4A7C
+/* 0804530C */ .word gSpriteHandler
 .ltorg
 .end

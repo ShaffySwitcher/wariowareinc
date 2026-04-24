@@ -46,7 +46,7 @@ _0809D750:
 
 .balign 4, 0
 _0809D754:
-/* 0809D754 */ .word D_083A4A7C
+/* 0809D754 */ .word gSpriteHandler
 _0809D758:
 /* 0809D758 */ ADDS R5, #1
 /* 0809D75A */ ADDS R4, #2

@@ -35,7 +35,7 @@ _08047550:
 
 .balign 4, 0
 _08047554:
-/* 08047554 */ .word D_083A4A7C
+/* 08047554 */ .word gSpriteHandler
 _08047558:
 /* 08047558 */ CMP R4, #0X6B
 /* 0804755A */ BLE _08047580
@@ -55,7 +55,7 @@ _08047558:
 
 .balign 4, 0
 _0804757C:
-/* 0804757C */ .word D_083A4A7C
+/* 0804757C */ .word gSpriteHandler
 _08047580:
 /* 08047580 */ ADDS R0, R2, #0
 /* 08047582 */ ADDS R0, #0X9C
@@ -76,7 +76,7 @@ _08047580:
 
 .balign 4, 0
 _080475A4:
-/* 080475A4 */ .word D_083A4A7C
+/* 080475A4 */ .word gSpriteHandler
 
 .balign 4, 0
 _080475A8:
@@ -125,6 +125,6 @@ _08047600:
 
 .balign 4, 0
 _080475FC:
-/* 080475FC */ .word D_083A4A7C
+/* 080475FC */ .word gSpriteHandler
 .ltorg
 .end

@@ -329,7 +329,7 @@ _080E0230:
 
 .balign 4, 0
 _080E0234:
-/* 080E0234 */ .word D_083A4A7C
+/* 080E0234 */ .word gSpriteHandler
 _080E0238:
 /* 080E0238 */ SUBS R0, #9
 /* 080E023A */ LSLS R0, R0, #0X18

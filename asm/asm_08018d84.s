@@ -28,7 +28,7 @@ glabel func_08018D84
 /* 08018DAE */ MOVS R3, #2
 /* 08018DB0 */ LDRSH R1, [R1, R3]
 /* 08018DB2 */ MOVS R2, #4
-/* 08018DB4 */ BL func_080EF400
+/* 08018DB4 */ BL sprite_attr_set
 /* 08018DB8 */ LDR R2, _08018E34
 /* 08018DBA */ LDR R0, _08018E38
 /* 08018DBC */ STRH R0, [R2, #0X3C]
@@ -92,7 +92,7 @@ _08018E44:
 
 .balign 4, 0
 _08018E28:
-/* 08018E28 */ .word D_083A4A7C
+/* 08018E28 */ .word gSpriteHandler
 
 .balign 4, 0
 _08018E2C:

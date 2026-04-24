@@ -52,7 +52,7 @@ _080B1D88:
 
 .balign 4, 0
 _080B1DA8:
-/* 080B1DA8 */ .word D_083A4A7C
+/* 080B1DA8 */ .word gSpriteHandler
 _080B1DAC:
 /* 080B1DAC */ LSLS R0, R1, #0X10
 /* 080B1DAE */ CMP R0, #0

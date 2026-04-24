@@ -12,7 +12,7 @@ glabel func_080594E8
 /* 080594F0 */ MOVS R2, #1
 /* 080594F2 */ STRB R2, [R1]
 /* 080594F4 */ MOVS R2, #0
-/* 080594F6 */ LDR R7, =D_083A4A7C
+/* 080594F6 */ LDR R7, =gSpriteHandler
 /* 080594F8 */ ADDS R6, R0, #0
 _080594FA:
 /* 080594FA */ LDR R0, [R7]

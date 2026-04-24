@@ -102,7 +102,7 @@ _080BAAC8:
 
 .balign 4, 0
 _080BAACC:
-/* 080BAACC */ .word D_083A4A7C
+/* 080BAACC */ .word gSpriteHandler
 _080BAAD0:
 /* 080BAAD0 */ ADDS R0, R4, #0
 /* 080BAAD2 */ BL func_080BAB50
@@ -161,6 +161,6 @@ _080BAB46:
 
 .balign 4, 0
 _080BAB4C:
-/* 080BAB4C */ .word D_083A4A7C
+/* 080BAB4C */ .word gSpriteHandler
 .ltorg
 .end

@@ -84,7 +84,7 @@ _080DBDCC:
 
 .balign 4, 0
 _080DBDD0:
-/* 080DBDD0 */ .word D_083A4A7C
+/* 080DBDD0 */ .word gSpriteHandler
 _080DBDD4:
 /* 080DBDD4 */ CMP R0, #2
 /* 080DBDD6 */ BNE _080DBE40
@@ -121,7 +121,7 @@ _080DBDF2:
 /* 080DBE14 */ BL func_080049BC
 /* 080DBE18 */ LDR R1, [R5]
 /* 080DBE1A */ STR R0, [R1, #0XC]
-/* 080DBE1C */ LDR R4, =D_083A4A7C
+/* 080DBE1C */ LDR R4, =gSpriteHandler
 /* 080DBE1E */ LDR R0, [R4]
 /* 080DBE20 */ MOVS R2, #8
 /* 080DBE22 */ LDRSH R1, [R1, R2]

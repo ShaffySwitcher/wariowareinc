@@ -209,7 +209,7 @@ _080BC488:
 
 .balign 4, 0
 _080BC4EC:
-/* 080BC4EC */ .word D_083A4A7C
+/* 080BC4EC */ .word gSpriteHandler
 
 .balign 4, 0
 _080BC4F0:

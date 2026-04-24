@@ -46,7 +46,7 @@ _080E2298:
 
 .balign 4, 0
 _080E229C:
-/* 080E229C */ .word D_083A4A7C
+/* 080E229C */ .word gSpriteHandler
 _080E22A0:
 /* 080E22A0 */ CMP R2, #3
 /* 080E22A2 */ BLE _080E22A6
@@ -73,6 +73,6 @@ _080E22C8:
 
 .balign 4, 0
 _080E22C4:
-/* 080E22C4 */ .word D_083A4A7C
+/* 080E22C4 */ .word gSpriteHandler
 .ltorg
 .end

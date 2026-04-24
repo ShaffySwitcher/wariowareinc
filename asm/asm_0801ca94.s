@@ -34,7 +34,7 @@ glabel func_0801CA94
 
 .balign 4, 0
 _0801CACC:
-/* 0801CACC */ .word D_083A4A7C
+/* 0801CACC */ .word gSpriteHandler
 
 .balign 4, 0
 _0801CAD0:

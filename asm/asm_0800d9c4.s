@@ -86,7 +86,7 @@ _0800D9F6:
 
 .balign 4, 0
 _0800DA68:
-/* 0800DA68 */ .word D_083A4A7C
+/* 0800DA68 */ .word gSpriteHandler
 _0800DA6C:
 /* 0800DA6C */ MOV R1, SB
 /* 0800DA6E */ LSLS R0, R1, #0X10

@@ -50,7 +50,7 @@ _080370D8:
 
 .balign 4, 0
 _080370DC:
-/* 080370DC */ .word D_083A4A7C
+/* 080370DC */ .word gSpriteHandler
 
 .balign 4, 0
 _080370E0:
@@ -105,7 +105,7 @@ _08037134:
 
 .balign 4, 0
 _08037140:
-/* 08037140 */ .word D_083A4A7C
+/* 08037140 */ .word gSpriteHandler
 _08037144:
 /* 08037144 */ LDR R0, _0803716C
 /* 08037146 */ LDR R0, [R0]

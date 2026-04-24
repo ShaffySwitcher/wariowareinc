@@ -66,7 +66,7 @@ _0800EBBC:
 
 .balign 4, 0
 _0800EBC0:
-/* 0800EBC0 */ .word D_083A4A7C
+/* 0800EBC0 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800EBC4:

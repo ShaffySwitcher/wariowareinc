@@ -47,7 +47,7 @@ glabel func_080E82EC
 
 .balign 4, 0
 _080E8340:
-/* 080E8340 */ .word D_083A4A7C
+/* 080E8340 */ .word gSpriteHandler
 
 .balign 4, 0
 _080E8344:
@@ -179,6 +179,6 @@ _080E8428:
 
 .balign 4, 0
 _080E842C:
-/* 080E842C */ .word D_083A4A7C
+/* 080E842C */ .word gSpriteHandler
 .ltorg
 .end

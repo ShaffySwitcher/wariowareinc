@@ -50,7 +50,7 @@ _0801F220:
 
 .balign 4, 0
 _0801F210:
-/* 0801F210 */ .word D_083A4A7C
+/* 0801F210 */ .word gSpriteHandler
 
 .balign 4, 0
 _0801F214:

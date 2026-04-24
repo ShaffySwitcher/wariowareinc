@@ -66,7 +66,7 @@ glabel func_0804DE20
 /* 0804DE9A */ ADDS R4, #2
 /* 0804DE9C */ STR R4, [SP, #0XC]
 /* 0804DE9E */ BL func_0804E104
-/* 0804DEA2 */ LDR R6, =D_083A4A7C
+/* 0804DEA2 */ LDR R6, =gSpriteHandler
 /* 0804DEA4 */ LDR R0, [R6]
 /* 0804DEA6 */ LDR R3, [R5]
 /* 0804DEA8 */ MOVS R2, #0X10

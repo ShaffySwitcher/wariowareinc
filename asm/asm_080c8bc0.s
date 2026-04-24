@@ -129,7 +129,7 @@ _080C8CA8:
 
 .balign 4, 0
 _080C8CAC:
-/* 080C8CAC */ .word D_083A4A7C
+/* 080C8CAC */ .word gSpriteHandler
 _080C8CB0:
 /* 080C8CB0 */ MOVS R0, #0XFA
 /* 080C8CB2 */ LSLS R0, R0, #2

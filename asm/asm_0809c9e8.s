@@ -13,7 +13,7 @@ glabel func_0809C9E8
 /* 0809C9F2 */ LDR R1, [R4]
 /* 0809C9F4 */ STRH R0, [R1, #6]
 /* 0809C9F6 */ BL func_0809BD8C
-/* 0809C9FA */ LDR R5, =D_083A4A7C
+/* 0809C9FA */ LDR R5, =gSpriteHandler
 /* 0809C9FC */ LDR R0, [R5]
 /* 0809C9FE */ LDR R1, [R4]
 /* 0809CA00 */ ADDS R1, #0XF8

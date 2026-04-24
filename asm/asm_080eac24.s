@@ -158,7 +158,7 @@ _080EAD54:
 
 .balign 4, 0
 _080EAD58:
-/* 080EAD58 */ .word D_083A4A7C
+/* 080EAD58 */ .word gSpriteHandler
 
 .balign 4, 0
 _080EAD5C:

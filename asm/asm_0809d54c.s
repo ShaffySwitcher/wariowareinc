@@ -53,7 +53,7 @@ _0809D598:
 
 .balign 4, 0
 _0809D59C:
-/* 0809D59C */ .word D_083A4A7C
+/* 0809D59C */ .word gSpriteHandler
 _0809D5A0:
 /* 0809D5A0 */ CMP R0, #2
 /* 0809D5A2 */ BEQ _0809D65C

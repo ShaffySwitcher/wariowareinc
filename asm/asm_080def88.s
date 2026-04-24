@@ -142,7 +142,7 @@ _080DF090:
 
 .balign 4, 0
 _080DF094:
-/* 080DF094 */ .word D_083A4A7C
+/* 080DF094 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DF098:
@@ -216,7 +216,7 @@ _080DF09C:
 
 .balign 4, 0
 _080DF128:
-/* 080DF128 */ .word D_083A4A7C
+/* 080DF128 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DF12C:
@@ -341,7 +341,7 @@ _080DF208:
 
 .balign 4, 0
 _080DF218:
-/* 080DF218 */ .word D_083A4A7C
+/* 080DF218 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DF21C:

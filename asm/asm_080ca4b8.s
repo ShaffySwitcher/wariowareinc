@@ -184,13 +184,13 @@ _080CA5BA:
 
 .balign 4, 0
 _080CA5F4:
-/* 080CA5F4 */ .word D_083A4A7C
+/* 080CA5F4 */ .word gSpriteHandler
 
 .balign 4, 0
 _080CA5F8:
 /* 080CA5F8 */ .word D_083FD32C
 _080CA5FC:
-/* 080CA5FC */ LDR R0, =D_083A4A7C
+/* 080CA5FC */ LDR R0, =gSpriteHandler
 /* 080CA5FE */ LDR R0, [R0]
 /* 080CA600 */ LDR R1, [R6]
 /* 080CA602 */ LSLS R2, R7, #2

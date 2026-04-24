@@ -77,11 +77,11 @@ _080CFD64:
 
 .balign 4, 0
 _080CFD68:
-/* 080CFD68 */ .word D_083A4A7C
+/* 080CFD68 */ .word gSpriteHandler
 _080CFD6C:
 /* 080CFD6C */ CMP R0, #4
 /* 080CFD6E */ BNE _080CFDA0
-/* 080CFD70 */ LDR R4, =D_083A4A7C
+/* 080CFD70 */ LDR R4, =gSpriteHandler
 /* 080CFD72 */ LDR R0, [R4]
 /* 080CFD74 */ MOVS R7, #0XA
 /* 080CFD76 */ LDRSH R1, [R1, R7]

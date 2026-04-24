@@ -78,6 +78,6 @@ _080EDA30:
 
 .balign 4, 0
 _080EDA2C:
-/* 080EDA2C */ .word D_083A4A7C
+/* 080EDA2C */ .word gSpriteHandler
 .ltorg
 .end

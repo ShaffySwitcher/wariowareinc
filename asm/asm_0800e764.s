@@ -26,6 +26,6 @@ _0800E788:
 
 .balign 4, 0
 _0800E784:
-/* 0800E784 */ .word D_083A4A7C
+/* 0800E784 */ .word gSpriteHandler
 .ltorg
 .end

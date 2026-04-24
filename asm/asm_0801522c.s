@@ -16,7 +16,7 @@ glabel func_0801522C
 /* 0801523C */ MOVS R2, #0
 /* 0801523E */ MOVS R3, #0
 /* 08015240 */ BL func_0800A240
-/* 08015244 */ LDR R0, =D_083A4A7C
+/* 08015244 */ LDR R0, =gSpriteHandler
 /* 08015246 */ LDR R0, [R0]
 /* 08015248 */ LDR R3, [R4]
 /* 0801524A */ LDR R1, [R3, #4]

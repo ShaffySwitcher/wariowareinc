@@ -78,7 +78,7 @@ _080E4754:
 
 .balign 4, 0
 _080E4758:
-/* 080E4758 */ .word D_083A4A7C
+/* 080E4758 */ .word gSpriteHandler
 _080E475C:
 /* 080E475C */ LDR R0, _080E477C
 /* 080E475E */ LDR R0, [R0]
@@ -98,9 +98,9 @@ _080E475C:
 
 .balign 4, 0
 _080E477C:
-/* 080E477C */ .word D_083A4A7C
+/* 080E477C */ .word gSpriteHandler
 _080E4780:
-/* 080E4780 */ LDR R0, =D_083A4A7C
+/* 080E4780 */ LDR R0, =gSpriteHandler
 /* 080E4782 */ LDR R0, [R0]
 /* 080E4784 */ ADDS R1, R5, #0
 /* 080E4786 */ ADDS R1, #0X1C

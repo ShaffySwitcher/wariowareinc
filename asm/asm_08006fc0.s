@@ -23,9 +23,9 @@ glabel func_08006FC0
 
 .balign 4, 0
 _08006FE0:
-/* 08006FE0 */ .word D_083A4A7C
+/* 08006FE0 */ .word gSpriteHandler
 _08006FE4:
-/* 08006FE4 */ LDR R0, =D_083A4A7C
+/* 08006FE4 */ LDR R0, =gSpriteHandler
 /* 08006FE6 */ LDR R0, [R0]
 /* 08006FE8 */ LSLS R1, R1, #0X10
 /* 08006FEA */ ASRS R1, R1, #0X10

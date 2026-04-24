@@ -44,7 +44,7 @@ glabel func_080CBFD8
 
 .balign 4, 0
 _080CC024:
-/* 080CC024 */ .word D_083A4A7C
+/* 080CC024 */ .word gSpriteHandler
 
 .balign 4, 0
 _080CC028:
@@ -105,7 +105,7 @@ _080CC056:
 /* 080CC08E */ ADDS R2, R4, #0
 /* 080CC090 */ MOVS R3, #0
 /* 080CC092 */ BL func_08001CD0
-/* 080CC096 */ LDR R0, =D_083A4A7C
+/* 080CC096 */ LDR R0, =gSpriteHandler
 /* 080CC098 */ LDR R0, [R0]
 /* 080CC09A */ LDR R3, [R5]
 /* 080CC09C */ MOVS R2, #0XE

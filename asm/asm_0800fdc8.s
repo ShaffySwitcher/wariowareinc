@@ -27,7 +27,7 @@ glabel func_0800FDC8
 
 .balign 4, 0
 _0800FDF0:
-/* 0800FDF0 */ .word D_083A4A7C
+/* 0800FDF0 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800FDF4:

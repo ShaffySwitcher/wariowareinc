@@ -114,7 +114,7 @@ _080AC820:
 
 .balign 4, 0
 _080AC840:
-/* 080AC840 */ .word D_083A4A7C
+/* 080AC840 */ .word gSpriteHandler
 _080AC844:
 /* 080AC844 */ MOVS R0, #0
 /* 080AC846 */ LDRSB R0, [R1, R0]
@@ -226,7 +226,7 @@ _080AC908:
 
 .balign 4, 0
 _080AC90C:
-/* 080AC90C */ .word D_083A4A7C
+/* 080AC90C */ .word gSpriteHandler
 
 .balign 4, 0
 _080AC910:
@@ -373,7 +373,7 @@ _080AC9FC:
 /* 080ACA08 */ MOVS R4, #0X20
 /* 080ACA0A */ LDRSH R3, [R5, R4]
 /* 080ACA0C */ BL func_0800701C
-/* 080ACA10 */ LDR R4, =D_083A4A7C
+/* 080ACA10 */ LDR R4, =gSpriteHandler
 /* 080ACA12 */ LDR R0, [R4]
 /* 080ACA14 */ MOVS R7, #0
 /* 080ACA16 */ LDRSH R1, [R5, R7]

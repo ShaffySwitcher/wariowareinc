@@ -11,7 +11,7 @@ glabel func_08016BC4
 /* 08016BCA */ LSLS R4, R4, #0X10
 /* 08016BCC */ LSRS R4, R4, #0X10
 /* 08016BCE */ BL play_sound
-/* 08016BD2 */ LDR R0, =D_083A4A7C
+/* 08016BD2 */ LDR R0, =gSpriteHandler
 /* 08016BD4 */ LDR R0, [R0]
 /* 08016BD6 */ LSLS R4, R4, #0X10
 /* 08016BD8 */ ASRS R4, R4, #0X10

@@ -79,7 +79,7 @@ _0801EDD4:
 
 .balign 4, 0
 _0801EDC0:
-/* 0801EDC0 */ .word D_083A4A7C
+/* 0801EDC0 */ .word gSpriteHandler
 
 .balign 4, 0
 _0801EDC4:

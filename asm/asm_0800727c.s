@@ -71,7 +71,7 @@ _080072F8:
 
 .balign 4, 0
 _080072FC:
-/* 080072FC */ .word D_083A4A7C
+/* 080072FC */ .word gSpriteHandler
 _08007300:
 /* 08007300 */ MOVS R0, #1
 /* 08007302 */ RSBS R0, R0, #0

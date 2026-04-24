@@ -57,7 +57,7 @@ _0806E394:
 
 .balign 4, 0
 _0806E398:
-/* 0806E398 */ .word D_083A4A7C
+/* 0806E398 */ .word gSpriteHandler
 _0806E39C:
 /* 0806E39C */ LDR R0, _0806E460
 /* 0806E39E */ LDRH R1, [R0]
@@ -161,7 +161,7 @@ _0806E464:
 
 .balign 4, 0
 _0806E468:
-/* 0806E468 */ .word D_083A4A7C
+/* 0806E468 */ .word gSpriteHandler
 
 .balign 4, 0
 _0806E46C:

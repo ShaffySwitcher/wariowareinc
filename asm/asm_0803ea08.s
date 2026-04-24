@@ -380,7 +380,7 @@ _0803ECF8:
 
 .balign 4, 0
 _0803ECFC:
-/* 0803ECFC */ .word D_083A4A7C
+/* 0803ECFC */ .word gSpriteHandler
 
 .balign 4, 0
 _0803ED00:

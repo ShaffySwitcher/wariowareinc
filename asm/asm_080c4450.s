@@ -58,7 +58,7 @@ _080C44B0:
 
 .balign 4, 0
 _080C44B4:
-/* 080C44B4 */ .word D_083A4A7C
+/* 080C44B4 */ .word gSpriteHandler
 _080C44B8:
 /* 080C44B8 */ LDR R0, _080C44CC
 /* 080C44BA */ BL play_sound

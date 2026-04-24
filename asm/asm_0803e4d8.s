@@ -226,9 +226,9 @@ _0803E64E:
 
 .balign 4, 0
 _0803E678:
-/* 0803E678 */ .word D_083A4A7C
+/* 0803E678 */ .word gSpriteHandler
 _0803E67C:
-/* 0803E67C */ LDR R5, =D_083A4A7C
+/* 0803E67C */ LDR R5, =gSpriteHandler
 /* 0803E67E */ LDR R0, [R5]
 /* 0803E680 */ LDR R1, [R6]
 /* 0803E682 */ MOVS R4, #0X82

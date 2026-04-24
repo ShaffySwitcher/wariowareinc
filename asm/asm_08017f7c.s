@@ -71,7 +71,7 @@ _08017F96:
 /* 08018004 */ MOVS R2, #2
 /* 08018006 */ LDRSH R1, [R1, R2]
 /* 08018008 */ MOVS R2, #0
-/* 0801800A */ BL func_080EF400
+/* 0801800A */ BL sprite_attr_set
 /* 0801800E */ MOVS R0, #0
 /* 08018010 */ BL func_08009EE0
 /* 08018014 */ MOVS R0, #1
@@ -154,7 +154,7 @@ _080180AC:
 
 .balign 4, 0
 _080180B0:
-/* 080180B0 */ .word D_083A4A7C
+/* 080180B0 */ .word gSpriteHandler
 
 .balign 4, 0
 _080180B4:

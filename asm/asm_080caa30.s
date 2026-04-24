@@ -98,7 +98,7 @@ _080CAAC8:
 
 .balign 4, 0
 _080CAACC:
-/* 080CAACC */ .word D_083A4A7C
+/* 080CAACC */ .word gSpriteHandler
 _080CAAD0:
 /* 080CAAD0 */ LSLS R0, R4, #0X18
 /* 080CAAD2 */ ASRS R2, R0, #0X18

@@ -23,9 +23,9 @@ glabel func_080B1AFC
 
 .balign 4, 0
 _080B1B1C:
-/* 080B1B1C */ .word D_083A4A7C
+/* 080B1B1C */ .word gSpriteHandler
 _080B1B20:
-/* 080B1B20 */ LDR R0, =D_083A4A7C
+/* 080B1B20 */ LDR R0, =gSpriteHandler
 /* 080B1B22 */ LDR R0, [R0]
 /* 080B1B24 */ MOVS R3, #0
 /* 080B1B26 */ LDRSH R1, [R2, R3]

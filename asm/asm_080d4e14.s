@@ -33,7 +33,7 @@ glabel func_080D4E14
 /* 080D4E48 */ LDRB R0, [R4]
 /* 080D4E4A */ ADDS R0, #1
 /* 080D4E4C */ STRB R0, [R4]
-/* 080D4E4E */ LDR R0, =D_083A4A7C
+/* 080D4E4E */ LDR R0, =gSpriteHandler
 /* 080D4E50 */ LDR R0, [R0]
 /* 080D4E52 */ MOVS R2, #8
 /* 080D4E54 */ LDRSH R1, [R5, R2]

@@ -141,7 +141,7 @@ _0804A324:
 
 .balign 4, 0
 _0804A328:
-/* 0804A328 */ .word D_083A4A7C
+/* 0804A328 */ .word gSpriteHandler
 _0804A32C:
 /* 0804A32C */ LDR R1, [R3, #0X64]
 /* 0804A32E */ ASRS R0, R1, #8
@@ -178,7 +178,7 @@ _0804A368:
 
 .balign 4, 0
 _0804A36C:
-/* 0804A36C */ .word D_083A4A7C
+/* 0804A36C */ .word gSpriteHandler
 _0804A370:
 /* 0804A370 */ ADDS R0, R3, #0
 /* 0804A372 */ ADDS R0, #0X6C
@@ -284,7 +284,7 @@ _0804A420:
 
 .balign 4, 0
 _0804A424:
-/* 0804A424 */ .word D_083A4A7C
+/* 0804A424 */ .word gSpriteHandler
 _0804A428:
 /* 0804A428 */ ADDS R1, R3, #0
 _0804A42A:
@@ -353,7 +353,7 @@ _0804A49C:
 
 .balign 4, 0
 _0804A4A0:
-/* 0804A4A0 */ .word D_083A4A7C
+/* 0804A4A0 */ .word gSpriteHandler
 _0804A4A4:
 /* 0804A4A4 */ CMP R3, R0
 /* 0804A4A6 */ BLE _0804A4C2

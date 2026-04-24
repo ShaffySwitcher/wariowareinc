@@ -33,7 +33,7 @@ glabel func_0800A298
 
 .balign 4, 0
 _0800A2D0:
-/* 0800A2D0 */ .word D_083A4A7C
+/* 0800A2D0 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800A2D4:

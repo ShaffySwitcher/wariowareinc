@@ -500,7 +500,7 @@ _080DAF84:
 
 .balign 4, 0
 _080DAF88:
-/* 080DAF88 */ .word D_083A4A7C
+/* 080DAF88 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DAF8C:

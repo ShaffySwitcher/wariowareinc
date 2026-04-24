@@ -70,7 +70,7 @@ _080EC28C:
 
 .balign 4, 0
 _080EC290:
-/* 080EC290 */ .word D_083A4A7C
+/* 080EC290 */ .word gSpriteHandler
 _080EC294:
 /* 080EC294 */ BL func_080EC14C
 _080EC298:

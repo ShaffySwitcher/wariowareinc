@@ -134,7 +134,7 @@ _080DFDE4:
 
 .balign 4, 0
 _080DFDE8:
-/* 080DFDE8 */ .word D_083A4A7C
+/* 080DFDE8 */ .word gSpriteHandler
 _080DFDEC:
 /* 080DFDEC */ MOVS R0, #3
 /* 080DFDEE */ STRB R0, [R4, #0X12]

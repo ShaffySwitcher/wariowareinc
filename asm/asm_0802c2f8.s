@@ -94,7 +94,7 @@ _0802C398:
 
 .balign 4, 0
 _0802C39C:
-/* 0802C39C */ .word D_083A4A7C
+/* 0802C39C */ .word gSpriteHandler
 
 .balign 4, 0
 _0802C3A0:
@@ -143,7 +143,7 @@ _0802C3E0:
 
 .balign 4, 0
 _0802C3F8:
-/* 0802C3F8 */ .word D_083A4A7C
+/* 0802C3F8 */ .word gSpriteHandler
 
 .balign 4, 0
 _0802C3FC:
@@ -177,7 +177,7 @@ _0802C404:
 
 .balign 4, 0
 _0802C430:
-/* 0802C430 */ .word D_083A4A7C
+/* 0802C430 */ .word gSpriteHandler
 _0802C434:
 /* 0802C434 */ ADDS R1, R5, #0
 /* 0802C436 */ ADDS R1, #0X5D
@@ -228,7 +228,7 @@ _0802C47A:
 
 .balign 4, 0
 _0802C490:
-/* 0802C490 */ .word D_083A4A7C
+/* 0802C490 */ .word gSpriteHandler
 
 .balign 4, 0
 _0802C494:
@@ -251,7 +251,7 @@ _0802C498:
 /* 0802C4B4 */ LDR R0, _0802C4E4
 /* 0802C4B6 */ BL play_sound
 _0802C4BA:
-/* 0802C4BA */ LDR R0, =D_083A4A7C
+/* 0802C4BA */ LDR R0, =gSpriteHandler
 /* 0802C4BC */ LDR R0, [R0]
 /* 0802C4BE */ ADDS R1, R5, #0
 /* 0802C4C0 */ ADDS R1, #0X6A

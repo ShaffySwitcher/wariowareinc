@@ -22,7 +22,7 @@ glabel func_080C1150
 /* 080C116C */ BL __divsi3
 /* 080C1170 */ CMP R4, R0
 /* 080C1172 */ BLE _080C118A
-/* 080C1174 */ LDR R0, =D_083A4A7C
+/* 080C1174 */ LDR R0, =gSpriteHandler
 /* 080C1176 */ LDR R0, [R0]
 /* 080C1178 */ MOVS R2, #0
 /* 080C117A */ LDRSH R1, [R5, R2]

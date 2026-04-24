@@ -14,7 +14,7 @@ glabel func_080EF358
 /* 080EF364 */ ASRS R4, R1, #0X10
 /* 080EF366 */ ADDS R0, R5, #0
 /* 080EF368 */ ADDS R1, R4, #0
-/* 080EF36A */ BL func_080EE8F4
+/* 080EF36A */ BL sprite_is_invalid
 /* 080EF36E */ CMP R0, #0
 /* 080EF370 */ BEQ _080EF37C
 /* 080EF372 */ MOVS R0, #0

@@ -70,7 +70,7 @@ _080532EC:
 
 .balign 4, 0
 _080532F0:
-/* 080532F0 */ .word D_083A4A7C
+/* 080532F0 */ .word gSpriteHandler
 _080532F4:
 /* 080532F4 */ MOVS R7, #0X80
 /* 080532F6 */ LSLS R7, R7, #9

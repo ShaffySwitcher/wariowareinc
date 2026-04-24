@@ -98,7 +98,7 @@ _08090C8C:
 
 .balign 4, 0
 _08090C90:
-/* 08090C90 */ .word D_083A4A7C
+/* 08090C90 */ .word gSpriteHandler
 
 .balign 4, 0
 _08090C94:

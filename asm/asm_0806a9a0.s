@@ -461,7 +461,7 @@ _0806AD44:
 
 .balign 4, 0
 _0806AD48:
-/* 0806AD48 */ .word D_083A4A7C
+/* 0806AD48 */ .word gSpriteHandler
 
 .balign 4, 0
 _0806AD4C:

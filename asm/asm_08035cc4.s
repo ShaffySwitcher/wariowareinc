@@ -47,7 +47,7 @@ _08035D02:
 
 .balign 4, 0
 _08035D14:
-/* 08035D14 */ .word D_083A4A7C
+/* 08035D14 */ .word gSpriteHandler
 _08035D18:
 /* 08035D18 */ ADDS R7, R4, #0
 /* 08035D1A */ ADDS R7, #0X90
@@ -99,7 +99,7 @@ _08035D78:
 
 .balign 4, 0
 _08035D70:
-/* 08035D70 */ .word D_083A4A7C
+/* 08035D70 */ .word gSpriteHandler
 
 .balign 4, 0
 _08035D74:

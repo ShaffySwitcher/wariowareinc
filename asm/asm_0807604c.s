@@ -67,7 +67,7 @@ _08076094:
 
 .balign 4, 0
 _080760A8:
-/* 080760A8 */ .word D_083A4A7C
+/* 080760A8 */ .word gSpriteHandler
 
 .balign 4, 0
 _080760AC:
@@ -89,7 +89,7 @@ _080760B4:
 
 .balign 4, 0
 _080760C8:
-/* 080760C8 */ .word D_083A4A7C
+/* 080760C8 */ .word gSpriteHandler
 
 .balign 4, 0
 _080760CC:
@@ -118,7 +118,7 @@ _080760E4:
 
 .balign 4, 0
 _080760F4:
-/* 080760F4 */ .word D_083A4A7C
+/* 080760F4 */ .word gSpriteHandler
 
 .balign 4, 0
 _080760F8:
@@ -153,7 +153,7 @@ _0807612C:
 
 .balign 4, 0
 _08076124:
-/* 08076124 */ .word D_083A4A7C
+/* 08076124 */ .word gSpriteHandler
 
 .balign 4, 0
 _08076128:

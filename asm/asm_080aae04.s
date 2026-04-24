@@ -69,13 +69,13 @@ _080AAE74:
 
 .balign 4, 0
 _080AAE78:
-/* 080AAE78 */ .word D_083A4A7C
+/* 080AAE78 */ .word gSpriteHandler
 _080AAE7C:
 /* 080AAE7C */ MOVS R0, #0X24
 /* 080AAE7E */ BL func_0800C9A4
 /* 080AAE82 */ LDR R0, _080AAEA4
 /* 080AAE84 */ BL play_sound
-/* 080AAE88 */ LDR R0, =D_083A4A7C
+/* 080AAE88 */ LDR R0, =gSpriteHandler
 /* 080AAE8A */ LDR R0, [R0]
 /* 080AAE8C */ LDR R1, [R4]
 /* 080AAE8E */ MOVS R2, #0X1A

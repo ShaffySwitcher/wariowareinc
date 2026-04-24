@@ -31,7 +31,7 @@ glabel func_080A40F4
 
 .balign 4, 0
 _080A4128:
-/* 080A4128 */ .word D_083A4A7C
+/* 080A4128 */ .word gSpriteHandler
 
 .balign 4, 0
 _080A412C:

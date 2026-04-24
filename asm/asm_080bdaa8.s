@@ -53,7 +53,7 @@ _080BDB00:
 
 .balign 4, 0
 _080BDB04:
-/* 080BDB04 */ .word D_083A4A7C
+/* 080BDB04 */ .word gSpriteHandler
 _080BDB08:
 /* 080BDB08 */ LDR R0, [R5]
 /* 080BDB0A */ LDR R1, [R6]

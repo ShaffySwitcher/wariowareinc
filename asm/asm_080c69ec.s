@@ -136,7 +136,7 @@ _080C6AC4:
 
 .balign 4, 0
 _080C6AC8:
-/* 080C6AC8 */ .word D_083A4A7C
+/* 080C6AC8 */ .word gSpriteHandler
 _080C6ACC:
 /* 080C6ACC */ MOV R6, R8
 /* 080C6ACE */ LDR R7, [R6]
@@ -200,7 +200,7 @@ _080C6B40:
 
 .balign 4, 0
 _080C6B44:
-/* 080C6B44 */ .word D_083A4A7C
+/* 080C6B44 */ .word gSpriteHandler
 
 .balign 4, 0
 _080C6B48:

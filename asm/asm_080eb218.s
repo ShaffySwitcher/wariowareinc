@@ -31,7 +31,7 @@ glabel func_080EB218
 
 .balign 4, 0
 _080EB24C:
-/* 080EB24C */ .word D_083A4A7C
+/* 080EB24C */ .word gSpriteHandler
 
 .balign 4, 0
 _080EB250:
@@ -85,6 +85,6 @@ _080EB2A4:
 
 .balign 4, 0
 _080EB2A8:
-/* 080EB2A8 */ .word D_083A4A7C
+/* 080EB2A8 */ .word gSpriteHandler
 .ltorg
 .end

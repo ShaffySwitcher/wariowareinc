@@ -194,7 +194,7 @@ _080E89E0:
 
 .balign 4, 0
 _080E89E4:
-/* 080E89E4 */ .word D_083A4A7C
+/* 080E89E4 */ .word gSpriteHandler
 _080E89E8:
 /* 080E89E8 */ MOV R4, SL
 /* 080E89EA */ LDR R0, [R4]

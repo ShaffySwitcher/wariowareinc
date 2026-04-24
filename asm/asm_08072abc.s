@@ -31,7 +31,7 @@ _08072AE0:
 
 .balign 4, 0
 _08072AE4:
-/* 08072AE4 */ .word D_083A4A7C
+/* 08072AE4 */ .word gSpriteHandler
 _08072AE8:
 /* 08072AE8 */ CMP R4, #0XF
 /* 08072AEA */ BGT _08072AF4

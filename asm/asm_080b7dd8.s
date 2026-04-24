@@ -64,7 +64,7 @@ _080B7DFE:
 
 .balign 4, 0
 _080B7E4C:
-/* 080B7E4C */ .word D_083A4A7C
+/* 080B7E4C */ .word gSpriteHandler
 _080B7E50:
 /* 080B7E50 */ BL func_080B7EAC
 /* 080B7E54 */ LDR R1, [R5]

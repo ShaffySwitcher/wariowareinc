@@ -123,7 +123,7 @@ _0800EE80:
 
 .balign 4, 0
 _0800EE84:
-/* 0800EE84 */ .word D_083A4A7C
+/* 0800EE84 */ .word gSpriteHandler
 _0800EE88:
 /* 0800EE88 */ LDR R6, _0800EF2C
 _0800EE8A:
@@ -220,7 +220,7 @@ _0800EF30:
 
 .balign 4, 0
 _0800EF34:
-/* 0800EF34 */ .word D_083A4A7C
+/* 0800EF34 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800EF38:

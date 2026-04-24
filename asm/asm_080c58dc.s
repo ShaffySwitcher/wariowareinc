@@ -125,7 +125,7 @@ _080C59A0:
 
 .balign 4, 0
 _080C59A4:
-/* 080C59A4 */ .word D_083A4A7C
+/* 080C59A4 */ .word gSpriteHandler
 _080C59A8:
 /* 080C59A8 */ MOVS R1, #0X20
 /* 080C59AA */ LDRSH R0, [R4, R1]
@@ -170,7 +170,7 @@ _080C59E8:
 
 .balign 4, 0
 _080C59F4:
-/* 080C59F4 */ .word D_083A4A7C
+/* 080C59F4 */ .word gSpriteHandler
 _080C59F8:
 /* 080C59F8 */ MOVS R0, #1
 /* 080C59FA */ B _080C59FE

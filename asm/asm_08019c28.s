@@ -251,7 +251,7 @@ _08019E28:
 
 .balign 4, 0
 _08019E2C:
-/* 08019E2C */ .word D_083A4A7C
+/* 08019E2C */ .word gSpriteHandler
 
 .balign 4, 0
 _08019E30:

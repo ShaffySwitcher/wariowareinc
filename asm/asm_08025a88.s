@@ -47,7 +47,7 @@ _08025AD0:
 
 .balign 4, 0
 _08025AD4:
-/* 08025AD4 */ .word D_083A4A7C
+/* 08025AD4 */ .word gSpriteHandler
 _08025AD8:
 /* 08025AD8 */ SUBS R5, #4
 _08025ADA:

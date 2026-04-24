@@ -174,7 +174,7 @@ _080BE0E8:
 
 .balign 4, 0
 _080BE0E0:
-/* 080BE0E0 */ .word D_083A4A7C
+/* 080BE0E0 */ .word gSpriteHandler
 
 .balign 4, 0
 _080BE0E4:

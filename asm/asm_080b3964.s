@@ -75,7 +75,7 @@ _080B39DC:
 
 .balign 4, 0
 _080B39E0:
-/* 080B39E0 */ .word D_083A4A7C
+/* 080B39E0 */ .word gSpriteHandler
 _080B39E4:
 /* 080B39E4 */ MOVS R0, #0
 _080B39E6:

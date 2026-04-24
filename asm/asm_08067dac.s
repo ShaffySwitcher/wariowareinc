@@ -40,7 +40,7 @@ _08067DE4:
 
 .balign 4, 0
 _08067DE8:
-/* 08067DE8 */ .word D_083A4A7C
+/* 08067DE8 */ .word gSpriteHandler
 _08067DEC:
 /* 08067DEC */ LDR R0, _08067E40
 /* 08067DEE */ LDR R1, [R0]

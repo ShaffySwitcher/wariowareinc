@@ -44,7 +44,7 @@ glabel func_0808C2C8
 /* 0808C310 */ LSLS R0, R0, #8
 /* 0808C312 */ STR R0, [R4, #8]
 /* 0808C314 */ STRB R6, [R4, #0X1D]
-/* 0808C316 */ LDR R5, =D_083A4A7C
+/* 0808C316 */ LDR R5, =gSpriteHandler
 /* 0808C318 */ LDR R0, [R5]
 /* 0808C31A */ MOVS R2, #0
 /* 0808C31C */ LDRSH R1, [R4, R2]

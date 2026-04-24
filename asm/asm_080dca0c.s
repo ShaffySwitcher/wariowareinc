@@ -107,7 +107,7 @@ _080DCAD0:
 
 .balign 4, 0
 _080DCAD4:
-/* 080DCAD4 */ .word D_083A4A7C
+/* 080DCAD4 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DCAD8:

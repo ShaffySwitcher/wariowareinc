@@ -93,7 +93,7 @@ _080500BC:
 
 .balign 4, 0
 _0805011C:
-/* 0805011C */ .word D_083A4A7C
+/* 0805011C */ .word gSpriteHandler
 
 .balign 4, 0
 _08050120:
@@ -226,7 +226,7 @@ _080501CA:
 
 .balign 4, 0
 _08050220:
-/* 08050220 */ .word D_083A4A7C
+/* 08050220 */ .word gSpriteHandler
 
 .balign 4, 0
 _08050224:
@@ -304,6 +304,6 @@ _080502A4:
 
 .balign 4, 0
 _080502A0:
-/* 080502A0 */ .word D_083A4A7C
+/* 080502A0 */ .word gSpriteHandler
 .ltorg
 .end

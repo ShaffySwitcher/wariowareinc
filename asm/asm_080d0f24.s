@@ -115,7 +115,7 @@ _080D0FE0:
 
 .balign 4, 0
 _080D0FE4:
-/* 080D0FE4 */ .word D_083A4A7C
+/* 080D0FE4 */ .word gSpriteHandler
 _080D0FE8:
 /* 080D0FE8 */ MOVS R0, #0X28
 /* 080D0FEA */ BL func_080D2828

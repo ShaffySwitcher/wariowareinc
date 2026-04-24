@@ -78,7 +78,7 @@ _080B81CC:
 
 .balign 4, 0
 _080B81FC:
-/* 080B81FC */ .word D_083A4A7C
+/* 080B81FC */ .word gSpriteHandler
 _080B8200:
 /* 080B8200 */ LDR R0, _080B8240
 /* 080B8202 */ LDR R1, [R0]

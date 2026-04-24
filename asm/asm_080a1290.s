@@ -30,6 +30,6 @@ _080A12BC:
 
 .balign 4, 0
 _080A12B8:
-/* 080A12B8 */ .word D_083A4A7C
+/* 080A12B8 */ .word gSpriteHandler
 .ltorg
 .end

@@ -43,11 +43,11 @@ _08042E38:
 
 .balign 4, 0
 _08042E3C:
-/* 08042E3C */ .word D_083A4A7C
+/* 08042E3C */ .word gSpriteHandler
 _08042E40:
 /* 08042E40 */ CMP R0, #2
 /* 08042E42 */ BNE _08042E68
-/* 08042E44 */ LDR R0, =D_083A4A7C
+/* 08042E44 */ LDR R0, =gSpriteHandler
 /* 08042E46 */ LDR R0, [R0]
 /* 08042E48 */ ADDS R1, R3, #0
 /* 08042E4A */ ADDS R1, #0X84

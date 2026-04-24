@@ -58,7 +58,7 @@ _080DC850:
 
 .balign 4, 0
 _080DC854:
-/* 080DC854 */ .word D_083A4A7C
+/* 080DC854 */ .word gSpriteHandler
 _080DC858:
 /* 080DC858 */ ADDS R1, #0XD9
 /* 080DC85A */ LDRB R0, [R1]
@@ -275,6 +275,6 @@ _080DCA08:
 
 .balign 4, 0
 _080DCA04:
-/* 080DCA04 */ .word D_083A4A7C
+/* 080DCA04 */ .word gSpriteHandler
 .ltorg
 .end

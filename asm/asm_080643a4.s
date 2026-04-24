@@ -75,7 +75,7 @@ _0806441C:
 
 .balign 4, 0
 _08064428:
-/* 08064428 */ .word D_083A4A7C
+/* 08064428 */ .word gSpriteHandler
 
 .balign 4, 0
 _0806442C:
@@ -142,7 +142,7 @@ _08064458:
 
 .balign 4, 0
 _08064494:
-/* 08064494 */ .word D_083A4A7C
+/* 08064494 */ .word gSpriteHandler
 
 .balign 4, 0
 _08064498:
@@ -259,7 +259,7 @@ _0806455C:
 
 .balign 4, 0
 _08064570:
-/* 08064570 */ .word D_083A4A7C
+/* 08064570 */ .word gSpriteHandler
 
 .balign 4, 0
 _08064574:
@@ -293,7 +293,7 @@ _0806458E:
 
 .balign 4, 0
 _080645AC:
-/* 080645AC */ .word D_083A4A7C
+/* 080645AC */ .word gSpriteHandler
 
 .balign 4, 0
 _080645B0:
@@ -353,7 +353,7 @@ _080645EA:
 
 .balign 4, 0
 _08064624:
-/* 08064624 */ .word D_083A4A7C
+/* 08064624 */ .word gSpriteHandler
 
 .balign 4, 0
 _08064628:
@@ -411,7 +411,7 @@ _08064630:
 
 .balign 4, 0
 _08064694:
-/* 08064694 */ .word D_083A4A7C
+/* 08064694 */ .word gSpriteHandler
 _08064698:
 /* 08064698 */ ADDS R0, R6, #0
 /* 0806469A */ BL func_08062EC4

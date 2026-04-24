@@ -67,7 +67,7 @@ _0808B968:
 
 .balign 4, 0
 _0808B96C:
-/* 0808B96C */ .word D_083A4A7C
+/* 0808B96C */ .word gSpriteHandler
 _0808B970:
 /* 0808B970 */ ADDS R0, R3, #1
 /* 0808B972 */ LSLS R0, R0, #0X10

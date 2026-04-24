@@ -32,6 +32,6 @@ _0800E830:
 
 .balign 4, 0
 _0800E82C:
-/* 0800E82C */ .word D_083A4A7C
+/* 0800E82C */ .word gSpriteHandler
 .ltorg
 .end

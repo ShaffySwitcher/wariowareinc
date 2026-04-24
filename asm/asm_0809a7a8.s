@@ -103,7 +103,7 @@ _0809A844:
 
 .balign 4, 0
 _0809A864:
-/* 0809A864 */ .word D_083A4A7C
+/* 0809A864 */ .word gSpriteHandler
 _0809A868:
 /* 0809A868 */ LDR R0, _0809A878
 /* 0809A86A */ LDR R0, [R0]
@@ -115,7 +115,7 @@ _0809A868:
 
 .balign 4, 0
 _0809A878:
-/* 0809A878 */ .word D_083A4A7C
+/* 0809A878 */ .word gSpriteHandler
 _0809A87C:
 /* 0809A87C */ BL func_0809A66C
 /* 0809A880 */ BL func_0809A284

@@ -96,7 +96,7 @@ _08029ACC:
 
 .balign 4, 0
 _08029AD0:
-/* 08029AD0 */ .word D_083A4A7C
+/* 08029AD0 */ .word gSpriteHandler
 
 .balign 4, 0
 _08029AD4:

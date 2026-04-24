@@ -79,7 +79,7 @@ _08019A6C:
 
 .balign 4, 0
 _08019A70:
-/* 08019A70 */ .word D_083A4A7C
+/* 08019A70 */ .word gSpriteHandler
 _08019A74:
 /* 08019A74 */ LDR R1, [R7]
 /* 08019A76 */ ADDS R1, #0XC0

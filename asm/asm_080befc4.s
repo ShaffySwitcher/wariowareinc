@@ -54,7 +54,7 @@ _080BF018:
 
 .balign 4, 0
 _080BF01C:
-/* 080BF01C */ .word D_083A4A7C
+/* 080BF01C */ .word gSpriteHandler
 _080BF020:
 /* 080BF020 */ ADDS R1, R3, #0
 /* 080BF022 */ ADDS R1, #0X42

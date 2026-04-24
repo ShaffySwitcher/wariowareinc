@@ -130,6 +130,6 @@ _080D86F4:
 
 .balign 4, 0
 _080D86F8:
-/* 080D86F8 */ .word D_083A4A7C
+/* 080D86F8 */ .word gSpriteHandler
 .ltorg
 .end

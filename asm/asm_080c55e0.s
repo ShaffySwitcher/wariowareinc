@@ -103,7 +103,7 @@ _080C5680:
 
 .balign 4, 0
 _080C5698:
-/* 080C5698 */ .word D_083A4A7C
+/* 080C5698 */ .word gSpriteHandler
 _080C569C:
 /* 080C569C */ MOVS R0, #1
 _080C569E:

@@ -90,7 +90,7 @@ _080AF6FC:
 
 .balign 4, 0
 _080AF700:
-/* 080AF700 */ .word D_083A4A7C
+/* 080AF700 */ .word gSpriteHandler
 
 .balign 4, 0
 _080AF704:

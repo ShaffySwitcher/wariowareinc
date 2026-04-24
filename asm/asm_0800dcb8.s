@@ -68,7 +68,7 @@ _0800DD2C:
 
 .balign 4, 0
 _0800DD30:
-/* 0800DD30 */ .word D_083A4A7C
+/* 0800DD30 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800DD34:

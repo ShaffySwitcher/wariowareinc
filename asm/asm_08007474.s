@@ -49,7 +49,7 @@ glabel func_08007474
 /* 080074C8 */ ASRS R3, R3, #8
 /* 080074CA */ LDRH R6, [R4, #4]
 /* 080074CC */ ADDS R3, R3, R6
-/* 080074CE */ LDR R0, =D_083A4A7C
+/* 080074CE */ LDR R0, =gSpriteHandler
 /* 080074D0 */ LDR R0, [R0]
 /* 080074D2 */ MOVS R5, #0
 /* 080074D4 */ LDRSH R1, [R4, R5]

@@ -22,7 +22,7 @@ _0809EAAC:
 
 .balign 4, 0
 _0809EAB0:
-/* 0809EAB0 */ .word D_083A4A7C
+/* 0809EAB0 */ .word gSpriteHandler
 _0809EAB4:
 /* 0809EAB4 */ ADDS R2, #1
 /* 0809EAB6 */ ADDS R4, #8

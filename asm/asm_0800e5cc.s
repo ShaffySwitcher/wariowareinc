@@ -79,7 +79,7 @@ _0800E640:
 
 .balign 4, 0
 _0800E644:
-/* 0800E644 */ .word D_083A4A7C
+/* 0800E644 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800E648:

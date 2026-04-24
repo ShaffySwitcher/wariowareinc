@@ -92,7 +92,7 @@ _080DEF14:
 
 .balign 4, 0
 _080DEF18:
-/* 080DEF18 */ .word D_083A4A7C
+/* 080DEF18 */ .word gSpriteHandler
 
 .balign 4, 0
 _080DEF1C:
@@ -161,6 +161,6 @@ _080DEF84:
 
 .balign 4, 0
 _080DEF80:
-/* 080DEF80 */ .word D_083A4A7C
+/* 080DEF80 */ .word gSpriteHandler
 .ltorg
 .end

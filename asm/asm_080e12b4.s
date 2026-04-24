@@ -95,7 +95,7 @@ _080E12FC:
 
 .balign 4, 0
 _080E1354:
-/* 080E1354 */ .word D_083A4A7C
+/* 080E1354 */ .word gSpriteHandler
 
 .balign 4, 0
 _080E1358:
@@ -142,7 +142,7 @@ _080E13A0:
 
 .balign 4, 0
 _080E13A4:
-/* 080E13A4 */ .word D_083A4A7C
+/* 080E13A4 */ .word gSpriteHandler
 _080E13A8:
 /* 080E13A8 */ ADDS R0, R4, #0
 /* 080E13AA */ BL func_080E13C0

@@ -18,7 +18,7 @@ glabel func_080E22CC
 /* 080E22E0 */ ADDS R4, R0
 /* 080E22E2 */ STR R4, [R7, #0XC]
 /* 080E22E4 */ ASRS R4, R4, #8
-/* 080E22E6 */ LDR R5, =D_083A4A7C
+/* 080E22E6 */ LDR R5, =gSpriteHandler
 /* 080E22E8 */ LDR R0, [R5]
 /* 080E22EA */ MOVS R2, #4
 /* 080E22EC */ LDRSH R1, [R7, R2]

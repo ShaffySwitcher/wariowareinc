@@ -143,7 +143,7 @@ _080A7DF4:
 
 .balign 4, 0
 _080A7DF8:
-/* 080A7DF8 */ .word D_083A4A7C
+/* 080A7DF8 */ .word gSpriteHandler
 
 .balign 4, 0
 _080A7DFC:
@@ -247,7 +247,7 @@ _080A7E4A:
 /* 080A7EBA */ ADDS R2, #0XC
 /* 080A7EBC */ ADDS R0, R1, R2
 /* 080A7EBE */ STR R5, [R0]
-/* 080A7EC0 */ LDR R7, =D_083A4A7C
+/* 080A7EC0 */ LDR R7, =gSpriteHandler
 /* 080A7EC2 */ ADDS R6, R4, #0
 _080A7EC4:
 /* 080A7EC4 */ LDR R0, [R7]

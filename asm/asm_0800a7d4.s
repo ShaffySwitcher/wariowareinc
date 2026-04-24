@@ -79,7 +79,7 @@ _0800A85C:
 
 .balign 4, 0
 _0800A860:
-/* 0800A860 */ .word D_083A4A7C
+/* 0800A860 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800A864:
@@ -1692,7 +1692,7 @@ _0800B302:
 
 .balign 4, 0
 _0800B330:
-/* 0800B330 */ .word D_083A4A7C
+/* 0800B330 */ .word gSpriteHandler
 _0800B334:
 /* 0800B334 */ LSLS R1, R7, #1
 /* 0800B336 */ ADDS R1, R1, R4
@@ -1708,7 +1708,7 @@ _0800B334:
 
 .balign 4, 0
 _0800B34C:
-/* 0800B34C */ .word D_083A4A7C
+/* 0800B34C */ .word gSpriteHandler
 _0800B350:
 /* 0800B350 */ LSLS R1, R7, #1
 /* 0800B352 */ ADDS R1, R1, R4
@@ -1730,7 +1730,7 @@ _0800B350:
 
 .balign 4, 0
 _0800B374:
-/* 0800B374 */ .word D_083A4A7C
+/* 0800B374 */ .word gSpriteHandler
 _0800B378:
 /* 0800B378 */ LDR R1, _0800B39C
 /* 0800B37A */ ANDS R1, R7
@@ -1755,7 +1755,7 @@ _0800B39C:
 
 .balign 4, 0
 _0800B3A0:
-/* 0800B3A0 */ .word D_083A4A7C
+/* 0800B3A0 */ .word gSpriteHandler
 _0800B3A4:
 /* 0800B3A4 */ LSLS R1, R7, #1
 /* 0800B3A6 */ ADDS R1, R1, R4
@@ -1772,7 +1772,7 @@ _0800B3A4:
 
 .balign 4, 0
 _0800B3C0:
-/* 0800B3C0 */ .word D_083A4A7C
+/* 0800B3C0 */ .word gSpriteHandler
 _0800B3C4:
 /* 0800B3C4 */ LSLS R1, R7, #1
 /* 0800B3C6 */ ADDS R1, R1, R4
@@ -1787,7 +1787,7 @@ _0800B3C4:
 
 .balign 4, 0
 _0800B3D8:
-/* 0800B3D8 */ .word D_083A4A7C
+/* 0800B3D8 */ .word gSpriteHandler
 _0800B3DC:
 /* 0800B3DC */ LSLS R1, R6, #1
 /* 0800B3DE */ ADDS R1, R1, R4
@@ -1818,7 +1818,7 @@ _0800B3DC:
 
 .balign 4, 0
 _0800B418:
-/* 0800B418 */ .word D_083A4A7C
+/* 0800B418 */ .word gSpriteHandler
 _0800B41C:
 /* 0800B41C */ LSLS R1, R6, #1
 /* 0800B41E */ ADDS R1, R1, R4
@@ -1841,7 +1841,7 @@ _0800B43A:
 
 .balign 4, 0
 _0800B444:
-/* 0800B444 */ .word D_083A4A7C
+/* 0800B444 */ .word gSpriteHandler
 _0800B448:
 /* 0800B448 */ LSLS R1, R7, #1
 /* 0800B44A */ ADDS R1, R1, R4
@@ -1857,7 +1857,7 @@ _0800B448:
 
 .balign 4, 0
 _0800B460:
-/* 0800B460 */ .word D_083A4A7C
+/* 0800B460 */ .word gSpriteHandler
 _0800B464:
 /* 0800B464 */ LSLS R1, R7, #1
 /* 0800B466 */ ADDS R1, R1, R4
@@ -1875,7 +1875,7 @@ _0800B464:
 
 .balign 4, 0
 _0800B480:
-/* 0800B480 */ .word D_083A4A7C
+/* 0800B480 */ .word gSpriteHandler
 _0800B484:
 /* 0800B484 */ LSLS R1, R7, #1
 /* 0800B486 */ ADDS R1, R1, R4
@@ -1891,7 +1891,7 @@ _0800B484:
 
 .balign 4, 0
 _0800B49C:
-/* 0800B49C */ .word D_083A4A7C
+/* 0800B49C */ .word gSpriteHandler
 _0800B4A0:
 /* 0800B4A0 */ LSLS R1, R7, #1
 /* 0800B4A2 */ ADDS R1, R1, R4
@@ -1907,7 +1907,7 @@ _0800B4A0:
 
 .balign 4, 0
 _0800B4B8:
-/* 0800B4B8 */ .word D_083A4A7C
+/* 0800B4B8 */ .word gSpriteHandler
 _0800B4BC:
 /* 0800B4BC */ LSLS R1, R7, #1
 /* 0800B4BE */ ADDS R1, R1, R4
@@ -1916,12 +1916,12 @@ _0800B4BC:
 /* 0800B4C4 */ MOVS R4, #0
 /* 0800B4C6 */ LDRSH R1, [R1, R4]
 /* 0800B4C8 */ MOV R2, R8
-/* 0800B4CA */ BL func_080EF400
+/* 0800B4CA */ BL sprite_attr_set
 /* 0800B4CE */ B _0800B74C
 
 .balign 4, 0
 _0800B4D0:
-/* 0800B4D0 */ .word D_083A4A7C
+/* 0800B4D0 */ .word gSpriteHandler
 _0800B4D4:
 /* 0800B4D4 */ LSLS R0, R6, #1
 /* 0800B4D6 */ ADDS R0, R0, R4
@@ -2146,7 +2146,7 @@ _0800B66C:
 
 .balign 4, 0
 _0800B698:
-/* 0800B698 */ .word D_083A4A7C
+/* 0800B698 */ .word gSpriteHandler
 _0800B69C:
 /* 0800B69C */ LDR R0, [R5]
 /* 0800B69E */ ADDS R1, R4, #0
@@ -2183,7 +2183,7 @@ _0800B6C0:
 
 .balign 4, 0
 _0800B6E0:
-/* 0800B6E0 */ .word D_083A4A7C
+/* 0800B6E0 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800B6E4:
@@ -2200,7 +2200,7 @@ _0800B6E8:
 
 .balign 4, 0
 _0800B6FC:
-/* 0800B6FC */ .word D_083A4A7C
+/* 0800B6FC */ .word gSpriteHandler
 
 .balign 4, 0
 _0800B700:
@@ -2232,13 +2232,13 @@ _0800B730:
 
 .balign 4, 0
 _0800B734:
-/* 0800B734 */ .word D_083A4A7C
+/* 0800B734 */ .word gSpriteHandler
 _0800B738:
 /* 0800B738 */ LDR R0, _0800B75C
 /* 0800B73A */ LDR R0, [R0]
 /* 0800B73C */ LSLS R1, R7, #1
 /* 0800B73E */ ADDS R1, R1, R0
-/* 0800B740 */ LDR R0, =D_083A4A7C
+/* 0800B740 */ LDR R0, =gSpriteHandler
 /* 0800B742 */ LDR R0, [R0]
 /* 0800B744 */ MOVS R4, #0
 /* 0800B746 */ LDRSH R1, [R1, R4]

@@ -512,7 +512,7 @@ _0800E304:
 
 .balign 4, 0
 _0800E308:
-/* 0800E308 */ .word D_083A4A7C
+/* 0800E308 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800E30C:

@@ -29,7 +29,7 @@ glabel func_080CC228
 
 .balign 4, 0
 _080CC254:
-/* 080CC254 */ .word D_083A4A7C
+/* 080CC254 */ .word gSpriteHandler
 
 .balign 4, 0
 _080CC258:

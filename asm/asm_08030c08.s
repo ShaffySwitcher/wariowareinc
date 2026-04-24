@@ -48,6 +48,6 @@ _08030C54:
 
 .balign 4, 0
 _08030C50:
-/* 08030C50 */ .word D_083A4A7C
+/* 08030C50 */ .word gSpriteHandler
 .ltorg
 .end

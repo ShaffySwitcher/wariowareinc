@@ -40,6 +40,6 @@ _0806DAD0:
 
 .balign 4, 0
 _0806DACC:
-/* 0806DACC */ .word D_083A4A7C
+/* 0806DACC */ .word gSpriteHandler
 .ltorg
 .end

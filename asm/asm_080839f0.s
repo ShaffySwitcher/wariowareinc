@@ -35,7 +35,7 @@ _08083A24:
 
 .balign 4, 0
 _08083A28:
-/* 08083A28 */ .word D_083A4A7C
+/* 08083A28 */ .word gSpriteHandler
 _08083A2C:
 /* 08083A2C */ LDRB R0, [R1, #0X18]
 /* 08083A2E */ CMP R0, #0
@@ -68,7 +68,7 @@ _08083A38:
 
 .balign 4, 0
 _08083A64:
-/* 08083A64 */ .word D_083A4A7C
+/* 08083A64 */ .word gSpriteHandler
 
 .balign 4, 0
 _08083A68:

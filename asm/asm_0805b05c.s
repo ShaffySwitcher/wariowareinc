@@ -65,7 +65,7 @@ _0805B0C8:
 
 .balign 4, 0
 _0805B0CC:
-/* 0805B0CC */ .word D_083A4A7C
+/* 0805B0CC */ .word gSpriteHandler
 _0805B0D0:
 /* 0805B0D0 */ LSLS R0, R1, #0X1E
 /* 0805B0D2 */ CMP R0, #0

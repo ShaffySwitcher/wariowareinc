@@ -95,7 +95,7 @@ _0809721C:
 
 .balign 4, 0
 _08097220:
-/* 08097220 */ .word D_083A4A7C
+/* 08097220 */ .word gSpriteHandler
 _08097224:
 /* 08097224 */ MOVS R0, #0X87
 /* 08097226 */ LSLS R0, R0, #3
@@ -209,7 +209,7 @@ _080972C6:
 
 .balign 4, 0
 _08097300:
-/* 08097300 */ .word D_083A4A7C
+/* 08097300 */ .word gSpriteHandler
 
 .balign 4, 0
 _08097304:
@@ -314,7 +314,7 @@ _080973A8:
 
 .balign 4, 0
 _080973AC:
-/* 080973AC */ .word D_083A4A7C
+/* 080973AC */ .word gSpriteHandler
 
 .balign 4, 0
 _080973B0:
@@ -387,7 +387,7 @@ _08097428:
 
 .balign 4, 0
 _0809742C:
-/* 0809742C */ .word D_083A4A7C
+/* 0809742C */ .word gSpriteHandler
 
 .balign 4, 0
 _08097430:
@@ -490,7 +490,7 @@ _080974D4:
 
 .balign 4, 0
 _080974D8:
-/* 080974D8 */ .word D_083A4A7C
+/* 080974D8 */ .word gSpriteHandler
 
 .balign 4, 0
 _080974DC:
@@ -556,7 +556,7 @@ _08097548:
 
 .balign 4, 0
 _0809754C:
-/* 0809754C */ .word D_083A4A7C
+/* 0809754C */ .word gSpriteHandler
 
 .balign 4, 0
 _08097550:
@@ -595,7 +595,7 @@ _08097580:
 
 .balign 4, 0
 _08097584:
-/* 08097584 */ .word D_083A4A7C
+/* 08097584 */ .word gSpriteHandler
 _08097588:
 /* 08097588 */ LDR R0, _08097598
 /* 0809758A */ CMP R4, R0
@@ -653,7 +653,7 @@ _080975E8:
 
 .balign 4, 0
 _080975EC:
-/* 080975EC */ .word D_083A4A7C
+/* 080975EC */ .word gSpriteHandler
 
 .balign 4, 0
 _080975F0:
@@ -716,7 +716,7 @@ _08097648:
 
 .balign 4, 0
 _0809764C:
-/* 0809764C */ .word D_083A4A7C
+/* 0809764C */ .word gSpriteHandler
 
 .balign 4, 0
 _08097650:
@@ -761,7 +761,7 @@ _08097698:
 
 .balign 4, 0
 _0809769C:
-/* 0809769C */ .word D_083A4A7C
+/* 0809769C */ .word gSpriteHandler
 
 .balign 4, 0
 _080976A0:
@@ -813,7 +813,7 @@ _080976E8:
 
 .balign 4, 0
 _080976EC:
-/* 080976EC */ .word D_083A4A7C
+/* 080976EC */ .word gSpriteHandler
 _080976F0:
 /* 080976F0 */ LDR R7, _08097734
 /* 080976F2 */ ADDS R0, R3, R7
@@ -862,7 +862,7 @@ _0809773C:
 
 .balign 4, 0
 _08097740:
-/* 08097740 */ .word D_083A4A7C
+/* 08097740 */ .word gSpriteHandler
 _08097744:
 /* 08097744 */ LSLS R0, R3, #0X10
 /* 08097746 */ LSRS R2, R0, #0X10
@@ -885,7 +885,7 @@ _08097764:
 
 .balign 4, 0
 _08097768:
-/* 08097768 */ .word D_083A4A7C
+/* 08097768 */ .word gSpriteHandler
 _0809776C:
 /* 0809776C */ LDR R4, _080977D0
 /* 0809776E */ ADDS R0, R3, R4
@@ -1182,7 +1182,7 @@ _080979BC:
 
 .balign 4, 0
 _0809799C:
-/* 0809799C */ .word D_083A4A7C
+/* 0809799C */ .word gSpriteHandler
 
 .balign 4, 0
 _080979A0:

@@ -35,7 +35,7 @@ glabel func_0802BC74
 
 .balign 4, 0
 _0802BCAC:
-/* 0802BCAC */ .word D_083A4A7C
+/* 0802BCAC */ .word gSpriteHandler
 _0802BCB0:
 /* 0802BCB0 */ LDR R0, _0802BCE0
 /* 0802BCB2 */ LDR R1, [R0]
@@ -72,7 +72,7 @@ _0802BCE4:
 
 .balign 4, 0
 _0802BCE8:
-/* 0802BCE8 */ .word D_083A4A7C
+/* 0802BCE8 */ .word gSpriteHandler
 _0802BCEC:
 /* 0802BCEC */ LDR R0, [R5]
 /* 0802BCEE */ LDR R1, _0802BD38
@@ -121,7 +121,7 @@ _0802BD3C:
 
 .balign 4, 0
 _0802BD40:
-/* 0802BD40 */ .word D_083A4A7C
+/* 0802BD40 */ .word gSpriteHandler
 _0802BD44:
 /* 0802BD44 */ MOVS R2, #1
 /* 0802BD46 */ MOVS R0, #0X20
@@ -189,6 +189,6 @@ _0802BDB4:
 
 .balign 4, 0
 _0802BDBC:
-/* 0802BDBC */ .word D_083A4A7C
+/* 0802BDBC */ .word gSpriteHandler
 .ltorg
 .end

@@ -448,7 +448,7 @@ _080DC178:
 
 .balign 4, 0
 _080DC17C:
-/* 080DC17C */ .word D_083A4A7C
+/* 080DC17C */ .word gSpriteHandler
 _080DC180:
 /* 080DC180 */ CMP R0, #9
 /* 080DC182 */ BLS _080DC1B4
@@ -608,6 +608,6 @@ _080DC2C8:
 
 .balign 4, 0
 _080DC2C4:
-/* 080DC2C4 */ .word D_083A4A7C
+/* 080DC2C4 */ .word gSpriteHandler
 .ltorg
 .end

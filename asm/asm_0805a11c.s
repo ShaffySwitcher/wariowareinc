@@ -179,7 +179,7 @@ _0805A254:
 
 .balign 4, 0
 _0805A258:
-/* 0805A258 */ .word D_083A4A7C
+/* 0805A258 */ .word gSpriteHandler
 
 .balign 4, 0
 _0805A25C:
@@ -255,7 +255,7 @@ _0805A2D4:
 
 .balign 4, 0
 _0805A2D8:
-/* 0805A2D8 */ .word D_083A4A7C
+/* 0805A2D8 */ .word gSpriteHandler
 _0805A2DC:
 /* 0805A2DC */ MOVS R0, #0
 /* 0805A2DE */ LDR R5, _0805A2FC
@@ -346,7 +346,7 @@ _0805A378:
 
 .balign 4, 0
 _0805A37C:
-/* 0805A37C */ .word D_083A4A7C
+/* 0805A37C */ .word gSpriteHandler
 _0805A380:
 /* 0805A380 */ MOVS R0, #0
 /* 0805A382 */ LDR R3, _0805A3A0
@@ -415,7 +415,7 @@ _0805A3C2:
 /* 0805A3F6 */ ADDS R0, R1
 /* 0805A3F8 */ ASRS R5, R0, #8
 /* 0805A3FA */ ADDS R5, #0X50
-/* 0805A3FC */ LDR R0, =D_083A4A7C
+/* 0805A3FC */ LDR R0, =gSpriteHandler
 /* 0805A3FE */ LDR R0, [R0]
 /* 0805A400 */ MOV R1, IP
 /* 0805A402 */ ASRS R4, R1, #0X18

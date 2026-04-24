@@ -79,7 +79,7 @@ _0801B238:
 
 .balign 4, 0
 _0801B23C:
-/* 0801B23C */ .word D_083A4A7C
+/* 0801B23C */ .word gSpriteHandler
 _0801B240:
 /* 0801B240 */ ADDS R5, #1
 /* 0801B242 */ CMP R5, #7

@@ -71,7 +71,7 @@ _08033CAC:
 
 .balign 4, 0
 _08033CB0:
-/* 08033CB0 */ .word D_083A4A7C
+/* 08033CB0 */ .word gSpriteHandler
 _08033CB4:
 /* 08033CB4 */ LDR R0, [R3]
 /* 08033CB6 */ ASRS R0, R0, #8

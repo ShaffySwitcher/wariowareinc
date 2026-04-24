@@ -579,7 +579,7 @@ _08050D80:
 
 .balign 4, 0
 _08050D64:
-/* 08050D64 */ .word D_083A4A7C
+/* 08050D64 */ .word gSpriteHandler
 
 .balign 4, 0
 _08050D68:

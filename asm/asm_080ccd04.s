@@ -50,7 +50,7 @@ _080CCD54:
 
 .balign 4, 0
 _080CCD58:
-/* 080CCD58 */ .word D_083A4A7C
+/* 080CCD58 */ .word gSpriteHandler
 
 .balign 4, 0
 _080CCD5C:
@@ -93,6 +93,6 @@ _080CCDA0:
 
 .balign 4, 0
 _080CCD9C:
-/* 080CCD9C */ .word D_083A4A7C
+/* 080CCD9C */ .word gSpriteHandler
 .ltorg
 .end

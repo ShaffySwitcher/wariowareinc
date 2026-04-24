@@ -123,7 +123,7 @@ _0800BB68:
 
 .balign 4, 0
 _0800BB6C:
-/* 0800BB6C */ .word D_083A4A7C
+/* 0800BB6C */ .word gSpriteHandler
 
 .balign 4, 0
 _0800BB70:

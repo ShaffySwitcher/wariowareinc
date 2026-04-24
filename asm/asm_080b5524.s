@@ -91,6 +91,6 @@ _080B55A8:
 
 .balign 4, 0
 _080B55AC:
-/* 080B55AC */ .word D_083A4A7C
+/* 080B55AC */ .word gSpriteHandler
 .ltorg
 .end

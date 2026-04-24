@@ -106,6 +106,6 @@ _0800DDE8:
 
 .balign 4, 0
 _0800DDEC:
-/* 0800DDEC */ .word D_083A4A7C
+/* 0800DDEC */ .word gSpriteHandler
 .ltorg
 .end

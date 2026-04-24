@@ -43,7 +43,7 @@ _080B897C:
 
 .balign 4, 0
 _080B8980:
-/* 080B8980 */ .word D_083A4A7C
+/* 080B8980 */ .word gSpriteHandler
 _080B8984:
 /* 080B8984 */ CMP R5, #0
 /* 080B8986 */ BLE _080B899E
@@ -130,7 +130,7 @@ _080B8A18:
 
 .balign 4, 0
 _080B8A1C:
-/* 080B8A1C */ .word D_083A4A7C
+/* 080B8A1C */ .word gSpriteHandler
 
 .balign 4, 0
 _080B8A20:

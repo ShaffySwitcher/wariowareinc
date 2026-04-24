@@ -31,7 +31,7 @@ glabel func_0808F17C
 /* 0808F1AC */ STR R0, [R4, #8]
 /* 0808F1AE */ MOVS R5, #0
 /* 0808F1B0 */ STRB R3, [R4, #0X12]
-/* 0808F1B2 */ LDR R0, =D_083A4A7C
+/* 0808F1B2 */ LDR R0, =gSpriteHandler
 /* 0808F1B4 */ LDR R0, [R0]
 /* 0808F1B6 */ MOVS R2, #0
 /* 0808F1B8 */ LDRSH R1, [R4, R2]

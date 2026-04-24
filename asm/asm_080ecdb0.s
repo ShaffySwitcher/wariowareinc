@@ -76,7 +76,7 @@ _080ECDEA:
 /* 080ECE36 */ BL gameplay_check_collision
 /* 080ECE3A */ CMP R0, #0
 /* 080ECE3C */ BEQ _080ECE50
-/* 080ECE3E */ LDR R0, =D_083A4A7C
+/* 080ECE3E */ LDR R0, =gSpriteHandler
 /* 080ECE40 */ LDR R0, [R0]
 /* 080ECE42 */ MOVS R2, #0
 /* 080ECE44 */ LDRSH R1, [R4, R2]

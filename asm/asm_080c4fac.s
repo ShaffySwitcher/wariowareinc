@@ -105,7 +105,7 @@ _080C5034:
 
 .balign 4, 0
 _080C5060:
-/* 080C5060 */ .word D_083A4A7C
+/* 080C5060 */ .word gSpriteHandler
 _080C5064:
 /* 080C5064 */ ADDS R6, R7, #0
 /* 080C5066 */ ADDS R6, #0X28
@@ -188,7 +188,7 @@ _080C5064:
 
 .balign 4, 0
 _080C510C:
-/* 080C510C */ .word D_083A4A7C
+/* 080C510C */ .word gSpriteHandler
 
 .balign 4, 0
 _080C5110:

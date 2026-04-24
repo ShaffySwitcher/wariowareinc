@@ -113,7 +113,7 @@ _08021DDE:
 
 .balign 4, 0
 _08021DFC:
-/* 08021DFC */ .word D_083A4A7C
+/* 08021DFC */ .word gSpriteHandler
 
 .balign 4, 0
 _08021E00:
@@ -121,7 +121,7 @@ _08021E00:
 _08021E04:
 /* 08021E04 */ CMP R5, #0X4F
 /* 08021E06 */ BLS _08021E3A
-/* 08021E08 */ LDR R7, =D_083A4A7C
+/* 08021E08 */ LDR R7, =gSpriteHandler
 /* 08021E0A */ MOV R0, IP
 /* 08021E0C */ LSLS R0, R0, #0X10
 /* 08021E0E */ MOV R8, R0

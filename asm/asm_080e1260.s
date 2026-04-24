@@ -40,6 +40,6 @@ _080E129C:
 
 .balign 4, 0
 _080E1298:
-/* 080E1298 */ .word D_083A4A7C
+/* 080E1298 */ .word gSpriteHandler
 .ltorg
 .end

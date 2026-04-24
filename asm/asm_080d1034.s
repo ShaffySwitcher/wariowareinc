@@ -9,7 +9,7 @@ glabel func_080D1034
 /* 080D1036 */ MOVS R1, #0
 /* 080D1038 */ STRB R1, [R0, #0X1A]
 /* 080D103A */ STRB R1, [R0, #0X17]
-/* 080D103C */ LDR R1, =D_083A4A7C
+/* 080D103C */ LDR R1, =gSpriteHandler
 /* 080D103E */ LDR R2, [R1]
 /* 080D1040 */ MOVS R3, #0
 /* 080D1042 */ LDRSH R1, [R0, R3]

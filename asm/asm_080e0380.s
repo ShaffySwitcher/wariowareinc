@@ -90,7 +90,7 @@ _080E041C:
 
 .balign 4, 0
 _080E0420:
-/* 080E0420 */ .word D_083A4A7C
+/* 080E0420 */ .word gSpriteHandler
 
 .balign 4, 0
 _080E0424:
@@ -137,7 +137,7 @@ _080E0428:
 
 .balign 4, 0
 _080E047C:
-/* 080E047C */ .word D_083A4A7C
+/* 080E047C */ .word gSpriteHandler
 _080E0480:
 /* 080E0480 */ MOV R6, SB
 /* 080E0482 */ LDR R0, [R6]

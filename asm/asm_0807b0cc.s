@@ -86,7 +86,7 @@ _0807B0F4:
 
 .balign 4, 0
 _0807B168:
-/* 0807B168 */ .word D_083A4A7C
+/* 0807B168 */ .word gSpriteHandler
 
 .balign 4, 0
 _0807B16C:
@@ -153,7 +153,7 @@ _0807B170:
 
 .balign 4, 0
 _0807B1F0:
-/* 0807B1F0 */ .word D_083A4A7C
+/* 0807B1F0 */ .word gSpriteHandler
 _0807B1F4:
 /* 0807B1F4 */ BL func_0807B064
 _0807B1F8:

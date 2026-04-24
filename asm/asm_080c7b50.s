@@ -36,7 +36,7 @@ glabel func_080C7B50
 /* 080C7B88 */ MOV R1, IP
 /* 080C7B8A */ STR R0, [R1, #8]
 _080C7B8C:
-/* 080C7B8C */ LDR R0, =D_083A4A7C
+/* 080C7B8C */ LDR R0, =gSpriteHandler
 /* 080C7B8E */ LDR R0, [R0]
 /* 080C7B90 */ LDR R2, [R4]
 /* 080C7B92 */ MOVS R3, #2

@@ -21,7 +21,7 @@ glabel func_080EE9B8
 /* 080EE9D2 */ ASRS R4, R1, #0X10
 /* 080EE9D4 */ ADDS R0, R7, #0
 /* 080EE9D6 */ ADDS R1, R4, #0
-/* 080EE9D8 */ BL func_080EE8F4
+/* 080EE9D8 */ BL sprite_is_invalid
 /* 080EE9DC */ CMP R0, #0
 /* 080EE9DE */ BEQ _080EE9E2
 /* 080EE9E0 */ B _080EEB42

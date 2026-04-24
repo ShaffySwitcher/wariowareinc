@@ -22,7 +22,7 @@ glabel func_08063C18
 /* 08063C34 */ ADDS R0, R2, R3
 /* 08063C36 */ LDR R4, [R0]
 /* 08063C38 */ ASRS R4, R4, #8
-/* 08063C3A */ LDR R6, =D_083A4A7C
+/* 08063C3A */ LDR R6, =gSpriteHandler
 /* 08063C3C */ LDR R0, [R6]
 /* 08063C3E */ MOVS R3, #0
 /* 08063C40 */ LDRSH R2, [R1, R3]

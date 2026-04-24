@@ -27,7 +27,7 @@ glabel func_0806BA60
 
 .balign 4, 0
 _0806BA8C:
-/* 0806BA8C */ .word D_083A4A7C
+/* 0806BA8C */ .word gSpriteHandler
 _0806BA90:
 /* 0806BA90 */ LDR R1, [R4, #4]
 /* 0806BA92 */ MOVS R0, #0XA0
@@ -52,7 +52,7 @@ _0806BAB2:
 /* 0806BAB8 */ ADDS R0, R1, R0
 /* 0806BABA */ STR R0, [R4, #4]
 _0806BABC:
-/* 0806BABC */ LDR R0, =D_083A4A7C
+/* 0806BABC */ LDR R0, =gSpriteHandler
 /* 0806BABE */ LDR R0, [R0]
 /* 0806BAC0 */ MOVS R2, #0XC
 /* 0806BAC2 */ LDRSH R1, [R4, R2]

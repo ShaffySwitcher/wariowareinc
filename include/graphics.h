@@ -33,6 +33,59 @@ enum BGLayersEnum {
     BG_LAYER_3
 };
 
+struct OAM {
+    // Attribute 0
+    u16 yPos:8;
+    u16 affineFlag:1;
+    u16 objDisable:1;
+    u16 objMode:2;
+    u16 objMosaic:1;
+    u16 paletteMode:1;
+    u16 objShape:2;
+
+    // Attribute 1
+    u16 xPos:9;
+    u16 unused:3;
+    u16 hFlip:1;
+    u16 vFlip:1;
+    u16 objSize:2;
+
+    // Attribute 2
+    u16 tileNum:10;
+    u16 priority:2;
+    u16 palette:4;
+};
+
+struct AffineOAM {
+    // Attribute 0
+    u16 yPos:8;
+    u16 affineFlag:1;
+    u16 doubleSize:1;
+    u16 objMode:2;
+    u16 objMosaic:1;
+    u16 paletteMode:1;
+    u16 objShape:2;
+
+    // Attribute 1
+    u16 xPos:9;
+    u16 affineParam:5;
+    u16 objSize:2;
+
+    // Attribute 2
+    u16 tileNum:10;
+    u16 priority:2;
+    u16 palette:4;
+};
+
+typedef u16 AnimationCel;
+
+struct Animation {
+    AnimationCel *cel;
+    u8 duration;
+};
+
+#define END_ANIMATION { NULL, 0 }
+
 struct GraphicsBuffer {
     u16 DISPCNT;       // 0x0 size:0x2
     u8 pad[0xA];       // 0x2 size:0xA

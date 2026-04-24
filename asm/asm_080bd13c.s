@@ -144,7 +144,7 @@ _080BD1CC:
 
 .balign 4, 0
 _080BD248:
-/* 080BD248 */ .word D_083A4A7C
+/* 080BD248 */ .word gSpriteHandler
 _080BD24C:
 /* 080BD24C */ MOVS R0, #1
 /* 080BD24E */ STRB R0, [R2, #5]
@@ -186,6 +186,6 @@ _080BD298:
 
 .balign 4, 0
 _080BD294:
-/* 080BD294 */ .word D_083A4A7C
+/* 080BD294 */ .word gSpriteHandler
 .ltorg
 .end

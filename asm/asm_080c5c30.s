@@ -38,7 +38,7 @@ glabel func_080C5C30
 /* 080C5C72 */ LDR R3, [R4, #0X14]
 /* 080C5C74 */ ADDS R3, R0
 /* 080C5C76 */ STR R3, [R4, #0XC]
-/* 080C5C78 */ LDR R0, =D_083A4A7C
+/* 080C5C78 */ LDR R0, =gSpriteHandler
 /* 080C5C7A */ LDR R0, [R0]
 /* 080C5C7C */ MOVS R2, #0
 /* 080C5C7E */ LDRSH R1, [R4, R2]

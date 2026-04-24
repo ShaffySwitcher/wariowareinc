@@ -70,7 +70,7 @@ _080A8FAC:
 
 .balign 4, 0
 _080A8FB0:
-/* 080A8FB0 */ .word D_083A4A7C
+/* 080A8FB0 */ .word gSpriteHandler
 _080A8FB4:
 /* 080A8FB4 */ ADDS R0, R2, #0
 /* 080A8FB6 */ ADDS R0, #0X88
@@ -144,7 +144,7 @@ _080A9048:
 
 .balign 4, 0
 _080A903C:
-/* 080A903C */ .word D_083A4A7C
+/* 080A903C */ .word gSpriteHandler
 
 .balign 4, 0
 _080A9040:

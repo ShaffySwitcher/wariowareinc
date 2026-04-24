@@ -30,7 +30,7 @@ _0800E720:
 
 .balign 4, 0
 _0800E724:
-/* 0800E724 */ .word D_083A4A7C
+/* 0800E724 */ .word gSpriteHandler
 _0800E728:
 /* 0800E728 */ LDR R5, _0800E758
 /* 0800E72A */ LDR R0, [R5]
@@ -61,6 +61,6 @@ _0800E75C:
 
 .balign 4, 0
 _0800E758:
-/* 0800E758 */ .word D_083A4A7C
+/* 0800E758 */ .word gSpriteHandler
 .ltorg
 .end

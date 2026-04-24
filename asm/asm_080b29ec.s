@@ -46,7 +46,7 @@ _080B2A28:
 _080B2A2C:
 /* 080B2A2C */ .word gGraphicsBuffer
 _080B2A30:
-/* 080B2A30 */ LDR R0, =D_083A4A7C
+/* 080B2A30 */ LDR R0, =gSpriteHandler
 /* 080B2A32 */ LDR R0, [R0]
 /* 080B2A34 */ MOVS R2, #0XD3
 /* 080B2A36 */ LSLS R2, R2, #1

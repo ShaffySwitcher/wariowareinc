@@ -314,7 +314,7 @@ _080CA140:
 
 .balign 4, 0
 _080CA144:
-/* 080CA144 */ .word D_083A4A7C
+/* 080CA144 */ .word gSpriteHandler
 
 .balign 4, 0
 _080CA148:

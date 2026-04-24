@@ -185,7 +185,7 @@ _080DCEF8:
 
 .balign 4, 0
 _080DCEFC:
-/* 080DCEFC */ .word D_083A4A7C
+/* 080DCEFC */ .word gSpriteHandler
 
 .balign 4, 0
 _080DCF00:
@@ -274,7 +274,7 @@ _080DCF84:
 
 .balign 4, 0
 _080DCF88:
-/* 080DCF88 */ .word D_083A4A7C
+/* 080DCF88 */ .word gSpriteHandler
 _080DCF8C:
 /* 080DCF8C */ MOVS R6, #0
 /* 080DCF8E */ CMP R6, SB
@@ -354,6 +354,6 @@ _080DD014:
 
 .balign 4, 0
 _080DD018:
-/* 080DD018 */ .word D_083A4A7C
+/* 080DD018 */ .word gSpriteHandler
 .ltorg
 .end

@@ -96,7 +96,7 @@ _080CF114:
 
 .balign 4, 0
 _080CF118:
-/* 080CF118 */ .word D_083A4A7C
+/* 080CF118 */ .word gSpriteHandler
 _080CF11C:
 /* 080CF11C */ MOVS R0, #0X80
 /* 080CF11E */ LSLS R0, R0, #7
@@ -173,6 +173,6 @@ _080CF194:
 
 .balign 4, 0
 _080CF198:
-/* 080CF198 */ .word D_083A4A7C
+/* 080CF198 */ .word gSpriteHandler
 .ltorg
 .end

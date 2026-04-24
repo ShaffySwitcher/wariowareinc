@@ -34,7 +34,7 @@ _0800DACA:
 
 .balign 4, 0
 _0800DAD0:
-/* 0800DAD0 */ .word D_083A4A7C
+/* 0800DAD0 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800DAD4:

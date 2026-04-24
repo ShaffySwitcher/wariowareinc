@@ -64,7 +64,7 @@ glabel func_0806584C
 
 .balign 4, 0
 _080658C4:
-/* 080658C4 */ .word D_083A4A7C
+/* 080658C4 */ .word gSpriteHandler
 
 .balign 4, 0
 _080658C8:
@@ -194,7 +194,7 @@ _08065990:
 
 .balign 4, 0
 _08065998:
-/* 08065998 */ .word D_083A4A7C
+/* 08065998 */ .word gSpriteHandler
 
 .balign 4, 0
 _0806599C:

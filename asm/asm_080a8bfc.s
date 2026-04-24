@@ -41,7 +41,7 @@ _080A8C34:
 
 .balign 4, 0
 _080A8C38:
-/* 080A8C38 */ .word D_083A4A7C
+/* 080A8C38 */ .word gSpriteHandler
 _080A8C3C:
 /* 080A8C3C */ LDR R0, _080A8C6C
 /* 080A8C3E */ LDR R0, [R0]
@@ -74,6 +74,6 @@ _080A8C70:
 
 .balign 4, 0
 _080A8C6C:
-/* 080A8C6C */ .word D_083A4A7C
+/* 080A8C6C */ .word gSpriteHandler
 .ltorg
 .end

@@ -191,7 +191,7 @@ _0800D96C:
 
 .balign 4, 0
 _0800D970:
-/* 0800D970 */ .word D_083A4A7C
+/* 0800D970 */ .word gSpriteHandler
 _0800D974:
 /* 0800D974 */ LDR R2, _0800D9C0
 /* 0800D976 */ LDR R0, [R2]
@@ -234,6 +234,6 @@ _0800D9B0:
 
 .balign 4, 0
 _0800D9C0:
-/* 0800D9C0 */ .word D_083A4A7C
+/* 0800D9C0 */ .word gSpriteHandler
 .ltorg
 .end

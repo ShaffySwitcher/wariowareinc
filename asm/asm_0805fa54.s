@@ -74,7 +74,7 @@ _0805FA9C:
 
 .balign 4, 0
 _0805FAD4:
-/* 0805FAD4 */ .word D_083A4A7C
+/* 0805FAD4 */ .word gSpriteHandler
 _0805FAD8:
 /* 0805FAD8 */ MOVS R0, #0XA6
 /* 0805FADA */ LSLS R0, R0, #2
@@ -92,7 +92,7 @@ _0805FAEC:
 /* 0805FAF0 */ MOVS R1, #1
 /* 0805FAF2 */ ORRS R0, R1
 /* 0805FAF4 */ STRB R0, [R4]
-/* 0805FAF6 */ LDR R5, =D_083A4A7C
+/* 0805FAF6 */ LDR R5, =gSpriteHandler
 /* 0805FAF8 */ LDR R0, [R5]
 /* 0805FAFA */ LDR R1, [R6]
 /* 0805FAFC */ MOVS R4, #0XA9

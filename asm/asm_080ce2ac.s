@@ -58,7 +58,7 @@ _080CE304:
 
 .balign 4, 0
 _080CE308:
-/* 080CE308 */ .word D_083A4A7C
+/* 080CE308 */ .word gSpriteHandler
 _080CE30C:
 /* 080CE30C */ CMP R0, #0XD
 /* 080CE30E */ BLS _080CE340

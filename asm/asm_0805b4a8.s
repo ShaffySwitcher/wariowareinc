@@ -32,7 +32,7 @@ glabel func_0805B4A8
 /* 0805B4D8 */ STR R6, [R4, #0XC]
 /* 0805B4DA */ MOVS R5, #1
 _0805B4DC:
-/* 0805B4DC */ LDR R0, =D_083A4A7C
+/* 0805B4DC */ LDR R0, =gSpriteHandler
 /* 0805B4DE */ LDR R0, [R0]
 /* 0805B4E0 */ MOVS R2, #0
 /* 0805B4E2 */ LDRSH R1, [R4, R2]

@@ -41,7 +41,7 @@ _080A42AC:
 
 .balign 4, 0
 _080A42B0:
-/* 080A42B0 */ .word D_083A4A7C
+/* 080A42B0 */ .word gSpriteHandler
 _080A42B4:
 /* 080A42B4 */ BL func_080A3E54
 /* 080A42B8 */ LDR R0, _080A42D0

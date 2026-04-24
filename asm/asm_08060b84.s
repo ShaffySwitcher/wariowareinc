@@ -28,7 +28,7 @@ glabel func_08060B84
 /* 08060BAE */ MOVS R0, #0
 /* 08060BB0 */ STRB R0, [R1, #0X1C]
 _08060BB2:
-/* 08060BB2 */ LDR R0, =D_083A4A7C
+/* 08060BB2 */ LDR R0, =gSpriteHandler
 /* 08060BB4 */ LDR R0, [R0]
 /* 08060BB6 */ LDR R2, [R5]
 /* 08060BB8 */ MOVS R3, #0

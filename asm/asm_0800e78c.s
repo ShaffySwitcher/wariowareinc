@@ -33,6 +33,6 @@ _0800E7BC:
 
 .balign 4, 0
 _0800E7B8:
-/* 0800E7B8 */ .word D_083A4A7C
+/* 0800E7B8 */ .word gSpriteHandler
 .ltorg
 .end

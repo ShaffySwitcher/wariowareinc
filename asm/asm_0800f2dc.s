@@ -126,7 +126,7 @@ _0800F3C0:
 
 .balign 4, 0
 _0800F3C4:
-/* 0800F3C4 */ .word D_083A4A7C
+/* 0800F3C4 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800F3C8:
@@ -628,7 +628,7 @@ _0800F744:
 
 .balign 4, 0
 _0800F748:
-/* 0800F748 */ .word D_083A4A7C
+/* 0800F748 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800F74C:

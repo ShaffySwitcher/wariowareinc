@@ -24,9 +24,9 @@ _080CCDB4:
 
 .balign 4, 0
 _080CCDC4:
-/* 080CCDC4 */ .word D_083A4A7C
+/* 080CCDC4 */ .word gSpriteHandler
 _080CCDC8:
-/* 080CCDC8 */ LDR R0, =D_083A4A7C
+/* 080CCDC8 */ LDR R0, =gSpriteHandler
 /* 080CCDCA */ LDR R0, [R0]
 /* 080CCDCC */ MOVS R2, #0
 /* 080CCDCE */ LDRSH R1, [R1, R2]

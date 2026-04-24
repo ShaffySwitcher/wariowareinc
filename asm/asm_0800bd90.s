@@ -141,7 +141,7 @@ _0800BE4C:
 
 .balign 4, 0
 _0800BE84:
-/* 0800BE84 */ .word D_083A4A7C
+/* 0800BE84 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800BE88:

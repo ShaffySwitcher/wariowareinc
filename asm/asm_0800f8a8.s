@@ -114,7 +114,7 @@ _0800F974:
 
 .balign 4, 0
 _0800F978:
-/* 0800F978 */ .word D_083A4A7C
+/* 0800F978 */ .word gSpriteHandler
 
 .balign 4, 0
 _0800F97C:

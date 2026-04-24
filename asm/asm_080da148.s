@@ -31,9 +31,9 @@ _080DA170:
 
 .balign 4, 0
 _080DA174:
-/* 080DA174 */ .word D_083A4A7C
+/* 080DA174 */ .word gSpriteHandler
 _080DA178:
-/* 080DA178 */ LDR R0, =D_083A4A7C
+/* 080DA178 */ LDR R0, =gSpriteHandler
 /* 080DA17A */ LDR R0, [R0]
 /* 080DA17C */ MOVS R3, #0
 /* 080DA17E */ LDRSH R1, [R2, R3]

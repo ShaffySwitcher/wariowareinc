@@ -345,7 +345,7 @@ _080E3374:
 
 .balign 4, 0
 _080E3378:
-/* 080E3378 */ .word D_083A4A7C
+/* 080E3378 */ .word gSpriteHandler
 
 .balign 4, 0
 _080E337C:

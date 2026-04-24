@@ -86,7 +86,7 @@ _080C04D8:
 
 .balign 4, 0
 _080C04DC:
-/* 080C04DC */ .word D_083A4A7C
+/* 080C04DC */ .word gSpriteHandler
 _080C04E0:
 /* 080C04E0 */ LDR R4, _080C051C
 /* 080C04E2 */ LDR R0, [R4]
@@ -123,6 +123,6 @@ _080C0520:
 
 .balign 4, 0
 _080C051C:
-/* 080C051C */ .word D_083A4A7C
+/* 080C051C */ .word gSpriteHandler
 .ltorg
 .end

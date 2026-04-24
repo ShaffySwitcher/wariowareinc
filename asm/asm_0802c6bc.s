@@ -70,11 +70,11 @@ _0802C6CC:
 
 .balign 4, 0
 _0802C738:
-/* 0802C738 */ .word D_083A4A7C
+/* 0802C738 */ .word gSpriteHandler
 _0802C73C:
 /* 0802C73C */ MOVS R0, #0
 /* 0802C73E */ STRB R0, [R7]
-/* 0802C740 */ LDR R0, =D_083A4A7C
+/* 0802C740 */ LDR R0, =gSpriteHandler
 /* 0802C742 */ LDR R0, [R0]
 /* 0802C744 */ ADDS R1, R6, #0
 /* 0802C746 */ ADDS R1, #0X76

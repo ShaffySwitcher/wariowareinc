@@ -129,7 +129,7 @@ _0802813C:
 
 .balign 4, 0
 _08028140:
-/* 08028140 */ .word D_083A4A7C
+/* 08028140 */ .word gSpriteHandler
 
 .balign 4, 0
 _08028144:

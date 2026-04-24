@@ -68,7 +68,7 @@ _080CF3FC:
 
 .balign 4, 0
 _080CF400:
-/* 080CF400 */ .word D_083A4A7C
+/* 080CF400 */ .word gSpriteHandler
 
 .balign 4, 0
 _080CF404:

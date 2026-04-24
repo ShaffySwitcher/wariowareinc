@@ -515,7 +515,7 @@ _080AB484:
 
 .balign 4, 0
 _080AB488:
-/* 080AB488 */ .word D_083A4A7C
+/* 080AB488 */ .word gSpriteHandler
 
 .balign 4, 0
 _080AB48C:

@@ -50,7 +50,7 @@ _080EC5E0:
 
 .balign 4, 0
 _080EC5D8:
-/* 080EC5D8 */ .word D_083A4A7C
+/* 080EC5D8 */ .word gSpriteHandler
 
 .balign 4, 0
 _080EC5DC:

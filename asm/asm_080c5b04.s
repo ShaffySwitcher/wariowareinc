@@ -135,7 +135,7 @@ _080C5BD8:
 
 .balign 4, 0
 _080C5BF0:
-/* 080C5BF0 */ .word D_083A4A7C
+/* 080C5BF0 */ .word gSpriteHandler
 _080C5BF4:
 /* 080C5BF4 */ MOVS R0, #1
 /* 080C5BF6 */ B _080C5BFA

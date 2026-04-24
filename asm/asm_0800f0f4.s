@@ -237,6 +237,6 @@ _0800F288:
 
 .balign 4, 0
 _0800F28C:
-/* 0800F28C */ .word D_083A4A7C
+/* 0800F28C */ .word gSpriteHandler
 .ltorg
 .end

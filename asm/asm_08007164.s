@@ -16,7 +16,7 @@ glabel func_08007164
 /* 08007174 */ LDR R3, [R0, #0XC]
 /* 08007176 */ ADDS R3, R3, R1
 /* 08007178 */ STR R3, [R0, #0XC]
-/* 0800717A */ LDR R1, =D_083A4A7C
+/* 0800717A */ LDR R1, =gSpriteHandler
 /* 0800717C */ LDR R4, [R1]
 /* 0800717E */ MOVS R5, #0
 /* 08007180 */ LDRSH R1, [R0, R5]

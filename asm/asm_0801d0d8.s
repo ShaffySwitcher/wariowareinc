@@ -65,7 +65,7 @@ _0801D13C:
 
 .balign 4, 0
 _0801D140:
-/* 0801D140 */ .word D_083A4A7C
+/* 0801D140 */ .word gSpriteHandler
 _0801D144:
 /* 0801D144 */ CMP R1, #2
 /* 0801D146 */ BEQ _0801D178

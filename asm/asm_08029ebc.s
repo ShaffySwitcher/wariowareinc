@@ -150,7 +150,7 @@ _08029FD8:
 
 .balign 4, 0
 _08029FCC:
-/* 08029FCC */ .word D_083A4A7C
+/* 08029FCC */ .word gSpriteHandler
 
 .balign 4, 0
 _08029FD0:

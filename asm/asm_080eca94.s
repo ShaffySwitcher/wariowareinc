@@ -7,7 +7,7 @@
 glabel func_080ECA94
 /* 080ECA94 */ PUSH {R4, R5, R6, LR}
 /* 080ECA96 */ ADDS R4, R0, #0
-/* 080ECA98 */ LDR R6, =D_083A4A7C
+/* 080ECA98 */ LDR R6, =gSpriteHandler
 /* 080ECA9A */ LDR R0, [R6]
 /* 080ECA9C */ MOVS R2, #0
 /* 080ECA9E */ LDRSH R1, [R4, R2]

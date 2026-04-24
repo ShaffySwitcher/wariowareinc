@@ -136,7 +136,7 @@ void gameplay_stop_scene(void) {
     
     for(i = 0; i < 2;){
         i++; // why?
-        func_080EF9BC(D_083A4A7C, i);
+        func_080EF9BC(gSpriteHandler, i);
         func_08001B70(i);
         func_08005A1C(i);
         func_080062E4(i);
@@ -187,10 +187,10 @@ u32 gameplay_update_scene(void) {
                 if (pauseAvailable != 0) {
                     gGameplayData.isPaused = 1;
                     gGameplayData.unk5_6 = 0;
-                    func_080EE9B8(D_083A4A7C, gGameplayData.unk1ee, (s8)(arg << 1));
-                    sprite_set_visible(D_083A4A7C, gGameplayData.unk1ee, 1);
+                    func_080EE9B8(gSpriteHandler, gGameplayData.unk1ee, (s8)(arg << 1));
+                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
                     func_08002024(1);
-                    func_080EFA54(D_083A4A7C, 1);
+                    func_080EFA54(gSpriteHandler, 1);
                     func_08003D28(&gGameplayData.pad1f5 - 1, 1);
                     for (i = 0; i < 2;) {
                         i++;
@@ -217,11 +217,11 @@ u32 gameplay_update_scene(void) {
                     gGameplayData.unk5_6 = 0;
                 }
                 if (gGameplayData.unk5_6 == 0) {
-                    sprite_set_visible(D_083A4A7C, gGameplayData.unk1ee, 0);
+                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
                     gGameplayData.currentState = GAMEPLAY_STATE_RESUMING;
                     play_sound((struct SongHeader *)&D_083FBB08);
                 } else {
-                    sprite_set_visible(D_083A4A7C, gGameplayData.unk1ee, 0);
+                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
                     func_08006C40(0x20, 0);
                     stop_all_soundplayers();
                     play_sound((struct SongHeader *)&D_083FBB08);
@@ -236,7 +236,7 @@ u32 gameplay_update_scene(void) {
             if ((gCurrentKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) == 0) {
                 gGameplayData.isPaused = 0;
                 func_08002024(0);
-                func_080EFA54(D_083A4A7C, 0);
+                func_080EFA54(gSpriteHandler, 0);
                 func_08003D28(&gGameplayData.pad1f5 - 1, 0);
                 for (i = 0; i < 2;) {
                     i++;
@@ -291,8 +291,8 @@ void func_08008798(void) {
         dma3_set((u8 *)gGameplayData.unk28c + 0x140, D_03004394, 0x20, 0x20, 0x100);
 
         if (gGameplayData.unk188 >= 0) {
-            gGameplayData.unk290 = func_080EF784(D_083A4A7C, gGameplayData.unk188, 0);
-            sprite_set_visible(D_083A4A7C, gGameplayData.unk188, 0);
+            gGameplayData.unk290 = func_080EF784(gSpriteHandler, gGameplayData.unk188, 0);
+            sprite_set_visible(gSpriteHandler, gGameplayData.unk188, 0);
         }
     }
 }
@@ -302,7 +302,7 @@ void func_080088C0(void) {
         dma3_set(gGameplayData.unk288, D_03004054, 0x200, 0x20, 0x100);
         dma3_set(gGameplayData.unk28c, D_03004054 + 0x80, 0x200, 0x20, 0x100);
         if (gGameplayData.unk188 >= 0) {
-            sprite_set_visible(D_083A4A7C, gGameplayData.unk188, gGameplayData.unk290);
+            sprite_set_visible(gSpriteHandler, gGameplayData.unk188, gGameplayData.unk290);
         }
     }
 }

@@ -60,7 +60,7 @@ _080EAA9C:
 
 .balign 4, 0
 _080EAAA0:
-/* 080EAAA0 */ .word D_083A4A7C
+/* 080EAAA0 */ .word gSpriteHandler
 _080EAAA4:
 /* 080EAAA4 */ LSLS R1, R6, #2
 /* 080EAAA6 */ ADDS R1, R6
@@ -105,7 +105,7 @@ _080EAABA:
 
 .balign 4, 0
 _080EAAF8:
-/* 080EAAF8 */ .word D_083A4A7C
+/* 080EAAF8 */ .word gSpriteHandler
 
 .balign 4, 0
 _080EAAFC:
@@ -144,7 +144,7 @@ _080EAB12:
 /* 080EAB42 */ ADDS R2, R4, #0
 /* 080EAB44 */ MOVS R3, #0
 /* 080EAB46 */ BL func_08001CD0
-/* 080EAB4A */ LDR R0, =D_083A4A7C
+/* 080EAB4A */ LDR R0, =gSpriteHandler
 /* 080EAB4C */ LDR R0, [R0]
 /* 080EAB4E */ LDR R3, [R5]
 /* 080EAB50 */ MOVS R2, #2
