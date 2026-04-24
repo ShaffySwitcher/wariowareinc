@@ -41,14 +41,14 @@ _080E5EFC:
 /* 080E5F1E */ LSRS R3, R3, #0X10
 /* 080E5F20 */ STR R3, [SP, #8]
 /* 080E5F22 */ MOVS R3, #0
-/* 080E5F24 */ BL func_080EF50C
+/* 080E5F24 */ BL sprite_set_anim
 /* 080E5F28 */ MOV R1, R8
 /* 080E5F2A */ LDR R0, [R1]
 /* 080E5F2C */ MOVS R2, #0
 /* 080E5F2E */ LDRSH R1, [R6, R2]
 /* 080E5F30 */ LDR R2, =func_080E5F54
 /* 080E5F32 */ ADDS R3, R6, #0
-/* 080E5F34 */ BL func_080EF60C
+/* 080E5F34 */ BL sprite_set_callback
 /* 080E5F38 */ STR R7, [R6, #0X28]
 /* 080E5F3A */ ADD SP, #0XC
 /* 080E5F3C */ POP {R3}

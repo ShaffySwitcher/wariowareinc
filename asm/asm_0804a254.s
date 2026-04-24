@@ -128,7 +128,7 @@ _0804A2FA:
 /* 0804A314 */ MOVS R3, #0
 /* 0804A316 */ STR R3, [SP, #8]
 /* 0804A318 */ MOVS R3, #6
-/* 0804A31A */ BL func_080EF50C
+/* 0804A31A */ BL sprite_set_anim
 /* 0804A31E */ B _0804A4E0
 
 .balign 4, 0
@@ -162,7 +162,7 @@ _0804A32C:
 /* 0804A34C */ STR R3, [SP, #4]
 /* 0804A34E */ STR R3, [SP, #8]
 /* 0804A350 */ MOVS R3, #5
-/* 0804A352 */ BL func_080EF50C
+/* 0804A352 */ BL sprite_set_anim
 /* 0804A356 */ LDR R2, [R4]
 /* 0804A358 */ ADDS R0, R2, #0
 /* 0804A35A */ ADDS R0, #0X72
@@ -271,7 +271,7 @@ _0804A3E2:
 /* 0804A40E */ STR R4, [SP, #4]
 /* 0804A410 */ STR R4, [SP, #8]
 /* 0804A412 */ MOVS R3, #0
-/* 0804A414 */ BL func_080EF50C
+/* 0804A414 */ BL sprite_set_anim
 /* 0804A418 */ B _0804A4E0
 
 .balign 4, 0
@@ -317,7 +317,7 @@ _0804A432:
 /* 0804A45C */ MOVS R3, #0
 /* 0804A45E */ STR R3, [SP, #8]
 /* 0804A460 */ MOVS R3, #1
-/* 0804A462 */ BL func_080EF50C
+/* 0804A462 */ BL sprite_set_anim
 _0804A466:
 /* 0804A466 */ LDR R4, [R4]
 /* 0804A468 */ MOV IP, R4

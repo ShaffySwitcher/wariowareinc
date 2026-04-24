@@ -29,7 +29,7 @@ glabel func_080D705C
 /* 080D7086 */ STR R3, [SP, #4]
 /* 080D7088 */ STR R4, [SP, #8]
 /* 080D708A */ MOVS R3, #0
-/* 080D708C */ BL func_080EF50C
+/* 080D708C */ BL sprite_set_anim
 /* 080D7090 */ ADD SP, #0XC
 /* 080D7092 */ POP {R4}
 /* 080D7094 */ POP {R0}

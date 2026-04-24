@@ -54,7 +54,7 @@ _0809E8E6:
 /* 0809E8F0 */ STR R7, [SP, #4]
 /* 0809E8F2 */ STR R7, [SP, #8]
 /* 0809E8F4 */ MOVS R3, #0
-/* 0809E8F6 */ BL func_080EF50C
+/* 0809E8F6 */ BL sprite_set_anim
 /* 0809E8FA */ ADD SP, #0XC
 /* 0809E8FC */ POP {R4, R5, R6, R7}
 /* 0809E8FE */ POP {R0}

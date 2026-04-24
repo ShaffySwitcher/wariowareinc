@@ -14,7 +14,7 @@ glabel func_0801975C
 /* 08019768 */ MOVS R2, #0
 /* 0801976A */ LDRSH R1, [R1, R2]
 /* 0801976C */ MOVS R2, #1
-/* 0801976E */ BL func_080EE9B8
+/* 0801976E */ BL sprite_set_anim_cel
 /* 08019772 */ POP {R0}
 /* 08019774 */ BX R0
 

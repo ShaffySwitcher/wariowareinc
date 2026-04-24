@@ -102,7 +102,7 @@ _0800BD5C:
 /* 0800BD74 */ MOVS R2, #1
 /* 0800BD76 */ RSBS R2, R2, #0
 /* 0800BD78 */ MOVS R3, #0
-/* 0800BD7A */ BL func_080EF708
+/* 0800BD7A */ BL sprite_set_affine_params
 _0800BD7E:
 /* 0800BD7E */ POP {R3, R4, R5}
 /* 0800BD80 */ MOV R8, R3

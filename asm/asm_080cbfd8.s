@@ -116,7 +116,7 @@ _080CC056:
 /* 080CC0A6 */ LSLS R2, R2, #0X18
 /* 080CC0A8 */ ASRS R2, R2, #0X18
 /* 080CC0AA */ ADDS R3, #0X9C
-/* 080CC0AC */ BL func_080EF708
+/* 080CC0AC */ BL sprite_set_affine_params
 /* 080CC0B0 */ POP {R4, R5}
 /* 080CC0B2 */ POP {R0}
 /* 080CC0B4 */ BX R0

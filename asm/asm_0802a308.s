@@ -105,7 +105,7 @@ _0802A338:
 /* 0802A3D0 */ ASRS R2, R2, #0X18
 /* 0802A3D2 */ ADDS R0, R4, #0
 /* 0802A3D4 */ ADDS R1, R6, #0
-/* 0802A3D6 */ BL func_080EE9B8
+/* 0802A3D6 */ BL sprite_set_anim_cel
 /* 0802A3DA */ MOV R2, SL
 /* 0802A3DC */ LDR R0, [R2]
 /* 0802A3DE */ LDR R2, [R5]

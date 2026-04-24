@@ -253,7 +253,7 @@ _08065B8A:
 /* 08065B8C */ MOVS R2, #0
 /* 08065B8E */ LDRSH R1, [R5, R2]
 /* 08065B90 */ MOVS R2, #1
-/* 08065B92 */ BL func_080EF5C4
+/* 08065B92 */ BL sprite_set_enable_updates
 /* 08065B96 */ MOV R3, SB
 /* 08065B98 */ LDR R0, [R3, #8]
 /* 08065B9A */ STR R0, [R5, #0XC]

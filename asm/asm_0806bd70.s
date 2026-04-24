@@ -196,7 +196,7 @@ _0806BE94:
 /* 0806BEBE */ MOVS R2, #0X18
 /* 0806BEC0 */ LDRSB R2, [R6, R2]
 /* 0806BEC2 */ ADDS R3, R5, #0
-/* 0806BEC4 */ BL func_080EF708
+/* 0806BEC4 */ BL sprite_set_affine_params
 /* 0806BEC8 */ LDR R0, [R4]
 /* 0806BECA */ MOVS R3, #0XC
 /* 0806BECC */ LDRSH R1, [R6, R3]

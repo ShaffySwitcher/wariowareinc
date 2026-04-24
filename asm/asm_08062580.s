@@ -55,7 +55,7 @@ glabel func_08062580
 /* 080625E4 */ LSLS R4, R4, #0X18
 /* 080625E6 */ ASRS R4, R4, #0X18
 /* 080625E8 */ ADDS R2, R4, #0
-/* 080625EA */ BL func_080EE9B8
+/* 080625EA */ BL sprite_set_anim_cel
 /* 080625EE */ LDR R5, [R5]
 /* 080625F0 */ ADDS R1, R5, #0
 /* 080625F2 */ ADDS R1, #0XE8

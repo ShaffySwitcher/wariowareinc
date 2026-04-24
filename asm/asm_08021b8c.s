@@ -40,7 +40,7 @@ _08021BA2:
 /* 08021BCC */ STR R5, [SP, #8]
 /* 08021BCE */ ADDS R0, R3, #0
 /* 08021BD0 */ MOVS R3, #0
-/* 08021BD2 */ BL func_080EF50C
+/* 08021BD2 */ BL sprite_set_anim
 /* 08021BD6 */ MOVS R0, #0X18
 /* 08021BD8 */ BL get_random_range
 /* 08021BDC */ LSLS R0, R0, #0X10

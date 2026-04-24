@@ -292,7 +292,7 @@ _080BD6FC:
 /* 080BD72E */ MOVS R2, #0
 /* 080BD730 */ LDRSH R1, [R1, R2]
 /* 080BD732 */ MOVS R2, #2
-/* 080BD734 */ BL func_080EF4D8
+/* 080BD734 */ BL sprite_set_base_palette
 /* 080BD738 */ MOV R3, SB
 /* 080BD73A */ LDR R2, [R3]
 /* 080BD73C */ ADDS R0, R2, #0
@@ -374,7 +374,7 @@ _080BD7B8:
 /* 080BD7C6 */ MOVS R2, #0
 /* 080BD7C8 */ LDRSH R1, [R1, R2]
 /* 080BD7CA */ MOVS R2, #3
-/* 080BD7CC */ BL func_080EF4D8
+/* 080BD7CC */ BL sprite_set_base_palette
 /* 080BD7D0 */ MOV R3, SB
 /* 080BD7D2 */ LDR R5, [R3]
 /* 080BD7D4 */ ADDS R0, R5, #0
@@ -442,7 +442,7 @@ _080BD834:
 /* 080BD84E */ LDR R2, _080BD958
 /* 080BD850 */ MOVS R3, #1
 /* 080BD852 */ RSBS R3, R3, #0
-/* 080BD854 */ BL func_080EF50C
+/* 080BD854 */ BL sprite_set_anim
 _080BD858:
 /* 080BD858 */ ADDS R0, R6, #1
 /* 080BD85A */ LSLS R0, R0, #0X18
@@ -492,7 +492,7 @@ _080BD89E:
 /* 080BD8B2 */ STR R3, [SP]
 /* 080BD8B4 */ STR R3, [SP, #4]
 /* 080BD8B6 */ STR R3, [SP, #8]
-/* 080BD8B8 */ BL func_080EF50C
+/* 080BD8B8 */ BL sprite_set_anim
 /* 080BD8BC */ LDR R0, [R7]
 /* 080BD8BE */ LDR R1, [R5]
 /* 080BD8C0 */ ADDS R1, #0X4C

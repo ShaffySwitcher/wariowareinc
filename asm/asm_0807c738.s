@@ -134,7 +134,7 @@ _0807C7FE:
 /* 0807C82C */ MOVS R2, #4
 /* 0807C82E */ LDRSH R1, [R1, R2]
 /* 0807C830 */ MOVS R2, #1
-/* 0807C832 */ BL func_080EF5C4
+/* 0807C832 */ BL sprite_set_enable_updates
 _0807C836:
 /* 0807C836 */ POP {R4, R5}
 /* 0807C838 */ POP {R0}

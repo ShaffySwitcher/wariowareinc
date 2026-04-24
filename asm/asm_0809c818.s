@@ -56,7 +56,7 @@ _0809C85C:
 /* 0809C874 */ MOVS R2, #0
 /* 0809C876 */ LDRSH R1, [R1, R2]
 /* 0809C878 */ MOVS R2, #0
-/* 0809C87A */ BL func_080EF5C4
+/* 0809C87A */ BL sprite_set_enable_updates
 /* 0809C87E */ MOVS R0, #0X3C
 /* 0809C880 */ BL func_0809B728
 /* 0809C884 */ LDR R1, [R4]

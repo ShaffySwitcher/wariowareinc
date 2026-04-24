@@ -14,7 +14,7 @@ glabel func_08007724
 /* 08007730 */ LDR R0, =gSpriteHandler
 /* 08007732 */ LDR R0, [R0]
 /* 08007734 */ MOVS R2, #7
-/* 08007736 */ BL func_080EF784
+/* 08007736 */ BL sprite_get_data
 /* 0800773A */ ADDS R1, R0, #0
 /* 0800773C */ ADDS R0, R4, #0
 /* 0800773E */ BL func_08004B78

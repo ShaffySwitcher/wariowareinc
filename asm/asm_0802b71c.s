@@ -32,7 +32,7 @@ glabel func_0802B71C
 /* 0802B74E */ STR R5, [SP, #4]
 /* 0802B750 */ STR R5, [SP, #8]
 /* 0802B752 */ MOVS R3, #0
-/* 0802B754 */ BL func_080EF50C
+/* 0802B754 */ BL sprite_set_anim
 /* 0802B758 */ LDR R0, [R6]
 /* 0802B75A */ STRB R5, [R0, #0X19]
 /* 0802B75C */ LDR R0, [R6]

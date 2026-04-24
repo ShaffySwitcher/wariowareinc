@@ -34,7 +34,7 @@ glabel func_08078490
 /* 080784C4 */ MOVS R2, #0
 /* 080784C6 */ LDRSH R1, [R1, R2]
 /* 080784C8 */ MOVS R2, #1
-/* 080784CA */ BL func_080EE9B8
+/* 080784CA */ BL sprite_set_anim_cel
 /* 080784CE */ B _080784F0
 
 .balign 4, 0

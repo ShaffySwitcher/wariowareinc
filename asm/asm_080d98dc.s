@@ -31,7 +31,7 @@ glabel func_080D98DC
 /* 080D990A */ STR R4, [SP]
 /* 080D990C */ MOVS R2, #1
 /* 080D990E */ MOVS R3, #5
-/* 080D9910 */ BL func_080EF644
+/* 080D9910 */ BL sprite_set_playback
 /* 080D9914 */ LDR R0, [R7]
 /* 080D9916 */ MOVS R1, #0XBA
 /* 080D9918 */ LSLS R1, R1, #1
@@ -46,7 +46,7 @@ glabel func_080D98DC
 /* 080D992A */ STR R4, [SP]
 /* 080D992C */ MOVS R2, #1
 /* 080D992E */ MOVS R3, #5
-/* 080D9930 */ BL func_080EF644
+/* 080D9930 */ BL sprite_set_playback
 /* 080D9934 */ B _080D995E
 
 .balign 4, 0
@@ -76,7 +76,7 @@ _080D994C:
 /* 080D9954 */ STR R4, [SP]
 /* 080D9956 */ MOVS R2, #1
 /* 080D9958 */ MOVS R3, #6
-/* 080D995A */ BL func_080EF644
+/* 080D995A */ BL sprite_set_playback
 _080D995E:
 /* 080D995E */ LDR R0, _080D99BC
 /* 080D9960 */ BL play_sound

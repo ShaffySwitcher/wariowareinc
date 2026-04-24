@@ -31,14 +31,14 @@ glabel func_08052DF0
 /* 08052E1E */ MOVS R3, #4
 /* 08052E20 */ STR R3, [SP, #8]
 /* 08052E22 */ MOVS R3, #0
-/* 08052E24 */ BL func_080EF50C
+/* 08052E24 */ BL sprite_set_anim
 /* 08052E28 */ LDR R0, [R6]
 /* 08052E2A */ LDR R3, [R5]
 /* 08052E2C */ ADDS R4, R3, R4
 /* 08052E2E */ MOVS R2, #0
 /* 08052E30 */ LDRSH R1, [R4, R2]
 /* 08052E32 */ LDR R2, _08052E64
-/* 08052E34 */ BL func_080EF60C
+/* 08052E34 */ BL sprite_set_callback
 /* 08052E38 */ MOVS R0, #0X30
 /* 08052E3A */ BL func_0800C9A4
 /* 08052E3E */ MOVS R0, #1

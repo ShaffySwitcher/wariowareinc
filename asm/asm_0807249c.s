@@ -45,7 +45,7 @@ _080724CE:
 /* 080724E4 */ ASRS R2, R2, #0X18
 /* 080724E6 */ MOV R0, R8
 /* 080724E8 */ ADDS R1, R5, #0
-/* 080724EA */ BL func_080EE9B8
+/* 080724EA */ BL sprite_set_anim_cel
 /* 080724EE */ MOV R1, SB
 /* 080724F0 */ LDR R0, [R1]
 /* 080724F2 */ MOVS R2, #0

@@ -48,7 +48,7 @@ _0808469A:
 /* 080846B8 */ MOVS R2, #0XE
 /* 080846BA */ LDRSH R1, [R5, R2]
 /* 080846BC */ MOVS R2, #0
-/* 080846BE */ BL func_080EF5C4
+/* 080846BE */ BL sprite_set_enable_updates
 /* 080846C2 */ MOVS R0, #1
 /* 080846C4 */ STR R0, [R5, #0X18]
 _080846C6:

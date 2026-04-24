@@ -136,7 +136,7 @@ _08010ADA:
 /* 08010B16 */ LDRSH R1, [R1, R2]
 /* 08010B18 */ ADDS R2, R6, #0
 /* 08010B1A */ MOV R3, SB
-/* 08010B1C */ BL func_080EF6BC
+/* 08010B1C */ BL sprite_set_origin_x_y
 /* 08010B20 */ ADDS R5, #1
 /* 08010B22 */ CMP R5, #0X1D
 /* 08010B24 */ BLS _08010ADA
@@ -148,28 +148,28 @@ _08010ADA:
 /* 08010B30 */ LDRSH R1, [R1, R7]
 /* 08010B32 */ ADDS R2, R6, #0
 /* 08010B34 */ MOV R3, SB
-/* 08010B36 */ BL func_080EF6BC
+/* 08010B36 */ BL sprite_set_origin_x_y
 /* 08010B3A */ LDR R0, [R5]
 /* 08010B3C */ LDR R1, [R4]
 /* 08010B3E */ MOVS R2, #0X38
 /* 08010B40 */ LDRSH R1, [R1, R2]
 /* 08010B42 */ ADDS R2, R6, #0
 /* 08010B44 */ MOV R3, SB
-/* 08010B46 */ BL func_080EF6BC
+/* 08010B46 */ BL sprite_set_origin_x_y
 /* 08010B4A */ LDR R0, [R5]
 /* 08010B4C */ LDR R1, [R4]
 /* 08010B4E */ MOVS R7, #0X3A
 /* 08010B50 */ LDRSH R1, [R1, R7]
 /* 08010B52 */ ADDS R2, R6, #0
 /* 08010B54 */ MOV R3, SB
-/* 08010B56 */ BL func_080EF6BC
+/* 08010B56 */ BL sprite_set_origin_x_y
 /* 08010B5A */ LDR R0, [R5]
 /* 08010B5C */ LDR R1, [R4]
 /* 08010B5E */ MOVS R2, #0X3C
 /* 08010B60 */ LDRSH R1, [R1, R2]
 /* 08010B62 */ ADDS R2, R6, #0
 /* 08010B64 */ MOV R3, SB
-/* 08010B66 */ BL func_080EF6BC
+/* 08010B66 */ BL sprite_set_origin_x_y
 /* 08010B6A */ ADD SP, #0X14
 /* 08010B6C */ POP {R3, R4}
 /* 08010B6E */ MOV R8, R3

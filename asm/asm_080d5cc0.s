@@ -29,7 +29,7 @@ _080D5CE4:
 /* 080D5CE8 */ MOVS R2, #0
 /* 080D5CEA */ LDRSH R1, [R4, R2]
 /* 080D5CEC */ MOVS R2, #4
-/* 080D5CEE */ BL func_080EE9B8
+/* 080D5CEE */ BL sprite_set_anim_cel
 /* 080D5CF2 */ B _080D5D1A
 
 .balign 4, 0
@@ -41,7 +41,7 @@ _080D5CF8:
 /* 080D5CFC */ MOVS R2, #0
 /* 080D5CFE */ LDRSH R1, [R4, R2]
 /* 080D5D00 */ MOVS R2, #2
-/* 080D5D02 */ BL func_080EE9B8
+/* 080D5D02 */ BL sprite_set_anim_cel
 /* 080D5D06 */ B _080D5D1A
 
 .balign 4, 0
@@ -53,7 +53,7 @@ _080D5D0C:
 /* 080D5D10 */ MOVS R2, #0
 /* 080D5D12 */ LDRSH R1, [R4, R2]
 /* 080D5D14 */ MOVS R2, #3
-/* 080D5D16 */ BL func_080EE9B8
+/* 080D5D16 */ BL sprite_set_anim_cel
 _080D5D1A:
 /* 080D5D1A */ POP {R4}
 /* 080D5D1C */ POP {R0}

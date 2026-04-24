@@ -22,7 +22,7 @@ glabel func_080DEBAC
 /* 080DEBC8 */ STR R7, [SP]
 /* 080DEBCA */ MOVS R2, #1
 /* 080DEBCC */ MOVS R3, #1
-/* 080DEBCE */ BL func_080EF644
+/* 080DEBCE */ BL sprite_set_playback
 /* 080DEBD2 */ LDR R0, [R6]
 /* 080DEBD4 */ LDR R1, [R5]
 /* 080DEBD6 */ LDR R1, [R1, #0X60]
@@ -34,7 +34,7 @@ glabel func_080DEBAC
 /* 080DEBE2 */ STR R7, [SP, #4]
 /* 080DEBE4 */ STR R7, [SP, #8]
 /* 080DEBE6 */ MOVS R3, #0
-/* 080DEBE8 */ BL func_080EF50C
+/* 080DEBE8 */ BL sprite_set_anim
 /* 080DEBEC */ LDR R0, [R6]
 /* 080DEBEE */ LDR R1, [R5]
 /* 080DEBF0 */ LDR R1, [R1, #0X64]
@@ -86,13 +86,13 @@ _080DEC34:
 /* 080DEC4E */ LSLS R2, R2, #0X18
 /* 080DEC50 */ ASRS R2, R2, #0X18
 /* 080DEC52 */ ADDS R3, #0X82
-/* 080DEC54 */ BL func_080EF708
+/* 080DEC54 */ BL sprite_set_affine_params
 /* 080DEC58 */ LDR R0, [R6]
 /* 080DEC5A */ LDR R1, [R5]
 /* 080DEC5C */ MOVS R2, #8
 /* 080DEC5E */ LDRSH R1, [R1, R2]
 /* 080DEC60 */ MOVS R2, #1
-/* 080DEC62 */ BL func_080EE9B8
+/* 080DEC62 */ BL sprite_set_anim_cel
 /* 080DEC66 */ LDR R0, [R5]
 /* 080DEC68 */ ADDS R0, #0X80
 /* 080DEC6A */ STRB R7, [R0]

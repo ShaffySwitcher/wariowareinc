@@ -95,7 +95,7 @@ glabel func_08048F28
 /* 08048FF0 */ MOVS R2, #0XC
 /* 08048FF2 */ LDRSH R1, [R3, R2]
 /* 08048FF4 */ LDR R2, _0804915C
-/* 08048FF6 */ BL func_080EF60C
+/* 08048FF6 */ BL sprite_set_callback
 /* 08048FFA */ LDR R0, [R6]
 /* 08048FFC */ LDR R1, _08049160
 /* 08048FFE */ MOVS R6, #0

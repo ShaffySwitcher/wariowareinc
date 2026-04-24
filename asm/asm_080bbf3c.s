@@ -34,7 +34,7 @@ glabel func_080BBF3C
 /* 080BBF70 */ MOVS R3, #4
 /* 080BBF72 */ STR R3, [SP, #8]
 /* 080BBF74 */ MOVS R3, #0
-/* 080BBF76 */ BL func_080EF50C
+/* 080BBF76 */ BL sprite_set_anim
 /* 080BBF7A */ LDR R0, [R5]
 /* 080BBF7C */ MOVS R2, #0
 /* 080BBF7E */ LDRSH R1, [R7, R2]
@@ -42,7 +42,7 @@ glabel func_080BBF3C
 /* 080BBF82 */ MOV R3, SB
 /* 080BBF84 */ LDR R3, [R3]
 /* 080BBF86 */ MOV SB, R3
-/* 080BBF88 */ BL func_080EF60C
+/* 080BBF88 */ BL sprite_set_callback
 /* 080BBF8C */ LDR R0, [R5]
 /* 080BBF8E */ MOV R6, SL
 /* 080BBF90 */ MOVS R2, #0
@@ -54,18 +54,18 @@ glabel func_080BBF3C
 /* 080BBF9C */ STR R4, [SP, #4]
 /* 080BBF9E */ STR R4, [SP, #8]
 /* 080BBFA0 */ MOVS R3, #0
-/* 080BBFA2 */ BL func_080EF50C
+/* 080BBFA2 */ BL sprite_set_anim
 /* 080BBFA6 */ LDR R0, [R5]
 /* 080BBFA8 */ MOVS R2, #0
 /* 080BBFAA */ LDRSH R1, [R7, R2]
 /* 080BBFAC */ MOVS R2, #0
-/* 080BBFAE */ BL func_080EF5C4
+/* 080BBFAE */ BL sprite_set_enable_updates
 /* 080BBFB2 */ LDR R0, [R5]
 /* 080BBFB4 */ MOV R3, SL
 /* 080BBFB6 */ MOVS R6, #0
 /* 080BBFB8 */ LDRSH R1, [R3, R6]
 /* 080BBFBA */ MOVS R2, #0
-/* 080BBFBC */ BL func_080EF5C4
+/* 080BBFBC */ BL sprite_set_enable_updates
 /* 080BBFC0 */ MOVS R6, #0
 /* 080BBFC2 */ ADDS R7, #0X38
 /* 080BBFC4 */ LDR R4, [SP, #0XC]

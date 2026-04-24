@@ -18,7 +18,7 @@ glabel func_080E82EC
 /* 080E8300 */ MOVS R2, #0XA
 /* 080E8302 */ LDRSH R1, [R1, R2]
 /* 080E8304 */ MOVS R2, #7
-/* 080E8306 */ BL func_080EF784
+/* 080E8306 */ BL sprite_get_data
 /* 080E830A */ LDR R1, _080E8348
 /* 080E830C */ CMP R0, R1
 /* 080E830E */ BNE _080E8350
@@ -42,7 +42,7 @@ glabel func_080E82EC
 /* 080E8334 */ STR R3, [SP]
 /* 080E8336 */ STR R3, [SP, #4]
 /* 080E8338 */ STR R3, [SP, #8]
-/* 080E833A */ BL func_080EF50C
+/* 080E833A */ BL sprite_set_anim
 /* 080E833E */ B _080E83DE
 
 .balign 4, 0
@@ -118,7 +118,7 @@ _080E8350:
 /* 080E83C4 */ STR R3, [SP]
 /* 080E83C6 */ MOVS R2, #1
 /* 080E83C8 */ MOVS R3, #0
-/* 080E83CA */ BL func_080EF644
+/* 080E83CA */ BL sprite_set_playback
 /* 080E83CE */ LDR R0, [R6]
 /* 080E83D0 */ STRB R7, [R0, #0X14]
 _080E83D2:

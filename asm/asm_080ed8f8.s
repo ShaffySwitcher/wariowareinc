@@ -84,7 +84,7 @@ _080ED940:
 /* 080ED992 */ STR R3, [SP, #4]
 /* 080ED994 */ MOVS R3, #0
 /* 080ED996 */ STR R3, [SP, #8]
-/* 080ED998 */ BL func_080EF50C
+/* 080ED998 */ BL sprite_set_anim
 /* 080ED99C */ MOVS R0, #1
 _080ED99E:
 /* 080ED99E */ ADD SP, #0XC

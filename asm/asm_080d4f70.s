@@ -60,7 +60,7 @@ _080D4FB0:
 /* 080D4FCC */ MOVS R3, #0
 /* 080D4FCE */ STR R3, [SP, #4]
 /* 080D4FD0 */ STR R3, [SP, #8]
-/* 080D4FD2 */ BL func_080EF50C
+/* 080D4FD2 */ BL sprite_set_anim
 /* 080D4FD6 */ ADD SP, #0XC
 /* 080D4FD8 */ POP {R4}
 /* 080D4FDA */ POP {R0}

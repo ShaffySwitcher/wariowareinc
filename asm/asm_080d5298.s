@@ -50,7 +50,7 @@ glabel func_080D5298
 /* 080D52F0 */ MOVS R2, #0
 /* 080D52F2 */ LDRSH R1, [R6, R2]
 /* 080D52F4 */ MOVS R2, #0
-/* 080D52F6 */ BL func_080EE9B8
+/* 080D52F6 */ BL sprite_set_anim_cel
 /* 080D52FA */ LDR R0, [R7]
 /* 080D52FC */ ADDS R0, R5
 /* 080D52FE */ MOVS R1, #0

@@ -88,7 +88,7 @@ _08051A1E:
 /* 08051A3A */ MOVS R3, #0
 /* 08051A3C */ STR R3, [SP, #4]
 /* 08051A3E */ STR R3, [SP, #8]
-/* 08051A40 */ BL func_080EF50C
+/* 08051A40 */ BL sprite_set_anim
 _08051A44:
 /* 08051A44 */ LDR R0, _08051A5C
 /* 08051A46 */ LDR R1, [R0]
@@ -132,7 +132,7 @@ _08051A66:
 /* 08051A84 */ STR R3, [SP, #4]
 /* 08051A86 */ MOVS R3, #0
 /* 08051A88 */ STR R3, [SP, #8]
-/* 08051A8A */ BL func_080EF50C
+/* 08051A8A */ BL sprite_set_anim
 /* 08051A8E */ B _08051AA8
 
 .balign 4, 0

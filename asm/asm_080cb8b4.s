@@ -186,7 +186,7 @@ _080CB9EE:
 /* 080CB9FA */ LSLS R2, R2, #0X18
 /* 080CB9FC */ ASRS R2, R2, #0X18
 /* 080CB9FE */ ADDS R3, #0X80
-/* 080CBA00 */ BL func_080EF708
+/* 080CBA00 */ BL sprite_set_affine_params
 /* 080CBA04 */ B _080CBB42
 
 .balign 4, 0

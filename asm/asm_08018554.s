@@ -28,7 +28,7 @@ _0801856E:
 /* 08018578 */ LDRSH R1, [R1, R3]
 /* 0801857A */ LSLS R2, R2, #0X18
 /* 0801857C */ ASRS R2, R2, #0X18
-/* 0801857E */ BL func_080EE9B8
+/* 0801857E */ BL sprite_set_anim_cel
 /* 08018582 */ POP {R0}
 /* 08018584 */ BX R0
 

@@ -24,7 +24,7 @@ glabel func_080B44B4
 /* 080B44D6 */ MOVS R2, #0
 /* 080B44D8 */ LDRSH R1, [R6, R2]
 /* 080B44DA */ MOVS R2, #0
-/* 080B44DC */ BL func_080EF5C4
+/* 080B44DC */ BL sprite_set_enable_updates
 /* 080B44E0 */ LDR R0, _080B453C
 /* 080B44E2 */ BL play_sound
 _080B44E6:

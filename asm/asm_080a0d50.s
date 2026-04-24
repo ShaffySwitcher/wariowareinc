@@ -572,7 +572,7 @@ _080A1176:
 /* 080A11A4 */ MOVS R3, #0
 /* 080A11A6 */ LDRSH R1, [R5, R3]
 /* 080A11A8 */ MOVS R2, #1
-/* 080A11AA */ BL func_080EF5C4
+/* 080A11AA */ BL sprite_set_enable_updates
 /* 080A11AE */ MOVS R3, #0
 /* 080A11B0 */ LDR R0, [R6]
 /* 080A11B2 */ MOVS R1, #0XB1

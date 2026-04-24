@@ -41,7 +41,7 @@ _0805EDA4:
 /* 0805EDAE */ LDRSH R1, [R0, R2]
 /* 0805EDB0 */ ADDS R0, R5, #0
 /* 0805EDB2 */ MOVS R2, #0
-/* 0805EDB4 */ BL func_080EE9B8
+/* 0805EDB4 */ BL sprite_set_anim_cel
 /* 0805EDB8 */ LDR R0, [R4]
 /* 0805EDBA */ MOVS R2, #0X10
 /* 0805EDBC */ LDRSH R1, [R0, R2]
@@ -50,7 +50,7 @@ _0805EDA4:
 /* 0805EDC2 */ ADDS R0, R5, #0
 /* 0805EDC4 */ MOVS R2, #0
 /* 0805EDC6 */ MOVS R3, #0
-/* 0805EDC8 */ BL func_080EF644
+/* 0805EDC8 */ BL sprite_set_playback
 _0805EDCC:
 /* 0805EDCC */ ADD SP, #4
 /* 0805EDCE */ POP {R4, R5}

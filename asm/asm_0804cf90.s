@@ -140,7 +140,7 @@ _0804CFB8:
 /* 0804D09A */ MOVS R6, #0
 /* 0804D09C */ LDRSH R1, [R1, R6]
 /* 0804D09E */ MOVS R2, #1
-/* 0804D0A0 */ BL func_080EE9B8
+/* 0804D0A0 */ BL sprite_set_anim_cel
 _0804D0A4:
 /* 0804D0A4 */ MOV R0, R8
 /* 0804D0A6 */ LDR R1, [R0]

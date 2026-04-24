@@ -239,7 +239,7 @@ _080B4042:
 /* 080B4078 */ MOVS R4, #0
 /* 080B407A */ LDRSH R1, [R1, R4]
 /* 080B407C */ MOVS R2, #1
-/* 080B407E */ BL func_080EF5C4
+/* 080B407E */ BL sprite_set_enable_updates
 /* 080B4082 */ MOVS R0, #0XC0
 /* 080B4084 */ LSLS R0, R0, #0XC
 /* 080B4086 */ ADDS R7, R0
@@ -279,7 +279,7 @@ _080B4098:
 /* 080B40CA */ MOVS R2, #0
 /* 080B40CC */ LDRSH R1, [R1, R2]
 /* 080B40CE */ MOVS R2, #1
-/* 080B40D0 */ BL func_080EF5C4
+/* 080B40D0 */ BL sprite_set_enable_updates
 /* 080B40D4 */ MOV R3, SB
 /* 080B40D6 */ LDR R1, [R3]
 /* 080B40D8 */ LDRB R0, [R1, #1]
@@ -334,7 +334,7 @@ _080B410A:
 /* 080B413A */ MOVS R2, #0
 /* 080B413C */ LDRSH R1, [R1, R2]
 /* 080B413E */ MOVS R2, #1
-/* 080B4140 */ BL func_080EF5C4
+/* 080B4140 */ BL sprite_set_enable_updates
 /* 080B4144 */ MOVS R3, #0X80
 /* 080B4146 */ LSLS R3, R3, #0XC
 /* 080B4148 */ ADDS R6, R3
@@ -375,7 +375,7 @@ _080B415A:
 /* 080B418E */ MOVS R3, #0
 /* 080B4190 */ LDRSH R1, [R1, R3]
 /* 080B4192 */ MOVS R2, #1
-/* 080B4194 */ BL func_080EF5C4
+/* 080B4194 */ BL sprite_set_enable_updates
 /* 080B4198 */ MOV R0, SB
 /* 080B419A */ LDR R1, [R0]
 /* 080B419C */ LDRB R0, [R1, #1]
@@ -428,7 +428,7 @@ _080B41CC:
 /* 080B41FA */ MOVS R2, #0
 /* 080B41FC */ LDRSH R1, [R1, R2]
 /* 080B41FE */ MOVS R2, #1
-/* 080B4200 */ BL func_080EF5C4
+/* 080B4200 */ BL sprite_set_enable_updates
 /* 080B4204 */ MOVS R3, #0X80
 /* 080B4206 */ LSLS R3, R3, #0XC
 /* 080B4208 */ ADDS R4, R3

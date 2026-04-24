@@ -23,14 +23,14 @@ glabel func_0800EB50
 /* 0800EB6E */ MOVS R2, #1
 /* 0800EB70 */ RSBS R2, R2, #0
 /* 0800EB72 */ MOVS R3, #0
-/* 0800EB74 */ BL func_080EF708
+/* 0800EB74 */ BL sprite_set_affine_params
 /* 0800EB78 */ LDR R0, [R5]
 /* 0800EB7A */ LDR R1, [R6]
 /* 0800EB7C */ ADDS R1, R4
 /* 0800EB7E */ MOVS R2, #0
 /* 0800EB80 */ LDRSH R1, [R1, R2]
 /* 0800EB82 */ MOVS R2, #6
-/* 0800EB84 */ BL func_080EF784
+/* 0800EB84 */ BL sprite_get_data
 /* 0800EB88 */ ADDS R2, R0, #0
 /* 0800EB8A */ LSLS R2, R2, #0X10
 /* 0800EB8C */ LDR R1, [R6]

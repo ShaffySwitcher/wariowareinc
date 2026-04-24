@@ -41,7 +41,7 @@ _0805BE3A:
 /* 0805BE3C */ LDR R0, [R0]
 /* 0805BE3E */ MOVS R4, #0
 /* 0805BE40 */ LDRSH R1, [R3, R4]
-/* 0805BE42 */ BL func_080EE9B8
+/* 0805BE42 */ BL sprite_set_anim_cel
 /* 0805BE46 */ POP {R4}
 /* 0805BE48 */ POP {R0}
 /* 0805BE4A */ BX R0

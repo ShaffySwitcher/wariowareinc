@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080EEDC0
+glabel sprite_get_anim_duration
 /* 080EEDC0 */ PUSH {LR}
 /* 080EEDC2 */ ADDS R1, R0, #0
 /* 080EEDC4 */ MOVS R2, #0

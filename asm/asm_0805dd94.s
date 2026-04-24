@@ -232,7 +232,7 @@ _0805DEAE:
 /* 0805DF6A */ MOVS R2, #0
 /* 0805DF6C */ LDRSH R1, [R1, R2]
 /* 0805DF6E */ MOVS R2, #1
-/* 0805DF70 */ BL func_080EF5C4
+/* 0805DF70 */ BL sprite_set_enable_updates
 /* 0805DF74 */ LDR R0, [R7]
 /* 0805DF76 */ LDR R3, _0805E070
 /* 0805DF78 */ LDR R1, [R6]
@@ -267,7 +267,7 @@ _0805DEAE:
 /* 0805DFB4 */ MOVS R2, #0
 /* 0805DFB6 */ LDRSH R1, [R1, R2]
 /* 0805DFB8 */ MOVS R2, #1
-/* 0805DFBA */ BL func_080EF5C4
+/* 0805DFBA */ BL sprite_set_enable_updates
 /* 0805DFBE */ LDR R0, [R7]
 /* 0805DFC0 */ LDR R1, _0805E07C
 /* 0805DFC2 */ LDR R2, _0805E080

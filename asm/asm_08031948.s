@@ -72,7 +72,7 @@ _08031994:
 /* 080319BE */ STR R4, [SP, #4]
 /* 080319C0 */ STR R4, [SP, #8]
 /* 080319C2 */ MOVS R3, #0
-/* 080319C4 */ BL func_080EF50C
+/* 080319C4 */ BL sprite_set_anim
 /* 080319C8 */ ADDS R0, R6, #0
 /* 080319CA */ BL func_080317E4
 /* 080319CE */ CMP R0, #0
@@ -106,7 +106,7 @@ _080319D6:
 /* 08031A06 */ STR R4, [SP, #4]
 /* 08031A08 */ STR R4, [SP, #8]
 /* 08031A0A */ MOVS R3, #0
-/* 08031A0C */ BL func_080EF50C
+/* 08031A0C */ BL sprite_set_anim
 /* 08031A10 */ B _08031A4C
 
 .balign 4, 0
@@ -141,7 +141,7 @@ _08031A20:
 /* 08031A42 */ STR R3, [SP]
 /* 08031A44 */ STR R3, [SP, #4]
 /* 08031A46 */ STR R3, [SP, #8]
-/* 08031A48 */ BL func_080EF50C
+/* 08031A48 */ BL sprite_set_anim
 _08031A4C:
 /* 08031A4C */ ADD SP, #0XC
 /* 08031A4E */ POP {R4, R5, R6, R7}

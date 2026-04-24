@@ -49,7 +49,7 @@ glabel func_080C2100
 /* 080C2154 */ STR R5, [SP]
 /* 080C2156 */ STR R6, [SP, #4]
 /* 080C2158 */ STR R6, [SP, #8]
-/* 080C215A */ BL func_080EF50C
+/* 080C215A */ BL sprite_set_anim
 /* 080C215E */ MOVS R0, #0X24
 /* 080C2160 */ BL func_0800C9A4
 /* 080C2164 */ MOVS R0, #1

@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080EED9C
+glabel sprite_anim_get_cel_total
 /* 080EED9C */ PUSH {LR}
 /* 080EED9E */ ADDS R2, R0, #0
 /* 080EEDA0 */ MOVS R1, #0

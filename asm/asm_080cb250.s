@@ -257,7 +257,7 @@ _080CB3CA:
 /* 080CB41A */ LSLS R2, R2, #0X18
 /* 080CB41C */ ASRS R2, R2, #0X18
 /* 080CB41E */ ADDS R3, #0X68
-/* 080CB420 */ BL func_080EF708
+/* 080CB420 */ BL sprite_set_affine_params
 /* 080CB424 */ B _080CB56A
 
 .balign 4, 0

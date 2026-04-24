@@ -36,13 +36,13 @@ _0809E77C:
 /* 0809E78A */ STR R2, [SP, #8]
 /* 0809E78C */ ADDS R2, R5, #0
 /* 0809E78E */ MOVS R3, #0
-/* 0809E790 */ BL func_080EF50C
+/* 0809E790 */ BL sprite_set_anim
 /* 0809E794 */ LDR R0, [R4]
 /* 0809E796 */ LDR R3, [R6]
 /* 0809E798 */ MOVS R2, #0
 /* 0809E79A */ LDRSH R1, [R3, R2]
 /* 0809E79C */ LDR R2, _0809E7C4
-/* 0809E79E */ BL func_080EF60C
+/* 0809E79E */ BL sprite_set_callback
 /* 0809E7A2 */ LDR R0, =D_083FD070
 /* 0809E7A4 */ BL play_sound
 _0809E7A8:

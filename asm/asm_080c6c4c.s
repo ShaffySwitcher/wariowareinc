@@ -164,7 +164,7 @@ _080C6D14:
 /* 080C6D56 */ STR R3, [SP, #4]
 /* 080C6D58 */ STR R6, [SP, #8]
 /* 080C6D5A */ MOVS R3, #0
-/* 080C6D5C */ BL func_080EF50C
+/* 080C6D5C */ BL sprite_set_anim
 /* 080C6D60 */ LDR R0, [R4]
 /* 080C6D62 */ LDR R1, [R5]
 /* 080C6D64 */ MOVS R3, #0X18

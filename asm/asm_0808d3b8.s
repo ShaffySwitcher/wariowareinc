@@ -55,7 +55,7 @@ glabel func_0808D3B8
 /* 0808D418 */ LDRB R2, [R2]
 /* 0808D41A */ LSLS R2, R2, #0X18
 /* 0808D41C */ ASRS R2, R2, #0X18
-/* 0808D41E */ BL func_080EF4D8
+/* 0808D41E */ BL sprite_set_base_palette
 /* 0808D422 */ POP {R4, R5, R6}
 /* 0808D424 */ POP {R0}
 /* 0808D426 */ BX R0

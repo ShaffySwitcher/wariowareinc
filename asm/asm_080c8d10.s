@@ -61,7 +61,7 @@ glabel func_080C8D10
 /* 080C8D7C */ ASRS R2, R2, #0X18
 /* 080C8D7E */ ADDS R0, R5, #0
 /* 080C8D80 */ ADDS R1, R4, #0
-/* 080C8D82 */ BL func_080EE9B8
+/* 080C8D82 */ BL sprite_set_anim_cel
 /* 080C8D86 */ LDR R0, [R7]
 /* 080C8D88 */ ADDS R0, #0XFC
 /* 080C8D8A */ MOVS R1, #0

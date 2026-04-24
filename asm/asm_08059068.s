@@ -34,7 +34,7 @@ _08059080:
 /* 08059098 */ MOVS R3, #0
 /* 0805909A */ LDRSH R1, [R2, R3]
 /* 0805909C */ MOVS R2, #0
-/* 0805909E */ BL func_080EF5C4
+/* 0805909E */ BL sprite_set_enable_updates
 /* 080590A2 */ ADDS R4, #1
 /* 080590A4 */ LSLS R4, R4, #0X10
 /* 080590A6 */ LSRS R3, R4, #0X10

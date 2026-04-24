@@ -348,7 +348,7 @@ _08027D8C:
 /* 08027DB4 */ ASRS R2, R2, #0X18
 /* 08027DB6 */ ADDS R0, R4, #0
 /* 08027DB8 */ ADDS R1, R5, #0
-/* 08027DBA */ BL func_080EE9B8
+/* 08027DBA */ BL sprite_set_anim_cel
 /* 08027DBE */ MOVS R0, #0XC0
 /* 08027DC0 */ BL get_random_range
 /* 08027DC4 */ ADDS R0, #0X18

@@ -51,7 +51,7 @@ _080D4DB8:
 /* 080D4DD6 */ STR R4, [SP, #4]
 /* 080D4DD8 */ STR R4, [SP, #8]
 /* 080D4DDA */ MOVS R3, #0
-/* 080D4DDC */ BL func_080EF50C
+/* 080D4DDC */ BL sprite_set_anim
 /* 080D4DE0 */ MOV R1, R8
 /* 080D4DE2 */ LDR R0, [R1]
 /* 080D4DE4 */ MOVS R2, #8
@@ -61,7 +61,7 @@ _080D4DB8:
 /* 080D4DEC */ LDRB R2, [R2]
 /* 080D4DEE */ LSLS R2, R2, #0X18
 /* 080D4DF0 */ ASRS R2, R2, #0X18
-/* 080D4DF2 */ BL func_080EE9B8
+/* 080D4DF2 */ BL sprite_set_anim_cel
 /* 080D4DF6 */ ADD SP, #0XC
 /* 080D4DF8 */ POP {R3}
 /* 080D4DFA */ MOV R8, R3

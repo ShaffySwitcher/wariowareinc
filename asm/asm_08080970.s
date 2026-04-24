@@ -31,7 +31,7 @@ glabel func_08080970
 /* 0808099E */ STR R3, [SP]
 /* 080809A0 */ MOVS R2, #1
 /* 080809A2 */ MOVS R3, #2
-/* 080809A4 */ BL func_080EF644
+/* 080809A4 */ BL sprite_set_playback
 /* 080809A8 */ LDR R1, [R4]
 /* 080809AA */ ADDS R0, R1, #5
 /* 080809AC */ LDRB R1, [R1, #7]

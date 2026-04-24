@@ -48,7 +48,7 @@ _080A9CC8:
 /* 080A9CEE */ MOVS R1, #2
 /* 080A9CF0 */ STR R1, [SP, #8]
 /* 080A9CF2 */ ADDS R1, R5, #0
-/* 080A9CF4 */ BL func_080EF50C
+/* 080A9CF4 */ BL sprite_set_anim
 /* 080A9CF8 */ LDR R0, [R4]
 /* 080A9CFA */ MOV R3, R8
 /* 080A9CFC */ LSLS R2, R3, #0X10

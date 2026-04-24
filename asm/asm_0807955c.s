@@ -294,7 +294,7 @@ _08079680:
 /* 080797A4 */ MOVS R2, #0X26
 /* 080797A6 */ LDRSH R1, [R1, R2]
 /* 080797A8 */ MOVS R2, #4
-/* 080797AA */ BL func_080EF4D8
+/* 080797AA */ BL sprite_set_base_palette
 /* 080797AE */ MOVS R6, #0
 /* 080797B0 */ MOV SB, R7
 _080797B2:

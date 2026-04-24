@@ -111,7 +111,7 @@ glabel func_0803FB8C
 /* 0803FC70 */ MOVS R5, #0
 /* 0803FC72 */ LDRSH R1, [R1, R5]
 /* 0803FC74 */ MOVS R2, #2
-/* 0803FC76 */ BL func_080EF784
+/* 0803FC76 */ BL sprite_get_data
 /* 0803FC7A */ LDR R1, [R7]
 /* 0803FC7C */ ADDS R1, #0X61
 /* 0803FC7E */ STRB R0, [R1]

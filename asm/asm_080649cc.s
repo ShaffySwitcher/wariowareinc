@@ -76,7 +76,7 @@ _08064A18:
 /* 08064A4E */ STR R4, [SP, #4]
 /* 08064A50 */ STR R4, [SP, #8]
 /* 08064A52 */ MOVS R3, #0
-/* 08064A54 */ BL func_080EF50C
+/* 08064A54 */ BL sprite_set_anim
 /* 08064A58 */ LDR R5, [R7, #8]
 /* 08064A5A */ ASRS R5, R5, #8
 /* 08064A5C */ LDR R4, [R7, #0XC]
@@ -125,7 +125,7 @@ _08064A94:
 /* 08064AB6 */ MOVS R3, #0
 /* 08064AB8 */ LDRSH R1, [R1, R3]
 /* 08064ABA */ MOVS R2, #0
-/* 08064ABC */ BL func_080EF5C4
+/* 08064ABC */ BL sprite_set_enable_updates
 /* 08064AC0 */ MOV R1, SL
 /* 08064AC2 */ LDR R0, [R1]
 /* 08064AC4 */ MOV R2, SB

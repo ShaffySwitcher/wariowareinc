@@ -35,7 +35,7 @@ glabel func_080AD6F8
 /* 080AD72E */ MOVS R3, #0
 /* 080AD730 */ STR R3, [SP, #4]
 /* 080AD732 */ STR R3, [SP, #8]
-/* 080AD734 */ BL func_080EF50C
+/* 080AD734 */ BL sprite_set_anim
 /* 080AD738 */ B _080AD76C
 
 .balign 4, 0

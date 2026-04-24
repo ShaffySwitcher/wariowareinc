@@ -47,7 +47,7 @@ _08071FD6:
 /* 08071FE8 */ STR R3, [SP, #4]
 /* 08071FEA */ STR R3, [SP, #8]
 /* 08071FEC */ MOVS R3, #0
-/* 08071FEE */ BL func_080EF50C
+/* 08071FEE */ BL sprite_set_anim
 /* 08071FF2 */ LDR R0, [R5]
 /* 08071FF4 */ MOVS R2, #0
 /* 08071FF6 */ LDRSH R1, [R7, R2]

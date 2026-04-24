@@ -29,7 +29,7 @@ glabel func_080EADF4
 /* 080EAE20 */ MOVS R2, #0XC
 /* 080EAE22 */ LDRSH R1, [R1, R2]
 /* 080EAE24 */ MOVS R2, #3
-/* 080EAE26 */ BL func_080EE9B8
+/* 080EAE26 */ BL sprite_set_anim_cel
 /* 080EAE2A */ B _080EAE9C
 
 .balign 4, 0
@@ -68,7 +68,7 @@ _080EAE38:
 /* 080EAE64 */ MOVS R2, #0XC
 /* 080EAE66 */ LDRSH R1, [R1, R2]
 /* 080EAE68 */ MOVS R2, #0
-/* 080EAE6A */ BL func_080EE9B8
+/* 080EAE6A */ BL sprite_set_anim_cel
 /* 080EAE6E */ B _080EAE9C
 
 .balign 4, 0
@@ -96,7 +96,7 @@ _080EAE7C:
 /* 080EAE92 */ ASRS R2, R2, #0X18
 /* 080EAE94 */ ADDS R0, R5, #0
 /* 080EAE96 */ ADDS R1, R4, #0
-/* 080EAE98 */ BL func_080EE9B8
+/* 080EAE98 */ BL sprite_set_anim_cel
 _080EAE9C:
 /* 080EAE9C */ LDR R0, =D_03003850
 /* 080EAE9E */ LDR R1, [R0]

@@ -123,7 +123,7 @@ glabel func_080A99E8
 /* 080A9AD6 */ STR R3, [SP, #8]
 /* 080A9AD8 */ MOV R1, R8
 /* 080A9ADA */ MOVS R3, #0
-/* 080A9ADC */ BL func_080EF50C
+/* 080A9ADC */ BL sprite_set_anim
 /* 080A9AE0 */ LDR R0, [R4]
 /* 080A9AE2 */ MOV R1, R8
 /* 080A9AE4 */ ADDS R2, R5, #0

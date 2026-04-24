@@ -109,7 +109,7 @@ _080DFD0C:
 /* 080DFDC6 */ MOVS R5, #0
 /* 080DFDC8 */ LDRSH R1, [R4, R5]
 /* 080DFDCA */ MOVS R2, #1
-/* 080DFDCC */ BL func_080EF5C4
+/* 080DFDCC */ BL sprite_set_enable_updates
 /* 080DFDD0 */ B _080DFDF0
 
 .balign 4, 0

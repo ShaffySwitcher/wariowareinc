@@ -71,7 +71,7 @@ _08037880:
 /* 0803789E */ MOVS R3, #0
 /* 080378A0 */ STR R3, [SP, #4]
 /* 080378A2 */ STR R3, [SP, #8]
-/* 080378A4 */ BL func_080EF50C
+/* 080378A4 */ BL sprite_set_anim
 /* 080378A8 */ LDR R3, [R4]
 /* 080378AA */ MOVS R6, #0XB2
 /* 080378AC */ LSLS R6, R6, #1
@@ -232,7 +232,7 @@ _08037970:
 /* 080379C4 */ MOVS R7, #2
 /* 080379C6 */ LDRSH R1, [R1, R7]
 /* 080379C8 */ MOVS R2, #0
-/* 080379CA */ BL func_080EF5C4
+/* 080379CA */ BL sprite_set_enable_updates
 /* 080379CE */ LDR R0, [R6]
 /* 080379D0 */ LDR R1, [R5]
 /* 080379D2 */ MOVS R2, #4
@@ -333,7 +333,7 @@ _08037A5E:
 /* 08037A8C */ MOVS R6, #2
 /* 08037A8E */ LDRSH R1, [R1, R6]
 /* 08037A90 */ MOVS R2, #1
-/* 08037A92 */ BL func_080EF5C4
+/* 08037A92 */ BL sprite_set_enable_updates
 _08037A96:
 /* 08037A96 */ ADD SP, #0XC
 /* 08037A98 */ POP {R3}

@@ -25,7 +25,7 @@ glabel func_080ECAD8
 /* 080ECAFA */ STR R4, [SP, #4]
 /* 080ECAFC */ STR R4, [SP, #8]
 /* 080ECAFE */ MOVS R3, #0
-/* 080ECB00 */ BL func_080EF50C
+/* 080ECB00 */ BL sprite_set_anim
 /* 080ECB04 */ ADDS R0, R7, #0
 /* 080ECB06 */ BL func_080ECA94
 /* 080ECB0A */ MOV R1, R8
@@ -40,7 +40,7 @@ glabel func_080ECAD8
 /* 080ECB1C */ STR R4, [SP, #4]
 /* 080ECB1E */ STR R4, [SP, #8]
 /* 080ECB20 */ MOVS R3, #0
-/* 080ECB22 */ BL func_080EF50C
+/* 080ECB22 */ BL sprite_set_anim
 /* 080ECB26 */ ADDS R0, R7, #0
 /* 080ECB28 */ BL func_080ECA94
 /* 080ECB2C */ ADD SP, #0XC

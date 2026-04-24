@@ -21,7 +21,7 @@ glabel func_0802F948
 /* 0802F964 */ ADDS R0, R5, #0
 /* 0802F966 */ MOVS R2, #0
 /* 0802F968 */ MOVS R3, #0
-/* 0802F96A */ BL func_080EF60C
+/* 0802F96A */ BL sprite_set_callback
 /* 0802F96E */ POP {R4, R5}
 /* 0802F970 */ POP {R0}
 /* 0802F972 */ BX R0

@@ -16,7 +16,7 @@ glabel func_0804D258
 /* 0804D26A */ ADDS R0, R5, #0
 /* 0804D26C */ ADDS R1, R4, #0
 /* 0804D26E */ MOVS R2, #1
-/* 0804D270 */ BL func_080EF5C4
+/* 0804D270 */ BL sprite_set_enable_updates
 /* 0804D274 */ LDR R4, _0804D2DC
 /* 0804D276 */ LDR R0, [R4]
 /* 0804D278 */ LDR R6, [R0, #0X64]

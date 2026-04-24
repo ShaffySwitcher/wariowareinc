@@ -68,7 +68,7 @@ _080A2210:
 /* 080A2228 */ STR R4, [SP, #4]
 /* 080A222A */ STR R4, [SP, #8]
 /* 080A222C */ MOVS R3, #0
-/* 080A222E */ BL func_080EF50C
+/* 080A222E */ BL sprite_set_anim
 /* 080A2232 */ LDR R0, [R5]
 /* 080A2234 */ LDR R1, [R6]
 /* 080A2236 */ ADDS R1, #0X6A

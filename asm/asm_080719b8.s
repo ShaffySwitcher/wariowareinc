@@ -51,7 +51,7 @@ _080719FA:
 /* 080719FC */ LDR R0, [R0]
 /* 080719FE */ MOVS R3, #0
 /* 08071A00 */ LDRSH R1, [R4, R3]
-/* 08071A02 */ BL func_080EF5C4
+/* 08071A02 */ BL sprite_set_enable_updates
 _08071A06:
 /* 08071A06 */ SUBS R6, #1
 /* 08071A08 */ ADDS R4, #0X24

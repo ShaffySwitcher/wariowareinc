@@ -38,7 +38,7 @@ _0805B4DC:
 /* 0805B4E2 */ LDRSH R1, [R4, R2]
 /* 0805B4E4 */ MOVS R2, #0XC
 /* 0805B4E6 */ LDRSB R2, [R4, R2]
-/* 0805B4E8 */ BL func_080EE9B8
+/* 0805B4E8 */ BL sprite_set_anim_cel
 _0805B4EC:
 /* 0805B4EC */ ADDS R0, R5, #0
 /* 0805B4EE */ POP {R4, R5, R6}

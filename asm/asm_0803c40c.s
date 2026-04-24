@@ -32,7 +32,7 @@ glabel func_0803C40C
 /* 0803C440 */ MOVS R2, #0
 /* 0803C442 */ LDRSH R1, [R1, R2]
 /* 0803C444 */ MOVS R2, #0
-/* 0803C446 */ BL func_080EE9B8
+/* 0803C446 */ BL sprite_set_anim_cel
 _0803C44A:
 /* 0803C44A */ LSLS R0, R4, #0X18
 /* 0803C44C */ ASRS R0, R0, #0X18

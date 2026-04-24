@@ -20,7 +20,7 @@ glabel func_080BF744
 /* 080BF75C */ LDRSH R5, [R1, R2]
 /* 080BF75E */ ADDS R1, R5, #0
 /* 080BF760 */ MOVS R2, #0
-/* 080BF762 */ BL func_080EE9B8
+/* 080BF762 */ BL sprite_set_anim_cel
 /* 080BF766 */ LDR R0, [R4]
 /* 080BF768 */ ADDS R1, R5, #0
 /* 080BF76A */ MOVS R2, #1

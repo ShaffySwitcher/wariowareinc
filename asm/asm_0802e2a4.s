@@ -98,7 +98,7 @@ _0802E31E:
 /* 0802E344 */ MOVS R3, #0
 /* 0802E346 */ STR R3, [SP, #4]
 /* 0802E348 */ STR R3, [SP, #8]
-/* 0802E34A */ BL func_080EF50C
+/* 0802E34A */ BL sprite_set_anim
 /* 0802E34E */ CMP R6, #1
 /* 0802E350 */ BNE _0802E36A
 /* 0802E352 */ ADDS R0, R5, #0
@@ -287,7 +287,7 @@ _0802E460:
 /* 0802E484 */ STR R6, [SP, #4]
 /* 0802E486 */ STR R6, [SP, #8]
 /* 0802E488 */ MOVS R3, #0
-/* 0802E48A */ BL func_080EF50C
+/* 0802E48A */ BL sprite_set_anim
 /* 0802E48E */ MOV R0, R8
 /* 0802E490 */ STRH R4, [R0]
 _0802E492:

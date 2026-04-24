@@ -46,7 +46,7 @@ _080A1BE8:
 /* 080A1BF4 */ MOVS R2, #0
 /* 080A1BF6 */ LDRSH R1, [R1, R2]
 /* 080A1BF8 */ MOVS R2, #1
-/* 080A1BFA */ BL func_080EE9B8
+/* 080A1BFA */ BL sprite_set_anim_cel
 /* 080A1BFE */ MOV R0, R8
 /* 080A1C00 */ LDR R6, [R0]
 /* 080A1C02 */ LDR R1, [R7]

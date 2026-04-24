@@ -19,7 +19,7 @@ _080CCDB4:
 /* 080CCDB8 */ MOVS R2, #0
 /* 080CCDBA */ LDRSH R1, [R1, R2]
 /* 080CCDBC */ MOVS R2, #0
-/* 080CCDBE */ BL func_080EF5C4
+/* 080CCDBE */ BL sprite_set_enable_updates
 /* 080CCDC2 */ B _080CCDD6
 
 .balign 4, 0
@@ -31,7 +31,7 @@ _080CCDC8:
 /* 080CCDCC */ MOVS R2, #0
 /* 080CCDCE */ LDRSH R1, [R1, R2]
 /* 080CCDD0 */ MOVS R2, #1
-/* 080CCDD2 */ BL func_080EF5C4
+/* 080CCDD2 */ BL sprite_set_enable_updates
 _080CCDD6:
 /* 080CCDD6 */ POP {R0}
 /* 080CCDD8 */ BX R0

@@ -41,7 +41,7 @@ _08016492:
 /* 080164AC */ MOVS R2, #0
 /* 080164AE */ LDRSH R1, [R1, R2]
 /* 080164B0 */ MOVS R2, #0
-/* 080164B2 */ BL func_080EE9B8
+/* 080164B2 */ BL sprite_set_anim_cel
 _080164B6:
 /* 080164B6 */ ADDS R4, #1
 /* 080164B8 */ CMP R4, #0X1B

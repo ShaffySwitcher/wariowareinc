@@ -27,7 +27,7 @@ glabel func_08068CAC
 /* 08068CD6 */ STR R0, [SP, #8]
 /* 08068CD8 */ ADDS R0, R5, #0
 /* 08068CDA */ MOVS R3, #7
-/* 08068CDC */ BL func_080EF50C
+/* 08068CDC */ BL sprite_set_anim
 /* 08068CE0 */ ADD SP, #0XC
 /* 08068CE2 */ POP {R4, R5}
 /* 08068CE4 */ POP {R0}

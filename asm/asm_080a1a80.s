@@ -132,7 +132,7 @@ _080A1B40:
 /* 080A1B52 */ STR R2, [SP, #8]
 /* 080A1B54 */ ADDS R2, R3, #0
 /* 080A1B56 */ MOVS R3, #0
-/* 080A1B58 */ BL func_080EF50C
+/* 080A1B58 */ BL sprite_set_anim
 /* 080A1B5C */ LDR R0, [R5]
 /* 080A1B5E */ LDR R0, [R0, #0X10]
 /* 080A1B60 */ CMP R4, R0

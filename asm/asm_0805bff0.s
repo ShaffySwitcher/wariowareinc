@@ -42,7 +42,7 @@ _0805C010:
 /* 0805C02E */ MOVS R3, #0
 /* 0805C030 */ STR R3, [SP, #4]
 /* 0805C032 */ STR R3, [SP, #8]
-/* 0805C034 */ BL func_080EF50C
+/* 0805C034 */ BL sprite_set_anim
 /* 0805C038 */ ADD SP, #0XC
 /* 0805C03A */ POP {R4, R5}
 /* 0805C03C */ POP {R0}

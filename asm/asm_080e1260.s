@@ -16,7 +16,7 @@ glabel func_080E1260
 /* 080E1270 */ MOVS R2, #0X18
 /* 080E1272 */ LDRSB R2, [R0, R2]
 /* 080E1274 */ ADDS R0, R3, #0
-/* 080E1276 */ BL func_080EF4D8
+/* 080E1276 */ BL sprite_set_base_palette
 /* 080E127A */ LDR R1, [R4]
 /* 080E127C */ LDRB R0, [R1, #0X18]
 /* 080E127E */ ADDS R0, #1

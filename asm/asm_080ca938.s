@@ -22,7 +22,7 @@ glabel func_080CA938
 /* 080CA954 */ MOVS R3, #0X10
 /* 080CA956 */ LDRSH R1, [R2, R3]
 /* 080CA958 */ MOVS R2, #0
-/* 080CA95A */ BL func_080EF784
+/* 080CA95A */ BL sprite_get_data
 /* 080CA95E */ LDR R4, [R4]
 /* 080CA960 */ LDR R1, [R5]
 /* 080CA962 */ MOVS R2, #0X10

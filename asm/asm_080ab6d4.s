@@ -68,7 +68,7 @@ _080AB716:
 /* 080AB744 */ STR R6, [SP]
 /* 080AB746 */ STR R6, [SP, #4]
 /* 080AB748 */ STR R6, [SP, #8]
-/* 080AB74A */ BL func_080EF50C
+/* 080AB74A */ BL sprite_set_anim
 /* 080AB74E */ MOV R1, R8
 /* 080AB750 */ LDR R0, [R1]
 /* 080AB752 */ MOV R2, SL

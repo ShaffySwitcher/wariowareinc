@@ -65,12 +65,12 @@ _080D41DC:
 /* 080D41EA */ STR R6, [SP, #4]
 /* 080D41EC */ STR R6, [SP, #8]
 /* 080D41EE */ MOVS R3, #0
-/* 080D41F0 */ BL func_080EF50C
+/* 080D41F0 */ BL sprite_set_anim
 /* 080D41F4 */ LDR R0, [R4]
 /* 080D41F6 */ MOVS R2, #0
 /* 080D41F8 */ LDRSH R1, [R5, R2]
 /* 080D41FA */ MOVS R2, #1
-/* 080D41FC */ BL func_080EF5C4
+/* 080D41FC */ BL sprite_set_enable_updates
 /* 080D4200 */ LDR R0, [R4]
 /* 080D4202 */ MOVS R3, #0
 /* 080D4204 */ LDRSH R1, [R5, R3]
@@ -187,7 +187,7 @@ _080D42C0:
 /* 080D42D0 */ MOVS R2, #0
 /* 080D42D2 */ LDRSH R1, [R5, R2]
 /* 080D42D4 */ MOVS R2, #0
-/* 080D42D6 */ BL func_080EF5C4
+/* 080D42D6 */ BL sprite_set_enable_updates
 /* 080D42DA */ LDR R0, [R7]
 /* 080D42DC */ LDR R3, _080D42F8
 /* 080D42DE */ ADDS R0, R3

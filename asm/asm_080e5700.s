@@ -243,7 +243,7 @@ _080E5894:
 /* 080E58E8 */ MOV R8, R4
 /* 080E58EA */ LDR R3, [R4]
 /* 080E58EC */ LDR R2, _080E59FC
-/* 080E58EE */ BL func_080EF60C
+/* 080E58EE */ BL sprite_set_callback
 /* 080E58F2 */ ADDS R6, #1
 /* 080E58F4 */ ADDS R7, #0X1C
 /* 080E58F6 */ CMP R6, #4
@@ -345,7 +345,7 @@ _080E5894:
 /* 080E59BE */ MOVS R3, #0X34
 /* 080E59C0 */ LDRSH R1, [R1, R3]
 /* 080E59C2 */ MOVS R2, #0
-/* 080E59C4 */ BL func_080EF5C4
+/* 080E59C4 */ BL sprite_set_enable_updates
 /* 080E59C8 */ LDR R0, [R4]
 /* 080E59CA */ ADDS R7, R0, #0
 /* 080E59CC */ ADDS R7, #0XC0
@@ -354,7 +354,7 @@ _080E5894:
 /* 080E59D2 */ MOVS R2, #0
 /* 080E59D4 */ LDRSH R1, [R7, R2]
 /* 080E59D6 */ MOVS R2, #0
-/* 080E59D8 */ BL func_080EF5C4
+/* 080E59D8 */ BL sprite_set_enable_updates
 /* 080E59DC */ ADD SP, #0X1C
 /* 080E59DE */ POP {R3, R4, R5}
 /* 080E59E0 */ MOV R8, R3

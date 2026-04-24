@@ -69,7 +69,7 @@ _0800DD94:
 /* 0800DDB0 */ STR R2, [SP]
 /* 0800DDB2 */ MOVS R2, #1
 /* 0800DDB4 */ MOVS R3, #0X7F
-/* 0800DDB6 */ BL func_080EF644
+/* 0800DDB6 */ BL sprite_set_playback
 _0800DDBA:
 /* 0800DDBA */ LDR R1, [R5]
 /* 0800DDBC */ LDR R0, [R1, #0X4C]

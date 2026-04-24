@@ -88,7 +88,7 @@ _0804148C:
 /* 080414AE */ MOVS R2, #0
 /* 080414B0 */ LDRSH R1, [R1, R2]
 /* 080414B2 */ MOVS R2, #0
-/* 080414B4 */ BL func_080EE9B8
+/* 080414B4 */ BL sprite_set_anim_cel
 /* 080414B8 */ LDR R0, [R4]
 /* 080414BA */ LDR R1, [R5]
 /* 080414BC */ ADDS R1, #0X5E
@@ -102,7 +102,7 @@ _0804148C:
 /* 080414CE */ MOVS R2, #0
 /* 080414D0 */ LDRSH R1, [R1, R2]
 /* 080414D2 */ MOVS R2, #0
-/* 080414D4 */ BL func_080EE9B8
+/* 080414D4 */ BL sprite_set_anim_cel
 /* 080414D8 */ LDR R0, [R4]
 /* 080414DA */ LDR R1, [R5]
 /* 080414DC */ ADDS R1, #0X5C

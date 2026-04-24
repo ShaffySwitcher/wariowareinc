@@ -55,7 +55,7 @@ glabel func_08072048
 /* 080720AA */ MOVS R3, #2
 /* 080720AC */ STR R3, [SP, #8]
 /* 080720AE */ MOVS R3, #0
-/* 080720B0 */ BL func_080EF50C
+/* 080720B0 */ BL sprite_set_anim
 /* 080720B4 */ STR R4, [R5, #0X18]
 /* 080720B6 */ LDR R0, _08072114
 /* 080720B8 */ BL play_sound

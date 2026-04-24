@@ -43,7 +43,7 @@ _080D3F90:
 /* 080D3F9C */ STR R3, [SP, #4]
 /* 080D3F9E */ STR R3, [SP, #8]
 /* 080D3FA0 */ MOVS R3, #0
-/* 080D3FA2 */ BL func_080EF50C
+/* 080D3FA2 */ BL sprite_set_anim
 /* 080D3FA6 */ LDR R0, [R6]
 /* 080D3FA8 */ MOVS R3, #0
 /* 080D3FAA */ LDRSH R1, [R4, R3]

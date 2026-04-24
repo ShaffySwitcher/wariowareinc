@@ -17,12 +17,12 @@ glabel func_08016B88
 /* 08016B9C */ ASRS R4, R4, #0X10
 /* 08016B9E */ ADDS R1, R4, #0
 /* 08016BA0 */ MOVS R2, #0X11
-/* 08016BA2 */ BL func_080EF880
+/* 08016BA2 */ BL sprite_set_callback_cel
 /* 08016BA6 */ LDR R0, [R5]
 /* 08016BA8 */ LDR R2, _08016BBC
 /* 08016BAA */ LDR R3, =D_083FF654
 /* 08016BAC */ ADDS R1, R4, #0
-/* 08016BAE */ BL func_080EF60C
+/* 08016BAE */ BL sprite_set_callback
 /* 08016BB2 */ POP {R4, R5}
 /* 08016BB4 */ POP {R0}
 /* 08016BB6 */ BX R0

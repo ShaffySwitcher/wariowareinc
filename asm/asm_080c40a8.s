@@ -36,14 +36,14 @@ _080C40BC:
 /* 080C40DE */ LSRS R3, R3, #0X10
 /* 080C40E0 */ STR R3, [SP, #8]
 /* 080C40E2 */ MOVS R3, #0
-/* 080C40E4 */ BL func_080EF50C
+/* 080C40E4 */ BL sprite_set_anim
 /* 080C40E8 */ MOV R1, R8
 /* 080C40EA */ LDR R0, [R1]
 /* 080C40EC */ MOVS R2, #0
 /* 080C40EE */ LDRSH R1, [R6, R2]
 /* 080C40F0 */ LDR R2, =func_080C4114
 /* 080C40F2 */ ADDS R3, R6, #0
-/* 080C40F4 */ BL func_080EF60C
+/* 080C40F4 */ BL sprite_set_callback
 /* 080C40F8 */ STR R7, [R6, #0X28]
 /* 080C40FA */ ADD SP, #0XC
 /* 080C40FC */ POP {R3}

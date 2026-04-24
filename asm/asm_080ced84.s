@@ -197,7 +197,7 @@ _080CEED2:
 /* 080CEED4 */ LDR R0, [R0]
 /* 080CEED6 */ MOVS R3, #4
 /* 080CEED8 */ LDRSH R1, [R7, R3]
-/* 080CEEDA */ BL func_080EE9B8
+/* 080CEEDA */ BL sprite_set_anim_cel
 /* 080CEEDE */ POP {R4, R5, R6, R7}
 /* 080CEEE0 */ POP {R0}
 /* 080CEEE2 */ BX R0

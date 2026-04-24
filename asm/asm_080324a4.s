@@ -96,7 +96,7 @@ glabel func_080324A4
 /* 08032556 */ STR R3, [SP, #4]
 /* 08032558 */ STR R3, [SP, #8]
 /* 0803255A */ MOVS R3, #0
-/* 0803255C */ BL func_080EF50C
+/* 0803255C */ BL sprite_set_anim
 /* 08032560 */ LDR R0, [R4]
 /* 08032562 */ MOVS R2, #0
 /* 08032564 */ LDRSH R1, [R5, R2]

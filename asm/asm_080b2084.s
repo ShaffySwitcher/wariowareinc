@@ -49,14 +49,14 @@ glabel func_080B2084
 /* 080B20DA */ MOVS R7, #0
 /* 080B20DC */ LDRSH R1, [R1, R7]
 /* 080B20DE */ MOVS R2, #0
-/* 080B20E0 */ BL func_080EE9B8
+/* 080B20E0 */ BL sprite_set_anim_cel
 /* 080B20E4 */ LDR R0, [R5]
 /* 080B20E6 */ LDR R1, [R6]
 /* 080B20E8 */ ADDS R1, R4
 /* 080B20EA */ MOVS R2, #0
 /* 080B20EC */ LDRSH R1, [R1, R2]
 /* 080B20EE */ MOVS R2, #1
-/* 080B20F0 */ BL func_080EF5C4
+/* 080B20F0 */ BL sprite_set_enable_updates
 /* 080B20F4 */ LDR R0, [R6]
 /* 080B20F6 */ MOVS R7, #0XDC
 /* 080B20F8 */ LSLS R7, R7, #1

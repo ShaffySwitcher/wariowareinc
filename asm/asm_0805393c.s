@@ -85,7 +85,7 @@ _0805398A:
 /* 080539CA */ MOVS R3, #0
 /* 080539CC */ STR R3, [SP, #4]
 /* 080539CE */ STR R3, [SP, #8]
-/* 080539D0 */ BL func_080EF50C
+/* 080539D0 */ BL sprite_set_anim
 /* 080539D4 */ LDR R0, [R4]
 /* 080539D6 */ MOV R2, R8
 /* 080539D8 */ LDR R1, [R2]

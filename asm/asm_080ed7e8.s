@@ -24,7 +24,7 @@ _080ED7F2:
 /* 080ED806 */ STR R2, [SP]
 /* 080ED808 */ MOVS R2, #1
 /* 080ED80A */ MOVS R3, #0X7F
-/* 080ED80C */ BL func_080EF644
+/* 080ED80C */ BL sprite_set_playback
 /* 080ED810 */ LDR R0, [R7]
 /* 080ED812 */ LDR R1, [R6]
 /* 080ED814 */ ADDS R1, #0X74
@@ -32,7 +32,7 @@ _080ED7F2:
 /* 080ED818 */ MOVS R2, #0
 /* 080ED81A */ LDRSH R1, [R1, R2]
 /* 080ED81C */ MOVS R2, #5
-/* 080ED81E */ BL func_080EE9B8
+/* 080ED81E */ BL sprite_set_anim_cel
 /* 080ED822 */ ADDS R4, #1
 /* 080ED824 */ LSLS R4, R4, #0X10
 /* 080ED826 */ LSRS R2, R4, #0X10

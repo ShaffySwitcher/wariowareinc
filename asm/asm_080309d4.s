@@ -94,7 +94,7 @@ _08030A10:
 /* 08030A7C */ MOVS R3, #0
 /* 08030A7E */ LDRSH R1, [R2, R3]
 /* 08030A80 */ MOVS R2, #1
-/* 08030A82 */ BL func_080EF5C4
+/* 08030A82 */ BL sprite_set_enable_updates
 /* 08030A86 */ ADDS R0, R4, #0
 /* 08030A88 */ ADDS R0, #0X76
 /* 08030A8A */ STRH R6, [R0]

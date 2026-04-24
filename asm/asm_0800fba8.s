@@ -213,7 +213,7 @@ _0800FCC6:
 /* 0800FD34 */ LSLS R1, R1, #0X10
 /* 0800FD36 */ ASRS R1, R1, #0X10
 /* 0800FD38 */ MOVS R2, #5
-/* 0800FD3A */ BL func_080EF4D8
+/* 0800FD3A */ BL sprite_set_base_palette
 /* 0800FD3E */ MOVS R3, #3
 /* 0800FD40 */ ADD SB, R3
 /* 0800FD42 */ ADDS R7, #2

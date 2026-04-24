@@ -244,7 +244,7 @@ _0808E020:
 /* 0808E048 */ MOVS R3, #0
 /* 0808E04A */ LDRSH R1, [R1, R3]
 /* 0808E04C */ MOVS R2, #0
-/* 0808E04E */ BL func_080EF5C4
+/* 0808E04E */ BL sprite_set_enable_updates
 /* 0808E052 */ LDR R1, [R4]
 /* 0808E054 */ LDR R4, _0808E070
 /* 0808E056 */ ADDS R1, R4

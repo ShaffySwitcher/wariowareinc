@@ -45,7 +45,7 @@ _080C3758:
 /* 080C378C */ MOVS R2, #0
 /* 080C378E */ LDRSH R1, [R1, R2]
 /* 080C3790 */ MOVS R2, #5
-/* 080C3792 */ BL func_080EF784
+/* 080C3792 */ BL sprite_get_data
 /* 080C3796 */ ADDS R3, R0, #0
 /* 080C3798 */ LSLS R3, R3, #8
 /* 080C379A */ LDR R1, [R7]

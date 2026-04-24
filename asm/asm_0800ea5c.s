@@ -32,14 +32,14 @@ glabel func_0800EA5C
 /* 0800EA8C */ MOVS R2, #1
 /* 0800EA8E */ RSBS R2, R2, #0
 /* 0800EA90 */ MOVS R3, #0
-/* 0800EA92 */ BL func_080EF708
+/* 0800EA92 */ BL sprite_set_affine_params
 /* 0800EA96 */ LDR R0, [R5]
 /* 0800EA98 */ LDR R1, [R6]
 /* 0800EA9A */ ADDS R1, R4
 /* 0800EA9C */ MOVS R3, #0
 /* 0800EA9E */ LDRSH R1, [R1, R3]
 /* 0800EAA0 */ MOVS R2, #6
-/* 0800EAA2 */ BL func_080EF784
+/* 0800EAA2 */ BL sprite_get_data
 /* 0800EAA6 */ LSLS R0, R0, #0X10
 /* 0800EAA8 */ LDR R1, [R6]
 /* 0800EAAA */ LDR R3, _0800EB44
@@ -90,11 +90,11 @@ _0800EAC4:
 /* 0800EB04 */ LSLS R1, R1, #2
 /* 0800EB06 */ ADDS R3, R1
 /* 0800EB08 */ ADDS R1, R4, #0
-/* 0800EB0A */ BL func_080EF708
+/* 0800EB0A */ BL sprite_set_affine_params
 /* 0800EB0E */ LDR R0, [R5]
 /* 0800EB10 */ ADDS R1, R4, #0
 /* 0800EB12 */ MOVS R2, #6
-/* 0800EB14 */ BL func_080EF784
+/* 0800EB14 */ BL sprite_get_data
 /* 0800EB18 */ LSLS R0, R0, #0X10
 /* 0800EB1A */ LSRS R2, R0, #0X10
 /* 0800EB1C */ MOV R3, R8

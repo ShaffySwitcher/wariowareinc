@@ -154,7 +154,7 @@ _0803A652:
 /* 0803A672 */ MOVS R2, #4
 /* 0803A674 */ LDRSH R1, [R1, R2]
 /* 0803A676 */ MOVS R2, #1
-/* 0803A678 */ BL func_080EF5C4
+/* 0803A678 */ BL sprite_set_enable_updates
 _0803A67C:
 /* 0803A67C */ POP {R3}
 /* 0803A67E */ MOV R8, R3

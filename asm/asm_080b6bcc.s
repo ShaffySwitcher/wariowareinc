@@ -67,7 +67,7 @@ _080B6C08:
 /* 080B6C40 */ STR R6, [SP, #4]
 /* 080B6C42 */ STR R6, [SP, #8]
 /* 080B6C44 */ MOVS R3, #0
-/* 080B6C46 */ BL func_080EF50C
+/* 080B6C46 */ BL sprite_set_anim
 /* 080B6C4A */ LDR R0, [R5]
 /* 080B6C4C */ MOV R2, SB
 /* 080B6C4E */ LDR R1, [R2]
@@ -81,7 +81,7 @@ _080B6C08:
 /* 080B6C5E */ STR R6, [SP, #4]
 /* 080B6C60 */ STR R6, [SP, #8]
 /* 080B6C62 */ MOVS R3, #0
-/* 080B6C64 */ BL func_080EF50C
+/* 080B6C64 */ BL sprite_set_anim
 /* 080B6C68 */ ADDS R0, R7, #0
 /* 080B6C6A */ BL func_080B69C8
 /* 080B6C6E */ CMP R7, #0

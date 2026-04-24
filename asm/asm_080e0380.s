@@ -132,7 +132,7 @@ _080E0428:
 /* 080E046E */ MOVS R3, #0
 /* 080E0470 */ LDRSH R1, [R4, R3]
 /* 080E0472 */ MOVS R2, #1
-/* 080E0474 */ BL func_080EF5C4
+/* 080E0474 */ BL sprite_set_enable_updates
 /* 080E0478 */ B _080E04A0
 
 .balign 4, 0

@@ -63,7 +63,7 @@ _0806DF30:
 /* 0806DF52 */ STR R6, [SP, #4]
 /* 0806DF54 */ STR R7, [SP, #8]
 /* 0806DF56 */ MOVS R3, #1
-/* 0806DF58 */ BL func_080EF50C
+/* 0806DF58 */ BL sprite_set_anim
 /* 0806DF5C */ LDR R0, _0806DF8C
 /* 0806DF5E */ LDR R0, [R0]
 /* 0806DF60 */ MOVS R1, #0XBA
@@ -119,7 +119,7 @@ _0806DFA6:
 /* 0806DFA8 */ STR R6, [SP, #4]
 /* 0806DFAA */ STR R7, [SP, #8]
 /* 0806DFAC */ MOVS R3, #1
-/* 0806DFAE */ BL func_080EF50C
+/* 0806DFAE */ BL sprite_set_anim
 /* 0806DFB2 */ B _0806E062
 
 .balign 4, 0
@@ -156,7 +156,7 @@ _0806DFB8:
 /* 0806DFF4 */ MOVS R7, #3
 /* 0806DFF6 */ STR R7, [SP, #8]
 /* 0806DFF8 */ MOVS R3, #2
-/* 0806DFFA */ BL func_080EF50C
+/* 0806DFFA */ BL sprite_set_anim
 /* 0806DFFE */ MOV R1, SB
 /* 0806E000 */ LDR R0, [R1]
 /* 0806E002 */ MOVS R2, #0XBA
@@ -176,7 +176,7 @@ _0806DFB8:
 /* 0806E01E */ STR R6, [SP, #4]
 /* 0806E020 */ STR R7, [SP, #8]
 /* 0806E022 */ MOVS R3, #2
-/* 0806E024 */ BL func_080EF50C
+/* 0806E024 */ BL sprite_set_anim
 /* 0806E028 */ B _0806E062
 
 .balign 4, 0
@@ -216,7 +216,7 @@ _0806E044:
 /* 0806E058 */ STR R6, [SP, #4]
 /* 0806E05A */ STR R7, [SP, #8]
 /* 0806E05C */ MOVS R3, #2
-/* 0806E05E */ BL func_080EF50C
+/* 0806E05E */ BL sprite_set_anim
 _0806E062:
 /* 0806E062 */ ADD SP, #0XC
 /* 0806E064 */ POP {R3, R4}

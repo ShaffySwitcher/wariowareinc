@@ -186,7 +186,7 @@ glabel func_080E1F60
 /* 080E20EE */ LSLS R4, R2, #0X18
 /* 080E20F0 */ ASRS R4, R4, #0X18
 /* 080E20F2 */ ADDS R2, R4, #0
-/* 080E20F4 */ BL func_080EF4D8
+/* 080E20F4 */ BL sprite_set_base_palette
 /* 080E20F8 */ LDR R0, [R6]
 /* 080E20FA */ MOV R3, SB
 /* 080E20FC */ LDR R1, [R3]
@@ -194,7 +194,7 @@ glabel func_080E1F60
 /* 080E2100 */ MOVS R6, #0
 /* 080E2102 */ LDRSH R1, [R1, R6]
 /* 080E2104 */ ADDS R2, R4, #0
-/* 080E2106 */ BL func_080EF4D8
+/* 080E2106 */ BL sprite_set_base_palette
 /* 080E210A */ MOV R1, SB
 /* 080E210C */ LDR R0, [R1]
 /* 080E210E */ ADDS R0, #0X28

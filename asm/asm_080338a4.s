@@ -92,14 +92,14 @@ _0803392E:
 /* 0803393E */ MOVS R7, #0
 /* 08033940 */ LDRSB R7, [R3, R7]
 /* 08033942 */ ADDS R2, R7, #0
-/* 08033944 */ BL func_080EE9B8
+/* 08033944 */ BL sprite_set_anim_cel
 /* 08033948 */ LDR R0, [R4]
 /* 0803394A */ MOV R4, SB
 /* 0803394C */ ADDS R4, #0XC2
 /* 0803394E */ MOVS R2, #0
 /* 08033950 */ LDRSH R1, [R4, R2]
 /* 08033952 */ ADDS R2, R7, #0
-/* 08033954 */ BL func_080EE9B8
+/* 08033954 */ BL sprite_set_anim_cel
 /* 08033958 */ STR R5, [SP, #0XC]
 /* 0803395A */ STR R4, [SP, #8]
 /* 0803395C */ LDR R3, [SP]

@@ -62,7 +62,7 @@ _08060F5A:
 /* 08060F68 */ MOVS R2, #0X22
 /* 08060F6A */ LDRSH R1, [R1, R2]
 /* 08060F6C */ MOVS R2, #2
-/* 08060F6E */ BL func_080EE9B8
+/* 08060F6E */ BL sprite_set_anim_cel
 /* 08060F72 */ B _08060FFC
 
 .balign 4, 0
@@ -83,7 +83,7 @@ _08060F78:
 /* 08060F92 */ MOVS R2, #0X22
 /* 08060F94 */ LDRSH R1, [R1, R2]
 /* 08060F96 */ MOVS R2, #1
-/* 08060F98 */ BL func_080EE9B8
+/* 08060F98 */ BL sprite_set_anim_cel
 /* 08060F9C */ MOVS R0, #1
 /* 08060F9E */ BL func_08060C04
 /* 08060FA2 */ B _08060FFC
@@ -109,7 +109,7 @@ _08060FAC:
 /* 08060FC4 */ MOVS R2, #0X22
 /* 08060FC6 */ LDRSH R1, [R1, R2]
 /* 08060FC8 */ MOVS R2, #2
-/* 08060FCA */ BL func_080EE9B8
+/* 08060FCA */ BL sprite_set_anim_cel
 /* 08060FCE */ MOVS R0, #2
 /* 08060FD0 */ BL func_08060C04
 /* 08060FD4 */ B _08060FFC
@@ -134,7 +134,7 @@ _08060FE0:
 /* 08060FF2 */ MOVS R2, #0X22
 /* 08060FF4 */ LDRSH R1, [R1, R2]
 /* 08060FF6 */ MOVS R2, #0
-/* 08060FF8 */ BL func_080EE9B8
+/* 08060FF8 */ BL sprite_set_anim_cel
 _08060FFC:
 /* 08060FFC */ POP {R4, R5}
 /* 08060FFE */ POP {R0}

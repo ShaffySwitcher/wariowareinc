@@ -76,14 +76,14 @@ _08076A94:
 /* 08076AD4 */ MOVS R2, #0
 /* 08076AD6 */ LDRSH R1, [R4, R2]
 /* 08076AD8 */ MOVS R2, #1
-/* 08076ADA */ BL func_080EF5C4
+/* 08076ADA */ BL sprite_set_enable_updates
 /* 08076ADE */ LDR R0, [R5]
 /* 08076AE0 */ LDR R1, [R6]
 /* 08076AE2 */ ADDS R1, #0X40
 /* 08076AE4 */ MOVS R2, #0
 /* 08076AE6 */ LDRSH R1, [R1, R2]
 /* 08076AE8 */ MOVS R2, #5
-/* 08076AEA */ BL func_080EE9B8
+/* 08076AEA */ BL sprite_set_anim_cel
 /* 08076AEE */ B _08076B16
 
 .balign 4, 0

@@ -71,7 +71,7 @@ _080DBD7C:
 /* 080DBDBA */ STR R7, [SP, #4]
 /* 080DBDBC */ STR R7, [SP, #8]
 /* 080DBDBE */ MOVS R3, #0
-/* 080DBDC0 */ BL func_080EF50C
+/* 080DBDC0 */ BL sprite_set_anim
 /* 080DBDC4 */ B _080DBE40
 
 .balign 4, 0
@@ -136,7 +136,7 @@ _080DBDF2:
 /* 080DBE36 */ STR R3, [SP]
 /* 080DBE38 */ STR R3, [SP, #4]
 /* 080DBE3A */ STR R3, [SP, #8]
-/* 080DBE3C */ BL func_080EF50C
+/* 080DBE3C */ BL sprite_set_anim
 _080DBE40:
 /* 080DBE40 */ ADD SP, #0XC
 /* 080DBE42 */ POP {R3}

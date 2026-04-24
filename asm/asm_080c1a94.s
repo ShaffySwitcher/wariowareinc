@@ -30,7 +30,7 @@ glabel func_080C1A94
 /* 080C1AC0 */ MOVS R2, #8
 /* 080C1AC2 */ LDRSH R1, [R3, R2]
 /* 080C1AC4 */ MOVS R2, #0
-/* 080C1AC6 */ BL func_080EE9B8
+/* 080C1AC6 */ BL sprite_set_anim_cel
 /* 080C1ACA */ LDR R1, [R4]
 /* 080C1ACC */ MOVS R0, #0
 /* 080C1ACE */ STRH R0, [R1, #0X10]

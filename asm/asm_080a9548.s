@@ -93,7 +93,7 @@ _080A9580:
 /* 080A95EE */ STR R3, [SP, #4]
 /* 080A95F0 */ STR R3, [SP, #8]
 /* 080A95F2 */ ADDS R1, R5, #0
-/* 080A95F4 */ BL func_080EF50C
+/* 080A95F4 */ BL sprite_set_anim
 /* 080A95F8 */ LDR R0, [R4]
 /* 080A95FA */ MOV R1, R8
 /* 080A95FC */ LSLS R2, R1, #0X10

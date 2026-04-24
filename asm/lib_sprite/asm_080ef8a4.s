@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080EF8A4 \n\
+thumb_func_start sprite_id_set_data \n\
 /* 080EF8A4 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080EF8A6 */ MOV R7, R8 \n\
 /* 080EF8A8 */ PUSH {R7} \n\
@@ -80,7 +80,7 @@ _080EF91C: \n\
 /* 080EF920 */ LSLS R2, R5, #0X10 \n\
 /* 080EF922 */ LSRS R2, R2, #0X10 \n\
 /* 080EF924 */ ADDS R0, R4, #0 \n\
-/* 080EF926 */ BL func_080EF5C4 \n\
+/* 080EF926 */ BL sprite_set_enable_updates \n\
 /* 080EF92A */ B _080EF984 \n\
 _080EF92C: \n\
 /* 080EF92C */ LSLS R1, R3, #0X10 \n\
@@ -117,7 +117,7 @@ _080EF966: \n\
 /* 080EF96A */ LSLS R2, R5, #0X18 \n\
 /* 080EF96C */ ASRS R2, R2, #0X18 \n\
 /* 080EF96E */ ADDS R0, R4, #0 \n\
-/* 080EF970 */ BL func_080EF4D8 \n\
+/* 080EF970 */ BL sprite_set_base_palette \n\
 /* 080EF974 */ B _080EF984 \n\
 _080EF976: \n\
 /* 080EF976 */ LSLS R1, R3, #0X10 \n\
@@ -125,7 +125,7 @@ _080EF976: \n\
 /* 080EF97A */ LDR R2, [R5] \n\
 /* 080EF97C */ LDR R3, [R5, #4] \n\
 /* 080EF97E */ ADDS R0, R4, #0 \n\
-/* 080EF980 */ BL func_080EF6BC \n\
+/* 080EF980 */ BL sprite_set_origin_x_y \n\
 _080EF984: \n\
 /* 080EF984 */ ADDS R3, R7, #0 \n\
 _080EF986: \n\

@@ -40,7 +40,7 @@ _0808CDF6:
 /* 0808CE16 */ LDRB R2, [R2]
 /* 0808CE18 */ LSLS R2, R2, #0X18
 /* 0808CE1A */ ASRS R2, R2, #0X18
-/* 0808CE1C */ BL func_080EF4D8
+/* 0808CE1C */ BL sprite_set_base_palette
 /* 0808CE20 */ POP {R4, R5}
 /* 0808CE22 */ POP {R0}
 /* 0808CE24 */ BX R0

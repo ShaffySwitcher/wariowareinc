@@ -428,13 +428,13 @@ _0807CF74:
 /* 0807CFA6 */ STR R4, [SP, #4]
 /* 0807CFA8 */ STR R4, [SP, #8]
 /* 0807CFAA */ MOVS R3, #0
-/* 0807CFAC */ BL func_080EF50C
+/* 0807CFAC */ BL sprite_set_anim
 /* 0807CFB0 */ LDR R0, [R5]
 /* 0807CFB2 */ LDR R1, [R7]
 /* 0807CFB4 */ MOVS R2, #4
 /* 0807CFB6 */ LDRSH R1, [R1, R2]
 /* 0807CFB8 */ MOVS R2, #0
-/* 0807CFBA */ BL func_080EF5C4
+/* 0807CFBA */ BL sprite_set_enable_updates
 /* 0807CFBE */ LDR R0, [R7]
 /* 0807CFC0 */ LDRB R0, [R0, #0X13]
 /* 0807CFC2 */ LSLS R0, R0, #0X18

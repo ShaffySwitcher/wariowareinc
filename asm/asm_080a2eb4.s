@@ -73,7 +73,7 @@ _080A2EE8:
 /* 080A2F24 */ STR R4, [SP, #4]
 /* 080A2F26 */ STR R4, [SP, #8]
 /* 080A2F28 */ MOVS R3, #0
-/* 080A2F2A */ BL func_080EF50C
+/* 080A2F2A */ BL sprite_set_anim
 /* 080A2F2E */ LDR R0, [R5]
 /* 080A2F30 */ STRB R4, [R0, #2]
 /* 080A2F32 */ B _080A2F48

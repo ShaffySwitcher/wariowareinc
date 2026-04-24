@@ -21,7 +21,7 @@ glabel func_080A6AF0
 /* 080A6B0A */ STR R3, [SP]
 /* 080A6B0C */ STR R3, [SP, #4]
 /* 080A6B0E */ STR R3, [SP, #8]
-/* 080A6B10 */ BL func_080EF50C
+/* 080A6B10 */ BL sprite_set_anim
 /* 080A6B14 */ ADDS R0, R4, #0
 /* 080A6B16 */ MOVS R1, #0
 /* 080A6B18 */ BL func_080A6AEC

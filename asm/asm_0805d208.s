@@ -151,7 +151,7 @@ _0805D2DE:
 /* 0805D30A */ STR R4, [SP, #4]
 /* 0805D30C */ STR R4, [SP, #8]
 /* 0805D30E */ MOVS R3, #0
-/* 0805D310 */ BL func_080EF50C
+/* 0805D310 */ BL sprite_set_anim
 /* 0805D314 */ LDR R1, [R5]
 /* 0805D316 */ MOVS R0, #3
 /* 0805D318 */ STRB R0, [R1]

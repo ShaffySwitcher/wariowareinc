@@ -49,17 +49,17 @@ _0808ECE2:
 /* 0808ECFA */ MOVS R3, #4
 /* 0808ECFC */ STR R3, [SP, #8]
 /* 0808ECFE */ MOVS R3, #0
-/* 0808ED00 */ BL func_080EF50C
+/* 0808ED00 */ BL sprite_set_anim
 /* 0808ED04 */ LDR R0, [R4]
 /* 0808ED06 */ MOVS R2, #0
 /* 0808ED08 */ LDRSH R1, [R5, R2]
 /* 0808ED0A */ MOVS R2, #0
-/* 0808ED0C */ BL func_080EF5C4
+/* 0808ED0C */ BL sprite_set_enable_updates
 /* 0808ED10 */ LDR R0, [R4]
 /* 0808ED12 */ MOVS R2, #0
 /* 0808ED14 */ LDRSH R1, [R5, R2]
 /* 0808ED16 */ MOVS R2, #0
-/* 0808ED18 */ BL func_080EF4D8
+/* 0808ED18 */ BL sprite_set_base_palette
 /* 0808ED1C */ LDR R0, [R4]
 /* 0808ED1E */ MOVS R2, #0
 /* 0808ED20 */ LDRSH R1, [R5, R2]
@@ -70,7 +70,7 @@ _0808ECE2:
 /* 0808ED2C */ LDRSH R1, [R5, R2]
 /* 0808ED2E */ LDR R2, _0808ED4C
 /* 0808ED30 */ ADDS R3, R5, #0
-/* 0808ED32 */ BL func_080EF60C
+/* 0808ED32 */ BL sprite_set_callback
 /* 0808ED36 */ B _0808ED56
 
 .balign 4, 0

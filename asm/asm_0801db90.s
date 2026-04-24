@@ -28,7 +28,7 @@ _0801DBAA:
 /* 0801DBB4 */ LDRSH R1, [R1, R3]
 /* 0801DBB6 */ LSLS R2, R2, #0X18
 /* 0801DBB8 */ ASRS R2, R2, #0X18
-/* 0801DBBA */ BL func_080EE9B8
+/* 0801DBBA */ BL sprite_set_anim_cel
 /* 0801DBBE */ POP {R0}
 /* 0801DBC0 */ BX R0
 

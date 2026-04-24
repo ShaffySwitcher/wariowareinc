@@ -34,7 +34,7 @@ _0808AD52:
 /* 0808AD76 */ LDRB R2, [R2, #0X19]
 /* 0808AD78 */ LSLS R2, R2, #0X18
 /* 0808AD7A */ ASRS R2, R2, #0X18
-/* 0808AD7C */ BL func_080EE9B8
+/* 0808AD7C */ BL sprite_set_anim_cel
 /* 0808AD80 */ B _0808ADA0
 
 .balign 4, 0

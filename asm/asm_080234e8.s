@@ -221,7 +221,7 @@ _0802365A:
 /* 080236A6 */ LDR R0, [R5]
 /* 080236A8 */ ADDS R1, R4, #0
 /* 080236AA */ MOVS R2, #0XA
-/* 080236AC */ BL func_080EF4D8
+/* 080236AC */ BL sprite_set_base_palette
 _080236B0:
 /* 080236B0 */ ADD SP, #0X14
 /* 080236B2 */ POP {R3, R4}

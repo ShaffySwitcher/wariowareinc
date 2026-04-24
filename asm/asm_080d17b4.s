@@ -46,7 +46,7 @@ _080D17EA:
 /* 080D17F8 */ STR R6, [SP, #4]
 /* 080D17FA */ STR R6, [SP, #8]
 /* 080D17FC */ MOVS R3, #0
-/* 080D17FE */ BL func_080EF50C
+/* 080D17FE */ BL sprite_set_anim
 /* 080D1802 */ LDR R0, [R4]
 /* 080D1804 */ MOVS R3, #0
 /* 080D1806 */ LDRSH R1, [R7, R3]

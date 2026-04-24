@@ -53,7 +53,7 @@ _0804D838:
 /* 0804D84C */ MOVS R2, #0
 /* 0804D84E */ LDRSH R1, [R1, R2]
 /* 0804D850 */ MOVS R2, #2
-/* 0804D852 */ BL func_080EE9B8
+/* 0804D852 */ BL sprite_set_anim_cel
 /* 0804D856 */ MOVS R0, #0X18
 /* 0804D858 */ BL func_0800C9A4
 /* 0804D85C */ MOVS R0, #0

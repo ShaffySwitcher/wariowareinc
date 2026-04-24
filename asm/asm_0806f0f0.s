@@ -80,7 +80,7 @@ _0806F144:
 /* 0806F164 */ MOVS R2, #0
 /* 0806F166 */ LDRSH R1, [R1, R2]
 /* 0806F168 */ MOVS R2, #0
-/* 0806F16A */ BL func_080EE9B8
+/* 0806F16A */ BL sprite_set_anim_cel
 /* 0806F16E */ BL func_0806EE40
 /* 0806F172 */ B _0806F1CE
 
@@ -128,7 +128,7 @@ _0806F194:
 /* 0806F1BC */ MOVS R3, #0
 /* 0806F1BE */ STR R3, [SP, #4]
 /* 0806F1C0 */ STR R3, [SP, #8]
-/* 0806F1C2 */ BL func_080EF50C
+/* 0806F1C2 */ BL sprite_set_anim
 /* 0806F1C6 */ LDR R0, [R4]
 /* 0806F1C8 */ ADDS R0, #0X24
 /* 0806F1CA */ MOVS R1, #5

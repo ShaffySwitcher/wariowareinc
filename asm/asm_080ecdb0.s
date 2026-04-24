@@ -81,7 +81,7 @@ _080ECDEA:
 /* 080ECE42 */ MOVS R2, #0
 /* 080ECE44 */ LDRSH R1, [R4, R2]
 /* 080ECE46 */ MOVS R2, #0
-/* 080ECE48 */ BL func_080EF5C4
+/* 080ECE48 */ BL sprite_set_enable_updates
 /* 080ECE4C */ MOVS R0, #5
 /* 080ECE4E */ STRB R0, [R4, #0XC]
 _080ECE50:

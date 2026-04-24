@@ -118,7 +118,7 @@ _080B240C:
 /* 080B2422 */ MOVS R3, #0
 /* 080B2424 */ STR R3, [SP, #4]
 /* 080B2426 */ STR R3, [SP, #8]
-/* 080B2428 */ BL func_080EF50C
+/* 080B2428 */ BL sprite_set_anim
 /* 080B242C */ LDR R0, [R6]
 /* 080B242E */ LDR R1, [R5]
 /* 080B2430 */ MOVS R4, #0XDA
@@ -127,7 +127,7 @@ _080B240C:
 /* 080B2436 */ MOVS R2, #0
 /* 080B2438 */ LDRSH R1, [R1, R2]
 /* 080B243A */ MOVS R2, #0
-/* 080B243C */ BL func_080EF5C4
+/* 080B243C */ BL sprite_set_enable_updates
 /* 080B2440 */ MOVS R0, #1
 _080B2442:
 /* 080B2442 */ ADD SP, #0XC

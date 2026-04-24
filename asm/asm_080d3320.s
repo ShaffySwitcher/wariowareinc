@@ -57,7 +57,7 @@ glabel func_080D3320
 /* 080D3386 */ STR R4, [SP, #4]
 /* 080D3388 */ STR R4, [SP, #8]
 /* 080D338A */ MOVS R3, #0
-/* 080D338C */ BL func_080EF50C
+/* 080D338C */ BL sprite_set_anim
 /* 080D3390 */ LDR R1, =func_080D330C + 1
 /* 080D3392 */ ADDS R0, R5, #0
 /* 080D3394 */ MOV R2, R8

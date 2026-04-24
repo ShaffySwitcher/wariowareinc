@@ -197,7 +197,7 @@ _0803E5D4:
 /* 0803E634 */ MOVS R2, #0
 /* 0803E636 */ LDRSH R1, [R1, R2]
 /* 0803E638 */ MOVS R2, #0
-/* 0803E63A */ BL func_080EE9B8
+/* 0803E63A */ BL sprite_set_anim_cel
 /* 0803E63E */ LDR R0, [R5]
 /* 0803E640 */ LDR R1, [R6]
 /* 0803E642 */ ADDS R1, R4

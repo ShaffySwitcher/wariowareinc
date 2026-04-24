@@ -24,7 +24,7 @@ glabel func_0805B320
 /* 0805B340 */ STR R5, [SP, #4]
 /* 0805B342 */ STR R5, [SP, #8]
 /* 0805B344 */ MOVS R3, #0
-/* 0805B346 */ BL func_080EF50C
+/* 0805B346 */ BL sprite_set_anim
 /* 0805B34A */ STR R5, [R4, #0XC]
 /* 0805B34C */ STR R5, [R4, #0X10]
 /* 0805B34E */ LDRB R0, [R4, #0X19]

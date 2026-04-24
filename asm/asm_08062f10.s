@@ -30,7 +30,7 @@ glabel func_08062F10
 /* 08062F3E */ MOVS R2, #4
 /* 08062F40 */ LDRSH R1, [R6, R2]
 /* 08062F42 */ MOVS R2, #0
-/* 08062F44 */ BL func_080EF5C4
+/* 08062F44 */ BL sprite_set_enable_updates
 /* 08062F48 */ STR R4, [R6, #0X14]
 /* 08062F4A */ POP {R4, R5, R6}
 /* 08062F4C */ POP {R0}

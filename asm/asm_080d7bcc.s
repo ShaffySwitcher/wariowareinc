@@ -82,7 +82,7 @@ glabel func_080D7BCC
 /* 080D7C68 */ MOVS R2, #0X18
 /* 080D7C6A */ LDRSB R2, [R4, R2]
 /* 080D7C6C */ ADDS R3, R5, #0
-/* 080D7C6E */ BL func_080EF708
+/* 080D7C6E */ BL sprite_set_affine_params
 /* 080D7C72 */ LDR R0, [R7]
 /* 080D7C74 */ LDR R3, _080D7D4C
 /* 080D7C76 */ ADDS R0, R3

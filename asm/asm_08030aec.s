@@ -93,7 +93,7 @@ _08030B8C:
 /* 08030B92 */ MOVS R3, #0
 /* 08030B94 */ LDRSH R1, [R1, R3]
 /* 08030B96 */ MOVS R2, #1
-/* 08030B98 */ BL func_080EF5C4
+/* 08030B98 */ BL sprite_set_enable_updates
 /* 08030B9C */ MOVS R0, #2
 /* 08030B9E */ STRH R0, [R7]
 /* 08030BA0 */ ADDS R0, R4, #0

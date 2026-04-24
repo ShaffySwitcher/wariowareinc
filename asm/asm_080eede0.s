@@ -72,7 +72,7 @@ glabel func_080EEDE0
 /* 080EEE62 */ MOV R1, SL
 /* 080EEE64 */ STRH R1, [R4, #6]
 /* 080EEE66 */ MOV R0, R8
-/* 080EEE68 */ BL func_080EED9C
+/* 080EEE68 */ BL sprite_anim_get_cel_total
 /* 080EEE6C */ LSLS R0, R0, #0X18
 /* 080EEE6E */ MOVS R2, #0XFF
 /* 080EEE70 */ LSRS R0, R0, #0X13
@@ -107,7 +107,7 @@ glabel func_080EEDE0
 /* 080EEEAA */ MOVS R5, #0
 /* 080EEEAC */ STR R5, [R4, #0X1C]
 /* 080EEEAE */ MOV R0, R8
-/* 080EEEB0 */ BL func_080EEDC0
+/* 080EEEB0 */ BL sprite_get_anim_duration
 /* 080EEEB4 */ STRH R0, [R4, #0X24]
 /* 080EEEB6 */ LDR R0, _080EEEF4
 /* 080EEEB8 */ STR R0, [R4, #0X2C]
@@ -122,7 +122,7 @@ glabel func_080EEDE0
 /* 080EEECC */ ASRS R2, R2, #0X18
 /* 080EEECE */ ADDS R0, R6, #0
 /* 080EEED0 */ ADDS R1, R7, #0
-/* 080EEED2 */ BL func_080EE9B8
+/* 080EEED2 */ BL sprite_set_anim_cel
 /* 080EEED6 */ LDR R5, [SP, #0X14]
 /* 080EEED8 */ LSRS R1, R5, #0X1F
 /* 080EEEDA */ MOVS R0, #1

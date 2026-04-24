@@ -20,7 +20,7 @@ glabel func_0803191C
 /* 08031936 */ ADDS R0, R5, #0
 /* 08031938 */ MOVS R2, #0
 /* 0803193A */ MOVS R3, #0
-/* 0803193C */ BL func_080EF60C
+/* 0803193C */ BL sprite_set_callback
 /* 08031940 */ POP {R4, R5}
 /* 08031942 */ POP {R0}
 /* 08031944 */ BX R0

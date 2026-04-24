@@ -61,7 +61,7 @@ _0802AB50:
 /* 0802AB68 */ STR R6, [SP, #4]
 /* 0802AB6A */ STR R6, [SP, #8]
 /* 0802AB6C */ LDR R2, _0802AB88
-/* 0802AB6E */ BL func_080EF50C
+/* 0802AB6E */ BL sprite_set_anim
 /* 0802AB72 */ ADDS R4, #2
 /* 0802AB74 */ ADDS R5, #1
 /* 0802AB76 */ CMP R5, SB

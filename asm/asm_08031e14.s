@@ -59,7 +59,7 @@ _08031E5C:
 /* 08031E76 */ MOVS R4, #0
 /* 08031E78 */ LDRSH R1, [R1, R4]
 /* 08031E7A */ MOVS R2, #1
-/* 08031E7C */ BL func_080EF5C4
+/* 08031E7C */ BL sprite_set_enable_updates
 /* 08031E80 */ MOVS R0, #1
 /* 08031E82 */ MOVS R1, #2
 /* 08031E84 */ MOVS R2, #0X1E

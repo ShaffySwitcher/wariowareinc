@@ -55,7 +55,7 @@ _080BF6D2:
 /* 080BF6E4 */ STR R5, [SP, #4]
 /* 080BF6E6 */ STR R5, [SP, #8]
 /* 080BF6E8 */ ADDS R3, R4, #0
-/* 080BF6EA */ BL func_080EF50C
+/* 080BF6EA */ BL sprite_set_anim
 /* 080BF6EE */ LDR R0, [R6]
 /* 080BF6F0 */ LDR R0, [R0, #0X1C]
 /* 080BF6F2 */ CMP R4, R0

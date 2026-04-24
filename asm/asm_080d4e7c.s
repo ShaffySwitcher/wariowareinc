@@ -70,7 +70,7 @@ _080D4EE2:
 /* 080D4EE8 */ STR R3, [SP, #4]
 /* 080D4EEA */ STR R3, [SP, #8]
 /* 080D4EEC */ MOVS R3, #0
-/* 080D4EEE */ BL func_080EF50C
+/* 080D4EEE */ BL sprite_set_anim
 /* 080D4EF2 */ B _080D4F0A
 
 .balign 4, 0

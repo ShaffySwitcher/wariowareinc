@@ -387,7 +387,7 @@ _080EE094:
 /* 080EE12E */ LSLS R2, R2, #0X18
 /* 080EE130 */ ASRS R2, R2, #0X18
 /* 080EE132 */ ADDS R3, #0X82
-/* 080EE134 */ BL func_080EF708
+/* 080EE134 */ BL sprite_set_affine_params
 /* 080EE138 */ LDR R0, [R5]
 /* 080EE13A */ LDR R1, [R6]
 /* 080EE13C */ ADDS R1, #0X7E
@@ -606,7 +606,7 @@ _080EE254:
 /* 080EE27E */ LDRSB R2, [R7, R2]
 /* 080EE280 */ ADDS R4, #0XE0
 /* 080EE282 */ ADDS R3, R4, #0
-/* 080EE284 */ BL func_080EF708
+/* 080EE284 */ BL sprite_set_affine_params
 /* 080EE288 */ LDR R4, [R5]
 /* 080EE28A */ ADDS R7, R4, #0
 /* 080EE28C */ ADDS R7, #0XE8
@@ -640,7 +640,7 @@ _080EE254:
 /* 080EE2C8 */ LDRSB R2, [R7, R2]
 /* 080EE2CA */ ADDS R4, #0XEC
 /* 080EE2CC */ ADDS R3, R4, #0
-/* 080EE2CE */ BL func_080EF708
+/* 080EE2CE */ BL sprite_set_affine_params
 /* 080EE2D2 */ LDR R0, [R5]
 /* 080EE2D4 */ MOV R7, R8
 /* 080EE2D6 */ STRB R7, [R0, #0X18]

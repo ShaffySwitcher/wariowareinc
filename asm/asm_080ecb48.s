@@ -15,7 +15,7 @@ glabel func_080ECB48
 /* 080ECB56 */ MOVS R2, #0
 /* 080ECB58 */ LDRSH R1, [R1, R2]
 /* 080ECB5A */ MOVS R2, #0
-/* 080ECB5C */ BL func_080EF5C4
+/* 080ECB5C */ BL sprite_set_enable_updates
 /* 080ECB60 */ LDR R0, [R5]
 /* 080ECB62 */ ADDS R1, R0, #0
 /* 080ECB64 */ ADDS R1, #0XE8
@@ -23,7 +23,7 @@ glabel func_080ECB48
 /* 080ECB68 */ MOVS R2, #0
 /* 080ECB6A */ LDRSH R1, [R1, R2]
 /* 080ECB6C */ MOVS R2, #0
-/* 080ECB6E */ BL func_080EF5C4
+/* 080ECB6E */ BL sprite_set_enable_updates
 /* 080ECB72 */ POP {R4, R5}
 /* 080ECB74 */ POP {R0}
 /* 080ECB76 */ BX R0

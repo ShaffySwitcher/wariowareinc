@@ -80,7 +80,7 @@ _080358E0:
 /* 08035932 */ MOVS R2, #0
 /* 08035934 */ LDRSH R1, [R6, R2]
 /* 08035936 */ MOVS R2, #1
-/* 08035938 */ BL func_080EF5C4
+/* 08035938 */ BL sprite_set_enable_updates
 /* 0803593C */ LDRB R0, [R4]
 /* 0803593E */ ADDS R0, #1
 /* 08035940 */ STRB R0, [R4]

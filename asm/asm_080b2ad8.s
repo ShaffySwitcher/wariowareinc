@@ -97,14 +97,14 @@ _080B2B74:
 /* 080B2B7E */ MOVS R2, #0X10
 /* 080B2B80 */ LDRSH R1, [R1, R2]
 /* 080B2B82 */ MOVS R2, #1
-/* 080B2B84 */ BL func_080EF5C4
+/* 080B2B84 */ BL sprite_set_enable_updates
 /* 080B2B88 */ LDR R0, [R4]
 /* 080B2B8A */ LDR R1, [R5]
 /* 080B2B8C */ ADDS R1, #0X70
 /* 080B2B8E */ MOVS R2, #0
 /* 080B2B90 */ LDRSH R1, [R1, R2]
 /* 080B2B92 */ MOVS R2, #1
-/* 080B2B94 */ BL func_080EF5C4
+/* 080B2B94 */ BL sprite_set_enable_updates
 /* 080B2B98 */ LDR R1, [R5]
 /* 080B2B9A */ MOVS R0, #3
 _080B2B9C:

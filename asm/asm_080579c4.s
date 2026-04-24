@@ -115,7 +115,7 @@ _08057A5A:
 /* 08057A94 */ MOVS R2, #0
 /* 08057A96 */ LDRSH R1, [R5, R2]
 /* 08057A98 */ MOVS R2, #1
-/* 08057A9A */ BL func_080EE9B8
+/* 08057A9A */ BL sprite_set_anim_cel
 /* 08057A9E */ LDR R0, [R7]
 /* 08057AA0 */ MOVS R3, #0
 /* 08057AA2 */ LDRSH R1, [R5, R3]
@@ -136,7 +136,7 @@ _08057A5A:
 /* 08057AC4 */ STR R2, [SP, #8]
 /* 08057AC6 */ LDR R2, _08057B1C
 /* 08057AC8 */ MOVS R3, #0
-/* 08057ACA */ BL func_080EF50C
+/* 08057ACA */ BL sprite_set_anim
 /* 08057ACE */ MOVS R0, #0X32
 /* 08057AD0 */ BL get_random_range
 /* 08057AD4 */ ADDS R4, R0, #0

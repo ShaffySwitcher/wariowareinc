@@ -20,13 +20,13 @@ glabel func_0809C9E8
 /* 0809CA02 */ MOVS R2, #0
 /* 0809CA04 */ LDRSH R1, [R1, R2]
 /* 0809CA06 */ MOVS R2, #1
-/* 0809CA08 */ BL func_080EF5C4
+/* 0809CA08 */ BL sprite_set_enable_updates
 /* 0809CA0C */ LDR R0, [R5]
 /* 0809CA0E */ LDR R1, [R4]
 /* 0809CA10 */ MOVS R2, #0X12
 /* 0809CA12 */ LDRSH R1, [R1, R2]
 /* 0809CA14 */ MOVS R2, #1
-/* 0809CA16 */ BL func_080EF5C4
+/* 0809CA16 */ BL sprite_set_enable_updates
 /* 0809CA1A */ MOVS R0, #2
 /* 0809CA1C */ BL func_0800BF20
 /* 0809CA20 */ MOVS R0, #3

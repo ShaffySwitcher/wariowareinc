@@ -35,7 +35,7 @@ _0804207E:
 /* 08042086 */ MOVS R2, #0
 /* 08042088 */ LDRSH R1, [R1, R2]
 /* 0804208A */ MOVS R2, #1
-/* 0804208C */ BL func_080EF5C4
+/* 0804208C */ BL sprite_set_enable_updates
 /* 08042090 */ BL func_08041F8C
 /* 08042094 */ MOVS R2, #0
 _08042096:

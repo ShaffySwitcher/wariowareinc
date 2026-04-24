@@ -51,14 +51,14 @@ glabel func_080C3BD8
 /* 080C3C32 */ MOVS R2, #0
 /* 080C3C34 */ LDRSH R1, [R4, R2]
 /* 080C3C36 */ MOVS R2, #0
-/* 080C3C38 */ BL func_080EE9B8
+/* 080C3C38 */ BL sprite_set_anim_cel
 /* 080C3C3C */ LDR R0, [R5]
 /* 080C3C3E */ MOVS R2, #0
 /* 080C3C40 */ LDRSH R1, [R4, R2]
 /* 080C3C42 */ MOVS R2, #0
 /* 080C3C44 */ STR R2, [SP]
 /* 080C3C46 */ MOVS R3, #0
-/* 080C3C48 */ BL func_080EF644
+/* 080C3C48 */ BL sprite_set_playback
 _080C3C4C:
 /* 080C3C4C */ ADD SP, #4
 /* 080C3C4E */ POP {R4, R5}

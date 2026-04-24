@@ -38,7 +38,7 @@ _080E4EF6:
 /* 080E4F0E */ STR R4, [SP, #4]
 /* 080E4F10 */ STR R4, [SP, #8]
 /* 080E4F12 */ MOVS R3, #0
-/* 080E4F14 */ BL func_080EF50C
+/* 080E4F14 */ BL sprite_set_anim
 /* 080E4F18 */ B _080E4F34
 
 .balign 4, 0

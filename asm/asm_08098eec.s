@@ -39,7 +39,7 @@ _08098F22:
 /* 08098F28 */ LDRSH R1, [R4, R2]
 /* 08098F2A */ MOVS R2, #0XF
 /* 08098F2C */ LDRSB R2, [R4, R2]
-/* 08098F2E */ BL func_080EE9B8
+/* 08098F2E */ BL sprite_set_anim_cel
 _08098F32:
 /* 08098F32 */ POP {R4, R5}
 /* 08098F34 */ POP {R0}

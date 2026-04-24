@@ -139,7 +139,7 @@ glabel func_080CD968
 /* 080CDA80 */ MOVS R2, #0
 /* 080CDA82 */ LDRSH R1, [R7, R2]
 /* 080CDA84 */ MOVS R2, #1
-/* 080CDA86 */ BL func_080EF5C4
+/* 080CDA86 */ BL sprite_set_enable_updates
 /* 080CDA8A */ LDR R0, [R6]
 /* 080CDA8C */ MOV R2, SL
 /* 080CDA8E */ LDR R1, [R2, #0X18]

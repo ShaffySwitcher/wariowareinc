@@ -116,7 +116,7 @@ _080888E0:
 /* 080888E6 */ STR R3, [SP, #4]
 /* 080888E8 */ STR R3, [SP, #8]
 /* 080888EA */ MOVS R3, #0
-/* 080888EC */ BL func_080EF50C
+/* 080888EC */ BL sprite_set_anim
 /* 080888F0 */ MOV R0, R8
 /* 080888F2 */ STR R0, [R5, #0X30]
 /* 080888F4 */ STR R0, [R5, #0X34]

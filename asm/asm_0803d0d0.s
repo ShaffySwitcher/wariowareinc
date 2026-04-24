@@ -37,14 +37,14 @@ glabel func_0803D0D0
 /* 0803D10E */ STR R0, [SP, #8]
 /* 0803D110 */ ADDS R0, R5, #0
 /* 0803D112 */ MOVS R3, #0
-/* 0803D114 */ BL func_080EF50C
+/* 0803D114 */ BL sprite_set_anim
 /* 0803D118 */ LDR R0, [R4]
 /* 0803D11A */ ADDS R0, #0XEC
 /* 0803D11C */ MOVS R2, #0
 /* 0803D11E */ LDRSH R1, [R0, R2]
 /* 0803D120 */ ADDS R0, R5, #0
 /* 0803D122 */ MOVS R2, #1
-/* 0803D124 */ BL func_080EF5C4
+/* 0803D124 */ BL sprite_set_enable_updates
 /* 0803D128 */ LDR R3, [R4]
 /* 0803D12A */ ADDS R0, R3, #0
 /* 0803D12C */ ADDS R0, #0XEC
@@ -52,7 +52,7 @@ glabel func_0803D0D0
 /* 0803D130 */ LDRSH R1, [R0, R2]
 /* 0803D132 */ LDR R2, =func_0803D078 + 1
 /* 0803D134 */ ADDS R0, R5, #0
-/* 0803D136 */ BL func_080EF60C
+/* 0803D136 */ BL sprite_set_callback
 /* 0803D13A */ ADD SP, #0XC
 /* 0803D13C */ POP {R4, R5}
 /* 0803D13E */ POP {R0}

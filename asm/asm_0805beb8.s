@@ -30,7 +30,7 @@ glabel func_0805BEB8
 /* 0805BEE8 */ MOVS R3, #2
 /* 0805BEEA */ STR R3, [SP, #8]
 /* 0805BEEC */ MOVS R3, #0
-/* 0805BEEE */ BL func_080EF50C
+/* 0805BEEE */ BL sprite_set_anim
 /* 0805BEF2 */ LDR R0, _0805BF64
 /* 0805BEF4 */ BL play_sound
 /* 0805BEF8 */ LDR R0, [R4]
@@ -68,7 +68,7 @@ _0805BF30:
 /* 0805BF34 */ STR R6, [SP, #8]
 /* 0805BF36 */ ADDS R0, R3, #0
 /* 0805BF38 */ MOVS R3, #0
-/* 0805BF3A */ BL func_080EF50C
+/* 0805BF3A */ BL sprite_set_anim
 _0805BF3E:
 /* 0805BF3E */ ADDS R5, #1
 /* 0805BF40 */ ADDS R4, #0X20

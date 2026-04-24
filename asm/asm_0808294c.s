@@ -31,13 +31,13 @@ _08082960:
 /* 0808297C */ MOVS R2, #0X16
 /* 0808297E */ LDRSH R1, [R1, R2]
 /* 08082980 */ MOVS R2, #1
-/* 08082982 */ BL func_080EE9B8
+/* 08082982 */ BL sprite_set_anim_cel
 /* 08082986 */ LDR R0, [R4]
 /* 08082988 */ LDR R1, [R5]
 /* 0808298A */ MOVS R2, #0X16
 /* 0808298C */ LDRSH R1, [R1, R2]
 /* 0808298E */ MOVS R2, #1
-/* 08082990 */ BL func_080EF5C4
+/* 08082990 */ BL sprite_set_enable_updates
 /* 08082994 */ MOVS R0, #1
 _08082996:
 /* 08082996 */ POP {R4, R5}

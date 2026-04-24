@@ -86,7 +86,7 @@ _08025A08:
 /* 08025A30 */ LDR R3, _08025A80
 /* 08025A32 */ STR R3, [SP, #8]
 /* 08025A34 */ MOVS R3, #0
-/* 08025A36 */ BL func_080EF50C
+/* 08025A36 */ BL sprite_set_anim
 /* 08025A3A */ LDR R0, [R5]
 /* 08025A3C */ MOVS R3, #0
 /* 08025A3E */ LDRSH R1, [R4, R3]
@@ -97,7 +97,7 @@ _08025A08:
 /* 08025A4A */ LDRSH R1, [R4, R2]
 /* 08025A4C */ LDR R2, =func_08025960 + 1
 /* 08025A4E */ ADDS R3, R7, #0
-/* 08025A50 */ BL func_080EF60C
+/* 08025A50 */ BL sprite_set_callback
 /* 08025A54 */ LDR R0, [R5]
 /* 08025A56 */ MOVS R3, #0
 /* 08025A58 */ LDRSH R1, [R4, R3]

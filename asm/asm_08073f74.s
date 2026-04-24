@@ -90,7 +90,7 @@ _0807400C:
 /* 08074010 */ MOVS R2, #0X24
 /* 08074012 */ LDRSH R1, [R1, R2]
 /* 08074014 */ MOVS R2, #1
-/* 08074016 */ BL func_080EF5C4
+/* 08074016 */ BL sprite_set_enable_updates
 /* 0807401A */ LDR R0, [R4]
 /* 0807401C */ MOV R2, SB
 /* 0807401E */ LDR R1, [R2]
@@ -98,7 +98,7 @@ _0807400C:
 /* 08074022 */ MOVS R2, #0
 /* 08074024 */ LDRSH R1, [R1, R2]
 /* 08074026 */ MOVS R2, #1
-/* 08074028 */ BL func_080EF5C4
+/* 08074028 */ BL sprite_set_enable_updates
 /* 0807402C */ MOV R1, SB
 /* 0807402E */ LDR R0, [R1]
 /* 08074030 */ LDR R2, _08074044

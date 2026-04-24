@@ -82,13 +82,13 @@ _0802D1EC:
 /* 0802D24C */ LDRSH R4, [R1, R7]
 /* 0802D24E */ ADDS R1, R4, #0
 /* 0802D250 */ MOVS R2, #0
-/* 0802D252 */ BL func_080EE9B8
+/* 0802D252 */ BL sprite_set_anim_cel
 /* 0802D256 */ MOV R1, R8
 /* 0802D258 */ LDR R0, [R1]
 /* 0802D25A */ LSLS R2, R5, #0X18
 /* 0802D25C */ ASRS R2, R2, #0X18
 /* 0802D25E */ ADDS R1, R4, #0
-/* 0802D260 */ BL func_080EF4D8
+/* 0802D260 */ BL sprite_set_base_palette
 /* 0802D264 */ MOV R2, R8
 /* 0802D266 */ LDR R0, [R2]
 /* 0802D268 */ ADDS R1, R4, #0

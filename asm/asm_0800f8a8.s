@@ -70,7 +70,7 @@ glabel func_0800F8A8
 /* 0800F92A */ LSLS R1, R1, #0X10
 /* 0800F92C */ ASRS R1, R1, #0X10
 /* 0800F92E */ MOVS R2, #5
-/* 0800F930 */ BL func_080EF4D8
+/* 0800F930 */ BL sprite_set_base_palette
 /* 0800F934 */ ADDS R4, R5
 /* 0800F936 */ MOVS R0, #0XAB
 /* 0800F938 */ LSLS R0, R0, #2

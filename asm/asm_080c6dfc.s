@@ -52,7 +52,7 @@ _080C6E30:
 /* 080C6E48 */ MOVS R3, #0
 /* 080C6E4A */ STR R3, [SP, #4]
 /* 080C6E4C */ STR R3, [SP, #8]
-/* 080C6E4E */ BL func_080EF50C
+/* 080C6E4E */ BL sprite_set_anim
 /* 080C6E52 */ LDR R0, [R4]
 /* 080C6E54 */ LDR R1, [R6]
 /* 080C6E56 */ MOVS R5, #0X18

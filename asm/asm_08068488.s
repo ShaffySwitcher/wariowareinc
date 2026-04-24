@@ -216,7 +216,7 @@ _080685A0:
 /* 080685FC */ LSLS R2, R2, #0X18
 /* 080685FE */ ASRS R2, R2, #0X18
 /* 08068600 */ ADDS R3, #0X60
-/* 08068602 */ BL func_080EF708
+/* 08068602 */ BL sprite_set_affine_params
 /* 08068606 */ LDR R0, [R5]
 /* 08068608 */ LDR R3, [R4]
 /* 0806860A */ ADDS R1, R3, #0

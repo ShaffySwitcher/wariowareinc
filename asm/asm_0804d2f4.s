@@ -23,7 +23,7 @@ glabel func_0804D2F4
 /* 0804D316 */ LDRSH R1, [R0, R2]
 /* 0804D318 */ ADDS R0, R5, #0
 /* 0804D31A */ MOVS R2, #0
-/* 0804D31C */ BL func_080EE9B8
+/* 0804D31C */ BL sprite_set_anim_cel
 /* 0804D320 */ POP {R4, R5}
 /* 0804D322 */ POP {R0}
 /* 0804D324 */ BX R0

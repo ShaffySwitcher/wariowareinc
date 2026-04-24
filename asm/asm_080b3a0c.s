@@ -155,7 +155,7 @@ _080B3AE6:
 /* 080B3AFC */ MOVS R2, #2
 /* 080B3AFE */ LDRSH R1, [R5, R2]
 /* 080B3B00 */ MOVS R2, #0
-/* 080B3B02 */ BL func_080EE9B8
+/* 080B3B02 */ BL sprite_set_anim_cel
 /* 080B3B06 */ LDR R0, [R4]
 /* 080B3B08 */ MOVS R2, #2
 /* 080B3B0A */ LDRSH R1, [R5, R2]

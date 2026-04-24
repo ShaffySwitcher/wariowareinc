@@ -54,7 +54,7 @@ _0801B0EA:
 /* 0801B134 */ LDR R0, [R5]
 /* 0801B136 */ ADDS R1, R4, #0
 /* 0801B138 */ MOVS R2, #0XC
-/* 0801B13A */ BL func_080EF4D8
+/* 0801B13A */ BL sprite_set_base_palette
 /* 0801B13E */ ADDS R6, #1
 /* 0801B140 */ CMP R6, #7
 /* 0801B142 */ BLS _0801B0EA

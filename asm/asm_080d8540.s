@@ -42,7 +42,7 @@ glabel func_080D8540
 _080D858A:
 /* 080D858A */ ADDS R0, R5, #0
 /* 080D858C */ ADDS R1, R4, #0
-/* 080D858E */ BL func_080EE9B8
+/* 080D858E */ BL sprite_set_anim_cel
 _080D8592:
 /* 080D8592 */ LDR R0, _080D85CC
 /* 080D8594 */ LDR R2, [R0]
@@ -64,7 +64,7 @@ _080D8592:
 /* 080D85B4 */ STR R4, [SP]
 /* 080D85B6 */ STR R4, [SP, #4]
 /* 080D85B8 */ STR R4, [SP, #8]
-/* 080D85BA */ BL func_080EF50C
+/* 080D85BA */ BL sprite_set_anim
 _080D85BE:
 /* 080D85BE */ ADD SP, #0XC
 /* 080D85C0 */ POP {R4, R5}

@@ -116,7 +116,7 @@ _080CBF6A:
 /* 080CBFBA */ LSLS R2, R2, #0X18
 /* 080CBFBC */ ASRS R2, R2, #0X18
 /* 080CBFBE */ ADDS R3, #0X90
-/* 080CBFC0 */ BL func_080EF708
+/* 080CBFC0 */ BL sprite_set_affine_params
 /* 080CBFC4 */ POP {R4, R5}
 /* 080CBFC6 */ POP {R0}
 /* 080CBFC8 */ BX R0

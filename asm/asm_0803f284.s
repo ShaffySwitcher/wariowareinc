@@ -25,7 +25,7 @@ glabel func_0803F284
 /* 0803F2A8 */ ASRS R2, R2, #0X18
 /* 0803F2AA */ ADDS R0, R5, #0
 /* 0803F2AC */ ADDS R1, R4, #0
-/* 0803F2AE */ BL func_080EE9B8
+/* 0803F2AE */ BL sprite_set_anim_cel
 /* 0803F2B2 */ POP {R4, R5}
 /* 0803F2B4 */ POP {R0}
 /* 0803F2B6 */ BX R0

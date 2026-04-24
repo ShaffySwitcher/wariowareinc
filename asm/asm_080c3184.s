@@ -144,7 +144,7 @@ _080C325E:
 /* 080C328E */ LDRSB R2, [R0, R2]
 /* 080C3290 */ MOV R0, R8
 /* 080C3292 */ ADDS R1, R6, #0
-/* 080C3294 */ BL func_080EE9B8
+/* 080C3294 */ BL sprite_set_anim_cel
 /* 080C3298 */ MOV R1, SL
 /* 080C329A */ LDR R0, [R1]
 /* 080C329C */ MOV R3, SB
@@ -303,7 +303,7 @@ _080C3394:
 /* 080C33C0 */ LDRSB R2, [R0, R2]
 /* 080C33C2 */ ADDS R0, R6, #0
 /* 080C33C4 */ ADDS R1, R5, #0
-/* 080C33C6 */ BL func_080EE9B8
+/* 080C33C6 */ BL sprite_set_anim_cel
 /* 080C33CA */ MOV R3, SB
 /* 080C33CC */ LDR R0, [R3]
 /* 080C33CE */ MOV R1, R8

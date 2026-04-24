@@ -187,7 +187,7 @@ _080C2DAC:
 /* 080C2DE2 */ STR R1, [R0]
 /* 080C2DE4 */ LDR R0, [R5]
 /* 080C2DE6 */ MOVS R2, #8
-/* 080C2DE8 */ BL func_080EF4D8
+/* 080C2DE8 */ BL sprite_set_base_palette
 /* 080C2DEC */ ADDS R7, #1
 /* 080C2DEE */ MOV SL, R7
 _080C2DF0:
@@ -253,7 +253,7 @@ _080C2E1C:
 /* 080C2E56 */ STR R1, [R0]
 /* 080C2E58 */ LDR R0, [R5]
 /* 080C2E5A */ MOVS R2, #8
-/* 080C2E5C */ BL func_080EF4D8
+/* 080C2E5C */ BL sprite_set_base_palette
 /* 080C2E60 */ ADDS R7, #1
 /* 080C2E62 */ MOV SL, R7
 /* 080C2E64 */ B _080C2F3C

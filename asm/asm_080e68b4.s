@@ -134,7 +134,7 @@ _080E6972:
 /* 080E69A0 */ MOVS R2, #0X14
 /* 080E69A2 */ LDRSB R2, [R3, R2]
 /* 080E69A4 */ ADDS R3, #0X16
-/* 080E69A6 */ BL func_080EF708
+/* 080E69A6 */ BL sprite_set_affine_params
 /* 080E69AA */ LDR R0, [R4]
 /* 080E69AC */ LDR R3, [R6]
 /* 080E69AE */ MOVS R2, #8

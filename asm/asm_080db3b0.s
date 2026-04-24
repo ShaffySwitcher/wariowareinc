@@ -148,7 +148,7 @@ _080DB45C:
 /* 080DB48C */ STR R3, [SP]
 /* 080DB48E */ STR R3, [SP, #4]
 /* 080DB490 */ STR R3, [SP, #8]
-/* 080DB492 */ BL func_080EF50C
+/* 080DB492 */ BL sprite_set_anim
 /* 080DB496 */ LDR R1, [R5]
 /* 080DB498 */ B _080DB57C
 
@@ -231,7 +231,7 @@ _080DB4D8:
 /* 080DB51E */ STR R3, [SP]
 /* 080DB520 */ STR R3, [SP, #4]
 /* 080DB522 */ STR R3, [SP, #8]
-/* 080DB524 */ BL func_080EF50C
+/* 080DB524 */ BL sprite_set_anim
 /* 080DB528 */ LDR R0, _080DB544
 /* 080DB52A */ BL play_sound
 /* 080DB52E */ LDR R1, [R4]

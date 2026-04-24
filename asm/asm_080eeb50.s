@@ -39,7 +39,7 @@ _080EEB84:
 /* 080EEB8E */ ASRS R2, R2, #0X18
 /* 080EEB90 */ ADDS R0, R5, #0
 /* 080EEB92 */ ASRS R1, R6, #0X10
-/* 080EEB94 */ BL func_080EE9B8
+/* 080EEB94 */ BL sprite_set_anim_cel
 /* 080EEB98 */ B _080EEBB2
 
 .balign 4, 0

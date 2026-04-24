@@ -83,7 +83,7 @@ _080C9B6A:
 /* 080C9B94 */ MOVS R2, #0
 /* 080C9B96 */ LDRSH R1, [R6, R2]
 /* 080C9B98 */ MOVS R2, #0
-/* 080C9B9A */ BL func_080EF5C4
+/* 080C9B9A */ BL sprite_set_enable_updates
 /* 080C9B9E */ LDR R0, [R4]
 /* 080C9BA0 */ MOVS R2, #0
 /* 080C9BA2 */ LDRSH R1, [R6, R2]

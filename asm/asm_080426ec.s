@@ -65,7 +65,7 @@ _0804272C:
 /* 08042748 */ MOVS R7, #0
 /* 0804274A */ LDRSH R1, [R1, R7]
 /* 0804274C */ MOVS R2, #1
-/* 0804274E */ BL func_080EE9B8
+/* 0804274E */ BL sprite_set_anim_cel
 /* 08042752 */ LDR R0, _08042790
 /* 08042754 */ BL play_sound
 _08042758:
@@ -139,7 +139,7 @@ _08042794:
 /* 080427D6 */ MOVS R7, #0
 /* 080427D8 */ LDRSH R1, [R1, R7]
 /* 080427DA */ MOVS R2, #2
-/* 080427DC */ BL func_080EE9B8
+/* 080427DC */ BL sprite_set_anim_cel
 /* 080427E0 */ LDR R1, [R4]
 /* 080427E2 */ ADDS R1, #0X96
 /* 080427E4 */ B _08042A08
@@ -206,7 +206,7 @@ _0804282E:
 /* 0804285A */ MOVS R2, #0
 /* 0804285C */ LDRSH R1, [R1, R2]
 /* 0804285E */ MOVS R2, #5
-/* 08042860 */ BL func_080EE9B8
+/* 08042860 */ BL sprite_set_anim_cel
 /* 08042864 */ B _080428AC
 
 .balign 4, 0
@@ -227,7 +227,7 @@ _08042870:
 /* 0804287E */ MOVS R7, #0
 /* 08042880 */ LDRSH R1, [R1, R7]
 /* 08042882 */ MOVS R2, #4
-/* 08042884 */ BL func_080EE9B8
+/* 08042884 */ BL sprite_set_anim_cel
 /* 08042888 */ B _080428AC
 
 .balign 4, 0
@@ -248,7 +248,7 @@ _08042894:
 /* 080428A2 */ MOVS R2, #0
 /* 080428A4 */ LDRSH R1, [R1, R2]
 /* 080428A6 */ MOVS R2, #3
-/* 080428A8 */ BL func_080EE9B8
+/* 080428A8 */ BL sprite_set_anim_cel
 _080428AC:
 /* 080428AC */ BL func_08042B0C
 /* 080428B0 */ LSLS R0, R0, #0X18
@@ -264,7 +264,7 @@ _080428B8:
 /* 080428C2 */ MOVS R7, #0
 /* 080428C4 */ LDRSH R1, [R1, R7]
 /* 080428C6 */ MOVS R2, #6
-/* 080428C8 */ BL func_080EE9B8
+/* 080428C8 */ BL sprite_set_anim_cel
 /* 080428CC */ LDR R2, [R4]
 /* 080428CE */ LDR R0, _080428F0
 /* 080428D0 */ LDR R1, _080428F4
@@ -312,7 +312,7 @@ _08042906:
 /* 08042910 */ MOVS R2, #0
 /* 08042912 */ LDRSH R1, [R1, R2]
 /* 08042914 */ MOVS R2, #7
-/* 08042916 */ BL func_080EE9B8
+/* 08042916 */ BL sprite_set_anim_cel
 /* 0804291A */ LDR R0, _08042984
 /* 0804291C */ LDRH R0, [R0]
 /* 0804291E */ BL set_random_seed

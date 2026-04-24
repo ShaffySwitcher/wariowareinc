@@ -27,7 +27,7 @@ glabel func_0801CA94
 /* 0801CABC */ ASRS R2, R2, #0X18
 /* 0801CABE */ ADDS R0, R5, #0
 /* 0801CAC0 */ ADDS R1, R4, #0
-/* 0801CAC2 */ BL func_080EE9B8
+/* 0801CAC2 */ BL sprite_set_anim_cel
 /* 0801CAC6 */ POP {R4, R5}
 /* 0801CAC8 */ POP {R0}
 /* 0801CACA */ BX R0

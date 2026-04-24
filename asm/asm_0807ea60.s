@@ -64,7 +64,7 @@ _0807EAAC:
 /* 0807EAC6 */ STR R4, [SP]
 /* 0807EAC8 */ MOVS R2, #1
 /* 0807EACA */ MOVS R3, #3
-/* 0807EACC */ BL func_080EF644
+/* 0807EACC */ BL sprite_set_playback
 /* 0807EAD0 */ LDR R0, _0807EAE8
 /* 0807EAD2 */ BL play_sound
 /* 0807EAD6 */ LDR R1, [R6]

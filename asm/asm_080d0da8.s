@@ -22,7 +22,7 @@ glabel func_080D0DA8
 /* 080D0DC4 */ STR R3, [SP, #4]
 /* 080D0DC6 */ STR R3, [SP, #8]
 /* 080D0DC8 */ ADDS R0, R4, #0
-/* 080D0DCA */ BL func_080EF50C
+/* 080D0DCA */ BL sprite_set_anim
 /* 080D0DCE */ ADD SP, #0XC
 /* 080D0DD0 */ POP {R4}
 /* 080D0DD2 */ POP {R0}

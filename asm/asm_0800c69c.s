@@ -18,7 +18,7 @@ glabel func_0800C69C
 /* 0800C6B0 */ MOVS R2, #0
 /* 0800C6B2 */ LDRSH R1, [R1, R2]
 /* 0800C6B4 */ MOVS R2, #7
-/* 0800C6B6 */ BL func_080EF784
+/* 0800C6B6 */ BL sprite_get_data
 /* 0800C6BA */ ADDS R5, R0, #0
 /* 0800C6BC */ LDR R0, [R4]
 /* 0800C6BE */ LDR R1, [R6, #0XC]

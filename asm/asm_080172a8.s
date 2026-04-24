@@ -107,7 +107,7 @@ _0801730E:
 /* 08017360 */ LDR R0, [R5]
 /* 08017362 */ ADDS R1, R4, #0
 /* 08017364 */ MOVS R2, #0XA
-/* 08017366 */ BL func_080EF4D8
+/* 08017366 */ BL sprite_set_base_palette
 /* 0801736A */ LDR R0, [R5]
 /* 0801736C */ LDR R2, =D_083ADBBC
 /* 0801736E */ LDR R3, [R6]

@@ -91,7 +91,7 @@ glabel func_0800BA78
 /* 0800BB2A */ MOVS R2, #0
 /* 0800BB2C */ LDRSB R2, [R4, R2]
 /* 0800BB2E */ ADD R3, R8
-/* 0800BB30 */ BL func_080EF708
+/* 0800BB30 */ BL sprite_set_affine_params
 /* 0800BB34 */ MOV R7, SL
 /* 0800BB36 */ LDR R0, [R7]
 /* 0800BB38 */ LDR R1, [R5]

@@ -29,7 +29,7 @@ _080C041A:
 _080C0430:
 /* 080C0430 */ ADDS R0, R4, #0
 /* 080C0432 */ ADDS R1, R3, #0
-/* 080C0434 */ BL func_080EF4D8
+/* 080C0434 */ BL sprite_set_base_palette
 /* 080C0438 */ ADDS R6, #0XC
 /* 080C043A */ ADDS R5, #1
 /* 080C043C */ LDR R0, [R7]

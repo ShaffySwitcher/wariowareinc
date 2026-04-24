@@ -29,7 +29,7 @@ _0804E4F8:
 /* 0804E504 */ STR R3, [SP, #4]
 /* 0804E506 */ MOVS R3, #0
 /* 0804E508 */ STR R3, [SP, #8]
-/* 0804E50A */ BL func_080EF50C
+/* 0804E50A */ BL sprite_set_anim
 /* 0804E50E */ LDR R0, [R4]
 /* 0804E510 */ LDR R1, _0804E538
 /* 0804E512 */ LDR R1, [R1]

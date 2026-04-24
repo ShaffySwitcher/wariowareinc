@@ -111,7 +111,7 @@ _080AF4CC:
 _080AF4CE:
 /* 080AF4CE */ ADDS R0, R3, #0
 /* 080AF4D0 */ ADDS R1, R4, #0
-/* 080AF4D2 */ BL func_080EF4D8
+/* 080AF4D2 */ BL sprite_set_base_palette
 /* 080AF4D6 */ MOVS R0, #2
 /* 080AF4D8 */ ANDS R0, R7
 /* 080AF4DA */ MOVS R5, #1

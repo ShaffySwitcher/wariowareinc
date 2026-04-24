@@ -39,7 +39,7 @@ _080C4BCC:
 /* 080C4BF4 */ RSBS R2, R2, #0
 /* 080C4BF6 */ STR R5, [SP]
 /* 080C4BF8 */ MOVS R3, #0
-/* 080C4BFA */ BL func_080EF644
+/* 080C4BFA */ BL sprite_set_playback
 /* 080C4BFE */ LDR R1, [R6]
 /* 080C4C00 */ LDRB R0, [R1, #0X16]
 /* 080C4C02 */ ADDS R0, #1

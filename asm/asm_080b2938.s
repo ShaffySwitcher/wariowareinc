@@ -28,7 +28,7 @@ _080B2954:
 /* 080B2960 */ MOVS R2, #0
 /* 080B2962 */ LDRSH R1, [R1, R2]
 /* 080B2964 */ MOVS R2, #0
-/* 080B2966 */ BL func_080EF5C4
+/* 080B2966 */ BL sprite_set_enable_updates
 /* 080B296A */ LDR R0, [R5]
 /* 080B296C */ LDR R1, [R6]
 /* 080B296E */ ADDS R1, R4
@@ -66,7 +66,7 @@ _080B2990:
 /* 080B29A2 */ MOVS R2, #0
 /* 080B29A4 */ LDRSH R1, [R1, R2]
 /* 080B29A6 */ MOVS R2, #1
-/* 080B29A8 */ BL func_080EF5C4
+/* 080B29A8 */ BL sprite_set_enable_updates
 /* 080B29AC */ LDR R0, [R5]
 /* 080B29AE */ LDR R1, [R6]
 /* 080B29B0 */ MOVS R2, #0XD3
@@ -75,7 +75,7 @@ _080B2990:
 /* 080B29B6 */ MOVS R2, #0
 /* 080B29B8 */ LDRSH R1, [R1, R2]
 /* 080B29BA */ MOVS R2, #0
-/* 080B29BC */ BL func_080EE9B8
+/* 080B29BC */ BL sprite_set_anim_cel
 /* 080B29C0 */ MOVS R0, #1
 _080B29C2:
 /* 080B29C2 */ POP {R4, R5, R6, R7}

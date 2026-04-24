@@ -30,7 +30,7 @@ _08022E00:
 /* 08022E1C */ ASRS R2, R2, #0X18
 /* 08022E1E */ ADDS R0, R4, #0
 /* 08022E20 */ ADDS R1, R5, #0
-/* 08022E22 */ BL func_080EE9B8
+/* 08022E22 */ BL sprite_set_anim_cel
 /* 08022E26 */ ADDS R0, R6, #0
 /* 08022E28 */ MOVS R1, #0XA
 /* 08022E2A */ BL __divsi3

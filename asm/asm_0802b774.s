@@ -42,7 +42,7 @@ _0802B7A2:
 /* 0802B7AE */ LDRB R2, [R2, #0X1A]
 /* 0802B7B0 */ LSLS R2, R2, #0X18
 /* 0802B7B2 */ ASRS R2, R2, #0X18
-/* 0802B7B4 */ BL func_080EF4D8
+/* 0802B7B4 */ BL sprite_set_base_palette
 /* 0802B7B8 */ LDR R0, [R4]
 /* 0802B7BA */ LDR R1, [R5]
 /* 0802B7BC */ MOVS R2, #0XA

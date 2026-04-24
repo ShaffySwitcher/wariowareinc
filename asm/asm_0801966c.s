@@ -20,7 +20,7 @@ glabel func_0801966C
 /* 08019684 */ MOVS R3, #0
 /* 08019686 */ STR R3, [SP, #4]
 /* 08019688 */ STR R3, [SP, #8]
-/* 0801968A */ BL func_080EF50C
+/* 0801968A */ BL sprite_set_anim
 /* 0801968E */ ADD SP, #0XC
 /* 08019690 */ POP {R0}
 /* 08019692 */ BX R0

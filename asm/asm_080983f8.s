@@ -193,7 +193,7 @@ _08098520:
 /* 08098546 */ MOVS R6, #0XC
 /* 08098548 */ LDRSH R1, [R4, R6]
 /* 0809854A */ MOVS R2, #1
-/* 0809854C */ BL func_080EE9B8
+/* 0809854C */ BL sprite_set_anim_cel
 _08098550:
 /* 08098550 */ LDR R0, =gGameplayDataPtr
 /* 08098552 */ LDR R0, [R0]

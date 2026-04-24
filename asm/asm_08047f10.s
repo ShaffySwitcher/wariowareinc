@@ -49,7 +49,7 @@ _08047F38:
 /* 08047F5C */ STR R4, [SP, #4]
 /* 08047F5E */ STR R4, [SP, #8]
 /* 08047F60 */ MOVS R3, #0
-/* 08047F62 */ BL func_080EF50C
+/* 08047F62 */ BL sprite_set_anim
 /* 08047F66 */ MOVS R0, #1
 _08047F68:
 /* 08047F68 */ ADD SP, #0XC

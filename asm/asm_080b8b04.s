@@ -30,7 +30,7 @@ _080B8B1C:
 /* 080B8B2E */ STR R5, [SP, #8]
 /* 080B8B30 */ LDR R2, _080B8B94
 /* 080B8B32 */ MOVS R3, #0
-/* 080B8B34 */ BL func_080EF50C
+/* 080B8B34 */ BL sprite_set_anim
 /* 080B8B38 */ MOVS R0, #0X10
 /* 080B8B3A */ BL get_random_range
 /* 080B8B3E */ LSLS R0, R0, #0X10

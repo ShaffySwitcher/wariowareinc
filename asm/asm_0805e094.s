@@ -79,7 +79,7 @@ glabel func_0805E094
 /* 0805E12A */ MOVS R2, #0
 /* 0805E12C */ LDRSH R1, [R4, R2]
 /* 0805E12E */ MOVS R2, #0
-/* 0805E130 */ BL func_080EE9B8
+/* 0805E130 */ BL sprite_set_anim_cel
 /* 0805E134 */ LDR R0, [R5]
 /* 0805E136 */ MOVS R3, #0
 /* 0805E138 */ LDRSH R1, [R4, R3]

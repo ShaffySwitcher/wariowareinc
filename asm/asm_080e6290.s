@@ -123,7 +123,7 @@ _080E634A:
 /* 080E6370 */ MOVS R2, #0X38
 /* 080E6372 */ LDRSH R1, [R1, R2]
 /* 080E6374 */ MOVS R2, #1
-/* 080E6376 */ BL func_080EF5C4
+/* 080E6376 */ BL sprite_set_enable_updates
 _080E637A:
 /* 080E637A */ POP {R4, R5, R6}
 /* 080E637C */ POP {R0}

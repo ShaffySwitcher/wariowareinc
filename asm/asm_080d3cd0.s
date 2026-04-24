@@ -37,7 +37,7 @@ _080D3CF8:
 /* 080D3D04 */ STR R4, [SP, #4]
 /* 080D3D06 */ STR R4, [SP, #8]
 /* 080D3D08 */ MOVS R3, #0
-/* 080D3D0A */ BL func_080EF50C
+/* 080D3D0A */ BL sprite_set_anim
 /* 080D3D0E */ STRH R4, [R5, #0X20]
 /* 080D3D10 */ LDR R6, _080D3D30
 /* 080D3D12 */ LDR R0, [R6]

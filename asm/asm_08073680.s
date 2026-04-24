@@ -59,13 +59,13 @@ _080736DA:
 /* 080736E8 */ STR R2, [SP, #8]
 /* 080736EA */ ADDS R2, R3, #0
 /* 080736EC */ MOVS R3, #0
-/* 080736EE */ BL func_080EF50C
+/* 080736EE */ BL sprite_set_anim
 /* 080736F2 */ LDR R0, [R4]
 /* 080736F4 */ LDR R1, [R6]
 /* 080736F6 */ MOVS R7, #0
 /* 080736F8 */ LDRSH R1, [R1, R7]
 /* 080736FA */ MOVS R2, #0
-/* 080736FC */ BL func_080EF5C4
+/* 080736FC */ BL sprite_set_enable_updates
 /* 08073700 */ LDR R1, [R6]
 /* 08073702 */ STR R5, [R1, #0X18]
 /* 08073704 */ MOVS R0, #0XED

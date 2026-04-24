@@ -80,7 +80,7 @@ _080E6814:
 /* 080E6818 */ MOVS R3, #2
 /* 080E681A */ LDRSH R1, [R2, R3]
 /* 080E681C */ MOVS R2, #1
-/* 080E681E */ BL func_080EE9B8
+/* 080E681E */ BL sprite_set_anim_cel
 /* 080E6822 */ LDR R2, [R4]
 /* 080E6824 */ LDR R0, _080E68AC
 /* 080E6826 */ LDR R0, [R0]

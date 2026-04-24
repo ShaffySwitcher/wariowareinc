@@ -143,7 +143,7 @@ _0809FF28:
 /* 0809FF54 */ STR R3, [SP]
 /* 0809FF56 */ STR R3, [SP, #4]
 /* 0809FF58 */ STR R3, [SP, #8]
-/* 0809FF5A */ BL func_080EF50C
+/* 0809FF5A */ BL sprite_set_anim
 /* 0809FF5E */ LDR R0, [R4]
 /* 0809FF60 */ LDR R2, [R5]
 /* 0809FF62 */ ADDS R1, R2, #0
@@ -155,7 +155,7 @@ _0809FF28:
 /* 0809FF6E */ MOVS R3, #0
 /* 0809FF70 */ LDRSH R1, [R2, R3]
 /* 0809FF72 */ MOVS R2, #1
-/* 0809FF74 */ BL func_080EE9B8
+/* 0809FF74 */ BL sprite_set_anim_cel
 _0809FF78:
 /* 0809FF78 */ LDR R0, =gGameplayDataPtr
 /* 0809FF7A */ LDR R0, [R0]

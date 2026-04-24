@@ -114,7 +114,7 @@ _080A6C06:
 /* 080A6C2C */ STR R4, [SP, #4]
 /* 080A6C2E */ STR R4, [SP, #8]
 /* 080A6C30 */ MOVS R3, #0
-/* 080A6C32 */ BL func_080EF50C
+/* 080A6C32 */ BL sprite_set_anim
 /* 080A6C36 */ B _080A6C80
 
 .balign 4, 0
@@ -152,7 +152,7 @@ _080A6C52:
 /* 080A6C72 */ STR R4, [SP, #4]
 /* 080A6C74 */ STR R4, [SP, #8]
 /* 080A6C76 */ MOVS R3, #0
-/* 080A6C78 */ BL func_080EF50C
+/* 080A6C78 */ BL sprite_set_anim
 /* 080A6C7C */ STRB R4, [R5, #0X10]
 /* 080A6C7E */ STRB R4, [R5, #2]
 _080A6C80:

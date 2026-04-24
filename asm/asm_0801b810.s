@@ -70,7 +70,7 @@ _0801B83E:
 /* 0801B892 */ LSLS R3, R6, #3
 /* 0801B894 */ ADDS R3, #0X4C
 /* 0801B896 */ ADD R3, IP
-/* 0801B898 */ BL func_080EF708
+/* 0801B898 */ BL sprite_set_affine_params
 /* 0801B89C */ ADDS R5, #0X19
 /* 0801B89E */ ADDS R6, #1
 /* 0801B8A0 */ CMP R6, #3

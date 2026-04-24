@@ -35,7 +35,7 @@ _080590E0:
 /* 080590FA */ MOVS R2, #0
 /* 080590FC */ LDRSH R1, [R3, R2]
 /* 080590FE */ MOVS R2, #0
-/* 08059100 */ BL func_080EF5C4
+/* 08059100 */ BL sprite_set_enable_updates
 /* 08059104 */ ADDS R4, #1
 /* 08059106 */ LSLS R4, R4, #0X10
 /* 08059108 */ LSRS R2, R4, #0X10

@@ -29,7 +29,7 @@ glabel func_080BA728
 /* 080BA752 */ STR R4, [SP, #4]
 /* 080BA754 */ STR R4, [SP, #8]
 /* 080BA756 */ MOVS R3, #0
-/* 080BA758 */ BL func_080EF50C
+/* 080BA758 */ BL sprite_set_anim
 /* 080BA75C */ B _080BA7B2
 
 .balign 4, 0

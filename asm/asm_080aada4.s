@@ -42,7 +42,7 @@ _080AADDC:
 /* 080AADE6 */ LDRB R2, [R2, #8]
 /* 080AADE8 */ LSLS R2, R2, #0X18
 /* 080AADEA */ ASRS R2, R2, #0X18
-/* 080AADEC */ BL func_080EE9B8
+/* 080AADEC */ BL sprite_set_anim_cel
 _080AADF0:
 /* 080AADF0 */ POP {R4, R5, R6}
 /* 080AADF2 */ POP {R0}

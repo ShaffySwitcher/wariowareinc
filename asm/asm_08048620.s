@@ -137,7 +137,7 @@ glabel func_08048620
 /* 08048746 */ MOVS R3, #0
 /* 08048748 */ LDRSH R1, [R1, R3]
 /* 0804874A */ MOVS R2, #1
-/* 0804874C */ BL func_080EF4D8
+/* 0804874C */ BL sprite_set_base_palette
 /* 08048750 */ LDR R0, [R5]
 /* 08048752 */ LDR R1, [R6]
 /* 08048754 */ ADDS R1, #0X74

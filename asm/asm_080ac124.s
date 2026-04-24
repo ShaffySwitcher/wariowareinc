@@ -23,7 +23,7 @@ glabel func_080AC124
 /* 080AC142 */ MOVS R2, #0
 /* 080AC144 */ LDRSH R1, [R1, R2]
 /* 080AC146 */ MOVS R2, #4
-/* 080AC148 */ BL func_080EF784
+/* 080AC148 */ BL sprite_get_data
 /* 080AC14C */ STR R0, [SP, #0XC]
 /* 080AC14E */ LDR R0, [R4]
 /* 080AC150 */ LDR R1, [R6]
@@ -31,7 +31,7 @@ glabel func_080AC124
 /* 080AC154 */ MOVS R2, #0
 /* 080AC156 */ LDRSH R1, [R1, R2]
 /* 080AC158 */ MOVS R2, #5
-/* 080AC15A */ BL func_080EF784
+/* 080AC15A */ BL sprite_get_data
 /* 080AC15E */ MOV SL, R0
 /* 080AC160 */ MOVS R0, #0
 /* 080AC162 */ MOV R8, R4
@@ -64,14 +64,14 @@ _080AC17E:
 /* 080AC198 */ MOVS R2, #4
 /* 080AC19A */ STR R2, [SP, #8]
 /* 080AC19C */ ADDS R2, R5, #0
-/* 080AC19E */ BL func_080EF50C
+/* 080AC19E */ BL sprite_set_anim
 /* 080AC1A2 */ MOV R1, R8
 /* 080AC1A4 */ LDR R0, [R1]
 /* 080AC1A6 */ MOVS R2, #0
 /* 080AC1A8 */ LDRSH R1, [R7, R2]
 /* 080AC1AA */ LDR R2, _080AC210
 /* 080AC1AC */ ADDS R3, R7, #0
-/* 080AC1AE */ BL func_080EF60C
+/* 080AC1AE */ BL sprite_set_callback
 /* 080AC1B2 */ MOV R0, R8
 /* 080AC1B4 */ LDR R5, [R0]
 /* 080AC1B6 */ MOVS R1, #0

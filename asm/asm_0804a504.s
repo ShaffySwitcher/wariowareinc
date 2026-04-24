@@ -85,7 +85,7 @@ _0804A570:
 /* 0804A594 */ STR R3, [SP]
 /* 0804A596 */ STR R4, [SP, #4]
 /* 0804A598 */ STR R4, [SP, #8]
-/* 0804A59A */ BL func_080EF50C
+/* 0804A59A */ BL sprite_set_anim
 /* 0804A59E */ LDR R0, [R5]
 /* 0804A5A0 */ ADDS R0, #0X84
 /* 0804A5A2 */ STRH R4, [R0]

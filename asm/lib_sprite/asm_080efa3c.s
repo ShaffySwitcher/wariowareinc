@@ -7,7 +7,7 @@ thumb_func_start func_080EFA3C \n\
 /* 080EFA42 */ STR R3, [SP, #4] \n\
 /* 080EFA44 */ MOVS R2, #8 \n\
 /* 080EFA46 */ MOV R3, SP \n\
-/* 080EFA48 */ BL func_080EF8A4 \n\
+/* 080EFA48 */ BL sprite_id_set_data \n\
 /* 080EFA4C */ ADD SP, #8 \n\
 /* 080EFA4E */ POP {R0} \n\
 /* 080EFA50 */ BX R0 \n\

@@ -64,7 +64,7 @@ _0802CCE0:
 /* 0802CD0E */ STR R4, [SP, #4]
 /* 0802CD10 */ STR R4, [SP, #8]
 /* 0802CD12 */ MOVS R3, #0
-/* 0802CD14 */ BL func_080EF50C
+/* 0802CD14 */ BL sprite_set_anim
 /* 0802CD18 */ MOVS R0, #0X30
 /* 0802CD1A */ BL func_0800C9A4
 /* 0802CD1E */ MOVS R0, #0
@@ -108,7 +108,7 @@ _0802CD40:
 /* 0802CD54 */ STR R4, [SP, #4]
 /* 0802CD56 */ STR R4, [SP, #8]
 /* 0802CD58 */ MOVS R3, #0
-/* 0802CD5A */ BL func_080EF50C
+/* 0802CD5A */ BL sprite_set_anim
 /* 0802CD5E */ MOVS R0, #0X30
 /* 0802CD60 */ BL func_0800C9A4
 /* 0802CD64 */ MOVS R0, #1

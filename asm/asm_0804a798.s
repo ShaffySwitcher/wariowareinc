@@ -80,14 +80,14 @@ glabel func_0804A798
 /* 0804A83E */ MOVS R7, #0
 /* 0804A840 */ LDRSH R1, [R1, R7]
 /* 0804A842 */ LDR R2, _0804A970
-/* 0804A844 */ BL func_080EF60C
+/* 0804A844 */ BL sprite_set_callback
 /* 0804A848 */ LDR R0, [R4]
 /* 0804A84A */ LDR R1, [R5]
 /* 0804A84C */ ADDS R1, #0X5C
 /* 0804A84E */ MOVS R2, #0
 /* 0804A850 */ LDRSH R1, [R1, R2]
 /* 0804A852 */ MOVS R2, #1
-/* 0804A854 */ BL func_080EF5C4
+/* 0804A854 */ BL sprite_set_enable_updates
 /* 0804A858 */ LDR R0, [R4]
 /* 0804A85A */ LDR R1, _0804A974
 /* 0804A85C */ LDR R2, _0804A978
@@ -114,14 +114,14 @@ glabel func_0804A798
 /* 0804A888 */ MOVS R2, #0
 /* 0804A88A */ LDRSH R1, [R1, R2]
 /* 0804A88C */ LDR R2, _0804A97C
-/* 0804A88E */ BL func_080EF60C
+/* 0804A88E */ BL sprite_set_callback
 /* 0804A892 */ LDR R0, [R4]
 /* 0804A894 */ LDR R1, [R5]
 /* 0804A896 */ ADDS R1, #0X5E
 /* 0804A898 */ MOVS R7, #0
 /* 0804A89A */ LDRSH R1, [R1, R7]
 /* 0804A89C */ MOVS R2, #1
-/* 0804A89E */ BL func_080EF5C4
+/* 0804A89E */ BL sprite_set_enable_updates
 /* 0804A8A2 */ BL func_0804ABB8
 /* 0804A8A6 */ BL func_0804A988
 /* 0804A8AA */ LDR R6, [R5]

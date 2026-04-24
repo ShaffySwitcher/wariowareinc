@@ -428,7 +428,7 @@ _080E29C8:
 /* 080E2A2E */ MOVS R2, #0
 /* 080E2A30 */ LDRSH R1, [R1, R2]
 /* 080E2A32 */ MOVS R2, #3
-/* 080E2A34 */ BL func_080EF4D8
+/* 080E2A34 */ BL sprite_set_base_palette
 /* 080E2A38 */ ADDS R0, R6, #1
 /* 080E2A3A */ LSLS R0, R0, #0X18
 /* 080E2A3C */ LSRS R6, R0, #0X18

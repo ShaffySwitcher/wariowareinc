@@ -142,7 +142,7 @@ _0809DC8C:
 /* 0809DCE4 */ STR R3, [SP]
 /* 0809DCE6 */ STR R3, [SP, #4]
 /* 0809DCE8 */ STR R3, [SP, #8]
-/* 0809DCEA */ BL func_080EF50C
+/* 0809DCEA */ BL sprite_set_anim
 /* 0809DCEE */ MOVS R0, #8
 /* 0809DCF0 */ BL func_0809DBA0
 /* 0809DCF4 */ MOVS R0, #0X18

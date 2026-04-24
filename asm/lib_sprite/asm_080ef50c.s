@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080EF50C \n\
+thumb_func_start sprite_set_anim \n\
 /* 080EF50C */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080EF50E */ MOV R7, SL \n\
 /* 080EF510 */ MOV R6, SB \n\
@@ -40,7 +40,7 @@ thumb_func_start func_080EF50C \n\
 /* 080EF556 */ LDR R1, [R7, #8] \n\
 /* 080EF558 */ ADDS R4, R1, R0 \n\
 /* 080EF55A */ ADDS R0, R6, #0 \n\
-/* 080EF55C */ BL func_080EED9C \n\
+/* 080EF55C */ BL sprite_anim_get_cel_total \n\
 /* 080EF560 */ LSLS R0, R0, #0X18 \n\
 /* 080EF562 */ LSRS R0, R0, #0X13 \n\
 /* 080EF564 */ LDRH R2, [R4] \n\
@@ -50,7 +50,7 @@ thumb_func_start func_080EF50C \n\
 /* 080EF56C */ STRH R1, [R4] \n\
 /* 080EF56E */ STR R6, [R4, #8] \n\
 /* 080EF570 */ ADDS R0, R6, #0 \n\
-/* 080EF572 */ BL func_080EEDC0 \n\
+/* 080EF572 */ BL sprite_get_anim_duration \n\
 /* 080EF576 */ STRH R0, [R4, #0X24] \n\
 /* 080EF578 */ MOV R1, R8 \n\
 /* 080EF57A */ LSLS R0, R1, #0X18 \n\
@@ -75,7 +75,7 @@ thumb_func_start func_080EF50C \n\
 /* 080EF5A0 */ ADDS R0, R7, #0 \n\
 /* 080EF5A2 */ ADDS R1, R5, #0 \n\
 /* 080EF5A4 */ ADDS R2, R3, #0 \n\
-/* 080EF5A6 */ BL func_080EE9B8 \n\
+/* 080EF5A6 */ BL sprite_set_anim_cel \n\
 _080EF5AA: \n\
 /* 080EF5AA */ ADD SP, #4 \n\
 /* 080EF5AC */ POP {R3, R4, R5} \n\

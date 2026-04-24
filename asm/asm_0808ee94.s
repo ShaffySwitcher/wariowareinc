@@ -53,7 +53,7 @@ _0808EECA:
 /* 0808EEE4 */ MOVS R3, #0
 /* 0808EEE6 */ STR R3, [SP, #4]
 /* 0808EEE8 */ STR R3, [SP, #8]
-/* 0808EEEA */ BL func_080EF50C
+/* 0808EEEA */ BL sprite_set_anim
 /* 0808EEEE */ ADDS R0, R4, #0
 /* 0808EEF0 */ ADDS R1, R5, #0
 /* 0808EEF2 */ BL func_0808ED78

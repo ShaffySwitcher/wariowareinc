@@ -162,7 +162,7 @@ _08035F0C:
 /* 08035F3C */ STR R4, [SP, #4]
 /* 08035F3E */ STR R3, [SP, #8]
 /* 08035F40 */ MOVS R3, #1
-/* 08035F42 */ BL func_080EF50C
+/* 08035F42 */ BL sprite_set_anim
 /* 08035F46 */ LDR R0, =D_083FCBFC
 /* 08035F48 */ BL play_sound
 /* 08035F4C */ STRB R4, [R5]

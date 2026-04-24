@@ -64,7 +64,7 @@ _080585D8:
 /* 080585E2 */ MOVS R2, #0
 /* 080585E4 */ LDRSH R1, [R1, R2]
 /* 080585E6 */ MOVS R2, #0
-/* 080585E8 */ BL func_080EF5C4
+/* 080585E8 */ BL sprite_set_enable_updates
 /* 080585EC */ LDR R1, [R4]
 /* 080585EE */ ADDS R1, #0X38
 /* 080585F0 */ LDRB R0, [R1]

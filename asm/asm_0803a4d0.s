@@ -30,7 +30,7 @@ glabel func_0803A4D0
 /* 0803A4FC */ STR R4, [SP, #4]
 /* 0803A4FE */ STR R4, [SP, #8]
 /* 0803A500 */ MOVS R3, #0
-/* 0803A502 */ BL func_080EF50C
+/* 0803A502 */ BL sprite_set_anim
 /* 0803A506 */ MOV R1, R8
 /* 0803A508 */ LDR R0, [R1]
 /* 0803A50A */ MOV R2, SB

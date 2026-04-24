@@ -149,7 +149,7 @@ _0806F2AC:
 /* 0806F2CE */ MOVS R2, #0
 /* 0806F2D0 */ LDRSH R1, [R1, R2]
 /* 0806F2D2 */ MOVS R2, #0
-/* 0806F2D4 */ BL func_080EE9B8
+/* 0806F2D4 */ BL sprite_set_anim_cel
 /* 0806F2D8 */ BL func_0806EE40
 /* 0806F2DC */ B _0806F360
 
@@ -179,7 +179,7 @@ _0806F2E8:
 /* 0806F30A */ MOVS R2, #0
 /* 0806F30C */ LDRSH R1, [R1, R2]
 /* 0806F30E */ MOVS R2, #1
-/* 0806F310 */ BL func_080EE9B8
+/* 0806F310 */ BL sprite_set_anim_cel
 /* 0806F314 */ BL func_0806EE88
 /* 0806F318 */ B _0806F360
 

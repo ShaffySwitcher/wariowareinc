@@ -89,7 +89,7 @@ _080822FC:
 /* 08082336 */ MOVS R2, #0
 /* 08082338 */ LDRSH R1, [R4, R2]
 /* 0808233A */ MOVS R2, #0
-/* 0808233C */ BL func_080EE9B8
+/* 0808233C */ BL sprite_set_anim_cel
 /* 08082340 */ LDR R0, [R6]
 /* 08082342 */ MOVS R2, #0
 /* 08082344 */ LDRSH R1, [R4, R2]

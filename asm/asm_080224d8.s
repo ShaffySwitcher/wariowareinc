@@ -30,7 +30,7 @@ glabel func_080224D8
 /* 08022504 */ STR R3, [SP, #4]
 /* 08022506 */ MOVS R3, #0
 /* 08022508 */ STR R3, [SP, #8]
-/* 0802250A */ BL func_080EF50C
+/* 0802250A */ BL sprite_set_anim
 _0802250E:
 /* 0802250E */ ADD SP, #0XC
 /* 08022510 */ POP {R0}

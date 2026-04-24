@@ -96,7 +96,7 @@ _08058EAA:
 /* 08058ECE */ STR R4, [SP, #4]
 /* 08058ED0 */ STR R4, [SP, #8]
 /* 08058ED2 */ MOVS R3, #0
-/* 08058ED4 */ BL func_080EF50C
+/* 08058ED4 */ BL sprite_set_anim
 /* 08058ED8 */ LDR R0, [R5]
 /* 08058EDA */ STRB R4, [R0, #0X18]
 /* 08058EDC */ B _08058FA4

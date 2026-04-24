@@ -22,7 +22,7 @@ glabel func_0800E78C
 /* 0800E7A8 */ MOVS R3, #0
 /* 0800E7AA */ STR R3, [SP, #4]
 /* 0800E7AC */ STR R3, [SP, #8]
-/* 0800E7AE */ BL func_080EF50C
+/* 0800E7AE */ BL sprite_set_anim
 /* 0800E7B2 */ ADD SP, #0XC
 /* 0800E7B4 */ POP {R0}
 /* 0800E7B6 */ BX R0

@@ -152,7 +152,7 @@ _080EAB12:
 /* 080EAB54 */ MOVS R2, #0XC
 /* 080EAB56 */ LDRSB R2, [R3, R2]
 /* 080EAB58 */ ADDS R3, #0X10
-/* 080EAB5A */ BL func_080EF708
+/* 080EAB5A */ BL sprite_set_affine_params
 /* 080EAB5E */ POP {R4, R5, R6, R7}
 /* 080EAB60 */ POP {R0}
 /* 080EAB62 */ BX R0

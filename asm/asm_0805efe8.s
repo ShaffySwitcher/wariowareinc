@@ -50,7 +50,7 @@ glabel func_0805EFE8
 /* 0805F042 */ STR R3, [SP, #4]
 /* 0805F044 */ MOVS R3, #0
 /* 0805F046 */ STR R3, [SP, #8]
-/* 0805F048 */ BL func_080EF50C
+/* 0805F048 */ BL sprite_set_anim
 /* 0805F04C */ LDR R0, [R4]
 /* 0805F04E */ LDR R1, [R5]
 /* 0805F050 */ MOVS R2, #0X12

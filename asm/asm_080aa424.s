@@ -51,7 +51,7 @@ glabel func_080AA424
 /* 080AA484 */ LDR R0, [R6]
 /* 080AA486 */ ADDS R1, R5, #0
 /* 080AA488 */ MOVS R2, #0
-/* 080AA48A */ BL func_080EE9B8
+/* 080AA48A */ BL sprite_set_anim_cel
 /* 080AA48E */ MOVS R0, #0XD
 /* 080AA490 */ BL func_0800C77C
 /* 080AA494 */ LDR R0, _080AA4CC

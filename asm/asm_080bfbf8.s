@@ -13,7 +13,7 @@ glabel func_080BFBF8
 /* 080BFC02 */ MOVS R2, #0X10
 /* 080BFC04 */ LDRSH R1, [R1, R2]
 /* 080BFC06 */ MOVS R2, #9
-/* 080BFC08 */ BL func_080EF784
+/* 080BFC08 */ BL sprite_get_data
 /* 080BFC0C */ ADDS R4, R0, #0
 /* 080BFC0E */ LDR R3, [R6]
 /* 080BFC10 */ ADDS R0, R3, #0

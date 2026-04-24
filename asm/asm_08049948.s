@@ -168,7 +168,7 @@ _08049A50:
 /* 08049A52 */ STR R4, [SP, #4]
 /* 08049A54 */ STR R4, [SP, #8]
 /* 08049A56 */ MOVS R3, #0
-/* 08049A58 */ BL func_080EF50C
+/* 08049A58 */ BL sprite_set_anim
 /* 08049A5C */ B _08049B14
 
 .balign 4, 0

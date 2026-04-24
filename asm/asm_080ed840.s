@@ -54,7 +54,7 @@ glabel func_080ED840
 /* 080ED8A0 */ LSLS R4, R4, #0X18
 /* 080ED8A2 */ ASRS R4, R4, #0X18
 /* 080ED8A4 */ ADDS R2, R4, #0
-/* 080ED8A6 */ BL func_080EE9B8
+/* 080ED8A6 */ BL sprite_set_anim_cel
 /* 080ED8AA */ MOV R4, R8
 /* 080ED8AC */ LDR R0, [R4]
 /* 080ED8AE */ LDR R1, [R6]

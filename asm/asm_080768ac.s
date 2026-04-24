@@ -64,14 +64,14 @@ _080768EC:
 /* 0807691C */ MOVS R2, #0
 /* 0807691E */ LDRSH R1, [R1, R2]
 /* 08076920 */ MOVS R2, #0
-/* 08076922 */ BL func_080EE9B8
+/* 08076922 */ BL sprite_set_anim_cel
 /* 08076926 */ LDR R0, [R4]
 /* 08076928 */ LDR R1, [R5]
 /* 0807692A */ ADDS R1, #0X62
 /* 0807692C */ MOVS R3, #0
 /* 0807692E */ LDRSH R1, [R1, R3]
 /* 08076930 */ MOVS R2, #0
-/* 08076932 */ BL func_080EE9B8
+/* 08076932 */ BL sprite_set_anim_cel
 /* 08076936 */ BL func_08075FB4
 _0807693A:
 /* 0807693A */ ADDS R4, R6, #0

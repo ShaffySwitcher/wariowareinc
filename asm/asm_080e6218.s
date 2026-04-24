@@ -44,7 +44,7 @@ _080E6248:
 /* 080E625C */ ASRS R2, R2, #0X18
 /* 080E625E */ ADDS R0, R4, #0
 /* 080E6260 */ ADDS R1, R5, #0
-/* 080E6262 */ BL func_080EE9B8
+/* 080E6262 */ BL sprite_set_anim_cel
 /* 080E6266 */ ADDS R0, R6, #0
 /* 080E6268 */ MOVS R1, #0XA
 /* 080E626A */ BL __divsi3

@@ -149,7 +149,7 @@ glabel func_080D0088
 /* 080D01C2 */ MOVS R2, #0XA
 /* 080D01C4 */ LDRSH R1, [R1, R2]
 /* 080D01C6 */ MOV R2, R8
-/* 080D01C8 */ BL func_080EF4D8
+/* 080D01C8 */ BL sprite_set_base_palette
 /* 080D01CC */ LDR R0, [R6]
 /* 080D01CE */ LDR R1, =D_083991B0
 /* 080D01D0 */ MOV R2, SB

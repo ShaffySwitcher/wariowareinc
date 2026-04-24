@@ -30,7 +30,7 @@ _080C57C6:
 /* 080C57DA */ MOVS R2, #0
 /* 080C57DC */ LDRSH R1, [R1, R2]
 /* 080C57DE */ MOVS R2, #0
-/* 080C57E0 */ BL func_080EF5C4
+/* 080C57E0 */ BL sprite_set_enable_updates
 /* 080C57E4 */ ADDS R4, #1
 /* 080C57E6 */ LSLS R4, R4, #0X10
 /* 080C57E8 */ LSRS R2, R4, #0X10
@@ -53,7 +53,7 @@ _080C57FA:
 /* 080C5808 */ MOVS R3, #0
 /* 080C580A */ LDRSH R1, [R1, R3]
 /* 080C580C */ MOVS R2, #0
-/* 080C580E */ BL func_080EF5C4
+/* 080C580E */ BL sprite_set_enable_updates
 /* 080C5812 */ POP {R4, R5}
 /* 080C5814 */ POP {R0}
 /* 080C5816 */ BX R0

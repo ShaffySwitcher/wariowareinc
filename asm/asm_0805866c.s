@@ -36,7 +36,7 @@ _08058696:
 /* 080586A8 */ STR R4, [SP, #8]
 /* 080586AA */ ADDS R0, R6, #0
 /* 080586AC */ MOVS R3, #0
-/* 080586AE */ BL func_080EF50C
+/* 080586AE */ BL sprite_set_anim
 /* 080586B2 */ LDR R0, [R5]
 /* 080586B4 */ STRB R4, [R0, #0X10]
 /* 080586B6 */ ADD SP, #0XC

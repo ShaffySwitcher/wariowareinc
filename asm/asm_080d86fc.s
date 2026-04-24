@@ -29,7 +29,7 @@ glabel func_080D86FC
 /* 080D8726 */ STR R4, [SP]
 /* 080D8728 */ STR R4, [SP, #4]
 /* 080D872A */ STR R4, [SP, #8]
-/* 080D872C */ BL func_080EF50C
+/* 080D872C */ BL sprite_set_anim
 /* 080D8730 */ LDR R1, [R5]
 /* 080D8732 */ LDRB R0, [R1, #0XC]
 /* 080D8734 */ CMP R0, #2
@@ -79,7 +79,7 @@ _080D8754:
 /* 080D8778 */ STR R4, [SP]
 /* 080D877A */ STR R4, [SP, #4]
 /* 080D877C */ STR R4, [SP, #8]
-/* 080D877E */ BL func_080EF50C
+/* 080D877E */ BL sprite_set_anim
 /* 080D8782 */ LDR R1, [R5]
 /* 080D8784 */ LDRB R0, [R1, #0XC]
 /* 080D8786 */ CMP R0, #1

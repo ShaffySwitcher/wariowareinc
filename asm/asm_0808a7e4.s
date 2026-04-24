@@ -27,7 +27,7 @@ glabel func_0808A7E4
 /* 0808A80C */ LDRSH R1, [R1, R3]
 /* 0808A80E */ LSLS R2, R2, #0X18
 /* 0808A810 */ ASRS R2, R2, #0X18
-/* 0808A812 */ BL func_080EE9B8
+/* 0808A812 */ BL sprite_set_anim_cel
 /* 0808A816 */ LDR R4, [R6]
 /* 0808A818 */ ADDS R0, R4, #0
 /* 0808A81A */ ADDS R0, #0X42
@@ -45,7 +45,7 @@ glabel func_0808A7E4
 /* 0808A836 */ LDRSH R1, [R4, R3]
 /* 0808A838 */ LSLS R2, R2, #0X18
 /* 0808A83A */ ASRS R2, R2, #0X18
-/* 0808A83C */ BL func_080EE9B8
+/* 0808A83C */ BL sprite_set_anim_cel
 /* 0808A840 */ LDR R4, [R6]
 /* 0808A842 */ ADDS R0, R4, #0
 /* 0808A844 */ ADDS R0, #0X42
@@ -63,7 +63,7 @@ glabel func_0808A7E4
 /* 0808A860 */ LDRSH R1, [R4, R3]
 /* 0808A862 */ LSLS R2, R2, #0X18
 /* 0808A864 */ ASRS R2, R2, #0X18
-/* 0808A866 */ BL func_080EE9B8
+/* 0808A866 */ BL sprite_set_anim_cel
 /* 0808A86A */ LDR R4, [R6]
 /* 0808A86C */ ADDS R0, R4, #0
 /* 0808A86E */ ADDS R0, #0X42
@@ -77,7 +77,7 @@ glabel func_0808A7E4
 /* 0808A880 */ LDRSH R1, [R4, R3]
 /* 0808A882 */ LSLS R2, R2, #0X18
 /* 0808A884 */ ASRS R2, R2, #0X18
-/* 0808A886 */ BL func_080EE9B8
+/* 0808A886 */ BL sprite_set_anim_cel
 /* 0808A88A */ POP {R4, R5, R6}
 /* 0808A88C */ POP {R0}
 /* 0808A88E */ BX R0

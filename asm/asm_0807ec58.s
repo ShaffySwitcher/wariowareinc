@@ -63,7 +63,7 @@ _0807ECA0:
 /* 0807ECC4 */ MOVS R2, #0X26
 /* 0807ECC6 */ LDRSH R1, [R1, R2]
 /* 0807ECC8 */ MOVS R2, #4
-/* 0807ECCA */ BL func_080EF4D8
+/* 0807ECCA */ BL sprite_set_base_palette
 /* 0807ECCE */ LDR R0, _0807ED20
 /* 0807ECD0 */ BL play_sound
 /* 0807ECD4 */ MOVS R0, #0X18

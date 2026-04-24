@@ -66,7 +66,7 @@ _080AC076:
 /* 080AC0D4 */ STR R5, [SP, #8]
 /* 080AC0D6 */ LDR R2, _080AC0F0
 /* 080AC0D8 */ MOVS R3, #0
-/* 080AC0DA */ BL func_080EF50C
+/* 080AC0DA */ BL sprite_set_anim
 /* 080AC0DE */ B _080AC10A
 
 .balign 4, 0

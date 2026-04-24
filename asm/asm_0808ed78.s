@@ -18,7 +18,7 @@ glabel func_0808ED78
 /* 0808ED8C */ LDRB R2, [R2]
 /* 0808ED8E */ LSLS R2, R2, #0X18
 /* 0808ED90 */ ASRS R2, R2, #0X18
-/* 0808ED92 */ BL func_080EF4D8
+/* 0808ED92 */ BL sprite_set_base_palette
 /* 0808ED96 */ MOVS R1, #0
 /* 0808ED98 */ MOVS R0, #0
 /* 0808ED9A */ STRH R0, [R4, #0X16]

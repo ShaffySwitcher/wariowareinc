@@ -34,7 +34,7 @@ glabel func_080DFF54
 /* 080DFF88 */ STR R5, [SP]
 /* 080DFF8A */ STR R3, [SP, #4]
 /* 080DFF8C */ STR R3, [SP, #8]
-/* 080DFF8E */ BL func_080EF50C
+/* 080DFF8E */ BL sprite_set_anim
 /* 080DFF92 */ LDR R0, [R4]
 /* 080DFF94 */ LDR R1, _080DFFDC
 /* 080DFF96 */ LDR R4, [R6]

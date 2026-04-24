@@ -142,7 +142,7 @@ _080B953E:
 /* 080B9582 */ STR R5, [SP, #4]
 /* 080B9584 */ STR R5, [SP, #8]
 /* 080B9586 */ MOVS R3, #0
-/* 080B9588 */ BL func_080EF50C
+/* 080B9588 */ BL sprite_set_anim
 /* 080B958C */ LDR R0, [R6]
 /* 080B958E */ ADDS R0, #0X54
 /* 080B9590 */ STRB R4, [R0]

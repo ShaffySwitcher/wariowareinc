@@ -108,7 +108,7 @@ _080DB12A:
 /* 080DB13C */ STR R2, [SP]
 /* 080DB13E */ MOVS R2, #1
 /* 080DB140 */ MOVS R3, #0
-/* 080DB142 */ BL func_080EF644
+/* 080DB142 */ BL sprite_set_playback
 /* 080DB146 */ LDR R1, [R4]
 /* 080DB148 */ B _080DB2FC
 
@@ -293,14 +293,14 @@ _080DB278:
 /* 080DB28E */ STR R2, [SP]
 /* 080DB290 */ MOVS R2, #0
 /* 080DB292 */ MOVS R3, #0
-/* 080DB294 */ BL func_080EF644
+/* 080DB294 */ BL sprite_set_playback
 /* 080DB298 */ LDR R0, [R5]
 /* 080DB29A */ LDR R1, [R4]
 /* 080DB29C */ ADDS R1, #0XB6
 /* 080DB29E */ MOVS R2, #0
 /* 080DB2A0 */ LDRSH R1, [R1, R2]
 /* 080DB2A2 */ MOVS R2, #0
-/* 080DB2A4 */ BL func_080EE9B8
+/* 080DB2A4 */ BL sprite_set_anim_cel
 /* 080DB2A8 */ LDR R1, [R4]
 /* 080DB2AA */ ADDS R1, #0XC3
 /* 080DB2AC */ LDRB R0, [R1]

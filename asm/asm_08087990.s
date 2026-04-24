@@ -32,7 +32,7 @@ _080879B6:
 /* 080879BC */ LDRSH R1, [R1, R2]
 /* 080879BE */ MOVS R2, #2
 /* 080879C0 */ RSBS R2, R2, #0
-/* 080879C2 */ BL func_080EF4D8
+/* 080879C2 */ BL sprite_set_base_palette
 /* 080879C6 */ B _080879DE
 
 .balign 4, 0
@@ -48,7 +48,7 @@ _080879D0:
 /* 080879D4 */ MOVS R2, #0
 /* 080879D6 */ LDRSH R1, [R1, R2]
 /* 080879D8 */ MOVS R2, #0
-/* 080879DA */ BL func_080EF4D8
+/* 080879DA */ BL sprite_set_base_palette
 _080879DE:
 /* 080879DE */ ADDS R0, R4, #1
 /* 080879E0 */ LSLS R0, R0, #0X18

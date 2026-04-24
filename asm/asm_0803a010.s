@@ -36,14 +36,14 @@ _0803A036:
 /* 0803A04C */ MOVS R2, #0
 /* 0803A04E */ LDRSH R1, [R1, R2]
 /* 0803A050 */ MOVS R2, #0
-/* 0803A052 */ BL func_080EF5C4
+/* 0803A052 */ BL sprite_set_enable_updates
 /* 0803A056 */ LDR R0, [R4]
 /* 0803A058 */ LDR R1, [R5]
 /* 0803A05A */ ADDS R1, #0X62
 /* 0803A05C */ MOVS R2, #0
 /* 0803A05E */ LDRSH R1, [R1, R2]
 /* 0803A060 */ MOVS R2, #0
-/* 0803A062 */ BL func_080EF5C4
+/* 0803A062 */ BL sprite_set_enable_updates
 _0803A066:
 /* 0803A066 */ POP {R4, R5}
 /* 0803A068 */ POP {R0}

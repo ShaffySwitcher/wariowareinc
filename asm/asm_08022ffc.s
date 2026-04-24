@@ -74,7 +74,7 @@ _0802303C:
 /* 0802307A */ MOVS R3, #0XA
 /* 0802307C */ LDRSH R1, [R1, R3]
 /* 0802307E */ MOVS R2, #2
-/* 08023080 */ BL func_080EE9B8
+/* 08023080 */ BL sprite_set_anim_cel
 /* 08023084 */ B _08023114
 
 .balign 4, 0
@@ -136,7 +136,7 @@ _080230C8:
 /* 080230F0 */ MOVS R3, #0XA
 /* 080230F2 */ LDRSH R1, [R1, R3]
 /* 080230F4 */ MOVS R2, #1
-/* 080230F6 */ BL func_080EE9B8
+/* 080230F6 */ BL sprite_set_anim_cel
 /* 080230FA */ LDR R1, [R4]
 /* 080230FC */ MOVS R0, #0X63
 /* 080230FE */ STRB R0, [R1, #0X1B]

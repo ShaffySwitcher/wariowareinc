@@ -98,7 +98,7 @@ _080C6796:
 /* 080C681E */ MOVS R2, #0
 /* 080C6820 */ LDRSH R1, [R1, R2]
 /* 080C6822 */ MOVS R2, #0
-/* 080C6824 */ BL func_080EE9B8
+/* 080C6824 */ BL sprite_set_anim_cel
 /* 080C6828 */ LDR R0, [R4]
 /* 080C682A */ MOV R3, R8
 /* 080C682C */ LDR R1, [R3]

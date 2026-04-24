@@ -20,7 +20,7 @@ glabel func_080D757C
 /* 080D7596 */ MOVS R2, #0
 /* 080D7598 */ LDRSH R1, [R4, R2]
 /* 080D759A */ MOVS R2, #0
-/* 080D759C */ BL func_080EF4D8
+/* 080D759C */ BL sprite_set_base_palette
 /* 080D75A0 */ POP {R4, R5}
 /* 080D75A2 */ POP {R0}
 /* 080D75A4 */ BX R0

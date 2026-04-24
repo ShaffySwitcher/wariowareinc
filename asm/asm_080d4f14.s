@@ -44,7 +44,7 @@ _080D4F36:
 /* 080D4F54 */ STR R3, [SP, #4]
 /* 080D4F56 */ MOVS R3, #0
 /* 080D4F58 */ STR R3, [SP, #8]
-/* 080D4F5A */ BL func_080EF50C
+/* 080D4F5A */ BL sprite_set_anim
 /* 080D4F5E */ ADD SP, #0XC
 /* 080D4F60 */ POP {R4}
 /* 080D4F62 */ POP {R0}

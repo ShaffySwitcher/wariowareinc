@@ -113,12 +113,12 @@ _08062236:
 /* 0806223C */ LDRSH R1, [R6, R2]
 /* 0806223E */ LSLS R2, R7, #0X18
 /* 08062240 */ ASRS R2, R2, #0X18
-/* 08062242 */ BL func_080EE9B8
+/* 08062242 */ BL sprite_set_anim_cel
 /* 08062246 */ LDR R0, [R4]
 /* 08062248 */ MOVS R2, #4
 /* 0806224A */ LDRSH R1, [R6, R2]
 /* 0806224C */ MOV R2, R8
-/* 0806224E */ BL func_080EE9B8
+/* 0806224E */ BL sprite_set_anim_cel
 /* 08062252 */ POP {R3}
 /* 08062254 */ MOV R8, R3
 /* 08062256 */ POP {R4, R5, R6, R7}

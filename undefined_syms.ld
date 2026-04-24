@@ -38,6 +38,5 @@ D_083A3D94 = 0x083A3D94;
 D_083A4B58 = 0x083A4B58;
 D_083A4BCC = 0x083A4BCC;
 
-song_header_table = 0x08402990;
 sound_player_count = 0x0840642C;
 sound_player_table = 0x08406430;

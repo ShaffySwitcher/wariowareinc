@@ -35,7 +35,7 @@ glabel func_0802D030
 /* 0802D068 */ LDR R0, [R7]
 /* 0802D06A */ ADDS R1, R5, #0
 /* 0802D06C */ MOVS R2, #0
-/* 0802D06E */ BL func_080EE9B8
+/* 0802D06E */ BL sprite_set_anim_cel
 /* 0802D072 */ LDR R0, =D_083FDEA8
 /* 0802D074 */ BL play_sound
 _0802D078:

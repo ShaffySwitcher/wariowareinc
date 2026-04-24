@@ -34,7 +34,7 @@ _0803FF0A:
 /* 0803FF14 */ MOVS R2, #0
 /* 0803FF16 */ LDRSH R1, [R4, R2]
 /* 0803FF18 */ MOVS R2, #1
-/* 0803FF1A */ BL func_080EE9B8
+/* 0803FF1A */ BL sprite_set_anim_cel
 /* 0803FF1E */ LDR R0, [R5]
 /* 0803FF20 */ MOVS R3, #0
 /* 0803FF22 */ LDRSH R1, [R4, R3]
@@ -42,7 +42,7 @@ _0803FF0A:
 /* 0803FF26 */ STR R5, [SP]
 /* 0803FF28 */ MOVS R2, #1
 /* 0803FF2A */ MOVS R3, #0X7F
-/* 0803FF2C */ BL func_080EF644
+/* 0803FF2C */ BL sprite_set_playback
 /* 0803FF30 */ STRH R5, [R4, #2]
 /* 0803FF32 */ ADD SP, #4
 /* 0803FF34 */ POP {R4, R5}

@@ -166,7 +166,7 @@ _08054F9C:
 /* 08054FBC */ STR R3, [SP]
 /* 08054FBE */ STR R3, [SP, #4]
 /* 08054FC0 */ STR R3, [SP, #8]
-/* 08054FC2 */ BL func_080EF50C
+/* 08054FC2 */ BL sprite_set_anim
 _08054FC6:
 /* 08054FC6 */ ADD SP, #0XC
 /* 08054FC8 */ POP {R4, R5, R6}

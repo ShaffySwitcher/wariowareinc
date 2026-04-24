@@ -30,14 +30,14 @@ glabel func_080A2B8C
 /* 080A2BBA */ STR R4, [SP, #8]
 /* 080A2BBC */ ADDS R0, R6, #0
 /* 080A2BBE */ MOVS R3, #0
-/* 080A2BC0 */ BL func_080EF50C
+/* 080A2BC0 */ BL sprite_set_anim
 /* 080A2BC4 */ LDR R0, [R5]
 /* 080A2BC6 */ MOVS R2, #0
 /* 080A2BC8 */ LDRSH R1, [R0, R2]
 /* 080A2BCA */ ADDS R0, R6, #0
 /* 080A2BCC */ MOVS R2, #0
 /* 080A2BCE */ MOVS R3, #0
-/* 080A2BD0 */ BL func_080EF60C
+/* 080A2BD0 */ BL sprite_set_callback
 /* 080A2BD4 */ LDR R0, [R5]
 /* 080A2BD6 */ STRB R4, [R0, #2]
 /* 080A2BD8 */ ADD SP, #0XC

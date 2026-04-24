@@ -53,7 +53,7 @@ _0801D4FA:
 /* 0801D520 */ STR R6, [SP, #4]
 /* 0801D522 */ STR R6, [SP, #8]
 /* 0801D524 */ ADDS R1, R5, #0
-/* 0801D526 */ BL func_080EF50C
+/* 0801D526 */ BL sprite_set_anim
 /* 0801D52A */ LDR R7, _0801D560
 /* 0801D52C */ LDR R0, [R7]
 /* 0801D52E */ LSLS R3, R4, #3

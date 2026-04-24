@@ -86,7 +86,7 @@ _080A4718:
 /* 080A4782 */ ASRS R2, R2, #0X18
 /* 080A4784 */ ADDS R0, R4, #0
 /* 080A4786 */ ADDS R1, R5, #0
-/* 080A4788 */ BL func_080EE9B8
+/* 080A4788 */ BL sprite_set_anim_cel
 /* 080A478C */ B _080A47B6
 
 .balign 4, 0
@@ -111,7 +111,7 @@ _080A479C:
 /* 080A47AC */ ASRS R2, R2, #0X18
 /* 080A47AE */ ADDS R0, R4, #0
 /* 080A47B0 */ ADDS R1, R5, #0
-/* 080A47B2 */ BL func_080EE9B8
+/* 080A47B2 */ BL sprite_set_anim_cel
 _080A47B6:
 /* 080A47B6 */ LDR R1, [R6, #8]
 /* 080A47B8 */ MOVS R0, #0XA0

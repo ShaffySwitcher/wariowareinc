@@ -39,7 +39,7 @@ _080D910E:
 /* 080D9126 */ LDR R0, [R0]
 /* 080D9128 */ MOVS R3, #0X14
 /* 080D912A */ LDRSH R1, [R5, R3]
-/* 080D912C */ BL func_080EE9B8
+/* 080D912C */ BL sprite_set_anim_cel
 /* 080D9130 */ LDR R0, =D_083FD480
 /* 080D9132 */ BL play_sound
 _080D9136:

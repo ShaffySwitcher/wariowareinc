@@ -72,7 +72,7 @@ glabel func_0806EB88
 /* 0806EC0E */ MOVS R3, #0
 /* 0806EC10 */ LDRSH R1, [R1, R3]
 /* 0806EC12 */ MOVS R2, #2
-/* 0806EC14 */ BL func_080EE9B8
+/* 0806EC14 */ BL sprite_set_anim_cel
 _0806EC18:
 /* 0806EC18 */ CMP R6, #2
 /* 0806EC1A */ BNE _0806EC2A

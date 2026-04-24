@@ -56,7 +56,7 @@ _0805B090:
 /* 0805B0BA */ MOVS R2, #0
 /* 0805B0BC */ LDRSH R1, [R4, R2]
 /* 0805B0BE */ MOVS R2, #3
-/* 0805B0C0 */ BL func_080EE9B8
+/* 0805B0C0 */ BL sprite_set_anim_cel
 /* 0805B0C4 */ B _0805B15A
 
 .balign 4, 0

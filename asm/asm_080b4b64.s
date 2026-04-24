@@ -54,7 +54,7 @@ glabel func_080B4B64
 /* 080B4BC2 */ STR R5, [SP, #4]
 /* 080B4BC4 */ STR R5, [SP, #8]
 /* 080B4BC6 */ MOVS R3, #0
-/* 080B4BC8 */ BL func_080EF50C
+/* 080B4BC8 */ BL sprite_set_anim
 /* 080B4BCC */ MOVS R0, #0X24
 /* 080B4BCE */ BL func_0800C9A4
 /* 080B4BD2 */ MOVS R0, #1

@@ -95,7 +95,7 @@ _080D301A:
 /* 080D303C */ STR R7, [SP, #8]
 _080D303E:
 /* 080D303E */ MOVS R3, #0
-/* 080D3040 */ BL func_080EF50C
+/* 080D3040 */ BL sprite_set_anim
 /* 080D3044 */ B _080D313E
 
 .balign 4, 0

@@ -29,7 +29,7 @@ _0809E4F6:
 /* 0809E502 */ STR R4, [SP, #8]
 /* 0809E504 */ ADDS R0, R5, #0
 /* 0809E506 */ MOVS R3, #0
-/* 0809E508 */ BL func_080EF50C
+/* 0809E508 */ BL sprite_set_anim
 /* 0809E50C */ LDR R0, [R6]
 /* 0809E50E */ STR R4, [R0, #0X18]
 /* 0809E510 */ LDR R0, [R0, #0X14]

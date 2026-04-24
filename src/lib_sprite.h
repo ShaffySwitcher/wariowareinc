@@ -24,12 +24,11 @@ enum SpriteHandlerOperations {
     /* 17 */ SPRITE_OPERATION_SET_BASE_PALETTE,
     /* 18 */ SPRITE_OPERATION_SET_ANIM,
     /* 19 */ SPRITE_OPERATION_SET_ENABLE_UPDATES,
-    /* 20 */ SPRITE_OPERATION_SET_PAUSED,
-    /* 21 */ SPRITE_OPERATION_SET_CALLBACK,
-    /* 22 */ SPRITE_OPERATION_SET_PLAYBACK,
-    /* 23 */ SPRITE_OPERATION_SET_ORIGIN,
-    /* 24 */ SPRITE_OPERATION_SET_AFFINE,
-    /* 25 */ SPRITE_OPERATION_GET_DATA,
+    /* 20 */ SPRITE_OPERATION_SET_CALLBACK,
+    /* 21 */ SPRITE_OPERATION_SET_PLAYBACK,
+    /* 22 */ SPRITE_OPERATION_SET_ORIGIN,
+    /* 23 */ SPRITE_OPERATION_SET_AFFINE,
+    /* 24 */ SPRITE_OPERATION_GET_DATA,
 };
 
 enum SpritePlaybackType {
@@ -58,24 +57,17 @@ enum SpriteDataRequest {
     /* 05 */ SPRITE_DATA_Y_POS,
     /* 06 */ SPRITE_DATA_Z_DEPTH,
     /* 07 */ SPRITE_DATA_ANIMATION,
-    /* 08 */ SPRITE_DATA_CURRENT_CEL_TIME_LEFT,
-    /* 09 */ SPRITE_DATA_CURRENT_CEL,
+    /* 08 */ SPRITE_DATA_UNKC,
+    /* 09 */ SPRITE_DATA_UNKD,
     /* 10 */ SPRITE_DATA_CEL_INC,
     /* 11 */ SPRITE_DATA_LOOP_CEL,
     /* 12 */ SPRITE_DATA_ATTRS10,
     /* 13 */ SPRITE_DATA_BASE_TILE,
     /* 14 */ SPRITE_DATA_CALLBACK_FUNC,
     /* 15 */ SPRITE_DATA_CALLBACK_ARG,
-    /* 16 */ SPRITE_DATA_MEM_ID,
+    /* 16 */ SPRITE_DATA_UNK30,
     /* 17 */ SPRITE_DATA_ORIGIN_X,
-    /* 18 */ SPRITE_DATA_ORIGIN_Y,
-    /* 19 */ SPRITE_DATA_ANIM_SPEED,
-    /* 20 */ SPRITE_DATA_DIMENSION_LEFT,
-    /* 21 */ SPRITE_DATA_DIMENSION_RIGHT,
-    /* 22 */ SPRITE_DATA_DIMENSION_TOP,
-    /* 23 */ SPRITE_DATA_DIMENSION_BOTTOM,
-    /* 24 */ SPRITE_DATA_DIMENSION_WIDTH,
-    /* 25 */ SPRITE_DATA_DIMENSION_HEIGHT,
+    /* 18 */ SPRITE_DATA_ORIGIN_Y
 };
 
 enum SpriteValueSetRequest {
@@ -85,11 +77,9 @@ enum SpriteValueSetRequest {
     /* 03 */ SPRITE_ACT_SET_ATTR,
     /* 04 */ SPRITE_ACT_ORR_ATTR,
     /* 05 */ SPRITE_ACT_AND_ATTR,
-    /* 06 */ SPRITE_ACT_BIC_ATTR,
-    /* 07 */ SPRITE_ACT_SET_BASE_TILE,
-    /* 08 */ SPRITE_ACT_SET_BASE_PALETTE,
-    /* 09 */ SPRITE_ACT_SET_ORIGIN_XY,
-    /* 10 */ SPRITE_ACT_SET_ANIM_SPEED,
+    /* 06 */ SPRITE_ACT_SET_BASE_TILE,
+    /* 07 */ SPRITE_ACT_SET_BASE_PALETTE,
+    /* 08 */ SPRITE_ACT_SET_ORIGIN_XY,
 };
 
 struct OamCel {
@@ -115,33 +105,34 @@ struct struct_0804cb88 {
 
 struct SpriteHandler;
 struct Sprite {
-    u16 visible:1;      // Visibility Flag
+    u16 visible:1; // Visibility Flag
     u16 playbackType:4; // Animation Playback Type
-    u16 celTotal:8;     // Total Animation Frames
-    u16 update:1;       // Update Flag
-    u16 allocated:1;    // Allocation Flag
-    u16 paused:1;       // Pause Flag
-    s16 xPos;           // X Position
-    s16 yPos;           // Y Position
-    u16 zDepth;         // Z-Depth (the "Layer", where lower z-depths are rendered on top of higher ones)
+    u16 celTotal:8; // Total Animation Frames
+    u16 update:1; // Update Flag
+    u16 allocated:1; // Allocation Flag
+    u16 paused:1; // Pause Flag
+    s16 xPos; // X Position
+    s16 yPos; // Y Position
+    u16 zDepth; // Z-Depth (the "Layer", where lower z-depths are rendered on top of higher ones)
     struct Animation *animation; // Animation
-    s8 currentCel;      // Current Animation Cel
-    s8 celInc;          // Animation Direction { 1, 0, -1 }
-    s8 loopCel;         // Animation Loop Start Point
-    u32 oamAttributes;  // Attributes 1 & 0 (in a weird format..?)
-    s16 baseTile;       // Base Tile Offset
-    u8 basePalette;     // Base Palette Offset
-    s8 callbackCel;     // Animation Cel Which Triggers the Callback Function
-    s16 zLinkPrev;      // ID of Sprite with Next-Lowest Z Value
-    s16 zLinkNext;      // ID of Sprite with Next-Highest Z Value
-    s8_8 currentCelTime; // Time Left for Current Animation Cel
+    u8 unkC;
+    s8 unkD;
+    s8 celInc; // Animation Direction { 1, 0, -1 }
+    s8 loopCel; // Animation Loop Start Point
+    u32 oamAttributes; // Attributes 1 & 0 (in a weird format..?)
+    s16 baseTile; // Base Tile Offset
+    u8 basePalette; // Base Palette Offset
+    s8 callbackCel;
+    s16 unk18;
+    s16 unk1A;
     void (*callbackFunc)(struct SpriteHandler *, s16, u32, ...); // Callback Function
-    u32 callbackArg;    // Callback Argument
-    u16 totalDuration;  // Total Duration
-    u16 memID;          // Memory ID
-    s16 *xOrigin;       // World Origin X Offset
-    s16 *yOrigin;       // World Origin Y Offset
-    s16 *affineParams;  // Affine Parameters
+    u32 callbackArg; // Total Duration
+    u16 totalDuration; // Callback Argument
+    s8 unk26; // Time Left for Current Animation Cel
+    s16 *xOrigin; // World Origin X Offset
+    s16 *yOrigin; // World Origin Y Offset
+    u32 unk30;
+    s16 *affineParams; // Affine Parameters
 };
 
 struct SpriteHandler { // Size = 0x28
@@ -181,3 +172,7 @@ extern struct SpriteHandler D_03000BF0;
 extern u8 D_03000E70;
 
 extern struct SpriteHandler* gSpriteHandler;
+
+s8 sprite_anim_get_cel_total(struct Animation *);
+s16 sprite_get_anim_duration(struct Animation *);
+s32 sprite_is_invalid(void*, s16);

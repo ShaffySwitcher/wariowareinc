@@ -17,7 +17,7 @@ glabel func_0807EBAC
 /* 0807EBBE */ LDRSH R1, [R1, R3]
 /* 0807EBC0 */ LSLS R2, R2, #0X15
 /* 0807EBC2 */ ASRS R2, R2, #0X18
-/* 0807EBC4 */ BL func_080EE9B8
+/* 0807EBC4 */ BL sprite_set_anim_cel
 /* 0807EBC8 */ LDR R0, [R4]
 /* 0807EBCA */ LDR R2, [R5]
 /* 0807EBCC */ MOVS R3, #0X34

@@ -74,7 +74,7 @@ glabel func_080BF198
 /* 080BF232 */ MOVS R7, #4
 /* 080BF234 */ LDRSH R1, [R1, R7]
 /* 080BF236 */ MOVS R2, #1
-/* 080BF238 */ BL func_080EF5C4
+/* 080BF238 */ BL sprite_set_enable_updates
 /* 080BF23C */ LDR R0, [R4]
 /* 080BF23E */ LDR R1, _080BF2F4
 /* 080BF240 */ LDR R2, _080BF2F8

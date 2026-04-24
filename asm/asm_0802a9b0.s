@@ -159,7 +159,7 @@ _0802AAA4:
 /* 0802AACC */ MOVS R3, #0
 /* 0802AACE */ STR R3, [SP, #4]
 /* 0802AAD0 */ STR R3, [SP, #8]
-/* 0802AAD2 */ BL func_080EF50C
+/* 0802AAD2 */ BL sprite_set_anim
 _0802AAD6:
 /* 0802AAD6 */ ADD SP, #0XC
 /* 0802AAD8 */ POP {R4, R5, R6, R7}

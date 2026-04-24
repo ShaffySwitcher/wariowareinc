@@ -58,7 +58,7 @@ glabel func_0809DA54
 /* 0809DABC */ STR R6, [SP, #4]
 /* 0809DABE */ STR R6, [SP, #8]
 /* 0809DAC0 */ MOVS R3, #0
-/* 0809DAC2 */ BL func_080EF50C
+/* 0809DAC2 */ BL sprite_set_anim
 /* 0809DAC6 */ MOV R1, SL
 /* 0809DAC8 */ LDR R0, [R1]
 /* 0809DACA */ LDR R2, _0809DB08

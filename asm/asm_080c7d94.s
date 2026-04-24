@@ -30,7 +30,7 @@ glabel func_080C7D94
 /* 080C7DC0 */ STR R4, [SP, #4]
 /* 080C7DC2 */ STR R4, [SP, #8]
 /* 080C7DC4 */ MOVS R3, #0
-/* 080C7DC6 */ BL func_080EF50C
+/* 080C7DC6 */ BL sprite_set_anim
 _080C7DCA:
 /* 080C7DCA */ ADD SP, #0XC
 /* 080C7DCC */ POP {R4}

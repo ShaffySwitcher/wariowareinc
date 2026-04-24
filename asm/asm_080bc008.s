@@ -40,7 +40,7 @@ glabel func_080BC008
 /* 080BC04A */ STR R4, [SP, #8]
 /* 080BC04C */ ADDS R0, R7, #0
 /* 080BC04E */ MOVS R3, #0
-/* 080BC050 */ BL func_080EF50C
+/* 080BC050 */ BL sprite_set_anim
 /* 080BC054 */ MOV R2, R8
 /* 080BC056 */ MOVS R0, #0
 /* 080BC058 */ LDRSH R1, [R2, R0]
@@ -50,19 +50,19 @@ glabel func_080BC008
 /* 080BC060 */ STR R4, [SP, #8]
 /* 080BC062 */ ADDS R0, R7, #0
 /* 080BC064 */ MOVS R3, #0
-/* 080BC066 */ BL func_080EF50C
+/* 080BC066 */ BL sprite_set_anim
 /* 080BC06A */ MOV R2, SL
 /* 080BC06C */ MOVS R0, #0
 /* 080BC06E */ LDRSH R1, [R2, R0]
 /* 080BC070 */ ADDS R0, R7, #0
 /* 080BC072 */ MOVS R2, #1
-/* 080BC074 */ BL func_080EF5C4
+/* 080BC074 */ BL sprite_set_enable_updates
 /* 080BC078 */ MOV R2, R8
 /* 080BC07A */ MOVS R0, #0
 /* 080BC07C */ LDRSH R1, [R2, R0]
 /* 080BC07E */ ADDS R0, R7, #0
 /* 080BC080 */ MOVS R2, #1
-/* 080BC082 */ BL func_080EF5C4
+/* 080BC082 */ BL sprite_set_enable_updates
 /* 080BC086 */ MOVS R5, #0
 /* 080BC088 */ MOV R4, SB
 _080BC08A:

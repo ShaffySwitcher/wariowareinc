@@ -84,7 +84,7 @@ _0807C8A6:
 /* 0807C926 */ MOVS R2, #0
 /* 0807C928 */ LDRSH R1, [R1, R2]
 /* 0807C92A */ MOVS R2, #0
-/* 0807C92C */ BL func_080EE9B8
+/* 0807C92C */ BL sprite_set_anim_cel
 /* 0807C930 */ MOV R3, SB
 /* 0807C932 */ LDR R0, [R3]
 /* 0807C934 */ LDR R1, [R7]

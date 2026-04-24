@@ -49,7 +49,7 @@ _0807A6EC:
 /* 0807A6F4 */ ADDS R0, R5, #0
 /* 0807A6F6 */ ADDS R2, R4, #0
 /* 0807A6F8 */ MOVS R3, #0
-/* 0807A6FA */ BL func_080EF50C
+/* 0807A6FA */ BL sprite_set_anim
 /* 0807A6FE */ LDR R0, [R7]
 /* 0807A700 */ ADD R0, SB
 /* 0807A702 */ STR R6, [R0]
@@ -237,7 +237,7 @@ _0807A83A:
 /* 0807A85A */ RSBS R2, R3, #0
 /* 0807A85C */ ORRS R2, R3
 /* 0807A85E */ LSRS R2, R2, #0X1F
-/* 0807A860 */ BL func_080EE9B8
+/* 0807A860 */ BL sprite_set_anim_cel
 /* 0807A864 */ LDR R0, [R5]
 /* 0807A866 */ LDR R1, [R4]
 /* 0807A868 */ ADDS R1, R7

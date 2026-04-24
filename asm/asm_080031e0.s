@@ -35,7 +35,7 @@ glabel func_080031E0
 /* 08003216 */ LDRSH R1, [R3, R2]
 /* 08003218 */ LSLS R2, R5, #0X10
 /* 0800321A */ LSRS R2, R2, #0X10
-/* 0800321C */ BL func_080EF5C4
+/* 0800321C */ BL sprite_set_enable_updates
 _08003220:
 /* 08003220 */ POP {R4, R5}
 /* 08003222 */ POP {R0}

@@ -99,7 +99,7 @@ _08053DC2:
 /* 08053DD4 */ MOVS R3, #0
 /* 08053DD6 */ STR R3, [SP, #4]
 /* 08053DD8 */ STR R3, [SP, #8]
-/* 08053DDA */ BL func_080EF50C
+/* 08053DDA */ BL sprite_set_anim
 /* 08053DDE */ LDR R0, =D_083FD1C4
 /* 08053DE0 */ BL play_sound
 _08053DE4:

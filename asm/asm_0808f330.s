@@ -57,7 +57,7 @@ _0808F360:
 /* 0808F390 */ STR R3, [SP, #4]
 /* 0808F392 */ STR R3, [SP, #8]
 /* 0808F394 */ MOVS R3, #0
-/* 0808F396 */ BL func_080EF50C
+/* 0808F396 */ BL sprite_set_anim
 /* 0808F39A */ ADDS R0, R4, #0
 /* 0808F39C */ ADDS R1, R5, #0
 /* 0808F39E */ BL func_0808ED78

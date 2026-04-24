@@ -33,7 +33,7 @@ glabel func_080B7EAC
 /* 080B7EDE */ STR R4, [SP, #4]
 /* 080B7EE0 */ STR R4, [SP, #8]
 /* 080B7EE2 */ MOVS R3, #0
-/* 080B7EE4 */ BL func_080EF50C
+/* 080B7EE4 */ BL sprite_set_anim
 _080B7EE8:
 /* 080B7EE8 */ LDRH R1, [R6]
 /* 080B7EEA */ MOVS R0, #0X10
@@ -55,7 +55,7 @@ _080B7EE8:
 /* 080B7F0A */ STR R4, [SP, #4]
 /* 080B7F0C */ STR R4, [SP, #8]
 /* 080B7F0E */ MOVS R3, #0
-/* 080B7F10 */ BL func_080EF50C
+/* 080B7F10 */ BL sprite_set_anim
 _080B7F14:
 /* 080B7F14 */ ADD SP, #0XC
 /* 080B7F16 */ POP {R4, R5, R6}

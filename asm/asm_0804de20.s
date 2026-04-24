@@ -110,7 +110,7 @@ glabel func_0804DE20
 /* 0804DEFC */ STR R4, [SP]
 /* 0804DEFE */ STR R4, [SP, #4]
 /* 0804DF00 */ STR R4, [SP, #8]
-/* 0804DF02 */ BL func_080EF50C
+/* 0804DF02 */ BL sprite_set_anim
 /* 0804DF06 */ LDR R1, [R5]
 /* 0804DF08 */ ADDS R0, R1, #0
 /* 0804DF0A */ ADDS R0, #0X88

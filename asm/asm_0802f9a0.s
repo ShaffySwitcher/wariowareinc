@@ -21,7 +21,7 @@ glabel func_0802F9A0
 /* 0802F9BC */ LDRSH R1, [R4, R0]
 /* 0802F9BE */ ADDS R0, R5, #0
 /* 0802F9C0 */ MOVS R3, #0
-/* 0802F9C2 */ BL func_080EF60C
+/* 0802F9C2 */ BL sprite_set_callback
 /* 0802F9C6 */ POP {R4, R5}
 /* 0802F9C8 */ POP {R0}
 /* 0802F9CA */ BX R0

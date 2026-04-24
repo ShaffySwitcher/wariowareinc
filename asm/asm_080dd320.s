@@ -19,7 +19,7 @@ glabel func_080DD320
 /* 080DD336 */ MOVS R2, #6
 /* 080DD338 */ LDRSH R1, [R1, R2]
 /* 080DD33A */ MOVS R2, #4
-/* 080DD33C */ BL func_080EF784
+/* 080DD33C */ BL sprite_get_data
 /* 080DD340 */ LSLS R0, R0, #0X10
 /* 080DD342 */ LSRS R1, R0, #0X10
 /* 080DD344 */ MOVS R4, #0

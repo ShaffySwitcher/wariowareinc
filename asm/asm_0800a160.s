@@ -61,7 +61,7 @@ glabel func_0800A160
 /* 0800A1D6 */ MOVS R2, #0
 /* 0800A1D8 */ LDRSH R1, [R1, R2]
 /* 0800A1DA */ MOVS R2, #0XA
-/* 0800A1DC */ BL func_080EF4D8
+/* 0800A1DC */ BL sprite_set_base_palette
 /* 0800A1E0 */ LDR R0, [R5]
 /* 0800A1E2 */ MOV R1, SB
 /* 0800A1E4 */ BL func_080EF9B4

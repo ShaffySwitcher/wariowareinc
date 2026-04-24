@@ -288,12 +288,12 @@ _080E01D8:
 /* 080E01EE */ MOVS R2, #0
 /* 080E01F0 */ LDRSH R1, [R7, R2]
 /* 080E01F2 */ MOVS R2, #1
-/* 080E01F4 */ BL func_080EE9B8
+/* 080E01F4 */ BL sprite_set_anim_cel
 /* 080E01F8 */ LDR R0, [R4]
 /* 080E01FA */ MOVS R3, #0
 /* 080E01FC */ LDRSH R1, [R7, R3]
 /* 080E01FE */ MOVS R2, #1
-/* 080E0200 */ BL func_080EF5C4
+/* 080E0200 */ BL sprite_set_enable_updates
 /* 080E0204 */ MOVS R0, #1
 /* 080E0206 */ STRB R0, [R7, #0X12]
 /* 080E0208 */ LDRB R0, [R7, #0X10]

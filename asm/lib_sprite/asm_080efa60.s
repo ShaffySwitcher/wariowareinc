@@ -218,7 +218,7 @@ _080EFBE0: \n\
 /* 080EFBF6 */ LSLS R2, R2, #0X18 \n\
 /* 080EFBF8 */ ASRS R2, R2, #0X18 \n\
 /* 080EFBFA */ ADDS R0, R5, #0 \n\
-/* 080EFBFC */ BL func_080EE9B8 \n\
+/* 080EFBFC */ BL sprite_set_anim_cel \n\
 _080EFC00: \n\
 /* 080EFC00 */ MOV R3, SL \n\
 /* 080EFC02 */ LSLS R2, R3, #0X10 \n\

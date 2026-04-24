@@ -146,7 +146,7 @@ _080EB8F4:
 /* 080EB904 */ LSRS R2, R2, #2
 /* 080EB906 */ MOVS R3, #1
 /* 080EB908 */ ANDS R2, R3
-/* 080EB90A */ BL func_080EF4D8
+/* 080EB90A */ BL sprite_set_base_palette
 /* 080EB90E */ MOV R7, R8
 /* 080EB910 */ LDR R0, [R7]
 /* 080EB912 */ LDR R1, [R0, #0X10]

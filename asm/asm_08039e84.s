@@ -39,7 +39,7 @@ _08039EA4:
 /* 08039EC0 */ LSLS R2, R6, #0X18
 /* 08039EC2 */ ASRS R2, R2, #0X18
 /* 08039EC4 */ ADDS R1, R4, #0
-/* 08039EC6 */ BL func_080EE9B8
+/* 08039EC6 */ BL sprite_set_anim_cel
 /* 08039ECA */ LDR R0, [R5]
 /* 08039ECC */ ADDS R1, R4, #0
 /* 08039ECE */ MOVS R2, #1
@@ -63,7 +63,7 @@ _08039EE4:
 /* 08039EEC */ LSLS R2, R6, #0X18
 /* 08039EEE */ ASRS R2, R2, #0X18
 /* 08039EF0 */ ADDS R1, R4, #0
-/* 08039EF2 */ BL func_080EE9B8
+/* 08039EF2 */ BL sprite_set_anim_cel
 /* 08039EF6 */ LDR R0, [R5]
 /* 08039EF8 */ ADDS R1, R4, #0
 /* 08039EFA */ MOVS R2, #1

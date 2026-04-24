@@ -29,7 +29,7 @@ _0803141A:
 /* 0803142C */ LDRSH R7, [R1, R3]
 /* 0803142E */ ADDS R1, R7, #0
 /* 08031430 */ MOVS R2, #0
-/* 08031432 */ BL func_080EF784
+/* 08031432 */ BL sprite_get_data
 /* 08031436 */ CMP R0, #0
 /* 08031438 */ BEQ _080314AE
 /* 0803143A */ MOV R0, SL
@@ -135,13 +135,13 @@ _080314AE:
 /* 080314FE */ LDRSH R5, [R1, R3]
 /* 08031500 */ ADDS R1, R5, #0
 /* 08031502 */ MOVS R2, #4
-/* 08031504 */ BL func_080EF784
+/* 08031504 */ BL sprite_get_data
 /* 08031508 */ ADDS R4, R0, #0
 /* 0803150A */ MOV R1, R8
 /* 0803150C */ LDR R0, [R1]
 /* 0803150E */ ADDS R1, R5, #0
 /* 08031510 */ MOVS R2, #5
-/* 08031512 */ BL func_080EF784
+/* 08031512 */ BL sprite_get_data
 /* 08031516 */ ADDS R5, R0, #0
 /* 08031518 */ MOVS R0, #0XC
 /* 0803151A */ BL get_random_range

@@ -63,7 +63,7 @@ _080A2E50:
 /* 080A2E8C */ MOVS R4, #0
 /* 080A2E8E */ STR R4, [SP, #8]
 /* 080A2E90 */ MOVS R3, #0
-/* 080A2E92 */ BL func_080EF50C
+/* 080A2E92 */ BL sprite_set_anim
 /* 080A2E96 */ LDR R0, [R5]
 /* 080A2E98 */ STRB R4, [R0, #0X1C]
 /* 080A2E9A */ MOVS R0, #1

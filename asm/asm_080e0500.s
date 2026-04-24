@@ -39,18 +39,18 @@ glabel func_080E0500
 /* 080E053E */ MOVS R3, #4
 /* 080E0540 */ STR R3, [SP, #8]
 /* 080E0542 */ MOVS R3, #0
-/* 080E0544 */ BL func_080EF50C
+/* 080E0544 */ BL sprite_set_anim
 /* 080E0548 */ LDR R0, [R5]
 /* 080E054A */ MOVS R3, #0
 /* 080E054C */ LDRSH R1, [R4, R3]
 /* 080E054E */ LDR R2, =func_080E04D0 + 1
 /* 080E0550 */ ADDS R3, R4, #0
-/* 080E0552 */ BL func_080EF60C
+/* 080E0552 */ BL sprite_set_callback
 /* 080E0556 */ LDR R0, [R5]
 /* 080E0558 */ MOVS R5, #0
 /* 080E055A */ LDRSH R1, [R4, R5]
 /* 080E055C */ MOVS R2, #0
-/* 080E055E */ BL func_080EF5C4
+/* 080E055E */ BL sprite_set_enable_updates
 /* 080E0562 */ ADD SP, #0X20
 /* 080E0564 */ POP {R4, R5}
 /* 080E0566 */ POP {R0}

@@ -47,7 +47,7 @@ _080D775E:
 /* 080D779E */ STR R7, [SP]
 /* 080D77A0 */ STR R7, [SP, #4]
 /* 080D77A2 */ STR R7, [SP, #8]
-/* 080D77A4 */ BL func_080EF50C
+/* 080D77A4 */ BL sprite_set_anim
 /* 080D77A8 */ LDR R0, [R5]
 /* 080D77AA */ MOVS R2, #0
 /* 080D77AC */ LDRSH R1, [R6, R2]

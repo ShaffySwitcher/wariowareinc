@@ -39,7 +39,7 @@ glabel func_080D4E14
 /* 080D4E54 */ LDRSH R1, [R5, R2]
 /* 080D4E56 */ MOVS R2, #0
 /* 080D4E58 */ LDRSB R2, [R4, R2]
-/* 080D4E5A */ BL func_080EE9B8
+/* 080D4E5A */ BL sprite_set_anim_cel
 /* 080D4E5E */ LDRB R0, [R4]
 /* 080D4E60 */ CMP R0, #7
 /* 080D4E62 */ BLS _080D4E68

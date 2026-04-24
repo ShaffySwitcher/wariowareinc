@@ -58,7 +58,7 @@ _0807BDC2:
 /* 0807BDE6 */ STR R3, [SP, #4]
 /* 0807BDE8 */ MOVS R4, #0
 /* 0807BDEA */ STR R4, [SP, #8]
-/* 0807BDEC */ BL func_080EF50C
+/* 0807BDEC */ BL sprite_set_anim
 /* 0807BDF0 */ LDR R1, [R5]
 /* 0807BDF2 */ LDR R0, [R1, #8]
 /* 0807BDF4 */ LDR R1, [R1, #4]

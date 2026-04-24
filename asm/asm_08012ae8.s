@@ -30,7 +30,7 @@ _08012AF6:
 /* 08012B14 */ ASRS R2, R2, #0X18
 /* 08012B16 */ ADDS R0, R4, #0
 /* 08012B18 */ ADDS R1, R5, #0
-/* 08012B1A */ BL func_080EE9B8
+/* 08012B1A */ BL sprite_set_anim_cel
 /* 08012B1E */ MOV R1, R8
 /* 08012B20 */ LDR R0, [R1]
 /* 08012B22 */ ADDS R1, R5, #0

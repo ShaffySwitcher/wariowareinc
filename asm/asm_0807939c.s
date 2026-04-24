@@ -82,7 +82,7 @@ glabel func_0807939C
 /* 08079436 */ LDRSH R1, [R1, R7]
 /* 08079438 */ LSLS R2, R2, #0X18
 /* 0807943A */ ASRS R2, R2, #0X18
-/* 0807943C */ BL func_080EE9B8
+/* 0807943C */ BL sprite_set_anim_cel
 /* 08079440 */ POP {R3, R4}
 /* 08079442 */ MOV R8, R3
 /* 08079444 */ MOV SB, R4

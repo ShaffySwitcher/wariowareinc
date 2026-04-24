@@ -53,7 +53,7 @@ _080AD938:
 /* 080AD94E */ MOVS R3, #0
 /* 080AD950 */ STR R3, [SP, #4]
 /* 080AD952 */ STR R3, [SP, #8]
-/* 080AD954 */ BL func_080EF50C
+/* 080AD954 */ BL sprite_set_anim
 /* 080AD958 */ LDR R0, [R6]
 /* 080AD95A */ ADDS R0, #0X26
 /* 080AD95C */ STRB R5, [R0]
@@ -101,7 +101,7 @@ _080AD988:
 /* 080AD9A0 */ STR R5, [SP, #4]
 /* 080AD9A2 */ STR R5, [SP, #8]
 /* 080AD9A4 */ MOVS R3, #0
-/* 080AD9A6 */ BL func_080EF50C
+/* 080AD9A6 */ BL sprite_set_anim
 /* 080AD9AA */ LDR R0, [R6]
 /* 080AD9AC */ ADDS R0, #0X26
 /* 080AD9AE */ STRB R4, [R0]
@@ -223,7 +223,7 @@ _080ADA56:
 /* 080ADA74 */ STR R4, [SP, #4]
 /* 080ADA76 */ STR R4, [SP, #8]
 /* 080ADA78 */ MOVS R3, #0
-/* 080ADA7A */ BL func_080EF50C
+/* 080ADA7A */ BL sprite_set_anim
 /* 080ADA7E */ LDR R0, [R5]
 /* 080ADA80 */ ADDS R0, #0X26
 /* 080ADA82 */ STRB R4, [R0]

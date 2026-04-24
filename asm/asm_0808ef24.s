@@ -50,7 +50,7 @@ _0808EF62:
 /* 0808EF72 */ MOVS R2, #0
 /* 0808EF74 */ LDRSH R1, [R4, R2]
 /* 0808EF76 */ MOVS R2, #0
-/* 0808EF78 */ BL func_080EF5C4
+/* 0808EF78 */ BL sprite_set_enable_updates
 _0808EF7C:
 /* 0808EF7C */ LDRB R0, [R4, #0X12]
 /* 0808EF7E */ ADDS R0, #1

@@ -43,7 +43,7 @@ glabel func_080EC14C
 /* 080EC196 */ MOVS R2, #0X1A
 /* 080EC198 */ LDRSB R2, [R3, R2]
 /* 080EC19A */ ADDS R3, #0X12
-/* 080EC19C */ BL func_080EF708
+/* 080EC19C */ BL sprite_set_affine_params
 /* 080EC1A0 */ LDR R1, [R5]
 /* 080EC1A2 */ MOVS R2, #0X1C
 /* 080EC1A4 */ LDRSH R0, [R1, R2]

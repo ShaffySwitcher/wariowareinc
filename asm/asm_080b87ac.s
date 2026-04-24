@@ -44,7 +44,7 @@ _080B87F4:
 /* 080B87FA */ MOVS R2, #0
 /* 080B87FC */ LDRSH R1, [R1, R2]
 /* 080B87FE */ MOVS R2, #0
-/* 080B8800 */ BL func_080EF5C4
+/* 080B8800 */ BL sprite_set_enable_updates
 _080B8804:
 /* 080B8804 */ LDR R0, _080B8820
 /* 080B8806 */ LDR R1, [R0]

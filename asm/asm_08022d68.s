@@ -42,7 +42,7 @@ _08022D8A:
 /* 08022DA6 */ STR R5, [SP, #8]
 /* 08022DA8 */ LDR R2, _08022DC4
 /* 08022DAA */ MOVS R3, #0X7F
-/* 08022DAC */ BL func_080EF50C
+/* 08022DAC */ BL sprite_set_anim
 /* 08022DB0 */ B _08022DDC
 
 .balign 4, 0
@@ -73,7 +73,7 @@ _08022DC8:
 /* 08022DD2 */ STR R5, [SP, #8]
 /* 08022DD4 */ LDR R2, =D_0833F8A4
 /* 08022DD6 */ MOVS R3, #0
-/* 08022DD8 */ BL func_080EF50C
+/* 08022DD8 */ BL sprite_set_anim
 _08022DDC:
 /* 08022DDC */ ADDS R4, #1
 /* 08022DDE */ CMP R4, #3

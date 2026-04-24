@@ -57,7 +57,7 @@ _080A8F8A:
 /* 080A8F9C */ STR R3, [SP]
 /* 080A8F9E */ STR R3, [SP, #4]
 /* 080A8FA0 */ STR R3, [SP, #8]
-/* 080A8FA2 */ BL func_080EF50C
+/* 080A8FA2 */ BL sprite_set_anim
 /* 080A8FA6 */ B _080A9026
 
 .balign 4, 0
@@ -105,7 +105,7 @@ _080A8FB4:
 /* 080A8FF2 */ MOV R3, R8
 /* 080A8FF4 */ STR R3, [SP, #8]
 /* 080A8FF6 */ MOVS R3, #0
-/* 080A8FF8 */ BL func_080EF50C
+/* 080A8FF8 */ BL sprite_set_anim
 /* 080A8FFC */ LDR R0, [R7]
 /* 080A8FFE */ LDR R1, _080A9044
 /* 080A9000 */ STRH R1, [R0, #0X20]

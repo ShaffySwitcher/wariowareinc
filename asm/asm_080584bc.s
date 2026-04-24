@@ -99,7 +99,7 @@ _0805854C:
 /* 0805855C */ MOVS R2, #0
 /* 0805855E */ LDRSH R1, [R1, R2]
 /* 08058560 */ MOVS R2, #0
-/* 08058562 */ BL func_080EF5C4
+/* 08058562 */ BL sprite_set_enable_updates
 _08058566:
 /* 08058566 */ LDRB R0, [R4]
 /* 08058568 */ CMP R0, #0XC

@@ -95,13 +95,13 @@ _080EB332:
 /* 080EB35C */ MOVS R2, #0XE
 /* 080EB35E */ LDRSH R1, [R1, R2]
 /* 080EB360 */ MOVS R2, #1
-/* 080EB362 */ BL func_080EF5C4
+/* 080EB362 */ BL sprite_set_enable_updates
 /* 080EB366 */ LDR R0, [R6]
 /* 080EB368 */ LDR R1, [R5]
 /* 080EB36A */ MOVS R3, #0XC
 /* 080EB36C */ LDRSH R1, [R1, R3]
 /* 080EB36E */ MOVS R2, #0
-/* 080EB370 */ BL func_080EE9B8
+/* 080EB370 */ BL sprite_set_anim_cel
 /* 080EB374 */ LDR R0, [R6]
 /* 080EB376 */ LDR R1, [R5]
 /* 080EB378 */ MOVS R4, #0XC
@@ -109,7 +109,7 @@ _080EB332:
 /* 080EB37C */ MOVS R2, #0
 /* 080EB37E */ STR R2, [SP]
 /* 080EB380 */ MOVS R3, #0
-/* 080EB382 */ BL func_080EF644
+/* 080EB382 */ BL sprite_set_playback
 /* 080EB386 */ LDR R0, _080EB3A4
 /* 080EB388 */ BL func_080EB1F4
 /* 080EB38C */ LDR R1, [R5]

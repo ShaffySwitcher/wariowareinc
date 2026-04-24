@@ -18,7 +18,7 @@ glabel func_0809CFB8
 /* 0809CFCE */ LDRSH R1, [R0, R2]
 /* 0809CFD0 */ ADDS R0, R4, #0
 /* 0809CFD2 */ MOVS R2, #1
-/* 0809CFD4 */ BL func_080EF5C4
+/* 0809CFD4 */ BL sprite_set_enable_updates
 /* 0809CFD8 */ POP {R4}
 /* 0809CFDA */ POP {R0}
 /* 0809CFDC */ BX R0

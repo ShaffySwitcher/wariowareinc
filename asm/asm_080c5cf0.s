@@ -100,12 +100,12 @@ _080C5D34:
 /* 080C5DA2 */ STR R6, [SP, #4]
 /* 080C5DA4 */ STR R6, [SP, #8]
 /* 080C5DA6 */ MOVS R3, #0
-/* 080C5DA8 */ BL func_080EF50C
+/* 080C5DA8 */ BL sprite_set_anim
 /* 080C5DAC */ LDR R0, [R4]
 /* 080C5DAE */ MOVS R2, #0
 /* 080C5DB0 */ LDRSH R1, [R7, R2]
 /* 080C5DB2 */ MOVS R2, #1
-/* 080C5DB4 */ BL func_080EF5C4
+/* 080C5DB4 */ BL sprite_set_enable_updates
 /* 080C5DB8 */ MOV R3, SL
 /* 080C5DBA */ LDR R0, [R3, #8]
 /* 080C5DBC */ LDR R1, [R3, #0XC]

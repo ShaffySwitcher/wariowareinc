@@ -27,7 +27,7 @@ glabel func_080E5134
 /* 080E515C */ LDRB R2, [R2]
 /* 080E515E */ LSLS R2, R2, #0X18
 /* 080E5160 */ ASRS R2, R2, #0X18
-/* 080E5162 */ BL func_080EF4D8
+/* 080E5162 */ BL sprite_set_base_palette
 /* 080E5166 */ LDR R0, [R4]
 /* 080E5168 */ MOVS R2, #0
 /* 080E516A */ LDRSH R1, [R7, R2]
@@ -36,7 +36,7 @@ glabel func_080E5134
 /* 080E5170 */ LDRB R2, [R2]
 /* 080E5172 */ LSLS R2, R2, #0X18
 /* 080E5174 */ ASRS R2, R2, #0X18
-/* 080E5176 */ BL func_080EF4D8
+/* 080E5176 */ BL sprite_set_base_palette
 /* 080E517A */ LDR R1, [R5]
 /* 080E517C */ ADDS R1, #0X20
 /* 080E517E */ LDRB R0, [R1]

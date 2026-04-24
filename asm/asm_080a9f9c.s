@@ -174,7 +174,7 @@ _080AA062:
 /* 080AA0C4 */ STR R6, [SP, #8]
 /* 080AA0C6 */ ADDS R1, R5, #0
 /* 080AA0C8 */ MOVS R3, #0
-/* 080AA0CA */ BL func_080EF50C
+/* 080AA0CA */ BL sprite_set_anim
 /* 080AA0CE */ LDR R0, [R4]
 /* 080AA0D0 */ ADDS R1, R5, #0
 /* 080AA0D2 */ MOVS R2, #1

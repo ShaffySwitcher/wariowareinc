@@ -29,7 +29,7 @@ glabel func_0805B164
 /* 0805B18E */ STR R4, [SP, #4]
 /* 0805B190 */ STR R4, [SP, #8]
 /* 0805B192 */ MOVS R3, #0
-/* 0805B194 */ BL func_080EF50C
+/* 0805B194 */ BL sprite_set_anim
 /* 0805B198 */ STR R4, [R5, #0XC]
 /* 0805B19A */ STR R4, [R5, #0X10]
 /* 0805B19C */ LDRB R0, [R5, #0X19]

@@ -21,7 +21,7 @@ glabel func_0801FCDC
 /* 0801FCF6 */ LSLS R3, R3, #0X11
 /* 0801FCF8 */ ADDS R2, R3
 /* 0801FCFA */ ASRS R2, R2, #0X18
-/* 0801FCFC */ BL func_080EE9B8
+/* 0801FCFC */ BL sprite_set_anim_cel
 /* 0801FD00 */ POP {R0}
 /* 0801FD02 */ BX R0
 

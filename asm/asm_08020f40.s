@@ -13,7 +13,7 @@ glabel func_08020F40
 /* 08020F4A */ MOVS R2, #0X14
 /* 08020F4C */ LDRSH R1, [R1, R2]
 /* 08020F4E */ MOVS R2, #1
-/* 08020F50 */ BL func_080EE9B8
+/* 08020F50 */ BL sprite_set_anim_cel
 /* 08020F54 */ POP {R0}
 /* 08020F56 */ BX R0
 

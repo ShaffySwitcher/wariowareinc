@@ -20,13 +20,13 @@ glabel func_08085644
 /* 0808565C */ STR R3, [SP, #4]
 /* 0808565E */ MOVS R3, #0
 /* 08085660 */ STR R3, [SP, #8]
-/* 08085662 */ BL func_080EF50C
+/* 08085662 */ BL sprite_set_anim
 /* 08085666 */ LDR R0, [R5]
 /* 08085668 */ LDR R1, [R4]
 /* 0808566A */ MOVS R2, #0XC
 /* 0808566C */ LDRSH R1, [R1, R2]
 /* 0808566E */ MOVS R2, #0
-/* 08085670 */ BL func_080EF4D8
+/* 08085670 */ BL sprite_set_base_palette
 /* 08085674 */ ADD SP, #0XC
 /* 08085676 */ POP {R4, R5}
 /* 08085678 */ POP {R0}

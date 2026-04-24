@@ -107,7 +107,7 @@ _0809808C:
 /* 08098090 */ MOVS R2, #0XC
 /* 08098092 */ LDRSH R1, [R6, R2]
 /* 08098094 */ MOVS R2, #1
-/* 08098096 */ BL func_080EE9B8
+/* 08098096 */ BL sprite_set_anim_cel
 /* 0809809A */ MOVS R0, #2
 /* 0809809C */ BL get_random_range
 /* 080980A0 */ LDR R4, _080980F0

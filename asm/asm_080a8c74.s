@@ -85,7 +85,7 @@ _080A8CCC:
 /* 080A8D00 */ STR R3, [SP, #4]
 /* 080A8D02 */ STR R3, [SP, #8]
 /* 080A8D04 */ MOVS R3, #0
-/* 080A8D06 */ BL func_080EF50C
+/* 080A8D06 */ BL sprite_set_anim
 /* 080A8D0A */ LDR R1, [R5]
 /* 080A8D0C */ MOVS R0, #4
 /* 080A8D0E */ STRB R0, [R1, #0X13]
@@ -141,7 +141,7 @@ _080A8D34:
 /* 080A8D5E */ STR R4, [SP, #4]
 /* 080A8D60 */ STR R4, [SP, #8]
 /* 080A8D62 */ MOVS R3, #0
-/* 080A8D64 */ BL func_080EF50C
+/* 080A8D64 */ BL sprite_set_anim
 /* 080A8D68 */ LDR R1, [R5]
 /* 080A8D6A */ MOVS R0, #4
 /* 080A8D6C */ STRB R0, [R1, #0X13]

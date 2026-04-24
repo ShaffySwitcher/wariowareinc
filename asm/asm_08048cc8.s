@@ -51,7 +51,7 @@ _08048CEE:
 /* 08048D1A */ MOVS R4, #0
 /* 08048D1C */ LDRSH R1, [R1, R4]
 /* 08048D1E */ MOVS R2, #0
-/* 08048D20 */ BL func_080EF5C4
+/* 08048D20 */ BL sprite_set_enable_updates
 /* 08048D24 */ B _08048DB8
 
 .balign 4, 0

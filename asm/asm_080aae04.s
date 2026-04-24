@@ -60,7 +60,7 @@ _080AAE42:
 /* 080AAE68 */ MOVS R2, #0X18
 /* 080AAE6A */ LDRSH R1, [R1, R2]
 /* 080AAE6C */ MOVS R2, #0
-/* 080AAE6E */ BL func_080EE9B8
+/* 080AAE6E */ BL sprite_set_anim_cel
 /* 080AAE72 */ B _080AAE98
 
 .balign 4, 0

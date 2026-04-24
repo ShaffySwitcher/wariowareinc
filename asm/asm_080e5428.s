@@ -50,7 +50,7 @@ _080E546A:
 /* 080E546C */ LDR R0, [R0]
 /* 080E546E */ MOVS R3, #0
 /* 080E5470 */ LDRSH R1, [R5, R3]
-/* 080E5472 */ BL func_080EE9B8
+/* 080E5472 */ BL sprite_set_anim_cel
 /* 080E5476 */ POP {R4, R5}
 /* 080E5478 */ POP {R0}
 /* 080E547A */ BX R0

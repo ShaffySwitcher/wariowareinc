@@ -47,7 +47,7 @@ glabel func_0801429C
 /* 080142EC */ LDRB R2, [R2]
 /* 080142EE */ LSLS R2, R2, #0X18
 /* 080142F0 */ ASRS R2, R2, #0X18
-/* 080142F2 */ BL func_080EF4D8
+/* 080142F2 */ BL sprite_set_base_palette
 /* 080142F6 */ CMP R4, #0
 /* 080142F8 */ BEQ _08014326
 /* 080142FA */ LDR R2, [R7]

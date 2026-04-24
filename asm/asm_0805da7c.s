@@ -304,7 +304,7 @@ _0805DC4A:
 /* 0805DCB2 */ ASRS R2, R2, #0X18
 /* 0805DCB4 */ ADDS R0, R5, #0
 /* 0805DCB6 */ ADDS R1, R6, #0
-/* 0805DCB8 */ BL func_080EE9B8
+/* 0805DCB8 */ BL sprite_set_anim_cel
 /* 0805DCBC */ MOV R1, SL
 /* 0805DCBE */ LDR R0, [R1]
 /* 0805DCC0 */ LSLS R2, R7, #8

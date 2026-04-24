@@ -29,7 +29,7 @@ _08014E4E:
 /* 08014E60 */ MOVS R2, #2
 /* 08014E62 */ LDRSH R1, [R1, R2]
 /* 08014E64 */ MOVS R2, #6
-/* 08014E66 */ BL func_080EF4D8
+/* 08014E66 */ BL sprite_set_base_palette
 /* 08014E6A */ ADDS R4, #1
 /* 08014E6C */ LDR R0, [R5]
 /* 08014E6E */ MOVS R1, #0XC8

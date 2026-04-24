@@ -38,7 +38,7 @@ _0802195E:
 /* 0802197A */ STR R5, [SP, #8]
 /* 0802197C */ LDR R2, _080219F0
 /* 0802197E */ MOVS R3, #0
-/* 08021980 */ BL func_080EF50C
+/* 08021980 */ BL sprite_set_anim
 /* 08021984 */ MOV R0, R8
 /* 08021986 */ BL get_random_range
 /* 0802198A */ LSLS R0, R0, #0X10

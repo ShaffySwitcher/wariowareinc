@@ -22,7 +22,7 @@ glabel func_08044EA0
 /* 08044EBE */ STR R6, [SP, #8]
 /* 08044EC0 */ ADDS R0, R4, #0
 /* 08044EC2 */ MOVS R3, #0
-/* 08044EC4 */ BL func_080EF50C
+/* 08044EC4 */ BL sprite_set_anim
 /* 08044EC8 */ LDR R1, [R5]
 /* 08044ECA */ LDR R3, _08044F4C
 /* 08044ECC */ LDRH R0, [R3]

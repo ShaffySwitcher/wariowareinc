@@ -20,7 +20,7 @@ glabel func_0809BBAC
 /* 0809BBC4 */ MOVS R3, #0
 /* 0809BBC6 */ STR R3, [SP, #4]
 /* 0809BBC8 */ STR R3, [SP, #8]
-/* 0809BBCA */ BL func_080EF50C
+/* 0809BBCA */ BL sprite_set_anim
 /* 0809BBCE */ LDR R0, [R4]
 /* 0809BBD0 */ MOVS R1, #0X82
 /* 0809BBD2 */ LSLS R1, R1, #1

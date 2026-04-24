@@ -37,7 +37,7 @@ _080D1548:
 /* 080D1554 */ STR R3, [SP, #4]
 /* 080D1556 */ STR R3, [SP, #8]
 /* 080D1558 */ MOVS R3, #0
-/* 080D155A */ BL func_080EF50C
+/* 080D155A */ BL sprite_set_anim
 /* 080D155E */ LDR R0, [R4]
 /* 080D1560 */ MOVS R3, #0
 /* 080D1562 */ LDRSH R1, [R5, R3]

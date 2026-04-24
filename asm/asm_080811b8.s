@@ -25,7 +25,7 @@ _080811CE:
 /* 080811D8 */ MOVS R2, #0
 /* 080811DA */ LDRSH R1, [R1, R2]
 /* 080811DC */ MOVS R2, #0
-/* 080811DE */ BL func_080EE9B8
+/* 080811DE */ BL sprite_set_anim_cel
 /* 080811E2 */ LDR R0, [R7]
 /* 080811E4 */ LDR R1, [R6]
 /* 080811E6 */ ADDS R1, #0X40
@@ -35,7 +35,7 @@ _080811CE:
 /* 080811EE */ MOVS R2, #0
 /* 080811F0 */ STR R2, [SP]
 /* 080811F2 */ MOVS R3, #0
-/* 080811F4 */ BL func_080EF644
+/* 080811F4 */ BL sprite_set_playback
 /* 080811F8 */ ADDS R0, R5, #1
 /* 080811FA */ LSLS R0, R0, #0X18
 /* 080811FC */ LSRS R5, R0, #0X18

@@ -56,7 +56,7 @@ _08013B46:
 /* 08013B58 */ STR R2, [SP, #8]
 /* 08013B5A */ ADDS R2, R3, #0
 /* 08013B5C */ MOVS R3, #0
-/* 08013B5E */ BL func_080EF50C
+/* 08013B5E */ BL sprite_set_anim
 /* 08013B62 */ ADD SP, #0X14
 /* 08013B64 */ POP {R3}
 /* 08013B66 */ MOV R8, R3

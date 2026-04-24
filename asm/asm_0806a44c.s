@@ -20,7 +20,7 @@ _0806A452:
 /* 0806A462 */ MOVS R2, #0
 /* 0806A464 */ LDRSH R1, [R1, R2]
 /* 0806A466 */ MOVS R2, #0
-/* 0806A468 */ BL func_080EF5C4
+/* 0806A468 */ BL sprite_set_enable_updates
 /* 0806A46C */ LDR R0, [R5]
 /* 0806A46E */ ADDS R0, #0X7C
 /* 0806A470 */ ADDS R0, R4

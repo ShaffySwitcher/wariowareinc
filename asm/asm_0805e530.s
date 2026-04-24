@@ -189,7 +189,7 @@ _0805E656:
 /* 0805E674 */ MOVS R2, #0
 /* 0805E676 */ LDRSH R1, [R1, R2]
 /* 0805E678 */ MOVS R2, #0
-/* 0805E67A */ BL func_080EF5C4
+/* 0805E67A */ BL sprite_set_enable_updates
 /* 0805E67E */ B _0805E6B8
 
 .balign 4, 0

@@ -75,7 +75,7 @@ _080AEEA8:
 /* 080AEECC */ ASRS R2, R2, #0X1F
 /* 080AEECE */ MOVS R3, #2
 /* 080AEED0 */ ANDS R2, R3
-/* 080AEED2 */ BL func_080EF4D8
+/* 080AEED2 */ BL sprite_set_base_palette
 /* 080AEED6 */ MOV R4, SB
 /* 080AEED8 */ MOV R5, R8
 /* 080AEEDA */ CMP R4, #1

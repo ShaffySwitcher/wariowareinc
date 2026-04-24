@@ -86,7 +86,7 @@ _080ACAD4:
 /* 080ACAD8 */ MOVS R2, #0X14
 /* 080ACADA */ LDRSH R1, [R4, R2]
 /* 080ACADC */ MOVS R2, #0
-/* 080ACADE */ BL func_080EF5C4
+/* 080ACADE */ BL sprite_set_enable_updates
 /* 080ACAE2 */ MOVS R0, #0
 /* 080ACAE4 */ STR R0, [R6, #0X30]
 /* 080ACAE6 */ STR R0, [R6, #0X2C]

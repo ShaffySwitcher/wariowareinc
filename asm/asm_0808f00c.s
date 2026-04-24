@@ -64,12 +64,12 @@ _0808F030:
 /* 0808F07E */ STR R3, [SP, #4]
 /* 0808F080 */ STR R5, [SP, #8]
 /* 0808F082 */ MOVS R3, #0
-/* 0808F084 */ BL func_080EF50C
+/* 0808F084 */ BL sprite_set_anim
 /* 0808F088 */ LDR R0, [R4]
 /* 0808F08A */ MOVS R2, #0
 /* 0808F08C */ LDRSH R1, [R6, R2]
 /* 0808F08E */ MOVS R2, #1
-/* 0808F090 */ BL func_080EF5C4
+/* 0808F090 */ BL sprite_set_enable_updates
 /* 0808F094 */ ADDS R0, R6, #0
 /* 0808F096 */ ADDS R1, R7, #0
 /* 0808F098 */ BL func_0808ED78

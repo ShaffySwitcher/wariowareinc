@@ -77,7 +77,7 @@ _080A92E4:
 /* 080A92F6 */ MOVS R2, #0
 /* 080A92F8 */ STR R2, [SP]
 /* 080A92FA */ MOVS R3, #0
-/* 080A92FC */ BL func_080EF644
+/* 080A92FC */ BL sprite_set_playback
 /* 080A9300 */ MOV R1, R8
 /* 080A9302 */ LDR R0, [R1]
 /* 080A9304 */ ADDS R0, #0X88

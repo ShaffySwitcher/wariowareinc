@@ -40,7 +40,7 @@ glabel func_0808F17C
 /* 0808F1BE */ STR R5, [SP, #4]
 /* 0808F1C0 */ STR R5, [SP, #8]
 /* 0808F1C2 */ MOVS R3, #0
-/* 0808F1C4 */ BL func_080EF50C
+/* 0808F1C4 */ BL sprite_set_anim
 /* 0808F1C8 */ ADDS R0, R4, #0
 /* 0808F1CA */ ADDS R1, R6, #0
 /* 0808F1CC */ BL func_0808ED78

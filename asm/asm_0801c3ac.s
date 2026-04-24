@@ -57,7 +57,7 @@ glabel func_0801C3AC
 /* 0801C416 */ LDR R0, [R5]
 /* 0801C418 */ ADDS R1, R4, #0
 /* 0801C41A */ MOVS R2, #0XA
-/* 0801C41C */ BL func_080EF4D8
+/* 0801C41C */ BL sprite_set_base_palette
 /* 0801C420 */ LDR R0, [R5]
 /* 0801C422 */ LDR R2, _0801C4C0
 /* 0801C424 */ LDR R3, [R6]

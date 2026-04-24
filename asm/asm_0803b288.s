@@ -86,14 +86,14 @@ _0803B2F2:
 /* 0803B300 */ MOVS R2, #0
 /* 0803B302 */ LDRSH R1, [R1, R2]
 /* 0803B304 */ MOVS R2, #0
-/* 0803B306 */ BL func_080EF5C4
+/* 0803B306 */ BL sprite_set_enable_updates
 /* 0803B30A */ LDR R0, [R5]
 /* 0803B30C */ LDR R1, [R4]
 /* 0803B30E */ ADDS R1, #0XBA
 /* 0803B310 */ MOVS R3, #0
 /* 0803B312 */ LDRSH R1, [R1, R3]
 /* 0803B314 */ MOVS R2, #0
-/* 0803B316 */ BL func_080EF5C4
+/* 0803B316 */ BL sprite_set_enable_updates
 /* 0803B31A */ LDR R0, _0803B384
 /* 0803B31C */ BL play_sound
 /* 0803B320 */ LDR R0, [R4]

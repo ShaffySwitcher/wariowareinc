@@ -138,7 +138,7 @@ _080E06B0:
 /* 080E0752 */ MOVS R2, #2
 /* 080E0754 */ LDRSH R1, [R1, R2]
 /* 080E0756 */ MOVS R2, #1
-/* 080E0758 */ BL func_080EF5C4
+/* 080E0758 */ BL sprite_set_enable_updates
 /* 080E075C */ LDR R0, [R4]
 /* 080E075E */ LDR R1, _080E07F8
 /* 080E0760 */ LDR R2, [R5]

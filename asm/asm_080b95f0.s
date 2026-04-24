@@ -40,7 +40,7 @@ glabel func_080B95F0
 /* 080B9630 */ MOVS R4, #0
 /* 080B9632 */ STR R4, [SP, #4]
 /* 080B9634 */ STR R4, [SP, #8]
-/* 080B9636 */ BL func_080EF50C
+/* 080B9636 */ BL sprite_set_anim
 _080B963A:
 /* 080B963A */ LDR R0, _080B9664
 /* 080B963C */ LDR R0, [R0]

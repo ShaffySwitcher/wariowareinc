@@ -44,7 +44,7 @@ _0807916C:
 /* 080791A0 */ MOVS R2, #0
 /* 080791A2 */ LDRSH R1, [R4, R2]
 /* 080791A4 */ MOVS R2, #0
-/* 080791A6 */ BL func_080EF5C4
+/* 080791A6 */ BL sprite_set_enable_updates
 _080791AA:
 /* 080791AA */ LDR R0, [R4, #8]
 /* 080791AC */ MOVS R1, #0X88
@@ -59,7 +59,7 @@ _080791AA:
 /* 080791BE */ MOVS R2, #0
 /* 080791C0 */ LDRSH R1, [R4, R2]
 /* 080791C2 */ MOVS R2, #0
-/* 080791C4 */ BL func_080EF5C4
+/* 080791C4 */ BL sprite_set_enable_updates
 _080791C8:
 /* 080791C8 */ LDR R0, _080791E8
 /* 080791CA */ LDR R0, [R0]

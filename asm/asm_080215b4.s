@@ -45,7 +45,7 @@ _080215D4:
 /* 080215FE */ STR R5, [SP, #8]
 /* 08021600 */ ADDS R0, R3, #0
 /* 08021602 */ MOVS R3, #0
-/* 08021604 */ BL func_080EF50C
+/* 08021604 */ BL sprite_set_anim
 /* 08021608 */ MOV R0, R8
 /* 0802160A */ BL get_random_range
 /* 0802160E */ LSLS R0, R0, #0X10

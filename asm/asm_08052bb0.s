@@ -65,7 +65,7 @@ _08052BE4:
 /* 08052C20 */ STR R4, [SP, #4]
 /* 08052C22 */ MOVS R4, #4
 /* 08052C24 */ STR R4, [SP, #8]
-/* 08052C26 */ BL func_080EF50C
+/* 08052C26 */ BL sprite_set_anim
 _08052C2A:
 /* 08052C2A */ ADD SP, #0XC
 /* 08052C2C */ POP {R4, R5, R6}

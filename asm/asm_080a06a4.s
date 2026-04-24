@@ -103,7 +103,7 @@ _080A0720:
 /* 080A075E */ LSLS R2, R2, #0X18
 /* 080A0760 */ ASRS R2, R2, #0X18
 /* 080A0762 */ ADDS R3, #0X24
-/* 080A0764 */ BL func_080EF708
+/* 080A0764 */ BL sprite_set_affine_params
 /* 080A0768 */ POP {R4, R5}
 /* 080A076A */ POP {R0}
 /* 080A076C */ BX R0

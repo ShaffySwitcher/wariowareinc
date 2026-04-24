@@ -30,7 +30,7 @@ _08051DBE:
 /* 08051DC6 */ MOVS R2, #0X1A
 /* 08051DC8 */ LDRSH R1, [R1, R2]
 /* 08051DCA */ MOVS R2, #0
-/* 08051DCC */ BL func_080EF5C4
+/* 08051DCC */ BL sprite_set_enable_updates
 /* 08051DD0 */ LDR R0, [R4]
 /* 08051DD2 */ LDR R0, [R0, #0X38]
 /* 08051DD4 */ CMP R0, #0

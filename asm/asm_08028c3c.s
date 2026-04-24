@@ -18,11 +18,11 @@ glabel func_08028C3C
 /* 08028C50 */ STR R1, [SP]
 /* 08028C52 */ ADDS R1, R4, #0
 /* 08028C54 */ MOVS R3, #1
-/* 08028C56 */ BL func_080EF644
+/* 08028C56 */ BL sprite_set_playback
 /* 08028C5A */ LDR R0, [R5]
 /* 08028C5C */ ADDS R1, R4, #0
 /* 08028C5E */ MOVS R2, #0
-/* 08028C60 */ BL func_080EE9B8
+/* 08028C60 */ BL sprite_set_anim_cel
 /* 08028C64 */ LDR R0, [R5]
 /* 08028C66 */ ADDS R1, R4, #0
 /* 08028C68 */ MOVS R2, #1

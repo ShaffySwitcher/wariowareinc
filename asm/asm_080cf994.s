@@ -30,7 +30,7 @@ glabel func_080CF994
 /* 080CF9C0 */ MOVS R2, #8
 /* 080CF9C2 */ LDRSH R1, [R1, R2]
 /* 080CF9C4 */ MOVS R2, #7
-/* 080CF9C6 */ BL func_080EF784
+/* 080CF9C6 */ BL sprite_get_data
 /* 080CF9CA */ LDR R3, _080CFA3C
 /* 080CF9CC */ CMP R0, R3
 /* 080CF9CE */ BNE _080CFA44
@@ -53,7 +53,7 @@ glabel func_080CF994
 /* 080CF9F0 */ STR R4, [SP, #4]
 /* 080CF9F2 */ STR R4, [SP, #8]
 /* 080CF9F4 */ MOVS R3, #0
-/* 080CF9F6 */ BL func_080EF50C
+/* 080CF9F6 */ BL sprite_set_anim
 /* 080CF9FA */ MOV R1, R8
 /* 080CF9FC */ LDR R0, [R1]
 /* 080CF9FE */ ADDS R0, R6
@@ -67,7 +67,7 @@ glabel func_080CF994
 /* 080CFA0E */ STR R4, [SP]
 /* 080CFA10 */ MOVS R2, #1
 /* 080CFA12 */ MOVS R3, #7
-/* 080CFA14 */ BL func_080EF644
+/* 080CFA14 */ BL sprite_set_playback
 _080CFA18:
 /* 080CFA18 */ MOV R1, R8
 /* 080CFA1A */ LDR R0, [R1]
@@ -114,7 +114,7 @@ _080CFA44:
 /* 080CFA52 */ STR R2, [SP, #8]
 /* 080CFA54 */ ADDS R2, R3, #0
 /* 080CFA56 */ MOVS R3, #0
-/* 080CFA58 */ BL func_080EF50C
+/* 080CFA58 */ BL sprite_set_anim
 /* 080CFA5C */ LDR R0, [R7]
 /* 080CFA5E */ LDR R0, [R0, #0X10]
 /* 080CFA60 */ BL stop_sound

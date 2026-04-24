@@ -29,7 +29,7 @@ glabel func_08065FC0
 /* 08065FEE */ LDRSH R1, [R0, R2]
 /* 08065FF0 */ ADDS R0, R5, #0
 /* 08065FF2 */ MOVS R2, #0
-/* 08065FF4 */ BL func_080EE9B8
+/* 08065FF4 */ BL sprite_set_anim_cel
 /* 08065FF8 */ LDR R0, [R4]
 /* 08065FFA */ LDR R1, _0806600C
 /* 08065FFC */ ADDS R0, R1

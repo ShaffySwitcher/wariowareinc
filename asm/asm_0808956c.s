@@ -47,7 +47,7 @@ _080895A0:
 /* 080895B4 */ STR R4, [SP, #4]
 /* 080895B6 */ STR R4, [SP, #8]
 /* 080895B8 */ MOVS R3, #0
-/* 080895BA */ BL func_080EF50C
+/* 080895BA */ BL sprite_set_anim
 /* 080895BE */ MOVS R4, #1
 _080895C0:
 /* 080895C0 */ ADDS R0, R4, #0

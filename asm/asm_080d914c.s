@@ -41,7 +41,7 @@ _080D916E:
 /* 080D9182 */ STR R4, [SP, #4]
 /* 080D9184 */ STR R4, [SP, #8]
 /* 080D9186 */ ADDS R2, R7, #0
-/* 080D9188 */ BL func_080EF50C
+/* 080D9188 */ BL sprite_set_anim
 /* 080D918C */ LDR R0, [R6]
 /* 080D918E */ LDR R2, [R5]
 /* 080D9190 */ MOVS R3, #0X14
@@ -52,7 +52,7 @@ _080D916E:
 /* 080D919A */ STR R4, [SP, #4]
 /* 080D919C */ STR R4, [SP, #8]
 /* 080D919E */ MOV R2, R8
-/* 080D91A0 */ BL func_080EF50C
+/* 080D91A0 */ BL sprite_set_anim
 /* 080D91A4 */ ADD SP, #0XC
 /* 080D91A6 */ POP {R3}
 /* 080D91A8 */ MOV R8, R3

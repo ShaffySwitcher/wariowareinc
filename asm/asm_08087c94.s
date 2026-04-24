@@ -99,7 +99,7 @@ _08087D38:
 /* 08087D3E */ MOVS R2, #0
 /* 08087D40 */ LDRSH R1, [R1, R2]
 /* 08087D42 */ MOVS R2, #0
-/* 08087D44 */ BL func_080EF4D8
+/* 08087D44 */ BL sprite_set_base_palette
 _08087D48:
 /* 08087D48 */ BL func_08087480
 /* 08087D4C */ POP {R4, R5}

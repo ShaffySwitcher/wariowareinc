@@ -32,7 +32,7 @@ glabel func_08048DE8
 /* 08048E18 */ MOVS R2, #0
 /* 08048E1A */ LDRSH R1, [R1, R2]
 /* 08048E1C */ MOVS R2, #0
-/* 08048E1E */ BL func_080EF5C4
+/* 08048E1E */ BL sprite_set_enable_updates
 /* 08048E22 */ BL func_08048C80
 /* 08048E26 */ LSLS R0, R0, #0X10
 /* 08048E28 */ ASRS R4, R0, #0X10

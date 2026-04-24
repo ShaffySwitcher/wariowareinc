@@ -187,7 +187,7 @@ u32 gameplay_update_scene(void) {
                 if (pauseAvailable != 0) {
                     gGameplayData.isPaused = 1;
                     gGameplayData.unk5_6 = 0;
-                    func_080EE9B8(gSpriteHandler, gGameplayData.unk1ee, (s8)(arg << 1));
+                    sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, (s8)(arg << 1));
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
                     func_08002024(1);
                     func_080EFA54(gSpriteHandler, 1);
@@ -229,7 +229,7 @@ u32 gameplay_update_scene(void) {
                 }
             } else if (gPressedKeys & (DPAD_LEFT | DPAD_RIGHT)) {
                 gGameplayData.unk5_6 ^= 1;
-                func_080EE9B8(gSpriteHandler, gGameplayData.unk1ee, (s8)(gGameplayData.unk5_6 + (arg << 1)));
+                sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, (s8)(gGameplayData.unk5_6 + (arg << 1)));
             }
             break;
         case GAMEPLAY_STATE_RESUMING:
@@ -291,7 +291,7 @@ void func_08008798(void) {
         dma3_set((u8 *)gGameplayData.unk28c + 0x140, D_03004394, 0x20, 0x20, 0x100);
 
         if (gGameplayData.unk188 >= 0) {
-            gGameplayData.unk290 = func_080EF784(gSpriteHandler, gGameplayData.unk188, 0);
+            gGameplayData.unk290 = sprite_get_data(gSpriteHandler, gGameplayData.unk188, 0);
             sprite_set_visible(gSpriteHandler, gGameplayData.unk188, 0);
         }
     }

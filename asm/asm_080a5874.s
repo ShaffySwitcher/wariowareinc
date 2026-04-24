@@ -16,7 +16,7 @@ glabel func_080A5874
 /* 080A5884 */ MOVS R2, #0
 /* 080A5886 */ LDRSH R1, [R1, R2]
 /* 080A5888 */ MOVS R2, #0
-/* 080A588A */ BL func_080EF784
+/* 080A588A */ BL sprite_get_data
 /* 080A588E */ CMP R0, #0
 /* 080A5890 */ BEQ _080A58C2
 /* 080A5892 */ CMP R4, #2

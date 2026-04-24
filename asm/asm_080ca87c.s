@@ -75,13 +75,13 @@ _080CA8E8:
 /* 080CA8F2 */ LDRSH R1, [R1, R2]
 /* 080CA8F4 */ LSLS R2, R7, #0X18
 /* 080CA8F6 */ ASRS R2, R2, #0X18
-/* 080CA8F8 */ BL func_080EE9B8
+/* 080CA8F8 */ BL sprite_set_anim_cel
 /* 080CA8FC */ LDR R0, [R5]
 /* 080CA8FE */ LDR R1, [R4]
 /* 080CA900 */ MOVS R2, #0X38
 /* 080CA902 */ LDRSH R1, [R1, R2]
 /* 080CA904 */ MOVS R2, #1
-/* 080CA906 */ BL func_080EE9B8
+/* 080CA906 */ BL sprite_set_anim_cel
 /* 080CA90A */ LDR R0, =D_083FCB84
 /* 080CA90C */ BL play_sound
 /* 080CA910 */ MOVS R0, #0X18

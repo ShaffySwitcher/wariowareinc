@@ -127,7 +127,7 @@ _0804389C:
 /* 080438BA */ STR R3, [SP, #4]
 /* 080438BC */ MOVS R3, #0
 /* 080438BE */ STR R3, [SP, #8]
-/* 080438C0 */ BL func_080EF50C
+/* 080438C0 */ BL sprite_set_anim
 /* 080438C4 */ LDR R0, [R4]
 /* 080438C6 */ LDR R3, [R5]
 /* 080438C8 */ ADDS R1, R3, #0

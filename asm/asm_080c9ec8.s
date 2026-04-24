@@ -280,12 +280,12 @@ _080CA0EC:
 /* 080CA0FE */ ASRS R2, R2, #0X18
 /* 080CA100 */ ADDS R0, R4, #0
 /* 080CA102 */ LDR R1, [SP, #0X14]
-/* 080CA104 */ BL func_080EE9B8
+/* 080CA104 */ BL sprite_set_anim_cel
 /* 080CA108 */ LDR R0, [R6]
 /* 080CA10A */ MOVS R2, #0
 /* 080CA10C */ LDRSH R1, [R7, R2]
 /* 080CA10E */ MOVS R2, #1
-/* 080CA110 */ BL func_080EF5C4
+/* 080CA110 */ BL sprite_set_enable_updates
 /* 080CA114 */ ADDS R5, #1
 /* 080CA116 */ ADDS R7, #0X24
 /* 080CA118 */ CMP R5, #0X1D

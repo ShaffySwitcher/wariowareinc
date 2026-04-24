@@ -213,7 +213,7 @@ _080DAD36:
 /* 080DAD3C */ MOVS R2, #0
 /* 080DAD3E */ LDRSH R1, [R1, R2]
 /* 080DAD40 */ MOVS R2, #0
-/* 080DAD42 */ BL func_080EE9B8
+/* 080DAD42 */ BL sprite_set_anim_cel
 /* 080DAD46 */ LDR R0, [R4]
 /* 080DAD48 */ LDR R1, [R6]
 /* 080DAD4A */ ADDS R1, #0X4C
@@ -302,7 +302,7 @@ _080DADB0:
 /* 080DADF8 */ STR R3, [SP]
 /* 080DADFA */ STR R3, [SP, #4]
 /* 080DADFC */ STR R3, [SP, #8]
-/* 080DADFE */ BL func_080EF50C
+/* 080DADFE */ BL sprite_set_anim
 /* 080DAE02 */ LDR R0, [R5]
 /* 080DAE04 */ LDR R2, [R4]
 /* 080DAE06 */ MOVS R3, #0X12
@@ -383,7 +383,7 @@ _080DAE9A:
 /* 080DAEA8 */ MOVS R3, #0
 /* 080DAEAA */ LDRSH R1, [R1, R3]
 /* 080DAEAC */ MOVS R2, #1
-/* 080DAEAE */ BL func_080EE9B8
+/* 080DAEAE */ BL sprite_set_anim_cel
 /* 080DAEB2 */ ADDS R0, R5, #1
 /* 080DAEB4 */ LSLS R0, R0, #0X18
 /* 080DAEB6 */ LSRS R5, R0, #0X18
@@ -410,7 +410,7 @@ _080DAE9A:
 /* 080DAEE4 */ STR R3, [SP]
 /* 080DAEE6 */ STR R3, [SP, #4]
 /* 080DAEE8 */ STR R3, [SP, #8]
-/* 080DAEEA */ BL func_080EF50C
+/* 080DAEEA */ BL sprite_set_anim
 /* 080DAEEE */ LDR R0, [R6]
 /* 080DAEF0 */ LDR R2, [R4]
 /* 080DAEF2 */ ADDS R1, R2, #0

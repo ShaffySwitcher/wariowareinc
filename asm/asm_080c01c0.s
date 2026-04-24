@@ -81,7 +81,7 @@ _080C0234:
 /* 080C0266 */ MOVS R3, #0
 /* 080C0268 */ LDRSH R1, [R4, R3]
 /* 080C026A */ MOVS R2, #1
-/* 080C026C */ BL func_080EF4D8
+/* 080C026C */ BL sprite_set_base_palette
 /* 080C0270 */ ADDS R6, #1
 /* 080C0272 */ CMP R6, #2
 /* 080C0274 */ BGT _080C028C
@@ -124,7 +124,7 @@ _080C0294:
 /* 080C02AE */ MOVS R2, #8
 /* 080C02B0 */ LDRSH R1, [R1, R2]
 /* 080C02B2 */ MOVS R2, #5
-/* 080C02B4 */ BL func_080EF4D8
+/* 080C02B4 */ BL sprite_set_base_palette
 /* 080C02B8 */ LDR R1, [R4]
 /* 080C02BA */ MOVS R0, #0
 /* 080C02BC */ STR R0, [R1, #0X18]

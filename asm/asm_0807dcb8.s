@@ -34,7 +34,7 @@ _0807DCE2:
 /* 0807DCEA */ MOVS R7, #0
 /* 0807DCEC */ LDRSH R1, [R4, R7]
 /* 0807DCEE */ ASRS R2, R2, #0X18
-/* 0807DCF0 */ BL func_080EE9B8
+/* 0807DCF0 */ BL sprite_set_anim_cel
 /* 0807DCF4 */ LDR R0, [R5]
 /* 0807DCF6 */ MOVS R2, #0
 /* 0807DCF8 */ LDRSH R1, [R4, R2]

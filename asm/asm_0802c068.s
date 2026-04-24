@@ -28,13 +28,13 @@ glabel func_0802C068
 /* 0802C090 */ LDRSH R5, [R1, R2]
 /* 0802C092 */ ADDS R1, R5, #0
 /* 0802C094 */ MOVS R2, #0
-/* 0802C096 */ BL func_080EE9B8
+/* 0802C096 */ BL sprite_set_anim_cel
 /* 0802C09A */ LDR R0, [R4]
 /* 0802C09C */ STR R7, [SP]
 /* 0802C09E */ ADDS R1, R5, #0
 /* 0802C0A0 */ MOVS R2, #0
 /* 0802C0A2 */ MOVS R3, #0
-/* 0802C0A4 */ BL func_080EF644
+/* 0802C0A4 */ BL sprite_set_playback
 /* 0802C0A8 */ LDR R0, =D_083FD1C4
 /* 0802C0AA */ BL play_sound
 _0802C0AE:

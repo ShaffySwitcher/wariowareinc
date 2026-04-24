@@ -29,7 +29,7 @@ glabel func_08044CB0
 /* 08044CDC */ MOVS R0, #0
 /* 08044CDE */ STR R0, [SP, #8]
 /* 08044CE0 */ ADDS R0, R4, #0
-/* 08044CE2 */ BL func_080EF50C
+/* 08044CE2 */ BL sprite_set_anim
 /* 08044CE6 */ ADDS R1, R5, #0
 /* 08044CE8 */ ADDS R1, #0X5D
 /* 08044CEA */ MOVS R0, #3

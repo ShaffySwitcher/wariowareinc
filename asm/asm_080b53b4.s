@@ -29,7 +29,7 @@ glabel func_080B53B4
 /* 080B53DE */ MOVS R4, #0
 /* 080B53E0 */ STR R4, [SP, #4]
 /* 080B53E2 */ STR R4, [SP, #8]
-/* 080B53E4 */ BL func_080EF50C
+/* 080B53E4 */ BL sprite_set_anim
 /* 080B53E8 */ B _080B545A
 
 .balign 4, 0
@@ -67,7 +67,7 @@ _080B53FC:
 /* 080B541C */ STR R4, [SP]
 /* 080B541E */ STR R5, [SP, #4]
 /* 080B5420 */ STR R5, [SP, #8]
-/* 080B5422 */ BL func_080EF50C
+/* 080B5422 */ BL sprite_set_anim
 /* 080B5426 */ B _080B545A
 
 .balign 4, 0
@@ -99,7 +99,7 @@ _080B5434:
 /* 080B5450 */ STR R5, [SP]
 /* 080B5452 */ STR R4, [SP, #4]
 /* 080B5454 */ STR R4, [SP, #8]
-/* 080B5456 */ BL func_080EF50C
+/* 080B5456 */ BL sprite_set_anim
 _080B545A:
 /* 080B545A */ ADD SP, #0XC
 /* 080B545C */ POP {R4, R5}

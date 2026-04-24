@@ -73,7 +73,7 @@ _080A5466:
 /* 080A547C */ STR R2, [SP, #8]
 /* 080A547E */ ADDS R2, R5, #0
 /* 080A5480 */ MOVS R3, #0
-/* 080A5482 */ BL func_080EF50C
+/* 080A5482 */ BL sprite_set_anim
 /* 080A5486 */ LDR R0, _080A54CC
 /* 080A5488 */ BL play_sound
 /* 080A548C */ LDR R0, _080A54D0

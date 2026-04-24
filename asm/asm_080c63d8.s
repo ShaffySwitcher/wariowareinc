@@ -76,7 +76,7 @@ _080C63EE:
 /* 080C6468 */ MOVS R2, #3
 /* 080C646A */ LDRSB R2, [R4, R2]
 /* 080C646C */ ADDS R3, R6, #0
-/* 080C646E */ BL func_080EF708
+/* 080C646E */ BL sprite_set_affine_params
 /* 080C6472 */ ADDS R5, #1
 /* 080C6474 */ LSLS R5, R5, #0X10
 /* 080C6476 */ LSRS R0, R5, #0X10

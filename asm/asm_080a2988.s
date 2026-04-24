@@ -46,7 +46,7 @@ glabel func_080A2988
 /* 080A29D8 */ LSLS R2, R2, #0X18
 /* 080A29DA */ ASRS R2, R2, #0X18
 /* 080A29DC */ ADDS R3, #0X3A
-/* 080A29DE */ BL func_080EF708
+/* 080A29DE */ BL sprite_set_affine_params
 /* 080A29E2 */ POP {R4, R5, R6}
 /* 080A29E4 */ POP {R0}
 /* 080A29E6 */ BX R0

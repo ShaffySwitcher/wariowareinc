@@ -239,7 +239,7 @@ _08094754:
 /* 0809475C */ MOVS R2, #0
 /* 0809475E */ LDRSH R1, [R1, R2]
 /* 08094760 */ MOVS R2, #0
-/* 08094762 */ BL func_080EE9B8
+/* 08094762 */ BL sprite_set_anim_cel
 /* 08094766 */ LDR R0, [R5]
 /* 08094768 */ LDR R1, [R6]
 /* 0809476A */ ADDS R1, R4
@@ -256,7 +256,7 @@ _08094754:
 /* 08094782 */ STR R7, [SP]
 /* 08094784 */ MOVS R2, #1
 /* 08094786 */ MOVS R3, #0
-/* 08094788 */ BL func_080EF644
+/* 08094788 */ BL sprite_set_playback
 /* 0809478C */ LDR R0, [R5]
 /* 0809478E */ LDR R1, [R6]
 /* 08094790 */ ADDS R1, R4
@@ -385,7 +385,7 @@ _08094868:
 /* 08094870 */ MOVS R2, #0
 /* 08094872 */ LDRSH R1, [R1, R2]
 /* 08094874 */ MOVS R2, #1
-/* 08094876 */ BL func_080EE9B8
+/* 08094876 */ BL sprite_set_anim_cel
 /* 0809487A */ LDR R0, [R5]
 /* 0809487C */ LDR R1, [R6]
 /* 0809487E */ ADDS R1, R4
@@ -402,7 +402,7 @@ _08094868:
 /* 08094896 */ STR R7, [SP]
 /* 08094898 */ MOVS R2, #1
 /* 0809489A */ MOVS R3, #0
-/* 0809489C */ BL func_080EF644
+/* 0809489C */ BL sprite_set_playback
 /* 080948A0 */ LDR R0, [R5]
 /* 080948A2 */ LDR R1, [R6]
 /* 080948A4 */ ADDS R1, R4
@@ -570,7 +570,7 @@ _08094994:
 /* 080949C2 */ MOVS R2, #0
 /* 080949C4 */ LDRSH R1, [R1, R2]
 /* 080949C6 */ MOVS R2, #2
-/* 080949C8 */ BL func_080EE9B8
+/* 080949C8 */ BL sprite_set_anim_cel
 /* 080949CC */ LDR R0, [R4]
 /* 080949CE */ LDR R1, [R5]
 /* 080949D0 */ ADDS R1, #0X5E
@@ -579,7 +579,7 @@ _08094994:
 /* 080949D6 */ STR R6, [SP]
 /* 080949D8 */ MOVS R2, #0
 /* 080949DA */ MOVS R3, #0
-/* 080949DC */ BL func_080EF644
+/* 080949DC */ BL sprite_set_playback
 /* 080949E0 */ LDR R0, [R4]
 /* 080949E2 */ LDR R1, [R5]
 /* 080949E4 */ ADDS R1, #0X5E
@@ -705,7 +705,7 @@ _08094AB0:
 /* 08094ACC */ MOVS R2, #0
 /* 08094ACE */ LDRSH R1, [R1, R2]
 /* 08094AD0 */ MOVS R2, #2
-/* 08094AD2 */ BL func_080EE9B8
+/* 08094AD2 */ BL sprite_set_anim_cel
 /* 08094AD6 */ LDR R0, [R4]
 /* 08094AD8 */ LDR R1, [R5]
 /* 08094ADA */ ADDS R1, #0X5E
@@ -714,7 +714,7 @@ _08094AB0:
 /* 08094AE0 */ STR R6, [SP]
 /* 08094AE2 */ MOVS R2, #0
 /* 08094AE4 */ MOVS R3, #0
-/* 08094AE6 */ BL func_080EF644
+/* 08094AE6 */ BL sprite_set_playback
 /* 08094AEA */ LDR R0, [R4]
 /* 08094AEC */ LDR R1, [R5]
 /* 08094AEE */ ADDS R1, #0X5E

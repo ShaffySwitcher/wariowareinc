@@ -47,7 +47,7 @@ _080260D8:
 /* 080260F0 */ LDR R0, [R1]
 /* 080260F2 */ ADDS R1, R5, #0
 /* 080260F4 */ MOVS R2, #7
-/* 080260F6 */ BL func_080EF784
+/* 080260F6 */ BL sprite_get_data
 /* 080260FA */ ADDS R1, R0, #0
 /* 080260FC */ ADDS R0, R4, #0
 /* 080260FE */ BL func_08004B78

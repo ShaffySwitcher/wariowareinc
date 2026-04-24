@@ -46,7 +46,7 @@ glabel func_080CFE54
 /* 080CFEA4 */ STR R2, [SP]
 /* 080CFEA6 */ MOVS R2, #1
 /* 080CFEA8 */ MOVS R3, #0XA
-/* 080CFEAA */ BL func_080EF644
+/* 080CFEAA */ BL sprite_set_playback
 /* 080CFEAE */ LDR R1, [R5]
 /* 080CFEB0 */ B _080CFF18
 
@@ -99,7 +99,7 @@ _080CFECC:
 /* 080CFF00 */ STR R2, [SP]
 /* 080CFF02 */ MOVS R2, #1
 /* 080CFF04 */ MOVS R3, #0XA
-/* 080CFF06 */ BL func_080EF644
+/* 080CFF06 */ BL sprite_set_playback
 /* 080CFF0A */ ADDS R0, R4, #1
 /* 080CFF0C */ LSLS R0, R0, #0X18
 /* 080CFF0E */ LSRS R4, R0, #0X18

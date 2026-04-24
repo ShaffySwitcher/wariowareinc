@@ -129,7 +129,7 @@ _080931D8:
 /* 080931EE */ STR R3, [SP]
 /* 080931F0 */ STR R3, [SP, #4]
 /* 080931F2 */ STR R3, [SP, #8]
-/* 080931F4 */ BL func_080EF50C
+/* 080931F4 */ BL sprite_set_anim
 /* 080931F8 */ LDR R1, [R6]
 /* 080931FA */ MOVS R0, #0XC0
 /* 080931FC */ LSLS R0, R0, #8

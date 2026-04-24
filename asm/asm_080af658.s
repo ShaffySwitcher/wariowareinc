@@ -40,7 +40,7 @@ _080AF674:
 /* 080AF698 */ MOVS R2, #0
 /* 080AF69A */ LDRSH R1, [R4, R2]
 /* 080AF69C */ MOVS R2, #7
-/* 080AF69E */ BL func_080EF784
+/* 080AF69E */ BL sprite_get_data
 /* 080AF6A2 */ ADDS R6, R0, #0
 /* 080AF6A4 */ MOVS R0, #3
 /* 080AF6A6 */ BL get_random_range
@@ -55,7 +55,7 @@ _080AF674:
 /* 080AF6BA */ STR R7, [SP, #4]
 /* 080AF6BC */ STR R7, [SP, #8]
 /* 080AF6BE */ LDR R2, _080AF704
-/* 080AF6C0 */ BL func_080EF50C
+/* 080AF6C0 */ BL sprite_set_anim
 /* 080AF6C4 */ MOV R1, R8
 /* 080AF6C6 */ LDR R0, [R1]
 /* 080AF6C8 */ MOVS R2, #0

@@ -46,7 +46,7 @@ glabel func_0801F964
 /* 0801F9B8 */ LDRB R2, [R2]
 /* 0801F9BA */ LSLS R2, R2, #0X18
 /* 0801F9BC */ ASRS R2, R2, #0X18
-/* 0801F9BE */ BL func_080EE9B8
+/* 0801F9BE */ BL sprite_set_anim_cel
 /* 0801F9C2 */ MOVS R0, #0
 /* 0801F9C4 */ BL func_08009EE0
 /* 0801F9C8 */ POP {R4}

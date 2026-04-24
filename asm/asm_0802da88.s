@@ -223,7 +223,7 @@ _0802DB4A:
 /* 0802DC5C */ MOVS R3, #0
 /* 0802DC5E */ LDRSH R1, [R1, R3]
 /* 0802DC60 */ MOVS R2, #1
-/* 0802DC62 */ BL func_080EF5C4
+/* 0802DC62 */ BL sprite_set_enable_updates
 /* 0802DC66 */ MOVS R0, #0XB8
 /* 0802DC68 */ LSLS R0, R0, #8
 /* 0802DC6A */ STR R0, [R7, #0X74]

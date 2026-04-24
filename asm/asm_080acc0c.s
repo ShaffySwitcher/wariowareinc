@@ -47,7 +47,7 @@ _080ACC3E:
 /* 080ACC58 */ MOVS R2, #0
 /* 080ACC5A */ LDRSH R1, [R6, R2]
 /* 080ACC5C */ MOVS R2, #0
-/* 080ACC5E */ BL func_080EF5C4
+/* 080ACC5E */ BL sprite_set_enable_updates
 /* 080ACC62 */ MOV R1, SB
 /* 080ACC64 */ LDR R0, [R1]
 /* 080ACC66 */ MOVS R2, #0

@@ -24,7 +24,7 @@ glabel func_080B3B28
 /* 080B3B48 */ STR R4, [SP, #8]
 /* 080B3B4A */ ADDS R0, R3, #0
 /* 080B3B4C */ MOVS R3, #0
-/* 080B3B4E */ BL func_080EF50C
+/* 080B3B4E */ BL sprite_set_anim
 /* 080B3B52 */ ADD SP, #0XC
 /* 080B3B54 */ POP {R4, R5}
 /* 080B3B56 */ POP {R0}

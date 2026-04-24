@@ -18,7 +18,7 @@ glabel func_08016BC4
 /* 08016BDA */ MOVS R2, #1
 /* 08016BDC */ RSBS R2, R2, #0
 /* 08016BDE */ ADDS R1, R4, #0
-/* 08016BE0 */ BL func_080EF880
+/* 08016BE0 */ BL sprite_set_callback_cel
 /* 08016BE4 */ POP {R4}
 /* 08016BE6 */ POP {R0}
 /* 08016BE8 */ BX R0

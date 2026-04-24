@@ -31,7 +31,7 @@ _080B98DA:
 /* 080B98F8 */ STR R7, [SP, #4]
 /* 080B98FA */ MOVS R3, #0
 /* 080B98FC */ STR R3, [SP, #8]
-/* 080B98FE */ BL func_080EF50C
+/* 080B98FE */ BL sprite_set_anim
 /* 080B9902 */ LDR R0, [R5]
 /* 080B9904 */ STR R6, [R0, #8]
 /* 080B9906 */ ADD SP, #0XC

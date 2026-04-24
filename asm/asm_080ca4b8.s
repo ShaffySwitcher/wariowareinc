@@ -165,7 +165,7 @@ _080CA5BA:
 /* 080CA5CA */ MOVS R2, #0
 /* 080CA5CC */ LDRSH R1, [R1, R2]
 /* 080CA5CE */ ADDS R2, R4, #0
-/* 080CA5D0 */ BL func_080EE9B8
+/* 080CA5D0 */ BL sprite_set_anim_cel
 /* 080CA5D4 */ LDR R0, [R6]
 /* 080CA5D6 */ ADDS R0, #0X44
 /* 080CA5D8 */ STRB R5, [R0]
@@ -199,7 +199,7 @@ _080CA5FC:
 /* 080CA608 */ MOVS R2, #0
 /* 080CA60A */ LDRSH R1, [R1, R2]
 /* 080CA60C */ MOVS R2, #0
-/* 080CA60E */ BL func_080EE9B8
+/* 080CA60E */ BL sprite_set_anim_cel
 _080CA612:
 /* 080CA612 */ POP {R3}
 /* 080CA614 */ MOV R8, R3

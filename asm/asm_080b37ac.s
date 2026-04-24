@@ -103,7 +103,7 @@ _080B384C:
 /* 080B3860 */ MOVS R3, #2
 /* 080B3862 */ STR R3, [SP, #8]
 /* 080B3864 */ MOVS R3, #0
-/* 080B3866 */ BL func_080EF50C
+/* 080B3866 */ BL sprite_set_anim
 /* 080B386A */ STR R4, [R5, #4]
 /* 080B386C */ STR R4, [R5, #8]
 /* 080B386E */ ADDS R1, R5, #0

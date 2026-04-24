@@ -13,13 +13,13 @@ glabel func_0806A61C
 /* 0806A626 */ MOVS R2, #8
 /* 0806A628 */ LDRSH R1, [R1, R2]
 /* 0806A62A */ MOVS R2, #0
-/* 0806A62C */ BL func_080EF5C4
+/* 0806A62C */ BL sprite_set_enable_updates
 /* 0806A630 */ LDR R0, [R5]
 /* 0806A632 */ LDR R1, [R4]
 /* 0806A634 */ MOVS R2, #0XA
 /* 0806A636 */ LDRSH R1, [R1, R2]
 /* 0806A638 */ MOVS R2, #0
-/* 0806A63A */ BL func_080EF5C4
+/* 0806A63A */ BL sprite_set_enable_updates
 /* 0806A63E */ LDR R1, [R4]
 /* 0806A640 */ MOVS R0, #3
 /* 0806A642 */ STRB R0, [R1, #0X16]

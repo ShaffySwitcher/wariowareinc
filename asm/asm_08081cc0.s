@@ -25,7 +25,7 @@ glabel func_08081CC0
 /* 08081CE2 */ MOVS R3, #0
 /* 08081CE4 */ LDRSH R1, [R2, R3]
 /* 08081CE6 */ MOVS R2, #6
-/* 08081CE8 */ BL func_080EF784
+/* 08081CE8 */ BL sprite_get_data
 /* 08081CEC */ STR R0, [SP, #0X14]
 /* 08081CEE */ MOVS R0, #0X40
 /* 08081CF0 */ MOV SB, R0

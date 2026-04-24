@@ -24,7 +24,7 @@ _080BFD02:
 /* 080BFD08 */ LDRSH R1, [R4, R3]
 /* 080BFD0A */ LSLS R2, R2, #0X18
 /* 080BFD0C */ ASRS R2, R2, #0X18
-/* 080BFD0E */ BL func_080EE9B8
+/* 080BFD0E */ BL sprite_set_anim_cel
 /* 080BFD12 */ POP {R4}
 /* 080BFD14 */ POP {R0}
 /* 080BFD16 */ BX R0

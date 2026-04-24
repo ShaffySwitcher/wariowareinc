@@ -45,7 +45,7 @@ _080213CC:
 /* 080213F6 */ STR R5, [SP, #8]
 /* 080213F8 */ ADDS R0, R3, #0
 /* 080213FA */ MOVS R3, #0
-/* 080213FC */ BL func_080EF50C
+/* 080213FC */ BL sprite_set_anim
 /* 08021400 */ MOV R0, R8
 /* 08021402 */ BL get_random_range
 /* 08021406 */ LSLS R0, R0, #0X10

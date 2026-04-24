@@ -17,7 +17,7 @@ glabel func_080E04D0
 /* 080E04E4 */ ADDS R0, R5, #0
 /* 080E04E6 */ MOVS R2, #0
 /* 080E04E8 */ MOVS R3, #0
-/* 080E04EA */ BL func_080EF60C
+/* 080E04EA */ BL sprite_set_callback
 /* 080E04EE */ MOVS R0, #0
 /* 080E04F0 */ LDRSH R1, [R4, R0]
 /* 080E04F2 */ ADDS R0, R5, #0

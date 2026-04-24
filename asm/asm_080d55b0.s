@@ -84,7 +84,7 @@ glabel func_080D55B0
 /* 080D5650 */ STR R7, [SP]
 /* 080D5652 */ MOVS R2, #1
 /* 080D5654 */ MOVS R3, #0
-/* 080D5656 */ BL func_080EF644
+/* 080D5656 */ BL sprite_set_playback
 /* 080D565A */ B _080D568A
 
 .balign 4, 0
@@ -120,7 +120,7 @@ _080D5674:
 /* 080D5680 */ RSBS R2, R2, #0
 /* 080D5682 */ STR R7, [SP]
 /* 080D5684 */ MOVS R3, #7
-/* 080D5686 */ BL func_080EF644
+/* 080D5686 */ BL sprite_set_playback
 _080D568A:
 /* 080D568A */ ADD SP, #4
 /* 080D568C */ POP {R4, R5, R6, R7}

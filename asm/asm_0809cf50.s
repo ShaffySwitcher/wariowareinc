@@ -26,13 +26,13 @@ glabel func_0809CF50
 /* 0809CF76 */ STR R0, [SP, #8]
 /* 0809CF78 */ ADDS R0, R6, #0
 /* 0809CF7A */ MOVS R3, #0
-/* 0809CF7C */ BL func_080EF50C
+/* 0809CF7C */ BL sprite_set_anim
 /* 0809CF80 */ MOVS R2, #0
 /* 0809CF82 */ LDRSH R1, [R5, R2]
 /* 0809CF84 */ LDR R2, =func_0809CF30 + 1
 /* 0809CF86 */ LDR R3, [R4]
 /* 0809CF88 */ ADDS R0, R6, #0
-/* 0809CF8A */ BL func_080EF60C
+/* 0809CF8A */ BL sprite_set_callback
 /* 0809CF8E */ LDR R1, [R4]
 /* 0809CF90 */ MOVS R2, #0XB0
 /* 0809CF92 */ LSLS R2, R2, #1

@@ -41,7 +41,7 @@ _080BEFE0:
 /* 080BF002 */ MOVS R2, #0
 /* 080BF004 */ LDRSH R1, [R1, R2]
 /* 080BF006 */ MOVS R2, #1
-/* 080BF008 */ BL func_080EE9B8
+/* 080BF008 */ BL sprite_set_anim_cel
 /* 080BF00C */ LDR R0, [R4]
 /* 080BF00E */ ADDS R0, #0X45
 /* 080BF010 */ MOVS R1, #1

@@ -277,7 +277,7 @@ _08080162:
 /* 080801D2 */ MOVS R2, #0XC
 /* 080801D4 */ LDRSH R1, [R7, R2]
 /* 080801D6 */ MOVS R2, #1
-/* 080801D8 */ BL func_080EF5C4
+/* 080801D8 */ BL sprite_set_enable_updates
 /* 080801DC */ MOV R3, R8
 /* 080801DE */ LDR R0, [R3]
 /* 080801E0 */ MOV R2, SL

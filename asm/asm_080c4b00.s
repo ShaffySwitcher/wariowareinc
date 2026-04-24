@@ -36,13 +36,13 @@ _080C4B22:
 /* 080C4B32 */ STR R5, [SP]
 /* 080C4B34 */ MOVS R2, #1
 /* 080C4B36 */ MOVS R3, #2
-/* 080C4B38 */ BL func_080EF644
+/* 080C4B38 */ BL sprite_set_playback
 /* 080C4B3C */ LDR R0, [R4]
 /* 080C4B3E */ LDR R1, [R6]
 /* 080C4B40 */ MOVS R2, #0X14
 /* 080C4B42 */ LDRSH R1, [R1, R2]
 /* 080C4B44 */ MOVS R2, #0
-/* 080C4B46 */ BL func_080EF5C4
+/* 080C4B46 */ BL sprite_set_enable_updates
 /* 080C4B4A */ LDR R1, [R6]
 /* 080C4B4C */ STRH R5, [R1, #6]
 /* 080C4B4E */ B _080C4B7C

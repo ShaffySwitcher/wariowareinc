@@ -1687,7 +1687,7 @@ _0800B302:
 /* 0800B322 */ STR R4, [SP, #4]
 /* 0800B324 */ STR R5, [SP, #8]
 /* 0800B326 */ MOV R2, R8
-/* 0800B328 */ BL func_080EF50C
+/* 0800B328 */ BL sprite_set_anim
 /* 0800B32C */ B _0800B74C
 
 .balign 4, 0
@@ -1703,7 +1703,7 @@ _0800B334:
 /* 0800B340 */ MOV R3, R8
 /* 0800B342 */ LSLS R2, R3, #0X18
 /* 0800B344 */ ASRS R2, R2, #0X18
-/* 0800B346 */ BL func_080EE9B8
+/* 0800B346 */ BL sprite_set_anim_cel
 /* 0800B34A */ B _0800B74C
 
 .balign 4, 0
@@ -1725,7 +1725,7 @@ _0800B350:
 /* 0800B368 */ ASRS R2, R2, #0X1C
 /* 0800B36A */ ASRS R3, R3, #0X18
 /* 0800B36C */ STR R4, [SP]
-/* 0800B36E */ BL func_080EF644
+/* 0800B36E */ BL sprite_set_playback
 /* 0800B372 */ B _0800B74C
 
 .balign 4, 0
@@ -1797,14 +1797,14 @@ _0800B3DC:
 /* 0800B3E6 */ LDRSH R5, [R1, R3]
 /* 0800B3E8 */ ADDS R1, R5, #0
 /* 0800B3EA */ MOVS R2, #4
-/* 0800B3EC */ BL func_080EF784
+/* 0800B3EC */ BL sprite_get_data
 /* 0800B3F0 */ ADDS R0, R0, R7
 /* 0800B3F2 */ LSLS R0, R0, #0X10
 /* 0800B3F4 */ LSRS R6, R0, #0X10
 /* 0800B3F6 */ LDR R0, [R4]
 /* 0800B3F8 */ ADDS R1, R5, #0
 /* 0800B3FA */ MOVS R2, #5
-/* 0800B3FC */ BL func_080EF784
+/* 0800B3FC */ BL sprite_get_data
 /* 0800B400 */ ADDS R3, R0, #0
 /* 0800B402 */ ADD R3, R8
 /* 0800B404 */ LDR R0, [R4]
@@ -1828,7 +1828,7 @@ _0800B41C:
 /* 0800B426 */ LDRSH R5, [R1, R6]
 /* 0800B428 */ ADDS R1, R5, #0
 /* 0800B42A */ MOVS R2, #6
-/* 0800B42C */ BL func_080EF784
+/* 0800B42C */ BL sprite_get_data
 /* 0800B430 */ ADDS R0, R0, R7
 /* 0800B432 */ LSLS R0, R0, #0X10
 /* 0800B434 */ LSRS R6, R0, #0X10
@@ -1886,7 +1886,7 @@ _0800B484:
 /* 0800B490 */ MOV R6, R8
 /* 0800B492 */ LSLS R2, R6, #0X18
 /* 0800B494 */ ASRS R2, R2, #0X18
-/* 0800B496 */ BL func_080EF4D8
+/* 0800B496 */ BL sprite_set_base_palette
 /* 0800B49A */ B _0800B74C
 
 .balign 4, 0
@@ -2133,7 +2133,7 @@ _0800B66C:
 /* 0800B678 */ LDRSH R4, [R1, R2]
 /* 0800B67A */ ADDS R1, R4, #0
 /* 0800B67C */ MOVS R2, #7
-/* 0800B67E */ BL func_080EF784
+/* 0800B67E */ BL sprite_get_data
 /* 0800B682 */ ADDS R1, R0, #0
 /* 0800B684 */ LDR R0, [R7]
 /* 0800B686 */ BL func_08004B78
@@ -2159,7 +2159,7 @@ _0800B69C:
 /* 0800B6AE */ STR R6, [SP, #8]
 /* 0800B6B0 */ ADDS R1, R4, #0
 /* 0800B6B2 */ MOVS R3, #0
-/* 0800B6B4 */ BL func_080EF50C
+/* 0800B6B4 */ BL sprite_set_anim
 /* 0800B6B8 */ B _0800B74C
 
 .balign 4, 0
@@ -2218,12 +2218,12 @@ _0800B704:
 /* 0800B716 */ LDRSH R5, [R1, R3]
 /* 0800B718 */ LSRS R2, R6, #8
 /* 0800B71A */ ADDS R1, R5, #0
-/* 0800B71C */ BL func_080EF880
+/* 0800B71C */ BL sprite_set_callback_cel
 /* 0800B720 */ LDR R0, [R4]
 /* 0800B722 */ ADDS R1, R5, #0
 /* 0800B724 */ ADDS R2, R7, #0
 /* 0800B726 */ MOV R3, R8
-/* 0800B728 */ BL func_080EF60C
+/* 0800B728 */ BL sprite_set_callback
 /* 0800B72C */ B _0800B74C
 
 .balign 4, 0

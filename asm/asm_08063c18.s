@@ -42,7 +42,7 @@ glabel func_08063C18
 /* 08063C60 */ LDR R0, [R6]
 /* 08063C62 */ MOV R1, R8
 /* 08063C64 */ MOVS R2, #0
-/* 08063C66 */ BL func_080EE9B8
+/* 08063C66 */ BL sprite_set_anim_cel
 /* 08063C6A */ POP {R3}
 /* 08063C6C */ MOV R8, R3
 /* 08063C6E */ POP {R4, R5, R6}

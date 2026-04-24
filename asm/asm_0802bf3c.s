@@ -76,7 +76,7 @@ _0802BF86:
 /* 0802BFC2 */ MOVS R2, #0
 /* 0802BFC4 */ LDRSH R1, [R7, R2]
 /* 0802BFC6 */ MOVS R2, #1
-/* 0802BFC8 */ BL func_080EE9B8
+/* 0802BFC8 */ BL sprite_set_anim_cel
 /* 0802BFCC */ MOV R3, SB
 /* 0802BFCE */ LDR R0, [R3]
 /* 0802BFD0 */ MOVS R2, #0
@@ -85,7 +85,7 @@ _0802BF86:
 /* 0802BFD6 */ STR R3, [SP]
 /* 0802BFD8 */ MOVS R2, #1
 /* 0802BFDA */ MOVS R3, #0X7F
-/* 0802BFDC */ BL func_080EF644
+/* 0802BFDC */ BL sprite_set_playback
 /* 0802BFE0 */ MOV R1, SB
 /* 0802BFE2 */ LDR R0, [R1]
 /* 0802BFE4 */ MOVS R2, #0
@@ -115,7 +115,7 @@ _0802BF86:
 /* 0802C016 */ MOVS R3, #0
 /* 0802C018 */ STR R3, [SP, #8]
 /* 0802C01A */ LDR R2, _0802C060
-/* 0802C01C */ BL func_080EF50C
+/* 0802C01C */ BL sprite_set_anim
 /* 0802C020 */ LDR R0, =D_083FD084
 /* 0802C022 */ BL play_sound
 /* 0802C026 */ MOVS R0, #1

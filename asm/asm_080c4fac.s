@@ -126,13 +126,13 @@ _080C5064:
 /* 080C5084 */ MOVS R3, #0
 /* 080C5086 */ STR R3, [SP, #4]
 /* 080C5088 */ STR R3, [SP, #8]
-/* 080C508A */ BL func_080EF50C
+/* 080C508A */ BL sprite_set_anim
 /* 080C508E */ MOV R4, R8
 /* 080C5090 */ LDR R0, [R4]
 /* 080C5092 */ MOVS R2, #0X28
 /* 080C5094 */ LDRSH R1, [R7, R2]
 /* 080C5096 */ MOVS R2, #1
-/* 080C5098 */ BL func_080EF5C4
+/* 080C5098 */ BL sprite_set_enable_updates
 /* 080C509C */ MOV R3, SL
 /* 080C509E */ LDR R5, [R3]
 /* 080C50A0 */ LDR R0, _080C5114

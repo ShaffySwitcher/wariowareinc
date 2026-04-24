@@ -46,7 +46,7 @@ glabel func_0808AEE0
 /* 0808AF36 */ MOVS R3, #4
 /* 0808AF38 */ STR R3, [SP, #8]
 /* 0808AF3A */ MOVS R3, #0
-/* 0808AF3C */ BL func_080EF50C
+/* 0808AF3C */ BL sprite_set_anim
 /* 0808AF40 */ LDR R0, [R4]
 /* 0808AF42 */ MOVS R2, #0
 /* 0808AF44 */ LDRSH R1, [R6, R2]
@@ -61,7 +61,7 @@ glabel func_0808AEE0
 /* 0808AF5E */ LDRSH R1, [R6, R2]
 /* 0808AF60 */ LDR R2, _0808AF90
 /* 0808AF62 */ ADDS R3, R6, #0
-/* 0808AF64 */ BL func_080EF60C
+/* 0808AF64 */ BL sprite_set_callback
 /* 0808AF68 */ MOV R1, R8
 /* 0808AF6A */ LDR R0, [R1]
 /* 0808AF6C */ STRB R5, [R0, #0X16]

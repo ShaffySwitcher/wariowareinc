@@ -13,7 +13,7 @@ glabel func_0807E350
 /* 0807E35A */ MOVS R2, #0X16
 /* 0807E35C */ LDRSH R1, [R1, R2]
 /* 0807E35E */ MOVS R2, #1
-/* 0807E360 */ BL func_080EF5C4
+/* 0807E360 */ BL sprite_set_enable_updates
 /* 0807E364 */ POP {R0}
 /* 0807E366 */ BX R0
 

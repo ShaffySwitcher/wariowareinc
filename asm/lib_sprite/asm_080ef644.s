@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080EF644 \n\
+thumb_func_start sprite_set_playback \n\
 /* 080EF644 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080EF646 */ MOV R7, SB \n\
 /* 080EF648 */ MOV R6, R8 \n\

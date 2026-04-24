@@ -88,7 +88,7 @@ _0809CDAC:
 /* 0809CDCA */ MOVS R3, #0
 /* 0809CDCC */ STR R3, [SP, #4]
 /* 0809CDCE */ STR R3, [SP, #8]
-/* 0809CDD0 */ BL func_080EF50C
+/* 0809CDD0 */ BL sprite_set_anim
 /* 0809CDD4 */ BL func_0809CEAC
 /* 0809CDD8 */ LDR R1, [R4]
 _0809CDDA:

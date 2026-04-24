@@ -209,14 +209,14 @@ _080B42F8:
 /* 080B4416 */ MOVS R7, #0
 /* 080B4418 */ LDRSH R1, [R1, R7]
 /* 080B441A */ LDR R2, _080B44A8
-/* 080B441C */ BL func_080EF60C
+/* 080B441C */ BL sprite_set_callback
 /* 080B4420 */ LDR R0, [R6]
 /* 080B4422 */ LDR R1, [R4]
 /* 080B4424 */ ADDS R1, #0X5C
 /* 080B4426 */ MOVS R2, #0
 /* 080B4428 */ LDRSH R1, [R1, R2]
 /* 080B442A */ MOVS R2, #1
-/* 080B442C */ BL func_080EF5C4
+/* 080B442C */ BL sprite_set_enable_updates
 /* 080B4430 */ LDR R1, [R4]
 /* 080B4432 */ MOV R3, SL
 /* 080B4434 */ LSLS R3, R3, #8

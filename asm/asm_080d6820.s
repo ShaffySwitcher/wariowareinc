@@ -19,14 +19,14 @@ glabel func_080D6820
 /* 080D6836 */ MOVS R2, #8
 /* 080D6838 */ LDRSH R1, [R1, R2]
 /* 080D683A */ MOVS R2, #1
-/* 080D683C */ BL func_080EF5C4
+/* 080D683C */ BL sprite_set_enable_updates
 /* 080D6840 */ LDR R0, [R4]
 /* 080D6842 */ LDR R1, [R5]
 /* 080D6844 */ ADDS R1, #0X46
 /* 080D6846 */ MOVS R2, #0
 /* 080D6848 */ LDRSH R1, [R1, R2]
 /* 080D684A */ MOVS R2, #1
-/* 080D684C */ BL func_080EF5C4
+/* 080D684C */ BL sprite_set_enable_updates
 /* 080D6850 */ LDR R2, [R5]
 /* 080D6852 */ LDR R0, _080D68C8
 /* 080D6854 */ ADDS R1, R2, R0
@@ -44,14 +44,14 @@ glabel func_080D6820
 /* 080D686C */ MOVS R2, #8
 /* 080D686E */ LDRSH R1, [R1, R2]
 /* 080D6870 */ MOVS R2, #0
-/* 080D6872 */ BL func_080EF5C4
+/* 080D6872 */ BL sprite_set_enable_updates
 /* 080D6876 */ LDR R0, [R4]
 /* 080D6878 */ LDR R1, [R5]
 /* 080D687A */ ADDS R1, #0X46
 /* 080D687C */ MOVS R2, #0
 /* 080D687E */ LDRSH R1, [R1, R2]
 /* 080D6880 */ MOVS R2, #0
-/* 080D6882 */ BL func_080EF5C4
+/* 080D6882 */ BL sprite_set_enable_updates
 /* 080D6886 */ LDR R1, [R5]
 /* 080D6888 */ LDR R4, _080D68CC
 /* 080D688A */ ADDS R1, R4

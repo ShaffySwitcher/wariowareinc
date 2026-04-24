@@ -243,7 +243,7 @@ _0801299C:
 /* 080129C8 */ MOVS R2, #0XC
 /* 080129CA */ LDRSH R1, [R1, R2]
 /* 080129CC */ MOVS R2, #1
-/* 080129CE */ BL func_080EE9B8
+/* 080129CE */ BL sprite_set_anim_cel
 /* 080129D2 */ LDR R0, _08012A04
 /* 080129D4 */ BL play_sound
 /* 080129D8 */ LDR R0, =gGameplayDataPtr

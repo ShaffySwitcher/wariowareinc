@@ -70,7 +70,7 @@ _0805BCBC:
 /* 0805BCBE */ MOVS R2, #0
 /* 0805BCC0 */ LDRSH R1, [R4, R2]
 /* 0805BCC2 */ MOVS R2, #5
-/* 0805BCC4 */ BL func_080EE9B8
+/* 0805BCC4 */ BL sprite_set_anim_cel
 /* 0805BCC8 */ LDR R0, [R7]
 /* 0805BCCA */ MOVS R2, #0
 /* 0805BCCC */ LDRSH R1, [R4, R2]

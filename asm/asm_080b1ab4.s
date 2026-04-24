@@ -31,7 +31,7 @@ glabel func_080B1AB4
 /* 080B1AE6 */ MOVS R2, #0XA
 /* 080B1AE8 */ LDRSB R2, [R4, R2]
 /* 080B1AEA */ ADDS R3, R6, #0
-/* 080B1AEC */ BL func_080EF708
+/* 080B1AEC */ BL sprite_set_affine_params
 /* 080B1AF0 */ POP {R4, R5, R6}
 /* 080B1AF2 */ POP {R0}
 /* 080B1AF4 */ BX R0

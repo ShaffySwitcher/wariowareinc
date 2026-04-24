@@ -33,7 +33,7 @@ _080594FA:
 /* 0805951A */ MOVS R2, #0
 /* 0805951C */ LDRSH R1, [R1, R2]
 /* 0805951E */ MOVS R2, #0
-/* 08059520 */ BL func_080EF5C4
+/* 08059520 */ BL sprite_set_enable_updates
 /* 08059524 */ ADDS R4, #1
 /* 08059526 */ LSLS R4, R4, #0X10
 /* 08059528 */ LSRS R2, R4, #0X10

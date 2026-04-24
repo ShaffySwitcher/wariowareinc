@@ -81,7 +81,7 @@ _0801D14E:
 /* 0801D158 */ ADDS R1, R5, #0
 /* 0801D15A */ LDR R2, _0801D174
 /* 0801D15C */ MOVS R3, #0
-/* 0801D15E */ BL func_080EF50C
+/* 0801D15E */ BL sprite_set_anim
 /* 0801D162 */ MOVS R0, #0XF0
 /* 0801D164 */ BL get_random_range
 /* 0801D168 */ LSLS R0, R0, #0X10
@@ -107,7 +107,7 @@ _0801D178:
 /* 0801D18C */ ADDS R1, R5, #0
 /* 0801D18E */ LDR R2, _0801D1A8
 /* 0801D190 */ MOVS R3, #0
-/* 0801D192 */ BL func_080EF50C
+/* 0801D192 */ BL sprite_set_anim
 /* 0801D196 */ MOVS R0, #0XF0
 /* 0801D198 */ BL get_random_range
 /* 0801D19C */ LSLS R0, R0, #0X10
@@ -136,7 +136,7 @@ _0801D1B0:
 /* 0801D1C4 */ STR R4, [SP, #8]
 /* 0801D1C6 */ ADDS R1, R5, #0
 /* 0801D1C8 */ LDR R2, _0801D20C
-/* 0801D1CA */ BL func_080EF50C
+/* 0801D1CA */ BL sprite_set_anim
 /* 0801D1CE */ MOVS R0, #0XF0
 /* 0801D1D0 */ BL get_random_range
 /* 0801D1D4 */ LSLS R0, R0, #0X10

@@ -284,7 +284,7 @@ _0807598E:
 /* 08075A88 */ MOVS R4, #0
 /* 08075A8A */ LDRSH R1, [R1, R4]
 /* 08075A8C */ MOVS R2, #1
-/* 08075A8E */ BL func_080EF5C4
+/* 08075A8E */ BL sprite_set_enable_updates
 /* 08075A92 */ LDR R0, [R6]
 /* 08075A94 */ MOV R2, R8
 /* 08075A96 */ LDR R1, [R2]

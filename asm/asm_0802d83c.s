@@ -244,7 +244,7 @@ _0802D9D6:
 /* 0802D9FA */ MOVS R3, #0
 /* 0802D9FC */ STR R3, [SP, #4]
 /* 0802D9FE */ STR R3, [SP, #8]
-/* 0802DA00 */ BL func_080EF50C
+/* 0802DA00 */ BL sprite_set_anim
 /* 0802DA04 */ ADDS R5, #2
 /* 0802DA06 */ ADDS R4, #1
 /* 0802DA08 */ CMP R4, #2

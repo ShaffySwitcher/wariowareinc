@@ -40,7 +40,7 @@ glabel func_08026264
 /* 080262A8 */ LDR R0, [R4]
 /* 080262AA */ ADDS R1, R6, #0
 /* 080262AC */ MOVS R2, #7
-/* 080262AE */ BL func_080EF784
+/* 080262AE */ BL sprite_get_data
 /* 080262B2 */ ADDS R1, R0, #0
 /* 080262B4 */ ADDS R0, R5, #0
 /* 080262B6 */ BL func_08004B78

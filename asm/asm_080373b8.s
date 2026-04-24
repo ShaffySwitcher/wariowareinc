@@ -88,7 +88,7 @@ glabel func_080373B8
 /* 08037472 */ MOVS R7, #0
 /* 08037474 */ LDRSH R1, [R1, R7]
 /* 08037476 */ MOVS R2, #1
-/* 08037478 */ BL func_080EF5C4
+/* 08037478 */ BL sprite_set_enable_updates
 /* 0803747C */ LDR R0, [R6]
 /* 0803747E */ ADDS R0, #0XA8
 /* 08037480 */ LDR R1, _0803776C
@@ -120,7 +120,7 @@ glabel func_080373B8
 /* 080374B8 */ MOVS R2, #2
 /* 080374BA */ LDRSH R1, [R3, R2]
 /* 080374BC */ LDR R2, _08037774
-/* 080374BE */ BL func_080EF60C
+/* 080374BE */ BL sprite_set_callback
 /* 080374C2 */ LDR R0, [R5]
 /* 080374C4 */ LDR R1, [R6]
 /* 080374C6 */ MOVS R7, #2
@@ -132,7 +132,7 @@ glabel func_080373B8
 /* 080374D4 */ MOVS R2, #2
 /* 080374D6 */ LDRSH R1, [R1, R2]
 /* 080374D8 */ MOVS R2, #1
-/* 080374DA */ BL func_080EF5C4
+/* 080374DA */ BL sprite_set_enable_updates
 /* 080374DE */ LDR R1, _08037778
 /* 080374E0 */ MOV R7, SB
 /* 080374E2 */ LDR R0, [R7]
@@ -180,7 +180,7 @@ glabel func_080373B8
 /* 0803753C */ MOVS R2, #8
 /* 0803753E */ LDRSH R1, [R1, R2]
 /* 08037540 */ MOVS R2, #1
-/* 08037542 */ BL func_080EF5C4
+/* 08037542 */ BL sprite_set_enable_updates
 /* 08037546 */ LDR R0, [R6]
 /* 08037548 */ ADDS R0, #0XEE
 /* 0803754A */ MOV R1, SB
@@ -221,7 +221,7 @@ glabel func_080373B8
 /* 08037596 */ MOVS R2, #0XA
 /* 08037598 */ LDRSH R1, [R1, R2]
 /* 0803759A */ MOVS R2, #1
-/* 0803759C */ BL func_080EF5C4
+/* 0803759C */ BL sprite_set_enable_updates
 /* 080375A0 */ LDR R0, [R6]
 /* 080375A2 */ ADDS R0, #0XFC
 /* 080375A4 */ LDR R1, _08037790
@@ -269,7 +269,7 @@ glabel func_080373B8
 /* 08037600 */ MOVS R4, #0XC
 /* 08037602 */ LDRSH R1, [R1, R4]
 /* 08037604 */ MOVS R2, #1
-/* 08037606 */ BL func_080EF5C4
+/* 08037606 */ BL sprite_set_enable_updates
 /* 0803760A */ LDR R0, [R6]
 /* 0803760C */ MOVS R1, #0X85
 /* 0803760E */ LSLS R1, R1, #1
@@ -318,7 +318,7 @@ glabel func_080373B8
 /* 0803766C */ MOVS R4, #0XE
 /* 0803766E */ LDRSH R1, [R1, R4]
 /* 08037670 */ MOVS R2, #1
-/* 08037672 */ BL func_080EF5C4
+/* 08037672 */ BL sprite_set_enable_updates
 /* 08037676 */ LDR R0, [R5]
 /* 08037678 */ LDR R1, _080377A8
 /* 0803767A */ LDR R4, _080377AC

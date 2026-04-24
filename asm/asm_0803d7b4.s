@@ -47,7 +47,7 @@ glabel func_0803D7B4
 /* 0803D806 */ STR R4, [SP, #4]
 /* 0803D808 */ STR R4, [SP, #8]
 /* 0803D80A */ MOVS R3, #0
-/* 0803D80C */ BL func_080EF50C
+/* 0803D80C */ BL sprite_set_anim
 /* 0803D810 */ LDR R0, [R5]
 /* 0803D812 */ LDR R1, [R6]
 /* 0803D814 */ ADDS R1, #0X68

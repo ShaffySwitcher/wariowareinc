@@ -35,7 +35,7 @@ _0809D490:
 /* 0809D4A8 */ STR R4, [SP, #4]
 /* 0809D4AA */ STR R4, [SP, #8]
 /* 0809D4AC */ MOVS R3, #0
-/* 0809D4AE */ BL func_080EF50C
+/* 0809D4AE */ BL sprite_set_anim
 /* 0809D4B2 */ LDR R0, [R7]
 /* 0809D4B4 */ MOVS R2, #0
 /* 0809D4B6 */ LDRSH R1, [R5, R2]

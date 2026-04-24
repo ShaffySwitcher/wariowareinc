@@ -60,7 +60,7 @@ _0802F238:
 /* 0802F248 */ STR R7, [SP, #4]
 /* 0802F24A */ STR R7, [SP, #8]
 /* 0802F24C */ MOVS R3, #0
-/* 0802F24E */ BL func_080EF50C
+/* 0802F24E */ BL sprite_set_anim
 /* 0802F252 */ MOV R1, R8
 /* 0802F254 */ LDR R0, [R1]
 /* 0802F256 */ ADD R0, SB

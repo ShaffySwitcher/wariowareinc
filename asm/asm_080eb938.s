@@ -112,7 +112,7 @@ _080EB9CA:
 /* 080EB9E8 */ MOVS R4, #0
 /* 080EB9EA */ STR R4, [SP, #4]
 /* 080EB9EC */ STR R4, [SP, #8]
-/* 080EB9EE */ BL func_080EF50C
+/* 080EB9EE */ BL sprite_set_anim
 /* 080EB9F2 */ LDR R0, [R5]
 /* 080EB9F4 */ STR R6, [R0, #4]
 _080EB9F6:

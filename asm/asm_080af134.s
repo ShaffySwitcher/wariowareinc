@@ -25,7 +25,7 @@ glabel func_080AF134
 /* 080AF15A */ LDRSH R1, [R6, R2]
 /* 080AF15C */ LSLS R2, R5, #0X18
 /* 080AF15E */ ASRS R2, R2, #0X18
-/* 080AF160 */ BL func_080EE9B8
+/* 080AF160 */ BL sprite_set_anim_cel
 /* 080AF164 */ STRB R5, [R6, #0X1D]
 /* 080AF166 */ POP {R4, R5, R6}
 /* 080AF168 */ POP {R0}

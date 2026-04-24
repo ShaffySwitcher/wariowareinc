@@ -229,7 +229,7 @@ glabel func_080EBF00
 /* 080EC0E8 */ MOVS R2, #0X1A
 /* 080EC0EA */ LDRSB R2, [R3, R2]
 /* 080EC0EC */ ADDS R3, #0X12
-/* 080EC0EE */ BL func_080EF708
+/* 080EC0EE */ BL sprite_set_affine_params
 /* 080EC0F2 */ ADD SP, #0X58
 /* 080EC0F4 */ POP {R3, R4, R5}
 /* 080EC0F6 */ MOV R8, R3

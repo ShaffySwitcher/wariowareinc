@@ -130,7 +130,7 @@ _080A79E0:
 /* 080A7A10 */ STR R5, [SP, #4]
 /* 080A7A12 */ STR R5, [SP, #8]
 /* 080A7A14 */ MOVS R3, #0
-/* 080A7A16 */ BL func_080EF50C
+/* 080A7A16 */ BL sprite_set_anim
 /* 080A7A1A */ LDR R0, [R4]
 /* 080A7A1C */ LDR R1, [R6]
 /* 080A7A1E */ MOVS R2, #4

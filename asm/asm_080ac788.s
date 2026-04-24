@@ -101,7 +101,7 @@ _080AC820:
 /* 080AC824 */ MOVS R3, #0
 /* 080AC826 */ LDRSH R1, [R6, R3]
 /* 080AC828 */ MOVS R2, #0
-/* 080AC82A */ BL func_080EF5C4
+/* 080AC82A */ BL sprite_set_enable_updates
 /* 080AC82E */ MOVS R0, #0
 /* 080AC830 */ STR R0, [R5, #0X38]
 /* 080AC832 */ MOVS R0, #0XA
@@ -208,12 +208,12 @@ _080AC8DA:
 /* 080AC8E8 */ MOVS R3, #0
 /* 080AC8EA */ LDRSH R1, [R6, R3]
 /* 080AC8EC */ MOVS R2, #0
-/* 080AC8EE */ BL func_080EE9B8
+/* 080AC8EE */ BL sprite_set_anim_cel
 /* 080AC8F2 */ LDR R0, [R7]
 /* 080AC8F4 */ MOVS R4, #0
 /* 080AC8F6 */ LDRSH R1, [R6, R4]
 /* 080AC8F8 */ MOVS R2, #1
-/* 080AC8FA */ BL func_080EF5C4
+/* 080AC8FA */ BL sprite_set_enable_updates
 /* 080AC8FE */ ADDS R1, R5, #0
 /* 080AC900 */ ADDS R1, #0X28
 /* 080AC902 */ MOVS R0, #2

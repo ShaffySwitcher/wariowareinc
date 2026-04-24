@@ -62,7 +62,7 @@ _08047E62:
 /* 08047E80 */ STR R3, [SP]
 /* 08047E82 */ STR R3, [SP, #4]
 /* 08047E84 */ STR R3, [SP, #8]
-/* 08047E86 */ BL func_080EF50C
+/* 08047E86 */ BL sprite_set_anim
 /* 08047E8A */ MOVS R0, #1
 /* 08047E8C */ B _08047E9A
 

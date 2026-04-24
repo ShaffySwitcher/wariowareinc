@@ -159,7 +159,7 @@ _08087E4A:
 /* 08087EE2 */ MOVS R2, #2
 /* 08087EE4 */ LDRSH R1, [R1, R2]
 /* 08087EE6 */ MOVS R2, #1
-/* 08087EE8 */ BL func_080EF5C4
+/* 08087EE8 */ BL sprite_set_enable_updates
 /* 08087EEC */ MOVS R7, #0
 /* 08087EEE */ MOV R8, R4
 _08087EF0:

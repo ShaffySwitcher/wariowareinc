@@ -88,7 +88,7 @@ _08075070:
 /* 08075072 */ MOVS R3, #0X16
 /* 08075074 */ LDRSH R1, [R1, R3]
 /* 08075076 */ MOVS R2, #0
-/* 08075078 */ BL func_080EF4D8
+/* 08075078 */ BL sprite_set_base_palette
 /* 0807507C */ LDR R0, [R6]
 /* 0807507E */ LDR R1, [R7]
 /* 08075080 */ MOVS R2, #0X14
@@ -174,14 +174,14 @@ _080750F6:
 /* 080750F8 */ MOVS R2, #0X12
 /* 080750FA */ LDRSH R1, [R1, R2]
 /* 080750FC */ MOVS R2, #0
-/* 080750FE */ BL func_080EF4D8
+/* 080750FE */ BL sprite_set_base_palette
 /* 08075102 */ LDR R0, [R6]
 /* 08075104 */ LDR R1, [R7]
 /* 08075106 */ MOVS R3, #0X14
 /* 08075108 */ LDRSH R1, [R1, R3]
 _0807510A:
 /* 0807510A */ MOVS R2, #2
-/* 0807510C */ BL func_080EF4D8
+/* 0807510C */ BL sprite_set_base_palette
 /* 08075110 */ B _08075346
 
 .balign 4, 0
@@ -273,7 +273,7 @@ _08075182:
 /* 0807519A */ LDRB R2, [R2]
 /* 0807519C */ LSLS R2, R2, #0X18
 /* 0807519E */ ASRS R2, R2, #0X18
-/* 080751A0 */ BL func_080EE9B8
+/* 080751A0 */ BL sprite_set_anim_cel
 /* 080751A4 */ ADDS R0, R4, #1
 /* 080751A6 */ LSLS R0, R0, #0X18
 /* 080751A8 */ LSRS R4, R0, #0X18
@@ -395,7 +395,7 @@ _0807524E:
 /* 08075266 */ LDRB R2, [R2]
 /* 08075268 */ LSLS R2, R2, #0X18
 /* 0807526A */ ASRS R2, R2, #0X18
-/* 0807526C */ BL func_080EE9B8
+/* 0807526C */ BL sprite_set_anim_cel
 /* 08075270 */ ADDS R0, R4, #1
 /* 08075272 */ LSLS R0, R0, #0X18
 /* 08075274 */ LSRS R4, R0, #0X18
@@ -491,19 +491,19 @@ _08075304:
 /* 08075316 */ MOVS R2, #0X12
 /* 08075318 */ LDRSH R1, [R1, R2]
 /* 0807531A */ MOVS R2, #2
-/* 0807531C */ BL func_080EF4D8
+/* 0807531C */ BL sprite_set_base_palette
 /* 08075320 */ LDR R0, [R4]
 /* 08075322 */ LDR R1, [R5]
 /* 08075324 */ MOVS R3, #0X16
 /* 08075326 */ LDRSH R1, [R1, R3]
 /* 08075328 */ MOVS R2, #2
-/* 0807532A */ BL func_080EF4D8
+/* 0807532A */ BL sprite_set_base_palette
 /* 0807532E */ LDR R0, [R4]
 /* 08075330 */ LDR R1, [R5]
 /* 08075332 */ MOVS R2, #0X14
 /* 08075334 */ LDRSH R1, [R1, R2]
 /* 08075336 */ MOVS R2, #0
-/* 08075338 */ BL func_080EF4D8
+/* 08075338 */ BL sprite_set_base_palette
 /* 0807533C */ LDR R1, [R5]
 /* 0807533E */ MOVS R2, #0
 /* 08075340 */ MOVS R0, #0

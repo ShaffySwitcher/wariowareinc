@@ -84,7 +84,7 @@ _0809B224:
 /* 0809B264 */ MOVS R2, #0X10
 /* 0809B266 */ LDRSB R2, [R3, R2]
 /* 0809B268 */ ADDS R3, #0X12
-/* 0809B26A */ BL func_080EF708
+/* 0809B26A */ BL sprite_set_affine_params
 _0809B26E:
 /* 0809B26E */ POP {R4, R5}
 /* 0809B270 */ POP {R0}

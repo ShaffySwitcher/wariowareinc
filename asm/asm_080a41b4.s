@@ -60,7 +60,7 @@ _080A41F0:
 /* 080A4202 */ MOVS R2, #0X1A
 /* 080A4204 */ LDRSH R1, [R1, R2]
 /* 080A4206 */ MOVS R2, #1
-/* 080A4208 */ BL func_080EE9B8
+/* 080A4208 */ BL sprite_set_anim_cel
 /* 080A420C */ LDR R1, [R4]
 /* 080A420E */ MOVS R0, #1
 /* 080A4210 */ STRB R0, [R1, #0X18]

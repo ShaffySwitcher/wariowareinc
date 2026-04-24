@@ -42,7 +42,7 @@ _080B55DC:
 /* 080B55EE */ MOVS R4, #0
 /* 080B55F0 */ STR R4, [SP, #4]
 /* 080B55F2 */ STR R4, [SP, #8]
-/* 080B55F4 */ BL func_080EF50C
+/* 080B55F4 */ BL sprite_set_anim
 _080B55F8:
 /* 080B55F8 */ LDR R0, _080B5620
 /* 080B55FA */ LDR R0, [R0]

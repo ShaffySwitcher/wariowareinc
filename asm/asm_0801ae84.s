@@ -47,7 +47,7 @@ glabel func_0801AE84
 /* 0801AED4 */ ADDS R2, #0XB0
 /* 0801AED6 */ LDR R2, [R2]
 /* 0801AED8 */ ADDS R3, #0XB4
-/* 0801AEDA */ BL func_080EF708
+/* 0801AEDA */ BL sprite_set_affine_params
 /* 0801AEDE */ LDR R0, [R5]
 /* 0801AEE0 */ ADDS R0, #0XB0
 /* 0801AEE2 */ LDR R0, [R0]

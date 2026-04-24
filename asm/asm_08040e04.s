@@ -14,7 +14,7 @@ glabel func_08040E04
 /* 08040E10 */ MOVS R2, #0
 /* 08040E12 */ LDRSH R1, [R1, R2]
 /* 08040E14 */ MOVS R2, #9
-/* 08040E16 */ BL func_080EF784
+/* 08040E16 */ BL sprite_get_data
 /* 08040E1A */ SUBS R0, #5
 /* 08040E1C */ CMP R0, #0X13
 /* 08040E1E */ BHI _08040EE8
@@ -105,7 +105,7 @@ _08040E88:
 /* 08040E92 */ MOVS R2, #0
 /* 08040E94 */ LDRSH R1, [R1, R2]
 /* 08040E96 */ MOVS R2, #3
-/* 08040E98 */ BL func_080EE9B8
+/* 08040E98 */ BL sprite_set_anim_cel
 /* 08040E9C */ B _08040EF8
 
 .balign 4, 0
@@ -124,7 +124,7 @@ _08040EA8:
 /* 08040EB2 */ MOVS R2, #0
 /* 08040EB4 */ LDRSH R1, [R1, R2]
 /* 08040EB6 */ MOVS R2, #2
-/* 08040EB8 */ BL func_080EE9B8
+/* 08040EB8 */ BL sprite_set_anim_cel
 /* 08040EBC */ B _08040EF8
 
 .balign 4, 0
@@ -143,7 +143,7 @@ _08040EC8:
 /* 08040ED2 */ MOVS R2, #0
 /* 08040ED4 */ LDRSH R1, [R1, R2]
 /* 08040ED6 */ MOVS R2, #1
-/* 08040ED8 */ BL func_080EE9B8
+/* 08040ED8 */ BL sprite_set_anim_cel
 /* 08040EDC */ B _08040EF8
 
 .balign 4, 0
@@ -160,7 +160,7 @@ _08040EE8:
 /* 08040EEE */ MOVS R2, #0
 /* 08040EF0 */ LDRSH R1, [R1, R2]
 /* 08040EF2 */ MOVS R2, #0
-/* 08040EF4 */ BL func_080EE9B8
+/* 08040EF4 */ BL sprite_set_anim_cel
 _08040EF8:
 /* 08040EF8 */ POP {R4, R5}
 /* 08040EFA */ POP {R0}

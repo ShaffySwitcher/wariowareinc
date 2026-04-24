@@ -54,7 +54,7 @@ glabel func_080AEC04
 /* 080AEC66 */ MOVS R2, #2
 /* 080AEC68 */ LDRSH R1, [R7, R2]
 /* 080AEC6A */ MOVS R2, #2
-/* 080AEC6C */ BL func_080EF4D8
+/* 080AEC6C */ BL sprite_set_base_palette
 _080AEC70:
 /* 080AEC70 */ LDR R0, [R6]
 /* 080AEC72 */ LDR R1, _080AECAC

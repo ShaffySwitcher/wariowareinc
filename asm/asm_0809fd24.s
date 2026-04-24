@@ -74,7 +74,7 @@ _0809FD4E:
 /* 0809FDA8 */ ASRS R2, R2, #0X18
 /* 0809FDAA */ ADDS R0, R6, #0
 /* 0809FDAC */ ADDS R1, R4, #0
-/* 0809FDAE */ BL func_080EE9B8
+/* 0809FDAE */ BL sprite_set_anim_cel
 /* 0809FDB2 */ MOV R4, SB
 /* 0809FDB4 */ LDR R0, [R4]
 /* 0809FDB6 */ MOV R1, SL

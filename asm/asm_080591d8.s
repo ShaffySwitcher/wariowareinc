@@ -69,14 +69,14 @@ _0805923A:
 /* 08059250 */ STR R3, [SP, #4]
 /* 08059252 */ MOVS R3, #0
 /* 08059254 */ STR R3, [SP, #8]
-/* 08059256 */ BL func_080EF50C
+/* 08059256 */ BL sprite_set_anim
 /* 0805925A */ LDR R0, [R5]
 /* 0805925C */ LDR R1, [R4]
 /* 0805925E */ ADDS R1, #0X5C
 /* 08059260 */ MOVS R2, #0
 /* 08059262 */ LDRSH R1, [R1, R2]
 /* 08059264 */ MOVS R2, #1
-/* 08059266 */ BL func_080EF5C4
+/* 08059266 */ BL sprite_set_enable_updates
 /* 0805926A */ LDR R0, [R5]
 /* 0805926C */ LDR R1, [R4]
 /* 0805926E */ ADDS R1, #0X5C

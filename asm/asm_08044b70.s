@@ -29,7 +29,7 @@ glabel func_08044B70
 /* 08044B9A */ MOVS R2, #0
 /* 08044B9C */ LDRSH R1, [R1, R2]
 /* 08044B9E */ MOVS R2, #2
-/* 08044BA0 */ BL func_080EF4D8
+/* 08044BA0 */ BL sprite_set_base_palette
 /* 08044BA4 */ B _08044BD2
 
 .balign 4, 0
@@ -63,7 +63,7 @@ _08044BC0:
 /* 08044BC8 */ MOVS R2, #0
 /* 08044BCA */ LDRSH R1, [R1, R2]
 /* 08044BCC */ MOVS R2, #0
-/* 08044BCE */ BL func_080EF4D8
+/* 08044BCE */ BL sprite_set_base_palette
 _08044BD2:
 /* 08044BD2 */ POP {R4}
 /* 08044BD4 */ POP {R0}

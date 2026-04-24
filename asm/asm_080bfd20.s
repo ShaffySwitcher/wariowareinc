@@ -14,7 +14,7 @@ glabel func_080BFD20
 /* 080BFD2C */ MOVS R2, #0X10
 /* 080BFD2E */ LDRSH R1, [R1, R2]
 /* 080BFD30 */ MOVS R2, #9
-/* 080BFD32 */ BL func_080EF784
+/* 080BFD32 */ BL sprite_get_data
 /* 080BFD36 */ ADDS R2, R0, #0
 /* 080BFD38 */ LDR R0, _080BFD94
 /* 080BFD3A */ LDR R0, [R0]
@@ -39,7 +39,7 @@ glabel func_080BFD20
 /* 080BFD60 */ STR R2, [SP]
 /* 080BFD62 */ MOVS R2, #1
 /* 080BFD64 */ MOVS R3, #0X13
-/* 080BFD66 */ BL func_080EF644
+/* 080BFD66 */ BL sprite_set_playback
 /* 080BFD6A */ LDR R0, [R5]
 /* 080BFD6C */ LDR R1, [R4]
 /* 080BFD6E */ MOVS R2, #0X14

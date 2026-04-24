@@ -67,7 +67,7 @@ _080A783C:
 /* 080A7870 */ STR R6, [SP, #4]
 /* 080A7872 */ STR R6, [SP, #8]
 /* 080A7874 */ MOVS R3, #0
-/* 080A7876 */ BL func_080EF50C
+/* 080A7876 */ BL sprite_set_anim
 /* 080A787A */ LDR R0, [R4]
 /* 080A787C */ MOV R2, R8
 /* 080A787E */ LDR R1, [R2]

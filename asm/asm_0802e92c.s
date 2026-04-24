@@ -408,7 +408,7 @@ _0802EBE4:
 /* 0802EC1E */ STR R3, [SP, #4]
 /* 0802EC20 */ MOVS R3, #0
 /* 0802EC22 */ STR R3, [SP, #8]
-/* 0802EC24 */ BL func_080EF50C
+/* 0802EC24 */ BL sprite_set_anim
 /* 0802EC28 */ ADDS R1, R5, #0
 /* 0802EC2A */ ADDS R1, #0X68
 /* 0802EC2C */ MOVS R0, #5

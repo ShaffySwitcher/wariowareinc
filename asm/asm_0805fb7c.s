@@ -59,7 +59,7 @@ _0805FB98:
 /* 0805FBDC */ MOVS R2, #0
 /* 0805FBDE */ LDRSH R1, [R1, R2]
 /* 0805FBE0 */ MOVS R2, #0
-/* 0805FBE2 */ BL func_080EF5C4
+/* 0805FBE2 */ BL sprite_set_enable_updates
 /* 0805FBE6 */ LDR R0, [R5]
 /* 0805FBE8 */ LDR R1, [R6]
 /* 0805FBEA */ ADDS R1, R4
@@ -75,7 +75,7 @@ _0805FB98:
 /* 0805FC00 */ MOVS R2, #0
 /* 0805FC02 */ LDRSH R1, [R1, R2]
 /* 0805FC04 */ MOVS R2, #5
-/* 0805FC06 */ BL func_080EE9B8
+/* 0805FC06 */ BL sprite_set_anim_cel
 /* 0805FC0A */ LDR R0, [R5]
 /* 0805FC0C */ LDR R1, [R6]
 /* 0805FC0E */ ADDS R4, #0X30

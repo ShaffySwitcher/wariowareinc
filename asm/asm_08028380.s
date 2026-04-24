@@ -52,7 +52,7 @@ _080283B8:
 /* 080283D8 */ MOVS R3, #0
 /* 080283DA */ LDRSH R1, [R1, R3]
 /* 080283DC */ MOVS R2, #1
-/* 080283DE */ BL func_080EE9B8
+/* 080283DE */ BL sprite_set_anim_cel
 /* 080283E2 */ STRB R6, [R5]
 /* 080283E4 */ LDR R0, =D_083FDC3C
 /* 080283E6 */ BL play_sound

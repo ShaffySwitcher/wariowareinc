@@ -27,7 +27,7 @@ glabel func_0809BEDC
 /* 0809BF02 */ STR R4, [SP, #4]
 /* 0809BF04 */ STR R4, [SP, #8]
 /* 0809BF06 */ MOVS R3, #0
-/* 0809BF08 */ BL func_080EF50C
+/* 0809BF08 */ BL sprite_set_anim
 /* 0809BF0C */ BL get_random_u16
 /* 0809BF10 */ LSLS R0, R0, #0X10
 /* 0809BF12 */ LSRS R4, R0, #0X10

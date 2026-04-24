@@ -30,7 +30,7 @@ _080C559E:
 /* 080C55B2 */ MOVS R2, #0
 /* 080C55B4 */ LDRSH R1, [R1, R2]
 /* 080C55B6 */ MOVS R2, #0
-/* 080C55B8 */ BL func_080EF4D8
+/* 080C55B8 */ BL sprite_set_base_palette
 /* 080C55BC */ ADDS R4, #1
 /* 080C55BE */ LSLS R4, R4, #0X10
 /* 080C55C0 */ LSRS R2, R4, #0X10

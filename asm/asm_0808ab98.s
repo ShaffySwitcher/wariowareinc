@@ -12,7 +12,7 @@ glabel func_0808AB98
 /* 0808ABA0 */ MOVS R2, #0
 /* 0808ABA2 */ LDRSH R1, [R4, R2]
 /* 0808ABA4 */ MOVS R2, #0
-/* 0808ABA6 */ BL func_080EF5C4
+/* 0808ABA6 */ BL sprite_set_enable_updates
 /* 0808ABAA */ MOVS R0, #0
 /* 0808ABAC */ STRB R0, [R4, #0X18]
 /* 0808ABAE */ POP {R4}

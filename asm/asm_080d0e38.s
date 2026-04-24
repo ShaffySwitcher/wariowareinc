@@ -30,7 +30,7 @@ glabel func_080D0E38
 /* 080D0E64 */ STR R5, [SP, #4]
 /* 080D0E66 */ STR R4, [SP, #8]
 /* 080D0E68 */ MOVS R3, #1
-/* 080D0E6A */ BL func_080EF50C
+/* 080D0E6A */ BL sprite_set_anim
 /* 080D0E6E */ MOV R0, R8
 /* 080D0E70 */ LDR R3, [R0]
 /* 080D0E72 */ MOVS R1, #0XE2

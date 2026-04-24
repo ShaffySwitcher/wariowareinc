@@ -40,7 +40,7 @@ _0801A872:
 /* 0801A896 */ ADDS R1, R5, #0
 /* 0801A898 */ MOVS R2, #1
 /* 0801A89A */ MOVS R3, #0
-/* 0801A89C */ BL func_080EF644
+/* 0801A89C */ BL sprite_set_playback
 /* 0801A8A0 */ LDR R0, [R7]
 /* 0801A8A2 */ LSLS R4, R4, #0X10
 /* 0801A8A4 */ ASRS R4, R4, #0X10

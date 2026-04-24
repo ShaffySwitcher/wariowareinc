@@ -39,7 +39,7 @@ _0808C530:
 /* 0808C55A */ MOVS R2, #0
 /* 0808C55C */ LDRSH R1, [R6, R2]
 /* 0808C55E */ MOVS R2, #0
-/* 0808C560 */ BL func_080EF5C4
+/* 0808C560 */ BL sprite_set_enable_updates
 /* 0808C564 */ ADDS R0, R4, #0
 /* 0808C566 */ BL func_0808AB98
 /* 0808C56A */ ADDS R0, R6, #0

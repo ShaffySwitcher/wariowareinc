@@ -274,7 +274,7 @@ _08093C38:
 /* 08093C54 */ STR R2, [SP]
 /* 08093C56 */ MOVS R2, #1
 /* 08093C58 */ MOVS R3, #0
-/* 08093C5A */ BL func_080EF644
+/* 08093C5A */ BL sprite_set_playback
 /* 08093C5E */ LDR R0, [R4]
 /* 08093C60 */ ADDS R0, #0X48
 /* 08093C62 */ MOV R1, SP

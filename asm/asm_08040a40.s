@@ -43,7 +43,7 @@ _08040A5E:
 /* 08040A84 */ STR R3, [SP]
 /* 08040A86 */ MOVS R2, #1
 /* 08040A88 */ MOVS R3, #1
-/* 08040A8A */ BL func_080EF644
+/* 08040A8A */ BL sprite_set_playback
 /* 08040A8E */ LDR R0, [R4]
 /* 08040A90 */ ADDS R0, #0X82
 /* 08040A92 */ MOVS R1, #1

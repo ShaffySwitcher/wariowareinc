@@ -32,12 +32,12 @@ glabel func_0803D078
 /* 0803D0AA */ STR R0, [SP, #8]
 /* 0803D0AC */ ADDS R0, R6, #0
 /* 0803D0AE */ MOVS R3, #0
-/* 0803D0B0 */ BL func_080EF50C
+/* 0803D0B0 */ BL sprite_set_anim
 /* 0803D0B4 */ MOVS R0, #0
 /* 0803D0B6 */ LDRSH R1, [R4, R0]
 /* 0803D0B8 */ ADDS R0, R6, #0
 /* 0803D0BA */ MOVS R2, #1
-/* 0803D0BC */ BL func_080EF5C4
+/* 0803D0BC */ BL sprite_set_enable_updates
 /* 0803D0C0 */ BL func_0803CDC8
 /* 0803D0C4 */ ADD SP, #0XC
 /* 0803D0C6 */ POP {R4, R5, R6}

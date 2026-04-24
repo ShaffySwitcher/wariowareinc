@@ -38,7 +38,7 @@ glabel func_080CCD04
 /* 080CCD42 */ STR R4, [SP, #4]
 /* 080CCD44 */ STR R4, [SP, #8]
 /* 080CCD46 */ MOVS R3, #0
-/* 080CCD48 */ BL func_080EF50C
+/* 080CCD48 */ BL sprite_set_anim
 /* 080CCD4C */ LDRB R0, [R5]
 /* 080CCD4E */ MOVS R1, #0X10
 /* 080CCD50 */ ORRS R0, R1
@@ -74,7 +74,7 @@ _080CCD60:
 /* 080CCD7E */ STR R4, [SP, #4]
 /* 080CCD80 */ STR R4, [SP, #8]
 /* 080CCD82 */ MOVS R3, #0
-/* 080CCD84 */ BL func_080EF50C
+/* 080CCD84 */ BL sprite_set_anim
 /* 080CCD88 */ LDRB R1, [R5]
 /* 080CCD8A */ MOVS R0, #0X11
 /* 080CCD8C */ RSBS R0, R0, #0
