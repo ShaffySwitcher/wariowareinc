@@ -94,14 +94,14 @@ _080EF93A: \n\
 /* 080EF93C */ ASRS R1, R1, #0X10 \n\
 /* 080EF93E */ ADDS R0, R4, #0 \n\
 /* 080EF940 */ ADDS R2, R5, #0 \n\
-/* 080EF942 */ BL func_080EF434 \n\
+/* 080EF942 */ BL sprite_attr_orr \n\
 /* 080EF946 */ B _080EF984 \n\
 _080EF948: \n\
 /* 080EF948 */ LSLS R1, R3, #0X10 \n\
 /* 080EF94A */ ASRS R1, R1, #0X10 \n\
 /* 080EF94C */ ADDS R0, R4, #0 \n\
 /* 080EF94E */ ADDS R2, R5, #0 \n\
-/* 080EF950 */ BL func_080EF46C \n\
+/* 080EF950 */ BL sprite_attr_and \n\
 /* 080EF954 */ B _080EF984 \n\
 _080EF956: \n\
 /* 080EF956 */ LSLS R1, R3, #0X10 \n\
@@ -109,7 +109,7 @@ _080EF956: \n\
 /* 080EF95A */ LSLS R2, R5, #0X10 \n\
 /* 080EF95C */ ASRS R2, R2, #0X10 \n\
 /* 080EF95E */ ADDS R0, R4, #0 \n\
-/* 080EF960 */ BL func_080EF4A4 \n\
+/* 080EF960 */ BL sprite_set_base_tile \n\
 /* 080EF964 */ B _080EF984 \n\
 _080EF966: \n\
 /* 080EF966 */ LSLS R1, R3, #0X10 \n\

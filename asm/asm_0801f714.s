@@ -138,7 +138,7 @@ _0801F7C4:
 /* 0801F832 */ MOVS R2, #0XA0
 /* 0801F834 */ LSLS R2, R2, #2
 /* 0801F836 */ ADDS R1, R4, #0
-/* 0801F838 */ BL func_080EF4A4
+/* 0801F838 */ BL sprite_set_base_tile
 /* 0801F83C */ MOV R1, R8
 /* 0801F83E */ LDR R0, [R1]
 /* 0801F840 */ ADDS R1, R4, #0

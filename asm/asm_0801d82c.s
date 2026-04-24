@@ -212,7 +212,7 @@ _0801D940:
 /* 0801D9F0 */ MOVS R2, #0XA0
 /* 0801D9F2 */ LSLS R2, R2, #2
 /* 0801D9F4 */ ADDS R1, R4, #0
-/* 0801D9F6 */ BL func_080EF4A4
+/* 0801D9F6 */ BL sprite_set_base_tile
 /* 0801D9FA */ LDR R0, [R7]
 /* 0801D9FC */ ADDS R1, R4, #0
 /* 0801D9FE */ MOVS R2, #0XA

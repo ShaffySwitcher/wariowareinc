@@ -22,11 +22,32 @@ void sprite_attr_set(struct SpriteHandler *handler, s16 id, u32 attr) {
     handler->sprites[id].oamAttributes = attr;
 }
 
-#include "asm/lib_sprite/asm_080ef434.s"
+void sprite_attr_orr(struct SpriteHandler *handler, s16 id, u32 attr) {
+    D_03000E70 = SPRITE_OPERATION_ORR_ATTR;
+    if (sprite_is_invalid(handler, id)) {
+        return;
+    }
 
-#include "asm/lib_sprite/asm_080ef46c.s"
+    handler->sprites[id].oamAttributes |= attr;
+}
 
-#include "asm/lib_sprite/asm_080ef4a4.s"
+void sprite_attr_and(struct SpriteHandler *handler, s16 id, u32 attr) {
+    D_03000E70 = SPRITE_OPERATION_AND_ATTR;
+    if (sprite_is_invalid(handler, id)) {
+        return;
+    }
+
+    handler->sprites[id].oamAttributes &= attr;
+}
+
+void sprite_set_base_tile(struct SpriteHandler *handler, s16 id, s16 baseTile) {
+    D_03000E70 = SPRITE_OPERATION_SET_BASE_TILE;
+    if (sprite_is_invalid(handler, id)) {
+        return;
+    }
+
+    handler->sprites[id].baseTile = baseTile;
+}
 
 #include "asm/lib_sprite/asm_080ef4d8.s"
 

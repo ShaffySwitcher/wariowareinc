@@ -50,7 +50,7 @@ _080209BC:
 /* 08020A00 */ MOVS R2, #0XA0
 /* 08020A02 */ LSLS R2, R2, #2
 /* 08020A04 */ ADDS R1, R4, #0
-/* 08020A06 */ BL func_080EF4A4
+/* 08020A06 */ BL sprite_set_base_tile
 /* 08020A0A */ LDR R0, [R5]
 /* 08020A0C */ ADDS R1, R4, #0
 /* 08020A0E */ MOVS R2, #0XA

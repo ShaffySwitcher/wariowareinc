@@ -54,7 +54,7 @@ glabel func_0800A160
 /* 0800A1C6 */ LDRSH R1, [R1, R2]
 /* 0800A1C8 */ MOVS R2, #0XA0
 /* 0800A1CA */ LSLS R2, R2, #2
-/* 0800A1CC */ BL func_080EF4A4
+/* 0800A1CC */ BL sprite_set_base_tile
 /* 0800A1D0 */ LDR R0, [R5]
 /* 0800A1D2 */ LDR R1, [R6]
 /* 0800A1D4 */ ADDS R1, R1, R4

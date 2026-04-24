@@ -14,7 +14,7 @@ glabel func_08017054
 /* 08017060 */ MOVS R2, #0XC0
 /* 08017062 */ LSLS R2, R2, #2
 /* 08017064 */ ADDS R1, R4, #0
-/* 08017066 */ BL func_080EF4A4
+/* 08017066 */ BL sprite_set_base_tile
 /* 0801706A */ LDR R0, [R5]
 /* 0801706C */ ADDS R1, R4, #0
 /* 0801706E */ MOVS R2, #0XC

@@ -50,7 +50,7 @@ _0801B0EA:
 /* 0801B12A */ ADDS R1, R4, #0
 /* 0801B12C */ MOVS R2, #0XC0
 /* 0801B12E */ LSLS R2, R2, #2
-/* 0801B130 */ BL func_080EF4A4
+/* 0801B130 */ BL sprite_set_base_tile
 /* 0801B134 */ LDR R0, [R5]
 /* 0801B136 */ ADDS R1, R4, #0
 /* 0801B138 */ MOVS R2, #0XC

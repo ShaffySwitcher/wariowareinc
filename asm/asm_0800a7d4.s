@@ -1902,7 +1902,7 @@ _0800B4A0:
 /* 0800B4AC */ MOV R3, R8
 /* 0800B4AE */ LSLS R2, R3, #0X10
 /* 0800B4B0 */ ASRS R2, R2, #0X10
-/* 0800B4B2 */ BL func_080EF4A4
+/* 0800B4B2 */ BL sprite_set_base_tile
 /* 0800B4B6 */ B _0800B74C
 
 .balign 4, 0

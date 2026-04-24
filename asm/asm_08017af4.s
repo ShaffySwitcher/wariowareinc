@@ -453,7 +453,7 @@ _08017D44:
 /* 08017EB2 */ MOVS R2, #0XA0
 /* 08017EB4 */ LSLS R2, R2, #2
 /* 08017EB6 */ ADDS R1, R4, #0
-/* 08017EB8 */ BL func_080EF4A4
+/* 08017EB8 */ BL sprite_set_base_tile
 /* 08017EBC */ LDR R0, [R5]
 /* 08017EBE */ ADDS R1, R4, #0
 /* 08017EC0 */ MOVS R2, #0XA

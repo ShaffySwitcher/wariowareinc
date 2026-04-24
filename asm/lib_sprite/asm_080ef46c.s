@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080EF46C \n\
+thumb_func_start sprite_attr_and \n\
 /* 080EF46C */ PUSH {R4, R5, R6, LR} \n\
 /* 080EF46E */ ADDS R5, R0, #0 \n\
 /* 080EF470 */ ADDS R6, R2, #0 \n\

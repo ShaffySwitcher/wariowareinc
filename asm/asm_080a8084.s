@@ -336,55 +336,55 @@ _080A8312:
 /* 080A8326 */ MOVS R4, #0XC0
 /* 080A8328 */ LSLS R4, R4, #2
 /* 080A832A */ ADDS R2, R4, #0
-/* 080A832C */ BL func_080EF4A4
+/* 080A832C */ BL sprite_set_base_tile
 /* 080A8330 */ LDR R0, [R6]
 /* 080A8332 */ LDR R1, [R5]
 /* 080A8334 */ MOVS R3, #0XA
 /* 080A8336 */ LDRSH R1, [R1, R3]
 /* 080A8338 */ ADDS R2, R4, #0
-/* 080A833A */ BL func_080EF4A4
+/* 080A833A */ BL sprite_set_base_tile
 /* 080A833E */ LDR R0, [R6]
 /* 080A8340 */ LDR R1, [R5]
 /* 080A8342 */ MOVS R2, #0XC
 /* 080A8344 */ LDRSH R1, [R1, R2]
 /* 080A8346 */ ADDS R2, R4, #0
-/* 080A8348 */ BL func_080EF4A4
+/* 080A8348 */ BL sprite_set_base_tile
 /* 080A834C */ LDR R0, [R6]
 /* 080A834E */ LDR R1, [R5]
 /* 080A8350 */ MOVS R3, #0XE
 /* 080A8352 */ LDRSH R1, [R1, R3]
 /* 080A8354 */ ADDS R2, R4, #0
-/* 080A8356 */ BL func_080EF4A4
+/* 080A8356 */ BL sprite_set_base_tile
 /* 080A835A */ LDR R0, [R6]
 /* 080A835C */ LDR R1, [R5]
 /* 080A835E */ MOVS R2, #0X10
 /* 080A8360 */ LDRSH R1, [R1, R2]
 /* 080A8362 */ ADDS R2, R4, #0
-/* 080A8364 */ BL func_080EF4A4
+/* 080A8364 */ BL sprite_set_base_tile
 /* 080A8368 */ LDR R0, [R6]
 /* 080A836A */ LDR R1, [R5]
 /* 080A836C */ MOVS R3, #0X12
 /* 080A836E */ LDRSH R1, [R1, R3]
 /* 080A8370 */ ADDS R2, R4, #0
-/* 080A8372 */ BL func_080EF4A4
+/* 080A8372 */ BL sprite_set_base_tile
 /* 080A8376 */ LDR R0, [R6]
 /* 080A8378 */ LDR R1, [R5]
 /* 080A837A */ MOVS R2, #0X14
 /* 080A837C */ LDRSH R1, [R1, R2]
 /* 080A837E */ ADDS R2, R4, #0
-/* 080A8380 */ BL func_080EF4A4
+/* 080A8380 */ BL sprite_set_base_tile
 /* 080A8384 */ LDR R0, [R6]
 /* 080A8386 */ LDR R1, [R5]
 /* 080A8388 */ MOVS R3, #0X16
 /* 080A838A */ LDRSH R1, [R1, R3]
 /* 080A838C */ ADDS R2, R4, #0
-/* 080A838E */ BL func_080EF4A4
+/* 080A838E */ BL sprite_set_base_tile
 /* 080A8392 */ LDR R0, [R6]
 /* 080A8394 */ LDR R1, [R5]
 /* 080A8396 */ MOVS R2, #0X18
 /* 080A8398 */ LDRSH R1, [R1, R2]
 /* 080A839A */ ADDS R2, R4, #0
-/* 080A839C */ BL func_080EF4A4
+/* 080A839C */ BL sprite_set_base_tile
 /* 080A83A0 */ LDR R4, [R6]
 /* 080A83A2 */ BL func_0800A088
 /* 080A83A6 */ ADDS R1, R0, #0

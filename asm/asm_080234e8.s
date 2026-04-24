@@ -217,7 +217,7 @@ _0802365A:
 /* 0802369C */ MOVS R2, #0XA0
 /* 0802369E */ LSLS R2, R2, #2
 /* 080236A0 */ ADDS R1, R4, #0
-/* 080236A2 */ BL func_080EF4A4
+/* 080236A2 */ BL sprite_set_base_tile
 /* 080236A6 */ LDR R0, [R5]
 /* 080236A8 */ ADDS R1, R4, #0
 /* 080236AA */ MOVS R2, #0XA

@@ -50,7 +50,7 @@ _080220EC:
 /* 08022130 */ MOVS R2, #0XA0
 /* 08022132 */ LSLS R2, R2, #2
 /* 08022134 */ ADDS R1, R5, #0
-/* 08022136 */ BL func_080EF4A4
+/* 08022136 */ BL sprite_set_base_tile
 /* 0802213A */ LDR R0, [R4]
 /* 0802213C */ ADDS R1, R5, #0
 /* 0802213E */ MOVS R2, #0XA

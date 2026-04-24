@@ -100,7 +100,7 @@ _08022BFA:
 /* 08022C46 */ MOVS R2, #0XA0
 /* 08022C48 */ LSLS R2, R2, #2
 /* 08022C4A */ ADDS R1, R4, #0
-/* 08022C4C */ BL func_080EF4A4
+/* 08022C4C */ BL sprite_set_base_tile
 /* 08022C50 */ LDR R0, [R5]
 /* 08022C52 */ ADDS R1, R4, #0
 /* 08022C54 */ MOVS R2, #0XA
