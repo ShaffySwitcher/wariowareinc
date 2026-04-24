@@ -62,7 +62,7 @@ _0801B006:
 /* 0801B00E */ MOVS R2, #0
 /* 0801B010 */ LDRSH R1, [R1, R2]
 /* 0801B012 */ MOVS R2, #1
-/* 0801B014 */ BL func_080EF3BC
+/* 0801B014 */ BL sprite_set_visible
 /* 0801B018 */ ADDS R6, R5
 /* 0801B01A */ B _0801B06E
 

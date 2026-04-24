@@ -70,7 +70,7 @@ _0801B1F8:
 /* 0801B22C */ LDR R0, [R6]
 /* 0801B22E */ ADDS R1, R4, #0
 /* 0801B230 */ MOVS R2, #1
-/* 0801B232 */ BL func_080EF3BC
+/* 0801B232 */ BL sprite_set_visible
 /* 0801B236 */ B _0801B246
 
 .balign 4, 0

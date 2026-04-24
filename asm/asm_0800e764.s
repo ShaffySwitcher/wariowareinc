@@ -16,7 +16,7 @@ glabel func_0800E764
 /* 0800E774 */ MOVS R2, #0
 /* 0800E776 */ LDRSH R1, [R1, R2]
 /* 0800E778 */ MOVS R2, #0
-/* 0800E77A */ BL func_080EF3BC
+/* 0800E77A */ BL sprite_set_visible
 /* 0800E77E */ POP {R0}
 /* 0800E780 */ BX R0
 

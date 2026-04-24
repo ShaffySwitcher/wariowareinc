@@ -47,7 +47,7 @@ _080AA314:
 /* 080AA342 */ LDR R0, [R5]
 /* 080AA344 */ ADDS R1, R4, #0
 /* 080AA346 */ MOVS R2, #1
-/* 080AA348 */ BL func_080EF3BC
+/* 080AA348 */ BL sprite_set_visible
 /* 080AA34C */ LDR R0, [R7]
 /* 080AA34E */ ADD R0, R8
 /* 080AA350 */ MOVS R1, #1

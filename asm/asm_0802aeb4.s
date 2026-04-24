@@ -105,7 +105,7 @@ _0802AF6C:
 /* 0802AF7A */ MOVS R3, #0
 /* 0802AF7C */ LDRSH R1, [R4, R3]
 /* 0802AF7E */ MOVS R2, #1
-/* 0802AF80 */ BL func_080EF3BC
+/* 0802AF80 */ BL sprite_set_visible
 /* 0802AF84 */ ADDS R4, #2
 /* 0802AF86 */ ADDS R5, #1
 /* 0802AF88 */ CMP R5, #8

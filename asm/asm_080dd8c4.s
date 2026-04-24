@@ -530,7 +530,7 @@ _080DDC3E:
 /* 080DDC58 */ MOVS R3, #6
 /* 080DDC5A */ LDRSH R1, [R2, R3]
 /* 080DDC5C */ MOVS R2, #0
-/* 080DDC5E */ BL func_080EF3BC
+/* 080DDC5E */ BL sprite_set_visible
 /* 080DDC62 */ LDR R1, [R4]
 /* 080DDC64 */ MOVS R0, #5
 /* 080DDC66 */ STRB R0, [R1, #0X14]

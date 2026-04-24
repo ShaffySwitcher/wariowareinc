@@ -5689,6 +5689,8 @@ SECTIONS {
         build/src/palette.c.o(.data);
 
         build/bin/data_083A4494.bin.o(.rodata*);
+        build/src/lib_sprite.c.o(.data);
+        build/bin/data_083A4A80.bin.o(.rodata*);
         build/audio/songs.c.o(.data);
     }
 

@@ -48,25 +48,25 @@ _080690AC:
 /* 080690C6 */ MOVS R2, #0X12
 /* 080690C8 */ LDRSH R1, [R1, R2]
 /* 080690CA */ MOVS R2, #0
-/* 080690CC */ BL func_080EF3BC
+/* 080690CC */ BL sprite_set_visible
 /* 080690D0 */ LDR R0, [R4]
 /* 080690D2 */ LDR R1, [R5]
 /* 080690D4 */ MOVS R2, #0XC
 /* 080690D6 */ LDRSH R1, [R1, R2]
 /* 080690D8 */ MOVS R2, #0
-/* 080690DA */ BL func_080EF3BC
+/* 080690DA */ BL sprite_set_visible
 /* 080690DE */ LDR R0, [R4]
 /* 080690E0 */ LDR R1, [R5]
 /* 080690E2 */ MOVS R2, #0
 /* 080690E4 */ LDRSH R1, [R1, R2]
 /* 080690E6 */ MOVS R2, #0
-/* 080690E8 */ BL func_080EF3BC
+/* 080690E8 */ BL sprite_set_visible
 /* 080690EC */ LDR R0, [R4]
 /* 080690EE */ LDR R1, [R5]
 /* 080690F0 */ MOVS R2, #4
 /* 080690F2 */ LDRSH R1, [R1, R2]
 /* 080690F4 */ MOVS R2, #1
-/* 080690F6 */ BL func_080EF3BC
+/* 080690F6 */ BL sprite_set_visible
 /* 080690FA */ LDR R0, [R4]
 /* 080690FC */ LDR R1, [R5]
 /* 080690FE */ MOVS R2, #0XE

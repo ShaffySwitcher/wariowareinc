@@ -55,7 +55,7 @@ _080CB8F4:
 /* 080CB8FA */ MOVS R2, #4
 /* 080CB8FC */ LDRSH R1, [R1, R2]
 /* 080CB8FE */ MOVS R2, #1
-/* 080CB900 */ BL func_080EF3BC
+/* 080CB900 */ BL sprite_set_visible
 /* 080CB904 */ LDR R3, [R6]
 /* 080CB906 */ ADDS R2, R3, #0
 /* 080CB908 */ ADDS R2, #0X7E

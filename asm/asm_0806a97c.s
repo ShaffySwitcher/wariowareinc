@@ -14,7 +14,7 @@ glabel func_0806A97C
 /* 0806A98A */ LDRSH R1, [R5, R0]
 /* 0806A98C */ ADDS R0, R4, #0
 /* 0806A98E */ MOVS R2, #0
-/* 0806A990 */ BL func_080EF3BC
+/* 0806A990 */ BL sprite_set_visible
 /* 0806A994 */ MOVS R0, #0
 /* 0806A996 */ STR R0, [R5, #4]
 /* 0806A998 */ POP {R4, R5}

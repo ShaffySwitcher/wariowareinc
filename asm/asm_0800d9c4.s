@@ -61,7 +61,7 @@ _0800D9F6:
 /* 0800DA32 */ MOVS R2, #0
 /* 0800DA34 */ LDRSH R1, [R5, R2]
 /* 0800DA36 */ MOVS R2, #0
-/* 0800DA38 */ BL func_080EF3BC
+/* 0800DA38 */ BL sprite_set_visible
 /* 0800DA3C */ LDR R0, [SP, #0X18]
 /* 0800DA3E */ STR R0, [R5, #4]
 /* 0800DA40 */ LDR R1, [SP, #0X40]

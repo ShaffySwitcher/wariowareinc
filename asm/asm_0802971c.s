@@ -87,7 +87,7 @@ _080297A4:
 /* 080297B4 */ MOVS R6, #0
 /* 080297B6 */ LDRSH R1, [R1, R6]
 /* 080297B8 */ MOVS R2, #0
-/* 080297BA */ BL func_080EF3BC
+/* 080297BA */ BL sprite_set_visible
 _080297BE:
 /* 080297BE */ MOVS R0, #1
 /* 080297C0 */ ADD R8, R0

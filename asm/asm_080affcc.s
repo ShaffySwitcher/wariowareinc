@@ -91,7 +91,7 @@ _080B002C:
 /* 080B005E */ MOVS R2, #0XE
 /* 080B0060 */ LDRSH R1, [R7, R2]
 /* 080B0062 */ MOVS R2, #1
-/* 080B0064 */ BL func_080EF3BC
+/* 080B0064 */ BL sprite_set_visible
 /* 080B0068 */ ADDS R6, #1
 /* 080B006A */ B _080B0192
 

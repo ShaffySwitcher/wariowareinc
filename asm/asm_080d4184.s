@@ -75,7 +75,7 @@ _080D41DC:
 /* 080D4202 */ MOVS R3, #0
 /* 080D4204 */ LDRSH R1, [R5, R3]
 /* 080D4206 */ MOVS R2, #1
-/* 080D4208 */ BL func_080EF3BC
+/* 080D4208 */ BL sprite_set_visible
 /* 080D420C */ ADD R0, SP, #0XC
 /* 080D420E */ LDRH R1, [R0, #8]
 /* 080D4210 */ MOVS R0, #0XA0

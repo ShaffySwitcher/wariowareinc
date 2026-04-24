@@ -91,7 +91,7 @@ _080A6D6A:
 /* 080A6D7E */ ADDS R1, R5, #0
 /* 080A6D80 */ ADDS R2, R6, #0
 /* 080A6D82 */ MOV R3, SB
-/* 080A6D84 */ BL func_08008174
+/* 080A6D84 */ BL gameplay_check_collision
 /* 080A6D88 */ CMP R0, #0
 /* 080A6D8A */ BEQ _080A6DEA
 /* 080A6D8C */ MOVS R3, #2

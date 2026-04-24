@@ -114,7 +114,7 @@ _08025E4E:
 /* 08025EAE */ MOVS R3, #0
 /* 08025EB0 */ LDRSH R1, [R5, R3]
 /* 08025EB2 */ MOVS R2, #1
-/* 08025EB4 */ BL func_080EF3BC
+/* 08025EB4 */ BL sprite_set_visible
 /* 08025EB8 */ LDR R0, [R4]
 /* 08025EBA */ MOVS R2, #0
 /* 08025EBC */ LDRSH R1, [R5, R2]

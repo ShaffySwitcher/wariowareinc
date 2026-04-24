@@ -44,7 +44,7 @@ _080CF282:
 /* 080CF2B2 */ MOVS R2, #4
 /* 080CF2B4 */ LDRSH R1, [R4, R2]
 /* 080CF2B6 */ MOVS R2, #0
-/* 080CF2B8 */ BL func_080EF3BC
+/* 080CF2B8 */ BL sprite_set_visible
 /* 080CF2BC */ LDR R0, [R4]
 /* 080CF2BE */ MOVS R1, #0X80
 /* 080CF2C0 */ LSLS R1, R1, #1

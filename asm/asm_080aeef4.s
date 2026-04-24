@@ -70,17 +70,17 @@ _080AEF04:
 /* 080AEF76 */ MOVS R2, #4
 /* 080AEF78 */ LDRSH R1, [R5, R2]
 /* 080AEF7A */ MOVS R2, #0
-/* 080AEF7C */ BL func_080EF3BC
+/* 080AEF7C */ BL sprite_set_visible
 /* 080AEF80 */ LDR R0, [R6]
 /* 080AEF82 */ MOVS R2, #0XC
 /* 080AEF84 */ LDRSH R1, [R5, R2]
 /* 080AEF86 */ MOVS R2, #0
-/* 080AEF88 */ BL func_080EF3BC
+/* 080AEF88 */ BL sprite_set_visible
 /* 080AEF8C */ LDR R0, [R6]
 /* 080AEF8E */ MOVS R2, #0XE
 /* 080AEF90 */ LDRSH R1, [R5, R2]
 /* 080AEF92 */ MOVS R2, #0
-/* 080AEF94 */ BL func_080EF3BC
+/* 080AEF94 */ BL sprite_set_visible
 /* 080AEF98 */ ADDS R0, R5, #0
 /* 080AEF9A */ MOVS R1, #0
 /* 080AEF9C */ BL func_080AF134

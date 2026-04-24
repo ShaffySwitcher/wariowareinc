@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080EF3BC
+glabel sprite_set_visible
 /* 080EF3BC */ PUSH {R4, R5, R6, LR}
 /* 080EF3BE */ ADDS R5, R0, #0
 /* 080EF3C0 */ LSLS R2, R2, #0X10

@@ -428,7 +428,7 @@ glabel func_0800DEE8
 /* 0800E278 */ LSLS R1, R1, #0X10
 /* 0800E27A */ ASRS R1, R1, #0X10
 /* 0800E27C */ MOVS R2, #0
-/* 0800E27E */ BL func_080EF3BC
+/* 0800E27E */ BL sprite_set_visible
 /* 0800E282 */ LDR R0, [R5]
 /* 0800E284 */ LDR R1, _0800E36C
 /* 0800E286 */ STR R4, [SP]
@@ -449,7 +449,7 @@ glabel func_0800DEE8
 /* 0800E2A6 */ LSLS R1, R1, #0X10
 /* 0800E2A8 */ ASRS R1, R1, #0X10
 /* 0800E2AA */ MOVS R2, #0
-/* 0800E2AC */ BL func_080EF3BC
+/* 0800E2AC */ BL sprite_set_visible
 /* 0800E2B0 */ LDR R0, [R5]
 /* 0800E2B2 */ LDR R1, _0800E370
 /* 0800E2B4 */ MOVS R2, #0X16

@@ -61,7 +61,7 @@ glabel func_080D4C34
 /* 080D4C9E */ LDR R1, _080D4CC4
 /* 080D4CA0 */ ADD R2, SP, #0X18
 /* 080D4CA2 */ ADD R3, SP, #4
-/* 080D4CA4 */ BL func_08008174
+/* 080D4CA4 */ BL gameplay_check_collision
 /* 080D4CA8 */ CMP R0, #0
 /* 080D4CAA */ BNE _080D4CC8
 _080D4CAC:

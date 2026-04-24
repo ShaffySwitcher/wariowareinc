@@ -38,7 +38,7 @@ _0805E980:
 /* 0805E98C */ MOVS R2, #0
 /* 0805E98E */ LDRSH R1, [R4, R2]
 /* 0805E990 */ MOVS R2, #1
-/* 0805E992 */ BL func_080EF3BC
+/* 0805E992 */ BL sprite_set_visible
 /* 0805E996 */ ADDS R0, R6, #0
 /* 0805E998 */ BL func_0805E9C4
 /* 0805E99C */ ADDS R0, R6, #0

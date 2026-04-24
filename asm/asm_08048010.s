@@ -88,7 +88,7 @@ _08048098:
 /* 080480A0 */ MOVS R3, #0
 /* 080480A2 */ LDRSH R1, [R1, R3]
 /* 080480A4 */ MOVS R2, #0
-/* 080480A6 */ BL func_080EF3BC
+/* 080480A6 */ BL sprite_set_visible
 _080480AA:
 /* 080480AA */ POP {R4, R5}
 /* 080480AC */ POP {R0}

@@ -60,7 +60,7 @@ _080A9CC8:
 /* 080A9D0A */ LDR R0, [R4]
 /* 080A9D0C */ ADDS R1, R5, #0
 /* 080A9D0E */ MOVS R2, #1
-/* 080A9D10 */ BL func_080EF3BC
+/* 080A9D10 */ BL sprite_set_visible
 /* 080A9D14 */ ADD SP, #0XC
 /* 080A9D16 */ POP {R3}
 /* 080A9D18 */ MOV R8, R3

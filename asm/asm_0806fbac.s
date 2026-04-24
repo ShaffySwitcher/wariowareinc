@@ -51,7 +51,7 @@ _0806FBF8:
 /* 0806FC04 */ MOVS R2, #0
 /* 0806FC06 */ LDRSH R1, [R1, R2]
 /* 0806FC08 */ MOVS R2, #0
-/* 0806FC0A */ BL func_080EF3BC
+/* 0806FC0A */ BL sprite_set_visible
 _0806FC0E:
 /* 0806FC0E */ POP {R4}
 /* 0806FC10 */ POP {R0}

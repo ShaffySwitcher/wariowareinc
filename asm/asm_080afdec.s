@@ -12,7 +12,7 @@ glabel func_080AFDEC
 /* 080AFDF4 */ MOVS R2, #0
 /* 080AFDF6 */ LDRSH R1, [R4, R2]
 /* 080AFDF8 */ MOVS R2, #0
-/* 080AFDFA */ BL func_080EF3BC
+/* 080AFDFA */ BL sprite_set_visible
 /* 080AFDFE */ MOVS R0, #0
 /* 080AFE00 */ STRB R0, [R4, #0X14]
 /* 080AFE02 */ LDR R3, =D_03003850

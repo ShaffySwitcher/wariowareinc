@@ -64,7 +64,7 @@ _080D775E:
 /* 080D77C4 */ MOVS R2, #0
 /* 080D77C6 */ LDRSH R1, [R6, R2]
 /* 080D77C8 */ MOVS R2, #1
-/* 080D77CA */ BL func_080EF3BC
+/* 080D77CA */ BL sprite_set_visible
 /* 080D77CE */ LDRB R0, [R6, #0X18]
 /* 080D77D0 */ ADDS R0, #1
 /* 080D77D2 */ STRB R0, [R6, #0X18]

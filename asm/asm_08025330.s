@@ -49,7 +49,7 @@ glabel func_08025330
 /* 08025388 */ MOVS R2, #0XC
 /* 0802538A */ LDRSH R1, [R1, R2]
 /* 0802538C */ MOVS R2, #1
-/* 0802538E */ BL func_080EF3BC
+/* 0802538E */ BL sprite_set_visible
 /* 08025392 */ LDR R0, [R5]
 /* 08025394 */ MOVS R1, #0XC
 /* 08025396 */ LDRSH R0, [R0, R1]

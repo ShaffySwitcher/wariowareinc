@@ -95,7 +95,7 @@ _080D44A0:
 /* 080D4522 */ MOVS R2, #0
 /* 080D4524 */ LDRSH R1, [R6, R2]
 /* 080D4526 */ MOVS R2, #1
-/* 080D4528 */ BL func_080EF3BC
+/* 080D4528 */ BL sprite_set_visible
 /* 080D452C */ LDRB R0, [R6, #0X18]
 /* 080D452E */ ADDS R0, #1
 /* 080D4530 */ STRB R0, [R6, #0X18]

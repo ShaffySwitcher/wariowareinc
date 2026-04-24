@@ -117,7 +117,7 @@ _08011F08:
 /* 08011F48 */ MOVS R4, #8
 /* 08011F4A */ LDRSH R1, [R1, R4]
 /* 08011F4C */ MOVS R2, #0
-/* 08011F4E */ BL func_080EF3BC
+/* 08011F4E */ BL sprite_set_visible
 /* 08011F52 */ LDR R0, _08011F7C
 /* 08011F54 */ BL play_sound
 /* 08011F58 */ B _08012042

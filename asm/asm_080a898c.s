@@ -30,7 +30,7 @@ glabel func_080A898C
 /* 080A89B8 */ LSLS R1, R7, #0X10
 /* 080A89BA */ ASRS R1, R1, #0X10
 /* 080A89BC */ MOVS R2, #0
-/* 080A89BE */ BL func_080EF3BC
+/* 080A89BE */ BL sprite_set_visible
 /* 080A89C2 */ B _080A8A30
 
 .balign 4, 0

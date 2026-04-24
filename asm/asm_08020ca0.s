@@ -50,7 +50,7 @@ _08020CDE:
 /* 08020CEE */ LDRSH R4, [R1, R2]
 /* 08020CF0 */ ADDS R1, R4, #0
 /* 08020CF2 */ MOVS R2, #1
-/* 08020CF4 */ BL func_080EF3BC
+/* 08020CF4 */ BL sprite_set_visible
 /* 08020CF8 */ LDR R5, [R5]
 /* 08020CFA */ LDR R3, [SP, #0XC]
 /* 08020CFC */ LDM R3!, {R6}

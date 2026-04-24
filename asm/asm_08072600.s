@@ -65,7 +65,7 @@ _08072620:
 /* 08072676 */ MOVS R2, #1
 _08072678:
 /* 08072678 */ ADDS R0, R3, #0
-/* 0807267A */ BL func_080EF3BC
+/* 0807267A */ BL sprite_set_visible
 /* 0807267E */ LDR R3, [R5]
 /* 08072680 */ MOVS R0, #0
 /* 08072682 */ LDRSH R1, [R7, R0]
@@ -78,7 +78,7 @@ _08072678:
 /* 08072690 */ MOVS R2, #1
 _08072692:
 /* 08072692 */ ADDS R0, R3, #0
-/* 08072694 */ BL func_080EF3BC
+/* 08072694 */ BL sprite_set_visible
 /* 08072698 */ LDR R3, [R5]
 /* 0807269A */ MOVS R0, #0
 /* 0807269C */ LDRSH R1, [R7, R0]
@@ -91,7 +91,7 @@ _08072692:
 /* 080726AA */ MOVS R2, #1
 _080726AC:
 /* 080726AC */ ADDS R0, R3, #0
-/* 080726AE */ BL func_080EF3BC
+/* 080726AE */ BL sprite_set_visible
 /* 080726B2 */ MOV R1, SL
 /* 080726B4 */ LDR R4, [R1]
 /* 080726B6 */ MOVS R0, #0
@@ -103,7 +103,7 @@ _080726AC:
 /* 080726C2 */ MOVS R2, #1
 _080726C4:
 /* 080726C4 */ ADDS R0, R4, #0
-/* 080726C6 */ BL func_080EF3BC
+/* 080726C6 */ BL sprite_set_visible
 /* 080726CA */ POP {R3, R4, R5}
 /* 080726CC */ MOV R8, R3
 /* 080726CE */ MOV SB, R4

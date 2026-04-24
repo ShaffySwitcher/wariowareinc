@@ -15,7 +15,7 @@ glabel func_080D37E4
 /* 080D37F2 */ LDRSH R1, [R0, R3]
 /* 080D37F4 */ ADDS R0, R2, #0
 /* 080D37F6 */ MOVS R2, #0
-/* 080D37F8 */ BL func_080EF3BC
+/* 080D37F8 */ BL sprite_set_visible
 /* 080D37FC */ POP {R0}
 /* 080D37FE */ BX R0
 

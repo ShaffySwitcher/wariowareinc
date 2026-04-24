@@ -285,7 +285,7 @@ _0803FD9A:
 /* 0803FDD2 */ MOVS R2, #0
 /* 0803FDD4 */ LDRSH R1, [R4, R2]
 /* 0803FDD6 */ MOVS R2, #0
-/* 0803FDD8 */ BL func_080EF3BC
+/* 0803FDD8 */ BL sprite_set_visible
 /* 0803FDDC */ STRH R6, [R4, #2]
 /* 0803FDDE */ STRH R6, [R4, #4]
 /* 0803FDE0 */ ADDS R0, R5, #0

@@ -47,13 +47,13 @@ _080EC250:
 /* 080EC266 */ MOVS R2, #0XE
 /* 080EC268 */ LDRSH R1, [R1, R2]
 /* 080EC26A */ MOVS R2, #1
-/* 080EC26C */ BL func_080EF3BC
+/* 080EC26C */ BL sprite_set_visible
 /* 080EC270 */ LDR R0, [R4]
 /* 080EC272 */ LDR R1, [R5]
 /* 080EC274 */ MOVS R2, #0X10
 /* 080EC276 */ LDRSH R1, [R1, R2]
 /* 080EC278 */ MOVS R2, #1
-/* 080EC27A */ BL func_080EF3BC
+/* 080EC27A */ BL sprite_set_visible
 /* 080EC27E */ LDR R1, [R5]
 /* 080EC280 */ LDRB R0, [R1]
 /* 080EC282 */ ADDS R0, #1

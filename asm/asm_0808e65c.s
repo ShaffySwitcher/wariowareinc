@@ -100,7 +100,7 @@ _0808E6B8:
 /* 0808E710 */ ADDS R1, R5, #0
 /* 0808E712 */ ADDS R1, #0X2C
 /* 0808E714 */ ADD R2, SP, #4
-/* 0808E716 */ BL func_08008174
+/* 0808E716 */ BL gameplay_check_collision
 /* 0808E71A */ CMP R0, #0
 /* 0808E71C */ BEQ _0808E72A
 /* 0808E71E */ ADDS R0, R5, #0

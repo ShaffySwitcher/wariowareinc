@@ -36,7 +36,7 @@ _0809EAB8:
 /* 0809EAC4 */ MOVS R2, #0
 /* 0809EAC6 */ LDRSH R1, [R4, R2]
 /* 0809EAC8 */ MOVS R2, #1
-/* 0809EACA */ BL func_080EF3BC
+/* 0809EACA */ BL sprite_set_visible
 /* 0809EACE */ LDR R0, [R5]
 /* 0809EAD0 */ MOVS R2, #0
 /* 0809EAD2 */ LDRSH R1, [R4, R2]

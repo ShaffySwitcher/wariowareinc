@@ -94,7 +94,7 @@ _08033B00:
 /* 08033B7A */ LDR R0, [R1]
 /* 08033B7C */ ADDS R1, R4, #0
 /* 08033B7E */ MOVS R2, #1
-/* 08033B80 */ BL func_080EF3BC
+/* 08033B80 */ BL sprite_set_visible
 /* 08033B84 */ MOVS R2, #8
 /* 08033B86 */ ADD SB, R2
 /* 08033B88 */ ADD R8, R2

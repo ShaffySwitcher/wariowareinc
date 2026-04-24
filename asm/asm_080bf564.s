@@ -35,13 +35,13 @@ _080BF58E:
 /* 080BF59C */ MOVS R2, #0
 /* 080BF59E */ LDRSH R1, [R1, R2]
 /* 080BF5A0 */ MOVS R2, #0
-/* 080BF5A2 */ BL func_080EF3BC
+/* 080BF5A2 */ BL sprite_set_visible
 /* 080BF5A6 */ LDR R0, [R4]
 /* 080BF5A8 */ LDR R1, [R5]
 /* 080BF5AA */ MOVS R2, #4
 /* 080BF5AC */ LDRSH R1, [R1, R2]
 /* 080BF5AE */ MOVS R2, #0
-/* 080BF5B0 */ BL func_080EF3BC
+/* 080BF5B0 */ BL sprite_set_visible
 /* 080BF5B4 */ LDR R1, [R5]
 /* 080BF5B6 */ MOVS R0, #0
 /* 080BF5B8 */ STR R0, [R1, #0X2C]

@@ -45,7 +45,7 @@ _0808AA4E:
 /* 0808AA6E */ MOVS R2, #0
 /* 0808AA70 */ LDRSH R1, [R4, R2]
 /* 0808AA72 */ MOVS R2, #1
-/* 0808AA74 */ BL func_080EF3BC
+/* 0808AA74 */ BL sprite_set_visible
 /* 0808AA78 */ MOV R1, SB
 /* 0808AA7A */ LDR R0, [R1]
 /* 0808AA7C */ MOVS R2, #0

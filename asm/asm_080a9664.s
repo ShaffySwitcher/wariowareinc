@@ -90,7 +90,7 @@ _080A96BC:
 /* 080A970C */ LSLS R1, R2, #0X10
 /* 080A970E */ ASRS R1, R1, #0X10
 /* 080A9710 */ MOVS R2, #0
-/* 080A9712 */ BL func_080EF3BC
+/* 080A9712 */ BL sprite_set_visible
 /* 080A9716 */ LDR R0, _080A972C
 /* 080A9718 */ ADDS R1, R4, #0
 /* 080A971A */ BL func_080AAB68
@@ -126,7 +126,7 @@ _080A9730:
 /* 080A9746 */ LSLS R1, R3, #0X10
 /* 080A9748 */ ASRS R1, R1, #0X10
 /* 080A974A */ MOVS R2, #0
-/* 080A974C */ BL func_080EF3BC
+/* 080A974C */ BL sprite_set_visible
 /* 080A9750 */ B _080A97CA
 
 .balign 4, 0
@@ -173,7 +173,7 @@ _080A975C:
 /* 080A97A0 */ LDR R0, [R1]
 /* 080A97A2 */ ADDS R1, R6, #0
 /* 080A97A4 */ MOVS R2, #0
-/* 080A97A6 */ BL func_080EF3BC
+/* 080A97A6 */ BL sprite_set_visible
 /* 080A97AA */ ADDS R0, R4, #0
 /* 080A97AC */ ADDS R1, R5, #0
 /* 080A97AE */ BL func_080A99D0

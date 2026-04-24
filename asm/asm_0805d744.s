@@ -76,7 +76,7 @@ _0805D7BC:
 /* 0805D7C0 */ MOVS R2, #0XC
 /* 0805D7C2 */ LDRSH R1, [R4, R2]
 /* 0805D7C4 */ MOVS R2, #1
-/* 0805D7C6 */ BL func_080EF3BC
+/* 0805D7C6 */ BL sprite_set_visible
 /* 0805D7CA */ LDR R2, [R4]
 /* 0805D7CC */ LDR R0, [R5]
 /* 0805D7CE */ ADDS R2, R0

@@ -46,7 +46,7 @@ _0805B462:
 /* 0805B46E */ MOVS R2, #0
 /* 0805B470 */ LDRSH R1, [R1, R2]
 /* 0805B472 */ MOVS R2, #1
-/* 0805B474 */ BL func_080EF3BC
+/* 0805B474 */ BL sprite_set_visible
 /* 0805B478 */ ADDS R4, #2
 /* 0805B47A */ ADDS R5, #1
 /* 0805B47C */ CMP R5, R6

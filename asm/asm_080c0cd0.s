@@ -40,7 +40,7 @@ _080C0CD8:
 /* 080C0D10 */ STR R1, [R0]
 /* 080C0D12 */ LDR R0, [R5]
 /* 080C0D14 */ MOVS R2, #0
-/* 080C0D16 */ BL func_080EF3BC
+/* 080C0D16 */ BL sprite_set_visible
 /* 080C0D1A */ ADDS R0, R4, #1
 /* 080C0D1C */ LSLS R0, R0, #0X18
 /* 080C0D1E */ LSRS R4, R0, #0X18

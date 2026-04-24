@@ -50,7 +50,7 @@ _080C63EE:
 /* 080C642C */ MOVS R2, #0
 /* 080C642E */ LDRSH R1, [R4, R2]
 /* 080C6430 */ MOVS R2, #0
-/* 080C6432 */ BL func_080EF3BC
+/* 080C6432 */ BL sprite_set_visible
 /* 080C6436 */ STRB R7, [R4, #2]
 /* 080C6438 */ BL func_0800A218
 /* 080C643C */ STRB R0, [R4, #3]

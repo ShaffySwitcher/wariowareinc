@@ -91,7 +91,7 @@ _080D4370:
 /* 080D43EA */ MOVS R2, #0
 /* 080D43EC */ LDRSH R1, [R7, R2]
 /* 080D43EE */ MOVS R2, #1
-/* 080D43F0 */ BL func_080EF3BC
+/* 080D43F0 */ BL sprite_set_visible
 /* 080D43F4 */ LDRB R0, [R7, #0X18]
 /* 080D43F6 */ ADDS R0, #1
 /* 080D43F8 */ STRB R0, [R7, #0X18]

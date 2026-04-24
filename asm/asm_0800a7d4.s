@@ -1852,7 +1852,7 @@ _0800B448:
 /* 0800B454 */ LDR R0, [R0]
 /* 0800B456 */ MOVS R3, #0
 /* 0800B458 */ LDRSH R1, [R1, R3]
-/* 0800B45A */ BL func_080EF3BC
+/* 0800B45A */ BL sprite_set_visible
 /* 0800B45E */ B _0800B74C
 
 .balign 4, 0
@@ -2151,7 +2151,7 @@ _0800B69C:
 /* 0800B69C */ LDR R0, [R5]
 /* 0800B69E */ ADDS R1, R4, #0
 /* 0800B6A0 */ MOVS R2, #0
-/* 0800B6A2 */ BL func_080EF3BC
+/* 0800B6A2 */ BL sprite_set_visible
 /* 0800B6A6 */ LDR R0, [R5]
 /* 0800B6A8 */ LDR R2, _0800B6BC
 /* 0800B6AA */ STR R6, [SP]

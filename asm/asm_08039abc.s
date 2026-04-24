@@ -92,7 +92,7 @@ glabel func_08039ABC
 /* 08039B78 */ MOVS R3, #0
 /* 08039B7A */ LDRSH R1, [R1, R3]
 /* 08039B7C */ MOVS R2, #0
-/* 08039B7E */ BL func_080EF3BC
+/* 08039B7E */ BL sprite_set_visible
 /* 08039B82 */ LDR R1, [R6]
 /* 08039B84 */ ADDS R2, R1, #0
 /* 08039B86 */ ADDS R2, #0X84

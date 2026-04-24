@@ -26,7 +26,7 @@ _08061E70:
 /* 08061E8A */ MOVS R2, #0
 /* 08061E8C */ LDRSH R1, [R1, R2]
 /* 08061E8E */ MOVS R2, #1
-/* 08061E90 */ BL func_080EF3BC
+/* 08061E90 */ BL sprite_set_visible
 /* 08061E94 */ B _08061EB8
 
 .balign 4, 0
@@ -49,7 +49,7 @@ _08061EA4:
 /* 08061EAE */ MOVS R2, #0
 /* 08061EB0 */ LDRSH R1, [R1, R2]
 /* 08061EB2 */ MOVS R2, #0
-/* 08061EB4 */ BL func_080EF3BC
+/* 08061EB4 */ BL sprite_set_visible
 _08061EB8:
 /* 08061EB8 */ ADDS R4, #2
 /* 08061EBA */ ADDS R5, #1

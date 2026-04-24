@@ -41,7 +41,7 @@ _0808BB12:
 /* 0808BB34 */ MOVS R2, #0X18
 /* 0808BB36 */ LDRSH R1, [R7, R2]
 /* 0808BB38 */ MOVS R2, #1
-/* 0808BB3A */ BL func_080EF3BC
+/* 0808BB3A */ BL sprite_set_visible
 /* 0808BB3E */ LDR R0, [R5, #4]
 /* 0808BB40 */ LDR R1, [R5, #8]
 /* 0808BB42 */ STR R0, [R7]

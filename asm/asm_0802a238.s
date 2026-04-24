@@ -10,7 +10,7 @@ glabel func_0802A238
 /* 0802A23C */ LSLS R1, R1, #0X10
 /* 0802A23E */ ASRS R1, R1, #0X10
 /* 0802A240 */ MOVS R2, #0
-/* 0802A242 */ BL func_080EF3BC
+/* 0802A242 */ BL sprite_set_visible
 /* 0802A246 */ MOVS R0, #0
 /* 0802A248 */ STRB R0, [R4]
 /* 0802A24A */ POP {R4}

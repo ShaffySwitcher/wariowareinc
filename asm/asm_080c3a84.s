@@ -86,7 +86,7 @@ _080C3AC4:
 /* 080C3B22 */ MOVS R3, #0
 /* 080C3B24 */ LDRSH R1, [R4, R3]
 /* 080C3B26 */ MOVS R2, #0
-/* 080C3B28 */ BL func_080EF3BC
+/* 080C3B28 */ BL sprite_set_visible
 /* 080C3B2C */ STR R6, [R4, #4]
 /* 080C3B2E */ MOVS R0, #0XA0
 /* 080C3B30 */ LSLS R0, R0, #7

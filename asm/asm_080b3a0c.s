@@ -160,7 +160,7 @@ _080B3AE6:
 /* 080B3B08 */ MOVS R2, #2
 /* 080B3B0A */ LDRSH R1, [R5, R2]
 /* 080B3B0C */ MOVS R2, #1
-/* 080B3B0E */ BL func_080EF3BC
+/* 080B3B0E */ BL sprite_set_visible
 /* 080B3B12 */ POP {R4, R5, R6, R7}
 /* 080B3B14 */ POP {R0}
 /* 080B3B16 */ BX R0

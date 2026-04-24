@@ -40,7 +40,7 @@ glabel func_080ACCB4
 /* 080ACCF6 */ MOV R0, R8
 /* 080ACCF8 */ ADDS R1, R6, #0
 /* 080ACCFA */ MOVS R2, #1
-/* 080ACCFC */ BL func_080EF3BC
+/* 080ACCFC */ BL sprite_set_visible
 /* 080ACD00 */ LSLS R5, R5, #8
 /* 080ACD02 */ ASRS R5, R5, #0X10
 /* 080ACD04 */ LSLS R4, R4, #8

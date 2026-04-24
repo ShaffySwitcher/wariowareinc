@@ -42,7 +42,7 @@ glabel func_0800DE84
 /* 0800DECC */ ASRS R4, R4, #0X10
 /* 0800DECE */ ADDS R1, R4, #0
 /* 0800DED0 */ MOVS R2, #0
-/* 0800DED2 */ BL func_080EF3BC
+/* 0800DED2 */ BL sprite_set_visible
 /* 0800DED6 */ ADDS R0, R4, #0
 /* 0800DED8 */ ADD SP, #0X14
 /* 0800DEDA */ POP {R4, R5, R6}

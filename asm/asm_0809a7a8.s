@@ -98,7 +98,7 @@ _0809A844:
 /* 0809A858 */ MOVS R3, #4
 /* 0809A85A */ LDRSH R1, [R2, R3]
 /* 0809A85C */ MOVS R2, #0
-/* 0809A85E */ BL func_080EF3BC
+/* 0809A85E */ BL sprite_set_visible
 /* 0809A862 */ B _0809A884
 
 .balign 4, 0
@@ -110,7 +110,7 @@ _0809A868:
 /* 0809A86C */ MOVS R3, #4
 /* 0809A86E */ LDRSH R1, [R2, R3]
 /* 0809A870 */ MOVS R2, #1
-/* 0809A872 */ BL func_080EF3BC
+/* 0809A872 */ BL sprite_set_visible
 /* 0809A876 */ B _0809A884
 
 .balign 4, 0

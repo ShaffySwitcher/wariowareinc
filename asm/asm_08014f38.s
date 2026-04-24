@@ -35,7 +35,7 @@ _08014F5C:
 /* 08014F6E */ MOVS R2, #0
 /* 08014F70 */ LDRSH R1, [R1, R2]
 /* 08014F72 */ MOVS R2, #1
-/* 08014F74 */ BL func_080EF3BC
+/* 08014F74 */ BL sprite_set_visible
 /* 08014F78 */ ADDS R4, #1
 _08014F7A:
 /* 08014F7A */ LDR R0, [R5]

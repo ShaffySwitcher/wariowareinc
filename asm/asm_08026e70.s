@@ -54,7 +54,7 @@ _08026E9E:
 /* 08026ECA */ MOVS R2, #0
 /* 08026ECC */ LDRSH R1, [R1, R2]
 /* 08026ECE */ MOVS R2, #1
-/* 08026ED0 */ BL func_080EF3BC
+/* 08026ED0 */ BL sprite_set_visible
 /* 08026ED4 */ LDR R2, [R7]
 /* 08026ED6 */ ADDS R0, R2, #0
 /* 08026ED8 */ ADDS R0, #0XD0

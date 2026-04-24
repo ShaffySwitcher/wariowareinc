@@ -82,7 +82,7 @@ _080C4DA2:
 /* 080C4DD4 */ MOVS R2, #0
 /* 080C4DD6 */ LDRSH R1, [R1, R2]
 /* 080C4DD8 */ MOVS R2, #0
-/* 080C4DDA */ BL func_080EF3BC
+/* 080C4DDA */ BL sprite_set_visible
 /* 080C4DDE */ B _080C4FA2
 
 .balign 4, 0
@@ -120,7 +120,7 @@ _080C4DE4:
 /* 080C4E1E */ MOVS R2, #0
 /* 080C4E20 */ LDRSH R1, [R1, R2]
 /* 080C4E22 */ MOVS R2, #1
-/* 080C4E24 */ BL func_080EF3BC
+/* 080C4E24 */ BL sprite_set_visible
 /* 080C4E28 */ LDR R4, [R7]
 /* 080C4E2A */ LDR R0, _080C4E70
 /* 080C4E2C */ LDR R0, [R0]
@@ -216,7 +216,7 @@ _080C4EBE:
 /* 080C4ECE */ MOVS R2, #0
 /* 080C4ED0 */ LDRSH R1, [R6, R2]
 /* 080C4ED2 */ MOVS R2, #1
-/* 080C4ED4 */ BL func_080EF3BC
+/* 080C4ED4 */ BL sprite_set_visible
 /* 080C4ED8 */ LDR R0, [R4]
 /* 080C4EDA */ MOVS R3, #0
 /* 080C4EDC */ LDRSH R1, [R6, R3]

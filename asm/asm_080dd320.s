@@ -46,7 +46,7 @@ _080DD352:
 /* 080DD36C */ MOVS R2, #0
 /* 080DD36E */ LDRSH R1, [R1, R2]
 /* 080DD370 */ MOVS R2, #0
-/* 080DD372 */ BL func_080EF3BC
+/* 080DD372 */ BL sprite_set_visible
 _080DD376:
 /* 080DD376 */ ADDS R4, #1
 /* 080DD378 */ LDR R0, [R5]

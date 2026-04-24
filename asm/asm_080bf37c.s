@@ -232,7 +232,7 @@ _080BF4BC:
 /* 080BF522 */ MOVS R3, #2
 /* 080BF524 */ LDRSH R1, [R5, R3]
 /* 080BF526 */ MOVS R2, #0
-/* 080BF528 */ BL func_080EF3BC
+/* 080BF528 */ BL sprite_set_visible
 /* 080BF52C */ ADDS R6, #1
 /* 080BF52E */ ADDS R5, #4
 /* 080BF530 */ CMP R6, #3

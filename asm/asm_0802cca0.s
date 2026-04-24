@@ -129,7 +129,7 @@ _0802CD80:
 /* 0802CD82 */ MOVS R2, #0
 /* 0802CD84 */ LDRSH R1, [R4, R2]
 /* 0802CD86 */ MOVS R2, #1
-/* 0802CD88 */ BL func_080EF3BC
+/* 0802CD88 */ BL sprite_set_visible
 /* 0802CD8C */ ADDS R4, #2
 /* 0802CD8E */ ADDS R5, #1
 /* 0802CD90 */ CMP R5, #9

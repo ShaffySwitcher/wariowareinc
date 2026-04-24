@@ -59,7 +59,7 @@ _080CF39C:
 /* 080CF3EE */ MOVS R2, #4
 /* 080CF3F0 */ LDRSH R1, [R4, R2]
 /* 080CF3F2 */ MOVS R2, #0
-/* 080CF3F4 */ BL func_080EF3BC
+/* 080CF3F4 */ BL sprite_set_visible
 /* 080CF3F8 */ B _080CF422
 
 .balign 4, 0
@@ -84,7 +84,7 @@ _080CF408:
 /* 080CF418 */ MOVS R3, #4
 /* 080CF41A */ LDRSH R1, [R4, R3]
 /* 080CF41C */ MOVS R2, #0
-/* 080CF41E */ BL func_080EF3BC
+/* 080CF41E */ BL sprite_set_visible
 _080CF422:
 /* 080CF422 */ MOVS R6, #1
 /* 080CF424 */ RSBS R6, R6, #0

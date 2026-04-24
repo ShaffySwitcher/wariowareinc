@@ -16,14 +16,14 @@ glabel func_08044484
 /* 08044496 */ LDRSH R1, [R0, R2]
 /* 08044498 */ ADDS R0, R5, #0
 /* 0804449A */ MOVS R2, #0
-/* 0804449C */ BL func_080EF3BC
+/* 0804449C */ BL sprite_set_visible
 /* 080444A0 */ LDR R0, [R4]
 /* 080444A2 */ ADDS R0, #0X60
 /* 080444A4 */ MOVS R2, #0
 /* 080444A6 */ LDRSH R1, [R0, R2]
 /* 080444A8 */ ADDS R0, R5, #0
 /* 080444AA */ MOVS R2, #1
-/* 080444AC */ BL func_080EF3BC
+/* 080444AC */ BL sprite_set_visible
 /* 080444B0 */ LDR R0, [R4]
 /* 080444B2 */ ADDS R0, #0X90
 /* 080444B4 */ MOVS R1, #0

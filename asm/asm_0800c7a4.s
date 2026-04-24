@@ -16,7 +16,7 @@ glabel func_0800C7A4
 /* 0800C7B4 */ LDRSH R1, [R0, R3]
 /* 0800C7B6 */ ADDS R0, R2, #0
 /* 0800C7B8 */ MOVS R2, #0
-/* 0800C7BA */ BL func_080EF3BC
+/* 0800C7BA */ BL sprite_set_visible
 /* 0800C7BE */ POP {R0}
 /* 0800C7C0 */ BX R0
 

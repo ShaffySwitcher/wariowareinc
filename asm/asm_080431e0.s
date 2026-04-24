@@ -87,7 +87,7 @@ _08043236:
 /* 08043270 */ MOVS R2, #0
 /* 08043272 */ LDRSH R1, [R1, R2]
 /* 08043274 */ MOVS R2, #1
-/* 08043276 */ BL func_080EF3BC
+/* 08043276 */ BL sprite_set_visible
 /* 0804327A */ LDR R0, [R6]
 /* 0804327C */ ADDS R0, #0X78
 /* 0804327E */ MOVS R1, #2
@@ -128,7 +128,7 @@ _08043294:
 /* 080432BE */ MOVS R2, #0
 /* 080432C0 */ LDRSH R1, [R1, R2]
 /* 080432C2 */ MOVS R2, #0
-/* 080432C4 */ BL func_080EF3BC
+/* 080432C4 */ BL sprite_set_visible
 /* 080432C8 */ LDR R0, [R6]
 /* 080432CA */ ADDS R0, #0X78
 /* 080432CC */ STRB R5, [R0]

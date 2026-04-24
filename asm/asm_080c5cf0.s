@@ -86,7 +86,7 @@ _080C5D34:
 /* 080C5D84 */ MOVS R2, #0
 /* 080C5D86 */ LDRSH R1, [R7, R2]
 /* 080C5D88 */ MOVS R2, #1
-/* 080C5D8A */ BL func_080EF3BC
+/* 080C5D8A */ BL sprite_set_visible
 /* 080C5D8E */ LDR R0, [R4]
 /* 080C5D90 */ MOVS R3, #0
 /* 080C5D92 */ LDRSH R1, [R7, R3]

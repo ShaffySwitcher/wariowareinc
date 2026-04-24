@@ -45,12 +45,12 @@ _0804AB7A:
 /* 0804AB7E */ MOVS R2, #0
 /* 0804AB80 */ LDRSH R1, [R5, R2]
 /* 0804AB82 */ MOVS R2, #0
-/* 0804AB84 */ BL func_080EF3BC
+/* 0804AB84 */ BL sprite_set_visible
 /* 0804AB88 */ LDR R0, [R4]
 /* 0804AB8A */ MOVS R2, #4
 /* 0804AB8C */ LDRSH R1, [R5, R2]
 /* 0804AB8E */ MOVS R2, #1
-/* 0804AB90 */ BL func_080EF3BC
+/* 0804AB90 */ BL sprite_set_visible
 /* 0804AB94 */ LDR R0, [R4]
 /* 0804AB96 */ MOVS R4, #4
 /* 0804AB98 */ LDRSH R1, [R5, R4]

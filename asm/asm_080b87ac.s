@@ -33,7 +33,7 @@ glabel func_080B87AC
 /* 080B87E0 */ MOVS R2, #0
 /* 080B87E2 */ LDRSH R1, [R1, R2]
 /* 080B87E4 */ MOVS R2, #1
-/* 080B87E6 */ BL func_080EF3BC
+/* 080B87E6 */ BL sprite_set_visible
 /* 080B87EA */ ADDS R0, R5, #0
 /* 080B87EC */ BL func_080B8A28
 /* 080B87F0 */ BL func_080B893C

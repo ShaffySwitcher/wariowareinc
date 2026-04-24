@@ -95,7 +95,7 @@ _080E3684:
 /* 080E3708 */ MOVS R2, #0
 /* 080E370A */ LDRSH R1, [R1, R2]
 /* 080E370C */ MOVS R2, #1
-/* 080E370E */ BL func_080EF3BC
+/* 080E370E */ BL sprite_set_visible
 /* 080E3712 */ MOVS R0, #8
 /* 080E3714 */ ADD SB, R0
 /* 080E3716 */ ADD R8, R0

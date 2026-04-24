@@ -33,7 +33,7 @@ _0805FEC2:
 /* 0805FECC */ MOVS R2, #0
 /* 0805FECE */ LDRSH R1, [R1, R2]
 /* 0805FED0 */ MOVS R2, #0
-/* 0805FED2 */ BL func_080EF3BC
+/* 0805FED2 */ BL sprite_set_visible
 /* 0805FED6 */ LDR R1, [R7]
 /* 0805FED8 */ ADDS R0, R1, #0
 /* 0805FEDA */ ADDS R0, #0X74
@@ -44,7 +44,7 @@ _0805FEC2:
 /* 0805FEE4 */ MOVS R2, #0
 /* 0805FEE6 */ LDRSH R1, [R1, R2]
 /* 0805FEE8 */ MOVS R2, #1
-/* 0805FEEA */ BL func_080EF3BC
+/* 0805FEEA */ BL sprite_set_visible
 /* 0805FEEE */ LDR R0, [R4]
 /* 0805FEF0 */ LDR R1, [R7]
 /* 0805FEF2 */ ADDS R1, R5

@@ -61,7 +61,7 @@ _08012E30:
 /* 08012E72 */ LDR R0, [R1]
 /* 08012E74 */ ADDS R1, R4, #0
 /* 08012E76 */ MOVS R2, #1
-/* 08012E78 */ BL func_080EF3BC
+/* 08012E78 */ BL sprite_set_visible
 /* 08012E7C */ MOVS R2, #1
 /* 08012E7E */ ADD SB, R2
 _08012E80:

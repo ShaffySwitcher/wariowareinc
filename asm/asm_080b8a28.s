@@ -89,7 +89,7 @@ _080B8A5A:
 /* 080B8AD2 */ MOVS R2, #0
 /* 080B8AD4 */ LDRSH R1, [R4, R2]
 /* 080B8AD6 */ MOVS R2, #1
-/* 080B8AD8 */ BL func_080EF3BC
+/* 080B8AD8 */ BL sprite_set_visible
 /* 080B8ADC */ MOVS R0, #1
 /* 080B8ADE */ ADD R8, R0
 /* 080B8AE0 */ MOV R1, R8

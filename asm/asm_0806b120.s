@@ -41,7 +41,7 @@ _0806B134:
 /* 0806B160 */ MOVS R2, #0
 /* 0806B162 */ LDRSH R1, [R4, R2]
 /* 0806B164 */ MOVS R2, #0
-/* 0806B166 */ BL func_080EF3BC
+/* 0806B166 */ BL sprite_set_visible
 /* 0806B16A */ MOVS R0, #0
 /* 0806B16C */ STR R0, [R4, #0X14]
 /* 0806B16E */ MOVS R0, #1

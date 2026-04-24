@@ -24,7 +24,7 @@ glabel func_080B7440
 /* 080B7460 */ MOVS R2, #0
 /* 080B7462 */ LDRSH R1, [R1, R2]
 /* 080B7464 */ MOVS R2, #1
-/* 080B7466 */ BL func_080EF3BC
+/* 080B7466 */ BL sprite_set_visible
 /* 080B746A */ LDR R0, _080B7480
 /* 080B746C */ BL play_sound
 /* 080B7470 */ LDR R1, [R5]
@@ -70,7 +70,7 @@ _080B749C:
 /* 080B74B2 */ MOVS R2, #0
 /* 080B74B4 */ LDRSH R1, [R1, R2]
 /* 080B74B6 */ MOVS R2, #1
-/* 080B74B8 */ BL func_080EF3BC
+/* 080B74B8 */ BL sprite_set_visible
 /* 080B74BC */ B _080B7550
 
 .balign 4, 0
@@ -88,7 +88,7 @@ _080B74C8:
 /* 080B74D0 */ MOVS R2, #0
 /* 080B74D2 */ LDRSH R1, [R1, R2]
 /* 080B74D4 */ MOVS R2, #0
-/* 080B74D6 */ BL func_080EF3BC
+/* 080B74D6 */ BL sprite_set_visible
 /* 080B74DA */ B _080B7550
 
 .balign 4, 0
@@ -105,7 +105,7 @@ _080B74E0:
 /* 080B74EE */ MOVS R2, #0
 /* 080B74F0 */ LDRSH R1, [R1, R2]
 /* 080B74F2 */ MOVS R2, #1
-/* 080B74F4 */ BL func_080EF3BC
+/* 080B74F4 */ BL sprite_set_visible
 /* 080B74F8 */ LDR R1, [R5]
 /* 080B74FA */ MOVS R0, #6
 /* 080B74FC */ STRB R0, [R1, #4]
@@ -114,21 +114,21 @@ _080B74E0:
 /* 080B7502 */ MOVS R2, #0XC
 /* 080B7504 */ LDRSH R1, [R1, R2]
 /* 080B7506 */ MOVS R2, #1
-/* 080B7508 */ BL func_080EF3BC
+/* 080B7508 */ BL sprite_set_visible
 /* 080B750C */ LDR R0, [R4]
 /* 080B750E */ LDR R1, [R5]
 /* 080B7510 */ ADDS R1, #0XAA
 /* 080B7512 */ MOVS R2, #0
 /* 080B7514 */ LDRSH R1, [R1, R2]
 /* 080B7516 */ MOVS R2, #0
-/* 080B7518 */ BL func_080EF3BC
+/* 080B7518 */ BL sprite_set_visible
 /* 080B751C */ LDR R0, [R4]
 /* 080B751E */ LDR R1, [R5]
 /* 080B7520 */ ADDS R1, #0XAC
 /* 080B7522 */ MOVS R2, #0
 /* 080B7524 */ LDRSH R1, [R1, R2]
 /* 080B7526 */ MOVS R2, #0
-/* 080B7528 */ BL func_080EF3BC
+/* 080B7528 */ BL sprite_set_visible
 /* 080B752C */ MOVS R4, #0
 _080B752E:
 /* 080B752E */ LDR R0, _080B755C
@@ -141,7 +141,7 @@ _080B752E:
 /* 080B753C */ MOVS R2, #0
 /* 080B753E */ LDRSH R1, [R1, R2]
 /* 080B7540 */ MOVS R2, #0
-/* 080B7542 */ BL func_080EF3BC
+/* 080B7542 */ BL sprite_set_visible
 /* 080B7546 */ ADDS R0, R4, #1
 /* 080B7548 */ LSLS R0, R0, #0X18
 /* 080B754A */ LSRS R4, R0, #0X18

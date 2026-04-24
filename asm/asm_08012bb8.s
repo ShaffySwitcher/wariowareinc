@@ -21,7 +21,7 @@ _08012BC2:
 /* 08012BCE */ MOVS R2, #0
 /* 08012BD0 */ LDRSH R1, [R1, R2]
 /* 08012BD2 */ MOVS R2, #0
-/* 08012BD4 */ BL func_080EF3BC
+/* 08012BD4 */ BL sprite_set_visible
 /* 08012BD8 */ ADDS R4, #2
 /* 08012BDA */ ADDS R5, #1
 /* 08012BDC */ CMP R5, #2
@@ -42,7 +42,7 @@ _08012BEA:
 /* 08012BF8 */ MOVS R2, #0
 /* 08012BFA */ LDRSH R1, [R1, R2]
 /* 08012BFC */ MOVS R2, #0
-/* 08012BFE */ BL func_080EF3BC
+/* 08012BFE */ BL sprite_set_visible
 /* 08012C02 */ ADDS R6, #1
 /* 08012C04 */ CMP R6, #7
 /* 08012C06 */ BLS _08012BEA

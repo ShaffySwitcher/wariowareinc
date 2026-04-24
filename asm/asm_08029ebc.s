@@ -63,7 +63,7 @@ _08029EF6:
 /* 08029F22 */ MOVS R2, #0
 /* 08029F24 */ LDRSH R1, [R1, R2]
 /* 08029F26 */ MOVS R2, #1
-/* 08029F28 */ BL func_080EF3BC
+/* 08029F28 */ BL sprite_set_visible
 /* 08029F2C */ ADDS R0, R5, #0
 /* 08029F2E */ ADDS R1, R4, #0
 /* 08029F30 */ BL func_08029E54

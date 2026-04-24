@@ -88,7 +88,7 @@ _080C9B6A:
 /* 080C9BA0 */ MOVS R2, #0
 /* 080C9BA2 */ LDRSH R1, [R6, R2]
 /* 080C9BA4 */ MOVS R2, #1
-/* 080C9BA6 */ BL func_080EF3BC
+/* 080C9BA6 */ BL sprite_set_visible
 /* 080C9BAA */ POP {R3, R4}
 /* 080C9BAC */ MOV R8, R3
 /* 080C9BAE */ MOV SB, R4

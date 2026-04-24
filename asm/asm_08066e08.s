@@ -109,7 +109,7 @@ _08066EA2:
 /* 08066ECC */ MOVS R5, #0
 /* 08066ECE */ LDRSH R1, [R1, R5]
 /* 08066ED0 */ MOVS R2, #0
-/* 08066ED2 */ BL func_080EF3BC
+/* 08066ED2 */ BL sprite_set_visible
 /* 08066ED6 */ B _08066F10
 
 .balign 4, 0

@@ -69,7 +69,7 @@ _08072B0E:
 /* 08072B26 */ MOVS R2, #0
 /* 08072B28 */ LDRSH R1, [R5, R2]
 /* 08072B2A */ MOVS R2, #1
-/* 08072B2C */ BL func_080EF3BC
+/* 08072B2C */ BL sprite_set_visible
 /* 08072B30 */ STR R6, [R5, #4]
 /* 08072B32 */ STR R7, [R5, #8]
 /* 08072B34 */ MOVS R0, #1

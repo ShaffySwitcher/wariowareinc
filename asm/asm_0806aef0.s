@@ -43,7 +43,7 @@ _0806AF0A:
 /* 0806AF36 */ MOVS R2, #0
 /* 0806AF38 */ LDRSH R1, [R4, R2]
 /* 0806AF3A */ MOVS R2, #1
-/* 0806AF3C */ BL func_080EF3BC
+/* 0806AF3C */ BL sprite_set_visible
 /* 0806AF40 */ LDR R1, [R7]
 /* 0806AF42 */ LDR R0, [R1, #4]
 /* 0806AF44 */ LDR R2, _0806AF88

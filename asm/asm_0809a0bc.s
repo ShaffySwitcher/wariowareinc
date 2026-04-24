@@ -33,7 +33,7 @@ glabel func_0809A0BC
 /* 0809A0EE */ ADDS R0, #4
 /* 0809A0F0 */ ADDS R3, R0
 /* 0809A0F2 */ MOV R0, SP
-/* 0809A0F4 */ BL func_08008174
+/* 0809A0F4 */ BL gameplay_check_collision
 /* 0809A0F8 */ CMP R0, #0
 /* 0809A0FA */ BNE _0809A128
 /* 0809A0FC */ LDR R0, [R4]
@@ -46,7 +46,7 @@ glabel func_0809A0BC
 /* 0809A10A */ LSLS R4, R4, #1
 /* 0809A10C */ ADDS R3, R0, R4
 /* 0809A10E */ MOV R0, SP
-/* 0809A110 */ BL func_08008174
+/* 0809A110 */ BL gameplay_check_collision
 /* 0809A114 */ CMP R0, #0
 /* 0809A116 */ BNE _0809A128
 /* 0809A118 */ MOVS R0, #0

@@ -82,7 +82,7 @@ _0802C73C:
 /* 0802C74A */ MOVS R2, #0
 /* 0802C74C */ LDRSH R1, [R1, R2]
 /* 0802C74E */ MOVS R2, #0
-/* 0802C750 */ BL func_080EF3BC
+/* 0802C750 */ BL sprite_set_visible
 _0802C754:
 /* 0802C754 */ MOVS R4, #2
 /* 0802C756 */ ADD SB, R4

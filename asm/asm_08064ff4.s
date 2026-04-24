@@ -123,7 +123,7 @@ _080650AA:
 /* 080650B6 */ MOVS R2, #0
 /* 080650B8 */ LDRSH R1, [R1, R2]
 /* 080650BA */ MOVS R2, #1
-/* 080650BC */ BL func_080EF3BC
+/* 080650BC */ BL sprite_set_visible
 /* 080650C0 */ LDR R0, [R7]
 /* 080650C2 */ LDR R1, [R5]
 /* 080650C4 */ ADDS R1, R4

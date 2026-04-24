@@ -20,7 +20,7 @@ glabel func_0809E52C
 /* 0809E548 */ LDRSH R1, [R4, R0]
 /* 0809E54A */ ADDS R0, R5, #0
 /* 0809E54C */ MOVS R2, #0
-/* 0809E54E */ BL func_080EF3BC
+/* 0809E54E */ BL sprite_set_visible
 /* 0809E552 */ MOVS R0, #0
 /* 0809E554 */ STR R0, [R4, #4]
 /* 0809E556 */ POP {R4, R5}

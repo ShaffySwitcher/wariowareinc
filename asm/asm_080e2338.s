@@ -44,7 +44,7 @@ glabel func_080E2338
 /* 080E2384 */ MOVS R2, #0
 /* 080E2386 */ LDRSH R1, [R1, R2]
 /* 080E2388 */ MOVS R2, #0
-/* 080E238A */ BL func_080EF3BC
+/* 080E238A */ BL sprite_set_visible
 /* 080E238E */ LDR R1, [R7]
 /* 080E2390 */ LDR R0, [R1, #0XC]
 /* 080E2392 */ ASRS R0, R0, #8

@@ -51,7 +51,7 @@ _080638E8:
 /* 080638F0 */ MOVS R2, #0
 /* 080638F2 */ LDRSH R1, [R1, R2]
 /* 080638F4 */ MOVS R2, #0
-/* 080638F6 */ BL func_080EF3BC
+/* 080638F6 */ BL sprite_set_visible
 /* 080638FA */ LDR R2, [R4]
 /* 080638FC */ MOVS R3, #0X82
 /* 080638FE */ LSLS R3, R3, #1
@@ -88,7 +88,7 @@ _0806392C:
 /* 08063934 */ MOVS R2, #0
 /* 08063936 */ LDRSH R1, [R1, R2]
 /* 08063938 */ MOVS R2, #1
-/* 0806393A */ BL func_080EF3BC
+/* 0806393A */ BL sprite_set_visible
 /* 0806393E */ BL func_080639D4
 /* 08063942 */ BL func_08066C58
 /* 08063946 */ LDR R0, [R4]
@@ -121,7 +121,7 @@ _0806396E:
 /* 08063976 */ MOVS R2, #0
 /* 08063978 */ LDRSH R1, [R1, R2]
 /* 0806397A */ MOVS R2, #0
-/* 0806397C */ BL func_080EF3BC
+/* 0806397C */ BL sprite_set_visible
 /* 08063980 */ LDR R2, [R4]
 /* 08063982 */ MOVS R3, #0X82
 /* 08063984 */ LSLS R3, R3, #1

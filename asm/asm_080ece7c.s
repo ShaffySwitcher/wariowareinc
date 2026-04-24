@@ -64,7 +64,7 @@ _080ECE90:
 /* 080ECEF2 */ MOVS R7, #0
 /* 080ECEF4 */ LDRSH R1, [R4, R7]
 /* 080ECEF6 */ MOVS R2, #1
-/* 080ECEF8 */ BL func_080EF3BC
+/* 080ECEF8 */ BL sprite_set_visible
 /* 080ECEFC */ LDR R0, [R6]
 /* 080ECEFE */ MOVS R2, #0
 /* 080ECF00 */ LDRSH R1, [R4, R2]

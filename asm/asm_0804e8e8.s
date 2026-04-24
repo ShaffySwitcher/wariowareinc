@@ -41,7 +41,7 @@ _0804E922:
 /* 0804E924 */ MOVS R2, #0
 /* 0804E926 */ LDRSH R1, [R4, R2]
 /* 0804E928 */ MOVS R2, #1
-/* 0804E92A */ BL func_080EF3BC
+/* 0804E92A */ BL sprite_set_visible
 /* 0804E92E */ ADDS R4, #0X24
 /* 0804E930 */ ADDS R6, #1
 /* 0804E932 */ CMP R6, #1

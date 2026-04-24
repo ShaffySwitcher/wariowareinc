@@ -115,7 +115,7 @@ _080C036C:
 /* 080C03C4 */ MOVS R2, #2
 /* 080C03C6 */ LDRSH R1, [R6, R2]
 /* 080C03C8 */ MOVS R2, #0
-/* 080C03CA */ BL func_080EF3BC
+/* 080C03CA */ BL sprite_set_visible
 /* 080C03CE */ STR R4, [R6, #4]
 /* 080C03D0 */ STR R4, [R6, #8]
 /* 080C03D2 */ ADDS R5, #1

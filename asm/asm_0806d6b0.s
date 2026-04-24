@@ -174,7 +174,7 @@ _0806D7C4:
 /* 0806D7E2 */ MOVS R4, #0
 /* 0806D7E4 */ LDRSH R1, [R1, R4]
 /* 0806D7E6 */ MOVS R2, #1
-/* 0806D7E8 */ BL func_080EF3BC
+/* 0806D7E8 */ BL sprite_set_visible
 _0806D7EC:
 /* 0806D7EC */ ADD SP, #4
 /* 0806D7EE */ POP {R4, R5, R6}

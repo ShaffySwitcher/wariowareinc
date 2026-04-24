@@ -109,7 +109,7 @@ _08063ED8:
 /* 08063F2E */ MOVS R2, #4
 /* 08063F30 */ LDRSH R1, [R6, R2]
 /* 08063F32 */ MOVS R2, #1
-/* 08063F34 */ BL func_080EF3BC
+/* 08063F34 */ BL sprite_set_visible
 /* 08063F38 */ STRB R5, [R7]
 /* 08063F3A */ B _08063FCA
 

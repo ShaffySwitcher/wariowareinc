@@ -31,7 +31,7 @@ glabel func_080DE1E8
 /* 080DE216 */ ADDS R2, #0XEC
 /* 080DE218 */ ADDS R3, #0XF0
 /* 080DE21A */ MOV R0, SP
-/* 080DE21C */ BL func_08008174
+/* 080DE21C */ BL gameplay_check_collision
 /* 080DE220 */ CMP R0, #0
 /* 080DE222 */ BEQ _080DE228
 /* 080DE224 */ BL func_080DE1B8

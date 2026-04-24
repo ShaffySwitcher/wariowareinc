@@ -50,7 +50,7 @@ _080462EA:
 /* 080462FE */ MOVS R2, #0
 /* 08046300 */ LDRSH R1, [R1, R2]
 /* 08046302 */ MOVS R2, #0
-/* 08046304 */ BL func_080EF3BC
+/* 08046304 */ BL sprite_set_visible
 /* 08046308 */ LDR R4, [R4]
 /* 0804630A */ MOV IP, R4
 /* 0804630C */ MOV R0, IP
@@ -132,7 +132,7 @@ _08046378:
 /* 0804638C */ MOVS R2, #0
 /* 0804638E */ LDRSH R1, [R1, R2]
 /* 08046390 */ MOVS R2, #1
-/* 08046392 */ BL func_080EF3BC
+/* 08046392 */ BL sprite_set_visible
 /* 08046396 */ LDR R0, [R4]
 /* 08046398 */ ADDS R2, R0, #0
 /* 0804639A */ ADDS R2, #0X6C

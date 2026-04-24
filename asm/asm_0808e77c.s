@@ -88,7 +88,7 @@ _0808E7CC:
 /* 0808E814 */ ADD R2, SP, #4
 /* 0808E816 */ ADDS R3, R6, #0
 /* 0808E818 */ ADDS R3, #0X10
-/* 0808E81A */ BL func_08008174
+/* 0808E81A */ BL gameplay_check_collision
 /* 0808E81E */ CMP R0, #0
 /* 0808E820 */ BEQ _0808E832
 /* 0808E822 */ ADDS R0, R4, #0

@@ -170,7 +170,7 @@ _0804BBC4:
 /* 0804BBD8 */ MOVS R2, #0
 /* 0804BBDA */ LDRSH R1, [R1, R2]
 /* 0804BBDC */ MOVS R2, #0
-/* 0804BBDE */ BL func_080EF3BC
+/* 0804BBDE */ BL sprite_set_visible
 /* 0804BBE2 */ LDR R0, [R5]
 /* 0804BBE4 */ LDR R1, [R4]
 /* 0804BBE6 */ ADDS R1, #0XE4

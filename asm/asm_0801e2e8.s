@@ -13,7 +13,7 @@ glabel func_0801E2E8
 /* 0801E2F2 */ ASRS R4, R4, #0X10
 /* 0801E2F4 */ ADDS R1, R4, #0
 /* 0801E2F6 */ MOVS R2, #0
-/* 0801E2F8 */ BL func_080EF3BC
+/* 0801E2F8 */ BL sprite_set_visible
 /* 0801E2FC */ LDR R0, [R5]
 /* 0801E2FE */ MOVS R3, #0X96
 /* 0801E300 */ LSLS R3, R3, #1

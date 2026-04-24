@@ -95,7 +95,7 @@ _080AFC94:
 /* 080AFC96 */ MOVS R2, #0
 /* 080AFC98 */ LDRSH R1, [R6, R2]
 /* 080AFC9A */ MOVS R2, #1
-/* 080AFC9C */ BL func_080EF3BC
+/* 080AFC9C */ BL sprite_set_visible
 /* 080AFCA0 */ LDR R0, [R4]
 /* 080AFCA2 */ MOVS R3, #0
 /* 080AFCA4 */ LDRSH R1, [R6, R3]

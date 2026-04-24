@@ -87,7 +87,7 @@ _0802A644:
 /* 0802A66A */ MOVS R3, #0
 /* 0802A66C */ LDRSH R1, [R1, R3]
 /* 0802A66E */ MOVS R2, #1
-/* 0802A670 */ BL func_080EF3BC
+/* 0802A670 */ BL sprite_set_visible
 /* 0802A674 */ LDR R0, [R5]
 /* 0802A676 */ LDR R1, [R6]
 /* 0802A678 */ LDR R2, _0802A698
@@ -96,7 +96,7 @@ _0802A644:
 /* 0802A67E */ MOVS R3, #0
 /* 0802A680 */ LDRSH R1, [R1, R3]
 /* 0802A682 */ MOVS R2, #1
-/* 0802A684 */ BL func_080EF3BC
+/* 0802A684 */ BL sprite_set_visible
 /* 0802A688 */ LDR R0, _0802A69C
 /* 0802A68A */ BL play_sound
 /* 0802A68E */ B _0802A6DA

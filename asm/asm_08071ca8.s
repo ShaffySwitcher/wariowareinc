@@ -20,7 +20,7 @@ glabel func_08071CA8
 /* 08071CC4 */ LDRSH R1, [R4, R0]
 /* 08071CC6 */ ADDS R0, R5, #0
 /* 08071CC8 */ MOVS R2, #0
-/* 08071CCA */ BL func_080EF3BC
+/* 08071CCA */ BL sprite_set_visible
 /* 08071CCE */ MOVS R0, #0
 /* 08071CD0 */ STR R0, [R4, #0X14]
 /* 08071CD2 */ STR R0, [R4, #0X18]

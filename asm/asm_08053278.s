@@ -60,7 +60,7 @@ _0805328E:
 /* 080532DE */ MOVS R2, #0
 /* 080532E0 */ LDRSH R1, [R1, R2]
 /* 080532E2 */ MOVS R2, #0
-/* 080532E4 */ BL func_080EF3BC
+/* 080532E4 */ BL sprite_set_visible
 /* 080532E8 */ MOVS R0, #1
 /* 080532EA */ B _0805330C
 

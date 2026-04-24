@@ -50,7 +50,7 @@ _0804ABD4:
 /* 0804AC10 */ MOV R2, R8
 /* 0804AC12 */ LDR R0, [R2]
 /* 0804AC14 */ MOVS R2, #0
-/* 0804AC16 */ BL func_080EF3BC
+/* 0804AC16 */ BL sprite_set_visible
 /* 0804AC1A */ STR R5, [R4, #0X10]
 /* 0804AC1C */ STR R5, [R4, #0XC]
 /* 0804AC1E */ STR R5, [R4, #8]

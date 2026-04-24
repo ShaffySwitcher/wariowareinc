@@ -22,7 +22,7 @@ glabel func_0808CF24
 /* 0808CF46 */ ADDS R0, R5, #0
 /* 0808CF48 */ ADDS R1, R4, #0
 /* 0808CF4A */ MOVS R2, #0
-/* 0808CF4C */ BL func_080EF3BC
+/* 0808CF4C */ BL sprite_set_visible
 /* 0808CF50 */ POP {R4, R5}
 /* 0808CF52 */ POP {R0}
 /* 0808CF54 */ BX R0

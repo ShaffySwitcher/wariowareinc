@@ -62,7 +62,7 @@ _080ABFF6:
 /* 080AC014 */ MOVS R2, #0
 /* 080AC016 */ LDRSH R1, [R7, R2]
 /* 080AC018 */ MOVS R2, #1
-/* 080AC01A */ BL func_080EF3BC
+/* 080AC01A */ BL sprite_set_visible
 /* 080AC01E */ LDR R3, [SP]
 /* 080AC020 */ LSLS R0, R3, #8
 /* 080AC022 */ STR R0, [R7, #4]

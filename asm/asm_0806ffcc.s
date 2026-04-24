@@ -121,7 +121,7 @@ _0807008E:
 /* 0807009A */ MOVS R2, #0XC
 /* 0807009C */ LDRSH R1, [R5, R2]
 /* 0807009E */ MOVS R2, #0
-/* 080700A0 */ BL func_080EF3BC
+/* 080700A0 */ BL sprite_set_visible
 /* 080700A4 */ B _08070124
 
 .balign 4, 0

@@ -47,7 +47,7 @@ _0801C2FC:
 /* 0801C346 */ LDR R0, [R0]
 /* 0801C348 */ ADDS R1, R5, #0
 /* 0801C34A */ MOVS R2, #1
-/* 0801C34C */ BL func_080EF3BC
+/* 0801C34C */ BL sprite_set_visible
 /* 0801C350 */ ADDS R6, #1
 /* 0801C352 */ CMP R6, #7
 /* 0801C354 */ BLS _0801C2FC

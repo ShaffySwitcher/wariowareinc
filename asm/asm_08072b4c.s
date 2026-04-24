@@ -29,7 +29,7 @@ glabel func_08072B4C
 /* 08072B78 */ MOVS R2, #0
 /* 08072B7A */ LDRSH R1, [R1, R2]
 /* 08072B7C */ MOVS R2, #1
-/* 08072B7E */ BL func_080EF3BC
+/* 08072B7E */ BL sprite_set_visible
 /* 08072B82 */ LDR R0, [R4]
 /* 08072B84 */ LDR R1, [R5]
 /* 08072B86 */ LDR R2, _08072BC8
@@ -37,7 +37,7 @@ glabel func_08072B4C
 /* 08072B8A */ MOVS R2, #0
 /* 08072B8C */ LDRSH R1, [R1, R2]
 /* 08072B8E */ MOVS R2, #1
-/* 08072B90 */ BL func_080EF3BC
+/* 08072B90 */ BL sprite_set_visible
 /* 08072B94 */ LDR R0, [R4]
 /* 08072B96 */ LDR R1, [R5]
 /* 08072B98 */ LDR R2, _08072BCC
@@ -45,7 +45,7 @@ glabel func_08072B4C
 /* 08072B9C */ MOVS R2, #0
 /* 08072B9E */ LDRSH R1, [R1, R2]
 /* 08072BA0 */ MOVS R2, #1
-/* 08072BA2 */ BL func_080EF3BC
+/* 08072BA2 */ BL sprite_set_visible
 /* 08072BA6 */ LDR R0, [R4]
 /* 08072BA8 */ LDR R1, [R5]
 /* 08072BAA */ LDR R2, _08072BD0
@@ -53,7 +53,7 @@ glabel func_08072B4C
 /* 08072BAE */ MOVS R2, #0
 /* 08072BB0 */ LDRSH R1, [R1, R2]
 /* 08072BB2 */ MOVS R2, #1
-/* 08072BB4 */ BL func_080EF3BC
+/* 08072BB4 */ BL sprite_set_visible
 /* 08072BB8 */ POP {R4, R5}
 /* 08072BBA */ POP {R0}
 /* 08072BBC */ BX R0

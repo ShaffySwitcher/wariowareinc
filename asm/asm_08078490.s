@@ -55,7 +55,7 @@ _080784D8:
 /* 080784E6 */ MOVS R2, #0
 /* 080784E8 */ LDRSH R1, [R1, R2]
 /* 080784EA */ MOVS R2, #0
-/* 080784EC */ BL func_080EF3BC
+/* 080784EC */ BL sprite_set_visible
 _080784F0:
 /* 080784F0 */ POP {R0}
 /* 080784F2 */ BX R0

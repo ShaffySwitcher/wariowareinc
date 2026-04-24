@@ -55,7 +55,7 @@ _0805BADA:
 /* 0805BB1A */ MOVS R2, #4
 /* 0805BB1C */ LDRSH R1, [R4, R2]
 /* 0805BB1E */ MOVS R2, #1
-/* 0805BB20 */ BL func_080EF3BC
+/* 0805BB20 */ BL sprite_set_visible
 /* 0805BB24 */ LDR R1, [R5]
 /* 0805BB26 */ ADDS R1, R6
 /* 0805BB28 */ LDR R0, [R1]

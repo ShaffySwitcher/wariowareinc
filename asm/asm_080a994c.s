@@ -58,7 +58,7 @@ _080A9974:
 /* 080A99B2 */ LDR R0, [R4]
 /* 080A99B4 */ ADDS R1, R5, #0
 /* 080A99B6 */ MOVS R2, #1
-/* 080A99B8 */ BL func_080EF3BC
+/* 080A99B8 */ BL sprite_set_visible
 /* 080A99BC */ ADD SP, #0XC
 /* 080A99BE */ POP {R3}
 /* 080A99C0 */ MOV R8, R3

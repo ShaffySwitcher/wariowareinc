@@ -34,7 +34,7 @@ _08071A28:
 /* 08071A4E */ MOVS R2, #0
 /* 08071A50 */ LDRSH R1, [R4, R2]
 /* 08071A52 */ MOVS R2, #0
-/* 08071A54 */ BL func_080EF3BC
+/* 08071A54 */ BL sprite_set_visible
 /* 08071A58 */ STR R5, [R4, #0X14]
 /* 08071A5A */ STR R5, [R4, #0X18]
 /* 08071A5C */ STR R5, [R4, #0X1C]

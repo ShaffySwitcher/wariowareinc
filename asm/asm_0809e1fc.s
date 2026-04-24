@@ -33,7 +33,7 @@ glabel func_0809E1FC
 /* 0809E22E */ ADDS R1, R3, R2
 /* 0809E230 */ ADDS R3, #0X1C
 /* 0809E232 */ MOV R2, SP
-/* 0809E234 */ BL func_08008174
+/* 0809E234 */ BL gameplay_check_collision
 /* 0809E238 */ CMP R0, #0
 /* 0809E23A */ BNE _0809E24C
 /* 0809E23C */ MOVS R0, #0

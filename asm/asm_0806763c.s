@@ -61,25 +61,25 @@ _0806768C:
 /* 0806769A */ LDRSH R1, [R2, R7]
 /* 0806769C */ ANDS R4, R3
 /* 0806769E */ ADDS R2, R4, #0
-/* 080676A0 */ BL func_080EF3BC
+/* 080676A0 */ BL sprite_set_visible
 /* 080676A4 */ LDR R0, [R5]
 /* 080676A6 */ LDR R1, [R6]
 /* 080676A8 */ MOVS R2, #0X2E
 /* 080676AA */ LDRSH R1, [R1, R2]
 /* 080676AC */ ADDS R2, R4, #0
-/* 080676AE */ BL func_080EF3BC
+/* 080676AE */ BL sprite_set_visible
 /* 080676B2 */ LDR R0, [R5]
 /* 080676B4 */ LDR R1, [R6]
 /* 080676B6 */ MOVS R7, #0X30
 /* 080676B8 */ LDRSH R1, [R1, R7]
 /* 080676BA */ ADDS R2, R4, #0
-/* 080676BC */ BL func_080EF3BC
+/* 080676BC */ BL sprite_set_visible
 /* 080676C0 */ LDR R0, [R5]
 /* 080676C2 */ LDR R1, [R6]
 /* 080676C4 */ MOVS R2, #0X32
 /* 080676C6 */ LDRSH R1, [R1, R2]
 /* 080676C8 */ ADDS R2, R4, #0
-/* 080676CA */ BL func_080EF3BC
+/* 080676CA */ BL sprite_set_visible
 /* 080676CE */ LDR R0, [R6]
 /* 080676D0 */ LDR R0, [R0, #0X34]
 /* 080676D2 */ CMP R0, #1

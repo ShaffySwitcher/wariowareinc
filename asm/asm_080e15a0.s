@@ -96,7 +96,7 @@ _080E1632:
 /* 080E1636 */ MOVS R2, #0
 /* 080E1638 */ LDRSH R1, [R5, R2]
 /* 080E163A */ MOVS R2, #1
-/* 080E163C */ BL func_080EF3BC
+/* 080E163C */ BL sprite_set_visible
 /* 080E1640 */ LDR R0, [R4]
 /* 080E1642 */ MOVS R3, #0
 /* 080E1644 */ LDRSH R1, [R5, R3]
@@ -203,7 +203,7 @@ _080E16F8:
 /* 080E16FC */ MOVS R3, #0
 /* 080E16FE */ LDRSH R1, [R5, R3]
 /* 080E1700 */ MOVS R2, #0
-/* 080E1702 */ BL func_080EF3BC
+/* 080E1702 */ BL sprite_set_visible
 /* 080E1706 */ B _080E1710
 
 .balign 4, 0
@@ -256,7 +256,7 @@ _080E174E:
 /* 080E1760 */ MOVS R2, #0
 /* 080E1762 */ LDRSH R1, [R1, R2]
 /* 080E1764 */ MOVS R2, #1
-/* 080E1766 */ BL func_080EF3BC
+/* 080E1766 */ BL sprite_set_visible
 /* 080E176A */ ADDS R4, #1
 /* 080E176C */ CMP R4, #1
 /* 080E176E */ BLS _080E174E
@@ -282,7 +282,7 @@ _080E174E:
 /* 080E1798 */ MOVS R3, #0
 /* 080E179A */ LDRSH R1, [R5, R3]
 /* 080E179C */ MOVS R2, #1
-/* 080E179E */ BL func_080EF3BC
+/* 080E179E */ BL sprite_set_visible
 /* 080E17A2 */ LDRB R1, [R7]
 /* 080E17A4 */ MOVS R0, #0XF
 /* 080E17A6 */ ANDS R0, R1
@@ -326,7 +326,7 @@ _080E17D4:
 /* 080E17E6 */ MOVS R2, #0
 /* 080E17E8 */ LDRSH R1, [R1, R2]
 /* 080E17EA */ MOVS R2, #0
-/* 080E17EC */ BL func_080EF3BC
+/* 080E17EC */ BL sprite_set_visible
 /* 080E17F0 */ ADDS R4, #1
 /* 080E17F2 */ CMP R4, #1
 /* 080E17F4 */ BLS _080E17D4

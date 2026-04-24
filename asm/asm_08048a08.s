@@ -197,7 +197,7 @@ glabel func_08048A08
 /* 08048BA8 */ MOVS R3, #0
 /* 08048BAA */ LDRSH R1, [R1, R3]
 /* 08048BAC */ MOVS R2, #0
-/* 08048BAE */ BL func_080EF3BC
+/* 08048BAE */ BL sprite_set_visible
 /* 08048BB2 */ LDR R0, [R4]
 /* 08048BB4 */ LDR R1, _08048C64
 /* 08048BB6 */ LDR R2, _08048C68

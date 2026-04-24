@@ -68,7 +68,7 @@ _080C6E30:
 /* 080C6E6C */ MOVS R2, #0X18
 /* 080C6E6E */ LDRSH R1, [R1, R2]
 /* 080C6E70 */ MOVS R2, #1
-/* 080C6E72 */ BL func_080EF3BC
+/* 080C6E72 */ BL sprite_set_visible
 /* 080C6E76 */ MOVS R0, #0
 /* 080C6E78 */ BL func_0800A128
 /* 080C6E7C */ LDR R1, [R6]

@@ -59,7 +59,7 @@ glabel func_080AFEA0
 /* 080AFF0E */ MOVS R2, #0
 /* 080AFF10 */ LDRSH R1, [R1, R2]
 /* 080AFF12 */ MOVS R2, #0
-/* 080AFF14 */ BL func_080EF3BC
+/* 080AFF14 */ BL sprite_set_visible
 /* 080AFF18 */ ADD SP, #0X14
 /* 080AFF1A */ POP {R4, R5, R6}
 /* 080AFF1C */ POP {R0}

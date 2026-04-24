@@ -239,13 +239,13 @@ _0808686A:
 /* 08086872 */ MOVS R2, #0X34
 /* 08086874 */ LDRSH R1, [R1, R2]
 /* 08086876 */ MOVS R2, #1
-/* 08086878 */ BL func_080EF3BC
+/* 08086878 */ BL sprite_set_visible
 /* 0808687C */ LDR R0, [R5]
 /* 0808687E */ LDR R1, [R4]
 /* 08086880 */ MOVS R4, #0X38
 /* 08086882 */ LDRSH R1, [R1, R4]
 /* 08086884 */ MOVS R2, #1
-/* 08086886 */ BL func_080EF3BC
+/* 08086886 */ BL sprite_set_visible
 /* 0808688A */ B _08086956
 
 .balign 4, 0

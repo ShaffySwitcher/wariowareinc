@@ -75,7 +75,7 @@ _0808B68C:
 /* 0808B6F6 */ MOVS R2, #0
 /* 0808B6F8 */ LDRSH R1, [R4, R2]
 /* 0808B6FA */ MOVS R2, #1
-/* 0808B6FC */ BL func_080EF3BC
+/* 0808B6FC */ BL sprite_set_visible
 /* 0808B700 */ ADDS R1, R6, #0
 /* 0808B702 */ ADDS R1, #0X38
 /* 0808B704 */ LDRB R0, [R1]

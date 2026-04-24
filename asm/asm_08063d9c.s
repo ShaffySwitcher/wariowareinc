@@ -74,7 +74,7 @@ _08063E0E:
 /* 08063E2C */ LDRSH R1, [R0, R2]
 /* 08063E2E */ ADDS R0, R6, #0
 /* 08063E30 */ MOVS R2, #1
-/* 08063E32 */ BL func_080EF3BC
+/* 08063E32 */ BL sprite_set_visible
 /* 08063E36 */ LDR R0, [R5]
 /* 08063E38 */ MOVS R1, #0X81
 /* 08063E3A */ LSLS R1, R1, #1

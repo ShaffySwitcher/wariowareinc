@@ -97,7 +97,7 @@ _0804AD04:
 /* 0804ADA4 */ MOVS R2, #4
 /* 0804ADA6 */ LDRSH R1, [R7, R2]
 /* 0804ADA8 */ MOVS R2, #0
-/* 0804ADAA */ BL func_080EF3BC
+/* 0804ADAA */ BL sprite_set_visible
 /* 0804ADAE */ LDR R0, [R7, #0X14]
 /* 0804ADB0 */ BL func_0804AB38
 /* 0804ADB4 */ MOV R1, SB

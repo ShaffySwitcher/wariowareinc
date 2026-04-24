@@ -75,7 +75,7 @@ _080D0F5E:
 /* 080D0FA8 */ ADDS R3, R0
 /* 080D0FAA */ MOV R0, SP
 /* 080D0FAC */ ADD R2, SP, #4
-/* 080D0FAE */ BL func_08008174
+/* 080D0FAE */ BL gameplay_check_collision
 /* 080D0FB2 */ CMP R0, #0
 /* 080D0FB4 */ BEQ _080D1010
 /* 080D0FB6 */ LDRB R0, [R4, #0X16]
@@ -86,7 +86,7 @@ _080D0F5E:
 /* 080D0FC0 */ MOVS R2, #0
 /* 080D0FC2 */ LDRSH R1, [R4, R2]
 /* 080D0FC4 */ MOVS R2, #0
-/* 080D0FC6 */ BL func_080EF3BC
+/* 080D0FC6 */ BL sprite_set_visible
 /* 080D0FCA */ B _080D1006
 
 .balign 4, 0

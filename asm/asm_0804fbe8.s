@@ -21,7 +21,7 @@ glabel func_0804FBE8
 /* 0804FC02 */ MOVS R4, #0
 /* 0804FC04 */ LDRSH R1, [R1, R4]
 /* 0804FC06 */ MOVS R2, #0
-/* 0804FC08 */ BL func_080EF3BC
+/* 0804FC08 */ BL sprite_set_visible
 /* 0804FC0C */ LDR R0, [R6]
 /* 0804FC0E */ LDR R1, [R5]
 /* 0804FC10 */ MOVS R7, #0XF8
@@ -31,7 +31,7 @@ glabel func_0804FBE8
 /* 0804FC18 */ MOVS R2, #0
 /* 0804FC1A */ LDRSH R1, [R1, R2]
 /* 0804FC1C */ MOVS R2, #0
-/* 0804FC1E */ BL func_080EF3BC
+/* 0804FC1E */ BL sprite_set_visible
 /* 0804FC22 */ LDR R0, [R6]
 /* 0804FC24 */ LDR R1, [R5]
 /* 0804FC26 */ LDR R4, _0804FD24
@@ -39,7 +39,7 @@ glabel func_0804FBE8
 /* 0804FC2A */ MOVS R7, #0
 /* 0804FC2C */ LDRSH R1, [R1, R7]
 /* 0804FC2E */ MOVS R2, #0
-/* 0804FC30 */ BL func_080EF3BC
+/* 0804FC30 */ BL sprite_set_visible
 /* 0804FC34 */ LDR R0, [R6]
 /* 0804FC36 */ LDR R1, [R5]
 /* 0804FC38 */ MOVS R2, #0XF9
@@ -49,7 +49,7 @@ glabel func_0804FBE8
 /* 0804FC40 */ MOVS R4, #0
 /* 0804FC42 */ LDRSH R1, [R1, R4]
 /* 0804FC44 */ MOVS R2, #0
-/* 0804FC46 */ BL func_080EF3BC
+/* 0804FC46 */ BL sprite_set_visible
 /* 0804FC4A */ LDR R3, [R5]
 /* 0804FC4C */ ADDS R0, R3, #0
 /* 0804FC4E */ ADDS R0, #0X68
@@ -108,7 +108,7 @@ glabel func_0804FBE8
 /* 0804FCBA */ MOVS R7, #0
 /* 0804FCBC */ LDRSH R1, [R1, R7]
 /* 0804FCBE */ MOVS R2, #1
-/* 0804FCC0 */ BL func_080EF3BC
+/* 0804FCC0 */ BL sprite_set_visible
 _0804FCC4:
 /* 0804FCC4 */ LDR R0, [SP]
 /* 0804FCC6 */ CMP R0, #0X8F
@@ -119,7 +119,7 @@ _0804FCC4:
 /* 0804FCD0 */ MOVS R2, #0
 /* 0804FCD2 */ LDRSH R1, [R1, R2]
 /* 0804FCD4 */ MOVS R2, #1
-/* 0804FCD6 */ BL func_080EF3BC
+/* 0804FCD6 */ BL sprite_set_visible
 _0804FCDA:
 /* 0804FCDA */ LSLS R0, R4, #0X10
 /* 0804FCDC */ ASRS R4, R0, #0X10
@@ -131,7 +131,7 @@ _0804FCDA:
 /* 0804FCE8 */ MOVS R7, #0
 /* 0804FCEA */ LDRSH R1, [R1, R7]
 /* 0804FCEC */ MOVS R2, #1
-/* 0804FCEE */ BL func_080EF3BC
+/* 0804FCEE */ BL sprite_set_visible
 _0804FCF2:
 /* 0804FCF2 */ CMP R4, #0X1F
 /* 0804FCF4 */ BGT _0804FD08
@@ -142,7 +142,7 @@ _0804FCF2:
 /* 0804FCFE */ MOVS R4, #0
 /* 0804FD00 */ LDRSH R1, [R1, R4]
 /* 0804FD02 */ MOVS R2, #1
-/* 0804FD04 */ BL func_080EF3BC
+/* 0804FD04 */ BL sprite_set_visible
 _0804FD08:
 /* 0804FD08 */ ADD SP, #4
 /* 0804FD0A */ POP {R3, R4, R5}

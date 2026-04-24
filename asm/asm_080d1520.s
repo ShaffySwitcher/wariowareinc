@@ -58,7 +58,7 @@ _080D1548:
 /* 080D1582 */ MOVS R3, #0
 /* 080D1584 */ LDRSH R1, [R5, R3]
 /* 080D1586 */ MOVS R2, #1
-/* 080D1588 */ BL func_080EF3BC
+/* 080D1588 */ BL sprite_set_visible
 /* 080D158C */ LDRB R0, [R5, #0X18]
 /* 080D158E */ ADDS R0, #1
 /* 080D1590 */ STRB R0, [R5, #0X18]

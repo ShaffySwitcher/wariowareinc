@@ -135,7 +135,7 @@ _080A8B20:
 /* 080A8B52 */ LDR R0, [R4]
 /* 080A8B54 */ ADDS R1, R5, #0
 /* 080A8B56 */ MOVS R2, #1
-/* 080A8B58 */ BL func_080EF3BC
+/* 080A8B58 */ BL sprite_set_visible
 /* 080A8B5C */ POP {R3, R4, R5}
 /* 080A8B5E */ MOV R8, R3
 /* 080A8B60 */ MOV SB, R4

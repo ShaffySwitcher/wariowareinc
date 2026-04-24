@@ -332,7 +332,7 @@ _080DB590:
 /* 080DB5C4 */ MOVS R3, #0
 /* 080DB5C6 */ LDRSH R1, [R1, R3]
 /* 080DB5C8 */ MOVS R2, #1
-/* 080DB5CA */ BL func_080EF3BC
+/* 080DB5CA */ BL sprite_set_visible
 /* 080DB5CE */ LDR R1, [R4]
 /* 080DB5D0 */ MOVS R0, #3
 /* 080DB5D2 */ STRB R0, [R1, #0X10]

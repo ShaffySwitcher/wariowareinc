@@ -52,7 +52,7 @@ _08062060:
 /* 0806207E */ MOVS R2, #0
 /* 08062080 */ LDRSH R1, [R4, R2]
 /* 08062082 */ MOVS R2, #1
-/* 08062084 */ BL func_080EF3BC
+/* 08062084 */ BL sprite_set_visible
 /* 08062088 */ MOVS R0, #2
 /* 0806208A */ B _08062104
 
@@ -88,7 +88,7 @@ _08062090:
 /* 080620C2 */ MOVS R2, #0
 /* 080620C4 */ LDRSH R1, [R4, R2]
 /* 080620C6 */ MOVS R2, #0
-/* 080620C8 */ BL func_080EF3BC
+/* 080620C8 */ BL sprite_set_visible
 /* 080620CC */ LDRB R1, [R4, #3]
 /* 080620CE */ MOVS R0, #2
 /* 080620D0 */ RSBS R0, R0, #0
@@ -118,7 +118,7 @@ _080620F0:
 /* 080620F8 */ MOVS R2, #0
 /* 080620FA */ LDRSH R1, [R4, R2]
 /* 080620FC */ MOVS R2, #0
-/* 080620FE */ BL func_080EF3BC
+/* 080620FE */ BL sprite_set_visible
 /* 08062102 */ MOVS R0, #0
 _08062104:
 /* 08062104 */ STRB R0, [R4, #2]

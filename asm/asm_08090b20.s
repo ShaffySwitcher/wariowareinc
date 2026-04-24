@@ -46,7 +46,7 @@ glabel func_08090B20
 /* 08090B70 */ MOVS R6, #0X1E
 /* 08090B72 */ LDRSH R1, [R1, R6]
 /* 08090B74 */ MOVS R2, #1
-/* 08090B76 */ BL func_080EF3BC
+/* 08090B76 */ BL sprite_set_visible
 /* 08090B7A */ LDR R0, [R5]
 /* 08090B7C */ MOVS R1, #0X80
 /* 08090B7E */ LSLS R1, R1, #2

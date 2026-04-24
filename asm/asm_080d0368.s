@@ -345,7 +345,7 @@ _080D05A0:
 /* 080D05B6 */ MOVS R2, #0XE
 /* 080D05B8 */ LDRSH R1, [R1, R2]
 /* 080D05BA */ MOVS R2, #0
-/* 080D05BC */ BL func_080EF3BC
+/* 080D05BC */ BL sprite_set_visible
 /* 080D05C0 */ LDR R0, [R4]
 /* 080D05C2 */ LDR R1, [R5]
 /* 080D05C4 */ MOVS R3, #4

@@ -77,7 +77,7 @@ _0808249A:
 /* 080824B2 */ MOVS R2, #0
 /* 080824B4 */ LDRSH R1, [R4, R2]
 /* 080824B6 */ MOVS R2, #1
-/* 080824B8 */ BL func_080EF3BC
+/* 080824B8 */ BL sprite_set_visible
 /* 080824BC */ SUBS R5, #1
 /* 080824BE */ ADDS R4, #0X1C
 /* 080824C0 */ CMP R5, #0

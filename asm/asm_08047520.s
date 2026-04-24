@@ -94,13 +94,13 @@ _080475AC:
 /* 080475BE */ MOVS R3, #0
 /* 080475C0 */ LDRSH R1, [R2, R3]
 /* 080475C2 */ MOVS R2, #0
-/* 080475C4 */ BL func_080EF3BC
+/* 080475C4 */ BL sprite_set_visible
 /* 080475C8 */ LDR R0, [R4]
 /* 080475CA */ LDR R1, [R5]
 /* 080475CC */ MOVS R2, #2
 /* 080475CE */ LDRSH R1, [R1, R2]
 /* 080475D0 */ MOVS R2, #1
-/* 080475D2 */ BL func_080EF3BC
+/* 080475D2 */ BL sprite_set_visible
 /* 080475D6 */ LDR R2, [R5]
 /* 080475D8 */ ADDS R2, #0X90
 /* 080475DA */ LDR R0, [R2]

@@ -128,7 +128,7 @@ _08092894:
 /* 080928B4 */ MOVS R3, #0
 /* 080928B6 */ LDRSH R1, [R2, R3]
 /* 080928B8 */ MOVS R2, #1
-/* 080928BA */ BL func_080EF3BC
+/* 080928BA */ BL sprite_set_visible
 /* 080928BE */ LDR R0, [R5]
 /* 080928C0 */ LSLS R4, R4, #1
 /* 080928C2 */ ADDS R4, R6, R4

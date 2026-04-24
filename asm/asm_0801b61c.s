@@ -12,7 +12,7 @@ glabel func_0801B61C
 /* 0801B624 */ LSLS R1, R1, #0X10
 /* 0801B626 */ ASRS R1, R1, #0X10
 /* 0801B628 */ MOVS R2, #0
-/* 0801B62A */ BL func_080EF3BC
+/* 0801B62A */ BL sprite_set_visible
 /* 0801B62E */ POP {R0}
 /* 0801B630 */ BX R0
 

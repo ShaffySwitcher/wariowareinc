@@ -33,7 +33,7 @@ glabel func_080A6E08
 /* 080A6E3C */ MOVS R2, #0
 /* 080A6E3E */ LDRSH R1, [R4, R2]
 /* 080A6E40 */ MOVS R2, #1
-/* 080A6E42 */ BL func_080EF3BC
+/* 080A6E42 */ BL sprite_set_visible
 /* 080A6E46 */ POP {R4, R5}
 /* 080A6E48 */ POP {R0}
 /* 080A6E4A */ BX R0

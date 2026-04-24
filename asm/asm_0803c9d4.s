@@ -126,21 +126,21 @@ _0803CA3E:
 /* 0803CAC2 */ MOVS R2, #0
 /* 0803CAC4 */ LDRSH R1, [R1, R2]
 /* 0803CAC6 */ MOVS R2, #0
-/* 0803CAC8 */ BL func_080EF3BC
+/* 0803CAC8 */ BL sprite_set_visible
 /* 0803CACC */ LDR R0, [R4]
 /* 0803CACE */ LDR R1, [R6]
 /* 0803CAD0 */ ADDS R1, #0X66
 /* 0803CAD2 */ MOVS R3, #0
 /* 0803CAD4 */ LDRSH R1, [R1, R3]
 /* 0803CAD6 */ MOVS R2, #1
-/* 0803CAD8 */ BL func_080EF3BC
+/* 0803CAD8 */ BL sprite_set_visible
 /* 0803CADC */ LDR R0, [R4]
 /* 0803CADE */ LDR R1, [R6]
 /* 0803CAE0 */ ADDS R1, #0X68
 /* 0803CAE2 */ MOVS R2, #0
 /* 0803CAE4 */ LDRSH R1, [R1, R2]
 /* 0803CAE6 */ MOVS R2, #1
-/* 0803CAE8 */ BL func_080EF3BC
+/* 0803CAE8 */ BL sprite_set_visible
 /* 0803CAEC */ LDR R0, [R4]
 /* 0803CAEE */ LDR R1, [R6]
 /* 0803CAF0 */ ADDS R1, #0X66

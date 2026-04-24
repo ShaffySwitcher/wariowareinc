@@ -52,7 +52,7 @@ _08029A46:
 /* 08029A7E */ MOVS R2, #0
 /* 08029A80 */ LDRSH R1, [R1, R2]
 /* 08029A82 */ MOVS R2, #0
-/* 08029A84 */ BL func_080EF3BC
+/* 08029A84 */ BL sprite_set_visible
 /* 08029A88 */ LDR R0, [R7]
 /* 08029A8A */ MOV R1, R8
 /* 08029A8C */ LDR R3, [R1]

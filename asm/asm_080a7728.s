@@ -71,7 +71,7 @@ _080A773E:
 /* 080A77A8 */ MOVS R2, #4
 /* 080A77AA */ LDRSH R1, [R1, R2]
 /* 080A77AC */ MOVS R2, #0
-/* 080A77AE */ BL func_080EF3BC
+/* 080A77AE */ BL sprite_set_visible
 /* 080A77B2 */ ADD SP, #0X14
 /* 080A77B4 */ POP {R4, R5, R6}
 /* 080A77B6 */ POP {R0}

@@ -22,7 +22,7 @@ _0806B28A:
 /* 0806B292 */ MOVS R2, #0
 /* 0806B294 */ LDRSH R1, [R4, R2]
 /* 0806B296 */ MOVS R2, #1
-/* 0806B298 */ BL func_080EF3BC
+/* 0806B298 */ BL sprite_set_visible
 /* 0806B29C */ LDR R0, [R6]
 /* 0806B29E */ MOVS R2, #0
 /* 0806B2A0 */ LDRSH R1, [R4, R2]

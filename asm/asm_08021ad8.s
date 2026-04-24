@@ -72,7 +72,7 @@ _08021B2A:
 /* 08021B58 */ MOVS R2, #0
 /* 08021B5A */ LDRSH R1, [R1, R2]
 /* 08021B5C */ MOVS R2, #0
-/* 08021B5E */ BL func_080EF3BC
+/* 08021B5E */ BL sprite_set_visible
 /* 08021B62 */ ADDS R4, #0X20
 /* 08021B64 */ ADDS R5, #1
 /* 08021B66 */ CMP R5, #7

@@ -14,7 +14,7 @@ glabel func_080B83B0
 /* 080B83BC */ LSLS R1, R1, #0X10
 /* 080B83BE */ ASRS R1, R1, #0X10
 /* 080B83C0 */ MOVS R2, #0
-/* 080B83C2 */ BL func_080EF3BC
+/* 080B83C2 */ BL sprite_set_visible
 /* 080B83C6 */ POP {R0}
 /* 080B83C8 */ BX R0
 

@@ -25,7 +25,7 @@ glabel func_0803CDC8
 /* 0803CDEC */ MOVS R2, #0
 /* 0803CDEE */ LDRSH R1, [R1, R2]
 /* 0803CDF0 */ MOVS R2, #1
-/* 0803CDF2 */ BL func_080EF3BC
+/* 0803CDF2 */ BL sprite_set_visible
 /* 0803CDF6 */ POP {R4, R5, R6}
 /* 0803CDF8 */ POP {R0}
 /* 0803CDFA */ BX R0

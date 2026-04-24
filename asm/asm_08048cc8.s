@@ -79,7 +79,7 @@ _08048D30:
 /* 08048D4E */ MOVS R4, #0
 /* 08048D50 */ LDRSH R1, [R1, R4]
 /* 08048D52 */ MOVS R2, #1
-/* 08048D54 */ BL func_080EF3BC
+/* 08048D54 */ BL sprite_set_visible
 /* 08048D58 */ LDR R1, [R5]
 /* 08048D5A */ ADDS R1, #0X6C
 /* 08048D5C */ LDRB R0, [R1]

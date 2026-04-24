@@ -113,7 +113,7 @@ _08030A10:
 /* 08030AA4 */ MOVS R2, #0
 /* 08030AA6 */ LDRSH R1, [R5, R2]
 /* 08030AA8 */ MOVS R2, #1
-/* 08030AAA */ BL func_080EF3BC
+/* 08030AAA */ BL sprite_set_visible
 /* 08030AAE */ MOV R3, SB
 /* 08030AB0 */ LDR R0, [R3]
 /* 08030AB2 */ MOVS R2, #0

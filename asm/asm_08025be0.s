@@ -75,7 +75,7 @@ _08025C18:
 /* 08025C6A */ MOVS R2, #0
 /* 08025C6C */ LDRSH R1, [R4, R2]
 /* 08025C6E */ MOVS R2, #1
-/* 08025C70 */ BL func_080EF3BC
+/* 08025C70 */ BL sprite_set_visible
 /* 08025C74 */ LDR R0, [R5]
 /* 08025C76 */ MOVS R3, #0
 /* 08025C78 */ LDRSH R1, [R4, R3]

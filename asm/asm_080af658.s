@@ -61,7 +61,7 @@ _080AF674:
 /* 080AF6C8 */ MOVS R2, #0
 /* 080AF6CA */ LDRSH R1, [R4, R2]
 /* 080AF6CC */ MOVS R2, #0
-/* 080AF6CE */ BL func_080EF3BC
+/* 080AF6CE */ BL sprite_set_visible
 /* 080AF6D2 */ STRB R7, [R4, #0XC]
 /* 080AF6D4 */ LDR R0, _080AF708
 /* 080AF6D6 */ BL play_sound

@@ -115,7 +115,7 @@ _080B465A:
 /* 080B4666 */ MOVS R2, #0
 /* 080B4668 */ LDRSH R1, [R1, R2]
 /* 080B466A */ MOVS R2, #1
-/* 080B466C */ BL func_080EF3BC
+/* 080B466C */ BL sprite_set_visible
 _080B4670:
 /* 080B4670 */ POP {R4, R5, R6}
 /* 080B4672 */ POP {R0}

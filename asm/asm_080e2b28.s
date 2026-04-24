@@ -203,7 +203,7 @@ _080E2C8C:
 /* 080E2CAE */ MOVS R2, #2
 /* 080E2CB0 */ LDRSH R1, [R1, R2]
 /* 080E2CB2 */ MOVS R2, #1
-/* 080E2CB4 */ BL func_080EF3BC
+/* 080E2CB4 */ BL sprite_set_visible
 /* 080E2CB8 */ LDR R0, [R4]
 /* 080E2CBA */ LDR R1, [R5]
 /* 080E2CBC */ MOVS R3, #2
@@ -391,7 +391,7 @@ _080E2DF0:
 /* 080E2E38 */ MOVS R3, #0
 /* 080E2E3A */ LDRSH R1, [R1, R3]
 /* 080E2E3C */ MOVS R2, #0
-/* 080E2E3E */ BL func_080EF3BC
+/* 080E2E3E */ BL sprite_set_visible
 /* 080E2E42 */ MOVS R6, #0
 _080E2E44:
 /* 080E2E44 */ LDR R5, _080E2EC4
@@ -405,7 +405,7 @@ _080E2E44:
 /* 080E2E54 */ MOVS R2, #0
 /* 080E2E56 */ LDRSH R1, [R1, R2]
 /* 080E2E58 */ MOVS R2, #0
-/* 080E2E5A */ BL func_080EF3BC
+/* 080E2E5A */ BL sprite_set_visible
 /* 080E2E5E */ ADDS R0, R6, #1
 /* 080E2E60 */ LSLS R0, R0, #0X18
 /* 080E2E62 */ LSRS R6, R0, #0X18
@@ -419,7 +419,7 @@ _080E2E44:
 /* 080E2E72 */ MOVS R4, #0
 /* 080E2E74 */ LDRSH R1, [R1, R4]
 /* 080E2E76 */ MOVS R2, #0
-/* 080E2E78 */ BL func_080EF3BC
+/* 080E2E78 */ BL sprite_set_visible
 /* 080E2E7C */ LDR R2, =gGraphicsBuffer
 /* 080E2E7E */ ADDS R0, R2, #0
 /* 080E2E80 */ ADDS R0, #0X70

@@ -47,7 +47,7 @@ glabel func_080EAA38
 /* 080EAA8A */ MOVS R2, #2
 /* 080EAA8C */ LDRSH R1, [R5, R2]
 /* 080EAA8E */ MOVS R2, #0
-/* 080EAA90 */ BL func_080EF3BC
+/* 080EAA90 */ BL sprite_set_visible
 /* 080EAA94 */ B _080EAABA
 
 .balign 4, 0

@@ -59,7 +59,7 @@ _080A4020:
 /* 080A4070 */ MOVS R3, #0
 /* 080A4072 */ LDRSH R1, [R1, R3]
 /* 080A4074 */ MOVS R2, #0
-/* 080A4076 */ BL func_080EF3BC
+/* 080A4076 */ BL sprite_set_visible
 /* 080A407A */ B _080A40A6
 
 .balign 4, 0

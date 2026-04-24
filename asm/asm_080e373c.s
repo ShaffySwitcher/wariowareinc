@@ -138,7 +138,7 @@ _080E381A:
 /* 080E3826 */ MOVS R2, #2
 /* 080E3828 */ LDRSH R1, [R1, R2]
 /* 080E382A */ MOVS R2, #0
-/* 080E382C */ BL func_080EF3BC
+/* 080E382C */ BL sprite_set_visible
 /* 080E3830 */ BL func_080E3654
 /* 080E3834 */ LDR R0, _080E3884
 /* 080E3836 */ BL play_sound

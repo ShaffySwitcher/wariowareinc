@@ -80,7 +80,7 @@ _080A5C42:
 /* 080A5C4C */ MOVS R2, #0
 /* 080A5C4E */ LDRSH R1, [R1, R2]
 /* 080A5C50 */ MOVS R2, #1
-/* 080A5C52 */ BL func_080EF3BC
+/* 080A5C52 */ BL sprite_set_visible
 /* 080A5C56 */ MOV R1, R8
 /* 080A5C58 */ LDR R0, [R1]
 /* 080A5C5A */ ADDS R0, #0X48

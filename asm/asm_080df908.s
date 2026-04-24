@@ -170,7 +170,7 @@ _080DFA26:
 /* 080DFA2A */ MOVS R3, #0X20
 /* 080DFA2C */ LDRSH R1, [R2, R3]
 /* 080DFA2E */ MOVS R2, #0
-/* 080DFA30 */ BL func_080EF3BC
+/* 080DFA30 */ BL sprite_set_visible
 /* 080DFA34 */ LDR R0, [R6]
 /* 080DFA36 */ ADDS R0, #0X22
 /* 080DFA38 */ MOVS R1, #9
@@ -355,7 +355,7 @@ _080DFB38:
 /* 080DFB8A */ LSRS R2, R2, #0X10
 /* 080DFB8C */ ADDS R0, R5, #0
 /* 080DFB8E */ ADDS R1, R4, #0
-/* 080DFB90 */ BL func_080EF3BC
+/* 080DFB90 */ BL sprite_set_visible
 /* 080DFB94 */ B _080DFC3A
 
 .balign 4, 0

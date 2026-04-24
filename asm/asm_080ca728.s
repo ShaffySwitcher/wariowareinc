@@ -26,7 +26,7 @@ _080CA730:
 /* 080CA74A */ MOVS R2, #0
 /* 080CA74C */ LDRSH R1, [R1, R2]
 /* 080CA74E */ MOVS R2, #0
-/* 080CA750 */ BL func_080EF3BC
+/* 080CA750 */ BL sprite_set_visible
 _080CA754:
 /* 080CA754 */ ADDS R0, R5, #1
 /* 080CA756 */ LSLS R0, R0, #0X18
@@ -116,7 +116,7 @@ _080CA7CE:
 /* 080CA7E6 */ MOVS R3, #0
 /* 080CA7E8 */ LDRSH R1, [R1, R3]
 /* 080CA7EA */ MOVS R2, #1
-/* 080CA7EC */ BL func_080EF3BC
+/* 080CA7EC */ BL sprite_set_visible
 /* 080CA7F0 */ MOV R1, R8
 /* 080CA7F2 */ LDR R0, [R1]
 /* 080CA7F4 */ LDR R1, [R7]

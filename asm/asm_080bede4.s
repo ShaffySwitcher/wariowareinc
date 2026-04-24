@@ -225,7 +225,7 @@ _080BEF56:
 /* 080BEF84 */ MOVS R2, #0
 /* 080BEF86 */ LDRSH R1, [R1, R2]
 /* 080BEF88 */ MOVS R2, #1
-/* 080BEF8A */ BL func_080EF3BC
+/* 080BEF8A */ BL sprite_set_visible
 /* 080BEF8E */ B _080BEFAA
 
 .balign 4, 0
@@ -243,7 +243,7 @@ _080BEF98:
 /* 080BEFA0 */ MOVS R3, #0
 /* 080BEFA2 */ LDRSH R1, [R1, R3]
 /* 080BEFA4 */ MOVS R2, #0
-/* 080BEFA6 */ BL func_080EF3BC
+/* 080BEFA6 */ BL sprite_set_visible
 _080BEFAA:
 /* 080BEFAA */ ADDS R0, R7, #1
 /* 080BEFAC */ LSLS R0, R0, #0X18

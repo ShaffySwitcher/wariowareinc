@@ -14,12 +14,12 @@ glabel func_080AF134
 /* 080AF140 */ MOVS R2, #6
 /* 080AF142 */ LDRSH R1, [R6, R2]
 /* 080AF144 */ ADDS R2, R5, #0
-/* 080AF146 */ BL func_080EF3BC
+/* 080AF146 */ BL sprite_set_visible
 /* 080AF14A */ LDR R0, [R4]
 /* 080AF14C */ MOVS R2, #8
 /* 080AF14E */ LDRSH R1, [R6, R2]
 /* 080AF150 */ ADDS R2, R5, #0
-/* 080AF152 */ BL func_080EF3BC
+/* 080AF152 */ BL sprite_set_visible
 /* 080AF156 */ LDR R0, [R4]
 /* 080AF158 */ MOVS R2, #0XA
 /* 080AF15A */ LDRSH R1, [R6, R2]

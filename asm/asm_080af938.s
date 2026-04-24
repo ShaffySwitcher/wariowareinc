@@ -47,7 +47,7 @@ _080AF960:
 /* 080AF988 */ MOVS R2, #0
 /* 080AF98A */ LDRSH R1, [R6, R2]
 /* 080AF98C */ MOVS R2, #1
-/* 080AF98E */ BL func_080EF3BC
+/* 080AF98E */ BL sprite_set_visible
 /* 080AF992 */ MOV R3, SB
 /* 080AF994 */ LDR R0, [R3]
 /* 080AF996 */ MOVS R2, #0

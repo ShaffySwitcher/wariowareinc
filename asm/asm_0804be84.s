@@ -87,7 +87,7 @@ glabel func_0804BE84
 /* 0804BF24 */ MOVS R7, #0
 /* 0804BF26 */ LDRSH R1, [R1, R7]
 /* 0804BF28 */ MOVS R2, #0
-/* 0804BF2A */ BL func_080EF3BC
+/* 0804BF2A */ BL sprite_set_visible
 /* 0804BF2E */ POP {R3}
 /* 0804BF30 */ MOV R8, R3
 /* 0804BF32 */ POP {R4, R5, R6, R7}

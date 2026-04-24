@@ -18,7 +18,7 @@ _080476AA:
 /* 080476AE */ MOVS R2, #0
 /* 080476B0 */ LDRSH R1, [R4, R2]
 /* 080476B2 */ MOVS R2, #1
-/* 080476B4 */ BL func_080EF3BC
+/* 080476B4 */ BL sprite_set_visible
 /* 080476B8 */ MOVS R0, #8
 /* 080476BA */ BL get_random_range
 /* 080476BE */ LDR R1, _0804770C

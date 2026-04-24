@@ -83,7 +83,7 @@ _080BBBD2:
 /* 080BBBD4 */ MOVS R2, #0
 /* 080BBBD6 */ LDRSH R1, [R4, R2]
 /* 080BBBD8 */ MOVS R2, #0
-/* 080BBBDA */ BL func_080EF3BC
+/* 080BBBDA */ BL sprite_set_visible
 /* 080BBBDE */ ADDS R4, #0X3C
 /* 080BBBE0 */ ADDS R7, #1
 /* 080BBBE2 */ CMP R7, #1

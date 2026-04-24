@@ -70,7 +70,7 @@ _080BC08A:
 /* 080BC08C */ LDRSH R1, [R4, R2]
 /* 080BC08E */ ADDS R0, R7, #0
 /* 080BC090 */ MOVS R2, #1
-/* 080BC092 */ BL func_080EF3BC
+/* 080BC092 */ BL sprite_set_visible
 /* 080BC096 */ ADDS R4, #0X3C
 /* 080BC098 */ ADDS R5, #1
 /* 080BC09A */ CMP R5, #1

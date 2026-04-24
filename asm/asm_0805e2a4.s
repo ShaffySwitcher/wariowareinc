@@ -33,7 +33,7 @@ glabel func_0805E2A4
 /* 0805E2D8 */ MOVS R2, #0
 /* 0805E2DA */ LDRSH R1, [R1, R2]
 /* 0805E2DC */ MOVS R2, #1
-/* 0805E2DE */ BL func_080EF3BC
+/* 0805E2DE */ BL sprite_set_visible
 _0805E2E2:
 /* 0805E2E2 */ ADD SP, #0XC
 /* 0805E2E4 */ POP {R4, R5, R6}

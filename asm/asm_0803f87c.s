@@ -49,7 +49,7 @@ _0803F8CA:
 /* 0803F8CE */ ADDS R1, #0X5C
 /* 0803F8D0 */ MOVS R7, #0
 /* 0803F8D2 */ LDRSH R1, [R1, R7]
-/* 0803F8D4 */ BL func_080EF3BC
+/* 0803F8D4 */ BL sprite_set_visible
 /* 0803F8D8 */ POP {R4, R5, R6, R7}
 /* 0803F8DA */ POP {R0}
 /* 0803F8DC */ BX R0

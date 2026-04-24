@@ -79,14 +79,14 @@ _0803CC10:
 /* 0803CC40 */ MOVS R2, #0
 /* 0803CC42 */ LDRSH R1, [R1, R2]
 /* 0803CC44 */ MOVS R2, #0
-/* 0803CC46 */ BL func_080EF3BC
+/* 0803CC46 */ BL sprite_set_visible
 /* 0803CC4A */ LDR R0, [R4]
 /* 0803CC4C */ LDR R1, [R5]
 /* 0803CC4E */ ADDS R1, #0X6A
 /* 0803CC50 */ MOVS R2, #0
 /* 0803CC52 */ LDRSH R1, [R1, R2]
 /* 0803CC54 */ MOVS R2, #1
-/* 0803CC56 */ BL func_080EF3BC
+/* 0803CC56 */ BL sprite_set_visible
 /* 0803CC5A */ LDR R5, [R5]
 /* 0803CC5C */ MOV IP, R5
 /* 0803CC5E */ MOV R2, IP

@@ -221,7 +221,7 @@ _0803027A:
 /* 080302B8 */ LDR R0, [R5]
 /* 080302BA */ ADDS R1, R4, #0
 /* 080302BC */ MOVS R2, #1
-/* 080302BE */ BL func_080EF3BC
+/* 080302BE */ BL sprite_set_visible
 /* 080302C2 */ MOV R0, SP
 /* 080302C4 */ LDRH R1, [R0, #0X14]
 /* 080302C6 */ LDR R0, [SP, #0X18]

@@ -75,7 +75,7 @@ _080D3692:
 /* 080D36DC */ ADDS R3, R0
 /* 080D36DE */ MOV R0, SP
 /* 080D36E0 */ ADD R2, SP, #4
-/* 080D36E2 */ BL func_08008174
+/* 080D36E2 */ BL gameplay_check_collision
 /* 080D36E6 */ CMP R0, #0
 /* 080D36E8 */ BEQ _080D3748
 /* 080D36EA */ LDRB R0, [R4, #0X16]

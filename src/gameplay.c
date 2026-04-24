@@ -3,25 +3,64 @@
 #include "memory.h"
 #include "memory_heap.h"
 #include "code_08000f10.h"
+#include "src/lib_sprite.h"
 
 asm(".include \"include/gba.inc\"");
 
+extern u8 D_03005758[];
+
+struct GameplayMicrogameInfo {
+    void* unk0;
+    void* unk4;
+    u8 unk8;
+    u8 unk9;
+    u8 padA[2];
+    void* unkC;
+};
+
+struct GameplayStruct6c_4 {
+    u32 unk0;
+    void* unk4;
+};
+
+struct GameplayStruct6c {
+    u32 unk0_1 : 8;
+    u32 unk0_9 : 1;
+    u32 unk0_10 : 23;
+    struct GameplayStruct6c_4* unk4;
+};
+
+struct GameplayRandomMicrogameList {
+    u8 pad0[4];
+    struct GameplayStruct6c_4* unk4;
+};
+
+struct GameplayScriptSelector {
+    u8 unk0;
+    u8 pad1[3];
+    struct GameplayScriptSelector** unk4;
+    void** unk8;
+};
+
+extern struct GameplayMicrogameInfo D_083A50E0[];
+extern u32 func_080F4890(u32, u32);
+
 void func_08008134(void) {
     if (D_030035E0 != 0) {
-        func_080081D8();
+        gameplay_init_scene();
     } else {
-        if (func_0800840C() == 2) {
+        if (gameplay_update_scene() == 2) {
             D_03003844 = 4;
             func_08008130();
         }
 
         if (D_03003844 != 2) {
-            func_08008374();
+            gameplay_stop_scene();
         }
     }
 }
 
-u32 func_08008174(struct Vector2 *positionA, struct Rect *hitboxA,
+u32 gameplay_check_collision(struct Vector2 *positionA, struct Rect *hitboxA,
                   struct Vector2 *positionB, struct Rect *hitboxB) {
     s32 xA = positionA->x + hitboxA->x;
     s32 xB = positionB->x + hitboxB->x;
@@ -50,7 +89,7 @@ u32 func_08008174(struct Vector2 *positionA, struct Rect *hitboxA,
 
 struct GameplayData* gGameplayDataPtr = &D_03003860;
 
-void func_080081D8(void) {
+void gameplay_init_scene(void) {
     func_08006A04();
     func_08006B90(0);
     func_08006B68();
@@ -64,7 +103,7 @@ void func_080081D8(void) {
     gGameplayData.unk218 = mem_heap_alloc(0x8000);
     gGameplayData.unk188 = -1;
     gGameplayData.unk5_8 = 0;
-    gGameplayData.unk5_5 = 0;
+    gGameplayData.isPaused = 0;
     gGameplayData.unk1ee = -1;
     gGameplayData.unk7_4 = 1;
     gGameplayData.unk288 = mem_heap_alloc(0x200);
@@ -82,14 +121,14 @@ void func_080081D8(void) {
     *PALETTE_RAM = 0; // very awesome
     
     gGameplayData.unk7_2 = 0;
-    gGameplayData.unk4_1 = 0;
-    gGameplayData.unk4_6 = gGameplayData.unk4_1;
+    gGameplayData.currentState = GAMEPLAY_STATE_STAGE_INIT;
+    gGameplayData.unk4_6 = gGameplayData.currentState;
     gGameplayData.unk5_3 = 1;
     
     func_080097D4(1);
 }
 
-void func_08008374(void) {
+void gameplay_stop_scene(void) {
     u32 i;
 
     func_08000F74(NULL);
@@ -112,44 +151,44 @@ void func_08008374(void) {
     func_08007EAC();
 }
 
-u32 func_0800840C(void) {
+u32 gameplay_update_scene(void) {
     s32 arg = func_0800A27C();
     u32 i;
 
-    func_08006A5C();
-    func_08003F14();
+    flush_graphics_buffer();
+    trigger_pending_dma3();
     func_08003A70(&gGameplayData.pad1f5 - 1);
-    if (gGameplayData.unk5_5 == 0) {
+    if (gGameplayData.isPaused == 0) {
         func_080099F8();
     }
     func_08005744();
     func_080056F4();
-    if (gGameplayData.unk4_1 != 6) {
+    if (gGameplayData.currentState != GAMEPLAY_STATE_SUSPENDED) {
         func_08009AA0();
     }
-    switch (gGameplayData.unk4_1) {
-        case 0:
-            func_08008C9C();
-            gGameplayData.unk4_1 = 1;
+    switch (gGameplayData.currentState) {
+        case GAMEPLAY_STATE_STAGE_INIT:
+            gameplay_stage_init();
+            gGameplayData.currentState = GAMEPLAY_STATE_RUNNING;
             if (gGameplayData.unk7_2) {
-                gGameplayData.unk4_1 = 6;
+                gGameplayData.currentState = GAMEPLAY_STATE_SUSPENDED;
             }
             break;
-        case 6:
+        case GAMEPLAY_STATE_SUSPENDED:
             if (!gGameplayData.unk7_2) {
-                gGameplayData.unk4_1 = 1;
+                gGameplayData.currentState = GAMEPLAY_STATE_RUNNING;
             }
             break;
-        case 1:
+        case GAMEPLAY_STATE_RUNNING:
         {
             u8 pauseAvailable = gGameplayData.unk5_8;
 
             if (gPressedKeys & START_BUTTON) {
                 if (pauseAvailable != 0) {
-                    gGameplayData.unk5_5 = 1;
+                    gGameplayData.isPaused = 1;
                     gGameplayData.unk5_6 = 0;
                     func_080EE9B8(D_083A4A7C, gGameplayData.unk1ee, (s8)(arg << 1));
-                    func_080EF3BC(D_083A4A7C, gGameplayData.unk1ee, 1);
+                    sprite_set_visible(D_083A4A7C, gGameplayData.unk1ee, 1);
                     func_08002024(1);
                     func_080EFA54(D_083A4A7C, 1);
                     func_08003D28(&gGameplayData.pad1f5 - 1, 1);
@@ -157,14 +196,14 @@ u32 func_0800840C(void) {
                         i++;
                         func_08005A54((u16)i, 1);
                     }
-                    gGameplayData.unk4_1 = 4;
+                    gGameplayData.currentState = GAMEPLAY_STATE_PAUSED;
                     play_sound((struct SongHeader *)&D_083FBAF4);
                     func_08008798();
                     break;
                 }
             }
 
-            if (func_080091E0() == 1) {
+            if (gameplay_run_script() == 1) {
                 *PALETTE_RAM = 0;
                 *(volatile s16*)IORAMBase = 0;
                 D_0300363C = gGameplayData.currentLives;
@@ -172,30 +211,30 @@ u32 func_0800840C(void) {
             }
             break;
         }
-        case 4:
+        case GAMEPLAY_STATE_PAUSED:
             if (gPressedKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) {
                 if (gPressedKeys & B_BUTTON) {
                     gGameplayData.unk5_6 = 0;
                 }
                 if (gGameplayData.unk5_6 == 0) {
-                    func_080EF3BC(D_083A4A7C, gGameplayData.unk1ee, 0);
-                    gGameplayData.unk4_1 = 7;
+                    sprite_set_visible(D_083A4A7C, gGameplayData.unk1ee, 0);
+                    gGameplayData.currentState = GAMEPLAY_STATE_RESUMING;
                     play_sound((struct SongHeader *)&D_083FBB08);
                 } else {
-                    func_080EF3BC(D_083A4A7C, gGameplayData.unk1ee, 0);
+                    sprite_set_visible(D_083A4A7C, gGameplayData.unk1ee, 0);
                     func_08006C40(0x20, 0);
                     stop_all_soundplayers();
                     play_sound((struct SongHeader *)&D_083FBB08);
-                    gGameplayData.unk4_1 = 5;
+                    gGameplayData.currentState = GAMEPLAY_STATE_EXITING;
                 }
             } else if (gPressedKeys & (DPAD_LEFT | DPAD_RIGHT)) {
                 gGameplayData.unk5_6 ^= 1;
-                func_080EE9B8(D_083A4A7C, gGameplayData.unk1ee, (s8)(gGameplayData.unk5_6 + (arg << 1)));
+                func_080EE9B8(gSpriteHandler, gGameplayData.unk1ee, (s8)(gGameplayData.unk5_6 + (arg << 1)));
             }
             break;
-        case 7:
+        case GAMEPLAY_STATE_RESUMING:
             if ((gCurrentKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) == 0) {
-                gGameplayData.unk5_5 = 0;
+                gGameplayData.isPaused = 0;
                 func_08002024(0);
                 func_080EFA54(D_083A4A7C, 0);
                 func_08003D28(&gGameplayData.pad1f5 - 1, 0);
@@ -203,11 +242,11 @@ u32 func_0800840C(void) {
                     i++;
                     func_08005A54((u16)i, 0);
                 }
-                gGameplayData.unk4_1 = 1;
+                gGameplayData.currentState = GAMEPLAY_STATE_RUNNING;
                 func_080088C0();
             }
             break;
-        case 5:
+        case GAMEPLAY_STATE_EXITING:
             if (gGraphicsBuffer.unk854 & 8) {
                 stop_soundplayer(D_03004890.unk4);
                 func_08005914(0);
@@ -253,7 +292,7 @@ void func_08008798(void) {
 
         if (gGameplayData.unk188 >= 0) {
             gGameplayData.unk290 = func_080EF784(D_083A4A7C, gGameplayData.unk188, 0);
-            func_080EF3BC(D_083A4A7C, gGameplayData.unk188, 0);
+            sprite_set_visible(D_083A4A7C, gGameplayData.unk188, 0);
         }
     }
 }
@@ -263,7 +302,7 @@ void func_080088C0(void) {
         dma3_set(gGameplayData.unk288, D_03004054, 0x200, 0x20, 0x100);
         dma3_set(gGameplayData.unk28c, D_03004054 + 0x80, 0x200, 0x20, 0x100);
         if (gGameplayData.unk188 >= 0) {
-            func_080EF3BC(D_083A4A7C, gGameplayData.unk188, gGameplayData.unk290);
+            sprite_set_visible(D_083A4A7C, gGameplayData.unk188, gGameplayData.unk290);
         }
     }
 }
@@ -300,19 +339,19 @@ u32 func_08008AA4(u32 arg0) {
     }
 }
 
-void func_08008AE8(void* arg0) {
+void func_08008AE8(struct GameplayScriptCmd* arg0) {
     gGameplayData.unk2c[gGameplayData.unk6_3] = arg0;
     gGameplayData.unk6_3++;
 }
 
-void* func_08008B18(void) {
+struct GameplayScriptCmd* func_08008B18(void) {
     gGameplayData.unk6_3--;
     return gGameplayData.unk2c[gGameplayData.unk6_3];
 }
 
 #include "asm/gameplay/asm_08008b50.s"
 
-void func_08008C9C(void) {
+void gameplay_stage_init(void) {
     u32 i;
     u32 args[3];
     struct GameplayData_struct_0* unk0 = gGameplayData.unk0; 
@@ -351,9 +390,9 @@ void func_08008C9C(void) {
     gGameplayData.unk24 = 1;
     args[0] = unk4->unk8;
     args[1] = 0;
-    if (*(u8*)&D_03003634 != 0) {
+    if (D_03003634 != 0) {
         func_08006E94(1);
-        gGameplayData.unk20 = &D_083A4BCC;
+        gGameplayData.unk20 = D_083A4BCC;
         args[0] = 0;
     }
     func_0800986C(args);
@@ -413,11 +452,11 @@ struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd* script, s32 ta
     };
 }
 
-u32 func_080091E0(void) {
+u32 gameplay_run_script(void) {
     struct GameplayStageInfo *stage;
     struct GameplayScriptCmd *cmd;
     struct GameplayScriptState *scriptState;
-    u32 *scriptTarget;
+    struct GameplayStruct6c *scriptTarget;
     u32 args[3];
     union FreeType value;
     u32 state;
@@ -518,7 +557,7 @@ u32 func_080091E0(void) {
 
                 if (gGameplayData.unk172 != 6) {
                     gGameplayData.unk17e = gGameplayData.currentScore;
-                    if (gGameplayData.unk178 == 0 || (*scriptTarget >> 9) == 0) {
+                    if (gGameplayData.unk178 == 0 || scriptTarget->unk0_10 == 0) {
                         gGameplayData.unk70++;
                         gGameplayData.currentScore++;
                         if (gGameplayData.currentScore > MAX_SCORE) {
@@ -531,7 +570,7 @@ u32 func_080091E0(void) {
                     gGameplayData.unk221++;
                 }
 
-                if (gGameplayData.unk70 < ((u8 *)scriptTarget)[0]) {
+                if (gGameplayData.unk70 < scriptTarget->unk0_1) {
                     func_08008E1C();
                     return 0;
                 }

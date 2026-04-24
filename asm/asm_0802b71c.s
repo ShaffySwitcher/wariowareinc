@@ -22,7 +22,7 @@ glabel func_0802B71C
 /* 0802B738 */ MOVS R2, #8
 /* 0802B73A */ LDRSH R1, [R1, R2]
 /* 0802B73C */ MOVS R2, #1
-/* 0802B73E */ BL func_080EF3BC
+/* 0802B73E */ BL sprite_set_visible
 /* 0802B742 */ LDR R0, [R4]
 /* 0802B744 */ LDR R1, [R6]
 /* 0802B746 */ MOVS R2, #6

@@ -74,7 +74,7 @@ _080BBFC6:
 /* 080BBFC8 */ MOVS R2, #0
 /* 080BBFCA */ LDRSH R1, [R4, R2]
 /* 080BBFCC */ MOVS R2, #0
-/* 080BBFCE */ BL func_080EF3BC
+/* 080BBFCE */ BL sprite_set_visible
 /* 080BBFD2 */ ADDS R4, #0X3C
 /* 080BBFD4 */ ADDS R6, #1
 /* 080BBFD6 */ CMP R6, #1

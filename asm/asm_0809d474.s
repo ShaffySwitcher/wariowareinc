@@ -40,7 +40,7 @@ _0809D490:
 /* 0809D4B4 */ MOVS R2, #0
 /* 0809D4B6 */ LDRSH R1, [R5, R2]
 /* 0809D4B8 */ MOVS R2, #1
-/* 0809D4BA */ BL func_080EF3BC
+/* 0809D4BA */ BL sprite_set_visible
 /* 0809D4BE */ LDR R0, [R7]
 /* 0809D4C0 */ MOVS R3, #0
 /* 0809D4C2 */ LDRSH R1, [R5, R3]

@@ -35,7 +35,7 @@ _08012AF6:
 /* 08012B20 */ LDR R0, [R1]
 /* 08012B22 */ ADDS R1, R5, #0
 /* 08012B24 */ MOVS R2, #1
-/* 08012B26 */ BL func_080EF3BC
+/* 08012B26 */ BL sprite_set_visible
 /* 08012B2A */ ADDS R0, R6, #0
 /* 08012B2C */ MOVS R1, #0XA
 /* 08012B2E */ BL func_080F4818

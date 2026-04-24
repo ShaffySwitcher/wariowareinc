@@ -41,7 +41,7 @@ glabel func_080DEBAC
 /* 080DEBF2 */ LSLS R1, R1, #0X10
 /* 080DEBF4 */ ASRS R1, R1, #0X10
 /* 080DEBF6 */ MOVS R2, #0
-/* 080DEBF8 */ BL func_080EF3BC
+/* 080DEBF8 */ BL sprite_set_visible
 /* 080DEBFC */ LDR R0, [R5]
 /* 080DEBFE */ ADDS R1, R0, #0
 /* 080DEC00 */ ADDS R1, #0X81

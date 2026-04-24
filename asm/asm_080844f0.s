@@ -69,7 +69,7 @@ _08084532:
 /* 08084568 */ MOVS R2, #0XC
 /* 0808456A */ LDRSH R1, [R4, R2]
 /* 0808456C */ MOVS R2, #0
-/* 0808456E */ BL func_080EF3BC
+/* 0808456E */ BL sprite_set_visible
 /* 08084572 */ STRB R5, [R4, #0XF]
 /* 08084574 */ LDRB R0, [R4, #0XE]
 /* 08084576 */ SUBS R5, #2
@@ -165,7 +165,7 @@ _0808460E:
 /* 08084614 */ MOVS R5, #0XC
 /* 08084616 */ LDRSH R1, [R4, R5]
 /* 08084618 */ MOVS R2, #1
-/* 0808461A */ BL func_080EF3BC
+/* 0808461A */ BL sprite_set_visible
 /* 0808461E */ B _0808462C
 
 .balign 4, 0

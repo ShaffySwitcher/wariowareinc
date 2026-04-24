@@ -87,7 +87,7 @@ _08085340:
 /* 08085398 */ MOVS R2, #0
 /* 0808539A */ LDRSH R1, [R1, R2]
 /* 0808539C */ MOVS R2, #0
-/* 0808539E */ BL func_080EF3BC
+/* 0808539E */ BL sprite_set_visible
 /* 080853A2 */ LDR R0, [R7]
 /* 080853A4 */ LDR R1, [R6]
 /* 080853A6 */ ADDS R1, #0X22

@@ -36,7 +36,7 @@ _080BEAF0:
 /* 080BEB06 */ MOVS R2, #0
 /* 080BEB08 */ LDRSH R1, [R1, R2]
 /* 080BEB0A */ MOVS R2, #0
-/* 080BEB0C */ BL func_080EF3BC
+/* 080BEB0C */ BL sprite_set_visible
 /* 080BEB10 */ LDR R0, [R7]
 /* 080BEB12 */ LDR R1, [R6]
 /* 080BEB14 */ ADDS R1, #0XF8
@@ -44,7 +44,7 @@ _080BEAF0:
 /* 080BEB18 */ MOVS R2, #0
 /* 080BEB1A */ LDRSH R1, [R1, R2]
 /* 080BEB1C */ MOVS R2, #1
-/* 080BEB1E */ BL func_080EF3BC
+/* 080BEB1E */ BL sprite_set_visible
 /* 080BEB22 */ LDR R0, _080BEB44
 /* 080BEB24 */ BL play_sound
 /* 080BEB28 */ LDR R1, [R6]
@@ -104,7 +104,7 @@ _080BEB5A:
 /* 080BEB84 */ MOVS R2, #0
 /* 080BEB86 */ LDRSH R1, [R1, R2]
 /* 080BEB88 */ MOVS R2, #1
-/* 080BEB8A */ BL func_080EF3BC
+/* 080BEB8A */ BL sprite_set_visible
 /* 080BEB8E */ B _080BEBAC
 
 .balign 4, 0
@@ -123,7 +123,7 @@ _080BEB98:
 /* 080BEBA2 */ MOVS R2, #0
 /* 080BEBA4 */ LDRSH R1, [R1, R2]
 /* 080BEBA6 */ MOVS R2, #0
-/* 080BEBA8 */ BL func_080EF3BC
+/* 080BEBA8 */ BL sprite_set_visible
 _080BEBAC:
 /* 080BEBAC */ ADDS R0, R5, #1
 /* 080BEBAE */ LSLS R0, R0, #0X18
@@ -154,7 +154,7 @@ _080BEBC2:
 /* 080BEBDC */ MOVS R2, #0
 /* 080BEBDE */ LDRSH R1, [R1, R2]
 /* 080BEBE0 */ MOVS R2, #1
-/* 080BEBE2 */ BL func_080EF3BC
+/* 080BEBE2 */ BL sprite_set_visible
 _080BEBE6:
 /* 080BEBE6 */ ADDS R0, R5, #1
 /* 080BEBE8 */ LSLS R0, R0, #0X18
@@ -171,21 +171,21 @@ _080BEBE6:
 /* 080BEBFE */ MOVS R2, #0
 /* 080BEC00 */ LDRSH R1, [R1, R2]
 /* 080BEC02 */ MOVS R2, #0
-/* 080BEC04 */ BL func_080EF3BC
+/* 080BEC04 */ BL sprite_set_visible
 /* 080BEC08 */ LDR R0, [R4]
 /* 080BEC0A */ LDR R1, [R6]
 /* 080BEC0C */ ADDS R1, #0XEC
 /* 080BEC0E */ MOVS R2, #0
 /* 080BEC10 */ LDRSH R1, [R1, R2]
 /* 080BEC12 */ MOVS R2, #0
-/* 080BEC14 */ BL func_080EF3BC
+/* 080BEC14 */ BL sprite_set_visible
 /* 080BEC18 */ LDR R0, [R4]
 /* 080BEC1A */ LDR R1, [R6]
 /* 080BEC1C */ ADDS R1, #0XF6
 /* 080BEC1E */ MOVS R2, #0
 /* 080BEC20 */ LDRSH R1, [R1, R2]
 /* 080BEC22 */ MOVS R2, #0
-/* 080BEC24 */ BL func_080EF3BC
+/* 080BEC24 */ BL sprite_set_visible
 _080BEC28:
 /* 080BEC28 */ POP {R4, R5, R6, R7}
 /* 080BEC2A */ POP {R0}

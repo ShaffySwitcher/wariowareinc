@@ -27,7 +27,7 @@ _080CD41E:
 /* 080CD422 */ MOVS R3, #0
 /* 080CD424 */ LDRSH R1, [R2, R3]
 /* 080CD426 */ MOVS R2, #0
-/* 080CD428 */ BL func_080EF3BC
+/* 080CD428 */ BL sprite_set_visible
 /* 080CD42C */ MOVS R0, #1
 _080CD42E:
 /* 080CD42E */ POP {R1}

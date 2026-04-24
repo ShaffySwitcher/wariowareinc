@@ -64,7 +64,7 @@ _080CF304:
 /* 080CF35C */ MOVS R2, #4
 /* 080CF35E */ LDRSH R1, [R4, R2]
 /* 080CF360 */ MOVS R2, #1
-/* 080CF362 */ BL func_080EF3BC
+/* 080CF362 */ BL sprite_set_visible
 /* 080CF366 */ B _080CF37C
 
 .balign 4, 0

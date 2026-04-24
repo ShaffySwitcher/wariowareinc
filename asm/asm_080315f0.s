@@ -170,7 +170,7 @@ glabel func_080315F0
 /* 0803175A */ MOVS R2, #0
 /* 0803175C */ LDRSH R1, [R1, R2]
 /* 0803175E */ MOVS R2, #0
-/* 08031760 */ BL func_080EF3BC
+/* 08031760 */ BL sprite_set_visible
 /* 08031764 */ LDR R0, [R4]
 /* 08031766 */ LDR R1, _080317D4
 /* 08031768 */ LDR R2, _080317D8

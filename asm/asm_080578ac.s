@@ -112,12 +112,12 @@ _0805791E:
 /* 08057982 */ MOVS R2, #0
 /* 08057984 */ LDRSH R1, [R5, R2]
 /* 08057986 */ MOVS R2, #0
-/* 08057988 */ BL func_080EF3BC
+/* 08057988 */ BL sprite_set_visible
 /* 0805798C */ LDR R0, [R7]
 /* 0805798E */ MOVS R2, #0X10
 /* 08057990 */ LDRSH R1, [R5, R2]
 /* 08057992 */ MOVS R2, #0
-/* 08057994 */ BL func_080EF3BC
+/* 08057994 */ BL sprite_set_visible
 /* 08057998 */ STR R4, [R5, #0X34]
 /* 0805799A */ SUBS R6, #1
 /* 0805799C */ ADDS R5, #0X3C

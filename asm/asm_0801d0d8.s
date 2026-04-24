@@ -161,7 +161,7 @@ _0801D1DA:
 /* 0801D1F8 */ LDR R0, [R1]
 /* 0801D1FA */ ADDS R1, R4, #0
 /* 0801D1FC */ MOVS R2, #1
-/* 0801D1FE */ BL func_080EF3BC
+/* 0801D1FE */ BL sprite_set_visible
 /* 0801D202 */ MOVS R0, #1
 /* 0801D204 */ STRB R0, [R6]
 /* 0801D206 */ LDRB R0, [R7]

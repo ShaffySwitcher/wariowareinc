@@ -56,7 +56,7 @@ glabel func_0805EFE8
 /* 0805F050 */ MOVS R2, #0X12
 /* 0805F052 */ LDRSH R1, [R1, R2]
 /* 0805F054 */ MOVS R2, #0
-/* 0805F056 */ BL func_080EF3BC
+/* 0805F056 */ BL sprite_set_visible
 /* 0805F05A */ MOVS R0, #0X18
 /* 0805F05C */ BL func_0800C9A4
 /* 0805F060 */ MOVS R0, #1

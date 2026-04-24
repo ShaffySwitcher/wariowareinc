@@ -110,7 +110,7 @@ _0807289E:
 /* 080728D0 */ MOVS R2, #0
 /* 080728D2 */ LDRSH R1, [R7, R2]
 /* 080728D4 */ MOVS R2, #1
-/* 080728D6 */ BL func_080EF3BC
+/* 080728D6 */ BL sprite_set_visible
 /* 080728DA */ LDR R0, [R4]
 /* 080728DC */ MOVS R3, #0
 /* 080728DE */ LDRSH R1, [R7, R3]

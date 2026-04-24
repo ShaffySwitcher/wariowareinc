@@ -66,7 +66,7 @@ _08025D2A:
 /* 08025D32 */ MOVS R2, #0
 /* 08025D34 */ LDRSH R1, [R5, R2]
 /* 08025D36 */ MOVS R2, #0
-/* 08025D38 */ BL func_080EF3BC
+/* 08025D38 */ BL sprite_set_visible
 /* 08025D3C */ B _08025D7C
 
 .balign 4, 0

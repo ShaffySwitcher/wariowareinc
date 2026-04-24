@@ -156,7 +156,7 @@ _0807F028:
 /* 0807F048 */ MOVS R2, #0
 /* 0807F04A */ LDRSH R1, [R1, R2]
 /* 0807F04C */ MOVS R2, #0
-/* 0807F04E */ BL func_080EF3BC
+/* 0807F04E */ BL sprite_set_visible
 /* 0807F052 */ LDR R0, [R4]
 /* 0807F054 */ LDR R1, [R5]
 /* 0807F056 */ MOVS R2, #0X86

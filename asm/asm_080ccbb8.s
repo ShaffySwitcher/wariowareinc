@@ -30,7 +30,7 @@ _080CCBE0:
 /* 080CCBE4 */ MOVS R3, #0
 /* 080CCBE6 */ LDRSH R1, [R2, R3]
 /* 080CCBE8 */ MOVS R2, #0
-/* 080CCBEA */ BL func_080EF3BC
+/* 080CCBEA */ BL sprite_set_visible
 /* 080CCBEE */ MOVS R0, #1
 _080CCBF0:
 /* 080CCBF0 */ POP {R1}

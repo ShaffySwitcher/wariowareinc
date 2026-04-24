@@ -147,13 +147,13 @@ _08086A74:
 /* 08086AA0 */ MOVS R2, #0X34
 /* 08086AA2 */ LDRSH R1, [R1, R2]
 /* 08086AA4 */ MOVS R2, #0
-/* 08086AA6 */ BL func_080EF3BC
+/* 08086AA6 */ BL sprite_set_visible
 /* 08086AAA */ LDR R0, [R4]
 /* 08086AAC */ LDR R1, [R6]
 /* 08086AAE */ MOVS R2, #0X38
 /* 08086AB0 */ LDRSH R1, [R1, R2]
 /* 08086AB2 */ MOVS R2, #0
-/* 08086AB4 */ BL func_080EF3BC
+/* 08086AB4 */ BL sprite_set_visible
 /* 08086AB8 */ LDR R0, [R4]
 /* 08086ABA */ LDR R3, [R6]
 /* 08086ABC */ MOVS R2, #8

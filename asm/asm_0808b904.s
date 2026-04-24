@@ -46,7 +46,7 @@ _0808B91E:
 /* 0808B94E */ MOVS R3, #0
 /* 0808B950 */ LDRSH R1, [R2, R3]
 /* 0808B952 */ MOVS R2, #1
-/* 0808B954 */ BL func_080EF3BC
+/* 0808B954 */ BL sprite_set_visible
 /* 0808B958 */ B _0808B984
 
 .balign 4, 0

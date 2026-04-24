@@ -83,13 +83,13 @@ _0807616C:
 /* 080761CA */ MOVS R2, #4
 /* 080761CC */ LDRSH R1, [R1, R2]
 /* 080761CE */ MOVS R2, #1
-/* 080761D0 */ BL func_080EF3BC
+/* 080761D0 */ BL sprite_set_visible
 /* 080761D4 */ LDR R0, [R7]
 /* 080761D6 */ LDR R1, [R6]
 /* 080761D8 */ MOVS R3, #0X2A
 /* 080761DA */ LDRSH R1, [R1, R3]
 /* 080761DC */ MOVS R2, #1
-/* 080761DE */ BL func_080EF3BC
+/* 080761DE */ BL sprite_set_visible
 /* 080761E2 */ LDR R1, [R6]
 /* 080761E4 */ STR R4, [R1, #0X10]
 /* 080761E6 */ MOVS R0, #1

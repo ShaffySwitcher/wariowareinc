@@ -43,7 +43,7 @@ glabel func_080B8344
 /* 080B8392 */ LSLS R1, R1, #0X10
 /* 080B8394 */ ASRS R1, R1, #0X10
 /* 080B8396 */ MOVS R2, #1
-/* 080B8398 */ BL func_080EF3BC
+/* 080B8398 */ BL sprite_set_visible
 /* 080B839C */ ADD SP, #0XC
 /* 080B839E */ POP {R4, R5}
 /* 080B83A0 */ POP {R0}

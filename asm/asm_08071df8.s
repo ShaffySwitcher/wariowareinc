@@ -31,7 +31,7 @@ _08071E14:
 /* 08071E1C */ MOVS R2, #0
 /* 08071E1E */ LDRSH R1, [R3, R2]
 /* 08071E20 */ MOVS R2, #0
-/* 08071E22 */ BL func_080EF3BC
+/* 08071E22 */ BL sprite_set_visible
 /* 08071E26 */ MOVS R0, #1
 /* 08071E28 */ B _08071E64
 

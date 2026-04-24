@@ -29,7 +29,7 @@ glabel func_0800F2DC
 /* 0800F308 */ LDR R0, [R4]
 /* 0800F30A */ ADDS R1, R5, #0
 /* 0800F30C */ MOVS R2, #1
-/* 0800F30E */ BL func_080EF3BC
+/* 0800F30E */ BL sprite_set_visible
 _0800F312:
 /* 0800F312 */ LDRH R1, [R6]
 /* 0800F314 */ MOVS R0, #0X80
@@ -51,7 +51,7 @@ _0800F312:
 /* 0800F336 */ LDR R0, [R4]
 /* 0800F338 */ ADDS R1, R5, #0
 /* 0800F33A */ MOVS R2, #1
-/* 0800F33C */ BL func_080EF3BC
+/* 0800F33C */ BL sprite_set_visible
 _0800F340:
 /* 0800F340 */ LDRH R1, [R6]
 /* 0800F342 */ MOVS R0, #0X20
@@ -72,7 +72,7 @@ _0800F340:
 /* 0800F362 */ LDR R0, [R4]
 /* 0800F364 */ ADDS R1, R5, #0
 /* 0800F366 */ MOVS R2, #1
-/* 0800F368 */ BL func_080EF3BC
+/* 0800F368 */ BL sprite_set_visible
 _0800F36C:
 /* 0800F36C */ LDRH R1, [R6]
 /* 0800F36E */ MOVS R0, #0X10
@@ -94,7 +94,7 @@ _0800F36C:
 /* 0800F390 */ LDR R0, [R4]
 /* 0800F392 */ ADDS R1, R5, #0
 /* 0800F394 */ MOVS R2, #1
-/* 0800F396 */ BL func_080EF3BC
+/* 0800F396 */ BL sprite_set_visible
 _0800F39A:
 /* 0800F39A */ LDRH R0, [R6]
 /* 0800F39C */ MOVS R2, #0X30

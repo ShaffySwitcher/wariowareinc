@@ -91,7 +91,7 @@ _080735CC:
 /* 080735D8 */ LSRS R2, R7, #3
 /* 080735DA */ MOVS R3, #1
 /* 080735DC */ ANDS R2, R3
-/* 080735DE */ BL func_080EF3BC
+/* 080735DE */ BL sprite_set_visible
 /* 080735E2 */ LDR R0, [R5]
 /* 080735E4 */ LDR R1, [R4]
 /* 080735E6 */ MOVS R2, #0

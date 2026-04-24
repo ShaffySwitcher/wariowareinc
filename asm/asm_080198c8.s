@@ -35,7 +35,7 @@ _080198F2:
 /* 080198FE */ MOVS R2, #0
 /* 08019900 */ LDRSH R1, [R1, R2]
 /* 08019902 */ MOVS R2, #1
-/* 08019904 */ BL func_080EF3BC
+/* 08019904 */ BL sprite_set_visible
 /* 08019908 */ MOV R1, R8
 /* 0801990A */ LDR R0, [R1]
 /* 0801990C */ LDR R1, [R6]

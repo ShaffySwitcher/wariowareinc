@@ -152,7 +152,7 @@ _08088384:
 /* 080883A6 */ MOVS R2, #0
 /* 080883A8 */ LDRSH R1, [R1, R2]
 /* 080883AA */ MOVS R2, #0
-/* 080883AC */ BL func_080EF3BC
+/* 080883AC */ BL sprite_set_visible
 /* 080883B0 */ LDR R0, [R5]
 /* 080883B2 */ STRB R4, [R0, #0X10]
 /* 080883B4 */ LDR R0, [R5]

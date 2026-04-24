@@ -55,7 +55,7 @@ _08028198:
 /* 080281A6 */ MOVS R7, #0
 /* 080281A8 */ LDRSH R1, [R1, R7]
 /* 080281AA */ MOVS R2, #0
-/* 080281AC */ BL func_080EF3BC
+/* 080281AC */ BL sprite_set_visible
 /* 080281B0 */ B _080281D6
 
 .balign 4, 0

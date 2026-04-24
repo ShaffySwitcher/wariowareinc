@@ -47,7 +47,7 @@ _0807DCE2:
 /* 0807DD08 */ MOVS R2, #0
 /* 0807DD0A */ LDRSH R1, [R4, R2]
 /* 0807DD0C */ MOVS R2, #1
-/* 0807DD0E */ BL func_080EF3BC
+/* 0807DD0E */ BL sprite_set_visible
 /* 0807DD12 */ STR R6, [R4, #4]
 /* 0807DD14 */ MOV R3, SL
 /* 0807DD16 */ STR R3, [R4, #8]

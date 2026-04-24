@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08003F14
+glabel trigger_pending_dma3
 .thumb_func
 /* 08003F14 */ PUSH {LR}
 /* 08003F16 */ LDR R2, _08003F44

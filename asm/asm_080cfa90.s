@@ -255,7 +255,7 @@ _080CFC5C:
 /* 080CFC66 */ MOVS R3, #0
 /* 080CFC68 */ LDRSH R1, [R1, R3]
 /* 080CFC6A */ MOVS R2, #0
-/* 080CFC6C */ BL func_080EF3BC
+/* 080CFC6C */ BL sprite_set_visible
 /* 080CFC70 */ LDR R0, [R5]
 /* 080CFC72 */ MOV R2, R8
 /* 080CFC74 */ LDR R1, [R2]

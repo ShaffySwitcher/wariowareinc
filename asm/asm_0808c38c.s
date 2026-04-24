@@ -47,7 +47,7 @@ glabel func_0808C38C
 /* 0808C3DA */ ADD R3, SP, #8
 /* 0808C3DC */ MOV R0, SP
 /* 0808C3DE */ ADDS R1, R4, #0
-/* 0808C3E0 */ BL func_08008174
+/* 0808C3E0 */ BL gameplay_check_collision
 /* 0808C3E4 */ CMP R0, #0
 /* 0808C3E6 */ BNE _0808C3FC
 /* 0808C3E8 */ MOVS R0, #0

@@ -60,7 +60,7 @@ _08030B08:
 /* 08030B56 */ MOVS R2, #0
 /* 08030B58 */ LDRSH R1, [R3, R2]
 /* 08030B5A */ MOVS R2, #0
-/* 08030B5C */ BL func_080EF3BC
+/* 08030B5C */ BL sprite_set_visible
 /* 08030B60 */ MOVS R0, #0
 /* 08030B62 */ STRH R0, [R7]
 /* 08030B64 */ ADDS R1, R4, #0
@@ -136,7 +136,7 @@ _08030BA8:
 /* 08030BEC */ MOVS R3, #0
 /* 08030BEE */ LDRSH R1, [R5, R3]
 /* 08030BF0 */ MOVS R2, #0
-/* 08030BF2 */ BL func_080EF3BC
+/* 08030BF2 */ BL sprite_set_visible
 _08030BF6:
 /* 08030BF6 */ POP {R3}
 /* 08030BF8 */ MOV R8, R3

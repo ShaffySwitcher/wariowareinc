@@ -92,7 +92,7 @@ _0805398A:
 /* 080539DA */ MOVS R2, #4
 /* 080539DC */ LDRSH R1, [R1, R2]
 /* 080539DE */ MOVS R2, #1
-/* 080539E0 */ BL func_080EF3BC
+/* 080539E0 */ BL sprite_set_visible
 /* 080539E4 */ MOV R0, R8
 /* 080539E6 */ LDR R1, [R0]
 /* 080539E8 */ LDR R0, [R1, #0X6C]

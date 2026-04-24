@@ -150,7 +150,7 @@ _080A459A:
 /* 080A4666 */ MOVS R3, #0
 /* 080A4668 */ LDRSH R1, [R1, R3]
 /* 080A466A */ MOVS R2, #1
-/* 080A466C */ BL func_080EF3BC
+/* 080A466C */ BL sprite_set_visible
 /* 080A4670 */ LDR R0, [R6]
 /* 080A4672 */ MOV R7, SB
 /* 080A4674 */ MOVS R2, #0

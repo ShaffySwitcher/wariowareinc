@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08006A5C
+glabel flush_graphics_buffer
 .thumb_func
 /* 08006A5C */ PUSH {R4, R5, R6, R7, LR}
 /* 08006A5E */ SUB SP, #4

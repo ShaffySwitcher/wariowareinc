@@ -47,7 +47,7 @@ _08051D48:
 /* 08051D72 */ MOVS R2, #0
 /* 08051D74 */ LDRSH R1, [R1, R2]
 /* 08051D76 */ MOVS R2, #1
-/* 08051D78 */ BL func_080EF3BC
+/* 08051D78 */ BL sprite_set_visible
 /* 08051D7C */ ADDS R7, #0X10
 /* 08051D7E */ SUBS R5, #4
 /* 08051D80 */ ADDS R6, #1

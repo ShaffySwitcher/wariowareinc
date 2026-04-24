@@ -35,7 +35,7 @@ _080CBCFA:
 /* 080CBCFE */ MOVS R2, #8
 /* 080CBD00 */ LDRSH R1, [R3, R2]
 /* 080CBD02 */ MOVS R2, #1
-/* 080CBD04 */ BL func_080EF3BC
+/* 080CBD04 */ BL sprite_set_visible
 /* 080CBD08 */ LDR R2, [R5]
 /* 080CBD0A */ ADDS R1, R2, #0
 /* 080CBD0C */ ADDS R1, #0XB6

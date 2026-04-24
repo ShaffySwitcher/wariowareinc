@@ -21,7 +21,7 @@ glabel func_080C671C
 /* 080C6738 */ MOVS R2, #0
 /* 080C673A */ LDRSH R1, [R1, R2]
 /* 080C673C */ MOVS R2, #0
-/* 080C673E */ BL func_080EF3BC
+/* 080C673E */ BL sprite_set_visible
 /* 080C6742 */ LDR R0, [R4]
 /* 080C6744 */ MOVS R3, #0XF0
 /* 080C6746 */ LSLS R3, R3, #1

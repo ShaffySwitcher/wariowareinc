@@ -74,7 +74,7 @@ _080A783C:
 /* 080A7880 */ MOVS R3, #4
 /* 080A7882 */ LDRSH R1, [R1, R3]
 /* 080A7884 */ MOVS R2, #1
-/* 080A7886 */ BL func_080EF3BC
+/* 080A7886 */ BL sprite_set_visible
 /* 080A788A */ MOV R0, R8
 /* 080A788C */ LDR R1, [R0]
 /* 080A788E */ ADDS R2, R5, #0

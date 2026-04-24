@@ -90,7 +90,7 @@ _08041B5E:
 /* 08041BB8 */ MOVS R2, #0
 /* 08041BBA */ LDRSH R1, [R1, R2]
 /* 08041BBC */ MOVS R2, #0
-/* 08041BBE */ BL func_080EF3BC
+/* 08041BBE */ BL sprite_set_visible
 /* 08041BC2 */ LDR R0, [R5]
 /* 08041BC4 */ ADDS R0, #0X5C
 /* 08041BC6 */ MOVS R1, #1

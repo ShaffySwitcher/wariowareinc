@@ -25,7 +25,7 @@ _080594FA:
 /* 08059508 */ MOVS R2, #0
 /* 0805950A */ LDRSH R1, [R1, R2]
 /* 0805950C */ MOVS R2, #1
-/* 0805950E */ BL func_080EF3BC
+/* 0805950E */ BL sprite_set_visible
 /* 08059512 */ LDR R0, [R7]
 /* 08059514 */ LDR R1, [R6]
 /* 08059516 */ ADDS R1, #0X5E

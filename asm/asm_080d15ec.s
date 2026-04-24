@@ -45,7 +45,7 @@ _080D1626:
 /* 080D162A */ MOVS R2, #0
 /* 080D162C */ LDRSH R1, [R5, R2]
 /* 080D162E */ MOVS R2, #1
-/* 080D1630 */ BL func_080EF3BC
+/* 080D1630 */ BL sprite_set_visible
 /* 080D1634 */ LDR R0, [R4]
 /* 080D1636 */ MOVS R3, #0
 /* 080D1638 */ LDRSH R1, [R5, R3]

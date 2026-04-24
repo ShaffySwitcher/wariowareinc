@@ -66,7 +66,7 @@ _080B0204:
 /* 080B0222 */ MOVS R2, #0
 /* 080B0224 */ LDRSH R1, [R1, R2]
 /* 080B0226 */ MOVS R2, #1
-/* 080B0228 */ BL func_080EF3BC
+/* 080B0228 */ BL sprite_set_visible
 /* 080B022C */ MOVS R0, #2
 /* 080B022E */ BL func_0800BF20
 /* 080B0232 */ MOVS R0, #3
@@ -228,7 +228,7 @@ _080B0342:
 /* 080B0358 */ MOVS R3, #0
 /* 080B035A */ LDRSH R1, [R1, R3]
 /* 080B035C */ MOVS R2, #0
-/* 080B035E */ BL func_080EF3BC
+/* 080B035E */ BL sprite_set_visible
 /* 080B0362 */ MOVS R0, #2
 /* 080B0364 */ BL func_0800BF0C
 /* 080B0368 */ MOVS R0, #3

@@ -16,7 +16,7 @@ glabel func_0801A74C
 /* 0801A75E */ LDRSH R1, [R1, R2]
 /* 0801A760 */ LSLS R2, R4, #0X10
 /* 0801A762 */ LSRS R2, R2, #0X10
-/* 0801A764 */ BL func_080EF3BC
+/* 0801A764 */ BL sprite_set_visible
 /* 0801A768 */ CMP R4, #0
 /* 0801A76A */ BEQ _0801A77C
 /* 0801A76C */ BL func_0801A858

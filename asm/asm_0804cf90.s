@@ -109,7 +109,7 @@ _0804CFB8:
 /* 0804D058 */ MOVS R6, #0
 /* 0804D05A */ LDRSH R1, [R1, R6]
 /* 0804D05C */ MOVS R2, #0
-/* 0804D05E */ BL func_080EF3BC
+/* 0804D05E */ BL sprite_set_visible
 /* 0804D062 */ LDR R0, [R4]
 /* 0804D064 */ MOV R2, R8
 /* 0804D066 */ LDR R1, [R2]
@@ -119,7 +119,7 @@ _0804CFB8:
 /* 0804D06E */ MOVS R6, #0
 /* 0804D070 */ LDRSH R1, [R1, R6]
 /* 0804D072 */ MOVS R2, #0
-/* 0804D074 */ BL func_080EF3BC
+/* 0804D074 */ BL sprite_set_visible
 /* 0804D078 */ MOV R0, R8
 /* 0804D07A */ LDR R1, [R0]
 /* 0804D07C */ ADDS R3, R1, #0

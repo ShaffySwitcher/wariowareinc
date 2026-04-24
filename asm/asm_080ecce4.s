@@ -34,7 +34,7 @@ _080ECD08:
 /* 080ECD0C */ MOVS R2, #0
 /* 080ECD0E */ LDRSH R1, [R1, R2]
 /* 080ECD10 */ MOVS R2, #0
-/* 080ECD12 */ BL func_080EF3BC
+/* 080ECD12 */ BL sprite_set_visible
 /* 080ECD16 */ POP {R0}
 /* 080ECD18 */ BX R0
 

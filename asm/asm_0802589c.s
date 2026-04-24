@@ -18,7 +18,7 @@ _080258A8:
 /* 080258AE */ MOVS R2, #0
 /* 080258B0 */ LDRSH R1, [R4, R2]
 /* 080258B2 */ MOVS R2, #0
-/* 080258B4 */ BL func_080EF3BC
+/* 080258B4 */ BL sprite_set_visible
 /* 080258B8 */ LDR R0, [R6]
 /* 080258BA */ MOVS R2, #0
 /* 080258BC */ LDRSH R1, [R4, R2]

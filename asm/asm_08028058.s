@@ -102,7 +102,7 @@ _08028096:
 /* 08028116 */ MOVS R2, #0
 /* 08028118 */ LDRSH R1, [R1, R2]
 /* 0802811A */ MOVS R2, #1
-/* 0802811C */ BL func_080EF3BC
+/* 0802811C */ BL sprite_set_visible
 /* 08028120 */ LDR R0, =D_083FD46C
 /* 08028122 */ BL play_sound
 _08028126:

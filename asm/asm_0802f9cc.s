@@ -171,7 +171,7 @@ _0802FAD8:
 /* 0802FAEE */ MOVS R2, #0
 /* 0802FAF0 */ LDRSH R1, [R1, R2]
 /* 0802FAF2 */ MOVS R2, #0
-/* 0802FAF4 */ BL func_080EF3BC
+/* 0802FAF4 */ BL sprite_set_visible
 /* 0802FAF8 */ B _0802FB78
 
 .balign 4, 0
@@ -239,7 +239,7 @@ _0802FB0C:
 /* 0802FB6E */ MOVS R2, #0
 /* 0802FB70 */ LDRSH R1, [R1, R2]
 /* 0802FB72 */ MOVS R2, #0
-/* 0802FB74 */ BL func_080EF3BC
+/* 0802FB74 */ BL sprite_set_visible
 _0802FB78:
 /* 0802FB78 */ ADD SP, #0XC
 /* 0802FB7A */ POP {R3, R4}

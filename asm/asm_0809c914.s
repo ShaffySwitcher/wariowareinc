@@ -38,7 +38,7 @@ _0809C93A:
 /* 0809C94E */ LDRSH R1, [R1, R4]
 /* 0809C950 */ MOVS R2, #1
 /* 0809C952 */ STR R3, [SP, #8]
-/* 0809C954 */ BL func_080EF3BC
+/* 0809C954 */ BL sprite_set_visible
 /* 0809C958 */ LSLS R4, R5, #0X1D
 /* 0809C95A */ MOV R0, R8
 /* 0809C95C */ LDR R6, [R0]

@@ -99,7 +99,7 @@ _080D3FF0:
 /* 080D400E */ MOVS R2, #0
 /* 080D4010 */ LDRSH R1, [R4, R2]
 /* 080D4012 */ MOVS R2, #1
-/* 080D4014 */ BL func_080EF3BC
+/* 080D4014 */ BL sprite_set_visible
 /* 080D4018 */ LDRB R0, [R4, #0X18]
 /* 080D401A */ ADDS R0, #1
 /* 080D401C */ STRB R0, [R4, #0X18]

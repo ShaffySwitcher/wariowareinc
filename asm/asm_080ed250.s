@@ -42,7 +42,7 @@ _080ED292:
 /* 080ED296 */ MOVS R2, #0
 /* 080ED298 */ LDRSH R1, [R4, R2]
 /* 080ED29A */ MOVS R2, #1
-/* 080ED29C */ BL func_080EF3BC
+/* 080ED29C */ BL sprite_set_visible
 /* 080ED2A0 */ POP {R4, R5}
 /* 080ED2A2 */ POP {R0}
 /* 080ED2A4 */ BX R0

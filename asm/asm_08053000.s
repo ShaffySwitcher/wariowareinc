@@ -146,7 +146,7 @@ _080530AC:
 /* 080530FA */ MOVS R4, #0
 /* 080530FC */ LDRSH R1, [R1, R4]
 /* 080530FE */ MOVS R2, #0
-/* 08053100 */ BL func_080EF3BC
+/* 08053100 */ BL sprite_set_visible
 /* 08053104 */ B _080531E2
 
 .balign 4, 0

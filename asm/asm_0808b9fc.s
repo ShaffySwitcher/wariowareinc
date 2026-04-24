@@ -12,7 +12,7 @@ glabel func_0808B9FC
 /* 0808BA04 */ MOVS R2, #0
 /* 0808BA06 */ LDRSH R1, [R4, R2]
 /* 0808BA08 */ MOVS R2, #0
-/* 0808BA0A */ BL func_080EF3BC
+/* 0808BA0A */ BL sprite_set_visible
 /* 0808BA0E */ MOVS R0, #0
 /* 0808BA10 */ STRB R0, [R4, #0X18]
 /* 0808BA12 */ POP {R4}

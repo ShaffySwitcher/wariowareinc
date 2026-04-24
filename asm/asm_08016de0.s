@@ -7,8 +7,8 @@
 glabel func_08016DE0
 /* 08016DE0 */ PUSH {R4, LR}
 /* 08016DE2 */ BL func_08003EB0
-/* 08016DE6 */ BL func_08006A5C
-/* 08016DEA */ BL func_08003F14
+/* 08016DE6 */ BL flush_graphics_buffer
+/* 08016DEA */ BL trigger_pending_dma3
 /* 08016DEE */ LDR R4, _08016E04
 /* 08016DF0 */ LDR R0, [R4]
 /* 08016DF2 */ LDRB R0, [R0]

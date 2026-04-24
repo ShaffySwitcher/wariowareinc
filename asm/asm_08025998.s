@@ -91,7 +91,7 @@ _08025A08:
 /* 08025A3C */ MOVS R3, #0
 /* 08025A3E */ LDRSH R1, [R4, R3]
 /* 08025A40 */ MOVS R2, #1
-/* 08025A42 */ BL func_080EF3BC
+/* 08025A42 */ BL sprite_set_visible
 /* 08025A46 */ LDR R0, [R5]
 /* 08025A48 */ MOVS R2, #0
 /* 08025A4A */ LDRSH R1, [R4, R2]

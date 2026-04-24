@@ -31,7 +31,7 @@ glabel func_080EC434
 /* 080EC462 */ LDR R3, _080EC474
 /* 080EC464 */ MOV R0, SP
 /* 080EC466 */ ADDS R1, R4, #0
-/* 080EC468 */ BL func_08008174
+/* 080EC468 */ BL gameplay_check_collision
 /* 080EC46C */ CMP R0, #0
 /* 080EC46E */ BNE _080EC478
 /* 080EC470 */ MOVS R0, #0

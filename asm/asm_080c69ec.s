@@ -120,7 +120,7 @@ _080C6A74:
 /* 080C6AAE */ MOVS R2, #0
 /* 080C6AB0 */ LDRSH R1, [R1, R2]
 /* 080C6AB2 */ MOVS R2, #1
-/* 080C6AB4 */ BL func_080EF3BC
+/* 080C6AB4 */ BL sprite_set_visible
 /* 080C6AB8 */ LDR R0, [R6]
 /* 080C6ABA */ ADDS R4, #7
 /* 080C6ABC */ ADDS R1, R0, R4

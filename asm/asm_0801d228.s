@@ -82,7 +82,7 @@ _0801D28C:
 /* 0801D2AE */ MOVS R2, #2
 /* 0801D2B0 */ LDRSH R1, [R4, R2]
 /* 0801D2B2 */ MOVS R2, #0
-/* 0801D2B4 */ BL func_080EF3BC
+/* 0801D2B4 */ BL sprite_set_visible
 /* 0801D2B8 */ MOVS R0, #0
 /* 0801D2BA */ STRB R0, [R4]
 _0801D2BC:

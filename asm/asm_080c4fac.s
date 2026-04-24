@@ -100,7 +100,7 @@ _080C5034:
 /* 080C5054 */ MOVS R2, #0
 /* 080C5056 */ LDRSH R1, [R1, R2]
 /* 080C5058 */ MOVS R2, #0
-/* 080C505A */ BL func_080EF3BC
+/* 080C505A */ BL sprite_set_visible
 /* 080C505E */ B _080C512C
 
 .balign 4, 0
@@ -168,7 +168,7 @@ _080C5064:
 /* 080C50E0 */ MOVS R4, #0X28
 /* 080C50E2 */ LDRSH R1, [R7, R4]
 /* 080C50E4 */ MOVS R2, #1
-/* 080C50E6 */ BL func_080EF3BC
+/* 080C50E6 */ BL sprite_set_visible
 /* 080C50EA */ MOV R0, SL
 /* 080C50EC */ LDR R1, [R0]
 /* 080C50EE */ MOVS R2, #0X8E

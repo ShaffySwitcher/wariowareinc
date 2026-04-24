@@ -58,7 +58,7 @@ _080D58FE:
 /* 080D5932 */ MOVS R2, #0
 /* 080D5934 */ LDRSH R1, [R6, R2]
 /* 080D5936 */ MOVS R2, #1
-/* 080D5938 */ BL func_080EF3BC
+/* 080D5938 */ BL sprite_set_visible
 /* 080D593C */ LDRB R0, [R6, #0X18]
 /* 080D593E */ ADDS R0, #1
 /* 080D5940 */ STRB R0, [R6, #0X18]

@@ -54,7 +54,7 @@ _080B2A30:
 /* 080B2A3A */ MOVS R2, #0
 /* 080B2A3C */ LDRSH R1, [R1, R2]
 /* 080B2A3E */ MOVS R2, #0
-/* 080B2A40 */ BL func_080EF3BC
+/* 080B2A40 */ BL sprite_set_visible
 /* 080B2A44 */ LDR R0, [R5]
 /* 080B2A46 */ ADDS R0, R6
 /* 080B2A48 */ STRB R4, [R0]

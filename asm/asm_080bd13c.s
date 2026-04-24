@@ -155,21 +155,21 @@ _080BD24C:
 /* 080BD258 */ MOVS R2, #0
 /* 080BD25A */ LDRSH R1, [R1, R2]
 /* 080BD25C */ MOVS R2, #1
-/* 080BD25E */ BL func_080EF3BC
+/* 080BD25E */ BL sprite_set_visible
 /* 080BD262 */ LDR R0, [R4]
 /* 080BD264 */ LDR R1, [R6]
 /* 080BD266 */ ADDS R1, #0XEC
 /* 080BD268 */ MOVS R3, #0
 /* 080BD26A */ LDRSH R1, [R1, R3]
 /* 080BD26C */ MOVS R2, #1
-/* 080BD26E */ BL func_080EF3BC
+/* 080BD26E */ BL sprite_set_visible
 /* 080BD272 */ LDR R0, [R4]
 /* 080BD274 */ LDR R1, [R6]
 /* 080BD276 */ ADDS R1, #0XF6
 /* 080BD278 */ MOVS R2, #0
 /* 080BD27A */ LDRSH R1, [R1, R2]
 /* 080BD27C */ MOVS R2, #1
-/* 080BD27E */ BL func_080EF3BC
+/* 080BD27E */ BL sprite_set_visible
 /* 080BD282 */ LDR R0, =D_083FF230
 /* 080BD284 */ BL play_sound
 /* 080BD288 */ LDR R1, [R6]

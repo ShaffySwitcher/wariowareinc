@@ -48,7 +48,7 @@ _080ED940:
 /* 080ED946 */ MOVS R3, #0
 /* 080ED948 */ LDRSH R1, [R1, R3]
 /* 080ED94A */ MOVS R2, #0
-/* 080ED94C */ BL func_080EF3BC
+/* 080ED94C */ BL sprite_set_visible
 /* 080ED950 */ LDR R0, [R4]
 /* 080ED952 */ LDR R2, [R5]
 /* 080ED954 */ ADDS R1, R2, #0
@@ -60,7 +60,7 @@ _080ED940:
 /* 080ED960 */ MOVS R3, #0
 /* 080ED962 */ LDRSH R1, [R2, R3]
 /* 080ED964 */ MOVS R2, #1
-/* 080ED966 */ BL func_080EF3BC
+/* 080ED966 */ BL sprite_set_visible
 /* 080ED96A */ LDR R0, [R4]
 /* 080ED96C */ LDR R4, [R5]
 /* 080ED96E */ ADDS R1, R4, #0

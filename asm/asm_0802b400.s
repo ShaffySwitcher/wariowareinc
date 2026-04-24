@@ -95,7 +95,7 @@ _0802B486:
 /* 0802B4A0 */ MOVS R2, #0
 /* 0802B4A2 */ LDRSH R1, [R3, R2]
 /* 0802B4A4 */ MOVS R2, #1
-/* 0802B4A6 */ BL func_080EF3BC
+/* 0802B4A6 */ BL sprite_set_visible
 /* 0802B4AA */ LDR R0, =D_083FD304
 /* 0802B4AC */ BL play_sound
 /* 0802B4B0 */ MOVS R0, #0X18

@@ -106,7 +106,7 @@ _080A9580:
 /* 080A960C */ LDR R0, [R4]
 /* 080A960E */ ADDS R1, R5, #0
 /* 080A9610 */ MOVS R2, #1
-/* 080A9612 */ BL func_080EF3BC
+/* 080A9612 */ BL sprite_set_visible
 _080A9616:
 /* 080A9616 */ ADD SP, #0X10
 /* 080A9618 */ POP {R3, R4, R5}

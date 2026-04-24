@@ -142,7 +142,7 @@ _08038BA0:
 /* 08038BF4 */ MOVS R2, #0
 /* 08038BF6 */ LDRSH R1, [R1, R2]
 /* 08038BF8 */ MOVS R2, #1
-/* 08038BFA */ BL func_080EF3BC
+/* 08038BFA */ BL sprite_set_visible
 _08038BFE:
 /* 08038BFE */ POP {R4, R5}
 /* 08038C00 */ POP {R0}

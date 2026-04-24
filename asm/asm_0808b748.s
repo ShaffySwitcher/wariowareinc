@@ -81,7 +81,7 @@ _0808B76E:
 /* 0808B7DA */ MOVS R5, #0
 /* 0808B7DC */ LDRSH R1, [R4, R5]
 /* 0808B7DE */ MOVS R2, #1
-/* 0808B7E0 */ BL func_080EF3BC
+/* 0808B7E0 */ BL sprite_set_visible
 /* 0808B7E4 */ B _0808B818
 
 .balign 4, 0

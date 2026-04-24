@@ -21,7 +21,7 @@ glabel func_0800E6F8
 /* 0800E712 */ LSLS R1, R1, #0X10
 /* 0800E714 */ ASRS R1, R1, #0X10
 /* 0800E716 */ MOVS R2, #0
-/* 0800E718 */ BL func_080EF3BC
+/* 0800E718 */ BL sprite_set_visible
 /* 0800E71C */ B _0800E750
 
 .balign 4, 0
@@ -49,7 +49,7 @@ _0800E728:
 /* 0800E746 */ LDR R0, [R5]
 /* 0800E748 */ ADDS R1, R4, #0
 /* 0800E74A */ MOVS R2, #1
-/* 0800E74C */ BL func_080EF3BC
+/* 0800E74C */ BL sprite_set_visible
 _0800E750:
 /* 0800E750 */ POP {R4, R5, R6}
 /* 0800E752 */ POP {R0}

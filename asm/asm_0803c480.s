@@ -115,7 +115,7 @@ _0803C512:
 /* 0803C54A */ MOVS R3, #0
 /* 0803C54C */ LDRSH R1, [R1, R3]
 /* 0803C54E */ MOVS R2, #1
-/* 0803C550 */ BL func_080EF3BC
+/* 0803C550 */ BL sprite_set_visible
 /* 0803C554 */ LDR R0, [R5]
 /* 0803C556 */ LDR R3, [R6]
 /* 0803C558 */ ADDS R1, R3, #0

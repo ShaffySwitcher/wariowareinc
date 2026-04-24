@@ -204,7 +204,7 @@ _08076E04:
 /* 08076E36 */ MOVS R4, #0
 /* 08076E38 */ LDRSH R1, [R1, R4]
 /* 08076E3A */ MOVS R2, #1
-/* 08076E3C */ BL func_080EF3BC
+/* 08076E3C */ BL sprite_set_visible
 /* 08076E40 */ LDR R1, [R6]
 /* 08076E42 */ MOVS R0, #0
 /* 08076E44 */ STRH R0, [R1, #0X32]

@@ -18,7 +18,7 @@ glabel func_080B1AFC
 /* 080B1B10 */ MOVS R3, #0
 /* 080B1B12 */ LDRSH R1, [R2, R3]
 /* 080B1B14 */ MOVS R2, #0
-/* 080B1B16 */ BL func_080EF3BC
+/* 080B1B16 */ BL sprite_set_visible
 /* 080B1B1A */ B _080B1B2E
 
 .balign 4, 0
@@ -30,7 +30,7 @@ _080B1B20:
 /* 080B1B24 */ MOVS R3, #0
 /* 080B1B26 */ LDRSH R1, [R2, R3]
 /* 080B1B28 */ MOVS R2, #1
-/* 080B1B2A */ BL func_080EF3BC
+/* 080B1B2A */ BL sprite_set_visible
 _080B1B2E:
 /* 080B1B2E */ POP {R0}
 /* 080B1B30 */ BX R0

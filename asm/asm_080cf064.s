@@ -81,12 +81,12 @@ _080CF088:
 /* 080CF0FA */ MOVS R2, #4
 /* 080CF0FC */ LDRSH R1, [R4, R2]
 /* 080CF0FE */ MOVS R2, #0
-/* 080CF100 */ BL func_080EF3BC
+/* 080CF100 */ BL sprite_set_visible
 /* 080CF104 */ LDR R0, [R5]
 /* 080CF106 */ MOVS R3, #6
 /* 080CF108 */ LDRSH R1, [R4, R3]
 /* 080CF10A */ MOVS R2, #0
-/* 080CF10C */ BL func_080EF3BC
+/* 080CF10C */ BL sprite_set_visible
 /* 080CF110 */ STR R7, [R4, #0X24]
 /* 080CF112 */ B _080CF16E
 

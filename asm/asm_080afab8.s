@@ -63,7 +63,7 @@ _080AFADE:
 /* 080AFB28 */ MOVS R4, #0
 /* 080AFB2A */ LDRSH R1, [R7, R4]
 /* 080AFB2C */ MOVS R2, #1
-/* 080AFB2E */ BL func_080EF3BC
+/* 080AFB2E */ BL sprite_set_visible
 /* 080AFB32 */ MOV R1, SB
 /* 080AFB34 */ LSLS R0, R1, #2
 /* 080AFB36 */ ADD R0, SP

@@ -125,7 +125,7 @@ _0802A338:
 /* 0802A3FC */ LDR R0, [R3]
 /* 0802A3FE */ ADDS R1, R6, #0
 /* 0802A400 */ MOVS R2, #1
-/* 0802A402 */ BL func_080EF3BC
+/* 0802A402 */ BL sprite_set_visible
 /* 0802A406 */ LDR R4, [SP, #4]
 /* 0802A408 */ ADDS R4, #1
 /* 0802A40A */ STR R4, [SP, #4]

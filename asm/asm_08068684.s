@@ -32,7 +32,7 @@ _080686A6:
 /* 080686AE */ MOVS R2, #0
 /* 080686B0 */ LDRSH R1, [R1, R2]
 /* 080686B2 */ MOVS R2, #0
-/* 080686B4 */ BL func_080EF3BC
+/* 080686B4 */ BL sprite_set_visible
 /* 080686B8 */ LDR R1, [R6]
 /* 080686BA */ ADDS R0, R1, #0
 /* 080686BC */ ADDS R0, #0X4C
@@ -44,7 +44,7 @@ _080686A6:
 /* 080686C8 */ MOVS R2, #0
 /* 080686CA */ LDRSH R1, [R1, R2]
 /* 080686CC */ MOVS R2, #1
-/* 080686CE */ BL func_080EF3BC
+/* 080686CE */ BL sprite_set_visible
 /* 080686D2 */ LDR R0, [R6]
 /* 080686D4 */ STRB R4, [R0, #0XF]
 /* 080686D6 */ LDR R1, [R6]

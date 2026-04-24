@@ -43,7 +43,7 @@ _080B38C8:
 /* 080B38D6 */ MOVS R2, #0
 /* 080B38D8 */ LDRSH R1, [R4, R2]
 /* 080B38DA */ MOVS R2, #1
-/* 080B38DC */ BL func_080EF3BC
+/* 080B38DC */ BL sprite_set_visible
 /* 080B38E0 */ POP {R4}
 /* 080B38E2 */ POP {R0}
 /* 080B38E4 */ BX R0

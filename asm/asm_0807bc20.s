@@ -111,7 +111,7 @@ _0807BC88:
 /* 0807BCE8 */ MOVS R2, #0
 /* 0807BCEA */ LDRSH R1, [R4, R2]
 /* 0807BCEC */ MOVS R2, #1
-/* 0807BCEE */ BL func_080EF3BC
+/* 0807BCEE */ BL sprite_set_visible
 /* 0807BCF2 */ LDR R0, [SP]
 /* 0807BCF4 */ ADDS R0, #1
 /* 0807BCF6 */ STR R0, [SP]
