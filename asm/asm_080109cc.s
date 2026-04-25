@@ -7,7 +7,7 @@
 glabel func_080109CC
 /* 080109CC */ PUSH {LR}
 /* 080109CE */ MOVS R0, #0
-/* 080109D0 */ BL func_08009D24
+/* 080109D0 */ BL set_pause_beatscript_scene
 /* 080109D4 */ LDR R0, =gCurrentSceneData
 /* 080109D6 */ LDR R1, [R0]
 /* 080109D8 */ ADDS R1, #0XDF

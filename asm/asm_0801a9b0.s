@@ -59,7 +59,7 @@ glabel func_0801A9B0
 /* 0801AA20 */ ADDS R2, R3
 /* 0801AA22 */ MOVS R3, #0X14
 /* 0801AA24 */ LDRSH R2, [R2, R3]
-/* 0801AA26 */ BL func_0800596C
+/* 0801AA26 */ BL run_func_after_task
 _0801AA2A:
 /* 0801AA2A */ ADD SP, #4
 /* 0801AA2C */ POP {R4, R5, R6, R7}

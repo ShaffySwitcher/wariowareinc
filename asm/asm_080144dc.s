@@ -39,7 +39,7 @@ glabel func_080144DC
 /* 0801451E */ BL func_080079A4
 /* 08014522 */ LDR R1, _08014558
 /* 08014524 */ MOVS R2, #0
-/* 08014526 */ BL func_0800596C
+/* 08014526 */ BL run_func_after_task
 /* 0801452A */ LDR R0, _0801455C
 /* 0801452C */ LDR R1, [R0]
 /* 0801452E */ ADDS R1, #0XDE

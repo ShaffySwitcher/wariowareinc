@@ -6,9 +6,9 @@
 .thumb_func
 glabel func_08017040
 /* 08017040 */ PUSH {LR}
-/* 08017042 */ LDR R1, =func_08009D24 + 1
+/* 08017042 */ LDR R1, =set_pause_beatscript_scene + 1
 /* 08017044 */ MOVS R2, #0
-/* 08017046 */ BL func_0800596C
+/* 08017046 */ BL run_func_after_task
 /* 0801704A */ POP {R0}
 /* 0801704C */ BX R0
 

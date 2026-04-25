@@ -126,7 +126,7 @@ _080D6296:
 /* 080D62DA */ BL func_0800C218
 /* 080D62DE */ LDR R1, _080D62F4
 /* 080D62E0 */ ADDS R2, R5, #0
-/* 080D62E2 */ BL func_0800596C
+/* 080D62E2 */ BL run_func_after_task
 /* 080D62E6 */ B _080D649C
 
 .balign 4, 0

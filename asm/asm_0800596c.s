@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_0800596C
+glabel run_func_after_task
 .thumb_func
 /* 0800596C */ PUSH {R4, R5, R6, R7, LR}
 /* 0800596E */ ADDS R4, R0, #0

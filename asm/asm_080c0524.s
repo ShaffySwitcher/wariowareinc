@@ -62,7 +62,7 @@ glabel func_080C0524
 /* 080C0596 */ BL func_0800C5A0
 /* 080C059A */ LDR R1, _080C05BC
 /* 080C059C */ MOVS R2, #0
-/* 080C059E */ BL func_0800596C
+/* 080C059E */ BL run_func_after_task
 /* 080C05A2 */ LDR R0, [R6]
 /* 080C05A4 */ STR R7, [R0, #0X4C]
 /* 080C05A6 */ LDR R0, =D_083FD64C

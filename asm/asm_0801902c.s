@@ -64,9 +64,9 @@ glabel func_0801902C
 /* 080190A2 */ ADDS R1, R4, #0
 /* 080190A4 */ MOVS R2, #4
 /* 080190A6 */ BL start_pal_interp_pal_col_task
-/* 080190AA */ LDR R1, =func_08009D24 + 1
+/* 080190AA */ LDR R1, =set_pause_beatscript_scene + 1
 /* 080190AC */ MOVS R2, #0
-/* 080190AE */ BL func_0800596C
+/* 080190AE */ BL run_func_after_task
 /* 080190B2 */ ADD SP, #8
 /* 080190B4 */ POP {R3, R4, R5}
 /* 080190B6 */ MOV R8, R3

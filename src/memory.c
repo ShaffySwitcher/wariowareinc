@@ -4,7 +4,7 @@ asm(".include \"include/gba.inc\"");
 
 void fill_memory_dma(u8 value) {
     s32 pattern = (value << 8) | value;
-    dma3_fill(pattern | (pattern << 0x10), &D_03003860, 0x35C, 0x20, 0x100);
+    dma3_fill(pattern | (pattern << 0x10), gCurrentSceneDataRam, 0x35C, 0x20, 0x100);
 }
 
 u32 calc_checksum(const void *data, u32 size) {

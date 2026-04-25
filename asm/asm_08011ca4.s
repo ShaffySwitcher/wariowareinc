@@ -41,7 +41,7 @@ glabel func_08011CA4
 /* 08011CE8 */ BL func_0800C110
 /* 08011CEC */ LDR R1, =func_080119EC + 1
 /* 08011CEE */ MOVS R2, #0
-/* 08011CF0 */ BL func_0800596C
+/* 08011CF0 */ BL run_func_after_task
 /* 08011CF4 */ ADD SP, #8
 /* 08011CF6 */ POP {R4, R5, R6}
 /* 08011CF8 */ POP {R0}

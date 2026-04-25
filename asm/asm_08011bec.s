@@ -40,7 +40,7 @@ glabel func_08011BEC
 /* 08011C2C */ BL func_0800C110
 /* 08011C30 */ LDR R1, _08011C48
 /* 08011C32 */ MOVS R2, #0
-/* 08011C34 */ BL func_0800596C
+/* 08011C34 */ BL run_func_after_task
 /* 08011C38 */ B _08011C8A
 
 .balign 4, 0
@@ -87,7 +87,7 @@ _08011C4C:
 /* 08011C7E */ BL func_0800C110
 /* 08011C82 */ LDR R1, =func_080119EC + 1
 /* 08011C84 */ MOVS R2, #0
-/* 08011C86 */ BL func_0800596C
+/* 08011C86 */ BL run_func_after_task
 _08011C8A:
 /* 08011C8A */ ADD SP, #8
 /* 08011C8C */ POP {R4, R5}

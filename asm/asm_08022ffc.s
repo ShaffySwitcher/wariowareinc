@@ -90,7 +90,7 @@ _08023090:
 /* 08023090 */ .word D_03003854
 _08023094:
 /* 08023094 */ MOVS R0, #0
-/* 08023096 */ BL func_08009D24
+/* 08023096 */ BL set_pause_beatscript_scene
 /* 0802309A */ LDR R1, [R4]
 /* 0802309C */ MOVS R0, #2
 /* 0802309E */ STRB R0, [R1, #0X1B]
@@ -128,7 +128,7 @@ _080230C8:
 /* 080230DC */ MOVS R0, #0
 /* 080230DE */ BL func_08009FB0
 /* 080230E2 */ MOVS R0, #0
-/* 080230E4 */ BL func_08009D24
+/* 080230E4 */ BL set_pause_beatscript_scene
 /* 080230E8 */ LDR R0, _08023108
 /* 080230EA */ LDR R0, [R0]
 /* 080230EC */ LDR R1, _0802310C

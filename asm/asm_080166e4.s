@@ -10,10 +10,10 @@ glabel func_080166E4
 /* 080166EA */ LSLS R0, R0, #0X10
 /* 080166EC */ LSRS R0, R0, #0X10
 /* 080166EE */ LDR R1, _08016700
-/* 080166F0 */ BL func_08008038
-/* 080166F4 */ LDR R1, =func_08009D24 + 1
+/* 080166F0 */ BL start_new_texture_loader
+/* 080166F4 */ LDR R1, =set_pause_beatscript_scene + 1
 /* 080166F6 */ MOVS R2, #0
-/* 080166F8 */ BL func_0800596C
+/* 080166F8 */ BL run_func_after_task
 /* 080166FC */ POP {R0}
 /* 080166FE */ BX R0
 

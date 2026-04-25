@@ -62,7 +62,7 @@ _080A56E0:
 /* 080A571A */ ADDS R4, R0, #0
 /* 080A571C */ LDR R1, _080A5754
 /* 080A571E */ MOVS R2, #0
-/* 080A5720 */ BL func_0800596C
+/* 080A5720 */ BL run_func_after_task
 /* 080A5724 */ LDR R1, [R6]
 /* 080A5726 */ STR R4, [R1, #4]
 /* 080A5728 */ MOVS R0, #1

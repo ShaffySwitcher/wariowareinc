@@ -34,7 +34,7 @@ glabel func_080147B0
 /* 080147E8 */ ANDS R0, R2
 /* 080147EA */ STRB R0, [R1]
 /* 080147EC */ MOVS R0, #0
-/* 080147EE */ BL func_08009D24
+/* 080147EE */ BL set_pause_beatscript_scene
 /* 080147F2 */ B _08014808
 
 .balign 4, 0

@@ -47,7 +47,7 @@ _080D2D8A:
 /* 080D2DB4 */ LDRSH R0, [R1, R2]
 /* 080D2DB6 */ LDR R1, _080D2DD8
 /* 080D2DB8 */ MOVS R2, #0
-/* 080D2DBA */ BL func_0800596C
+/* 080D2DBA */ BL run_func_after_task
 /* 080D2DBE */ ADD SP, #8
 /* 080D2DC0 */ POP {R4}
 /* 080D2DC2 */ POP {R0}

@@ -33,7 +33,7 @@ _080A7F84:
 /* 080A7F8A */ BL start_load_gfx_table_task
 /* 080A7F8E */ LDR R1, _080A7FE4
 /* 080A7F90 */ MOVS R2, #0
-/* 080A7F92 */ BL func_0800596C
+/* 080A7F92 */ BL run_func_after_task
 /* 080A7F96 */ LDR R1, [R4]
 /* 080A7F98 */ MOVS R0, #0X63
 /* 080A7F9A */ STRB R0, [R1]

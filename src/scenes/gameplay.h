@@ -42,25 +42,6 @@ extern u16 D_0300363C;
 
 extern struct GameplayData_struct_0* D_03003628;
 
-struct Unk03004890_struct_28 {
-    u8 unk0_1 : 1;
-    u8 unk0_2 : 7;
-    u8 pad1[152];
-};
-
-struct Unk03004890 {
-    u8 pad[0x4];                             // 0x0 size:0x4
-    struct SoundPlayer* unk4;                // 0x4 size:0x4
-    u16 unk8;                                // 0x8 size:0x2
-    u16 unka;                                // 0xA size:0x2
-    u8 padc[0x12];                           // 0xC size:0x12
-    s16 unk1e;                               // 0x1E size:0x2
-    u8 pad20[8];                             // 0x20 size:0x8
-    struct Unk03004890_struct_28 unk28[2];   // 0x28 size:0x8
-};
-
-extern struct Unk03004890 D_03004890;
-
 struct Unk083A4B58 {
     u8 pad[2];
     u16 unk2;
@@ -186,8 +167,6 @@ struct GameplayScriptCmd {
     u32 opcode;
     union FreeType arg;
 };
-
-#define gGameplayData (*(struct GameplayData *)gCurrentSceneData)
 
 extern u32 func_08003FB8(void);
 extern void func_08008134(void);

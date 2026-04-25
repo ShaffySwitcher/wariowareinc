@@ -30,7 +30,7 @@ glabel func_080140C0
 /* 080140F0 */ BL start_load_gfx_table_task
 /* 080140F4 */ LDR R1, _080141A8
 /* 080140F6 */ MOVS R2, #0
-/* 080140F8 */ BL func_0800596C
+/* 080140F8 */ BL run_func_after_task
 /* 080140FC */ LDR R0, _080141AC
 /* 080140FE */ MOV SB, R0
 /* 08014100 */ LDR R1, [R0]
@@ -92,7 +92,7 @@ glabel func_080140C0
 /* 08014176 */ BL func_08004C94
 /* 0801417A */ LDR R1, =func_08013F18 + 1
 /* 0801417C */ MOVS R2, #0
-/* 0801417E */ BL func_0800596C
+/* 0801417E */ BL run_func_after_task
 /* 08014182 */ MOV R0, SB
 /* 08014184 */ LDR R1, [R0]
 /* 08014186 */ ADDS R1, #0XDE

@@ -25,7 +25,7 @@ glabel func_080116D4
 /* 080116F6 */ CMP R0, #0
 /* 080116F8 */ BEQ _08011700
 /* 080116FA */ MOVS R0, #1
-/* 080116FC */ BL func_08009D24
+/* 080116FC */ BL set_pause_beatscript_scene
 _08011700:
 /* 08011700 */ POP {R0}
 /* 08011702 */ BX R0

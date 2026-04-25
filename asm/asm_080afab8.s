@@ -85,7 +85,7 @@ _080AFADE:
 /* 080AFB56 */ BL func_0800C2E4
 /* 080AFB5A */ LDR R1, =func_080AFB98
 /* 080AFB5C */ ADDS R2, R7, #0
-/* 080AFB5E */ BL func_0800596C
+/* 080AFB5E */ BL run_func_after_task
 /* 080AFB62 */ MOVS R0, #1
 /* 080AFB64 */ ADD SB, R0
 /* 080AFB66 */ CMP SB, SL

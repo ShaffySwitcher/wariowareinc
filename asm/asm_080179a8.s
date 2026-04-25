@@ -16,7 +16,7 @@ glabel func_080179A8
 /* 080179BA */ CMP R0, #0XFF
 /* 080179BC */ BEQ _080179C4
 /* 080179BE */ MOVS R0, #0
-/* 080179C0 */ BL func_08009D24
+/* 080179C0 */ BL set_pause_beatscript_scene
 _080179C4:
 /* 080179C4 */ MOVS R0, #0X10
 /* 080179C6 */ BL get_random_range

@@ -86,7 +86,7 @@ _080C6796:
 /* 080C6804 */ STR R0, [R1]
 /* 080C6806 */ LDR R1, _080C6890
 /* 080C6808 */ ADDS R2, R7, #0
-/* 080C680A */ BL func_0800596C
+/* 080C680A */ BL run_func_after_task
 /* 080C680E */ LDR R4, =gSpriteHandler
 /* 080C6810 */ LDR R0, [R4]
 /* 080C6812 */ MOV R2, R8

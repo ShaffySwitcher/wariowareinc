@@ -17,7 +17,7 @@ glabel func_08010B9C
 /* 08010BB2 */ BL start_load_gfx_table_task
 /* 08010BB6 */ LDR R1, _08010BD8
 /* 08010BB8 */ MOVS R2, #0
-/* 08010BBA */ BL func_0800596C
+/* 08010BBA */ BL run_func_after_task
 /* 08010BBE */ BL func_08010A18
 /* 08010BC2 */ LDR R0, =gCurrentSceneData
 /* 08010BC4 */ LDR R1, [R0]

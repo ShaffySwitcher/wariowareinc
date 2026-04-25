@@ -29,7 +29,7 @@ glabel func_0808E2E0
 /* 0808E30E */ LDR R1, =func_0808E2C4 + 1
 /* 0808E310 */ ADDS R0, R5, #0
 /* 0808E312 */ ADDS R2, R4, #0
-/* 0808E314 */ BL func_0800596C
+/* 0808E314 */ BL run_func_after_task
 /* 0808E318 */ POP {R4, R5}
 /* 0808E31A */ POP {R0}
 /* 0808E31C */ BX R0

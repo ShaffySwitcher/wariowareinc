@@ -190,7 +190,7 @@ _080DD29A:
 /* 080DD2DE */ BL func_0800C15C
 /* 080DD2E2 */ LDR R1, _080DD318
 /* 080DD2E4 */ MOVS R2, #0
-/* 080DD2E6 */ BL func_0800596C
+/* 080DD2E6 */ BL run_func_after_task
 /* 080DD2EA */ LDR R0, =D_083FC788
 /* 080DD2EC */ BL play_sound
 _080DD2F0:

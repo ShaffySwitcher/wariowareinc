@@ -40,3 +40,7 @@ struct GraphicsTable title_gfx_table[] = {
     },
     END_OF_GRAPHICS_TABLE
 };
+
+struct CompressedData *title_buffered_textures[] = {
+    END_OF_BUFFERED_TEXTURES_LIST
+};

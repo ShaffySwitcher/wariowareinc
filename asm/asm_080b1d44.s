@@ -122,7 +122,7 @@ _080B1E1C:
 /* 080B1E30 */ STR R0, [R4, #0X18]
 /* 080B1E32 */ LDR R1, _080B1E3C
 /* 080B1E34 */ ADDS R2, R4, #0
-/* 080B1E36 */ BL func_0800596C
+/* 080B1E36 */ BL run_func_after_task
 /* 080B1E3A */ B _080B1E50
 
 .balign 4, 0

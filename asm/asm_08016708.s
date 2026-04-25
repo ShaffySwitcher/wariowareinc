@@ -15,7 +15,7 @@ glabel func_08016708
 /* 08016718 */ BL start_load_gfx_table_task
 /* 0801671C */ LDR R1, =func_080166E4 + 1
 /* 0801671E */ MOVS R2, #0
-/* 08016720 */ BL func_0800596C
+/* 08016720 */ BL run_func_after_task
 /* 08016724 */ POP {R0}
 /* 08016726 */ BX R0
 

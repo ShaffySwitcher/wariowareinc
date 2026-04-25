@@ -45,7 +45,7 @@ glabel func_080C3BD8
 /* 080C3C22 */ BL func_0800C5A0
 /* 080C3C26 */ LDR R1, _080C3C58
 /* 080C3C28 */ MOVS R2, #0
-/* 080C3C2A */ BL func_0800596C
+/* 080C3C2A */ BL run_func_after_task
 /* 080C3C2E */ LDR R5, =gSpriteHandler
 /* 080C3C30 */ LDR R0, [R5]
 /* 080C3C32 */ MOVS R2, #0

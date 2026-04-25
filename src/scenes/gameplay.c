@@ -5,6 +5,8 @@
 #include "src/code_08000f10.h"
 #include "src/lib_sprite.h"
 
+#define gGameplayData CURRENT_SCENE_DATA(struct GameplayData)
+
 asm(".include \"include/gba.inc\"");
 
 extern u8 D_03005758[];
@@ -86,8 +88,6 @@ u32 gameplay_check_collision(struct Vector2 *positionA, struct Rect *hitboxA,
 
     return TRUE;
 }
-
-void* gCurrentSceneData = &D_03003860;
 
 void gameplay_init_scene(void) {
     func_08006A04();
@@ -248,7 +248,7 @@ u32 gameplay_update_scene(void) {
             break;
         case GAMEPLAY_STATE_EXITING:
             if (gGraphicsBuffer.unk854 & 8) {
-                stop_soundplayer(D_03004890.unk4);
+                stop_soundplayer(D_03004890.musicPlayer);
                 func_08005914(0);
                 func_08009D4C();
                 return 2;
@@ -357,7 +357,7 @@ void gameplay_stage_init(void) {
     struct GameplayData_struct_0* unk0 = gGameplayData.unk0; 
     struct GameplayStageInfo* unk4 = unk0->unk4;
 
-    D_03004890.unk8 = 0x8C;
+    D_03004890.musicBaseBPM = 140;
     gGameplayData.unk1A = unk0->unk0;
     func_08009E20(unk0->unk0);
     gGameplayData.unk280 = 0x12C;
@@ -371,7 +371,7 @@ void gameplay_stage_init(void) {
     func_0800A200(0);
     for (i = 0; i < 2; i++) {
         args[i] = 0;
-        D_03004890.unk28[i].unk0_1 = 0;
+        D_03004890.threads[i].active = 0;
     }
     gGraphicsBuffer.unkE = 0;
     gGraphicsBuffer.unkC = 0;
@@ -492,12 +492,12 @@ u32 gameplay_run_script(void) {
                 if ((gPressedKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) != 0) {
                     gGraphicsBuffer.DISPCNT = 0;
                     gGraphicsBuffer.bgPalette[0][0] = 0;
-                    if (D_03004890.unk4 != 0) {
-                        stop_soundplayer(D_03004890.unk4);
+                    if (D_03004890.musicPlayer != 0) {
+                        stop_soundplayer(D_03004890.musicPlayer);
                     }
                     scriptState->unk8 = D_083A4BE4;
                     scriptState->unkC = 1;
-                    func_08009D24(0);
+                    set_pause_beatscript_scene(0);
                     gGameplayData.unk6_7 = TRUE;
                     func_0800CE6C();
                     stop_all_soundplayers();
@@ -620,7 +620,7 @@ u32 gameplay_run_script(void) {
                     gGameplayData.unk5_4 = FALSE;
                     gGameplayData.unk70 = 0;
                     gGameplayData.unk6c = value.u32ptr;
-                    gGameplayData.unk18 = D_03004890.unka;
+                    gGameplayData.unk18 = D_03004890.scriptBaseBPM;
                     func_08008B50();
                     func_08008E1C();
                     return 0;
@@ -728,7 +728,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 24:
-                    value.u32 += D_03004890.unka;
+                    value.u32 += D_03004890.scriptBaseBPM;
                     if (value.u32 > gGameplayData.unk280) {
                         value.u32 = gGameplayData.unk280;
                     }
@@ -748,7 +748,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 31:
-                    value.u32 += D_03004890.unk1e;
+                    value.u32 += D_03004890.musicPitchSrc1;
                     if (value.u32 > gGameplayData.unk284) {
                         value.u32 = gGameplayData.unk284;
                     }

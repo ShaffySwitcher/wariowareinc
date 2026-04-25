@@ -32,7 +32,7 @@ glabel func_080D2DDC
 /* 080D2E0E */ LDRSH R0, [R1, R2]
 /* 080D2E10 */ LDR R1, =func_080D2D64 + 1
 /* 080D2E12 */ MOVS R2, #0
-/* 080D2E14 */ BL func_0800596C
+/* 080D2E14 */ BL run_func_after_task
 /* 080D2E18 */ ADD SP, #8
 /* 080D2E1A */ POP {R4}
 /* 080D2E1C */ POP {R0}

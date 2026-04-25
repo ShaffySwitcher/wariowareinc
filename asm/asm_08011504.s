@@ -33,7 +33,7 @@ glabel func_08011504
 /* 08011538 */ ADDS R4, R0, #0
 /* 0801153A */ ADDS R1, R6, #0
 /* 0801153C */ MOV R2, R8
-/* 0801153E */ BL func_0800596C
+/* 0801153E */ BL run_func_after_task
 /* 08011542 */ LDR R3, =gCurrentSceneData
 /* 08011544 */ LDR R1, [R3]
 /* 08011546 */ ADDS R1, #0XDD

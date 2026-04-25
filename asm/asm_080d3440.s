@@ -55,7 +55,7 @@ glabel func_080D3440
 /* 080D34A2 */ BL func_0800C5A0
 /* 080D34A6 */ LDR R1, =func_080D33BC + 1
 /* 080D34A8 */ ADDS R2, R6, #0
-/* 080D34AA */ BL func_0800596C
+/* 080D34AA */ BL run_func_after_task
 /* 080D34AE */ ADD SP, #0XC
 /* 080D34B0 */ POP {R3}
 /* 080D34B2 */ MOV R8, R3

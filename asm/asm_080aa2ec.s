@@ -38,7 +38,7 @@ _080AA314:
 /* 080AA32C */ LSLS R4, R4, #0X10
 /* 080AA32E */ ASRS R4, R4, #0X10
 /* 080AA330 */ ADDS R2, R4, #0
-/* 080AA332 */ BL func_0800596C
+/* 080AA332 */ BL run_func_after_task
 /* 080AA336 */ LDR R5, =gSpriteHandler
 /* 080AA338 */ LDR R0, [R5]
 /* 080AA33A */ ADDS R1, R4, #0

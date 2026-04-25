@@ -87,7 +87,7 @@ _0808BB12:
 /* 0808BB98 */ STR R2, [R7, #0XC]
 /* 0808BB9A */ LDR R1, _0808BBB8
 /* 0808BB9C */ ADDS R2, R7, #0
-/* 0808BB9E */ BL func_0800596C
+/* 0808BB9E */ BL run_func_after_task
 /* 0808BBA2 */ B _0808BBD2
 
 .balign 4, 0

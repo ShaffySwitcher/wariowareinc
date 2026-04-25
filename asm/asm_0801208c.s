@@ -87,7 +87,7 @@ _080120EC:
 /* 08012124 */ ANDS R0, R2
 /* 08012126 */ STR R0, [R1]
 /* 08012128 */ MOVS R0, #0
-/* 0801212A */ BL func_08009D24
+/* 0801212A */ BL set_pause_beatscript_scene
 /* 0801212E */ B _08012144
 
 .balign 4, 0

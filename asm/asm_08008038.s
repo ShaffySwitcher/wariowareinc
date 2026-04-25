@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08008038
+glabel start_new_texture_loader
 .thumb_func
 /* 08008038 */ PUSH {LR}
 /* 0800803A */ SUB SP, #4

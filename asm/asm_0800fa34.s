@@ -50,7 +50,7 @@ glabel func_0800FA34
 /* 0800FA94 */ ORRS R0, R1
 /* 0800FA96 */ STRB R0, [R2]
 /* 0800FA98 */ MOVS R0, #0
-/* 0800FA9A */ BL func_08009D24
+/* 0800FA9A */ BL set_pause_beatscript_scene
 _0800FA9E:
 /* 0800FA9E */ LDR R1, [R4]
 /* 0800FAA0 */ ADDS R0, R1, R5
@@ -67,7 +67,7 @@ _0800FA9E:
 /* 0800FAB6 */ ORRS R0, R1
 /* 0800FAB8 */ STRB R0, [R2]
 /* 0800FABA */ MOVS R0, #0
-/* 0800FABC */ BL func_08009D24
+/* 0800FABC */ BL set_pause_beatscript_scene
 _0800FAC0:
 /* 0800FAC0 */ POP {R4, R5}
 /* 0800FAC2 */ POP {R0}

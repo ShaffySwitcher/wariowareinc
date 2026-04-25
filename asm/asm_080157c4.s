@@ -146,7 +146,7 @@ _08015878:
 /* 080158BA */ MOVS R0, #2
 /* 080158BC */ STRH R0, [R5, #0X38]
 /* 080158BE */ MOVS R0, #0
-/* 080158C0 */ BL func_08009D24
+/* 080158C0 */ BL set_pause_beatscript_scene
 /* 080158C4 */ LDR R0, [R6]
 /* 080158C6 */ STRB R4, [R0, #8]
 /* 080158C8 */ LDR R0, _080158E0

@@ -14,7 +14,7 @@ glabel func_08014490
 /* 0801449E */ MOVS R0, #1
 /* 080144A0 */ STRH R0, [R1, #0X38]
 /* 080144A2 */ MOVS R0, #0
-/* 080144A4 */ BL func_08009D24
+/* 080144A4 */ BL set_pause_beatscript_scene
 /* 080144A8 */ LDR R0, [R4]
 /* 080144AA */ STRB R5, [R0, #8]
 /* 080144AC */ MOVS R0, #0

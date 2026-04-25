@@ -35,7 +35,7 @@ glabel func_08025020
 /* 0802505A */ BL start_pal_interp_pal_col_task
 /* 0802505E */ LDR R1, _08025088
 /* 08025060 */ MOVS R2, #0
-/* 08025062 */ BL func_0800596C
+/* 08025062 */ BL run_func_after_task
 /* 08025066 */ BL func_0800A088
 /* 0802506A */ LSLS R0, R0, #0X10
 /* 0802506C */ LSRS R0, R0, #0X10

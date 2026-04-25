@@ -84,7 +84,7 @@ _080C6352:
 /* 080C6356 */ LSLS R2, R0, #0X10
 /* 080C6358 */ ASRS R2, R2, #0X10
 /* 080C635A */ ADDS R0, R7, #0
-/* 080C635C */ BL func_0800596C
+/* 080C635C */ BL run_func_after_task
 /* 080C6360 */ ADD SP, #8
 /* 080C6362 */ POP {R3, R4, R5}
 /* 080C6364 */ MOV R8, R3

@@ -46,7 +46,7 @@ _0800DD7E:
 /* 0800DD80 */ LDR R0, _0800DDE8
 /* 0800DD82 */ BL play_sound
 /* 0800DD86 */ MOVS R0, #0
-/* 0800DD88 */ BL func_08009D24
+/* 0800DD88 */ BL set_pause_beatscript_scene
 /* 0800DD8C */ LDR R0, _0800DDE4
 /* 0800DD8E */ LDR R1, [R0]
 /* 0800DD90 */ MOVS R0, #0
@@ -83,7 +83,7 @@ _0800DDBA:
 /* 0800DDCC */ MOVS R0, #5
 /* 0800DDCE */ STRH R0, [R1, #0X38]
 /* 0800DDD0 */ MOVS R0, #0
-/* 0800DDD2 */ BL func_08009D24
+/* 0800DDD2 */ BL set_pause_beatscript_scene
 /* 0800DDD6 */ LDR R0, [R5]
 /* 0800DDD8 */ STRB R4, [R0, #8]
 _0800DDDA:

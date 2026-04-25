@@ -33,7 +33,7 @@ glabel func_080D2E70
 /* 080D2EA4 */ BL start_pal_interp_pal_pal_task
 /* 080D2EA8 */ LDR R1, _080D2EC4
 /* 080D2EAA */ MOVS R2, #0
-/* 080D2EAC */ BL func_0800596C
+/* 080D2EAC */ BL run_func_after_task
 /* 080D2EB0 */ ADD SP, #8
 /* 080D2EB2 */ POP {R0}
 /* 080D2EB4 */ BX R0

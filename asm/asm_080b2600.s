@@ -44,7 +44,7 @@ glabel func_080B2600
 /* 080B264E */ LDR R1, =func_080B25A0 + 1
 /* 080B2650 */ ADDS R0, R6, #0
 /* 080B2652 */ MOVS R2, #0
-/* 080B2654 */ BL func_0800596C
+/* 080B2654 */ BL run_func_after_task
 _080B2658:
 /* 080B2658 */ LDR R1, [R5]
 /* 080B265A */ ADDS R1, R4

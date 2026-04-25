@@ -38,7 +38,7 @@ glabel func_080B14BC
 /* 080B14FC */ STR R0, [R1, #0X20]
 /* 080B14FE */ LDR R1, =func_080B149C + 1
 /* 080B1500 */ MOVS R2, #0
-/* 080B1502 */ BL func_0800596C
+/* 080B1502 */ BL run_func_after_task
 /* 080B1506 */ BL func_080B27B8
 /* 080B150A */ ADD SP, #0X10
 /* 080B150C */ POP {R4, R5}

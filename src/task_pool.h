@@ -21,3 +21,5 @@ struct TaskMethods {
     TaskUpdateFunc constantUpdate;
     TaskStopFunc stop;
 };
+
+extern void run_func_after_task(s32 poolID, TaskFinalFunc onFinish, s32 onFinishArg);

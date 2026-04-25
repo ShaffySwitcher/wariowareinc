@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08009D24 \n\
+thumb_func_start set_pause_beatscript_scene \n\
 /* 08009D24 */ LDR R3, =D_03004890 \n\
 /* 08009D26 */ MOVS R1, #1 \n\
 /* 08009D28 */ ANDS R0, R1 \n\

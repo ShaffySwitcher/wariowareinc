@@ -23,7 +23,7 @@ glabel func_080AA424
 /* 080AA442 */ BL func_0800A2D8
 /* 080AA446 */ LDR R1, _080AA4C0
 /* 080AA448 */ MOVS R2, #0
-/* 080AA44A */ BL func_0800596C
+/* 080AA44A */ BL run_func_after_task
 /* 080AA44E */ LDR R0, _080AA4C4
 /* 080AA450 */ LDR R0, [R0]
 /* 080AA452 */ LDRH R5, [R0, #0X1A]

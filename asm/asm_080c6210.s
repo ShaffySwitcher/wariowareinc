@@ -81,7 +81,7 @@ _080C629A:
 /* 080C629A */ LDR R1, =func_080C61E4 + 1
 /* 080C629C */ ADDS R0, R7, #0
 /* 080C629E */ MOV R2, SB
-/* 080C62A0 */ BL func_0800596C
+/* 080C62A0 */ BL run_func_after_task
 /* 080C62A4 */ ADD SP, #8
 /* 080C62A6 */ POP {R3, R4}
 /* 080C62A8 */ MOV R8, R3
