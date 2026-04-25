@@ -342,7 +342,7 @@ _08050AEA:
 
 .balign 4, 0
 _08050BA0:
-/* 08050BA0 */ .word D_03003850
+/* 08050BA0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08050BA4:
@@ -587,7 +587,7 @@ _08050D68:
 
 .balign 4, 0
 _08050D6C:
-/* 08050D6C */ .word D_03003850
+/* 08050D6C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08050D70:

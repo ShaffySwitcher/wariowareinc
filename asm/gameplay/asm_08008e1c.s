@@ -399,7 +399,7 @@ _08009030: \n\
 /* 080090EE */ STR R4, [SP, #0XC] \n\
 /* 080090F0 */ MOV R1, SL \n\
 /* 080090F2 */ LSRS R0, R1, #0X10 \n\
-/* 080090F4 */ BL func_08009E20 \n\
+/* 080090F4 */ BL set_beatscript_tempo \n\
 /* 080090F8 */ ADD R0, SP, #4 \n\
 /* 080090FA */ BL func_0800986C \n\
 /* 080090FE */ ADD SP, #0X10 \n\

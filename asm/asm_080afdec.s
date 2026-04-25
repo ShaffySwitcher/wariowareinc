@@ -15,7 +15,7 @@ glabel func_080AFDEC
 /* 080AFDFA */ BL sprite_set_visible
 /* 080AFDFE */ MOVS R0, #0
 /* 080AFE00 */ STRB R0, [R4, #0X14]
-/* 080AFE02 */ LDR R3, =D_03003850
+/* 080AFE02 */ LDR R3, =gCurrentSceneVariable
 /* 080AFE04 */ LDR R2, [R3]
 /* 080AFE06 */ MOVS R0, #0XA6
 /* 080AFE08 */ LSLS R0, R0, #2

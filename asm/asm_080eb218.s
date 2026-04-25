@@ -35,7 +35,7 @@ _080EB24C:
 
 .balign 4, 0
 _080EB250:
-/* 080EB250 */ .word D_03003850
+/* 080EB250 */ .word gCurrentSceneVariable
 _080EB254:
 /* 080EB254 */ LDR R0, [R4]
 /* 080EB256 */ LDR R2, [R5]
@@ -81,7 +81,7 @@ _080EB2AC:
 
 .balign 4, 0
 _080EB2A4:
-/* 080EB2A4 */ .word D_03003850
+/* 080EB2A4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080EB2A8:

@@ -7,7 +7,7 @@
 glabel func_08024024
 /* 08024024 */ PUSH {LR}
 /* 08024026 */ ADDS R1, R0, #0
-/* 08024028 */ LDR R0, =D_03003850
+/* 08024028 */ LDR R0, =gCurrentSceneVariable
 /* 0802402A */ LDR R0, [R0]
 /* 0802402C */ LDR R0, [R0, #8]
 /* 0802402E */ BL func_080058DC

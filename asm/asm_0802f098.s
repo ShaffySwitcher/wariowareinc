@@ -38,7 +38,7 @@ glabel func_0802F098
 
 .balign 4, 0
 _0802F0D8:
-/* 0802F0D8 */ .word D_03003850
+/* 0802F0D8 */ .word gCurrentSceneVariable
 _0802F0DC:
 /* 0802F0DC */ LDR R2, [R3, #0X60]
 /* 0802F0DE */ LSLS R2, R2, #8
@@ -150,7 +150,7 @@ _0802F198:
 
 .balign 4, 0
 _0802F19C:
-/* 0802F19C */ .word D_03003850
+/* 0802F19C */ .word gCurrentSceneVariable
 _0802F1A0:
 /* 0802F1A0 */ LDR R0, _0802F1D8
 /* 0802F1A2 */ LDR R0, [R0]
@@ -164,7 +164,7 @@ _0802F1A0:
 /* 0802F1B2 */ STR R4, [SP, #8]
 /* 0802F1B4 */ MOVS R3, #0
 /* 0802F1B6 */ BL sprite_set_anim
-/* 0802F1BA */ LDR R1, =D_03003850
+/* 0802F1BA */ LDR R1, =gCurrentSceneVariable
 /* 0802F1BC */ LDR R0, [R1]
 /* 0802F1BE */ MOVS R2, #0X90
 /* 0802F1C0 */ LSLS R2, R2, #2

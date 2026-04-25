@@ -31,7 +31,7 @@ _080D53B8:
 
 .balign 4, 0
 _080D53BC:
-/* 080D53BC */ .word D_03003850
+/* 080D53BC */ .word gCurrentSceneVariable
 _080D53C0:
 /* 080D53C0 */ BL func_080D5298
 /* 080D53C4 */ LDR R2, [R7]
@@ -107,7 +107,7 @@ _080D5444:
 
 .balign 4, 0
 _080D5448:
-/* 080D5448 */ .word D_03003850
+/* 080D5448 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D544C:

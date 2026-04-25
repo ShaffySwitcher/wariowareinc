@@ -32,7 +32,7 @@ _080690A4:
 
 .balign 4, 0
 _080690A8:
-/* 080690A8 */ .word D_03003850
+/* 080690A8 */ .word gCurrentSceneVariable
 _080690AC:
 /* 080690AC */ LDR R0, [R1, #0X1C]
 /* 080690AE */ CMP R0, #0

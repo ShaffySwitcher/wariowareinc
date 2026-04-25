@@ -64,7 +64,7 @@ _080ABA58:
 
 .balign 4, 0
 _080ABA5C:
-/* 080ABA5C */ .word D_03003850
+/* 080ABA5C */ .word gCurrentSceneVariable
 _080ABA60:
 /* 080ABA60 */ MOVS R3, #0X18
 /* 080ABA62 */ MOV SB, R3
@@ -165,7 +165,7 @@ _080ABA7A:
 
 .balign 4, 0
 _080ABB24:
-/* 080ABB24 */ .word D_03003850
+/* 080ABB24 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080ABB28:
@@ -224,7 +224,7 @@ _080ABB86:
 /* 080ABB8C */ BGE _080ABB90
 /* 080ABB8E */ B _080ABA60
 _080ABB90:
-/* 080ABB90 */ LDR R0, =D_03003850
+/* 080ABB90 */ LDR R0, =gCurrentSceneVariable
 /* 080ABB92 */ LDR R0, [R0]
 /* 080ABB94 */ MOVS R3, #0X82
 /* 080ABB96 */ LSLS R3, R3, #2

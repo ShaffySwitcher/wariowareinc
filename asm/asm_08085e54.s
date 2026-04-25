@@ -112,7 +112,7 @@ _08085F3C:
 
 .balign 4, 0
 _08085F40:
-/* 08085F40 */ .word D_03003850
+/* 08085F40 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08085F44:
@@ -124,7 +124,7 @@ _08085F48:
 
 .balign 4, 0
 _08085F4C:
-/* 08085F4C */ .word D_03003854
+/* 08085F4C */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _08085F50:
@@ -161,7 +161,7 @@ _08085F72:
 /* 08085F84 */ LDR R1, [R7]
 /* 08085F86 */ STRB R0, [R1, #6]
 _08085F88:
-/* 08085F88 */ LDR R2, =D_03003850
+/* 08085F88 */ LDR R2, =gCurrentSceneVariable
 /* 08085F8A */ LDR R0, [R2]
 /* 08085F8C */ MOVS R3, #0
 /* 08085F8E */ STRB R3, [R0, #7]

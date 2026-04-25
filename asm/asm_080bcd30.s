@@ -33,7 +33,7 @@ _080BCD4C:
 
 .balign 4, 0
 _080BCD60:
-/* 080BCD60 */ .word D_03003850
+/* 080BCD60 */ .word gCurrentSceneVariable
 _080BCD64:
 /* 080BCD64 */ ADDS R0, R2, #0
 /* 080BCD66 */ ADDS R0, #0XCF
@@ -90,7 +90,7 @@ _080BCDBA:
 /* 080BCDC2 */ LDR R0, [R5]
 /* 080BCDC4 */ ADDS R0, #0X98
 /* 080BCDC6 */ LDR R0, [R0]
-/* 080BCDC8 */ BL func_080F301C
+/* 080BCDC8 */ BL set_soundplayer_speed
 /* 080BCDCC */ LDR R0, [R5]
 /* 080BCDCE */ ADDS R0, #0XE8
 /* 080BCDD0 */ MOVS R1, #0

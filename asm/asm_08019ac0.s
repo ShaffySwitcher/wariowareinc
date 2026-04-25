@@ -7,7 +7,7 @@
 glabel func_08019AC0
 /* 08019AC0 */ PUSH {LR}
 /* 08019AC2 */ ADDS R1, R0, #0
-/* 08019AC4 */ LDR R0, =D_03003850
+/* 08019AC4 */ LDR R0, =gCurrentSceneVariable
 /* 08019AC6 */ LDR R0, [R0]
 /* 08019AC8 */ MOVS R2, #0X90
 /* 08019ACA */ LSLS R2, R2, #1

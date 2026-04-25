@@ -57,7 +57,7 @@ _080B9204:
 
 .balign 4, 0
 _080B9224:
-/* 080B9224 */ .word D_03003850
+/* 080B9224 */ .word gCurrentSceneVariable
 _080B9228:
 /* 080B9228 */ LDRB R4, [R2]
 /* 080B922A */ SUBS R0, R5, #1

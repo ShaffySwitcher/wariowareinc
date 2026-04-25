@@ -22,7 +22,7 @@ _080ECCF8:
 
 .balign 4, 0
 _080ECCFC:
-/* 080ECCFC */ .word D_03003850
+/* 080ECCFC */ .word gCurrentSceneVariable
 _080ECD00:
 /* 080ECD00 */ LDR R0, _080ECD1C
 /* 080ECD02 */ LDR R0, [R0]
@@ -44,6 +44,6 @@ _080ECD20:
 
 .balign 4, 0
 _080ECD1C:
-/* 080ECD1C */ .word D_03003850
+/* 080ECD1C */ .word gCurrentSceneVariable
 .ltorg
 .end

@@ -19,7 +19,7 @@ glabel func_08083EB8
 
 .balign 4, 0
 _08083ED0:
-/* 08083ED0 */ .word D_03003850
+/* 08083ED0 */ .word gCurrentSceneVariable
 _08083ED4:
 /* 08083ED4 */ CMP R0, #2
 /* 08083ED6 */ BEQ _08083FD0
@@ -149,7 +149,7 @@ _08083FC0:
 
 .balign 4, 0
 _08083FC4:
-/* 08083FC4 */ .word D_03003850
+/* 08083FC4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08083FC8:
@@ -270,7 +270,7 @@ _080840A4:
 
 .balign 4, 0
 _080840A8:
-/* 080840A8 */ .word D_03003850
+/* 080840A8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080840AC:

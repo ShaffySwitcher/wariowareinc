@@ -11,7 +11,7 @@ glabel func_0804FAF4
 /* 0804FAFA */ MOV R5, R8
 /* 0804FAFC */ PUSH {R5, R6, R7}
 /* 0804FAFE */ SUB SP, #4
-/* 0804FB00 */ LDR R4, =D_03003850
+/* 0804FB00 */ LDR R4, =gCurrentSceneVariable
 /* 0804FB02 */ LDR R0, [R4]
 /* 0804FB04 */ ADDS R0, #0X65
 /* 0804FB06 */ MOVS R1, #0

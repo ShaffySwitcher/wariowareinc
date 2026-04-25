@@ -8,7 +8,7 @@ glabel func_08020F40
 /* 08020F40 */ PUSH {LR}
 /* 08020F42 */ LDR R0, _08020F58
 /* 08020F44 */ LDR R0, [R0]
-/* 08020F46 */ LDR R1, =D_03003854
+/* 08020F46 */ LDR R1, =gCurrentSceneSpritePool
 /* 08020F48 */ LDR R1, [R1]
 /* 08020F4A */ MOVS R2, #0X14
 /* 08020F4C */ LDRSH R1, [R1, R2]

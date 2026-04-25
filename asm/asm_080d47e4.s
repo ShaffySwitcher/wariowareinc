@@ -22,7 +22,7 @@ _080D47F4:
 
 .balign 4, 0
 _080D4800:
-/* 080D4800 */ .word D_03003850
+/* 080D4800 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D4804:
@@ -143,7 +143,7 @@ _080D48C6:
 
 .balign 4, 0
 _080D48CC:
-/* 080D48CC */ .word D_03003850
+/* 080D48CC */ .word gCurrentSceneVariable
 _080D48D0:
 /* 080D48D0 */ BL func_080D3A7C
 /* 080D48D4 */ LSLS R0, R0, #0X10
@@ -184,7 +184,7 @@ _080D48D0:
 
 .balign 4, 0
 _080D4920:
-/* 080D4920 */ .word D_03003850
+/* 080D4920 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D4924:
@@ -205,7 +205,7 @@ _080D4932:
 
 .balign 4, 0
 _080D4940:
-/* 080D4940 */ .word D_03003850
+/* 080D4940 */ .word gCurrentSceneVariable
 _080D4944:
 /* 080D4944 */ LDR R1, [R5]
 /* 080D4946 */ LDRH R0, [R1, #2]
@@ -234,7 +234,7 @@ _080D496C:
 
 .balign 4, 0
 _080D4974:
-/* 080D4974 */ .word D_03003850
+/* 080D4974 */ .word gCurrentSceneVariable
 _080D4978:
 /* 080D4978 */ BL func_080D3868
 /* 080D497C */ LSLS R0, R0, #0X10
@@ -279,7 +279,7 @@ _080D49B8:
 
 .balign 4, 0
 _080D49D0:
-/* 080D49D0 */ .word D_03003850
+/* 080D49D0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D49D4:
@@ -312,7 +312,7 @@ _080D49E6:
 
 .balign 4, 0
 _080D4A10:
-/* 080D4A10 */ .word D_03003850
+/* 080D4A10 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D4A14:
@@ -338,7 +338,7 @@ _080D4A32:
 
 .balign 4, 0
 _080D4A38:
-/* 080D4A38 */ .word D_03003850
+/* 080D4A38 */ .word gCurrentSceneVariable
 _080D4A3C:
 /* 080D4A3C */ BL func_080D3950
 /* 080D4A40 */ LSLS R0, R0, #0X10
@@ -376,7 +376,7 @@ _080D4A82:
 
 .balign 4, 0
 _080D4A8C:
-/* 080D4A8C */ .word D_03003850
+/* 080D4A8C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D4A90:
@@ -422,7 +422,7 @@ _080D4AD8:
 
 .balign 4, 0
 _080D4AE0:
-/* 080D4AE0 */ .word D_03003850
+/* 080D4AE0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D4AE4:
@@ -452,13 +452,13 @@ _080D4AE8:
 
 .balign 4, 0
 _080D4B18:
-/* 080D4B18 */ .word D_03003850
+/* 080D4B18 */ .word gCurrentSceneVariable
 _080D4B1C:
 /* 080D4B1C */ MOVS R0, #1
 /* 080D4B1E */ B _080D4B3E
 _080D4B20:
 /* 080D4B20 */ BL func_080D3C58
-/* 080D4B24 */ LDR R0, =D_03003850
+/* 080D4B24 */ LDR R0, =gCurrentSceneVariable
 /* 080D4B26 */ LDR R1, [R0]
 /* 080D4B28 */ LDRH R0, [R1, #2]
 /* 080D4B2A */ SUBS R0, #1

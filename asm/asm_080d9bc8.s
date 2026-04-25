@@ -30,7 +30,7 @@ glabel func_080D9BC8
 
 .balign 4, 0
 _080D9BF4:
-/* 080D9BF4 */ .word D_03003850
+/* 080D9BF4 */ .word gCurrentSceneVariable
 _080D9BF8:
 /* 080D9BF8 */ MOVS R2, #0X40
 /* 080D9BFA */ ADDS R1, R3, #0

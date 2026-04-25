@@ -22,7 +22,7 @@ glabel func_0807B200
 
 .balign 4, 0
 _0807B21C:
-/* 0807B21C */ .word D_03003850
+/* 0807B21C */ .word gCurrentSceneVariable
 _0807B220:
 /* 0807B220 */ CMP R3, #2
 /* 0807B222 */ BNE _0807B226
@@ -196,7 +196,7 @@ _0807B354:
 
 .balign 4, 0
 _0807B358:
-/* 0807B358 */ .word D_03003850
+/* 0807B358 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807B35C:
@@ -310,7 +310,7 @@ _0807B424:
 
 .balign 4, 0
 _0807B428:
-/* 0807B428 */ .word D_03003850
+/* 0807B428 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807B42C:
@@ -325,7 +325,7 @@ _0807B434:
 /* 0807B43A */ MOVS R0, #1
 /* 0807B43C */ BL func_0800A128
 _0807B440:
-/* 0807B440 */ LDR R0, =D_03003850
+/* 0807B440 */ LDR R0, =gCurrentSceneVariable
 /* 0807B442 */ LDR R0, [R0]
 /* 0807B444 */ ADDS R0, #0X40
 /* 0807B446 */ MOVS R1, #3

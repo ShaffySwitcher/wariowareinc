@@ -34,7 +34,7 @@ _0801B0EA:
 /* 0801B106 */ MOVS R3, #0
 /* 0801B108 */ BL sprite_create
 /* 0801B10C */ ADDS R4, R0, #0
-/* 0801B10E */ LDR R7, =D_03003850
+/* 0801B10E */ LDR R7, =gCurrentSceneVariable
 /* 0801B110 */ LDR R0, [R7]
 /* 0801B112 */ LSLS R1, R6, #1
 /* 0801B114 */ ADDS R0, #0XCE

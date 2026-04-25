@@ -52,7 +52,7 @@ _08058054:
 
 .balign 4, 0
 _08058058:
-/* 08058058 */ .word D_03003850
+/* 08058058 */ .word gCurrentSceneVariable
 _0805805C:
 /* 0805805C */ BL func_08057FB4
 _08058060:
@@ -101,6 +101,6 @@ _080580A0:
 
 .balign 4, 0
 _080580A4:
-/* 080580A4 */ .word D_03003850
+/* 080580A4 */ .word gCurrentSceneVariable
 .ltorg
 .end

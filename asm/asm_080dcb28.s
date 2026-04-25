@@ -19,7 +19,7 @@ glabel func_080DCB28
 
 .balign 4, 0
 _080DCB40:
-/* 080DCB40 */ .word D_03003850
+/* 080DCB40 */ .word gCurrentSceneVariable
 _080DCB44:
 /* 080DCB44 */ MOVS R0, #0
 /* 080DCB46 */ STRH R0, [R1]
@@ -50,7 +50,7 @@ _080DCB70:
 /* 080DCB76 */ LDR R0, [R0]
 /* 080DCB78 */ ADDS R1, #0XE6
 /* 080DCB7A */ LDRH R1, [R1]
-/* 080DCB7C */ BL func_080F301C
+/* 080DCB7C */ BL set_soundplayer_speed
 /* 080DCB80 */ LDR R1, [R4]
 /* 080DCB82 */ ADDS R0, R1, #0
 /* 080DCB84 */ ADDS R0, #0XBC
@@ -65,7 +65,7 @@ _080DCB70:
 
 .balign 4, 0
 _080DCB98:
-/* 080DCB98 */ .word D_03003850
+/* 080DCB98 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DCB9C:

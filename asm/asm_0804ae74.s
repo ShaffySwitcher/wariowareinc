@@ -143,7 +143,7 @@ _0804AF2C:
 
 .balign 4, 0
 _0804AF84:
-/* 0804AF84 */ .word D_03003850
+/* 0804AF84 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0804AF88:
@@ -218,7 +218,7 @@ _0804AFEC:
 /* 0804B002 */ BLE _0804B006
 /* 0804B004 */ ADDS R5, R0, #0
 _0804B006:
-/* 0804B006 */ LDR R6, =D_03003850
+/* 0804B006 */ LDR R6, =gCurrentSceneVariable
 /* 0804B008 */ LDR R3, [R6]
 /* 0804B00A */ MOVS R1, #0XCC
 /* 0804B00C */ LSLS R1, R1, #1

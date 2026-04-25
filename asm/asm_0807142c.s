@@ -36,7 +36,7 @@ glabel func_0807142C
 
 .balign 4, 0
 _08071464:
-/* 08071464 */ .word D_03003850
+/* 08071464 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08071468:
@@ -198,7 +198,7 @@ _08071594:
 
 .balign 4, 0
 _08071598:
-/* 08071598 */ .word D_03003850
+/* 08071598 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807159C:
@@ -242,7 +242,7 @@ _080715B4:
 
 .balign 4, 0
 _080715E0:
-/* 080715E0 */ .word D_03003850
+/* 080715E0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080715E4:
@@ -284,7 +284,7 @@ _08071606:
 
 .balign 4, 0
 _08071628:
-/* 08071628 */ .word D_03003850
+/* 08071628 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807162C:
@@ -314,7 +314,7 @@ _08071650:
 
 .balign 4, 0
 _0807165C:
-/* 0807165C */ .word D_03003850
+/* 0807165C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08071660:
@@ -367,7 +367,7 @@ _080716B4:
 
 .balign 4, 0
 _080716B8:
-/* 080716B8 */ .word D_03003850
+/* 080716B8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080716BC:
@@ -419,12 +419,12 @@ _080716E0:
 /* 08071718 */ BL play_sound
 /* 0807171C */ MOVS R1, #0X80
 /* 0807171E */ LSLS R1, R1, #1
-/* 08071720 */ BL func_080F301C
+/* 08071720 */ BL set_soundplayer_speed
 /* 08071724 */ B _080717EA
 
 .balign 4, 0
 _08071728:
-/* 08071728 */ .word D_03003850
+/* 08071728 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807172C:
@@ -448,7 +448,7 @@ _0807173C:
 /* 08071744 */ LDR R2, _08071754
 /* 08071746 */ ADDS R1, R2
 /* 08071748 */ LDRH R1, [R1]
-/* 0807174A */ BL func_080F301C
+/* 0807174A */ BL set_soundplayer_speed
 /* 0807174E */ B _080717EA
 
 .balign 4, 0
@@ -495,7 +495,7 @@ _08071784:
 
 .balign 4, 0
 _0807179C:
-/* 0807179C */ .word D_03003850
+/* 0807179C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080717A0:
@@ -548,7 +548,7 @@ _080717EA:
 
 .balign 4, 0
 _080717FC:
-/* 080717FC */ .word D_03003850
+/* 080717FC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08071800:

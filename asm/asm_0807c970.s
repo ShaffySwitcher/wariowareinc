@@ -380,7 +380,7 @@ _0807CC70:
 
 .balign 4, 0
 _0807CC80:
-/* 0807CC80 */ .word D_03003850
+/* 0807CC80 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807CC84:

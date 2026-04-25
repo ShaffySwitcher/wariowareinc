@@ -217,6 +217,6 @@ _08014734:
 
 .balign 4, 0
 _08014738:
-/* 08014738 */ .word D_03003854
+/* 08014738 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

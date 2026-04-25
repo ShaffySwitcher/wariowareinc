@@ -48,7 +48,7 @@ glabel func_0801F964
 /* 0801F9BC */ ASRS R2, R2, #0X18
 /* 0801F9BE */ BL sprite_set_anim_cel
 /* 0801F9C2 */ MOVS R0, #0
-/* 0801F9C4 */ BL func_08009EE0
+/* 0801F9C4 */ BL func_08009EE0_stub
 /* 0801F9C8 */ POP {R4}
 /* 0801F9CA */ POP {R0}
 /* 0801F9CC */ BX R0
@@ -71,7 +71,7 @@ _0801F9DC:
 
 .balign 4, 0
 _0801F9E0:
-/* 0801F9E0 */ .word D_03003854
+/* 0801F9E0 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801F9E4:

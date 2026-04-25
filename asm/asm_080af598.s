@@ -41,7 +41,7 @@ glabel func_080AF598
 
 .balign 4, 0
 _080AF5DC:
-/* 080AF5DC */ .word D_03003850
+/* 080AF5DC */ .word gCurrentSceneVariable
 _080AF5E0:
 /* 080AF5E0 */ CMP R5, R0
 /* 080AF5E2 */ BLE _080AF5EE

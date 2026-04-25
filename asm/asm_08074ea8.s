@@ -28,7 +28,7 @@ _08074EB8:
 
 .balign 4, 0
 _08074ED4:
-/* 08074ED4 */ .word D_03003850
+/* 08074ED4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08074ED8:
@@ -120,7 +120,7 @@ _08074F44:
 /* 08074F8C */ ADDS R1, R6, #0
 /* 08074F8E */ BL func_080EF298
 _08074F92:
-/* 08074F92 */ LDR R0, =D_03003850
+/* 08074F92 */ LDR R0, =gCurrentSceneVariable
 /* 08074F94 */ LDR R5, [R0]
 /* 08074F96 */ LDR R0, _08074FC4
 /* 08074F98 */ LDRH R4, [R0, #2]

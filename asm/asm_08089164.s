@@ -30,7 +30,7 @@ _08089184:
 
 .balign 4, 0
 _08089190:
-/* 08089190 */ .word D_03003850
+/* 08089190 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08089194:
@@ -94,7 +94,7 @@ _080891F0:
 
 .balign 4, 0
 _080891F4:
-/* 080891F4 */ .word D_03003850
+/* 080891F4 */ .word gCurrentSceneVariable
 _080891F8:
 /* 080891F8 */ ADDS R0, R4, #0
 /* 080891FA */ ADDS R1, R5, #0

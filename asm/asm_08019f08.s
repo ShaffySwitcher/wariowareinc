@@ -17,7 +17,7 @@ glabel func_08019F08
 /* 08019F1A */ BL get_current_mem_id
 /* 08019F1E */ LSLS R0, R0, #0X10
 /* 08019F20 */ LSRS R0, R0, #0X10
-/* 08019F22 */ LDR R6, =D_03003850
+/* 08019F22 */ LDR R6, =gCurrentSceneVariable
 /* 08019F24 */ LDR R1, [R6]
 /* 08019F26 */ MOVS R5, #0X8E
 /* 08019F28 */ LSLS R5, R5, #1

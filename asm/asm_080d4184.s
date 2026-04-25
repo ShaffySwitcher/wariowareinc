@@ -36,7 +36,7 @@ _080D41B8:
 
 .balign 4, 0
 _080D41BC:
-/* 080D41BC */ .word D_03003850
+/* 080D41BC */ .word gCurrentSceneVariable
 _080D41C0:
 /* 080D41C0 */ LDRB R6, [R5, #0X18]
 /* 080D41C2 */ CMP R6, #1
@@ -174,7 +174,7 @@ _080D42B8:
 
 .balign 4, 0
 _080D42BC:
-/* 080D42BC */ .word D_03003850
+/* 080D42BC */ .word gCurrentSceneVariable
 _080D42C0:
 /* 080D42C0 */ LDRH R0, [R5, #0X14]
 /* 080D42C2 */ SUBS R0, #1

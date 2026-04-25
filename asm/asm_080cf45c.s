@@ -37,7 +37,7 @@ glabel func_080CF45C
 
 .balign 4, 0
 _080CF498:
-/* 080CF498 */ .word D_03003850
+/* 080CF498 */ .word gCurrentSceneVariable
 _080CF49C:
 /* 080CF49C */ LDR R0, [R6, #0X24]
 /* 080CF49E */ CMP R0, #0

@@ -24,7 +24,7 @@ _080A60C4:
 
 .balign 4, 0
 _080A60C8:
-/* 080A60C8 */ .word D_03003850
+/* 080A60C8 */ .word gCurrentSceneVariable
 _080A60CC:
 /* 080A60CC */ MOVS R0, #0X10
 /* 080A60CE */ ANDS R0, R1
@@ -40,9 +40,9 @@ _080A60CC:
 
 .balign 4, 0
 _080A60E4:
-/* 080A60E4 */ .word D_03003850
+/* 080A60E4 */ .word gCurrentSceneVariable
 _080A60E8:
-/* 080A60E8 */ LDR R0, =D_03003850
+/* 080A60E8 */ LDR R0, =gCurrentSceneVariable
 /* 080A60EA */ LDR R0, [R0]
 /* 080A60EC */ ADDS R0, #0X68
 _080A60EE:

@@ -68,7 +68,7 @@ _080CA67A:
 
 .balign 4, 0
 _080CA694:
-/* 080CA694 */ .word D_03003850
+/* 080CA694 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CA698:
@@ -149,7 +149,7 @@ _080CA708:
 
 .balign 4, 0
 _080CA71C:
-/* 080CA71C */ .word D_03003850
+/* 080CA71C */ .word gCurrentSceneVariable
 _080CA720:
 /* 080CA720 */ ADD SP, #4
 /* 080CA722 */ POP {R4, R5, R6, R7}

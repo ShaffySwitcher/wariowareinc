@@ -66,7 +66,7 @@ _0806A410:
 
 .balign 4, 0
 _0806A404:
-/* 0806A404 */ .word D_03003850
+/* 0806A404 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0806A408:

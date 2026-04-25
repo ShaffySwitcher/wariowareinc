@@ -53,7 +53,7 @@ _080DFEDE:
 
 .balign 4, 0
 _080DFF0C:
-/* 080DFF0C */ .word D_03003850
+/* 080DFF0C */ .word gCurrentSceneVariable
 _080DFF10:
 /* 080DFF10 */ CMP R0, #3
 /* 080DFF12 */ BEQ _080DFF2A

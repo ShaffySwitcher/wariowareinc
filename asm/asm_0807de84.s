@@ -31,7 +31,7 @@ _0807DEA8:
 
 .balign 4, 0
 _0807DEAC:
-/* 0807DEAC */ .word D_03003850
+/* 0807DEAC */ .word gCurrentSceneVariable
 _0807DEB0:
 /* 0807DEB0 */ BL func_0807DA34
 _0807DEB4:

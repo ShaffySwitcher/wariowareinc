@@ -99,7 +99,7 @@ _08041B5E:
 
 .balign 4, 0
 _08041BCC:
-/* 08041BCC */ .word D_03003850
+/* 08041BCC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08041BD0:
@@ -131,7 +131,7 @@ _08041BFA:
 /* 08041BFE */ ADDS R1, R7, R0
 /* 08041C00 */ LSRS R4, R1, #0X10
 /* 08041C02 */ ASRS R1, R1, #0X10
-/* 08041C04 */ LDR R2, =D_03003850
+/* 08041C04 */ LDR R2, =gCurrentSceneVariable
 /* 08041C06 */ LDR R0, [R2]
 /* 08041C08 */ ADDS R0, #0X75
 /* 08041C0A */ LDRB R0, [R0]

@@ -53,7 +53,7 @@ _080C28D4:
 
 .balign 4, 0
 _080C28D8:
-/* 080C28D8 */ .word D_03003850
+/* 080C28D8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C28DC:
@@ -141,7 +141,7 @@ _080C2974:
 
 .balign 4, 0
 _080C2978:
-/* 080C2978 */ .word D_03003850
+/* 080C2978 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C297C:
@@ -185,7 +185,7 @@ _080C2986:
 
 .balign 4, 0
 _080C29C8:
-/* 080C29C8 */ .word D_03003850
+/* 080C29C8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C29CC:
@@ -263,7 +263,7 @@ _080C2A50:
 
 .balign 4, 0
 _080C2A54:
-/* 080C2A54 */ .word D_03003850
+/* 080C2A54 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C2A58:
@@ -294,7 +294,7 @@ _080C2A5C:
 /* 080C2A8C */ MOVS R2, #1
 /* 080C2A8E */ BL sprite_set_visible
 _080C2A92:
-/* 080C2A92 */ LDR R2, =D_03003850
+/* 080C2A92 */ LDR R2, =gCurrentSceneVariable
 /* 080C2A94 */ LDR R1, [R2]
 /* 080C2A96 */ LDR R0, [R1, #8]
 /* 080C2A98 */ ASRS R0, R0, #8

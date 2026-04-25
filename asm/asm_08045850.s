@@ -44,7 +44,7 @@ _08045864:
 
 .balign 4, 0
 _08045898:
-/* 08045898 */ .word D_03003850
+/* 08045898 */ .word gCurrentSceneVariable
 _0804589C:
 /* 0804589C */ MOV R3, IP
 /* 0804589E */ LDR R0, [R3, #0X7C]

@@ -40,7 +40,7 @@ _0809A160:
 
 .balign 4, 0
 _0809A174:
-/* 0809A174 */ .word D_03003850
+/* 0809A174 */ .word gCurrentSceneVariable
 _0809A178:
 /* 0809A178 */ MOV R7, SB
 /* 0809A17A */ LDR R0, [R7]

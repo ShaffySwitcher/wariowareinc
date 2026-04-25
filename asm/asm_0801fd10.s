@@ -32,7 +32,7 @@ _0801FD3C:
 
 .balign 4, 0
 _0801FD40:
-/* 0801FD40 */ .word D_03003854
+/* 0801FD40 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801FD44:

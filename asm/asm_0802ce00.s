@@ -117,7 +117,7 @@ _0802CED8:
 /* 0802CEEA */ ADDS R4, R5
 /* 0802CEEC */ LSLS R0, R6, #0X10
 /* 0802CEEE */ ADDS R1, R7, #0
-/* 0802CEF0 */ BL func_080F4818
+/* 0802CEF0 */ BL __udivsi3
 /* 0802CEF4 */ LDR R2, _0802CFAC
 /* 0802CEF6 */ ADDS R0, R2
 /* 0802CEF8 */ STRH R0, [R4]
@@ -201,7 +201,7 @@ _0802CFC0:
 
 .balign 4, 0
 _0802CF94:
-/* 0802CF94 */ .word D_03003850
+/* 0802CF94 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0802CF98:

@@ -400,7 +400,7 @@ _080271F8:
 
 .balign 4, 0
 _080271FC:
-/* 080271FC */ .word D_03003850
+/* 080271FC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08027200:
@@ -550,6 +550,6 @@ _080272EC:
 
 .balign 4, 0
 _080272E8:
-/* 080272E8 */ .word D_03003850
+/* 080272E8 */ .word gCurrentSceneVariable
 .ltorg
 .end

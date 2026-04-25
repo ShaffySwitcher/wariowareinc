@@ -54,7 +54,7 @@ _080DC824:
 
 .balign 4, 0
 _080DC850:
-/* 080DC850 */ .word D_03003850
+/* 080DC850 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DC854:
@@ -127,7 +127,7 @@ _080DC8D2:
 _080DC8D4:
 /* 080DC8D4 */ LDR R6, _080DCA04
 /* 080DC8D6 */ LDR R0, [R6]
-/* 080DC8D8 */ LDR R4, =D_03003850
+/* 080DC8D8 */ LDR R4, =gCurrentSceneVariable
 /* 080DC8DA */ LDR R3, [R4]
 /* 080DC8DC */ LSLS R2, R5, #1
 /* 080DC8DE */ ADDS R1, R3, #0

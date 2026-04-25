@@ -111,7 +111,7 @@ _080C793A:
 /* 080C7982 */ ADDS R1, R0
 /* 080C7984 */ LDRB R0, [R2]
 /* 080C7986 */ LDRB R1, [R1]
-/* 080C7988 */ BL func_080F4818
+/* 080C7988 */ BL __udivsi3
 /* 080C798C */ ADDS R4, #0X34
 /* 080C798E */ MOVS R5, #0
 /* 080C7990 */ STRB R0, [R4]
@@ -292,7 +292,7 @@ _080C7AF0:
 
 .balign 4, 0
 _080C7AF4:
-/* 080C7AF4 */ .word D_03003850
+/* 080C7AF4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C7AF8:

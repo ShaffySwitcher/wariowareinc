@@ -5,7 +5,7 @@
 
 glabel func_0800A280
 .thumb_func
-/* 0800A280 */ LDR R2, =D_03004890
+/* 0800A280 */ LDR R2, =gBeatscriptScene
 /* 0800A282 */ MOVS R1, #0X9C
 /* 0800A284 */ MULS R1, R0, R1
 /* 0800A286 */ ADDS R1, R1, R2

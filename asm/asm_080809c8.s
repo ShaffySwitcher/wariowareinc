@@ -30,7 +30,7 @@ _080809EC:
 
 .balign 4, 0
 _080809F0:
-/* 080809F0 */ .word D_03003850
+/* 080809F0 */ .word gCurrentSceneVariable
 _080809F4:
 /* 080809F4 */ LDR R1, _08080A40
 /* 080809F6 */ LDR R0, [R1]
@@ -72,7 +72,7 @@ _080809FE:
 
 .balign 4, 0
 _08080A40:
-/* 08080A40 */ .word D_03003850
+/* 08080A40 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08080A44:
@@ -97,7 +97,7 @@ _08080A48:
 /* 08080A6A */ LDRH R0, [R2, #0X14]
 /* 08080A6C */ MOVS R1, #0X28
 _08080A6E:
-/* 08080A6E */ BL func_080F4818
+/* 08080A6E */ BL __udivsi3
 /* 08080A72 */ ADDS R5, R0
 /* 08080A74 */ ADDS R6, R5
 /* 08080A76 */ STRH R6, [R4]
@@ -121,7 +121,7 @@ _08080A7C:
 /* 08080A9A */ MOV R2, SB
 /* 08080A9C */ LDRH R0, [R2, #0X14]
 /* 08080A9E */ MOVS R1, #0XA
-/* 08080AA0 */ BL func_080F4818
+/* 08080AA0 */ BL __udivsi3
 /* 08080AA4 */ ADDS R4, R0
 /* 08080AA6 */ ADDS R5, R4
 /* 08080AA8 */ STRH R5, [R6, #0X38]
@@ -142,7 +142,7 @@ _08080AAE:
 /* 08080AC6 */ MOV R2, SB
 /* 08080AC8 */ LDRH R0, [R2, #0X14]
 /* 08080ACA */ MOVS R1, #0XD
-/* 08080ACC */ BL func_080F4818
+/* 08080ACC */ BL __udivsi3
 /* 08080AD0 */ ADDS R4, R0
 /* 08080AD2 */ ADDS R5, R4
 /* 08080AD4 */ STRH R5, [R6, #0X3A]
@@ -271,7 +271,7 @@ _08080BAE:
 /* 08080BC8 */ ADDS R5, R0, #0
 /* 08080BCA */ LDRH R0, [R4, #0X14]
 /* 08080BCC */ MOVS R1, #0X50
-/* 08080BCE */ BL func_080F4818
+/* 08080BCE */ BL __udivsi3
 /* 08080BD2 */ ADDS R1, R0, #0
 /* 08080BD4 */ LSLS R1, R1, #0X10
 /* 08080BD6 */ LSRS R1, R1, #0X10
@@ -305,7 +305,7 @@ _08080BE2:
 
 .balign 4, 0
 _08080C14:
-/* 08080C14 */ .word D_03003850
+/* 08080C14 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08080C18:
@@ -489,7 +489,7 @@ _08080D70:
 
 .balign 4, 0
 _08080D74:
-/* 08080D74 */ .word D_03003850
+/* 08080D74 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08080D78:
@@ -690,7 +690,7 @@ _08080F0C:
 
 .balign 4, 0
 _08080F00:
-/* 08080F00 */ .word D_03003850
+/* 08080F00 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08080F04:

@@ -62,6 +62,6 @@ _0801C364:
 
 .balign 4, 0
 _0801C360:
-/* 0801C360 */ .word D_03003850
+/* 0801C360 */ .word gCurrentSceneVariable
 .ltorg
 .end

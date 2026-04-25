@@ -56,7 +56,7 @@ glabel func_080D355C
 
 .balign 4, 0
 _080D35C4:
-/* 080D35C4 */ .word D_03003850
+/* 080D35C4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D35C8:
@@ -95,7 +95,7 @@ _080D35F4:
 /* 080D35F4 */ LDR R6, _080D3650
 /* 080D35F6 */ MOV R8, R6
 /* 080D35F8 */ LDR R0, [R6]
-/* 080D35FA */ LDR R5, =D_03003850
+/* 080D35FA */ LDR R5, =gCurrentSceneVariable
 /* 080D35FC */ LDR R1, [R5]
 /* 080D35FE */ MOVS R3, #0XE9
 /* 080D3600 */ LSLS R3, R3, #2

@@ -28,7 +28,7 @@ _080AA1B2:
 /* 080AA1CC */ BL sprite_set_anim_cel
 /* 080AA1D0 */ ADDS R0, R6, #0
 /* 080AA1D2 */ MOVS R1, #0XA
-/* 080AA1D4 */ BL func_080F4818
+/* 080AA1D4 */ BL __udivsi3
 /* 080AA1D8 */ ADDS R6, R0, #0
 /* 080AA1DA */ ADDS R7, #2
 /* 080AA1DC */ MOVS R0, #1

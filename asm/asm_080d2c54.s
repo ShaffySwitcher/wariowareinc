@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_080D2C54
 /* 080D2C54 */ PUSH {LR}
-/* 080D2C56 */ LDR R0, =D_03003850
+/* 080D2C56 */ LDR R0, =gCurrentSceneVariable
 /* 080D2C58 */ LDR R0, [R0]
 /* 080D2C5A */ MOVS R1, #0XF5
 /* 080D2C5C */ LSLS R1, R1, #2

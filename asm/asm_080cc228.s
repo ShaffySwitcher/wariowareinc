@@ -33,7 +33,7 @@ _080CC254:
 
 .balign 4, 0
 _080CC258:
-/* 080CC258 */ .word D_03003850
+/* 080CC258 */ .word gCurrentSceneVariable
 _080CC25C:
 /* 080CC25C */ CMP R0, #2
 /* 080CC25E */ BEQ _080CC2E0
@@ -258,7 +258,7 @@ _080CC3E4:
 /* 080CC40A */ MOVS R2, #1
 /* 080CC40C */ BL sprite_set_anim_cel
 _080CC410:
-/* 080CC410 */ LDR R0, =D_03003850
+/* 080CC410 */ LDR R0, =gCurrentSceneVariable
 /* 080CC412 */ LDR R0, [R0]
 /* 080CC414 */ ADDS R0, #0XCC
 /* 080CC416 */ LDRH R2, [R0]

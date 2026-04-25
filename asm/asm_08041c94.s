@@ -60,7 +60,7 @@ _08041CEC:
 
 .balign 4, 0
 _08041CF8:
-/* 08041CF8 */ .word D_03003850
+/* 08041CF8 */ .word gCurrentSceneVariable
 _08041CFC:
 /* 08041CFC */ MOVS R0, #0
 _08041CFE:

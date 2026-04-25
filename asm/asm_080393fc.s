@@ -55,7 +55,7 @@ _0803942E:
 /* 08039458 */ ADDS R3, R6, #0
 /* 0803945A */ BL func_080EF224
 /* 0803945E */ LDR R0, [R5]
-/* 08039460 */ LDR R1, =D_03003854
+/* 08039460 */ LDR R1, =gCurrentSceneSpritePool
 /* 08039462 */ LDR R1, [R1]
 /* 08039464 */ MOVS R2, #0
 /* 08039466 */ LDRSH R1, [R1, R2]
@@ -102,7 +102,7 @@ _080394BC:
 
 .balign 4, 0
 _080394B4:
-/* 080394B4 */ .word D_03003850
+/* 080394B4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080394B8:

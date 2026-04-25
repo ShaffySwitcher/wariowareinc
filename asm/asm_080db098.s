@@ -20,7 +20,7 @@ glabel func_080DB098
 
 .balign 4, 0
 _080DB0B4:
-/* 080DB0B4 */ .word D_03003850
+/* 080DB0B4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DB0B8:
@@ -76,7 +76,7 @@ _080DB104:
 
 .balign 4, 0
 _080DB108:
-/* 080DB108 */ .word D_03003850
+/* 080DB108 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DB10C:
@@ -114,7 +114,7 @@ _080DB12A:
 
 .balign 4, 0
 _080DB14C:
-/* 080DB14C */ .word D_03003850
+/* 080DB14C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DB150:
@@ -161,7 +161,7 @@ _080DB1A0:
 
 .balign 4, 0
 _080DB1A4:
-/* 080DB1A4 */ .word D_03003850
+/* 080DB1A4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DB1A8:
@@ -242,7 +242,7 @@ _080DB230:
 
 .balign 4, 0
 _080DB234:
-/* 080DB234 */ .word D_03003850
+/* 080DB234 */ .word gCurrentSceneVariable
 _080DB238:
 /* 080DB238 */ CMP R0, #1
 /* 080DB23A */ BEQ _080DB23E
@@ -323,7 +323,7 @@ _080DB2CC:
 
 .balign 4, 0
 _080DB2D0:
-/* 080DB2D0 */ .word D_03003850
+/* 080DB2D0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DB2D4:
@@ -358,7 +358,7 @@ _080DB2FC:
 
 .balign 4, 0
 _080DB308:
-/* 080DB308 */ .word D_03003850
+/* 080DB308 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DB30C:
@@ -443,7 +443,7 @@ _080DB3AC:
 
 .balign 4, 0
 _080DB3A4:
-/* 080DB3A4 */ .word D_03003850
+/* 080DB3A4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DB3A8:

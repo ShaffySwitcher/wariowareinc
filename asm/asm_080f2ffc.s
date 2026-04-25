@@ -16,7 +16,7 @@ glabel func_080F2FFC
 /* 080F300C */ MULS R0, R2, R0
 /* 080F300E */ MOVS R1, #0XE1
 /* 080F3010 */ LSLS R1, R1, #4
-/* 080F3012 */ BL func_080F4818
+/* 080F3012 */ BL __udivsi3
 /* 080F3016 */ POP {R1}
 /* 080F3018 */ BX R1
 

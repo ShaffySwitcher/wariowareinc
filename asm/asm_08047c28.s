@@ -33,7 +33,7 @@ glabel func_08047C28
 
 .balign 4, 0
 _08047C5C:
-/* 08047C5C */ .word D_03003850
+/* 08047C5C */ .word gCurrentSceneVariable
 _08047C60:
 /* 08047C60 */ CMP R5, #3
 /* 08047C62 */ BEQ _08047D0C
@@ -210,6 +210,6 @@ _08047D94:
 
 .balign 4, 0
 _08047D98:
-/* 08047D98 */ .word D_03003850
+/* 08047D98 */ .word gCurrentSceneVariable
 .ltorg
 .end

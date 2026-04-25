@@ -29,7 +29,7 @@ _080ED6F8:
 
 .balign 4, 0
 _080ED71C:
-/* 080ED71C */ .word D_03003850
+/* 080ED71C */ .word gCurrentSceneVariable
 _080ED720:
 /* 080ED720 */ ADDS R0, R4, #1
 /* 080ED722 */ LSLS R0, R0, #0X10

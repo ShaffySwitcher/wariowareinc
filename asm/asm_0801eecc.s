@@ -44,7 +44,7 @@ _0801EF0C:
 
 .balign 4, 0
 _0801EF10:
-/* 0801EF10 */ .word D_03003850
+/* 0801EF10 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801EF14:
@@ -52,6 +52,6 @@ _0801EF14:
 
 .balign 4, 0
 _0801EF18:
-/* 0801EF18 */ .word D_03003854
+/* 0801EF18 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

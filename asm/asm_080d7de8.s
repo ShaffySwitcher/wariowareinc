@@ -100,7 +100,7 @@ _080D7EB0:
 
 .balign 4, 0
 _080D7EB4:
-/* 080D7EB4 */ .word D_03003850
+/* 080D7EB4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D7EB8:
@@ -179,7 +179,7 @@ _080D7F1C:
 
 .balign 4, 0
 _080D7F3C:
-/* 080D7F3C */ .word D_03003850
+/* 080D7F3C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D7F40:
@@ -334,7 +334,7 @@ _080D804A:
 
 .balign 4, 0
 _080D805C:
-/* 080D805C */ .word D_03003850
+/* 080D805C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D8060:
@@ -367,7 +367,7 @@ _080D806C:
 
 .balign 4, 0
 _080D8090:
-/* 080D8090 */ .word D_03003850
+/* 080D8090 */ .word gCurrentSceneVariable
 _080D8094:
 /* 080D8094 */ MOVS R0, #3
 /* 080D8096 */ BL get_random_range
@@ -778,7 +778,7 @@ _080D8330:
 
 .balign 4, 0
 _080D83D4:
-/* 080D83D4 */ .word D_03003850
+/* 080D83D4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D83D8:

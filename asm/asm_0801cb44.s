@@ -56,10 +56,10 @@ _0801CBAC:
 
 .balign 4, 0
 _0801CBA4:
-/* 0801CBA4 */ .word D_03004890
+/* 0801CBA4 */ .word gBeatscriptScene
 
 .balign 4, 0
 _0801CBA8:
-/* 0801CBA8 */ .word D_03003850
+/* 0801CBA8 */ .word gCurrentSceneVariable
 .ltorg
 .end

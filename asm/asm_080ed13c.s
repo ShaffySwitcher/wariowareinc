@@ -8,7 +8,7 @@ glabel func_080ED13C
 /* 080ED13C */ PUSH {R4, R5, R6, R7, LR}
 /* 080ED13E */ MOVS R6, #0
 /* 080ED140 */ MOVS R3, #0
-/* 080ED142 */ LDR R1, =D_03003850
+/* 080ED142 */ LDR R1, =gCurrentSceneVariable
 /* 080ED144 */ MOV IP, R1
 /* 080ED146 */ MOV R7, IP
 _080ED148:

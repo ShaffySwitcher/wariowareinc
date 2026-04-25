@@ -69,7 +69,7 @@ _0801A8CC:
 
 .balign 4, 0
 _0801A8D0:
-/* 0801A8D0 */ .word D_03003854
+/* 0801A8D0 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801A8D4:
@@ -91,7 +91,7 @@ _0801A8EA:
 /* 0801A8EE */ BLS _0801A872
 /* 0801A8F0 */ LDR R0, _0801A910
 /* 0801A8F2 */ LDR R0, [R0]
-/* 0801A8F4 */ LDR R1, =D_03003854
+/* 0801A8F4 */ LDR R1, =gCurrentSceneSpritePool
 /* 0801A8F6 */ LDR R1, [R1]
 /* 0801A8F8 */ MOVS R7, #0X14
 /* 0801A8FA */ LDRSH R1, [R1, R7]

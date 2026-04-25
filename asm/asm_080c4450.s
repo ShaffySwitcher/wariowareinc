@@ -46,7 +46,7 @@ glabel func_080C4450
 
 .balign 4, 0
 _080C44A8:
-/* 080C44A8 */ .word D_03003850
+/* 080C44A8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C44AC:

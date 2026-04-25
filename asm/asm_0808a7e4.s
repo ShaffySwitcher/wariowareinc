@@ -17,7 +17,7 @@ glabel func_0808A7E4
 /* 0808A7F6 */ LDRH R0, [R1]
 /* 0808A7F8 */ MOVS R1, #0XFA
 /* 0808A7FA */ LSLS R1, R1, #2
-/* 0808A7FC */ BL func_080F4818
+/* 0808A7FC */ BL __udivsi3
 /* 0808A800 */ ADDS R2, R0, #0
 /* 0808A802 */ LDR R5, =gSpriteHandler
 /* 0808A804 */ LDR R0, [R5]
@@ -33,7 +33,7 @@ glabel func_0808A7E4
 /* 0808A81A */ ADDS R0, #0X42
 /* 0808A81C */ LDRH R0, [R0]
 /* 0808A81E */ MOVS R1, #0X64
-/* 0808A820 */ BL func_080F4818
+/* 0808A820 */ BL __udivsi3
 /* 0808A824 */ LSLS R0, R0, #0X10
 /* 0808A826 */ LSRS R0, R0, #0X10
 /* 0808A828 */ MOVS R1, #0XA
@@ -51,7 +51,7 @@ glabel func_0808A7E4
 /* 0808A844 */ ADDS R0, #0X42
 /* 0808A846 */ LDRH R0, [R0]
 /* 0808A848 */ MOVS R1, #0XA
-/* 0808A84A */ BL func_080F4818
+/* 0808A84A */ BL __udivsi3
 /* 0808A84E */ LSLS R0, R0, #0X10
 /* 0808A850 */ LSRS R0, R0, #0X10
 /* 0808A852 */ MOVS R1, #0XA
@@ -88,6 +88,6 @@ _0808A894:
 
 .balign 4, 0
 _0808A890:
-/* 0808A890 */ .word D_03003850
+/* 0808A890 */ .word gCurrentSceneVariable
 .ltorg
 .end

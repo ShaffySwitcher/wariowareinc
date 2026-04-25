@@ -22,7 +22,7 @@ _08009F2C: \n\
  \n\
 .balign 4, 0 \n\
 _08009F38: \n\
-/* 08009F38 */ .word D_03004890 \n\
+/* 08009F38 */ .word gBeatscriptScene \n\
 _08009F3C: \n\
 /* 08009F3C */ ADDS R0, R5, #0 \n\
 /* 08009F3E */ BL play_sound \n\
@@ -31,7 +31,7 @@ _08009F3C: \n\
 /* 08009F46 */ ADDS R0, R5, #0 \n\
 /* 08009F48 */ BL func_0800A430 \n\
 /* 08009F4C */ STRH R0, [R4, #8] \n\
-/* 08009F4E */ BL func_08009EA8 \n\
+/* 08009F4E */ BL update_beatscript_tempo \n\
 /* 08009F52 */ BL func_08009F88 \n\
 /* 08009F56 */ LDR R0, [R4, #4] \n\
 /* 08009F58 */ LDR R1, _08009F6C \n\
@@ -45,7 +45,7 @@ _08009F62: \n\
  \n\
 .balign 4, 0 \n\
 _08009F68: \n\
-/* 08009F68 */ .word D_03004890 \n\
+/* 08009F68 */ .word gBeatscriptScene \n\
  \n\
 .balign 4, 0 \n\
 _08009F6C: \n\

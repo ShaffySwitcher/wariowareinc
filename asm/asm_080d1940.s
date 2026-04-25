@@ -59,7 +59,7 @@ _080D199A:
 
 .balign 4, 0
 _080D19A4:
-/* 080D19A4 */ .word D_03003850
+/* 080D19A4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080D19A8:

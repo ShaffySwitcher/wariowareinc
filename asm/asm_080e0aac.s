@@ -72,7 +72,7 @@ _080E0B30:
 
 .balign 4, 0
 _080E0B38:
-/* 080E0B38 */ .word D_03003850
+/* 080E0B38 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E0B3C:
@@ -132,7 +132,7 @@ _080E0B78:
 _080E0BA6:
 /* 080E0BA6 */ LDR R0, _080E0BC8
 /* 080E0BA8 */ LDR R0, [R0]
-/* 080E0BAA */ LDR R4, =D_03003850
+/* 080E0BAA */ LDR R4, =gCurrentSceneVariable
 /* 080E0BAC */ LDR R1, [R4]
 /* 080E0BAE */ MOVS R2, #2
 /* 080E0BB0 */ LDRSH R1, [R1, R2]

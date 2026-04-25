@@ -121,7 +121,7 @@ _080C3F7C:
 
 .balign 4, 0
 _080C3F80:
-/* 080C3F80 */ .word D_03003850
+/* 080C3F80 */ .word gCurrentSceneVariable
 _080C3F84:
 /* 080C3F84 */ MOVS R0, #2
 /* 080C3F86 */ ANDS R0, R5

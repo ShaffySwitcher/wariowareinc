@@ -28,7 +28,7 @@ _080A2A8C:
 
 .balign 4, 0
 _080A2A90:
-/* 080A2A90 */ .word D_03003850
+/* 080A2A90 */ .word gCurrentSceneVariable
 _080A2A94:
 /* 080A2A94 */ LDRH R1, [R2]
 /* 080A2A96 */ MOVS R0, #0X20

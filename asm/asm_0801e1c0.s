@@ -37,7 +37,7 @@ _0801E1DA:
 /* 0801E1FA */ ADDS R1, R4, #0
 /* 0801E1FC */ MOVS R3, #0
 /* 0801E1FE */ BL func_0800A2D8
-/* 0801E202 */ LDR R0, =D_03003854
+/* 0801E202 */ LDR R0, =gCurrentSceneSpritePool
 /* 0801E204 */ LDR R0, [R0]
 /* 0801E206 */ MOVS R1, #0X12
 /* 0801E208 */ LDRSH R0, [R0, R1]
@@ -62,7 +62,7 @@ _0801E230:
 
 .balign 4, 0
 _0801E228:
-/* 0801E228 */ .word D_03003850
+/* 0801E228 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801E22C:

@@ -20,7 +20,7 @@ _0801DBEA:
 /* 0801DBEA */ LDR R2, _0801DC74
 /* 0801DBEC */ MOV SB, R2
 /* 0801DBEE */ LDR R5, [R2]
-/* 0801DBF0 */ LDR R0, =D_03003854
+/* 0801DBF0 */ LDR R0, =gCurrentSceneSpritePool
 /* 0801DBF2 */ MOV R8, R0
 /* 0801DBF4 */ LDR R1, [R0]
 /* 0801DBF6 */ LSLS R0, R7, #1
@@ -38,7 +38,7 @@ _0801DBEA:
 /* 0801DC10 */ BL sprite_set_anim_cel
 /* 0801DC14 */ ADDS R0, R6, #0
 /* 0801DC16 */ MOVS R1, #0XA
-/* 0801DC18 */ BL func_080F4818
+/* 0801DC18 */ BL __udivsi3
 /* 0801DC1C */ ADDS R6, R0, #0
 /* 0801DC1E */ ADDS R7, #1
 /* 0801DC20 */ CMP R7, #2

@@ -147,7 +147,7 @@ _080397DE:
 
 .balign 4, 0
 _08039864:
-/* 08039864 */ .word D_03003850
+/* 08039864 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08039868:
@@ -335,7 +335,7 @@ _080399DC:
 
 .balign 4, 0
 _080399E0:
-/* 080399E0 */ .word D_03003850
+/* 080399E0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080399E4:
@@ -343,7 +343,7 @@ _080399E4:
 
 .balign 4, 0
 _080399E8:
-/* 080399E8 */ .word D_03003854
+/* 080399E8 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080399EC:
@@ -368,7 +368,7 @@ _080399FE:
 
 .balign 4, 0
 _08039A10:
-/* 08039A10 */ .word D_03003850
+/* 08039A10 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08039A14:

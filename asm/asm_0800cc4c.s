@@ -28,7 +28,7 @@ glabel func_0800CC4C
 /* 0800CC74 */ STRH R1, [R2]
 /* 0800CC76 */ LSLS R0, R0, #0X10
 /* 0800CC78 */ LSRS R0, R0, #0X10
-/* 0800CC7A */ BL func_08009E20
+/* 0800CC7A */ BL set_beatscript_tempo
 /* 0800CC7E */ LDRB R0, [R4, #1]
 /* 0800CC80 */ MOVS R1, #0X80
 /* 0800CC82 */ ORRS R0, R1
@@ -39,7 +39,7 @@ glabel func_0800CC4C
 
 .balign 4, 0
 _0800CC8C:
-/* 0800CC8C */ .word D_03004890
+/* 0800CC8C */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800CC90:

@@ -32,7 +32,7 @@ _080A1C6C:
 
 .balign 4, 0
 _080A1C70:
-/* 080A1C70 */ .word D_03003850
+/* 080A1C70 */ .word gCurrentSceneVariable
 _080A1C74:
 /* 080A1C74 */ BL func_080A1A80
 /* 080A1C78 */ CMP R0, #1

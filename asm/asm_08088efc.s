@@ -55,13 +55,13 @@ _08088F50:
 
 .balign 4, 0
 _08088F54:
-/* 08088F54 */ .word D_03003850
+/* 08088F54 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08088F58:
 /* 08088F58 */ .word D_083FD674
 _08088F5C:
-/* 08088F5C */ LDR R1, =D_03003850
+/* 08088F5C */ LDR R1, =gCurrentSceneVariable
 /* 08088F5E */ LDR R0, [R1]
 /* 08088F60 */ STR R2, [R0, #0X38]
 _08088F62:

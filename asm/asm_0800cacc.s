@@ -27,7 +27,7 @@ glabel func_0800CACC
 
 .balign 4, 0
 _0800CAF4:
-/* 0800CAF4 */ .word D_03004890
+/* 0800CAF4 */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800CAF8:

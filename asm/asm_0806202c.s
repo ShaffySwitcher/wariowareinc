@@ -32,7 +32,7 @@ _08062048:
 
 .balign 4, 0
 _0806205C:
-/* 0806205C */ .word D_03003850
+/* 0806205C */ .word gCurrentSceneVariable
 _08062060:
 /* 08062060 */ MOVS R0, #0XF0
 /* 08062062 */ LSLS R0, R0, #7

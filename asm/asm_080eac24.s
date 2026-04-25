@@ -150,7 +150,7 @@ _080EAD4C:
 
 .balign 4, 0
 _080EAD50:
-/* 080EAD50 */ .word D_03003850
+/* 080EAD50 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080EAD54:
@@ -166,7 +166,7 @@ _080EAD5C:
 
 .balign 4, 0
 _080EAD60:
-/* 080EAD60 */ .word D_03003854
+/* 080EAD60 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080EAD64:

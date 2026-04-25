@@ -57,7 +57,7 @@ _08040C2A:
 
 .balign 4, 0
 _08040C34:
-/* 08040C34 */ .word D_03003850
+/* 08040C34 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08040C38:
@@ -67,7 +67,7 @@ _08040C38:
 _08040C3C:
 /* 08040C3C */ .word gSpriteHandler
 _08040C40:
-/* 08040C40 */ LDR R0, =D_03003850
+/* 08040C40 */ LDR R0, =gCurrentSceneVariable
 /* 08040C42 */ LDR R0, [R0]
 /* 08040C44 */ ADDS R0, #0X80
 /* 08040C46 */ MOVS R1, #1

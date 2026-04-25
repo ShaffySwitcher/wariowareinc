@@ -76,7 +76,7 @@ _080DBD7C:
 
 .balign 4, 0
 _080DBDC8:
-/* 080DBDC8 */ .word D_03003850
+/* 080DBDC8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DBDCC:
@@ -155,6 +155,6 @@ _080DBE4C:
 
 .balign 4, 0
 _080DBE50:
-/* 080DBE50 */ .word D_03003850
+/* 080DBE50 */ .word gCurrentSceneVariable
 .ltorg
 .end

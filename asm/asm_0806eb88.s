@@ -97,7 +97,7 @@ _0806EC2A:
 
 .balign 4, 0
 _0806EC44:
-/* 0806EC44 */ .word D_03003850
+/* 0806EC44 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0806EC48:
@@ -110,7 +110,7 @@ _0806EC50:
 /* 0806EC50 */ LDR R0, _0806EC74
 /* 0806EC52 */ BL play_sound
 _0806EC56:
-/* 0806EC56 */ LDR R1, =D_03003850
+/* 0806EC56 */ LDR R1, =gCurrentSceneVariable
 /* 0806EC58 */ LDR R2, [R1]
 /* 0806EC5A */ MOV R3, R8
 /* 0806EC5C */ LSLS R1, R3, #0X10

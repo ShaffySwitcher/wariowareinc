@@ -9,7 +9,7 @@ glabel func_080A7C08
 /* 080A7C0A */ BL get_current_mem_id
 /* 080A7C0E */ LSLS R0, R0, #0X10
 /* 080A7C10 */ LSRS R0, R0, #0X10
-/* 080A7C12 */ BL func_08005A1C
+/* 080A7C12 */ BL task_pool_force_cancel_id
 /* 080A7C16 */ BL func_080A8418
 /* 080A7C1A */ MOVS R0, #2
 /* 080A7C1C */ BL func_0800BF20
@@ -26,7 +26,7 @@ glabel func_080A7C08
 /* 080A7C3C */ LDR R1, _080A7C54
 /* 080A7C3E */ MOVS R2, #0
 /* 080A7C40 */ BL run_func_after_task
-/* 080A7C44 */ LDR R0, =D_03003850
+/* 080A7C44 */ LDR R0, =gCurrentSceneVariable
 /* 080A7C46 */ LDR R1, [R0]
 /* 080A7C48 */ MOVS R0, #0X63
 /* 080A7C4A */ STRB R0, [R1]

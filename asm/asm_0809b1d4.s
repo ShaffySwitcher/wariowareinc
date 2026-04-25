@@ -34,7 +34,7 @@ _0809B200:
 
 .balign 4, 0
 _0809B204:
-/* 0809B204 */ .word D_03003850
+/* 0809B204 */ .word gCurrentSceneVariable
 _0809B208:
 /* 0809B208 */ LDRH R3, [R2, #0X1A]
 /* 0809B20A */ MOVS R0, #0X1A
@@ -96,6 +96,6 @@ _0809B278:
 
 .balign 4, 0
 _0809B274:
-/* 0809B274 */ .word D_03003850
+/* 0809B274 */ .word gCurrentSceneVariable
 .ltorg
 .end

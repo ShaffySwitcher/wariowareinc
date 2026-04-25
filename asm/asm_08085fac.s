@@ -74,7 +74,7 @@ _08086014:
 
 .balign 4, 0
 _08086030:
-/* 08086030 */ .word D_03003850
+/* 08086030 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08086034:
@@ -86,7 +86,7 @@ _08086038:
 
 .balign 4, 0
 _0808603C:
-/* 0808603C */ .word D_03003854
+/* 0808603C */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _08086040:
@@ -94,7 +94,7 @@ _08086040:
 _08086044:
 /* 08086044 */ LDR R3, [SP, #0XC]
 /* 08086046 */ LSLS R0, R3, #7
-/* 08086048 */ BL func_080F4818
+/* 08086048 */ BL __udivsi3
 /* 0808604C */ LSLS R0, R0, #0X18
 /* 0808604E */ LSRS R2, R0, #0X18
 /* 08086050 */ LDR R7, [SP, #0X10]
@@ -128,7 +128,7 @@ _0808607E:
 /* 08086084 */ ADDS R4, R0
 /* 08086086 */ ADDS R0, R6, #0
 /* 08086088 */ MOV R1, SB
-/* 0808608A */ BL func_080F4818
+/* 0808608A */ BL __udivsi3
 /* 0808608E */ ADD R0, SL
 /* 08086090 */ STRH R0, [R4, #0XC]
 /* 08086092 */ MOV R2, SP
@@ -157,7 +157,7 @@ _080860B8:
 
 .balign 4, 0
 _080860BC:
-/* 080860BC */ .word D_03003850
+/* 080860BC */ .word gCurrentSceneVariable
 _080860C0:
 /* 080860C0 */ LDR R0, [SP, #0X10]
 /* 080860C2 */ SUBS R0, #1
@@ -191,7 +191,7 @@ _080860E6:
 /* 080860F6 */ LDR R1, [R2]
 /* 080860F8 */ MOVS R3, #0
 /* 080860FA */ LDRSH R1, [R1, R3]
-/* 080860FC */ LDR R2, =D_03003850
+/* 080860FC */ LDR R2, =gCurrentSceneVariable
 /* 080860FE */ LDR R4, [R2]
 /* 08086100 */ LSLS R2, R5, #3
 /* 08086102 */ ADDS R4, R2
@@ -222,6 +222,6 @@ _08086124:
 
 .balign 4, 0
 _08086128:
-/* 08086128 */ .word D_03003854
+/* 08086128 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

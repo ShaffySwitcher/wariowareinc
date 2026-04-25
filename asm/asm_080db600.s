@@ -88,7 +88,7 @@ _080DB694:
 
 .balign 4, 0
 _080DB698:
-/* 080DB698 */ .word D_03003850
+/* 080DB698 */ .word gCurrentSceneVariable
 _080DB69C:
 /* 080DB69C */ CMP R0, #0XE
 /* 080DB69E */ BLE _080DB6A2
@@ -189,7 +189,7 @@ _080DB74C:
 
 .balign 4, 0
 _080DB750:
-/* 080DB750 */ .word D_03003850
+/* 080DB750 */ .word gCurrentSceneVariable
 _080DB754:
 /* 080DB754 */ ADDS R0, R2, #0
 /* 080DB756 */ SUBS R0, #0X80

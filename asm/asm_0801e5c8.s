@@ -115,7 +115,7 @@ glabel func_0801E5C8
 /* 0801E6B8 */ MOVS R0, #0
 /* 0801E6BA */ BL func_0800A200
 /* 0801E6BE */ MOVS R0, #0
-/* 0801E6C0 */ BL func_08009EE0
+/* 0801E6C0 */ BL func_08009EE0_stub
 /* 0801E6C4 */ ADD SP, #0X54
 /* 0801E6C6 */ POP {R3, R4, R5}
 /* 0801E6C8 */ MOV R8, R3
@@ -139,7 +139,7 @@ _0801E6D8:
 
 .balign 4, 0
 _0801E6DC:
-/* 0801E6DC */ .word D_03003850
+/* 0801E6DC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801E6E0:

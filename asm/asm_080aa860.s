@@ -59,7 +59,7 @@ _080AA8C4:
 /* 080AA8C8 */ LDRH R0, [R0]
 /* 080AA8CA */ LSRS R0, R0, #8
 /* 080AA8CC */ MOVS R1, #0X18
-/* 080AA8CE */ BL func_080F4818
+/* 080AA8CE */ BL __udivsi3
 /* 080AA8D2 */ LSLS R0, R0, #0X10
 /* 080AA8D4 */ LSRS R3, R0, #0X10
 /* 080AA8D6 */ ADDS R4, R6
@@ -99,7 +99,7 @@ _080AA910:
 
 .balign 4, 0
 _080AA918:
-/* 080AA918 */ .word D_03003850
+/* 080AA918 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080AA91C:

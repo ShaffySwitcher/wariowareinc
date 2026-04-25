@@ -38,7 +38,7 @@ _0801CACC:
 
 .balign 4, 0
 _0801CAD0:
-/* 0801CAD0 */ .word D_03003854
+/* 0801CAD0 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801CAD4:

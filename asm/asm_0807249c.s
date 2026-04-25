@@ -54,7 +54,7 @@ _080724CE:
 /* 080724F8 */ BL sprite_set_visible
 /* 080724FC */ ADDS R0, R4, #0
 /* 080724FE */ MOVS R1, #0XA
-/* 08072500 */ BL func_080F4818
+/* 08072500 */ BL __udivsi3
 /* 08072504 */ ADDS R4, R0, #0
 /* 08072506 */ SUBS R7, #1
 /* 08072508 */ SUBS R6, #2
@@ -158,7 +158,7 @@ _080725BC:
 
 .balign 4, 0
 _080725CC:
-/* 080725CC */ .word D_03003850
+/* 080725CC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080725D0:

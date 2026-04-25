@@ -32,7 +32,7 @@ glabel func_080E603C
 
 .balign 4, 0
 _080E6070:
-/* 080E6070 */ .word D_03003850
+/* 080E6070 */ .word gCurrentSceneVariable
 _080E6074:
 /* 080E6074 */ LDR R1, _080E6088
 /* 080E6076 */ LSLS R0, R4, #1

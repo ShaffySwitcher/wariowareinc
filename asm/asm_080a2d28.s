@@ -80,7 +80,7 @@ _080A2D9C:
 
 .balign 4, 0
 _080A2DB8:
-/* 080A2DB8 */ .word D_03003850
+/* 080A2DB8 */ .word gCurrentSceneVariable
 _080A2DBC:
 /* 080A2DBC */ SUBS R0, R4, R3
 /* 080A2DBE */ LSLS R0, R0, #8

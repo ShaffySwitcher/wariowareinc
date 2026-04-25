@@ -25,7 +25,7 @@ glabel func_08021CF8
 /* 08021D1A */ ADDS R1, #2
 /* 08021D1C */ MOVS R0, #0X14
 /* 08021D1E */ STRH R0, [R1]
-/* 08021D20 */ LDR R0, =D_03003850
+/* 08021D20 */ LDR R0, =gCurrentSceneVariable
 /* 08021D22 */ LDR R0, [R0]
 /* 08021D24 */ MOVS R1, #0X90
 /* 08021D26 */ LSLS R1, R1, #8

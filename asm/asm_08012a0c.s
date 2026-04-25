@@ -81,7 +81,7 @@ _08012A70:
 /* 08012A94 */ BL sprite_set_anim_cel
 /* 08012A98 */ ADDS R0, R7, #0
 /* 08012A9A */ MOVS R1, #0XA
-/* 08012A9C */ BL func_080F4818
+/* 08012A9C */ BL __udivsi3
 /* 08012AA0 */ ADDS R7, R0, #0
 /* 08012AA2 */ ADDS R6, #1
 /* 08012AA4 */ CMP R6, #2

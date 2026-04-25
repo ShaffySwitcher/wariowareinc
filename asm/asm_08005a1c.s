@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08005A1C
+glabel task_pool_force_cancel_id
 .thumb_func
 /* 08005A1C */ PUSH {R4, R5, R6, R7, LR}
 /* 08005A1E */ LSLS R0, R0, #0X10

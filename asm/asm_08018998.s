@@ -9,7 +9,7 @@ glabel func_08018998
 /* 0801899A */ BL func_080186AC
 /* 0801899E */ LDR R5, _080189C4
 /* 080189A0 */ LDR R0, [R5]
-/* 080189A2 */ LDR R4, =D_03003854
+/* 080189A2 */ LDR R4, =gCurrentSceneSpritePool
 /* 080189A4 */ LDR R1, [R4]
 /* 080189A6 */ MOVS R2, #0XA
 /* 080189A8 */ LDRSH R1, [R1, R2]

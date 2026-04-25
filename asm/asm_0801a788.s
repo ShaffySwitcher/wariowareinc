@@ -11,7 +11,7 @@ glabel func_0801A788
 _0801A78E:
 /* 0801A78E */ LDR R0, _0801A7D0
 /* 0801A790 */ LDR R5, [R0]
-/* 0801A792 */ LDR R0, =D_03003850
+/* 0801A792 */ LDR R0, =gCurrentSceneVariable
 /* 0801A794 */ LDR R0, [R0]
 /* 0801A796 */ LSLS R1, R7, #1
 /* 0801A798 */ ADDS R0, #0XFE
@@ -29,7 +29,7 @@ _0801A78E:
 /* 0801A7B2 */ BL sprite_set_anim_cel
 /* 0801A7B6 */ ADDS R0, R6, #0
 /* 0801A7B8 */ MOVS R1, #0XA
-/* 0801A7BA */ BL func_080F4818
+/* 0801A7BA */ BL __udivsi3
 /* 0801A7BE */ ADDS R1, R0, #0
 /* 0801A7C0 */ ADDS R6, R1, #0
 /* 0801A7C2 */ ADDS R7, #1

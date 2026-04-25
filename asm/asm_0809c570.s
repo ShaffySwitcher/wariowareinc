@@ -28,7 +28,7 @@ _0809C57E:
 
 .balign 4, 0
 _0809C598:
-/* 0809C598 */ .word D_03003850
+/* 0809C598 */ .word gCurrentSceneVariable
 _0809C59C:
 /* 0809C59C */ LDR R0, [R3, #0X1C]
 _0809C59E:
@@ -62,7 +62,7 @@ _0809C5B6:
 /* 0809C5D4 */ ASRS R0, R0, #0X10
 /* 0809C5D6 */ CMP R0, #9
 /* 0809C5D8 */ BLE _0809C57E
-/* 0809C5DA */ LDR R4, =D_03003850
+/* 0809C5DA */ LDR R4, =gCurrentSceneVariable
 /* 0809C5DC */ LDR R2, [R4]
 /* 0809C5DE */ LDRH R0, [R2, #0X10]
 /* 0809C5E0 */ LDRH R3, [R2, #0X2E]

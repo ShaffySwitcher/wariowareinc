@@ -50,7 +50,7 @@ _08039EA4:
 
 .balign 4, 0
 _08039EDC:
-/* 08039EDC */ .word D_03003850
+/* 08039EDC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08039EE0:
@@ -130,7 +130,7 @@ _08039F68:
 
 .balign 4, 0
 _08039F6C:
-/* 08039F6C */ .word D_03003850
+/* 08039F6C */ .word gCurrentSceneVariable
 _08039F70:
 /* 08039F70 */ CMP R0, #2
 /* 08039F72 */ BEQ _08039FAC
@@ -216,7 +216,7 @@ _08039FEC:
 /* 08039FF0 */ LDR R0, _0803A008
 /* 08039FF2 */ BL func_0800C7FC
 _08039FF6:
-/* 08039FF6 */ LDR R0, =D_03003850
+/* 08039FF6 */ LDR R0, =gCurrentSceneVariable
 /* 08039FF8 */ LDR R0, [R0]
 /* 08039FFA */ ADDS R0, #0X94
 /* 08039FFC */ STR R6, [R0]

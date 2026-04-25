@@ -19,7 +19,7 @@ glabel func_0807E460
 
 .balign 4, 0
 _0807E478:
-/* 0807E478 */ .word D_03003850
+/* 0807E478 */ .word gCurrentSceneVariable
 _0807E47C:
 /* 0807E47C */ MOVS R0, #0X1E
 /* 0807E47E */ BL get_random_range

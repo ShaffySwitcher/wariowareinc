@@ -11,7 +11,7 @@ glabel func_08067564
 /* 0806756A */ STR R3, [R2]
 /* 0806756C */ ADDS R0, #2
 /* 0806756E */ STR R0, [R2, #8]
-/* 08067570 */ LDR R0, =D_03003850
+/* 08067570 */ LDR R0, =gCurrentSceneVariable
 /* 08067572 */ LDR R3, [R0]
 /* 08067574 */ LDR R0, [R3, #0XC]
 /* 08067576 */ SUBS R0, R1, R0

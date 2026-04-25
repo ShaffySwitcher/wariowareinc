@@ -65,10 +65,10 @@ _080A7BF8:
 
 .balign 4, 0
 _080A7BFC:
-/* 080A7BFC */ .word D_03003854
+/* 080A7BFC */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080A7C00:
-/* 080A7C00 */ .word D_03003850
+/* 080A7C00 */ .word gCurrentSceneVariable
 .ltorg
 .end

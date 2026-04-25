@@ -31,7 +31,7 @@ glabel func_080125C8
 /* 080125F6 */ LDRB R0, [R4, #1]
 /* 080125F8 */ CMP R0, #1
 /* 080125FA */ BNE _0801260A
-/* 080125FC */ BL func_08009D3C
+/* 080125FC */ BL beatscript_scene_is_paused
 /* 08012600 */ CMP R0, #0
 /* 08012602 */ BEQ _0801260A
 /* 08012604 */ LDRB R0, [R4]

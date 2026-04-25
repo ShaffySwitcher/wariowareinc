@@ -41,7 +41,7 @@ _080A84D0:
 
 .balign 4, 0
 _080A84D4:
-/* 080A84D4 */ .word D_03003850
+/* 080A84D4 */ .word gCurrentSceneVariable
 _080A84D8:
 /* 080A84D8 */ MOV R3, SL
 /* 080A84DA */ LDR R1, [R3]
@@ -146,7 +146,7 @@ _080A8552:
 
 .balign 4, 0
 _080A85B0:
-/* 080A85B0 */ .word D_03003854
+/* 080A85B0 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080A85B4:

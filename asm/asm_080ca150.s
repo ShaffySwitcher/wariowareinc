@@ -175,7 +175,7 @@ _080CA2A4:
 
 .balign 4, 0
 _080CA2A8:
-/* 080CA2A8 */ .word D_03003850
+/* 080CA2A8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CA2AC:
@@ -230,6 +230,6 @@ _080CA2F8:
 
 .balign 4, 0
 _080CA2FC:
-/* 080CA2FC */ .word D_03003850
+/* 080CA2FC */ .word gCurrentSceneVariable
 .ltorg
 .end

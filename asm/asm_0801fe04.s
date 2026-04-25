@@ -32,7 +32,7 @@ _0801FE22:
 
 .balign 4, 0
 _0801FE34:
-/* 0801FE34 */ .word D_03003850
+/* 0801FE34 */ .word gCurrentSceneVariable
 _0801FE38:
 /* 0801FE38 */ LDR R0, [R2, #0X1C]
 /* 0801FE3A */ MOVS R1, #5
@@ -178,7 +178,7 @@ _0801FF50:
 
 .balign 4, 0
 _0801FF54:
-/* 0801FF54 */ .word D_03003854
+/* 0801FF54 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801FF58:

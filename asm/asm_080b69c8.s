@@ -26,9 +26,9 @@ glabel func_080B69C8
 
 .balign 4, 0
 _080B69F0:
-/* 080B69F0 */ .word D_03003850
+/* 080B69F0 */ .word gCurrentSceneVariable
 _080B69F4:
-/* 080B69F4 */ LDR R0, =D_03003850
+/* 080B69F4 */ LDR R0, =gCurrentSceneVariable
 /* 080B69F6 */ LDR R4, [R0]
 /* 080B69F8 */ ADDS R4, #0X62
 /* 080B69FA */ ADDS R4, R5

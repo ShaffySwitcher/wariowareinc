@@ -8,7 +8,7 @@ glabel func_0800C7A4
 /* 0800C7A4 */ PUSH {LR}
 /* 0800C7A6 */ LDR R1, _0800C7C4
 /* 0800C7A8 */ LDR R2, [R1]
-/* 0800C7AA */ LDR R1, =D_03003854
+/* 0800C7AA */ LDR R1, =gCurrentSceneSpritePool
 /* 0800C7AC */ LDR R1, [R1]
 /* 0800C7AE */ LSLS R0, R0, #1
 /* 0800C7B0 */ ADDS R0, R0, R1

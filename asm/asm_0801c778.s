@@ -225,7 +225,7 @@ _0801C92C:
 
 .balign 4, 0
 _0801C930:
-/* 0801C930 */ .word D_03003854
+/* 0801C930 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801C934:
@@ -233,7 +233,7 @@ _0801C934:
 
 .balign 4, 0
 _0801C938:
-/* 0801C938 */ .word D_03003850
+/* 0801C938 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801C93C:
@@ -398,7 +398,7 @@ _0801CA80:
 
 .balign 4, 0
 _0801CA84:
-/* 0801CA84 */ .word D_03003854
+/* 0801CA84 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801CA88:
@@ -410,6 +410,6 @@ _0801CA8C:
 
 .balign 4, 0
 _0801CA90:
-/* 0801CA90 */ .word D_03003850
+/* 0801CA90 */ .word gCurrentSceneVariable
 .ltorg
 .end

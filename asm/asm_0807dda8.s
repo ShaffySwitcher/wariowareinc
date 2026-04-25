@@ -18,7 +18,7 @@ glabel func_0807DDA8
 /* 0807DDBC */ LDR R4, [R6]
 /* 0807DDBE */ ADDS R0, R4, #0
 /* 0807DDC0 */ MOVS R1, #0X1E
-/* 0807DDC2 */ BL func_080F4818
+/* 0807DDC2 */ BL __udivsi3
 /* 0807DDC6 */ MOV SB, R0
 /* 0807DDC8 */ SUBS R4, #1
 /* 0807DDCA */ STR R4, [R6]
@@ -38,7 +38,7 @@ glabel func_0807DDA8
 /* 0807DDE8 */ BL sprite_set_anim_cel
 /* 0807DDEC */ MOV R0, SB
 /* 0807DDEE */ MOVS R1, #0XA
-/* 0807DDF0 */ BL func_080F4818
+/* 0807DDF0 */ BL __udivsi3
 /* 0807DDF4 */ ADDS R5, R0, #0
 /* 0807DDF6 */ LDR R0, [R6]
 /* 0807DDF8 */ MOV R8, R0
@@ -58,7 +58,7 @@ glabel func_0807DDA8
 /* 0807DE16 */ BL sprite_set_anim_cel
 /* 0807DE1A */ ADDS R0, R5, #0
 /* 0807DE1C */ MOVS R1, #0XA
-/* 0807DE1E */ BL func_080F4818
+/* 0807DE1E */ BL __udivsi3
 /* 0807DE22 */ LDR R5, [R6]
 /* 0807DE24 */ MOV R2, SL
 /* 0807DE26 */ LDR R1, [R2]
@@ -87,6 +87,6 @@ _0807DE54:
 
 .balign 4, 0
 _0807DE50:
-/* 0807DE50 */ .word D_03003850
+/* 0807DE50 */ .word gCurrentSceneVariable
 .ltorg
 .end

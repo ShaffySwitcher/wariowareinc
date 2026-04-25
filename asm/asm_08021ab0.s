@@ -10,7 +10,7 @@ glabel func_08021AB0
 /* 08021AB4 */ LDRH R0, [R0]
 /* 08021AB6 */ CMP R0, #0X14
 /* 08021AB8 */ BNE _08021ACC
-/* 08021ABA */ LDR R0, =D_03003850
+/* 08021ABA */ LDR R0, =gCurrentSceneVariable
 /* 08021ABC */ LDR R0, [R0]
 /* 08021ABE */ LDR R0, [R0, #0X30]
 /* 08021AC0 */ CMP R0, #1

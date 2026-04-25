@@ -40,7 +40,7 @@ glabel func_08024660
 /* 080246A4 */ STR R4, [SP, #0X10]
 /* 080246A6 */ MOVS R2, #0
 /* 080246A8 */ BL sprite_create
-/* 080246AC */ LDR R1, =D_03003854
+/* 080246AC */ LDR R1, =gCurrentSceneSpritePool
 /* 080246AE */ LDR R1, [R1]
 /* 080246B0 */ STRH R0, [R1]
 /* 080246B2 */ LDR R0, [R5]
@@ -66,7 +66,7 @@ _080246F0:
 
 .balign 4, 0
 _080246D4:
-/* 080246D4 */ .word D_03003850
+/* 080246D4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080246D8:

@@ -22,7 +22,7 @@ glabel func_080DEAE0
 
 .balign 4, 0
 _080DEAFC:
-/* 080DEAFC */ .word D_03003850
+/* 080DEAFC */ .word gCurrentSceneVariable
 _080DEB00:
 /* 080DEB00 */ ASRS R0, R1, #8
 /* 080DEB02 */ SUBS R0, R3, R0

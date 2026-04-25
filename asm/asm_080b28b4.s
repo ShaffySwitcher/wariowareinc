@@ -31,7 +31,7 @@ glabel func_080B28B4
 
 .balign 4, 0
 _080B28E4:
-/* 080B28E4 */ .word D_03003850
+/* 080B28E4 */ .word gCurrentSceneVariable
 _080B28E8:
 /* 080B28E8 */ LDR R0, _080B2930
 /* 080B28EA */ BL play_sound

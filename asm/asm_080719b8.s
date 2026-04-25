@@ -26,7 +26,7 @@ _080719C6:
 
 .balign 4, 0
 _080719DC:
-/* 080719DC */ .word D_03003850
+/* 080719DC */ .word gCurrentSceneVariable
 _080719E0:
 /* 080719E0 */ CMP R5, #3
 /* 080719E2 */ BEQ _080719EC

@@ -72,7 +72,7 @@ _0800DD34: \n\
  \n\
 .balign 4, 0 \n\
 _0800DD38: \n\
-/* 0800DD38 */ .word D_03003854 \n\
+/* 0800DD38 */ .word gCurrentSceneSpritePool \n\
  \n\
 .balign 4, 0 \n\
 _0800DD3C: \n\

@@ -58,7 +58,7 @@ _080259CC:
 
 .balign 4, 0
 _080259FC:
-/* 080259FC */ .word D_03003850
+/* 080259FC */ .word gCurrentSceneVariable
 _08025A00:
 /* 08025A00 */ MOVS R0, #0XA0
 /* 08025A02 */ LSLS R0, R0, #1
@@ -126,7 +126,7 @@ _08025A78:
 
 .balign 4, 0
 _08025A7C:
-/* 08025A7C */ .word D_03003850
+/* 08025A7C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08025A80:

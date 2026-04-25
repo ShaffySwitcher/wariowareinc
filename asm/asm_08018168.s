@@ -40,7 +40,7 @@ _080181A0:
 
 .balign 4, 0
 _080181A4:
-/* 080181A4 */ .word D_03003850
+/* 080181A4 */ .word gCurrentSceneVariable
 _080181A8:
 /* 080181A8 */ LDR R2, _08018320
 _080181AA:
@@ -210,11 +210,11 @@ _080182AE:
 _080182F2:
 /* 080182F2 */ ADDS R0, R6, #0
 /* 080182F4 */ MOVS R1, #0XA
-/* 080182F6 */ BL func_080F4818
+/* 080182F6 */ BL __udivsi3
 /* 080182FA */ ADDS R6, R0, #0
 /* 080182FC */ MOV R0, R8
 /* 080182FE */ MOVS R1, #0XA
-/* 08018300 */ BL func_080F4818
+/* 08018300 */ BL __udivsi3
 /* 08018304 */ MOV R8, R0
 /* 08018306 */ SUBS R7, #2
 /* 08018308 */ SUBS R5, #1
@@ -244,6 +244,6 @@ _08018328:
 
 .balign 4, 0
 _0801832C:
-/* 0801832C */ .word D_03003850
+/* 0801832C */ .word gCurrentSceneVariable
 .ltorg
 .end

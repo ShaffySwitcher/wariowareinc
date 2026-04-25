@@ -90,7 +90,7 @@ _0805BF74:
 
 .balign 4, 0
 _0805BF58:
-/* 0805BF58 */ .word D_03003850
+/* 0805BF58 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0805BF5C:

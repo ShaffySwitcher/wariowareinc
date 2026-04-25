@@ -44,7 +44,7 @@ _080ACA90:
 
 .balign 4, 0
 _080ACA94:
-/* 080ACA94 */ .word D_03003850
+/* 080ACA94 */ .word gCurrentSceneVariable
 _080ACA98:
 /* 080ACA98 */ CMP R0, #2
 /* 080ACA9A */ BEQ _080ACAD4
@@ -137,7 +137,7 @@ _080ACB1A:
 
 .balign 4, 0
 _080ACB30:
-/* 080ACB30 */ .word D_03003850
+/* 080ACB30 */ .word gCurrentSceneVariable
 _080ACB34:
 /* 080ACB34 */ LDR R0, [R6, #0X2C]
 /* 080ACB36 */ ADDS R0, R2

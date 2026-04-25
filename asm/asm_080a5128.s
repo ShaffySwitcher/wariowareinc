@@ -41,7 +41,7 @@ _080A5168:
 
 .balign 4, 0
 _080A516C:
-/* 080A516C */ .word D_03003850
+/* 080A516C */ .word gCurrentSceneVariable
 _080A5170:
 /* 080A5170 */ LDR R5, _080A5210
 /* 080A5172 */ LDR R0, [R5]
@@ -134,6 +134,6 @@ _080A5210:
 
 .balign 4, 0
 _080A5214:
-/* 080A5214 */ .word D_03003850
+/* 080A5214 */ .word gCurrentSceneVariable
 .ltorg
 .end

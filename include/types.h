@@ -86,6 +86,10 @@ struct BeatscriptThread {
     s32 currentTaskID;
 };
 
+struct BeatscriptLocalData {
+    u8 data[0xD68];
+};
+
 extern struct BeatscriptScene {
     u32 mode:4;
     u32 bypassLoops:1;
@@ -114,26 +118,9 @@ extern struct BeatscriptScene {
     s8_8 musicPitch;
     u32 globalVariable; // [D_030053c0 + 0x24] Global (Main Scene) Variable
     struct BeatscriptThread threads[2];
-    u32 localVariables[2]; // [D_030053c0 + 0x160] Local (Sub-Scene) Variables
-    s16 unk168;
-    u16 unk16A;
-    u16 unk16C;
-    u16 unk16E;
-    u16 unk170;
-    s16 interpTempoInitial;
-    s16 interpTempoTarget;
-    u24_8 interpTempoDuration;
-    u24_8 interpTempoRunningTime;
-    u16 interpTempoFramesUntilUpdate;
-    s16 interpPitchInitial;
-    s16 interpPitchTarget;
-    u24_8 interpPitchDuration;
-    u24_8 interpPitchRunningTime;
-    u16 musicVolume; // [D_03005550] Beatscript: Music Volume
-    u16 musicTrkVolume; // [D_03005552] Beatscript: Music Channel Selection Volume
-    u16 musicTrkTargets; // [D_03005554] Beatscript: Music Channel Selection
-    s8  musicKey; // [D_03005556] Beatscript: Music Key
-    const char *strings[10]; // [D_030053c0 + 0x198]
-    void (*callbackFunction)(s32);
-    s32 callbackArgument;
-} D_03004890;
+    struct BeatscriptLocalData localVariables[2];
+    u8 remainingState[0x54];
+} gBeatscriptScene;
+
+extern struct BeatscriptLocalData *gCurrentSceneVariable;
+extern s16 *gCurrentSceneSpritePool;

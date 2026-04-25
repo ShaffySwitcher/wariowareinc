@@ -30,7 +30,7 @@ _080C0CD8:
 /* 080C0CFA */ MOVS R3, #0X3C
 /* 080C0CFC */ BL sprite_create
 /* 080C0D00 */ ADDS R1, R0, #0
-/* 080C0D02 */ LDR R0, =D_03003850
+/* 080C0D02 */ LDR R0, =gCurrentSceneVariable
 /* 080C0D04 */ LDR R0, [R0]
 /* 080C0D06 */ LSLS R2, R4, #2
 /* 080C0D08 */ ADDS R0, #0X2C

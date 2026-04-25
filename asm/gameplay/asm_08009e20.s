@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08009E20 \n\
+thumb_func_start set_beatscript_tempo \n\
 /* 08009E20 */ PUSH {R4, R5, R6, LR} \n\
 /* 08009E22 */ LSLS R0, R0, #0X10 \n\
 /* 08009E24 */ LSRS R5, R0, #0X10 \n\
@@ -34,14 +34,14 @@ _08009E3C: \n\
 /* 08009E5E */ ADDS R0, R4, #0 \n\
 /* 08009E60 */ MULS R0, R5, R0 \n\
 /* 08009E62 */ MOVS R1, #0X96 \n\
-/* 08009E64 */ BL func_080F4818 \n\
+/* 08009E64 */ BL __udivsi3 \n\
 /* 08009E68 */ STR R0, [R6, #0X14] \n\
 /* 08009E6A */ LDR R0, [R6, #4] \n\
 /* 08009E6C */ CMP R0, #0 \n\
 /* 08009E6E */ BEQ _08009E78 \n\
 /* 08009E70 */ LSLS R1, R5, #0X10 \n\
 /* 08009E72 */ LSRS R1, R1, #0X10 \n\
-/* 08009E74 */ BL func_080F301C \n\
+/* 08009E74 */ BL set_soundplayer_speed \n\
 _08009E78: \n\
 /* 08009E78 */ LDRB R0, [R6] \n\
 /* 08009E7A */ LSLS R0, R0, #0X1C \n\
@@ -67,7 +67,7 @@ _08009E92: \n\
  \n\
 .balign 4, 0 \n\
 _08009EA0: \n\
-/* 08009EA0 */ .word D_03004890 \n\
+/* 08009EA0 */ .word gBeatscriptScene \n\
  \n\
 .balign 4, 0 \n\
 _08009EA4: \n\

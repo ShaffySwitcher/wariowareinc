@@ -38,7 +38,7 @@ _08012AF6:
 /* 08012B26 */ BL sprite_set_visible
 /* 08012B2A */ ADDS R0, R6, #0
 /* 08012B2C */ MOVS R1, #0XA
-/* 08012B2E */ BL func_080F4818
+/* 08012B2E */ BL __udivsi3
 /* 08012B32 */ ADDS R6, R0, #0
 /* 08012B34 */ CMP R6, #0
 /* 08012B36 */ BEQ _08012B3E

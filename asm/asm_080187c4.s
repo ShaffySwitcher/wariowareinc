@@ -76,11 +76,11 @@ _080187E0:
 
 .balign 4, 0
 _08018850:
-/* 08018850 */ .word D_03003850
+/* 08018850 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08018854:
-/* 08018854 */ .word D_03003854
+/* 08018854 */ .word gCurrentSceneSpritePool
 _08018858:
 /* 08018858 */ CMP R2, #0
 /* 0801885A */ BLE _080188AA
@@ -210,6 +210,6 @@ _0801894C:
 
 .balign 4, 0
 _08018950:
-/* 08018950 */ .word D_03003850
+/* 08018950 */ .word gCurrentSceneVariable
 .ltorg
 .end

@@ -115,7 +115,7 @@ glabel func_0801B280
 /* 0801B36E */ MOVS R0, #0
 /* 0801B370 */ BL func_0800A200
 /* 0801B374 */ MOVS R0, #0
-/* 0801B376 */ BL func_08009EE0
+/* 0801B376 */ BL func_08009EE0_stub
 /* 0801B37A */ ADD SP, #0X60
 /* 0801B37C */ POP {R4, R5}
 /* 0801B37E */ POP {R0}
@@ -135,7 +135,7 @@ _0801B388:
 
 .balign 4, 0
 _0801B38C:
-/* 0801B38C */ .word D_03003850
+/* 0801B38C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801B390:
@@ -151,7 +151,7 @@ _0801B398:
 
 .balign 4, 0
 _0801B39C:
-/* 0801B39C */ .word D_03003854
+/* 0801B39C */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801B3A0:

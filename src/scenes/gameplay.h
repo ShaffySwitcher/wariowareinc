@@ -21,7 +21,7 @@ extern u8 D_03003634;
 extern s16 D_03003844;
 extern u32 D_03004054[]; // 0x400 palette buffer (2x0x200)
 extern u8 D_03004394[]; 
-extern void* D_030049F0;
+extern struct BeatscriptLocalData D_030049F0;
 
 extern struct GameplayScriptState D_030048B8;
 extern u8 D_03003848;
@@ -74,28 +74,30 @@ struct GameplayData_struct_0 {
 };
 
 struct GameplayData {
-    struct GameplayData_struct_0* unk0; // 0x0 size:0x4
-    u32 currentState : 5; // 0x4:0
-    u32 unk4_6 : 5; // 0x4:5
-    u32 unk5_3 : 1; // 0x4:10
-    u32 unk5_4 : 1; // 0x4:11
-    u32 isPaused : 1; // 0x4:12
-    u32 unk5_6 : 2; // 0x4:13
-    u32 unk5_8 : 1; // 0x4:15
-    u32 unk6_1 : 2; // 0x4:16
-    u32 unk6_3 : 4; // 0x4:18
-    u32 unk6_7 : 1; // 0x4:22
-    u32 unk6_8 : 1; // 0x4:23
-    u32 unk7_1 : 1; // 0x4:24
-    u32 unk7_2 : 1; // 0x4:25
-    u32 unk7_3 : 1; // 0x4:26
-    u32 unk7_4 : 1; // 0x4:27
-    s32 unk8; // 0x8 size:0x4
-    void* unkC; // 0xC size:0x4
-    u8 pad10[8]; // 0x10 size:0x8
-    u16 unk18; // 0x18 size:0x2
-    u16 unk1A; // 0x1A size:0x2
-    u8 pad1c[4]; // 0x1C size:0x4
+    struct GameplayData_struct_0* unk0;   // 0x0 size:0x4
+    u32 currentState : 5;                 // 0x4:0
+    u32 unk4_6 : 5;                       // 0x4:5
+    u32 unk5_3 : 1;                       // 0x4:10
+    u32 unk5_4 : 1;                       // 0x4:11
+    u32 isPaused : 1;                     // 0x4:12
+    u32 unk5_6 : 2;                       // 0x4:13
+    u32 unk5_8 : 1;                       // 0x4:15
+    u32 unk6_1 : 2;                       // 0x4:16
+    u32 unk6_3 : 4;                       // 0x4:18
+    u32 unk6_7 : 1;                       // 0x4:22
+    u32 unk6_8 : 1;                       // 0x4:23
+    u32 unk7_1 : 1;                       // 0x4:24
+    u32 unk7_2 : 1;                       // 0x4:25
+    u32 unk7_3 : 1;                       // 0x4:26
+    u32 unk7_4 : 1;                       // 0x4:27
+    s32 unk8;                             // 0x8 size:0x4
+    void* unkC;                           // 0xC size:0x4
+    u8 pad10[4];                          // 0x10 size:0x4
+    u16 unk14;                            // 0x14 size:0x2
+    u16 unk16;                            // 0x16 size:0x2
+    u16 unk18;                            // 0x18 size:0x2
+    u16 unk1A;                            // 0x1A size:0x2
+    u32 unk1c;                            // 0x1C size:0x4
     struct GameplayScriptCmd* unk20; // 0x20 size:0x4
     u32 unk24; // 0x24 size:0x4
     u32 unk28; // 0x28 size:0x4
@@ -176,8 +178,8 @@ extern void func_08008798(void);
 extern void func_08008940(void);
 extern void func_08001B70(u32);
 extern void func_08003E64(void);
-extern void func_08005A1C(u16);
-extern void func_080062E4(u16);
+extern void task_pool_force_cancel_id(u16);
+extern void mem_heap_dealloc_with_id(u16);
 extern void func_08007EAC(void);
 extern void func_080EF9BC(void*, u32);
 extern void func_08003A70(void *);
@@ -199,7 +201,6 @@ extern struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd* script,
 extern void func_080099F8(void);
 extern void func_08009AA0(void);
 extern u32 func_08009CAC(void);
-extern void func_08009ECC(u32);
 extern void func_08009EE4(u32);
 extern void func_08009FEC(u32);
 extern void func_08009FB0(s32);
@@ -214,3 +215,8 @@ extern void gameplay_stop_scene(void);
 extern u32 gameplay_update_scene(void);
 extern void func_080088C0(void);
 extern void gameplay_stage_init(void);
+extern void stop_beatscript_scene(void);
+extern void set_soundplayer_speed(struct SoundPlayer*, u16);
+
+// FUNCTIONS
+void set_pause_beatscript_scene(u32 pause);

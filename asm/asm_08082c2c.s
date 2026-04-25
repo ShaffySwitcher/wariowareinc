@@ -22,7 +22,7 @@ _08082C3C:
 
 .balign 4, 0
 _08082C48:
-/* 08082C48 */ .word D_03003850
+/* 08082C48 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08082C4C:
@@ -139,7 +139,7 @@ _08082D00:
 
 .balign 4, 0
 _08082D08:
-/* 08082D08 */ .word D_03003850
+/* 08082D08 */ .word gCurrentSceneVariable
 _08082D0C:
 /* 08082D0C */ LDR R5, _08082D64
 /* 08082D0E */ LDR R0, [R5]
@@ -262,7 +262,7 @@ _08082DDA:
 
 .balign 4, 0
 _08082DF0:
-/* 08082DF0 */ .word D_03003850
+/* 08082DF0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08082DF4:
@@ -344,7 +344,7 @@ _08082E84:
 
 .balign 4, 0
 _08082E88:
-/* 08082E88 */ .word D_03003850
+/* 08082E88 */ .word gCurrentSceneVariable
 _08082E8C:
 /* 08082E8C */ LDR R6, =gSpriteHandler
 /* 08082E8E */ LDR R0, [R6]

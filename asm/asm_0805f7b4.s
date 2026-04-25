@@ -19,7 +19,7 @@ glabel func_0805F7B4
 
 .balign 4, 0
 _0805F7CC:
-/* 0805F7CC */ .word D_03003850
+/* 0805F7CC */ .word gCurrentSceneVariable
 _0805F7D0:
 /* 0805F7D0 */ CMP R5, #2
 /* 0805F7D2 */ BNE _0805F7D6
@@ -185,7 +185,7 @@ _0805F8E0:
 
 .balign 4, 0
 _0805F8F4:
-/* 0805F8F4 */ .word D_03003850
+/* 0805F8F4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0805F8F8:
@@ -258,7 +258,7 @@ _0805F944:
 
 .balign 4, 0
 _0805F974:
-/* 0805F974 */ .word D_03003850
+/* 0805F974 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0805F978:

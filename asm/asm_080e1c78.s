@@ -130,7 +130,7 @@ glabel func_080E1C78
 
 .balign 4, 0
 _080E1D78:
-/* 080E1D78 */ .word D_03003850
+/* 080E1D78 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E1D7C:
@@ -258,7 +258,7 @@ _080E1E48:
 
 .balign 4, 0
 _080E1E4C:
-/* 080E1E4C */ .word D_03003850
+/* 080E1E4C */ .word gCurrentSceneVariable
 _080E1E50:
 /* 080E1E50 */ CMP R6, #2
 /* 080E1E52 */ BEQ _080E1E62
@@ -351,6 +351,6 @@ _080E1EF0:
 
 .balign 4, 0
 _080E1EF4:
-/* 080E1EF4 */ .word D_03003850
+/* 080E1EF4 */ .word gCurrentSceneVariable
 .ltorg
 .end

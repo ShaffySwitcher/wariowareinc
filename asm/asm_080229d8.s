@@ -45,7 +45,7 @@ _08022A30:
 
 .balign 4, 0
 _08022A24:
-/* 08022A24 */ .word D_03003850
+/* 08022A24 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08022A28:

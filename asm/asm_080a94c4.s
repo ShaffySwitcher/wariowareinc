@@ -14,7 +14,7 @@ glabel func_080A94C4
 /* 080A94D2 */ LSRS R0, R0, #0X10
 /* 080A94D4 */ SUBS R0, R4, R0
 /* 080A94D6 */ LSLS R0, R0, #8
-/* 080A94D8 */ LDR R1, =D_03003850
+/* 080A94D8 */ LDR R1, =gCurrentSceneVariable
 /* 080A94DA */ LDR R1, [R1]
 /* 080A94DC */ LDRH R1, [R1, #4]
 /* 080A94DE */ BL func_080EE61C

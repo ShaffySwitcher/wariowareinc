@@ -11,7 +11,7 @@ glabel func_08023378
 /* 0802337E */ BL scene_set_current_thread
 /* 08023382 */ LDR R0, _080233A0
 /* 08023384 */ LDR R0, [R0]
-/* 08023386 */ LDR R1, =D_03003854
+/* 08023386 */ LDR R1, =gCurrentSceneSpritePool
 /* 08023388 */ LDR R1, [R1]
 /* 0802338A */ MOVS R2, #0X16
 /* 0802338C */ LDRSH R1, [R1, R2]

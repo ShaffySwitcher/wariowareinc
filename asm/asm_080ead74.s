@@ -64,7 +64,7 @@ _080EADE4:
 
 .balign 4, 0
 _080EADE8:
-/* 080EADE8 */ .word D_03003850
+/* 080EADE8 */ .word gCurrentSceneVariable
 _080EADEC:
 /* 080EADEC */ STRB R0, [R1]
 _080EADEE:

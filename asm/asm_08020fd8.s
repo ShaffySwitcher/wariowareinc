@@ -57,7 +57,7 @@ glabel func_08020FD8
 /* 08021048 */ MOVS R0, #0
 /* 0802104A */ BL func_0800A200
 /* 0802104E */ MOVS R0, #0
-/* 08021050 */ BL func_08009EE0
+/* 08021050 */ BL func_08009EE0_stub
 /* 08021054 */ ADD SP, #0X54
 /* 08021056 */ POP {R4, R5}
 /* 08021058 */ POP {R0}
@@ -73,7 +73,7 @@ _0802105C:
 
 .balign 4, 0
 _08021060:
-/* 08021060 */ .word D_03003850
+/* 08021060 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08021064:

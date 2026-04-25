@@ -20,7 +20,7 @@ glabel func_0808A8B8
 
 .balign 4, 0
 _0808A8D0:
-/* 0808A8D0 */ .word D_03003850
+/* 0808A8D0 */ .word gCurrentSceneVariable
 _0808A8D4:
 /* 0808A8D4 */ MOVS R0, #1
 _0808A8D6:

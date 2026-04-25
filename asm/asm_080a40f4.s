@@ -35,7 +35,7 @@ _080A4128:
 
 .balign 4, 0
 _080A412C:
-/* 080A412C */ .word D_03003850
+/* 080A412C */ .word gCurrentSceneVariable
 _080A4130:
 /* 080A4130 */ LDR R0, [R4]
 /* 080A4132 */ LDR R2, [R5]

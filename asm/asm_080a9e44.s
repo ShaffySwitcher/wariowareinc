@@ -32,7 +32,7 @@ _080A9E54:
 
 .balign 4, 0
 _080A9E74:
-/* 080A9E74 */ .word D_03003850
+/* 080A9E74 */ .word gCurrentSceneVariable
 _080A9E78:
 /* 080A9E78 */ ADDS R3, #1
 /* 080A9E7A */ CMP R3, #9

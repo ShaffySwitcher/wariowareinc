@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0808949C
 /* 0808949C */ PUSH {LR}
-/* 0808949E */ LDR R0, =D_03003850
+/* 0808949E */ LDR R0, =gCurrentSceneVariable
 /* 080894A0 */ LDR R0, [R0]
 /* 080894A2 */ MOVS R1, #0XC2
 /* 080894A4 */ LSLS R1, R1, #1

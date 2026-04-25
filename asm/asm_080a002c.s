@@ -7,7 +7,7 @@
 glabel func_080A002C
 /* 080A002C */ PUSH {LR}
 /* 080A002E */ ADDS R1, R0, #0
-/* 080A0030 */ LDR R0, =D_03004890
+/* 080A0030 */ LDR R0, =gBeatscriptScene
 /* 080A0032 */ LDR R0, [R0, #4]
 /* 080A0034 */ LSLS R1, R1, #0X10
 /* 080A0036 */ LSRS R1, R1, #0X10

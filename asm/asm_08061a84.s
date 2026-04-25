@@ -26,7 +26,7 @@ _08061A9C:
 
 .balign 4, 0
 _08061AA8:
-/* 08061AA8 */ .word D_03003850
+/* 08061AA8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08061AAC:
@@ -356,7 +356,7 @@ _08061CC6:
 
 .balign 4, 0
 _08061CE4:
-/* 08061CE4 */ .word D_03003850
+/* 08061CE4 */ .word gCurrentSceneVariable
 _08061CE8:
 /* 08061CE8 */ BL func_080626D0
 /* 08061CEC */ LDR R2, _08061D08
@@ -376,7 +376,7 @@ _08061CE8:
 
 .balign 4, 0
 _08061D08:
-/* 08061D08 */ .word D_03003850
+/* 08061D08 */ .word gCurrentSceneVariable
 _08061D0C:
 /* 08061D0C */ LDR R2, [R6]
 /* 08061D0E */ ADDS R1, R2, #0
@@ -443,7 +443,7 @@ _08061D78:
 
 .balign 4, 0
 _08061D7C:
-/* 08061D7C */ .word D_03003850
+/* 08061D7C */ .word gCurrentSceneVariable
 _08061D80:
 /* 08061D80 */ BL func_08062A5C
 /* 08061D84 */ BL func_08061F8C
@@ -460,7 +460,7 @@ _08061D80:
 
 .balign 4, 0
 _08061DA0:
-/* 08061DA0 */ .word D_03003850
+/* 08061DA0 */ .word gCurrentSceneVariable
 _08061DA4:
 /* 08061DA4 */ BL func_080649CC
 /* 08061DA8 */ LDR R5, _08061DD0
@@ -483,7 +483,7 @@ _08061DA4:
 
 .balign 4, 0
 _08061DD0:
-/* 08061DD0 */ .word D_03003850
+/* 08061DD0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08061DD4:
@@ -502,7 +502,7 @@ _08061DD8:
 
 .balign 4, 0
 _08061DF0:
-/* 08061DF0 */ .word D_03003850
+/* 08061DF0 */ .word gCurrentSceneVariable
 _08061DF4:
 /* 08061DF4 */ BL func_08064BA4
 /* 08061DF8 */ LSLS R0, R0, #0X18
@@ -520,7 +520,7 @@ _08061E08:
 
 .balign 4, 0
 _08061E10:
-/* 08061E10 */ .word D_03003850
+/* 08061E10 */ .word gCurrentSceneVariable
 _08061E14:
 /* 08061E14 */ BL func_080661B8
 /* 08061E18 */ LDR R0, _08061E34
@@ -543,13 +543,13 @@ _08061E34:
 
 .balign 4, 0
 _08061E38:
-/* 08061E38 */ .word D_03003850
+/* 08061E38 */ .word gCurrentSceneVariable
 _08061E3C:
 /* 08061E3C */ BL func_08066364
 /* 08061E40 */ LSLS R0, R0, #0X18
 /* 08061E42 */ CMP R0, #0
 /* 08061E44 */ BEQ _08061E58
-/* 08061E46 */ LDR R0, =D_03003850
+/* 08061E46 */ LDR R0, =gCurrentSceneVariable
 /* 08061E48 */ LDR R0, [R0]
 /* 08061E4A */ ADDS R0, #0XDC
 /* 08061E4C */ MOVS R1, #5

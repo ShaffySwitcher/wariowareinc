@@ -23,7 +23,7 @@ _080EDB2A:
 
 .balign 4, 0
 _080EDB34:
-/* 080EDB34 */ .word D_03003850
+/* 080EDB34 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080EDB38:
@@ -149,7 +149,7 @@ _080EDBF2:
 
 .balign 4, 0
 _080EDC14:
-/* 080EDC14 */ .word D_03003850
+/* 080EDC14 */ .word gCurrentSceneVariable
 _080EDC18:
 /* 080EDC18 */ LDR R1, [R4]
 /* 080EDC1A */ LDRH R0, [R1, #0X24]

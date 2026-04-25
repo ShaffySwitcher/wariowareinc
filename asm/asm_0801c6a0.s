@@ -43,11 +43,11 @@ _0801C6E0:
 
 .balign 4, 0
 _0801C6E4:
-/* 0801C6E4 */ .word D_03003854
+/* 0801C6E4 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801C6E8:
-/* 0801C6E8 */ .word D_03003850
+/* 0801C6E8 */ .word gCurrentSceneVariable
 _0801C6EC:
 /* 0801C6EC */ CMP R5, #0
 /* 0801C6EE */ BGE _0801C704
@@ -84,7 +84,7 @@ _0801C728:
 /* 0801C72C */ BLS _0801C6AC
 /* 0801C72E */ LDR R0, _0801C750
 /* 0801C730 */ LDR R0, [R0]
-/* 0801C732 */ LDR R1, =D_03003854
+/* 0801C732 */ LDR R1, =gCurrentSceneSpritePool
 /* 0801C734 */ LDR R1, [R1]
 /* 0801C736 */ MOVS R2, #0X16
 /* 0801C738 */ LDRSH R1, [R1, R2]

@@ -57,7 +57,7 @@ _0806BD46:
 
 .balign 4, 0
 _0806BD4C:
-/* 0806BD4C */ .word D_03003850
+/* 0806BD4C */ .word gCurrentSceneVariable
 _0806BD50:
 /* 0806BD50 */ LDRB R0, [R5, #0XE]
 /* 0806BD52 */ MOVS R1, #0X10

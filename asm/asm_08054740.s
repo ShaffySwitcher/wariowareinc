@@ -18,7 +18,7 @@ glabel func_08054740
 _08054756:
 /* 08054756 */ MOVS R0, #4
 /* 08054758 */ BL get_random_range
-/* 0805475C */ LDR R1, =D_03003850
+/* 0805475C */ LDR R1, =gCurrentSceneVariable
 /* 0805475E */ LDR R2, [R1]
 /* 08054760 */ LSLS R1, R4, #3
 /* 08054762 */ ADDS R2, R1

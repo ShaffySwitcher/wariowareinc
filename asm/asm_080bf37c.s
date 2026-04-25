@@ -30,7 +30,7 @@ glabel func_080BF37C
 
 .balign 4, 0
 _080BF3AC:
-/* 080BF3AC */ .word D_03003850
+/* 080BF3AC */ .word gCurrentSceneVariable
 _080BF3B0:
 /* 080BF3B0 */ LDR R0, _080BF3F0
 /* 080BF3B2 */ MOV R8, R0
@@ -75,7 +75,7 @@ _080BF3F4:
 
 .balign 4, 0
 _080BF3F8:
-/* 080BF3F8 */ .word D_03003850
+/* 080BF3F8 */ .word gCurrentSceneVariable
 _080BF3FC:
 /* 080BF3FC */ LDR R1, _080BF43C
 /* 080BF3FE */ MOV R8, R1
@@ -120,7 +120,7 @@ _080BF440:
 
 .balign 4, 0
 _080BF444:
-/* 080BF444 */ .word D_03003850
+/* 080BF444 */ .word gCurrentSceneVariable
 _080BF448:
 /* 080BF448 */ MOVS R0, #4
 /* 080BF44A */ BL get_random_range
@@ -259,7 +259,7 @@ _080BF548:
 
 .balign 4, 0
 _080BF54C:
-/* 080BF54C */ .word D_03003850
+/* 080BF54C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080BF550:

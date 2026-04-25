@@ -1,7 +1,7 @@
 asm(".syntax unified \n\
  \n\
 thumb_func_start func_0800A038 \n\
-/* 0800A038 */ LDR R0, =D_03004890 \n\
+/* 0800A038 */ LDR R0, =gBeatscriptScene \n\
 /* 0800A03A */ LDRH R0, [R0, #0XC] \n\
 /* 0800A03C */ BX LR \n\
  \n\

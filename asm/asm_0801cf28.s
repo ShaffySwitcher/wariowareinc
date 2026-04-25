@@ -26,7 +26,7 @@ _0801CF44:
 /* 0801CF4A */ LDRB R4, [R5, #0X1E]
 /* 0801CF4C */ LSLS R0, R6, #8
 /* 0801CF4E */ MOVS R1, #5
-/* 0801CF50 */ BL func_080F4818
+/* 0801CF50 */ BL __udivsi3
 /* 0801CF54 */ ADDS R4, R0
 /* 0801CF56 */ LSLS R4, R4, #0X18
 /* 0801CF58 */ LDR R0, _0801CFC0
@@ -83,7 +83,7 @@ _0801CFC8:
 
 .balign 4, 0
 _0801CFB8:
-/* 0801CFB8 */ .word D_03003850
+/* 0801CFB8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801CFBC:

@@ -33,7 +33,7 @@ _080A58A0:
 
 .balign 4, 0
 _080A58A4:
-/* 080A58A4 */ .word D_03003854
+/* 080A58A4 */ .word gCurrentSceneSpritePool
 _080A58A8:
 /* 080A58A8 */ CMP R4, #3
 /* 080A58AA */ BEQ _080A58BC

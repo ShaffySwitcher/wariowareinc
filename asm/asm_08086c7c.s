@@ -25,7 +25,7 @@ glabel func_08086C7C
 
 .balign 4, 0
 _08086CA0:
-/* 08086CA0 */ .word D_03003850
+/* 08086CA0 */ .word gCurrentSceneVariable
 _08086CA4:
 /* 08086CA4 */ LDR R0, _08086CD0
 /* 08086CA6 */ LDR R0, [R0]
@@ -38,7 +38,7 @@ _08086CA4:
 /* 08086CB4 */ STRH R0, [R2, #0X3E]
 /* 08086CB6 */ LDRH R0, [R2, #0X3E]
 /* 08086CB8 */ MOVS R1, #0X78
-/* 08086CBA */ BL func_080F4818
+/* 08086CBA */ BL __udivsi3
 /* 08086CBE */ LSLS R0, R0, #0X18
 /* 08086CC0 */ LSRS R0, R0, #0X18
 /* 08086CC2 */ CMP R0, #5
@@ -138,7 +138,7 @@ _08086D58:
 
 .balign 4, 0
 _08086D5C:
-/* 08086D5C */ .word D_03003850
+/* 08086D5C */ .word gCurrentSceneVariable
 _08086D60:
 /* 08086D60 */ LDR R0, [R5]
 /* 08086D62 */ MOVS R3, #0XC
@@ -149,7 +149,7 @@ _08086D60:
 /* 08086D6C */ MOVS R3, #4
 /* 08086D6E */ BL sprite_set_playback
 _08086D72:
-/* 08086D72 */ LDR R0, =D_03003850
+/* 08086D72 */ LDR R0, =gCurrentSceneVariable
 /* 08086D74 */ LDR R0, [R0]
 /* 08086D76 */ ADDS R1, R0, #0
 /* 08086D78 */ ADDS R1, #0X40

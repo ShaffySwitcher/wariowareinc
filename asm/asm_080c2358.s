@@ -51,7 +51,7 @@ _080C23A4:
 
 .balign 4, 0
 _080C23A8:
-/* 080C23A8 */ .word D_03003850
+/* 080C23A8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C23AC:
@@ -95,7 +95,7 @@ _080C23E8:
 
 .balign 4, 0
 _080C23EC:
-/* 080C23EC */ .word D_03003850
+/* 080C23EC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C23F0:
@@ -132,7 +132,7 @@ _080C2424:
 
 .balign 4, 0
 _080C2428:
-/* 080C2428 */ .word D_03003850
+/* 080C2428 */ .word gCurrentSceneVariable
 _080C242C:
 /* 080C242C */ MOVS R0, #0X10
 /* 080C242E */ ANDS R0, R1
@@ -171,7 +171,7 @@ _080C246C:
 
 .balign 4, 0
 _080C2470:
-/* 080C2470 */ .word D_03003850
+/* 080C2470 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C2474:
@@ -216,7 +216,7 @@ _080C24B4:
 
 .balign 4, 0
 _080C24B8:
-/* 080C24B8 */ .word D_03003850
+/* 080C24B8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C24BC:
@@ -256,7 +256,7 @@ _080C24F4:
 
 .balign 4, 0
 _080C24F8:
-/* 080C24F8 */ .word D_03003850
+/* 080C24F8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C24FC:
@@ -308,6 +308,6 @@ _080C2548:
 
 .balign 4, 0
 _080C254C:
-/* 080C254C */ .word D_03003850
+/* 080C254C */ .word gCurrentSceneVariable
 .ltorg
 .end

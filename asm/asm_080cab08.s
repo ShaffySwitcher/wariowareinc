@@ -263,7 +263,7 @@ _080CAD24:
 
 .balign 4, 0
 _080CAD28:
-/* 080CAD28 */ .word D_03003850
+/* 080CAD28 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CAD2C:
@@ -805,7 +805,7 @@ _080CB15C:
 
 .balign 4, 0
 _080CB160:
-/* 080CB160 */ .word D_03003850
+/* 080CB160 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CB164:

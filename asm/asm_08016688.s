@@ -24,6 +24,6 @@ _080166A8:
 
 .balign 4, 0
 _080166A4:
-/* 080166A4 */ .word D_03004890
+/* 080166A4 */ .word gBeatscriptScene
 .ltorg
 .end

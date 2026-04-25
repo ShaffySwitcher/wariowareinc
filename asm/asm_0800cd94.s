@@ -8,7 +8,7 @@ glabel func_0800CD94
 /* 0800CD94 */ PUSH {LR}
 /* 0800CD96 */ ADDS R3, R0, #0
 /* 0800CD98 */ ADDS R2, R1, #0
-/* 0800CD9A */ LDR R0, =D_03004890
+/* 0800CD9A */ LDR R0, =gBeatscriptScene
 /* 0800CD9C */ MOVS R1, #0X1E
 /* 0800CD9E */ LDRSH R0, [R0, R1]
 /* 0800CDA0 */ ADDS R1, R3, #0

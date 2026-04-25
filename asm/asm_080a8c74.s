@@ -37,11 +37,11 @@ glabel func_080A8C74
 
 .balign 4, 0
 _080A8CB0:
-/* 080A8CB0 */ .word D_03003854
+/* 080A8CB0 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080A8CB4:
-/* 080A8CB4 */ .word D_03003850
+/* 080A8CB4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A8CB8:

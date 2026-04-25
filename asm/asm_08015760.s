@@ -21,7 +21,7 @@ glabel func_08015760
 /* 0801577C */ LDR R3, [R0, #0XC]
 /* 0801577E */ LDR R0, _080157BC
 /* 08015780 */ LDR R0, [R0]
-/* 08015782 */ LDR R1, =D_03003854
+/* 08015782 */ LDR R1, =gCurrentSceneSpritePool
 /* 08015784 */ LDR R1, [R1]
 /* 08015786 */ MOVS R2, #8
 /* 08015788 */ LDRSH R1, [R1, R2]

@@ -21,7 +21,7 @@ glabel func_080B7B18
 
 .balign 4, 0
 _080B7B34:
-/* 080B7B34 */ .word D_03003850
+/* 080B7B34 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080B7B38:
@@ -76,7 +76,7 @@ _080B7B7A:
 
 .balign 4, 0
 _080B7B84:
-/* 080B7B84 */ .word D_03003850
+/* 080B7B84 */ .word gCurrentSceneVariable
 _080B7B88:
 /* 080B7B88 */ BL func_080B7DD8
 /* 080B7B8C */ LSLS R0, R0, #0X18
@@ -102,6 +102,6 @@ _080B7BAC:
 
 .balign 4, 0
 _080B7BB0:
-/* 080B7BB0 */ .word D_03003850
+/* 080B7BB0 */ .word gCurrentSceneVariable
 .ltorg
 .end

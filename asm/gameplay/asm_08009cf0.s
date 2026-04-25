@@ -2,7 +2,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_08009CF0 \n\
 /* 08009CF0 */ PUSH {LR} \n\
-/* 08009CF2 */ LDR R0, =D_03004890 \n\
+/* 08009CF2 */ LDR R0, =gBeatscriptScene \n\
 /* 08009CF4 */ LDRB R1, [R0] \n\
 /* 08009CF6 */ MOVS R2, #0X20 \n\
 /* 08009CF8 */ ORRS R1, R2 \n\

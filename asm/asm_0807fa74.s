@@ -62,7 +62,7 @@ _0807FABC:
 
 .balign 4, 0
 _0807FAD8:
-/* 0807FAD8 */ .word D_03003850
+/* 0807FAD8 */ .word gCurrentSceneVariable
 _0807FADC:
 /* 0807FADC */ LDR R1, [SP, #8]
 /* 0807FADE */ LDR R0, [R5, #4]

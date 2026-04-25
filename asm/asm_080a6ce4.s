@@ -29,7 +29,7 @@ _080A6CFA:
 
 .balign 4, 0
 _080A6D0C:
-/* 080A6D0C */ .word D_03003850
+/* 080A6D0C */ .word gCurrentSceneVariable
 _080A6D10:
 /* 080A6D10 */ LDR R0, _080A6DBC
 /* 080A6D12 */ LDR R0, [R0]
@@ -120,7 +120,7 @@ _080A6D6A:
 
 .balign 4, 0
 _080A6DBC:
-/* 080A6DBC */ .word D_03003850
+/* 080A6DBC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A6DC0:

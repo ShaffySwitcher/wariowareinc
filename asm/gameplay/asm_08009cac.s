@@ -17,7 +17,7 @@ _08009CB6: \n\
  \n\
 .balign 4, 0 \n\
 _08009CC4: \n\
-/* 08009CC4 */ .word D_03004890 \n\
+/* 08009CC4 */ .word gBeatscriptScene \n\
 _08009CC8: \n\
 /* 08009CC8 */ ADDS R1, #0X9C \n\
 /* 08009CCA */ ADDS R2, #1 \n\

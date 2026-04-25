@@ -36,7 +36,7 @@ _08076F04:
 
 .balign 4, 0
 _08076F08:
-/* 08076F08 */ .word D_03003850
+/* 08076F08 */ .word gCurrentSceneVariable
 _08076F0C:
 /* 08076F0C */ CMP R1, #2
 /* 08076F0E */ BEQ _08076F38
@@ -98,7 +98,7 @@ _08076F66:
 
 .balign 4, 0
 _08076F80:
-/* 08076F80 */ .word D_03003850
+/* 08076F80 */ .word gCurrentSceneVariable
 _08076F84:
 /* 08076F84 */ MOVS R2, #0X80
 /* 08076F86 */ LSLS R2, R2, #1
@@ -106,7 +106,7 @@ _08076F84:
 /* 08076F8A */ MOVS R1, #0
 /* 08076F8C */ BL func_0800BF34
 _08076F90:
-/* 08076F90 */ LDR R0, =D_03003850
+/* 08076F90 */ LDR R0, =gCurrentSceneVariable
 /* 08076F92 */ LDR R1, [R0]
 /* 08076F94 */ ADDS R1, #0X84
 /* 08076F96 */ LDRH R0, [R1]

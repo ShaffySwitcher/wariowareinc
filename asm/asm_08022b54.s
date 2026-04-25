@@ -7,7 +7,7 @@
 glabel func_08022B54
 /* 08022B54 */ PUSH {R4, LR}
 /* 08022B56 */ MOVS R0, #0
-/* 08022B58 */ BL func_08009EE0
+/* 08022B58 */ BL func_08009EE0_stub
 /* 08022B5C */ LDR R4, _08022B90
 /* 08022B5E */ LDR R2, [R4]
 /* 08022B60 */ LDRB R1, [R2, #0X19]
@@ -39,6 +39,6 @@ _08022B94:
 
 .balign 4, 0
 _08022B90:
-/* 08022B90 */ .word D_03003850
+/* 08022B90 */ .word gCurrentSceneVariable
 .ltorg
 .end

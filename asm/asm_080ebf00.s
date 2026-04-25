@@ -249,7 +249,7 @@ _080EC108:
 
 .balign 4, 0
 _080EC10C:
-/* 080EC10C */ .word D_03003850
+/* 080EC10C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080EC110:
@@ -261,7 +261,7 @@ _080EC114:
 
 .balign 4, 0
 _080EC118:
-/* 080EC118 */ .word D_03003854
+/* 080EC118 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080EC11C:

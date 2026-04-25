@@ -20,7 +20,7 @@ glabel func_0800C9EC
 /* 0800CA06 */ ADDS R4, R5, R2
 /* 0800CA08 */ MOVS R0, #0X80
 /* 0800CA0A */ LSLS R0, R0, #9
-/* 0800CA0C */ BL func_080F4818
+/* 0800CA0C */ BL __udivsi3
 /* 0800CA10 */ LDRH R1, [R4]
 /* 0800CA12 */ ADDS R1, R1, R0
 /* 0800CA14 */ STRH R1, [R4]
@@ -54,7 +54,7 @@ _0800CA58:
 
 .balign 4, 0
 _0800CA48:
-/* 0800CA48 */ .word D_03004890
+/* 0800CA48 */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800CA4C:

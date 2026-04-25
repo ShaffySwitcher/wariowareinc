@@ -96,7 +96,7 @@ _0804E170:
 
 .balign 4, 0
 _0804E190:
-/* 0804E190 */ .word D_03003850
+/* 0804E190 */ .word gCurrentSceneVariable
 _0804E194:
 /* 0804E194 */ LDRH R0, [R3]
 /* 0804E196 */ ADDS R0, #1
@@ -152,7 +152,7 @@ _0804E1DA:
 
 .balign 4, 0
 _0804E1F8:
-/* 0804E1F8 */ .word D_03003850
+/* 0804E1F8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0804E1FC:

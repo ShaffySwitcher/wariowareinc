@@ -54,6 +54,6 @@ _080224CC:
 
 .balign 4, 0
 _080224D0:
-/* 080224D0 */ .word D_03003854
+/* 080224D0 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

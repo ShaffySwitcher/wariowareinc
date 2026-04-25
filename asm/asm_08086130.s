@@ -137,7 +137,7 @@ _080861BE:
 
 .balign 4, 0
 _08086234:
-/* 08086234 */ .word D_03003850
+/* 08086234 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08086238:
@@ -153,7 +153,7 @@ _08086240:
 
 .balign 4, 0
 _08086244:
-/* 08086244 */ .word D_03003854
+/* 08086244 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _08086248:
@@ -199,7 +199,7 @@ _08086290:
 /* 08086290 */ LDR R0, _080862B0
 /* 08086292 */ BL play_sound
 _08086296:
-/* 08086296 */ LDR R0, =D_03003850
+/* 08086296 */ LDR R0, =gCurrentSceneVariable
 /* 08086298 */ LDR R0, [R0]
 /* 0808629A */ ADDS R0, #0X4D
 /* 0808629C */ MOVS R1, #1

@@ -280,7 +280,7 @@ _080DAA18:
 
 .balign 4, 0
 _080DAB64:
-/* 080DAB64 */ .word D_03003850
+/* 080DAB64 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DAB68:

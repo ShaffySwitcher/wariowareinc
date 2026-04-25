@@ -20,7 +20,7 @@ glabel func_08022FFC
 
 .balign 4, 0
 _08023018:
-/* 08023018 */ .word D_03003850
+/* 08023018 */ .word gCurrentSceneVariable
 _0802301C:
 /* 0802301C */ CMP R0, #2
 /* 0802301E */ BEQ _08023110
@@ -63,7 +63,7 @@ _0802303C:
 /* 08023060 */ STRB R0, [R1, #0X1B]
 /* 08023062 */ MOVS R0, #0XC0
 /* 08023064 */ LSLS R0, R0, #3
-/* 08023066 */ BL func_08009ECC
+/* 08023066 */ BL set_beatscript_speed
 /* 0802306A */ MOVS R0, #0XC0
 /* 0802306C */ LSLS R0, R0, #5
 /* 0802306E */ BL func_08009FB0
@@ -87,7 +87,7 @@ _0802308C:
 
 .balign 4, 0
 _08023090:
-/* 08023090 */ .word D_03003854
+/* 08023090 */ .word gCurrentSceneSpritePool
 _08023094:
 /* 08023094 */ MOVS R0, #0
 /* 08023096 */ BL set_pause_beatscript_scene
@@ -124,7 +124,7 @@ _080230C8:
 /* 080230D0 */ BL stop_soundplayer
 /* 080230D4 */ MOVS R0, #0X80
 /* 080230D6 */ LSLS R0, R0, #1
-/* 080230D8 */ BL func_08009ECC
+/* 080230D8 */ BL set_beatscript_speed
 /* 080230DC */ MOVS R0, #0
 /* 080230DE */ BL func_08009FB0
 /* 080230E2 */ MOVS R0, #0
@@ -144,7 +144,7 @@ _080230C8:
 
 .balign 4, 0
 _08023104:
-/* 08023104 */ .word D_03004890
+/* 08023104 */ .word gBeatscriptScene
 
 .balign 4, 0
 _08023108:
@@ -152,7 +152,7 @@ _08023108:
 
 .balign 4, 0
 _0802310C:
-/* 0802310C */ .word D_03003854
+/* 0802310C */ .word gCurrentSceneSpritePool
 _08023110:
 /* 08023110 */ MOVS R0, #0X63
 /* 08023112 */ STRB R0, [R2, #0X1B]

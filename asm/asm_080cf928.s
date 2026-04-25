@@ -20,7 +20,7 @@ glabel func_080CF928
 
 .balign 4, 0
 _080CF940:
-/* 080CF940 */ .word D_03003850
+/* 080CF940 */ .word gCurrentSceneVariable
 _080CF944:
 /* 080CF944 */ CMP R1, #2
 /* 080CF946 */ BEQ _080CF970
@@ -29,7 +29,7 @@ _080CF944:
 
 .balign 4, 0
 _080CF94C:
-/* 080CF94C */ .word D_03003850
+/* 080CF94C */ .word gCurrentSceneVariable
 _080CF950:
 /* 080CF950 */ LDR R2, _080CF958
 /* 080CF952 */ LDR R1, [R2]
@@ -38,7 +38,7 @@ _080CF950:
 
 .balign 4, 0
 _080CF958:
-/* 080CF958 */ .word D_03003850
+/* 080CF958 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CF95C:
@@ -51,7 +51,7 @@ _080CF960:
 
 .balign 4, 0
 _080CF968:
-/* 080CF968 */ .word D_03003850
+/* 080CF968 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CF96C:
@@ -79,6 +79,6 @@ _080CF990:
 
 .balign 4, 0
 _080CF98C:
-/* 080CF98C */ .word D_03003850
+/* 080CF98C */ .word gCurrentSceneVariable
 .ltorg
 .end

@@ -1,12 +1,12 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08009EA8 \n\
+thumb_func_start update_beatscript_tempo \n\
 /* 08009EA8 */ PUSH {R4, R5, LR} \n\
-/* 08009EAA */ LDR R5, =D_03004890 \n\
+/* 08009EAA */ LDR R5, =gBeatscriptScene \n\
 /* 08009EAC */ LDRB R4, [R5, #1] \n\
 /* 08009EAE */ LSRS R4, R4, #7 \n\
 /* 08009EB0 */ LDRH R0, [R5, #0XA] \n\
-/* 08009EB2 */ BL func_08009E20 \n\
+/* 08009EB2 */ BL set_beatscript_tempo \n\
 /* 08009EB6 */ LSLS R4, R4, #7 \n\
 /* 08009EB8 */ LDRB R1, [R5, #1] \n\
 /* 08009EBA */ MOVS R0, #0X7F \n\

@@ -44,7 +44,7 @@ _0806201C:
 
 .balign 4, 0
 _08062020:
-/* 08062020 */ .word D_03003850
+/* 08062020 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08062024:

@@ -34,7 +34,7 @@ _080174F8:
 
 .balign 4, 0
 _080174FC:
-/* 080174FC */ .word D_03003854
+/* 080174FC */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _08017500:
@@ -69,7 +69,7 @@ _0801752C:
 /* 08017534 */ LSLS R1, R1, #0XF
 /* 08017536 */ ADDS R0, R1
 /* 08017538 */ LSRS R0, R0, #0X10
-/* 0801753A */ LDR R1, =D_03003850
+/* 0801753A */ LDR R1, =gCurrentSceneVariable
 /* 0801753C */ LDR R1, [R1]
 /* 0801753E */ STRH R0, [R1, #6]
 /* 08017540 */ LDR R2, _080175F4
@@ -91,7 +91,7 @@ _0801752C:
 /* 08017562 */ BL sprite_set_anim_cel
 /* 08017566 */ ADDS R0, R7, #0
 /* 08017568 */ MOVS R1, #0XA
-/* 0801756A */ BL func_080F4818
+/* 0801756A */ BL __udivsi3
 /* 0801756E */ ADDS R6, R0, #0
 /* 08017570 */ MOV R2, SB
 /* 08017572 */ LDR R5, [R2]
@@ -110,7 +110,7 @@ _0801752C:
 /* 0801758E */ BL sprite_set_anim_cel
 /* 08017592 */ ADDS R0, R6, #0
 /* 08017594 */ MOVS R1, #0XA
-/* 08017596 */ BL func_080F4818
+/* 08017596 */ BL __udivsi3
 /* 0801759A */ MOV R1, SB
 /* 0801759C */ LDR R5, [R1]
 /* 0801759E */ MOV R2, R8
@@ -165,7 +165,7 @@ _080175F4:
 
 .balign 4, 0
 _080175F8:
-/* 080175F8 */ .word D_03003854
+/* 080175F8 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080175FC:

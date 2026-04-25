@@ -180,7 +180,7 @@ _080A87B4:
 
 .balign 4, 0
 _080A87E4:
-/* 080A87E4 */ .word D_03003850
+/* 080A87E4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A87E8:
@@ -247,7 +247,7 @@ _080A8848:
 /* 080A884A */ CMP R1, #0
 /* 080A884C */ BEQ _080A8860
 /* 080A884E */ ADDS R0, R5, #0
-/* 080A8850 */ BL func_080F4818
+/* 080A8850 */ BL __udivsi3
 /* 080A8854 */ ADDS R1, R0, #0
 /* 080A8856 */ LSLS R1, R1, #0X10
 /* 080A8858 */ ASRS R1, R1, #0X10

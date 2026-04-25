@@ -14,7 +14,7 @@ glabel func_08023EBC
 /* 08023ECE */ LSLS R0, R0, #2
 /* 08023ED0 */ MOVS R1, #4
 /* 08023ED2 */ BL func_0800A3FC
-/* 08023ED6 */ LDR R4, =D_03003850
+/* 08023ED6 */ LDR R4, =gCurrentSceneVariable
 /* 08023ED8 */ LDR R1, [R4]
 /* 08023EDA */ STR R0, [R1]
 /* 08023EDC */ MOVS R0, #0
@@ -24,7 +24,7 @@ glabel func_08023EBC
 /* 08023EE6 */ MOVS R1, #0
 /* 08023EE8 */ STRB R1, [R0]
 /* 08023EEA */ MOVS R0, #1
-/* 08023EEC */ BL func_08009EE0
+/* 08023EEC */ BL func_08009EE0_stub
 /* 08023EF0 */ POP {R4}
 /* 08023EF2 */ POP {R0}
 /* 08023EF4 */ BX R0

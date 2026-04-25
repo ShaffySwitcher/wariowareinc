@@ -23,7 +23,7 @@ _08060CEE:
 
 .balign 4, 0
 _08060CF8:
-/* 08060CF8 */ .word D_03003850
+/* 08060CF8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08060CFC:
@@ -316,6 +316,6 @@ _08060F04:
 
 .balign 4, 0
 _08060F00:
-/* 08060F00 */ .word D_03003850
+/* 08060F00 */ .word gCurrentSceneVariable
 .ltorg
 .end

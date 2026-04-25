@@ -162,7 +162,7 @@ _080A3C76:
 
 .balign 4, 0
 _080A3CAC:
-/* 080A3CAC */ .word D_03003850
+/* 080A3CAC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A3CB0:
@@ -231,7 +231,7 @@ _080A3CD8:
 /* 080A3D20 */ ADDS R4, R2
 /* 080A3D22 */ MOV R0, SB
 /* 080A3D24 */ MOVS R1, #6
-/* 080A3D26 */ BL func_080F4818
+/* 080A3D26 */ BL __udivsi3
 /* 080A3D2A */ LSLS R0, R0, #0X18
 /* 080A3D2C */ LSRS R0, R0, #0X17
 /* 080A3D2E */ ADD R0, SL
@@ -367,7 +367,7 @@ _080A3E50:
 
 .balign 4, 0
 _080A3E2C:
-/* 080A3E2C */ .word D_03003850
+/* 080A3E2C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A3E30:

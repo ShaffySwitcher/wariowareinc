@@ -94,7 +94,7 @@ _080CFA34:
 
 .balign 4, 0
 _080CFA38:
-/* 080CFA38 */ .word D_03003850
+/* 080CFA38 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CFA3C:
@@ -120,7 +120,7 @@ _080CFA44:
 /* 080CFA60 */ BL stop_sound
 /* 080CFA64 */ B _080CFA70
 _080CFA66:
-/* 080CFA66 */ LDR R0, =D_03003850
+/* 080CFA66 */ LDR R0, =gCurrentSceneVariable
 /* 080CFA68 */ LDR R0, [R0]
 /* 080CFA6A */ LDR R0, [R0, #0X10]
 /* 080CFA6C */ BL stop_sound

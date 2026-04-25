@@ -35,7 +35,7 @@ glabel func_080EC320
 
 .balign 4, 0
 _080EC358:
-/* 080EC358 */ .word D_03003850
+/* 080EC358 */ .word gCurrentSceneVariable
 _080EC35C:
 /* 080EC35C */ LDRB R0, [R2]
 /* 080EC35E */ LSRS R0, R0, #1

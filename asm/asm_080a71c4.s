@@ -37,7 +37,7 @@ _080A71FC:
 
 .balign 4, 0
 _080A7200:
-/* 080A7200 */ .word D_03003850
+/* 080A7200 */ .word gCurrentSceneVariable
 _080A7204:
 /* 080A7204 */ MOVS R6, #1
 _080A7206:
@@ -65,7 +65,7 @@ _080A7206:
 
 .balign 4, 0
 _080A7234:
-/* 080A7234 */ .word D_03003850
+/* 080A7234 */ .word gCurrentSceneVariable
 _080A7238:
 /* 080A7238 */ MOVS R6, #1
 _080A723A:

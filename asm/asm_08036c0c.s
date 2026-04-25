@@ -13,7 +13,7 @@ glabel func_08036C0C
 _08036C16:
 /* 08036C16 */ LDR R7, _08036D00
 /* 08036C18 */ LDR R0, [R7]
-/* 08036C1A */ LDR R4, =D_03003850
+/* 08036C1A */ LDR R4, =gCurrentSceneVariable
 /* 08036C1C */ LDR R2, [R4]
 /* 08036C1E */ LSLS R3, R6, #1
 /* 08036C20 */ ADDS R1, R2, #0

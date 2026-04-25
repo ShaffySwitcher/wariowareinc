@@ -22,7 +22,7 @@ glabel func_080E9840
 
 .balign 4, 0
 _080E985C:
-/* 080E985C */ .word D_03003850
+/* 080E985C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E9860:
@@ -112,6 +112,6 @@ _080E98FC:
 
 .balign 4, 0
 _080E98F8:
-/* 080E98F8 */ .word D_03003850
+/* 080E98F8 */ .word gCurrentSceneVariable
 .ltorg
 .end

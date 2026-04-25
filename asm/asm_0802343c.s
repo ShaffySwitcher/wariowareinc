@@ -20,19 +20,19 @@ glabel func_0802343C
 /* 08023456 */ LDR R4, [R4]
 /* 08023458 */ MOVS R0, #0X80
 /* 0802345A */ LSLS R0, R0, #9
-/* 0802345C */ BL func_080F4818
+/* 0802345C */ BL __udivsi3
 /* 08023460 */ STRH R0, [R4, #0X12]
 /* 08023462 */ B _0802346E
 
 .balign 4, 0
 _08023464:
-/* 08023464 */ .word D_03003850
+/* 08023464 */ .word gCurrentSceneVariable
 _08023468:
 /* 08023468 */ MOVS R0, #0XF0
 /* 0802346A */ LSLS R0, R0, #8
 /* 0802346C */ STRH R0, [R1, #0X12]
 _0802346E:
-/* 0802346E */ LDR R0, =D_03003850
+/* 0802346E */ LDR R0, =gCurrentSceneVariable
 /* 08023470 */ LDR R0, [R0]
 /* 08023472 */ LDRH R2, [R0, #0X12]
 /* 08023474 */ LDRH R1, [R0, #0X10]

@@ -34,7 +34,7 @@ _080840F0:
 
 .balign 4, 0
 _0808410C:
-/* 0808410C */ .word D_03003850
+/* 0808410C */ .word gCurrentSceneVariable
 _08084110:
 /* 08084110 */ ADDS R0, R5, #0
 /* 08084112 */ BL func_080841C8
@@ -128,6 +128,6 @@ _080841BC:
 
 .balign 4, 0
 _080841C0:
-/* 080841C0 */ .word D_03003850
+/* 080841C0 */ .word gCurrentSceneVariable
 .ltorg
 .end

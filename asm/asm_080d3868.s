@@ -22,7 +22,7 @@ glabel func_080D3868
 
 .balign 4, 0
 _080D3884:
-/* 080D3884 */ .word D_03003850
+/* 080D3884 */ .word gCurrentSceneVariable
 _080D3888:
 /* 080D3888 */ CMP R1, #2
 /* 080D388A */ BEQ _080D3944
@@ -104,7 +104,7 @@ _080D3914:
 
 .balign 4, 0
 _080D3918:
-/* 080D3918 */ .word D_03003850
+/* 080D3918 */ .word gCurrentSceneVariable
 _080D391C:
 /* 080D391C */ MOVS R0, #0X64
 /* 080D391E */ BL get_random_range

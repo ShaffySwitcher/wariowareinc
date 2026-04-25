@@ -32,7 +32,7 @@ _080D6D6A:
 
 .balign 4, 0
 _080D6D6C:
-/* 080D6D6C */ .word D_03003850
+/* 080D6D6C */ .word gCurrentSceneVariable
 _080D6D70:
 /* 080D6D70 */ BL func_080D6D28
 /* 080D6D74 */ LSLS R0, R0, #0X18

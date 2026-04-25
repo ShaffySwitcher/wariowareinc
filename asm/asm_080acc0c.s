@@ -93,6 +93,6 @@ _080ACCA8:
 
 .balign 4, 0
 _080ACCAC:
-/* 080ACCAC */ .word D_03003850
+/* 080ACCAC */ .word gCurrentSceneVariable
 .ltorg
 .end

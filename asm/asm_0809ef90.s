@@ -19,7 +19,7 @@ glabel func_0809EF90
 
 .balign 4, 0
 _0809EFA8:
-/* 0809EFA8 */ .word D_03003850
+/* 0809EFA8 */ .word gCurrentSceneVariable
 _0809EFAC:
 /* 0809EFAC */ LDR R1, _0809F09C
 /* 0809EFAE */ LDR R7, [R1]
@@ -139,7 +139,7 @@ _0809F0B8:
 
 .balign 4, 0
 _0809F09C:
-/* 0809F09C */ .word D_03003850
+/* 0809F09C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0809F0A0:

@@ -269,7 +269,7 @@ _080631A2:
 
 .balign 4, 0
 _080631AC:
-/* 080631AC */ .word D_03003850
+/* 080631AC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080631B0:

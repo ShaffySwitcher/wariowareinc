@@ -49,7 +49,7 @@ _080ED118:
 
 .balign 4, 0
 _080ED130:
-/* 080ED130 */ .word D_03003850
+/* 080ED130 */ .word gCurrentSceneVariable
 _080ED134:
 /* 080ED134 */ MOVS R0, #1
 _080ED136:

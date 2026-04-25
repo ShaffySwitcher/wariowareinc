@@ -34,13 +34,13 @@ glabel func_08073540
 /* 08073574 */ ANDS R0, R4
 /* 08073576 */ LSLS R0, R0, #8
 /* 08073578 */ MOVS R1, #0XA
-/* 0807357A */ BL func_080F4818
+/* 0807357A */ BL __udivsi3
 /* 0807357E */ ADDS R5, R0, #0
 /* 08073580 */ LSRS R4, R4, #3
 /* 08073582 */ LSLS R4, R4, #7
 /* 08073584 */ ADDS R0, R4, #0
 /* 08073586 */ MOVS R1, #0XA
-/* 08073588 */ BL func_080F4818
+/* 08073588 */ BL __udivsi3
 /* 0807358C */ MOVS R2, #0X80
 /* 0807358E */ LSLS R2, R2, #1
 /* 08073590 */ ADDS R0, R2
@@ -53,7 +53,7 @@ glabel func_08073540
 /* 080735A0 */ LDR R1, [R2]
 /* 080735A2 */ ADDS R1, R6
 /* 080735A4 */ LDRH R1, [R1]
-/* 080735A6 */ BL func_080F301C
+/* 080735A6 */ BL set_soundplayer_speed
 _080735AA:
 /* 080735AA */ MOVS R0, #1
 /* 080735AC */ BL func_08070D30
@@ -64,7 +64,7 @@ _080735AA:
 
 .balign 4, 0
 _080735B8:
-/* 080735B8 */ .word D_03003850
+/* 080735B8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080735BC:
@@ -84,7 +84,7 @@ _080735C8:
 _080735CC:
 /* 080735CC */ LDR R5, _08073600
 /* 080735CE */ LDR R0, [R5]
-/* 080735D0 */ LDR R4, =D_03003850
+/* 080735D0 */ LDR R4, =gCurrentSceneVariable
 /* 080735D2 */ LDR R1, [R4]
 /* 080735D4 */ MOVS R2, #0
 /* 080735D6 */ LDRSH R1, [R1, R2]

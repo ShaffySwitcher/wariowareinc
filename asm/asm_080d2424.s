@@ -7,7 +7,7 @@
 glabel func_080D2424
 /* 080D2424 */ LSLS R0, R0, #0X18
 /* 080D2426 */ LSRS R0, R0, #0X18
-/* 080D2428 */ LDR R2, =D_03003850
+/* 080D2428 */ LDR R2, =gCurrentSceneVariable
 /* 080D242A */ LDR R2, [R2]
 /* 080D242C */ MOV IP, R2
 /* 080D242E */ LSLS R3, R0, #2

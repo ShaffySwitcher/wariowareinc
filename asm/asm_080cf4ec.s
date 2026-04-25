@@ -36,7 +36,7 @@ _080CF50C:
 
 .balign 4, 0
 _080CF524:
-/* 080CF524 */ .word D_03003850
+/* 080CF524 */ .word gCurrentSceneVariable
 _080CF528:
 /* 080CF528 */ MOVS R0, #5
 /* 080CF52A */ BL get_random_range

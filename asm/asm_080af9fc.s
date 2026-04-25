@@ -35,7 +35,7 @@ _080AFA28:
 
 .balign 4, 0
 _080AFA30:
-/* 080AFA30 */ .word D_03003850
+/* 080AFA30 */ .word gCurrentSceneVariable
 _080AFA34:
 /* 080AFA34 */ CMP R5, #0X31
 /* 080AFA36 */ BGT _080AFA40
@@ -92,13 +92,13 @@ _080AFA70:
 
 .balign 4, 0
 _080AFA94:
-/* 080AFA94 */ .word D_03003850
+/* 080AFA94 */ .word gCurrentSceneVariable
 _080AFA98:
 /* 080AFA98 */ ADDS R0, R4, #0
 /* 080AFA9A */ BL func_080AF864
 _080AFA9E:
 /* 080AFA9E */ STR R0, [R6]
-/* 080AFAA0 */ LDR R0, =D_03003850
+/* 080AFAA0 */ LDR R0, =gCurrentSceneVariable
 /* 080AFAA2 */ LDR R0, [R0]
 /* 080AFAA4 */ MOVS R1, #0X95
 /* 080AFAA6 */ LSLS R1, R1, #2

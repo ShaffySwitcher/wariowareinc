@@ -14,7 +14,7 @@ glabel func_08075F04
 /* 08075F14 */ BL func_0800C7FC
 /* 08075F18 */ MOVS R0, #1
 /* 08075F1A */ BL func_08075EC4
-/* 08075F1E */ LDR R2, =D_03003850
+/* 08075F1E */ LDR R2, =gCurrentSceneVariable
 /* 08075F20 */ LDR R0, [R2]
 /* 08075F22 */ ADDS R0, #0X2C
 /* 08075F24 */ MOVS R1, #1

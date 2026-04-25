@@ -39,7 +39,7 @@ _08057B72:
 
 .balign 4, 0
 _08057B84:
-/* 08057B84 */ .word D_03003850
+/* 08057B84 */ .word gCurrentSceneVariable
 _08057B88:
 /* 08057B88 */ CMP R5, #2
 /* 08057B8A */ BNE _08057B8E
@@ -212,7 +212,7 @@ _08057CCC:
 
 .balign 4, 0
 _08057CD0:
-/* 08057CD0 */ .word D_03003850
+/* 08057CD0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08057CD4:
@@ -318,7 +318,7 @@ _08057D90:
 
 .balign 4, 0
 _08057D94:
-/* 08057D94 */ .word D_03003850
+/* 08057D94 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08057D98:

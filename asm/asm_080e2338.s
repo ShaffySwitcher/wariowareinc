@@ -95,7 +95,7 @@ _080E23CA:
 
 .balign 4, 0
 _080E23F4:
-/* 080E23F4 */ .word D_03003850
+/* 080E23F4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E23F8:
@@ -151,7 +151,7 @@ _080E244C:
 
 .balign 4, 0
 _080E2444:
-/* 080E2444 */ .word D_03003850
+/* 080E2444 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E2448:

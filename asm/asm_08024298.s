@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_08024298
 /* 08024298 */ PUSH {LR}
-/* 0802429A */ LDR R0, =D_03004890
+/* 0802429A */ LDR R0, =gBeatscriptScene
 /* 0802429C */ LDR R0, [R0, #4]
 /* 0802429E */ MOVS R1, #1
 /* 080242A0 */ BL func_0800200C

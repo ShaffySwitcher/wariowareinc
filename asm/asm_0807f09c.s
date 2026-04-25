@@ -29,7 +29,7 @@ _0807F0B2:
 
 .balign 4, 0
 _0807F0C4:
-/* 0807F0C4 */ .word D_03003850
+/* 0807F0C4 */ .word gCurrentSceneVariable
 _0807F0C8:
 /* 0807F0C8 */ CMP R0, #3
 /* 0807F0CA */ BEQ _0807F0F0

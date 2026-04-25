@@ -19,7 +19,7 @@ glabel func_080B2AD8
 
 .balign 4, 0
 _080B2AF0:
-/* 080B2AF0 */ .word D_03003850
+/* 080B2AF0 */ .word gCurrentSceneVariable
 _080B2AF4:
 /* 080B2AF4 */ CMP R4, #2
 /* 080B2AF6 */ BEQ _080B2B74
@@ -88,7 +88,7 @@ _080B2B5E:
 
 .balign 4, 0
 _080B2B70:
-/* 080B2B70 */ .word D_03003850
+/* 080B2B70 */ .word gCurrentSceneVariable
 _080B2B74:
 /* 080B2B74 */ BL func_080B3C9C
 /* 080B2B78 */ LDR R4, =gSpriteHandler

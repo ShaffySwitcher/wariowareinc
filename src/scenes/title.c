@@ -46,16 +46,15 @@ void func_0800DC9C(void) {
 
 extern u32 func_08004E48(u16, void*, u32, u32, u32);
 extern u32 func_080042F4(u16, void*, u32, u32, u32, u32);
-void func_08005538(struct SpriteHandler*, s32, void*, u32);
+void func_08005538(struct SpriteHandler*, s32, void*, u16*);
 extern u8 D_083ADB4C[];
 extern u8 D_083ADADC[];
 extern u8 D_083A8C7C[];
-extern u32 D_03003854[];
 
 void title_scene_start(void) {
     gTitle->unk0 = func_08004E48(get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
     gTitle->unk4 = func_080042F4(get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
-    func_08005538(gSpriteHandler, gTitle->unk4, &D_083A8C7C, D_03003854[0]);
+    func_08005538(gSpriteHandler, gTitle->unk4, &D_083A8C7C, gCurrentSceneSpritePool);
     func_0800DC9C();
     gTitle->unk8 = 0;
     gTitle->unk4C = 0xEC4;

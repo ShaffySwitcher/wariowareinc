@@ -25,7 +25,7 @@ glabel func_0808F7FC
 
 .balign 4, 0
 _0808F820:
-/* 0808F820 */ .word D_03003850
+/* 0808F820 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0808F824:
@@ -68,7 +68,7 @@ _0808F852:
 
 .balign 4, 0
 _0808F868:
-/* 0808F868 */ .word D_03003850
+/* 0808F868 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0808F86C:

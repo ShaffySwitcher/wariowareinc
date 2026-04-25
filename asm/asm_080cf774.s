@@ -57,13 +57,13 @@ _080CF7CC:
 
 .balign 4, 0
 _080CF7D0:
-/* 080CF7D0 */ .word D_03003850
+/* 080CF7D0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CF7D4:
 /* 080CF7D4 */ .word D_083FD534
 _080CF7D8:
-/* 080CF7D8 */ LDR R0, =D_03003850
+/* 080CF7D8 */ LDR R0, =gCurrentSceneVariable
 /* 080CF7DA */ LDR R0, [R0]
 /* 080CF7DC */ MOVS R2, #0XC8
 /* 080CF7DE */ LSLS R2, R2, #2

@@ -7,7 +7,7 @@
 glabel func_0801B174
 /* 0801B174 */ LSLS R0, R0, #0X10
 /* 0801B176 */ LSRS R0, R0, #0X10
-/* 0801B178 */ LDR R1, =D_03003850
+/* 0801B178 */ LDR R1, =gCurrentSceneVariable
 /* 0801B17A */ LDR R2, [R1]
 /* 0801B17C */ ADDS R1, R2, #0
 /* 0801B17E */ ADDS R1, #0XF0

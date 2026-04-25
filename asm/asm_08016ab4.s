@@ -21,7 +21,7 @@ glabel func_08016AB4
 /* 08016AD0 */ ADDS R0, #0X3C
 /* 08016AD2 */ MOVS R2, #0
 /* 08016AD4 */ BL func_08007000
-/* 08016AD8 */ LDR R0, =D_03003854
+/* 08016AD8 */ LDR R0, =gCurrentSceneSpritePool
 /* 08016ADA */ LDR R0, [R0]
 /* 08016ADC */ MOVS R1, #6
 /* 08016ADE */ LDRSH R0, [R0, R1]

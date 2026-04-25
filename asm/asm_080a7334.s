@@ -76,7 +76,7 @@ _080A73B8:
 
 .balign 4, 0
 _080A73BC:
-/* 080A73BC */ .word D_03003850
+/* 080A73BC */ .word gCurrentSceneVariable
 _080A73C0:
 /* 080A73C0 */ ADDS R0, R4, #0
 /* 080A73C2 */ BL func_080A705C
@@ -105,7 +105,7 @@ _080A73DC:
 _080A73F6:
 /* 080A73F6 */ LDR R0, _080A7440
 /* 080A73F8 */ LDR R0, [R0]
-/* 080A73FA */ LDR R1, =D_03003850
+/* 080A73FA */ LDR R1, =gCurrentSceneVariable
 /* 080A73FC */ LDR R3, [R1]
 /* 080A73FE */ LSLS R4, R2, #0X10
 /* 080A7400 */ ASRS R4, R4, #0X10

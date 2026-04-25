@@ -41,7 +41,7 @@ glabel func_08022570
 
 .balign 4, 0
 _080225B8:
-/* 080225B8 */ .word D_03003850
+/* 080225B8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080225BC:
@@ -49,7 +49,7 @@ _080225BC:
 
 .balign 4, 0
 _080225C0:
-/* 080225C0 */ .word D_03003854
+/* 080225C0 */ .word gCurrentSceneSpritePool
 _080225C4:
 /* 080225C4 */ SUBS R0, #1
 /* 080225C6 */ STRH R0, [R1, #0X14]

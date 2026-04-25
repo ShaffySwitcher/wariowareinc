@@ -47,7 +47,7 @@ glabel func_080144DC
 /* 08014532 */ MOVS R2, #8
 /* 08014534 */ ORRS R0, R2
 /* 08014536 */ STRB R0, [R1]
-/* 08014538 */ LDR R0, =D_03004890
+/* 08014538 */ LDR R0, =gBeatscriptScene
 /* 0801453A */ LDR R0, [R0, #4]
 /* 0801453C */ MOVS R1, #4
 /* 0801453E */ BL func_080F30E0

@@ -59,7 +59,7 @@ _0801786C:
 
 .balign 4, 0
 _08017870:
-/* 08017870 */ .word D_03003854
+/* 08017870 */ .word gCurrentSceneSpritePool
 _08017874:
 /* 08017874 */ LDR R0, _080178B0
 /* 08017876 */ BL func_0800CDCC
@@ -80,7 +80,7 @@ _08017874:
 /* 08017898 */ RSBS R0, R0, #0
 /* 0801789A */ BL func_0801776C
 _0801789E:
-/* 0801789E */ LDR R0, =D_03004890
+/* 0801789E */ LDR R0, =gBeatscriptScene
 /* 080178A0 */ LDRH R0, [R0, #0X10]
 /* 080178A2 */ BL func_0800CE90
 /* 080178A6 */ ADD SP, #0XC
@@ -102,7 +102,7 @@ _080178B4:
 
 .balign 4, 0
 _080178B8:
-/* 080178B8 */ .word D_03003854
+/* 080178B8 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080178BC:

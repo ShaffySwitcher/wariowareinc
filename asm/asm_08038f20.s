@@ -16,7 +16,7 @@ glabel func_08038F20
 /* 08038F30 */ BL func_08038DA8
 /* 08038F34 */ BL func_08038A44
 /* 08038F38 */ BL func_08038AF0
-/* 08038F3C */ LDR R0, =D_03003850
+/* 08038F3C */ LDR R0, =gCurrentSceneVariable
 /* 08038F3E */ LDR R1, [R0]
 /* 08038F40 */ ADDS R1, #0X94
 /* 08038F42 */ LDR R0, [R1]

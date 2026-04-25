@@ -71,9 +71,9 @@ _08009DC6: \n\
 /* 08009DD6 */ LSLS R4, R5, #0X10 \n\
 /* 08009DD8 */ LSRS R4, R4, #0X10 \n\
 /* 08009DDA */ ADDS R0, R4, #0 \n\
-/* 08009DDC */ BL func_080062E4 \n\
+/* 08009DDC */ BL mem_heap_dealloc_with_id \n\
 /* 08009DE0 */ ADDS R0, R4, #0 \n\
-/* 08009DE2 */ BL func_08005A1C \n\
+/* 08009DE2 */ BL task_pool_force_cancel_id \n\
 /* 08009DE6 */ LDRB R0, [R6] \n\
 /* 08009DE8 */ MOVS R3, #2 \n\
 /* 08009DEA */ RSBS R3, R3, #0 \n\
@@ -94,11 +94,11 @@ _08009DF2: \n\
  \n\
 .balign 4, 0 \n\
 _08009E08: \n\
-/* 08009E08 */ .word D_03004890 \n\
+/* 08009E08 */ .word gBeatscriptScene \n\
  \n\
 .balign 4, 0 \n\
 _08009E0C: \n\
-/* 08009E0C */ .word D_03003850 \n\
+/* 08009E0C */ .word gCurrentSceneVariable \n\
  \n\
 .balign 4, 0 \n\
 _08009E10: \n\
@@ -106,7 +106,7 @@ _08009E10: \n\
  \n\
 .balign 4, 0 \n\
 _08009E14: \n\
-/* 08009E14 */ .word D_03003854 \n\
+/* 08009E14 */ .word gCurrentSceneSpritePool \n\
  \n\
 .balign 4, 0 \n\
 _08009E18: \n\

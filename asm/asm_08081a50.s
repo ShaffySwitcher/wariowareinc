@@ -49,7 +49,7 @@ _08081A6C:
 
 .balign 4, 0
 _08081AA8:
-/* 08081AA8 */ .word D_03003850
+/* 08081AA8 */ .word gCurrentSceneVariable
 _08081AAC:
 /* 08081AAC */ CMP R6, R0
 /* 08081AAE */ BLE _08081ABC

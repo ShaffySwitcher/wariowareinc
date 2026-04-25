@@ -8,7 +8,7 @@ glabel func_0800CA80
 /* 0800CA80 */ PUSH {LR}
 /* 0800CA82 */ MOVS R0, #0
 /* 0800CA84 */ BL func_08009FEC
-/* 0800CA88 */ LDR R2, =D_03004890
+/* 0800CA88 */ LDR R2, =gBeatscriptScene
 /* 0800CA8A */ LDRB R1, [R2, #1]
 /* 0800CA8C */ MOVS R0, #0X11
 /* 0800CA8E */ RSBS R0, R0, #0

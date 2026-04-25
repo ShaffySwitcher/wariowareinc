@@ -9,7 +9,7 @@ glabel func_080A7F4C
 /* 080A7F4E */ BL get_current_mem_id
 /* 080A7F52 */ LSLS R0, R0, #0X10
 /* 080A7F54 */ LSRS R0, R0, #0X10
-/* 080A7F56 */ BL func_08005A1C
+/* 080A7F56 */ BL task_pool_force_cancel_id
 /* 080A7F5A */ BL func_080A8418
 /* 080A7F5E */ MOVS R0, #2
 /* 080A7F60 */ BL func_0800BF20
@@ -64,7 +64,7 @@ _080A7F84:
 
 .balign 4, 0
 _080A7FD8:
-/* 080A7FD8 */ .word D_03003850
+/* 080A7FD8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A7FDC:

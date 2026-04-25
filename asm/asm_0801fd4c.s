@@ -26,7 +26,7 @@ glabel func_0801FD4C
 /* 0801FD70 */ ADDS R0, R5
 /* 0801FD72 */ LDRH R0, [R0]
 /* 0801FD74 */ MOVS R1, #0X64
-/* 0801FD76 */ BL func_080F4818
+/* 0801FD76 */ BL __udivsi3
 /* 0801FD7A */ LSLS R0, R0, #0X10
 /* 0801FD7C */ LSRS R0, R0, #0X10
 /* 0801FD7E */ MOVS R1, #0XA
@@ -48,7 +48,7 @@ glabel func_0801FD4C
 /* 0801FDA2 */ ADDS R0, R5
 /* 0801FDA4 */ LDRH R0, [R0]
 /* 0801FDA6 */ MOVS R1, #0XA
-/* 0801FDA8 */ BL func_080F4818
+/* 0801FDA8 */ BL __udivsi3
 /* 0801FDAC */ LSLS R0, R0, #0X10
 /* 0801FDAE */ LSRS R0, R0, #0X10
 /* 0801FDB0 */ MOVS R1, #0XA
@@ -94,6 +94,6 @@ _0801FDF8:
 
 .balign 4, 0
 _0801FDFC:
-/* 0801FDFC */ .word D_03003854
+/* 0801FDFC */ .word gCurrentSceneSpritePool
 .ltorg
 .end

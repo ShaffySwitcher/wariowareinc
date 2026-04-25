@@ -13,7 +13,7 @@ glabel func_0808F3C4
 /* 0808F3D0 */ STRB R1, [R4, #4]
 /* 0808F3D2 */ STRB R1, [R4, #6]
 /* 0808F3D4 */ STRB R1, [R4, #5]
-/* 0808F3D6 */ LDR R0, =D_03003850
+/* 0808F3D6 */ LDR R0, =gCurrentSceneVariable
 /* 0808F3D8 */ LDR R2, [R0]
 /* 0808F3DA */ LDRH R1, [R2, #0XE]
 /* 0808F3DC */ LSLS R0, R1, #1

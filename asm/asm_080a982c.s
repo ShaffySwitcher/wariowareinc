@@ -23,7 +23,7 @@ _080A9830:
 
 .balign 4, 0
 _080A9848:
-/* 080A9848 */ .word D_03003850
+/* 080A9848 */ .word gCurrentSceneVariable
 _080A984C:
 /* 080A984C */ ADDS R0, R4, #0
 /* 080A984E */ BL func_080A9664

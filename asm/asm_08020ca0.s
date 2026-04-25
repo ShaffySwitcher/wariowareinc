@@ -115,7 +115,7 @@ _08020D6A:
 /* 08020D7A */ MOVS R2, #0XA
 /* 08020D7C */ BL sprite_set_anim_cel
 _08020D80:
-/* 08020D80 */ LDR R2, =D_03003850
+/* 08020D80 */ LDR R2, =gCurrentSceneVariable
 /* 08020D82 */ LDR R0, [R2]
 /* 08020D84 */ MOVS R3, #0
 /* 08020D86 */ MOVS R1, #0X80
@@ -165,6 +165,6 @@ _08020DC4:
 
 .balign 4, 0
 _08020DC8:
-/* 08020DC8 */ .word D_03003854
+/* 08020DC8 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

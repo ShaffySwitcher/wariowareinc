@@ -21,9 +21,9 @@ _08016D4A:
 /* 08016D5C */ LSLS R4, R5, #0X10
 /* 08016D5E */ LSRS R4, R4, #0X10
 /* 08016D60 */ ADDS R0, R4, #0
-/* 08016D62 */ BL func_08005A1C
+/* 08016D62 */ BL task_pool_force_cancel_id
 /* 08016D66 */ ADDS R0, R4, #0
-/* 08016D68 */ BL func_080062E4
+/* 08016D68 */ BL mem_heap_dealloc_with_id
 /* 08016D6C */ CMP R5, #1
 /* 08016D6E */ BLS _08016D4A
 /* 08016D70 */ POP {R4, R5}

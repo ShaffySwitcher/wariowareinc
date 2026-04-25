@@ -24,7 +24,7 @@ glabel func_0801694C
 /* 0801696E */ LSLS R6, R6, #7
 /* 08016970 */ LSLS R0, R4, #1
 /* 08016972 */ MOVS R1, #3
-/* 08016974 */ BL func_080F4818
+/* 08016974 */ BL __udivsi3
 /* 08016978 */ STR R0, [SP]
 /* 0801697A */ MOVS R0, #0
 /* 0801697C */ MOV R8, R0
@@ -58,7 +58,7 @@ glabel func_0801694C
 /* 080169B8 */ LSLS R4, R4, #8
 /* 080169BA */ LSLS R0, R6, #1
 /* 080169BC */ MOVS R1, #3
-/* 080169BE */ BL func_080F4818
+/* 080169BE */ BL __udivsi3
 /* 080169C2 */ STR R0, [SP]
 /* 080169C4 */ MOV R2, R8
 /* 080169C6 */ STR R2, [SP, #4]

@@ -99,6 +99,6 @@ _0802A304:
 
 .balign 4, 0
 _0802A300:
-/* 0802A300 */ .word D_03003850
+/* 0802A300 */ .word gCurrentSceneVariable
 .ltorg
 .end

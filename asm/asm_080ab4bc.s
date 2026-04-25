@@ -35,7 +35,7 @@ _080AB4D4:
 
 .balign 4, 0
 _080AB4F0:
-/* 080AB4F0 */ .word D_03003850
+/* 080AB4F0 */ .word gCurrentSceneVariable
 _080AB4F4:
 /* 080AB4F4 */ MOVS R0, #1
 /* 080AB4F6 */ BL func_0800A0C4

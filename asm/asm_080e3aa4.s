@@ -17,7 +17,7 @@ glabel func_080E3AA4
 /* 080E3AB6 */ MOVS R1, #0XE1
 /* 080E3AB8 */ LSLS R1, R1, #4
 /* 080E3ABA */ ADDS R0, R4, #0
-/* 080E3ABC */ BL func_080F4818
+/* 080E3ABC */ BL __udivsi3
 /* 080E3AC0 */ STRB R0, [R5]
 /* 080E3AC2 */ MOV R0, SP
 /* 080E3AC4 */ LDRB R1, [R0]
@@ -33,12 +33,12 @@ glabel func_080E3AA4
 /* 080E3AD8 */ MOVS R1, #0X96
 /* 080E3ADA */ LSLS R1, R1, #2
 /* 080E3ADC */ ADDS R0, R4, #0
-/* 080E3ADE */ BL func_080F4818
+/* 080E3ADE */ BL __udivsi3
 /* 080E3AE2 */ STRB R0, [R5, #1]
 /* 080E3AE4 */ MOV R5, SP
 /* 080E3AE6 */ ADDS R0, R4, #0
 /* 080E3AE8 */ MOVS R1, #0X3C
-/* 080E3AEA */ BL func_080F4818
+/* 080E3AEA */ BL __udivsi3
 /* 080E3AEE */ LSLS R0, R0, #0X10
 /* 080E3AF0 */ LSRS R0, R0, #0X10
 /* 080E3AF2 */ MOVS R1, #0XA
@@ -74,7 +74,7 @@ glabel func_080E3AA4
 /* 080E3B32 */ MOV R0, SP
 /* 080E3B34 */ LDRB R0, [R0, #3]
 /* 080E3B36 */ MOVS R1, #0XA
-/* 080E3B38 */ BL func_080F4818
+/* 080E3B38 */ BL __udivsi3
 /* 080E3B3C */ STRB R0, [R4, #3]
 /* 080E3B3E */ MOV R0, SP
 /* 080E3B40 */ STRB R5, [R0, #4]
@@ -119,7 +119,7 @@ _080E3B50:
 
 .balign 4, 0
 _080E3B90:
-/* 080E3B90 */ .word D_03003850
+/* 080E3B90 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E3B94:

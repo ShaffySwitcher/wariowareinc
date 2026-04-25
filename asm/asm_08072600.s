@@ -38,7 +38,7 @@ _08072620:
 /* 0807263C */ BL sprite_set_anim_cel
 /* 08072640 */ ADDS R0, R6, #0
 /* 08072642 */ MOVS R1, #0XA
-/* 08072644 */ BL func_080F4818
+/* 08072644 */ BL __udivsi3
 /* 08072648 */ ADDS R6, R0, #0
 /* 0807264A */ MOVS R1, #1
 /* 0807264C */ RSBS R1, R1, #0
@@ -114,7 +114,7 @@ _080726C4:
 
 .balign 4, 0
 _080726D8:
-/* 080726D8 */ .word D_03003850
+/* 080726D8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080726DC:

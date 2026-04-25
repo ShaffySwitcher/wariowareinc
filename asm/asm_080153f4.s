@@ -73,7 +73,7 @@ _08015464:
 
 .balign 4, 0
 _08015468:
-/* 08015468 */ .word D_03003854
+/* 08015468 */ .word gCurrentSceneSpritePool
 _0801546C:
 /* 0801546C */ MOVS R3, #0XC8
 /* 0801546E */ LSLS R3, R3, #1
@@ -142,7 +142,7 @@ _080154E4:
 
 .balign 4, 0
 _080154E8:
-/* 080154E8 */ .word D_03003854
+/* 080154E8 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080154EC:

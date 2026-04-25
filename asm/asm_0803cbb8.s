@@ -50,7 +50,7 @@ glabel func_0803CBB8
 
 .balign 4, 0
 _0803CC0C:
-/* 0803CC0C */ .word D_03003850
+/* 0803CC0C */ .word gCurrentSceneVariable
 _0803CC10:
 /* 0803CC10 */ MOV R3, IP
 /* 0803CC12 */ ADDS R3, #0X90
@@ -158,7 +158,7 @@ _0803CCE4:
 
 .balign 4, 0
 _0803CCE8:
-/* 0803CCE8 */ .word D_03003850
+/* 0803CCE8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0803CCEC:

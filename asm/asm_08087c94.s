@@ -62,7 +62,7 @@ _08087CFC:
 
 .balign 4, 0
 _08087D00:
-/* 08087D00 */ .word D_03003850
+/* 08087D00 */ .word gCurrentSceneVariable
 _08087D04:
 /* 08087D04 */ CMP R0, #1
 /* 08087D06 */ BNE _08087D0E
@@ -91,7 +91,7 @@ _08087D2E:
 
 .balign 4, 0
 _08087D34:
-/* 08087D34 */ .word D_03003850
+/* 08087D34 */ .word gCurrentSceneVariable
 _08087D38:
 /* 08087D38 */ LDR R0, =gSpriteHandler
 /* 08087D3A */ LDR R0, [R0]

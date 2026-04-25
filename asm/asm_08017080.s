@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_08017080
 /* 08017080 */ PUSH {LR}
-/* 08017082 */ LDR R1, =D_03003854
+/* 08017082 */ LDR R1, =gCurrentSceneSpritePool
 /* 08017084 */ LDR R1, [R1]
 /* 08017086 */ LSLS R0, R0, #1
 /* 08017088 */ ADDS R0, R1

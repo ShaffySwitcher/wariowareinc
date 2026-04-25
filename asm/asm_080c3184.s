@@ -182,7 +182,7 @@ _080C325E:
 
 .balign 4, 0
 _080C32E0:
-/* 080C32E0 */ .word D_03003850
+/* 080C32E0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C32E4:
@@ -354,7 +354,7 @@ _080C3420:
 
 .balign 4, 0
 _080C3424:
-/* 080C3424 */ .word D_03003850
+/* 080C3424 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080C3428:

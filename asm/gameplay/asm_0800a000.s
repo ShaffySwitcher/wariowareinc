@@ -16,7 +16,7 @@ thumb_func_start func_0800A000 \n\
  \n\
 .balign 4, 0 \n\
 _0800A01C: \n\
-/* 0800A01C */ .word D_03004890 \n\
+/* 0800A01C */ .word gBeatscriptScene \n\
  \n\
 .balign 4, 0 \n\
 _0800A020: \n\

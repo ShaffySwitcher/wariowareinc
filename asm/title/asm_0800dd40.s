@@ -57,7 +57,7 @@ _0800DD94: \n\
 /* 0800DDA0 */ BNE _0800DDBA \n\
 /* 0800DDA2 */ LDR R0, _0800DDEC \n\
 /* 0800DDA4 */ LDR R0, [R0] \n\
-/* 0800DDA6 */ LDR R1, =D_03003854 \n\
+/* 0800DDA6 */ LDR R1, =gCurrentSceneSpritePool \n\
 /* 0800DDA8 */ LDR R1, [R1] \n\
 /* 0800DDAA */ MOVS R2, #0XE \n\
 /* 0800DDAC */ LDRSH R1, [R1, R2] \n\

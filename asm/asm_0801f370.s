@@ -40,7 +40,7 @@ _0801F3A8:
 
 .balign 4, 0
 _0801F3AC:
-/* 0801F3AC */ .word D_03003850
+/* 0801F3AC */ .word gCurrentSceneVariable
 _0801F3B0:
 /* 0801F3B0 */ LSLS R0, R3, #0X10
 /* 0801F3B2 */ LDR R3, _0801F3E8

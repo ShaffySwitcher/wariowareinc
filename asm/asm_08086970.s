@@ -26,6 +26,6 @@ _08086990:
 
 .balign 4, 0
 _0808698C:
-/* 0808698C */ .word D_03003850
+/* 0808698C */ .word gCurrentSceneVariable
 .ltorg
 .end

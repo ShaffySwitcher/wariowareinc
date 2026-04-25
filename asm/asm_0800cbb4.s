@@ -26,12 +26,12 @@ glabel func_0800CBB4
 /* 0800CBDA */ LDR R6, _0800CBF0
 /* 0800CBDC */ ADDS R0, R5, R6
 /* 0800CBDE */ LDRH R0, [R0]
-/* 0800CBE0 */ BL func_08009E20
+/* 0800CBE0 */ BL set_beatscript_tempo
 /* 0800CBE4 */ B _0800CC3A
 
 .balign 4, 0
 _0800CBE8:
-/* 0800CBE8 */ .word D_03004890
+/* 0800CBE8 */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800CBEC:
@@ -69,7 +69,7 @@ _0800CBF4:
 /* 0800CC28 */ ADDS R0, R0, R1
 /* 0800CC2A */ LSLS R0, R0, #0X10
 /* 0800CC2C */ LSRS R0, R0, #0X10
-/* 0800CC2E */ BL func_08009E20
+/* 0800CC2E */ BL set_beatscript_tempo
 /* 0800CC32 */ LDRB R0, [R5, #1]
 /* 0800CC34 */ MOVS R1, #0X80
 /* 0800CC36 */ ORRS R0, R1

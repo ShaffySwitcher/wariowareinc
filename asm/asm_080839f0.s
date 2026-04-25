@@ -31,7 +31,7 @@ glabel func_080839F0
 
 .balign 4, 0
 _08083A24:
-/* 08083A24 */ .word D_03003850
+/* 08083A24 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08083A28:
@@ -72,7 +72,7 @@ _08083A64:
 
 .balign 4, 0
 _08083A68:
-/* 08083A68 */ .word D_03003850
+/* 08083A68 */ .word gCurrentSceneVariable
 _08083A6C:
 /* 08083A6C */ LDR R0, [R5]
 /* 08083A6E */ MOVS R2, #0XA
@@ -80,7 +80,7 @@ _08083A6C:
 /* 08083A72 */ LDR R2, _08083A8C
 /* 08083A74 */ BL sprite_attr_and
 _08083A78:
-/* 08083A78 */ LDR R2, =D_03003850
+/* 08083A78 */ LDR R2, =gCurrentSceneVariable
 /* 08083A7A */ LDR R0, [R2]
 /* 08083A7C */ MOVS R1, #0
 /* 08083A7E */ STRB R1, [R0, #0X1A]

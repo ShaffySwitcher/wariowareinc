@@ -30,12 +30,12 @@ _080A1BD8:
 
 .balign 4, 0
 _080A1BDC:
-/* 080A1BDC */ .word D_03003850
+/* 080A1BDC */ .word gCurrentSceneVariable
 _080A1BE0:
 /* 080A1BE0 */ MOVS R5, #0
 /* 080A1BE2 */ LDR R0, _080A1C40
 /* 080A1BE4 */ MOV R8, R0
-/* 080A1BE6 */ LDR R7, =D_03003850
+/* 080A1BE6 */ LDR R7, =gCurrentSceneVariable
 _080A1BE8:
 /* 080A1BE8 */ MOV R1, R8
 /* 080A1BEA */ LDR R0, [R1]

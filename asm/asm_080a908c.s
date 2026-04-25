@@ -193,7 +193,7 @@ _080A9176:
 
 .balign 4, 0
 _080A91FC:
-/* 080A91FC */ .word D_03003850
+/* 080A91FC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A9200:
@@ -205,7 +205,7 @@ _080A9204:
 
 .balign 4, 0
 _080A9208:
-/* 080A9208 */ .word D_03003854
+/* 080A9208 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080A920C:

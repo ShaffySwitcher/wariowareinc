@@ -28,7 +28,7 @@ _0801A774:
 
 .balign 4, 0
 _0801A778:
-/* 0801A778 */ .word D_03003854
+/* 0801A778 */ .word gCurrentSceneSpritePool
 _0801A77C:
 /* 0801A77C */ BL func_0801A918
 _0801A780:

@@ -26,7 +26,7 @@ glabel func_080255C0
 /* 080255E6 */ MOVS R0, #1
 /* 080255E8 */ BL func_0800A200
 /* 080255EC */ MOVS R0, #0
-/* 080255EE */ BL func_08009EE0
+/* 080255EE */ BL func_08009EE0_stub
 /* 080255F2 */ POP {R0}
 /* 080255F4 */ BX R0
 

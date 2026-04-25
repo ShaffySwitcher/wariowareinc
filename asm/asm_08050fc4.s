@@ -27,7 +27,7 @@ _08050FDE:
 
 .balign 4, 0
 _08050FE8:
-/* 08050FE8 */ .word D_03003850
+/* 08050FE8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08050FEC:
@@ -122,7 +122,7 @@ _08051066:
 
 .balign 4, 0
 _08051088:
-/* 08051088 */ .word D_03003850
+/* 08051088 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0805108C:
@@ -230,7 +230,7 @@ _08051150:
 
 .balign 4, 0
 _08051154:
-/* 08051154 */ .word D_03003850
+/* 08051154 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08051158:
@@ -307,7 +307,7 @@ _0805117C:
 
 .balign 4, 0
 _080511D4:
-/* 080511D4 */ .word D_03003850
+/* 080511D4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080511D8:
@@ -372,7 +372,7 @@ _08051244:
 
 .balign 4, 0
 _08051248:
-/* 08051248 */ .word D_03003850
+/* 08051248 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0805124C:
@@ -418,7 +418,7 @@ _08051288:
 
 .balign 4, 0
 _0805128C:
-/* 0805128C */ .word D_03003850
+/* 0805128C */ .word gCurrentSceneVariable
 _08051290:
 /* 08051290 */ LDR R0, [R2]
 /* 08051292 */ ADDS R2, R0, #0

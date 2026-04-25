@@ -372,7 +372,7 @@ _080E6D1E:
 /* 080E6D64 */ LDRH R0, [R4]
 /* 080E6D66 */ MOVS R6, #0X64
 /* 080E6D68 */ MOVS R1, #0X64
-/* 080E6D6A */ BL func_080F4818
+/* 080E6D6A */ BL __udivsi3
 /* 080E6D6E */ STRH R0, [R5]
 /* 080E6D70 */ ADD R5, SP, #0X18
 /* 080E6D72 */ LDRH R0, [R4]
@@ -480,7 +480,7 @@ _080E6E40:
 
 .balign 4, 0
 _080E6E44:
-/* 080E6E44 */ .word D_03003850
+/* 080E6E44 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E6E48:

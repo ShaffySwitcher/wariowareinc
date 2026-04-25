@@ -66,7 +66,7 @@ glabel func_08072048
 /* 080720C6 */ LDR R2, _0807211C
 /* 080720C8 */ ADDS R1, R2
 /* 080720CA */ LDRH R1, [R1]
-/* 080720CC */ BL func_080F301C
+/* 080720CC */ BL set_soundplayer_speed
 /* 080720D0 */ LDR R1, =D_083D6BE4
 /* 080720D2 */ LSLS R0, R6, #1
 /* 080720D4 */ ADDS R0, R1
@@ -85,7 +85,7 @@ _080720DE:
 /* 080720F0 */ LDR R6, _0807211C
 /* 080720F2 */ ADDS R1, R6
 /* 080720F4 */ LDRH R1, [R1]
-/* 080720F6 */ BL func_080F301C
+/* 080720F6 */ BL set_soundplayer_speed
 _080720FA:
 /* 080720FA */ ADD SP, #0XC
 /* 080720FC */ POP {R3, R4}
@@ -101,7 +101,7 @@ _08072120:
 
 .balign 4, 0
 _08072108:
-/* 08072108 */ .word D_03003850
+/* 08072108 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807210C:

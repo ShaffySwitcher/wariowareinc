@@ -40,7 +40,7 @@ _080AF222:
 /* 080AF248 */ BL sprite_set_anim_cel
 /* 080AF24C */ ADDS R0, R7, #0
 /* 080AF24E */ MOVS R1, #0XA
-/* 080AF250 */ BL func_080F4818
+/* 080AF250 */ BL __udivsi3
 /* 080AF254 */ ADDS R7, R0, #0
 /* 080AF256 */ LDR R1, _080AF294
 /* 080AF258 */ LDR R0, [R1]

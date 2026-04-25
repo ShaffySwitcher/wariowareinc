@@ -20,7 +20,7 @@ glabel func_080B0CF0
 
 .balign 4, 0
 _080B0D08:
-/* 080B0D08 */ .word D_03003850
+/* 080B0D08 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080B0D0C:
@@ -82,7 +82,7 @@ _080B0D60:
 
 .balign 4, 0
 _080B0D64:
-/* 080B0D64 */ .word D_03003850
+/* 080B0D64 */ .word gCurrentSceneVariable
 _080B0D68:
 /* 080B0D68 */ LDR R1, [R4]
 /* 080B0D6A */ LDR R2, _080B0D94
@@ -127,7 +127,7 @@ _080B0D9E:
 
 .balign 4, 0
 _080B0DBC:
-/* 080B0DBC */ .word D_03003850
+/* 080B0DBC */ .word gCurrentSceneVariable
 _080B0DC0:
 /* 080B0DC0 */ BL func_080B12DC
 /* 080B0DC4 */ B _080B0DD6
@@ -188,6 +188,6 @@ _080B0E2C:
 
 .balign 4, 0
 _080B0E34:
-/* 080B0E34 */ .word D_03003850
+/* 080B0E34 */ .word gCurrentSceneVariable
 .ltorg
 .end

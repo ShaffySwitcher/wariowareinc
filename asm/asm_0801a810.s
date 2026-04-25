@@ -25,7 +25,7 @@ _0801A818:
 /* 0801A832 */ CMP R4, #2
 /* 0801A834 */ BLS _0801A818
 /* 0801A836 */ LDR R0, [R5]
-/* 0801A838 */ LDR R1, =D_03003854
+/* 0801A838 */ LDR R1, =gCurrentSceneSpritePool
 /* 0801A83A */ LDR R1, [R1]
 /* 0801A83C */ MOVS R2, #0X1E
 /* 0801A83E */ LDRSH R1, [R1, R2]
@@ -45,6 +45,6 @@ _0801A84C:
 
 .balign 4, 0
 _0801A850:
-/* 0801A850 */ .word D_03003850
+/* 0801A850 */ .word gCurrentSceneVariable
 .ltorg
 .end

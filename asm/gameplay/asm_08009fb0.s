@@ -4,7 +4,7 @@ thumb_func_start func_08009FB0 \n\
 /* 08009FB0 */ PUSH {R4, LR} \n\
 /* 08009FB2 */ LSLS R0, R0, #0X10 \n\
 /* 08009FB4 */ LSRS R0, R0, #0X10 \n\
-/* 08009FB6 */ LDR R4, =D_03004890 \n\
+/* 08009FB6 */ LDR R4, =gBeatscriptScene \n\
 /* 08009FB8 */ STRH R0, [R4, #0X1E] \n\
 /* 08009FBA */ LSLS R0, R0, #0X10 \n\
 /* 08009FBC */ ASRS R0, R0, #0X10 \n\

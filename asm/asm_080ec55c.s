@@ -10,7 +10,7 @@ glabel func_080EC55C
 /* 080EC560 */ BL scene_set_current_thread
 /* 080EC564 */ LDR R0, _080EC57C
 /* 080EC566 */ LDR R0, [R0]
-/* 080EC568 */ LDR R1, =D_03003850
+/* 080EC568 */ LDR R1, =gCurrentSceneVariable
 /* 080EC56A */ LDR R1, [R1]
 /* 080EC56C */ MOVS R2, #6
 /* 080EC56E */ LDRSH R1, [R1, R2]

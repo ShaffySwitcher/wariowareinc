@@ -152,7 +152,7 @@ _08009984: \n\
  \n\
 .balign 4, 0 \n\
 _08009988: \n\
-/* 08009988 */ .word D_03004890 \n\
+/* 08009988 */ .word gBeatscriptScene \n\
  \n\
 .balign 4, 0 \n\
 _0800998C: \n\
@@ -160,7 +160,7 @@ _0800998C: \n\
  \n\
 .balign 4, 0 \n\
 _08009990: \n\
-/* 08009990 */ .word D_03003850 \n\
+/* 08009990 */ .word gCurrentSceneVariable \n\
  \n\
 .balign 4, 0 \n\
 _08009994: \n\
@@ -168,7 +168,7 @@ _08009994: \n\
  \n\
 .balign 4, 0 \n\
 _08009998: \n\
-/* 08009998 */ .word D_03003854 \n\
+/* 08009998 */ .word gCurrentSceneSpritePool \n\
  \n\
 .balign 4, 0 \n\
 _0800999C: \n\

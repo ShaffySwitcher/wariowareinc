@@ -11,7 +11,7 @@ glabel func_080E1260
 /* 080E1266 */ LDR R3, [R1]
 /* 080E1268 */ MOVS R2, #0
 /* 080E126A */ LDRSH R1, [R0, R2]
-/* 080E126C */ LDR R4, =D_03003850
+/* 080E126C */ LDR R4, =gCurrentSceneVariable
 /* 080E126E */ LDR R0, [R4]
 /* 080E1270 */ MOVS R2, #0X18
 /* 080E1272 */ LDRSB R2, [R0, R2]

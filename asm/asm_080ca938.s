@@ -48,7 +48,7 @@ _080CA988:
 
 .balign 4, 0
 _080CA980:
-/* 080CA980 */ .word D_03003850
+/* 080CA980 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080CA984:

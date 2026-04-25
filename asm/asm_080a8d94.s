@@ -27,7 +27,7 @@ glabel func_080A8D94
 
 .balign 4, 0
 _080A8DBC:
-/* 080A8DBC */ .word D_03003854
+/* 080A8DBC */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080A8DC0:
@@ -35,7 +35,7 @@ _080A8DC0:
 
 .balign 4, 0
 _080A8DC4:
-/* 080A8DC4 */ .word D_03003850
+/* 080A8DC4 */ .word gCurrentSceneVariable
 _080A8DC8:
 /* 080A8DC8 */ BL func_080A8B84
 /* 080A8DCC */ B _080A8EA6
@@ -69,7 +69,7 @@ _080A8DF8:
 
 .balign 4, 0
 _080A8DFC:
-/* 080A8DFC */ .word D_03003850
+/* 080A8DFC */ .word gCurrentSceneVariable
 _080A8E00:
 /* 080A8E00 */ LDR R6, _080A8E38
 /* 080A8E02 */ LDR R3, [R6]
@@ -103,7 +103,7 @@ _080A8E1A:
 
 .balign 4, 0
 _080A8E38:
-/* 080A8E38 */ .word D_03003850
+/* 080A8E38 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A8E3C:

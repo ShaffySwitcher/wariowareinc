@@ -23,7 +23,7 @@ _08017698:
 /* 0801769C */ LSLS R0, R6, #1
 /* 0801769E */ ADDS R0, R1
 /* 080176A0 */ LDRH R5, [R0, #8]
-/* 080176A2 */ LDR R0, =D_03003850
+/* 080176A2 */ LDR R0, =gCurrentSceneVariable
 /* 080176A4 */ LDR R0, [R0]
 /* 080176A6 */ LDRH R4, [R0, #6]
 /* 080176A8 */ SUBS R4, R7
@@ -66,6 +66,6 @@ _080176E4:
 
 .balign 4, 0
 _080176E8:
-/* 080176E8 */ .word D_03003854
+/* 080176E8 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

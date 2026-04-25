@@ -24,7 +24,7 @@ glabel func_0801F3EC
 /* 0801F410 */ LDR R1, [R1]
 /* 0801F412 */ LDR R1, [R1]
 /* 0801F414 */ LDR R2, _0801F42C
-/* 0801F416 */ LDR R3, =D_03003854
+/* 0801F416 */ LDR R3, =gCurrentSceneSpritePool
 /* 0801F418 */ LDR R3, [R3]
 /* 0801F41A */ BL func_08005538
 /* 0801F41E */ ADD SP, #0XC
@@ -41,7 +41,7 @@ _0801F424:
 
 .balign 4, 0
 _0801F428:
-/* 0801F428 */ .word D_03003850
+/* 0801F428 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801F42C:

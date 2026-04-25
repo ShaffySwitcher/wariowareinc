@@ -206,7 +206,7 @@ _08019326:
 /* 08019340 */ ADDS R4, #0X64
 /* 08019342 */ LSLS R0, R6, #8
 /* 08019344 */ MOVS R1, #0XC
-/* 08019346 */ BL func_080F4818
+/* 08019346 */ BL __udivsi3
 /* 0801934A */ MOV R1, SB
 /* 0801934C */ LDR R3, [R1]
 /* 0801934E */ LSLS R1, R6, #2
@@ -276,7 +276,7 @@ _080193C4:
 
 .balign 4, 0
 _080193C8:
-/* 080193C8 */ .word D_03003850
+/* 080193C8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080193CC:
@@ -292,7 +292,7 @@ _080193D4:
 
 .balign 4, 0
 _080193D8:
-/* 080193D8 */ .word D_03003854
+/* 080193D8 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080193DC:

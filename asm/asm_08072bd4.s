@@ -23,7 +23,7 @@ glabel func_08072BD4
 /* 08072BF2 */ ADDS R0, R3, #0
 /* 08072BF4 */ ADDS R0, #0X24
 /* 08072BF6 */ STRB R2, [R0]
-/* 08072BF8 */ LDR R0, =D_03003850
+/* 08072BF8 */ LDR R0, =gCurrentSceneVariable
 /* 08072BFA */ LDR R0, [R0]
 /* 08072BFC */ MOVS R1, #0XFF
 /* 08072BFE */ LSLS R1, R1, #3

@@ -51,11 +51,11 @@ _080208C8:
 
 .balign 4, 0
 _080208B8:
-/* 080208B8 */ .word D_03003850
+/* 080208B8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080208BC:
-/* 080208BC */ .word D_03003854
+/* 080208BC */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080208C0:

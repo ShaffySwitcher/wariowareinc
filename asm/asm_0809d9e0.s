@@ -22,7 +22,7 @@ glabel func_0809D9E0
 
 .balign 4, 0
 _0809D9FC:
-/* 0809D9FC */ .word D_03003850
+/* 0809D9FC */ .word gCurrentSceneVariable
 _0809DA00:
 /* 0809DA00 */ ADDS R0, R2, #0
 /* 0809DA02 */ SUBS R0, #0X80
@@ -44,7 +44,7 @@ _0809DA1A:
 
 .balign 4, 0
 _0809DA20:
-/* 0809DA20 */ .word D_03003850
+/* 0809DA20 */ .word gCurrentSceneVariable
 _0809DA24:
 /* 0809DA24 */ MOVS R0, #0
 _0809DA26:

@@ -37,7 +37,7 @@ _08021D70:
 
 .balign 4, 0
 _08021D74:
-/* 08021D74 */ .word D_03003850
+/* 08021D74 */ .word gCurrentSceneVariable
 _08021D78:
 /* 08021D78 */ CMP R5, #0X2F
 /* 08021D7A */ BHI _08021D84

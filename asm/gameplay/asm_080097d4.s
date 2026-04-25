@@ -37,7 +37,7 @@ thumb_func_start func_080097D4 \n\
 /* 08009816 */ MOVS R5, #0X80 \n\
 /* 08009818 */ LSLS R5, R5, #1 \n\
 /* 0800981A */ STRH R5, [R4, #0XE] \n\
-/* 0800981C */ BL func_08009E20 \n\
+/* 0800981C */ BL set_beatscript_tempo \n\
 /* 08009820 */ STRH R6, [R4, #0X20] \n\
 /* 08009822 */ MOVS R0, #0 \n\
 /* 08009824 */ BL func_08009FB0 \n\
@@ -72,7 +72,7 @@ _08009834: \n\
  \n\
 .balign 4, 0 \n\
 _08009864: \n\
-/* 08009864 */ .word D_03004890 \n\
+/* 08009864 */ .word gBeatscriptScene \n\
  \n\
 .balign 4, 0 \n\
 _08009868: \n\

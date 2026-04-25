@@ -32,7 +32,7 @@ glabel scene_set_current_thread
 /* 0800A364 */ ADDS R1, R5, R3
 /* 0800A366 */ ADDS R0, R0, R1
 /* 0800A368 */ STR R0, [R2]
-/* 0800A36A */ LDR R1, =D_03003854
+/* 0800A36A */ LDR R1, =gCurrentSceneSpritePool
 /* 0800A36C */ MOVS R0, #0X9C
 /* 0800A36E */ MULS R0, R6, R0
 /* 0800A370 */ ADDS R5, #0X7E
@@ -44,7 +44,7 @@ glabel scene_set_current_thread
 
 .balign 4, 0
 _0800A37C:
-/* 0800A37C */ .word D_03004890
+/* 0800A37C */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800A380:
@@ -52,7 +52,7 @@ _0800A380:
 
 .balign 4, 0
 _0800A384:
-/* 0800A384 */ .word D_03003850
+/* 0800A384 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0800A388:

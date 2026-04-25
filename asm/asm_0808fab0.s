@@ -33,6 +33,6 @@ _0808FAD8:
 
 .balign 4, 0
 _0808FADC:
-/* 0808FADC */ .word D_03003850
+/* 0808FADC */ .word gCurrentSceneVariable
 .ltorg
 .end

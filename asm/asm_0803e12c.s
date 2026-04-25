@@ -32,7 +32,7 @@ glabel func_0803E12C
 
 .balign 4, 0
 _0803E160:
-/* 0803E160 */ .word D_03003850
+/* 0803E160 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0803E164:
@@ -41,7 +41,7 @@ _0803E168:
 /* 0803E168 */ LDR R0, _0803E1BC
 /* 0803E16A */ BL play_sound
 _0803E16E:
-/* 0803E16E */ LDR R0, =D_03003850
+/* 0803E16E */ LDR R0, =gCurrentSceneVariable
 /* 0803E170 */ LDR R5, [R0]
 /* 0803E172 */ ADDS R6, R5, #0
 /* 0803E174 */ ADDS R6, #0XBE

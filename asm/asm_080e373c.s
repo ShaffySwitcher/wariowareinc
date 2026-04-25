@@ -74,7 +74,7 @@ _080E378E:
 
 .balign 4, 0
 _080E37BC:
-/* 080E37BC */ .word D_03003850
+/* 080E37BC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E37C0:
@@ -159,7 +159,7 @@ _080E381A:
 /* 080E3858 */ LDR R0, [R0]
 /* 080E385A */ LSRS R0, R0, #8
 /* 080E385C */ MOVS R1, #0X50
-/* 080E385E */ BL func_080F4818
+/* 080E385E */ BL __udivsi3
 /* 080E3862 */ LSLS R0, R0, #0X10
 /* 080E3864 */ LSRS R1, R0, #0X10
 /* 080E3866 */ ASRS R0, R0, #0X10

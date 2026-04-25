@@ -20,7 +20,7 @@ glabel func_080C22CC
 
 .balign 4, 0
 _080C22E4:
-/* 080C22E4 */ .word D_03003850
+/* 080C22E4 */ .word gCurrentSceneVariable
 _080C22E8:
 /* 080C22E8 */ CMP R5, #2
 /* 080C22EA */ BEQ _080C234E

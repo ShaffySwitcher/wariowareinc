@@ -77,7 +77,7 @@ _0807A728:
 
 .balign 4, 0
 _0807A72C:
-/* 0807A72C */ .word D_03003850
+/* 0807A72C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807A730:
@@ -132,7 +132,7 @@ _0807A764:
 
 .balign 4, 0
 _0807A788:
-/* 0807A788 */ .word D_03003850
+/* 0807A788 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807A78C:
@@ -270,7 +270,7 @@ _0807A890:
 
 .balign 4, 0
 _0807A894:
-/* 0807A894 */ .word D_03003850
+/* 0807A894 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0807A898:

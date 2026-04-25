@@ -29,7 +29,7 @@ _080ABBDE:
 
 .balign 4, 0
 _080ABBE4:
-/* 080ABBE4 */ .word D_03003850
+/* 080ABBE4 */ .word gCurrentSceneVariable
 _080ABBE8:
 /* 080ABBE8 */ CMP R3, #0X47
 /* 080ABBEA */ BHI _080ABC02
@@ -70,7 +70,7 @@ _080ABC08:
 _080ABC2A:
 /* 080ABC2A */ ADDS R5, #1
 /* 080ABC2C */ ADDS R4, #0X10
-/* 080ABC2E */ LDR R0, =D_03003850
+/* 080ABC2E */ LDR R0, =gCurrentSceneVariable
 /* 080ABC30 */ LDR R0, [R0]
 _080ABC32:
 /* 080ABC32 */ LDR R0, [R0]

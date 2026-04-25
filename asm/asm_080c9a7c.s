@@ -55,7 +55,7 @@ _080C9AB0:
 
 .balign 4, 0
 _080C9ACC:
-/* 080C9ACC */ .word D_03003850
+/* 080C9ACC */ .word gCurrentSceneVariable
 _080C9AD0:
 /* 080C9AD0 */ ADDS R0, R4, #0
 /* 080C9AD2 */ BL func_080C9AF8

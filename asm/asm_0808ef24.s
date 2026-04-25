@@ -25,7 +25,7 @@ glabel func_0808EF24
 
 .balign 4, 0
 _0808EF48:
-/* 0808EF48 */ .word D_03003850
+/* 0808EF48 */ .word gCurrentSceneVariable
 _0808EF4C:
 /* 0808EF4C */ MOVS R2, #2
 /* 0808EF4E */ LDRSH R1, [R5, R2]

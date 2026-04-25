@@ -40,7 +40,7 @@ _080DCBDC:
 
 .balign 4, 0
 _080DCBE0:
-/* 080DCBE0 */ .word D_03003850
+/* 080DCBE0 */ .word gCurrentSceneVariable
 _080DCBE4:
 /* 080DCBE4 */ CMP R1, #0X11
 /* 080DCBE6 */ BNE _080DCBF4

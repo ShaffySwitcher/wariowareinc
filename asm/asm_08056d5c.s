@@ -63,7 +63,7 @@ _08056DA4:
 
 .balign 4, 0
 _08056DC4:
-/* 08056DC4 */ .word D_03003850
+/* 08056DC4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08056DC8:
@@ -146,7 +146,7 @@ _08056E54:
 
 .balign 4, 0
 _08056E58:
-/* 08056E58 */ .word D_03003850
+/* 08056E58 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08056E5C:
@@ -215,7 +215,7 @@ _08056ECC:
 
 .balign 4, 0
 _08056ED0:
-/* 08056ED0 */ .word D_03003850
+/* 08056ED0 */ .word gCurrentSceneVariable
 _08056ED4:
 /* 08056ED4 */ MOV R0, SB
 /* 08056ED6 */ CMP R0, #6
@@ -281,7 +281,7 @@ _08056EF8:
 /* 08056F46 */ STR R4, [SP, #8]
 /* 08056F48 */ BL sprite_set_anim
 _08056F4C:
-/* 08056F4C */ LDR R0, =D_03003850
+/* 08056F4C */ LDR R0, =gCurrentSceneVariable
 /* 08056F4E */ LDR R1, [R0]
 /* 08056F50 */ MOV R2, R8
 /* 08056F52 */ LSLS R0, R2, #2

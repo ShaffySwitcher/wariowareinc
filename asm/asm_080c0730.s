@@ -15,7 +15,7 @@ glabel func_080C0730
 
 .balign 4, 0
 _080C0740:
-/* 080C0740 */ .word D_03003850
+/* 080C0740 */ .word gCurrentSceneVariable
 _080C0744:
 /* 080C0744 */ LDR R0, [R4, #4]
 /* 080C0746 */ CMP R0, #0
@@ -33,7 +33,7 @@ _080C0744:
 _080C0760:
 /* 080C0760 */ ADDS R5, #1
 /* 080C0762 */ ADDS R4, #0XC
-/* 080C0764 */ LDR R0, =D_03003850
+/* 080C0764 */ LDR R0, =gCurrentSceneVariable
 /* 080C0766 */ LDR R0, [R0]
 _080C0768:
 /* 080C0768 */ LDR R0, [R0, #0X40]

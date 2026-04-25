@@ -63,7 +63,7 @@ _080EAF1C:
 
 .balign 4, 0
 _080EAF20:
-/* 080EAF20 */ .word D_03003850
+/* 080EAF20 */ .word gCurrentSceneVariable
 _080EAF24:
 /* 080EAF24 */ SUBS R0, #3
 /* 080EAF26 */ STRB R0, [R1]

@@ -105,7 +105,7 @@ _080C97AC:
 
 .balign 4, 0
 _080C97B0:
-/* 080C97B0 */ .word D_03003850
+/* 080C97B0 */ .word gCurrentSceneVariable
 _080C97B4:
 /* 080C97B4 */ MOVS R0, #0
 _080C97B6:

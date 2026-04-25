@@ -28,7 +28,7 @@ glabel func_080B64C4
 
 .balign 4, 0
 _080B64F0:
-/* 080B64F0 */ .word D_03003850
+/* 080B64F0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080B64F4:
@@ -66,7 +66,7 @@ _080B652C:
 
 .balign 4, 0
 _080B6530:
-/* 080B6530 */ .word D_03003850
+/* 080B6530 */ .word gCurrentSceneVariable
 _080B6534:
 /* 080B6534 */ ADDS R0, R1, #0
 /* 080B6536 */ ADDS R0, #0X56
@@ -100,7 +100,7 @@ _080B6568:
 
 .balign 4, 0
 _080B656C:
-/* 080B656C */ .word D_03003850
+/* 080B656C */ .word gCurrentSceneVariable
 _080B6570:
 /* 080B6570 */ CMP R2, #0XB4
 /* 080B6572 */ BNE _080B65E0
@@ -162,7 +162,7 @@ _080B65D8:
 
 .balign 4, 0
 _080B65DC:
-/* 080B65DC */ .word D_03003850
+/* 080B65DC */ .word gCurrentSceneVariable
 _080B65E0:
 /* 080B65E0 */ ADDS R0, R1, #0
 /* 080B65E2 */ ADDS R0, #0X4B
@@ -255,7 +255,7 @@ _080B6684:
 
 .balign 4, 0
 _080B6688:
-/* 080B6688 */ .word D_03003850
+/* 080B6688 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080B668C:

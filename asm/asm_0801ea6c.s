@@ -80,7 +80,7 @@ _0801EAEC:
 
 .balign 4, 0
 _0801EAF0:
-/* 0801EAF0 */ .word D_03003850
+/* 0801EAF0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801EAF4:
@@ -88,6 +88,6 @@ _0801EAF4:
 
 .balign 4, 0
 _0801EAF8:
-/* 0801EAF8 */ .word D_03003854
+/* 0801EAF8 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

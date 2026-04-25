@@ -8,7 +8,7 @@ glabel func_0800C77C
 /* 0800C77C */ PUSH {LR}
 /* 0800C77E */ LDR R1, _0800C79C
 /* 0800C780 */ LDR R2, [R1]
-/* 0800C782 */ LDR R1, =D_03003854
+/* 0800C782 */ LDR R1, =gCurrentSceneSpritePool
 /* 0800C784 */ LDR R1, [R1]
 /* 0800C786 */ LSLS R0, R0, #1
 /* 0800C788 */ ADDS R0, R0, R1

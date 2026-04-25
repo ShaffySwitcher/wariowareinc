@@ -21,7 +21,7 @@ glabel func_08017A58
 /* 08017A72 */ ORRS R0, R2
 /* 08017A74 */ STRB R0, [R1]
 /* 08017A76 */ MOVS R0, #0
-/* 08017A78 */ BL func_08009EE0
+/* 08017A78 */ BL func_08009EE0_stub
 /* 08017A7C */ LDR R0, _08017AA0
 /* 08017A7E */ LDRB R0, [R0]
 /* 08017A80 */ CMP R0, #9
@@ -41,7 +41,7 @@ glabel func_08017A58
 
 .balign 4, 0
 _08017A9C:
-/* 08017A9C */ .word D_03003850
+/* 08017A9C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08017AA0:

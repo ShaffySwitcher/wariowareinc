@@ -131,7 +131,7 @@ _0800D0A6:
 
 .balign 4, 0
 _0800D0CC:
-/* 0800D0CC */ .word D_03004890
+/* 0800D0CC */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800D0D0:

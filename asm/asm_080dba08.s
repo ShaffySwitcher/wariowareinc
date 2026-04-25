@@ -185,7 +185,7 @@ _080DBAE0:
 
 .balign 4, 0
 _080DBB80:
-/* 080DBB80 */ .word D_03003850
+/* 080DBB80 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DBB84:
@@ -235,7 +235,7 @@ _080DBBAC:
 /* 080DBBC2 */ LSLS R1, R1, #0X10
 /* 080DBBC4 */ LSRS R1, R1, #0X10
 /* 080DBBC6 */ ADDS R0, R4, #0
-/* 080DBBC8 */ BL func_080F301C
+/* 080DBBC8 */ BL set_soundplayer_speed
 /* 080DBBCC */ B _080DBC0C
 
 .balign 4, 0
@@ -244,7 +244,7 @@ _080DBBD0:
 
 .balign 4, 0
 _080DBBD4:
-/* 080DBBD4 */ .word D_03003850
+/* 080DBBD4 */ .word gCurrentSceneVariable
 _080DBBD8:
 /* 080DBBD8 */ CMP R0, #1
 /* 080DBBDA */ BNE _080DBC0C
@@ -268,7 +268,7 @@ _080DBBD8:
 /* 080DBC02 */ LSLS R1, R1, #0X10
 /* 080DBC04 */ LSRS R1, R1, #0X10
 /* 080DBC06 */ ADDS R0, R4, #0
-/* 080DBC08 */ BL func_080F301C
+/* 080DBC08 */ BL set_soundplayer_speed
 _080DBC0C:
 /* 080DBC0C */ LDR R5, _080DBC84
 /* 080DBC0E */ LDR R4, [R5]
@@ -334,7 +334,7 @@ _080DBC80:
 
 .balign 4, 0
 _080DBC84:
-/* 080DBC84 */ .word D_03003850
+/* 080DBC84 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080DBC88:
@@ -390,7 +390,7 @@ _080DBCDC:
 
 .balign 4, 0
 _080DBCE0:
-/* 080DBCE0 */ .word D_03003850
+/* 080DBCE0 */ .word gCurrentSceneVariable
 _080DBCE4:
 /* 080DBCE4 */ LSLS R0, R4, #2
 /* 080DBCE6 */ ADDS R0, R1
@@ -437,6 +437,6 @@ _080DBD28:
 
 .balign 4, 0
 _080DBD2C:
-/* 080DBD2C */ .word D_03003850
+/* 080DBD2C */ .word gCurrentSceneVariable
 .ltorg
 .end

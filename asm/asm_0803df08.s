@@ -23,7 +23,7 @@ _0803DF1E:
 
 .balign 4, 0
 _0803DF24:
-/* 0803DF24 */ .word D_03003850
+/* 0803DF24 */ .word gCurrentSceneVariable
 _0803DF28:
 /* 0803DF28 */ ADDS R3, R2, #0
 /* 0803DF2A */ ADDS R3, #0XB8
@@ -248,6 +248,6 @@ _0803E0D4:
 
 .balign 4, 0
 _0803E0D8:
-/* 0803E0D8 */ .word D_03003850
+/* 0803E0D8 */ .word gCurrentSceneVariable
 .ltorg
 .end

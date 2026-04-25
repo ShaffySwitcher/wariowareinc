@@ -61,7 +61,7 @@ _0801DA96:
 /* 0801DABC */ BL func_0800C7A4
 /* 0801DAC0 */ LDR R0, _0801DAF4
 /* 0801DAC2 */ LDR R0, [R0]
-/* 0801DAC4 */ LDR R1, =D_03003854
+/* 0801DAC4 */ LDR R1, =gCurrentSceneSpritePool
 /* 0801DAC6 */ LDR R1, [R1]
 /* 0801DAC8 */ MOVS R2, #0X14
 /* 0801DACA */ LDRSH R1, [R1, R2]
@@ -70,7 +70,7 @@ _0801DA96:
 /* 0801DAD0 */ ADDS R2, R3, #0
 /* 0801DAD2 */ BL func_080EF224
 /* 0801DAD6 */ MOVS R0, #0
-/* 0801DAD8 */ BL func_08009EE0
+/* 0801DAD8 */ BL func_08009EE0_stub
 /* 0801DADC */ POP {R4}
 /* 0801DADE */ POP {R0}
 /* 0801DAE0 */ BX R0
@@ -93,7 +93,7 @@ _0801DAEC:
 
 .balign 4, 0
 _0801DAF0:
-/* 0801DAF0 */ .word D_03003850
+/* 0801DAF0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801DAF4:

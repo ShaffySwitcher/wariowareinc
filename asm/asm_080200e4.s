@@ -41,7 +41,7 @@ _080200FE:
 
 .balign 4, 0
 _08020128:
-/* 08020128 */ .word D_03003850
+/* 08020128 */ .word gCurrentSceneVariable
 _0802012C:
 /* 0802012C */ ADDS R0, R1, #0
 /* 0802012E */ SUBS R0, #0X40

@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_0800CDB0
-/* 0800CDB0 */ LDR R3, =D_03004890
+/* 0800CDB0 */ LDR R3, =gBeatscriptScene
 /* 0800CDB2 */ MOVS R1, #1
 /* 0800CDB4 */ ANDS R0, R1
 /* 0800CDB6 */ LSLS R0, R0, #1

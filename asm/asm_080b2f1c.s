@@ -10,7 +10,7 @@ glabel func_080B2F1C
 /* 080B2F20 */ BL func_080B2F54
 /* 080B2F24 */ ADDS R0, R4, #0
 /* 080B2F26 */ BL func_080B31A0
-/* 080B2F2A */ LDR R0, =D_03003850
+/* 080B2F2A */ LDR R0, =gCurrentSceneVariable
 /* 080B2F2C */ LDR R1, [R0]
 /* 080B2F2E */ ADDS R1, #0X10
 /* 080B2F30 */ ADDS R0, R4, #0

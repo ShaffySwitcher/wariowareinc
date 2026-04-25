@@ -96,7 +96,7 @@ _0808BE22:
 /* 0808BEB4 */ MULS R0, R1, R0
 /* 0808BEB6 */ MOVS R1, #0X80
 /* 0808BEB8 */ LSLS R1, R1, #4
-/* 0808BEBA */ BL func_080F4818
+/* 0808BEBA */ BL __udivsi3
 /* 0808BEBE */ STRH R0, [R7, #0X14]
 /* 0808BEC0 */ MOVS R3, #0XC6
 /* 0808BEC2 */ LSLS R3, R3, #4
@@ -145,7 +145,7 @@ _0808BF04:
 
 .balign 4, 0
 _0808BF08:
-/* 0808BF08 */ .word D_03003850
+/* 0808BF08 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0808BF0C:

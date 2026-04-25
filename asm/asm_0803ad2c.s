@@ -157,7 +157,7 @@ _0803AE54:
 
 .balign 4, 0
 _0803AE58:
-/* 0803AE58 */ .word D_03003850
+/* 0803AE58 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0803AE5C:
@@ -231,7 +231,7 @@ _0803AEDC:
 
 .balign 4, 0
 _0803AEE0:
-/* 0803AEE0 */ .word D_03003850
+/* 0803AEE0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0803AEE4:
@@ -324,6 +324,6 @@ _0803AF7C:
 
 .balign 4, 0
 _0803AF80:
-/* 0803AF80 */ .word D_03003850
+/* 0803AF80 */ .word gCurrentSceneVariable
 .ltorg
 .end

@@ -20,7 +20,7 @@ glabel func_08087D5C
 /* 08087D74 */ ADDS R0, R3, #0
 /* 08087D76 */ ADDS R0, #0X46
 /* 08087D78 */ STRH R2, [R0]
-/* 08087D7A */ LDR R0, =D_03003850
+/* 08087D7A */ LDR R0, =gCurrentSceneVariable
 /* 08087D7C */ LDR R0, [R0]
 /* 08087D7E */ ADDS R0, #0X4E
 /* 08087D80 */ LDRB R0, [R0]

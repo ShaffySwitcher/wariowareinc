@@ -163,7 +163,7 @@ _08012538:
 
 .balign 4, 0
 _0801253C:
-/* 0801253C */ .word D_03003854
+/* 0801253C */ .word gCurrentSceneSpritePool
 _08012540:
 /* 08012540 */ LDR R4, _080125BC
 /* 08012542 */ MOVS R0, #0X1A

@@ -18,7 +18,7 @@ glabel func_08016520
 /* 08016534 */ LSRS R4, R4, #0X10
 /* 08016536 */ ADDS R0, R4, #0
 /* 08016538 */ MOVS R1, #0XF
-/* 0801653A */ BL func_080F4818
+/* 0801653A */ BL __udivsi3
 /* 0801653E */ MOVS R1, #1
 /* 08016540 */ ANDS R1, R0
 /* 08016542 */ LSLS R7, R1, #1
@@ -102,6 +102,6 @@ _080165C8:
 
 .balign 4, 0
 _080165CC:
-/* 080165CC */ .word D_03003854
+/* 080165CC */ .word gCurrentSceneSpritePool
 .ltorg
 .end

@@ -96,7 +96,7 @@ _08074AA8:
 
 .balign 4, 0
 _08074AAC:
-/* 08074AAC */ .word D_03003850
+/* 08074AAC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08074AB0:
@@ -131,7 +131,7 @@ _08074ACA:
 
 .balign 4, 0
 _08074AE8:
-/* 08074AE8 */ .word D_03003850
+/* 08074AE8 */ .word gCurrentSceneVariable
 _08074AEC:
 /* 08074AEC */ MOVS R0, #5
 /* 08074AEE */ BL get_random_range
@@ -322,7 +322,7 @@ _08074C2A:
 
 .balign 4, 0
 _08074C58:
-/* 08074C58 */ .word D_03003850
+/* 08074C58 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08074C5C:
@@ -361,7 +361,7 @@ _08074C78:
 
 .balign 4, 0
 _08074C84:
-/* 08074C84 */ .word D_03003850
+/* 08074C84 */ .word gCurrentSceneVariable
 _08074C88:
 /* 08074C88 */ LDR R0, _08074E4C
 /* 08074C8A */ LDR R1, [R0]
@@ -586,7 +586,7 @@ _08074EA4:
 
 .balign 4, 0
 _08074E4C:
-/* 08074E4C */ .word D_03003850
+/* 08074E4C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08074E50:

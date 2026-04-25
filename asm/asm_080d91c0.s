@@ -23,7 +23,7 @@ _080D91DA:
 
 .balign 4, 0
 _080D91DC:
-/* 080D91DC */ .word D_03003850
+/* 080D91DC */ .word gCurrentSceneVariable
 _080D91E0:
 /* 080D91E0 */ LDR R0, _080D924C
 /* 080D91E2 */ MOV SB, R0
@@ -169,7 +169,7 @@ _080D92EC:
 
 .balign 4, 0
 _080D92F0:
-/* 080D92F0 */ .word D_03003850
+/* 080D92F0 */ .word gCurrentSceneVariable
 _080D92F4:
 /* 080D92F4 */ LDR R0, [R1, #0X2C]
 /* 080D92F6 */ CMP R0, #0

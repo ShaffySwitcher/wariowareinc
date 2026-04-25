@@ -69,7 +69,7 @@ _0805D708:
 
 .balign 4, 0
 _0805D71C:
-/* 0805D71C */ .word D_03003850
+/* 0805D71C */ .word gCurrentSceneVariable
 _0805D720:
 /* 0805D720 */ LDR R0, _0805D740
 /* 0805D722 */ LDR R0, [R0]
@@ -92,6 +92,6 @@ _0805D73C:
 
 .balign 4, 0
 _0805D740:
-/* 0805D740 */ .word D_03003850
+/* 0805D740 */ .word gCurrentSceneVariable
 .ltorg
 .end

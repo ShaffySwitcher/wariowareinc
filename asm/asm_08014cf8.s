@@ -35,7 +35,7 @@ glabel func_08014CF8
 /* 08014D34 */ LDR R2, [R5]
 /* 08014D36 */ LDR R2, [R2, #4]
 /* 08014D38 */ LDR R3, _08014D64
-/* 08014D3A */ LDR R4, =D_03003854
+/* 08014D3A */ LDR R4, =gCurrentSceneSpritePool
 /* 08014D3C */ LDR R4, [R4]
 /* 08014D3E */ STR R4, [SP]
 /* 08014D40 */ BL func_080055D4

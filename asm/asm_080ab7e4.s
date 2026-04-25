@@ -31,7 +31,7 @@ _080AB80C:
 
 .balign 4, 0
 _080AB810:
-/* 080AB810 */ .word D_03003850
+/* 080AB810 */ .word gCurrentSceneVariable
 _080AB814:
 /* 080AB814 */ MOVS R0, #3
 /* 080AB816 */ STRB R0, [R1]
@@ -54,7 +54,7 @@ _080AB81A:
 
 .balign 4, 0
 _080AB838:
-/* 080AB838 */ .word D_03003850
+/* 080AB838 */ .word gCurrentSceneVariable
 _080AB83C:
 /* 080AB83C */ STRB R3, [R1]
 _080AB83E:
@@ -106,6 +106,6 @@ _080AB890:
 
 .balign 4, 0
 _080AB88C:
-/* 080AB88C */ .word D_03003850
+/* 080AB88C */ .word gCurrentSceneVariable
 .ltorg
 .end

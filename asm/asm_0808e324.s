@@ -32,7 +32,7 @@ _0808E348:
 
 .balign 4, 0
 _0808E354:
-/* 0808E354 */ .word D_03003850
+/* 0808E354 */ .word gCurrentSceneVariable
 _0808E358:
 /* 0808E358 */ CMP R0, #2
 /* 0808E35A */ BEQ _0808E370
@@ -197,7 +197,7 @@ _0808E488:
 
 .balign 4, 0
 _0808E48C:
-/* 0808E48C */ .word D_03003850
+/* 0808E48C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0808E490:
@@ -333,7 +333,7 @@ _0808E584:
 
 .balign 4, 0
 _0808E588:
-/* 0808E588 */ .word D_03003850
+/* 0808E588 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0808E58C:

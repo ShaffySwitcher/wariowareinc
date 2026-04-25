@@ -138,8 +138,8 @@ void gameplay_stop_scene(void) {
         i++; // why?
         func_080EF9BC(gSpriteHandler, i);
         func_08001B70(i);
-        func_08005A1C(i);
-        func_080062E4(i);
+        task_pool_force_cancel_id(i);
+        mem_heap_dealloc_with_id(i);
     }
     
     mem_heap_dealloc(gGameplayData.unk288);
@@ -248,9 +248,9 @@ u32 gameplay_update_scene(void) {
             break;
         case GAMEPLAY_STATE_EXITING:
             if (gGraphicsBuffer.unk854 & 8) {
-                stop_soundplayer(D_03004890.musicPlayer);
+                stop_soundplayer(gBeatscriptScene.musicPlayer);
                 func_08005914(0);
-                func_08009D4C();
+                stop_beatscript_scene();
                 return 2;
             }
             break;
@@ -357,9 +357,9 @@ void gameplay_stage_init(void) {
     struct GameplayData_struct_0* unk0 = gGameplayData.unk0; 
     struct GameplayStageInfo* unk4 = unk0->unk4;
 
-    D_03004890.musicBaseBPM = 140;
+    gBeatscriptScene.musicBaseBPM = 140;
     gGameplayData.unk1A = unk0->unk0;
-    func_08009E20(unk0->unk0);
+    set_beatscript_tempo(unk0->unk0);
     gGameplayData.unk280 = 0x12C;
     gGameplayData.unk284 = 0xC00;
     gGameplayData.unk6_1 = 0;
@@ -371,7 +371,7 @@ void gameplay_stage_init(void) {
     func_0800A200(0);
     for (i = 0; i < 2; i++) {
         args[i] = 0;
-        D_03004890.threads[i].active = 0;
+        gBeatscriptScene.threads[i].active = 0;
     }
     gGraphicsBuffer.unkE = 0;
     gGraphicsBuffer.unkC = 0;
@@ -492,12 +492,12 @@ u32 gameplay_run_script(void) {
                 if ((gPressedKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) != 0) {
                     gGraphicsBuffer.DISPCNT = 0;
                     gGraphicsBuffer.bgPalette[0][0] = 0;
-                    if (D_03004890.musicPlayer != 0) {
-                        stop_soundplayer(D_03004890.musicPlayer);
+                    if (gBeatscriptScene.musicPlayer != 0) {
+                        stop_soundplayer(gBeatscriptScene.musicPlayer);
                     }
                     scriptState->unk8 = D_083A4BE4;
                     scriptState->unkC = 1;
-                    set_pause_beatscript_scene(0);
+                    set_pause_beatscript_scene(FALSE);
                     gGameplayData.unk6_7 = TRUE;
                     func_0800CE6C();
                     stop_all_soundplayers();
@@ -520,7 +520,7 @@ u32 gameplay_run_script(void) {
                 return 0;
 
             case 14:
-                func_08009ECC(0x100);
+                set_beatscript_speed(0x100);
                 func_08009FEC(0);
                 func_08009FB0(0);
                 gGameplayData.currentLives = gGameplayData.maxLives;
@@ -575,7 +575,7 @@ u32 gameplay_run_script(void) {
                     return 0;
                 }
 
-                func_08009E20(gGameplayData.unk1A);
+                set_beatscript_tempo(gGameplayData.unk1A);
                 break;
 
             case 1:
@@ -620,7 +620,7 @@ u32 gameplay_run_script(void) {
                     gGameplayData.unk5_4 = FALSE;
                     gGameplayData.unk70 = 0;
                     gGameplayData.unk6c = value.u32ptr;
-                    gGameplayData.unk18 = D_03004890.scriptBaseBPM;
+                    gGameplayData.unk18 = gBeatscriptScene.scriptBaseBPM;
                     func_08008B50();
                     func_08008E1C();
                     return 0;
@@ -634,13 +634,13 @@ u32 gameplay_run_script(void) {
                     func_080089D8(D_03003848, gGameplayData.currentScore);
                     func_080006A4(D_03003848);
                     func_0800A270();
-                    func_08009E20(gGameplayData.unk0->unk0);
+                    set_beatscript_tempo(gGameplayData.unk0->unk0);
                     func_08009FB0(0);
                     args[0] = stage->unk28;
                     break;
 
                 case 5:
-                    func_08009E20(gGameplayData.unk0->unk0);
+                    set_beatscript_tempo(gGameplayData.unk0->unk0);
                     args[0] = stage->unk2C;
                     break;
 
@@ -668,7 +668,7 @@ u32 gameplay_run_script(void) {
                     if (value.u32 > gGameplayData.unk280) {
                         value.u32 = gGameplayData.unk280;
                     }
-                    func_08009E20((u16)value.u32);
+                    set_beatscript_tempo((u16)value.u32);
                     break;
 
                 case 12:
@@ -728,11 +728,11 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 24:
-                    value.u32 += D_03004890.scriptBaseBPM;
+                    value.u32 += gBeatscriptScene.scriptBaseBPM;
                     if (value.u32 > gGameplayData.unk280) {
                         value.u32 = gGameplayData.unk280;
                     }
-                    func_08009E20((u16)value.u32);
+                    set_beatscript_tempo((u16)value.u32);
                     break;
 
                 case 25:
@@ -748,7 +748,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 31:
-                    value.u32 += D_03004890.musicPitchSrc1;
+                    value.u32 += gBeatscriptScene.musicPitchSrc1;
                     if (value.u32 > gGameplayData.unk284) {
                         value.u32 = gGameplayData.unk284;
                     }
@@ -788,19 +788,88 @@ u32 gameplay_run_script(void) {
 
 #include "asm/gameplay/asm_08009d14.s"
 
-#include "asm/gameplay/asm_08009d24.s"
+void set_pause_beatscript_scene(u32 pause) {
+    gBeatscriptScene.paused = pause;
+}
 
-#include "asm/gameplay/asm_08009d3c.s"
+u32 beatscript_scene_is_paused(void) {
+    return gBeatscriptScene.paused;
+}
 
-#include "asm/gameplay/asm_08009d4c.s"
+void stop_beatscript_scene(void) {
+    u32 i;
+    struct BeatscriptThread *thread;
+    const struct SubScene *subScene;
 
-#include "asm/gameplay/asm_08009e20.s"
+    for (i = 0; i < ARRAY_COUNT(gBeatscriptScene.threads); i++) {
+        gBeatscriptScene.currentThread = i;
+        thread = &gBeatscriptScene.threads[i];
+        subScene = thread->subScene;
 
-#include "asm/gameplay/asm_08009ea8.s"
+        if (thread->active) {
+            gCurrentSceneVariable = &gBeatscriptScene.localVariables[i];
+            gCurrentSceneSpritePool = gBeatscriptScene.threads[i].sprites;
 
-#include "asm/gameplay/asm_08009ecc.s"
+            sprite_handler_set_mem_id(gSpriteHandler, i + 1);
 
-#include "asm/gameplay/asm_08009ee0.s"
+            if (subScene->stopFunc != NULL) {
+                subScene->stopFunc(&gBeatscriptScene.localVariables[i], subScene->stopParam);
+            }
+
+            func_080EF9BC(gSpriteHandler, i + 1);
+            func_08001B70(i + 1);
+            mem_heap_dealloc_with_id(i + 1);
+            task_pool_force_cancel_id(i + 1);
+
+            thread->active = FALSE;
+        }
+    }
+}
+
+void set_beatscript_tempo(u16 tempo) {
+    s32 speed;
+
+    gBeatscriptScene.scriptBaseBPM = tempo;
+    if (gBeatscriptScene.unk0_b6 && gBeatscriptScene.unk0_b7) {
+        tempo *= gBeatscriptScene.unk1C;
+    }
+    tempo = FIXED_POINT_MUL(gBeatscriptScene.scriptSpeed, tempo);
+    gBeatscriptScene.scriptBPM = tempo;
+
+    speed = INT_TO_FIXED(tempo);
+    gBeatscriptScene.spriteAnimSpeed = speed / 140;
+    speed /= gBeatscriptScene.musicBaseBPM;
+    gBeatscriptScene.deltaTime = gBeatscriptScene.musicBaseBPM * speed / 150u;
+
+    if (gBeatscriptScene.musicPlayer != NULL) {
+        set_soundplayer_speed(gBeatscriptScene.musicPlayer, speed);
+    }
+
+    if (gBeatscriptScene.mode == 1) {
+        gGameplayData.unk14 = gBeatscriptScene.scriptBPM;
+        gGameplayData.unk16 = gBeatscriptScene.spriteAnimSpeed;
+        gGameplayData.unk1c = gBeatscriptScene.deltaTime;
+    }
+
+    gBeatscriptScene.interpolatingTempo = FALSE;
+}
+
+void update_beatscript_tempo(void) {
+    u32 flag;
+
+    flag = gBeatscriptScene.interpolatingTempo;
+    set_beatscript_tempo(gBeatscriptScene.scriptBaseBPM);
+    gBeatscriptScene.interpolatingTempo = flag;
+}
+
+void set_beatscript_speed(u16 speed) {
+    gBeatscriptScene.scriptSpeed = speed;
+    update_beatscript_tempo();
+}
+
+void func_08009EE0_stub(void) {
+
+}
 
 #include "asm/gameplay/asm_08009ee4.s"
 

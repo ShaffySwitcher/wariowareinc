@@ -38,7 +38,7 @@ _0803EDE0:
 
 .balign 4, 0
 _0803EDE4:
-/* 0803EDE4 */ .word D_03003850
+/* 0803EDE4 */ .word gCurrentSceneVariable
 _0803EDE8:
 /* 0803EDE8 */ MOVS R0, #0X10
 /* 0803EDEA */ ANDS R0, R1
@@ -90,6 +90,6 @@ _0803EE40:
 
 .balign 4, 0
 _0803EE3C:
-/* 0803EE3C */ .word D_03003850
+/* 0803EE3C */ .word gCurrentSceneVariable
 .ltorg
 .end

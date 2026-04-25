@@ -31,7 +31,7 @@ glabel func_080B62F0
 
 .balign 4, 0
 _080B6324:
-/* 080B6324 */ .word D_03003850
+/* 080B6324 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080B6328:
@@ -241,6 +241,6 @@ _080B64B8:
 
 .balign 4, 0
 _080B64BC:
-/* 080B64BC */ .word D_03003850
+/* 080B64BC */ .word gCurrentSceneVariable
 .ltorg
 .end

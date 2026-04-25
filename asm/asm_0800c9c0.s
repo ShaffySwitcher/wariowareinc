@@ -23,7 +23,7 @@ glabel func_0800C9C0
 
 .balign 4, 0
 _0800C9E0:
-/* 0800C9E0 */ .word D_03004890
+/* 0800C9E0 */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800C9E4:

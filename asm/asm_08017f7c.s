@@ -73,7 +73,7 @@ _08017F96:
 /* 08018008 */ MOVS R2, #0
 /* 0801800A */ BL sprite_attr_set
 /* 0801800E */ MOVS R0, #0
-/* 08018010 */ BL func_08009EE0
+/* 08018010 */ BL func_08009EE0_stub
 /* 08018014 */ MOVS R0, #1
 /* 08018016 */ BL func_0800A200
 /* 0801801A */ LDR R0, [R6]
@@ -158,7 +158,7 @@ _080180B0:
 
 .balign 4, 0
 _080180B4:
-/* 080180B4 */ .word D_03003854
+/* 080180B4 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080180B8:
@@ -174,6 +174,6 @@ _080180C0:
 
 .balign 4, 0
 _080180C4:
-/* 080180C4 */ .word D_03003850
+/* 080180C4 */ .word gCurrentSceneVariable
 .ltorg
 .end

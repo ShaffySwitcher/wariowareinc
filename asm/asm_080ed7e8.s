@@ -9,7 +9,7 @@ glabel func_080ED7E8
 /* 080ED7EA */ SUB SP, #4
 /* 080ED7EC */ MOVS R2, #0
 /* 080ED7EE */ LDR R7, _080ED838
-/* 080ED7F0 */ LDR R6, =D_03003850
+/* 080ED7F0 */ LDR R6, =gCurrentSceneVariable
 _080ED7F2:
 /* 080ED7F2 */ LDR R0, [R7]
 /* 080ED7F4 */ LDR R1, [R6]

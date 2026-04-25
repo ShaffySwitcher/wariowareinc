@@ -28,7 +28,7 @@ glabel func_0801AFBC
 
 .balign 4, 0
 _0801AFE4:
-/* 0801AFE4 */ .word D_03003850
+/* 0801AFE4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801AFE8:
@@ -72,7 +72,7 @@ _0801B01C:
 
 .balign 4, 0
 _0801B020:
-/* 0801B020 */ .word D_03003854
+/* 0801B020 */ .word gCurrentSceneSpritePool
 _0801B024:
 /* 0801B024 */ ADDS R5, #0X15
 /* 0801B026 */ CMP R5, #0
@@ -98,7 +98,7 @@ _0801B02C:
 
 .balign 4, 0
 _0801B04C:
-/* 0801B04C */ .word D_03003850
+/* 0801B04C */ .word gCurrentSceneVariable
 _0801B050:
 /* 0801B050 */ LDR R2, _0801B0C8
 /* 0801B052 */ LDR R1, [R2]
@@ -127,7 +127,7 @@ _0801B06E:
 /* 0801B07E */ STR R5, [R0]
 /* 0801B080 */ LDR R0, _0801B0CC
 /* 0801B082 */ LDR R0, [R0]
-/* 0801B084 */ LDR R1, =D_03003854
+/* 0801B084 */ LDR R1, =gCurrentSceneSpritePool
 /* 0801B086 */ LDR R1, [R1]
 /* 0801B088 */ MOVS R2, #0
 /* 0801B08A */ LDRSH R1, [R1, R2]
@@ -166,7 +166,7 @@ _0801B0D0:
 
 .balign 4, 0
 _0801B0C8:
-/* 0801B0C8 */ .word D_03003850
+/* 0801B0C8 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801B0CC:

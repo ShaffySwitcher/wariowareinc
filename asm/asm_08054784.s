@@ -48,7 +48,7 @@ _080547CC:
 
 .balign 4, 0
 _080547D0:
-/* 080547D0 */ .word D_03003850
+/* 080547D0 */ .word gCurrentSceneVariable
 _080547D4:
 /* 080547D4 */ CMP R0, #0X40
 /* 080547D6 */ BEQ _08054804
@@ -181,6 +181,6 @@ _080548A8:
 
 .balign 4, 0
 _080548AC:
-/* 080548AC */ .word D_03003850
+/* 080548AC */ .word gCurrentSceneVariable
 .ltorg
 .end

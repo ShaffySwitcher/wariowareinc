@@ -34,7 +34,7 @@ glabel func_0800CD4C
 
 .balign 4, 0
 _0800CD84:
-/* 0800CD84 */ .word D_03004890
+/* 0800CD84 */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800CD88:

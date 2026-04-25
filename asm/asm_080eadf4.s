@@ -42,7 +42,7 @@ _080EAE30:
 
 .balign 4, 0
 _080EAE34:
-/* 080EAE34 */ .word D_03003850
+/* 080EAE34 */ .word gCurrentSceneVariable
 _080EAE38:
 /* 080EAE38 */ LDR R5, _080EAE70
 /* 080EAE3A */ LDR R0, [R5]
@@ -77,7 +77,7 @@ _080EAE70:
 
 .balign 4, 0
 _080EAE74:
-/* 080EAE74 */ .word D_03003850
+/* 080EAE74 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080EAE78:
@@ -98,7 +98,7 @@ _080EAE7C:
 /* 080EAE96 */ ADDS R1, R4, #0
 /* 080EAE98 */ BL sprite_set_anim_cel
 _080EAE9C:
-/* 080EAE9C */ LDR R0, =D_03003850
+/* 080EAE9C */ LDR R0, =gCurrentSceneVariable
 /* 080EAE9E */ LDR R1, [R0]
 /* 080EAEA0 */ LDRB R0, [R1]
 /* 080EAEA2 */ ADDS R0, #1

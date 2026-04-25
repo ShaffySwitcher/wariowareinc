@@ -54,7 +54,7 @@ glabel func_080E7C2C
 
 .balign 4, 0
 _080E7C88:
-/* 080E7C88 */ .word D_03003850
+/* 080E7C88 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E7C8C:
@@ -125,7 +125,7 @@ _080E7CE6:
 
 .balign 4, 0
 _080E7D08:
-/* 080E7D08 */ .word D_03003850
+/* 080E7D08 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E7D0C:
@@ -148,7 +148,7 @@ _080E7D10:
 
 .balign 4, 0
 _080E7D30:
-/* 080E7D30 */ .word D_03003850
+/* 080E7D30 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E7D34:
@@ -220,7 +220,7 @@ _080E7D46:
 
 .balign 4, 0
 _080E7DBC:
-/* 080E7DBC */ .word D_03003850
+/* 080E7DBC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E7DC0:
@@ -263,7 +263,7 @@ _080E7DD0:
 /* 080E7DFE */ MOVS R2, #0
 /* 080E7E00 */ BL sprite_set_base_palette
 _080E7E04:
-/* 080E7E04 */ LDR R0, =D_03003850
+/* 080E7E04 */ LDR R0, =gCurrentSceneVariable
 /* 080E7E06 */ LDR R0, [R0]
 /* 080E7E08 */ MOVS R5, #0XE6
 /* 080E7E0A */ LSLS R5, R5, #1

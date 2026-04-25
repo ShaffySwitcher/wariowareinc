@@ -135,7 +135,7 @@ _0802D2BC:
 
 .balign 4, 0
 _0802D2C0:
-/* 0802D2C0 */ .word D_03003850
+/* 0802D2C0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0802D2C4:

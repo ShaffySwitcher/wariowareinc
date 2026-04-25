@@ -44,7 +44,7 @@ _080A5BF6:
 
 .balign 4, 0
 _080A5C10:
-/* 080A5C10 */ .word D_03003850
+/* 080A5C10 */ .word gCurrentSceneVariable
 _080A5C14:
 /* 080A5C14 */ CMP R0, #2
 /* 080A5C16 */ BNE _080A5C1A
@@ -210,7 +210,7 @@ _080A5D0A:
 
 .balign 4, 0
 _080A5D48:
-/* 080A5D48 */ .word D_03003850
+/* 080A5D48 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080A5D4C:

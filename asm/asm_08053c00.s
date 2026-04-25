@@ -87,7 +87,7 @@ _08053C8A:
 
 .balign 4, 0
 _08053CA0:
-/* 08053CA0 */ .word D_03003850
+/* 08053CA0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08053CA4:
@@ -119,7 +119,7 @@ _08053CBA:
 /* 08053CCC */ MOVS R3, #0
 /* 08053CCE */ BL sprite_set_anim
 _08053CD2:
-/* 08053CD2 */ LDR R7, =D_03003850
+/* 08053CD2 */ LDR R7, =gCurrentSceneVariable
 /* 08053CD4 */ LDR R1, [R7]
 /* 08053CD6 */ STR R4, [R1, #0X14]
 /* 08053CD8 */ STR R5, [R1, #0X18]

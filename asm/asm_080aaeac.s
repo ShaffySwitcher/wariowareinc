@@ -31,7 +31,7 @@ _080AAED4:
 
 .balign 4, 0
 _080AAED8:
-/* 080AAED8 */ .word D_03003850
+/* 080AAED8 */ .word gCurrentSceneVariable
 _080AAEDC:
 /* 080AAEDC */ CMP R3, #2
 /* 080AAEDE */ BEQ _080AAEEE

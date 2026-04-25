@@ -8,7 +8,7 @@ glabel func_080EC8A8
 /* 080EC8A8 */ PUSH {R4, R5, LR}
 /* 080EC8AA */ LDR R5, _080EC908
 /* 080EC8AC */ LDR R0, [R5]
-/* 080EC8AE */ LDR R4, =D_03003850
+/* 080EC8AE */ LDR R4, =gCurrentSceneVariable
 /* 080EC8B0 */ LDR R1, [R4]
 /* 080EC8B2 */ MOVS R2, #0X14
 /* 080EC8B4 */ LDRSH R1, [R1, R2]

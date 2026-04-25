@@ -239,7 +239,7 @@ _08019D88:
 
 .balign 4, 0
 _08019E20:
-/* 08019E20 */ .word D_03003850
+/* 08019E20 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08019E24:
@@ -364,7 +364,7 @@ _08019EB8:
 /* 08019EC0 */ MOVS R0, #0
 /* 08019EC2 */ BL func_0800A200
 /* 08019EC6 */ MOVS R0, #0
-/* 08019EC8 */ BL func_08009EE0
+/* 08019EC8 */ BL func_08009EE0_stub
 /* 08019ECC */ ADD SP, #0X60
 /* 08019ECE */ POP {R3, R4, R5}
 /* 08019ED0 */ MOV R8, R3
@@ -380,7 +380,7 @@ _08019EDC:
 
 .balign 4, 0
 _08019EE0:
-/* 08019EE0 */ .word D_03003850
+/* 08019EE0 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08019EE4:

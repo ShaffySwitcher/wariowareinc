@@ -75,7 +75,7 @@ _0800A850:
 
 .balign 4, 0
 _0800A85C:
-/* 0800A85C */ .word D_03004890
+/* 0800A85C */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800A860:
@@ -83,7 +83,7 @@ _0800A860:
 
 .balign 4, 0
 _0800A864:
-/* 0800A864 */ .word D_03003850
+/* 0800A864 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0800A868:
@@ -91,7 +91,7 @@ _0800A868:
 
 .balign 4, 0
 _0800A86C:
-/* 0800A86C */ .word D_03003854
+/* 0800A86C */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0800A870:
@@ -950,7 +950,7 @@ _0800ADB4:
 
 .balign 4, 0
 _0800ADC0:
-/* 0800ADC0 */ .word D_03004890
+/* 0800ADC0 */ .word gBeatscriptScene
 _0800ADC4:
 /* 0800ADC4 */ LDR R0, [R7]
 /* 0800ADC6 */ CMP R0, R8
@@ -1046,7 +1046,7 @@ _0800AE66:
 
 .balign 4, 0
 _0800AE78:
-/* 0800AE78 */ .word D_03004890
+/* 0800AE78 */ .word gBeatscriptScene
 _0800AE7C:
 /* 0800AE7C */ LDR R0, _0800AE90
 /* 0800AE7E */ LDR R0, [R0, #4]
@@ -1058,7 +1058,7 @@ _0800AE7C:
 
 .balign 4, 0
 _0800AE90:
-/* 0800AE90 */ .word D_03004890
+/* 0800AE90 */ .word gBeatscriptScene
 _0800AE94:
 /* 0800AE94 */ ADDS R4, R7, #0
 /* 0800AE96 */ LDR R2, _0800AEC0
@@ -1105,7 +1105,7 @@ _0800AEC8:
 
 .balign 4, 0
 _0800AEE4:
-/* 0800AEE4 */ .word D_03004890
+/* 0800AEE4 */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800AEE8:
@@ -1184,7 +1184,7 @@ _0800AF7C:
 /* 0800AF7C */ MOV R5, R8
 /* 0800AF7E */ LSLS R0, R5, #0X10
 /* 0800AF80 */ LSRS R0, R0, #0X10
-/* 0800AF82 */ BL func_08009ECC
+/* 0800AF82 */ BL set_beatscript_speed
 /* 0800AF86 */ BL _0800B74C
 _0800AF8A:
 /* 0800AF8A */ MOV R6, R8
@@ -1402,7 +1402,7 @@ _0800B11C:
 
 .balign 4, 0
 _0800B128:
-/* 0800B128 */ .word D_03004890
+/* 0800B128 */ .word gBeatscriptScene
 _0800B12C:
 /* 0800B12C */ LSLS R0, R6, #0X10
 /* 0800B12E */ LSRS R0, R0, #0X10
@@ -2187,7 +2187,7 @@ _0800B6E0:
 
 .balign 4, 0
 _0800B6E4:
-/* 0800B6E4 */ .word D_03003854
+/* 0800B6E4 */ .word gCurrentSceneSpritePool
 _0800B6E8:
 /* 0800B6E8 */ LDR R0, _0800B6FC
 /* 0800B6EA */ LDR R0, [R0]
@@ -2204,7 +2204,7 @@ _0800B6FC:
 
 .balign 4, 0
 _0800B700:
-/* 0800B700 */ .word D_03003854
+/* 0800B700 */ .word gCurrentSceneSpritePool
 _0800B704:
 /* 0800B704 */ MOVS R1, #0XFF
 /* 0800B706 */ ANDS R1, R6
@@ -2228,7 +2228,7 @@ _0800B704:
 
 .balign 4, 0
 _0800B730:
-/* 0800B730 */ .word D_03003854
+/* 0800B730 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0800B734:
@@ -2255,7 +2255,7 @@ _0800B74C:
 
 .balign 4, 0
 _0800B75C:
-/* 0800B75C */ .word D_03003854
+/* 0800B75C */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0800B760:

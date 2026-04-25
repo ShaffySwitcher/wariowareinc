@@ -22,7 +22,7 @@ _0803FA36:
 
 .balign 4, 0
 _0803FA40:
-/* 0803FA40 */ .word D_03003850
+/* 0803FA40 */ .word gCurrentSceneVariable
 _0803FA44:
 /* 0803FA44 */ MOVS R1, #0XBD
 /* 0803FA46 */ LSLS R1, R1, #3

@@ -61,7 +61,7 @@ _0803476E:
 
 .balign 4, 0
 _080347C4:
-/* 080347C4 */ .word D_03003850
+/* 080347C4 */ .word gCurrentSceneVariable
 _080347C8:
 /* 080347C8 */ CMP R0, #0
 /* 080347CA */ BLT _0803483E
@@ -165,7 +165,7 @@ _08034888:
 
 .balign 4, 0
 _0803488C:
-/* 0803488C */ .word D_03003850
+/* 0803488C */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08034890:
@@ -203,6 +203,6 @@ _080348B6:
 
 .balign 4, 0
 _080348C8:
-/* 080348C8 */ .word D_03003850
+/* 080348C8 */ .word gCurrentSceneVariable
 .ltorg
 .end

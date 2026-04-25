@@ -17,7 +17,7 @@ glabel func_0800CB34
 
 .balign 4, 0
 _0800CB48:
-/* 0800CB48 */ .word D_03004890
+/* 0800CB48 */ .word gBeatscriptScene
 _0800CB4C:
 /* 0800CB4C */ LDR R1, _0800CB74
 /* 0800CB4E */ ADDS R0, R5, R1
@@ -29,7 +29,7 @@ _0800CB4C:
 /* 0800CB5C */ ADDS R1, R0, #0
 /* 0800CB5E */ MOVS R0, #0X80
 /* 0800CB60 */ LSLS R0, R0, #9
-/* 0800CB62 */ BL func_080F4818
+/* 0800CB62 */ BL __udivsi3
 /* 0800CB66 */ ADDS R1, R0, #0
 /* 0800CB68 */ LDRB R0, [R5, #1]
 /* 0800CB6A */ LSLS R0, R0, #0X19
@@ -69,7 +69,7 @@ _0800CB98:
 
 .balign 4, 0
 _0800CB9C:
-/* 0800CB9C */ .word D_03004890
+/* 0800CB9C */ .word gBeatscriptScene
 
 .balign 4, 0
 _0800CBA0:

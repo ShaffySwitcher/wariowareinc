@@ -46,7 +46,7 @@ _080500B6:
 
 .balign 4, 0
 _080500B8:
-/* 080500B8 */ .word D_03003850
+/* 080500B8 */ .word gCurrentSceneVariable
 _080500BC:
 /* 080500BC */ BL func_0804FAF4
 /* 080500C0 */ BL func_0804FFE4
@@ -234,7 +234,7 @@ _08050224:
 
 .balign 4, 0
 _08050228:
-/* 08050228 */ .word D_03003850
+/* 08050228 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0805022C:

@@ -26,7 +26,7 @@ glabel func_0801ECB8
 _0801ECE0:
 /* 0801ECE0 */ LSLS R0, R4, #8
 /* 0801ECE2 */ MOVS R1, #0XA0
-/* 0801ECE4 */ BL func_080F4818
+/* 0801ECE4 */ BL __udivsi3
 /* 0801ECE8 */ ADDS R2, R0, #0
 /* 0801ECEA */ LSLS R2, R2, #0X10
 /* 0801ECEC */ LSRS R2, R2, #0X10
@@ -62,7 +62,7 @@ _0801ED1C:
 
 .balign 4, 0
 _0801ED20:
-/* 0801ED20 */ .word D_03003850
+/* 0801ED20 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0801ED24:
@@ -70,6 +70,6 @@ _0801ED24:
 
 .balign 4, 0
 _0801ED28:
-/* 0801ED28 */ .word D_03003854
+/* 0801ED28 */ .word gCurrentSceneSpritePool
 .ltorg
 .end

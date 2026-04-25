@@ -23,7 +23,7 @@ glabel func_08079900
 /* 08079920 */ LSLS R0, R0, #0X10
 /* 08079922 */ LSRS R0, R0, #0X10
 /* 08079924 */ MOVS R1, #0XC
-/* 08079926 */ BL func_080F4818
+/* 08079926 */ BL __udivsi3
 /* 0807992A */ ADDS R1, R0, #0
 /* 0807992C */ LDRH R0, [R4]
 /* 0807992E */ LSLS R1, R1, #0X10
@@ -66,7 +66,7 @@ _0807997C:
 
 .balign 4, 0
 _08079970:
-/* 08079970 */ .word D_03003850
+/* 08079970 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _08079974:

@@ -57,7 +57,7 @@ glabel func_0808FC60
 /* 0808FCD6 */ MOVS R1, #0XD
 /* 0808FCD8 */ MULS R0, R1, R0
 /* 0808FCDA */ MOVS R1, #0XA
-/* 0808FCDC */ BL func_080F4818
+/* 0808FCDC */ BL __udivsi3
 /* 0808FCE0 */ MOVS R2, #0X80
 /* 0808FCE2 */ LSLS R2, R2, #1
 /* 0808FCE4 */ ADDS R0, R2
@@ -221,7 +221,7 @@ _0808FE20:
 
 .balign 4, 0
 _0808FE24:
-/* 0808FE24 */ .word D_03003850
+/* 0808FE24 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _0808FE28:

@@ -29,14 +29,14 @@ _08056FA8:
 
 .balign 4, 0
 _08056FAC:
-/* 08056FAC */ .word D_03003850
+/* 08056FAC */ .word gCurrentSceneVariable
 _08056FB0:
 /* 08056FB0 */ ADDS R1, R0, #1
 /* 08056FB2 */ LSLS R1, R1, #0X18
 /* 08056FB4 */ LSRS R1, R1, #0X18
 /* 08056FB6 */ BL func_08056FCC
 _08056FBA:
-/* 08056FBA */ LDR R0, =D_03003850
+/* 08056FBA */ LDR R0, =gCurrentSceneVariable
 /* 08056FBC */ LDR R1, [R0]
 /* 08056FBE */ LDR R0, [R1, #0X1C]
 /* 08056FC0 */ ADDS R0, #1

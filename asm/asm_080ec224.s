@@ -32,7 +32,7 @@ _080EC248:
 
 .balign 4, 0
 _080EC24C:
-/* 080EC24C */ .word D_03003850
+/* 080EC24C */ .word gCurrentSceneVariable
 _080EC250:
 /* 080EC250 */ LDR R0, _080EC288
 /* 080EC252 */ LDRH R0, [R0]

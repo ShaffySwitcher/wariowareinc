@@ -19,7 +19,7 @@ glabel func_08062EC4
 _08062ED8:
 /* 08062ED8 */ .word 0x0000B3FF
 _08062EDC:
-/* 08062EDC */ LDR R0, =D_03003850
+/* 08062EDC */ LDR R0, =gCurrentSceneVariable
 /* 08062EDE */ LDR R1, [R0]
 /* 08062EE0 */ ADDS R1, #0XEC
 /* 08062EE2 */ ADDS R0, R4, #0

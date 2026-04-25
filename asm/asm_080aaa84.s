@@ -26,7 +26,7 @@ _080AAA9C:
 /* 080AAAA6 */ ADDS R0, R1
 /* 080AAAA8 */ LDR R0, [R0]
 /* 080AAAAA */ LSRS R1, R5, #0X10
-/* 080AAAAC */ BL func_080F301C
+/* 080AAAAC */ BL set_soundplayer_speed
 /* 080AAAB0 */ ADDS R4, #1
 /* 080AAAB2 */ CMP R4, #2
 /* 080AAAB4 */ BLS _080AAA9C
@@ -37,7 +37,7 @@ _080AAAB6:
 
 .balign 4, 0
 _080AAABC:
-/* 080AAABC */ .word D_03003850
+/* 080AAABC */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080AAAC0:

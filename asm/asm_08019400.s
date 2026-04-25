@@ -89,7 +89,7 @@ _08019438:
 /* 0801949E */ MOVS R0, #0
 /* 080194A0 */ BL func_0800A200
 /* 080194A4 */ MOVS R0, #1
-/* 080194A6 */ BL func_08009EE0
+/* 080194A6 */ BL func_08009EE0_stub
 /* 080194AA */ LDR R1, _080194CC
 /* 080194AC */ LDR R0, _080194D0
 /* 080194AE */ ADDS R1, R0
@@ -108,11 +108,11 @@ _080194C0:
 
 .balign 4, 0
 _080194C4:
-/* 080194C4 */ .word D_03003850
+/* 080194C4 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080194C8:
-/* 080194C8 */ .word D_03003854
+/* 080194C8 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _080194CC:

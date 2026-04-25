@@ -51,7 +51,7 @@ _08009A0E: \n\
 /* 08009A56 */ ADDS R2, R1, R0 \n\
 /* 08009A58 */ MOV R3, R8 \n\
 /* 08009A5A */ STR R2, [R3] \n\
-/* 08009A5C */ LDR R1, =D_03003854 \n\
+/* 08009A5C */ LDR R1, =gCurrentSceneSpritePool \n\
 /* 08009A5E */ ADDS R0, R5, #0 \n\
 /* 08009A60 */ ADDS R0, #0X7E \n\
 /* 08009A62 */ ADDS R0, R4, R0 \n\
@@ -78,11 +78,11 @@ _08009A7A: \n\
  \n\
 .balign 4, 0 \n\
 _08009A8C: \n\
-/* 08009A8C */ .word D_03004890 \n\
+/* 08009A8C */ .word gBeatscriptScene \n\
  \n\
 .balign 4, 0 \n\
 _08009A90: \n\
-/* 08009A90 */ .word D_03003850 \n\
+/* 08009A90 */ .word gCurrentSceneVariable \n\
  \n\
 .balign 4, 0 \n\
 _08009A94: \n\

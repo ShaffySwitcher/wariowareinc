@@ -128,7 +128,7 @@ _080E9158:
 /* 080E91B2 */ LSLS R1, R1, #0X10
 /* 080E91B4 */ LSRS R1, R1, #0X10
 /* 080E91B6 */ ADDS R0, R4, #0
-/* 080E91B8 */ BL func_080F301C
+/* 080E91B8 */ BL set_soundplayer_speed
 _080E91BC:
 /* 080E91BC */ LDR R1, _080E9328
 /* 080E91BE */ LDR R0, [R1]
@@ -167,7 +167,7 @@ _080E91FC:
 /* 080E91FC */ MOVS R5, #0X64
 /* 080E91FE */ ADDS R0, R7, #0
 /* 080E9200 */ MOVS R1, #0X64
-/* 080E9202 */ BL func_080F4818
+/* 080E9202 */ BL __udivsi3
 /* 080E9206 */ ADDS R4, R0, #0
 /* 080E9208 */ LSLS R4, R4, #0X18
 /* 080E920A */ LSRS R4, R4, #0X18
@@ -309,7 +309,7 @@ _080E9318:
 
 .balign 4, 0
 _080E9328:
-/* 080E9328 */ .word D_03003850
+/* 080E9328 */ .word gCurrentSceneVariable
 
 .balign 4, 0
 _080E932C:

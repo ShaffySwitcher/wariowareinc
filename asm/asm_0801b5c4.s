@@ -47,7 +47,7 @@ _0801B618:
 
 .balign 4, 0
 _0801B610:
-/* 0801B610 */ .word D_03003854
+/* 0801B610 */ .word gCurrentSceneSpritePool
 
 .balign 4, 0
 _0801B614:
