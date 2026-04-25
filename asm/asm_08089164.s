@@ -131,7 +131,7 @@ _08089230:
 
 .balign 4, 0
 _0808923C:
-/* 0808923C */ .word gGameplayDataPtr
+/* 0808923C */ .word gCurrentSceneData
 _08089240:
 /* 08089240 */ ADDS R0, R4, #0
 /* 08089242 */ BL func_08089668

@@ -18,7 +18,7 @@ glabel func_0800A298
 /* 0800A2AE */ ANDS R2, R6
 /* 0800A2B0 */ MOVS R1, #1
 /* 0800A2B2 */ BL func_080EF9FC
-/* 0800A2B6 */ LDR R0, =gGameplayDataPtr
+/* 0800A2B6 */ LDR R0, =gCurrentSceneData
 /* 0800A2B8 */ LDR R1, [R0]
 /* 0800A2BA */ MOVS R2, #0X9D
 /* 0800A2BC */ LSLS R2, R2, #2

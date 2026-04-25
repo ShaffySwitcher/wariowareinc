@@ -114,6 +114,6 @@ _080DEE60:
 
 .balign 4, 0
 _080DEE64:
-/* 080DEE64 */ .word gGameplayDataPtr
+/* 080DEE64 */ .word gCurrentSceneData
 .ltorg
 .end

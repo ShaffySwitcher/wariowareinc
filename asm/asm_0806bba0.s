@@ -28,7 +28,7 @@ glabel func_0806BBA0
 
 .balign 4, 0
 _0806BBC8:
-/* 0806BBC8 */ .word gGameplayDataPtr
+/* 0806BBC8 */ .word gCurrentSceneData
 _0806BBCC:
 /* 0806BBCC */ CMP R0, #2
 /* 0806BBCE */ BEQ _0806BBDA

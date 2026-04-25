@@ -89,7 +89,7 @@ _08053EEC:
 
 .balign 4, 0
 _08053EF0:
-/* 08053EF0 */ .word gGameplayDataPtr
+/* 08053EF0 */ .word gCurrentSceneData
 _08053EF4:
 /* 08053EF4 */ CMP R0, #1
 /* 08053EF6 */ BNE _08053EFC
@@ -210,6 +210,6 @@ _08053FC4:
 
 .balign 4, 0
 _08053FC8:
-/* 08053FC8 */ .word gGameplayDataPtr
+/* 08053FC8 */ .word gCurrentSceneData
 .ltorg
 .end

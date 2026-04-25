@@ -24,7 +24,7 @@ glabel func_08042B34
 /* 08042B54 */ LDR R0, _08042B90
 /* 08042B56 */ ADDS R2, R4, R0
 /* 08042B58 */ LDR R1, _08042B94
-/* 08042B5A */ LDR R0, =gGameplayDataPtr
+/* 08042B5A */ LDR R0, =gCurrentSceneData
 /* 08042B5C */ LDR R0, [R0]
 /* 08042B5E */ MOVS R5, #0XBA
 /* 08042B60 */ LSLS R5, R5, #1

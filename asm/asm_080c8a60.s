@@ -148,7 +148,7 @@ _080C8B70:
 
 .balign 4, 0
 _080C8B74:
-/* 080C8B74 */ .word gGameplayDataPtr
+/* 080C8B74 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080C8B78:

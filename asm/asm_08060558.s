@@ -504,7 +504,7 @@ _0806093C:
 
 .balign 4, 0
 _08060940:
-/* 08060940 */ .word gGameplayDataPtr
+/* 08060940 */ .word gCurrentSceneData
 _08060944:
 /* 08060944 */ ADDS R0, R7
 /* 08060946 */ LDRB R0, [R0]

@@ -254,7 +254,7 @@ _080AED48:
 /* 080AEDE6 */ ADDS R0, R4, #0
 /* 080AEDE8 */ MOVS R2, #0
 /* 080AEDEA */ BL func_080EF9CC
-/* 080AEDEE */ LDR R0, =gGameplayDataPtr
+/* 080AEDEE */ LDR R0, =gCurrentSceneData
 /* 080AEDF0 */ LDR R2, [R0]
 /* 080AEDF2 */ LDRH R0, [R2, #0X16]
 /* 080AEDF4 */ LSLS R1, R0, #2

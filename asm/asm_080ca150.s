@@ -187,7 +187,7 @@ _080CA2B0:
 
 .balign 4, 0
 _080CA2B4:
-/* 080CA2B4 */ .word gGameplayDataPtr
+/* 080CA2B4 */ .word gCurrentSceneData
 _080CA2B8:
 /* 080CA2B8 */ LDR R1, _080CA2F8
 /* 080CA2BA */ LDRB R0, [R2]

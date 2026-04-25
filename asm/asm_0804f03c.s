@@ -40,7 +40,7 @@ _0804F074:
 
 .balign 4, 0
 _0804F078:
-/* 0804F078 */ .word gGameplayDataPtr
+/* 0804F078 */ .word gCurrentSceneData
 _0804F07C:
 /* 0804F07C */ CMP R1, #2
 /* 0804F07E */ BNE _0804F086

@@ -82,7 +82,7 @@ _080DD934:
 
 .balign 4, 0
 _080DD938:
-/* 080DD938 */ .word gGameplayDataPtr
+/* 080DD938 */ .word gCurrentSceneData
 _080DD93C:
 /* 080DD93C */ MOVS R0, #0X20
 /* 080DD93E */ ANDS R0, R1
@@ -117,7 +117,7 @@ _080DD970:
 
 .balign 4, 0
 _080DD974:
-/* 080DD974 */ .word gGameplayDataPtr
+/* 080DD974 */ .word gCurrentSceneData
 _080DD978:
 /* 080DD978 */ LDR R0, _080DD9E0
 /* 080DD97A */ LDR R0, [R0]
@@ -181,7 +181,7 @@ _080DD9E8:
 
 .balign 4, 0
 _080DD9EC:
-/* 080DD9EC */ .word gGameplayDataPtr
+/* 080DD9EC */ .word gCurrentSceneData
 
 .balign 4, 0
 _080DD9F0:
@@ -311,7 +311,7 @@ _080DDAB2:
 
 .balign 4, 0
 _080DDAD4:
-/* 080DDAD4 */ .word gGameplayDataPtr
+/* 080DDAD4 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080DDAD8:
@@ -488,7 +488,7 @@ _080DDC0C:
 
 .balign 4, 0
 _080DDC10:
-/* 080DDC10 */ .word gGameplayDataPtr
+/* 080DDC10 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080DDC14:
@@ -616,7 +616,7 @@ _080DDCF4:
 
 .balign 4, 0
 _080DDCF8:
-/* 080DDCF8 */ .word gGameplayDataPtr
+/* 080DDCF8 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080DDCFC:

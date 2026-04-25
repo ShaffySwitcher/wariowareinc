@@ -58,7 +58,7 @@ _0800EBB2:
 
 .balign 4, 0
 _0800EBB8:
-/* 0800EBB8 */ .word gGameplayDataPtr
+/* 0800EBB8 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800EBBC:

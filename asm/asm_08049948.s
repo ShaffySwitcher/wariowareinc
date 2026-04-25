@@ -69,7 +69,7 @@ _08049994:
 
 .balign 4, 0
 _080499AC:
-/* 080499AC */ .word gGameplayDataPtr
+/* 080499AC */ .word gCurrentSceneData
 
 .balign 4, 0
 _080499B0:
@@ -235,7 +235,7 @@ _08049AC4:
 
 .balign 4, 0
 _08049AC8:
-/* 08049AC8 */ .word gGameplayDataPtr
+/* 08049AC8 */ .word gCurrentSceneData
 _08049ACC:
 /* 08049ACC */ ADDS R0, R1, #0
 /* 08049ACE */ ADDS R0, #0X80

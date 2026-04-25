@@ -125,7 +125,7 @@ _0802F788:
 
 .balign 4, 0
 _0802F78C:
-/* 0802F78C */ .word gGameplayDataPtr
+/* 0802F78C */ .word gCurrentSceneData
 _0802F790:
 /* 0802F790 */ LSLS R2, R6, #1
 /* 0802F792 */ ADDS R0, R5, #0

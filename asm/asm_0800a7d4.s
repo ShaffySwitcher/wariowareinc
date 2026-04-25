@@ -633,7 +633,7 @@ _0800AB50:
 
 .balign 4, 0
 _0800AB60:
-/* 0800AB60 */ .word gGameplayDataPtr
+/* 0800AB60 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800AB64:
@@ -654,7 +654,7 @@ _0800AB72:
 
 .balign 4, 0
 _0800AB84:
-/* 0800AB84 */ .word gGameplayDataPtr
+/* 0800AB84 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800AB88:
@@ -685,7 +685,7 @@ _0800ABB8:
 
 .balign 4, 0
 _0800ABC0:
-/* 0800ABC0 */ .word gGameplayDataPtr
+/* 0800ABC0 */ .word gCurrentSceneData
 _0800ABC4:
 /* 0800ABC4 */ MOV R4, SL
 /* 0800ABC6 */ CMP R4, #0
@@ -734,7 +734,7 @@ _0800AC00:
 
 .balign 4, 0
 _0800AC24:
-/* 0800AC24 */ .word gGameplayDataPtr
+/* 0800AC24 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800AC28:
@@ -771,7 +771,7 @@ _0800AC36:
 
 .balign 4, 0
 _0800AC68:
-/* 0800AC68 */ .word gGameplayDataPtr
+/* 0800AC68 */ .word gCurrentSceneData
 _0800AC6C:
 /* 0800AC6C */ MOV R4, SL
 /* 0800AC6E */ CMP R4, #0
@@ -800,7 +800,7 @@ _0800AC9A:
 
 .balign 4, 0
 _0800AC9C:
-/* 0800AC9C */ .word gGameplayDataPtr
+/* 0800AC9C */ .word gCurrentSceneData
 _0800ACA0:
 /* 0800ACA0 */ MOV R0, SL
 /* 0800ACA2 */ CMP R0, #0
@@ -831,7 +831,7 @@ _0800ACCE:
 
 .balign 4, 0
 _0800ACD8:
-/* 0800ACD8 */ .word gGameplayDataPtr
+/* 0800ACD8 */ .word gCurrentSceneData
 _0800ACDC:
 /* 0800ACDC */ MOV R4, SB
 /* 0800ACDE */ LDRB R0, [R4]
@@ -902,7 +902,7 @@ _0800AD5A:
 
 .balign 4, 0
 _0800AD64:
-/* 0800AD64 */ .word gGameplayDataPtr
+/* 0800AD64 */ .word gCurrentSceneData
 _0800AD68:
 /* 0800AD68 */ MOV R3, SL
 /* 0800AD6A */ CMP R3, #0
@@ -925,7 +925,7 @@ _0800AD86:
 
 .balign 4, 0
 _0800AD90:
-/* 0800AD90 */ .word gGameplayDataPtr
+/* 0800AD90 */ .word gCurrentSceneData
 _0800AD94:
 /* 0800AD94 */ MOV R6, SB
 /* 0800AD96 */ STR R7, [R6, #8]
@@ -1175,7 +1175,7 @@ _0800AF70:
 
 .balign 4, 0
 _0800AF74:
-/* 0800AF74 */ .word gGameplayDataPtr
+/* 0800AF74 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800AF78:
@@ -1471,7 +1471,7 @@ _0800B19A:
 
 .balign 4, 0
 _0800B1A8:
-/* 0800B1A8 */ .word gGameplayDataPtr
+/* 0800B1A8 */ .word gCurrentSceneData
 _0800B1AC:
 /* 0800B1AC */ ADDS R0, R7, #0
 /* 0800B1AE */ MOV R1, R8
@@ -1499,7 +1499,7 @@ _0800B1D6:
 
 .balign 4, 0
 _0800B1D8:
-/* 0800B1D8 */ .word gGameplayDataPtr
+/* 0800B1D8 */ .word gCurrentSceneData
 _0800B1DC:
 /* 0800B1DC */ LDR R0, _0800B1FC
 /* 0800B1DE */ LDR R0, [R0]
@@ -1521,7 +1521,7 @@ _0800B1EE:
 
 .balign 4, 0
 _0800B1FC:
-/* 0800B1FC */ .word gGameplayDataPtr
+/* 0800B1FC */ .word gCurrentSceneData
 _0800B200:
 /* 0800B200 */ MOVS R0, #0XF
 /* 0800B202 */ ANDS R0, R6

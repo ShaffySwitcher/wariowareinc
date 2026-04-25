@@ -15,7 +15,7 @@ glabel func_080133EC
 /* 08013402 */ MOVS R0, #3
 /* 08013404 */ STRB R0, [R1, #1]
 /* 08013406 */ BL func_08013C60
-/* 0801340A */ LDR R0, =gGameplayDataPtr
+/* 0801340A */ LDR R0, =gCurrentSceneData
 /* 0801340C */ LDR R1, [R0]
 /* 0801340E */ ADDS R1, #0XDD
 /* 08013410 */ LDRB R2, [R1]

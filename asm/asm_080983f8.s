@@ -111,7 +111,7 @@ _080984B4:
 
 .balign 4, 0
 _080984B8:
-/* 080984B8 */ .word gGameplayDataPtr
+/* 080984B8 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080984BC:
@@ -195,7 +195,7 @@ _08098520:
 /* 0809854A */ MOVS R2, #1
 /* 0809854C */ BL sprite_set_anim_cel
 _08098550:
-/* 08098550 */ LDR R0, =gGameplayDataPtr
+/* 08098550 */ LDR R0, =gCurrentSceneData
 /* 08098552 */ LDR R0, [R0]
 /* 08098554 */ LDRH R1, [R0, #0X16]
 /* 08098556 */ LDR R0, [R4, #0X10]

@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_0800CE90
-/* 0800CE90 */ LDR R1, =gGameplayDataPtr
+/* 0800CE90 */ LDR R1, =gCurrentSceneData
 /* 0800CE92 */ LDR R1, [R1]
 /* 0800CE94 */ MOVS R2, #0XFD
 /* 0800CE96 */ LSLS R2, R2, #1

@@ -140,7 +140,7 @@ _0801E120:
 
 .balign 4, 0
 _0801E124:
-/* 0801E124 */ .word gGameplayDataPtr
+/* 0801E124 */ .word gCurrentSceneData
 _0801E128:
 /* 0801E128 */ MOVS R0, #7
 /* 0801E12A */ BL func_0800C77C

@@ -62,7 +62,7 @@ _080ACD28:
 
 .balign 4, 0
 _080ACD20:
-/* 080ACD20 */ .word gGameplayDataPtr
+/* 080ACD20 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080ACD24:

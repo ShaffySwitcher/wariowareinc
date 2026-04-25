@@ -133,7 +133,7 @@ _080C2058:
 
 .balign 4, 0
 _080C205C:
-/* 080C205C */ .word gGameplayDataPtr
+/* 080C205C */ .word gCurrentSceneData
 _080C2060:
 /* 080C2060 */ MOVS R0, #1
 /* 080C2062 */ MOV R1, IP
@@ -171,7 +171,7 @@ _080C2098:
 
 .balign 4, 0
 _080C209C:
-/* 080C209C */ .word gGameplayDataPtr
+/* 080C209C */ .word gCurrentSceneData
 _080C20A0:
 /* 080C20A0 */ MOVS R1, #0
 /* 080C20A2 */ MOV R6, IP

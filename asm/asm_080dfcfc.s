@@ -122,7 +122,7 @@ _080DFDD8:
 
 .balign 4, 0
 _080DFDDC:
-/* 080DFDDC */ .word gGameplayDataPtr
+/* 080DFDDC */ .word gCurrentSceneData
 
 .balign 4, 0
 _080DFDE0:

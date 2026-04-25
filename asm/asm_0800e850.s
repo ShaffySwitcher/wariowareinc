@@ -237,7 +237,7 @@ _0800EA12:
 
 .balign 4, 0
 _0800EA20:
-/* 0800EA20 */ .word gGameplayDataPtr
+/* 0800EA20 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800EA24:

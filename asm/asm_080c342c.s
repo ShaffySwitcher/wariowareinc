@@ -110,7 +110,7 @@ _080C34F4:
 
 .balign 4, 0
 _080C34F8:
-/* 080C34F8 */ .word gGameplayDataPtr
+/* 080C34F8 */ .word gCurrentSceneData
 _080C34FC:
 /* 080C34FC */ CMP R0, #2
 /* 080C34FE */ BEQ _080C350E
@@ -167,7 +167,7 @@ _080C3530:
 
 .balign 4, 0
 _080C3558:
-/* 080C3558 */ .word gGameplayDataPtr
+/* 080C3558 */ .word gCurrentSceneData
 _080C355C:
 /* 080C355C */ LDR R0, [R5]
 /* 080C355E */ ADDS R0, #0X4B

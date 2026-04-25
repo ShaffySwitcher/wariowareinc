@@ -184,7 +184,7 @@ _08086808:
 
 .balign 4, 0
 _0808680C:
-/* 0808680C */ .word gGameplayDataPtr
+/* 0808680C */ .word gCurrentSceneData
 
 .balign 4, 0
 _08086810:
@@ -299,7 +299,7 @@ _080868D8:
 
 .balign 4, 0
 _080868DC:
-/* 080868DC */ .word gGameplayDataPtr
+/* 080868DC */ .word gCurrentSceneData
 _080868E0:
 /* 080868E0 */ CMP R4, #1
 /* 080868E2 */ BNE _08086916
@@ -377,6 +377,6 @@ _08086964:
 
 .balign 4, 0
 _08086968:
-/* 08086968 */ .word gGameplayDataPtr
+/* 08086968 */ .word gCurrentSceneData
 .ltorg
 .end

@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_080C9520
-/* 080C9520 */ LDR R1, =gGameplayDataPtr
+/* 080C9520 */ LDR R1, =gCurrentSceneData
 /* 080C9522 */ LDR R1, [R1]
 /* 080C9524 */ LDRH R2, [R1, #0X16]
 /* 080C9526 */ LSRS R2, R2, #5

@@ -76,7 +76,7 @@ _08051578:
 
 .balign 4, 0
 _0805159C:
-/* 0805159C */ .word gGameplayDataPtr
+/* 0805159C */ .word gCurrentSceneData
 
 .balign 4, 0
 _080515A0:
@@ -173,7 +173,7 @@ _08051640:
 /* 08051640 */ LDR R2, [R6]
 /* 08051642 */ ADDS R1, R2, #0
 /* 08051644 */ ADDS R1, #0X9C
-/* 08051646 */ LDR R0, =gGameplayDataPtr
+/* 08051646 */ LDR R0, =gCurrentSceneData
 /* 08051648 */ LDR R3, [R0]
 /* 0805164A */ LDRH R0, [R3, #0X16]
 /* 0805164C */ LSRS R0, R0, #7

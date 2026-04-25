@@ -476,7 +476,7 @@ glabel func_0800DEE8
 
 .balign 4, 0
 _0800E2E4:
-/* 0800E2E4 */ .word gGameplayDataPtr
+/* 0800E2E4 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800E2E8:

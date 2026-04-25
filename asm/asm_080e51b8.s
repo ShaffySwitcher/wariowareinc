@@ -55,7 +55,7 @@ _080E51F6:
 
 .balign 4, 0
 _080E5210:
-/* 080E5210 */ .word gGameplayDataPtr
+/* 080E5210 */ .word gCurrentSceneData
 _080E5214:
 /* 080E5214 */ MOVS R0, #0XF0
 /* 080E5216 */ LSLS R0, R0, #6

@@ -176,6 +176,6 @@ _080AE190:
 
 .balign 4, 0
 _080AE194:
-/* 080AE194 */ .word gGameplayDataPtr
+/* 080AE194 */ .word gCurrentSceneData
 .ltorg
 .end

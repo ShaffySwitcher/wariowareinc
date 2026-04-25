@@ -62,7 +62,7 @@ _08069408:
 
 .balign 4, 0
 _0806940C:
-/* 0806940C */ .word gGameplayDataPtr
+/* 0806940C */ .word gCurrentSceneData
 _08069410:
 /* 08069410 */ CMP R0, #2
 /* 08069412 */ BEQ _08069494
@@ -157,7 +157,7 @@ _080694B8:
 /* 080694BC */ MOVS R0, #0XAE
 /* 080694BE */ LSLS R0, R0, #1
 /* 080694C0 */ ADDS R2, R0
-/* 080694C2 */ LDR R0, =gGameplayDataPtr
+/* 080694C2 */ LDR R0, =gCurrentSceneData
 /* 080694C4 */ LDR R0, [R0]
 /* 080694C6 */ LDRH R1, [R0, #0X16]
 /* 080694C8 */ LSLS R0, R1, #1

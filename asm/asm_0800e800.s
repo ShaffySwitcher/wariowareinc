@@ -10,7 +10,7 @@ glabel func_0800E800
 /* 0800E804 */ ADDS R3, R1, #0
 /* 0800E806 */ LDR R0, _0800E82C
 /* 0800E808 */ LDR R0, [R0]
-/* 0800E80A */ LDR R1, =gGameplayDataPtr
+/* 0800E80A */ LDR R1, =gCurrentSceneData
 /* 0800E80C */ LDR R1, [R1]
 /* 0800E80E */ MOVS R4, #0XB4
 /* 0800E810 */ LSLS R4, R4, #2

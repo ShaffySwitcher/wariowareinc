@@ -38,7 +38,7 @@ glabel func_080C3C84
 /* 080C3CC2 */ STR R6, [R4, #8]
 /* 080C3CC4 */ STR R5, [R4, #0XC]
 /* 080C3CC6 */ STR R5, [R4, #0X10]
-/* 080C3CC8 */ LDR R0, =gGameplayDataPtr
+/* 080C3CC8 */ LDR R0, =gCurrentSceneData
 /* 080C3CCA */ LDR R2, [R0]
 /* 080C3CCC */ LDRH R1, [R2, #0X16]
 /* 080C3CCE */ LSLS R0, R1, #1

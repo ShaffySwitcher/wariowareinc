@@ -41,7 +41,7 @@ _080C4AA0:
 
 .balign 4, 0
 _080C4AA4:
-/* 080C4AA4 */ .word gGameplayDataPtr
+/* 080C4AA4 */ .word gCurrentSceneData
 _080C4AA8:
 /* 080C4AA8 */ MOVS R0, #0X40
 /* 080C4AAA */ ANDS R0, R1
@@ -75,7 +75,7 @@ _080C4ADC:
 
 .balign 4, 0
 _080C4AE0:
-/* 080C4AE0 */ .word gGameplayDataPtr
+/* 080C4AE0 */ .word gCurrentSceneData
 _080C4AE4:
 /* 080C4AE4 */ LDR R1, =D_03003850
 /* 080C4AE6 */ LDR R0, [R1]

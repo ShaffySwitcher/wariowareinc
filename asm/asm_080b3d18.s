@@ -26,7 +26,7 @@ glabel func_080B3D18
 
 .balign 4, 0
 _080B3D3C:
-/* 080B3D3C */ .word gGameplayDataPtr
+/* 080B3D3C */ .word gCurrentSceneData
 _080B3D40:
 /* 080B3D40 */ CMP R1, #2
 /* 080B3D42 */ BNE _080B3D4A

@@ -24,7 +24,7 @@ _0800BDA4:
 
 .balign 4, 0
 _0800BDB0:
-/* 0800BDB0 */ .word gGameplayDataPtr
+/* 0800BDB0 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800BDB4:

@@ -62,7 +62,7 @@ _0805C3D8:
 
 .balign 4, 0
 _0805C3E0:
-/* 0805C3E0 */ .word gGameplayDataPtr
+/* 0805C3E0 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0805C3E4:
@@ -84,7 +84,7 @@ _0805C3E8:
 
 .balign 4, 0
 _0805C404:
-/* 0805C404 */ .word gGameplayDataPtr
+/* 0805C404 */ .word gCurrentSceneData
 _0805C408:
 /* 0805C408 */ CMP R0, #2
 /* 0805C40A */ BEQ _0805C444
@@ -187,7 +187,7 @@ _0805C480:
 
 .balign 4, 0
 _0805C4BC:
-/* 0805C4BC */ .word gGameplayDataPtr
+/* 0805C4BC */ .word gCurrentSceneData
 
 .balign 4, 0
 _0805C4C0:
@@ -236,7 +236,7 @@ _0805C4CC:
 
 .balign 4, 0
 _0805C514:
-/* 0805C514 */ .word gGameplayDataPtr
+/* 0805C514 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0805C518:

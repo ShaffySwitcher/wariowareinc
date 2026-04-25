@@ -33,7 +33,7 @@ _08012E30:
 /* 08012E38 */ LSLS R6, R4, #0X10
 /* 08012E3A */ CMP R0, #0
 /* 08012E3C */ BEQ _08012E80
-/* 08012E3E */ LDR R0, =gGameplayDataPtr
+/* 08012E3E */ LDR R0, =gCurrentSceneData
 /* 08012E40 */ LDR R0, [R0]
 /* 08012E42 */ MOVS R2, #0XEA
 /* 08012E44 */ LSLS R2, R2, #1

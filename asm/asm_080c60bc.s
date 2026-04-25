@@ -76,7 +76,7 @@ _080C60E8:
 /* 080C614E */ BLE _080C60E8
 /* 080C6150 */ MOV R2, R8
 /* 080C6152 */ LDR R0, [R2]
-/* 080C6154 */ LDR R1, =gGameplayDataPtr
+/* 080C6154 */ LDR R1, =gCurrentSceneData
 /* 080C6156 */ LDR R1, [R1]
 /* 080C6158 */ MOVS R2, #0XF8
 /* 080C615A */ LSLS R2, R2, #1

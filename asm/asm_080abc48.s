@@ -47,7 +47,7 @@ _080ABC68:
 /* 080ABC98 */ STR R4, [R7, #4]
 /* 080ABC9A */ LSLS R5, R5, #8
 /* 080ABC9C */ STR R5, [R7, #8]
-/* 080ABC9E */ LDR R0, =gGameplayDataPtr
+/* 080ABC9E */ LDR R0, =gCurrentSceneData
 /* 080ABCA0 */ LDR R2, [R0]
 /* 080ABCA2 */ LDRH R1, [R2, #0X16]
 /* 080ABCA4 */ LSLS R0, R1, #1

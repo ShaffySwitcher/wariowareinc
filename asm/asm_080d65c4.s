@@ -119,7 +119,7 @@ _080D6666:
 
 .balign 4, 0
 _080D6684:
-/* 080D6684 */ .word gGameplayDataPtr
+/* 080D6684 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080D6688:
@@ -181,7 +181,7 @@ _080D66D4:
 
 .balign 4, 0
 _080D66F4:
-/* 080D66F4 */ .word gGameplayDataPtr
+/* 080D66F4 */ .word gCurrentSceneData
 _080D66F8:
 /* 080D66F8 */ LDR R1, [R4]
 /* 080D66FA */ LDRH R0, [R1, #6]
@@ -244,7 +244,7 @@ _080D6764:
 
 .balign 4, 0
 _080D6768:
-/* 080D6768 */ .word gGameplayDataPtr
+/* 080D6768 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080D676C:

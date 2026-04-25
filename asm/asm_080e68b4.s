@@ -32,7 +32,7 @@ _080E68DC:
 
 .balign 4, 0
 _080E68E0:
-/* 080E68E0 */ .word gGameplayDataPtr
+/* 080E68E0 */ .word gCurrentSceneData
 _080E68E4:
 /* 080E68E4 */ CMP R1, #0
 /* 080E68E6 */ BLT _080E6972

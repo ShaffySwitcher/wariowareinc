@@ -10,7 +10,7 @@ thumb_func_start func_0800A050 \n\
  \n\
 .balign 4, 0 \n\
 _0800A05C: \n\
-/* 0800A05C */ .word gGameplayDataPtr \n\
+/* 0800A05C */ .word gCurrentSceneData \n\
  \n\
 .balign 4, 0 \n\
 _0800A060: \n\

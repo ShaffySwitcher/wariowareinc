@@ -326,7 +326,7 @@ _08078770:
 
 .balign 4, 0
 _08078774:
-/* 08078774 */ .word gGameplayDataPtr
+/* 08078774 */ .word gCurrentSceneData
 
 .balign 4, 0
 _08078778:

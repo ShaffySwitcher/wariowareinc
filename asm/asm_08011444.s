@@ -84,7 +84,7 @@ _080114B8:
 /* 080114C4 */ BL func_08011DFC
 /* 080114C8 */ BL func_08014740
 /* 080114CC */ BL func_08015B54
-/* 080114D0 */ LDR R0, =gGameplayDataPtr
+/* 080114D0 */ LDR R0, =gCurrentSceneData
 /* 080114D2 */ LDR R0, [R0]
 /* 080114D4 */ ADDS R0, #0X10
 /* 080114D6 */ BL func_08003B58

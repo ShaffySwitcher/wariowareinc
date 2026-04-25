@@ -12,7 +12,7 @@ glabel func_08016C60
 /* 08016C68 */ CMP R0, #0X43
 /* 08016C6A */ BNE _08016C9A
 /* 08016C6C */ LDR R1, _08016CA8
-/* 08016C6E */ LDR R0, =gGameplayDataPtr
+/* 08016C6E */ LDR R0, =gCurrentSceneData
 /* 08016C70 */ LDR R4, [R0]
 /* 08016C72 */ ADDS R0, R4, #0
 /* 08016C74 */ ADDS R0, #0X50

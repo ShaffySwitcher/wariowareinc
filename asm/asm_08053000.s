@@ -257,7 +257,7 @@ _08053184:
 /* 080531C2 */ MOVS R1, #5
 /* 080531C4 */ STRB R1, [R0]
 /* 080531C6 */ LDR R0, [R6]
-/* 080531C8 */ LDR R1, =gGameplayDataPtr
+/* 080531C8 */ LDR R1, =gCurrentSceneData
 /* 080531CA */ LDR R1, [R1]
 /* 080531CC */ MOVS R2, #0XF8
 /* 080531CE */ LSLS R2, R2, #1

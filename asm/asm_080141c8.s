@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_080141C8
 /* 080141C8 */ PUSH {R4, LR}
-/* 080141CA */ LDR R3, =gGameplayDataPtr
+/* 080141CA */ LDR R3, =gCurrentSceneData
 /* 080141CC */ LDR R1, [R3]
 /* 080141CE */ ADDS R1, #0XDE
 /* 080141D0 */ LDRB R0, [R1]

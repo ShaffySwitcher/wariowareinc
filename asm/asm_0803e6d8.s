@@ -11,7 +11,7 @@ glabel func_0803E6D8
 /* 0803E6DE */ LDR R1, [R5, #0X64]
 /* 0803E6E0 */ ADDS R1, #7
 /* 0803E6E2 */ STR R1, [R5, #0X64]
-/* 0803E6E4 */ LDR R0, =gGameplayDataPtr
+/* 0803E6E4 */ LDR R0, =gCurrentSceneData
 /* 0803E6E6 */ LDR R2, [R0]
 /* 0803E6E8 */ LDRH R0, [R2, #0X16]
 /* 0803E6EA */ MULS R0, R1, R0

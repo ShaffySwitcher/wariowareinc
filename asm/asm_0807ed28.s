@@ -55,7 +55,7 @@ _0807ED78:
 
 .balign 4, 0
 _0807ED7C:
-/* 0807ED7C */ .word gGameplayDataPtr
+/* 0807ED7C */ .word gCurrentSceneData
 _0807ED80:
 /* 0807ED80 */ LDR R3, [R4]
 /* 0807ED82 */ LDR R0, [R3, #8]

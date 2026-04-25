@@ -12,7 +12,7 @@ glabel func_080BAB50
 /* 080BAB5A */ MOVS R1, #0XA
 /* 080BAB5C */ BL __divsi3
 /* 080BAB60 */ ADDS R0, #0X24
-/* 080BAB62 */ LDR R1, =gGameplayDataPtr
+/* 080BAB62 */ LDR R1, =gCurrentSceneData
 /* 080BAB64 */ LDR R1, [R1]
 /* 080BAB66 */ LDRH R1, [R1, #0X16]
 /* 080BAB68 */ MULS R1, R0, R1

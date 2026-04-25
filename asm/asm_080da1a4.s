@@ -5,7 +5,7 @@
 
 .thumb_func
 glabel func_080DA1A4
-/* 080DA1A4 */ LDR R1, =gGameplayDataPtr
+/* 080DA1A4 */ LDR R1, =gCurrentSceneData
 /* 080DA1A6 */ LDR R1, [R1]
 /* 080DA1A8 */ LDRH R2, [R1, #0X16]
 /* 080DA1AA */ LSRS R2, R2, #3

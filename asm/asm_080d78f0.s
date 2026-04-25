@@ -77,7 +77,7 @@ _080D7964:
 
 .balign 4, 0
 _080D7968:
-/* 080D7968 */ .word gGameplayDataPtr
+/* 080D7968 */ .word gCurrentSceneData
 _080D796C:
 /* 080D796C */ BL func_080D74D0
 /* 080D7970 */ LSLS R0, R0, #0X10
@@ -103,7 +103,7 @@ _080D7994:
 
 .balign 4, 0
 _080D7998:
-/* 080D7998 */ .word gGameplayDataPtr
+/* 080D7998 */ .word gCurrentSceneData
 _080D799C:
 /* 080D799C */ LDR R1, [R4]
 /* 080D799E */ LDRH R0, [R1, #6]

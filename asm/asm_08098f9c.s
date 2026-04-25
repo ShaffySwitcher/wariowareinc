@@ -228,7 +228,7 @@ _0809911C:
 
 .balign 4, 0
 _08099120:
-/* 08099120 */ .word gGameplayDataPtr
+/* 08099120 */ .word gCurrentSceneData
 _08099124:
 /* 08099124 */ CMP R1, #2
 /* 08099126 */ BEQ _08099136

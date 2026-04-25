@@ -360,7 +360,7 @@ _080E223C:
 
 .balign 4, 0
 _080E2240:
-/* 080E2240 */ .word gGameplayDataPtr
+/* 080E2240 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080E2244:

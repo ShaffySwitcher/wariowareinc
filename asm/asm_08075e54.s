@@ -13,7 +13,7 @@ glabel func_08075E54
 /* 08075E5E */ LDR R1, _08075E84
 /* 08075E60 */ LDRH R2, [R2, #0X28]
 /* 08075E62 */ BL func_080DF224
-/* 08075E66 */ LDR R0, =gGameplayDataPtr
+/* 08075E66 */ LDR R0, =gCurrentSceneData
 /* 08075E68 */ LDR R0, [R0]
 /* 08075E6A */ MOVS R1, #0XBA
 /* 08075E6C */ LSLS R1, R1, #1

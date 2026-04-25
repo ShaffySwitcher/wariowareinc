@@ -26,7 +26,7 @@ _0800CDE4:
 /* 0800CDEE */ STR R0, [SP]
 /* 0800CDF0 */ ADDS R0, R5, #0
 /* 0800CDF2 */ BL func_08003B10
-/* 0800CDF6 */ LDR R0, =gGameplayDataPtr
+/* 0800CDF6 */ LDR R0, =gCurrentSceneData
 /* 0800CDF8 */ LDR R0, [R0]
 /* 0800CDFA */ MOVS R1, #0XFA
 /* 0800CDFC */ LSLS R1, R1, #1

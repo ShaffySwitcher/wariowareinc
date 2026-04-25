@@ -92,7 +92,7 @@ _080A2F3C:
 
 .balign 4, 0
 _080A2F40:
-/* 080A2F40 */ .word gGameplayDataPtr
+/* 080A2F40 */ .word gCurrentSceneData
 _080A2F44:
 /* 080A2F44 */ BL func_080A2A6C
 _080A2F48:

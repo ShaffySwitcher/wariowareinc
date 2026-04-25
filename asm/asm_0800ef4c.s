@@ -110,7 +110,7 @@ _0800EFAA:
 
 .balign 4, 0
 _0800F020:
-/* 0800F020 */ .word gGameplayDataPtr
+/* 0800F020 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F024:
@@ -216,7 +216,7 @@ _0800F0D4:
 
 .balign 4, 0
 _0800F0D8:
-/* 0800F0D8 */ .word gGameplayDataPtr
+/* 0800F0D8 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F0DC:

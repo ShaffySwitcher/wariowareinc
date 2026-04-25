@@ -77,7 +77,7 @@ _0800F158:
 
 .balign 4, 0
 _0800F178:
-/* 0800F178 */ .word gGameplayDataPtr
+/* 0800F178 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F17C:
@@ -233,7 +233,7 @@ _0800F290:
 
 .balign 4, 0
 _0800F288:
-/* 0800F288 */ .word gGameplayDataPtr
+/* 0800F288 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F28C:

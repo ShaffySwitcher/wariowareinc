@@ -19,7 +19,7 @@ glabel func_08015DBC
 
 .balign 4, 0
 _08015DD4:
-/* 08015DD4 */ .word gGameplayDataPtr
+/* 08015DD4 */ .word gCurrentSceneData
 _08015DD8:
 /* 08015DD8 */ ADDS R2, R1, #0
 /* 08015DDA */ ADDS R2, #0XDF

@@ -33,7 +33,7 @@ _0804BAEC:
 
 .balign 4, 0
 _0804BAF8:
-/* 0804BAF8 */ .word gGameplayDataPtr
+/* 0804BAF8 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0804BAFC:

@@ -12,7 +12,7 @@ glabel func_0800A3D0
 /* 0800A3DA */ LDR R1, _0800A3F4
 /* 0800A3DC */ MOVS R2, #0
 /* 0800A3DE */ BL func_0800596C
-/* 0800A3E2 */ LDR R0, =gGameplayDataPtr
+/* 0800A3E2 */ LDR R0, =gCurrentSceneData
 /* 0800A3E4 */ LDR R2, [R0]
 /* 0800A3E6 */ LDRB R0, [R2, #7]
 /* 0800A3E8 */ MOVS R1, #2

@@ -123,7 +123,7 @@ glabel func_08026538
 
 .balign 4, 0
 _08026638:
-/* 08026638 */ .word gGameplayDataPtr
+/* 08026638 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0802663C:

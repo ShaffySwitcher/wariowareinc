@@ -70,7 +70,7 @@ _080C588A:
 
 .balign 4, 0
 _080C5890:
-/* 080C5890 */ .word gGameplayDataPtr
+/* 080C5890 */ .word gCurrentSceneData
 _080C5894:
 /* 080C5894 */ MOVS R4, #0X1A
 /* 080C5896 */ LDRSH R1, [R3, R4]

@@ -30,7 +30,7 @@ _080DED50:
 
 .balign 4, 0
 _080DED54:
-/* 080DED54 */ .word gGameplayDataPtr
+/* 080DED54 */ .word gCurrentSceneData
 _080DED58:
 /* 080DED58 */ LDR R0, _080DED8C
 /* 080DED5A */ LDR R0, [R0]
@@ -64,6 +64,6 @@ _080DED90:
 
 .balign 4, 0
 _080DED8C:
-/* 080DED8C */ .word gGameplayDataPtr
+/* 080DED8C */ .word gCurrentSceneData
 .ltorg
 .end

@@ -51,7 +51,7 @@ _0809E868:
 _0809E86A:
 /* 0809E86A */ LDR R0, _0809E88C
 /* 0809E86C */ LDR R0, [R0]
-/* 0809E86E */ LDR R1, =gGameplayDataPtr
+/* 0809E86E */ LDR R1, =gCurrentSceneData
 /* 0809E870 */ LDR R1, [R1]
 /* 0809E872 */ MOVS R2, #0XF8
 /* 0809E874 */ LSLS R2, R2, #1

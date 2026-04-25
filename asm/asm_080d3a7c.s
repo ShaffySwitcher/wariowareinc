@@ -136,7 +136,7 @@ _080D3B30:
 
 .balign 4, 0
 _080D3B78:
-/* 080D3B78 */ .word gGameplayDataPtr
+/* 080D3B78 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080D3B7C:
@@ -188,7 +188,7 @@ _080D3BCC:
 
 .balign 4, 0
 _080D3BD0:
-/* 080D3BD0 */ .word gGameplayDataPtr
+/* 080D3BD0 */ .word gCurrentSceneData
 _080D3BD4:
 /* 080D3BD4 */ MOVS R4, #0XDD
 /* 080D3BD6 */ LSLS R4, R4, #2

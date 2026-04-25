@@ -37,7 +37,7 @@ _080DA210:
 
 .balign 4, 0
 _080DA214:
-/* 080DA214 */ .word gGameplayDataPtr
+/* 080DA214 */ .word gCurrentSceneData
 _080DA218:
 /* 080DA218 */ CMP R1, #2
 /* 080DA21A */ BNE _080DA220

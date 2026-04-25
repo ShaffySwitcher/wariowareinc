@@ -177,7 +177,7 @@ _080B163A:
 
 .balign 4, 0
 _080B1648:
-/* 080B1648 */ .word gGameplayDataPtr
+/* 080B1648 */ .word gCurrentSceneData
 _080B164C:
 /* 080B164C */ MOVS R3, #0
 /* 080B164E */ LDR R0, [R5]

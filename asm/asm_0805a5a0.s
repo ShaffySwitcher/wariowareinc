@@ -33,7 +33,7 @@ _0805A5CC:
 
 .balign 4, 0
 _0805A5D0:
-/* 0805A5D0 */ .word gGameplayDataPtr
+/* 0805A5D0 */ .word gCurrentSceneData
 _0805A5D4:
 /* 0805A5D4 */ ADDS R4, R2, #0
 /* 0805A5D6 */ ADDS R4, #0X80
@@ -45,7 +45,7 @@ _0805A5D4:
 /* 0805A5E2 */ MOVS R3, #0
 /* 0805A5E4 */ LDRSH R1, [R0, R3]
 /* 0805A5E6 */ ASRS R1, R1, #1
-/* 0805A5E8 */ LDR R0, =gGameplayDataPtr
+/* 0805A5E8 */ LDR R0, =gCurrentSceneData
 /* 0805A5EA */ LDR R0, [R0]
 /* 0805A5EC */ LDRH R0, [R0, #0X16]
 /* 0805A5EE */ MULS R0, R1, R0

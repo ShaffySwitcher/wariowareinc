@@ -47,7 +47,7 @@ _0806B3B4:
 
 .balign 4, 0
 _0806B3B8:
-/* 0806B3B8 */ .word gGameplayDataPtr
+/* 0806B3B8 */ .word gCurrentSceneData
 _0806B3BC:
 /* 0806B3BC */ MOVS R0, #7
 /* 0806B3BE */ BL get_random_range
@@ -135,7 +135,7 @@ _0806B458:
 
 .balign 4, 0
 _0806B45C:
-/* 0806B45C */ .word gGameplayDataPtr
+/* 0806B45C */ .word gCurrentSceneData
 _0806B460:
 /* 0806B460 */ ADDS R6, #1
 /* 0806B462 */ ADDS R4, #0X1C

@@ -48,7 +48,7 @@ _08009E78: \n\
 /* 08009E7C */ LSRS R0, R0, #0X1C \n\
 /* 08009E7E */ CMP R0, #1 \n\
 /* 08009E80 */ BNE _08009E92 \n\
-/* 08009E82 */ LDR R0, =gGameplayDataPtr \n\
+/* 08009E82 */ LDR R0, =gCurrentSceneData \n\
 /* 08009E84 */ LDR R1, [R0] \n\
 /* 08009E86 */ LDRH R0, [R6, #0XC] \n\
 /* 08009E88 */ STRH R0, [R1, #0X14] \n\

@@ -94,7 +94,7 @@ glabel func_080CF83C
 
 .balign 4, 0
 _080CF904:
-/* 080CF904 */ .word gGameplayDataPtr
+/* 080CF904 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080CF908:

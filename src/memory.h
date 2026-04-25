@@ -1,6 +1,6 @@
 #include "global.h"
 #include "levels.h"
-#include "gameplay.h"
+#include "src/scenes/gameplay.h"
 
 #define gSaveBuffer (*D_03003BBC)
 #define SAVE_BUFFER_SIZE sizeof(struct SaveBuffer)

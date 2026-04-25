@@ -69,7 +69,7 @@ _08035D18:
 /* 08035D3C */ MOVS R5, #0
 /* 08035D3E */ LDRSH R1, [R4, R5]
 /* 08035D40 */ LDR R4, _08035D74
-/* 08035D42 */ LDR R2, =gGameplayDataPtr
+/* 08035D42 */ LDR R2, =gCurrentSceneData
 /* 08035D44 */ LDR R2, [R2]
 /* 08035D46 */ MOVS R5, #0XBA
 /* 08035D48 */ LSLS R5, R5, #1

@@ -125,7 +125,7 @@ _0805CA54:
 
 .balign 4, 0
 _0805CA58:
-/* 0805CA58 */ .word gGameplayDataPtr
+/* 0805CA58 */ .word gCurrentSceneData
 _0805CA5C:
 /* 0805CA5C */ LDR R0, [R5]
 /* 0805CA5E */ STR R1, [R0, #0XC]

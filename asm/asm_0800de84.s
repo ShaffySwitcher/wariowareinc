@@ -55,6 +55,6 @@ _0800DEE4:
 
 .balign 4, 0
 _0800DEE0:
-/* 0800DEE0 */ .word gGameplayDataPtr
+/* 0800DEE0 */ .word gCurrentSceneData
 .ltorg
 .end

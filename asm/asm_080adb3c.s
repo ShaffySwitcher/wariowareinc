@@ -504,7 +504,7 @@ _080ADF3C:
 
 .balign 4, 0
 _080ADF40:
-/* 080ADF40 */ .word gGameplayDataPtr
+/* 080ADF40 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080ADF44:

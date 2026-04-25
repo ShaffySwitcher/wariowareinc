@@ -38,7 +38,7 @@ _0800F2B2:
 
 .balign 4, 0
 _0800F2D0:
-/* 0800F2D0 */ .word gGameplayDataPtr
+/* 0800F2D0 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F2D4:

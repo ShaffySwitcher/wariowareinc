@@ -52,6 +52,6 @@ _080CA980:
 
 .balign 4, 0
 _080CA984:
-/* 080CA984 */ .word gGameplayDataPtr
+/* 080CA984 */ .word gCurrentSceneData
 .ltorg
 .end

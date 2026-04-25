@@ -66,7 +66,7 @@ _080E44E0:
 
 .balign 4, 0
 _080E44E4:
-/* 080E44E4 */ .word gGameplayDataPtr
+/* 080E44E4 */ .word gCurrentSceneData
 _080E44E8:
 /* 080E44E8 */ CMP R5, #0
 /* 080E44EA */ BNE _080E4500
@@ -226,7 +226,7 @@ _080E461C:
 
 .balign 4, 0
 _080E4620:
-/* 080E4620 */ .word gGameplayDataPtr
+/* 080E4620 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080E4624:

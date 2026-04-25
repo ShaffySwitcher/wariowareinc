@@ -25,7 +25,7 @@ glabel func_0800F754
 
 .balign 4, 0
 _0800F778:
-/* 0800F778 */ .word gGameplayDataPtr
+/* 0800F778 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F77C:
@@ -89,7 +89,7 @@ _0800F7B4:
 
 .balign 4, 0
 _0800F7E0:
-/* 0800F7E0 */ .word gGameplayDataPtr
+/* 0800F7E0 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F7E4:

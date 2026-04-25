@@ -9,7 +9,7 @@ glabel func_080136F4
 /* 080136F6 */ ADDS R4, R0, #0
 /* 080136F8 */ ADDS R7, R1, #0
 /* 080136FA */ LDR R6, [SP, #0X14]
-/* 080136FC */ LDR R0, =gGameplayDataPtr
+/* 080136FC */ LDR R0, =gCurrentSceneData
 /* 080136FE */ LDR R0, [R0]
 /* 08013700 */ ADDS R0, #0XE8
 /* 08013702 */ LDRB R5, [R0]

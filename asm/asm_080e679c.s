@@ -45,7 +45,7 @@ _080E67BE:
 
 .balign 4, 0
 _080E67E0:
-/* 080E67E0 */ .word gGameplayDataPtr
+/* 080E67E0 */ .word gCurrentSceneData
 _080E67E4:
 /* 080E67E4 */ LDR R0, _080E680C
 /* 080E67E6 */ LDR R0, [R0]
@@ -69,7 +69,7 @@ _080E67E4:
 
 .balign 4, 0
 _080E680C:
-/* 080E680C */ .word gGameplayDataPtr
+/* 080E680C */ .word gCurrentSceneData
 
 .balign 4, 0
 _080E6810:
@@ -155,6 +155,6 @@ _080E68A8:
 
 .balign 4, 0
 _080E68AC:
-/* 080E68AC */ .word gGameplayDataPtr
+/* 080E68AC */ .word gCurrentSceneData
 .ltorg
 .end

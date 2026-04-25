@@ -7,7 +7,7 @@
 glabel func_080B333C
 /* 080B333C */ PUSH {LR}
 /* 080B333E */ ADDS R3, R0, #0
-/* 080B3340 */ LDR R0, =gGameplayDataPtr
+/* 080B3340 */ LDR R0, =gCurrentSceneData
 /* 080B3342 */ LDR R0, [R0]
 /* 080B3344 */ LDRH R0, [R0, #0X16]
 /* 080B3346 */ LSLS R2, R0, #1

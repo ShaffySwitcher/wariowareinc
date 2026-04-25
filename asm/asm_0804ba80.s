@@ -34,7 +34,7 @@ _0804BAB0:
 
 .balign 4, 0
 _0804BAB4:
-/* 0804BAB4 */ .word gGameplayDataPtr
+/* 0804BAB4 */ .word gCurrentSceneData
 _0804BAB8:
 /* 0804BAB8 */ LDRH R0, [R5]
 /* 0804BABA */ ADDS R0, #1

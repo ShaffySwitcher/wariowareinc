@@ -7,7 +7,7 @@
 glabel func_080526EC
 /* 080526EC */ LDR R0, _08052708
 /* 080526EE */ LDR R2, [R0]
-/* 080526F0 */ LDR R0, =gGameplayDataPtr
+/* 080526F0 */ LDR R0, =gCurrentSceneData
 /* 080526F2 */ LDR R0, [R0]
 /* 080526F4 */ LDRH R1, [R0, #0X16]
 /* 080526F6 */ LSLS R0, R1, #2

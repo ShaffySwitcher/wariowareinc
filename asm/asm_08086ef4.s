@@ -103,7 +103,7 @@ _08086FB4:
 
 .balign 4, 0
 _08086FB8:
-/* 08086FB8 */ .word gGameplayDataPtr
+/* 08086FB8 */ .word gCurrentSceneData
 _08086FBC:
 /* 08086FBC */ MOVS R0, #0XC
 _08086FBE:
@@ -398,7 +398,7 @@ _080871DC:
 
 .balign 4, 0
 _080871E0:
-/* 080871E0 */ .word gGameplayDataPtr
+/* 080871E0 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080871E4:

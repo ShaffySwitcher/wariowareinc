@@ -8,7 +8,7 @@ glabel func_0800E764
 /* 0800E764 */ PUSH {LR}
 /* 0800E766 */ LDR R0, _0800E784
 /* 0800E768 */ LDR R0, [R0]
-/* 0800E76A */ LDR R1, =gGameplayDataPtr
+/* 0800E76A */ LDR R1, =gCurrentSceneData
 /* 0800E76C */ LDR R1, [R1]
 /* 0800E76E */ MOVS R2, #0XB4
 /* 0800E770 */ LSLS R2, R2, #2

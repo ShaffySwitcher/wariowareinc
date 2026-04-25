@@ -46,7 +46,7 @@ _080E09F8:
 
 .balign 4, 0
 _080E09FC:
-/* 080E09FC */ .word gGameplayDataPtr
+/* 080E09FC */ .word gCurrentSceneData
 _080E0A00:
 /* 080E0A00 */ CMP R3, #7
 /* 080E0A02 */ BEQ _080E0A4E

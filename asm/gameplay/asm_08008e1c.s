@@ -50,7 +50,7 @@ _08008E40: \n\
  \n\
 .balign 4, 0 \n\
 _08008E7C: \n\
-/* 08008E7C */ .word gGameplayDataPtr \n\
+/* 08008E7C */ .word gCurrentSceneData \n\
 _08008E80: \n\
 /* 08008E80 */ ADDS R3, R4, #0 \n\
 _08008E82: \n\
@@ -155,7 +155,7 @@ _08008F08: \n\
  \n\
 .balign 4, 0 \n\
 _08008F40: \n\
-/* 08008F40 */ .word gGameplayDataPtr \n\
+/* 08008F40 */ .word gCurrentSceneData \n\
  \n\
 .balign 4, 0 \n\
 _08008F44: \n\
@@ -246,7 +246,7 @@ _08008FB2: \n\
  \n\
 .balign 4, 0 \n\
 _08008FE4: \n\
-/* 08008FE4 */ .word gGameplayDataPtr \n\
+/* 08008FE4 */ .word gCurrentSceneData \n\
  \n\
 .balign 4, 0 \n\
 _08008FE8: \n\

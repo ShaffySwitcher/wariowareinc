@@ -78,7 +78,7 @@ _080CFA18:
 
 .balign 4, 0
 _080CFA28:
-/* 080CFA28 */ .word gGameplayDataPtr
+/* 080CFA28 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080CFA2C:

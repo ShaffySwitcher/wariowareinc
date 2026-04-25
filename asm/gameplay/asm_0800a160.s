@@ -32,7 +32,7 @@ thumb_func_start func_0800A160 \n\
 /* 0800A19E */ MOV R1, R8 \n\
 /* 0800A1A0 */ MOVS R2, #0 \n\
 /* 0800A1A2 */ BL sprite_create \n\
-/* 0800A1A6 */ LDR R6, =gGameplayDataPtr \n\
+/* 0800A1A6 */ LDR R6, =gCurrentSceneData \n\
 /* 0800A1A8 */ LDR R1, [R6] \n\
 /* 0800A1AA */ MOVS R4, #0XF7 \n\
 /* 0800A1AC */ LSLS R4, R4, #1 \n\

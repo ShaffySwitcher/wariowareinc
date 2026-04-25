@@ -60,7 +60,7 @@ _0800DD24:
 
 .balign 4, 0
 _0800DD28:
-/* 0800DD28 */ .word gGameplayDataPtr
+/* 0800DD28 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800DD2C:

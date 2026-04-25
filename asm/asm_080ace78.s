@@ -223,7 +223,7 @@ _080AD050:
 
 .balign 4, 0
 _080AD030:
-/* 080AD030 */ .word gGameplayDataPtr
+/* 080AD030 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080AD034:

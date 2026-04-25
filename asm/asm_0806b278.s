@@ -78,7 +78,7 @@ _0806B2F0:
 
 .balign 4, 0
 _0806B2F4:
-/* 0806B2F4 */ .word gGameplayDataPtr
+/* 0806B2F4 */ .word gCurrentSceneData
 _0806B2F8:
 /* 0806B2F8 */ ADDS R1, #1
 /* 0806B2FA */ ADDS R4, #0X1C

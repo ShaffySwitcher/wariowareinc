@@ -50,7 +50,7 @@ glabel func_0800B828
 
 .balign 4, 0
 _0800B880:
-/* 0800B880 */ .word gGameplayDataPtr
+/* 0800B880 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800B884:

@@ -113,7 +113,7 @@ _08009B68: \n\
  \n\
 .balign 4, 0 \n\
 _08009B6C: \n\
-/* 08009B6C */ .word gGameplayDataPtr \n\
+/* 08009B6C */ .word gCurrentSceneData \n\
  \n\
 .balign 4, 0 \n\
 _08009B70: \n\

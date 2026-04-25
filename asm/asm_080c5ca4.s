@@ -26,7 +26,7 @@ _080C5CBE:
 /* 080C5CC8 */ MOVS R1, #1
 /* 080C5CCA */ STRB R1, [R2]
 /* 080C5CCC */ STRB R1, [R4, #5]
-/* 080C5CCE */ LDR R1, =gGameplayDataPtr
+/* 080C5CCE */ LDR R1, =gCurrentSceneData
 /* 080C5CD0 */ LDR R1, [R1]
 /* 080C5CD2 */ MOVS R2, #0XBA
 /* 080C5CD4 */ LSLS R2, R2, #1

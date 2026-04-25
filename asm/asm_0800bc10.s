@@ -34,7 +34,7 @@ _0800BC3E:
 
 .balign 4, 0
 _0800BC44:
-/* 0800BC44 */ .word gGameplayDataPtr
+/* 0800BC44 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800BC48:

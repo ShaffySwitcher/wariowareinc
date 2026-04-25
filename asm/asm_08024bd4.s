@@ -34,7 +34,7 @@ _08024BFA:
 
 .balign 4, 0
 _08024C04:
-/* 08024C04 */ .word gGameplayDataPtr
+/* 08024C04 */ .word gCurrentSceneData
 
 .balign 4, 0
 _08024C08:
@@ -285,7 +285,7 @@ _08024DC4:
 
 .balign 4, 0
 _08024DC8:
-/* 08024DC8 */ .word gGameplayDataPtr
+/* 08024DC8 */ .word gCurrentSceneData
 
 .balign 4, 0
 _08024DCC:

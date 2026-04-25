@@ -34,7 +34,7 @@ glabel func_080D6560
 /* 080D6594 */ MOVS R3, #0
 /* 080D6596 */ BL sprite_set_anim
 /* 080D659A */ LDR R4, [R5]
-/* 080D659C */ LDR R0, =gGameplayDataPtr
+/* 080D659C */ LDR R0, =gCurrentSceneData
 /* 080D659E */ LDR R0, [R0]
 /* 080D65A0 */ LDRH R1, [R0, #0X16]
 /* 080D65A2 */ MOVS R0, #0XA0

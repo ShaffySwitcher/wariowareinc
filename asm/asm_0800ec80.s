@@ -41,7 +41,7 @@ _0800ECC4:
 
 .balign 4, 0
 _0800ECBC:
-/* 0800ECBC */ .word gGameplayDataPtr
+/* 0800ECBC */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800ECC0:

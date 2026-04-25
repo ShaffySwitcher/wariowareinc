@@ -26,7 +26,7 @@ glabel func_080C8EAC
 
 .balign 4, 0
 _080C8ED0:
-/* 080C8ED0 */ .word gGameplayDataPtr
+/* 080C8ED0 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080C8ED4:

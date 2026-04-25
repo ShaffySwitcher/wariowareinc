@@ -29,7 +29,7 @@ glabel func_080C5CF0
 
 .balign 4, 0
 _080C5D1C:
-/* 080C5D1C */ .word gGameplayDataPtr
+/* 080C5D1C */ .word gCurrentSceneData
 _080C5D20:
 /* 080C5D20 */ CMP R0, #2
 /* 080C5D22 */ BEQ _080C5D2A
@@ -181,6 +181,6 @@ _080C5E38:
 
 .balign 4, 0
 _080C5E3C:
-/* 080C5E3C */ .word gGameplayDataPtr
+/* 080C5E3C */ .word gCurrentSceneData
 .ltorg
 .end

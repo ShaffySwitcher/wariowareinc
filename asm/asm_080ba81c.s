@@ -80,6 +80,6 @@ _080BA89C:
 
 .balign 4, 0
 _080BA8A0:
-/* 080BA8A0 */ .word gGameplayDataPtr
+/* 080BA8A0 */ .word gCurrentSceneData
 .ltorg
 .end

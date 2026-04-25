@@ -31,7 +31,7 @@ _080B9340:
 
 .balign 4, 0
 _080B9344:
-/* 080B9344 */ .word gGameplayDataPtr
+/* 080B9344 */ .word gCurrentSceneData
 _080B9348:
 /* 080B9348 */ CMP R1, #0X4F
 /* 080B934A */ BGT _080B9366
@@ -69,6 +69,6 @@ _080B9384:
 
 .balign 4, 0
 _080B9380:
-/* 080B9380 */ .word gGameplayDataPtr
+/* 080B9380 */ .word gCurrentSceneData
 .ltorg
 .end

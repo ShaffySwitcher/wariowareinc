@@ -2,6 +2,7 @@
 
 #include "global.h"
 #include "graphics.h"
+#include "scenes.h"
 
 #define MAX_LIVES 4
 #define MAX_SCORE 999
@@ -186,10 +187,7 @@ struct GameplayScriptCmd {
     union FreeType arg;
 };
 
-extern struct GameplayData D_03003860;
-extern struct GameplayData* gGameplayDataPtr;
-
-#define gGameplayData (*gGameplayDataPtr)
+#define gGameplayData (*(struct GameplayData *)gCurrentSceneData)
 
 extern u32 func_08003FB8(void);
 extern void func_08008134(void);

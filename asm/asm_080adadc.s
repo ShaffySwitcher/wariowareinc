@@ -46,7 +46,7 @@ _080ADB30:
 
 .balign 4, 0
 _080ADB24:
-/* 080ADB24 */ .word gGameplayDataPtr
+/* 080ADB24 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080ADB28:

@@ -106,6 +106,6 @@ _080DF3B0:
 
 .balign 4, 0
 _080DF3B4:
-/* 080DF3B4 */ .word gGameplayDataPtr
+/* 080DF3B4 */ .word gCurrentSceneData
 .ltorg
 .end

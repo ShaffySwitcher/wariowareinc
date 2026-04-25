@@ -304,6 +304,6 @@ _0801F958:
 
 .balign 4, 0
 _0801F95C:
-/* 0801F95C */ .word gGameplayDataPtr
+/* 0801F95C */ .word gCurrentSceneData
 .ltorg
 .end

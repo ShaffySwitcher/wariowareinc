@@ -121,6 +121,6 @@ _080EC218:
 
 .balign 4, 0
 _080EC21C:
-/* 080EC21C */ .word gGameplayDataPtr
+/* 080EC21C */ .word gCurrentSceneData
 .ltorg
 .end

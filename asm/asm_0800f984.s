@@ -43,7 +43,7 @@ _0800F9C6:
 
 .balign 4, 0
 _0800F9CC:
-/* 0800F9CC */ .word gGameplayDataPtr
+/* 0800F9CC */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800F9D0:

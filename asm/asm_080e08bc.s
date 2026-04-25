@@ -54,7 +54,7 @@ _080E0918:
 
 .balign 4, 0
 _080E091C:
-/* 080E091C */ .word gGameplayDataPtr
+/* 080E091C */ .word gCurrentSceneData
 
 .balign 4, 0
 _080E0920:

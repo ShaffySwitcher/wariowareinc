@@ -41,7 +41,7 @@ glabel func_080A33C0
 
 .balign 4, 0
 _080A3404:
-/* 080A3404 */ .word gGameplayDataPtr
+/* 080A3404 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080A3408:
@@ -154,7 +154,7 @@ _080A34D0:
 
 .balign 4, 0
 _080A34D4:
-/* 080A34D4 */ .word gGameplayDataPtr
+/* 080A34D4 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080A34D8:
@@ -212,7 +212,7 @@ _080A3538:
 
 .balign 4, 0
 _080A353C:
-/* 080A353C */ .word gGameplayDataPtr
+/* 080A353C */ .word gCurrentSceneData
 
 .balign 4, 0
 _080A3540:
@@ -329,7 +329,7 @@ _080A3604:
 
 .balign 4, 0
 _080A3608:
-/* 080A3608 */ .word gGameplayDataPtr
+/* 080A3608 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080A360C:

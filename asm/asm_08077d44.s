@@ -96,7 +96,7 @@ _08077DF4:
 
 .balign 4, 0
 _08077DF8:
-/* 08077DF8 */ .word gGameplayDataPtr
+/* 08077DF8 */ .word gCurrentSceneData
 
 .balign 4, 0
 _08077DFC:

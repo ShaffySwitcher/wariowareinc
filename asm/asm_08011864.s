@@ -23,7 +23,7 @@ _08011874:
 
 .balign 4, 0
 _08011880:
-/* 08011880 */ .word gGameplayDataPtr
+/* 08011880 */ .word gCurrentSceneData
 _08011884:
 /* 08011884 */ LDR R0, _08011894
 /* 08011886 */ LDR R1, [R0]
@@ -37,7 +37,7 @@ _0801188E:
 
 .balign 4, 0
 _08011894:
-/* 08011894 */ .word gGameplayDataPtr
+/* 08011894 */ .word gCurrentSceneData
 _08011898:
 /* 08011898 */ BL func_080140C0
 _0801189C:

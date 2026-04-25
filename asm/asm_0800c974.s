@@ -28,7 +28,7 @@ _0800C998:
 
 .balign 4, 0
 _0800C99C:
-/* 0800C99C */ .word gGameplayDataPtr
+/* 0800C99C */ .word gCurrentSceneData
 
 .balign 4, 0
 _0800C9A0:

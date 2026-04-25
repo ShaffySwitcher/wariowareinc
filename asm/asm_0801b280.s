@@ -83,7 +83,7 @@ glabel func_0801B280
 /* 0801B32A */ MOVS R1, #0X80
 /* 0801B32C */ ORRS R0, R1
 /* 0801B32E */ STRB R0, [R2, #0X18]
-/* 0801B330 */ LDR R0, =gGameplayDataPtr
+/* 0801B330 */ LDR R0, =gCurrentSceneData
 /* 0801B332 */ LDR R2, [R0]
 /* 0801B334 */ LDRB R1, [R2, #6]
 /* 0801B336 */ MOVS R0, #0X41

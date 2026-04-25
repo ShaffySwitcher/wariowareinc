@@ -129,7 +129,7 @@ _0806AE70:
 
 .balign 4, 0
 _0806AE74:
-/* 0806AE74 */ .word gGameplayDataPtr
+/* 0806AE74 */ .word gCurrentSceneData
 _0806AE78:
 /* 0806AE78 */ LDR R0, [R1, #0X10]
 /* 0806AE7A */ CMP R0, #0

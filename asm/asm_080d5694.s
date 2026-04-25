@@ -75,7 +75,7 @@ _080D56FC:
 /* 080D5714 */ MOVS R1, #3
 /* 080D5716 */ STRB R1, [R0]
 /* 080D5718 */ LDR R2, [R4]
-/* 080D571A */ LDR R0, =gGameplayDataPtr
+/* 080D571A */ LDR R0, =gCurrentSceneData
 /* 080D571C */ LDR R0, [R0]
 /* 080D571E */ LDRH R1, [R0, #0X16]
 /* 080D5720 */ LSLS R0, R1, #5

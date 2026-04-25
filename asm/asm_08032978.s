@@ -210,7 +210,7 @@ _08032B18:
 
 .balign 4, 0
 _08032B1C:
-/* 08032B1C */ .word gGameplayDataPtr
+/* 08032B1C */ .word gCurrentSceneData
 
 .balign 4, 0
 _08032B20:

@@ -60,7 +60,7 @@ _0809FEAC:
 
 .balign 4, 0
 _0809FEC4:
-/* 0809FEC4 */ .word gGameplayDataPtr
+/* 0809FEC4 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0809FEC8:
@@ -157,7 +157,7 @@ _0809FF28:
 /* 0809FF72 */ MOVS R2, #1
 /* 0809FF74 */ BL sprite_set_anim_cel
 _0809FF78:
-/* 0809FF78 */ LDR R0, =gGameplayDataPtr
+/* 0809FF78 */ LDR R0, =gCurrentSceneData
 /* 0809FF7A */ LDR R0, [R0]
 /* 0809FF7C */ MOVS R1, #0XBC
 /* 0809FF7E */ LSLS R1, R1, #1

@@ -26,7 +26,7 @@ _0800CE34:
 /* 0800CE3E */ STR R0, [SP]
 /* 0800CE40 */ ADDS R0, R5, #0
 /* 0800CE42 */ BL func_08003B10
-/* 0800CE46 */ LDR R0, =gGameplayDataPtr
+/* 0800CE46 */ LDR R0, =gCurrentSceneData
 /* 0800CE48 */ LDR R0, [R0]
 /* 0800CE4A */ MOVS R1, #0XFA
 /* 0800CE4C */ LSLS R1, R1, #1

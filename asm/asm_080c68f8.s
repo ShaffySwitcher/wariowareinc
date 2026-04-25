@@ -12,7 +12,7 @@ glabel func_080C68F8
 /* 080C6900 */ LSLS R1, R1, #1
 /* 080C6902 */ ADDS R0, R1
 /* 080C6904 */ LDR R0, [R0]
-/* 080C6906 */ LDR R1, =gGameplayDataPtr
+/* 080C6906 */ LDR R1, =gCurrentSceneData
 /* 080C6908 */ LDR R1, [R1]
 /* 080C690A */ LDRH R1, [R1, #0X16]
 /* 080C690C */ BL func_080DF28C

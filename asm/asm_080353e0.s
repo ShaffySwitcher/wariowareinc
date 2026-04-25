@@ -71,7 +71,7 @@ _0803543C:
 
 .balign 4, 0
 _08035448:
-/* 08035448 */ .word gGameplayDataPtr
+/* 08035448 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0803544C:
@@ -183,7 +183,7 @@ _080354F2:
 
 .balign 4, 0
 _08035518:
-/* 08035518 */ .word gGameplayDataPtr
+/* 08035518 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0803551C:
@@ -352,7 +352,7 @@ _0803563C:
 
 .balign 4, 0
 _08035640:
-/* 08035640 */ .word gGameplayDataPtr
+/* 08035640 */ .word gCurrentSceneData
 _08035644:
 /* 08035644 */ LDR R0, _080356F4
 /* 08035646 */ BL func_0800C7FC
@@ -467,7 +467,7 @@ _0803570C:
 
 .balign 4, 0
 _08035710:
-/* 08035710 */ .word gGameplayDataPtr
+/* 08035710 */ .word gCurrentSceneData
 _08035714:
 /* 08035714 */ ADDS R1, R7, #0
 /* 08035716 */ ADDS R1, #0X5E

@@ -20,7 +20,7 @@ glabel func_080C9848
 
 .balign 4, 0
 _080C9864:
-/* 080C9864 */ .word gGameplayDataPtr
+/* 080C9864 */ .word gCurrentSceneData
 _080C9868:
 /* 080C9868 */ ADDS R0, R1
 _080C986A:

@@ -9,7 +9,7 @@ glabel func_080DF28C
 /* 080DF28E */ ADDS R4, R0, #0
 /* 080DF290 */ LSLS R1, R1, #0X10
 /* 080DF292 */ LSRS R1, R1, #0X10
-/* 080DF294 */ LDR R0, =gGameplayDataPtr
+/* 080DF294 */ LDR R0, =gCurrentSceneData
 /* 080DF296 */ LDR R2, [R0]
 /* 080DF298 */ LDR R0, [R2, #0X1C]
 /* 080DF29A */ MULS R0, R1, R0

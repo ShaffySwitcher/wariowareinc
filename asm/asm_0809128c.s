@@ -93,7 +93,7 @@ _08091324:
 
 .balign 4, 0
 _08091328:
-/* 08091328 */ .word gGameplayDataPtr
+/* 08091328 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0809132C:
@@ -147,7 +147,7 @@ _08091388:
 
 .balign 4, 0
 _0809138C:
-/* 0809138C */ .word gGameplayDataPtr
+/* 0809138C */ .word gCurrentSceneData
 
 .balign 4, 0
 _08091390:
@@ -217,7 +217,7 @@ _08091404:
 
 .balign 4, 0
 _08091408:
-/* 08091408 */ .word gGameplayDataPtr
+/* 08091408 */ .word gCurrentSceneData
 
 .balign 4, 0
 _0809140C:

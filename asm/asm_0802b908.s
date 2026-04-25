@@ -45,7 +45,7 @@ _0802B936:
 
 .balign 4, 0
 _0802B94C:
-/* 0802B94C */ .word gGameplayDataPtr
+/* 0802B94C */ .word gCurrentSceneData
 
 .balign 4, 0
 _0802B950:
@@ -214,7 +214,7 @@ _0802BA6C:
 
 .balign 4, 0
 _0802BA70:
-/* 0802BA70 */ .word gGameplayDataPtr
+/* 0802BA70 */ .word gCurrentSceneData
 _0802BA74:
 /* 0802BA74 */ CMP R0, #2
 /* 0802BA76 */ BEQ _0802BA86

@@ -7,7 +7,7 @@
 glabel func_080CCFAC
 /* 080CCFAC */ PUSH {R4, R5, LR}
 /* 080CCFAE */ ADDS R4, R0, #0
-/* 080CCFB0 */ LDR R0, =gGameplayDataPtr
+/* 080CCFB0 */ LDR R0, =gCurrentSceneData
 /* 080CCFB2 */ LDR R0, [R0]
 /* 080CCFB4 */ LDRH R0, [R0, #0X16]
 /* 080CCFB6 */ LSLS R5, R0, #1

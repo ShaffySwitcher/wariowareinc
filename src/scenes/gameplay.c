@@ -1,8 +1,8 @@
-#include "gameplay.h"
-#include "audio.h"
-#include "memory.h"
-#include "memory_heap.h"
-#include "code_08000f10.h"
+#include "src/scenes/gameplay.h"
+#include "src/audio.h"
+#include "src/memory.h"
+#include "src/memory_heap.h"
+#include "src/code_08000f10.h"
 #include "src/lib_sprite.h"
 
 asm(".include \"include/gba.inc\"");
@@ -87,7 +87,7 @@ u32 gameplay_check_collision(struct Vector2 *positionA, struct Rect *hitboxA,
     return TRUE;
 }
 
-struct GameplayData* gGameplayDataPtr = &D_03003860;
+void* gCurrentSceneData = &D_03003860;
 
 void gameplay_init_scene(void) {
     func_08006A04();
@@ -850,11 +850,11 @@ void func_0800A160(struct Animation* anim, struct Vector2* pos) {
     u32 memID = sprite_handler_get_mem_id(gSpriteHandler);
     sprite_handler_set_mem_id(gSpriteHandler, func_0800A088());
 
-    gGameplayDataPtr->unk1ee = sprite_create(gSpriteHandler, anim, 0, pos->x, pos->y, 0x40, 0, 0, 0);
+    gGameplayData.unk1ee = sprite_create(gSpriteHandler, anim, 0, pos->x, pos->y, 0x40, 0, 0, 0);
     
-    sprite_set_visible(gSpriteHandler, gGameplayDataPtr->unk1ee, 0);
-    sprite_set_base_tile(gSpriteHandler, gGameplayDataPtr->unk1ee, 0x280);
-    sprite_set_base_palette(gSpriteHandler, gGameplayDataPtr->unk1ee, 10);
+    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
+    sprite_set_base_tile(gSpriteHandler, gGameplayData.unk1ee, 0x280);
+    sprite_set_base_palette(gSpriteHandler, gGameplayData.unk1ee, 10);
 
     sprite_handler_set_mem_id(gSpriteHandler, memID);
 }

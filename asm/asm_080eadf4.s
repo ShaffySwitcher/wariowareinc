@@ -34,7 +34,7 @@ glabel func_080EADF4
 
 .balign 4, 0
 _080EAE2C:
-/* 080EAE2C */ .word gGameplayDataPtr
+/* 080EAE2C */ .word gCurrentSceneData
 
 .balign 4, 0
 _080EAE30:
@@ -81,7 +81,7 @@ _080EAE74:
 
 .balign 4, 0
 _080EAE78:
-/* 080EAE78 */ .word gGameplayDataPtr
+/* 080EAE78 */ .word gCurrentSceneData
 _080EAE7C:
 /* 080EAE7C */ LDR R5, [R5]
 /* 080EAE7E */ LDR R0, [R4]

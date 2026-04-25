@@ -23,7 +23,7 @@ _0800A0B6: \n\
  \n\
 .balign 4, 0 \n\
 _0800A0BC: \n\
-/* 0800A0BC */ .word gGameplayDataPtr \n\
+/* 0800A0BC */ .word gCurrentSceneData \n\
  \n\
 .balign 4, 0 \n\
 _0800A0C0: \n\

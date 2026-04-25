@@ -107,7 +107,7 @@ _0807A3B8:
 
 .balign 4, 0
 _0807A3BC:
-/* 0807A3BC */ .word gGameplayDataPtr
+/* 0807A3BC */ .word gCurrentSceneData
 _0807A3C0:
 /* 0807A3C0 */ LDR R3, [SP, #0X1C]
 /* 0807A3C2 */ LDR R4, [SP, #0X20]

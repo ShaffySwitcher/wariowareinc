@@ -16,7 +16,7 @@ glabel func_0800DDF8
 
 .balign 4, 0
 _0800DE08:
-/* 0800DE08 */ .word gGameplayDataPtr
+/* 0800DE08 */ .word gCurrentSceneData
 _0800DE0C:
 /* 0800DE0C */ MOVS R0, #1
 _0800DE0E:

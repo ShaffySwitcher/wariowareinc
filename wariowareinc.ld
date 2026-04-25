@@ -270,7 +270,7 @@ SECTIONS {
         build/asm/asm_08008058.s.o(.text*);
         build/asm/asm_0800806c.s.o(.text*);
         build/asm/asm_08008130.s.o(.text*);
-        build/src/gameplay.c.o(.text);
+        build/src/scenes/gameplay.c.o(.text);
         build/asm/asm_0800a200.s.o(.text*);
         build/asm/asm_0800a218.s.o(.text*);
         build/asm/asm_0800a228.s.o(.text*);
@@ -410,7 +410,7 @@ SECTIONS {
         build/asm/asm_0800db04.s.o(.text*);
         build/asm/asm_0800db5c.s.o(.text*);
         build/asm/asm_0800dba0.s.o(.text*);
-        build/asm/asm_0800dc08.s.o(.text*);
+        build/src/scenes/title.c.o(.text);
         build/asm/asm_0800dc40.s.o(.text*);
         build/asm/asm_0800dc6c.s.o(.text*);
         build/asm/asm_0800dc9c.s.o(.text*);
@@ -5615,7 +5615,7 @@ SECTIONS {
         build/bin/data_0830B500.bin.o(.rodata*);
         build/graphics/title/title_pal.c.o(.data);
         build/bin/data_0830C3B0.bin.o(.rodata*);
-        build/src/gameplay.c.o(.data);
+        build/src/scenes/gameplay.c.o(.data);
         build/bin/data_083A3D94.bin.o(.rodata*);
 
         build/data/math_tables.c.o(.data);

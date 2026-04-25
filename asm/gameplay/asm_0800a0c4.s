@@ -22,7 +22,7 @@ thumb_func_start func_0800A0C4 \n\
  \n\
 .balign 4, 0 \n\
 _0800A0E8: \n\
-/* 0800A0E8 */ .word gGameplayDataPtr \n\
+/* 0800A0E8 */ .word gCurrentSceneData \n\
 _0800A0EC: \n\
 /* 0800A0EC */ MOVS R0, #1 \n\
 /* 0800A0EE */ STRH R0, [R2] \n\

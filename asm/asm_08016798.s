@@ -20,7 +20,7 @@ glabel func_08016798
 /* 080167B2 */ BL func_08006C40
 /* 080167B6 */ LDR R0, _080167CC
 /* 080167B8 */ BL play_sound
-/* 080167BC */ LDR R0, =gGameplayDataPtr
+/* 080167BC */ LDR R0, =gCurrentSceneData
 /* 080167BE */ LDR R1, [R0]
 /* 080167C0 */ MOVS R0, #1
 /* 080167C2 */ STRH R0, [R1, #0X3A]

@@ -307,7 +307,7 @@ _08029E50:
 
 .balign 4, 0
 _08029E10:
-/* 08029E10 */ .word gGameplayDataPtr
+/* 08029E10 */ .word gCurrentSceneData
 
 .balign 4, 0
 _08029E14:

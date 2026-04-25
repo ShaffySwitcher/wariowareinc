@@ -8,7 +8,7 @@ glabel func_08042AA0
 /* 08042AA0 */ PUSH {R4, LR}
 /* 08042AA2 */ LDR R0, _08042ACC
 /* 08042AA4 */ LDR R4, [R0]
-/* 08042AA6 */ LDR R0, =gGameplayDataPtr
+/* 08042AA6 */ LDR R0, =gCurrentSceneData
 /* 08042AA8 */ LDR R0, [R0]
 /* 08042AAA */ LDRH R1, [R0, #0X16]
 /* 08042AAC */ LSLS R0, R1, #6

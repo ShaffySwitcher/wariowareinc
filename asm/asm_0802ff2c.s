@@ -232,7 +232,7 @@ _080300D0:
 
 .balign 4, 0
 _080300D4:
-/* 080300D4 */ .word gGameplayDataPtr
+/* 080300D4 */ .word gCurrentSceneData
 
 .balign 4, 0
 _080300D8:
