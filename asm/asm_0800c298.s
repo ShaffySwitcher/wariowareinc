@@ -23,7 +23,7 @@ glabel func_0800C298
 /* 0800C2B6 */ STRH R3, [R0, #6]
 /* 0800C2B8 */ STRH R5, [R0, #8]
 /* 0800C2BA */ STRH R6, [R0, #0XA]
-/* 0800C2BC */ BL func_0800A088
+/* 0800C2BC */ BL get_current_mem_id
 /* 0800C2C0 */ LSLS R0, R0, #0X10
 /* 0800C2C2 */ LSRS R0, R0, #0X10
 /* 0800C2C4 */ LDR R1, =D_083A4AB0

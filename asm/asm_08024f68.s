@@ -9,7 +9,7 @@ glabel func_08024F68
 /* 08024F6A */ LDR R0, =D_03006524
 /* 08024F6C */ LDR R4, [R0]
 /* 08024F6E */ MOVS R0, #0
-/* 08024F70 */ BL func_0800A330
+/* 08024F70 */ BL scene_set_current_thread
 /* 08024F74 */ LDR R0, [R4, #0X50]
 /* 08024F76 */ BL func_08004378
 /* 08024F7A */ BL func_0800418C

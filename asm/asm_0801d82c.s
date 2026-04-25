@@ -59,7 +59,7 @@ _0801D856:
 /* 0801D892 */ STR R1, [R0]
 /* 0801D894 */ ADDS R0, #4
 /* 0801D896 */ STR R1, [R0]
-/* 0801D898 */ BL func_0800A088
+/* 0801D898 */ BL get_current_mem_id
 /* 0801D89C */ LSLS R0, R0, #0X10
 /* 0801D89E */ LSRS R0, R0, #0X10
 /* 0801D8A0 */ LDR R1, [R5]

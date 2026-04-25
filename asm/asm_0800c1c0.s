@@ -28,7 +28,7 @@ glabel func_0800C1C0
 /* 0800C1E8 */ STRH R6, [R0, #0XA]
 /* 0800C1EA */ MOV R1, R8
 /* 0800C1EC */ STRH R1, [R0, #0XC]
-/* 0800C1EE */ BL func_0800A088
+/* 0800C1EE */ BL get_current_mem_id
 /* 0800C1F2 */ LSLS R0, R0, #0X10
 /* 0800C1F4 */ LSRS R0, R0, #0X10
 /* 0800C1F6 */ LDR R1, =D_083A4AA0

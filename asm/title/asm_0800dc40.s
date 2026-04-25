@@ -3,8 +3,8 @@ asm(".syntax unified \n\
 thumb_func_start func_0800DC40 \n\
 /* 0800DC40 */ PUSH {LR} \n\
 /* 0800DC42 */ MOVS R0, #0 \n\
-/* 0800DC44 */ BL func_0800A330 \n\
-/* 0800DC48 */ BL func_0800A088 \n\
+/* 0800DC44 */ BL scene_set_current_thread \n\
+/* 0800DC48 */ BL get_current_mem_id \n\
 /* 0800DC4C */ LSLS R0, R0, #0X10 \n\
 /* 0800DC4E */ LSRS R0, R0, #0X10 \n\
 /* 0800DC50 */ LDR R1, _0800DC64 \n\

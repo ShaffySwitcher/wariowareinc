@@ -13,7 +13,7 @@ glabel func_080202FC
 /* 08020306 */ STRH R1, [R0]
 /* 08020308 */ ADDS R0, #0X54
 /* 0802030A */ STRH R1, [R0]
-/* 0802030C */ BL func_0800A088
+/* 0802030C */ BL get_current_mem_id
 /* 08020310 */ LSLS R0, R0, #0X10
 /* 08020312 */ LSRS R0, R0, #0X10
 /* 08020314 */ LDR R1, _0802039C
@@ -31,7 +31,7 @@ glabel func_080202FC
 /* 08020330 */ BL func_0800A228
 /* 08020334 */ LDR R1, [R5]
 /* 08020336 */ STR R0, [R1, #8]
-/* 08020338 */ BL func_0800A088
+/* 08020338 */ BL get_current_mem_id
 /* 0802033C */ LSLS R0, R0, #0X10
 /* 0802033E */ LSRS R0, R0, #0X10
 /* 08020340 */ LDR R1, _080203A4

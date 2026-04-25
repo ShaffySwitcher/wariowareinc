@@ -35,7 +35,7 @@ _0800A0EC: \n\
 /* 0800A0FC */ BNE _0800A100 \n\
 /* 0800A0FE */ MOVS R4, #1 \n\
 _0800A100: \n\
-/* 0800A100 */ BL func_0800A088 \n\
+/* 0800A100 */ BL get_current_mem_id \n\
 /* 0800A104 */ LSLS R0, R0, #0X10 \n\
 /* 0800A106 */ LSRS R0, R0, #0X10 \n\
 /* 0800A108 */ LDR R1, _0800A120 \n\

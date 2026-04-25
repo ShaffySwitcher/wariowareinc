@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0804E5B4
 /* 0804E5B4 */ PUSH {R4, LR}
-/* 0804E5B6 */ BL func_0800A088
+/* 0804E5B6 */ BL get_current_mem_id
 /* 0804E5BA */ LSLS R0, R0, #0X10
 /* 0804E5BC */ LSRS R0, R0, #0X10
 /* 0804E5BE */ LDR R1, _0804E630

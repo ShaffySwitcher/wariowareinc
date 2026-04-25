@@ -12,7 +12,7 @@ glabel func_080E54A8
 /* 080E54B0 */ LSLS R5, R1, #0X10
 /* 080E54B2 */ LSRS R5, R5, #0X10
 /* 080E54B4 */ MOVS R0, #1
-/* 080E54B6 */ BL func_0800A330
+/* 080E54B6 */ BL scene_set_current_thread
 /* 080E54BA */ LDR R6, _080E5508
 /* 080E54BC */ MOVS R0, #0X80
 /* 080E54BE */ LSLS R0, R0, #7

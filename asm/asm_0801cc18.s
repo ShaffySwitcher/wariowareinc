@@ -8,7 +8,7 @@ glabel func_0801CC18
 /* 0801CC18 */ PUSH {R4, R5, LR}
 /* 0801CC1A */ SUB SP, #8
 /* 0801CC1C */ MOVS R0, #0
-/* 0801CC1E */ BL func_0800A330
+/* 0801CC1E */ BL scene_set_current_thread
 /* 0801CC22 */ BL func_0800A044
 /* 0801CC26 */ ADDS R1, R0, #0
 /* 0801CC28 */ MOVS R0, #0XB8
@@ -22,7 +22,7 @@ glabel func_0801CC18
 /* 0801CC3A */ LSLS R4, R4, #5
 /* 0801CC3C */ LDR R0, _0801CC68
 /* 0801CC3E */ ADDS R4, R0
-/* 0801CC40 */ BL func_0800A088
+/* 0801CC40 */ BL get_current_mem_id
 /* 0801CC44 */ LSLS R0, R0, #0X10
 /* 0801CC46 */ LSRS R0, R0, #0X10
 /* 0801CC48 */ LSLS R5, R5, #0X18

@@ -8,7 +8,7 @@ glabel func_080BCDEC
 /* 080BCDEC */ PUSH {LR}
 /* 080BCDEE */ SUB SP, #4
 /* 080BCDF0 */ MOVS R0, #1
-/* 080BCDF2 */ BL func_0800A330
+/* 080BCDF2 */ BL scene_set_current_thread
 /* 080BCDF6 */ LDR R0, _080BCE24
 /* 080BCDF8 */ LDR R0, [R0]
 /* 080BCDFA */ LDRB R0, [R0, #6]

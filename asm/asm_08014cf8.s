@@ -27,7 +27,7 @@ glabel func_08014CF8
 /* 08014D20 */ MOVS R2, #0
 /* 08014D22 */ MOVS R3, #0
 /* 08014D24 */ BL func_0800A240
-/* 08014D28 */ BL func_0800A088
+/* 08014D28 */ BL get_current_mem_id
 /* 08014D2C */ LSLS R0, R0, #0X10
 /* 08014D2E */ LSRS R0, R0, #0X10
 /* 08014D30 */ LDR R1, _08014D60

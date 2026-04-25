@@ -1,6 +1,8 @@
 #pragma once
 
 #include "global.h"
+#include "graphics.h"
+#include "palette.h"
 
 struct PaletteInterpolatorInputs {
     u8 duration;
@@ -44,5 +46,5 @@ extern s32 start_pal_interp_col_pal_task(u16 memID, u8 duration, u8 totalPalette
 extern s32 start_pal_interp_pal_col_task(u16 memID, u8 duration, u8 totalPalettes, const u16 *sourceA, u32 valueB, u16 *outputDest);
 extern u16 palette_blend_color(u16 col1, u16 col2, u16 blendAlpha);
 
-extern u16 D_080F67AC[];
-extern u16 D_080F69AC[];
+extern Palette gBlackPalette;
+extern Palette gWhitePalette;

@@ -8,7 +8,7 @@ glabel func_08012D7C
 /* 08012D7C */ PUSH {LR}
 /* 08012D7E */ SUB SP, #0X18
 /* 08012D80 */ MOVS R0, #0
-/* 08012D82 */ BL func_0800A330
+/* 08012D82 */ BL scene_set_current_thread
 /* 08012D86 */ LDR R0, _08012DC0
 /* 08012D88 */ STR R0, [SP, #8]
 /* 08012D8A */ STR R0, [SP, #4]
@@ -20,7 +20,7 @@ glabel func_08012D7C
 /* 08012D96 */ STR R0, [SP, #0X10]
 /* 08012D98 */ MOVS R0, #4
 /* 08012D9A */ STR R0, [SP, #0X14]
-/* 08012D9C */ BL func_0800A088
+/* 08012D9C */ BL get_current_mem_id
 /* 08012DA0 */ LSLS R0, R0, #0X10
 /* 08012DA2 */ LSRS R0, R0, #0X10
 /* 08012DA4 */ LDR R1, _08012DC4

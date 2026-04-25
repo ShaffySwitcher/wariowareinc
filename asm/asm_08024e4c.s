@@ -24,7 +24,7 @@ glabel func_08024E4C
 /* 08024E6C */ STR R0, [R4, #0X34]
 /* 08024E6E */ STR R0, [R4, #0X38]
 /* 08024E70 */ STR R0, [R4, #0X3C]
-/* 08024E72 */ BL func_0800A088
+/* 08024E72 */ BL get_current_mem_id
 /* 08024E76 */ LSLS R0, R0, #0X10
 /* 08024E78 */ LSRS R0, R0, #0X10
 /* 08024E7A */ ADDS R4, #0X1C

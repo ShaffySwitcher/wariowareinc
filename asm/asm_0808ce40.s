@@ -14,7 +14,7 @@ glabel func_0808CE40
 /* 0808CE4C */ LSLS R4, R4, #0X10
 /* 0808CE4E */ LSRS R4, R4, #0X10
 /* 0808CE50 */ MOVS R0, #1
-/* 0808CE52 */ BL func_0800A330
+/* 0808CE52 */ BL scene_set_current_thread
 /* 0808CE56 */ LDR R0, _0808CEA4
 /* 0808CE58 */ LDR R5, [R0]
 /* 0808CE5A */ ADDS R5, #0X90

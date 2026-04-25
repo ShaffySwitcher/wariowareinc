@@ -18,7 +18,7 @@ glabel func_0808EC5C
 /* 0808EC70 */ LDR R4, [R2]
 /* 0808EC72 */ ADDS R4, R0
 /* 0808EC74 */ MOVS R0, #1
-/* 0808EC76 */ BL func_0800A330
+/* 0808EC76 */ BL scene_set_current_thread
 /* 0808EC7A */ ADDS R0, R5, #0
 /* 0808EC7C */ BL func_0808EC18
 /* 0808EC80 */ LDRB R0, [R4, #6]

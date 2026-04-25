@@ -9,7 +9,7 @@ glabel func_080AC22C
 /* 080AC22E */ ADDS R4, R0, #0
 /* 080AC230 */ ADDS R5, R2, #0
 /* 080AC232 */ MOVS R0, #1
-/* 080AC234 */ BL func_0800A330
+/* 080AC234 */ BL scene_set_current_thread
 /* 080AC238 */ MOVS R0, #0
 /* 080AC23A */ LDRSH R1, [R5, R0]
 /* 080AC23C */ ADDS R0, R4, #0

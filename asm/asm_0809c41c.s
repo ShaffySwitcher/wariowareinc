@@ -7,7 +7,7 @@
 glabel func_0809C41C
 /* 0809C41C */ PUSH {R4, R5, LR}
 /* 0809C41E */ MOVS R0, #1
-/* 0809C420 */ BL func_0800A330
+/* 0809C420 */ BL scene_set_current_thread
 /* 0809C424 */ MOVS R3, #0
 /* 0809C426 */ LDR R5, _0809C470
 /* 0809C428 */ LDR R1, _0809C474

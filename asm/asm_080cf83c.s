@@ -15,7 +15,7 @@ glabel func_080CF83C
 /* 080CF84A */ LSLS R1, R1, #1
 /* 080CF84C */ ADDS R0, R1
 /* 080CF84E */ LDRB R5, [R0]
-/* 080CF850 */ BL func_0800A088
+/* 080CF850 */ BL get_current_mem_id
 /* 080CF854 */ LSLS R0, R0, #0X10
 /* 080CF856 */ LSRS R0, R0, #0X10
 /* 080CF858 */ LDR R1, _080CF908

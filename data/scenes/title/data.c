@@ -1,5 +1,6 @@
 #include "global.h"
 #include "graphics.h"
+#include "src/palette.h"
 #include "graphics/title/title_graphics.h"
 
 struct GraphicsTable title_gfx_table[] = {
@@ -43,4 +44,13 @@ struct GraphicsTable title_gfx_table[] = {
 
 struct CompressedData *title_buffered_textures[] = {
     END_OF_BUFFERED_TEXTURES_LIST
+};
+
+struct GraphicsTable title_palette_gfx_table[] = {
+    /* BG Palette */ {
+        /* Src.  */ gBlackPalette,
+        /* Dest. */ BG_PALETTE_BUFFER(0),
+        /* Size  */ 0x40
+    },
+    END_OF_GRAPHICS_TABLE
 };

@@ -19,7 +19,7 @@ glabel func_0800D254
 /* 0800D26A */ MOVS R0, #0X9C
 /* 0800D26C */ BL func_0800A228
 /* 0800D270 */ ADDS R7, R0, #0
-/* 0800D272 */ BL func_0800A088
+/* 0800D272 */ BL get_current_mem_id
 /* 0800D276 */ STRH R0, [R7]
 /* 0800D278 */ MOV R0, SB
 /* 0800D27A */ STR R0, [R7, #4]
@@ -68,7 +68,7 @@ _0800D2CE:
 /* 0800D2D0 */ ADDS R5, R7, #0
 /* 0800D2D2 */ ADDS R5, #0X4E
 _0800D2D4:
-/* 0800D2D4 */ BL func_0800A088
+/* 0800D2D4 */ BL get_current_mem_id
 /* 0800D2D8 */ BL func_08001B04
 /* 0800D2DC */ LSLS R0, R0, #0X18
 /* 0800D2DE */ LSRS R1, R0, #0X18

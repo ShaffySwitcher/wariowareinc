@@ -21,7 +21,7 @@ glabel func_08025020
 /* 0802503C */ CMP R4, #0
 /* 0802503E */ BEQ _08025090
 /* 08025040 */ SUBS R4, #1
-/* 08025042 */ BL func_0800A088
+/* 08025042 */ BL get_current_mem_id
 /* 08025046 */ LSLS R0, R0, #0X10
 /* 08025048 */ LSRS R0, R0, #0X10
 /* 0802504A */ LSLS R4, R4, #0X18
@@ -36,7 +36,7 @@ glabel func_08025020
 /* 0802505E */ LDR R1, _08025088
 /* 08025060 */ MOVS R2, #0
 /* 08025062 */ BL run_func_after_task
-/* 08025066 */ BL func_0800A088
+/* 08025066 */ BL get_current_mem_id
 /* 0802506A */ LSLS R0, R0, #0X10
 /* 0802506C */ LSRS R0, R0, #0X10
 /* 0802506E */ LDR R3, _0802508C

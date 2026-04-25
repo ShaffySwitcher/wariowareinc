@@ -38,7 +38,7 @@ _0800DB94:
 
 .balign 4, 0
 _0800DB98:
-/* 0800DB98 */ .word D_080F69AC
+/* 0800DB98 */ .word gWhitePalette
 
 .balign 4, 0
 _0800DB9C:

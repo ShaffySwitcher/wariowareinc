@@ -14,7 +14,7 @@ glabel func_08019F08
 /* 08019F14 */ MOVS R1, #1
 /* 08019F16 */ ORRS R0, R1
 /* 08019F18 */ STRB R0, [R2]
-/* 08019F1A */ BL func_0800A088
+/* 08019F1A */ BL get_current_mem_id
 /* 08019F1E */ LSLS R0, R0, #0X10
 /* 08019F20 */ LSRS R0, R0, #0X10
 /* 08019F22 */ LDR R6, =D_03003850
@@ -31,7 +31,7 @@ glabel func_08019F08
 /* 08019F38 */ MOVS R2, #0XC
 /* 08019F3A */ MOVS R3, #0
 /* 08019F3C */ BL start_pal_interp_col_pal_task
-/* 08019F40 */ BL func_0800A088
+/* 08019F40 */ BL get_current_mem_id
 /* 08019F44 */ LSLS R0, R0, #0X10
 /* 08019F46 */ LSRS R0, R0, #0X10
 /* 08019F48 */ LDR R1, [R6]

@@ -19,7 +19,7 @@ glabel func_080AA15C
 /* 080AA176 */ MOVS R5, #1
 /* 080AA178 */ ADDS R4, R6, #0
 _080AA17A:
-/* 080AA17A */ BL func_0800A088
+/* 080AA17A */ BL get_current_mem_id
 /* 080AA17E */ LSLS R0, R0, #0X10
 /* 080AA180 */ LSRS R0, R0, #0X10
 /* 080AA182 */ LDR R1, =func_080A9F9C + 1

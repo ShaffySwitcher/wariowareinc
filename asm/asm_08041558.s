@@ -9,7 +9,7 @@ glabel func_08041558
 /* 0804155A */ ADDS R6, R0, #0
 /* 0804155C */ ADDS R4, R2, #0
 /* 0804155E */ MOVS R0, #1
-/* 08041560 */ BL func_0800A330
+/* 08041560 */ BL scene_set_current_thread
 /* 08041564 */ ADDS R5, R4, #0
 /* 08041566 */ ADDS R5, #0XC0
 /* 08041568 */ MOVS R0, #0

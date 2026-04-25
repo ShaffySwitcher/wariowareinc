@@ -13,7 +13,7 @@ thumb_func_start func_0800A160 \n\
 /* 0800A172 */ BL sprite_handler_get_mem_id \n\
 /* 0800A176 */ MOV SB, R0 \n\
 /* 0800A178 */ LDR R4, [R5] \n\
-/* 0800A17A */ BL func_0800A088 \n\
+/* 0800A17A */ BL get_current_mem_id \n\
 /* 0800A17E */ ADDS R1, R0, #0 \n\
 /* 0800A180 */ ADDS R0, R4, #0 \n\
 /* 0800A182 */ BL sprite_handler_set_mem_id \n\

@@ -8,7 +8,7 @@ glabel func_0801E574
 /* 0801E574 */ PUSH {R4, R5, R6, LR}
 /* 0801E576 */ SUB SP, #8
 /* 0801E578 */ ADDS R5, R0, #0
-/* 0801E57A */ BL func_0800A088
+/* 0801E57A */ BL get_current_mem_id
 /* 0801E57E */ LSLS R0, R0, #0X10
 /* 0801E580 */ LSRS R0, R0, #0X10
 /* 0801E582 */ LSLS R6, R5, #0X18
@@ -21,7 +21,7 @@ glabel func_0801E574
 /* 0801E590 */ ADDS R1, R6, #0
 /* 0801E592 */ MOVS R2, #0X10
 /* 0801E594 */ BL start_pal_interp_pal_col_task
-/* 0801E598 */ BL func_0800A088
+/* 0801E598 */ BL get_current_mem_id
 /* 0801E59C */ LSLS R0, R0, #0X10
 /* 0801E59E */ LSRS R0, R0, #0X10
 /* 0801E5A0 */ LDR R3, =D_083366B4

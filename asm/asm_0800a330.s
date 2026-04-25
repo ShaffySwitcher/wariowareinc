@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_0800A330
+glabel scene_set_current_thread
 .thumb_func
 /* 0800A330 */ PUSH {R4, R5, R6, LR}
 /* 0800A332 */ ADDS R6, R0, #0
@@ -20,7 +20,7 @@ glabel func_0800A330
 /* 0800A348 */ STRB R0, [R5, #1]
 /* 0800A34A */ LDR R0, _0800A380
 /* 0800A34C */ LDR R4, [R0]
-/* 0800A34E */ BL func_0800A088
+/* 0800A34E */ BL get_current_mem_id
 /* 0800A352 */ ADDS R1, R0, #0
 /* 0800A354 */ ADDS R0, R4, #0
 /* 0800A356 */ BL sprite_handler_set_mem_id

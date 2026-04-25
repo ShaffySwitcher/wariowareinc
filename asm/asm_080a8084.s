@@ -386,7 +386,7 @@ _080A8312:
 /* 080A839A */ ADDS R2, R4, #0
 /* 080A839C */ BL sprite_set_base_tile
 /* 080A83A0 */ LDR R4, [R6]
-/* 080A83A2 */ BL func_0800A088
+/* 080A83A2 */ BL get_current_mem_id
 /* 080A83A6 */ ADDS R1, R0, #0
 /* 080A83A8 */ ADDS R0, R4, #0
 /* 080A83AA */ MOVS R2, #0

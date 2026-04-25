@@ -10,7 +10,7 @@ glabel func_0808CF24
 /* 0808CF28 */ LSLS R4, R1, #0X10
 /* 0808CF2A */ LSRS R4, R4, #0X10
 /* 0808CF2C */ MOVS R0, #1
-/* 0808CF2E */ BL func_0800A330
+/* 0808CF2E */ BL scene_set_current_thread
 /* 0808CF32 */ LSLS R4, R4, #0X10
 /* 0808CF34 */ ASRS R4, R4, #0X10
 /* 0808CF36 */ ADDS R0, R5, #0

@@ -10,7 +10,7 @@ glabel func_0801E71C
 /* 0801E720 */ PUSH {R6}
 /* 0801E722 */ SUB SP, #8
 /* 0801E724 */ MOV R8, R0
-/* 0801E726 */ BL func_0800A088
+/* 0801E726 */ BL get_current_mem_id
 /* 0801E72A */ ADDS R4, R0, #0
 /* 0801E72C */ LSLS R4, R4, #0X10
 /* 0801E72E */ LSRS R4, R4, #0X10
@@ -35,7 +35,7 @@ glabel func_0801E71C
 /* 0801E756 */ ADDS R0, R4, #0
 /* 0801E758 */ MOVS R2, #0X10
 /* 0801E75A */ BL start_pal_interp_pal_pal_task
-/* 0801E75E */ BL func_0800A088
+/* 0801E75E */ BL get_current_mem_id
 /* 0801E762 */ ADDS R4, R0, #0
 /* 0801E764 */ LSLS R4, R4, #0X10
 /* 0801E766 */ LSRS R4, R4, #0X10

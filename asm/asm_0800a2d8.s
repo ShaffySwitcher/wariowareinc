@@ -28,7 +28,7 @@ glabel func_0800A2D8
 /* 0800A300 */ STR R2, [SP, #8]
 /* 0800A302 */ STR R3, [SP, #0XC]
 /* 0800A304 */ STR R7, [SP, #0X10]
-/* 0800A306 */ BL func_0800A088
+/* 0800A306 */ BL get_current_mem_id
 /* 0800A30A */ LSLS R0, R0, #0X10
 /* 0800A30C */ LSRS R0, R0, #0X10
 /* 0800A30E */ LDR R1, =D_083A4AF0

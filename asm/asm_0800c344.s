@@ -36,7 +36,7 @@ glabel func_0800C344
 /* 0800C37C */ STRH R4, [R0, #0XE]
 /* 0800C37E */ MOV R1, SL
 /* 0800C380 */ STRH R1, [R0, #0X10]
-/* 0800C382 */ BL func_0800A088
+/* 0800C382 */ BL get_current_mem_id
 /* 0800C386 */ LSLS R0, R0, #0X10
 /* 0800C388 */ LSRS R0, R0, #0X10
 /* 0800C38A */ LDR R1, =D_083A4AC0

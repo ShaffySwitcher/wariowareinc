@@ -12,7 +12,7 @@ glabel func_08029ADC
 /* 08029AE4 */ PUSH {R5, R6, R7}
 /* 08029AE6 */ SUB SP, #0X14
 /* 08029AE8 */ MOVS R0, #1
-/* 08029AEA */ BL func_0800A330
+/* 08029AEA */ BL scene_set_current_thread
 /* 08029AEE */ MOVS R6, #0
 /* 08029AF0 */ MOVS R5, #0
 /* 08029AF2 */ MOVS R0, #0X80

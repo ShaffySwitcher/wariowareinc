@@ -194,14 +194,14 @@ _08017C14:
 /* 08017C76 */ MOVS R2, #0
 /* 08017C78 */ BL sprite_set_visible
 /* 08017C7C */ LDR R4, [R4]
-/* 08017C7E */ BL func_0800A088
+/* 08017C7E */ BL get_current_mem_id
 /* 08017C82 */ ADDS R1, R0, #0
 /* 08017C84 */ ADDS R0, R4, #0
 /* 08017C86 */ MOVS R2, #0XC
 /* 08017C88 */ BL func_080EFA2C
 /* 08017C8C */ MOV R3, SL
 /* 08017C8E */ LDR R4, [R3]
-/* 08017C90 */ BL func_0800A088
+/* 08017C90 */ BL get_current_mem_id
 /* 08017C94 */ ADDS R1, R0, #0
 /* 08017C96 */ MOVS R2, #0XC0
 /* 08017C98 */ LSLS R2, R2, #2
@@ -414,7 +414,7 @@ _08017D44:
 /* 08017E5A */ MOVS R2, #0XC
 /* 08017E5C */ BL sprite_set_base_palette
 /* 08017E60 */ LDR R4, [R5]
-/* 08017E62 */ BL func_0800A088
+/* 08017E62 */ BL get_current_mem_id
 /* 08017E66 */ ADDS R1, R0, #0
 /* 08017E68 */ LDR R0, _08017EE0
 /* 08017E6A */ MOV R8, R0

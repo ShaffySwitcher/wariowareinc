@@ -11,7 +11,7 @@ glabel func_08052D88
 /* 08052D8E */ SUB SP, #0XC
 /* 08052D90 */ MOV R8, R0
 /* 08052D92 */ MOVS R0, #1
-/* 08052D94 */ BL func_0800A330
+/* 08052D94 */ BL scene_set_current_thread
 /* 08052D98 */ LDR R4, _08052DE8
 /* 08052D9A */ LDR R1, [R4]
 /* 08052D9C */ MOVS R5, #0

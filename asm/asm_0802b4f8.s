@@ -17,7 +17,7 @@ glabel func_0802B4F8
 /* 0802B50A */ LSLS R1, R1, #1
 /* 0802B50C */ ADDS R0, R1
 /* 0802B50E */ LDRB R4, [R0]
-/* 0802B510 */ BL func_0800A088
+/* 0802B510 */ BL get_current_mem_id
 /* 0802B514 */ LSLS R0, R0, #0X10
 /* 0802B516 */ LSRS R0, R0, #0X10
 /* 0802B518 */ LDR R1, _0802B6CC

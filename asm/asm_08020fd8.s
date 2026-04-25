@@ -7,7 +7,7 @@
 glabel func_08020FD8
 /* 08020FD8 */ PUSH {R4, R5, LR}
 /* 08020FDA */ SUB SP, #0X54
-/* 08020FDC */ BL func_0800A088
+/* 08020FDC */ BL get_current_mem_id
 /* 08020FE0 */ LSLS R0, R0, #0X10
 /* 08020FE2 */ LSRS R0, R0, #0X10
 /* 08020FE4 */ LDR R1, _0802105C
@@ -30,7 +30,7 @@ glabel func_08020FD8
 /* 0802100C */ STRH R1, [R0]
 /* 0802100E */ ADDS R0, #0X54
 /* 08021010 */ STRH R1, [R0]
-/* 08021012 */ BL func_0800A088
+/* 08021012 */ BL get_current_mem_id
 /* 08021016 */ LSLS R0, R0, #0X10
 /* 08021018 */ LSRS R0, R0, #0X10
 /* 0802101A */ LDR R1, _08021068

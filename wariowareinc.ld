@@ -411,15 +411,6 @@ SECTIONS {
         build/asm/asm_0800db5c.s.o(.text*);
         build/asm/asm_0800dba0.s.o(.text*);
         build/src/scenes/title.c.o(.text);
-        build/asm/asm_0800dc9c.s.o(.text*);
-        build/asm/asm_0800dcb8.s.o(.text*);
-        build/asm/asm_0800dd40.s.o(.text*);
-        build/asm/asm_0800ddf4.s.o(.text*);
-        build/asm/asm_0800ddf8.s.o(.text*);
-        build/asm/asm_0800de14.s.o(.text*);
-        build/asm/asm_0800de24.s.o(.text*);
-        build/asm/asm_0800de84.s.o(.text*);
-        build/asm/asm_0800dee8.s.o(.text*);
         build/asm/asm_0800e5cc.s.o(.text*);
         build/asm/asm_0800e6f8.s.o(.text*);
         build/asm/asm_0800e760.s.o(.text*);
@@ -5609,11 +5600,13 @@ SECTIONS {
         build/asm/asm_080f60b0.s.o(.text*);
         build/asm/asm_080f60fc.s.o(.text*);
         build/bin/data_080F6140.bin.o(.rodata*);
+        build/graphics/generic_pal.c.o(.data);
+        build/bin/data_080F6BAC.bin.o(.rodata*);
         build/audio/sample_table.json.s.o(.rodata);
         build/bin/data_0830B500.bin.o(.rodata*);
         build/graphics/title/title_pal.c.o(.data);
         build/bin/data_0830C3B0.bin.o(.rodata*);
-        build/src/scenes/data.c.o(.data);
+        build/data/scenes.c.o(.data);
         build/bin/data_083A3D94.bin.o(.rodata*);
 
         build/data/math_tables.c.o(.data);

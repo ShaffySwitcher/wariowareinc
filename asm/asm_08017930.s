@@ -7,14 +7,14 @@
 glabel func_08017930
 /* 08017930 */ PUSH {LR}
 /* 08017932 */ SUB SP, #0X54
-/* 08017934 */ BL func_0800A088
+/* 08017934 */ BL get_current_mem_id
 /* 08017938 */ LSLS R0, R0, #0X10
 /* 0801793A */ LSRS R0, R0, #0X10
 /* 0801793C */ LDR R1, _08017998
 /* 0801793E */ MOVS R2, #0X80
 /* 08017940 */ LSLS R2, R2, #5
 /* 08017942 */ BL start_load_gfx_table_task
-/* 08017946 */ BL func_0800A088
+/* 08017946 */ BL get_current_mem_id
 /* 0801794A */ LSLS R0, R0, #0X10
 /* 0801794C */ LSRS R0, R0, #0X10
 /* 0801794E */ LDR R1, _0801799C

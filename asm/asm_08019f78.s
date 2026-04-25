@@ -37,7 +37,7 @@ _08019FA0:
 _08019FA4:
 /* 08019FA4 */ LDR R7, _08019FF0
 _08019FA6:
-/* 08019FA6 */ BL func_0800A088
+/* 08019FA6 */ BL get_current_mem_id
 /* 08019FAA */ LSLS R0, R0, #0X10
 /* 08019FAC */ LSRS R0, R0, #0X10
 /* 08019FAE */ LDR R6, _08019FF4
@@ -52,7 +52,7 @@ _08019FA6:
 /* 08019FC0 */ MOVS R1, #0X20
 /* 08019FC2 */ MOVS R2, #0XC
 /* 08019FC4 */ BL start_pal_interp_pal_pal_task
-/* 08019FC8 */ BL func_0800A088
+/* 08019FC8 */ BL get_current_mem_id
 /* 08019FCC */ LSLS R0, R0, #0X10
 /* 08019FCE */ LSRS R0, R0, #0X10
 /* 08019FD0 */ LDR R1, [R6]

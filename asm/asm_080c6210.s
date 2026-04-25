@@ -12,7 +12,7 @@ glabel func_080C6210
 /* 080C6218 */ SUB SP, #8
 /* 080C621A */ MOV SB, R0
 /* 080C621C */ MOVS R0, #1
-/* 080C621E */ BL func_0800A330
+/* 080C621E */ BL scene_set_current_thread
 /* 080C6222 */ MOV R0, SB
 /* 080C6224 */ CMP R0, #0
 /* 080C6226 */ BNE _080C6258

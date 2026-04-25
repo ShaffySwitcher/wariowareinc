@@ -11,14 +11,14 @@ glabel func_0801E5C8
 /* 0801E5CE */ MOV R4, R8
 /* 0801E5D0 */ PUSH {R4, R5, R6}
 /* 0801E5D2 */ SUB SP, #0X54
-/* 0801E5D4 */ BL func_0800A088
+/* 0801E5D4 */ BL get_current_mem_id
 /* 0801E5D8 */ LSLS R0, R0, #0X10
 /* 0801E5DA */ LSRS R0, R0, #0X10
 /* 0801E5DC */ LDR R1, _0801E6D4
 /* 0801E5DE */ MOVS R2, #0X80
 /* 0801E5E0 */ LSLS R2, R2, #5
 /* 0801E5E2 */ BL start_load_gfx_table_task
-/* 0801E5E6 */ BL func_0800A088
+/* 0801E5E6 */ BL get_current_mem_id
 /* 0801E5EA */ LSLS R0, R0, #0X10
 /* 0801E5EC */ LSRS R0, R0, #0X10
 /* 0801E5EE */ LDR R1, _0801E6D8

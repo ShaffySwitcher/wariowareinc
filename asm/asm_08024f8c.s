@@ -20,7 +20,7 @@ glabel func_08024F8C
 /* 08024FA6 */ ADDS R7, R6, R0
 /* 08024FA8 */ CMP R4, #0
 /* 08024FAA */ BEQ _08024FF0
-/* 08024FAC */ BL func_0800A088
+/* 08024FAC */ BL get_current_mem_id
 /* 08024FB0 */ LSLS R0, R0, #0X10
 /* 08024FB2 */ LSRS R0, R0, #0X10
 /* 08024FB4 */ LSLS R4, R4, #0X18
@@ -32,7 +32,7 @@ glabel func_08024F8C
 /* 08024FC0 */ MOVS R2, #0X10
 /* 08024FC2 */ MOVS R3, #0
 /* 08024FC4 */ BL start_pal_interp_col_pal_task
-/* 08024FC8 */ BL func_0800A088
+/* 08024FC8 */ BL get_current_mem_id
 /* 08024FCC */ LSLS R0, R0, #0X10
 /* 08024FCE */ LSRS R0, R0, #0X10
 /* 08024FD0 */ LDR R1, _08024FEC

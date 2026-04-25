@@ -8,7 +8,7 @@ glabel func_080205B8
 /* 080205B8 */ PUSH {R4, LR}
 /* 080205BA */ LDR R0, =gSpriteHandler
 /* 080205BC */ LDR R4, [R0]
-/* 080205BE */ BL func_0800A088
+/* 080205BE */ BL get_current_mem_id
 /* 080205C2 */ ADDS R1, R0, #0
 /* 080205C4 */ ADDS R0, R4, #0
 /* 080205C6 */ MOVS R2, #0

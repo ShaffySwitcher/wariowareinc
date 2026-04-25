@@ -10,7 +10,7 @@ glabel func_080D6198
 /* 080D619C */ PUSH {R6}
 /* 080D619E */ SUB SP, #4
 /* 080D61A0 */ MOVS R0, #1
-/* 080D61A2 */ BL func_0800A330
+/* 080D61A2 */ BL scene_set_current_thread
 /* 080D61A6 */ LDR R6, _080D6200
 /* 080D61A8 */ LDR R4, [R6]
 /* 080D61AA */ MOVS R0, #8

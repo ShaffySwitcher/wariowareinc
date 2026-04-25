@@ -13,7 +13,7 @@ glabel func_0800A240
 /* 0800A24A */ ADDS R6, R1, #0
 /* 0800A24C */ MOV R8, R2
 /* 0800A24E */ ADDS R4, R3, #0
-/* 0800A250 */ BL func_0800A088
+/* 0800A250 */ BL get_current_mem_id
 /* 0800A254 */ LSLS R0, R0, #0X10
 /* 0800A256 */ LSRS R0, R0, #0X10
 /* 0800A258 */ STR R4, [SP]

@@ -12,7 +12,7 @@ glabel func_080626D0
 /* 080626D8 */ LDR R1, _08062760
 /* 080626DA */ ADDS R0, R1
 /* 080626DC */ LDRB R4, [R0]
-/* 080626DE */ BL func_0800A088
+/* 080626DE */ BL get_current_mem_id
 /* 080626E2 */ LSLS R0, R0, #0X10
 /* 080626E4 */ LSRS R0, R0, #0X10
 /* 080626E6 */ LDR R5, _08062764
@@ -23,7 +23,7 @@ glabel func_080626D0
 /* 080626F0 */ MOVS R2, #3
 /* 080626F2 */ MOVS R3, #0
 /* 080626F4 */ BL start_pal_interp_col_pal_task
-/* 080626F8 */ BL func_0800A088
+/* 080626F8 */ BL get_current_mem_id
 /* 080626FC */ LSLS R0, R0, #0X10
 /* 080626FE */ LSRS R0, R0, #0X10
 /* 08062700 */ ADDS R4, #7
@@ -38,7 +38,7 @@ glabel func_080626D0
 /* 08062712 */ MOVS R2, #1
 /* 08062714 */ MOVS R3, #0
 /* 08062716 */ BL start_pal_interp_col_pal_task
-/* 0806271A */ BL func_0800A088
+/* 0806271A */ BL get_current_mem_id
 /* 0806271E */ LSLS R0, R0, #0X10
 /* 08062720 */ LSRS R0, R0, #0X10
 /* 08062722 */ ADDS R1, R5, #0
@@ -51,7 +51,7 @@ glabel func_080626D0
 /* 08062730 */ MOVS R2, #6
 /* 08062732 */ MOVS R3, #0
 /* 08062734 */ BL start_pal_interp_col_pal_task
-/* 08062738 */ BL func_0800A088
+/* 08062738 */ BL get_current_mem_id
 /* 0806273C */ LSLS R0, R0, #0X10
 /* 0806273E */ LSRS R0, R0, #0X10
 /* 08062740 */ STR R5, [SP]

@@ -8,7 +8,7 @@ glabel func_080A8418
 /* 080A8418 */ PUSH {R4, LR}
 /* 080A841A */ LDR R0, =gSpriteHandler
 /* 080A841C */ LDR R4, [R0]
-/* 080A841E */ BL func_0800A088
+/* 080A841E */ BL get_current_mem_id
 /* 080A8422 */ ADDS R1, R0, #0
 /* 080A8424 */ ADDS R0, R4, #0
 /* 080A8426 */ MOVS R2, #0

@@ -9,7 +9,7 @@ glabel func_080D33BC
 /* 080D33BE */ SUB SP, #0XC
 /* 080D33C0 */ ADDS R5, R0, #0
 /* 080D33C2 */ MOVS R0, #1
-/* 080D33C4 */ BL func_0800A330
+/* 080D33C4 */ BL scene_set_current_thread
 /* 080D33C8 */ MOVS R4, #0
 /* 080D33CA */ STRB R4, [R5, #0X1C]
 /* 080D33CC */ LDR R0, _080D3430

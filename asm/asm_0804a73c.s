@@ -10,7 +10,7 @@ glabel func_0804A73C
 /* 0804A740 */ LSLS R4, R1, #0X10
 /* 0804A742 */ LSRS R4, R4, #0X10
 /* 0804A744 */ MOVS R0, #1
-/* 0804A746 */ BL func_0800A330
+/* 0804A746 */ BL scene_set_current_thread
 /* 0804A74A */ LSLS R4, R4, #0X10
 /* 0804A74C */ ASRS R4, R4, #0X10
 /* 0804A74E */ ADDS R0, R5, #0

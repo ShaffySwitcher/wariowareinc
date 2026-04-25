@@ -117,7 +117,7 @@ _080A9436:
 /* 080A943C */ ANDS R0, R1
 /* 080A943E */ CMP R0, #0
 /* 080A9440 */ BEQ _080A94A8
-/* 080A9442 */ BL func_0800A088
+/* 080A9442 */ BL get_current_mem_id
 /* 080A9446 */ LSLS R0, R0, #0X10
 /* 080A9448 */ LSRS R0, R0, #0X10
 /* 080A944A */ LDR R5, _080A94B4
@@ -131,7 +131,7 @@ _080A9436:
 /* 080A945A */ MOVS R1, #0X30
 /* 080A945C */ MOVS R2, #7
 /* 080A945E */ BL start_pal_interp_pal_col_task
-/* 080A9462 */ BL func_0800A088
+/* 080A9462 */ BL get_current_mem_id
 /* 080A9466 */ LSLS R0, R0, #0X10
 /* 080A9468 */ LSRS R0, R0, #0X10
 /* 080A946A */ LDR R1, [R5]
@@ -145,7 +145,7 @@ _080A9436:
 /* 080A947A */ MOVS R1, #0X30
 /* 080A947C */ MOVS R2, #7
 /* 080A947E */ BL start_pal_interp_pal_col_task
-/* 080A9482 */ BL func_0800A088
+/* 080A9482 */ BL get_current_mem_id
 /* 080A9486 */ LSLS R0, R0, #0X10
 /* 080A9488 */ LSRS R0, R0, #0X10
 /* 080A948A */ LDR R1, _080A94BC

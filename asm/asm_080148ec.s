@@ -7,7 +7,7 @@
 glabel func_080148EC
 /* 080148EC */ PUSH {R4, R5, LR}
 /* 080148EE */ SUB SP, #0X14
-/* 080148F0 */ BL func_0800A088
+/* 080148F0 */ BL get_current_mem_id
 /* 080148F4 */ LSLS R0, R0, #0X10
 /* 080148F6 */ LSRS R0, R0, #0X10
 /* 080148F8 */ LDR R5, _08014938

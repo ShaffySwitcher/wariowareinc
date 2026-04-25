@@ -46,7 +46,7 @@ glabel func_0801BFE4
 /* 0801C03A */ STRH R1, [R2]
 /* 0801C03C */ ADDS R0, #0X46
 /* 0801C03E */ STRH R5, [R0]
-/* 0801C040 */ BL func_0800A088
+/* 0801C040 */ BL get_current_mem_id
 /* 0801C044 */ LSLS R0, R0, #0X10
 /* 0801C046 */ LSRS R0, R0, #0X10
 /* 0801C048 */ MOVS R1, #0X50

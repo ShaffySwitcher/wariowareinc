@@ -11,7 +11,7 @@ glabel func_080D34D0
 /* 080D34D6 */ LSLS R4, R1, #0X10
 /* 080D34D8 */ LSRS R4, R4, #0X10
 /* 080D34DA */ MOVS R0, #1
-/* 080D34DC */ BL func_0800A330
+/* 080D34DC */ BL scene_set_current_thread
 /* 080D34E0 */ LSLS R4, R4, #0X10
 /* 080D34E2 */ ASRS R4, R4, #0X10
 /* 080D34E4 */ ADDS R0, R5, #0

@@ -380,7 +380,7 @@ void gameplay_stage_init(void) {
     gGameplayData.unk278 = 0;
     gGameplayData.currentScore = 0;
     gGameplayData.unk17e = 0;
-    func_0800A330(0);
+    scene_set_current_thread(0);
     if (unk4->unk0 != 0) {
         unk4->unk0(&D_030049F0);
     }
@@ -848,7 +848,7 @@ u32 gameplay_run_script(void) {
 
 void func_0800A160(struct Animation* anim, struct Vector2* pos) {
     u32 memID = sprite_handler_get_mem_id(gSpriteHandler);
-    sprite_handler_set_mem_id(gSpriteHandler, func_0800A088());
+    sprite_handler_set_mem_id(gSpriteHandler, get_current_mem_id());
 
     gGameplayData.unk1ee = sprite_create(gSpriteHandler, anim, 0, pos->x, pos->y, 0x40, 0, 0, 0);
     

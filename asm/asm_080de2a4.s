@@ -12,7 +12,7 @@ glabel func_080DE2A4
 /* 080DE2AC */ ADDS R4, R0, #0
 /* 080DE2AE */ LSLS R4, R4, #0X10
 /* 080DE2B0 */ LSRS R4, R4, #0X10
-/* 080DE2B2 */ BL func_0800A088
+/* 080DE2B2 */ BL get_current_mem_id
 /* 080DE2B6 */ LSLS R0, R0, #0X10
 /* 080DE2B8 */ LSRS R0, R0, #0X10
 /* 080DE2BA */ LSLS R4, R4, #0X18
@@ -26,7 +26,7 @@ glabel func_080DE2A4
 /* 080DE2CA */ MOVS R3, #0
 /* 080DE2CC */ BL start_pal_interp_col_pal_task
 /* 080DE2D0 */ MOV R8, R0
-/* 080DE2D2 */ BL func_0800A088
+/* 080DE2D2 */ BL get_current_mem_id
 /* 080DE2D6 */ LSLS R0, R0, #0X10
 /* 080DE2D8 */ LSRS R0, R0, #0X10
 /* 080DE2DA */ STR R6, [SP]

@@ -21,7 +21,7 @@ glabel func_080140C0
 /* 080140DA */ MOVS R2, #0
 /* 080140DC */ MOVS R3, #0
 /* 080140DE */ BL func_0800BF7C
-/* 080140E2 */ BL func_0800A088
+/* 080140E2 */ BL get_current_mem_id
 /* 080140E6 */ LSLS R0, R0, #0X10
 /* 080140E8 */ LSRS R0, R0, #0X10
 /* 080140EA */ LDR R1, _080141A4
@@ -70,7 +70,7 @@ glabel func_080140C0
 /* 08014146 */ ADDS R0, R1
 /* 08014148 */ LDR R0, [R0]
 /* 0801414A */ STR R0, [R3]
-/* 0801414C */ BL func_0800A088
+/* 0801414C */ BL get_current_mem_id
 /* 08014150 */ ADDS R4, R0, #0
 /* 08014152 */ LSLS R4, R4, #0X10
 /* 08014154 */ LSRS R4, R4, #0X10

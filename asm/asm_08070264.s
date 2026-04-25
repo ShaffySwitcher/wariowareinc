@@ -67,7 +67,7 @@ _080702A8:
 /* 080702C2 */ MOVS R2, #1
 /* 080702C4 */ BL sprite_set_enable_updates
 /* 080702C8 */ MOVS R6, #0
-/* 080702CA */ BL func_0800A088
+/* 080702CA */ BL get_current_mem_id
 /* 080702CE */ LSLS R0, R0, #0X10
 /* 080702D0 */ LSRS R0, R0, #0X10
 /* 080702D2 */ LDR R5, _0807030C
@@ -78,7 +78,7 @@ _080702A8:
 /* 080702DC */ MOVS R2, #1
 /* 080702DE */ ADDS R3, R5, #0
 /* 080702E0 */ BL start_pal_interp_pal_col_task
-/* 080702E4 */ BL func_0800A088
+/* 080702E4 */ BL get_current_mem_id
 /* 080702E8 */ LSLS R0, R0, #0X10
 /* 080702EA */ LSRS R0, R0, #0X10
 /* 080702EC */ STR R6, [SP]
@@ -193,7 +193,7 @@ _08070384:
 /* 080703BC */ LDR R1, [R4]
 /* 080703BE */ MOVS R0, #3
 /* 080703C0 */ STRB R0, [R1, #1]
-/* 080703C2 */ BL func_0800A088
+/* 080703C2 */ BL get_current_mem_id
 /* 080703C6 */ LSLS R0, R0, #0X10
 /* 080703C8 */ LSRS R0, R0, #0X10
 /* 080703CA */ LDR R5, _08070404
@@ -204,7 +204,7 @@ _08070384:
 /* 080703D4 */ MOVS R2, #1
 /* 080703D6 */ MOVS R3, #0
 /* 080703D8 */ BL start_pal_interp_col_pal_task
-/* 080703DC */ BL func_0800A088
+/* 080703DC */ BL get_current_mem_id
 /* 080703E0 */ LSLS R0, R0, #0X10
 /* 080703E2 */ LSRS R0, R0, #0X10
 /* 080703E4 */ STR R5, [SP]

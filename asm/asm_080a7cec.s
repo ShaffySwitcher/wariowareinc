@@ -37,7 +37,7 @@ glabel func_080A7CEC
 /* 080A7D2C */ LDR R5, _080A7DE8
 _080A7D2E:
 /* 080A7D2E */ STR R5, [R1, #8]
-/* 080A7D30 */ BL func_0800A088
+/* 080A7D30 */ BL get_current_mem_id
 /* 080A7D34 */ LSLS R0, R0, #0X10
 /* 080A7D36 */ LSRS R0, R0, #0X10
 /* 080A7D38 */ ADDS R5, #0X20
@@ -48,7 +48,7 @@ _080A7D2E:
 /* 080A7D42 */ MOVS R2, #7
 /* 080A7D44 */ MOVS R3, #0
 /* 080A7D46 */ BL start_pal_interp_col_pal_task
-/* 080A7D4A */ BL func_0800A088
+/* 080A7D4A */ BL get_current_mem_id
 /* 080A7D4E */ LSLS R0, R0, #0X10
 /* 080A7D50 */ LSRS R0, R0, #0X10
 /* 080A7D52 */ STR R5, [SP]

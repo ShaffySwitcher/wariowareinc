@@ -149,21 +149,21 @@ void pal_interp_init_masked(struct PaletteInterpolator *task, u32 duration, cons
     switch (sourceType) {
         case SOURCE_TYPE_PAL_PAL:
             task->sourceA = sourceVar;
-            task->sourceB = D_080F67AC;
+            task->sourceB = gBlackPalette;
             break;
 
         case SOURCE_TYPE_PAL_PAL_2:
-            task->sourceA = D_080F67AC;
+            task->sourceA = gBlackPalette;
             task->sourceB = sourceVar;
             break;
 
         case SOURCE_TYPE_COL_PAL:
             task->sourceA = sourceVar;
-            task->sourceB = D_080F69AC;
+            task->sourceB = gWhitePalette;
             break;
 
         case SOURCE_TYPE_PAL_COL:
-            task->sourceA = D_080F69AC;
+            task->sourceA = gWhitePalette;
             task->sourceB = sourceVar;
             break;
     }

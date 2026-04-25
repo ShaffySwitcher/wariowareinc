@@ -50,7 +50,7 @@ glabel func_08014FF8
 /* 08015050 */ ADDS R4, #1
 /* 08015052 */ LSLS R4, R4, #0X10
 /* 08015054 */ LSRS R4, R4, #0X10
-/* 08015056 */ BL func_0800A088
+/* 08015056 */ BL get_current_mem_id
 /* 0801505A */ LSLS R0, R0, #0X10
 /* 0801505C */ LSRS R0, R0, #0X10
 /* 0801505E */ MOV R1, SL
@@ -233,7 +233,7 @@ _080151C8:
 /* 080151CA */ ADD R0, IP
 /* 080151CC */ MOVS R1, #0
 /* 080151CE */ STR R1, [R0, #4]
-/* 080151D0 */ BL func_0800A088
+/* 080151D0 */ BL get_current_mem_id
 /* 080151D4 */ LSLS R0, R0, #0X10
 /* 080151D6 */ LSRS R0, R0, #0X10
 /* 080151D8 */ LDR R1, =gSpriteHandler

@@ -34,7 +34,7 @@ _08002F26:
 
 .balign 4, 0
 _08002F2C:
-/* 08002F2C */ .word D_080F67AC
+/* 08002F2C */ .word gBlackPalette
 _08002F30:
 /* 08002F30 */ LDR R5, _08002F38
 /* 08002F32 */ LDR R7, [R1]
@@ -43,7 +43,7 @@ _08002F30:
 
 .balign 4, 0
 _08002F38:
-/* 08002F38 */ .word D_080F67AC
+/* 08002F38 */ .word gBlackPalette
 _08002F3C:
 /* 08002F3C */ LDR R5, [R1]
 /* 08002F3E */ LDR R0, _08002F44
@@ -52,9 +52,9 @@ _08002F3C:
 
 .balign 4, 0
 _08002F44:
-/* 08002F44 */ .word D_080F69AC
+/* 08002F44 */ .word gWhitePalette
 _08002F48:
-/* 08002F48 */ LDR R5, =D_080F69AC
+/* 08002F48 */ LDR R5, =gWhitePalette
 /* 08002F4A */ LDR R3, [R1]
 _08002F4C:
 /* 08002F4C */ MOV SB, R3

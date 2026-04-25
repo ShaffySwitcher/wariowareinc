@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_080A7C08
 /* 080A7C08 */ PUSH {LR}
-/* 080A7C0A */ BL func_0800A088
+/* 080A7C0A */ BL get_current_mem_id
 /* 080A7C0E */ LSLS R0, R0, #0X10
 /* 080A7C10 */ LSRS R0, R0, #0X10
 /* 080A7C12 */ BL func_08005A1C
@@ -16,7 +16,7 @@ glabel func_080A7C08
 /* 080A7C20 */ MOVS R0, #3
 /* 080A7C22 */ BL func_0800BF20
 /* 080A7C26 */ BL func_0800418C
-/* 080A7C2A */ BL func_0800A088
+/* 080A7C2A */ BL get_current_mem_id
 /* 080A7C2E */ LSLS R0, R0, #0X10
 /* 080A7C30 */ LSRS R0, R0, #0X10
 /* 080A7C32 */ LDR R1, _080A7C50
