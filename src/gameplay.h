@@ -197,8 +197,6 @@ extern u32 gameplay_check_collision(struct Vector2 *, struct Rect *, struct Vect
 extern void gameplay_init_scene(void);
 extern void func_08008798(void);
 extern void func_08008940(void);
-extern u8 sprite_get_data(void*, s32, u32);
-extern void sprite_set_visible(void*, s32, u32);
 extern void func_08001B70(u32);
 extern void func_08003E64(void);
 extern void func_08005A1C(u16);
@@ -233,7 +231,6 @@ extern void func_0800A200(u32);
 extern void func_0800A270(void);
 extern void func_0800CC9C(s32, s32);
 extern void func_0800CD94(s32, s32);
-extern void sprite_set_anim_cel(void *, s32, s32);
 extern void func_080EFA54(void *, u32);
 extern void func_08008130(void);
 extern void gameplay_stop_scene(void);

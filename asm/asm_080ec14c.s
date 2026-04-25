@@ -71,7 +71,7 @@ glabel func_080EC14C
 /* 080EC1D2 */ STR R6, [SP, #0XC]
 /* 080EC1D4 */ STR R6, [SP, #0X10]
 /* 080EC1D6 */ MOVS R2, #0
-/* 080EC1D8 */ BL func_080EEDE0
+/* 080EC1D8 */ BL sprite_create
 /* 080EC1DC */ LDR R1, [R5]
 /* 080EC1DE */ STRH R0, [R1, #0X10]
 /* 080EC1E0 */ LDR R0, _080EC21C

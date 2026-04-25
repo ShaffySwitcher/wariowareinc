@@ -21,7 +21,7 @@ glabel func_0807FFB4
 /* 0807FFD0 */ ADDS R0, R2
 /* 0807FFD2 */ STR R1, [R0]
 /* 0807FFD4 */ LDR R0, [R5]
-/* 0807FFD6 */ BL func_080EF9B4
+/* 0807FFD6 */ BL sprite_handler_set_mem_id
 /* 0807FFDA */ LDR R2, [R6]
 /* 0807FFDC */ ADDS R7, R2, #0
 /* 0807FFDE */ ADDS R7, #0X34
@@ -45,7 +45,7 @@ glabel func_0807FFB4
 /* 08080002 */ STR R4, [SP, #0XC]
 /* 08080004 */ STR R4, [SP, #0X10]
 /* 08080006 */ MOVS R2, #0
-/* 08080008 */ BL func_080EEDE0
+/* 08080008 */ BL sprite_create
 /* 0808000C */ STRH R0, [R7, #0XC]
 /* 0808000E */ LDR R3, [R6]
 /* 08080010 */ MOV SL, R3
@@ -63,7 +63,7 @@ glabel func_0807FFB4
 /* 08080028 */ STR R4, [SP, #0X10]
 /* 0808002A */ MOVS R2, #0
 /* 0808002C */ MOVS R3, #0
-/* 0808002E */ BL func_080EEDE0
+/* 0808002E */ BL sprite_create
 /* 08080032 */ STRH R0, [R7, #0XC]
 /* 08080034 */ MOVS R5, #1
 /* 08080036 */ LDR R0, [R6]
@@ -132,7 +132,7 @@ _08080092:
 /* 080800B0 */ STR R3, [SP, #0XC]
 /* 080800B2 */ STR R3, [SP, #0X10]
 /* 080800B4 */ MOVS R2, #0
-/* 080800B6 */ BL func_080EEDE0
+/* 080800B6 */ BL sprite_create
 /* 080800BA */ STRH R0, [R7, #0XC]
 /* 080800BC */ MOVS R5, #1
 /* 080800BE */ LDR R0, [R4]
@@ -208,7 +208,7 @@ _08080126:
 /* 08080144 */ MOVS R2, #0
 /* 08080146 */ STR R2, [SP, #0XC]
 /* 08080148 */ STR R2, [SP, #0X10]
-/* 0808014A */ BL func_080EEDE0
+/* 0808014A */ BL sprite_create
 /* 0808014E */ STRH R0, [R4, #0XC]
 /* 08080150 */ ADDS R4, #0X10
 /* 08080152 */ ADDS R5, #1
@@ -242,7 +242,7 @@ _08080162:
 /* 08080188 */ STR R6, [SP, #0XC]
 /* 0808018A */ STR R6, [SP, #0X10]
 /* 0808018C */ MOVS R2, #0
-/* 0808018E */ BL func_080EEDE0
+/* 0808018E */ BL sprite_create
 /* 08080192 */ STRH R0, [R4, #0XC]
 /* 08080194 */ ADDS R4, #0X10
 /* 08080196 */ ADDS R5, #1
@@ -270,7 +270,7 @@ _08080162:
 /* 080801C2 */ STR R6, [SP, #0XC]
 /* 080801C4 */ STR R6, [SP, #0X10]
 /* 080801C6 */ MOVS R2, #0
-/* 080801C8 */ BL func_080EEDE0
+/* 080801C8 */ BL sprite_create
 /* 080801CC */ STRH R0, [R7, #0XC]
 /* 080801CE */ MOV R3, R8
 /* 080801D0 */ LDR R0, [R3]
@@ -296,7 +296,7 @@ _08080162:
 /* 080801FA */ STR R6, [SP, #0XC]
 /* 080801FC */ STR R6, [SP, #0X10]
 /* 080801FE */ MOVS R2, #0
-/* 08080200 */ BL func_080EEDE0
+/* 08080200 */ BL sprite_create
 /* 08080204 */ LDR R1, [R4]
 /* 08080206 */ MOVS R3, #0X88
 /* 08080208 */ LSLS R3, R3, #3

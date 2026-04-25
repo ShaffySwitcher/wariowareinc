@@ -9,7 +9,7 @@ glabel func_0800FDC8
 /* 0800FDCA */ LDR R0, _0800FDF0
 /* 0800FDCC */ LDR R0, [R0]
 /* 0800FDCE */ MOVS R1, #1
-/* 0800FDD0 */ BL func_080EF9B4
+/* 0800FDD0 */ BL sprite_handler_set_mem_id
 /* 0800FDD4 */ LDR R0, _0800FDF4
 /* 0800FDD6 */ LDR R2, [R0]
 /* 0800FDD8 */ LDR R1, _0800FDF8

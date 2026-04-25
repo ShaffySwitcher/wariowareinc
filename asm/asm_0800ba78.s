@@ -24,12 +24,12 @@ glabel func_0800BA78
 /* 0800BA9A */ LDR R3, _0800BB6C
 /* 0800BA9C */ MOV SL, R3
 /* 0800BA9E */ LDR R0, [R3]
-/* 0800BAA0 */ BL func_080EF9B8
+/* 0800BAA0 */ BL sprite_handler_get_mem_id
 /* 0800BAA4 */ STR R0, [SP, #0X14]
 /* 0800BAA6 */ MOV R6, SL
 /* 0800BAA8 */ LDR R0, [R6]
 /* 0800BAAA */ MOVS R1, #2
-/* 0800BAAC */ BL func_080EF9B4
+/* 0800BAAC */ BL sprite_handler_set_mem_id
 /* 0800BAB0 */ LDR R0, [R6]
 /* 0800BAB2 */ LDR R6, [R5]
 /* 0800BAB4 */ MOVS R7, #0XC0
@@ -53,7 +53,7 @@ glabel func_0800BA78
 /* 0800BAD8 */ STR R4, [SP, #0XC]
 /* 0800BADA */ STR R4, [SP, #0X10]
 /* 0800BADC */ MOVS R2, #0
-/* 0800BADE */ BL func_080EEDE0
+/* 0800BADE */ BL sprite_create
 /* 0800BAE2 */ LDR R1, [R5]
 /* 0800BAE4 */ MOVS R6, #0XC4
 /* 0800BAE6 */ LSLS R6, R6, #1
@@ -102,7 +102,7 @@ glabel func_0800BA78
 /* 0800BB42 */ BL sprite_set_visible
 /* 0800BB46 */ LDR R0, [R7]
 /* 0800BB48 */ LDR R1, [SP, #0X14]
-/* 0800BB4A */ BL func_080EF9B4
+/* 0800BB4A */ BL sprite_handler_set_mem_id
 /* 0800BB4E */ LDR R0, [R5]
 /* 0800BB50 */ LDR R3, _0800BB70
 /* 0800BB52 */ ADDS R0, R0, R3

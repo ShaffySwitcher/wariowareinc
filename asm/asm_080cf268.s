@@ -37,7 +37,7 @@ _080CF282:
 /* 080CF2A2 */ LDR R1, =D_08395C70
 /* 080CF2A4 */ MOVS R2, #0
 /* 080CF2A6 */ MOVS R3, #0
-/* 080CF2A8 */ BL func_080EEF0C
+/* 080CF2A8 */ BL sprite_create_w_attr
 /* 080CF2AC */ STRH R0, [R4, #4]
 /* 080CF2AE */ MOV R2, R8
 /* 080CF2B0 */ LDR R0, [R2]

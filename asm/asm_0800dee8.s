@@ -144,7 +144,7 @@ glabel func_0800DEE8
 /* 0800E01E */ STR R4, [SP, #0X10]
 /* 0800E020 */ MOVS R2, #0
 /* 0800E022 */ MOV R3, R8
-/* 0800E024 */ BL func_080EEDE0
+/* 0800E024 */ BL sprite_create
 /* 0800E028 */ LDR R1, [R6]
 /* 0800E02A */ MOVS R3, #0XAB
 /* 0800E02C */ LSLS R3, R3, #1
@@ -171,7 +171,7 @@ glabel func_0800DEE8
 /* 0800E058 */ STR R4, [SP, #0X10]
 /* 0800E05A */ ADDS R1, R2, #0
 /* 0800E05C */ MOVS R2, #0
-/* 0800E05E */ BL func_080EEDE0
+/* 0800E05E */ BL sprite_create
 /* 0800E062 */ LDR R1, [R6]
 /* 0800E064 */ MOVS R2, #0XAD
 /* 0800E066 */ LSLS R2, R2, #1
@@ -194,7 +194,7 @@ glabel func_0800DEE8
 /* 0800E088 */ STR R4, [SP, #0X10]
 /* 0800E08A */ MOVS R2, #0
 /* 0800E08C */ MOV R3, IP
-/* 0800E08E */ BL func_080EEDE0
+/* 0800E08E */ BL sprite_create
 /* 0800E092 */ LDR R2, [R6]
 /* 0800E094 */ MOVS R3, #0XAC
 /* 0800E096 */ LSLS R3, R3, #1
@@ -220,7 +220,7 @@ glabel func_0800DEE8
 /* 0800E0C0 */ STR R4, [SP, #0X10]
 /* 0800E0C2 */ ADDS R1, R2, #0
 /* 0800E0C4 */ MOVS R2, #0
-/* 0800E0C6 */ BL func_080EEDE0
+/* 0800E0C6 */ BL sprite_create
 /* 0800E0CA */ LDR R1, [R6]
 /* 0800E0CC */ MOVS R2, #0XAE
 /* 0800E0CE */ LSLS R2, R2, #1
@@ -242,7 +242,7 @@ glabel func_0800DEE8
 /* 0800E0EE */ STR R4, [SP, #0X10]
 /* 0800E0F0 */ MOVS R2, #1
 /* 0800E0F2 */ MOV R3, R8
-/* 0800E0F4 */ BL func_080EEDE0
+/* 0800E0F4 */ BL sprite_create
 /* 0800E0F8 */ LDR R1, [R6]
 /* 0800E0FA */ MOVS R3, #0XAF
 /* 0800E0FC */ LSLS R3, R3, #1
@@ -264,7 +264,7 @@ glabel func_0800DEE8
 /* 0800E11C */ STR R4, [SP, #0X10]
 /* 0800E11E */ MOVS R2, #1
 /* 0800E120 */ MOV R3, R8
-/* 0800E122 */ BL func_080EEDE0
+/* 0800E122 */ BL sprite_create
 /* 0800E126 */ LDR R0, [R6]
 /* 0800E128 */ LDR R0, [R0, #8]
 /* 0800E12A */ LDR R1, _0800E334
@@ -283,7 +283,7 @@ glabel func_0800DEE8
 /* 0800E146 */ ADDS R1, R2, #0
 /* 0800E148 */ MOVS R2, #0
 /* 0800E14A */ MOVS R3, #0
-/* 0800E14C */ BL func_080EEDE0
+/* 0800E14C */ BL sprite_create
 /* 0800E150 */ LDR R0, [R6]
 /* 0800E152 */ LDR R0, [R0, #8]
 /* 0800E154 */ LDR R1, _0800E338
@@ -304,7 +304,7 @@ glabel func_0800DEE8
 /* 0800E174 */ STR R4, [SP, #0X10]
 /* 0800E176 */ ADDS R1, R2, #0
 /* 0800E178 */ MOVS R2, #0
-/* 0800E17A */ BL func_080EEDE0
+/* 0800E17A */ BL sprite_create
 /* 0800E17E */ LDR R7, _0800E33C
 /* 0800E180 */ LDR R0, [R5]
 /* 0800E182 */ LDR R1, _0800E340
@@ -324,7 +324,7 @@ glabel func_0800DEE8
 /* 0800E19E */ STR R2, [SP, #0X10]
 /* 0800E1A0 */ MOVS R2, #0
 /* 0800E1A2 */ MOV R3, IP
-/* 0800E1A4 */ BL func_080EEDE0
+/* 0800E1A4 */ BL sprite_create
 /* 0800E1A8 */ LDR R1, [R6]
 /* 0800E1AA */ LDR R3, _0800E344
 /* 0800E1AC */ ADDS R1, R3
@@ -347,7 +347,7 @@ glabel func_0800DEE8
 /* 0800E1CE */ STR R2, [SP, #0X10]
 /* 0800E1D0 */ MOVS R2, #0
 /* 0800E1D2 */ MOV R3, IP
-/* 0800E1D4 */ BL func_080EEDE0
+/* 0800E1D4 */ BL sprite_create
 /* 0800E1D8 */ LDR R1, [R6]
 /* 0800E1DA */ MOVS R3, #0X9D
 /* 0800E1DC */ LSLS R3, R3, #2
@@ -371,7 +371,7 @@ glabel func_0800DEE8
 /* 0800E200 */ STR R2, [SP, #0X10]
 /* 0800E202 */ MOVS R2, #0
 /* 0800E204 */ MOV R3, IP
-/* 0800E206 */ BL func_080EEDE0
+/* 0800E206 */ BL sprite_create
 /* 0800E20A */ LDR R1, [R6]
 /* 0800E20C */ LDR R3, _0800E358
 /* 0800E20E */ ADDS R1, R3
@@ -394,7 +394,7 @@ glabel func_0800DEE8
 /* 0800E230 */ STR R2, [SP, #0X10]
 /* 0800E232 */ MOVS R2, #0
 /* 0800E234 */ MOV R3, IP
-/* 0800E236 */ BL func_080EEDE0
+/* 0800E236 */ BL sprite_create
 /* 0800E23A */ LDR R1, [R6]
 /* 0800E23C */ MOVS R3, #0X9E
 /* 0800E23E */ LSLS R3, R3, #2
@@ -417,7 +417,7 @@ glabel func_0800DEE8
 /* 0800E260 */ STR R4, [SP, #0X10]
 /* 0800E262 */ MOVS R2, #0
 /* 0800E264 */ MOV R3, R8
-/* 0800E266 */ BL func_080EEDE0
+/* 0800E266 */ BL sprite_create
 /* 0800E26A */ ADDS R1, R0, #0
 /* 0800E26C */ LDR R0, [R6]
 /* 0800E26E */ MOVS R2, #0XA3
@@ -438,7 +438,7 @@ glabel func_0800DEE8
 /* 0800E28E */ STR R4, [SP, #0X10]
 /* 0800E290 */ MOVS R2, #0
 /* 0800E292 */ MOVS R3, #0
-/* 0800E294 */ BL func_080EEDE0
+/* 0800E294 */ BL sprite_create
 /* 0800E298 */ ADDS R1, R0, #0
 /* 0800E29A */ LDR R0, [R6]
 /* 0800E29C */ MOVS R3, #0XB4
@@ -462,7 +462,7 @@ glabel func_0800DEE8
 /* 0800E2C2 */ STR R4, [SP, #0X10]
 /* 0800E2C4 */ MOVS R2, #0
 /* 0800E2C6 */ MOVS R3, #0XDC
-/* 0800E2C8 */ BL func_080EEDE0
+/* 0800E2C8 */ BL sprite_create
 /* 0800E2CC */ LDR R1, [R6]
 /* 0800E2CE */ LDR R2, _0800E374
 /* 0800E2D0 */ ADDS R1, R2

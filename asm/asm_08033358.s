@@ -51,7 +51,7 @@ glabel func_08033358
 /* 080333B2 */ ADDS R0, R5, #0
 /* 080333B4 */ MOVS R2, #0
 /* 080333B6 */ MOV R3, IP
-/* 080333B8 */ BL func_080EEDE0
+/* 080333B8 */ BL sprite_create
 /* 080333BC */ ADDS R1, R7, #0
 /* 080333BE */ ADDS R1, #0X5E
 /* 080333C0 */ LDRB R2, [R1]

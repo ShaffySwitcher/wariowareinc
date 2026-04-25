@@ -23,7 +23,7 @@ glabel func_0801D73C
 /* 0801D75A */ STR R3, [SP, #0XC]
 /* 0801D75C */ STR R3, [SP, #0X10]
 /* 0801D75E */ MOVS R2, #0
-/* 0801D760 */ BL func_080EEDE0
+/* 0801D760 */ BL sprite_create
 /* 0801D764 */ LSLS R0, R0, #0X10
 /* 0801D766 */ LSRS R0, R0, #0X10
 /* 0801D768 */ MOV SB, R0

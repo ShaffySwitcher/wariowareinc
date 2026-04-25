@@ -239,7 +239,7 @@ _0807DFC2:
 /* 0807E096 */ STR R5, [SP, #0XC]
 /* 0807E098 */ STR R5, [SP, #0X10]
 /* 0807E09A */ MOVS R2, #0
-/* 0807E09C */ BL func_080EEDE0
+/* 0807E09C */ BL sprite_create
 /* 0807E0A0 */ LDR R2, [R6]
 /* 0807E0A2 */ STRH R0, [R2, #6]
 /* 0807E0A4 */ LDR R0, [R4]
@@ -267,7 +267,7 @@ _0807DFC2:
 /* 0807E0D0 */ MOVS R2, #8
 /* 0807E0D2 */ STR R2, [SP, #0X14]
 /* 0807E0D4 */ MOVS R2, #0
-/* 0807E0D6 */ BL func_080EEF0C
+/* 0807E0D6 */ BL sprite_create_w_attr
 /* 0807E0DA */ LDR R2, [R6]
 /* 0807E0DC */ STRH R0, [R2, #0X12]
 /* 0807E0DE */ LDR R0, [R4]
@@ -290,7 +290,7 @@ _0807DFC2:
 /* 0807E100 */ STR R5, [SP, #0XC]
 /* 0807E102 */ STR R5, [SP, #0X10]
 /* 0807E104 */ MOVS R2, #0
-/* 0807E106 */ BL func_080EEDE0
+/* 0807E106 */ BL sprite_create
 /* 0807E10A */ LDR R1, [R6]
 /* 0807E10C */ STRH R0, [R1, #0X16]
 /* 0807E10E */ LDR R0, [R4]

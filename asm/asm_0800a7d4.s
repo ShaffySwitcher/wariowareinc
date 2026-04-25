@@ -27,7 +27,7 @@ _0800A7F6:
 /* 0800A7F8 */ LDR R0, [R0]
 /* 0800A7FA */ LDR R1, [SP, #0X1C]
 /* 0800A7FC */ ADDS R1, #1
-/* 0800A7FE */ BL func_080EF9B4
+/* 0800A7FE */ BL sprite_handler_set_mem_id
 /* 0800A802 */ MOVS R0, #0X9C
 /* 0800A804 */ LDR R3, [SP, #0X1C]
 /* 0800A806 */ ADDS R2, R3, #0

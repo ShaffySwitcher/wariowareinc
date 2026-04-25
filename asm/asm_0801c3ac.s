@@ -43,7 +43,7 @@ glabel func_0801C3AC
 /* 0801C3F6 */ STR R7, [SP, #0XC]
 /* 0801C3F8 */ STR R7, [SP, #0X10]
 /* 0801C3FA */ MOVS R2, #0
-/* 0801C3FC */ BL func_080EEDE0
+/* 0801C3FC */ BL sprite_create
 /* 0801C400 */ LDR R6, _0801C4BC
 /* 0801C402 */ LDR R1, [R6]
 /* 0801C404 */ STRH R0, [R1]

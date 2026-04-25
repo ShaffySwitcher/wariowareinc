@@ -78,7 +78,7 @@ glabel func_0803C6F0
 /* 0803C792 */ STR R2, [SP, #0X14]
 /* 0803C794 */ MOVS R2, #0
 /* 0803C796 */ MOVS R3, #0X58
-/* 0803C798 */ BL func_080EEF0C
+/* 0803C798 */ BL sprite_create_w_attr
 /* 0803C79C */ MOV R1, SL
 /* 0803C79E */ LDR R2, [R1]
 /* 0803C7A0 */ ADDS R1, R2, #0
@@ -136,7 +136,7 @@ glabel func_0803C6F0
 /* 0803C80A */ STR R2, [SP, #0X14]
 /* 0803C80C */ MOVS R2, #0
 /* 0803C80E */ MOVS R3, #0X58
-/* 0803C810 */ BL func_080EEF0C
+/* 0803C810 */ BL sprite_create_w_attr
 /* 0803C814 */ MOV R2, SL
 /* 0803C816 */ LDR R1, [R2]
 /* 0803C818 */ ADDS R1, #0X66
@@ -179,7 +179,7 @@ glabel func_0803C6F0
 /* 0803C868 */ MOV R1, IP
 /* 0803C86A */ MOVS R2, #0
 /* 0803C86C */ MOV R3, R8
-/* 0803C86E */ BL func_080EEF0C
+/* 0803C86E */ BL sprite_create_w_attr
 /* 0803C872 */ MOV R2, SL
 /* 0803C874 */ LDR R1, [R2]
 /* 0803C876 */ ADDS R1, #0X68
@@ -243,7 +243,7 @@ glabel func_0803C6F0
 /* 0803C8EC */ STR R7, [SP, #0XC]
 /* 0803C8EE */ STR R7, [SP, #0X10]
 /* 0803C8F0 */ MOVS R2, #0
-/* 0803C8F2 */ BL func_080EEDE0
+/* 0803C8F2 */ BL sprite_create
 /* 0803C8F6 */ MOV R2, SL
 /* 0803C8F8 */ LDR R1, [R2]
 /* 0803C8FA */ ADDS R1, #0X6A
@@ -268,7 +268,7 @@ glabel func_0803C6F0
 /* 0803C922 */ STR R7, [SP, #0XC]
 /* 0803C924 */ STR R7, [SP, #0X10]
 /* 0803C926 */ MOVS R2, #0
-/* 0803C928 */ BL func_080EEDE0
+/* 0803C928 */ BL sprite_create
 /* 0803C92C */ LDR R0, [R5]
 /* 0803C92E */ LDR R1, _0803C9C0
 /* 0803C930 */ LDR R2, _0803C9C4
@@ -282,7 +282,7 @@ glabel func_0803C6F0
 /* 0803C940 */ STR R7, [SP, #0XC]
 /* 0803C942 */ STR R7, [SP, #0X10]
 /* 0803C944 */ MOVS R2, #0
-/* 0803C946 */ BL func_080EEDE0
+/* 0803C946 */ BL sprite_create
 /* 0803C94A */ LDR R0, [R5]
 /* 0803C94C */ LDR R1, _0803C9C8
 /* 0803C94E */ LDR R2, _0803C9CC
@@ -296,7 +296,7 @@ glabel func_0803C6F0
 /* 0803C95E */ STR R7, [SP, #0XC]
 /* 0803C960 */ STR R7, [SP, #0X10]
 /* 0803C962 */ MOVS R2, #0
-/* 0803C964 */ BL func_080EEDE0
+/* 0803C964 */ BL sprite_create
 /* 0803C968 */ LDR R4, =D_083CFCF0
 /* 0803C96A */ BL func_0800A27C
 /* 0803C96E */ LSLS R0, R0, #2

@@ -64,7 +64,7 @@ _080A773E:
 /* 080A7798 */ STR R4, [SP, #0X10]
 /* 080A779A */ MOVS R2, #0
 /* 080A779C */ MOVS R3, #0X78
-/* 080A779E */ BL func_080EEDE0
+/* 080A779E */ BL sprite_create
 /* 080A77A2 */ LDR R1, [R6]
 /* 080A77A4 */ STRH R0, [R1, #4]
 /* 080A77A6 */ LDR R0, [R5]

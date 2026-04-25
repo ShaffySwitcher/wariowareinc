@@ -167,7 +167,7 @@ _0808E428:
 /* 0808E458 */ STR R4, [SP, #8]
 /* 0808E45A */ STR R4, [SP, #0XC]
 /* 0808E45C */ STR R4, [SP, #0X10]
-/* 0808E45E */ BL func_080EEDE0
+/* 0808E45E */ BL sprite_create
 /* 0808E462 */ MOV R2, SB
 /* 0808E464 */ LDR R1, [R2]
 /* 0808E466 */ LSLS R2, R6, #1

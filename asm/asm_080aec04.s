@@ -46,7 +46,7 @@ glabel func_080AEC04
 /* 080AEC54 */ STR R2, [SP, #0X14]
 /* 080AEC56 */ MOVS R2, #0
 /* 080AEC58 */ MOVS R3, #0
-/* 080AEC5A */ BL func_080EEF0C
+/* 080AEC5A */ BL sprite_create_w_attr
 /* 080AEC5E */ STRH R0, [R7, #2]
 /* 080AEC60 */ CMP SL, R4
 /* 080AEC62 */ BNE _080AEC70
@@ -72,7 +72,7 @@ _080AEC70:
 /* 080AEC8A */ STR R2, [SP, #0X14]
 /* 080AEC8C */ MOVS R2, #0
 /* 080AEC8E */ MOVS R3, #0
-/* 080AEC90 */ BL func_080EEF0C
+/* 080AEC90 */ BL sprite_create_w_attr
 /* 080AEC94 */ STRH R0, [R7, #4]
 /* 080AEC96 */ MOVS R0, #0X80
 /* 080AEC98 */ LSLS R0, R0, #2
@@ -114,7 +114,7 @@ _080AECB8:
 /* 080AECCC */ STR R1, [SP, #0X10]
 /* 080AECCE */ ADDS R1, R2, #0
 /* 080AECD0 */ MOVS R2, #0
-/* 080AECD2 */ BL func_080EEDE0
+/* 080AECD2 */ BL sprite_create
 /* 080AECD6 */ STRH R0, [R7, #0XA]
 /* 080AECD8 */ MOVS R0, #0X80
 /* 080AECDA */ LSLS R0, R0, #2
@@ -154,7 +154,7 @@ _080AECF8:
 /* 080AED10 */ STR R4, [SP, #0X10]
 /* 080AED12 */ ADDS R1, R2, #0
 /* 080AED14 */ MOVS R2, #0
-/* 080AED16 */ BL func_080EEDE0
+/* 080AED16 */ BL sprite_create
 /* 080AED1A */ STRH R0, [R7, #6]
 /* 080AED1C */ MOV R1, R8
 /* 080AED1E */ LDR R0, [R1]
@@ -171,7 +171,7 @@ _080AECF8:
 /* 080AED34 */ STR R2, [SP, #0X14]
 /* 080AED36 */ MOVS R2, #0
 /* 080AED38 */ MOVS R3, #0
-/* 080AED3A */ BL func_080EEF0C
+/* 080AED3A */ BL sprite_create_w_attr
 /* 080AED3E */ STRH R0, [R7, #8]
 /* 080AED40 */ MOVS R6, #0
 /* 080AED42 */ ADDS R4, R7, #0
@@ -193,7 +193,7 @@ _080AED48:
 /* 080AED60 */ LDR R1, _080AEE2C
 /* 080AED62 */ MOVS R2, #0
 /* 080AED64 */ MOVS R3, #0
-/* 080AED66 */ BL func_080EEDE0
+/* 080AED66 */ BL sprite_create
 /* 080AED6A */ STRH R0, [R4]
 /* 080AED6C */ ADDS R4, #2
 /* 080AED6E */ SUBS R5, #1
@@ -217,7 +217,7 @@ _080AED48:
 /* 080AED92 */ STR R2, [SP, #0X14]
 /* 080AED94 */ MOVS R2, #0
 /* 080AED96 */ MOVS R3, #0
-/* 080AED98 */ BL func_080EEF0C
+/* 080AED98 */ BL sprite_create_w_attr
 /* 080AED9C */ STRH R0, [R7, #0XC]
 /* 080AED9E */ BL func_0800A218
 /* 080AEDA2 */ STRB R0, [R7, #1]
@@ -245,7 +245,7 @@ _080AED48:
 /* 080AEDD0 */ STR R2, [SP, #0X14]
 /* 080AEDD2 */ MOVS R2, #0
 /* 080AEDD4 */ MOVS R3, #0
-/* 080AEDD6 */ BL func_080EEF0C
+/* 080AEDD6 */ BL sprite_create_w_attr
 /* 080AEDDA */ STRH R0, [R7, #0XE]
 /* 080AEDDC */ MOV R0, SB
 /* 080AEDDE */ LDR R4, [R0]

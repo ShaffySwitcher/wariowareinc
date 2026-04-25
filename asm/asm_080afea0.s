@@ -49,7 +49,7 @@ glabel func_080AFEA0
 /* 080AFEF8 */ STR R4, [SP, #0X10]
 /* 080AFEFA */ MOVS R2, #0
 /* 080AFEFC */ MOVS R3, #0X78
-/* 080AFEFE */ BL func_080EEDE0
+/* 080AFEFE */ BL sprite_create
 /* 080AFF02 */ LDR R1, [R5]
 /* 080AFF04 */ MOVS R2, #0X9F
 /* 080AFF06 */ LSLS R2, R2, #2

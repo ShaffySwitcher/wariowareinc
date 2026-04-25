@@ -293,7 +293,7 @@ _080CB764:
 /* 080CB790 */ STR R2, [SP, #8]
 /* 080CB792 */ STR R2, [SP, #0XC]
 /* 080CB794 */ STR R2, [SP, #0X10]
-/* 080CB796 */ BL func_080EEDE0
+/* 080CB796 */ BL sprite_create
 /* 080CB79A */ MOV R2, SB
 /* 080CB79C */ LDR R1, [R2]
 /* 080CB79E */ STRH R0, [R1, #2]

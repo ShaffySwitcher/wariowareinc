@@ -29,7 +29,7 @@ glabel func_0801053C
 /* 08010568 */ STR R3, [SP, #0XC]
 /* 0801056A */ STR R3, [SP, #0X10]
 /* 0801056C */ MOVS R3, #0X38
-/* 0801056E */ BL func_080EEDE0
+/* 0801056E */ BL sprite_create
 /* 08010572 */ LDR R1, [R4]
 /* 08010574 */ MOVS R2, #0XCA
 /* 08010576 */ LSLS R2, R2, #2

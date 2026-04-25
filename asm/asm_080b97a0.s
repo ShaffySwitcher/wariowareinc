@@ -94,7 +94,7 @@ _080B980E:
 /* 080B9860 */ STR R4, [SP, #0XC]
 /* 080B9862 */ STR R4, [SP, #0X10]
 /* 080B9864 */ MOVS R2, #0
-/* 080B9866 */ BL func_080EEDE0
+/* 080B9866 */ BL sprite_create
 /* 080B986A */ LDR R1, [R6]
 /* 080B986C */ STRH R0, [R1]
 /* 080B986E */ STR R5, [R1, #4]

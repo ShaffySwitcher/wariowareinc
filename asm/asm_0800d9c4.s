@@ -37,12 +37,12 @@ _0800D9F6:
 /* 0800D9FC */ BGE _0800DA6C
 /* 0800D9FE */ MOV R1, R8
 /* 0800DA00 */ LDR R0, [R1]
-/* 0800DA02 */ BL func_080EF9B8
+/* 0800DA02 */ BL sprite_handler_get_mem_id
 /* 0800DA06 */ ADDS R4, R0, #0
 /* 0800DA08 */ MOV R2, R8
 /* 0800DA0A */ LDR R0, [R2]
 /* 0800DA0C */ LDRH R1, [R7]
-/* 0800DA0E */ BL func_080EF9B4
+/* 0800DA0E */ BL sprite_handler_set_mem_id
 /* 0800DA12 */ MOV R1, R8
 /* 0800DA14 */ LDR R0, [R1]
 /* 0800DA16 */ STR R6, [SP]
@@ -54,7 +54,7 @@ _0800D9F6:
 /* 0800DA22 */ MOV R1, SL
 /* 0800DA24 */ MOVS R2, #0
 /* 0800DA26 */ MOVS R3, #0
-/* 0800DA28 */ BL func_080EEDE0
+/* 0800DA28 */ BL sprite_create
 /* 0800DA2C */ STRH R0, [R5]
 /* 0800DA2E */ MOV R2, R8
 /* 0800DA30 */ LDR R0, [R2]
@@ -78,7 +78,7 @@ _0800D9F6:
 /* 0800DA56 */ MOV R1, R8
 /* 0800DA58 */ LDR R0, [R1]
 /* 0800DA5A */ ADDS R1, R4, #0
-/* 0800DA5C */ BL func_080EF9B4
+/* 0800DA5C */ BL sprite_handler_set_mem_id
 /* 0800DA60 */ MOV R2, SB
 /* 0800DA62 */ LSLS R0, R2, #0X10
 /* 0800DA64 */ ASRS R0, R0, #0X10

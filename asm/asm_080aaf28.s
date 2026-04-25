@@ -23,7 +23,7 @@ glabel func_080AAF28
 /* 080AAF48 */ LDR R0, [R2]
 /* 080AAF4A */ STR R1, [R0, #0X1C]
 /* 080AAF4C */ LDR R0, [R6]
-/* 080AAF4E */ BL func_080EF9B4
+/* 080AAF4E */ BL sprite_handler_set_mem_id
 /* 080AAF52 */ LDR R0, [R6]
 /* 080AAF54 */ LDR R7, _080AB078
 /* 080AAF56 */ LSLS R1, R4, #2
@@ -47,7 +47,7 @@ glabel func_080AAF28
 /* 080AAF7A */ STR R5, [SP, #0X10]
 /* 080AAF7C */ MOVS R2, #0
 /* 080AAF7E */ MOV R3, IP
-/* 080AAF80 */ BL func_080EEDE0
+/* 080AAF80 */ BL sprite_create
 /* 080AAF84 */ MOV R3, SB
 /* 080AAF86 */ LDR R1, [R3]
 /* 080AAF88 */ STRH R0, [R1, #0X12]
@@ -83,7 +83,7 @@ glabel func_080AAF28
 /* 080AAFC8 */ STR R5, [SP, #0X10]
 /* 080AAFCA */ MOVS R2, #0
 /* 080AAFCC */ MOV R3, IP
-/* 080AAFCE */ BL func_080EEDE0
+/* 080AAFCE */ BL sprite_create
 /* 080AAFD2 */ MOV R3, SB
 /* 080AAFD4 */ LDR R1, [R3]
 /* 080AAFD6 */ STRH R0, [R1, #0X14]
@@ -103,7 +103,7 @@ glabel func_080AAF28
 /* 080AAFF2 */ STR R5, [SP, #0XC]
 /* 080AAFF4 */ STR R5, [SP, #0X10]
 /* 080AAFF6 */ MOVS R2, #0
-/* 080AAFF8 */ BL func_080EEDE0
+/* 080AAFF8 */ BL sprite_create
 /* 080AAFFC */ MOV R2, SB
 /* 080AAFFE */ LDR R1, [R2]
 /* 080AB000 */ STRH R0, [R1, #0X16]
@@ -127,7 +127,7 @@ glabel func_080AAF28
 /* 080AB024 */ STR R2, [SP, #0X10]
 /* 080AB026 */ MOVS R2, #0
 /* 080AB028 */ MOV R3, IP
-/* 080AB02A */ BL func_080EEDE0
+/* 080AB02A */ BL sprite_create
 /* 080AB02E */ MOV R3, SB
 /* 080AB030 */ LDR R1, [R3]
 /* 080AB032 */ STRH R0, [R1, #0X18]
@@ -147,7 +147,7 @@ glabel func_080AAF28
 /* 080AB04E */ LSLS R5, R5, #8
 /* 080AB050 */ STR R5, [SP, #0X10]
 /* 080AB052 */ MOVS R2, #0
-/* 080AB054 */ BL func_080EEDE0
+/* 080AB054 */ BL sprite_create
 /* 080AB058 */ MOV R6, SB
 /* 080AB05A */ LDR R1, [R6]
 /* 080AB05C */ STRH R0, [R1, #0X1A]

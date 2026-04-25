@@ -84,7 +84,7 @@ _080A19F4:
 /* 080A1A2E */ STR R2, [SP, #0XC]
 /* 080A1A30 */ STR R2, [SP, #0X10]
 /* 080A1A32 */ ADDS R2, R4, #0
-/* 080A1A34 */ BL func_080EEDE0
+/* 080A1A34 */ BL sprite_create
 /* 080A1A38 */ B _080A1A5A
 
 .balign 4, 0

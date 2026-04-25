@@ -24,7 +24,7 @@ glabel func_080B2014
 /* 080B2034 */ STR R2, [SP, #0XC]
 /* 080B2036 */ MOVS R2, #0
 /* 080B2038 */ STR R2, [SP, #0X10]
-/* 080B203A */ BL func_080EEDE0
+/* 080B203A */ BL sprite_create
 /* 080B203E */ LDR R6, =D_03003850
 /* 080B2040 */ LDR R1, [R6]
 /* 080B2042 */ MOVS R4, #0XDA

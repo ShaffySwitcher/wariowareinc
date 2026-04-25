@@ -65,7 +65,7 @@ glabel func_0801B280
 /* 0801B302 */ STR R4, [SP, #0X10]
 /* 0801B304 */ MOVS R2, #0
 /* 0801B306 */ MOVS R3, #0
-/* 0801B308 */ BL func_080EEDE0
+/* 0801B308 */ BL sprite_create
 /* 0801B30C */ LDR R1, _0801B39C
 /* 0801B30E */ LDR R1, [R1]
 /* 0801B310 */ STRH R0, [R1]

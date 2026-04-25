@@ -15,7 +15,7 @@ glabel func_0800FBA8
 /* 0800FBB6 */ LDR R0, _0800FC34
 /* 0800FBB8 */ LDR R0, [R0]
 /* 0800FBBA */ MOVS R1, #1
-/* 0800FBBC */ BL func_080EF9B4
+/* 0800FBBC */ BL sprite_handler_set_mem_id
 /* 0800FBC0 */ LDR R5, _0800FC38
 /* 0800FBC2 */ LDR R4, [R5]
 /* 0800FBC4 */ MOVS R1, #0XB7
@@ -200,7 +200,7 @@ _0800FCC6:
 /* 0800FD18 */ STR R2, [SP, #0XC]
 /* 0800FD1A */ STR R2, [SP, #0X10]
 /* 0800FD1C */ MOVS R2, #0
-/* 0800FD1E */ BL func_080EEDE0
+/* 0800FD1E */ BL sprite_create
 /* 0800FD22 */ ADDS R1, R0, #0
 /* 0800FD24 */ LDR R3, _0800FDB4
 /* 0800FD26 */ LDR R0, [R3]

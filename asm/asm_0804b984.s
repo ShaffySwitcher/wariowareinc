@@ -51,7 +51,7 @@ glabel func_0804B984
 /* 0804B9DA */ STR R4, [SP, #0XC]
 /* 0804B9DC */ STR R4, [SP, #0X10]
 /* 0804B9DE */ MOVS R2, #0
-/* 0804B9E0 */ BL func_080EEDE0
+/* 0804B9E0 */ BL sprite_create
 _0804B9E4:
 /* 0804B9E4 */ MOVS R4, #1
 _0804B9E6:

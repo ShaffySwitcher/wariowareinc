@@ -70,7 +70,7 @@ glabel func_0801BB40
 /* 0801BBCA */ STR R2, [SP, #0X10]
 /* 0801BBCC */ MOVS R2, #0
 /* 0801BBCE */ MOVS R3, #0X50
-/* 0801BBD0 */ BL func_080EEDE0
+/* 0801BBD0 */ BL sprite_create
 /* 0801BBD4 */ MOV R2, R8
 /* 0801BBD6 */ LDR R1, [R2]
 /* 0801BBD8 */ STRH R0, [R1, #0XA]

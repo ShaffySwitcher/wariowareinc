@@ -21,7 +21,7 @@ glabel func_080C60BC
 /* 080C60D8 */ ADDS R0, R2
 /* 080C60DA */ STR R1, [R0]
 /* 080C60DC */ LDR R0, [R4]
-/* 080C60DE */ BL func_080EF9B4
+/* 080C60DE */ BL sprite_handler_set_mem_id
 /* 080C60E2 */ MOVS R7, #0
 /* 080C60E4 */ LDR R0, _080C617C
 /* 080C60E6 */ MOV SB, R0
@@ -67,7 +67,7 @@ _080C60E8:
 /* 080C613A */ ADDS R0, R2, #0
 /* 080C613C */ ADDS R2, R6, #0
 /* 080C613E */ ADDS R3, R5, #0
-/* 080C6140 */ BL func_080EEDE0
+/* 080C6140 */ BL sprite_create
 /* 080C6144 */ ADDS R4, #1
 /* 080C6146 */ LSLS R4, R4, #0X10
 /* 080C6148 */ LSRS R7, R4, #0X10
@@ -82,7 +82,7 @@ _080C60E8:
 /* 080C615A */ LSLS R2, R2, #1
 /* 080C615C */ ADDS R1, R2
 /* 080C615E */ LDR R1, [R1]
-/* 080C6160 */ BL func_080EF9B4
+/* 080C6160 */ BL sprite_handler_set_mem_id
 /* 080C6164 */ ADD SP, #0X14
 /* 080C6166 */ POP {R3, R4}
 /* 080C6168 */ MOV R8, R3

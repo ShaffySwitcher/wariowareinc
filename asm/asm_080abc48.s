@@ -41,7 +41,7 @@ _080ABC68:
 /* 080ABC8A */ STR R6, [SP, #0X10]
 /* 080ABC8C */ MOVS R2, #0
 /* 080ABC8E */ ADDS R3, R4, #0
-/* 080ABC90 */ BL func_080EEDE0
+/* 080ABC90 */ BL sprite_create
 /* 080ABC94 */ STRH R0, [R7]
 /* 080ABC96 */ LSLS R4, R4, #8
 /* 080ABC98 */ STR R4, [R7, #4]

@@ -25,7 +25,7 @@ glabel func_080E1C78
 /* 080E1C9C */ ADDS R0, R3
 /* 080E1C9E */ STR R1, [R0]
 /* 080E1CA0 */ LDR R0, [R5]
-/* 080E1CA2 */ BL func_080EF9B4
+/* 080E1CA2 */ BL sprite_handler_set_mem_id
 /* 080E1CA6 */ LDR R4, _080E1D78
 /* 080E1CA8 */ LDR R0, [R4]
 /* 080E1CAA */ ADDS R7, R0, #0
@@ -49,7 +49,7 @@ glabel func_080E1C78
 /* 080E1CCE */ MOVS R4, #0
 /* 080E1CD0 */ STR R4, [SP, #0XC]
 /* 080E1CD2 */ STR R4, [SP, #0X10]
-/* 080E1CD4 */ BL func_080EEDE0
+/* 080E1CD4 */ BL sprite_create
 /* 080E1CD8 */ STRH R0, [R7]
 /* 080E1CDA */ LDR R0, [R5]
 /* 080E1CDC */ MOV R3, R8
@@ -69,7 +69,7 @@ glabel func_080E1C78
 /* 080E1CF8 */ STR R4, [SP, #0XC]
 /* 080E1CFA */ STR R4, [SP, #0X10]
 /* 080E1CFC */ MOVS R2, #1
-/* 080E1CFE */ BL func_080EEDE0
+/* 080E1CFE */ BL sprite_create
 /* 080E1D02 */ STRH R0, [R7, #2]
 /* 080E1D04 */ LDR R0, [R5]
 /* 080E1D06 */ MOV R3, R8
@@ -90,7 +90,7 @@ glabel func_080E1C78
 /* 080E1D24 */ LSLS R2, R2, #8
 /* 080E1D26 */ STR R2, [SP, #0X10]
 /* 080E1D28 */ MOVS R2, #1
-/* 080E1D2A */ BL func_080EEDE0
+/* 080E1D2A */ BL sprite_create
 /* 080E1D2E */ LDR R3, _080E1D78
 /* 080E1D30 */ LDR R3, [R3]
 /* 080E1D32 */ MOV SB, R3
@@ -117,7 +117,7 @@ glabel func_080E1C78
 /* 080E1D5C */ STR R4, [SP, #0XC]
 /* 080E1D5E */ STR R4, [SP, #0X10]
 /* 080E1D60 */ MOVS R2, #0
-/* 080E1D62 */ BL func_080EEDE0
+/* 080E1D62 */ BL sprite_create
 /* 080E1D66 */ MOV R3, SB
 /* 080E1D68 */ STRH R0, [R3, #0X20]
 /* 080E1D6A */ CMP R6, #1
@@ -189,7 +189,7 @@ _080E1D9E:
 /* 080E1DD4 */ STR R4, [SP, #0XC]
 /* 080E1DD6 */ STR R4, [SP, #0X10]
 /* 080E1DD8 */ MOVS R2, #0
-/* 080E1DDA */ BL func_080EEDE0
+/* 080E1DDA */ BL sprite_create
 /* 080E1DDE */ STRH R0, [R7, #2]
 /* 080E1DE0 */ MOVS R1, #2
 /* 080E1DE2 */ LDRSH R0, [R7, R1]
@@ -215,7 +215,7 @@ _080E1D9E:
 /* 080E1E0C */ LSLS R4, R4, #8
 /* 080E1E0E */ STR R4, [SP, #0X10]
 /* 080E1E10 */ MOVS R2, #1
-/* 080E1E12 */ BL func_080EEDE0
+/* 080E1E12 */ BL sprite_create
 /* 080E1E16 */ LDR R1, _080E1E4C
 /* 080E1E18 */ LDR R1, [R1]
 /* 080E1E1A */ MOVS R3, #0X91
@@ -300,7 +300,7 @@ _080E1E72:
 /* 080E1E90 */ MOVS R2, #0
 /* 080E1E92 */ STR R2, [SP, #0XC]
 /* 080E1E94 */ STR R2, [SP, #0X10]
-/* 080E1E96 */ BL func_080EEDE0
+/* 080E1E96 */ BL sprite_create
 /* 080E1E9A */ STRH R0, [R7]
 /* 080E1E9C */ MOVS R1, #0
 /* 080E1E9E */ LDRSH R0, [R7, R1]

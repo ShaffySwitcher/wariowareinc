@@ -78,7 +78,7 @@ glabel func_08068CF0
 /* 08068D90 */ STR R4, [SP, #0XC]
 /* 08068D92 */ STR R4, [SP, #0X10]
 /* 08068D94 */ MOVS R2, #0
-/* 08068D96 */ BL func_080EEDE0
+/* 08068D96 */ BL sprite_create
 /* 08068D9A */ LDR R1, [R6]
 /* 08068D9C */ STRH R0, [R1, #0XC]
 /* 08068D9E */ LDR R0, [R5]
@@ -102,7 +102,7 @@ glabel func_08068CF0
 /* 08068DC4 */ STR R4, [SP, #0XC]
 /* 08068DC6 */ STR R4, [SP, #0X10]
 /* 08068DC8 */ MOVS R2, #0
-/* 08068DCA */ BL func_080EEDE0
+/* 08068DCA */ BL sprite_create
 /* 08068DCE */ LDR R1, [R6]
 /* 08068DD0 */ STRH R0, [R1]
 /* 08068DD2 */ LDR R0, [R5]
@@ -120,7 +120,7 @@ glabel func_08068CF0
 /* 08068DEA */ STR R4, [SP, #0XC]
 /* 08068DEC */ STR R4, [SP, #0X10]
 /* 08068DEE */ MOVS R2, #0
-/* 08068DF0 */ BL func_080EEDE0
+/* 08068DF0 */ BL sprite_create
 /* 08068DF4 */ LDR R1, [R6]
 /* 08068DF6 */ STRH R0, [R1, #2]
 /* 08068DF8 */ LDR R0, [R5]
@@ -137,7 +137,7 @@ glabel func_08068CF0
 /* 08068E0E */ STR R4, [SP, #0XC]
 /* 08068E10 */ STR R4, [SP, #0X10]
 /* 08068E12 */ MOVS R2, #0
-/* 08068E14 */ BL func_080EEDE0
+/* 08068E14 */ BL sprite_create
 /* 08068E18 */ LDR R1, [R6]
 /* 08068E1A */ STRH R0, [R1, #4]
 /* 08068E1C */ LDR R0, [R5]
@@ -163,7 +163,7 @@ glabel func_08068CF0
 /* 08068E46 */ MOVS R2, #4
 /* 08068E48 */ STR R2, [SP, #0X10]
 /* 08068E4A */ MOVS R2, #0
-/* 08068E4C */ BL func_080EEDE0
+/* 08068E4C */ BL sprite_create
 /* 08068E50 */ LDR R3, [R6]
 /* 08068E52 */ STRH R0, [R3, #0XE]
 /* 08068E54 */ LDR R0, [R5]
@@ -194,7 +194,7 @@ glabel func_08068CF0
 /* 08068E8A */ MOVS R2, #2
 /* 08068E8C */ STR R2, [SP, #0X10]
 /* 08068E8E */ MOVS R2, #0
-/* 08068E90 */ BL func_080EEDE0
+/* 08068E90 */ BL sprite_create
 /* 08068E94 */ LDR R1, [R6]
 /* 08068E96 */ STRH R0, [R1, #0X10]
 /* 08068E98 */ LDR R0, [R5]
@@ -217,7 +217,7 @@ glabel func_08068CF0
 /* 08068EBC */ STR R4, [SP, #0XC]
 /* 08068EBE */ STR R4, [SP, #0X10]
 /* 08068EC0 */ MOVS R2, #1
-/* 08068EC2 */ BL func_080EEDE0
+/* 08068EC2 */ BL sprite_create
 /* 08068EC6 */ LDR R1, [R6]
 /* 08068EC8 */ STRH R0, [R1, #0X12]
 /* 08068ECA */ LDR R4, =D_083D5CD4

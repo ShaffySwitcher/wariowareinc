@@ -130,7 +130,7 @@ glabel func_080DF5D4
 /* 080DF6CE */ ORRS R2, R5
 /* 080DF6D0 */ STR R2, [SP, #0X14]
 /* 080DF6D2 */ MOVS R2, #0
-/* 080DF6D4 */ BL func_080EEF0C
+/* 080DF6D4 */ BL sprite_create_w_attr
 /* 080DF6D8 */ MOV R2, R8
 /* 080DF6DA */ LDR R1, [R2]
 /* 080DF6DC */ STRH R0, [R1, #0X20]

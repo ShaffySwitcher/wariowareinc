@@ -139,7 +139,7 @@ glabel func_080EB688
 /* 080EB7B2 */ STR R5, [SP, #0XC]
 /* 080EB7B4 */ STR R5, [SP, #0X10]
 /* 080EB7B6 */ MOVS R2, #1
-/* 080EB7B8 */ BL func_080EEDE0
+/* 080EB7B8 */ BL sprite_create
 /* 080EB7BC */ LDR R1, [R6]
 /* 080EB7BE */ STRH R0, [R1, #0X18]
 /* 080EB7C0 */ STR R5, [R1, #0X24]

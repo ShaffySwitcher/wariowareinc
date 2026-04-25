@@ -219,7 +219,7 @@ _080CBA10:
 /* 080CBA38 */ STR R2, [SP, #8]
 /* 080CBA3A */ STR R2, [SP, #0XC]
 /* 080CBA3C */ STR R2, [SP, #0X10]
-/* 080CBA3E */ BL func_080EEDE0
+/* 080CBA3E */ BL sprite_create
 /* 080CBA42 */ LDR R1, [R6]
 /* 080CBA44 */ STRH R0, [R1, #4]
 /* 080CBA46 */ B _080CBB3A

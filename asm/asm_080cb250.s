@@ -292,7 +292,7 @@ _080CB430:
 /* 080CB45C */ STR R2, [SP, #8]
 /* 080CB45E */ STR R2, [SP, #0XC]
 /* 080CB460 */ STR R2, [SP, #0X10]
-/* 080CB462 */ BL func_080EEDE0
+/* 080CB462 */ BL sprite_create
 /* 080CB466 */ MOV R2, SB
 /* 080CB468 */ LDR R1, [R2]
 /* 080CB46A */ STRH R0, [R1]

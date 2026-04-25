@@ -205,7 +205,7 @@ u32 gameplay_update_scene(void) {
 
             if (gameplay_run_script() == 1) {
                 *PALETTE_RAM = 0;
-                *(volatile s16*)IORAMBase = 0;
+                *IO_RAM = 0;
                 D_0300363C = gGameplayData.currentLives;
                 return 2;
             }
@@ -770,4 +770,91 @@ u32 gameplay_run_script(void) {
     }
 
     return 0;
+}
+
+#include "asm/gameplay/asm_080097d4.s"
+
+#include "asm/gameplay/asm_0800986c.s"
+
+#include "asm/gameplay/asm_080099f8.s"
+
+#include "asm/gameplay/asm_08009aa0.s"
+
+#include "asm/gameplay/asm_08009cac.s"
+
+#include "asm/gameplay/asm_08009cd8.s"
+
+#include "asm/gameplay/asm_08009cf0.s"
+
+#include "asm/gameplay/asm_08009d14.s"
+
+#include "asm/gameplay/asm_08009d24.s"
+
+#include "asm/gameplay/asm_08009d3c.s"
+
+#include "asm/gameplay/asm_08009d4c.s"
+
+#include "asm/gameplay/asm_08009e20.s"
+
+#include "asm/gameplay/asm_08009ea8.s"
+
+#include "asm/gameplay/asm_08009ecc.s"
+
+#include "asm/gameplay/asm_08009ee0.s"
+
+#include "asm/gameplay/asm_08009ee4.s"
+
+#include "asm/gameplay/asm_08009f00.s"
+
+#include "asm/gameplay/asm_08009f14.s"
+
+#include "asm/gameplay/asm_08009f70.s"
+
+#include "asm/gameplay/asm_08009f7c.s"
+
+#include "asm/gameplay/asm_08009f88.s"
+
+#include "asm/gameplay/asm_08009fb0.s"
+
+#include "asm/gameplay/asm_08009fec.s"
+
+#include "asm/gameplay/asm_0800a000.s"
+
+#include "asm/gameplay/asm_0800a024.s"
+
+#include "asm/gameplay/asm_0800a038.s"
+
+#include "asm/gameplay/asm_0800a044.s"
+
+#include "asm/gameplay/asm_0800a050.s"
+
+#include "asm/gameplay/asm_0800a064.s"
+
+#include "asm/gameplay/asm_0800a068.s"
+
+#include "asm/gameplay/asm_0800a074.s"
+
+#include "asm/gameplay/asm_0800a088.s"
+
+#include "asm/gameplay/asm_0800a098.s"
+
+#include "asm/gameplay/asm_0800a0c4.s"
+
+#include "asm/gameplay/asm_0800a128.s"
+
+#include "asm/gameplay/asm_0800a138.s"
+
+#include "asm/gameplay/asm_0800a14c.s"
+
+void func_0800A160(struct Animation* anim, struct Vector2* pos) {
+    u32 memID = sprite_handler_get_mem_id(gSpriteHandler);
+    sprite_handler_set_mem_id(gSpriteHandler, func_0800A088());
+
+    gGameplayDataPtr->unk1ee = sprite_create(gSpriteHandler, anim, 0, pos->x, pos->y, 0x40, 0, 0, 0);
+    
+    sprite_set_visible(gSpriteHandler, gGameplayDataPtr->unk1ee, 0);
+    sprite_set_base_tile(gSpriteHandler, gGameplayDataPtr->unk1ee, 0x280);
+    sprite_set_base_palette(gSpriteHandler, gGameplayDataPtr->unk1ee, 10);
+
+    sprite_handler_set_mem_id(gSpriteHandler, memID);
 }

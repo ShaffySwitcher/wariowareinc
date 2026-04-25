@@ -35,7 +35,7 @@ glabel func_080CECEC
 /* 080CED26 */ STR R2, [SP, #0X14]
 /* 080CED28 */ MOVS R2, #0
 /* 080CED2A */ MOVS R3, #0X58
-/* 080CED2C */ BL func_080EEF0C
+/* 080CED2C */ BL sprite_create_w_attr
 /* 080CED30 */ STRH R0, [R4, #4]
 /* 080CED32 */ MOVS R0, #0XF0
 /* 080CED34 */ LSLS R0, R0, #7

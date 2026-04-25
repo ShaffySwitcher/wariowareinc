@@ -21,7 +21,7 @@ glabel func_080B1BD0
 /* 080B1BEC */ ADDS R0, R2
 /* 080B1BEE */ STR R1, [R0]
 /* 080B1BF0 */ LDR R0, [R4]
-/* 080B1BF2 */ BL func_080EF9B4
+/* 080B1BF2 */ BL sprite_handler_set_mem_id
 /* 080B1BF6 */ MOVS R2, #0
 /* 080B1BF8 */ MOV R8, R5
 /* 080B1BFA */ MOVS R6, #0
@@ -62,7 +62,7 @@ _080B1BFC:
 /* 080B1C3E */ STR R6, [SP, #0XC]
 /* 080B1C40 */ STR R6, [SP, #0X10]
 /* 080B1C42 */ LDR R1, _080B1D38
-/* 080B1C44 */ BL func_080EEDE0
+/* 080B1C44 */ BL sprite_create
 /* 080B1C48 */ STRH R0, [R5]
 /* 080B1C4A */ BL func_0800A218
 /* 080B1C4E */ STRB R0, [R5, #0XA]
@@ -124,7 +124,7 @@ _080B1C7A:
 /* 080B1CC0 */ STR R6, [SP, #0XC]
 /* 080B1CC2 */ STR R6, [SP, #0X10]
 /* 080B1CC4 */ LDR R1, _080B1D38
-/* 080B1CC6 */ BL func_080EEDE0
+/* 080B1CC6 */ BL sprite_create
 /* 080B1CCA */ STRH R0, [R5]
 /* 080B1CCC */ BL func_0800A218
 /* 080B1CD0 */ STRB R0, [R5, #0XA]
@@ -151,7 +151,7 @@ _080B1C7A:
 /* 080B1CFE */ LSLS R2, R2, #1
 /* 080B1D00 */ ADDS R1, R2
 /* 080B1D02 */ LDR R1, [R1]
-/* 080B1D04 */ BL func_080EF9B4
+/* 080B1D04 */ BL sprite_handler_set_mem_id
 /* 080B1D08 */ LDR R2, _080B1D30
 /* 080B1D0A */ LDR R0, [R2]
 /* 080B1D0C */ MOVS R3, #0XCE

@@ -61,7 +61,7 @@ glabel func_080D0E38
 /* 080D0EA4 */ STR R4, [SP, #0XC]
 /* 080D0EA6 */ STR R4, [SP, #0X10]
 /* 080D0EA8 */ MOVS R2, #0
-/* 080D0EAA */ BL func_080EEDE0
+/* 080D0EAA */ BL sprite_create
 /* 080D0EAE */ MOV R2, R8
 /* 080D0EB0 */ LDR R1, [R2]
 /* 080D0EB2 */ MOVS R2, #0XE9

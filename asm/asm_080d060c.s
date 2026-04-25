@@ -82,7 +82,7 @@ glabel func_080D060C
 /* 080D06C8 */ STR R4, [SP, #0X10]
 /* 080D06CA */ MOVS R2, #0
 /* 080D06CC */ MOVS R3, #0
-/* 080D06CE */ BL func_080EEDE0
+/* 080D06CE */ BL sprite_create
 /* 080D06D2 */ LDR R1, [R5]
 /* 080D06D4 */ ADDS R1, #0X46
 /* 080D06D6 */ STRH R0, [R1]

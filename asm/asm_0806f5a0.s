@@ -98,7 +98,7 @@ _0806F624:
 /* 0806F654 */ ORRS R2, R4
 /* 0806F656 */ STR R2, [SP, #0X14]
 /* 0806F658 */ MOVS R2, #0
-/* 0806F65A */ BL func_080EEF0C
+/* 0806F65A */ BL sprite_create_w_attr
 /* 0806F65E */ MOV R4, R8
 /* 0806F660 */ STRH R0, [R4, #4]
 /* 0806F662 */ LDR R0, [R4]

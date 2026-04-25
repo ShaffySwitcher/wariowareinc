@@ -29,7 +29,7 @@ glabel func_080ACE78
 /* 080ACEA4 */ STR R1, [R0]
 /* 080ACEA6 */ MOV R2, SL
 /* 080ACEA8 */ LDR R0, [R2]
-/* 080ACEAA */ BL func_080EF9B4
+/* 080ACEAA */ BL sprite_handler_set_mem_id
 /* 080ACEAE */ LDR R5, [R6]
 /* 080ACEB0 */ ADDS R7, R5, #0
 /* 080ACEB2 */ ADDS R7, #0X14
@@ -56,7 +56,7 @@ glabel func_080ACE78
 /* 080ACEDC */ STR R4, [SP, #0XC]
 /* 080ACEDE */ STR R4, [SP, #0X10]
 /* 080ACEE0 */ MOVS R2, #0
-/* 080ACEE2 */ BL func_080EEDE0
+/* 080ACEE2 */ BL sprite_create
 /* 080ACEE6 */ STRH R0, [R5, #0X14]
 /* 080ACEE8 */ MOV R1, SL
 /* 080ACEEA */ LDR R0, [R1]
@@ -84,7 +84,7 @@ glabel func_080ACE78
 /* 080ACF18 */ STR R4, [SP, #0XC]
 /* 080ACF1A */ STR R4, [SP, #0X10]
 /* 080ACF1C */ MOVS R2, #0
-/* 080ACF1E */ BL func_080EEDE0
+/* 080ACF1E */ BL sprite_create
 /* 080ACF22 */ STRH R0, [R7, #2]
 /* 080ACF24 */ LDR R0, [R6]
 /* 080ACF26 */ ADDS R7, R0, #0
@@ -122,7 +122,7 @@ _080ACF44:
 /* 080ACF62 */ STR R4, [SP, #0XC]
 /* 080ACF64 */ STR R4, [SP, #0X10]
 /* 080ACF66 */ MOVS R2, #0
-/* 080ACF68 */ BL func_080EEDE0
+/* 080ACF68 */ BL sprite_create
 /* 080ACF6C */ STRH R0, [R7]
 /* 080ACF6E */ MOV R1, SB
 /* 080ACF70 */ LDR R0, [R1]
@@ -138,7 +138,7 @@ _080ACF44:
 /* 080ACF84 */ STR R4, [SP, #0XC]
 /* 080ACF86 */ STR R4, [SP, #0X10]
 /* 080ACF88 */ MOVS R2, #0
-/* 080ACF8A */ BL func_080EEDE0
+/* 080ACF8A */ BL sprite_create
 /* 080ACF8E */ STRH R0, [R7, #2]
 /* 080ACF90 */ MOVS R2, #0
 /* 080ACF92 */ LDRSH R0, [R7, R2]
@@ -185,7 +185,7 @@ _080ACFBC:
 /* 080ACFE6 */ ADDS R0, R5, #0
 /* 080ACFE8 */ ADDS R1, R4, #0
 /* 080ACFEA */ MOVS R3, #0
-/* 080ACFEC */ BL func_080EEDE0
+/* 080ACFEC */ BL sprite_create
 /* 080ACFF0 */ STRH R0, [R6]
 /* 080ACFF2 */ MOV R1, SB
 /* 080ACFF4 */ LDR R0, [R1]

@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080EEDE0
+glabel sprite_create
 /* 080EEDE0 */ PUSH {R4, R5, R6, R7, LR}
 /* 080EEDE2 */ MOV R7, SL
 /* 080EEDE4 */ MOV R6, SB

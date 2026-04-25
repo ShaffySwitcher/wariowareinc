@@ -31,7 +31,7 @@ glabel func_0808A8DC
 /* 0808A90A */ MOVS R2, #3
 /* 0808A90C */ STR R2, [SP, #0X10]
 /* 0808A90E */ MOVS R2, #0
-/* 0808A910 */ BL func_080EEDE0
+/* 0808A910 */ BL sprite_create
 /* 0808A914 */ MOVS R0, #0X32
 /* 0808A916 */ BL func_0808A7B8
 /* 0808A91A */ ADD SP, #0X14

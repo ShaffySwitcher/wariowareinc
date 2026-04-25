@@ -33,7 +33,7 @@ glabel func_080341C0
 /* 080341F2 */ STR R2, [SP, #8]
 /* 080341F4 */ STR R2, [SP, #0XC]
 /* 080341F6 */ STR R2, [SP, #0X10]
-/* 080341F8 */ BL func_080EEDE0
+/* 080341F8 */ BL sprite_create
 /* 080341FC */ CMP R5, #0
 /* 080341FE */ BNE _08034220
 /* 08034200 */ CMP R4, #4

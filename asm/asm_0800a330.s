@@ -23,7 +23,7 @@ glabel func_0800A330
 /* 0800A34E */ BL func_0800A088
 /* 0800A352 */ ADDS R1, R0, #0
 /* 0800A354 */ ADDS R0, R4, #0
-/* 0800A356 */ BL func_080EF9B4
+/* 0800A356 */ BL sprite_handler_set_mem_id
 /* 0800A35A */ LDR R2, _0800A384
 /* 0800A35C */ LDR R0, _0800A388
 /* 0800A35E */ MULS R0, R6, R0

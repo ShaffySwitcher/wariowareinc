@@ -91,7 +91,7 @@ glabel func_08038CCC
 /* 08038D7E */ STR R2, [SP, #0XC]
 /* 08038D80 */ STR R6, [SP, #0X10]
 /* 08038D82 */ MOVS R2, #0
-/* 08038D84 */ BL func_080EEDE0
+/* 08038D84 */ BL sprite_create
 _08038D88:
 /* 08038D88 */ ADD SP, #0X14
 /* 08038D8A */ POP {R4, R5, R6, R7}

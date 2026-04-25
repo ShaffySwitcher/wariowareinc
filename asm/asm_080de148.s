@@ -33,7 +33,7 @@ glabel func_080DE148
 /* 080DE17A */ STR R4, [SP, #0XC]
 /* 080DE17C */ STR R4, [SP, #0X10]
 /* 080DE17E */ MOVS R2, #0
-/* 080DE180 */ BL func_080EEDE0
+/* 080DE180 */ BL sprite_create
 /* 080DE184 */ LDR R2, [R5]
 /* 080DE186 */ ADDS R1, R2, #0
 /* 080DE188 */ ADDS R1, #0XE8

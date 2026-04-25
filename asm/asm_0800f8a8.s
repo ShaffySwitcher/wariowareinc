@@ -56,7 +56,7 @@ glabel func_0800F8A8
 /* 0800F90C */ STR R4, [SP, #0X10]
 /* 0800F90E */ MOVS R2, #0
 /* 0800F910 */ MOV R3, R8
-/* 0800F912 */ BL func_080EEDE0
+/* 0800F912 */ BL sprite_create
 /* 0800F916 */ ADDS R1, R0, #0
 /* 0800F918 */ LDR R0, [R7]
 /* 0800F91A */ LSLS R4, R5, #1

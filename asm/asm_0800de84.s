@@ -35,7 +35,7 @@ glabel func_0800DE84
 /* 0800DEBC */ STR R2, [SP, #0XC]
 /* 0800DEBE */ STR R2, [SP, #0X10]
 /* 0800DEC0 */ ADDS R3, R5, #0
-/* 0800DEC2 */ BL func_080EEDE0
+/* 0800DEC2 */ BL sprite_create
 /* 0800DEC6 */ ADDS R4, R0, #0
 /* 0800DEC8 */ LDR R0, [R6]
 /* 0800DECA */ LSLS R4, R4, #0X10

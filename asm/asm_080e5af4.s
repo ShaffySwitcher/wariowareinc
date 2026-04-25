@@ -49,7 +49,7 @@ _080E5B18:
 /* 080E5B42 */ ADDS R1, R2, #0
 /* 080E5B44 */ MOVS R2, #0
 /* 080E5B46 */ ADDS R3, R6, #0
-/* 080E5B48 */ BL func_080EEDE0
+/* 080E5B48 */ BL sprite_create
 /* 080E5B4C */ STRH R0, [R4]
 /* 080E5B4E */ LSLS R6, R6, #8
 /* 080E5B50 */ STR R6, [R4, #4]
