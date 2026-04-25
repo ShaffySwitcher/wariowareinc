@@ -15,7 +15,7 @@ glabel func_08033D3C
 /* 08033D4C */ LDR R1, _08033E24
 /* 08033D4E */ MOVS R2, #0X80
 /* 08033D50 */ LSLS R2, R2, #6
-/* 08033D52 */ BL func_08002598
+/* 08033D52 */ BL start_load_gfx_table_task
 /* 08033D56 */ MOVS R0, #0
 /* 08033D58 */ BL func_0800BEF4
 /* 08033D5C */ MOVS R0, #1

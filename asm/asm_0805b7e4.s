@@ -74,7 +74,7 @@ _0805B858:
 /* 0805B862 */ MOVS R2, #0X80
 /* 0805B864 */ LSLS R2, R2, #6
 /* 0805B866 */ MOVS R0, #2
-/* 0805B868 */ BL func_08002598
+/* 0805B868 */ BL start_load_gfx_table_task
 /* 0805B86C */ MOVS R0, #0
 /* 0805B86E */ BL func_0800BEF4
 /* 0805B872 */ MOVS R0, #1

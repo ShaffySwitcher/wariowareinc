@@ -5613,6 +5613,8 @@ SECTIONS {
         build/bin/data_080F6140.bin.o(.rodata*);
         build/audio/sample_table.json.s.o(.rodata);
         build/bin/data_0830B500.bin.o(.rodata*);
+        build/graphics/title/title_pal.c.o(.data);
+        build/bin/data_0830C3B0.bin.o(.rodata*);
         build/src/gameplay.c.o(.data);
         build/bin/data_083A3D94.bin.o(.rodata*);
 
@@ -5622,6 +5624,8 @@ SECTIONS {
         build/bin/data_083A4494.bin.o(.rodata*);
         build/src/lib_sprite.c.o(.data);
         build/bin/data_083A4A80.bin.o(.rodata*);
+        build/data/scenes/title/data.c.o(.data);
+        build/bin/data_083A8D0C.bin.o(.rodata*);
         build/audio/songs.c.o(.data);
     }
 
@@ -6975,6 +6979,12 @@ SECTIONS {
     }
 
     .cartrom_tail ALIGN(4) : SUBALIGN(2) {
+        build/graphics/title/title_bg_tiles.4bpp.s.o(.data*);
+        build/graphics/title/title_obj.4bpp.s.o(.data*);
+        build/bin/data_08544AA8.bin.o(.rodata*);
+        build/graphics/title/title_bg_map_logo.tilemap.s.o(.data*);
+        build/graphics/title/title_bg_map_border.tilemap.s.o(.data*);
+        build/graphics/title/title_bg_map.tilemap.s.o(.data*);
         build/bin/data.bin.o(.rodata*);
     }
 

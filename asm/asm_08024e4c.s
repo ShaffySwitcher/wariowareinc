@@ -31,7 +31,7 @@ glabel func_08024E4C
 /* 08024E7C */ MOVS R2, #0X80
 /* 08024E7E */ LSLS R2, R2, #7
 /* 08024E80 */ ADDS R1, R4, #0
-/* 08024E82 */ BL func_08002598
+/* 08024E82 */ BL start_load_gfx_table_task
 /* 08024E86 */ POP {R4}
 /* 08024E88 */ POP {R0}
 /* 08024E8A */ BX R0

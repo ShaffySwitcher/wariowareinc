@@ -86,6 +86,22 @@ struct Animation {
 
 #define END_ANIMATION { NULL, 0 }
 
+  //  //  //  PALETTE  //  //  //
+
+
+/* Standard RGB555 colors. */
+#define COLOR_BLACK 0x0000
+#define COLOR_WHITE 0x7FFF
+
+typedef u16 Palette[16];
+
+/* Convenience macro which converts RGB888 to RGB555. */
+#define TO_RGB555(x)                        \
+      (((((x) >> 16) & 0xFF) >> 3) << 0 )   \
+    | (((((x) >> 8 ) & 0xFF) >> 3) << 5 )   \
+    | (((((x) >> 0 ) & 0xFF) >> 3) << 10)
+
+
 struct GraphicsBuffer {
     u16 DISPCNT;       // 0x0 size:0x2
     u8 pad[0xA];       // 0x2 size:0xA
@@ -100,7 +116,49 @@ struct GraphicsBuffer {
     u8 pad1[0x30];     // 0x1C size:0x30
     u16 unk4C;         // 0x4C size:0x2
     u8 pad4e[6];       // 0x4E size:0x6
-    u16 unk54;         // 0x54 size:0x2
-    u8 pad56[0x7FE];   // 0x56 size:0x7FE
-    u8 unk854;         // 0x854
+    u16 bgPalette[16][16];   // 0x54 size:0x200
+    u16 objPalette[16][16];  // 0x254 size:0x200
+    u8 pad454[0x400];        // 0x454 size:0x400
+    u8 unk854;               // 0x854
 } gGraphicsBuffer;
+
+#define BG_PALETTE_BUFFER(p)    ((u16 *)gGraphicsBuffer.bgPalette)  + ((u32)((p) * 16))
+#define OBJ_PALETTE_BUFFER(p)   ((u16 *)gGraphicsBuffer.objPalette) + ((u32)((p) * 16))
+
+struct CompressedGFX {
+    const u16 *data;
+    u16 size;
+    u16 count;
+    const u32 *window1;
+    const u32 *window2;
+};
+
+struct CompressedData {
+    const void *data;
+    const u8 *rleData;
+    u16 rleSize;
+    u16 rleOffset;
+    u8 doubleCompressed;
+};
+
+#define END_OF_BUFFERED_TEXTURES_LIST NULL
+
+struct GraphicsTable {
+    const void *src;
+    void *dest;
+    s32 size;
+};
+
+#define COMPRESSED_GFX_SOURCE   -1
+#define FUNCTION_GFX_SOURCE     -2
+
+typedef void (*GfxTableSrcFunc)(void *dest);
+
+#define ADD_BG_TEXTURE(tex, tilesetNum)      { (tex),  BG_TILESET_BASE((tilesetNum) << 14),  COMPRESSED_GFX_SOURCE }
+#define ADD_OBJ_TEXTURE(tex, tilesetNum)     { (tex),  OBJ_TILESET_BASE((tilesetNum) << 14), COMPRESSED_GFX_SOURCE }
+#define ADD_BG_MAP(map, mapNum)              { (map),  BG_MAP_BASE((mapNum) << 11),          COMPRESSED_GFX_SOURCE }
+#define ADD_BG_MAP_S(map, mapNum, size)      { (map),  BG_MAP_BASE((mapNum) << 11),          (size)                }
+#define ADD_BG_PALETTE(pal, palNum, colors)  { (pal),  BG_PALETTE_BUFFER((palNum)),          ((colors) << 1)       }
+#define ADD_OBJ_PALETTE(pal, palNum, colors) { (pal),  OBJ_PALETTE_BUFFER((palNum)),         ((colors) << 1)       }
+#define ADD_CUSTOM_GFX_LOADER(func, dest)    { (func), (dest),                               FUNCTION_GFX_SOURCE   }
+#define END_OF_GRAPHICS_TABLE                { NULL,   NULL,                                 0                     }

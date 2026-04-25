@@ -62,12 +62,15 @@ ASM        := asm
 INCLUDES   := include
 BIN        := bin
 DATA	   := data
+SCENE_DATA := $(shell find $(DATA)/scenes -type d)
+GRAPHICS   := $(shell find graphics -type d)
 AUDIO      := audio
 MUSIC	:= $(AUDIO)/sequences
 SFX        := $(AUDIO)/samples
 
-C_DIRS     := $(sort $(SOURCES) $(AUDIO) $(DATA))
+C_DIRS     := $(sort $(SOURCES) $(GRAPHICS) $(AUDIO) $(DATA) $(SCENE_DATA))
 ASM_DIRS   := $(sort $(ASM) $(DATA))
+GFX_DIRS   := $(GRAPHICS)
 
 ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS) $(SFX) $(MUSIC)
 ALL_DIRS   := $(sort $(ALL_DIRS))
@@ -91,12 +94,16 @@ BINFILES := $(foreach dir,$(BIN),$(wildcard $(dir)/*.bin)) \
 			$(foreach dir,$(MUSIC),$(wildcard $(dir)/*.mid)) 
 WAVFILES    :=  $(foreach dir,$(SFX),$(wildcard $(dir)/*.wav))
 
+4BPPFILES   :=  $(filter-out $(BINFILES),$(foreach dir,$(GRAPHICS),$(wildcard $(dir)/*.4bpp)))
+TILEMAPS	:=  $(foreach dir,$(GFX_DIRS),$(wildcard $(dir)/*.tilemap))
 JSONFILES   :=  $(foreach dir,$(AUDIO),$(wildcard $(dir)/*.json))
 
 CFILES := $(filter-out %.inc.c, $(CFILES))
 
 PCMFILES       := $(addprefix $(BUILD)/,$(WAVFILES:.wav=.pcm))
-OFILES_GENERATED := $(addprefix $(BUILD)/,$(addsuffix .s.o,$(JSONFILES)))
+OFILES_GENERATED := $(addprefix $(BUILD)/,$(addsuffix .s.o,$(JSONFILES))) \
+					$(addprefix $(BUILD)/,$(addsuffix .s.o,$(4BPPFILES))) \
+				    $(addprefix $(BUILD)/,$(addsuffix .s.o,$(TILEMAPS)))
 
 OFILES_SOURCES   := $(addprefix $(BUILD)/,$(addsuffix .o,$(SFILES)))  \
                     $(addprefix $(BUILD)/,$(addsuffix .o,$(CFILES)))  \
@@ -201,6 +208,14 @@ $(BUILD)/%.s.o: %.s | $(BUILD_DIRS)
 $(BUILD)/%.json.s : %.json $(PCMFILES) tools/sample_parser.py | $(BUILD_DIRS)
 	$(call print,Generating data table from JSON:,$<,$@)
 	$(V)python3 tools/sample_parser.py $< $@
+
+$(BUILD)/%.4bpp.s : %.4bpp | $(BUILD_DIRS)
+	$(call print,Compressing graphics:,$<,$@)
+	$(V)python3 tools/compression.py $< $@
+
+$(BUILD)/%.tilemap.s : %.tilemap | $(BUILD_DIRS)
+	$(call print,Compressing tilemap:,$<,$@)
+	$(V)python3 tools/compression.py $< $@
 
 $(OFILES_GENERATED): $(BUILD)/%.s.o : $(BUILD)/%.s | $(BUILD_DIRS)
 	$(call print,Assembling:,$<,$@)

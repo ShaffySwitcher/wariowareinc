@@ -48,7 +48,7 @@ _080BF8D4:
 _080BF8DE:
 /* 080BF8DE */ MOVS R2, #0X80
 /* 080BF8E0 */ LSLS R2, R2, #6
-/* 080BF8E2 */ BL func_08002598
+/* 080BF8E2 */ BL start_load_gfx_table_task
 /* 080BF8E6 */ B _080BF8FE
 
 .balign 4, 0
@@ -61,7 +61,7 @@ _080BF8EC:
 /* 080BF8F4 */ LDR R1, _080BF9B0
 /* 080BF8F6 */ MOVS R2, #0X80
 /* 080BF8F8 */ LSLS R2, R2, #6
-/* 080BF8FA */ BL func_08002598
+/* 080BF8FA */ BL start_load_gfx_table_task
 _080BF8FE:
 /* 080BF8FE */ MOVS R0, #0
 /* 080BF900 */ BL func_0800BEF4

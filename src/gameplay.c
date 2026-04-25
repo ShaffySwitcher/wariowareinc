@@ -491,7 +491,7 @@ u32 gameplay_run_script(void) {
             if (gGameplayData.unk6_8 != 0) {
                 if ((gPressedKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) != 0) {
                     gGraphicsBuffer.DISPCNT = 0;
-                    gGraphicsBuffer.unk54 = 0;
+                    gGraphicsBuffer.bgPalette[0][0] = 0;
                     if (D_03004890.unk4 != 0) {
                         stop_soundplayer(D_03004890.unk4);
                     }

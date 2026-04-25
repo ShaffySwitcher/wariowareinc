@@ -25,7 +25,7 @@ glabel func_08019C28
 /* 08019C4E */ LDR R1, _08019E24
 /* 08019C50 */ MOVS R2, #0X80
 /* 08019C52 */ LSLS R2, R2, #5
-/* 08019C54 */ BL func_08002598
+/* 08019C54 */ BL start_load_gfx_table_task
 /* 08019C58 */ BL func_080069F4
 /* 08019C5C */ BL func_08006A04
 /* 08019C60 */ BL func_0800BFC8

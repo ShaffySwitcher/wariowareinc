@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08002598 \n\
+thumb_func_start start_load_gfx_table_task \n\
 /* 08002598 */ PUSH {LR} \n\
 /* 0800259A */ SUB SP, #0XC \n\
 /* 0800259C */ LSLS R0, R0, #0X10 \n\

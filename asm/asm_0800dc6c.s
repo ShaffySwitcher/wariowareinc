@@ -14,7 +14,7 @@ glabel func_0800DC6C
 /* 0800DC7C */ LDR R1, _0800DC94
 /* 0800DC7E */ MOVS R2, #0XC0
 /* 0800DC80 */ LSLS R2, R2, #6
-/* 0800DC82 */ BL func_08002598
+/* 0800DC82 */ BL start_load_gfx_table_task
 /* 0800DC86 */ LDR R1, =func_0800DC40 + 1
 /* 0800DC88 */ MOVS R2, #0
 /* 0800DC8A */ BL func_0800596C

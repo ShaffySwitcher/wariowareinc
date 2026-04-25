@@ -15,7 +15,7 @@ glabel func_0807A2EC
 /* 0807A2FA */ MOVS R2, #0X80
 /* 0807A2FC */ LSLS R2, R2, #6
 /* 0807A2FE */ MOVS R0, #2
-/* 0807A300 */ BL func_08002598
+/* 0807A300 */ BL start_load_gfx_table_task
 /* 0807A304 */ MOVS R0, #0
 /* 0807A306 */ BL func_0800BEF4
 /* 0807A30A */ MOVS R0, #1

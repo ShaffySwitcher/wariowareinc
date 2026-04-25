@@ -12,7 +12,7 @@ glabel func_08016708
 /* 08016712 */ LDR R1, _08016728
 /* 08016714 */ MOVS R2, #0XC0
 /* 08016716 */ LSLS R2, R2, #6
-/* 08016718 */ BL func_08002598
+/* 08016718 */ BL start_load_gfx_table_task
 /* 0801671C */ LDR R1, =func_080166E4 + 1
 /* 0801671E */ MOVS R2, #0
 /* 08016720 */ BL func_0800596C

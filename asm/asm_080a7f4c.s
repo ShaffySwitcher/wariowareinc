@@ -30,7 +30,7 @@ _080A7F84:
 /* 080A7F84 */ MOVS R2, #0X80
 /* 080A7F86 */ LSLS R2, R2, #5
 /* 080A7F88 */ ADDS R0, R3, #0
-/* 080A7F8A */ BL func_08002598
+/* 080A7F8A */ BL start_load_gfx_table_task
 /* 080A7F8E */ LDR R1, _080A7FE4
 /* 080A7F90 */ MOVS R2, #0
 /* 080A7F92 */ BL func_0800596C
