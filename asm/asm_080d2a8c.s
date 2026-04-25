@@ -159,7 +159,7 @@ _080D2B86:
 /* 080D2B9A */ ADDS R1, R2
 /* 080D2B9C */ MOVS R5, #0
 /* 080D2B9E */ LDRSH R1, [R1, R5]
-/* 080D2BA0 */ BL func_0800204C
+/* 080D2BA0 */ BL set_soundplayer_pitch
 _080D2BA4:
 /* 080D2BA4 */ POP {R3}
 /* 080D2BA6 */ MOV R8, R3

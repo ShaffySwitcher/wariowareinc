@@ -58,7 +58,7 @@ _080DCB70:
 /* 080DCB88 */ ADDS R1, #0XE8
 /* 080DCB8A */ MOVS R2, #0
 /* 080DCB8C */ LDRSH R1, [R1, R2]
-/* 080DCB8E */ BL func_0800204C
+/* 080DCB8E */ BL set_soundplayer_pitch
 /* 080DCB92 */ POP {R4}
 /* 080DCB94 */ POP {R0}
 /* 080DCB96 */ BX R0

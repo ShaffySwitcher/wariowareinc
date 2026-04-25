@@ -11,7 +11,7 @@ glabel func_080EC910
 /* 080EC916 */ LDR R0, [R0, #0X28]
 /* 080EC918 */ MOVS R1, #0X80
 /* 080EC91A */ LSLS R1, R1, #1
-/* 080EC91C */ BL func_0800204C
+/* 080EC91C */ BL set_soundplayer_pitch
 /* 080EC920 */ LDR R0, [R4]
 /* 080EC922 */ LDR R0, [R0, #0X28]
 /* 080EC924 */ MOVS R1, #0X80

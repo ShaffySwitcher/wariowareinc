@@ -66,7 +66,7 @@ _0802303C:
 /* 08023066 */ BL set_beatscript_speed
 /* 0802306A */ MOVS R0, #0XC0
 /* 0802306C */ LSLS R0, R0, #5
-/* 0802306E */ BL func_08009FB0
+/* 0802306E */ BL scene_set_music_pitch
 /* 08023072 */ LDR R0, _0802308C
 /* 08023074 */ LDR R0, [R0]
 /* 08023076 */ LDR R1, _08023090
@@ -126,7 +126,7 @@ _080230C8:
 /* 080230D6 */ LSLS R0, R0, #1
 /* 080230D8 */ BL set_beatscript_speed
 /* 080230DC */ MOVS R0, #0
-/* 080230DE */ BL func_08009FB0
+/* 080230DE */ BL scene_set_music_pitch
 /* 080230E2 */ MOVS R0, #0
 /* 080230E4 */ BL set_pause_beatscript_scene
 /* 080230E8 */ LDR R0, _08023108

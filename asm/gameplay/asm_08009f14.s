@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08009F14 \n\
+thumb_func_start scene_change_music \n\
 /* 08009F14 */ PUSH {R4, R5, LR} \n\
 /* 08009F16 */ ADDS R5, R0, #0 \n\
 /* 08009F18 */ ADDS R2, R1, #0 \n\
@@ -32,7 +32,7 @@ _08009F3C: \n\
 /* 08009F48 */ BL func_0800A430 \n\
 /* 08009F4C */ STRH R0, [R4, #8] \n\
 /* 08009F4E */ BL update_beatscript_tempo \n\
-/* 08009F52 */ BL func_08009F88 \n\
+/* 08009F52 */ BL scene_update_music_pitch \n\
 /* 08009F56 */ LDR R0, [R4, #4] \n\
 /* 08009F58 */ LDR R1, _08009F6C \n\
 /* 08009F5A */ ADDS R4, R4, R1 \n\

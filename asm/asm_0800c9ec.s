@@ -42,7 +42,7 @@ glabel func_0800C9EC
 /* 0800CA36 */ MULS R0, R4
 /* 0800CA38 */ LSLS R0, R0, #8
 /* 0800CA3A */ ASRS R0, R0, #0X10
-/* 0800CA3C */ BL func_08009FEC
+/* 0800CA3C */ BL scene_set_music_pitch_env
 _0800CA40:
 /* 0800CA40 */ POP {R4, R5}
 /* 0800CA42 */ POP {R0}

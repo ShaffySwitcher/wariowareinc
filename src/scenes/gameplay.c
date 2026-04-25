@@ -164,7 +164,7 @@ u32 gameplay_update_scene(void) {
     func_08005744();
     func_080056F4();
     if (gGameplayData.currentState != GAMEPLAY_STATE_SUSPENDED) {
-        func_08009AA0();
+        update_active_beatscript_scene();
     }
     switch (gGameplayData.currentState) {
         case GAMEPLAY_STATE_STAGE_INIT:
@@ -521,8 +521,8 @@ u32 gameplay_run_script(void) {
 
             case 14:
                 set_beatscript_speed(0x100);
-                func_08009FEC(0);
-                func_08009FB0(0);
+                scene_set_music_pitch_env(0);
+                scene_set_music_pitch(0);
                 gGameplayData.currentLives = gGameplayData.maxLives;
                 gGameplayData.currentScore = 0;
                 gGameplayData.unk17e = 0;
@@ -635,7 +635,7 @@ u32 gameplay_run_script(void) {
                     func_080006A4(D_03003848);
                     func_0800A270();
                     set_beatscript_tempo(gGameplayData.unk0->unk0);
-                    func_08009FB0(0);
+                    scene_set_music_pitch(0);
                     args[0] = stage->unk28;
                     break;
 
@@ -753,7 +753,7 @@ u32 gameplay_run_script(void) {
                         value.u32 = gGameplayData.unk284;
                     }
                 case 20:
-                    func_08009FB0((s16)value.u32);
+                    scene_set_music_pitch((s16)value.u32);
                     break;
 
                 case 26:
@@ -871,21 +871,51 @@ void func_08009EE0_stub(void) {
 
 }
 
-#include "asm/gameplay/asm_08009ee4.s"
+void func_08009EE4(u32 arg) {
+    gBeatscriptScene.unk0_b7 = arg;
+    update_beatscript_tempo();
+}
 
-#include "asm/gameplay/asm_08009f00.s"
+void func_08009F00(u32 arg) {
+    gBeatscriptScene.unk1C = arg;
+    update_beatscript_tempo();
+}
 
+// u32 scene_change_music(struct SongHeader *music, u32 override)
 #include "asm/gameplay/asm_08009f14.s"
 
-#include "asm/gameplay/asm_08009f70.s"
+void scene_set_music(struct SongHeader *music) {
+    scene_change_music(music, TRUE);
+}
 
-#include "asm/gameplay/asm_08009f7c.s"
+void scene_play_music(struct SongHeader *music) {
+    scene_change_music(music, FALSE);
+}
 
-#include "asm/gameplay/asm_08009f88.s"
+void scene_update_music_pitch(void) {
+    u32 flag;
 
-#include "asm/gameplay/asm_08009fb0.s"
+    flag = gBeatscriptScene.interpolatingMusicPitch;
+    scene_set_music_pitch(gBeatscriptScene.musicPitchSrc1);
+    gBeatscriptScene.interpolatingMusicPitch = flag;
+}
 
-#include "asm/gameplay/asm_08009fec.s"
+void scene_set_music_pitch(s16 pitch) {
+    gBeatscriptScene.musicPitchSrc1 = pitch;
+    pitch += gBeatscriptScene.musicPitchSrc2;
+    gBeatscriptScene.musicPitch = pitch;
+
+    if (gBeatscriptScene.musicPlayer != NULL) {
+        set_soundplayer_pitch(gBeatscriptScene.musicPlayer, pitch);
+    }
+
+    gBeatscriptScene.interpolatingMusicPitch = FALSE;
+}
+
+void scene_set_music_pitch_env(s16 pitch) {
+    gBeatscriptScene.musicPitchSrc2 = pitch;
+    scene_update_music_pitch();
+}
 
 #include "asm/gameplay/asm_0800a000.s"
 
@@ -927,3 +957,50 @@ void func_0800A160(struct Animation* anim, struct Vector2* pos) {
 
     sprite_handler_set_mem_id(gSpriteHandler, memID);
 }
+
+#include "asm/gameplay/asm_0800a200.s"
+
+#include "asm/gameplay/asm_0800a218.s"
+
+#include "asm/gameplay/asm_0800a228.s"
+
+#include "asm/gameplay/asm_0800a240.s"
+
+#include "asm/gameplay/asm_0800a270.s"
+
+#include "asm/gameplay/asm_0800a27c.s"
+
+#include "asm/gameplay/asm_0800a280.s"
+
+#include "asm/gameplay/asm_0800a298.s"
+
+#include "asm/gameplay/asm_0800a2d8.s"
+
+#include "asm/gameplay/asm_0800a330.s"
+
+#include "asm/gameplay/asm_0800a390.s"
+
+#include "asm/gameplay/asm_0800a3a4.s"
+
+#include "asm/gameplay/asm_0800a3bc.s"
+
+#include "asm/gameplay/asm_0800a3d0.s"
+
+#include "asm/gameplay/asm_0800a3fc.s"
+
+#include "asm/gameplay/asm_0800a430.s"
+
+#include "asm/gameplay/asm_0800a454.s"
+
+#include "asm/gameplay/asm_0800a57c.s"
+
+#include "asm/gameplay/asm_0800a69c.s"
+
+#include "asm/gameplay/asm_0800a768.s"
+
+#include "asm/gameplay/asm_0800a790.s"
+
+#include "asm/gameplay/asm_0800a7b4.s"
+
+// i'm so fucking scared
+#include "asm/gameplay/asm_0800a7d4.s"

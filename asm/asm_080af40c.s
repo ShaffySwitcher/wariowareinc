@@ -41,7 +41,7 @@ glabel func_080AF40C
 /* 080AF456 */ ADDS R0, R4
 /* 080AF458 */ LDR R0, [R0]
 /* 080AF45A */ MOVS R1, #0
-/* 080AF45C */ BL func_0800204C
+/* 080AF45C */ BL set_soundplayer_pitch
 _080AF460:
 /* 080AF460 */ CMP R7, #0XB4
 /* 080AF462 */ BNE _080AF49A

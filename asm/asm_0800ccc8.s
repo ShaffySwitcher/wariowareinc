@@ -26,7 +26,7 @@ glabel func_0800CCC8
 /* 0800CCEE */ ADDS R0, R5, R6
 /* 0800CCF0 */ MOVS R1, #0
 /* 0800CCF2 */ LDRSH R0, [R0, R1]
-/* 0800CCF4 */ BL func_08009FB0
+/* 0800CCF4 */ BL scene_set_music_pitch
 /* 0800CCF8 */ B _0800CD3E
 
 .balign 4, 0
@@ -63,7 +63,7 @@ _0800CD0C:
 /* 0800CD2C */ ADDS R0, R0, R1
 /* 0800CD2E */ LSLS R0, R0, #0X10
 /* 0800CD30 */ ASRS R0, R0, #0X10
-/* 0800CD32 */ BL func_08009FB0
+/* 0800CD32 */ BL scene_set_music_pitch
 /* 0800CD36 */ LDRB R0, [R5, #2]
 /* 0800CD38 */ MOVS R1, #1
 /* 0800CD3A */ ORRS R0, R1

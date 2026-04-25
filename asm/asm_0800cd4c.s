@@ -23,7 +23,7 @@ glabel func_0800CD4C
 /* 0800CD6A */ STR R5, [R1]
 /* 0800CD6C */ LSLS R0, R0, #0X10
 /* 0800CD6E */ ASRS R0, R0, #0X10
-/* 0800CD70 */ BL func_08009FB0
+/* 0800CD70 */ BL scene_set_music_pitch
 /* 0800CD74 */ LDRB R0, [R4, #2]
 /* 0800CD76 */ MOVS R1, #1
 /* 0800CD78 */ ORRS R0, R1

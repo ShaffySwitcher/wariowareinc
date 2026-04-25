@@ -18,7 +18,7 @@ glabel func_0800C7CC
 /* 0800C7E6 */ MOVS R2, #0X1E
 /* 0800C7E8 */ LDRSH R1, [R0, R2]
 /* 0800C7EA */ ADDS R0, R4, #0
-/* 0800C7EC */ BL func_0800204C
+/* 0800C7EC */ BL set_soundplayer_pitch
 /* 0800C7F0 */ ADDS R0, R4, #0
 /* 0800C7F2 */ POP {R4}
 /* 0800C7F4 */ POP {R1}

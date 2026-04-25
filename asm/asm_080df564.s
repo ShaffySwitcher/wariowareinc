@@ -24,7 +24,7 @@ glabel func_080DF564
 /* 080DF586 */ LDR R0, [R1, #8]
 /* 080DF588 */ MOVS R2, #0XC
 /* 080DF58A */ LDRSH R1, [R1, R2]
-/* 080DF58C */ BL func_0800204C
+/* 080DF58C */ BL set_soundplayer_pitch
 /* 080DF590 */ POP {R4}
 /* 080DF592 */ POP {R0}
 /* 080DF594 */ BX R0

@@ -37,7 +37,7 @@ glabel func_080D6CA4
 /* 080D6CE4 */ MOVS R2, #0
 /* 080D6CE6 */ LDRSH R1, [R0, R2]
 /* 080D6CE8 */ ADDS R0, R4, #0
-/* 080D6CEA */ BL func_0800204C
+/* 080D6CEA */ BL set_soundplayer_pitch
 /* 080D6CEE */ POP {R4, R5, R6}
 /* 080D6CF0 */ POP {R0}
 /* 080D6CF2 */ BX R0

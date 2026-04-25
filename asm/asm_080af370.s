@@ -59,7 +59,7 @@ glabel func_080AF370
 /* 080AF3E0 */ LDR R0, [R0]
 /* 080AF3E2 */ MOVS R1, #0XC0
 /* 080AF3E4 */ LSLS R1, R1, #4
-/* 080AF3E6 */ BL func_0800204C
+/* 080AF3E6 */ BL set_soundplayer_pitch
 /* 080AF3EA */ LDR R0, =D_083FDFFC
 /* 080AF3EC */ BL play_sound
 /* 080AF3F0 */ POP {R4, R5, R6}

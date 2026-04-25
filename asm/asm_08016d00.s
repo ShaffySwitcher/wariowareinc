@@ -11,7 +11,7 @@ glabel func_08016D00
 /* 08016D0A */ BL func_080099F8
 /* 08016D0E */ BL func_08005744
 /* 08016D12 */ BL func_080056F4
-/* 08016D16 */ BL func_08009AA0
+/* 08016D16 */ BL update_active_beatscript_scene
 /* 08016D1A */ BL func_08009CAC
 /* 08016D1E */ CMP R0, #0
 /* 08016D20 */ BNE _08016D32

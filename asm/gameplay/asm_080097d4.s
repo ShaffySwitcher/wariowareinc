@@ -40,7 +40,7 @@ thumb_func_start func_080097D4 \n\
 /* 0800981C */ BL set_beatscript_tempo \n\
 /* 08009820 */ STRH R6, [R4, #0X20] \n\
 /* 08009822 */ MOVS R0, #0 \n\
-/* 08009824 */ BL func_08009FB0 \n\
+/* 08009824 */ BL scene_set_music_pitch \n\
 /* 08009828 */ LDR R1, _08009868 \n\
 /* 0800982A */ ADDS R0, R4, R1 \n\
 /* 0800982C */ STRH R5, [R0] \n\

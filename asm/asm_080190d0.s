@@ -19,7 +19,7 @@ glabel func_080190D0
 /* 080190E6 */ ANDS R0, R1
 /* 080190E8 */ STRB R0, [R2]
 /* 080190EA */ LDR R0, _080190F8
-/* 080190EC */ BL func_08009F70
+/* 080190EC */ BL scene_set_music
 /* 080190F0 */ B _08019110
 
 .balign 4, 0
@@ -37,7 +37,7 @@ _080190FC:
 /* 08019106 */ LSRS R0, R0, #0XE
 /* 08019108 */ ADDS R0, R4
 /* 0801910A */ LDR R0, [R0]
-/* 0801910C */ BL func_08009F70
+/* 0801910C */ BL scene_set_music
 _08019110:
 /* 08019110 */ POP {R4}
 /* 08019112 */ POP {R0}

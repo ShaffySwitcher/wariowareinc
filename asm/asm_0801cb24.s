@@ -15,7 +15,7 @@ glabel func_0801CB24
 /* 0801CB34 */ LSLS R4, R4, #0X10
 /* 0801CB36 */ ASRS R4, R4, #0X10
 /* 0801CB38 */ ADDS R0, R4, #0
-/* 0801CB3A */ BL func_08009FEC
+/* 0801CB3A */ BL scene_set_music_pitch_env
 /* 0801CB3E */ POP {R4}
 /* 0801CB40 */ POP {R0}
 /* 0801CB42 */ BX R0

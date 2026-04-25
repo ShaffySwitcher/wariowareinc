@@ -30,7 +30,7 @@ glabel func_0801C580
 /* 0801C5AC */ ADDS R0, R1
 /* 0801C5AE */ LDR R0, [R0]
 /* 0801C5B0 */ LDR R0, [R0, #4]
-/* 0801C5B2 */ BL func_08009F70
+/* 0801C5B2 */ BL scene_set_music
 _0801C5B6:
 /* 0801C5B6 */ POP {R0}
 /* 0801C5B8 */ BX R0

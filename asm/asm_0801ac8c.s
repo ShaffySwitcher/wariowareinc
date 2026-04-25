@@ -29,7 +29,7 @@ _0801ACB0:
 /* 0801ACB2 */ LSLS R1, R1, #2
 /* 0801ACB4 */ ADDS R1, R0
 /* 0801ACB6 */ LDR R0, [R1]
-/* 0801ACB8 */ BL func_08009F70
+/* 0801ACB8 */ BL scene_set_music
 /* 0801ACBC */ B _0801ACD0
 
 .balign 4, 0
@@ -40,7 +40,7 @@ _0801ACC4:
 /* 0801ACC6 */ LSLS R1, R1, #2
 /* 0801ACC8 */ ADDS R1, R0
 /* 0801ACCA */ LDR R0, [R1]
-/* 0801ACCC */ BL func_08009F70
+/* 0801ACCC */ BL scene_set_music
 _0801ACD0:
 /* 0801ACD0 */ POP {R0}
 /* 0801ACD2 */ BX R0

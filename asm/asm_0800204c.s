@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_0800204C
+glabel set_soundplayer_pitch
 .thumb_func
 /* 0800204C */ PUSH {LR}
 /* 0800204E */ LSLS R1, R1, #0X10

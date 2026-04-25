@@ -13,7 +13,7 @@ glabel func_0801913C
 /* 08019148 */ LSRS R0, R0, #0XE
 /* 0801914A */ ADDS R0, R4
 /* 0801914C */ LDR R0, [R0]
-/* 0801914E */ BL func_08009F70
+/* 0801914E */ BL scene_set_music
 /* 08019152 */ POP {R4}
 /* 08019154 */ POP {R0}
 /* 08019156 */ BX R0

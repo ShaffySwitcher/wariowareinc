@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08009FB0 \n\
+thumb_func_start scene_set_music_pitch \n\
 /* 08009FB0 */ PUSH {R4, LR} \n\
 /* 08009FB2 */ LSLS R0, R0, #0X10 \n\
 /* 08009FB4 */ LSRS R0, R0, #0X10 \n\
@@ -19,7 +19,7 @@ thumb_func_start func_08009FB0 \n\
 /* 08009FCE */ LSLS R1, R0, #0X10 \n\
 /* 08009FD0 */ ASRS R1, R1, #0X10 \n\
 /* 08009FD2 */ ADDS R0, R2, #0 \n\
-/* 08009FD4 */ BL func_0800204C \n\
+/* 08009FD4 */ BL set_soundplayer_pitch \n\
 _08009FD8: \n\
 /* 08009FD8 */ LDRB R1, [R4, #2] \n\
 /* 08009FDA */ MOVS R0, #2 \n\
