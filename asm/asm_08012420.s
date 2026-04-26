@@ -10,7 +10,7 @@ glabel func_08012420
 /* 08012424 */ PUSH {R7}
 /* 08012426 */ SUB SP, #0X14
 /* 08012428 */ ADDS R6, R0, #0
-/* 0801242A */ BL func_0800065C
+/* 0801242A */ BL save_is_stage_unlocked
 /* 0801242E */ ADDS R5, R0, #0
 /* 08012430 */ CMP R5, #0
 /* 08012432 */ BEQ _080124A8
@@ -118,7 +118,7 @@ _080124CE:
 /* 080124EE */ LDR R0, [R0]
 /* 080124F0 */ MOV R8, R0
 /* 080124F2 */ ADDS R0, R6, #0
-/* 080124F4 */ BL func_0800065C
+/* 080124F4 */ BL save_is_stage_unlocked
 /* 080124F8 */ CMP R0, #0
 /* 080124FA */ BEQ _08012540
 /* 080124FC */ BL func_0800A27C

@@ -33,10 +33,8 @@ union FreeType {
 extern s8_8 gSineTable[];
 extern s8_8 gCosineTable[];
 
-/* Beatscript Scene Engine */
+/* Beatscript */
 
-
-// A Singular Beatscript Instruction
 struct Beatscript {
     u32 command:8;
     u32 param1:24;

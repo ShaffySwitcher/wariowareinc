@@ -7,7 +7,7 @@
 glabel func_080135E8
 /* 080135E8 */ PUSH {R4, LR}
 /* 080135EA */ ADDS R4, R0, #0
-/* 080135EC */ BL func_0800065C
+/* 080135EC */ BL save_is_stage_unlocked
 /* 080135F0 */ CMP R0, #0
 /* 080135F2 */ BEQ _0801360C
 /* 080135F4 */ BL func_0800A27C

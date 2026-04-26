@@ -12,7 +12,7 @@ glabel func_08016D00
 /* 08016D0E */ BL task_pool_update_constant
 /* 08016D12 */ BL task_pool_update_delayed
 /* 08016D16 */ BL update_active_beatscript_scene
-/* 08016D1A */ BL func_08009CAC
+/* 08016D1A */ BL beatscript_scene_is_inactive
 /* 08016D1E */ CMP R0, #0
 /* 08016D20 */ BNE _08016D32
 /* 08016D22 */ BL func_08006F68

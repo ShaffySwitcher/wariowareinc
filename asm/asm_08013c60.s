@@ -19,7 +19,7 @@ glabel func_08013C60
 /* 08013C7A */ B _08013E22
 _08013C7C:
 /* 08013C7C */ ADDS R0, R4, #0
-/* 08013C7E */ BL func_08000744
+/* 08013C7E */ BL save_get_highscore
 /* 08013C82 */ ADDS R4, R0, #0
 /* 08013C84 */ LSLS R4, R4, #0X10
 /* 08013C86 */ LSRS R4, R4, #0X10

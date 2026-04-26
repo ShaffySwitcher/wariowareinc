@@ -148,88 +148,99 @@ struct GameplayScriptCmd {
     union FreeType arg;
 };
 
+struct GameplayMicrogameInfo {
+    void* unk0;
+    void* unk4;
+    u8 unk8;
+    u8 unk9;
+    u8 padA[2];
+    void* unkC;
+};
+
+struct GameplayStruct6c_4 {
+    u32 unk0;
+    void* unk4;
+};
+
+struct GameplayStruct6c {
+    u32 unk0_1 : 8;
+    u32 unk0_9 : 1;
+    u32 unk0_10 : 23;
+    struct GameplayStruct6c_4* unk4;
+};
+
+struct GameplayRandomMicrogameList {
+    u8 pad0[4];
+    struct GameplayStruct6c_4* unk4;
+};
+
+struct GameplayScriptSelector {
+    u8 unk0;
+    u8 pad1[3];
+    struct GameplayScriptSelector** unk4;
+    void** unk8;
+};
+
 // DATA
-
-// FUNCTIONS
-
-
-
-
 extern s16 D_030035E0;
 extern u8 D_03003634;
 extern s16 D_03003844;
 extern u32 D_03004054[]; // 0x400 palette buffer (2x0x200)
 extern u8 D_03004394[]; 
 extern struct BeatscriptLocalData D_030049F0;
-
 extern struct GameplayScriptState D_030048B8;
 extern u8 D_03003848;
 extern u8 D_083A4BE4[];
 extern void *D_083FBB44;
 extern void *D_083FBBBC;
-
-
 extern void** D_03006524;
 extern void** D_03006528;
 extern void** D_0300652C;
-
 extern struct GameplayScriptCmd D_083A4BCC[];
-
 extern void* D_083FBAF4;
 extern void* D_083FBB08;
 extern u16 D_0300363C;
-
 extern struct GameplayData_struct_0* D_03003628;
+extern struct GameplayMicrogameInfo D_083A50E0[];
+extern u32 func_080F4890(u32, u32);
 
-
-
-
-
-extern u32 func_08003FB8(void);
+// FUNCTIONS
 extern void func_08008134(void);
-extern u32 gameplay_check_collision(struct Vector2 *, struct Rect *, struct Vector2 *, struct Rect *);
+extern u32 gameplay_check_collision(struct Vector2*, struct Rect*, struct Vector2*, struct Rect*);
 extern void gameplay_init_scene(void);
+extern void gameplay_stop_scene(void);
+extern u32 gameplay_update_scene(void);
 extern void func_08008798(void);
+extern void func_080088C0(void);
 extern void func_08008940(void);
+extern u32 func_08008AA4(u32);
+extern void func_08008AE8(struct GameplayScriptCmd*);
+extern struct GameplayScriptCmd* func_08008B18(void);
+extern void gameplay_stage_init(void);
+extern void func_08008DF4(void);
+extern void func_0800912C(u16);
+extern struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd*, s32);
+extern u32 gameplay_run_script(void);
+
+// EXTERNS
+extern u32 func_08003FB8(void);
 extern void func_08001B70(u32);
-extern void func_08003E64(void);
-extern void task_pool_force_cancel_id(u16);
-extern void mem_heap_dealloc_with_id(u16);
 extern void func_08007EAC(void);
-extern void sprite_id_delete(void*, u32);
-extern void func_08003A70(void *);
-extern void func_08003B58(void *);
-extern void func_08003D28(void *, u32);
+extern void func_08003A70(void*);
+extern void func_08003B58(void*);
+extern void func_08003D28(void*, u32);
 extern void trigger_pending_dma3(void);
 extern void func_080041B4(void);
-extern void task_pool_update_delayed(void);
-extern void task_pool_update_constant(void);
 extern void func_08005914(u32);
 extern void flush_graphics_buffer(void);
 extern void func_08006B00(void);
 extern void func_08006C40(u32, u32);
 extern void func_08006F68(void);
 extern void func_08005A54(u16, u32);
-extern u32 gameplay_run_script(void);
-extern void func_0800912C(u16);
-extern struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd* script, s32 target);
-extern void update_paused_beatscript_scene(void);
-extern void update_active_beatscript_scene(void);
-extern u32 func_08009CAC(void);
-extern void func_08009EE4(u32);
 extern void func_0800A098(void);
 extern void func_0800A200(u32);
 extern void func_0800A270(void);
 extern void func_0800CC9C(s32, s32);
 extern void func_0800CD94(s32, s32);
-extern void func_080EFA54(void *, u32);
+extern void func_080EFA54(void*, u32);
 extern void func_08008130(void);
-extern void gameplay_stop_scene(void);
-extern u32 gameplay_update_scene(void);
-extern void func_080088C0(void);
-extern void gameplay_stage_init(void);
-extern void stop_beatscript_scene(void);
-extern void set_soundplayer_speed(struct SoundPlayer*, u16);
-
-// FUNCTIONS
-void set_pause_beatscript_scene(u32 pause);

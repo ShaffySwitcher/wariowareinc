@@ -38,7 +38,7 @@ _08012CE6:
 /* 08012D08 */ MOVS R0, #2
 /* 08012D0A */ BL func_0800BF0C
 /* 08012D0E */ LDRB R0, [R4]
-/* 08012D10 */ BL func_0800065C
+/* 08012D10 */ BL save_is_stage_unlocked
 /* 08012D14 */ CMP R0, #0
 /* 08012D16 */ BEQ _08012D26
 /* 08012D18 */ LDR R2, =gGraphicsBuffer

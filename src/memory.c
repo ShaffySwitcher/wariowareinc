@@ -32,16 +32,17 @@ void init_save_buffer(void) {
     save->checksum = 0;
     save->unkC = 0x311F0000;
     
-    save->flags[STAGE_INTRODUCTION].flag = TRUE;
+    save->stageFlags[STAGE_INTRODUCTION].unlocked = TRUE;
     
-    func_080089D8(0x0F, 0x0000C350);
-    func_080089D8(0x10, 0x00002710);
-    func_080089D8(0x11, 0x00000064);
-    func_080089D8(0x12, 0x00002710);
-    func_080089D8(0x13, 0x00002710);
-    func_080089D8(0x14, 0x00000032);
-    func_080089D8(0x15, 0x0000001E);
-    func_080089D8(0x16, 0x00000028);
+    // set high scores
+    func_080089D8(0x0F, 50000); // sheriff
+    func_080089D8(0x10, 10000);
+    func_080089D8(0x11, 100);
+    func_080089D8(0x12, 10000);
+    func_080089D8(0x13, 10000);
+    func_080089D8(0x14, 50);
+    func_080089D8(0x15, 30);
+    func_080089D8(0x16, 40);
     func_080109B4();
 }
 
@@ -78,61 +79,65 @@ void write_save_backup(void) {
     write_save(backup_save_memory_base);
 }
 
-u32 func_0800065C(u32 arg0) {
-    return gSaveBuffer->flags[arg0].flag;
+u32 save_is_stage_unlocked(u32 id) {
+    return gSaveBuffer->stageFlags[id].unlocked;
 }
 
-void func_08000674(u32 arg0) {
-    gSaveBuffer->flags[arg0].flag = TRUE;
+void save_unlock_stage(u32 id) {
+    gSaveBuffer->stageFlags[id].unlocked = TRUE;
 }
 
-u32 func_0800068C(u32 arg0) {
-    return gSaveBuffer->flags[arg0].unk0_1;
+u32 func_0800068C(u32 id) {
+    return gSaveBuffer->stageFlags[id].unk0_1;
 }
 
-void func_080006A4(u32 arg0) {
-    gSaveBuffer->flags[arg0].unk0_1 = TRUE;
+void func_080006A4(u32 id) {
+    gSaveBuffer->stageFlags[id].unk0_1 = TRUE;
 }
 
-u32 func_080006BC(u32 arg0) {
-    if ((gSaveBuffer->flags2[arg0] & 1) != 0) {
+// probably those are bit-wise(?) i can't get them to match with a bitfield struct for some reason
+u32 func_080006BC(u32 id) {
+    if ((gSaveBuffer->microgameFlags[id] & 1) != 0) {
         return 1;
     }
     return 0;
 }
 
-u32 func_080006E4(u32 arg0) {
-    u32 index = arg0;
-    gSaveBuffer->flags2[index] |= TRUE;
+u32 func_080006E4(u32 id) {
+    u32 index = id;
+    gSaveBuffer->microgameFlags[index] |= TRUE;
 }
 
-u32 func_08000700(u32 arg0) {
-    if ((gSaveBuffer->flags2[arg0] & 2) != 0) {
+u32 func_08000700(u32 id) {
+    if ((gSaveBuffer->microgameFlags[id] & 2) != 0) {
         return 1;
     }
     return 0;
 }
 
-u32 func_08000728(u32 arg0) {
-    gSaveBuffer->flags2[arg0] |= 2;
+u32 func_08000728(u32 id) {
+    gSaveBuffer->microgameFlags[id] |= 2;
 }
 
-u16 func_08000744(u32 arg0) {
-    return gSaveBuffer->values[arg0];
+u16 save_get_highscore(u32 id) {
+    return gSaveBuffer->highScores[id];
 }
 
 void func_0800075c(u32 arg0) {
     func_080EE6A8(&arg0, D_083A3DA0, 4);
 }
 
-void func_08000778(u32 arg0) {
-    gSaveBuffer->unlocked[arg0 >> 5] |= (1 << (arg0 & 0x1F));
+// set bit in u32 flag array
+void func_08000778(u32 bit) {
+    gSaveBuffer->flags[bit / 32] |= (1 << (bit & 31));
 }
 
-void func_0800079C(u32 arg0) {
-    gSaveBuffer->unlocked[arg0 >> 5] &= ~(1 << (arg0 & 0x1F));
+// clear bit in u32 flag array
+void func_0800079C(u32 bit) {
+    gSaveBuffer->flags[bit / 32] &= ~(1 << (bit & 31));
 }
 
-u32 func_080007C0(u32 arg0) {
-    return (gSaveBuffer->unlocked[arg0 >> 5] >> (arg0 & 0x1F)) & 1;
+// checks bit in u32 flag array
+u32 func_080007C0(u32 bit) {
+    return (gSaveBuffer->flags[bit / 32] >> (bit & 31)) & 1;
 }

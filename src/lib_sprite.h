@@ -3,6 +3,7 @@
 #include "global.h"
 #include "graphics.h"
 
+// MACROS
 enum SpriteHandlerOperations {
     /* 00 */ SPRITE_OPERATION_SET_ANIM_CEL,
     /* 01 */ SPRITE_OPERATION_SET_ANIM_PROGRESS,
@@ -82,6 +83,7 @@ enum SpriteValueSetRequest {
     /* 08 */ SPRITE_ACT_SET_ORIGIN_XY,
 };
 
+// TYPES
 struct OamCel {
     u16 total;          // Amount of data
     struct OAM data[0]; // Data
@@ -168,11 +170,31 @@ struct OamDimensions {
     u8 height;
 };
 
+// DATA
 extern struct SpriteHandler D_03000BF0;
 extern u8 D_03000E70;
-
 extern struct SpriteHandler* gSpriteHandler;
+extern s16 D_083EBA74[];
 
-s8 sprite_anim_get_cel_total(struct Animation *);
-s16 sprite_get_anim_duration(struct Animation *);
-s32 sprite_is_invalid(void*, s16);
+// FUNCTIONS
+extern void sprite_set_visible(struct SpriteHandler *, s16, u16);
+extern void sprite_attr_set(struct SpriteHandler *, s16, u32);
+extern void sprite_attr_orr(struct SpriteHandler *, s16, u32);
+extern void sprite_attr_and(struct SpriteHandler *, s16, u32);
+extern void sprite_set_base_tile(struct SpriteHandler *, s16, s16);
+extern void sprite_set_base_palette(struct SpriteHandler *, s16, s8);
+extern void sprite_set_anim(struct SpriteHandler *, s16, struct Animation *, s8, s8, s8, u16);
+extern void sprite_set_enable_updates(struct SpriteHandler *, s16, u16);
+extern void sprite_set_callback(struct SpriteHandler *, s16, void *, u32);
+extern void sprite_set_playback(struct SpriteHandler *, s16, u8, u8, u16);
+extern void sprite_set_origin_x_y(struct SpriteHandler *, s16, s16 *, s16 *);
+extern void sprite_set_affine_params(struct SpriteHandler *, s16, s32, s16 *);
+extern s32 sprite_get_data(struct SpriteHandler *, s16, u32);
+extern u32 sprite_set_callback_cel(struct SpriteHandler *, s16, s8);
+extern void sprite_id_set_data(struct SpriteHandler *, u32, u32, u32);
+
+// EXTERNS
+extern s8 sprite_anim_get_cel_total(struct Animation *);
+extern s16 sprite_get_anim_duration(struct Animation *);
+extern s32 sprite_is_invalid(void*, s16);
+extern void sprite_id_delete(void*, u32);

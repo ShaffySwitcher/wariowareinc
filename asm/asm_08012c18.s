@@ -7,7 +7,7 @@
 glabel func_08012C18
 /* 08012C18 */ PUSH {R4, R5, LR}
 /* 08012C1A */ ADDS R4, R0, #0
-/* 08012C1C */ BL func_0800065C
+/* 08012C1C */ BL save_is_stage_unlocked
 /* 08012C20 */ CMP R0, #0
 /* 08012C22 */ BNE _08012C34
 /* 08012C24 */ LDR R4, _08012C30

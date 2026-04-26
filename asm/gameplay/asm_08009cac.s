@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08009CAC \n\
+thumb_func_start beatscript_scene_is_inactive \n\
 /* 08009CAC */ PUSH {LR} \n\
 /* 08009CAE */ MOVS R2, #0 \n\
 /* 08009CB0 */ LDR R0, _08009CC4 \n\

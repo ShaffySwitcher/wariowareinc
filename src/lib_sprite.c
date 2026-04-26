@@ -4,8 +4,6 @@ struct SpriteHandler* gSpriteHandler = &D_03000BF0;
 
 asm(".include \"include/gba.inc\"");
 
-extern s16 D_083EBA74[];
-
 void sprite_set_visible(struct SpriteHandler *handler, s16 id, u16 isVisible) {
     D_03000E70 = SPRITE_OPERATION_SET_VISIBLE;
     if (sprite_is_invalid(handler, id)) {
@@ -60,8 +58,7 @@ void sprite_set_base_palette(struct SpriteHandler *handler, s16 id, s8 basePalet
     handler->sprites[id].basePalette = basePalette;
 }
 
-void sprite_set_anim(struct SpriteHandler *handler, s16 id, struct Animation *anim,
-                                s8 startCel, s8 direction, s8 loopCel, u16 playbackType) {
+void sprite_set_anim(struct SpriteHandler *handler, s16 id, struct Animation *anim, s8 startCel, s8 direction, s8 loopCel, u16 playbackType) {
     struct Sprite *sprite;
 
     D_03000E70 = SPRITE_OPERATION_SET_ANIM;

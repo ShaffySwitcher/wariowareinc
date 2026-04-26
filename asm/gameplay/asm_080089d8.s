@@ -13,7 +13,7 @@ thumb_func_start func_080089D8 \n\
 /* 080089EA */ LDR R0, _08008A20 \n\
 /* 080089EC */ LDRB R4, [R0] \n\
 /* 080089EE */ ADDS R0, R4, #0 \n\
-/* 080089F0 */ BL func_08000744 \n\
+/* 080089F0 */ BL save_get_highscore \n\
 /* 080089F4 */ CMP R0, R5 \n\
 /* 080089F6 */ BHS _08008A9C \n\
 /* 080089F8 */ LDR R0, _08008A24 \n\

@@ -2,6 +2,7 @@
 #include "src/beatscript.h"
 #include "src/audio.h"
 #include "src/memory_heap.h"
+#include "src/task_pool.h"
 #include "src/lib_sprite.h"
 
 asm(".include \"include/gba.inc\"");
@@ -187,13 +188,34 @@ void update_active_beatscript_scene(void) {
     }
 }
 
-#include "asm/gameplay/asm_08009cac.s"
+u32 beatscript_scene_is_inactive(void) {
+    u32 i;
 
-#include "asm/gameplay/asm_08009cd8.s"
+    for (i = 0; i < ARRAY_COUNT(gBeatscriptScene.threads); i++) {
+        if (gBeatscriptScene.threads[i].active) {
+            return FALSE;
+        }
+    }
 
-#include "asm/gameplay/asm_08009cf0.s"
+    return TRUE;
+}
 
-#include "asm/gameplay/asm_08009d14.s"
+void beatscript_enable_loops(void) {
+    gBeatscriptScene.bypassLoops = FALSE;
+    gBeatscriptScene.exitLoopNextUpdate = FALSE;
+}
+
+void func_08009CF0(void) {
+    gBeatscriptScene.exitLoopNextUpdate = TRUE;
+
+    if(gBeatscriptScene.mode == 1){
+        func_0800A128(2);
+    }
+}
+
+void func_08009D14(void) {
+    gBeatscriptScene.exitLoopNextUpdate = TRUE;
+}
 
 void set_pause_beatscript_scene(u32 pause) {
     gBeatscriptScene.paused = pause;

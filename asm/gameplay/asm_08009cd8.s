@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08009CD8 \n\
+thumb_func_start beatscript_enable_loops \n\
 /* 08009CD8 */ LDR R2, =gBeatscriptScene \n\
 /* 08009CDA */ LDRB R1, [R2] \n\
 /* 08009CDC */ MOVS R0, #0X11 \n\

@@ -1,4 +1,5 @@
 #include "src/scenes/title.h"
+#include "src/beatscript.h"
 #include "src/audio.h"
 #include "src/memory.h"
 #include "src/lib_sprite.h"

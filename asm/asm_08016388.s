@@ -7,7 +7,7 @@
 glabel func_08016388
 /* 08016388 */ PUSH {LR}
 /* 0801638A */ MOVS R0, #0X1B
-/* 0801638C */ BL func_0800065C
+/* 0801638C */ BL save_is_stage_unlocked
 /* 08016390 */ CMP R0, #0
 /* 08016392 */ BNE _080163B0
 /* 08016394 */ MOVS R0, #8
@@ -17,7 +17,7 @@ glabel func_08016388
 /* 0801639E */ MOVS R0, #0X1B
 /* 080163A0 */ BL func_080006A4
 /* 080163A4 */ MOVS R0, #0X1B
-/* 080163A6 */ BL func_08000674
+/* 080163A6 */ BL save_unlock_stage
 /* 080163AA */ MOVS R0, #0X80
 /* 080163AC */ LSLS R0, R0, #0X14
 /* 080163AE */ B _080163B2

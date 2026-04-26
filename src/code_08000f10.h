@@ -2,12 +2,14 @@
 
 #include "global.h"
 
+// DATA
 extern u16 gPrevKeys;
 extern u16 gKeyRepeatTimer;
 extern u16 gCurrentKeys;
 extern u16 gPressedKeys;
 extern u16 gRepeatedKeys;
 
+// FUNCTIONS
 extern void func_08000F10(void);
 extern void func_08000F28(void);
 extern void vblank_wait(void);
@@ -24,3 +26,6 @@ extern u16 get_random_u16(void);
 extern u16 get_random_range(u16 max);
 extern u32 sine_lerp(u32 fullAngle);
 extern u32 cosine_lerp(u32 fullAngle);
+
+
+

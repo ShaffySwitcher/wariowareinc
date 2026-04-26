@@ -4,13 +4,6 @@
 
 asm(".include \"include/gba.inc\"");
 
-enum PaletteInterpolatorSourceTypesEnum {
-    /* 00 */ SOURCE_TYPE_PAL_PAL,
-    /* 01 */ SOURCE_TYPE_PAL_PAL_2,
-    /* 02 */ SOURCE_TYPE_COL_PAL,
-    /* 03 */ SOURCE_TYPE_PAL_COL,
-};
-
 void pal_interp_finalize(struct PaletteInterpolator *task) {
 }
 

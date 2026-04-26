@@ -2,46 +2,11 @@
 #include "src/audio.h"
 #include "src/memory.h"
 #include "src/memory_heap.h"
+#include "src/task_pool.h"
 #include "src/code_08000f10.h"
 #include "src/lib_sprite.h"
 
 asm(".include \"include/gba.inc\"");
-
-struct GameplayMicrogameInfo {
-    void* unk0;
-    void* unk4;
-    u8 unk8;
-    u8 unk9;
-    u8 padA[2];
-    void* unkC;
-};
-
-struct GameplayStruct6c_4 {
-    u32 unk0;
-    void* unk4;
-};
-
-struct GameplayStruct6c {
-    u32 unk0_1 : 8;
-    u32 unk0_9 : 1;
-    u32 unk0_10 : 23;
-    struct GameplayStruct6c_4* unk4;
-};
-
-struct GameplayRandomMicrogameList {
-    u8 pad0[4];
-    struct GameplayStruct6c_4* unk4;
-};
-
-struct GameplayScriptSelector {
-    u8 unk0;
-    u8 pad1[3];
-    struct GameplayScriptSelector** unk4;
-    void** unk8;
-};
-
-extern struct GameplayMicrogameInfo D_083A50E0[];
-extern u32 func_080F4890(u32, u32);
 
 void func_08008134(void) {
     if (D_030035E0 != 0) {
@@ -194,7 +159,7 @@ u32 gameplay_update_scene(void) {
                     func_08003D28(&gGameplayData.pad1f5 - 1, 1);
                     for (i = 0; i < 2;) {
                         i++;
-                        func_08005A54((u16)i, 1);
+                        func_08005A54(i, 1);
                     }
                     gGameplayData.currentState = GAMEPLAY_STATE_PAUSED;
                     play_sound(&s_BASIC_PAUSE_ON_seqData);
@@ -319,19 +284,19 @@ void func_08008940(void) {
 
 u32 func_08008AA4(u32 arg0) {
     struct Unk083A4B58 *entry = D_083A4B58[arg0];
-    struct SaveFlagsEntry *flagEntry;
+    struct SaveStageFlags *stageFlags;
     u16 *flagData;
 
     if (arg0 >= TOTAL_STAGES) {
         return 0;
     }
 
-    flagEntry = &gSaveBuffer->flags[arg0];
-    flagData = flagEntry->unk2;
+    stageFlags = &gSaveBuffer->stageFlags[arg0];
+    flagData = stageFlags->unk2;
 
     switch (entry->unk2) {
         case 1:
-            return flagEntry->unk2[0];
+            return stageFlags->unk2[0];
         case 2:
             return flagData[0] | (flagData[1] << 16);
         default:
@@ -513,7 +478,7 @@ u32 gameplay_run_script(void) {
     }
 
 
-    if (func_08009CAC()) {
+    if (beatscript_scene_is_inactive()) {
         switch (gGameplayData.unk24 - 2) {
             case 4:
                 func_0800912C(gGameplayData.currentScore);
@@ -619,7 +584,7 @@ u32 gameplay_run_script(void) {
                 case 1:
                     gGameplayData.unk5_4 = FALSE;
                     gGameplayData.unk70 = 0;
-                    gGameplayData.unk6c = value.u32ptr;
+                    gGameplayData.unk6c = (struct GameplayStruct6c*)value.u32ptr;
                     gGameplayData.unk18 = gBeatscriptScene.scriptBaseBPM;
                     func_08008B50();
                     func_08008E1C();
@@ -653,7 +618,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 8:
-                    gGameplayData.unk224 = value.u32;
+                    gGameplayData.unk224 = (struct GameplayScriptSelector *)value.u32;
                     break;
 
                 case 9:

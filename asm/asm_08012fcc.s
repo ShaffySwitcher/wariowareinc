@@ -19,7 +19,7 @@ glabel func_08012FCC
 /* 08012FE2 */ LDR R0, [R0]
 /* 08012FE4 */ MOV R8, R0
 /* 08012FE6 */ ADDS R0, R4, #0
-/* 08012FE8 */ BL func_0800065C
+/* 08012FE8 */ BL save_is_stage_unlocked
 /* 08012FEC */ CMP R0, #0
 /* 08012FEE */ BEQ _0801300C
 /* 08012FF0 */ BL func_0800A27C

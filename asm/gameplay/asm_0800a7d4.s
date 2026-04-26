@@ -1639,7 +1639,7 @@ _0800B2C2: \n\
 /* 0800B2CE */ B _0800B74C \n\
 _0800B2D0: \n\
 /* 0800B2D0 */ ADDS R0, R6, #0 \n\
-/* 0800B2D2 */ BL func_0800065C \n\
+/* 0800B2D2 */ BL save_is_stage_unlocked \n\
 _0800B2D6: \n\
 /* 0800B2D6 */ CMP R0, #0 \n\
 /* 0800B2D8 */ BEQ _0800B2DC \n\
