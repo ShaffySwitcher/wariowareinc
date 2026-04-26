@@ -40,7 +40,6 @@ D_083A4B58 = 0x083A4B58;
 D_083A4BCC = 0x083A4BCC;
 D_083A9160 = 0x083A9160;
 
-
 title_obj = 0x08545F28;
 
 sound_player_count = 0x0840642C;

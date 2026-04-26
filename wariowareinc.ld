@@ -5581,7 +5581,7 @@ SECTIONS {
         build/graphics/generic_pal.c.o(.data);
         build/bin/data_080F6BAC.bin.o(.rodata*);
         build/audio/sample_table.json.s.o(.rodata);
-        build/bin/data_0830B500.bin.o(.rodata*);
+        build/graphics/title/title_anim.c.o(.data);
         build/graphics/title/title_pal.c.o(.data);
         build/bin/data_0830C3B0.bin.o(.rodata*);
         build/data/scenes.c.o(.data);
