@@ -61,7 +61,7 @@ _0807677C:
 /* 0807677E */ LDR R0, [R0, #0X7C]
 /* 08076780 */ MOVS R1, #0X80
 /* 08076782 */ LSLS R1, R1, #1
-/* 08076784 */ BL func_080020C8
+/* 08076784 */ BL set_soundplayer_volume
 /* 08076788 */ LDR R0, [R4]
 /* 0807678A */ ADDS R0, #0X52
 /* 0807678C */ MOVS R1, #3
@@ -81,7 +81,7 @@ _080767A4:
 /* 080767A6 */ LDR R0, [R0, #0X7C]
 /* 080767A8 */ MOVS R1, #0X80
 /* 080767AA */ LSLS R1, R1, #1
-/* 080767AC */ BL func_080020C8
+/* 080767AC */ BL set_soundplayer_volume
 /* 080767B0 */ BL func_08076598
 /* 080767B4 */ LDR R0, [R4]
 /* 080767B6 */ ADDS R0, #0X52
@@ -102,7 +102,7 @@ _080767D0:
 /* 080767D2 */ LDR R0, [R0, #0X7C]
 /* 080767D4 */ MOVS R1, #0X80
 /* 080767D6 */ LSLS R1, R1, #1
-/* 080767D8 */ BL func_080020C8
+/* 080767D8 */ BL set_soundplayer_volume
 /* 080767DC */ BL func_080764FC
 /* 080767E0 */ LDR R0, [R4]
 /* 080767E2 */ ADDS R0, #0X52

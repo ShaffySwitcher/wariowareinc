@@ -14,7 +14,7 @@ glabel func_080D9B0C
 /* 080D9B18 */ LSLS R2, R2, #1
 /* 080D9B1A */ ADDS R1, R2
 /* 080D9B1C */ LDR R1, [R1]
-/* 080D9B1E */ BL func_080EF9BC
+/* 080D9B1E */ BL sprite_id_delete
 /* 080D9B22 */ POP {R0}
 /* 080D9B24 */ BX R0
 

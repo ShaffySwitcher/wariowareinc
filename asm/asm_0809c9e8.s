@@ -37,7 +37,7 @@ glabel func_0809C9E8
 /* 0809CA2C */ ADDS R0, R1
 /* 0809CA2E */ LDR R0, [R0]
 /* 0809CA30 */ MOVS R1, #0
-/* 0809CA32 */ BL func_080020C8
+/* 0809CA32 */ BL set_soundplayer_volume
 /* 0809CA36 */ POP {R4, R5}
 /* 0809CA38 */ POP {R0}
 /* 0809CA3A */ BX R0

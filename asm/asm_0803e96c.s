@@ -18,7 +18,7 @@ glabel func_0803E96C
 /* 0803E982 */ LDR R1, [R4]
 /* 0803E984 */ ADDS R1, #0XE0
 /* 0803E986 */ LDR R1, [R1]
-/* 0803E988 */ BL func_080EF9BC
+/* 0803E988 */ BL sprite_id_delete
 /* 0803E98C */ MOVS R0, #1
 /* 0803E98E */ BL func_0800CDB0
 /* 0803E992 */ POP {R4}

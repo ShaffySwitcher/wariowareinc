@@ -11,14 +11,14 @@ glabel func_080B0E80
 /* 080B0E86 */ LDR R4, _080B0EC0
 /* 080B0E88 */ LDR R1, [R4]
 /* 080B0E8A */ LDR R1, [R1, #0X48]
-/* 080B0E8C */ BL func_080EF9BC
+/* 080B0E8C */ BL sprite_id_delete
 /* 080B0E90 */ LDR R0, [R5]
 /* 080B0E92 */ LDR R1, [R4]
 /* 080B0E94 */ MOVS R2, #0XD0
 /* 080B0E96 */ LSLS R2, R2, #1
 /* 080B0E98 */ ADDS R1, R2
 /* 080B0E9A */ LDR R1, [R1]
-/* 080B0E9C */ BL func_080EF9BC
+/* 080B0E9C */ BL sprite_id_delete
 /* 080B0EA0 */ LDR R0, =gGraphicsBuffer
 /* 080B0EA2 */ ADDS R1, R0, #0
 /* 080B0EA4 */ ADDS R1, #0X4C

@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_080020C8
+glabel set_soundplayer_volume
 .thumb_func
 /* 080020C8 */ PUSH {LR}
 /* 080020CA */ LSLS R1, R1, #0X10

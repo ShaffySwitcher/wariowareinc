@@ -31,7 +31,7 @@ _0806B9A4:
 /* 0806B9CA */ LSLS R2, R2, #1
 /* 0806B9CC */ ADDS R1, R2
 /* 0806B9CE */ LDR R1, [R1]
-/* 0806B9D0 */ BL func_080EF9BC
+/* 0806B9D0 */ BL sprite_id_delete
 /* 0806B9D4 */ POP {R4, R5, R6}
 /* 0806B9D6 */ POP {R0}
 /* 0806B9D8 */ BX R0

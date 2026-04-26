@@ -37,7 +37,7 @@ _08009F3C: \n\
 /* 08009F58 */ LDR R1, _08009F6C \n\
 /* 08009F5A */ ADDS R4, R4, R1 \n\
 /* 08009F5C */ LDRH R1, [R4] \n\
-/* 08009F5E */ BL func_080020C8 \n\
+/* 08009F5E */ BL set_soundplayer_volume \n\
 _08009F62: \n\
 /* 08009F62 */ POP {R4, R5} \n\
 /* 08009F64 */ POP {R1} \n\

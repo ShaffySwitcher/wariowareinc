@@ -32,7 +32,7 @@ glabel func_080DF490
 /* 080DF4C2 */ MOVS R1, #0
 _080DF4C4:
 /* 080DF4C4 */ LDR R0, [R4, #8]
-/* 080DF4C6 */ BL func_080020C8
+/* 080DF4C6 */ BL set_soundplayer_volume
 _080DF4CA:
 /* 080DF4CA */ POP {R4}
 /* 080DF4CC */ POP {R0}

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080097D4 \n\
+thumb_func_start start_beatscript_scene \n\
 /* 080097D4 */ PUSH {R4, R5, R6, LR} \n\
 /* 080097D6 */ MOV R6, R8 \n\
 /* 080097D8 */ PUSH {R6} \n\

@@ -10,7 +10,7 @@ thumb_func_start func_0800A000 \n\
 /* 0800A00C */ ADDS R0, R2, R3 \n\
 /* 0800A00E */ STRH R1, [R0] \n\
 /* 0800A010 */ LDR R0, [R2, #4] \n\
-/* 0800A012 */ BL func_080020C8 \n\
+/* 0800A012 */ BL set_soundplayer_volume \n\
 /* 0800A016 */ POP {R0} \n\
 /* 0800A018 */ BX R0 \n\
  \n\

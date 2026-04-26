@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_080056F4
+glabel task_pool_update_delayed
 .thumb_func
 /* 080056F4 */ PUSH {R4, R5, LR}
 /* 080056F6 */ LDR R1, _08005720
@@ -39,7 +39,7 @@ _08005724:
 /* 0800572C */ BEQ _08005736
 /* 0800572E */ ADDS R0, R4, #0
 /* 08005730 */ MOVS R1, #0
-/* 08005732 */ BL func_080056B0
+/* 08005732 */ BL task_stop
 _08005736:
 /* 08005736 */ ADDS R5, #1
 /* 08005738 */ ADDS R4, #0X1C

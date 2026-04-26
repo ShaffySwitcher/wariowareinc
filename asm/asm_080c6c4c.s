@@ -87,7 +87,7 @@ _080C6CA8:
 /* 080C6CC6 */ ADDS R0, R6
 /* 080C6CC8 */ LDR R0, [R0]
 /* 080C6CCA */ MOVS R1, #0
-/* 080C6CCC */ BL func_080020C8
+/* 080C6CCC */ BL set_soundplayer_volume
 /* 080C6CD0 */ B _080C6DF0
 
 .balign 4, 0
@@ -113,7 +113,7 @@ _080C6CEC:
 /* 080C6CF4 */ ADDS R0, R1
 /* 080C6CF6 */ LDR R0, [R0]
 /* 080C6CF8 */ SUBS R1, #0X94
-/* 080C6CFA */ BL func_080020C8
+/* 080C6CFA */ BL set_soundplayer_volume
 /* 080C6CFE */ LDR R0, [R4]
 /* 080C6D00 */ LDR R2, _080C6D10
 /* 080C6D02 */ ADDS R1, R0, R2

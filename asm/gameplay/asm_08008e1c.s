@@ -401,7 +401,7 @@ _08009030: \n\
 /* 080090F2 */ LSRS R0, R1, #0X10 \n\
 /* 080090F4 */ BL set_beatscript_tempo \n\
 /* 080090F8 */ ADD R0, SP, #4 \n\
-/* 080090FA */ BL func_0800986C \n\
+/* 080090FA */ BL set_beatscript_subscenes \n\
 /* 080090FE */ ADD SP, #0X10 \n\
 /* 08009100 */ POP {R3, R4, R5} \n\
 /* 08009102 */ MOV R8, R3 \n\

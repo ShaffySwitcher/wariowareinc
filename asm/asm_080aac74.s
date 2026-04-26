@@ -11,7 +11,7 @@ glabel func_080AAC74
 /* 080AAC7A */ LDR R1, =gCurrentSceneVariable
 /* 080AAC7C */ LDR R1, [R1]
 /* 080AAC7E */ LDR R1, [R1, #0X1C]
-/* 080AAC80 */ BL func_080EF9BC
+/* 080AAC80 */ BL sprite_id_delete
 /* 080AAC84 */ POP {R0}
 /* 080AAC86 */ BX R0
 

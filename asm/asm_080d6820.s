@@ -65,7 +65,7 @@ glabel func_080D6820
 /* 080D689A */ LDR R0, [R0]
 /* 080D689C */ MOVS R1, #0X80
 /* 080D689E */ LSLS R1, R1, #1
-/* 080D68A0 */ BL func_080020C8
+/* 080D68A0 */ BL set_soundplayer_volume
 /* 080D68A4 */ LDR R0, [R5]
 /* 080D68A6 */ ADDS R0, R4
 /* 080D68A8 */ LDRB R0, [R0]

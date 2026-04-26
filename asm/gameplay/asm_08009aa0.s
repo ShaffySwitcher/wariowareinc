@@ -229,7 +229,7 @@ _08009C2E: \n\
 /* 08009C38 */ LDR R0, _08009CA0 \n\
 /* 08009C3A */ LDR R0, [R0] \n\
 /* 08009C3C */ MOV R1, R8 \n\
-/* 08009C3E */ BL func_080EF9BC \n\
+/* 08009C3E */ BL sprite_id_delete \n\
 /* 08009C42 */ MOV R0, R8 \n\
 /* 08009C44 */ BL func_08001B70 \n\
 /* 08009C48 */ MOV R3, R8 \n\
@@ -261,7 +261,7 @@ _08009C62: \n\
 /* 08009C82 */ LDR R2, _08009CA8 \n\
 /* 08009C84 */ ADDS R1, R4, R2 \n\
 /* 08009C86 */ LDRH R1, [R1] \n\
-/* 08009C88 */ BL func_080020C8 \n\
+/* 08009C88 */ BL set_soundplayer_volume \n\
 _08009C8C: \n\
 /* 08009C8C */ ADD SP, #4 \n\
 /* 08009C8E */ POP {R3, R4, R5} \n\

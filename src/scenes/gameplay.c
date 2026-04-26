@@ -5,11 +5,7 @@
 #include "src/code_08000f10.h"
 #include "src/lib_sprite.h"
 
-#define gGameplayData CURRENT_SCENE_DATA(struct GameplayData)
-
 asm(".include \"include/gba.inc\"");
-
-extern u8 D_03005758[];
 
 struct GameplayMicrogameInfo {
     void* unk0;
@@ -125,7 +121,7 @@ void gameplay_init_scene(void) {
     gGameplayData.unk4_6 = gGameplayData.currentState;
     gGameplayData.unk5_3 = 1;
     
-    func_080097D4(1);
+    start_beatscript_scene(1);
 }
 
 void gameplay_stop_scene(void) {
@@ -136,7 +132,7 @@ void gameplay_stop_scene(void) {
     
     for(i = 0; i < 2;){
         i++; // why?
-        func_080EF9BC(gSpriteHandler, i);
+        sprite_id_delete(gSpriteHandler, i);
         func_08001B70(i);
         task_pool_force_cancel_id(i);
         mem_heap_dealloc_with_id(i);
@@ -158,14 +154,18 @@ u32 gameplay_update_scene(void) {
     flush_graphics_buffer();
     trigger_pending_dma3();
     func_08003A70(&gGameplayData.pad1f5 - 1);
-    if (gGameplayData.isPaused == 0) {
-        func_080099F8();
+
+    if (!gGameplayData.isPaused) {
+        update_paused_beatscript_scene();
     }
-    func_08005744();
-    func_080056F4();
+
+    task_pool_update_constant();
+    task_pool_update_delayed();
+    
     if (gGameplayData.currentState != GAMEPLAY_STATE_SUSPENDED) {
         update_active_beatscript_scene();
     }
+
     switch (gGameplayData.currentState) {
         case GAMEPLAY_STATE_STAGE_INIT:
             gameplay_stage_init();
@@ -395,7 +395,7 @@ void gameplay_stage_init(void) {
         gGameplayData.unk20 = D_083A4BCC;
         args[0] = 0;
     }
-    func_0800986C(args);
+    set_beatscript_subscenes(args);
 }
 
 void func_08008DF4(void) {
@@ -431,7 +431,7 @@ void func_0800912C(u16 arg0) {
     
     args[0] = stageInfo->unk30;
     args[1] = 0;
-    func_0800986C(args);
+    set_beatscript_subscenes(args);
 }
 
 struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd* script, s32 target) {
@@ -551,7 +551,7 @@ u32 gameplay_run_script(void) {
                     func_0800CD94(0, 0x60);
                     args[0] = stage->unk2C;
                     args[1] = 0;
-                    func_0800986C(args);
+                    set_beatscript_subscenes(args);
                     return 0;
                 }
 
@@ -763,7 +763,7 @@ u32 gameplay_run_script(void) {
             }
 
             if (args[0] != 0 || args[1] != 0) {
-                func_0800986C(args);
+                set_beatscript_subscenes(args);
                 return 0;
             }
         }
@@ -771,236 +771,3 @@ u32 gameplay_run_script(void) {
 
     return 0;
 }
-
-#include "asm/gameplay/asm_080097d4.s"
-
-#include "asm/gameplay/asm_0800986c.s"
-
-#include "asm/gameplay/asm_080099f8.s"
-
-#include "asm/gameplay/asm_08009aa0.s"
-
-#include "asm/gameplay/asm_08009cac.s"
-
-#include "asm/gameplay/asm_08009cd8.s"
-
-#include "asm/gameplay/asm_08009cf0.s"
-
-#include "asm/gameplay/asm_08009d14.s"
-
-void set_pause_beatscript_scene(u32 pause) {
-    gBeatscriptScene.paused = pause;
-}
-
-u32 beatscript_scene_is_paused(void) {
-    return gBeatscriptScene.paused;
-}
-
-void stop_beatscript_scene(void) {
-    u32 i;
-    struct BeatscriptThread *thread;
-    const struct SubScene *subScene;
-
-    for (i = 0; i < ARRAY_COUNT(gBeatscriptScene.threads); i++) {
-        gBeatscriptScene.currentThread = i;
-        thread = &gBeatscriptScene.threads[i];
-        subScene = thread->subScene;
-
-        if (thread->active) {
-            gCurrentSceneVariable = &gBeatscriptScene.localVariables[i];
-            gCurrentSceneSpritePool = gBeatscriptScene.threads[i].sprites;
-
-            sprite_handler_set_mem_id(gSpriteHandler, i + 1);
-
-            if (subScene->stopFunc != NULL) {
-                subScene->stopFunc(&gBeatscriptScene.localVariables[i], subScene->stopParam);
-            }
-
-            func_080EF9BC(gSpriteHandler, i + 1);
-            func_08001B70(i + 1);
-            mem_heap_dealloc_with_id(i + 1);
-            task_pool_force_cancel_id(i + 1);
-
-            thread->active = FALSE;
-        }
-    }
-}
-
-void set_beatscript_tempo(u16 tempo) {
-    s32 speed;
-
-    gBeatscriptScene.scriptBaseBPM = tempo;
-    if (gBeatscriptScene.unk0_b6 && gBeatscriptScene.unk0_b7) {
-        tempo *= gBeatscriptScene.unk1C;
-    }
-    tempo = FIXED_POINT_MUL(gBeatscriptScene.scriptSpeed, tempo);
-    gBeatscriptScene.scriptBPM = tempo;
-
-    speed = INT_TO_FIXED(tempo);
-    gBeatscriptScene.spriteAnimSpeed = speed / 140;
-    speed /= gBeatscriptScene.musicBaseBPM;
-    gBeatscriptScene.deltaTime = gBeatscriptScene.musicBaseBPM * speed / 150u;
-
-    if (gBeatscriptScene.musicPlayer != NULL) {
-        set_soundplayer_speed(gBeatscriptScene.musicPlayer, speed);
-    }
-
-    if (gBeatscriptScene.mode == 1) {
-        gGameplayData.unk14 = gBeatscriptScene.scriptBPM;
-        gGameplayData.unk16 = gBeatscriptScene.spriteAnimSpeed;
-        gGameplayData.unk1c = gBeatscriptScene.deltaTime;
-    }
-
-    gBeatscriptScene.interpolatingTempo = FALSE;
-}
-
-void update_beatscript_tempo(void) {
-    u32 flag;
-
-    flag = gBeatscriptScene.interpolatingTempo;
-    set_beatscript_tempo(gBeatscriptScene.scriptBaseBPM);
-    gBeatscriptScene.interpolatingTempo = flag;
-}
-
-void set_beatscript_speed(u16 speed) {
-    gBeatscriptScene.scriptSpeed = speed;
-    update_beatscript_tempo();
-}
-
-void func_08009EE0_stub(void) {
-
-}
-
-void func_08009EE4(u32 arg) {
-    gBeatscriptScene.unk0_b7 = arg;
-    update_beatscript_tempo();
-}
-
-void func_08009F00(u32 arg) {
-    gBeatscriptScene.unk1C = arg;
-    update_beatscript_tempo();
-}
-
-// u32 scene_change_music(struct SongHeader *music, u32 override)
-#include "asm/gameplay/asm_08009f14.s"
-
-void scene_set_music(struct SongHeader *music) {
-    scene_change_music(music, TRUE);
-}
-
-void scene_play_music(struct SongHeader *music) {
-    scene_change_music(music, FALSE);
-}
-
-void scene_update_music_pitch(void) {
-    u32 flag;
-
-    flag = gBeatscriptScene.interpolatingMusicPitch;
-    scene_set_music_pitch(gBeatscriptScene.musicPitchSrc1);
-    gBeatscriptScene.interpolatingMusicPitch = flag;
-}
-
-void scene_set_music_pitch(s16 pitch) {
-    gBeatscriptScene.musicPitchSrc1 = pitch;
-    pitch += gBeatscriptScene.musicPitchSrc2;
-    gBeatscriptScene.musicPitch = pitch;
-
-    if (gBeatscriptScene.musicPlayer != NULL) {
-        set_soundplayer_pitch(gBeatscriptScene.musicPlayer, pitch);
-    }
-
-    gBeatscriptScene.interpolatingMusicPitch = FALSE;
-}
-
-void scene_set_music_pitch_env(s16 pitch) {
-    gBeatscriptScene.musicPitchSrc2 = pitch;
-    scene_update_music_pitch();
-}
-
-#include "asm/gameplay/asm_0800a000.s"
-
-#include "asm/gameplay/asm_0800a024.s"
-
-#include "asm/gameplay/asm_0800a038.s"
-
-#include "asm/gameplay/asm_0800a044.s"
-
-#include "asm/gameplay/asm_0800a050.s"
-
-#include "asm/gameplay/asm_0800a064.s"
-
-#include "asm/gameplay/asm_0800a068.s"
-
-#include "asm/gameplay/asm_0800a074.s"
-
-#include "asm/gameplay/asm_0800a088.s"
-
-#include "asm/gameplay/asm_0800a098.s"
-
-#include "asm/gameplay/asm_0800a0c4.s"
-
-#include "asm/gameplay/asm_0800a128.s"
-
-#include "asm/gameplay/asm_0800a138.s"
-
-#include "asm/gameplay/asm_0800a14c.s"
-
-void func_0800A160(struct Animation* anim, struct Vector2* pos) {
-    u32 memID = sprite_handler_get_mem_id(gSpriteHandler);
-    sprite_handler_set_mem_id(gSpriteHandler, get_current_mem_id());
-
-    gGameplayData.unk1ee = sprite_create(gSpriteHandler, anim, 0, pos->x, pos->y, 0x40, 0, 0, 0);
-    
-    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
-    sprite_set_base_tile(gSpriteHandler, gGameplayData.unk1ee, 0x280);
-    sprite_set_base_palette(gSpriteHandler, gGameplayData.unk1ee, 10);
-
-    sprite_handler_set_mem_id(gSpriteHandler, memID);
-}
-
-#include "asm/gameplay/asm_0800a200.s"
-
-#include "asm/gameplay/asm_0800a218.s"
-
-#include "asm/gameplay/asm_0800a228.s"
-
-#include "asm/gameplay/asm_0800a240.s"
-
-#include "asm/gameplay/asm_0800a270.s"
-
-#include "asm/gameplay/asm_0800a27c.s"
-
-#include "asm/gameplay/asm_0800a280.s"
-
-#include "asm/gameplay/asm_0800a298.s"
-
-#include "asm/gameplay/asm_0800a2d8.s"
-
-#include "asm/gameplay/asm_0800a330.s"
-
-#include "asm/gameplay/asm_0800a390.s"
-
-#include "asm/gameplay/asm_0800a3a4.s"
-
-#include "asm/gameplay/asm_0800a3bc.s"
-
-#include "asm/gameplay/asm_0800a3d0.s"
-
-#include "asm/gameplay/asm_0800a3fc.s"
-
-#include "asm/gameplay/asm_0800a430.s"
-
-#include "asm/gameplay/asm_0800a454.s"
-
-#include "asm/gameplay/asm_0800a57c.s"
-
-#include "asm/gameplay/asm_0800a69c.s"
-
-#include "asm/gameplay/asm_0800a768.s"
-
-#include "asm/gameplay/asm_0800a790.s"
-
-#include "asm/gameplay/asm_0800a7b4.s"
-
-// i'm so fucking scared
-#include "asm/gameplay/asm_0800a7d4.s"

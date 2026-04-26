@@ -321,7 +321,7 @@ _080B70AA:
 /* 080B70AA */ LDR R0, [R0, #8]
 /* 080B70AC */ MOVS R1, #0X80
 /* 080B70AE */ LSLS R1, R1, #1
-/* 080B70B0 */ BL func_080020C8
+/* 080B70B0 */ BL set_soundplayer_volume
 /* 080B70B4 */ B _080B7238
 
 .balign 4, 0
@@ -517,7 +517,7 @@ _080B720E:
 /* 080B722E */ LDR R0, [R0, #8]
 /* 080B7230 */ MOVS R1, #0X80
 /* 080B7232 */ LSLS R1, R1, #1
-/* 080B7234 */ BL func_080020C8
+/* 080B7234 */ BL set_soundplayer_volume
 _080B7238:
 /* 080B7238 */ ADD SP, #0XC
 /* 080B723A */ POP {R3, R4}

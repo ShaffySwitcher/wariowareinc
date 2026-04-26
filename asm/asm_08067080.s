@@ -19,25 +19,25 @@ glabel func_08067080
 /* 08067096 */ LSLS R2, R2, #4
 /* 08067098 */ ADDS R1, R2
 /* 0806709A */ LDR R1, [R1]
-/* 0806709C */ BL func_080EF9BC
+/* 0806709C */ BL sprite_id_delete
 /* 080670A0 */ LDR R0, [R4]
 /* 080670A2 */ LDR R1, [R5]
 /* 080670A4 */ LDR R2, _080670D8
 /* 080670A6 */ ADDS R1, R2
 /* 080670A8 */ LDR R1, [R1]
-/* 080670AA */ BL func_080EF9BC
+/* 080670AA */ BL sprite_id_delete
 /* 080670AE */ LDR R0, [R4]
 /* 080670B0 */ LDR R1, [R5]
 /* 080670B2 */ LDR R2, _080670DC
 /* 080670B4 */ ADDS R1, R2
 /* 080670B6 */ LDR R1, [R1]
-/* 080670B8 */ BL func_080EF9BC
+/* 080670B8 */ BL sprite_id_delete
 /* 080670BC */ LDR R0, [R4]
 /* 080670BE */ LDR R1, [R5]
 /* 080670C0 */ LDR R2, _080670E0
 /* 080670C2 */ ADDS R1, R2
 /* 080670C4 */ LDR R1, [R1]
-/* 080670C6 */ BL func_080EF9BC
+/* 080670C6 */ BL sprite_id_delete
 _080670CA:
 /* 080670CA */ POP {R4, R5}
 /* 080670CC */ POP {R0}

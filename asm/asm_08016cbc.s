@@ -20,9 +20,9 @@ glabel func_08016CBC
 /* 08016CE2 */ STR R4, [SP]
 /* 08016CE4 */ MOVS R0, #0
 /* 08016CE6 */ STR R0, [SP, #4]
-/* 08016CE8 */ BL func_080097D4
+/* 08016CE8 */ BL start_beatscript_scene
 /* 08016CEC */ MOV R0, SP
-/* 08016CEE */ BL func_0800986C
+/* 08016CEE */ BL set_beatscript_subscenes
 /* 08016CF2 */ ADD SP, #0X10
 /* 08016CF4 */ POP {R4}
 /* 08016CF6 */ POP {R0}

@@ -13,7 +13,7 @@ glabel func_080C9050
 /* 080C905A */ LDR R2, _080C9070
 /* 080C905C */ ADDS R1, R2
 /* 080C905E */ LDR R1, [R1]
-/* 080C9060 */ BL func_080EF9BC
+/* 080C9060 */ BL sprite_id_delete
 /* 080C9064 */ POP {R0}
 /* 080C9066 */ BX R0
 

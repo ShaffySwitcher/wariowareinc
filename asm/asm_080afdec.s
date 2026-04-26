@@ -38,7 +38,7 @@ _080AFE20:
 /* 080AFE28 */ LDR R0, [R0]
 /* 080AFE2A */ MOVS R1, #0X80
 /* 080AFE2C */ LSLS R1, R1, #1
-/* 080AFE2E */ BL func_080020C8
+/* 080AFE2E */ BL set_soundplayer_volume
 /* 080AFE32 */ POP {R4}
 /* 080AFE34 */ POP {R0}
 /* 080AFE36 */ BX R0

@@ -42,7 +42,7 @@ glabel func_08076828
 /* 08076872 */ LDR R0, [R0, #0X7C]
 /* 08076874 */ MOVS R1, #0X80
 /* 08076876 */ LSLS R1, R1, #1
-/* 08076878 */ BL func_080020C8
+/* 08076878 */ BL set_soundplayer_volume
 _0807687C:
 /* 0807687C */ LDR R0, =gSpriteHandler
 /* 0807687E */ LDR R0, [R0]

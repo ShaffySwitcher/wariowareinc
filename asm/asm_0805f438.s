@@ -20,7 +20,7 @@ glabel func_0805F438
 /* 0805F452 */ LSLS R2, R2, #2
 /* 0805F454 */ ADDS R1, R2
 /* 0805F456 */ LDR R1, [R1]
-/* 0805F458 */ BL func_080EF9BC
+/* 0805F458 */ BL sprite_id_delete
 /* 0805F45C */ POP {R4}
 /* 0805F45E */ POP {R0}
 /* 0805F460 */ BX R0

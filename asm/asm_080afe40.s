@@ -35,7 +35,7 @@ _080AFE50:
 /* 080AFE76 */ ADDS R0, R1
 /* 080AFE78 */ LDR R0, [R0]
 /* 080AFE7A */ LDR R1, _080AFE90
-/* 080AFE7C */ BL func_080020C8
+/* 080AFE7C */ BL set_soundplayer_volume
 /* 080AFE80 */ LDR R1, [R4]
 /* 080AFE82 */ ADDS R1, R5
 /* 080AFE84 */ LDR R0, [R1]

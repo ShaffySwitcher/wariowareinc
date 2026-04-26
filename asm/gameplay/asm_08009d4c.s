@@ -65,7 +65,7 @@ _08009DC6: \n\
 /* 08009DC6 */ MOV R2, SB \n\
 /* 08009DC8 */ LDR R0, [R2] \n\
 /* 08009DCA */ ADDS R1, R5, #0 \n\
-/* 08009DCC */ BL func_080EF9BC \n\
+/* 08009DCC */ BL sprite_id_delete \n\
 /* 08009DD0 */ ADDS R0, R5, #0 \n\
 /* 08009DD2 */ BL func_08001B70 \n\
 /* 08009DD6 */ LSLS R4, R5, #0X10 \n\

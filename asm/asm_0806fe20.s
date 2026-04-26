@@ -38,7 +38,7 @@ _0806FE26:
 /* 0806FE60 */ LDR R1, [R4]
 /* 0806FE62 */ ADDS R1, #0XF4
 /* 0806FE64 */ LDR R1, [R1]
-/* 0806FE66 */ BL func_080EF9BC
+/* 0806FE66 */ BL sprite_id_delete
 /* 0806FE6A */ POP {R4, R5}
 /* 0806FE6C */ POP {R0}
 /* 0806FE6E */ BX R0

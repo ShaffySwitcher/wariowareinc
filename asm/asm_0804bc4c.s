@@ -26,7 +26,7 @@ glabel func_0804BC4C
 /* 0804BC70 */ LDR R1, [R4]
 /* 0804BC72 */ ADDS R1, #0XE4
 /* 0804BC74 */ LDR R1, [R1]
-/* 0804BC76 */ BL func_080EF9BC
+/* 0804BC76 */ BL sprite_id_delete
 /* 0804BC7A */ LDR R0, [R4]
 /* 0804BC7C */ ADDS R0, #0XCA
 /* 0804BC7E */ LDRB R0, [R0]

@@ -39,7 +39,7 @@ _0809B6D0:
 /* 0809B6DA */ LSLS R5, R5, #1
 /* 0809B6DC */ ADDS R0, R2, R5
 /* 0809B6DE */ LDR R0, [R0]
-/* 0809B6E0 */ BL func_080020C8
+/* 0809B6E0 */ BL set_soundplayer_volume
 /* 0809B6E4 */ LDR R2, [R6]
 /* 0809B6E6 */ MOVS R3, #0X91
 /* 0809B6E8 */ LSLS R3, R3, #1

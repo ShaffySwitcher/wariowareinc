@@ -271,6 +271,7 @@ SECTIONS {
         build/asm/asm_0800806c.s.o(.text*);
         build/asm/asm_08008130.s.o(.text*);
         build/src/scenes/gameplay.c.o(.text);
+        build/src/beatscript.c.o(.text);
         build/asm/asm_0800b764.s.o(.text*);
         build/asm/asm_0800b770.s.o(.text*);
         build/asm/asm_0800b77c.s.o(.text*);

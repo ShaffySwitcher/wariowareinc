@@ -62,7 +62,7 @@ glabel func_080D5298
 /* 080D530C */ ADDS R0, R2
 /* 080D530E */ LDR R0, [R0]
 /* 080D5310 */ MOVS R1, #0
-/* 080D5312 */ BL func_080020C8
+/* 080D5312 */ BL set_soundplayer_volume
 /* 080D5316 */ LDR R0, [R7]
 /* 080D5318 */ LDR R1, _080D5348
 /* 080D531A */ ADDS R0, R1

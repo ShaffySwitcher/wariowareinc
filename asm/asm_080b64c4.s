@@ -236,7 +236,7 @@ _080B6622:
 /* 080B666C */ LDR R0, [R2]
 /* 080B666E */ LDR R0, [R0, #8]
 /* 080B6670 */ LDR R1, _080B668C
-/* 080B6672 */ BL func_080020C8
+/* 080B6672 */ BL set_soundplayer_volume
 /* 080B6676 */ LDR R0, =D_083FCE7C
 /* 080B6678 */ BL play_sound
 _080B667C:

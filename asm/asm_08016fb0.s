@@ -9,7 +9,7 @@ glabel func_08016FB0
 /* 08016FB2 */ LDR R0, =gSpriteHandler
 /* 08016FB4 */ LDR R0, [R0]
 /* 08016FB6 */ MOVS R1, #1
-/* 08016FB8 */ BL func_080EF9BC
+/* 08016FB8 */ BL sprite_id_delete
 /* 08016FBC */ MOVS R0, #1
 /* 08016FBE */ BL func_08001B70
 /* 08016FC2 */ POP {R0}

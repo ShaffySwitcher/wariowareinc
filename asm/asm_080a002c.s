@@ -11,7 +11,7 @@ glabel func_080A002C
 /* 080A0032 */ LDR R0, [R0, #4]
 /* 080A0034 */ LSLS R1, R1, #0X10
 /* 080A0036 */ LSRS R1, R1, #0X10
-/* 080A0038 */ BL func_080020C8
+/* 080A0038 */ BL set_soundplayer_volume
 /* 080A003C */ POP {R0}
 /* 080A003E */ BX R0
 

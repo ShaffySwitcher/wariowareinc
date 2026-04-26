@@ -30,14 +30,14 @@ glabel func_0805C550
 /* 0805C580 */ LSLS R2, R2, #2
 /* 0805C582 */ ADDS R1, R2
 /* 0805C584 */ LDR R1, [R1]
-/* 0805C586 */ BL func_080EF9BC
+/* 0805C586 */ BL sprite_id_delete
 /* 0805C58A */ LDR R0, [R5]
 /* 0805C58C */ LDR R1, [R4]
 /* 0805C58E */ MOVS R2, #0XED
 /* 0805C590 */ LSLS R2, R2, #2
 /* 0805C592 */ ADDS R1, R2
 /* 0805C594 */ LDR R1, [R1]
-/* 0805C596 */ BL func_080EF9BC
+/* 0805C596 */ BL sprite_id_delete
 /* 0805C59A */ MOVS R4, #0
 _0805C59C:
 /* 0805C59C */ LDR R0, _0805C5D0

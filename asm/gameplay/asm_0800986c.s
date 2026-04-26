@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800986C \n\
+thumb_func_start set_beatscript_subscenes \n\
 /* 0800986C */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800986E */ MOV R7, SL \n\
 /* 08009870 */ MOV R6, SB \n\

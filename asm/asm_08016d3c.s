@@ -15,7 +15,7 @@ _08016D4A:
 /* 08016D4C */ LDR R0, =gSpriteHandler
 /* 08016D4E */ LDR R0, [R0]
 /* 08016D50 */ ADDS R1, R5, #0
-/* 08016D52 */ BL func_080EF9BC
+/* 08016D52 */ BL sprite_id_delete
 /* 08016D56 */ ADDS R0, R5, #0
 /* 08016D58 */ BL func_08001B70
 /* 08016D5C */ LSLS R4, R5, #0X10

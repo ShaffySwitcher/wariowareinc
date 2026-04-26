@@ -4,6 +4,9 @@
 #include "graphics.h"
 #include "scenes.h"
 
+// MACROS
+#define gGameplayData CURRENT_SCENE_DATA(struct GameplayData)
+
 #define MAX_LIVES 4
 #define MAX_SCORE 999
 
@@ -16,32 +19,7 @@ enum GameplayState {
     GAMEPLAY_STATE_RESUMING = 7
 };
 
-extern s16 D_030035E0;
-extern u8 D_03003634;
-extern s16 D_03003844;
-extern u32 D_03004054[]; // 0x400 palette buffer (2x0x200)
-extern u8 D_03004394[]; 
-extern struct BeatscriptLocalData D_030049F0;
-
-extern struct GameplayScriptState D_030048B8;
-extern u8 D_03003848;
-extern u8 D_083A4BE4[];
-extern void *D_083FBB44;
-extern void *D_083FBBBC;
-
-
-extern void** D_03006524;
-extern void** D_03006528;
-extern void** D_0300652C;
-
-extern struct GameplayScriptCmd D_083A4BCC[];
-
-extern void* D_083FBAF4;
-extern void* D_083FBB08;
-extern u16 D_0300363C;
-
-extern struct GameplayData_struct_0* D_03003628;
-
+// TYPES
 struct Unk083A4B58 {
     u8 pad[2];
     u16 unk2;
@@ -170,6 +148,43 @@ struct GameplayScriptCmd {
     union FreeType arg;
 };
 
+// DATA
+
+// FUNCTIONS
+
+
+
+
+extern s16 D_030035E0;
+extern u8 D_03003634;
+extern s16 D_03003844;
+extern u32 D_03004054[]; // 0x400 palette buffer (2x0x200)
+extern u8 D_03004394[]; 
+extern struct BeatscriptLocalData D_030049F0;
+
+extern struct GameplayScriptState D_030048B8;
+extern u8 D_03003848;
+extern u8 D_083A4BE4[];
+extern void *D_083FBB44;
+extern void *D_083FBBBC;
+
+
+extern void** D_03006524;
+extern void** D_03006528;
+extern void** D_0300652C;
+
+extern struct GameplayScriptCmd D_083A4BCC[];
+
+extern void* D_083FBAF4;
+extern void* D_083FBB08;
+extern u16 D_0300363C;
+
+extern struct GameplayData_struct_0* D_03003628;
+
+
+
+
+
 extern u32 func_08003FB8(void);
 extern void func_08008134(void);
 extern u32 gameplay_check_collision(struct Vector2 *, struct Rect *, struct Vector2 *, struct Rect *);
@@ -181,14 +196,14 @@ extern void func_08003E64(void);
 extern void task_pool_force_cancel_id(u16);
 extern void mem_heap_dealloc_with_id(u16);
 extern void func_08007EAC(void);
-extern void func_080EF9BC(void*, u32);
+extern void sprite_id_delete(void*, u32);
 extern void func_08003A70(void *);
 extern void func_08003B58(void *);
 extern void func_08003D28(void *, u32);
 extern void trigger_pending_dma3(void);
 extern void func_080041B4(void);
-extern void func_080056F4(void);
-extern void func_08005744(void);
+extern void task_pool_update_delayed(void);
+extern void task_pool_update_constant(void);
 extern void func_08005914(u32);
 extern void flush_graphics_buffer(void);
 extern void func_08006B00(void);
@@ -198,7 +213,7 @@ extern void func_08005A54(u16, u32);
 extern u32 gameplay_run_script(void);
 extern void func_0800912C(u16);
 extern struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd* script, s32 target);
-extern void func_080099F8(void);
+extern void update_paused_beatscript_scene(void);
 extern void update_active_beatscript_scene(void);
 extern u32 func_08009CAC(void);
 extern void func_08009EE4(u32);
