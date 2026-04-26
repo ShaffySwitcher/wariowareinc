@@ -69,7 +69,7 @@ struct GameplayData {
     u32 unk7_3 : 1;                       // 0x4:26
     u32 unk7_4 : 1;                       // 0x4:27
     s32 unk8;                             // 0x8 size:0x4
-    void* unkC;                           // 0xC size:0x4
+    struct SongHeader* unkC;              // 0xC size:0x4
     u8 pad10[4];                          // 0x10 size:0x4
     u16 unk14;                            // 0x14 size:0x2
     u16 unk16;                            // 0x16 size:0x2
@@ -187,7 +187,7 @@ extern u8 D_03003634;
 extern s16 D_03003844;
 extern u32 D_03004054[]; // 0x400 palette buffer (2x0x200)
 extern u8 D_03004394[]; 
-extern struct BeatscriptLocalData D_030049F0;
+extern struct BeatscriptLocalData D_030049F0[];
 extern struct GameplayScriptState D_030048B8;
 extern u8 D_03003848;
 extern u8 D_083A4BE4[];

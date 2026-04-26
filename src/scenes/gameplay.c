@@ -347,7 +347,7 @@ void gameplay_stage_init(void) {
     gGameplayData.unk17e = 0;
     scene_set_current_thread(0);
     if (unk4->unk0 != 0) {
-        unk4->unk0(&D_030049F0);
+        unk4->unk0(D_030049F0);
     }
     gGameplayData.currentLives = gGameplayData.maxLives;
     gGameplayData.unk6_7 = 0;

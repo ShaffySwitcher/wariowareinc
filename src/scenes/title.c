@@ -8,8 +8,6 @@
 
 asm(".include \"include/gba.inc\"");
 
-extern u32* D_083A9160;
-
 void func_0800DC08(void) {
     if(D_030035E0 != 0) {
         func_08016CBC(&D_083A9160);
@@ -19,11 +17,6 @@ void func_0800DC08(void) {
         D_03003844 = gTitle->unk38;
     }
 }
-
-extern void scene_set_current_thread(u32);
-extern s32 start_new_texture_loader(u16 memID, struct CompressedData **textureList);
-extern s32 start_load_gfx_table_task(u16 memID, const struct GraphicsTable *gfxTable, u32 limit);
-extern void func_08007DF0(u16, void*, u32, u32);
 
 void func_0800DC40(void) {
     s32 task;
@@ -44,13 +37,6 @@ void func_0800DC6C(void) {
 void func_0800DC9C(void) {
     func_08007DF0(get_current_mem_id(), func_0800DC6C, 0, 2);
 }
-
-extern u32 func_08004E48(u16, void*, u32, u32, u32);
-extern u32 func_080042F4(u16, void*, u32, u32, u32, u32);
-void func_08005538(struct SpriteHandler*, s32, void*, u16*);
-extern u8 D_083ADB4C[];
-extern u8 D_083ADADC[];
-extern u8 D_083A8C7C[];
 
 void title_scene_start(void) {
     gTitle->unk0 = func_08004E48(get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
