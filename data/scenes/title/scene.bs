@@ -1,0 +1,111 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ Show loading animation(?)
+script D_083A8D28
+    beatscript_cmd 0x2D, 0, title_palette_gfx_table, 0
+    beatscript_cmd 0x35, 0x05, 0, 0x1D01
+    beatscript_cmd 0x35, 0x02, 0, 0x1E02
+    beatscript_cmd 0x35, 0x03, 0, 0x1F03
+    play_music m_BGM_Title_Demo_30_seqData
+    run func_08006E94+1, 0x01
+    beatscript_cmd 0x41, 0, 0x0C, 0
+    rest 0x18
+    rest 0x18
+    rest 0x18
+    run func_0800BFC8, 0
+    run func_0800BF0C, 0x03
+    beatscript_cmd 0x34, 0x806001, 0, title_bg_pal
+    beatscript_cmd 0x34, 0x80610F, 0, title_obj_pal
+    rest 0x18
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x08, 0x01
+    beatscript_cmd 0x86, 0, 0x09, 0x01
+    beatscript_cmd 0x86, 0, 0x0A, 0x01
+    beatscript_cmd 0x94, 0x08, 0xFFFFFF80, 0
+    beatscript_cmd 0x94, 0x09, 0xFFFFFF80, 0
+    beatscript_cmd 0x94, 0x0A, 0xFFFFFF80, 0
+    beatscript_cmd 0x99, 0x08, D_08545F38, 0x0C
+    beatscript_cmd 0x99, 0x09, D_08545F3C, 0x0C
+    beatscript_cmd 0x99, 0x0A, D_08545F68, 0x0C
+    play_sfx s_BOMB_Window_Change_seqData
+    rest 0x18
+    rest 0x18
+    rest 0x18
+    beatscript_cmd 0x82, 0, 0x0A, 0x07F1
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x01, 0x01
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x02, 0x01
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x03, 0x01
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x04, 0x01
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x05, 0x01
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x06, 0x01
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0x07, 0x01
+    rest 0x18
+    beatscript_cmd 0x8E, 0x08, 0x002BFFCC, 0x0001000C
+    beatscript_cmd 0x8E, 0x09, 0x002BFFCC, 0x0001000C
+    beatscript_cmd 0x8E, 0x0A, 0x002BFFCC, 0x0001000C
+    play_music m_BGM_Title_01_seqData
+    rest 0x18
+    run func_0800BF0C, 0x02
+    beatscript_cmd 0x33, 0x01, 0x0844, 0x80000048
+    rest 0x18
+    rest 0x18
+    rest 0x18
+    beatscript_cmd 0x86, 0, 0, 0x01
+    return
+
+@ Normal load(?)
+script D_083A8FD4
+    run func_0800BFC8, 0
+    beatscript_cmd 0x35, 0x05, 0, 0x1D01
+    beatscript_cmd 0x35, 0x06, 0, 0x1E02
+    beatscript_cmd 0x35, 0x07, 0, 0x1F03
+    beatscript_cmd 0x86, 0, 0x01, 0x01
+    beatscript_cmd 0x86, 0, 0x02, 0x01
+    beatscript_cmd 0x86, 0, 0x03, 0x01
+    beatscript_cmd 0x86, 0, 0x04, 0x01
+    beatscript_cmd 0x86, 0, 0x05, 0x01
+    beatscript_cmd 0x86, 0, 0x06, 0x01
+    beatscript_cmd 0x86, 0, 0x07, 0x01
+    beatscript_cmd 0x86, 0, 0, 0x01
+    run func_08006E94+1, 0x01
+    beatscript_cmd 0x41, 0, 0x18, 0
+    rest 0x0C
+    play_music m_BGM_Title_01_seqData
+    rest 0x0C
+    return
+
+@ Main Script
+script script_scene_title_main
+    set_tempo 0x7D
+    pause_scene
+    if_neq_8 0x03006514, 0
+        call D_083A8D28
+    else
+        call D_083A8FD4
+    endif
+    set_var_32 0x030038AC, 0x0EC4
+    set_var_8 0x03003868, 0x01
+    pause_scene
+    set_var_8 0x03003868, 0
+    beatscript_cmd 0x22, 0, 0, 0x03
+    beatscript_cmd 0x41, 0x01, 0x0C, 0
+    rest 0x0C
+    stop
+
+@ Scene
+struct scene_title
+    /* Start  */ .word title_scene_start,  0
+    /* Paused */ .word title_scene_paused, 0
+    /* Update */ .word title_scene_update, 0
+    /* Stop   */ .word title_scene_stop,   0
+    /* Script */ .word script_scene_title_main
+endstruct

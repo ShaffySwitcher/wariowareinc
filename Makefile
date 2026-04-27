@@ -70,6 +70,7 @@ SFX        := $(AUDIO)/samples
 
 C_DIRS     := $(sort $(SOURCES) $(GRAPHICS) $(AUDIO) $(DATA) $(SCENE_DATA))
 ASM_DIRS   := $(sort $(ASM) $(DATA))
+BS_DIRS    := $(SCENE_DATA)
 GFX_DIRS   := $(GRAPHICS)
 
 ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS) $(SFX) $(MUSIC)
@@ -89,7 +90,7 @@ UNDEFINED_SYMS := undefined_syms.ld
 export OUTPUT := $(BUILD)/$(TARGET)
 
 CFILES   := $(foreach dir,$(C_DIRS),$(wildcard $(dir)/*.c))
-SFILES   := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
+SFILES   := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s)) $(foreach dir,$(BS_DIRS),$(wildcard $(dir)/*.bs))
 BINFILES := $(foreach dir,$(BIN),$(wildcard $(dir)/*.bin)) \
 			$(foreach dir,$(MUSIC),$(wildcard $(dir)/*.mid)) 
 WAVFILES    :=  $(foreach dir,$(SFX),$(wildcard $(dir)/*.wav))
@@ -204,6 +205,12 @@ $(BUILD)/%.s.o: %.s | $(BUILD_DIRS)
 	$(call print,Assembling:,$<,$@)
 	$(V)$(CPP) $(CPPFLAGS) -x assembler-with-cpp $< -o $(BUILD)/$*.s
 	$(V)$(AS) -MD $(BUILD)/$*.d -march=armv4t -o $@ $(BUILD)/$*.s
+
+# Beatscript
+$(BUILD)/%.bs.o : %.bs | $(BUILD_DIRS)
+	$(call print,Assembling Beatscript:,$<,$@)
+	$(V)$(CPP) $(CPPFLAGS) -x assembler-with-cpp $< -o $(BUILD)/$*.bs
+	$(V)$(AS) -MD $(BUILD)/$*.d -march=armv4t -o $@ $(BUILD)/$*.bs
 
 $(BUILD)/%.json.s : %.json $(PCMFILES) tools/sample_parser.py | $(BUILD_DIRS)
 	$(call print,Generating data table from JSON:,$<,$@)

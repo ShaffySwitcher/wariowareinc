@@ -428,12 +428,12 @@ struct Beatscript *beatscript_skip_to_else_or_endif(struct Beatscript *currentCm
         currentCmd++;
 
         switch (command) {
-            case 0x17:
-            case 0x18:
-            case 0x19:
-            case 0x1A:
-            case 0x1B:
-            case 0x1C:
+            case BS_CMD_IF_NEQ32:
+            case BS_CMD_IF_NEQ16:
+            case BS_CMD_IF_NEQ8:
+            case BS_CMD_IF_EQ32:
+            case BS_CMD_IF_EQ16:
+            case BS_CMD_IF_EQ8:
             case 0x23:
             case 0x24:
             case 0x2F:
@@ -446,13 +446,13 @@ struct Beatscript *beatscript_skip_to_else_or_endif(struct Beatscript *currentCm
                 depth++;
                 continue;
 
-            case 0x1D:
+            case BS_CMD_ELSE:
                 if (depth == 0) {
                     return currentCmd;
                 }
                 continue;
 
-            case 0x1E:
+            case BS_CMD_ENDIF:
                 if (depth == 0) {
                     return currentCmd;
                 }
@@ -469,12 +469,12 @@ struct Beatscript *beatscript_skip_to_endif(struct Beatscript *currentCmd) {
         command = currentCmd->command;
         currentCmd++;
         switch (command) {
-            case 0x17:
-            case 0x18:
-            case 0x19:
-            case 0x1A:
-            case 0x1B:
-            case 0x1C:
+            case BS_CMD_IF_NEQ32:
+            case BS_CMD_IF_NEQ16:
+            case BS_CMD_IF_NEQ8:
+            case BS_CMD_IF_EQ32:
+            case BS_CMD_IF_EQ16:
+            case BS_CMD_IF_EQ8:
             case 0x23:
             case 0x24:
             case 0x2F:
@@ -486,7 +486,7 @@ struct Beatscript *beatscript_skip_to_endif(struct Beatscript *currentCmd) {
             case 0x51:
                 depth++;
                 continue;
-            case 0x1E:
+            case BS_CMD_ENDIF:
                 if (depth == 0) {
                     return currentCmd;
                 }
@@ -502,15 +502,15 @@ struct Beatscript * beatscript_skip_to_case_or_endswitch(struct Beatscript *curr
     s32 cmdArg;
     while (TRUE) {
         command = currentCmd->command;
-        cmdArg = *(s32*)((u8*)currentCmd + 8);
+        cmdArg = currentCmd->param3;
         currentCmd++;
         switch (command) {
-            case 0x27:
-            case 0x28:
-            case 0x29:
+            case BS_CMD_SWITCH32:
+            case BS_CMD_SWITCH16:
+            case BS_CMD_SWITCH8:
                 depth++;
                 continue;
-            case 0x2B:
+            case BS_CMD_CASE:
                 if (depth != 0) {
                     continue;
                 }
@@ -518,12 +518,12 @@ struct Beatscript * beatscript_skip_to_case_or_endswitch(struct Beatscript *curr
                     continue;
                 }
                 return currentCmd;
-            case 0x48:
+            case BS_CMD_END_SWITCH:
                 if (depth != 0) {
                     continue;
                 }
                 return currentCmd;
-            case 0x2A:
+            case BS_CMD_DEFAULT_CASE:
                 if (depth == 0) {
                     return currentCmd;
                 }
@@ -540,12 +540,12 @@ struct Beatscript * beatscript_skip_to_default(struct Beatscript *currentCmd) {
         s32 command = currentCmd->command;
         currentCmd++;
         switch (command) {
-            case 0x27:
-            case 0x28:
-            case 0x29:
+            case BS_CMD_SWITCH32:
+            case BS_CMD_SWITCH16:
+            case BS_CMD_SWITCH8:
                 depth++;
                 break;
-            case 0x2A:
+            case BS_CMD_DEFAULT_CASE:
                 if (depth == 0) {
                     return currentCmd;
                 }

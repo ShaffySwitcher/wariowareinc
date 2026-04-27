@@ -5594,7 +5594,8 @@ SECTIONS {
         build/src/lib_sprite.c.o(.data);
         build/bin/data_083A4A80.bin.o(.rodata*);
         build/data/scenes/title/data.c.o(.data);
-        build/bin/data_083A8D0C.bin.o(.rodata*);
+        build/data/scenes/title/scene.bs.o(.scene);
+        build/bin/data_083A9184.bin.o(.rodata*);
         build/audio/songs.c.o(.data);
     }
 

@@ -40,3 +40,7 @@ title_obj = 0x08545F28;
 
 sound_player_count = 0x0840642C;
 sound_player_table = 0x08406430;
+
+D_08545F38 = 0x08545F38;
+D_08545F3C = 0x08545F3C;
+D_08545F68 = 0x08545F68;
