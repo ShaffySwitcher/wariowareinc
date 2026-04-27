@@ -594,5 +594,5 @@ struct Beatscript * beatscript_rewind_to_loop_begin(struct Beatscript *currentCm
     }
 }
 
-// i'm so fucking scared
+// [https://decomp.me/scratch/faqNB] went about as well as i expected
 #include "asm/gameplay/asm_0800a7d4.s"

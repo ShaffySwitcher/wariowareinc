@@ -194,6 +194,13 @@ extern void scene_update_music_pitch(void);
 extern void scene_set_music_pitch(s16 pitch);
 extern void scene_set_music_pitch_env(s16 pitch);
 extern void func_0800A160(struct Animation* anim, struct Vector2* pos);
+extern struct Beatscript *beatscript_skip_to_else_or_endif(struct Beatscript *currentCmd);
+extern struct Beatscript *beatscript_skip_to_endif(struct Beatscript *currentCmd);
+extern struct Beatscript *beatscript_skip_to_case_or_endswitch(struct Beatscript *currentCmd, s32 targetId);
+extern struct Beatscript *beatscript_skip_to_default(struct Beatscript *currentCmd);
+extern struct Beatscript *beatscript_skip_to_loop_end(struct Beatscript *currentCmd);
+extern struct Beatscript *beatscript_rewind_to_loop_begin(struct Beatscript *currentCmd);
+
 
 // EXTERN
 void set_soundplayer_speed(struct SoundPlayer*, u16);

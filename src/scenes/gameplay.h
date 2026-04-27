@@ -52,30 +52,30 @@ struct GameplayData_struct_0 {
 };
 
 struct GameplayData {
-    struct GameplayData_struct_0* unk0;   // 0x0 size:0x4
-    u32 currentState : 5;                 // 0x4:0
-    u32 unk4_6 : 5;                       // 0x4:5
-    u32 unk5_3 : 1;                       // 0x4:10
-    u32 unk5_4 : 1;                       // 0x4:11
-    u32 isPaused : 1;                     // 0x4:12
-    u32 unk5_6 : 2;                       // 0x4:13
-    u32 unk5_8 : 1;                       // 0x4:15
-    u32 unk6_1 : 2;                       // 0x4:16
-    u32 unk6_3 : 4;                       // 0x4:18
-    u32 unk6_7 : 1;                       // 0x4:22
-    u32 unk6_8 : 1;                       // 0x4:23
-    u32 unk7_1 : 1;                       // 0x4:24
-    u32 unk7_2 : 1;                       // 0x4:25
-    u32 unk7_3 : 1;                       // 0x4:26
-    u32 unk7_4 : 1;                       // 0x4:27
-    s32 unk8;                             // 0x8 size:0x4
-    struct SongHeader* unkC;              // 0xC size:0x4
-    u8 pad10[4];                          // 0x10 size:0x4
-    u16 unk14;                            // 0x14 size:0x2
-    u16 unk16;                            // 0x16 size:0x2
-    u16 unk18;                            // 0x18 size:0x2
-    u16 unk1A;                            // 0x1A size:0x2
-    u32 unk1c;                            // 0x1C size:0x4
+    struct GameplayData_struct_0* unk0; // 0x0 size:0x4
+    u32 currentState : 5; // 0x4:0
+    u32 unk4_6 : 5; // 0x4:5
+    u32 unk5_3 : 1; // 0x4:10
+    u32 unk5_4 : 1; // 0x4:11
+    u32 isPaused : 1; // 0x4:12
+    u32 unk5_6 : 2; // 0x4:13
+    u32 unk5_8 : 1; // 0x4:15
+    u32 unk6_1 : 2; // 0x4:16
+    u32 unk6_3 : 4; // 0x4:18
+    u32 unk6_7 : 1; // 0x4:22
+    u32 unk6_8 : 1; // 0x4:23
+    u32 unk7_1 : 1; // 0x4:24
+    u32 unk7_2 : 1; // 0x4:25
+    u32 unk7_3 : 1; // 0x4:26
+    u32 unk7_4 : 1; // 0x4:27
+    s32 unk8; // 0x8 size:0x4
+    struct SongHeader* unkC; // 0xC size:0x4
+    u8 pad10[4]; // 0x10 size:0x4
+    u16 unk14; // 0x14 size:0x2
+    u16 unk16; // 0x16 size:0x2
+    u16 unk18; // 0x18 size:0x2
+    u16 unk1A; // 0x1A size:0x2
+    u32 unk1c; // 0x1C size:0x4
     struct GameplayScriptCmd* unk20; // 0x20 size:0x4
     u32 unk24; // 0x24 size:0x4
     u32 unk28; // 0x28 size:0x4
@@ -114,7 +114,9 @@ struct GameplayData {
     struct GameplayScriptSelector* unk224; // 0x224 size:0x4
     u32 unk228; // 0x228 size:0x4
     void* unk22c; // 0x22C size:0x4
-    u8 pad230[12]; // 0x230 size:0xC
+    u8 pad230[8]; // 0x230 size:0xC
+    u8 unk238;
+    u8 pad239[3];
     u8 unk23c; // 0x23C
     u8 pad23d[1]; // 0x23D
     u8 unk23e; // 0x23E
