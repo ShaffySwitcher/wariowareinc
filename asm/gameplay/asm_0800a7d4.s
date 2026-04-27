@@ -955,7 +955,7 @@ _0800ADC4: \n\
 _0800ADCE: \n\
 /* 0800ADCE */ MOV R3, SB \n\
 /* 0800ADD0 */ LDR R0, [R3, #8] \n\
-/* 0800ADD2 */ BL func_0800A454 \n\
+/* 0800ADD2 */ BL beatscript_skip_to_else_or_endif \n\
 /* 0800ADD6 */ B _0800B24E \n\
 _0800ADD8: \n\
 /* 0800ADD8 */ LDRH R1, [R7] \n\
@@ -978,7 +978,7 @@ _0800ADEA: \n\
 _0800ADFA: \n\
 /* 0800ADFA */ MOV R3, SB \n\
 /* 0800ADFC */ LDR R0, [R3, #8] \n\
-/* 0800ADFE */ BL func_0800A454 \n\
+/* 0800ADFE */ BL beatscript_skip_to_else_or_endif \n\
 /* 0800AE02 */ B _0800B24E \n\
 _0800AE04: \n\
 /* 0800AE04 */ LDR R0, [R7] \n\
@@ -988,7 +988,7 @@ _0800AE04: \n\
 _0800AE0E: \n\
 /* 0800AE0E */ MOV R5, SB \n\
 /* 0800AE10 */ LDR R0, [R5, #8] \n\
-/* 0800AE12 */ BL func_0800A454 \n\
+/* 0800AE12 */ BL beatscript_skip_to_else_or_endif \n\
 /* 0800AE16 */ STR R0, [R5, #8] \n\
 /* 0800AE18 */ BL _0800B74C \n\
 _0800AE1C: \n\
@@ -1028,7 +1028,7 @@ _0800AE56: \n\
 _0800AE58: \n\
 /* 0800AE58 */ MOV R4, SB \n\
 /* 0800AE5A */ LDR R0, [R4, #8] \n\
-/* 0800AE5C */ BL func_0800A57C \n\
+/* 0800AE5C */ BL beatscript_skip_to_endif \n\
 /* 0800AE60 */ STR R0, [R4, #8] \n\
 /* 0800AE62 */ BL _0800B74C \n\
 _0800AE66: \n\
@@ -1111,7 +1111,7 @@ _0800AEEC: \n\
 /* 0800AEEE */ LDR R0, [R4, #8] \n\
 /* 0800AEF0 */ MOV R5, R8 \n\
 /* 0800AEF2 */ LDR R1, [R5] \n\
-/* 0800AEF4 */ BL func_0800A69C \n\
+/* 0800AEF4 */ BL beatscript_skip_to_case_or_endswitch \n\
 /* 0800AEF8 */ STR R0, [R4, #8] \n\
 /* 0800AEFA */ BL _0800B74C \n\
 _0800AEFE: \n\
@@ -1119,7 +1119,7 @@ _0800AEFE: \n\
 /* 0800AF00 */ LDR R0, [R6, #8] \n\
 /* 0800AF02 */ MOV R2, R8 \n\
 /* 0800AF04 */ LDRH R1, [R2] \n\
-/* 0800AF06 */ BL func_0800A69C \n\
+/* 0800AF06 */ BL beatscript_skip_to_case_or_endswitch \n\
 /* 0800AF0A */ STR R0, [R6, #8] \n\
 /* 0800AF0C */ BL _0800B74C \n\
 _0800AF10: \n\
@@ -1127,14 +1127,14 @@ _0800AF10: \n\
 /* 0800AF12 */ LDR R0, [R3, #8] \n\
 /* 0800AF14 */ MOV R4, R8 \n\
 /* 0800AF16 */ LDRB R1, [R4] \n\
-/* 0800AF18 */ BL func_0800A69C \n\
+/* 0800AF18 */ BL beatscript_skip_to_case_or_endswitch \n\
 /* 0800AF1C */ MOV R5, SB \n\
 /* 0800AF1E */ STR R0, [R5, #8] \n\
 /* 0800AF20 */ BL _0800B74C \n\
 _0800AF24: \n\
 /* 0800AF24 */ MOV R6, SB \n\
 /* 0800AF26 */ LDR R0, [R6, #8] \n\
-/* 0800AF28 */ BL func_0800A768 \n\
+/* 0800AF28 */ BL beatscript_skip_to_default \n\
 /* 0800AF2C */ STR R0, [R6, #8] \n\
 /* 0800AF2E */ BL _0800B74C \n\
 _0800AF32: \n\
@@ -1461,7 +1461,7 @@ _0800B194: \n\
 _0800B19A: \n\
 /* 0800B19A */ MOV R4, SB \n\
 /* 0800B19C */ LDR R0, [R4, #8] \n\
-/* 0800B19E */ BL func_0800A454 \n\
+/* 0800B19E */ BL beatscript_skip_to_else_or_endif \n\
 /* 0800B1A2 */ STR R0, [R4, #8] \n\
 /* 0800B1A4 */ B _0800B74C \n\
  \n\
@@ -1510,7 +1510,7 @@ _0800B1E8: \n\
 _0800B1EE: \n\
 /* 0800B1EE */ MOV R2, SB \n\
 /* 0800B1F0 */ LDR R0, [R2, #8] \n\
-/* 0800B1F2 */ BL func_0800A454 \n\
+/* 0800B1F2 */ BL beatscript_skip_to_else_or_endif \n\
 /* 0800B1F6 */ MOV R3, SB \n\
 /* 0800B1F8 */ STR R0, [R3, #8] \n\
 /* 0800B1FA */ B _0800B74C \n\
@@ -1563,7 +1563,7 @@ _0800B23C: \n\
 _0800B246: \n\
 /* 0800B246 */ MOV R3, SB \n\
 /* 0800B248 */ LDR R0, [R3, #8] \n\
-/* 0800B24A */ BL func_0800A790 \n\
+/* 0800B24A */ BL beatscript_skip_to_loop_end \n\
 _0800B24E: \n\
 /* 0800B24E */ MOV R4, SB \n\
 /* 0800B250 */ STR R0, [R4, #8] \n\
@@ -1572,7 +1572,7 @@ _0800B254: \n\
 /* 0800B254 */ MOV R5, SB \n\
 /* 0800B256 */ LDR R0, [R5, #8] \n\
 /* 0800B258 */ SUBS R0, #0XC \n\
-/* 0800B25A */ BL func_0800A7B4 \n\
+/* 0800B25A */ BL beatscript_rewind_to_loop_begin \n\
 /* 0800B25E */ STR R0, [R5, #8] \n\
 /* 0800B260 */ B _0800B74C \n\
 _0800B262: \n\
@@ -1647,7 +1647,7 @@ _0800B2D6: \n\
 _0800B2DC: \n\
 /* 0800B2DC */ MOV R6, SB \n\
 /* 0800B2DE */ LDR R0, [R6, #8] \n\
-/* 0800B2E0 */ BL func_0800A454 \n\
+/* 0800B2E0 */ BL beatscript_skip_to_else_or_endif \n\
 /* 0800B2E4 */ STR R0, [R6, #8] \n\
 /* 0800B2E6 */ B _0800B74C \n\
 _0800B2E8: \n\
@@ -1659,7 +1659,7 @@ _0800B2E8: \n\
 _0800B2F4: \n\
 /* 0800B2F4 */ MOV R1, SB \n\
 /* 0800B2F6 */ LDR R0, [R1, #8] \n\
-/* 0800B2F8 */ BL func_0800A454 \n\
+/* 0800B2F8 */ BL beatscript_skip_to_else_or_endif \n\
 /* 0800B2FC */ MOV R2, SB \n\
 /* 0800B2FE */ STR R0, [R2, #8] \n\
 /* 0800B300 */ B _0800B74C \n\

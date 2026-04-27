@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800A790 \n\
+thumb_func_start beatscript_skip_to_loop_end \n\
 /* 0800A790 */ PUSH {LR} \n\
 /* 0800A792 */ MOVS R2, #0 \n\
 _0800A794: \n\

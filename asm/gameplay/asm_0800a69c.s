@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800A69C \n\
+thumb_func_start beatscript_skip_to_case_or_endswitch \n\
 /* 0800A69C */ PUSH {R4, R5, LR} \n\
 /* 0800A69E */ ADDS R2, R0, #0 \n\
 /* 0800A6A0 */ MOVS R3, #0 \n\

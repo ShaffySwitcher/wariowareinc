@@ -30,10 +30,6 @@ D_0300652C = 0x0300652C;
 gCurrentSceneVariable = 0x03003850;
 gCurrentSceneSpritePool = 0x03003854; 
 
-func_08003FB8 = 0x08003FB8;
-
-start_new_task = 0x08005790;
-
 D_080F6140 = 0x080F6140;
 D_083A3D94 = 0x083A3D94;
 D_083A4B58 = 0x083A4B58;

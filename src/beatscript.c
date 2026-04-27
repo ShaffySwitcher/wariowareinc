@@ -419,17 +419,180 @@ void func_0800A160(struct Animation* anim, struct Vector2* pos) {
 
 #include "asm/gameplay/asm_0800a430.s"
 
-#include "asm/gameplay/asm_0800a454.s"
+struct Beatscript *beatscript_skip_to_else_or_endif(struct Beatscript *currentCmd) {
+    s32 depth = 0;
+    s32 command;
 
-#include "asm/gameplay/asm_0800a57c.s"
+    while (TRUE) {
+        command = currentCmd->command;
+        currentCmd++;
 
-#include "asm/gameplay/asm_0800a69c.s"
+        switch (command) {
+            case 0x17:
+            case 0x18:
+            case 0x19:
+            case 0x1A:
+            case 0x1B:
+            case 0x1C:
+            case 0x23:
+            case 0x24:
+            case 0x2F:
+            case 0x3B:
+            case 0x3C:
+            case 0x42:
+            case 0x44:
+            case 0x50:
+            case 0x51:
+                depth++;
+                continue;
 
-#include "asm/gameplay/asm_0800a768.s"
+            case 0x1D:
+                if (depth == 0) {
+                    return currentCmd;
+                }
+                continue;
 
-#include "asm/gameplay/asm_0800a790.s"
+            case 0x1E:
+                if (depth == 0) {
+                    return currentCmd;
+                }
+                depth--;
+                continue;
+        }
+    }
+}
 
-#include "asm/gameplay/asm_0800a7b4.s"
+struct Beatscript *beatscript_skip_to_endif(struct Beatscript *currentCmd) {
+    s32 depth = 0;
+    s32 command;
+    while (TRUE) {
+        command = currentCmd->command;
+        currentCmd++;
+        switch (command) {
+            case 0x17:
+            case 0x18:
+            case 0x19:
+            case 0x1A:
+            case 0x1B:
+            case 0x1C:
+            case 0x23:
+            case 0x24:
+            case 0x2F:
+            case 0x3B:
+            case 0x3C:
+            case 0x42:
+            case 0x44:
+            case 0x50:
+            case 0x51:
+                depth++;
+                continue;
+            case 0x1E:
+                if (depth == 0) {
+                    return currentCmd;
+                }
+                depth--;
+                continue;
+        }
+    }
+}
+
+struct Beatscript * beatscript_skip_to_case_or_endswitch(struct Beatscript *currentCmd, s32 targetId) {
+    s32 depth = 0;
+    s32 command;
+    s32 cmdArg;
+    while (TRUE) {
+        command = currentCmd->command;
+        cmdArg = *(s32*)((u8*)currentCmd + 8);
+        currentCmd++;
+        switch (command) {
+            case 0x27:
+            case 0x28:
+            case 0x29:
+                depth++;
+                continue;
+            case 0x2B:
+                if (depth != 0) {
+                    continue;
+                }
+                if (cmdArg != targetId) {
+                    continue;
+                }
+                return currentCmd;
+            case 0x48:
+                if (depth != 0) {
+                    continue;
+                }
+                return currentCmd;
+            case 0x2A:
+                if (depth == 0) {
+                    return currentCmd;
+                }
+                depth--;
+                continue;
+
+        }
+    }
+}
+
+struct Beatscript * beatscript_skip_to_default(struct Beatscript *currentCmd) {
+    s32 depth = 0;
+    while (TRUE) {
+        s32 command = currentCmd->command;
+        currentCmd++;
+        switch (command) {
+            case 0x27:
+            case 0x28:
+            case 0x29:
+                depth++;
+                break;
+            case 0x2A:
+                if (depth == 0) {
+                    return currentCmd;
+                }
+                depth--;
+                break;
+        }
+    }
+}
+
+struct Beatscript * beatscript_skip_to_loop_end(struct Beatscript *currentCmd) {
+    s32 depth = 0;
+    while (TRUE) {
+        s32 command = currentCmd->command;
+        currentCmd++;
+        switch (command) {
+            case 0x45:
+                depth++;
+                break;
+            case 0x46:
+                if (depth == 0) {
+                    return currentCmd;
+                }
+                depth--;
+                break;
+        }
+    }
+}
+
+struct Beatscript * beatscript_rewind_to_loop_begin(struct Beatscript *currentCmd) {
+    s32 depth = 0;
+    s32 command;
+    while (TRUE) {
+        currentCmd--;
+        command = currentCmd->command;
+        switch (command) {
+            case 0x46:
+                depth++;
+                break;
+            case 0x45:
+                if (depth == 0) {
+                    return currentCmd;
+                }
+                depth--;
+                break;
+        }
+    }
+}
 
 // i'm so fucking scared
 #include "asm/gameplay/asm_0800a7d4.s"

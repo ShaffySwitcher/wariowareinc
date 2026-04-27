@@ -103,23 +103,17 @@ typedef u16 Palette[16];
 
 
 struct GraphicsBuffer {
-    u16 DISPCNT;       // 0x0 size:0x2
-    u8 pad[0xA];       // 0x2 size:0xA
-    u16 unkC;          // 0xC size:0x2
-    u16 unkE;          // 0xE size:0x2
-    u16 unk10;         // 0x10 size:0x2
-    u16 unk12;         // 0x12 size:0x2
-    u16 unk14;         // 0x14 size:0x2
-    u16 unk16;         // 0x16 size:0x2
-    u16 unk18;         // 0x18 size:0x2
-    u16 unk1A;         // 0x1A size:0x2
-    u8 pad1[0x30];     // 0x1C size:0x30
-    u16 unk4C;         // 0x4C size:0x2
-    u8 pad4e[6];       // 0x4E size:0x6
-    u16 bgPalette[16][16];   // 0x54 size:0x200
-    u16 objPalette[16][16];  // 0x254 size:0x200
-    u8 pad454[0x400];        // 0x454 size:0x400
-    u8 unk854;               // 0x854
+    u16 DISPCNT; // 0x0 size:0x2
+    u8 pad[0x2]; // 0x2 size:0xA
+    u16 BG_CNT[4];
+    struct Vector2 BG_OFS[4];
+    u8 pad1[0x30]; // 0x1C size:0x30
+    u16 unk4C; // 0x4C size:0x2
+    u8 pad4e[6]; // 0x4E size:0x6
+    u16 bgPalette[16][16]; // 0x54 size:0x200
+    u16 objPalette[16][16]; // 0x254 size:0x200
+    u8 pad454[0x400]; // 0x454 size:0x400
+    u8 unk854; // 0x854
 } gGraphicsBuffer;
 
 #define BG_PALETTE_BUFFER(p)    ((u16 *)gGraphicsBuffer.bgPalette)  + ((u32)((p) * 16))

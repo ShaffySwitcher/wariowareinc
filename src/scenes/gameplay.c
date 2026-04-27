@@ -338,8 +338,8 @@ void gameplay_stage_init(void) {
         args[i] = 0;
         gBeatscriptScene.threads[i].active = 0;
     }
-    gGraphicsBuffer.unkE = 0;
-    gGraphicsBuffer.unkC = 0;
+    gGraphicsBuffer.BG_OFS[0].y = 0;
+    gGraphicsBuffer.BG_OFS[0].x = 0;
     gGraphicsBuffer.DISPCNT = 0x1000;
     gGameplayData.unk274 = 0;
     gGameplayData.unk278 = 0;
@@ -365,12 +365,12 @@ void gameplay_stage_init(void) {
 
 void func_08008DF4(void) {
     gGraphicsBuffer.DISPCNT = DISPCNT_DISPLAY_BG(0) | DISPCNT_DISPLAY_OAM;
-    gGraphicsBuffer.unk1A = 0;
-    gGraphicsBuffer.unk18 = 0;
-    gGraphicsBuffer.unk16 = 0;
-    gGraphicsBuffer.unk14 = 0;
-    gGraphicsBuffer.unk12 = 0;
-    gGraphicsBuffer.unk10 = 0;
+    gGraphicsBuffer.BG_OFS[3].y = 0;
+    gGraphicsBuffer.BG_OFS[3].x = 0;
+    gGraphicsBuffer.BG_OFS[2].y = 0;
+    gGraphicsBuffer.BG_OFS[2].x = 0;
+    gGraphicsBuffer.BG_OFS[1].y = 0;
+    gGraphicsBuffer.BG_OFS[1].x = 0;
     gGraphicsBuffer.unk4C = 0;
     func_08003FB8();
 }

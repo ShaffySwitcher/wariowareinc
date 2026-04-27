@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800A454 \n\
+thumb_func_start beatscript_skip_to_else_or_endif \n\
 /* 0800A454 */ PUSH {LR} \n\
 /* 0800A456 */ ADDS R1, R0, #0 \n\
 /* 0800A458 */ MOVS R2, #0 \n\
