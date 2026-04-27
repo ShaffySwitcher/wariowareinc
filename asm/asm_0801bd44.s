@@ -64,7 +64,7 @@ glabel func_0801BD44
 /* 0801BDC0 */ LDR R1, _0801BDE8
 /* 0801BDC2 */ MOVS R2, #0X40
 /* 0801BDC4 */ MOVS R3, #0
-/* 0801BDC6 */ BL func_080079A4
+/* 0801BDC6 */ BL interp_lcd_blend_mode
 /* 0801BDCA */ MOVS R0, #7
 /* 0801BDCC */ BL func_0800C7A4
 /* 0801BDD0 */ ADD SP, #0XC

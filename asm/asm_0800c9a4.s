@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0800C9A4
 /* 0800C9A4 */ PUSH {LR}
-/* 0800C9A6 */ BL func_0800A074
+/* 0800C9A6 */ BL ticks_to_frames
 /* 0800C9AA */ LDR R1, _0800C9B8
 /* 0800C9AC */ LDR R1, [R1]
 /* 0800C9AE */ LDR R2, _0800C9BC

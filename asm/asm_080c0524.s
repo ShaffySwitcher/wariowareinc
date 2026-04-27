@@ -39,7 +39,7 @@ glabel func_080C0524
 /* 080C0566 */ LSLS R4, R4, #3
 /* 080C0568 */ ADDS R4, #0X28
 /* 080C056A */ MOVS R0, #0X10
-/* 080C056C */ BL func_0800A074
+/* 080C056C */ BL ticks_to_frames
 /* 080C0570 */ LDR R2, [R6]
 /* 080C0572 */ LDR R3, [R2, #0X44]
 /* 080C0574 */ LSLS R1, R3, #1

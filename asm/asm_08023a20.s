@@ -11,7 +11,7 @@ glabel func_08023A20
 /* 08023A26 */ ANDS R4, R0
 /* 08023A28 */ LSLS R0, R0, #8
 /* 08023A2A */ LSRS R0, R0, #0X10
-/* 08023A2C */ BL func_0800A074
+/* 08023A2C */ BL ticks_to_frames
 /* 08023A30 */ ADDS R6, R0, #0
 /* 08023A32 */ LSLS R4, R4, #4
 /* 08023A34 */ LDR R0, _08023AAC

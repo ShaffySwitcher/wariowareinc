@@ -93,7 +93,7 @@ _0802584E:
 /* 08025856 */ MOVS R1, #0XB
 /* 08025858 */ BL pal_interp_blend_now_pal_pal
 /* 0802585C */ LDR R0, _08025890
-/* 0802585E */ BL func_08002530
+/* 0802585E */ BL load_gfx_table
 _08025862:
 /* 08025862 */ BL func_080264E4
 /* 08025866 */ LDR R0, =gCurrentKeys

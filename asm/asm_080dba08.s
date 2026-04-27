@@ -71,7 +71,7 @@ _080DBA8C:
 /* 080DBA8C */ LDR R0, _080DBB8C
 /* 080DBA8E */ BL play_sound
 /* 080DBA92 */ MOVS R0, #0X18
-/* 080DBA94 */ BL func_0800A074
+/* 080DBA94 */ BL ticks_to_frames
 /* 080DBA98 */ LDR R1, [R4]
 /* 080DBA9A */ ADDS R1, #0XEA
 /* 080DBA9C */ STRH R0, [R1]

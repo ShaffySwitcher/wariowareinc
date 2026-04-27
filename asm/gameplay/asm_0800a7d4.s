@@ -1139,7 +1139,7 @@ _0800AF24: \n\
 /* 0800AF2E */ BL _0800B74C \n\
 _0800AF32: \n\
 /* 0800AF32 */ ADDS R0, R7, #0 \n\
-/* 0800AF34 */ BL func_08002530 \n\
+/* 0800AF34 */ BL load_gfx_table \n\
 /* 0800AF38 */ BL _0800B74C \n\
 _0800AF3C: \n\
 /* 0800AF3C */ BL get_current_mem_id \n\
@@ -1201,7 +1201,7 @@ _0800AFA4: \n\
 /* 0800AFAA */ CMP R2, #0 \n\
 /* 0800AFAC */ BGE _0800AFB6 \n\
 /* 0800AFAE */ ADDS R0, R5, #0 \n\
-/* 0800AFB0 */ BL func_0800A074 \n\
+/* 0800AFB0 */ BL ticks_to_frames \n\
 /* 0800AFB4 */ ADDS R5, R0, #0 \n\
 _0800AFB6: \n\
 /* 0800AFB6 */ BL get_current_mem_id \n\
@@ -1210,7 +1210,7 @@ _0800AFB6: \n\
 /* 0800AFBE */ ADDS R1, R7, #0 \n\
 /* 0800AFC0 */ ADDS R2, R5, #0 \n\
 /* 0800AFC2 */ ADDS R3, R6, #0 \n\
-/* 0800AFC4 */ BL func_080079A4 \n\
+/* 0800AFC4 */ BL interp_lcd_blend_mode \n\
 /* 0800AFC8 */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\
@@ -1225,7 +1225,7 @@ _0800AFD0: \n\
 /* 0800AFDA */ CMP R0, #0 \n\
 /* 0800AFDC */ BEQ _0800AFE6 \n\
 /* 0800AFDE */ ADDS R0, R5, #0 \n\
-/* 0800AFE0 */ BL func_0800A074 \n\
+/* 0800AFE0 */ BL ticks_to_frames \n\
 /* 0800AFE4 */ ADDS R5, R0, #0 \n\
 _0800AFE6: \n\
 /* 0800AFE6 */ MOVS R0, #0XF \n\
@@ -1344,7 +1344,7 @@ _0800B0B0: \n\
 /* 0800B0BE */ ORRS R0, R1 \n\
 /* 0800B0C0 */ STRB R0, [R3] \n\
 /* 0800B0C2 */ LSRS R0, R6, #2 \n\
-/* 0800B0C4 */ BL func_0800A074 \n\
+/* 0800B0C4 */ BL ticks_to_frames \n\
 /* 0800B0C8 */ LDR R1, _0800B100 \n\
 /* 0800B0CA */ ANDS R1, R0 \n\
 /* 0800B0CC */ LSLS R1, R1, #2 \n\
@@ -1429,7 +1429,7 @@ _0800B158: \n\
 /* 0800B158 */ CMP R6, #0 \n\
 /* 0800B15A */ BEQ _0800B172 \n\
 /* 0800B15C */ ADDS R0, R7, #0 \n\
-/* 0800B15E */ BL func_0800A074 \n\
+/* 0800B15E */ BL ticks_to_frames \n\
 /* 0800B162 */ LSLS R0, R0, #0X10 \n\
 /* 0800B164 */ LSRS R0, R0, #0X10 \n\
 /* 0800B166 */ MOV R6, R8 \n\
@@ -1439,7 +1439,7 @@ _0800B158: \n\
 /* 0800B170 */ B _0800B74C \n\
 _0800B172: \n\
 /* 0800B172 */ ADDS R0, R7, #0 \n\
-/* 0800B174 */ BL func_0800A074 \n\
+/* 0800B174 */ BL ticks_to_frames \n\
 /* 0800B178 */ LSLS R0, R0, #0X10 \n\
 /* 0800B17A */ LSRS R0, R0, #0X10 \n\
 /* 0800B17C */ MOV R2, R8 \n\
@@ -1577,7 +1577,7 @@ _0800B254: \n\
 /* 0800B260 */ B _0800B74C \n\
 _0800B262: \n\
 /* 0800B262 */ MOV R0, R8 \n\
-/* 0800B264 */ BL func_0800A074 \n\
+/* 0800B264 */ BL ticks_to_frames \n\
 /* 0800B268 */ ADDS R1, R0, #0 \n\
 /* 0800B26A */ LDR R2, _0800B278 \n\
 /* 0800B26C */ LDRH R3, [R2] \n\
@@ -1967,7 +1967,7 @@ _0800B520: \n\
 /* 0800B52E */ MOV R2, R8 \n\
 /* 0800B530 */ LSLS R0, R2, #0X10 \n\
 /* 0800B532 */ LSRS R0, R0, #0X10 \n\
-/* 0800B534 */ BL func_0800A074 \n\
+/* 0800B534 */ BL ticks_to_frames \n\
 /* 0800B538 */ ADDS R3, R0, #0 \n\
 /* 0800B53A */ LSLS R3, R3, #0X10 \n\
 /* 0800B53C */ LSRS R3, R3, #0X10 \n\
@@ -1980,7 +1980,7 @@ _0800B54A: \n\
 /* 0800B54A */ MOV R3, R8 \n\
 /* 0800B54C */ LSLS R0, R3, #0X10 \n\
 /* 0800B54E */ LSRS R0, R0, #0X10 \n\
-/* 0800B550 */ BL func_0800A074 \n\
+/* 0800B550 */ BL ticks_to_frames \n\
 /* 0800B554 */ LSLS R0, R0, #0X10 \n\
 /* 0800B556 */ LSRS R0, R0, #0X10 \n\
 /* 0800B558 */ LSLS R1, R6, #1 \n\
@@ -2000,7 +2000,7 @@ _0800B574: \n\
 /* 0800B574 */ MOV R1, R8 \n\
 /* 0800B576 */ LSLS R0, R1, #0X10 \n\
 /* 0800B578 */ LSRS R0, R0, #0X10 \n\
-/* 0800B57A */ BL func_0800A074 \n\
+/* 0800B57A */ BL ticks_to_frames \n\
 /* 0800B57E */ LSLS R0, R0, #0X10 \n\
 /* 0800B580 */ LSRS R0, R0, #0X10 \n\
 /* 0800B582 */ LSLS R1, R6, #1 \n\
@@ -2055,7 +2055,7 @@ _0800B5D2: \n\
 /* 0800B5E2 */ MOV R1, R8 \n\
 /* 0800B5E4 */ LSLS R0, R1, #0X10 \n\
 /* 0800B5E6 */ LSRS R0, R0, #0X10 \n\
-/* 0800B5E8 */ BL func_0800A074 \n\
+/* 0800B5E8 */ BL ticks_to_frames \n\
 /* 0800B5EC */ ADDS R3, R0, #0 \n\
 /* 0800B5EE */ LSLS R3, R3, #0X10 \n\
 /* 0800B5F0 */ LSRS R3, R3, #0X10 \n\
@@ -2068,7 +2068,7 @@ _0800B5FE: \n\
 /* 0800B5FE */ MOV R2, R8 \n\
 /* 0800B600 */ LSLS R0, R2, #0X10 \n\
 /* 0800B602 */ LSRS R0, R0, #0X10 \n\
-/* 0800B604 */ BL func_0800A074 \n\
+/* 0800B604 */ BL ticks_to_frames \n\
 /* 0800B608 */ LSLS R0, R0, #0X10 \n\
 /* 0800B60A */ LSRS R0, R0, #0X10 \n\
 /* 0800B60C */ LSLS R1, R6, #1 \n\
@@ -2089,7 +2089,7 @@ _0800B62A: \n\
 /* 0800B62A */ MOV R1, R8 \n\
 /* 0800B62C */ LSLS R0, R1, #0X10 \n\
 /* 0800B62E */ LSRS R0, R0, #0X10 \n\
-/* 0800B630 */ BL func_0800A074 \n\
+/* 0800B630 */ BL ticks_to_frames \n\
 /* 0800B634 */ LSLS R0, R0, #0X10 \n\
 /* 0800B636 */ LSRS R0, R0, #0X10 \n\
 /* 0800B638 */ LSLS R1, R6, #1 \n\

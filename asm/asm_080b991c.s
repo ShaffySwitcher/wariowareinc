@@ -133,7 +133,7 @@ _080B99FE:
 /* 080B9A06 */ LDR R0, [R5, #8]
 /* 080B9A08 */ ASRS R6, R0, #8
 /* 080B9A0A */ MOVS R0, #0XC
-/* 080B9A0C */ BL func_0800A074
+/* 080B9A0C */ BL ticks_to_frames
 /* 080B9A10 */ ADDS R3, R0, #0
 /* 080B9A12 */ LDR R1, [R5, #0X30]
 /* 080B9A14 */ LDR R0, [R7, #0X30]

@@ -24,7 +24,7 @@ glabel func_08025330
 /* 08025350 */ MOVS R0, #0X10
 /* 08025352 */ STRH R0, [R1]
 /* 08025354 */ MOVS R0, #0X18
-/* 08025356 */ BL func_0800A074
+/* 08025356 */ BL ticks_to_frames
 /* 0802535A */ ADDS R4, R0, #0
 /* 0802535C */ ADDS R2, R5, #0
 /* 0802535E */ ADDS R2, #0X40

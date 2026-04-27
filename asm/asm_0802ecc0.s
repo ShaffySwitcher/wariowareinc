@@ -21,7 +21,7 @@ glabel func_0802ECC0
 /* 0802ECDC */ LSLS R2, R2, #6
 /* 0802ECDE */ BL func_08002124
 /* 0802ECE2 */ LDR R0, _0802EF04
-/* 0802ECE4 */ BL func_08002530
+/* 0802ECE4 */ BL load_gfx_table
 /* 0802ECE8 */ MOVS R0, #0
 /* 0802ECEA */ BL func_0800BEF4
 /* 0802ECEE */ MOVS R0, #1

@@ -31,7 +31,7 @@ _0801E338:
 /* 0801E33E */ B _0801E3E8
 _0801E340:
 /* 0801E340 */ MOVS R0, #0X24
-/* 0801E342 */ BL func_0800A074
+/* 0801E342 */ BL ticks_to_frames
 /* 0801E346 */ ADDS R5, R0, #0
 /* 0801E348 */ LDR R0, [R6]
 /* 0801E34A */ ADDS R0, #0XF4
@@ -72,7 +72,7 @@ _0801E394:
 /* 0801E394 */ .word gCurrentSceneSpritePool
 _0801E398:
 /* 0801E398 */ MOVS R0, #0X18
-/* 0801E39A */ BL func_0800A074
+/* 0801E39A */ BL ticks_to_frames
 /* 0801E39E */ ADDS R5, R0, #0
 /* 0801E3A0 */ LDR R4, _0801E3F0
 /* 0801E3A2 */ LDR R0, [R4]

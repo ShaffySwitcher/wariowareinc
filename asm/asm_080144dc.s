@@ -36,7 +36,7 @@ glabel func_080144DC
 /* 08014518 */ MOVS R1, #0XFD
 /* 0801451A */ MOVS R2, #0X40
 /* 0801451C */ MOVS R3, #0
-/* 0801451E */ BL func_080079A4
+/* 0801451E */ BL interp_lcd_blend_mode
 /* 08014522 */ LDR R1, _08014558
 /* 08014524 */ MOVS R2, #0
 /* 08014526 */ BL run_func_after_task

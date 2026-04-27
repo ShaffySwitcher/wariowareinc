@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800A074 \n\
+thumb_func_start ticks_to_frames \n\
 /* 0800A074 */ PUSH {LR} \n\
 /* 0800A076 */ LSLS R0, R0, #8 \n\
 /* 0800A078 */ LDR R1, =gBeatscriptScene \n\

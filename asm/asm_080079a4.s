@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_080079A4
+glabel interp_lcd_blend_mode
 .thumb_func
 /* 080079A4 */ PUSH {R4, LR}
 /* 080079A6 */ SUB SP, #0XC

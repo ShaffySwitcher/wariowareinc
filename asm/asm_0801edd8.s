@@ -7,7 +7,7 @@
 glabel func_0801EDD8
 /* 0801EDD8 */ PUSH {LR}
 /* 0801EDDA */ LDR R0, _0801EDFC
-/* 0801EDDC */ BL func_08002530
+/* 0801EDDC */ BL load_gfx_table
 /* 0801EDE0 */ BL func_0800BFC8
 /* 0801EDE4 */ LDR R0, _0801EE00
 /* 0801EDE6 */ LDR R0, [R0]

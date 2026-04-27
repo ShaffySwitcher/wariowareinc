@@ -46,7 +46,7 @@ _080A56E0:
 /* 080A56F4 */ MOVS R3, #2
 /* 080A56F6 */ BL sprite_set_anim
 /* 080A56FA */ MOVS R0, #0X14
-/* 080A56FC */ BL func_0800A074
+/* 080A56FC */ BL ticks_to_frames
 /* 080A5700 */ LSLS R0, R0, #0X10
 /* 080A5702 */ LSRS R0, R0, #0X10
 /* 080A5704 */ LDR R2, _080A5750

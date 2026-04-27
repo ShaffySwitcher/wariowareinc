@@ -22,7 +22,7 @@ _0801F72C:
 /* 0801F72E */ ORRS R0, R1
 /* 0801F730 */ STRB R0, [R2, #0X10]
 /* 0801F732 */ LDR R0, _0801F928
-/* 0801F734 */ BL func_08002530
+/* 0801F734 */ BL load_gfx_table
 /* 0801F738 */ BL get_current_mem_id
 /* 0801F73C */ LSLS R0, R0, #0X10
 /* 0801F73E */ LSRS R0, R0, #0X10

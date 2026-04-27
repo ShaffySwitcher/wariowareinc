@@ -43,7 +43,7 @@ glabel func_08018EC8
 /* 08018F14 */ ADDS R2, R4, #0
 /* 08018F16 */ BL func_080EF2CC
 /* 08018F1A */ LDR R0, _08018F94
-/* 08018F1C */ BL func_08002530
+/* 08018F1C */ BL load_gfx_table
 /* 08018F20 */ MOVS R0, #0
 /* 08018F22 */ MOVS R1, #1
 /* 08018F24 */ BL func_0800BF60

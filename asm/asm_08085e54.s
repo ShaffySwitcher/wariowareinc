@@ -88,7 +88,7 @@ glabel func_08085E54
 /* 08085F12 */ LDR R0, [R7]
 /* 08085F14 */ STRB R6, [R0, #4]
 /* 08085F16 */ MOVS R0, #0X60
-/* 08085F18 */ BL func_0800A074
+/* 08085F18 */ BL ticks_to_frames
 /* 08085F1C */ LDR R1, [R7]
 /* 08085F1E */ MOVS R4, #0
 /* 08085F20 */ STRH R0, [R1, #8]

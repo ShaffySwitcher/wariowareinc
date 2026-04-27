@@ -201,7 +201,11 @@
 .endm
 
 @ [0x2C]
-@ [0x2D]
+@ [0x2D] Load Graphics
+.macro load_graphics address
+    beatscript_cmd 0x2D, 0, \address, 0
+.endm
+
 @ [0x2E]
 @ [0x2F]
 @ [0x30] Set Speed
@@ -211,9 +215,30 @@
 
 @ [0x31]
 @ [0x32]
-@ [0x33]
-@ [0x34]
-@ [0x35]
+@ [0x33] Interp LCD Blend
+.macro mod_lcd_blend reverse, controls, toTempo, time
+    beatscript_cmd 0x33, \reverse, \controls, ((\toTempo << 31) | (\time & 0x7FFFFFFF))
+.endm
+
+.macro mod_lcd_blend_to controls, time
+    mod_lcd_blend FALSE, \controls, TRUE, \time
+.endm
+
+.macro mod_lcd_blend_from controls, time
+    mod_lcd_blend TRUE, \controls, TRUE, \time
+.endm
+
+@ [0x34] Change Palette
+// TO-DO: figure out how to pack this smartly
+
+@ [0x35] Set BG Reg
+.macro set_bg_reg layer, offset, bgcnt
+    beatscript_cmd 0x35, \layer, \offset, \bgcnt
+.endm
+
+.macro set_bg_param layer, visible, x, y, bgcnt
+    beatscript_cmd 0x35, ((\layer) | (\visible << 2)), (\x | (\y << 16)), \bgcnt
+.endm
 @ [0x36]
 @ [0x37]
 @ [0x38]
@@ -222,10 +247,18 @@
 @ [0x3B]
 @ [0x3C]
 @ [0x3D]
-@ [0x3E]
+@ [0x3E] Load Graphics Async
+.macro load_graphics_async address, limit
+    beatscript_cmd 0x3E, 0, \address, \limit
+.endm
+
 @ [0x3F]
 @ [0x40]
 @ [0x41]
+.macro fade_screen reverse, time, color
+    beatscript_cmd 0x41, \reverse, \time, \color
+.endm
+
 @ [0x42]
 @ [0x43]
 @ [0x44]
@@ -298,7 +331,11 @@
 @ [0x83]
 @ [0x84]
 @ [0x85]
-@ [0x86]
+@ [0x86] Sprite Render
+.macro sprite_render sprite, render
+    beatscript_cmd 0x86, 0, \sprite, \render
+.endm
+
 @ [0x87]
 @ [0x88]
 @ [0x89]

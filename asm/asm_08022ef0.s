@@ -10,7 +10,7 @@ glabel func_08022EF0
 /* 08022EF4 */ PUSH {R6}
 /* 08022EF6 */ SUB SP, #0X58
 /* 08022EF8 */ LDR R0, _08022FDC
-/* 08022EFA */ BL func_08002530
+/* 08022EFA */ BL load_gfx_table
 /* 08022EFE */ MOVS R0, #0
 /* 08022F00 */ BL func_0800BF20
 /* 08022F04 */ MOVS R0, #0

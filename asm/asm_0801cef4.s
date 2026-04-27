@@ -7,7 +7,7 @@
 glabel func_0801CEF4
 /* 0801CEF4 */ PUSH {R4, LR}
 /* 0801CEF6 */ SUB SP, #4
-/* 0801CEF8 */ BL func_0800A074
+/* 0801CEF8 */ BL ticks_to_frames
 /* 0801CEFC */ ADDS R1, R0, #0
 /* 0801CEFE */ LDR R0, _0801CF20
 /* 0801CF00 */ LDR R0, [R0]

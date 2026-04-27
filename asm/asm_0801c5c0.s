@@ -20,7 +20,7 @@ glabel func_0801C5C0
 /* 0801C5D8 */ STRB R2, [R1]
 /* 0801C5DA */ LDR R1, [R4]
 /* 0801C5DC */ STRH R3, [R1, #0X38]
-/* 0801C5DE */ BL func_0800A074
+/* 0801C5DE */ BL ticks_to_frames
 /* 0801C5E2 */ LDR R1, [R4]
 /* 0801C5E4 */ STRH R0, [R1, #0X3A]
 /* 0801C5E6 */ ADDS R1, #0X35

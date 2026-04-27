@@ -8,7 +8,7 @@ glabel func_0801BFE4
 /* 0801BFE4 */ PUSH {R4, R5, LR}
 /* 0801BFE6 */ SUB SP, #0X1C
 /* 0801BFE8 */ LDR R0, _0801C078
-/* 0801BFEA */ BL func_08002530
+/* 0801BFEA */ BL load_gfx_table
 /* 0801BFEE */ BL func_0800BFC8
 /* 0801BFF2 */ MOVS R0, #2
 /* 0801BFF4 */ STR R0, [SP]
