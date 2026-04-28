@@ -347,6 +347,7 @@ SECTIONS {
         build/asm/asm_0800db5c.s.o(.text*);
         build/asm/asm_0800dba0.s.o(.text*);
         build/src/scenes/title.c.o(.text);
+        build/src/scenes/name_select.c.o(.text);
         build/asm/asm_0800e5cc.s.o(.text*);
         build/asm/asm_0800e6f8.s.o(.text*);
         build/asm/asm_0800e760.s.o(.text*);

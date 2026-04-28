@@ -38,7 +38,7 @@ _0800DB36:
 
 .balign 4, 0
 _0800DB3C:
-/* 0800DB3C */ .word D_03003844
+/* 0800DB3C */ .word gCurrentScene
 _0800DB40:
 /* 0800DB40 */ LDR R1, _0800DB48
 /* 0800DB42 */ MOVS R0, #5
@@ -46,9 +46,9 @@ _0800DB40:
 
 .balign 4, 0
 _0800DB48:
-/* 0800DB48 */ .word D_03003844
+/* 0800DB48 */ .word gCurrentScene
 _0800DB4C:
-/* 0800DB4C */ LDR R1, =D_03003844
+/* 0800DB4C */ LDR R1, =gCurrentScene
 /* 0800DB4E */ MOVS R0, #7
 _0800DB50:
 /* 0800DB50 */ STRH R0, [R1]

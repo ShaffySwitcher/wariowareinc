@@ -13,11 +13,11 @@ void func_08008134(void) {
         gameplay_init_scene();
     } else {
         if (gameplay_update_scene() == 2) {
-            D_03003844 = 4;
+            gCurrentScene = GLOBAL_SCENE_MAIN_MENU;
             func_08008130();
         }
 
-        if (D_03003844 != 2) {
+        if (gCurrentScene != GLOBAL_SCENE_GAMEPLAY) {
             gameplay_stop_scene();
         }
     }
@@ -276,11 +276,11 @@ void func_08008940(void) {
     func_08003EB0();
 }
 
-#include "asm/gameplay/asm_0800894c.s"
+#include "asm/scenes/gameplay/asm_0800894c.s"
 
-#include "asm/gameplay/asm_0800898c.s"
+#include "asm/scenes/gameplay/asm_0800898c.s"
 
-#include "asm/gameplay/asm_080089d8.s"
+#include "asm/scenes/gameplay/asm_080089d8.s"
 
 u32 func_08008AA4(u32 arg0) {
     struct Unk083A4B58 *entry = D_083A4B58[arg0];
@@ -314,7 +314,7 @@ struct GameplayScriptCmd* func_08008B18(void) {
     return gGameplayData.unk2c[gGameplayData.unk6_3];
 }
 
-#include "asm/gameplay/asm_08008b50.s"
+#include "asm/scenes/gameplay/asm_08008b50.s"
 
 void gameplay_stage_init(void) {
     u32 i;
@@ -375,7 +375,7 @@ void func_08008DF4(void) {
     func_08003FB8();
 }
 
-#include "asm/gameplay/asm_08008e1c.s"
+#include "asm/scenes/gameplay/asm_08008e1c.s"
 
 void func_0800912C(u16 arg0) {
     struct GameplayStageInfo *stageInfo = gGameplayData.unk0->unk4;

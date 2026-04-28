@@ -62,7 +62,7 @@
 .set D_0300363C, 0x0300363C;
 .set D_03003640, 0x03003640;
 .set D_03003840, 0x03003840;
-.set D_03003844, 0x03003844;
+.set gCurrentScene, 0x03003844;
 .set D_03003848, 0x03003848;
 .set gCurrentSceneVariable, 0x03003850;
 .set gCurrentSceneSpritePool, 0x03003854;

@@ -28,6 +28,8 @@ typedef s32 s24_8;
 
 #define ARRAY_COUNT(a) (s32)(sizeof(a))/sizeof((a)[0])
 
+#define TO_FRAMES(x) ((x) * 60)
+
 #include "gba/gba.h"
 #include "types.h"
 #include "sequence_data.h"

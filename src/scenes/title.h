@@ -3,19 +3,20 @@
 #include "global.h"
 #include "graphics.h"
 #include "scenes.h"
+#include "src/lib_sprite.h"
 
 // MACROS
 #define gTitle ((struct TitleSceneData *)gCurrentSceneData)
 
 // TYPES
 struct TitleSceneData {
-    u32 unk0;         // 0x0 size:0x4
-    u32 unk4;         // 0x4 size:0x4
-    u8 unk8;          // 0x8
-    u8 unkC[0x2F];    // 0x9 size:0x2F
-    u16 unk38;        // 0x38 size:0x2
-    u8 unk3A[0x12];   // 0x3A size:0x12
-    u32 unk4C;        // 0x4C size:0x4
+    u32 unk0;           // 0x0 size:0x4
+    s32 unk4;           // 0x4 size:0x4
+    u8 inputsEnabled;            // 0x8
+    u8 unkC[0x2F];      // 0x9 size:0x2F
+    u16 unk38;          // 0x38 size:0x2
+    u8 unk3A[0x12];     // 0x3A size:0x12
+    u32 timeUntilIntro; // 0x4C size:0x4
 };
 
 // DATA
@@ -27,7 +28,7 @@ extern u8 D_083ADADC[];
 extern u8 D_083A8C7C[];
 
 // FUNCTIONS
-extern void func_0800DC08(void);
+extern void title_scene_run(void);
 
 // EXTERNS
 extern void scene_set_current_thread(u32);
@@ -36,4 +37,5 @@ extern s32 start_load_gfx_table_task(u16 memID, const struct GraphicsTable *gfxT
 extern void func_08007DF0(u16, void*, u32, u32);
 extern u32 func_08004E48(u16, void*, u32, u32, u32);
 extern u32 func_080042F4(u16, void*, u32, u32, u32, u32);
-extern void func_08005538(struct SpriteHandler*, s32, void*, u16*);
+extern void func_08005538(struct SpriteHandler*, s32, void*, s16*);
+extern u32 title_scene_inputs_enabled();

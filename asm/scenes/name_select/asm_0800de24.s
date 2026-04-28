@@ -49,7 +49,7 @@ _0800DE6C: \n\
  \n\
 .balign 4, 0 \n\
 _0800DE70: \n\
-/* 0800DE70 */ .word D_03003844 \n\
+/* 0800DE70 */ .word gCurrentScene \n\
  \n\
 .balign 4, 0 \n\
 _0800DE74: \n\

@@ -40,6 +40,6 @@ _080166D8:
 
 .balign 4, 0
 _080166DC:
-/* 080166DC */ .word D_03003844
+/* 080166DC */ .word gCurrentScene
 .ltorg
 .end

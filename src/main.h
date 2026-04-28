@@ -13,7 +13,7 @@ extern void *D_03003640;
 extern void *D_080F6140;
 extern void *D_030035F0;
 extern u8 D_03003638; 
-extern s16 D_03003844;
+extern s16 gCurrentScene;
 extern u16 D_030035E0;
 extern u16 D_03003840;
 extern u16 gCurrentKeys;

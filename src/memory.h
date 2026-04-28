@@ -21,7 +21,9 @@ struct SaveBuffer {
     u32 size; // 0x04
     u32 checksum; // 0x08   
     u32 unkC; // 0x0C
-    u8 unk10[0x10]; // 0x10 - 0x1F
+    u8 unk10[0xB]; // 0x10 - 0x1A
+    u8 hasSetName;
+    u8 unk1C[0x4]; // 0x1C - 0x1F
     struct SaveStageFlags stageFlags[TOTAL_STAGES]; // 0x20 - 0xFF
     u8 microgameFlags[0x100]; // 0x100 - 0x1FF
     u16 highScores[0x100]; // 0x200 - 0x3FF
