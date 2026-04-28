@@ -311,7 +311,7 @@ void func_08009F00(u32 arg) {
 }
 
 // u32 scene_change_music(struct SongHeader *music, u32 override)
-#include "asm/gameplay/asm_08009f14.s"
+#include "asm/beatscript/asm_08009f14.s"
 
 void scene_set_music(struct SongHeader *music) {
     scene_change_music(music, TRUE);
@@ -346,33 +346,33 @@ void scene_set_music_pitch_env(s16 pitch) {
     scene_update_music_pitch();
 }
 
-#include "asm/gameplay/asm_0800a000.s"
+#include "asm/beatscript/asm_0800a000.s"
 
-#include "asm/gameplay/asm_0800a024.s"
+#include "asm/beatscript/asm_0800a024.s"
 
-#include "asm/gameplay/asm_0800a038.s"
+#include "asm/beatscript/asm_0800a038.s"
 
-#include "asm/gameplay/asm_0800a044.s"
+#include "asm/beatscript/asm_0800a044.s"
 
-#include "asm/gameplay/asm_0800a050.s"
+#include "asm/beatscript/asm_0800a050.s"
 
-#include "asm/gameplay/asm_0800a064.s"
+#include "asm/beatscript/asm_0800a064.s"
 
-#include "asm/gameplay/asm_0800a068.s"
+#include "asm/beatscript/asm_0800a068.s"
 
-#include "asm/gameplay/asm_0800a074.s"
+#include "asm/beatscript/asm_0800a074.s"
 
-#include "asm/gameplay/asm_0800a088.s"
+#include "asm/beatscript/asm_0800a088.s"
 
-#include "asm/gameplay/asm_0800a098.s"
+#include "asm/beatscript/asm_0800a098.s"
 
-#include "asm/gameplay/asm_0800a0c4.s"
+#include "asm/beatscript/asm_0800a0c4.s"
 
-#include "asm/gameplay/asm_0800a128.s"
+#include "asm/beatscript/asm_0800a128.s"
 
-#include "asm/gameplay/asm_0800a138.s"
+#include "asm/beatscript/asm_0800a138.s"
 
-#include "asm/gameplay/asm_0800a14c.s"
+#include "asm/beatscript/asm_0800a14c.s"
 
 void func_0800A160(struct Animation* anim, struct Vector2* pos) {
     u32 memID = sprite_handler_get_mem_id(gSpriteHandler);
@@ -387,37 +387,37 @@ void func_0800A160(struct Animation* anim, struct Vector2* pos) {
     sprite_handler_set_mem_id(gSpriteHandler, memID);
 }
 
-#include "asm/gameplay/asm_0800a200.s"
+#include "asm/beatscript/asm_0800a200.s"
 
-#include "asm/gameplay/asm_0800a218.s"
+#include "asm/beatscript/asm_0800a218.s"
 
-#include "asm/gameplay/asm_0800a228.s"
+#include "asm/beatscript/asm_0800a228.s"
 
-#include "asm/gameplay/asm_0800a240.s"
+#include "asm/beatscript/asm_0800a240.s"
 
-#include "asm/gameplay/asm_0800a270.s"
+#include "asm/beatscript/asm_0800a270.s"
 
-#include "asm/gameplay/asm_0800a27c.s"
+#include "asm/beatscript/asm_0800a27c.s"
 
-#include "asm/gameplay/asm_0800a280.s"
+#include "asm/beatscript/asm_0800a280.s"
 
-#include "asm/gameplay/asm_0800a298.s"
+#include "asm/beatscript/asm_0800a298.s"
 
-#include "asm/gameplay/asm_0800a2d8.s"
+#include "asm/beatscript/asm_0800a2d8.s"
 
-#include "asm/gameplay/asm_0800a330.s"
+#include "asm/beatscript/asm_0800a330.s"
 
-#include "asm/gameplay/asm_0800a390.s"
+#include "asm/beatscript/asm_0800a390.s"
 
-#include "asm/gameplay/asm_0800a3a4.s"
+#include "asm/beatscript/asm_0800a3a4.s"
 
-#include "asm/gameplay/asm_0800a3bc.s"
+#include "asm/beatscript/asm_0800a3bc.s"
 
-#include "asm/gameplay/asm_0800a3d0.s"
+#include "asm/beatscript/asm_0800a3d0.s"
 
-#include "asm/gameplay/asm_0800a3fc.s"
+#include "asm/beatscript/asm_0800a3fc.s"
 
-#include "asm/gameplay/asm_0800a430.s"
+#include "asm/beatscript/asm_0800a430.s"
 
 struct Beatscript *beatscript_skip_to_else_or_endif(struct Beatscript *currentCmd) {
     s32 depth = 0;
@@ -595,93 +595,13 @@ struct Beatscript * beatscript_rewind_to_loop_begin(struct Beatscript *currentCm
 }
 
 // [https://decomp.me/scratch/faqNB] went about as well as i expected
-#include "asm/gameplay/asm_0800a7d4.s"
+#include "asm/beatscript/asm_0800a7d4.s"
 
 
 void func_0800B764(u32 arg0, u32 arg1, struct SongHeader* song) {
     play_sound(song);
 }
 
-#include "asm/beatscript/asm_0800b770.s"
-
-#include "asm/beatscript/asm_0800b77c.s"
-
-#include "asm/beatscript/asm_0800b7b0.s"
-
-#include "asm/beatscript/asm_0800b7e4.s"
-
-#include "asm/beatscript/asm_0800b828.s"
-
-#include "asm/beatscript/asm_0800ba78.s"
-
-#include "asm/beatscript/asm_0800bb74.s"
-
-#include "asm/beatscript/asm_0800bbb4.s"
-
-#include "asm/beatscript/asm_0800bbcc.s"
-
-#include "asm/beatscript/asm_0800bc0c.s"
-
-#include "asm/beatscript/asm_0800bc10.s"
-
-#include "asm/beatscript/asm_0800bc50.s"
-
-#include "asm/beatscript/asm_0800bc90.s"
-
-#include "asm/beatscript/asm_0800bcac.s"
-
-#include "asm/beatscript/asm_0800bcc8.s"
-
-#include "asm/beatscript/asm_0800bd90.s"
-
-#include "asm/beatscript/asm_0800bec0.s"
-
-#include "asm/beatscript/asm_0800bef4.s"
-
-#include "asm/beatscript/asm_0800bf0c.s"
-
-#include "asm/beatscript/asm_0800bf20.s"
-
-#include "asm/beatscript/asm_0800bf34.s"
-
-#include "asm/beatscript/asm_0800bf44.s"
-
-#include "asm/beatscript/asm_0800bf60.s"
-
-#include "asm/beatscript/asm_0800bf7c.s"
-
-#include "asm/beatscript/asm_0800bfc8.s"
-
-#include "asm/beatscript/asm_0800bfdc.s"
-
-#include "asm/beatscript/asm_0800bff0.s"
-
-#include "asm/beatscript/asm_0800c038.s"
-
-#include "asm/beatscript/asm_0800c080.s"
-
-#include "asm/beatscript/asm_0800c0bc.s"
-
-#include "asm/beatscript/asm_0800c110.s"
-
-#include "asm/beatscript/asm_0800c15c.s"
-
-#include "asm/beatscript/asm_0800c1c0.s"
-
-#include "asm/beatscript/asm_0800c218.s"
-
-#include "asm/beatscript/asm_0800c298.s"
-
-#include "asm/beatscript/asm_0800c2e4.s"
-
-#include "asm/beatscript/asm_0800c344.s"
-
-#include "asm/beatscript/asm_0800c3ac.s"
-
-#include "asm/beatscript/asm_0800c430.s"
-
-#include "asm/beatscript/asm_0800c4e0.s"
-
-#include "asm/beatscript/asm_0800c548.s"
-
-#include "asm/beatscript/asm_0800c5a0.s"
+void func_0800B770(u32 arg0, u32 arg1, u32 arg2) {
+    func_0800C874(arg2);
+}

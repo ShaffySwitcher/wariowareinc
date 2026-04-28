@@ -59,7 +59,7 @@ _0800B88C: \n\
 /* 0800B88C */ CMP R0, #0X2E \n\
 /* 0800B88E */ BNE _0800B89E \n\
 /* 0800B890 */ LDRB R0, [R6, #1] \n\
-/* 0800B892 */ BL func_0800B7E4 \n\
+/* 0800B892 */ BL bmp_font_obj_parse_hex_digit \n\
 /* 0800B896 */ LSLS R0, R0, #0X18 \n\
 /* 0800B898 */ LSRS R0, R0, #0X18 \n\
 /* 0800B89A */ STR R0, [SP, #0X60] \n\
@@ -68,7 +68,7 @@ _0800B89E: \n\
 /* 0800B89E */ CMP R0, #0X3A \n\
 /* 0800B8A0 */ BNE _0800B8B0 \n\
 /* 0800B8A2 */ LDRB R0, [R6, #1] \n\
-/* 0800B8A4 */ BL func_0800B7E4 \n\
+/* 0800B8A4 */ BL bmp_font_obj_parse_hex_digit \n\
 /* 0800B8A8 */ LSLS R0, R0, #0X18 \n\
 /* 0800B8AA */ LSRS R0, R0, #0X18 \n\
 /* 0800B8AC */ STR R0, [SP, #0X68] \n\
