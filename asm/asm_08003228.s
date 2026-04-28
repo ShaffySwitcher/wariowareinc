@@ -10,7 +10,7 @@ glabel func_08003228
 /* 0800322C */ LDR R0, [R0]
 /* 0800322E */ LSLS R1, R1, #0X10
 /* 08003230 */ LSRS R1, R1, #0X10
-/* 08003232 */ BL func_080EFA54
+/* 08003232 */ BL sprite_handler_set_global_pause
 /* 08003236 */ POP {R0}
 /* 08003238 */ BX R0
 

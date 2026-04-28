@@ -74,7 +74,7 @@ glabel func_080B1164
 /* 080B11F8 */ LDR R1, [R4]
 /* 080B11FA */ LDR R1, [R1, #0X48]
 /* 080B11FC */ MOVS R2, #1
-/* 080B11FE */ BL func_080EF9CC
+/* 080B11FE */ BL sprite_id_set_visible
 /* 080B1202 */ ADD SP, #0X14
 /* 080B1204 */ POP {R4, R5}
 /* 080B1206 */ POP {R0}

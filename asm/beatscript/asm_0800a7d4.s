@@ -2137,7 +2137,7 @@ _0800B66C: \n\
 /* 0800B68C */ BEQ _0800B69C \n\
 /* 0800B68E */ LDR R0, [R5] \n\
 /* 0800B690 */ ADDS R1, R4, #0 \n\
-/* 0800B692 */ BL func_080EF154 \n\
+/* 0800B692 */ BL sprite_delete \n\
 /* 0800B696 */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\
@@ -2238,7 +2238,7 @@ _0800B738: \n\
 /* 0800B742 */ LDR R0, [R0] \n\
 /* 0800B744 */ MOVS R4, #0 \n\
 /* 0800B746 */ LDRSH R1, [R1, R4] \n\
-/* 0800B748 */ BL func_080EF154 \n\
+/* 0800B748 */ BL sprite_delete \n\
 _0800B74C: \n\
 /* 0800B74C */ ADD SP, #0X20 \n\
 /* 0800B74E */ POP {R3, R4, R5} \n\

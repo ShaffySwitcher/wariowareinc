@@ -34,7 +34,7 @@ _080BA4F0:
 /* 080BA4FA */ LDR R2, [R2, #0X28]
 /* 080BA4FC */ LSLS R2, R2, #8
 /* 080BA4FE */ ASRS R2, R2, #0X10
-/* 080BA500 */ BL func_080EF298
+/* 080BA500 */ BL sprite_set_y
 /* 080BA504 */ POP {R0}
 /* 080BA506 */ BX R0
 

@@ -160,7 +160,7 @@ _080898F2:
 /* 080899A2 */ ADDS R1, R2
 /* 080899A4 */ LDR R1, [R1]
 /* 080899A6 */ MOVS R2, #1
-/* 080899A8 */ BL func_080EF9DC
+/* 080899A8 */ BL sprite_id_set_enable_updates
 /* 080899AC */ ADD SP, #0X14
 /* 080899AE */ POP {R3, R4}
 /* 080899B0 */ MOV R8, R3

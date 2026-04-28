@@ -26,7 +26,7 @@ glabel func_080E22CC
 /* 080E22F0 */ SUBS R2, #0X10
 /* 080E22F2 */ LSLS R2, R2, #0X10
 /* 080E22F4 */ ASRS R2, R2, #0X10
-/* 080E22F6 */ BL func_080EF298
+/* 080E22F6 */ BL sprite_set_y
 /* 080E22FA */ LDR R6, [R5]
 /* 080E22FC */ MOV R1, R8
 /* 080E22FE */ LDR R0, [R1]
@@ -40,7 +40,7 @@ glabel func_080E22CC
 /* 080E2310 */ ASRS R2, R2, #0X10
 /* 080E2312 */ ADDS R0, R6, #0
 /* 080E2314 */ ADDS R1, R5, #0
-/* 080E2316 */ BL func_080EF298
+/* 080E2316 */ BL sprite_set_y
 /* 080E231A */ MOVS R0, #0X40
 /* 080E231C */ RSBS R0, R0, #0
 /* 080E231E */ CMP R4, R0

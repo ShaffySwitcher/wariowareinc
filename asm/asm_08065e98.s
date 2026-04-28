@@ -105,7 +105,7 @@ _08065F18:
 /* 08065F56 */ ADDS R0, R2, R3
 /* 08065F58 */ LDRB R2, [R0]
 /* 08065F5A */ ADDS R0, R6, #0
-/* 08065F5C */ BL func_080EEB50
+/* 08065F5C */ BL sprite_set_anim_progress
 /* 08065F60 */ LDR R2, [R4]
 /* 08065F62 */ MOVS R0, #0XAD
 /* 08065F64 */ LSLS R0, R0, #2

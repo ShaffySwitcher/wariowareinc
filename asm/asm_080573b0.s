@@ -179,7 +179,7 @@ glabel func_080573B0
 /* 08057516 */ ADDS R1, #0XF4
 /* 08057518 */ LDR R1, [R1]
 /* 0805751A */ MOVS R2, #1
-/* 0805751C */ BL func_080EF9DC
+/* 0805751C */ BL sprite_id_set_enable_updates
 /* 08057520 */ LDR R0, [R5]
 /* 08057522 */ BL func_080EF998
 /* 08057526 */ ADDS R1, R0, #0

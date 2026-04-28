@@ -150,8 +150,8 @@ struct SpriteHandler { // Size = 0x28
     u16 yPos;           // Global Sprite Y Offset
     u16 totalCycles;    // OAM Buffer Direction
     u16 paused;         // Global Sprite Pause Flag
-    u16 memID;          // Current Memory ID
-    u16 unk1E;          // Unknown Unused Counter
+    u32 memID;          // Current Memory ID
+    u16 unk1E;
     u16 unk20;
     u32 unk22_b0:4;     // Error Type
     u16 unk24;          // Error Memory ID
@@ -192,9 +192,11 @@ extern void sprite_set_affine_params(struct SpriteHandler *, s16, s32, s16 *);
 extern s32 sprite_get_data(struct SpriteHandler *, s16, u32);
 extern u32 sprite_set_callback_cel(struct SpriteHandler *, s16, s8);
 extern void sprite_id_set_data(struct SpriteHandler *, u32, u32, u32);
+extern void sprite_handler_set_mem_id(struct SpriteHandler *, u32);
+extern u32 sprite_handler_get_mem_id(struct SpriteHandler *);
+extern void sprite_id_delete(struct SpriteHandler *, u32);
 
 // EXTERNS
 extern s8 sprite_anim_get_cel_total(struct Animation *);
 extern s16 sprite_get_anim_duration(struct Animation *);
 extern s32 sprite_is_invalid(void*, s16);
-extern void sprite_id_delete(void*, u32);

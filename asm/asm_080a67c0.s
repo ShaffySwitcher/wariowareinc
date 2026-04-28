@@ -43,7 +43,7 @@ _080A67EC:
 /* 080A6808 */ ADDS R2, R3, #0
 /* 080A680A */ ADDS R2, #0X3C
 /* 080A680C */ ADDS R3, #0X3E
-/* 080A680E */ BL func_080EFA3C
+/* 080A680E */ BL sprite_id_set_origin_x_y
 /* 080A6812 */ LDR R0, [R4]
 /* 080A6814 */ MOVS R1, #0X38
 /* 080A6816 */ LDRSH R2, [R0, R1]

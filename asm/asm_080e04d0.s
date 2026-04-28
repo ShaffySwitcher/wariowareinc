@@ -21,7 +21,7 @@ glabel func_080E04D0
 /* 080E04EE */ MOVS R0, #0
 /* 080E04F0 */ LDRSH R1, [R4, R0]
 /* 080E04F2 */ ADDS R0, R5, #0
-/* 080E04F4 */ BL func_080EF154
+/* 080E04F4 */ BL sprite_delete
 /* 080E04F8 */ POP {R4, R5}
 /* 080E04FA */ POP {R0}
 /* 080E04FC */ BX R0

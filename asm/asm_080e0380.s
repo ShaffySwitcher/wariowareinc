@@ -81,7 +81,7 @@ _080E03A8:
 /* 080E040E */ LDR R0, [R3]
 /* 080E0410 */ MOVS R6, #0
 /* 080E0412 */ LDRSH R1, [R4, R6]
-/* 080E0414 */ BL func_080EF154
+/* 080E0414 */ BL sprite_delete
 /* 080E0418 */ B _080E04A0
 
 .balign 4, 0
@@ -119,7 +119,7 @@ _080E0428:
 /* 080E0452 */ MOVS R2, #0
 /* 080E0454 */ LDRSH R1, [R4, R2]
 /* 080E0456 */ MOV R2, SL
-/* 080E0458 */ BL func_080EEB50
+/* 080E0458 */ BL sprite_set_anim_progress
 /* 080E045C */ MOVS R0, #2
 /* 080E045E */ STRB R0, [R4, #0X12]
 /* 080E0460 */ LDRB R0, [R4, #0X11]

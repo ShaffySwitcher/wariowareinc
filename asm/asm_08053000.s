@@ -264,7 +264,7 @@ _08053184:
 /* 080531D0 */ ADDS R1, R2
 /* 080531D2 */ LDR R1, [R1]
 /* 080531D4 */ MOVS R2, #1
-/* 080531D6 */ BL func_080EF9DC
+/* 080531D6 */ BL sprite_id_set_enable_updates
 /* 080531DA */ LDR R0, [R5]
 /* 080531DC */ STRB R4, [R0]
 /* 080531DE */ BL func_08053264

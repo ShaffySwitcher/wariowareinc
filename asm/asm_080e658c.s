@@ -37,7 +37,7 @@ glabel func_080E658C
 /* 080E65C6 */ MOVS R5, #8
 /* 080E65C8 */ LDRSH R1, [R3, R5]
 /* 080E65CA */ ASRS R2, R2, #8
-/* 080E65CC */ BL func_080EF264
+/* 080E65CC */ BL sprite_set_x
 /* 080E65D0 */ LDR R4, [R4]
 /* 080E65D2 */ LDRH R0, [R4, #0X30]
 /* 080E65D4 */ LSRS R1, R0, #8

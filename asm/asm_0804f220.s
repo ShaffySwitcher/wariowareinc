@@ -267,7 +267,7 @@ _0804F2FA:
 /* 0804F438 */ ADDS R1, R2
 /* 0804F43A */ LDR R1, [R1]
 /* 0804F43C */ MOVS R2, #1
-/* 0804F43E */ BL func_080EF9DC
+/* 0804F43E */ BL sprite_id_set_enable_updates
 /* 0804F442 */ ADD SP, #0X14
 /* 0804F444 */ POP {R3, R4, R5}
 /* 0804F446 */ MOV R8, R3

@@ -47,7 +47,7 @@ _080A5B66:
 /* 080A5B74 */ LDR R2, [R2, #0X60]
 /* 080A5B76 */ LSLS R2, R2, #8
 /* 080A5B78 */ ASRS R2, R2, #0X10
-/* 080A5B7A */ BL func_080EF264
+/* 080A5B7A */ BL sprite_set_x
 /* 080A5B7E */ B _080A5BBE
 
 .balign 4, 0
@@ -86,7 +86,7 @@ _080A5BA6:
 /* 080A5BB4 */ LDR R2, [R2, #0X60]
 /* 080A5BB6 */ LSLS R2, R2, #8
 /* 080A5BB8 */ ASRS R2, R2, #0X10
-/* 080A5BBA */ BL func_080EF264
+/* 080A5BBA */ BL sprite_set_x
 _080A5BBE:
 /* 080A5BBE */ POP {R0}
 /* 080A5BC0 */ BX R0

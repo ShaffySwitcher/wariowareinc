@@ -11,7 +11,7 @@ glabel func_08016DB8
 /* 08016DC0 */ LDR R0, _08016DD8
 /* 08016DC2 */ LDR R0, [R0]
 /* 08016DC4 */ MOVS R1, #1
-/* 08016DC6 */ BL func_080EFA54
+/* 08016DC6 */ BL sprite_handler_set_global_pause
 /* 08016DCA */ LDR R0, =gCurrentSceneData
 /* 08016DCC */ LDR R1, [R0]
 /* 08016DCE */ MOVS R0, #0

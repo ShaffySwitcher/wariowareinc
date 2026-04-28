@@ -56,7 +56,7 @@ _0803D9D4:
 /* 0803D9EA */ ADDS R1, #0XE0
 /* 0803D9EC */ LDR R1, [R1]
 /* 0803D9EE */ ADDS R2, #0X94
-/* 0803D9F0 */ BL func_080EFA3C
+/* 0803D9F0 */ BL sprite_id_set_origin_x_y
 /* 0803D9F4 */ ADDS R0, R5, #0
 /* 0803D9F6 */ POP {R4, R5}
 /* 0803D9F8 */ POP {R1}

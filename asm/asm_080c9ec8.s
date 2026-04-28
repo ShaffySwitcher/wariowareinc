@@ -260,7 +260,7 @@ _080CA0D2:
 /* 080CA0D4 */ LDR R0, [R4]
 /* 080CA0D6 */ MOVS R2, #0
 /* 080CA0D8 */ LDRSH R1, [R7, R2]
-/* 080CA0DA */ BL func_080EF038
+/* 080CA0DA */ BL sprite_clone
 /* 080CA0DE */ STRH R0, [R6]
 /* 080CA0E0 */ ADDS R6, #0X24
 /* 080CA0E2 */ ADDS R5, #1
@@ -298,7 +298,7 @@ _080CA0EC:
 /* 080CA126 */ ADDS R1, R2
 /* 080CA128 */ LDR R1, [R1]
 /* 080CA12A */ MOVS R2, #1
-/* 080CA12C */ BL func_080EF9DC
+/* 080CA12C */ BL sprite_id_set_enable_updates
 /* 080CA130 */ ADD SP, #0X18
 /* 080CA132 */ POP {R3, R4, R5}
 /* 080CA134 */ MOV R8, R3

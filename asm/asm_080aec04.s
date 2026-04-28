@@ -253,7 +253,7 @@ _080AED48:
 /* 080AEDE4 */ ADDS R1, R0, #0
 /* 080AEDE6 */ ADDS R0, R4, #0
 /* 080AEDE8 */ MOVS R2, #0
-/* 080AEDEA */ BL func_080EF9CC
+/* 080AEDEA */ BL sprite_id_set_visible
 /* 080AEDEE */ LDR R0, =gCurrentSceneData
 /* 080AEDF0 */ LDR R2, [R0]
 /* 080AEDF2 */ LDRH R0, [R2, #0X16]

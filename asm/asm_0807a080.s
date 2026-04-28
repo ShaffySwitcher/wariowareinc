@@ -195,7 +195,7 @@ _0807A1D2:
 /* 0807A1DC */ LDR R2, [R2, #0XC]
 /* 0807A1DE */ LSLS R2, R2, #8
 /* 0807A1E0 */ ASRS R2, R2, #0X10
-/* 0807A1E2 */ BL func_080EF264
+/* 0807A1E2 */ BL sprite_set_x
 /* 0807A1E6 */ B _0807A21C
 
 .balign 4, 0

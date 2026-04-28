@@ -324,7 +324,7 @@ _080D0586:
 /* 080D0590 */ LDRSH R1, [R2, R3]
 /* 080D0592 */ LDRH R2, [R2, #6]
 /* 080D0594 */ LSRS R2, R2, #8
-/* 080D0596 */ BL func_080EF264
+/* 080D0596 */ BL sprite_set_x
 /* 080D059A */ B _080D05EC
 
 .balign 4, 0

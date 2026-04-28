@@ -171,7 +171,7 @@ _080DA300:
 /* 080DA41A */ ADDS R1, R7
 /* 080DA41C */ LDR R1, [R1]
 /* 080DA41E */ MOVS R2, #1
-/* 080DA420 */ BL func_080EF9DC
+/* 080DA420 */ BL sprite_id_set_enable_updates
 /* 080DA424 */ ADD SP, #0X14
 /* 080DA426 */ POP {R3, R4, R5}
 /* 080DA428 */ MOV R8, R3

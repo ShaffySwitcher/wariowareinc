@@ -47,7 +47,7 @@ _08037862:
 /* 0803786E */ ADDS R1, R2
 /* 08037870 */ LDR R1, [R1]
 /* 08037872 */ MOVS R2, #0
-/* 08037874 */ BL func_080EF9DC
+/* 08037874 */ BL sprite_id_set_enable_updates
 /* 08037878 */ LDR R0, [R5]
 /* 0803787A */ ADD R0, R8
 /* 0803787C */ MOVS R1, #1

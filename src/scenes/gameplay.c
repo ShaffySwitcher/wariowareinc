@@ -155,7 +155,7 @@ u32 gameplay_update_scene(void) {
                     sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, (s8)(arg << 1));
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
                     func_08002024(1);
-                    func_080EFA54(gSpriteHandler, 1);
+                    sprite_handler_set_global_pause(gSpriteHandler, TRUE);
                     func_08003D28(&gGameplayData.pad1f5 - 1, 1);
                     for (i = 0; i < 2;) {
                         i++;
@@ -182,11 +182,11 @@ u32 gameplay_update_scene(void) {
                     gGameplayData.unk5_6 = 0;
                 }
                 if (gGameplayData.unk5_6 == 0) {
-                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
+                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, FALSE);
                     gGameplayData.currentState = GAMEPLAY_STATE_RESUMING;
                     play_sound(&s_BASIC_PAUSE_OFF_seqData);
                 } else {
-                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
+                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, FALSE);
                     func_08006C40(0x20, 0);
                     stop_all_soundplayers();
                     play_sound(&s_BASIC_PAUSE_OFF_seqData);
@@ -201,7 +201,7 @@ u32 gameplay_update_scene(void) {
             if ((gCurrentKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) == 0) {
                 gGameplayData.isPaused = 0;
                 func_08002024(0);
-                func_080EFA54(gSpriteHandler, 0);
+                sprite_handler_set_global_pause(gSpriteHandler, FALSE);
                 func_08003D28(&gGameplayData.pad1f5 - 1, 0);
                 for (i = 0; i < 2;) {
                     i++;

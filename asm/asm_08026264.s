@@ -46,7 +46,7 @@ glabel func_08026264
 /* 080262B6 */ BL func_08004B78
 /* 080262BA */ LDR R0, [R4]
 /* 080262BC */ ADDS R1, R6, #0
-/* 080262BE */ BL func_080EF154
+/* 080262BE */ BL sprite_delete
 /* 080262C2 */ MOV R2, R8
 /* 080262C4 */ LDR R0, [R2]
 /* 080262C6 */ ADDS R0, R7, R0

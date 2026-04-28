@@ -12,6 +12,7 @@
 
 .macro thumb_func_start value
 	.balign 4, 0
+	.section .text
 	.thumb
 	.thumb_func
 	.global \value

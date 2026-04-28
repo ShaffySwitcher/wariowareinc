@@ -192,7 +192,7 @@ _08068C10:
 /* 08068C80 */ ADDS R1, #0XEC
 /* 08068C82 */ LDR R1, [R1]
 /* 08068C84 */ MOVS R2, #0
-/* 08068C86 */ BL func_080EF9CC
+/* 08068C86 */ BL sprite_id_set_visible
 /* 08068C8A */ ADD SP, #0X14
 /* 08068C8C */ POP {R3, R4, R5}
 /* 08068C8E */ MOV R8, R3

@@ -337,7 +337,7 @@ _080E5894:
 /* 080E59AC */ ADDS R1, R2, R3
 /* 080E59AE */ LDR R1, [R1]
 /* 080E59B0 */ MOVS R2, #1
-/* 080E59B2 */ BL func_080EF9DC
+/* 080E59B2 */ BL sprite_id_set_enable_updates
 /* 080E59B6 */ MOV R4, R8
 /* 080E59B8 */ LDR R1, [R4]
 /* 080E59BA */ MOV R2, SL

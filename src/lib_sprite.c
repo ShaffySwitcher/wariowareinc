@@ -4,6 +4,54 @@ struct SpriteHandler* gSpriteHandler = &D_03000BF0;
 
 asm(".include \"include/gba.inc\"");
 
+#include "asm/lib_sprite/asm_080ee7b4.s"
+
+#include "asm/lib_sprite/asm_080ee830.s"
+
+#include "asm/lib_sprite/asm_080ee874.s"
+
+#include "asm/lib_sprite/asm_080ee8f4.s"
+
+#include "asm/lib_sprite/asm_080ee9b8.s"
+
+#include "asm/lib_sprite/asm_080eeb50.s"
+
+#include "asm/lib_sprite/asm_080eebb8.s"
+
+#include "asm/lib_sprite/asm_080eecdc.s"
+
+#include "asm/lib_sprite/asm_080eed24.s"
+
+#include "asm/lib_sprite/asm_080eed58.s"
+
+#include "asm/lib_sprite/asm_080eed9c.s"
+
+#include "asm/lib_sprite/asm_080eedc0.s"
+
+#include "asm/lib_sprite/asm_080eede0.s"
+
+#include "asm/lib_sprite/asm_080eef0c.s"
+
+#include "asm/lib_sprite/asm_080ef038.s"
+
+#include "asm/lib_sprite/asm_080ef0b8.s"
+
+#include "asm/lib_sprite/asm_080ef154.s"
+
+#include "asm/lib_sprite/asm_080ef1ac.s"
+
+#include "asm/lib_sprite/asm_080ef224.s"
+
+#include "asm/lib_sprite/asm_080ef264.s"
+
+#include "asm/lib_sprite/asm_080ef298.s"
+
+#include "asm/lib_sprite/asm_080ef2cc.s"
+
+#include "asm/lib_sprite/asm_080ef31c.s"
+
+#include "asm/lib_sprite/asm_080ef358.s"
+
 void sprite_set_visible(struct SpriteHandler *handler, s16 id, u16 isVisible) {
     D_03000E70 = SPRITE_OPERATION_SET_VISIBLE;
     if (sprite_is_invalid(handler, id)) {
@@ -255,7 +303,7 @@ void sprite_id_set_data(struct SpriteHandler *handler, u32 memID, u32 targetData
         if (handler->sprites[spriteID].unk30 == memID) {
             switch (targetDataType) {
                 case SPRITE_ACT_DELETE:
-                    func_080EF154(handler, spriteID);
+                    sprite_delete(handler, spriteID);
                 break;
                 case SPRITE_ACT_SET_VISIBLE:
                     sprite_set_visible(handler, spriteID, (u16)arg);
@@ -290,34 +338,68 @@ void sprite_id_set_data(struct SpriteHandler *handler, u32 memID, u32 targetData
 
 #include "asm/lib_sprite/asm_080ef998.s"
 
-#include "asm/lib_sprite/asm_080ef9b4.s"
+void sprite_handler_set_mem_id(struct SpriteHandler *handler, u32 memID) {
+    handler->memID = memID;
+}
 
-#include "asm/lib_sprite/asm_080ef9b8.s"
+u32 sprite_handler_get_mem_id(struct SpriteHandler *handler) {
+    return handler->memID;
+}
 
-#include "asm/lib_sprite/asm_080ef9bc.s"
+void sprite_id_delete(struct SpriteHandler *handler, u32 memID) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_DELETE, 0);
+}
 
-#include "asm/lib_sprite/asm_080ef9cc.s"
+void sprite_id_set_visible(struct SpriteHandler *handler, u32 memID, u16 isVisible) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_SET_VISIBLE, isVisible);
+}
 
-#include "asm/lib_sprite/asm_080ef9dc.s"
+void sprite_id_set_enable_updates(struct SpriteHandler *handler, u32 memID, u16 canUpdate) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_SET_UPDATE, canUpdate);
+}
 
-#include "asm/lib_sprite/asm_080ef9ec.s"
+void sprite_id_set_attr(struct SpriteHandler *handler, u32 memID, u32 attr) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_SET_ATTR, attr);
+}
 
-#include "asm/lib_sprite/asm_080ef9fc.s"
+void sprite_id_orr_attr(struct SpriteHandler *handler, u32 memID, u32 attr) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_ORR_ATTR, attr);
+}
 
-#include "asm/lib_sprite/asm_080efa0c.s"
+void sprite_id_and_attr(struct SpriteHandler *handler, u32 memID, u32 attr) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_AND_ATTR, attr);
+}
 
-#include "asm/lib_sprite/asm_080efa1c.s"
+void sprite_id_set_base_tile(struct SpriteHandler *handler, u32 memID, s16 baseTile) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_SET_BASE_TILE, baseTile);
+}
 
-#include "asm/lib_sprite/asm_080efa2c.s"
+void sprite_id_set_base_palette(struct SpriteHandler *handler, u32 memID, s8 basePalette) {
+    sprite_id_set_data(handler, memID, SPRITE_ACT_SET_BASE_PALETTE, basePalette);
+}
 
-#include "asm/lib_sprite/asm_080efa3c.s"
+void sprite_id_set_origin_x_y(struct SpriteHandler *handler, u32 memID, s16 *xOrigin, s16 *yOrigin) {
+    s16 *origin[2] = { xOrigin, yOrigin };
 
-#include "asm/lib_sprite/asm_080efa54.s"
+    sprite_id_set_data(handler, memID, SPRITE_ACT_SET_ORIGIN_XY, (uintptr_t)&origin);
+}
 
-#include "asm/lib_sprite/asm_080efa58.s"
+void sprite_handler_set_global_pause(struct SpriteHandler *handler, u16 isPaused) {
+    handler->paused = isPaused;
+}
+
+void sprite_handler_set_global_x_y(struct SpriteHandler *handler, u16 x, u16 y) {
+    handler->xPos = x;
+    handler->yPos = y;
+}
 
 #include "asm/lib_sprite/asm_080efa60.s"
 
 #include "asm/lib_sprite/asm_080efc20.s"
 
 #include "asm/lib_sprite/asm_080efc50.s"
+
+// --------------------------------------------------------------------------------------
+
+
+

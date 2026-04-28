@@ -851,7 +851,7 @@ _0803D6D0:
 /* 0803D790 */ ADDS R2, R3, #0
 /* 0803D792 */ ADDS R2, #0X94
 /* 0803D794 */ ADDS R3, #0X96
-/* 0803D796 */ BL func_080EFA3C
+/* 0803D796 */ BL sprite_id_set_origin_x_y
 /* 0803D79A */ ADD SP, #0X18
 /* 0803D79C */ POP {R3, R4, R5}
 /* 0803D79E */ MOV R8, R3

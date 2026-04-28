@@ -456,14 +456,14 @@ _080995BE:
 /* 080996E4 */ ADDS R1, R4
 /* 080996E6 */ LDR R1, [R1]
 /* 080996E8 */ MOVS R2, #1
-/* 080996EA */ BL func_080EF9DC
+/* 080996EA */ BL sprite_id_set_enable_updates
 /* 080996EE */ MOV R2, SB
 /* 080996F0 */ LDR R0, [R2]
 /* 080996F2 */ LDR R1, [R7]
 /* 080996F4 */ ADDS R1, R4
 /* 080996F6 */ LDR R1, [R1]
 /* 080996F8 */ MOVS R2, #0
-/* 080996FA */ BL func_080EF9CC
+/* 080996FA */ BL sprite_id_set_visible
 /* 080996FE */ ADD SP, #0X14
 /* 08099700 */ POP {R3, R4, R5}
 /* 08099702 */ MOV R8, R3

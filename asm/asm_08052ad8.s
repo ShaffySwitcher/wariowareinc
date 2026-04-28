@@ -71,7 +71,7 @@ _08052B1E:
 /* 08052B58 */ ADDS R1, R2
 /* 08052B5A */ LDR R1, [R1]
 /* 08052B5C */ MOVS R2, #1
-/* 08052B5E */ BL func_080EF9DC
+/* 08052B5E */ BL sprite_id_set_enable_updates
 _08052B62:
 /* 08052B62 */ LDR R0, [R4]
 /* 08052B64 */ LDR R1, [R0, #0X14]

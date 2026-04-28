@@ -162,14 +162,14 @@ _080286B8:
 /* 08028714 */ MOVS R2, #0
 /* 08028716 */ LDRSH R1, [R1, R2]
 /* 08028718 */ ADDS R2, R4, #0
-/* 0802871A */ BL func_080EEB50
+/* 0802871A */ BL sprite_set_anim_progress
 /* 0802871E */ LDR R0, [R5]
 /* 08028720 */ LDR R1, [SP]
 /* 08028722 */ ADDS R1, #0X70
 /* 08028724 */ MOVS R3, #0
 /* 08028726 */ LDRSH R1, [R1, R3]
 /* 08028728 */ ADDS R2, R4, #0
-/* 0802872A */ BL func_080EEB50
+/* 0802872A */ BL sprite_set_anim_progress
 /* 0802872E */ ADD SP, #0X10
 /* 08028730 */ POP {R3, R4, R5}
 /* 08028732 */ MOV R8, R3

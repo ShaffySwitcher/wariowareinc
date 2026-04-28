@@ -47,7 +47,7 @@ _08053504:
 /* 08053516 */ ADDS R1, R2
 /* 08053518 */ LDR R1, [R1]
 /* 0805351A */ MOVS R2, #1
-/* 0805351C */ BL func_080EF9DC
+/* 0805351C */ BL sprite_id_set_enable_updates
 _08053520:
 /* 08053520 */ POP {R4, R5, R6}
 /* 08053522 */ POP {R0}

@@ -209,13 +209,13 @@ _0805CFF2:
 /* 0805D066 */ ADDS R1, R6
 /* 0805D068 */ LDR R1, [R1]
 /* 0805D06A */ MOVS R2, #1
-/* 0805D06C */ BL func_080EF9DC
+/* 0805D06C */ BL sprite_id_set_enable_updates
 /* 0805D070 */ LDR R0, [R4]
 /* 0805D072 */ LDR R1, [R5]
 /* 0805D074 */ ADDS R1, R6
 /* 0805D076 */ LDR R1, [R1]
 /* 0805D078 */ MOVS R2, #0
-/* 0805D07A */ BL func_080EF9CC
+/* 0805D07A */ BL sprite_id_set_visible
 /* 0805D07E */ LDR R0, [R4]
 /* 0805D080 */ BL func_080EF998
 /* 0805D084 */ ADDS R1, R0, #0
@@ -288,13 +288,13 @@ _0805D09A:
 /* 0805D10E */ ADDS R1, R4
 /* 0805D110 */ LDR R1, [R1]
 /* 0805D112 */ MOVS R2, #1
-/* 0805D114 */ BL func_080EF9DC
+/* 0805D114 */ BL sprite_id_set_enable_updates
 /* 0805D118 */ LDR R0, [R6]
 /* 0805D11A */ LDR R1, [R5]
 /* 0805D11C */ ADDS R1, R4
 /* 0805D11E */ LDR R1, [R1]
 /* 0805D120 */ MOVS R2, #0
-/* 0805D122 */ BL func_080EF9CC
+/* 0805D122 */ BL sprite_id_set_visible
 /* 0805D126 */ ADD SP, #0X14
 /* 0805D128 */ POP {R3, R4}
 /* 0805D12A */ MOV R8, R3

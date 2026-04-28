@@ -63,7 +63,7 @@ _080ED202:
 /* 080ED20C */ LDR R2, [R2, #4]
 /* 080ED20E */ LSLS R2, R2, #8
 /* 080ED210 */ ASRS R2, R2, #0X10
-/* 080ED212 */ BL func_080EF264
+/* 080ED212 */ BL sprite_set_x
 /* 080ED216 */ POP {R4}
 /* 080ED218 */ POP {R0}
 /* 080ED21A */ BX R0

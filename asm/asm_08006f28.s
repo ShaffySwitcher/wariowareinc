@@ -18,7 +18,7 @@ glabel func_08006F28
 /* 08006F3C */ MOVS R1, #0X80
 /* 08006F3E */ ADDS R2, R4, #0
 /* 08006F40 */ MOVS R3, #0XC8
-/* 08006F42 */ BL func_080EE7B4
+/* 08006F42 */ BL sprite_handler_create
 /* 08006F46 */ MOVS R0, #0X20
 /* 08006F48 */ ADDS R1, R4, #0
 /* 08006F4A */ BL func_08001A70

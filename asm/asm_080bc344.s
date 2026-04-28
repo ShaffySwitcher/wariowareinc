@@ -198,7 +198,7 @@ _080BC488:
 /* 080BC4D2 */ ADDS R1, R2
 /* 080BC4D4 */ LDR R1, [R1]
 /* 080BC4D6 */ MOVS R2, #1
-/* 080BC4D8 */ BL func_080EF9DC
+/* 080BC4D8 */ BL sprite_id_set_enable_updates
 /* 080BC4DC */ ADD SP, #0X14
 /* 080BC4DE */ POP {R3, R4}
 /* 080BC4E0 */ MOV R8, R3

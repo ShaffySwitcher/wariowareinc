@@ -42,7 +42,7 @@ glabel func_080C077C
 /* 080C07C0 */ LDRSH R1, [R1, R3]
 /* 080C07C2 */ LSLS R2, R2, #0X10
 /* 080C07C4 */ ASRS R2, R2, #0X10
-/* 080C07C6 */ BL func_080EF298
+/* 080C07C6 */ BL sprite_set_y
 _080C07CA:
 /* 080C07CA */ POP {R4}
 /* 080C07CC */ POP {R0}

@@ -331,7 +331,7 @@ _080E1EC8:
 /* 080E1ED2 */ ADDS R1, R3
 /* 080E1ED4 */ LDR R1, [R1]
 /* 080E1ED6 */ MOVS R2, #1
-/* 080E1ED8 */ BL func_080EF9DC
+/* 080E1ED8 */ BL sprite_id_set_enable_updates
 /* 080E1EDC */ ADD SP, #0X18
 /* 080E1EDE */ POP {R3, R4, R5}
 /* 080E1EE0 */ MOV R8, R3

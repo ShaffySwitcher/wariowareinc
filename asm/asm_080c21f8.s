@@ -30,7 +30,7 @@ _080C2218:
 /* 080C2222 */ LDR R2, [R2, #0X24]
 /* 080C2224 */ LSLS R2, R2, #8
 /* 080C2226 */ ASRS R2, R2, #0X10
-/* 080C2228 */ BL func_080EF298
+/* 080C2228 */ BL sprite_set_y
 /* 080C222C */ LDR R1, [R4]
 /* 080C222E */ ADDS R0, R1, #0
 /* 080C2230 */ ADDS R0, #0X70
@@ -73,7 +73,7 @@ _080C2270:
 /* 080C2278 */ LDR R2, [R2, #8]
 /* 080C227A */ LSLS R2, R2, #8
 /* 080C227C */ ASRS R2, R2, #0X10
-/* 080C227E */ BL func_080EF298
+/* 080C227E */ BL sprite_set_y
 /* 080C2282 */ B _080C22BC
 
 .balign 4, 0

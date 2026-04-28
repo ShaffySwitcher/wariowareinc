@@ -38,7 +38,7 @@ glabel func_08079CF8
 /* 08079D3E */ LDRSH R1, [R6, R3]
 /* 08079D40 */ LSLS R2, R2, #8
 /* 08079D42 */ ASRS R2, R2, #0X10
-/* 08079D44 */ BL func_080EF298
+/* 08079D44 */ BL sprite_set_y
 /* 08079D48 */ LDR R4, [R7]
 /* 08079D4A */ LDR R0, [R4, #0X20]
 /* 08079D4C */ ASRS R0, R0, #8

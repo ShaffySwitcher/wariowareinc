@@ -56,7 +56,7 @@ _080B0204:
 /* 080B020C */ ADDS R1, R0, #0
 /* 080B020E */ ADDS R0, R4, #0
 /* 080B0210 */ MOVS R2, #0
-/* 080B0212 */ BL func_080EF9CC
+/* 080B0212 */ BL sprite_id_set_visible
 /* 080B0216 */ LDR R0, [R5]
 /* 080B0218 */ LDR R5, _080B029C
 /* 080B021A */ LDR R1, [R5]

@@ -163,7 +163,7 @@ glabel func_0809E55C
 _0809E6AE:
 /* 0809E6AE */ LDR R0, [R5]
 /* 0809E6B0 */ ASRS R1, R6, #0X10
-/* 0809E6B2 */ BL func_080EF038
+/* 0809E6B2 */ BL sprite_clone
 /* 0809E6B6 */ STRH R0, [R7]
 /* 0809E6B8 */ LDR R0, [R5]
 /* 0809E6BA */ MOVS R2, #0

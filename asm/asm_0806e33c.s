@@ -44,7 +44,7 @@ _0806E372:
 /* 0806E384 */ LDRSH R1, [R1, R3]
 /* 0806E386 */ LSLS R2, R2, #8
 /* 0806E388 */ ASRS R2, R2, #0X10
-/* 0806E38A */ BL func_080EF298
+/* 0806E38A */ BL sprite_set_y
 /* 0806E38E */ B _0806E496
 
 .balign 4, 0

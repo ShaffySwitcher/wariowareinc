@@ -198,7 +198,7 @@ _08017C14:
 /* 08017C82 */ ADDS R1, R0, #0
 /* 08017C84 */ ADDS R0, R4, #0
 /* 08017C86 */ MOVS R2, #0XC
-/* 08017C88 */ BL func_080EFA2C
+/* 08017C88 */ BL sprite_id_set_base_palette
 /* 08017C8C */ MOV R3, SL
 /* 08017C8E */ LDR R4, [R3]
 /* 08017C90 */ BL get_current_mem_id
@@ -206,7 +206,7 @@ _08017C14:
 /* 08017C96 */ MOVS R2, #0XC0
 /* 08017C98 */ LSLS R2, R2, #2
 /* 08017C9A */ ADDS R0, R4, #0
-/* 08017C9C */ BL func_080EFA1C
+/* 08017C9C */ BL sprite_id_set_base_tile
 /* 08017CA0 */ LDR R7, _08017F20
 /* 08017CA2 */ MOV R4, SL
 /* 08017CA4 */ LDR R0, [R4]
@@ -423,7 +423,7 @@ _08017D44:
 /* 08017E70 */ ADDS R2, #0XDA
 /* 08017E72 */ ADDS R3, #0XDC
 /* 08017E74 */ ADDS R0, R4, #0
-/* 08017E76 */ BL func_080EFA3C
+/* 08017E76 */ BL sprite_id_set_origin_x_y
 /* 08017E7A */ LDR R0, _08017F48
 /* 08017E7C */ LDR R1, _08017F4C
 /* 08017E7E */ BL func_0800A160

@@ -40,7 +40,7 @@ _080502DC:
 /* 080502E8 */ ADDS R1, R2
 /* 080502EA */ LDR R1, [R1]
 /* 080502EC */ MOVS R2, #1
-/* 080502EE */ BL func_080EF9DC
+/* 080502EE */ BL sprite_id_set_enable_updates
 _080502F2:
 /* 080502F2 */ ADD SP, #8
 /* 080502F4 */ POP {R0}

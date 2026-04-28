@@ -28,7 +28,7 @@ glabel func_0800317C
 /* 080031A4 */ LDR R0, [R2]
 /* 080031A6 */ MOVS R2, #0
 /* 080031A8 */ LDRSH R1, [R1, R2]
-/* 080031AA */ BL func_080EF154
+/* 080031AA */ BL sprite_delete
 _080031AE:
 /* 080031AE */ POP {R0}
 /* 080031B0 */ BX R0

@@ -244,5 +244,5 @@ extern void func_0800A200(u32);
 extern void func_0800A270(void);
 extern void func_0800CC9C(s32, s32);
 extern void func_0800CD94(s32, s32);
-extern void func_080EFA54(void*, u32);
+extern void sprite_handler_set_global_pause(void*, u32);
 extern void func_08008130(void);

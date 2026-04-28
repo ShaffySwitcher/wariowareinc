@@ -388,7 +388,7 @@ _080A6362:
 /* 080A6460 */ ADDS R2, R3, #0
 /* 080A6462 */ ADDS R2, #0X3C
 /* 080A6464 */ ADDS R3, #0X3E
-/* 080A6466 */ BL func_080EFA3C
+/* 080A6466 */ BL sprite_id_set_origin_x_y
 /* 080A646A */ ADD SP, #0X14
 /* 080A646C */ POP {R3, R4, R5}
 /* 080A646E */ MOV R8, R3

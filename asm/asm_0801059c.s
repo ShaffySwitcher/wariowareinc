@@ -20,7 +20,7 @@ glabel func_0801059C
 /* 080105B8 */ ADDS R1, R2
 /* 080105BA */ MOVS R2, #0
 /* 080105BC */ LDRSH R1, [R1, R2]
-/* 080105BE */ BL func_080EF154
+/* 080105BE */ BL sprite_delete
 /* 080105C2 */ POP {R4}
 /* 080105C4 */ POP {R0}
 /* 080105C6 */ BX R0

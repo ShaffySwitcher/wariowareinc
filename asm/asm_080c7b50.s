@@ -44,7 +44,7 @@ _080C7B8C:
 /* 080C7B96 */ LDR R2, [R2, #8]
 /* 080C7B98 */ LSLS R2, R2, #8
 /* 080C7B9A */ ASRS R2, R2, #0X10
-/* 080C7B9C */ BL func_080EF298
+/* 080C7B9C */ BL sprite_set_y
 /* 080C7BA0 */ POP {R4}
 /* 080C7BA2 */ POP {R0}
 /* 080C7BA4 */ BX R0

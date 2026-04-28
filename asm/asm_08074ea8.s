@@ -70,7 +70,7 @@ _08074EF2:
 /* 08074F28 */ ASRS R2, R2, #0X10
 /* 08074F2A */ ADDS R0, R5, #0
 /* 08074F2C */ ADDS R1, R6, #0
-/* 08074F2E */ BL func_080EF298
+/* 08074F2E */ BL sprite_set_y
 /* 08074F32 */ B _08074F92
 
 .balign 4, 0
@@ -118,7 +118,7 @@ _08074F44:
 /* 08074F88 */ ASRS R2, R2, #0X10
 /* 08074F8A */ ADDS R0, R5, #0
 /* 08074F8C */ ADDS R1, R6, #0
-/* 08074F8E */ BL func_080EF298
+/* 08074F8E */ BL sprite_set_y
 _08074F92:
 /* 08074F92 */ LDR R0, =gCurrentSceneVariable
 /* 08074F94 */ LDR R5, [R0]

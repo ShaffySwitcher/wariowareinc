@@ -44,7 +44,7 @@ glabel func_08013264
 /* 080132B4 */ LDR R0, [R0]
 /* 080132B6 */ MOVS R2, #0
 /* 080132B8 */ LDRSH R1, [R1, R2]
-/* 080132BA */ BL func_080EF154
+/* 080132BA */ BL sprite_delete
 /* 080132BE */ LDR R1, [R4]
 /* 080132C0 */ LDR R0, [R1, #4]
 /* 080132C2 */ ADDS R1, #0XB0

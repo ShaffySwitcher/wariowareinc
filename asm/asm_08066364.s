@@ -169,7 +169,7 @@ _08066460:
 /* 08066468 */ ADDS R1, R2
 /* 0806646A */ LDR R1, [R1]
 /* 0806646C */ MOVS R2, #0
-/* 0806646E */ BL func_080EF9CC
+/* 0806646E */ BL sprite_id_set_visible
 /* 08066472 */ LDR R0, [R5]
 /* 08066474 */ MOVS R1, #0XC5
 /* 08066476 */ LSLS R1, R1, #4

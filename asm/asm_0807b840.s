@@ -39,7 +39,7 @@ glabel func_0807B840
 /* 0807B882 */ MOVS R2, #0
 /* 0807B884 */ LDRSH R1, [R5, R2]
 /* 0807B886 */ ADDS R2, R7, #0
-/* 0807B888 */ BL func_080EEB50
+/* 0807B888 */ BL sprite_set_anim_progress
 _0807B88C:
 /* 0807B88C */ MOVS R0, #0XF0
 /* 0807B88E */ LSLS R0, R0, #7
@@ -82,7 +82,7 @@ _0807B8A8:
 /* 0807B8D6 */ MOVS R2, #0
 /* 0807B8D8 */ LDRSH R1, [R5, R2]
 /* 0807B8DA */ ADDS R2, R7, #0
-/* 0807B8DC */ BL func_080EEB50
+/* 0807B8DC */ BL sprite_set_anim_progress
 _0807B8E0:
 /* 0807B8E0 */ MOVS R0, #0XC8
 /* 0807B8E2 */ LSLS R0, R0, #8

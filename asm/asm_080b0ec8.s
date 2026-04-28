@@ -149,7 +149,7 @@ glabel func_080B0EC8
 /* 080B0FFE */ LDR R1, [R2]
 /* 080B1000 */ LDR R1, [R1, #0X48]
 /* 080B1002 */ MOVS R2, #0
-/* 080B1004 */ BL func_080EF9CC
+/* 080B1004 */ BL sprite_id_set_visible
 /* 080B1008 */ LDR R0, [R5]
 /* 080B100A */ LDR R5, _080B10DC
 /* 080B100C */ LDR R1, [R5]

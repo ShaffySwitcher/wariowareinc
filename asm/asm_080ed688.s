@@ -53,7 +53,7 @@ _080ED6C4:
 /* 080ED6D8 */ LDR R2, [R3, #4]
 /* 080ED6DA */ LSLS R2, R2, #8
 /* 080ED6DC */ ASRS R2, R2, #0X10
-/* 080ED6DE */ BL func_080EF264
+/* 080ED6DE */ BL sprite_set_x
 /* 080ED6E2 */ POP {R4}
 /* 080ED6E4 */ POP {R1}
 /* 080ED6E6 */ BX R1

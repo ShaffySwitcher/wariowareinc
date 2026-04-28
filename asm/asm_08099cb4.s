@@ -27,7 +27,7 @@ glabel func_08099CB4
 /* 08099CDA */ MOVS R4, #0
 /* 08099CDC */ LDRSH R1, [R3, R4]
 /* 08099CDE */ ASRS R2, R2, #0X10
-/* 08099CE0 */ BL func_080EF298
+/* 08099CE0 */ BL sprite_set_y
 /* 08099CE4 */ POP {R4}
 /* 08099CE6 */ POP {R0}
 /* 08099CE8 */ BX R0

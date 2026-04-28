@@ -47,7 +47,7 @@ glabel func_080ABEA8
 _080ABEFA:
 /* 080ABEFA */ LDR R0, [R6]
 /* 080ABEFC */ ASRS R1, R4, #0X10
-/* 080ABEFE */ BL func_080EF038
+/* 080ABEFE */ BL sprite_clone
 /* 080ABF02 */ STRH R0, [R7]
 /* 080ABF04 */ LDR R0, [R6]
 /* 080ABF06 */ MOVS R2, #0
@@ -96,7 +96,7 @@ _080ABEFA:
 _080ABF62:
 /* 080ABF62 */ LDR R0, [R6]
 /* 080ABF64 */ ASRS R1, R4, #0X10
-/* 080ABF66 */ BL func_080EF038
+/* 080ABF66 */ BL sprite_clone
 /* 080ABF6A */ STRH R0, [R7]
 /* 080ABF6C */ LDR R0, [R6]
 /* 080ABF6E */ MOVS R2, #0

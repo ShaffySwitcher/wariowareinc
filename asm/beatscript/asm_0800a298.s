@@ -8,12 +8,12 @@ thumb_func_start func_0800A298 \n\
 /* 0800A2A0 */ LDR R0, [R4] \n\
 /* 0800A2A2 */ MVNS R2, R5 \n\
 /* 0800A2A4 */ MOVS R1, #1 \n\
-/* 0800A2A6 */ BL func_080EFA0C \n\
+/* 0800A2A6 */ BL sprite_id_and_attr \n\
 /* 0800A2AA */ LDR R0, [R4] \n\
 /* 0800A2AC */ ADDS R2, R5, #0 \n\
 /* 0800A2AE */ ANDS R2, R6 \n\
 /* 0800A2B0 */ MOVS R1, #1 \n\
-/* 0800A2B2 */ BL func_080EF9FC \n\
+/* 0800A2B2 */ BL sprite_id_orr_attr \n\
 /* 0800A2B6 */ LDR R0, =gCurrentSceneData \n\
 /* 0800A2B8 */ LDR R1, [R0] \n\
 /* 0800A2BA */ MOVS R2, #0X9D \n\

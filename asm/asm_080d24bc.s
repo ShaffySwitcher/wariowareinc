@@ -18,7 +18,7 @@ glabel func_080D24BC
 /* 080D24D0 */ ADDS R1, R2
 /* 080D24D2 */ MOVS R2, #0
 /* 080D24D4 */ LDRSH R1, [R1, R2]
-/* 080D24D6 */ BL func_080EF154
+/* 080D24D6 */ BL sprite_delete
 /* 080D24DA */ LDR R0, [R5]
 /* 080D24DC */ MOVS R1, #0XCA
 /* 080D24DE */ LSLS R1, R1, #1

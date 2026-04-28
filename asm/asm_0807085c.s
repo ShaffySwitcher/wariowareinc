@@ -162,7 +162,7 @@ _08070964:
 /* 0807099C */ ADDS R1, #0XF4
 /* 0807099E */ LDR R1, [R1]
 /* 080709A0 */ MOVS R2, #1
-/* 080709A2 */ BL func_080EF9DC
+/* 080709A2 */ BL sprite_id_set_enable_updates
 /* 080709A6 */ ADD SP, #0X14
 /* 080709A8 */ POP {R3, R4, R5}
 /* 080709AA */ MOV R8, R3

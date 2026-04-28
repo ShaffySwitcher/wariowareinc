@@ -577,7 +577,7 @@ _080609BC:
 /* 080609C8 */ ADDS R1, R7
 /* 080609CA */ LDR R1, [R1]
 /* 080609CC */ MOVS R2, #0
-/* 080609CE */ BL func_080EF9CC
+/* 080609CE */ BL sprite_id_set_visible
 /* 080609D2 */ ADD SP, #0X1C
 /* 080609D4 */ POP {R3, R4, R5}
 /* 080609D6 */ MOV R8, R3

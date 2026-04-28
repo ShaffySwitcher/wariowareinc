@@ -168,7 +168,7 @@ _080D6E1C:
 /* 080D6E60 */ MOVS R2, #8
 /* 080D6E62 */ LDRSH R1, [R5, R2]
 /* 080D6E64 */ MOV R2, SB
-/* 080D6E66 */ BL func_080EEB50
+/* 080D6E66 */ BL sprite_set_anim_progress
 /* 080D6E6A */ B _080D6ECC
 
 .balign 4, 0
@@ -218,7 +218,7 @@ _080D6E74:
 /* 080D6EC2 */ MOVS R2, #8
 /* 080D6EC4 */ LDRSH R1, [R5, R2]
 /* 080D6EC6 */ MOV R2, SB
-/* 080D6EC8 */ BL func_080EEB50
+/* 080D6EC8 */ BL sprite_set_anim_progress
 _080D6ECC:
 /* 080D6ECC */ ADD SP, #0XC
 /* 080D6ECE */ POP {R3, R4, R5}

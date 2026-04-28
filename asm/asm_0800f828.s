@@ -26,7 +26,7 @@ _0800F83E:
 /* 0800F84A */ ADDS R1, R2
 /* 0800F84C */ MOVS R2, #0
 /* 0800F84E */ LDRSH R1, [R1, R2]
-/* 0800F850 */ BL func_080EF154
+/* 0800F850 */ BL sprite_delete
 /* 0800F854 */ LDR R1, [R6]
 /* 0800F856 */ LDR R0, [R1, #8]
 /* 0800F858 */ LSLS R2, R5, #2

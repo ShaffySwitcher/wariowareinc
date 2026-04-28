@@ -60,7 +60,7 @@ _0809E86A:
 /* 0809E87A */ LDR R2, [R6]
 /* 0809E87C */ ADDS R2, #0XC8
 /* 0809E87E */ MOVS R3, #0
-/* 0809E880 */ BL func_080EFA3C
+/* 0809E880 */ BL sprite_id_set_origin_x_y
 _0809E884:
 /* 0809E884 */ POP {R4, R5, R6}
 /* 0809E886 */ POP {R0}

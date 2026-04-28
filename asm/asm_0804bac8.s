@@ -176,7 +176,7 @@ _0804BBC4:
 /* 0804BBE6 */ ADDS R1, #0XE4
 /* 0804BBE8 */ LDR R1, [R1]
 /* 0804BBEA */ MOVS R2, #1
-/* 0804BBEC */ BL func_080EF9CC
+/* 0804BBEC */ BL sprite_id_set_visible
 /* 0804BBF0 */ LDR R1, [R4]
 /* 0804BBF2 */ B _0804BC18
 

@@ -24,7 +24,7 @@ glabel func_0800C69C
 /* 0800C6BE */ LDR R1, [R6, #0XC]
 /* 0800C6C0 */ MOVS R2, #0
 /* 0800C6C2 */ LDRSH R1, [R1, R2]
-/* 0800C6C4 */ BL func_080EF154
+/* 0800C6C4 */ BL sprite_delete
 /* 0800C6C8 */ ADDS R0, R7, #0
 /* 0800C6CA */ ADDS R1, R5, #0
 /* 0800C6CC */ BL func_08004B78

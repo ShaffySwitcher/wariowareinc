@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080EF9CC \n\
+thumb_func_start sprite_id_set_visible \n\
 /* 080EF9CC */ PUSH {LR} \n\
 /* 080EF9CE */ LSLS R3, R2, #0X10 \n\
 /* 080EF9D0 */ LSRS R3, R3, #0X10 \n\

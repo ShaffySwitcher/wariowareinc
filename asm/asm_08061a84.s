@@ -111,28 +111,28 @@ _08061B12:
 /* 08061B20 */ ADDS R1, R2
 /* 08061B22 */ LDR R1, [R1]
 /* 08061B24 */ MOVS R2, #0
-/* 08061B26 */ BL func_080EF9CC
+/* 08061B26 */ BL sprite_id_set_visible
 /* 08061B2A */ LDR R0, [R4]
 /* 08061B2C */ LDR R1, [R6]
 /* 08061B2E */ LDR R3, _08061B70
 /* 08061B30 */ ADDS R1, R3
 /* 08061B32 */ LDR R1, [R1]
 /* 08061B34 */ MOVS R2, #0
-/* 08061B36 */ BL func_080EF9CC
+/* 08061B36 */ BL sprite_id_set_visible
 /* 08061B3A */ LDR R0, [R4]
 /* 08061B3C */ LDR R1, [R6]
 /* 08061B3E */ LDR R2, _08061B74
 /* 08061B40 */ ADDS R1, R2
 /* 08061B42 */ LDR R1, [R1]
 /* 08061B44 */ MOVS R2, #0
-/* 08061B46 */ BL func_080EF9CC
+/* 08061B46 */ BL sprite_id_set_visible
 /* 08061B4A */ LDR R0, [R4]
 /* 08061B4C */ LDR R1, [R6]
 /* 08061B4E */ LDR R3, _08061B78
 /* 08061B50 */ ADDS R1, R3
 /* 08061B52 */ LDR R1, [R1]
 /* 08061B54 */ MOVS R2, #0
-/* 08061B56 */ BL func_080EF9CC
+/* 08061B56 */ BL sprite_id_set_visible
 /* 08061B5A */ MOVS R0, #1
 /* 08061B5C */ BL func_0800BF20
 /* 08061B60 */ MOVS R0, #3
@@ -163,7 +163,7 @@ _08061B7C:
 /* 08061B84 */ ADDS R1, R2
 /* 08061B86 */ LDR R1, [R1]
 /* 08061B88 */ MOVS R2, #1
-/* 08061B8A */ BL func_080EF9CC
+/* 08061B8A */ BL sprite_id_set_visible
 /* 08061B8E */ LDR R0, _08061BE0
 /* 08061B90 */ BL play_sound
 /* 08061B94 */ LDR R0, [R4]

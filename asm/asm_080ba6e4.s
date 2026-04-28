@@ -30,7 +30,7 @@ _080BA704:
 /* 080BA70E */ LDR R2, [R2, #0X28]
 /* 080BA710 */ LSLS R2, R2, #8
 /* 080BA712 */ ASRS R2, R2, #0X10
-/* 080BA714 */ BL func_080EF298
+/* 080BA714 */ BL sprite_set_y
 /* 080BA718 */ POP {R0}
 /* 080BA71A */ BX R0
 

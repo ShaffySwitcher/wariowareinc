@@ -54,12 +54,12 @@ glabel func_0801FF5C
 /* 0801FFBE */ LDR R1, [R4]
 /* 0801FFC0 */ MOVS R2, #0X10
 /* 0801FFC2 */ LDRSH R1, [R1, R2]
-/* 0801FFC4 */ BL func_080EF154
+/* 0801FFC4 */ BL sprite_delete
 /* 0801FFC8 */ LDR R0, [R5]
 /* 0801FFCA */ LDR R1, [R4]
 /* 0801FFCC */ MOVS R2, #0X12
 /* 0801FFCE */ LDRSH R1, [R1, R2]
-/* 0801FFD0 */ BL func_080EF154
+/* 0801FFD0 */ BL sprite_delete
 /* 0801FFD4 */ LDR R2, [R6]
 /* 0801FFD6 */ LDRB R1, [R2, #0X10]
 /* 0801FFD8 */ MOVS R0, #0X21

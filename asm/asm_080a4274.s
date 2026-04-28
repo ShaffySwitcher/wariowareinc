@@ -32,7 +32,7 @@ _080A428C:
 /* 080A42A0 */ LDRSH R1, [R1, R3]
 /* 080A42A2 */ LSLS R2, R2, #8
 /* 080A42A4 */ ASRS R2, R2, #0X10
-/* 080A42A6 */ BL func_080EF264
+/* 080A42A6 */ BL sprite_set_x
 /* 080A42AA */ B _080A42E2
 
 .balign 4, 0
