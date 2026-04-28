@@ -70,7 +70,7 @@ _080AF88E:
 /* 080AF8E6 */ STR R2, [SP]
 /* 080AF8E8 */ ADDS R2, R5, #0
 /* 080AF8EA */ ADDS R3, R4, #0
-/* 080AF8EC */ BL func_080EF1AC
+/* 080AF8EC */ BL sprite_set_x_y_z
 /* 080AF8F0 */ LSLS R5, R5, #8
 /* 080AF8F2 */ STR R5, [R7, #4]
 /* 080AF8F4 */ LSLS R4, R4, #8

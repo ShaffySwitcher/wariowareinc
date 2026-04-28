@@ -45,7 +45,7 @@ _0800E728:
 /* 0800E73C */ MOVS R6, #2
 /* 0800E73E */ LDRSH R3, [R1, R6]
 /* 0800E740 */ ADDS R1, R4, #0
-/* 0800E742 */ BL func_080EF224
+/* 0800E742 */ BL sprite_set_x_y
 /* 0800E746 */ LDR R0, [R5]
 /* 0800E748 */ ADDS R1, R4, #0
 /* 0800E74A */ MOVS R2, #1

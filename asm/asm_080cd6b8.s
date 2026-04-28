@@ -31,7 +31,7 @@ _080CD6D0:
 /* 080CD6E4 */ LSLS R3, R4, #8
 /* 080CD6E6 */ ASRS R3, R3, #0X10
 /* 080CD6E8 */ STR R5, [SP]
-/* 080CD6EA */ BL func_080EF1AC
+/* 080CD6EA */ BL sprite_set_x_y_z
 /* 080CD6EE */ ADD SP, #4
 /* 080CD6F0 */ POP {R4, R5}
 /* 080CD6F2 */ POP {R0}

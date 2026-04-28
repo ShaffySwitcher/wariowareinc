@@ -221,7 +221,7 @@ _080D3114:
 /* 080D311A */ LDR R3, [R4, #8]
 /* 080D311C */ LSLS R3, R3, #8
 /* 080D311E */ ASRS R3, R3, #0X10
-/* 080D3120 */ BL func_080EF224
+/* 080D3120 */ BL sprite_set_x_y
 /* 080D3124 */ B _080D313E
 
 .balign 4, 0

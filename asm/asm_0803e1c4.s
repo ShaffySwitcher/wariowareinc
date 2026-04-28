@@ -51,7 +51,7 @@ glabel func_0803E1C4
 /* 0803E21A */ ASRS R2, R2, #0X10
 /* 0803E21C */ LSLS R3, R3, #0X10
 /* 0803E21E */ ASRS R3, R3, #0X10
-/* 0803E220 */ BL func_080EF224
+/* 0803E220 */ BL sprite_set_x_y
 _0803E224:
 /* 0803E224 */ POP {R4, R5}
 /* 0803E226 */ POP {R0}

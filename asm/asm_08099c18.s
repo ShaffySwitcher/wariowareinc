@@ -20,7 +20,7 @@ glabel func_08099C18
 /* 08099C30 */ MOVS R6, #8
 /* 08099C32 */ LDRSH R3, [R2, R6]
 /* 08099C34 */ ADDS R2, R4, #0
-/* 08099C36 */ BL func_080EF224
+/* 08099C36 */ BL sprite_set_x_y
 /* 08099C3A */ LDR R1, _08099C68
 /* 08099C3C */ LDR R0, =gCurrentSceneData
 /* 08099C3E */ LDR R0, [R0]

@@ -64,7 +64,7 @@ _08090164:
 /* 08090174 */ LSLS R2, R4, #0X10
 /* 08090176 */ ASRS R2, R2, #0X10
 /* 08090178 */ MOVS R3, #0X40
-/* 0809017A */ BL func_080EF224
+/* 0809017A */ BL sprite_set_x_y
 /* 0809017E */ LDR R0, =gPressedKeys
 /* 08090180 */ LDRH R1, [R0]
 /* 08090182 */ MOVS R0, #1

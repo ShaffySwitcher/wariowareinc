@@ -34,7 +34,7 @@ glabel func_08042DF8
 /* 08042E2C */ SUBS R3, #8
 /* 08042E2E */ LSLS R3, R3, #0X10
 /* 08042E30 */ ASRS R3, R3, #0X10
-/* 08042E32 */ BL func_080EF224
+/* 08042E32 */ BL sprite_set_x_y
 /* 08042E36 */ B _08042E68
 
 .balign 4, 0
@@ -63,7 +63,7 @@ _08042E40:
 /* 08042E5E */ SUBS R3, #8
 /* 08042E60 */ LSLS R3, R3, #0X10
 /* 08042E62 */ ASRS R3, R3, #0X10
-/* 08042E64 */ BL func_080EF224
+/* 08042E64 */ BL sprite_set_x_y
 _08042E68:
 /* 08042E68 */ POP {R0}
 /* 08042E6A */ BX R0

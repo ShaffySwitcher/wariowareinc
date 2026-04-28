@@ -96,7 +96,7 @@ _080C58B0:
 /* 080C58BC */ ASRS R2, R2, #0X10
 /* 080C58BE */ LSLS R3, R4, #8
 /* 080C58C0 */ ASRS R3, R3, #0X10
-/* 080C58C2 */ BL func_080EF224
+/* 080C58C2 */ BL sprite_set_x_y
 /* 080C58C6 */ B _080C58D0
 
 .balign 4, 0

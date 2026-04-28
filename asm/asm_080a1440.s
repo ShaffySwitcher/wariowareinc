@@ -74,7 +74,7 @@ _080A14B6:
 /* 080A14C4 */ LDR R3, [R4, #8]
 /* 080A14C6 */ LSLS R3, R3, #8
 /* 080A14C8 */ ASRS R3, R3, #0X10
-/* 080A14CA */ BL func_080EF224
+/* 080A14CA */ BL sprite_set_x_y
 /* 080A14CE */ ADDS R0, R6, #0
 /* 080A14D0 */ POP {R4, R5, R6, R7}
 /* 080A14D2 */ POP {R1}

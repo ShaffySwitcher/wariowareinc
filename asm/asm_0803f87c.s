@@ -27,7 +27,7 @@ glabel func_0803F87C
 /* 0803F8A2 */ ADDS R3, R7
 /* 0803F8A4 */ ADDS R3, R4
 /* 0803F8A6 */ LDRB R3, [R3]
-/* 0803F8A8 */ BL func_080EF224
+/* 0803F8A8 */ BL sprite_set_x_y
 /* 0803F8AC */ MOVS R2, #0
 /* 0803F8AE */ CMP R4, #0
 /* 0803F8B0 */ BEQ _0803F8CA

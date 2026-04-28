@@ -59,7 +59,7 @@ glabel func_08038590
 /* 080385FA */ LSRS R4, R4, #1
 /* 080385FC */ MOVS R3, #0X8A
 /* 080385FE */ SUBS R3, R4
-/* 08038600 */ BL func_080EF224
+/* 08038600 */ BL sprite_set_x_y
 /* 08038604 */ MOVS R0, #0X18
 /* 08038606 */ BL func_0800C9A4
 /* 0803860A */ MOVS R0, #1

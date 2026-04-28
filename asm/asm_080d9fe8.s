@@ -82,7 +82,7 @@ _080DA06E:
 /* 080DA07C */ LDR R3, [R5, #8]
 /* 080DA07E */ LSLS R3, R3, #8
 /* 080DA080 */ ASRS R3, R3, #0X10
-/* 080DA082 */ BL func_080EF224
+/* 080DA082 */ BL sprite_set_x_y
 /* 080DA086 */ LDR R0, [R4]
 /* 080DA088 */ MOVS R3, #2
 /* 080DA08A */ LDRSH R1, [R5, R3]
@@ -92,7 +92,7 @@ _080DA06E:
 /* 080DA092 */ LDR R3, [R5, #8]
 /* 080DA094 */ LSLS R3, R3, #8
 /* 080DA096 */ ASRS R3, R3, #0X10
-/* 080DA098 */ BL func_080EF224
+/* 080DA098 */ BL sprite_set_x_y
 _080DA09C:
 /* 080DA09C */ POP {R4, R5}
 /* 080DA09E */ POP {R0}

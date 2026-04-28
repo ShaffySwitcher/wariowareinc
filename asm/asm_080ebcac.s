@@ -133,7 +133,7 @@ _080EBD74:
 /* 080EBDA0 */ LSRS R1, R1, #0X10
 /* 080EBDA2 */ STR R1, [SP]
 /* 080EBDA4 */ ADDS R1, R4, #0
-/* 080EBDA6 */ BL func_080EF1AC
+/* 080EBDA6 */ BL sprite_set_x_y_z
 /* 080EBDAA */ LDR R0, =gCurrentSceneVariable
 /* 080EBDAC */ LDR R0, [R0]
 /* 080EBDAE */ MOVS R2, #0

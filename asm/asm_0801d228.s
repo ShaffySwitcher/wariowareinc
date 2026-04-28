@@ -73,7 +73,7 @@ _0801D28C:
 /* 0801D29A */ LDR R3, [R4, #8]
 /* 0801D29C */ LSLS R3, R3, #8
 /* 0801D29E */ ASRS R3, R3, #0X10
-/* 0801D2A0 */ BL func_080EF224
+/* 0801D2A0 */ BL sprite_set_x_y
 /* 0801D2A4 */ LDR R0, [R4, #8]
 /* 0801D2A6 */ ASRS R0, R0, #8
 /* 0801D2A8 */ CMP R0, #0XA0

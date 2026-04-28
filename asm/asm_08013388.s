@@ -24,7 +24,7 @@ glabel func_08013388
 /* 080133AA */ LDRSH R2, [R3, R5]
 /* 080133AC */ MOVS R5, #2
 /* 080133AE */ LDRSH R3, [R3, R5]
-/* 080133B0 */ BL func_080EF224
+/* 080133B0 */ BL sprite_set_x_y
 /* 080133B4 */ LDRB R0, [R4]
 /* 080133B6 */ BL func_080135E8
 /* 080133BA */ BL func_08015A88

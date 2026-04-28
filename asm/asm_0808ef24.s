@@ -118,7 +118,7 @@ _0808EFE6:
 /* 0808EFF4 */ LDR R3, [R4, #8]
 /* 0808EFF6 */ LSLS R3, R3, #8
 /* 0808EFF8 */ ASRS R3, R3, #0X10
-/* 0808EFFA */ BL func_080EF224
+/* 0808EFFA */ BL sprite_set_x_y
 /* 0808EFFE */ POP {R4, R5}
 /* 0808F000 */ POP {R0}
 /* 0808F002 */ BX R0

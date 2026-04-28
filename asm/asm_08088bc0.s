@@ -271,7 +271,7 @@ _08088D90:
 /* 08088DAA */ LDR R3, [R5, #8]
 /* 08088DAC */ LSLS R3, R3, #8
 /* 08088DAE */ ASRS R3, R3, #0X10
-/* 08088DB0 */ BL func_080EF224
+/* 08088DB0 */ BL sprite_set_x_y
 /* 08088DB4 */ POP {R4, R5, R6}
 /* 08088DB6 */ POP {R0}
 /* 08088DB8 */ BX R0

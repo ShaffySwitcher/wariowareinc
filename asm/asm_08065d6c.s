@@ -23,7 +23,7 @@ glabel func_08065D6C
 /* 08065D8A */ LSLS R3, R3, #8
 /* 08065D8C */ ASRS R3, R3, #0X10
 /* 08065D8E */ ADDS R0, R4, #0
-/* 08065D90 */ BL func_080EF224
+/* 08065D90 */ BL sprite_set_x_y
 /* 08065D94 */ POP {R4, R5}
 /* 08065D96 */ POP {R1}
 /* 08065D98 */ BX R1

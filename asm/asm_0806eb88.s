@@ -61,7 +61,7 @@ glabel func_0806EB88
 /* 0806EBF6 */ LDR R3, [R3, #8]
 /* 0806EBF8 */ LSLS R3, R3, #8
 /* 0806EBFA */ ASRS R3, R3, #0X10
-/* 0806EBFC */ BL func_080EF224
+/* 0806EBFC */ BL sprite_set_x_y
 /* 0806EC00 */ LDR R1, [R5]
 /* 0806EC02 */ LDRB R0, [R1, #0X1E]
 /* 0806EC04 */ CMP R0, #0

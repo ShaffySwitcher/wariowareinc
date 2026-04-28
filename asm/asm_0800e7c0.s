@@ -26,7 +26,7 @@ glabel func_0800E7C0
 /* 0800E7E4 */ ASRS R3, R3, #0X10
 /* 0800E7E6 */ STR R2, [SP]
 /* 0800E7E8 */ ADDS R2, R4, #0
-/* 0800E7EA */ BL func_080EF1AC
+/* 0800E7EA */ BL sprite_set_x_y_z
 /* 0800E7EE */ ADD SP, #4
 /* 0800E7F0 */ POP {R4, R5}
 /* 0800E7F2 */ POP {R0}

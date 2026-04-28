@@ -63,7 +63,7 @@ _0807F0F0:
 /* 0807F0FE */ LDR R3, [R4, #4]
 /* 0807F100 */ LSLS R3, R3, #8
 /* 0807F102 */ ASRS R3, R3, #0X10
-/* 0807F104 */ BL func_080EF224
+/* 0807F104 */ BL sprite_set_x_y
 /* 0807F108 */ POP {R4}
 /* 0807F10A */ POP {R0}
 /* 0807F10C */ BX R0

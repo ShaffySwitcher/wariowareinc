@@ -73,7 +73,7 @@ _080B37EA:
 /* 080B3828 */ LDR R3, [R5, #8]
 /* 080B382A */ LSLS R3, R3, #8
 /* 080B382C */ ASRS R3, R3, #0X10
-/* 080B382E */ BL func_080EF224
+/* 080B382E */ BL sprite_set_x_y
 /* 080B3832 */ B _080B3876
 
 .balign 4, 0

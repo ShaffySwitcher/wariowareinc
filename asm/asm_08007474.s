@@ -57,7 +57,7 @@ glabel func_08007474
 /* 080074D8 */ ASRS R2, R2, #0X10
 /* 080074DA */ LSLS R3, R3, #0X10
 /* 080074DC */ ASRS R3, R3, #0X10
-/* 080074DE */ BL func_080EF224
+/* 080074DE */ BL sprite_set_x_y
 /* 080074E2 */ MOVS R1, #0
 /* 080074E4 */ LDRH R0, [R4, #0XE]
 /* 080074E6 */ ADDS R0, #1

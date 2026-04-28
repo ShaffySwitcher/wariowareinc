@@ -152,7 +152,7 @@ _08067D02:
 /* 08067D12 */ LDR R3, [R3, #8]
 /* 08067D14 */ LSLS R3, R3, #8
 /* 08067D16 */ ASRS R3, R3, #0X10
-/* 08067D18 */ BL func_080EF224
+/* 08067D18 */ BL sprite_set_x_y
 _08067D1C:
 /* 08067D1C */ LDR R0, =gCurrentSceneVariable
 /* 08067D1E */ LDR R2, [R0]

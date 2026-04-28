@@ -51,7 +51,7 @@ _0806BBE0:
 /* 0806BBEE */ LDR R3, [R4, #4]
 /* 0806BBF0 */ LSLS R3, R3, #8
 /* 0806BBF2 */ ASRS R3, R3, #0X10
-/* 0806BBF4 */ BL func_080EF224
+/* 0806BBF4 */ BL sprite_set_x_y
 _0806BBF8:
 /* 0806BBF8 */ POP {R4}
 /* 0806BBFA */ POP {R0}

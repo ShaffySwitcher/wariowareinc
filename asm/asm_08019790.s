@@ -50,7 +50,7 @@ glabel func_08019790
 /* 080197E4 */ ASRS R2, R2, #0X10
 /* 080197E6 */ MOVS R4, #2
 /* 080197E8 */ LDRSH R3, [R3, R4]
-/* 080197EA */ BL func_080EF224
+/* 080197EA */ BL sprite_set_x_y
 _080197EE:
 /* 080197EE */ POP {R4, R5}
 /* 080197F0 */ POP {R0}

@@ -42,7 +42,7 @@ glabel func_0809DB34
 /* 0809DB78 */ ADDS R3, R4
 /* 0809DB7A */ LSLS R3, R3, #0X10
 /* 0809DB7C */ ASRS R3, R3, #0X10
-/* 0809DB7E */ BL func_080EF224
+/* 0809DB7E */ BL sprite_set_x_y
 /* 0809DB82 */ B _0809DB9A
 
 .balign 4, 0

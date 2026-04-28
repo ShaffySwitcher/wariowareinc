@@ -70,7 +70,7 @@ glabel func_0805A4A0
 /* 0805A51C */ ASRS R2, R2, #0X10
 /* 0805A51E */ LSLS R3, R3, #8
 /* 0805A520 */ ASRS R3, R3, #0X10
-/* 0805A522 */ BL func_080EF224
+/* 0805A522 */ BL sprite_set_x_y
 /* 0805A526 */ LDR R0, [R4]
 /* 0805A528 */ MOV R7, R8
 /* 0805A52A */ LDR R3, [R7]
@@ -84,7 +84,7 @@ glabel func_0805A4A0
 /* 0805A53A */ LDR R3, [R3, #0X7C]
 /* 0805A53C */ LSLS R3, R3, #8
 /* 0805A53E */ ASRS R3, R3, #0X10
-/* 0805A540 */ BL func_080EF224
+/* 0805A540 */ BL sprite_set_x_y
 /* 0805A544 */ B _0805A590
 
 .balign 4, 0
@@ -114,7 +114,7 @@ _0805A558:
 /* 0805A568 */ ASRS R2, R2, #0X10
 /* 0805A56A */ LSLS R3, R6, #0X10
 /* 0805A56C */ ASRS R3, R3, #0X10
-/* 0805A56E */ BL func_080EF224
+/* 0805A56E */ BL sprite_set_x_y
 /* 0805A572 */ LDR R0, [R4]
 /* 0805A574 */ MOV R7, R8
 /* 0805A576 */ LDR R3, [R7]
@@ -128,7 +128,7 @@ _0805A558:
 /* 0805A586 */ LDR R3, [R3, #0X74]
 /* 0805A588 */ LSLS R3, R3, #8
 /* 0805A58A */ ASRS R3, R3, #0X10
-/* 0805A58C */ BL func_080EF224
+/* 0805A58C */ BL sprite_set_x_y
 _0805A590:
 /* 0805A590 */ POP {R3, R4}
 /* 0805A592 */ MOV R8, R3

@@ -15,7 +15,7 @@ glabel func_0809E52C
 /* 0809E53C */ ADDS R0, R5, #0
 /* 0809E53E */ MOVS R2, #0
 /* 0809E540 */ MOVS R3, #0
-/* 0809E542 */ BL func_080EF224
+/* 0809E542 */ BL sprite_set_x_y
 /* 0809E546 */ MOVS R0, #0
 /* 0809E548 */ LDRSH R1, [R4, R0]
 /* 0809E54A */ ADDS R0, R5, #0

@@ -62,7 +62,7 @@ _0806BABC:
 /* 0806BACA */ LDR R3, [R4, #4]
 /* 0806BACC */ LSLS R3, R3, #8
 /* 0806BACE */ ASRS R3, R3, #0X10
-/* 0806BAD0 */ BL func_080EF224
+/* 0806BAD0 */ BL sprite_set_x_y
 _0806BAD4:
 /* 0806BAD4 */ POP {R4, R5}
 /* 0806BAD6 */ POP {R0}

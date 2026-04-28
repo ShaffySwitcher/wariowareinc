@@ -141,7 +141,7 @@ _08077E18:
 /* 08077E42 */ ADDS R4, R5
 /* 08077E44 */ LDRH R4, [R4]
 /* 08077E46 */ STR R4, [SP]
-/* 08077E48 */ BL func_080EF1AC
+/* 08077E48 */ BL sprite_set_x_y_z
 /* 08077E4C */ ADD SP, #4
 /* 08077E4E */ POP {R4, R5, R6}
 /* 08077E50 */ POP {R0}

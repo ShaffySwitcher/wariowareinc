@@ -46,7 +46,7 @@ _0801C1A6:
 /* 0801C1E2 */ LDRSH R2, [R3, R4]
 /* 0801C1E4 */ MOVS R7, #2
 /* 0801C1E6 */ LDRSH R3, [R3, R7]
-/* 0801C1E8 */ BL func_080EF224
+/* 0801C1E8 */ BL sprite_set_x_y
 /* 0801C1EC */ B _0801C20E
 
 .balign 4, 0

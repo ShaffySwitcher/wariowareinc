@@ -43,7 +43,7 @@ glabel func_080E54A8
 /* 080E54F4 */ MOV R0, R8
 /* 080E54F6 */ ADDS R1, R5, #0
 /* 080E54F8 */ ADDS R2, R4, #0
-/* 080E54FA */ BL func_080EF224
+/* 080E54FA */ BL sprite_set_x_y
 /* 080E54FE */ POP {R3}
 /* 080E5500 */ MOV R8, R3
 /* 080E5502 */ POP {R4, R5, R6}

@@ -20,7 +20,7 @@ glabel func_080ED250
 /* 080ED268 */ LSLS R2, R2, #8
 /* 080ED26A */ ASRS R2, R2, #0X10
 /* 080ED26C */ ASRS R3, R3, #8
-/* 080ED26E */ BL func_080EF224
+/* 080ED26E */ BL sprite_set_x_y
 /* 080ED272 */ LDR R0, =D_08124E38
 /* 080ED274 */ LDR R0, [R0]
 /* 080ED276 */ STR R0, [R4, #0XC]

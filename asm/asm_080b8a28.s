@@ -83,7 +83,7 @@ _080B8A5A:
 /* 080B8AC4 */ LDR R3, [R4, #8]
 /* 080B8AC6 */ LSLS R3, R3, #8
 /* 080B8AC8 */ ASRS R3, R3, #0X10
-/* 080B8ACA */ BL func_080EF224
+/* 080B8ACA */ BL sprite_set_x_y
 /* 080B8ACE */ MOV R1, SB
 /* 080B8AD0 */ LDR R0, [R1]
 /* 080B8AD2 */ MOVS R2, #0

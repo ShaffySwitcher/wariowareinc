@@ -50,7 +50,7 @@ _0808C20E:
 /* 0808C228 */ LDR R3, [R3]
 /* 0808C22A */ LSLS R3, R3, #8
 /* 0808C22C */ ASRS R3, R3, #0X10
-/* 0808C22E */ BL func_080EF224
+/* 0808C22E */ BL sprite_set_x_y
 /* 0808C232 */ ADDS R0, R5, #0
 /* 0808C234 */ POP {R4, R5, R6}
 /* 0808C236 */ POP {R1}

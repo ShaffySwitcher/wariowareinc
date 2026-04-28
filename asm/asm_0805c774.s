@@ -91,7 +91,7 @@ glabel func_0805C774
 /* 0805C822 */ ADD R3, SB
 /* 0805C824 */ MOVS R4, #0
 /* 0805C826 */ LDRSH R3, [R3, R4]
-/* 0805C828 */ BL func_080EF224
+/* 0805C828 */ BL sprite_set_x_y
 /* 0805C82C */ ADD SP, #0XC
 /* 0805C82E */ POP {R3, R4}
 /* 0805C830 */ MOV R8, R3

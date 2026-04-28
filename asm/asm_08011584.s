@@ -33,7 +33,7 @@ glabel func_08011584
 /* 080115B8 */ ADDS R3, R5
 /* 080115BA */ MOVS R5, #0
 /* 080115BC */ LDRSH R3, [R3, R5]
-/* 080115BE */ BL func_080EF224
+/* 080115BE */ BL sprite_set_x_y
 /* 080115C2 */ ADDS R0, R4, #0
 /* 080115C4 */ BL func_08005834
 _080115C8:

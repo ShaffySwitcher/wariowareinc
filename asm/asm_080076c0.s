@@ -42,7 +42,7 @@ glabel func_080076C0
 /* 08007706 */ LDRSH R2, [R4, R3]
 /* 08007708 */ MOVS R5, #4
 /* 0800770A */ LDRSH R3, [R4, R5]
-/* 0800770C */ BL func_080EF224
+/* 0800770C */ BL sprite_set_x_y
 /* 08007710 */ ADDS R0, R4, #0
 /* 08007712 */ B _0800771C
 

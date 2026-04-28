@@ -205,7 +205,7 @@ _0805F576:
 /* 0805F5EC */ ADDS R4, R5
 /* 0805F5EE */ LDRH R4, [R4]
 /* 0805F5F0 */ STR R4, [SP]
-/* 0805F5F2 */ BL func_080EF1AC
+/* 0805F5F2 */ BL sprite_set_x_y_z
 /* 0805F5F6 */ ADD SP, #4
 /* 0805F5F8 */ POP {R4, R5, R6, R7}
 /* 0805F5FA */ POP {R0}

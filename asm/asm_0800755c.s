@@ -50,7 +50,7 @@ glabel func_0800755C
 /* 080075B2 */ LSLS R3, R3, #0X10
 /* 080075B4 */ ASRS R3, R3, #0X10
 /* 080075B6 */ ADDS R2, R4, #0
-/* 080075B8 */ BL func_080EF224
+/* 080075B8 */ BL sprite_set_x_y
 /* 080075BC */ MOVS R1, #0
 /* 080075BE */ LDRH R0, [R6, #0XE]
 /* 080075C0 */ ADDS R0, #1

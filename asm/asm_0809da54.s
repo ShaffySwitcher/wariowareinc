@@ -77,7 +77,7 @@ glabel func_0809DA54
 /* 0809DAE4 */ STR R2, [SP]
 /* 0809DAE6 */ ADDS R2, R5, #0
 /* 0809DAE8 */ ADDS R3, R4, #0
-/* 0809DAEA */ BL func_080EF1AC
+/* 0809DAEA */ BL sprite_set_x_y_z
 /* 0809DAEE */ LDR R1, _0809DB08
 /* 0809DAF0 */ LDR R0, [R1]
 /* 0809DAF2 */ MOVS R2, #0XB4

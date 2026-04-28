@@ -65,7 +65,7 @@ _0802C6CC:
 /* 0802C72C */ LDRSH R1, [R1, R4]
 /* 0802C72E */ LSLS R2, R2, #0X10
 /* 0802C730 */ ASRS R2, R2, #0X10
-/* 0802C732 */ BL func_080EF224
+/* 0802C732 */ BL sprite_set_x_y
 /* 0802C736 */ B _0802C754
 
 .balign 4, 0

@@ -57,7 +57,7 @@ _0806A4D2:
 /* 0806A4F4 */ LDR R3, [R3]
 /* 0806A4F6 */ LSLS R3, R3, #8
 /* 0806A4F8 */ ASRS R3, R3, #0X10
-/* 0806A4FA */ BL func_080EF224
+/* 0806A4FA */ BL sprite_set_x_y
 /* 0806A4FE */ POP {R4, R5, R6}
 /* 0806A500 */ POP {R0}
 /* 0806A502 */ BX R0

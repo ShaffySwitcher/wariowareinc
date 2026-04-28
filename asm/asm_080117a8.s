@@ -30,7 +30,7 @@ glabel func_080117A8
 /* 080117D8 */ LDRSH R2, [R3, R4]
 /* 080117DA */ MOVS R4, #2
 /* 080117DC */ LDRSH R3, [R3, R4]
-/* 080117DE */ BL func_080EF224
+/* 080117DE */ BL sprite_set_x_y
 /* 080117E2 */ MOVS R0, #0XA
 /* 080117E4 */ BL func_0800C77C
 /* 080117E8 */ POP {R4, R5, R6}

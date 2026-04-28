@@ -219,7 +219,7 @@ _0809CCF4:
 _0809CD10:
 /* 0809CD10 */ LSLS R3, R3, #8
 /* 0809CD12 */ ASRS R3, R3, #0X10
-/* 0809CD14 */ BL func_080EF224
+/* 0809CD14 */ BL sprite_set_x_y
 /* 0809CD18 */ B _0809CD46
 
 .balign 4, 0

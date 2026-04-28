@@ -22,7 +22,7 @@ glabel func_080AF370
 /* 080AF38C */ LDR R3, [R4, #0X14]
 /* 080AF38E */ LSLS R3, R3, #8
 /* 080AF390 */ ASRS R3, R3, #0X10
-/* 080AF392 */ BL func_080EF224
+/* 080AF392 */ BL sprite_set_x_y
 /* 080AF396 */ LDR R0, [R5]
 /* 080AF398 */ MOVS R2, #4
 /* 080AF39A */ LDRSH R1, [R4, R2]

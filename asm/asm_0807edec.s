@@ -74,7 +74,7 @@ _0807EE50:
 /* 0807EE62 */ LDR R3, [R3, #0X3C]
 /* 0807EE64 */ LSLS R3, R3, #8
 /* 0807EE66 */ ASRS R3, R3, #0X10
-/* 0807EE68 */ BL func_080EF224
+/* 0807EE68 */ BL sprite_set_x_y
 /* 0807EE6C */ POP {R0}
 /* 0807EE6E */ BX R0
 

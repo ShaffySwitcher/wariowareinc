@@ -60,7 +60,7 @@ glabel func_0800727C
 /* 080072E8 */ LDRSH R2, [R5, R6]
 /* 080072EA */ MOVS R6, #4
 /* 080072EC */ LDRSH R3, [R5, R6]
-/* 080072EE */ BL func_080EF224
+/* 080072EE */ BL sprite_set_x_y
 /* 080072F2 */ ADDS R0, R4, #0
 /* 080072F4 */ B _08007304
 /* 080072F6 */ // padding

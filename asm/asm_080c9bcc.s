@@ -20,7 +20,7 @@ glabel func_080C9BCC
 /* 080C9BE8 */ LDR R3, [R4, #8]
 /* 080C9BEA */ LSLS R3, R3, #8
 /* 080C9BEC */ ASRS R3, R3, #0X10
-/* 080C9BEE */ BL func_080EF224
+/* 080C9BEE */ BL sprite_set_x_y
 /* 080C9BF2 */ POP {R4}
 /* 080C9BF4 */ POP {R0}
 /* 080C9BF6 */ BX R0

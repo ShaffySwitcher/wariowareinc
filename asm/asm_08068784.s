@@ -60,7 +60,7 @@ glabel func_08068784
 /* 080687F4 */ ASRS R3, R3, #0X10
 /* 080687F6 */ LDRH R4, [R5, #8]
 /* 080687F8 */ STR R4, [SP]
-/* 080687FA */ BL func_080EF1AC
+/* 080687FA */ BL sprite_set_x_y_z
 /* 080687FE */ MOVS R0, #0
 /* 08068800 */ B _08068820
 

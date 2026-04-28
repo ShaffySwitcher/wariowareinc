@@ -69,7 +69,7 @@ _0805F64A:
 /* 0805F680 */ ADDS R4, R7
 /* 0805F682 */ LDRH R4, [R4]
 /* 0805F684 */ STR R4, [SP]
-/* 0805F686 */ BL func_080EF1AC
+/* 0805F686 */ BL sprite_set_x_y_z
 /* 0805F68A */ LDR R0, [R6]
 /* 0805F68C */ MOV R1, R8
 /* 0805F68E */ LDR R3, [R1]
@@ -88,7 +88,7 @@ _0805F64A:
 /* 0805F6A8 */ LDR R3, [R3]
 /* 0805F6AA */ LSLS R3, R3, #8
 /* 0805F6AC */ ASRS R3, R3, #0X10
-/* 0805F6AE */ BL func_080EF224
+/* 0805F6AE */ BL sprite_set_x_y
 /* 0805F6B2 */ ADD SP, #4
 /* 0805F6B4 */ POP {R3}
 /* 0805F6B6 */ MOV R8, R3

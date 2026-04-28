@@ -97,7 +97,7 @@ _0807A916:
 /* 0807A93A */ STR R4, [SP]
 /* 0807A93C */ ADDS R2, R6, #0
 /* 0807A93E */ ADDS R3, R5, #0
-/* 0807A940 */ BL func_080EF1AC
+/* 0807A940 */ BL sprite_set_x_y_z
 /* 0807A944 */ MOV R1, SB
 /* 0807A946 */ LDR R0, [R1]
 /* 0807A948 */ MOVS R2, #2
@@ -105,7 +105,7 @@ _0807A916:
 /* 0807A94C */ STR R4, [SP]
 /* 0807A94E */ ADDS R2, R6, #0
 /* 0807A950 */ ADDS R3, R5, #0
-/* 0807A952 */ BL func_080EF1AC
+/* 0807A952 */ BL sprite_set_x_y_z
 /* 0807A956 */ LDR R0, [R7, #0X18]
 /* 0807A958 */ ADDS R1, R0, #0
 /* 0807A95A */ ADDS R0, #1

@@ -83,7 +83,7 @@ _080C8D8E:
 /* 080C8DA8 */ LDR R3, [R3]
 /* 080C8DAA */ LSLS R3, R3, #8
 /* 080C8DAC */ ASRS R3, R3, #0X10
-/* 080C8DAE */ BL func_080EF224
+/* 080C8DAE */ BL sprite_set_x_y
 /* 080C8DB2 */ POP {R4, R5, R6, R7}
 /* 080C8DB4 */ POP {R0}
 /* 080C8DB6 */ BX R0

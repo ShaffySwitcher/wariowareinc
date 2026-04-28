@@ -137,7 +137,7 @@ _0806D768:
 /* 0806D7A2 */ ASRS R2, R2, #0X10
 /* 0806D7A4 */ LSLS R3, R3, #8
 /* 0806D7A6 */ ASRS R3, R3, #0X10
-/* 0806D7A8 */ BL func_080EF224
+/* 0806D7A8 */ BL sprite_set_x_y
 /* 0806D7AC */ B _0806D7EC
 
 .balign 4, 0

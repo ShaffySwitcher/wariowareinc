@@ -94,7 +94,7 @@ _080AC17E:
 /* 080AC1DC */ ADDS R0, R5, #0
 /* 080AC1DE */ ADDS R1, R6, #0
 /* 080AC1E0 */ ADDS R2, R4, #0
-/* 080AC1E2 */ BL func_080EF224
+/* 080AC1E2 */ BL sprite_set_x_y
 /* 080AC1E6 */ MOV R1, R8
 /* 080AC1E8 */ LDR R0, [R1]
 /* 080AC1EA */ MOVS R2, #0

@@ -72,7 +72,7 @@ _0808249A:
 /* 080824A6 */ LDR R3, [R4, #8]
 /* 080824A8 */ LSLS R3, R3, #8
 /* 080824AA */ ASRS R3, R3, #0X10
-/* 080824AC */ BL func_080EF224
+/* 080824AC */ BL sprite_set_x_y
 /* 080824B0 */ LDR R0, [R6]
 /* 080824B2 */ MOVS R2, #0
 /* 080824B4 */ LDRSH R1, [R4, R2]

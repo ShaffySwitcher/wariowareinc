@@ -44,7 +44,7 @@ _080D78B4:
 /* 080D78D2 */ LDR R3, [R3]
 /* 080D78D4 */ LSLS R3, R3, #8
 /* 080D78D6 */ ASRS R3, R3, #0X10
-/* 080D78D8 */ BL func_080EF224
+/* 080D78D8 */ BL sprite_set_x_y
 /* 080D78DC */ ADDS R0, R5, #0
 /* 080D78DE */ POP {R4, R5, R6}
 /* 080D78E0 */ POP {R1}

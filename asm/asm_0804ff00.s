@@ -71,7 +71,7 @@ _0804FF24:
 /* 0804FF80 */ STR R4, [SP]
 /* 0804FF82 */ MOV R2, IP
 /* 0804FF84 */ LDR R3, [SP, #0X18]
-/* 0804FF86 */ BL func_080EF1AC
+/* 0804FF86 */ BL sprite_set_x_y_z
 /* 0804FF8A */ B _0804FFB2
 
 .balign 4, 0

@@ -21,7 +21,7 @@ glabel func_0800E800
 /* 0800E81A */ ASRS R2, R2, #0X10
 /* 0800E81C */ LSLS R3, R3, #0X10
 /* 0800E81E */ ASRS R3, R3, #0X10
-/* 0800E820 */ BL func_080EF224
+/* 0800E820 */ BL sprite_set_x_y
 /* 0800E824 */ POP {R4}
 /* 0800E826 */ POP {R0}
 /* 0800E828 */ BX R0

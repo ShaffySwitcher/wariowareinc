@@ -165,7 +165,7 @@ _080C59DA:
 _080C59E8:
 /* 080C59E8 */ LSLS R3, R3, #8
 /* 080C59EA */ ASRS R3, R3, #0X10
-/* 080C59EC */ BL func_080EF224
+/* 080C59EC */ BL sprite_set_x_y
 /* 080C59F0 */ B _080C59FC
 
 .balign 4, 0

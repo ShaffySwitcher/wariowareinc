@@ -298,7 +298,7 @@ _0809BA06:
 /* 0809BA20 */ LDR R3, [R3]
 /* 0809BA22 */ LSLS R3, R3, #8
 /* 0809BA24 */ ASRS R3, R3, #0X10
-/* 0809BA26 */ BL func_080EF224
+/* 0809BA26 */ BL sprite_set_x_y
 /* 0809BA2A */ B _0809BA4A
 
 .balign 4, 0

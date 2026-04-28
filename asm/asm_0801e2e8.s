@@ -19,7 +19,7 @@ glabel func_0801E2E8
 /* 0801E300 */ LSLS R3, R3, #1
 /* 0801E302 */ ADDS R1, R4, #0
 /* 0801E304 */ ADDS R2, R3, #0
-/* 0801E306 */ BL func_080EF224
+/* 0801E306 */ BL sprite_set_x_y
 /* 0801E30A */ POP {R4, R5}
 /* 0801E30C */ POP {R0}
 /* 0801E30E */ BX R0

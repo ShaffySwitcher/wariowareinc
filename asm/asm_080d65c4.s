@@ -145,7 +145,7 @@ _080D66A0:
 /* 080D66AE */ LDR R3, [R5, #8]
 /* 080D66B0 */ LSLS R3, R3, #8
 /* 080D66B2 */ ASRS R3, R3, #0X10
-/* 080D66B4 */ BL func_080EF224
+/* 080D66B4 */ BL sprite_set_x_y
 /* 080D66B8 */ B _080D6816
 
 .balign 4, 0

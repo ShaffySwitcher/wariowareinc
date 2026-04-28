@@ -313,7 +313,7 @@ _0805DC4A:
 /* 0805DCC6 */ ASRS R4, R4, #0X10
 /* 0805DCC8 */ ADDS R1, R6, #0
 /* 0805DCCA */ ADDS R3, R4, #0
-/* 0805DCCC */ BL func_080EF224
+/* 0805DCCC */ BL sprite_set_x_y
 /* 0805DCD0 */ MOVS R0, #0X80
 /* 0805DCD2 */ LSLS R0, R0, #2
 /* 0805DCD4 */ BL get_random_range

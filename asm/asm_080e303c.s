@@ -55,7 +55,7 @@ glabel func_080E303C
 /* 080E309A */ MOVS R2, #2
 /* 080E309C */ LDRSH R1, [R4, R2]
 /* 080E309E */ LDR R2, _080E30E8
-/* 080E30A0 */ BL func_080EF2CC
+/* 080E30A0 */ BL sprite_set_z
 /* 080E30A4 */ LDR R1, [R5]
 /* 080E30A6 */ MOVS R0, #3
 /* 080E30A8 */ STRB R0, [R1, #1]
@@ -71,7 +71,7 @@ _080E30AA:
 /* 080E30BA */ LDR R3, [R3, #8]
 /* 080E30BC */ LSLS R3, R3, #8
 /* 080E30BE */ ASRS R3, R3, #0X10
-/* 080E30C0 */ BL func_080EF224
+/* 080E30C0 */ BL sprite_set_x_y
 /* 080E30C4 */ POP {R4, R5, R6}
 /* 080E30C6 */ POP {R0}
 /* 080E30C8 */ BX R0

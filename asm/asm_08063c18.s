@@ -38,7 +38,7 @@ glabel func_08063C18
 /* 08063C56 */ MOV R1, R8
 /* 08063C58 */ ADDS R2, R5, #0
 /* 08063C5A */ ADDS R3, R4, #0
-/* 08063C5C */ BL func_080EF224
+/* 08063C5C */ BL sprite_set_x_y
 /* 08063C60 */ LDR R0, [R6]
 /* 08063C62 */ MOV R1, R8
 /* 08063C64 */ MOVS R2, #0

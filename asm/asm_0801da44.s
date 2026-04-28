@@ -68,7 +68,7 @@ _0801DA96:
 /* 0801DACC */ MOVS R3, #0X64
 /* 0801DACE */ RSBS R3, R3, #0
 /* 0801DAD0 */ ADDS R2, R3, #0
-/* 0801DAD2 */ BL func_080EF224
+/* 0801DAD2 */ BL sprite_set_x_y
 /* 0801DAD6 */ MOVS R0, #0
 /* 0801DAD8 */ BL func_08009EE0_stub
 /* 0801DADC */ POP {R4}

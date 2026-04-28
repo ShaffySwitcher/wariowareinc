@@ -44,7 +44,7 @@ glabel func_0804969C
 /* 080496EE */ LDRSH R2, [R3, R5]
 /* 080496F0 */ MOVS R5, #2
 /* 080496F2 */ LDRSH R3, [R3, R5]
-/* 080496F4 */ BL func_080EF224
+/* 080496F4 */ BL sprite_set_x_y
 /* 080496F8 */ LDR R1, [R4]
 /* 080496FA */ MOVS R0, #3
 /* 080496FC */ STR R0, [R1, #4]

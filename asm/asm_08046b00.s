@@ -34,7 +34,7 @@ glabel func_08046B00
 /* 08046B3A */ LDRSH R1, [R1, R2]
 /* 08046B3C */ MOVS R2, #0X80
 /* 08046B3E */ LSLS R2, R2, #7
-/* 08046B40 */ BL func_080EF2CC
+/* 08046B40 */ BL sprite_set_z
 /* 08046B44 */ ADD SP, #4
 /* 08046B46 */ POP {R4, R5}
 /* 08046B48 */ POP {R0}

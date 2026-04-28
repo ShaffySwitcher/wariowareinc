@@ -33,7 +33,7 @@ glabel func_080E1554
 /* 080E158C */ LDR R3, [R4, #8]
 /* 080E158E */ LSLS R3, R3, #8
 /* 080E1590 */ ASRS R3, R3, #0X10
-/* 080E1592 */ BL func_080EF224
+/* 080E1592 */ BL sprite_set_x_y
 /* 080E1596 */ POP {R4}
 /* 080E1598 */ POP {R0}
 /* 080E159A */ BX R0

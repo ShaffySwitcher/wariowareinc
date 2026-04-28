@@ -205,7 +205,7 @@ _08060E2A:
 /* 08060E34 */ LDR R3, [R3, #8]
 /* 08060E36 */ LSLS R3, R3, #8
 /* 08060E38 */ ASRS R3, R3, #0X10
-/* 08060E3A */ BL func_080EF224
+/* 08060E3A */ BL sprite_set_x_y
 /* 08060E3E */ B _08060EF8
 
 .balign 4, 0
@@ -267,7 +267,7 @@ _08060E9A:
 /* 08060EAA */ LDR R3, [R3, #8]
 /* 08060EAC */ LSLS R3, R3, #8
 /* 08060EAE */ ASRS R3, R3, #0X10
-/* 08060EB0 */ BL func_080EF224
+/* 08060EB0 */ BL sprite_set_x_y
 /* 08060EB4 */ LDR R2, [R5]
 /* 08060EB6 */ MOVS R0, #2
 /* 08060EB8 */ LDRSB R0, [R2, R0]
@@ -303,7 +303,7 @@ _08060ED0:
 /* 08060EEE */ LDR R3, [R3, #8]
 /* 08060EF0 */ LSLS R3, R3, #8
 /* 08060EF2 */ ASRS R3, R3, #0X10
-/* 08060EF4 */ BL func_080EF224
+/* 08060EF4 */ BL sprite_set_x_y
 _08060EF8:
 /* 08060EF8 */ ADD SP, #0XC
 /* 08060EFA */ POP {R4, R5, R6}

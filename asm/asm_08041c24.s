@@ -27,7 +27,7 @@ glabel func_08041C24
 /* 08041C4A */ LDR R3, [R3, #0X64]
 /* 08041C4C */ LSLS R3, R3, #8
 /* 08041C4E */ ASRS R3, R3, #0X10
-/* 08041C50 */ BL func_080EF224
+/* 08041C50 */ BL sprite_set_x_y
 /* 08041C54 */ LDR R0, [R4]
 /* 08041C56 */ LDR R1, [R5]
 /* 08041C58 */ ADDS R1, #0XC2

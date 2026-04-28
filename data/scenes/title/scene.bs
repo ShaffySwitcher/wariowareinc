@@ -20,12 +20,12 @@ script script_scene_title_loading_start
     beatscript_cmd 0x34, 0x80610F, 0, title_obj_pal
     rest 24
     rest 24
-    beatscript_cmd 0x86, 0, 0x08, 0x01
-    beatscript_cmd 0x86, 0, 0x09, 0x01
-    beatscript_cmd 0x86, 0, 0x0A, 0x01
-    beatscript_cmd 0x94, 0x08, 0xFFFFFF80, 0
-    beatscript_cmd 0x94, 0x09, 0xFFFFFF80, 0
-    beatscript_cmd 0x94, 0x0A, 0xFFFFFF80, 0
+    sprite_render 8, TRUE
+    sprite_render 9, TRUE
+    sprite_render 10, TRUE
+    sprite_add_xy 8, -128, 0
+    sprite_add_xy 9, -128, 0
+    sprite_add_xy 10, -128, 0
     beatscript_cmd 0x99, 0x08, D_08545F38, 0x0C
     beatscript_cmd 0x99, 0x09, D_08545F3C, 0x0C
     beatscript_cmd 0x99, 0x0A, D_08545F68, 0x0C

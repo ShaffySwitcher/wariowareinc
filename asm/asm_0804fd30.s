@@ -81,7 +81,7 @@ _0804FD56:
 /* 0804FDC4 */ STR R4, [SP]
 /* 0804FDC6 */ LDR R2, [SP, #8]
 /* 0804FDC8 */ MOV R3, IP
-/* 0804FDCA */ BL func_080EF1AC
+/* 0804FDCA */ BL sprite_set_x_y_z
 /* 0804FDCE */ LDR R0, [R7]
 /* 0804FDD0 */ MOVS R1, #0XD4
 /* 0804FDD2 */ LSLS R1, R1, #2

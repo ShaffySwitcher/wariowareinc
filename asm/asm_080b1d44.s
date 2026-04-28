@@ -35,7 +35,7 @@ glabel func_080B1D44
 /* 080B1D7E */ LDRSH R2, [R4, R5]
 /* 080B1D80 */ MOVS R5, #6
 /* 080B1D82 */ LDRSH R3, [R4, R5]
-/* 080B1D84 */ BL func_080EF224
+/* 080B1D84 */ BL sprite_set_x_y
 _080B1D88:
 /* 080B1D88 */ ADDS R0, R4, #0
 /* 080B1D8A */ ADDS R0, #8
@@ -67,7 +67,7 @@ _080B1DAC:
 /* 080B1DC0 */ LDRSH R2, [R4, R3]
 /* 080B1DC2 */ MOVS R5, #6
 /* 080B1DC4 */ LDRSH R3, [R4, R5]
-/* 080B1DC6 */ BL func_080EF224
+/* 080B1DC6 */ BL sprite_set_x_y
 _080B1DCA:
 /* 080B1DCA */ ADDS R0, R4, #0
 /* 080B1DCC */ ADDS R0, #8

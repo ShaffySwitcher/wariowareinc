@@ -36,7 +36,7 @@ glabel func_0800710C
 /* 08007146 */ LDRSH R2, [R5, R3]
 /* 08007148 */ MOVS R6, #4
 /* 0800714A */ LDRSH R3, [R5, R6]
-/* 0800714C */ BL func_080EF224
+/* 0800714C */ BL sprite_set_x_y
 /* 08007150 */ ADDS R0, R4, #0
 /* 08007152 */ B _0800715C
 

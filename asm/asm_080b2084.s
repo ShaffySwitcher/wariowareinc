@@ -35,7 +35,7 @@ glabel func_080B2084
 /* 080B20BA */ LDRSH R2, [R3, R7]
 /* 080B20BC */ MOVS R7, #2
 /* 080B20BE */ LDRSH R3, [R3, R7]
-/* 080B20C0 */ BL func_080EF224
+/* 080B20C0 */ BL sprite_set_x_y
 /* 080B20C4 */ LDR R0, [R5]
 /* 080B20C6 */ LDR R1, [R6]
 /* 080B20C8 */ ADDS R1, R4

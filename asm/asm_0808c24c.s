@@ -56,7 +56,7 @@ _0808C290:
 /* 0808C2AA */ LDR R3, [R3]
 /* 0808C2AC */ LSLS R3, R3, #8
 /* 0808C2AE */ ASRS R3, R3, #0X10
-/* 0808C2B0 */ BL func_080EF224
+/* 0808C2B0 */ BL sprite_set_x_y
 /* 0808C2B4 */ ADDS R0, R6, #0
 /* 0808C2B6 */ POP {R4, R5, R6}
 /* 0808C2B8 */ POP {R1}

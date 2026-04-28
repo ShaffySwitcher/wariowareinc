@@ -130,7 +130,7 @@ _080C5BD8:
 /* 080C5BE4 */ ASRS R2, R2, #0X10
 /* 080C5BE6 */ LSLS R3, R3, #8
 /* 080C5BE8 */ ASRS R3, R3, #0X10
-/* 080C5BEA */ BL func_080EF224
+/* 080C5BEA */ BL sprite_set_x_y
 /* 080C5BEE */ B _080C5BF8
 
 .balign 4, 0

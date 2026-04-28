@@ -24,7 +24,7 @@ glabel func_080D1A70
 /* 080D1A90 */ LDR R3, [R3, #0X3C]
 /* 080D1A92 */ LSLS R3, R3, #8
 /* 080D1A94 */ ASRS R3, R3, #0X10
-/* 080D1A96 */ BL func_080EF224
+/* 080D1A96 */ BL sprite_set_x_y
 /* 080D1A9A */ LDR R0, [R4]
 /* 080D1A9C */ LDR R1, [R0, #0X38]
 /* 080D1A9E */ MOVS R0, #0X80

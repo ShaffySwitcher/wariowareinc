@@ -49,7 +49,7 @@ glabel func_080D5AC4
 /* 080D5B18 */ ADD R4, SP, #0XC
 /* 080D5B1A */ LDRH R4, [R4, #0X10]
 /* 080D5B1C */ STR R4, [SP]
-/* 080D5B1E */ BL func_080EF1AC
+/* 080D5B1E */ BL sprite_set_x_y_z
 /* 080D5B22 */ LDR R0, [R5]
 /* 080D5B24 */ MOVS R2, #0
 /* 080D5B26 */ LDRSH R1, [R6, R2]

@@ -20,7 +20,7 @@ _080AFBBC:
 /* 080AFBC2 */ LDRSH R1, [R4, R2]
 /* 080AFBC4 */ MOVS R2, #0
 /* 080AFBC6 */ MOVS R3, #0
-/* 080AFBC8 */ BL func_080EF224
+/* 080AFBC8 */ BL sprite_set_x_y
 /* 080AFBCC */ STR R5, [R4, #4]
 /* 080AFBCE */ STR R5, [R4, #8]
 /* 080AFBD0 */ STRB R5, [R4, #0X14]

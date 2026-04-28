@@ -60,7 +60,7 @@ glabel func_0805D3DC
 /* 0805D44C */ ASRS R3, R3, #0X10
 /* 0805D44E */ LDRH R4, [R5, #8]
 /* 0805D450 */ STR R4, [SP]
-/* 0805D452 */ BL func_080EF1AC
+/* 0805D452 */ BL sprite_set_x_y_z
 /* 0805D456 */ MOVS R0, #0
 /* 0805D458 */ B _0805D478
 

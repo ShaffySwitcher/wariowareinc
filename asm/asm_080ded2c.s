@@ -54,7 +54,7 @@ _080DED68:
 /* 080DED7C */ LDR R3, [R3, #0X6C]
 /* 080DED7E */ LSLS R3, R3, #8
 /* 080DED80 */ ASRS R3, R3, #0X10
-/* 080DED82 */ BL func_080EF224
+/* 080DED82 */ BL sprite_set_x_y
 /* 080DED86 */ POP {R0}
 /* 080DED88 */ BX R0
 

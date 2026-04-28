@@ -39,7 +39,7 @@ glabel func_080D5A2C
 /* 080D5A6A */ MOVS R2, #0
 /* 080D5A6C */ LDRSH R1, [R4, R2]
 /* 080D5A6E */ LDR R2, _080D5A90
-/* 080D5A70 */ BL func_080EF2CC
+/* 080D5A70 */ BL sprite_set_z
 /* 080D5A74 */ MOVS R0, #2
 /* 080D5A76 */ STRB R0, [R4, #0X18]
 /* 080D5A78 */ POP {R4}

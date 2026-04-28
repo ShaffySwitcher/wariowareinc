@@ -327,10 +327,26 @@
 @ [0x7F]
 @ [0x80]
 @ [0x81]
-@ [0x82]
-@ [0x83]
-@ [0x84]
-@ [0x85]
+@ [0x82] Sprite Set Playback
+.macro sprite_set_playback sprite, temp1, temp2, temp6
+    beatscript_cmd 0x82, 0, \sprite, ((\temp1) & 0xf) | (((\temp2) & 0xff) << 4) | (((\temp6) & 0xf) << 12)
+.endm
+
+@ [0x83] Sprite Set XYZ
+.macro sprite_set_xyz sprite, x, y, z
+    beatscript_cmd 0x83, 0, ((\sprite & 0xFFFF) | ((\z & 0xFFFF) << 16)), ((\x & 0xFFFF) | ((\y & 0xFFFF) << 16))
+.endm
+
+@ [0x84] Sprite Set XY
+.macro sprite_set_xy sprite, x, y
+    beatscript_cmd 0x84, 0, \sprite, ((\x & 0xFFFF) | ((\y & 0xFFFF) << 16))
+.endm
+
+@ [0x85] Sprite Set Z
+.macro sprite_set_z sprite, z
+    beatscript_cmd 0x85, 0, \sprite, (\z & 0xFFFF)
+.endm
+
 @ [0x86] Sprite Render
 .macro sprite_render sprite, render
     beatscript_cmd 0x86, 0, \sprite, \render
@@ -349,8 +365,16 @@
 @ [0x91]
 @ [0x92]
 @ [0x93]
-@ [0x94]
-@ [0x95]
+@ [0x94] Sprite Add XY
+.macro sprite_add_xy sprite, dx, dy
+    beatscript_cmd 0x94, \sprite, \dx, \dy
+.endm
+
+@ [0x95] Sprite Add Z
+.macro sprite_add_z sprite, dz
+    beatscript_cmd 0x95, \sprite, \dz, 0
+.endm
+
 @ [0x96]
 @ [0x97]
 @ [0x98]

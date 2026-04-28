@@ -65,7 +65,7 @@ _080AF960:
 /* 080AF9AE */ STR R2, [SP]
 /* 080AF9B0 */ ADDS R2, R5, #0
 /* 080AF9B2 */ ADDS R3, R4, #0
-/* 080AF9B4 */ BL func_080EF1AC
+/* 080AF9B4 */ BL sprite_set_x_y_z
 /* 080AF9B8 */ LSLS R5, R5, #8
 /* 080AF9BA */ STR R5, [R6, #4]
 /* 080AF9BC */ LSLS R4, R4, #8

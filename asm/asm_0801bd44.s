@@ -41,7 +41,7 @@ glabel func_0801BD44
 /* 0801BD8A */ LDR R3, [R3]
 /* 0801BD8C */ LSLS R3, R3, #8
 /* 0801BD8E */ ASRS R3, R3, #0X10
-/* 0801BD90 */ BL func_080EF224
+/* 0801BD90 */ BL sprite_set_x_y
 /* 0801BD94 */ MOVS R0, #0X3C
 /* 0801BD96 */ BL func_0800A228
 /* 0801BD9A */ LDR R1, [R5]

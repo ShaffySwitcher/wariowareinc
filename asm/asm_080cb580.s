@@ -142,7 +142,7 @@ _080CB664:
 /* 080CB676 */ LDR R3, [R3, #0X20]
 /* 080CB678 */ LSLS R3, R3, #8
 /* 080CB67A */ ASRS R3, R3, #0X10
-/* 080CB67C */ BL func_080EF224
+/* 080CB67C */ BL sprite_set_x_y
 /* 080CB680 */ B _080CB89E
 
 .balign 4, 0

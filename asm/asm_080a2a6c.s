@@ -153,7 +153,7 @@ _080A2B62:
 /* 080A2B72 */ LDR R3, [R3, #8]
 /* 080A2B74 */ LSLS R3, R3, #8
 /* 080A2B76 */ ASRS R3, R3, #0X10
-/* 080A2B78 */ BL func_080EF224
+/* 080A2B78 */ BL sprite_set_x_y
 /* 080A2B7C */ POP {R4, R5, R6, R7}
 /* 080A2B7E */ POP {R0}
 /* 080A2B80 */ BX R0

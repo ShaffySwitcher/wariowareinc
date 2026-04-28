@@ -1742,7 +1742,7 @@ _0800B378: \n\
 /* 0800B38E */ ASRS R2, R2, #0X10 \n\
 /* 0800B390 */ ASRS R3, R3, #0X10 \n\
 /* 0800B392 */ STR R6, [SP] \n\
-/* 0800B394 */ BL func_080EF1AC \n\
+/* 0800B394 */ BL sprite_set_x_y_z \n\
 /* 0800B398 */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\
@@ -1763,7 +1763,7 @@ _0800B3A4: \n\
 /* 0800B3B2 */ LSLS R2, R5, #0X10 \n\
 /* 0800B3B4 */ ASRS R2, R2, #0X10 \n\
 /* 0800B3B6 */ ASRS R3, R5, #0X10 \n\
-/* 0800B3B8 */ BL func_080EF224 \n\
+/* 0800B3B8 */ BL sprite_set_x_y \n\
 /* 0800B3BC */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\
@@ -1809,7 +1809,7 @@ _0800B3DC: \n\
 /* 0800B40A */ LSLS R3, R3, #0X10 \n\
 /* 0800B40C */ ASRS R3, R3, #0X10 \n\
 /* 0800B40E */ ADDS R1, R5, #0 \n\
-/* 0800B410 */ BL func_080EF224 \n\
+/* 0800B410 */ BL sprite_set_x_y \n\
 /* 0800B414 */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\
@@ -1832,7 +1832,7 @@ _0800B41C: \n\
 /* 0800B438 */ ADDS R1, R5, #0 \n\
 _0800B43A: \n\
 /* 0800B43A */ ADDS R2, R6, #0 \n\
-/* 0800B43C */ BL func_080EF2CC \n\
+/* 0800B43C */ BL sprite_set_z \n\
 /* 0800B440 */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\
@@ -1866,7 +1866,7 @@ _0800B464: \n\
 /* 0800B474 */ LDRSH R2, [R5, R6] \n\
 /* 0800B476 */ MOVS R4, #2 \n\
 /* 0800B478 */ LDRSH R3, [R5, R4] \n\
-/* 0800B47A */ BL func_080EF224 \n\
+/* 0800B47A */ BL sprite_set_x_y \n\
 /* 0800B47E */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\

@@ -36,7 +36,7 @@ glabel func_0809E008
 /* 0809E042 */ LDRSH R2, [R4, R3]
 /* 0809E044 */ MOVS R5, #6
 /* 0809E046 */ LDRSH R3, [R4, R5]
-/* 0809E048 */ BL func_080EF224
+/* 0809E048 */ BL sprite_set_x_y
 /* 0809E04C */ POP {R4, R5}
 /* 0809E04E */ POP {R0}
 /* 0809E050 */ BX R0

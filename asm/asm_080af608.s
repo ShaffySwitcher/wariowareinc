@@ -19,7 +19,7 @@ _080AF616:
 /* 080AF61C */ LDRSH R1, [R4, R2]
 /* 080AF61E */ MOVS R2, #0
 /* 080AF620 */ MOVS R3, #0
-/* 080AF622 */ BL func_080EF224
+/* 080AF622 */ BL sprite_set_x_y
 /* 080AF626 */ STR R6, [R4, #4]
 /* 080AF628 */ STR R6, [R4, #8]
 /* 080AF62A */ STRB R6, [R4, #0XC]

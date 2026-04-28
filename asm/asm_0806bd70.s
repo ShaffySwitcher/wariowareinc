@@ -206,7 +206,7 @@ _0806BE94:
 /* 0806BED4 */ LDR R3, [R6, #4]
 /* 0806BED6 */ LSLS R3, R3, #8
 /* 0806BED8 */ ASRS R3, R3, #0X10
-/* 0806BEDA */ BL func_080EF224
+/* 0806BEDA */ BL sprite_set_x_y
 /* 0806BEDE */ POP {R4, R5, R6}
 /* 0806BEE0 */ POP {R0}
 /* 0806BEE2 */ BX R0

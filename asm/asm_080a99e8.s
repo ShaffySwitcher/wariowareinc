@@ -128,7 +128,7 @@ glabel func_080A99E8
 /* 080A9AE2 */ MOV R1, R8
 /* 080A9AE4 */ ADDS R2, R5, #0
 /* 080A9AE6 */ ADDS R3, R6, #0
-/* 080A9AE8 */ BL func_080EF224
+/* 080A9AE8 */ BL sprite_set_x_y
 /* 080A9AEC */ LDR R0, [R4]
 /* 080A9AEE */ MOV R1, R8
 /* 080A9AF0 */ MOVS R2, #1

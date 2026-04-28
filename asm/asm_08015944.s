@@ -72,7 +72,7 @@ glabel func_08015944
 /* 080159CC */ MOVS R3, #0X64
 /* 080159CE */ RSBS R3, R3, #0
 /* 080159D0 */ ADDS R2, R3, #0
-/* 080159D2 */ BL func_080EF224
+/* 080159D2 */ BL sprite_set_x_y
 /* 080159D6 */ BL func_080155CC
 /* 080159DA */ POP {R3}
 /* 080159DC */ MOV R8, R3

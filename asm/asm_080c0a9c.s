@@ -48,7 +48,7 @@ glabel func_080C0A9C
 /* 080C0AEC */ LDRB R3, [R3]
 /* 080C0AEE */ ADDS R3, R4
 /* 080C0AF0 */ LDRB R3, [R3]
-/* 080C0AF2 */ BL func_080EF224
+/* 080C0AF2 */ BL sprite_set_x_y
 _080C0AF6:
 /* 080C0AF6 */ POP {R4, R5}
 /* 080C0AF8 */ POP {R0}

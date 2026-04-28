@@ -46,7 +46,7 @@ glabel func_0804CE78
 /* 0804CEC8 */ LSLS R4, R4, #0X10
 /* 0804CECA */ LSRS R4, R4, #0X10
 /* 0804CECC */ STR R4, [SP]
-/* 0804CECE */ BL func_080EF1AC
+/* 0804CECE */ BL sprite_set_x_y_z
 /* 0804CED2 */ LDR R0, [R6]
 /* 0804CED4 */ ADDS R0, #0X70
 /* 0804CED6 */ LDR R1, [R5, #8]
@@ -71,7 +71,7 @@ glabel func_0804CE78
 /* 0804CEFE */ LSLS R4, R4, #0X10
 /* 0804CF00 */ LSRS R4, R4, #0X10
 /* 0804CF02 */ STR R4, [SP]
-/* 0804CF04 */ BL func_080EF1AC
+/* 0804CF04 */ BL sprite_set_x_y_z
 /* 0804CF08 */ LDR R4, [R6]
 /* 0804CF0A */ MOVS R1, #0X87
 /* 0804CF0C */ LSLS R1, R1, #2

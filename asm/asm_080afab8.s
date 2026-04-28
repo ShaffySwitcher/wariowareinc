@@ -58,7 +58,7 @@ _080AFADE:
 /* 080AFB1C */ LSRS R4, R4, #0X10
 /* 080AFB1E */ STR R4, [SP]
 /* 080AFB20 */ LDR R3, [SP, #0X2C]
-/* 080AFB22 */ BL func_080EF1AC
+/* 080AFB22 */ BL sprite_set_x_y_z
 /* 080AFB26 */ LDR R0, [R6]
 /* 080AFB28 */ MOVS R4, #0
 /* 080AFB2A */ LDRSH R1, [R7, R4]

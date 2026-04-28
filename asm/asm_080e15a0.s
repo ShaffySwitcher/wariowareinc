@@ -183,7 +183,7 @@ _080E16BE:
 /* 080E16DE */ LDR R3, [R5, #8]
 /* 080E16E0 */ LSLS R3, R3, #8
 /* 080E16E2 */ ASRS R3, R3, #0X10
-/* 080E16E4 */ BL func_080EF224
+/* 080E16E4 */ BL sprite_set_x_y
 /* 080E16E8 */ B _080E1710
 
 .balign 4, 0
@@ -388,7 +388,7 @@ _080E184E:
 /* 080E185C */ LDR R3, [R5, #8]
 /* 080E185E */ LSLS R3, R3, #8
 /* 080E1860 */ ASRS R3, R3, #0X10
-/* 080E1862 */ BL func_080EF224
+/* 080E1862 */ BL sprite_set_x_y
 _080E1866:
 /* 080E1866 */ POP {R4, R5, R6, R7}
 /* 080E1868 */ POP {R0}

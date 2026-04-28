@@ -40,7 +40,7 @@ glabel func_080C3128
 /* 080C3168 */ ASRS R3, R3, #7
 /* 080C316A */ ADDS R3, #0X50
 /* 080C316C */ MOVS R2, #0X78
-/* 080C316E */ BL func_080EF224
+/* 080C316E */ BL sprite_set_x_y
 _080C3172:
 /* 080C3172 */ POP {R0}
 /* 080C3174 */ BX R0

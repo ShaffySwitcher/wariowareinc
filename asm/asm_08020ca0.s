@@ -77,7 +77,7 @@ _08020CDE:
 /* 08020D2A */ MOVS R5, #2
 /* 08020D2C */ LDRSH R3, [R1, R5]
 /* 08020D2E */ ADDS R1, R4, #0
-/* 08020D30 */ BL func_080EF224
+/* 08020D30 */ BL sprite_set_x_y
 /* 08020D34 */ ADDS R0, R7, #0
 /* 08020D36 */ MOVS R1, #0XA
 /* 08020D38 */ BL __divsi3

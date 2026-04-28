@@ -34,7 +34,7 @@ glabel func_0805D14C
 /* 0805D186 */ LDRSH R1, [R1, R2]
 /* 0805D188 */ MOVS R2, #0X80
 /* 0805D18A */ LSLS R2, R2, #7
-/* 0805D18C */ BL func_080EF2CC
+/* 0805D18C */ BL sprite_set_z
 /* 0805D190 */ ADD SP, #4
 /* 0805D192 */ POP {R4, R5}
 /* 0805D194 */ POP {R0}

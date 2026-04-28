@@ -22,7 +22,7 @@ glabel func_0809CB58
 /* 0809CB74 */ LDR R3, [R3, #0X18]
 /* 0809CB76 */ LSLS R3, R3, #8
 /* 0809CB78 */ ASRS R3, R3, #0X10
-/* 0809CB7A */ BL func_080EF224
+/* 0809CB7A */ BL sprite_set_x_y
 /* 0809CB7E */ POP {R4}
 /* 0809CB80 */ POP {R0}
 /* 0809CB82 */ BX R0

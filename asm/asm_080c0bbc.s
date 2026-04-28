@@ -63,7 +63,7 @@ _080C0BF4:
 /* 080C0C26 */ LDRB R3, [R3]
 /* 080C0C28 */ ADDS R3, R4
 /* 080C0C2A */ LDRB R3, [R3]
-/* 080C0C2C */ BL func_080EF224
+/* 080C0C2C */ BL sprite_set_x_y
 _080C0C30:
 /* 080C0C30 */ LDR R0, =gCurrentSceneVariable
 /* 080C0C32 */ LDR R0, [R0]

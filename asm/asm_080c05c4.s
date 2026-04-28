@@ -50,7 +50,7 @@ glabel func_080C05C4
 /* 080C061E */ MOV R0, R8
 /* 080C0620 */ MOV R1, SB
 /* 080C0622 */ ADDS R2, R4, #0
-/* 080C0624 */ BL func_080EF224
+/* 080C0624 */ BL sprite_set_x_y
 /* 080C0628 */ LDR R0, [R7]
 /* 080C062A */ MOV R1, SB
 /* 080C062C */ MOVS R2, #1

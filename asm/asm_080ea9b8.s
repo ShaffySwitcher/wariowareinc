@@ -58,7 +58,7 @@ _080EAA0A:
 /* 080EAA1A */ LDR R3, [R3, #8]
 /* 080EAA1C */ LSLS R3, R3, #8
 /* 080EAA1E */ ASRS R3, R3, #0X10
-/* 080EAA20 */ BL func_080EF224
+/* 080EAA20 */ BL sprite_set_x_y
 /* 080EAA24 */ POP {R4, R5}
 /* 080EAA26 */ POP {R0}
 /* 080EAA28 */ BX R0
