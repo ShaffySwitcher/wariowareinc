@@ -1,0 +1,115 @@
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0800BCC8 \n\
+/* 0800BCC8 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0800BCCA */ MOV R7, SL \n\
+/* 0800BCCC */ MOV R6, SB \n\
+/* 0800BCCE */ MOV R5, R8 \n\
+/* 0800BCD0 */ PUSH {R5, R6, R7} \n\
+/* 0800BCD2 */ ADDS R4, R0, #0 \n\
+/* 0800BCD4 */ LDR R0, _0800BD50 \n\
+/* 0800BCD6 */ LDR R3, [R0] \n\
+/* 0800BCD8 */ MOVS R1, #0XC5 \n\
+/* 0800BCDA */ LSLS R1, R1, #1 \n\
+/* 0800BCDC */ ADDS R2, R3, R1 \n\
+/* 0800BCDE */ MOVS R1, #0 \n\
+/* 0800BCE0 */ LDRSH R2, [R2, R1] \n\
+/* 0800BCE2 */ ADDS R1, R0, #0 \n\
+/* 0800BCE4 */ CMP R4, #0X7F \n\
+/* 0800BCE6 */ BHI _0800BD5C \n\
+/* 0800BCE8 */ CMP R2, #0X7F \n\
+/* 0800BCEA */ BLS _0800BD5C \n\
+/* 0800BCEC */ MOVS R2, #0XC0 \n\
+/* 0800BCEE */ LSLS R2, R2, #1 \n\
+/* 0800BCF0 */ ADDS R0, R3, R2 \n\
+/* 0800BCF2 */ LDR R0, [R0] \n\
+/* 0800BCF4 */ LDR R5, [R0] \n\
+/* 0800BCF6 */ LDRH R7, [R5] \n\
+/* 0800BCF8 */ ADDS R5, #2 \n\
+/* 0800BCFA */ MOVS R6, #0 \n\
+/* 0800BCFC */ CMP R6, R7 \n\
+/* 0800BCFE */ BHS _0800BD7E \n\
+/* 0800BD00 */ LDR R3, _0800BD54 \n\
+/* 0800BD02 */ MOV IP, R3 \n\
+/* 0800BD04 */ MOVS R0, #0XFF \n\
+/* 0800BD06 */ MOV SB, R0 \n\
+/* 0800BD08 */ MOVS R1, #0XFE \n\
+/* 0800BD0A */ LSLS R1, R1, #8 \n\
+/* 0800BD0C */ MOV SL, R1 \n\
+/* 0800BD0E */ MOVS R2, #0XFF \n\
+/* 0800BD10 */ LSLS R2, R2, #8 \n\
+/* 0800BD12 */ MOV R8, R2 \n\
+_0800BD14: \n\
+/* 0800BD14 */ LDRH R3, [R5, #2] \n\
+/* 0800BD16 */ MOV R0, IP \n\
+/* 0800BD18 */ ANDS R0, R3 \n\
+/* 0800BD1A */ LDRH R4, [R5] \n\
+/* 0800BD1C */ LDRB R2, [R5] \n\
+/* 0800BD1E */ ADDS R0, #8 \n\
+/* 0800BD20 */ ADDS R2, #8 \n\
+/* 0800BD22 */ MOV R1, SL \n\
+/* 0800BD24 */ ANDS R1, R3 \n\
+/* 0800BD26 */ MOV R3, IP \n\
+/* 0800BD28 */ ANDS R0, R3 \n\
+/* 0800BD2A */ ORRS R1, R0 \n\
+/* 0800BD2C */ MOV R0, R8 \n\
+/* 0800BD2E */ ANDS R0, R4 \n\
+/* 0800BD30 */ MOV R3, SB \n\
+/* 0800BD32 */ ANDS R2, R3 \n\
+/* 0800BD34 */ ORRS R0, R2 \n\
+/* 0800BD36 */ STRH R0, [R5] \n\
+/* 0800BD38 */ LDR R0, _0800BD58 \n\
+/* 0800BD3A */ ADDS R1, R1, R0 \n\
+/* 0800BD3C */ STRH R1, [R5, #2] \n\
+/* 0800BD3E */ LDRH R0, [R5, #4] \n\
+/* 0800BD40 */ ADDS R0, #0X21 \n\
+/* 0800BD42 */ STRH R0, [R5, #4] \n\
+/* 0800BD44 */ ADDS R5, #6 \n\
+/* 0800BD46 */ ADDS R6, #1 \n\
+/* 0800BD48 */ CMP R6, R7 \n\
+/* 0800BD4A */ BLO _0800BD14 \n\
+/* 0800BD4C */ B _0800BD7E \n\
+/* 0800BD4E */ // padding \n\
+ \n\
+.balign 4, 0 \n\
+_0800BD50: \n\
+/* 0800BD50 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_0800BD54: \n\
+/* 0800BD54 */ .word 0x000001FF \n\
+ \n\
+.balign 4, 0 \n\
+_0800BD58: \n\
+/* 0800BD58 */ .word 0xFFFFC000 \n\
+_0800BD5C: \n\
+/* 0800BD5C */ CMP R4, #0XFF \n\
+/* 0800BD5E */ BHI _0800BD7E \n\
+/* 0800BD60 */ CMP R2, #0XFF \n\
+/* 0800BD62 */ BLS _0800BD7E \n\
+/* 0800BD64 */ LDR R0, =gSpriteHandler \n\
+/* 0800BD66 */ LDR R0, [R0] \n\
+/* 0800BD68 */ LDR R1, [R1] \n\
+/* 0800BD6A */ MOVS R2, #0XC4 \n\
+/* 0800BD6C */ LSLS R2, R2, #1 \n\
+/* 0800BD6E */ ADDS R1, R1, R2 \n\
+/* 0800BD70 */ MOVS R3, #0 \n\
+/* 0800BD72 */ LDRSH R1, [R1, R3] \n\
+/* 0800BD74 */ MOVS R2, #1 \n\
+/* 0800BD76 */ RSBS R2, R2, #0 \n\
+/* 0800BD78 */ MOVS R3, #0 \n\
+/* 0800BD7A */ BL sprite_set_affine_params \n\
+_0800BD7E: \n\
+/* 0800BD7E */ POP {R3, R4, R5} \n\
+/* 0800BD80 */ MOV R8, R3 \n\
+/* 0800BD82 */ MOV SB, R4 \n\
+/* 0800BD84 */ MOV SL, R5 \n\
+/* 0800BD86 */ POP {R4, R5, R6, R7} \n\
+/* 0800BD88 */ POP {R0} \n\
+/* 0800BD8A */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0800BD8C: \n\
+/* 0800BD8C */ @ literal emitted by .ltorg for '=...' \n\
+.ltorg \n\
+.syntax divided");

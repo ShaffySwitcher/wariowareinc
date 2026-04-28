@@ -596,3 +596,92 @@ struct Beatscript * beatscript_rewind_to_loop_begin(struct Beatscript *currentCm
 
 // [https://decomp.me/scratch/faqNB] went about as well as i expected
 #include "asm/gameplay/asm_0800a7d4.s"
+
+
+void func_0800B764(u32 arg0, u32 arg1, struct SongHeader* song) {
+    play_sound(song);
+}
+
+#include "asm/beatscript/asm_0800b770.s"
+
+#include "asm/beatscript/asm_0800b77c.s"
+
+#include "asm/beatscript/asm_0800b7b0.s"
+
+#include "asm/beatscript/asm_0800b7e4.s"
+
+#include "asm/beatscript/asm_0800b828.s"
+
+#include "asm/beatscript/asm_0800ba78.s"
+
+#include "asm/beatscript/asm_0800bb74.s"
+
+#include "asm/beatscript/asm_0800bbb4.s"
+
+#include "asm/beatscript/asm_0800bbcc.s"
+
+#include "asm/beatscript/asm_0800bc0c.s"
+
+#include "asm/beatscript/asm_0800bc10.s"
+
+#include "asm/beatscript/asm_0800bc50.s"
+
+#include "asm/beatscript/asm_0800bc90.s"
+
+#include "asm/beatscript/asm_0800bcac.s"
+
+#include "asm/beatscript/asm_0800bcc8.s"
+
+#include "asm/beatscript/asm_0800bd90.s"
+
+#include "asm/beatscript/asm_0800bec0.s"
+
+#include "asm/beatscript/asm_0800bef4.s"
+
+#include "asm/beatscript/asm_0800bf0c.s"
+
+#include "asm/beatscript/asm_0800bf20.s"
+
+#include "asm/beatscript/asm_0800bf34.s"
+
+#include "asm/beatscript/asm_0800bf44.s"
+
+#include "asm/beatscript/asm_0800bf60.s"
+
+#include "asm/beatscript/asm_0800bf7c.s"
+
+#include "asm/beatscript/asm_0800bfc8.s"
+
+#include "asm/beatscript/asm_0800bfdc.s"
+
+#include "asm/beatscript/asm_0800bff0.s"
+
+#include "asm/beatscript/asm_0800c038.s"
+
+#include "asm/beatscript/asm_0800c080.s"
+
+#include "asm/beatscript/asm_0800c0bc.s"
+
+#include "asm/beatscript/asm_0800c110.s"
+
+#include "asm/beatscript/asm_0800c15c.s"
+
+#include "asm/beatscript/asm_0800c1c0.s"
+
+#include "asm/beatscript/asm_0800c218.s"
+
+#include "asm/beatscript/asm_0800c298.s"
+
+#include "asm/beatscript/asm_0800c2e4.s"
+
+#include "asm/beatscript/asm_0800c344.s"
+
+#include "asm/beatscript/asm_0800c3ac.s"
+
+#include "asm/beatscript/asm_0800c430.s"
+
+#include "asm/beatscript/asm_0800c4e0.s"
+
+#include "asm/beatscript/asm_0800c548.s"
+
+#include "asm/beatscript/asm_0800c5a0.s"

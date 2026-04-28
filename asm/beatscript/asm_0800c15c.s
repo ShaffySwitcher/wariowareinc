@@ -1,0 +1,55 @@
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0800C15C \n\
+/* 0800C15C */ PUSH {R4, R5, R6, LR} \n\
+/* 0800C15E */ MOV R6, SB \n\
+/* 0800C160 */ MOV R5, R8 \n\
+/* 0800C162 */ PUSH {R5, R6} \n\
+/* 0800C164 */ SUB SP, #0XC \n\
+/* 0800C166 */ MOV R8, R0 \n\
+/* 0800C168 */ ADDS R6, R1, #0 \n\
+/* 0800C16A */ ADDS R4, R2, #0 \n\
+/* 0800C16C */ ADDS R5, R3, #0 \n\
+/* 0800C16E */ LSLS R6, R6, #0X10 \n\
+/* 0800C170 */ LSRS R6, R6, #0X10 \n\
+/* 0800C172 */ LSLS R4, R4, #0X10 \n\
+/* 0800C174 */ LSRS R4, R4, #0X10 \n\
+/* 0800C176 */ LSLS R5, R5, #0X10 \n\
+/* 0800C178 */ LSRS R5, R5, #0X10 \n\
+/* 0800C17A */ LSLS R0, R0, #0X10 \n\
+/* 0800C17C */ ASRS R0, R0, #0X10 \n\
+/* 0800C17E */ MOV R8, R0 \n\
+/* 0800C180 */ MOVS R2, #0XA \n\
+/* 0800C182 */ ADD R2, SP \n\
+/* 0800C184 */ MOV SB, R2 \n\
+/* 0800C186 */ ADD R1, SP, #8 \n\
+/* 0800C188 */ BL func_08006F84 \n\
+/* 0800C18C */ ADD R0, SP, #8 \n\
+/* 0800C18E */ MOVS R3, #0 \n\
+/* 0800C190 */ LDRSH R1, [R0, R3] \n\
+/* 0800C192 */ MOV R0, SB \n\
+/* 0800C194 */ MOVS R3, #0 \n\
+/* 0800C196 */ LDRSH R2, [R0, R3] \n\
+/* 0800C198 */ LSLS R6, R6, #0X10 \n\
+/* 0800C19A */ ASRS R6, R6, #0X10 \n\
+/* 0800C19C */ LSLS R4, R4, #0X10 \n\
+/* 0800C19E */ ASRS R4, R4, #0X10 \n\
+/* 0800C1A0 */ STR R4, [SP] \n\
+/* 0800C1A2 */ LSLS R5, R5, #0X10 \n\
+/* 0800C1A4 */ ASRS R5, R5, #0X10 \n\
+/* 0800C1A6 */ STR R5, [SP, #4] \n\
+/* 0800C1A8 */ MOV R0, R8 \n\
+/* 0800C1AA */ ADDS R3, R6, #0 \n\
+/* 0800C1AC */ BL func_0800C110 \n\
+/* 0800C1B0 */ ADD SP, #0XC \n\
+/* 0800C1B2 */ POP {R3, R4} \n\
+/* 0800C1B4 */ MOV R8, R3 \n\
+/* 0800C1B6 */ MOV SB, R4 \n\
+/* 0800C1B8 */ POP {R4, R5, R6} \n\
+/* 0800C1BA */ POP {R1} \n\
+/* 0800C1BC */ BX R1 \n\
+ \n\
+/* 0800C1BE */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
