@@ -34,9 +34,9 @@ script script_scene_main_menu_main
 
 @ Scene
 struct scene_main_menu
-    /* Start  */ .word func_08010C2C, 0
-    /* Paused */ .word func_080114E4, 0
-    /* Update */ .word func_08011444, 0
-    /* Stop   */ .word func_08011764, 0
+    /* Start  */ .word main_menu_scene_start, 0
+    /* Paused */ .word main_menu_scene_paused, 0
+    /* Update */ .word main_menu_scene_update, 0
+    /* Stop   */ .word main_menu_scene_stop, 0
     /* Script */ .word script_scene_main_menu_main
 endstruct

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08010C2C \n\
+thumb_func_start main_menu_scene_start \n\
 /* 08010C2C */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08010C2E */ MOV R7, SL \n\
 /* 08010C30 */ MOV R6, SB \n\

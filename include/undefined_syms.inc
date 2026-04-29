@@ -1792,7 +1792,7 @@
 .set main_save_memory_base, 0x083A3D98;
 .set backup_save_memory_base, 0x083A3D9C;
 .set D_083A3DA0, 0x083A3DA0;
-.set D_083A3DA4, 0x083A3DA4;
+.set sSaveFileMagic, 0x083A3DA4;
 .set D_083A404C, 0x083A404C;
 .set gSineTable, 0x083A4064;
 .set gCosineTable, 0x083A4264;

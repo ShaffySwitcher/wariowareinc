@@ -14,7 +14,7 @@ glabel func_08085418
 /* 08085424 */ LDR R1, _080854F8
 /* 08085426 */ ADD R0, SP, #0X14
 /* 08085428 */ MOVS R2, #0X1B
-/* 0808542A */ BL func_080F6050
+/* 0808542A */ BL memcpy
 /* 0808542E */ MOVS R0, #9
 /* 08085430 */ BL get_random_range
 /* 08085434 */ LSLS R0, R0, #0X10

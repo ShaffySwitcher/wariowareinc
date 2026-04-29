@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08011764 \n\
+thumb_func_start main_menu_scene_stop \n\
 /* 08011764 */ PUSH {LR} \n\
 /* 08011766 */ BL func_08007EAC \n\
 /* 0801176A */ BL func_08003FB8 \n\

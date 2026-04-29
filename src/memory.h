@@ -17,7 +17,7 @@ struct SaveStageFlags {
 };
 
 struct SaveBuffer {
-    u32 unk0; // 0x00
+    char magic[4]; // 0x00 - 0x03
     u32 size; // 0x04
     u32 checksum; // 0x08   
     u32 unkC; // 0x0C
@@ -36,7 +36,7 @@ extern struct SaveBuffer* D_083A3D94;
 extern u8* main_save_memory_base; // 0x0E000000
 extern u8* backup_save_memory_base; // 0x0E004000
 extern u32 D_083A3DA0; // 0x03003860
-extern u8* D_083A3DA4;
+extern char sSaveFileMagic[4]; // "MIW"
 
 // FUNCTIONS
 extern void fill_memory_dma(u8 arg0);
@@ -64,5 +64,5 @@ extern void func_0800079C(u32 bit);
 extern u32 func_080007C0(u32 bit);
 
 // EXTERNS
-extern u32 func_08007B5C(struct SaveBuffer*, u8**, u32);
+extern u32 strncmp(const char*, const char*, u32);
 extern void func_080EE644(u8*, struct SaveBuffer*, u32);

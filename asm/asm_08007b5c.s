@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08007B5C
+glabel strncmp
 .thumb_func
 /* 08007B5C */ PUSH {R4, R5, R6, LR}
 /* 08007B5E */ ADDS R5, R0, #0

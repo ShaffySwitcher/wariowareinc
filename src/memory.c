@@ -26,7 +26,7 @@ void init_save_buffer(void) {
     struct SaveBuffer* save = gSaveBuffer;
     
     dma3_fill(0, save, SAVE_BUFFER_SIZE, 0x20, 0x100);
-    func_080F60B0(save, &D_083A3DA4);
+    strcpy(save->magic, sSaveFileMagic);
     
     save->size = SAVE_BUFFER_SIZE;
     save->checksum = 0;
@@ -35,20 +35,21 @@ void init_save_buffer(void) {
     save->stageFlags[STAGE_INTRODUCTION].unlocked = TRUE;
     
     // set high scores
-    func_080089D8(0x0F, 50000); // sheriff
-    func_080089D8(0x10, 10000);
-    func_080089D8(0x11, 100);
-    func_080089D8(0x12, 10000);
-    func_080089D8(0x13, 10000);
-    func_080089D8(0x14, 50);
-    func_080089D8(0x15, 30);
-    func_080089D8(0x16, 40);
+    func_080089D8(STAGE_SHERIFF, 50000);
+    func_080089D8(STAGE_DR_WARIO, 10000);
+    func_080089D8(STAGE_FLY_SWATTER, 100);
+    func_080089D8(STAGE_PYORO, 10000);
+    func_080089D8(STAGE_PYORO_2, 10000);
+    func_080089D8(STAGE_JUMP_FOREVER, 50);
+    func_080089D8(STAGE_PAPER_PLANE, 30);
+    func_080089D8(STAGE_SKATING_BOARD, 40);
+
     func_080109B4();
 }
 
 u32 validate_save(u8* base) {
     func_080EE644(base, gSaveBuffer, SAVE_BUFFER_SIZE);
-    if (func_08007B5C(gSaveBuffer, &D_083A3DA4, 4) != 0) {
+    if (strncmp(gSaveBuffer->magic, sSaveFileMagic, 4) != 0) {
         return 1;
     }
     if (calc_checksum(gSaveBuffer, SAVE_BUFFER_SIZE) - gSaveBuffer->checksum != gSaveBuffer->checksum) {
