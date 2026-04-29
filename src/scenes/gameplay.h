@@ -207,7 +207,7 @@ extern struct GameplayMicrogameInfo D_083A50E0[];
 extern u32 func_080F4890(u32, u32);
 
 // FUNCTIONS
-extern void func_08008134(void);
+extern void gameplay_scene_run(void);
 extern u32 gameplay_check_collision(struct Vector2*, struct Rect*, struct Vector2*, struct Rect*);
 extern void gameplay_init_scene(void);
 extern void gameplay_stop_scene(void);

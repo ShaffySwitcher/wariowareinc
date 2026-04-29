@@ -6,7 +6,7 @@
 #include "src/lib_sprite.h"
 
 // MACROS
-#define gTitle ((struct TitleSceneData *)gCurrentSceneData)
+#define gTitle CURRENT_SCENE_DATA(struct TitleSceneData)
 
 // TYPES
 struct TitleSceneData {

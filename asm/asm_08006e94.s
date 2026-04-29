@@ -1,10 +1,8 @@
 .section .text
-.thumb
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08006E94
-.thumb_func
+thumb_func_start func_08006E94
 /* 08006E94 */ LDR R2, _08006EAC
 /* 08006E96 */ LDR R1, _08006EB0
 /* 08006E98 */ ADDS R2, R2, R1

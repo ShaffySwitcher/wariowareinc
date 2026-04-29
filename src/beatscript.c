@@ -518,12 +518,12 @@ struct Beatscript * beatscript_skip_to_case_or_endswitch(struct Beatscript *curr
                     continue;
                 }
                 return currentCmd;
-            case BS_CMD_END_SWITCH:
+            case BS_CMD_DEFAULT_CASE:
                 if (depth != 0) {
                     continue;
                 }
                 return currentCmd;
-            case BS_CMD_DEFAULT_CASE:
+            case BS_CMD_END_SWITCH:
                 if (depth == 0) {
                     return currentCmd;
                 }
@@ -545,7 +545,7 @@ struct Beatscript * beatscript_skip_to_default(struct Beatscript *currentCmd) {
             case BS_CMD_SWITCH8:
                 depth++;
                 break;
-            case BS_CMD_DEFAULT_CASE:
+            case BS_CMD_END_SWITCH:
                 if (depth == 0) {
                     return currentCmd;
                 }

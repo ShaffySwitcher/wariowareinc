@@ -8,7 +8,7 @@
 
 asm(".include \"include/gba.inc\"");
 
-void func_08008134(void) {
+void gameplay_scene_run(void) {
     if (D_030035E0 != 0) {
         gameplay_init_scene();
     } else {

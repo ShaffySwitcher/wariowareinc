@@ -236,13 +236,13 @@ func_080003C2: \n\
 /* 080003C2 */ BL title_scene_run \n\
 /* 080003C6 */ B _080003F0 \n\
 _080003C8: \n\
-/* 080003C8 */ BL func_08008134 \n\
+/* 080003C8 */ BL gameplay_scene_run \n\
 /* 080003CC */ B _080003F0 \n\
 _080003CE: \n\
 /* 080003CE */ BL func_0800DE24 \n\
 /* 080003D2 */ B _080003F0 \n\
 func_080003D4: \n\
-/* 080003D4 */ BL func_0801097C \n\
+/* 080003D4 */ BL main_menu_scene_run \n\
 /* 080003D8 */ B _080003F0 \n\
 _080003DA: \n\
 /* 080003DA */ BL func_080166AC \n\

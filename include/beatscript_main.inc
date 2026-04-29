@@ -190,8 +190,8 @@
     beatscript_cmd 0x29, 0, 0, \address
 .endm
 
-@ [0x2A] Default Case
-.macro default
+@ [0x2A] End Switch
+.macro end_switch
     beatscript_cmd 0x2A, 0, 0, 0
 .endm
 
@@ -200,7 +200,11 @@
     beatscript_cmd 0x2B, 0, 0, \value
 .endm
 
-@ [0x2C]
+@ [0x2C] Switch Break
+.macro break
+    beatscript_cmd 0x2C, 0, 0, 0
+.endm
+
 @ [0x2D] Load Graphics
 .macro load_graphics address
     beatscript_cmd 0x2D, 0, \address, 0
@@ -265,8 +269,8 @@
 @ [0x45]
 @ [0x46]
 @ [0x47]
-@ [0x48] End Switch
-.macro end_switch
+@ [0x48] Default Case
+.macro default
     beatscript_cmd 0x48, 0, 0, 0
 .endm
 

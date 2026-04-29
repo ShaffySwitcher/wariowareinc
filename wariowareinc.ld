@@ -410,28 +410,7 @@ SECTIONS {
         build/asm/asm_0801082c.s.o(.text*);
         build/asm/asm_080108d8.s.o(.text*);
         build/asm/asm_08010950.s.o(.text*);
-        build/asm/asm_0801097c.s.o(.text*);
-        build/asm/asm_080109b4.s.o(.text*);
-        build/asm/asm_080109cc.s.o(.text*);
-        build/asm/asm_080109ec.s.o(.text*);
-        build/asm/asm_08010a18.s.o(.text*);
-        build/asm/asm_08010b9c.s.o(.text*);
-        build/asm/asm_08010be0.s.o(.text*);
-        build/asm/asm_08010c2c.s.o(.text*);
-        build/asm/asm_0801124c.s.o(.text*);
-        build/asm/asm_080113bc.s.o(.text*);
-        build/asm/asm_080113ec.s.o(.text*);
-        build/asm/asm_08011444.s.o(.text*);
-        build/asm/asm_080114e4.s.o(.text*);
-        build/asm/asm_08011504.s.o(.text*);
-        build/asm/asm_08011584.s.o(.text*);
-        build/asm/asm_080115dc.s.o(.text*);
-        build/asm/asm_08011614.s.o(.text*);
-        build/asm/asm_08011698.s.o(.text*);
-        build/asm/asm_080116d4.s.o(.text*);
-        build/asm/asm_08011708.s.o(.text*);
-        build/asm/asm_08011730.s.o(.text*);
-        build/asm/asm_08011764.s.o(.text*);
+        build/src/scenes/main_menu.c.o(.text);
         build/asm/asm_08011774.s.o(.text*);
         build/asm/asm_080117a8.s.o(.text*);
         build/asm/asm_080117fc.s.o(.text*);
@@ -621,7 +600,7 @@ SECTIONS {
         build/asm/asm_08016670.s.o(.text*);
         build/asm/asm_0801667c.s.o(.text*);
         build/asm/asm_08016688.s.o(.text*);
-        build/asm/asm_080166ac.s.o(.text*);
+        build/src/scenes/intro.c.o(.text);
         build/asm/asm_080166e4.s.o(.text*);
         build/asm/asm_08016708.s.o(.text*);
         build/asm/asm_08016730.s.o(.text*);
@@ -650,10 +629,10 @@ SECTIONS {
         build/asm/asm_08016d00.s.o(.text*);
         build/asm/asm_08016d3c.s.o(.text*);
         build/asm/asm_08016d7c.s.o(.text*);
-        build/asm/asm_08016d88.s.o(.text*);
+        build/src/scenes/soft_reset.c.o(.text);
         build/asm/asm_08016db8.s.o(.text*);
         build/asm/asm_08016de0.s.o(.text*);
-        build/asm/asm_08016e6c.s.o(.text*);
+        build/src/scenes/language_select.c.o(.text*);
         build/asm/asm_08016e9c.s.o(.text*);
         build/asm/asm_08016ec8.s.o(.text*);
         build/asm/asm_08016ef8.s.o(.text*);
@@ -5531,6 +5510,8 @@ SECTIONS {
         build/data/scenes/title/data.c.o(.data);
         build/data/scenes/title/scene.bs.o(.scene);
         build/bin/data_083A9184.bin.o(.rodata*);
+        build/data/scenes/main_menu/scene.bs.o(.scene);
+        build/bin/data_083AB638.bin.o(.rodata*);
         build/audio/songs.c.o(.data);
     }
 

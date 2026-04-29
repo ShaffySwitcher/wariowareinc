@@ -24,3 +24,4 @@ extern void *gCurrentSceneData;
 
 // Global Scenes
 extern struct SubScene scene_title;
+extern struct SubScene scene_main_menu;
