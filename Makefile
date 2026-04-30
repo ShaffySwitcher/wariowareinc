@@ -157,10 +157,11 @@ $(OUTPUT).gba: $(OUTPUT).elf
 
 $(OUTPUT).elf: $(OFILES) $(BUILD)/$(LD_SCRIPT)
 	$(V)echo "Linking..."
-	$(V)$(LD) $(OFILES) tools/agbcc/lib/libgcc.a tools/agbcc/lib/libc.a \
-	    -T $(BUILD)/$(LD_SCRIPT) -T $(UNDEFINED_SYMS) \
-	    -Wl,--no-warn-rwx-segments,-z,noexecstack,--no-warn-execstack,-Map $(@:.elf=.map) \
-	    -nostartfiles -o $@
+	$(V)echo $(OFILES) > $(BUILD)/objlist.rsp
+	$(V)$(LD) @$(BUILD)/objlist.rsp tools/agbcc/lib/libgcc.a tools/agbcc/lib/libc.a \
+		-T $(BUILD)/$(LD_SCRIPT) -T $(UNDEFINED_SYMS) \
+		-Wl,--no-warn-rwx-segments,-z,noexecstack,--no-warn-execstack,-Map $(@:.elf=.map) \
+		-nostartfiles -o $@
 
 #---------------------------------------------------------------------------------
 # Binary blobs via bin2s
