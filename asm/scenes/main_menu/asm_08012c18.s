@@ -7,7 +7,7 @@ thumb_func_start func_08012C18 \n\
 /* 08012C20 */ CMP R0, #0 \n\
 /* 08012C22 */ BNE _08012C34 \n\
 /* 08012C24 */ LDR R4, _08012C30 \n\
-/* 08012C26 */ BL func_0800A27C \n\
+/* 08012C26 */ BL get_current_language \n\
 /* 08012C2A */ LSLS R0, R0, #2 \n\
 /* 08012C2C */ ADDS R0, R4 \n\
 /* 08012C2E */ B _08012C54 \n\
@@ -25,7 +25,7 @@ _08012C34: \n\
 /* 08012C42 */ BEQ _08012C46 \n\
 /* 08012C44 */ LDR R5, =D_083AA500 \n\
 _08012C46: \n\
-/* 08012C46 */ BL func_0800A27C \n\
+/* 08012C46 */ BL get_current_language \n\
 /* 08012C4A */ LSLS R0, R0, #2 \n\
 /* 08012C4C */ ADDS R0, R5 \n\
 /* 08012C4E */ LDR R1, [R0] \n\

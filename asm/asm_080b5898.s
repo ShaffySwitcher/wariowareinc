@@ -11,7 +11,7 @@ glabel func_080B5898
 /* 080B589E */ MOV R5, R8
 /* 080B58A0 */ PUSH {R5, R6, R7}
 /* 080B58A2 */ SUB SP, #0X24
-/* 080B58A4 */ BL func_0800A27C
+/* 080B58A4 */ BL get_current_language
 /* 080B58A8 */ LSLS R0, R0, #0X18
 /* 080B58AA */ LSRS R6, R0, #0X18
 /* 080B58AC */ BL get_current_mem_id

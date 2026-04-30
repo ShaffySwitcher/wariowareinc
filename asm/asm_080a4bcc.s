@@ -166,7 +166,7 @@ glabel func_080A4BCC
 /* 080A4D2E */ STR R4, [R1, #0X40]
 /* 080A4D30 */ STR R4, [R1, #0X44]
 /* 080A4D32 */ LDR R4, =D_083DC5F0
-/* 080A4D34 */ BL func_0800A27C
+/* 080A4D34 */ BL get_current_language
 /* 080A4D38 */ LSLS R0, R0, #2
 /* 080A4D3A */ ADDS R0, R4
 /* 080A4D3C */ LDR R0, [R0]

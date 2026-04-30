@@ -119,7 +119,7 @@ glabel func_08037B28
 /* 08037C26 */ LSLS R0, R0, #6
 /* 08037C28 */ STR R0, [R1]
 /* 08037C2A */ LDR R4, =D_083CF130
-/* 08037C2C */ BL func_0800A27C
+/* 08037C2C */ BL get_current_language
 /* 08037C30 */ LSLS R0, R0, #2
 /* 08037C32 */ ADDS R0, R4
 /* 08037C34 */ LDR R0, [R0]

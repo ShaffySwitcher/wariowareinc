@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F57A4
+glabel __unpack_f
 /* 080F57A4 */ PUSH {R4, LR}
 /* 080F57A6 */ ADDS R3, R1, #0
 /* 080F57A8 */ LDR R0, [R0]

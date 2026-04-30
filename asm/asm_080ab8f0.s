@@ -78,7 +78,7 @@ glabel func_080AB8F0
 /* 080AB996 */ ADDS R0, R2
 /* 080AB998 */ STR R5, [R0]
 /* 080AB99A */ LDR R4, =D_083DD324
-/* 080AB99C */ BL func_0800A27C
+/* 080AB99C */ BL get_current_language
 /* 080AB9A0 */ LSLS R0, R0, #2
 /* 080AB9A2 */ ADDS R0, R4
 /* 080AB9A4 */ LDR R0, [R0]

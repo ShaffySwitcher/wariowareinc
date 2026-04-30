@@ -1,0 +1,10 @@
+#pragma once
+
+enum GameLanguageEnum {
+    LANGUAGE_JAPANESE,
+    LANGUAGE_ENGLISH,
+    LANGUAGE_FRENCH,
+    LANGUAGE_GERMAN,
+    LANGUAGE_ITALIAN,
+    LANGUAGE_SPANISH
+};

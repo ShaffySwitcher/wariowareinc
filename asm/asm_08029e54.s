@@ -18,7 +18,7 @@ glabel func_08029E54
 /* 08029E68 */ LSLS R1, R2, #2
 /* 08029E6A */ ADDS R1, R2
 /* 08029E6C */ LSLS R1, R1, #4
-/* 08029E6E */ BL func_08007780
+/* 08029E6E */ BL fast_divsi3
 /* 08029E72 */ ADDS R0, #0X78
 /* 08029E74 */ STRH R0, [R5]
 /* 08029E76 */ LDR R1, [R4, #4]
@@ -31,7 +31,7 @@ glabel func_08029E54
 /* 08029E84 */ LSLS R1, R2, #2
 /* 08029E86 */ ADDS R1, R2
 /* 08029E88 */ LSLS R1, R1, #4
-/* 08029E8A */ BL func_08007780
+/* 08029E8A */ BL fast_divsi3
 /* 08029E8E */ MOVS R1, #0X4E
 /* 08029E90 */ SUBS R1, R0
 /* 08029E92 */ STRH R1, [R5, #2]

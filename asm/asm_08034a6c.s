@@ -27,7 +27,7 @@ glabel func_08034A6C
 /* 08034A96 */ MOVS R2, #0X90
 /* 08034A98 */ LSLS R2, R2, #7
 /* 08034A9A */ BL sprite_set_z
-/* 08034A9E */ BL func_0800A27C
+/* 08034A9E */ BL get_current_language
 /* 08034AA2 */ ADDS R3, R0, #0
 /* 08034AA4 */ ADDS R3, #1
 /* 08034AA6 */ LSLS R3, R3, #0X18

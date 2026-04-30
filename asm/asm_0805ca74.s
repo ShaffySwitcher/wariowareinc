@@ -10,7 +10,7 @@ glabel func_0805CA74
 /* 0805CA78 */ MOV R6, SB
 /* 0805CA7A */ MOV R5, R8
 /* 0805CA7C */ PUSH {R5, R6, R7}
-/* 0805CA7E */ BL func_0800A27C
+/* 0805CA7E */ BL get_current_language
 /* 0805CA82 */ MOV SB, R0
 /* 0805CA84 */ LDR R2, _0805CB3C
 /* 0805CA86 */ LDR R6, _0805CB40

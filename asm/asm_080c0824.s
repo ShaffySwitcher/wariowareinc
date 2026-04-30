@@ -150,7 +150,7 @@ glabel func_080C0824
 /* 080C0960 */ BL sprite_set_visible
 /* 080C0964 */ BL func_080C0CD0
 /* 080C0968 */ LDR R4, =D_083E1DE8
-/* 080C096A */ BL func_0800A27C
+/* 080C096A */ BL get_current_language
 /* 080C096E */ LSLS R0, R0, #2
 /* 080C0970 */ ADDS R0, R4
 /* 080C0972 */ LDR R0, [R0]

@@ -210,7 +210,7 @@ glabel func_08046B54
 /* 08046D06 */ MOVS R2, #0
 /* 08046D08 */ BL sprite_id_set_visible
 /* 08046D0C */ LDR R4, =D_083D19B4
-/* 08046D0E */ BL func_0800A27C
+/* 08046D0E */ BL get_current_language
 /* 08046D12 */ LSLS R0, R0, #2
 /* 08046D14 */ ADDS R0, R4
 /* 08046D16 */ LDR R0, [R0]

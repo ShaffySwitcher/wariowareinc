@@ -12,7 +12,7 @@ glabel func_08016EF8
 /* 08016F02 */ LDR R1, =func_08016EC8 + 1
 /* 08016F04 */ MOVS R2, #0
 /* 08016F06 */ MOVS R3, #2
-/* 08016F08 */ BL func_08007DF0
+/* 08016F08 */ BL schedule_function_call
 /* 08016F0C */ POP {R0}
 /* 08016F0E */ BX R0
 

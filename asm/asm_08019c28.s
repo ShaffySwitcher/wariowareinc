@@ -11,7 +11,7 @@ glabel func_08019C28
 /* 08019C2E */ MOV R5, R8
 /* 08019C30 */ PUSH {R5, R6, R7}
 /* 08019C32 */ SUB SP, #0X60
-/* 08019C34 */ BL func_0800A27C
+/* 08019C34 */ BL get_current_language
 /* 08019C38 */ LDR R4, _08019E20
 /* 08019C3A */ LDR R1, [R4]
 /* 08019C3C */ ADDS R1, #0XD4

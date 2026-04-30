@@ -117,7 +117,7 @@ glabel func_080CEBAC
 /* 080CECAA */ BL __divsi3
 /* 080CECAE */ STR R0, [R4]
 /* 080CECB0 */ LDR R4, =D_083E3A10
-/* 080CECB2 */ BL func_0800A27C
+/* 080CECB2 */ BL get_current_language
 /* 080CECB6 */ LSLS R0, R0, #2
 /* 080CECB8 */ ADDS R0, R4
 /* 080CECBA */ LDR R0, [R0]

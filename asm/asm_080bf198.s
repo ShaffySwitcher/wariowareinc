@@ -133,7 +133,7 @@ glabel func_080BF198
 /* 080BF2B4 */ BL __divsi3
 /* 080BF2B8 */ STR R0, [R4, #0X38]
 /* 080BF2BA */ LDR R4, _080BF308
-/* 080BF2BC */ BL func_0800A27C
+/* 080BF2BC */ BL get_current_language
 /* 080BF2C0 */ LSLS R0, R0, #2
 /* 080BF2C2 */ ADDS R0, R4
 /* 080BF2C4 */ LDR R0, [R0]

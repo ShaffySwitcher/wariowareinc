@@ -315,7 +315,7 @@ _0802DB4A:
 /* 0802DD20 */ MOVS R2, #0
 /* 0802DD22 */ BL sprite_set_visible
 /* 0802DD26 */ LDR R4, =D_083CD278
-/* 0802DD28 */ BL func_0800A27C
+/* 0802DD28 */ BL get_current_language
 /* 0802DD2C */ LSLS R0, R0, #2
 /* 0802DD2E */ ADDS R0, R4
 /* 0802DD30 */ LDR R0, [R0]

@@ -221,7 +221,7 @@ _080A263A:
 /* 080A2700 */ ADDS R3, #0X3A
 /* 080A2702 */ BL sprite_set_affine_params
 /* 080A2706 */ LDR R4, =D_083DC210
-/* 080A2708 */ BL func_0800A27C
+/* 080A2708 */ BL get_current_language
 /* 080A270C */ LSLS R0, R0, #2
 /* 080A270E */ ADDS R0, R4
 /* 080A2710 */ LDR R0, [R0]

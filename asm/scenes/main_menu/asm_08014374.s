@@ -2,7 +2,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_08014374 \n\
 /* 08014374 */ PUSH {LR} \n\
-/* 08014376 */ BL func_0800A27C \n\
+/* 08014376 */ BL get_current_language \n\
 /* 0801437A */ LDR R1, _08014398 \n\
 /* 0801437C */ LSLS R0, R0, #2 \n\
 /* 0801437E */ ADDS R0, R1 \n\

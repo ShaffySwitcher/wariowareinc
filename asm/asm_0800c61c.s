@@ -14,7 +14,7 @@ glabel func_0800C61C
 /* 0800C628 */ LDRSH R0, [R0, R1]
 /* 0800C62A */ CMP R0, #0
 /* 0800C62C */ BGE _0800C68E
-/* 0800C62E */ BL func_0800A27C
+/* 0800C62E */ BL get_current_language
 /* 0800C632 */ LDR R1, [R4]
 /* 0800C634 */ LSLS R0, R0, #2
 /* 0800C636 */ ADDS R0, R0, R1

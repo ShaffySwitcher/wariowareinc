@@ -170,7 +170,7 @@ _08031D50:
 /* 08031DC0 */ MOVS R2, #0
 /* 08031DC2 */ BL sprite_create
 /* 08031DC6 */ LDR R4, =D_083CDEA0
-/* 08031DC8 */ BL func_0800A27C
+/* 08031DC8 */ BL get_current_language
 /* 08031DCC */ LSLS R0, R0, #2
 /* 08031DCE */ ADDS R0, R4
 /* 08031DD0 */ LDR R0, [R0]

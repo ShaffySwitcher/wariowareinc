@@ -325,7 +325,7 @@ _080B86CA:
 /* 080B873E */ MOVS R2, #0
 /* 080B8740 */ BL sprite_set_visible
 /* 080B8744 */ LDR R4, =D_083DFBAC
-/* 080B8746 */ BL func_0800A27C
+/* 080B8746 */ BL get_current_language
 /* 080B874A */ LSLS R0, R0, #2
 /* 080B874C */ ADDS R0, R4
 /* 080B874E */ LDR R0, [R0]

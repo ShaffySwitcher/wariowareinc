@@ -204,7 +204,6 @@ extern void* D_083FBB08;
 extern u16 D_0300363C;
 extern struct GameplayData_struct_0* D_03003628;
 extern struct GameplayMicrogameInfo D_083A50E0[];
-extern u32 func_080F4890(u32, u32);
 
 // FUNCTIONS
 extern void gameplay_scene_run(void);

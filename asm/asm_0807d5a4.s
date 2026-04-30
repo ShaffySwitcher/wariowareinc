@@ -281,7 +281,7 @@ _0807D6F0:
 /* 0807D7E4 */ MOVS R2, #0
 /* 0807D7E6 */ BL sprite_create
 /* 0807D7EA */ LDR R4, =D_083D8124
-/* 0807D7EC */ BL func_0800A27C
+/* 0807D7EC */ BL get_current_language
 /* 0807D7F0 */ LSLS R0, R0, #2
 /* 0807D7F2 */ ADDS R0, R4
 /* 0807D7F4 */ LDR R0, [R0]

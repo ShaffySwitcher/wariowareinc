@@ -299,7 +299,7 @@ _0807DFC2:
 /* 0807E114 */ MOVS R2, #1
 /* 0807E116 */ BL sprite_set_enable_updates
 /* 0807E11A */ LDR R4, =D_083D8318
-/* 0807E11C */ BL func_0800A27C
+/* 0807E11C */ BL get_current_language
 /* 0807E120 */ LSLS R0, R0, #2
 /* 0807E122 */ ADDS R0, R4
 /* 0807E124 */ LDR R0, [R0]

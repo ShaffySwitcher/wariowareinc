@@ -108,7 +108,7 @@ _080E06B0:
 /* 080E0710 */ LDR R0, [R5]
 /* 080E0712 */ STRB R1, [R0, #1]
 /* 080E0714 */ LDR R4, _080E07E8
-/* 080E0716 */ BL func_0800A27C
+/* 080E0716 */ BL get_current_language
 /* 080E071A */ LSLS R0, R0, #2
 /* 080E071C */ ADDS R0, R4
 /* 080E071E */ LDR R0, [R0]

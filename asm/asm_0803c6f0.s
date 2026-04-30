@@ -298,7 +298,7 @@ glabel func_0803C6F0
 /* 0803C962 */ MOVS R2, #0
 /* 0803C964 */ BL sprite_create
 /* 0803C968 */ LDR R4, =D_083CFCF0
-/* 0803C96A */ BL func_0800A27C
+/* 0803C96A */ BL get_current_language
 /* 0803C96E */ LSLS R0, R0, #2
 /* 0803C970 */ ADDS R0, R4
 /* 0803C972 */ LDR R0, [R0]

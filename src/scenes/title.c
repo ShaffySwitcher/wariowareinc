@@ -33,7 +33,7 @@ void title_scene_init_gfx2(void) {
 }
 
 void title_scene_init_gfx1(void) {
-    func_08007DF0(get_current_mem_id(), title_scene_init_gfx2, 0, 2);
+    schedule_function_call(get_current_mem_id(), title_scene_init_gfx2, 0, 2);
 }
 
 void title_scene_start(void) {

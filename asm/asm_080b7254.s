@@ -8,7 +8,7 @@ glabel func_080B7254
 /* 080B7254 */ PUSH {R4, R5, R6, R7, LR}
 /* 080B7256 */ MOV R7, R8
 /* 080B7258 */ PUSH {R7}
-/* 080B725A */ BL func_0800A27C
+/* 080B725A */ BL get_current_language
 /* 080B725E */ LDR R2, _080B72A0
 /* 080B7260 */ LDR R1, [R2]
 /* 080B7262 */ ADDS R3, R1, #0

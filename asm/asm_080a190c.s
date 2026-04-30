@@ -7,7 +7,7 @@
 glabel func_080A190C
 /* 080A190C */ PUSH {R4, R5, R6, R7, LR}
 /* 080A190E */ ADDS R6, R0, #0
-/* 080A1910 */ BL func_0800A27C
+/* 080A1910 */ BL get_current_language
 /* 080A1914 */ ADDS R4, R0, #0
 /* 080A1916 */ LDR R0, _080A1964
 /* 080A1918 */ LDR R0, [R0]

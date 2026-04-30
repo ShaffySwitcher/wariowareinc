@@ -14,7 +14,7 @@ glabel func_08026264
 /* 08026270 */ ADDS R5, R1, #0
 /* 08026272 */ LSLS R4, R4, #0X18
 /* 08026274 */ LSRS R4, R4, #0X18
-/* 08026276 */ BL func_0800A27C
+/* 08026276 */ BL get_current_language
 /* 0802627A */ LSLS R0, R0, #2
 /* 0802627C */ ADDS R0, R5
 /* 0802627E */ LDR R1, [R0]

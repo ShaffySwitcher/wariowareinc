@@ -44,7 +44,7 @@ _0800A100: \n\
 /* 0800A10E */ ADDS R2, R2, R3 \n\
 /* 0800A110 */ LDRH R3, [R2] \n\
 /* 0800A112 */ ADDS R2, R4, #0 \n\
-/* 0800A114 */ BL func_08007DF0 \n\
+/* 0800A114 */ BL schedule_function_call \n\
 _0800A118: \n\
 /* 0800A118 */ POP {R4, R5} \n\
 /* 0800A11A */ POP {R0} \n\

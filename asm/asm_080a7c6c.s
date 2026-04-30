@@ -21,7 +21,7 @@ glabel func_080A7C6C
 /* 080A7C8A */ LDR R1, _080A7CB0
 /* 080A7C8C */ MOVS R2, #0
 /* 080A7C8E */ MOVS R3, #0X28
-/* 080A7C90 */ BL func_08007DF0
+/* 080A7C90 */ BL schedule_function_call
 /* 080A7C94 */ LDR R0, _080A7CB4
 /* 080A7C96 */ LDR R1, [R0]
 /* 080A7C98 */ MOVS R0, #0X63

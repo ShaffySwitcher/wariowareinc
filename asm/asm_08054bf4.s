@@ -137,7 +137,7 @@ glabel func_08054BF4
 /* 08054D0A */ BL sprite_create
 /* 08054D0E */ LDR R1, [R6]
 /* 08054D10 */ STRH R0, [R1, #0X12]
-/* 08054D12 */ BL func_0800A27C
+/* 08054D12 */ BL get_current_language
 /* 08054D16 */ LDR R2, _08054D80
 /* 08054D18 */ MOV R3, SL
 /* 08054D1A */ LDR R1, [R3]

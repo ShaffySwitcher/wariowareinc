@@ -588,7 +588,7 @@ _0809D42C:
 /* 0809D446 */ MOVS R2, #0
 /* 0809D448 */ BL sprite_set_visible
 /* 0809D44C */ LDR R4, =D_083DB36C
-/* 0809D44E */ BL func_0800A27C
+/* 0809D44E */ BL get_current_language
 /* 0809D452 */ LSLS R0, R0, #2
 /* 0809D454 */ ADDS R0, R4
 /* 0809D456 */ LDR R0, [R0]

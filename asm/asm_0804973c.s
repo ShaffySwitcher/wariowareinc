@@ -219,7 +219,7 @@ _08049816:
 /* 080498E2 */ MOVS R3, #0X78
 /* 080498E4 */ BL sprite_create
 /* 080498E8 */ LDR R4, =D_083D23C8
-/* 080498EA */ BL func_0800A27C
+/* 080498EA */ BL get_current_language
 /* 080498EE */ LSLS R0, R0, #2
 /* 080498F0 */ ADDS R0, R4
 /* 080498F2 */ LDR R0, [R0]

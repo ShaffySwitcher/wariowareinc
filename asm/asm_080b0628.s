@@ -48,7 +48,7 @@ glabel func_080B0628
 /* 080B068E */ MOVS R2, #0X1F
 /* 080B0690 */ MOVS R3, #3
 /* 080B0692 */ BL func_0800BF44
-/* 080B0696 */ BL func_0800A27C
+/* 080B0696 */ BL get_current_language
 /* 080B069A */ LDR R5, _080B06F8
 /* 080B069C */ LDR R1, [R5]
 /* 080B069E */ MOVS R4, #0
@@ -77,7 +77,7 @@ glabel func_080B0628
 /* 080B06D8 */ STRB R6, [R0]
 /* 080B06DA */ BL func_080B26DC
 /* 080B06DE */ LDR R4, =D_083DD98C
-/* 080B06E0 */ BL func_0800A27C
+/* 080B06E0 */ BL get_current_language
 /* 080B06E4 */ LSLS R0, R0, #2
 /* 080B06E6 */ ADDS R0, R4
 /* 080B06E8 */ LDR R0, [R0]

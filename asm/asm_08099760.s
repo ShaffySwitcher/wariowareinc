@@ -284,7 +284,7 @@ _08099830:
 /* 080999AC */ MOVS R2, #0
 /* 080999AE */ BL sprite_set_visible
 /* 080999B2 */ LDR R4, =D_083DAB1C
-/* 080999B4 */ BL func_0800A27C
+/* 080999B4 */ BL get_current_language
 /* 080999B8 */ LSLS R0, R0, #2
 /* 080999BA */ ADDS R0, R4
 /* 080999BC */ LDR R0, [R0]

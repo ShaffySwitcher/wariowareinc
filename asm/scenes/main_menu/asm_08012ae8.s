@@ -20,7 +20,7 @@ _08012AF6: \n\
 /* 08012B06 */ LDRSH R5, [R0, R1] \n\
 /* 08012B08 */ ADDS R0, R6, #0 \n\
 /* 08012B0A */ MOVS R1, #0XA \n\
-/* 08012B0C */ BL func_080F4890 \n\
+/* 08012B0C */ BL __umodsi3 \n\
 /* 08012B10 */ ADDS R2, R0, #0 \n\
 /* 08012B12 */ LSLS R2, R2, #0X18 \n\
 /* 08012B14 */ ASRS R2, R2, #0X18 \n\

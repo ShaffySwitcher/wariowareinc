@@ -11,7 +11,7 @@ glabel func_080DA924
 /* 080DA92A */ MOV R5, R8
 /* 080DA92C */ PUSH {R5, R6, R7}
 /* 080DA92E */ SUB SP, #0X14
-/* 080DA930 */ BL func_0800A27C
+/* 080DA930 */ BL get_current_language
 /* 080DA934 */ LSLS R0, R0, #0X18
 /* 080DA936 */ LSRS R0, R0, #0X18
 /* 080DA938 */ MOV SL, R0

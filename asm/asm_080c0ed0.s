@@ -181,7 +181,7 @@ _080C0F44:
 /* 080C104A */ MOVS R2, #0
 /* 080C104C */ BL sprite_set_visible
 /* 080C1050 */ LDR R4, =D_083E1EF0
-/* 080C1052 */ BL func_0800A27C
+/* 080C1052 */ BL get_current_language
 /* 080C1056 */ LSLS R0, R0, #2
 /* 080C1058 */ ADDS R0, R4
 /* 080C105A */ LDR R0, [R0]

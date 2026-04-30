@@ -342,7 +342,7 @@ _08028B7E:
 /* 08028BCA */ MOVS R2, #0
 /* 08028BCC */ BL sprite_id_set_visible
 /* 08028BD0 */ LDR R4, _08028C34
-/* 08028BD2 */ BL func_0800A27C
+/* 08028BD2 */ BL get_current_language
 /* 08028BD6 */ LSLS R0, R0, #2
 /* 08028BD8 */ ADDS R0, R4
 /* 08028BDA */ LDR R2, [R6]

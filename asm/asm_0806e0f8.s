@@ -230,7 +230,7 @@ _0806E1AC:
 /* 0806E2D0 */ BL __divsi3
 /* 0806E2D4 */ STR R0, [R4, #0X14]
 /* 0806E2D6 */ LDR R4, =D_083D64C4
-/* 0806E2D8 */ BL func_0800A27C
+/* 0806E2D8 */ BL get_current_language
 /* 0806E2DC */ LSLS R0, R0, #2
 /* 0806E2DE */ ADDS R0, R4
 /* 0806E2E0 */ LDR R0, [R0]

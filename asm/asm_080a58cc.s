@@ -269,7 +269,7 @@ _080A5A60:
 /* 080A5ADE */ MOVS R2, #0
 /* 080A5AE0 */ BL sprite_set_visible
 /* 080A5AE4 */ LDR R4, =D_083DCAC4
-/* 080A5AE6 */ BL func_0800A27C
+/* 080A5AE6 */ BL get_current_language
 /* 080A5AEA */ LSLS R0, R0, #2
 /* 080A5AEC */ ADDS R0, R4
 /* 080A5AEE */ LDR R0, [R0]

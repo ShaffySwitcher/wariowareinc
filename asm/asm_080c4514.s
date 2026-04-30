@@ -65,7 +65,7 @@ glabel func_080C4514
 /* 080C45AE */ BL func_080C69CC
 /* 080C45B2 */ BL func_080C6674
 /* 080C45B6 */ LDR R4, =D_083E26B4
-/* 080C45B8 */ BL func_0800A27C
+/* 080C45B8 */ BL get_current_language
 /* 080C45BC */ LSLS R0, R0, #2
 /* 080C45BE */ ADDS R0, R4
 /* 080C45C0 */ LDR R0, [R0]

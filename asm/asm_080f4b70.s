@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F4B70
+glabel _fpadd_parts
 /* 080F4B70 */ PUSH {R4, R5, R6, R7, LR}
 /* 080F4B72 */ MOV R7, SL
 /* 080F4B74 */ MOV R6, SB

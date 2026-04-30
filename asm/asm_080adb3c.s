@@ -600,7 +600,7 @@ _080ADF7C:
 /* 080ADFC6 */ MOVS R2, #0
 /* 080ADFC8 */ BL sprite_set_visible
 /* 080ADFCC */ LDR R4, =D_083DD72C
-/* 080ADFCE */ BL func_0800A27C
+/* 080ADFCE */ BL get_current_language
 /* 080ADFD2 */ LSLS R0, R0, #2
 /* 080ADFD4 */ ADDS R0, R4
 /* 080ADFD6 */ LDR R0, [R0]

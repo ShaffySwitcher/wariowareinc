@@ -160,7 +160,7 @@ _08010CD0: \n\
 /* 08010D72 */ LDR R3, [R5] \n\
 /* 08010D74 */ BL func_08005538 \n\
 /* 08010D78 */ LDR R4, _08010F28 \n\
-/* 08010D7A */ BL func_0800A27C \n\
+/* 08010D7A */ BL get_current_language \n\
 /* 08010D7E */ LSLS R0, R0, #2 \n\
 /* 08010D80 */ ADDS R0, R4 \n\
 /* 08010D82 */ LDR R3, [R6] \n\
@@ -175,7 +175,7 @@ _08010CD0: \n\
 /* 08010D94 */ MOVS R3, #1 \n\
 /* 08010D96 */ BL sprite_set_anim \n\
 /* 08010D9A */ LDR R4, _08010F2C \n\
-/* 08010D9C */ BL func_0800A27C \n\
+/* 08010D9C */ BL get_current_language \n\
 /* 08010DA0 */ LSLS R0, R0, #2 \n\
 /* 08010DA2 */ ADDS R0, R4 \n\
 /* 08010DA4 */ LDR R3, [R6] \n\
@@ -190,7 +190,7 @@ _08010CD0: \n\
 /* 08010DB6 */ MOVS R3, #1 \n\
 /* 08010DB8 */ BL sprite_set_anim \n\
 /* 08010DBC */ LDR R4, _08010F30 \n\
-/* 08010DBE */ BL func_0800A27C \n\
+/* 08010DBE */ BL get_current_language \n\
 /* 08010DC2 */ LSLS R0, R0, #2 \n\
 /* 08010DC4 */ ADDS R0, R4 \n\
 /* 08010DC6 */ LDR R3, [R6] \n\
@@ -205,7 +205,7 @@ _08010CD0: \n\
 /* 08010DD8 */ MOVS R3, #1 \n\
 /* 08010DDA */ BL sprite_set_anim \n\
 /* 08010DDE */ LDR R4, _08010F34 \n\
-/* 08010DE0 */ BL func_0800A27C \n\
+/* 08010DE0 */ BL get_current_language \n\
 /* 08010DE4 */ LSLS R0, R0, #2 \n\
 /* 08010DE6 */ ADDS R0, R4 \n\
 /* 08010DE8 */ LDR R3, [R6] \n\

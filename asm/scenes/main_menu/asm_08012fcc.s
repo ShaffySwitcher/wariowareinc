@@ -18,7 +18,7 @@ thumb_func_start func_08012FCC \n\
 /* 08012FE8 */ BL save_is_stage_unlocked \n\
 /* 08012FEC */ CMP R0, #0 \n\
 /* 08012FEE */ BEQ _0801300C \n\
-/* 08012FF0 */ BL func_0800A27C \n\
+/* 08012FF0 */ BL get_current_language \n\
 /* 08012FF4 */ LDR R1, _08013008 \n\
 /* 08012FF6 */ LSLS R0, R0, #2 \n\
 /* 08012FF8 */ ADDS R0, R1 \n\

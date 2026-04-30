@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08007780
+glabel fast_divsi3
 .thumb_func
 /* 08007780 */ PUSH {R4, LR}
 /* 08007782 */ ADDS R3, R0, #0

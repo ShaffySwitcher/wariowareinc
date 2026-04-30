@@ -50,7 +50,7 @@ _08014226: \n\
 /* 0801426C */ LSLS R0, R0, #1 \n\
 /* 0801426E */ ADDS R4, R0 \n\
 /* 08014270 */ LDR R5, =D_083AB1A4 \n\
-/* 08014272 */ BL func_0800A27C \n\
+/* 08014272 */ BL get_current_language \n\
 /* 08014276 */ LSLS R0, R0, #2 \n\
 /* 08014278 */ ADDS R0, R5 \n\
 /* 0801427A */ LDR R2, [R0] \n\

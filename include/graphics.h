@@ -113,7 +113,14 @@ struct GraphicsBuffer {
     u16 bgPalette[16][16]; // 0x54 size:0x200
     u16 objPalette[16][16]; // 0x254 size:0x200
     u8 pad454[0x400]; // 0x454 size:0x400
-    u8 unk854; // 0x854
+    u8 unk854_1 : 1; // 0x854
+    u8 unk854_2 : 1; // 0x854
+    u8 unk854_3 : 1; // 0x854
+    u8 unk854_4 : 1; // 0x854
+    u8 unk854_5 : 1; // 0x854
+    u8 unk854_6 : 1; // 0x854
+    u8 unk854_7 : 1; // 0x854
+    u8 unk854_8 : 1; // 0x854
 } gGraphicsBuffer;
 
 #define BG_PALETTE_BUFFER(p)    ((u16 *)gGraphicsBuffer.bgPalette)  + ((u32)((p) * 16))

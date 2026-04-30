@@ -31,7 +31,7 @@ _08024EBE:
 /* 08024EC6 */ ADDS R4, #1
 /* 08024EC8 */ CMP R4, #4
 /* 08024ECA */ BLS _08024EBE
-/* 08024ECC */ BL func_0800A27C
+/* 08024ECC */ BL get_current_language
 /* 08024ED0 */ LDR R1, [R6, #8]
 /* 08024ED2 */ LSLS R0, R0, #2
 /* 08024ED4 */ ADDS R0, R1

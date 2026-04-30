@@ -398,7 +398,7 @@ glabel func_080373B8
 /* 08037718 */ LDR R4, [R6]
 /* 0803771A */ ADDS R4, #0X10
 /* 0803771C */ LDR R5, =D_083CEF78
-/* 0803771E */ BL func_0800A27C
+/* 0803771E */ BL get_current_language
 /* 08037722 */ LSLS R0, R0, #2
 /* 08037724 */ ADDS R0, R5
 /* 08037726 */ LDR R1, [R0]

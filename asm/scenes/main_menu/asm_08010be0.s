@@ -9,7 +9,7 @@ thumb_func_start func_08010BE0 \n\
 /* 08010BEC */ LDR R1, =func_08010B9C + 1 \n\
 /* 08010BEE */ MOVS R2, #0 \n\
 /* 08010BF0 */ MOVS R3, #2 \n\
-/* 08010BF2 */ BL func_08007DF0 \n\
+/* 08010BF2 */ BL schedule_function_call \n\
 /* 08010BF6 */ MOVS R4, #0 \n\
 /* 08010BF8 */ STR R4, [SP] \n\
 /* 08010BFA */ MOVS R0, #9 \n\

@@ -78,7 +78,7 @@ thumb_func_start func_080140C0 \n\
 /* 08014160 */ LSLS R0, R0, #1 \n\
 /* 08014162 */ ADDS R5, R0 \n\
 /* 08014164 */ LDR R6, _080141C0 \n\
-/* 08014166 */ BL func_0800A27C \n\
+/* 08014166 */ BL get_current_language \n\
 /* 0801416A */ LSLS R0, R0, #2 \n\
 /* 0801416C */ ADDS R0, R6 \n\
 /* 0801416E */ LDR R3, [R0] \n\

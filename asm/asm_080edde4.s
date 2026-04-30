@@ -11,7 +11,7 @@ glabel func_080EDDE4
 /* 080EDDEA */ MOV R5, R8
 /* 080EDDEC */ PUSH {R5, R6, R7}
 /* 080EDDEE */ SUB SP, #0X14
-/* 080EDDF0 */ BL func_0800A27C
+/* 080EDDF0 */ BL get_current_language
 /* 080EDDF4 */ ADDS R6, R0, #0
 /* 080EDDF6 */ LSLS R6, R6, #0X10
 /* 080EDDF8 */ LSRS R6, R6, #0X10

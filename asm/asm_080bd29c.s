@@ -9,7 +9,7 @@ glabel func_080BD29C
 /* 080BD29E */ MOV R7, R8
 /* 080BD2A0 */ PUSH {R7}
 /* 080BD2A2 */ SUB SP, #0XC
-/* 080BD2A4 */ BL func_0800A27C
+/* 080BD2A4 */ BL get_current_language
 /* 080BD2A8 */ LSLS R0, R0, #0X18
 /* 080BD2AA */ LSRS R5, R0, #0X18
 /* 080BD2AC */ LDR R0, _080BD2C8

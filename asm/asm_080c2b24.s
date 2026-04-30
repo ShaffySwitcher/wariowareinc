@@ -49,7 +49,7 @@ glabel func_080C2B24
 /* 080C2B90 */ LSLS R0, R0, #1
 /* 080C2B92 */ STR R0, [R1, #0X40]
 /* 080C2B94 */ LDR R4, =D_083E22CC
-/* 080C2B96 */ BL func_0800A27C
+/* 080C2B96 */ BL get_current_language
 /* 080C2B9A */ LSLS R0, R0, #2
 /* 080C2B9C */ ADDS R0, R4
 /* 080C2B9E */ LDR R0, [R0]

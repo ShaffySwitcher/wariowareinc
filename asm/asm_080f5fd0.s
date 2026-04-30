@@ -10,7 +10,7 @@ glabel func_080F5FD0
 /* 080F5FD4 */ STR R0, [SP, #0X10]
 /* 080F5FD6 */ ADD R0, SP, #0X10
 /* 080F5FD8 */ MOV R1, SP
-/* 080F5FDA */ BL func_080F57A4
+/* 080F5FDA */ BL __unpack_f
 /* 080F5FDE */ MOVS R1, #0
 /* 080F5FE0 */ LDR R0, [SP, #4]
 /* 080F5FE2 */ CMP R0, #0

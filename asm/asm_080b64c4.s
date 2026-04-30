@@ -7,7 +7,7 @@
 glabel func_080B64C4
 /* 080B64C4 */ PUSH {R4, R5, R6, R7, LR}
 /* 080B64C6 */ SUB SP, #0XC
-/* 080B64C8 */ BL func_0800A27C
+/* 080B64C8 */ BL get_current_language
 /* 080B64CC */ LSLS R0, R0, #0X18
 /* 080B64CE */ LSRS R5, R0, #0X18
 /* 080B64D0 */ LDR R4, _080B64F0

@@ -177,6 +177,7 @@ extern struct SpriteHandler* gSpriteHandler;
 extern s16 D_083EBA74[];
 
 // FUNCTIONS
+extern void sprite_set_anim_cel(struct SpriteHandler *, s16 id, s8 cel);
 extern void sprite_set_visible(struct SpriteHandler *, s16, u16);
 extern void sprite_attr_set(struct SpriteHandler *, s16, u32);
 extern void sprite_attr_orr(struct SpriteHandler *, s16, u32);

@@ -160,7 +160,7 @@ glabel func_0803F330
 /* 0803F482 */ ADDS R1, #0X60
 /* 0803F484 */ STRH R0, [R1]
 /* 0803F486 */ LDR R4, =D_083D0344
-/* 0803F488 */ BL func_0800A27C
+/* 0803F488 */ BL get_current_language
 /* 0803F48C */ LSLS R0, R0, #2
 /* 0803F48E */ ADDS R0, R4
 /* 0803F490 */ LDR R0, [R0]

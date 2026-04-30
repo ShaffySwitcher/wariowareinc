@@ -303,7 +303,7 @@ _0805DEAE:
 /* 0805E000 */ BL sprite_set_visible
 _0805E004:
 /* 0805E004 */ LDR R4, =D_083D4E90
-/* 0805E006 */ BL func_0800A27C
+/* 0805E006 */ BL get_current_language
 /* 0805E00A */ LSLS R0, R0, #2
 /* 0805E00C */ ADDS R0, R4
 /* 0805E00E */ LDR R0, [R0]

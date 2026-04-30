@@ -93,7 +93,7 @@ glabel func_08033D3C
 /* 08033E02 */ MOV R0, R8
 /* 08033E04 */ STRB R0, [R1]
 /* 08033E06 */ LDR R4, =D_083CE7AC
-/* 08033E08 */ BL func_0800A27C
+/* 08033E08 */ BL get_current_language
 /* 08033E0C */ LSLS R0, R0, #2
 /* 08033E0E */ ADDS R0, R4
 /* 08033E10 */ LDR R0, [R0]

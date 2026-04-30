@@ -25,7 +25,7 @@ _080AA17A:
 /* 080AA182 */ LDR R1, =func_080A9F9C + 1
 /* 080AA184 */ ADDS R2, R5, #0
 /* 080AA186 */ ADDS R3, R4, #0
-/* 080AA188 */ BL func_08007DF0
+/* 080AA188 */ BL schedule_function_call
 /* 080AA18C */ ADDS R4, R6
 /* 080AA18E */ ADDS R5, #1
 /* 080AA190 */ CMP R5, #9

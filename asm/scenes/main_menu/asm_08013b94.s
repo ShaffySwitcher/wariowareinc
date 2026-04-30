@@ -23,7 +23,7 @@ thumb_func_start func_08013B94 \n\
 _08013BBC: \n\
 /* 08013BBC */ .word D_03003BBC \n\
 _08013BC0: \n\
-/* 08013BC0 */ BL func_0800A27C \n\
+/* 08013BC0 */ BL get_current_language \n\
 /* 08013BC4 */ LDR R1, _08013C44 \n\
 /* 08013BC6 */ LSLS R0, R0, #2 \n\
 /* 08013BC8 */ ADDS R0, R1 \n\
@@ -65,7 +65,7 @@ _08013BC0: \n\
 /* 08013C1E */ MOV R1, SP \n\
 /* 08013C20 */ BL func_0800D224 \n\
 /* 08013C24 */ LDR R4, =D_083A6420 \n\
-/* 08013C26 */ BL func_0800A27C \n\
+/* 08013C26 */ BL get_current_language \n\
 /* 08013C2A */ LSLS R0, R0, #2 \n\
 /* 08013C2C */ ADDS R0, R4 \n\
 /* 08013C2E */ LDR R1, [R0] \n\

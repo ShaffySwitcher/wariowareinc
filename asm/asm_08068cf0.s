@@ -221,7 +221,7 @@ glabel func_08068CF0
 /* 08068EC6 */ LDR R1, [R6]
 /* 08068EC8 */ STRH R0, [R1, #0X12]
 /* 08068ECA */ LDR R4, =D_083D5CD4
-/* 08068ECC */ BL func_0800A27C
+/* 08068ECC */ BL get_current_language
 /* 08068ED0 */ LSLS R0, R0, #2
 /* 08068ED2 */ ADDS R0, R4
 /* 08068ED4 */ LDR R0, [R0]

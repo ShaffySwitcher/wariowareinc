@@ -210,7 +210,7 @@ glabel func_0806F3AC
 /* 0806F55A */ ADDS R0, R2, R1
 /* 0806F55C */ STR R4, [R0]
 /* 0806F55E */ LDR R4, =D_083D68BC
-/* 0806F560 */ BL func_0800A27C
+/* 0806F560 */ BL get_current_language
 /* 0806F564 */ LSLS R0, R0, #2
 /* 0806F566 */ ADDS R0, R4
 /* 0806F568 */ LDR R0, [R0]

@@ -302,7 +302,7 @@ glabel func_08044504
 /* 08044788 */ STR R0, [R4]
 /* 0804478A */ BL func_080448C4
 /* 0804478E */ LDR R4, =D_083D0F28
-/* 08044790 */ BL func_0800A27C
+/* 08044790 */ BL get_current_language
 /* 08044794 */ LSLS R0, R0, #2
 /* 08044796 */ ADDS R0, R4
 /* 08044798 */ LDR R0, [R0]

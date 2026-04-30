@@ -20,7 +20,7 @@ glabel func_080F5658
 _080F5672:
 /* 080F5672 */ STR R1, [SP, #4]
 /* 080F5674 */ MOV R0, SP
-/* 080F5676 */ BL func_080F4950
+/* 080F5676 */ BL __pack_d
 /* 080F567A */ ADD SP, #0X1C
 /* 080F567C */ POP {PC}
 

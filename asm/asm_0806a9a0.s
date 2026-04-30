@@ -433,7 +433,7 @@ _0806ACD0:
 /* 0806AD1A */ LSLS R0, R0, #4
 /* 0806AD1C */ BL __divsi3
 /* 0806AD20 */ STR R0, [R4]
-/* 0806AD22 */ BL func_0800A27C
+/* 0806AD22 */ BL get_current_language
 /* 0806AD26 */ LSLS R0, R0, #2
 /* 0806AD28 */ ADD R0, R8
 /* 0806AD2A */ LDR R0, [R0]

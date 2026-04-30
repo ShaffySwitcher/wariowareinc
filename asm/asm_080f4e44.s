@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F4E44
+glabel __muldf3
 /* 080F4E44 */ PUSH {R4, R5, R6, R7, LR}
 /* 080F4E46 */ MOV R7, SL
 /* 080F4E48 */ MOV R6, SB
@@ -141,28 +141,28 @@ _080F4F10:
 /* 080F4F2E */ ADDS R0, R4, #0
 /* 080F4F30 */ ADDS R3, R7, #0
 /* 080F4F32 */ ADDS R2, R6, #0
-/* 080F4F34 */ BL func_080F43D0
+/* 080F4F34 */ BL __muldi3
 /* 080F4F38 */ STR R0, [SP, #0X5C]
 /* 080F4F3A */ STR R1, [SP, #0X60]
 /* 080F4F3C */ LDR R0, [SP, #0X54]
 /* 080F4F3E */ LDR R1, [SP, #0X58]
 /* 080F4F40 */ ADDS R3, R7, #0
 /* 080F4F42 */ ADDS R2, R6, #0
-/* 080F4F44 */ BL func_080F43D0
+/* 080F4F44 */ BL __muldi3
 /* 080F4F48 */ ADDS R7, R1, #0
 /* 080F4F4A */ ADDS R6, R0, #0
 /* 080F4F4C */ ADDS R1, R5, #0
 /* 080F4F4E */ ADDS R0, R4, #0
 /* 080F4F50 */ LDR R2, [SP, #0X4C]
 /* 080F4F52 */ LDR R3, [SP, #0X50]
-/* 080F4F54 */ BL func_080F43D0
+/* 080F4F54 */ BL __muldi3
 /* 080F4F58 */ ADDS R5, R1, #0
 /* 080F4F5A */ ADDS R4, R0, #0
 /* 080F4F5C */ LDR R0, [SP, #0X54]
 /* 080F4F5E */ LDR R1, [SP, #0X58]
 /* 080F4F60 */ LDR R2, [SP, #0X4C]
 /* 080F4F62 */ LDR R3, [SP, #0X50]
-/* 080F4F64 */ BL func_080F43D0
+/* 080F4F64 */ BL __muldi3
 /* 080F4F68 */ STR R0, [SP, #0X64]
 /* 080F4F6A */ STR R1, [SP, #0X68]
 /* 080F4F6C */ MOVS R1, #0
@@ -353,7 +353,7 @@ _080F50BE:
 /* 080F50C6 */ STR R0, [R2]
 /* 080F50C8 */ ADD R0, SP, #0X28
 _080F50CA:
-/* 080F50CA */ BL func_080F4950
+/* 080F50CA */ BL __pack_d
 /* 080F50CE */ ADD SP, #0X74
 /* 080F50D0 */ POP {R3, R4, R5}
 /* 080F50D2 */ MOV R8, R3

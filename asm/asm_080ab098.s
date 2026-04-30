@@ -487,7 +487,7 @@ _080AB360:
 /* 080AB45A */ MOVS R2, #0
 /* 080AB45C */ BL sprite_set_visible
 /* 080AB460 */ LDR R4, =D_083DD1F8
-/* 080AB462 */ BL func_0800A27C
+/* 080AB462 */ BL get_current_language
 /* 080AB466 */ LSLS R0, R0, #2
 /* 080AB468 */ ADDS R0, R4
 /* 080AB46A */ LDR R0, [R0]

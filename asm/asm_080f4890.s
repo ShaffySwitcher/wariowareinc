@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F4890
+glabel __umodsi3
 /* 080F4890 */ CMP R1, #0
 /* 080F4892 */ BEQ _080F4946
 /* 080F4894 */ MOVS R3, #1

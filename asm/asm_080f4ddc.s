@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F4DDC
+glabel __adddf3
 /* 080F4DDC */ PUSH {R4, LR}
 /* 080F4DDE */ SUB SP, #0X4C
 /* 080F4DE0 */ STR R0, [SP, #0X3C]
@@ -21,8 +21,8 @@ glabel func_080F4DDC
 /* 080F4DFA */ ADD R2, SP, #0X28
 /* 080F4DFC */ MOV R0, SP
 /* 080F4DFE */ ADDS R1, R4, #0
-/* 080F4E00 */ BL func_080F4B70
-/* 080F4E04 */ BL func_080F4950
+/* 080F4E00 */ BL _fpadd_parts
+/* 080F4E04 */ BL __pack_d
 /* 080F4E08 */ ADD SP, #0X4C
 /* 080F4E0A */ POP {R4, PC}
 .ltorg

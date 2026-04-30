@@ -70,7 +70,7 @@ glabel func_080E6A50
 /* 080E6AE8 */ STRB R4, [R0]
 /* 080E6AEA */ LDR R0, [R5]
 /* 080E6AEC */ STRB R4, [R0, #8]
-/* 080E6AEE */ BL func_0800A27C
+/* 080E6AEE */ BL get_current_language
 /* 080E6AF2 */ LSLS R0, R0, #0X18
 /* 080E6AF4 */ LSRS R0, R0, #0X18
 /* 080E6AF6 */ STR R0, [SP, #0X20]
@@ -386,7 +386,7 @@ _080E6D1E:
 /* 080E6D84 */ ADD R5, SP, #0X18
 /* 080E6D86 */ LDRH R0, [R4]
 /* 080E6D88 */ MOVS R1, #0XA
-/* 080E6D8A */ BL func_080F4890
+/* 080E6D8A */ BL __umodsi3
 /* 080E6D8E */ STRH R0, [R5, #4]
 /* 080E6D90 */ MOVS R7, #0
 /* 080E6D92 */ MOVS R6, #0

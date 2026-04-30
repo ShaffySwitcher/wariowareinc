@@ -68,7 +68,7 @@ _08012A70: \n\
 /* 08012A80 */ LDRSH R4, [R0, R1] \n\
 /* 08012A82 */ ADDS R0, R7, #0 \n\
 /* 08012A84 */ MOVS R1, #0XA \n\
-/* 08012A86 */ BL func_080F4890 \n\
+/* 08012A86 */ BL __umodsi3 \n\
 /* 08012A8A */ ADDS R2, R0, #0 \n\
 /* 08012A8C */ LSLS R2, R2, #0X18 \n\
 /* 08012A8E */ ASRS R2, R2, #0X18 \n\

@@ -31,7 +31,7 @@ extern void func_08003DA0();
 extern void func_08003E64();
 extern void func_08006F28();
 extern void func_08007EA0();
-extern void func_0800A27C();
+extern void get_current_language();
 extern void func_08005570();
 extern void func_080109B4();
 extern void func_08000F10();

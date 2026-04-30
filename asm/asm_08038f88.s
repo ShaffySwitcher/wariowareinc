@@ -177,7 +177,7 @@ glabel func_08038F88
 /* 080390FC */ ADDS R1, #0X70
 /* 080390FE */ STRH R0, [R1]
 /* 08039100 */ LDR R4, _080391D4
-/* 08039102 */ BL func_0800A27C
+/* 08039102 */ BL get_current_language
 /* 08039106 */ LSLS R0, R0, #2
 /* 08039108 */ ADDS R0, R4
 /* 0803910A */ MOV R1, R8

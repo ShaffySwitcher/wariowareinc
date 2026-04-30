@@ -10,7 +10,7 @@ glabel func_080F600C
 /* 080F6010 */ STR R0, [SP, #0X14]
 /* 080F6012 */ ADD R0, SP, #0X14
 /* 080F6014 */ ADD R1, SP, #4
-/* 080F6016 */ BL func_080F57A4
+/* 080F6016 */ BL __unpack_f
 /* 080F601A */ LDR R0, [SP, #4]
 /* 080F601C */ LDR R1, [SP, #8]
 /* 080F601E */ LDR R2, [SP, #0XC]

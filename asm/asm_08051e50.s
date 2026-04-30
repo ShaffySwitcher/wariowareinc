@@ -150,7 +150,7 @@ glabel func_08051E50
 /* 08051F8C */ ADDS R1, #0X5E
 /* 08051F8E */ STRH R0, [R1]
 /* 08051F90 */ LDR R4, =D_083D3370
-/* 08051F92 */ BL func_0800A27C
+/* 08051F92 */ BL get_current_language
 /* 08051F96 */ LSLS R0, R0, #2
 /* 08051F98 */ ADDS R0, R4
 /* 08051F9A */ LDR R0, [R0]

@@ -42,7 +42,7 @@ glabel func_0806FC30
 /* 0806FC88 */ BL func_080705A4
 /* 0806FC8C */ BL func_0807085C
 /* 0806FC90 */ LDR R4, =D_083D6A3C
-/* 0806FC92 */ BL func_0800A27C
+/* 0806FC92 */ BL get_current_language
 /* 0806FC96 */ LSLS R0, R0, #2
 /* 0806FC98 */ ADDS R0, R4
 /* 0806FC9A */ LDR R0, [R0]

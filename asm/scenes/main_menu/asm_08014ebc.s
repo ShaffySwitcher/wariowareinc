@@ -7,7 +7,7 @@ thumb_func_start func_08014EBC \n\
 /* 08014EC2 */ ADDS R4, R0, #0 \n\
 /* 08014EC4 */ ADDS R6, R1, #0 \n\
 /* 08014EC6 */ MOV R8, R2 \n\
-/* 08014EC8 */ BL func_0800A27C \n\
+/* 08014EC8 */ BL get_current_language \n\
 /* 08014ECC */ LDR R5, =gCurrentSceneData \n\
 /* 08014ECE */ LDR R3, [R5] \n\
 /* 08014ED0 */ MOVS R2, #0XC6 \n\

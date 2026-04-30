@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F43D0
+glabel __muldi3
 /* 080F43D0 */ PUSH {R4, R5, R6, R7, LR}
 /* 080F43D2 */ SUB SP, #0X10
 /* 080F43D4 */ STR R0, [SP]

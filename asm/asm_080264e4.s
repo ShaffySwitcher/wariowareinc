@@ -12,7 +12,7 @@ glabel func_080264E4
 /* 080264EC */ LDRB R0, [R0, #0X18]
 /* 080264EE */ CMP R0, #0
 /* 080264F0 */ BEQ _0802652C
-/* 080264F2 */ BL func_0800A068
+/* 080264F2 */ BL get_delta_time
 /* 080264F6 */ LDR R2, [R5]
 /* 080264F8 */ LDR R1, [R2, #0X1C]
 /* 080264FA */ SUBS R1, R0

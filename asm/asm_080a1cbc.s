@@ -447,7 +447,7 @@ _080A1F56:
 /* 080A2024 */ MOVS R2, #0
 /* 080A2026 */ BL sprite_set_visible
 /* 080A202A */ LDR R4, =D_083DC0B8
-/* 080A202C */ BL func_0800A27C
+/* 080A202C */ BL get_current_language
 /* 080A2030 */ LSLS R0, R0, #2
 /* 080A2032 */ ADDS R0, R4
 /* 080A2034 */ LDR R1, [R0]

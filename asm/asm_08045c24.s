@@ -400,7 +400,7 @@ _08045F0C:
 /* 08045F56 */ MOVS R2, #0
 /* 08045F58 */ BL sprite_set_visible
 /* 08045F5C */ LDR R4, =D_083D13F8
-/* 08045F5E */ BL func_0800A27C
+/* 08045F5E */ BL get_current_language
 /* 08045F62 */ LSLS R0, R0, #2
 /* 08045F64 */ ADDS R0, R4
 /* 08045F66 */ LDR R0, [R0]

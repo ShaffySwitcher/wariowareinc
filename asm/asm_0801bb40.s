@@ -30,7 +30,7 @@ glabel func_0801BB40
 /* 0801BB6E */ MOV R8, R3
 /* 0801BB70 */ LDR R3, [R3]
 /* 0801BB72 */ BL func_08005538
-/* 0801BB76 */ BL func_0800A27C
+/* 0801BB76 */ BL get_current_language
 /* 0801BB7A */ ADDS R4, R0, #0
 /* 0801BB7C */ LDR R0, _0801BC1C
 /* 0801BB7E */ LSLS R4, R4, #2

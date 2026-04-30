@@ -4,6 +4,7 @@
 #include "src/memory_heap.h"
 #include "src/task_pool.h"
 #include "src/lib_sprite.h"
+#include "include/language.h"
 
 asm(".include \"include/gba.inc\"");
 
@@ -356,14 +357,23 @@ void scene_set_music_pitch_env(s16 pitch) {
 
 #include "asm/beatscript/asm_0800a050.s"
 
-#include "asm/beatscript/asm_0800a064.s"
+u32 func_0800A064(void) {
+    return 2;
+}
 
-#include "asm/beatscript/asm_0800a068.s"
+u32 get_delta_time(void) {
+    return gBeatscriptScene.deltaTime;
+}
 
-#include "asm/beatscript/asm_0800a074.s"
+u32 ticks_to_frames(u32 beats) {
+    return fast_divsi3(INT_TO_FIXED(beats), gBeatscriptScene.deltaTime);
+}
 
-#include "asm/beatscript/asm_0800a088.s"
+u32 get_current_mem_id(void) {
+    return gBeatscriptScene.currentThread + 1;
+}
 
+// [https://decomp.me/scratch/UsJl5] increase lives and clamp them
 #include "asm/beatscript/asm_0800a098.s"
 
 #include "asm/beatscript/asm_0800a0c4.s"
@@ -397,7 +407,9 @@ void func_0800A160(struct Animation* anim, struct Vector2* pos) {
 
 #include "asm/beatscript/asm_0800a270.s"
 
-#include "asm/beatscript/asm_0800a27c.s"
+u32 get_current_language(void) {
+    return LANGUAGE_ENGLISH;
+}
 
 #include "asm/beatscript/asm_0800a280.s"
 

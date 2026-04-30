@@ -197,7 +197,7 @@ _0808FD04:
 /* 0808FDFA */ MOVS R2, #0
 /* 0808FDFC */ BL sprite_set_visible
 /* 0808FE00 */ LDR R4, =D_083DA3FC
-/* 0808FE02 */ BL func_0800A27C
+/* 0808FE02 */ BL get_current_language
 /* 0808FE06 */ LSLS R0, R0, #2
 /* 0808FE08 */ ADDS R0, R4
 /* 0808FE0A */ LDR R0, [R0]

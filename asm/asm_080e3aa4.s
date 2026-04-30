@@ -42,7 +42,7 @@ glabel func_080E3AA4
 /* 080E3AEE */ LSLS R0, R0, #0X10
 /* 080E3AF0 */ LSRS R0, R0, #0X10
 /* 080E3AF2 */ MOVS R1, #0XA
-/* 080E3AF4 */ BL func_080F4890
+/* 080E3AF4 */ BL __umodsi3
 /* 080E3AF8 */ STRB R0, [R5, #2]
 /* 080E3AFA */ MOV R0, SP
 /* 080E3AFC */ LDRB R0, [R0, #1]
@@ -81,7 +81,7 @@ glabel func_080E3AA4
 /* 080E3B42 */ MOV R4, SP
 /* 080E3B44 */ LDRB R0, [R0, #4]
 /* 080E3B46 */ MOVS R1, #0XA
-/* 080E3B48 */ BL func_080F4890
+/* 080E3B48 */ BL __umodsi3
 /* 080E3B4C */ STRB R0, [R4, #4]
 /* 080E3B4E */ MOVS R4, #0
 _080E3B50:

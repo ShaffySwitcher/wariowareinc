@@ -27,7 +27,7 @@ glabel func_080D24BC
 /* 080D24E4 */ LSLS R0, R0, #0X18
 /* 080D24E6 */ ASRS R0, R0, #0X18
 /* 080D24E8 */ BL func_08001B28
-/* 080D24EC */ BL func_0800A27C
+/* 080D24EC */ BL get_current_language
 /* 080D24F0 */ LDR R1, _080D2548
 /* 080D24F2 */ LSLS R4, R4, #2
 /* 080D24F4 */ ADDS R4, R1

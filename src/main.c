@@ -21,7 +21,7 @@ void func_080001D4(void) {
         }
     }
     write_save_backup();
-    func_0800A27C();
+    get_current_language();
     func_08005570();
     func_080109B4();
     func_08000F10();

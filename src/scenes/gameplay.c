@@ -113,7 +113,7 @@ void gameplay_stop_scene(void) {
 }
 
 u32 gameplay_update_scene(void) {
-    s32 arg = func_0800A27C();
+    u32 language = get_current_language();
     u32 i;
 
     flush_graphics_buffer();
@@ -152,7 +152,7 @@ u32 gameplay_update_scene(void) {
                 if (pauseAvailable != 0) {
                     gGameplayData.isPaused = 1;
                     gGameplayData.unk5_6 = 0;
-                    sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, (s8)(arg << 1));
+                    sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, language * 2);
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
                     func_08002024(1);
                     sprite_handler_set_global_pause(gSpriteHandler, TRUE);
@@ -194,7 +194,7 @@ u32 gameplay_update_scene(void) {
                 }
             } else if (gPressedKeys & (DPAD_LEFT | DPAD_RIGHT)) {
                 gGameplayData.unk5_6 ^= 1;
-                sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, (s8)(gGameplayData.unk5_6 + (arg << 1)));
+                sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, gGameplayData.unk5_6 + (language * 2));
             }
             break;
         case GAMEPLAY_STATE_RESUMING:
@@ -212,7 +212,7 @@ u32 gameplay_update_scene(void) {
             }
             break;
         case GAMEPLAY_STATE_EXITING:
-            if (gGraphicsBuffer.unk854 & 8) {
+            if (gGraphicsBuffer.unk854_4) {
                 stop_soundplayer(gBeatscriptScene.musicPlayer);
                 func_08005914(0);
                 stop_beatscript_scene();

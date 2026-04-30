@@ -138,7 +138,7 @@ glabel func_0803573C
 /* 0803585A */ MOVS R0, #0
 /* 0803585C */ BL func_0800A0C4
 /* 08035860 */ LDR R4, =D_083CEC3C
-/* 08035862 */ BL func_0800A27C
+/* 08035862 */ BL get_current_language
 /* 08035866 */ LSLS R0, R0, #2
 /* 08035868 */ ADDS R0, R4
 /* 0803586A */ LDR R0, [R0]

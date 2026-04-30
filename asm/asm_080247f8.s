@@ -39,7 +39,7 @@ glabel func_080247F8
 /* 08024836 */ LDR R1, _080248AC
 /* 08024838 */ LDR R2, _080248B0
 /* 0802483A */ BL func_08024B94
-/* 0802483E */ BL func_0800A27C
+/* 0802483E */ BL get_current_language
 /* 08024842 */ LDR R2, [R4]
 /* 08024844 */ MOVS R1, #0X78
 /* 08024846 */ STRH R1, [R2, #0X1C]

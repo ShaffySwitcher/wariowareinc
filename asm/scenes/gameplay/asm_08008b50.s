@@ -49,7 +49,7 @@ _08008B9C: \n\
 /* 08008BA2 */ ADDS R4, R4, R5 \n\
 /* 08008BA4 */ ADDS R0, R5, #0 \n\
 /* 08008BA6 */ ADDS R1, R7, #0 \n\
-/* 08008BA8 */ BL func_080F4890 \n\
+/* 08008BA8 */ BL __umodsi3 \n\
 /* 08008BAC */ STRB R0, [R4] \n\
 /* 08008BAE */ ADDS R5, #1 \n\
 /* 08008BB0 */ CMP R5, R6 \n\

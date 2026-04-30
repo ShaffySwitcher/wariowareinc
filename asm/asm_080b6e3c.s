@@ -12,7 +12,7 @@ glabel func_080B6E3C
 /* 080B6E44 */ SUB SP, #0XC
 /* 080B6E46 */ MOVS R6, #0
 /* 080B6E48 */ MOVS R5, #0
-/* 080B6E4A */ BL func_0800A27C
+/* 080B6E4A */ BL get_current_language
 /* 080B6E4E */ LSLS R0, R0, #0X18
 /* 080B6E50 */ LSRS R3, R0, #0X18
 /* 080B6E52 */ LDR R0, _080B6F30

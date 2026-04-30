@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F5374
+glabel __cmpdf2
 /* 080F5374 */ PUSH {R4, LR}
 /* 080F5376 */ SUB SP, #0X38
 /* 080F5378 */ STR R0, [SP, #0X28]
@@ -20,7 +20,7 @@ glabel func_080F5374
 /* 080F538E */ BL __unpack_d
 /* 080F5392 */ MOV R0, SP
 /* 080F5394 */ ADDS R1, R4, #0
-/* 080F5396 */ BL func_080F5274
+/* 080F5396 */ BL __fpcmp_parts_d
 /* 080F539A */ ADD SP, #0X38
 /* 080F539C */ POP {R4, PC}
 

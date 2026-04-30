@@ -117,7 +117,7 @@ _080124CE: \n\
 /* 080124F4 */ BL save_is_stage_unlocked \n\
 /* 080124F8 */ CMP R0, #0 \n\
 /* 080124FA */ BEQ _08012540 \n\
-/* 080124FC */ BL func_0800A27C \n\
+/* 080124FC */ BL get_current_language \n\
 /* 08012500 */ LDR R1, _08012534 \n\
 /* 08012502 */ LSLS R0, R0, #2 \n\
 /* 08012504 */ ADDS R0, R1 \n\

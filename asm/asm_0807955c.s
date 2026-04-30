@@ -406,7 +406,7 @@ _080797B2:
 /* 0807988E */ MOVS R2, #0
 /* 08079890 */ BL sprite_set_visible
 /* 08079894 */ LDR R4, =D_083D7A8C
-/* 08079896 */ BL func_0800A27C
+/* 08079896 */ BL get_current_language
 /* 0807989A */ LSLS R0, R0, #2
 /* 0807989C */ ADDS R0, R4
 /* 0807989E */ LDR R0, [R0]

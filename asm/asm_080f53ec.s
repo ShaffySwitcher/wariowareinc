@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F53EC
+glabel __nedf2
 /* 080F53EC */ PUSH {R4, LR}
 /* 080F53EE */ SUB SP, #0X38
 /* 080F53F0 */ STR R0, [SP, #0X28]
@@ -40,7 +40,7 @@ _080F5426:
 _080F542A:
 /* 080F542A */ MOV R0, SP
 /* 080F542C */ ADDS R1, R4, #0
-/* 080F542E */ BL func_080F5274
+/* 080F542E */ BL __fpcmp_parts_d
 _080F5432:
 /* 080F5432 */ ADD SP, #0X38
 /* 080F5434 */ POP {R4, PC}

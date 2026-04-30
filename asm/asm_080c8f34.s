@@ -53,7 +53,7 @@ glabel func_080C8F34
 /* 080C8FA8 */ BL func_080C9CF0
 /* 080C8FAC */ BL func_080C9EC8
 /* 080C8FB0 */ LDR R4, =D_083E3398
-/* 080C8FB2 */ BL func_0800A27C
+/* 080C8FB2 */ BL get_current_language
 /* 080C8FB6 */ LSLS R0, R0, #2
 /* 080C8FB8 */ ADDS R0, R4
 /* 080C8FBA */ LDR R0, [R0]

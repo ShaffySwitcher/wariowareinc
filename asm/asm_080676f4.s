@@ -345,7 +345,7 @@ _08067954:
 /* 080679B2 */ MOVS R2, #0
 /* 080679B4 */ BL sprite_create
 /* 080679B8 */ LDR R4, =D_083D594C
-/* 080679BA */ BL func_0800A27C
+/* 080679BA */ BL get_current_language
 /* 080679BE */ LSLS R0, R0, #2
 /* 080679C0 */ ADDS R0, R4
 /* 080679C2 */ LDR R0, [R0]

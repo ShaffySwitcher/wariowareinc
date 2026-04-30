@@ -59,7 +59,7 @@ glabel func_0800806C
 /* 080080D2 */ ADDS R0, R1, #0
 /* 080080D4 */ ASRS R0, R0, #8
 /* 080080D6 */ MOVS R1, #0XF0
-/* 080080D8 */ BL func_08007780
+/* 080080D8 */ BL fast_divsi3
 /* 080080DC */ STRH R0, [R5]
 /* 080080DE */ MOVS R2, #0
 /* 080080E0 */ LDRSH R0, [R4, R2]
@@ -68,7 +68,7 @@ glabel func_0800806C
 /* 080080E6 */ ADDS R0, R7, #0
 /* 080080E8 */ ASRS R0, R0, #8
 /* 080080EA */ MOVS R1, #0XF0
-/* 080080EC */ BL func_08007780
+/* 080080EC */ BL fast_divsi3
 /* 080080F0 */ STRH R0, [R5, #4]
 /* 080080F2 */ MOVS R1, #0
 /* 080080F4 */ LDRSH R0, [R4, R1]
@@ -76,7 +76,7 @@ glabel func_0800806C
 /* 080080F8 */ MULS R0, R2, R0
 /* 080080FA */ ASRS R0, R0, #8
 /* 080080FC */ MOVS R1, #0XA0
-/* 080080FE */ BL func_08007780
+/* 080080FE */ BL fast_divsi3
 /* 08008102 */ RSBS R0, R0, #0
 /* 08008104 */ STRH R0, [R5, #2]
 /* 08008106 */ MOVS R7, #0
@@ -85,7 +85,7 @@ glabel func_0800806C
 /* 0800810C */ MULS R0, R1, R0
 /* 0800810E */ ASRS R0, R0, #8
 /* 08008110 */ MOVS R1, #0XA0
-/* 08008112 */ BL func_08007780
+/* 08008112 */ BL fast_divsi3
 /* 08008116 */ STRH R0, [R5, #6]
 _08008118:
 /* 08008118 */ POP {R3, R4}

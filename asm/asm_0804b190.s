@@ -394,7 +394,7 @@ _0804B46A:
 /* 0804B4C0 */ LDR R1, [R1]
 /* 0804B4C2 */ BL sprite_handler_set_mem_id
 /* 0804B4C6 */ LDR R4, _0804B530
-/* 0804B4C8 */ BL func_0800A27C
+/* 0804B4C8 */ BL get_current_language
 /* 0804B4CC */ LSLS R0, R0, #2
 /* 0804B4CE */ ADDS R0, R4
 /* 0804B4D0 */ LDR R0, [R0]

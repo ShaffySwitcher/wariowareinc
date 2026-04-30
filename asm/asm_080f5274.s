@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_080F5274
+glabel __fpcmp_parts_d
 /* 080F5274 */ PUSH {R4, R5, R6, LR}
 /* 080F5276 */ ADDS R5, R0, #0
 /* 080F5278 */ ADDS R6, R1, #0

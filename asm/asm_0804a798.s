@@ -197,7 +197,7 @@ glabel func_0804A798
 /* 0804A93C */ STR R0, [R2]
 _0804A93E:
 /* 0804A93E */ LDR R4, =D_083D2608
-/* 0804A940 */ BL func_0800A27C
+/* 0804A940 */ BL get_current_language
 /* 0804A944 */ LSLS R0, R0, #2
 /* 0804A946 */ ADDS R0, R4
 /* 0804A948 */ LDR R0, [R0]

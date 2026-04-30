@@ -31,7 +31,7 @@ _08014588: \n\
 /* 0801459A */ BL write_save_main \n\
 /* 0801459E */ BL func_080109B4 \n\
 /* 080145A2 */ LDR R4, _080145C8 \n\
-/* 080145A4 */ BL func_0800A27C \n\
+/* 080145A4 */ BL get_current_language \n\
 /* 080145A8 */ LSLS R0, R0, #2 \n\
 /* 080145AA */ ADDS R0, R4 \n\
 /* 080145AC */ LDR R0, [R0] \n\

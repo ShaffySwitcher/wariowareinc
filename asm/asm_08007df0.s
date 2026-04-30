@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08007DF0
+glabel schedule_function_call
 .thumb_func
 /* 08007DF0 */ PUSH {LR}
 /* 08007DF2 */ SUB SP, #0X10

@@ -33,7 +33,7 @@ glabel func_0805D1A0
 /* 0805D1E2 */ BL func_0805D8E0
 /* 0805D1E6 */ BL func_0805DA7C
 /* 0805D1EA */ LDR R4, =D_083D4D58
-/* 0805D1EC */ BL func_0800A27C
+/* 0805D1EC */ BL get_current_language
 /* 0805D1F0 */ LSLS R0, R0, #2
 /* 0805D1F2 */ ADDS R0, R4
 /* 0805D1F4 */ LDR R0, [R0]

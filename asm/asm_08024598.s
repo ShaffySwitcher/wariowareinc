@@ -39,7 +39,7 @@ _080245D0:
 /* 080245D2 */ BHI _08024616
 /* 080245D4 */ LDR R0, [R6]
 /* 080245D6 */ LDR R4, [R0]
-/* 080245D8 */ BL func_0800A27C
+/* 080245D8 */ BL get_current_language
 /* 080245DC */ LSLS R0, R0, #2
 /* 080245DE */ ADDS R0, R7
 /* 080245E0 */ LDR R1, [R0]

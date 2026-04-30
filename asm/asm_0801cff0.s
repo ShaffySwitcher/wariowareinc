@@ -12,7 +12,7 @@ glabel func_0801CFF0
 /* 0801CFF8 */ MOV R1, SP
 /* 0801CFFA */ STR R1, [R0, #0X28]
 /* 0801CFFC */ LDR R4, _0801D02C
-/* 0801CFFE */ BL func_0800A27C
+/* 0801CFFE */ BL get_current_language
 /* 0801D002 */ LSLS R0, R0, #2
 /* 0801D004 */ ADDS R0, R4
 /* 0801D006 */ LDR R1, [R0]
