@@ -28,7 +28,7 @@ _080EE844: \n\
 /* 080EE85E */ ADDS R0, R3, R0 \n\
 /* 080EE860 */ STR R0, [R2] \n\
 _080EE862: \n\
-/* 080EE862 */ LDR R1, =D_080EFC88 \n\
+/* 080EE862 */ LDR R1, =func_080efc88 \n\
 /* 080EE864 */ ADDS R0, R2, #0 \n\
 /* 080EE866 */ BL _call_via_r1 \n\
 _080EE86A: \n\

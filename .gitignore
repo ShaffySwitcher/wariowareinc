@@ -13,3 +13,5 @@ progress.py
 tools/sample_extractor.py
 tools/find_archive_matches.py
 cleanup.py
+objdiff.json
+tools/objdiff-cli

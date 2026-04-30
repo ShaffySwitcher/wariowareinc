@@ -5157,7 +5157,7 @@ SECTIONS {
         build/asm/asm_080ee718.s.o(.text*);
         build/asm/asm_080ee77c.s.o(.text*);
         build/src/lib_sprite.c.o(.text);
-        build/asm/asm_080efc88.s.o(.text*);
+        build/asm/lib_sprite_080efc88.s.o(.text*);
         build/bin/data_080EFDAC.bin.o(.rodata*);
         build/asm/asm_080efe0a.s.o(.text*);
         build/asm/asm_080efe30.s.o(.text*);

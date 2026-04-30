@@ -1,0 +1,55 @@
+name: Progress Report
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: devkitpro/devkitarm:latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update and install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential binutils-arm-none-eabi git ffmpeg
+
+      - name: Set DEVKITPRO environment variables
+        run: |
+            echo "DEVKITPRO=/opt/devkitpro" >> $GITHUB_ENV
+            echo "DEVKITARM=/opt/devkitpro/devkitARM" >> $GITHUB_ENV
+            echo "DEVKITPPC=/opt/devkitpro/devkitPPC" >> $GITHUB_ENV
+
+      - name: Clone and install agbcc
+        run: |
+          git clone https://github.com/pret/agbcc
+          cd agbcc
+          ./build.sh
+          ./install.sh ../
+
+      - name: Restore baserom
+        env:
+          FILE_PW: ${{ secrets.TOKEN }}
+        run: |
+          openssl enc -aes-256-cbc -d -pbkdf2 -iter 100000 \
+            -in tools/make.build \
+            -out baserom.gba \
+            -pass env:FILE_PW
+
+      - name: Build
+        run: make -j$(nproc)
+
+      - name: Generate progress report
+        run: make report
+
+      - name: Upload progress report
+        uses: actions/upload-artifact@v4
+        with:
+          name: AZWE_report
+          path: build/report.json

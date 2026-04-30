@@ -113,7 +113,7 @@ OFILES_SOURCES   := $(addprefix $(BUILD)/,$(addsuffix .o,$(SFILES)))  \
 OFILES := $(OFILES_SOURCES) $(OFILES_GENERATED)
 
 #---------------------------------------------------------------------------------
-.PHONY: default clean distclean rebuild sha1
+.PHONY: default clean distclean rebuild sha1 report
 .SECONDARY:
 #---------------------------------------------------------------------------------
 
@@ -239,3 +239,15 @@ $(BUILD)/$(LD_SCRIPT): $(LD_SCRIPT)
 -include $(addprefix $(BUILD)/,$(CFILES:.c=.d))
 
 print-%: ; $(info $* is a $(flavor $*) variable set to [$($*)]) @true
+
+
+OBJDIFF_VERSION := 3.7.1
+OBJDIFF_CLI := tools/objdiff-cli
+
+$(OBJDIFF_CLI):
+	curl -L -o $@ https://github.com/encounter/objdiff/releases/download/v$(OBJDIFF_VERSION)/objdiff-cli-linux-x86_64
+	chmod +x $@
+
+report: $(OBJDIFF_CLI)
+	python3 tools/gen_objdiff.py
+	$(OBJDIFF_CLI) report generate -o build/report.json

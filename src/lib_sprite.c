@@ -398,8 +398,3 @@ void sprite_handler_set_global_x_y(struct SpriteHandler *handler, u16 x, u16 y) 
 #include "asm/lib_sprite/asm_080efc20.s"
 
 #include "asm/lib_sprite/asm_080efc50.s"
-
-// --------------------------------------------------------------------------------------
-
-
-
