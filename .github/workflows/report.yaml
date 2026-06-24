@@ -52,4 +52,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: AZWE_report
-          path: build/report.json
+          path: report.json

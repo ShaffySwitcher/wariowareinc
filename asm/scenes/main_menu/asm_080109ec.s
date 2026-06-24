@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080109EC \n\
+thumb_func_start main_menu_scene_init_gfx3 \n\
 /* 080109EC */ PUSH {LR} \n\
 /* 080109EE */ MOVS R0, #0 \n\
 /* 080109F0 */ BL scene_set_current_thread \n\

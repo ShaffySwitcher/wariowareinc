@@ -250,5 +250,4 @@ $(OBJDIFF_CLI):
 	chmod +x $@
 
 report: $(OBJDIFF_CLI)
-	python3 tools/gen_objdiff.py
-	$(OBJDIFF_CLI) report generate -o build/report.json
+	python3 tools/reportgen.py

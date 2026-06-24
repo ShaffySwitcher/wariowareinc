@@ -110,8 +110,8 @@ struct GraphicsBuffer {
     u8 pad1[0x30]; // 0x1C size:0x30
     u16 unk4C; // 0x4C size:0x2
     u8 pad4e[6]; // 0x4E size:0x6
-    u16 bgPalette[16][16]; // 0x54 size:0x200
-    u16 objPalette[16][16]; // 0x254 size:0x200
+    u16 bgPalette[16][16]; // 0x54 size:0x200   (0x3004254)
+    u16 objPalette[16][16]; // 0x254 size:0x200 (0x3004454)
     u8 pad454[0x400]; // 0x454 size:0x400
     u8 unk854_1 : 1; // 0x854
     u8 unk854_2 : 1; // 0x854

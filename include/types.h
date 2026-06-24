@@ -1,5 +1,7 @@
 #pragma once
 
+#define DPAD_ANY (DPAD_UP | DPAD_DOWN | DPAD_LEFT | DPAD_RIGHT)
+
 struct Vector2 {
     s16 x;
     s16 y;

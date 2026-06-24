@@ -3,7 +3,7 @@
 #include "src/audio.h"
 #include "src/memory.h"
 #include "src/task_pool.h"
-#include "graphics/title/title_graphics.h"
+#include "graphics/main_menu/main_menu_graphics.h"
 #include "src/code_08000f10.h"
 
 asm(".include \"include/gba.inc\"");
@@ -25,15 +25,18 @@ void main_menu_scene_run(void) {
 
 #include "asm/scenes/main_menu/asm_08010a18.s"
 
-void func_08010B9C(void) {
+void main_menu_scene_init_gfx2(void) {
+    s32 task;
+
     scene_set_current_thread(0);
-    run_func_after_task(start_load_gfx_table_task((u16)get_current_mem_id(), D_083A9BC0, 0x3000), func_080109EC, 0);
+    task = start_load_gfx_table_task((u16)get_current_mem_id(), main_menu_gfx_table, 0x3000);
+    run_func_after_task(task, main_menu_scene_init_gfx3, 0);
     func_08010A18();
     gMainMenu.unkDF_2 = TRUE;
 }
 
-void func_08010BE0(void) {
-    schedule_function_call(get_current_mem_id(), func_08010B9C, 0, 2);
+void main_menu_scene_init_gfx1(void) {
+    schedule_function_call(get_current_mem_id(), main_menu_scene_init_gfx2, 0, 2);
     func_0800BF7C(1, 1, 0, 0, 0, 9, 1);
     func_0800BF7C(3, 1, 0, 0, 0, 0xC, 3);
 }
@@ -217,7 +220,11 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_08012c80.s"
 
-#include "asm/scenes/main_menu/asm_08012cb4.s"
+void func_08012CB4(void) {
+    if (func_08011698()) {
+        func_08012828();
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08012cc8.s"
 
@@ -261,7 +268,11 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_08013628.s"
 
-#include "asm/scenes/main_menu/asm_0801364c.s"
+void func_0801364C(void) {
+    if (func_08011698()) {
+        func_08013460();
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08013660.s"
 
@@ -291,7 +302,21 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_08013e44.s"
 
-#include "asm/scenes/main_menu/asm_08013e64.s"
+void func_08013E64(void) {
+    if ((gPressedKeys & (A_BUTTON | DPAD_ANY)) && (gMainMenu.unkF1 != 0)) {
+        if (gMainMenu.unkDD_1) {
+            func_08011584();
+        }
+        if (gMainMenu.unkDD_2 < 0) {
+            func_08013A4C();
+        }
+    }
+    
+    if (func_08011698()) {
+        func_080137B0();
+    }
+    func_080139D4();
+}
 
 #include "asm/scenes/main_menu/asm_08013ec0.s"
 
@@ -331,7 +356,18 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_08014740.s"
 
-#include "asm/scenes/main_menu/asm_080147b0.s"
+void func_080147B0(void) {
+    if (func_08011708() && gMainMenu.unk13C_2) {
+        func_08015944(gMainMenu.unk1C4, func_08014428);
+        gMainMenu.unk13C_2 = FALSE;
+        set_pause_beatscript_scene(FALSE);
+        return;
+    }
+    
+    if (func_08011698()) {
+        func_080145D4();
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08014810.s"
 
@@ -349,7 +385,11 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_08014a34.s"
 
-#include "asm/scenes/main_menu/asm_08014b44.s"
+void func_08014B44(void) {
+    if (func_08011698()) {
+        func_08014A34();
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08014b58.s"
 
@@ -365,7 +405,11 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_08014dc4.s"
 
-#include "asm/scenes/main_menu/asm_08014de8.s"
+void func_08014DE8(void) {
+    if (func_08011698()) {
+        func_08014DC4();
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08014dfc.s"
 
@@ -389,7 +433,11 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_080152d4.s"
 
-#include "asm/scenes/main_menu/asm_080153e0.s"
+void func_080153E0(void) {
+    if (func_08011698()) {
+        func_080152D4();
+    }
+}
 
 #include "asm/scenes/main_menu/asm_080153f4.s"
 
@@ -405,7 +453,11 @@ void func_0801208C(void) {
 
 #include "asm/scenes/main_menu/asm_080157c4.s"
 
-#include "asm/scenes/main_menu/asm_08015930.s"
+void func_08015930(void) {
+    if (func_08011698()) {
+        func_080157C4();
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08015944.s"
 

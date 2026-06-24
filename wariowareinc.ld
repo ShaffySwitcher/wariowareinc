@@ -5364,6 +5364,8 @@ SECTIONS {
         build/data/scenes/title/data.c.o(.data);
         build/data/scenes/title/scene.bs.o(.scene);
         build/bin/data_083A9184.bin.o(.rodata*);
+        build/data/scenes/main_menu/data.c.o(.data);
+        build/bin/data_083A9C14.bin.o(.rodata*);
         build/data/scenes/main_menu/scene.bs.o(.scene);
         build/bin/data_083AB638.bin.o(.rodata*);
         build/audio/songs.c.o(.data);
