@@ -601,84 +601,84 @@ void func_08015930(void) {
 
 #include "asm/scenes/main_menu/asm_08015b54.s"
 
-#include "asm/main_menu/asm_08015c38.s"
+#include "asm/scenes/main_menu/asm_08015c38.s"
 
-#include "asm/main_menu/asm_08015c7c.s"
+#include "asm/scenes/main_menu/asm_08015c7c.s"
 
-#include "asm/main_menu/asm_08015cd8.s"
+#include "asm/scenes/main_menu/asm_08015cd8.s"
 
-#include "asm/main_menu/asm_08015d04.s"
+#include "asm/scenes/main_menu/asm_08015d04.s"
 
-#include "asm/main_menu/asm_08015dbc.s"
+#include "asm/scenes/main_menu/asm_08015dbc.s"
 
-#include "asm/main_menu/asm_08015e24.s"
+#include "asm/scenes/main_menu/asm_08015e24.s"
 
-#include "asm/main_menu/asm_08015e40.s"
+#include "asm/scenes/main_menu/asm_08015e40.s"
 
-#include "asm/main_menu/asm_08015e68.s"
+#include "asm/scenes/main_menu/asm_08015e68.s"
 
-#include "asm/main_menu/asm_08015e90.s"
+#include "asm/scenes/main_menu/asm_08015e90.s"
 
-#include "asm/main_menu/asm_08015eb8.s"
+#include "asm/scenes/main_menu/asm_08015eb8.s"
 
-#include "asm/main_menu/asm_08015ee0.s"
+#include "asm/scenes/main_menu/asm_08015ee0.s"
 
-#include "asm/main_menu/asm_08015f08.s"
+#include "asm/scenes/main_menu/asm_08015f08.s"
 
-#include "asm/main_menu/asm_08015f30.s"
+#include "asm/scenes/main_menu/asm_08015f30.s"
 
-#include "asm/main_menu/asm_08015f58.s"
+#include "asm/scenes/main_menu/asm_08015f58.s"
 
-#include "asm/main_menu/asm_08015f80.s"
+#include "asm/scenes/main_menu/asm_08015f80.s"
 
-#include "asm/main_menu/asm_08015fbc.s"
+#include "asm/scenes/main_menu/asm_08015fbc.s"
 
-#include "asm/main_menu/asm_08015ff8.s"
+#include "asm/scenes/main_menu/asm_08015ff8.s"
 
-#include "asm/main_menu/asm_08016028.s"
+#include "asm/scenes/main_menu/asm_08016028.s"
 
-#include "asm/main_menu/asm_08016060.s"
+#include "asm/scenes/main_menu/asm_08016060.s"
 
-#include "asm/main_menu/asm_08016098.s"
+#include "asm/scenes/main_menu/asm_08016098.s"
 
-#include "asm/main_menu/asm_080160c8.s"
+#include "asm/scenes/main_menu/asm_080160c8.s"
 
-#include "asm/main_menu/asm_080160f0.s"
+#include "asm/scenes/main_menu/asm_080160f0.s"
 
-#include "asm/main_menu/asm_08016118.s"
+#include "asm/scenes/main_menu/asm_08016118.s"
 
-#include "asm/main_menu/asm_08016140.s"
+#include "asm/scenes/main_menu/asm_08016140.s"
 
-#include "asm/main_menu/asm_0801618c.s"
+#include "asm/scenes/main_menu/asm_0801618c.s"
 
-#include "asm/main_menu/asm_080161d8.s"
+#include "asm/scenes/main_menu/asm_080161d8.s"
 
-#include "asm/main_menu/asm_08016220.s"
+#include "asm/scenes/main_menu/asm_08016220.s"
 
-#include "asm/main_menu/asm_08016268.s"
+#include "asm/scenes/main_menu/asm_08016268.s"
 
-#include "asm/main_menu/asm_080162b0.s"
+#include "asm/scenes/main_menu/asm_080162b0.s"
 
-#include "asm/main_menu/asm_080162f8.s"
+#include "asm/scenes/main_menu/asm_080162f8.s"
 
-#include "asm/main_menu/asm_08016328.s"
+#include "asm/scenes/main_menu/asm_08016328.s"
 
-#include "asm/main_menu/asm_08016358.s"
+#include "asm/scenes/main_menu/asm_08016358.s"
 
-#include "asm/main_menu/asm_08016388.s"
+#include "asm/scenes/main_menu/asm_08016388.s"
 
-#include "asm/main_menu/asm_080163b8.s"
+#include "asm/scenes/main_menu/asm_080163b8.s"
 
-#include "asm/main_menu/asm_0801646c.s"
+#include "asm/scenes/main_menu/asm_0801646c.s"
 
-#include "asm/main_menu/asm_080164cc.s"
+#include "asm/scenes/main_menu/asm_080164cc.s"
 
-#include "asm/main_menu/asm_08016520.s"
+#include "asm/scenes/main_menu/asm_08016520.s"
 
-#include "asm/main_menu/asm_080165d4.s"
+#include "asm/scenes/main_menu/asm_080165d4.s"
 
-#include "asm/main_menu/asm_08016670.s"
+#include "asm/scenes/main_menu/asm_08016670.s"
 
-#include "asm/main_menu/asm_0801667c.s"
+#include "asm/scenes/main_menu/asm_0801667c.s"
 
-#include "asm/main_menu/asm_08016688.s"
+#include "asm/scenes/main_menu/asm_08016688.s"
