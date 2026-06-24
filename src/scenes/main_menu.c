@@ -71,13 +71,39 @@ void main_menu_scene_update(void) {
     func_08003B58(&gMainMenu.unk10);
 }
 
-#include "asm/scenes/main_menu/asm_080114e4.s"
+void main_menu_scene_paused(void) {
+    func_08015A4C();
+    func_080115DC();
+    func_08003A70(&gMainMenu.unk10);
+    func_08015DBC();
+}
 
-#include "asm/scenes/main_menu/asm_08011504.s"
+void func_08011504(s16 x, s16 y, void (*callback)(), s32 arg) {
+    s32 temp_r0;
 
-#include "asm/scenes/main_menu/asm_08011584.s"
+    temp_r0 = func_0800C15C(*gCurrentSceneSpritePool, x, y, 0x82);
+    run_func_after_task(temp_r0, callback, arg);
+    gMainMenu.unkDD_1 = TRUE;
+    gMainMenu.unk1B8 = temp_r0;
+    gMainMenu.unk1BC = x;
+    gMainMenu.unk1BE = y;
+}
 
-#include "asm/scenes/main_menu/asm_080115dc.s"
+void func_08011584(void) {
+    s32 temp_r4;
+
+    temp_r4 = gMainMenu.unk1B8;
+    if (func_08005920(temp_r4) == 1) {
+        sprite_set_x_y(gSpriteHandler, *gCurrentSceneSpritePool, gMainMenu.unk1BC, gMainMenu.unk1BE);
+        func_08005834(temp_r4);
+    }
+}
+
+void func_080115DC(void) {
+    if (gMainMenu.unkDC_1 != 0) {
+        dma3_set(gMainMenu.unkD4, gMainMenu.unkD8, 0x500U, 0x20U, 0x100U);
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08011614.s"
 
@@ -88,21 +114,75 @@ u32 func_08011698(void) {
     return 0;
 }
 
-#include "asm/scenes/main_menu/asm_080116d4.s"
+void func_080116D4(void) {
+    gMainMenu.unkDF_3 = FALSE;
+    if (gMainMenu.unk148_2 || gMainMenu.unk148_3) {
+        set_pause_beatscript_scene(TRUE);
+    }
+}
 
-#include "asm/scenes/main_menu/asm_08011708.s"
+s32 func_08011708(void) {
+    if (gMainMenu.unkDF_3 >= 0 && !func_08011614()) { // fake-match
+        return 1;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08011730.s"
+void func_08011730(u32 arg0) {
+    if (arg0 != 0) {
+        gGraphicsBuffer.unk50 = 4;
+        func_0800A000(0xB3);
+        return;
+    }
+    gGraphicsBuffer.unk50 = arg0;
+    func_0800A000(0x100);
+}
 
-#include "asm/scenes/main_menu/asm_08011764.s"
+void main_menu_scene_stop(void) {
+    func_08007EAC();
+    func_08003FB8();
+}
 
-#include "asm/scenes/main_menu/asm_08011774.s"
+void func_08011774(void) {
+    u32 i;
 
-#include "asm/scenes/main_menu/asm_080117a8.s"
+    for(i = 0; i < 3; i++){
+        sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[i+1], 1);
+    }
 
-#include "asm/scenes/main_menu/asm_080117fc.s"
+    func_0800C7A4(10);
+}
 
-#include "asm/scenes/main_menu/asm_08011824.s"
+void func_080117A8(s32 arg0) {
+    struct Vector2 *position;
+
+    func_08011774();
+    sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[arg0+1], 0);
+    position = D_083A9CE0[arg0];
+    sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[10], position->x, position->y);
+    func_0800C77C(10);
+}
+
+void func_080117FC(void) {
+    s32 i;
+
+    func_080117A8(D_03006518.unk2);
+
+    for(i = 0; i < 3;) {
+        func_0800C77C(++i);
+    }
+    
+    func_0800C7A4(6);
+}
+
+void func_08011824(void) {
+    func_0800C7A4(1);
+    func_0800C7A4(2);
+    func_0800C7A4(3);
+    func_0800C7A4(10);
+    sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[6], 0);
+    func_0800C77C(6);
+}
 
 #include "asm/scenes/main_menu/asm_08011864.s"
 
@@ -140,22 +220,22 @@ void func_0801208C(void) {
     struct Vector2* pos;
     
     if (func_08011708() && D_03006518.unk2 == 2) {
-        if(gMainMenu.unk13C_2) {
-            gMainMenu.unkFD = 0;
-            pos = D_083AB2CC + (gMainMenu.unkFD);
+        if(gMainMenu.unk148_2) {
+            gMainMenu.unk106 = 0;
+            pos = D_083AB2CC + (gMainMenu.unk106);
 
             func_08011504(pos->x, pos->y, func_080119B8, 0);
             func_08011730(0);
             return;
         }
 
-        if(gMainMenu.unk13C_3 != 0) {
-            gMainMenu.unkFD = 1;
-            pos = D_083AB2CC + (gMainMenu.unkFD);
+        if(gMainMenu.unk148_3 != 0) {
+            gMainMenu.unk106 = 1;
+            pos = D_083AB2CC + (gMainMenu.unk106);
 
             func_08011504(pos->x, pos->y, func_080119B8, 0);
             func_08011730(0);
-            gMainMenu.unk13C_3 = 0;
+            gMainMenu.unk148_3 = 0;
             set_pause_beatscript_scene(FALSE);
             return;
         }
@@ -303,7 +383,7 @@ void func_0801364C(void) {
 #include "asm/scenes/main_menu/asm_08013e44.s"
 
 void func_08013E64(void) {
-    if ((gPressedKeys & (A_BUTTON | DPAD_ANY)) && (gMainMenu.unkF1 != 0)) {
+    if ((gPressedKeys & (A_BUTTON | DPAD_ANY)) && (gMainMenu.unkFA != 0)) {
         if (gMainMenu.unkDD_1) {
             func_08011584();
         }
@@ -357,9 +437,9 @@ void func_08013E64(void) {
 #include "asm/scenes/main_menu/asm_08014740.s"
 
 void func_080147B0(void) {
-    if (func_08011708() && gMainMenu.unk13C_2) {
-        func_08015944(gMainMenu.unk1C4, func_08014428);
-        gMainMenu.unk13C_2 = FALSE;
+    if (func_08011708() && gMainMenu.unk148_2) {
+        func_08015944(gMainMenu.unk1D0, func_08014428);
+        gMainMenu.unk148_2 = FALSE;
         set_pause_beatscript_scene(FALSE);
         return;
     }

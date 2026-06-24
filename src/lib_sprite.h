@@ -196,6 +196,7 @@ extern void sprite_id_set_data(struct SpriteHandler *, u32, u32, u32);
 extern void sprite_handler_set_mem_id(struct SpriteHandler *, u32);
 extern u32 sprite_handler_get_mem_id(struct SpriteHandler *);
 extern void sprite_id_delete(struct SpriteHandler *, u32);
+extern void sprite_set_x_y(struct SpriteHandler *, s16, s16, s16);
 
 // EXTERNS
 extern s8 sprite_anim_get_cel_total(struct Animation *);
