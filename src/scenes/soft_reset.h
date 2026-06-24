@@ -21,4 +21,5 @@ extern u16 gCurrentKeys;
 // FUNCTIONS
 void soft_reset_scene_run(void);
 void soft_reset_init_scene(void);
+s32 soft_reset_update_scene(void);
 // EXTERNS

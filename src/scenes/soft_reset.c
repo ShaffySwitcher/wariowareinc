@@ -10,7 +10,7 @@ void soft_reset_scene_run(void) {
         soft_reset_init_scene();
     }
     
-    newScene = func_08016DE0();
+    newScene = soft_reset_update_scene();
     if (newScene == GLOBAL_SCENE_TITLE) {
         func_080001D4();
         gCurrentScene = newScene;
@@ -23,7 +23,7 @@ void soft_reset_init_scene(void) {
     gSoftReset.state = 0;
 }
 
-s32 func_08016DE0(void) {
+s32 soft_reset_update_scene(void) {
     func_08003EB0();
     flush_graphics_buffer();
     trigger_pending_dma3();
