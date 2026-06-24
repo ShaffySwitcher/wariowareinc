@@ -1,0 +1,130 @@
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0800F754 \n\
+/* 0800F754 */ PUSH {R4, LR} \n\
+/* 0800F756 */ LDR R0, _0800F778 \n\
+/* 0800F758 */ LDR R0, [R0] \n\
+/* 0800F75A */ LDR R1, _0800F77C \n\
+/* 0800F75C */ ADDS R0, R1 \n\
+/* 0800F75E */ LDRB R1, [R0] \n\
+/* 0800F760 */ LSLS R0, R1, #0X1F \n\
+/* 0800F762 */ CMP R0, #0 \n\
+/* 0800F764 */ BEQ _0800F820 \n\
+/* 0800F766 */ LSRS R0, R1, #1 \n\
+/* 0800F768 */ CMP R0, #8 \n\
+/* 0800F76A */ BHI _0800F820 \n\
+/* 0800F76C */ LSLS R0, R0, #2 \n\
+/* 0800F76E */ LDR R1, _0800F780 \n\
+/* 0800F770 */ ADDS R0, R1 \n\
+/* 0800F772 */ LDR R0, [R0] \n\
+/* 0800F774 */ MOV PC, R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0800F778: \n\
+/* 0800F778 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_0800F77C: \n\
+/* 0800F77C */ .word 0x0000027A \n\
+ \n\
+.balign 4, 0 \n\
+_0800F780: \n\
+/* 0800F780 */ .word D_0800F784 \n\
+ \n\
+.balign 4, 0 \n\
+D_0800F784: \n\
+/* 0800F784 */ .word _0800F7A8 \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F788 */ .word _0800F7AE \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F78C */ .word _0800F7B4 \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F790 */ .word _0800F7EC \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F794 */ .word _0800F802 \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F798 */ .word _0800F7F2 \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F79C */ .word _0800F80A \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F7A0 */ .word _0800F812 \n\
+ \n\
+.balign 4, 0 \n\
+/* 0800F7A4 */ .word _0800F81A \n\
+_0800F7A8: \n\
+/* 0800F7A8 */ BL func_0800F2DC \n\
+/* 0800F7AC */ B _0800F820 \n\
+_0800F7AE: \n\
+/* 0800F7AE */ BL func_0800FEB0 \n\
+/* 0800F7B2 */ B _0800F820 \n\
+_0800F7B4: \n\
+/* 0800F7B4 */ BL func_0800E834 \n\
+/* 0800F7B8 */ BL func_0800E760 \n\
+/* 0800F7BC */ LDR R4, _0800F7E0 \n\
+/* 0800F7BE */ LDR R0, [R4] \n\
+/* 0800F7C0 */ LDR R1, _0800F7E4 \n\
+/* 0800F7C2 */ ADDS R0, R1 \n\
+/* 0800F7C4 */ LDRB R0, [R0] \n\
+/* 0800F7C6 */ BL func_0800E6F8 \n\
+/* 0800F7CA */ BL func_0800F294 \n\
+/* 0800F7CE */ LDR R1, [R4] \n\
+/* 0800F7D0 */ LDR R0, _0800F7E8 \n\
+/* 0800F7D2 */ ADDS R1, R0 \n\
+/* 0800F7D4 */ LDRB R2, [R1] \n\
+/* 0800F7D6 */ MOVS R0, #1 \n\
+/* 0800F7D8 */ ANDS R0, R2 \n\
+/* 0800F7DA */ STRB R0, [R1] \n\
+/* 0800F7DC */ B _0800F820 \n\
+ \n\
+.balign 4, 0 \n\
+_0800F7E0: \n\
+/* 0800F7E0 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_0800F7E4: \n\
+/* 0800F7E4 */ .word 0x000002BB \n\
+ \n\
+.balign 4, 0 \n\
+_0800F7E8: \n\
+/* 0800F7E8 */ .word 0x0000027A \n\
+_0800F7EC: \n\
+/* 0800F7EC */ BL func_08010950 \n\
+/* 0800F7F0 */ B _0800F820 \n\
+_0800F7F2: \n\
+/* 0800F7F2 */ MOVS R0, #1 \n\
+/* 0800F7F4 */ RSBS R0, R0, #0 \n\
+/* 0800F7F6 */ BL func_0800E6F8 \n\
+/* 0800F7FA */ MOVS R0, #0 \n\
+/* 0800F7FC */ BL func_0801082C \n\
+/* 0800F800 */ B _0800F820 \n\
+_0800F802: \n\
+/* 0800F802 */ MOVS R0, #1 \n\
+/* 0800F804 */ BL func_0801082C \n\
+/* 0800F808 */ B _0800F820 \n\
+_0800F80A: \n\
+/* 0800F80A */ MOVS R0, #2 \n\
+/* 0800F80C */ BL func_0801082C \n\
+/* 0800F810 */ B _0800F820 \n\
+_0800F812: \n\
+/* 0800F812 */ MOVS R0, #4 \n\
+/* 0800F814 */ BL func_0801082C \n\
+/* 0800F818 */ B _0800F820 \n\
+_0800F81A: \n\
+/* 0800F81A */ MOVS R0, #5 \n\
+/* 0800F81C */ BL func_0801082C \n\
+_0800F820: \n\
+/* 0800F820 */ POP {R4} \n\
+/* 0800F822 */ POP {R0} \n\
+/* 0800F824 */ BX R0 \n\
+ \n\
+/* 0800F826 */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
