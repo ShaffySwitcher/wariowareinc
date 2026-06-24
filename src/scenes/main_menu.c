@@ -186,17 +186,69 @@ void func_08011824(void) {
 
 #include "asm/scenes/main_menu/asm_08011864.s"
 
-#include "asm/scenes/main_menu/asm_080118a0.s"
+void func_080118A0(u32 arg0) {
+    switch(arg0) {
+        case 0:
+            func_08012350();
+        break;
+        case 1:
+            func_08013264();
+        break;
+        case 2:
+            func_080141C8();
+        break;
+    }
+}
 
-#include "asm/scenes/main_menu/asm_080118c4.s"
+void func_080118C4(s32 arg0) {
+    switch (arg0) {
+    case 0:
+        func_08012274();
+        break;
+    case 1:
+        func_08013184();
+        break;
+    }
+}
 
-#include "asm/scenes/main_menu/asm_080118e0.s"
+void func_080118E0(void) {
+    scene_set_current_thread(0);
+    func_080117A8(D_03006518.unk2);
+    func_08011864(D_03006518.unk2);
+    gMainMenu.unkDD_1 = FALSE;
+    play_sound(&s_BOMB_Window_Change_seqData);
+}
 
-#include "asm/scenes/main_menu/asm_08011920.s"
+void func_08011920(void) {
+    scene_set_current_thread(0);
+    D_03006518.unk1 = 1;
+    func_08011824();
+    func_08012C18(D_03006518.unk0);
+    func_08015A88();
 
-#include "asm/scenes/main_menu/asm_0801197c.s"
+    if(!gMainMenu.unk88_1 || gMainMenu.unk88_4 < 40) {
+        func_08012C80(D_03006518.unk0);
+    }
 
-#include "asm/scenes/main_menu/asm_080119b8.s"
+    gMainMenu.unkDD_1 = FALSE;
+}
+
+void func_0801197C(void) {
+    scene_set_current_thread(0);
+    D_03006518.unk1 = 2;
+    func_08011824();
+    func_080135E8(D_03006518.unk0);
+    func_08015A88();
+    gMainMenu.unkDD_1 = FALSE;
+}
+
+void func_080119B8(void) {
+    scene_set_current_thread(0);
+    D_03006518.unk1 = 4;
+    func_08011824();
+    gMainMenu.unkDD_1 = FALSE;
+    func_080143A0();
+}
 
 #include "asm/scenes/main_menu/asm_080119ec.s"
 

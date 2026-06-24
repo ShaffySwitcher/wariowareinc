@@ -26,6 +26,8 @@ typedef s32 s24_8;
 #define FIXED_POINT_MUL(a, b) (((a) * (b)) >> 8)
 #define FIXED_POINT_DIV(n, d) (((n) << 8) / (d))
 
+#define RESET_BUTTON_COMBO (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON)
+
 #define ARRAY_COUNT(a) (s32)(sizeof(a))/sizeof((a)[0])
 
 #define TO_FRAMES(x) ((x) * 60)

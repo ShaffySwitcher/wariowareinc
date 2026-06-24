@@ -10,10 +10,15 @@
 
 // TYPES
 struct SoftResetSceneData {
+    u8 state;
 };
 
 // DATA
+extern s16 D_030035E0;
+extern s16 gCurrentScene;
+extern u16 gCurrentKeys;
 
 // FUNCTIONS
-
+void soft_reset_scene_run(void);
+void soft_reset_init_scene(void);
 // EXTERNS

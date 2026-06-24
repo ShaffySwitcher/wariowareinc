@@ -482,8 +482,6 @@ SECTIONS {
         build/asm/asm_08016d3c.s.o(.text*);
         build/asm/asm_08016d7c.s.o(.text*);
         build/src/scenes/soft_reset.c.o(.text);
-        build/asm/asm_08016db8.s.o(.text*);
-        build/asm/asm_08016de0.s.o(.text*);
         build/src/scenes/language_select.c.o(.text*);
         build/asm/asm_08016e9c.s.o(.text*);
         build/asm/asm_08016ec8.s.o(.text*);

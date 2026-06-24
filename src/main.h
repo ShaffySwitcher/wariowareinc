@@ -3,7 +3,6 @@
 #include "global.h"
 
 // MACROS
-#define RESET_BUTTON_COMBO (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON)
 
 // DATA
 extern u32* D_083A3D94;
