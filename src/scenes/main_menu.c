@@ -645,7 +645,7 @@ void func_08015CD8(s32 arg0) {
 
 #include "asm/scenes/main_menu/asm_08015dbc.s"
 
-s32 func_08015E24(void) {
+s32 main_menu_try_unlock_introduction(void) {
     if (save_is_stage_unlocked(STAGE_INTRODUCTION)) {
         return 0;
     }
@@ -654,7 +654,7 @@ s32 func_08015E24(void) {
     return 1 << 0;
 }
 
-s32 func_08015E40(void) {
+s32 main_menu_try_unlock_jimmy(void) {
     if (!save_is_stage_unlocked(STAGE_JIMMY) && save_is_stage_beaten(STAGE_INTRODUCTION)) {
         save_unlock_stage(STAGE_JIMMY);
         return 1 << 1;
@@ -662,7 +662,7 @@ s32 func_08015E40(void) {
     return 0;
 }
 
-s32 func_08015E68(void) {
+s32 main_menu_try_unlock_9_volt(void) {
     if (!save_is_stage_unlocked(STAGE_9_VOLT) && save_is_stage_beaten(STAGE_JIMMY)) {
         save_unlock_stage(STAGE_9_VOLT);
         return 1 << 2;
@@ -670,7 +670,7 @@ s32 func_08015E68(void) {
     return 0;
 }
 
-s32 func_08015E90(void) {
+s32 main_menu_try_unlock_dribble(void) {
     if (!save_is_stage_unlocked(STAGE_DRIBBLE) && save_is_stage_beaten(STAGE_JIMMY)) {
         save_unlock_stage(STAGE_DRIBBLE);
         return 1 << 3;
@@ -678,7 +678,7 @@ s32 func_08015E90(void) {
     return 0;
 }
 
-s32 func_08015EB8(void) {
+s32 main_menu_try_unlock_kat(void) {
     if (!save_is_stage_unlocked(STAGE_KAT) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
         save_unlock_stage(STAGE_KAT);
         return 1 << 4;
@@ -686,7 +686,7 @@ s32 func_08015EB8(void) {
     return 0;
 }
 
-s32 func_08015EE0(void) {
+s32 main_menu_try_unlock_mona(void) {
     if (!save_is_stage_unlocked(STAGE_MONA) && save_is_stage_beaten(STAGE_JIMMY)) {
         save_unlock_stage(STAGE_MONA);
         return 1 << 5;
@@ -694,37 +694,169 @@ s32 func_08015EE0(void) {
     return 0;
 }
 
-#include "asm/scenes/main_menu/asm_08015f08.s"
+s32 main_menu_try_unlock_dr_crygor(void) {
+    if (!save_is_stage_unlocked(STAGE_DR_CRYGOR) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
+        save_unlock_stage(STAGE_DR_CRYGOR);
+        return 1 << 6;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015f30.s"
+s32 main_menu_try_unlock_orbulon(void) {
+    if (!save_is_stage_unlocked(STAGE_ORBULON) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
+        save_unlock_stage(STAGE_ORBULON);
+        return 1 << 7;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015f58.s"
+s32 main_menu_try_unlock_wario(void) {
+    if (!save_is_stage_unlocked(STAGE_WARIO) && save_is_stage_beaten(STAGE_JIMMY_REMIX_2)) {
+        save_unlock_stage(STAGE_WARIO);
+        return 1 << 8;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015f80.s"
+s32 main_menu_try_unlock_remix_1(void) {
+    if (!save_is_stage_unlocked(STAGE_JIMMY_REMIX_1) && (save_is_stage_beaten(STAGE_9_VOLT) && save_is_stage_beaten(STAGE_DRIBBLE) && save_is_stage_beaten(STAGE_MONA))) {
+        save_unlock_stage(STAGE_JIMMY_REMIX_1);
+        return 1 << 9;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015fbc.s"
+s32 main_menu_try_unlock_remix_2(void) {
+    if (!save_is_stage_unlocked(STAGE_JIMMY_REMIX_2) && (save_is_stage_beaten(STAGE_KAT) && save_is_stage_beaten(STAGE_DR_CRYGOR) && save_is_stage_beaten(STAGE_ORBULON))) {
+        save_unlock_stage(STAGE_JIMMY_REMIX_2);
+        return 1 << 10;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015ff8.s"
 
-#include "asm/scenes/main_menu/asm_08016028.s"
+s32 main_menu_try_unlock_easy(void) {
+    if (!save_is_stage_unlocked(STAGE_EASY) && (save_is_stage_beaten(STAGE_WARIO))) {
+        save_beat_stage(STAGE_EASY);
+        save_unlock_stage(STAGE_EASY);
+        return 1 << 11;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08016060.s"
+s32 main_menu_try_unlock_thrilling(void) {
+    s32 var_r4;
 
-#include "asm/scenes/main_menu/asm_08016098.s"
+    if (!save_is_stage_unlocked(STAGE_THRILLING)) {
+        var_r4 = 0;
+        if (func_08008AA4(STAGE_EASY) >= 15) {
+            var_r4 = 1;
+        }
+        if (var_r4 != 0) {
+            save_beat_stage(STAGE_THRILLING);
+            save_unlock_stage(STAGE_THRILLING);
+            return 1 << 12;
+        }
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_080160c8.s"
+s32 main_menu_try_unlock_hard(void) {
+    s32 var_r4;
 
-#include "asm/scenes/main_menu/asm_080160f0.s"
+    if (!save_is_stage_unlocked(STAGE_HARD)) {
+        var_r4 = 0;
+        if (func_08008AA4(STAGE_THRILLING) >= 15) {
+            var_r4 = 1;
+        }
+        if (var_r4 != 0) {
+            save_beat_stage(STAGE_HARD);
+            save_unlock_stage(STAGE_HARD);
+            return 1 << 13;
+        }
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08016118.s"
+s32 main_menu_try_unlock_total_boss(void) {
+    if (!save_is_stage_unlocked(STAGE_TOTAL_BOSS) && save_is_stage_beaten(STAGE_WARIO)) {
+        save_beat_stage(STAGE_TOTAL_BOSS);
+        save_unlock_stage(STAGE_TOTAL_BOSS);
+        return 1 << 14;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08016140.s"
+s32 main_menu_try_unlock_fly_swatter(void) {
+    if (!save_is_stage_unlocked(STAGE_FLY_SWATTER) && func_08008AA4(STAGE_JIMMY_REMIX_1) >= 25) {
+        save_unlock_stage(STAGE_FLY_SWATTER);
+        return 1 << 17;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_0801618c.s"
+s32 main_menu_try_unlock_dr_wario(void) {
+    if (!save_is_stage_unlocked(STAGE_DR_WARIO) && func_08008AA4(STAGE_JIMMY) >= 20) {
+        save_unlock_stage(STAGE_DR_WARIO);
+        return 1 << 16;
+    }
+    return 0;
+}
 
-u32 main_menu_unlock_dong_dong(void) {
+s32 main_menu_try_unlock_sheriff(void) {
+    if (!save_is_stage_unlocked(STAGE_SHERIFF) && func_08008AA4(STAGE_JIMMY_REMIX_2) >= 25) {
+        save_unlock_stage(STAGE_SHERIFF);
+        return 1 << 15;
+    }
+    return 0;
+}
+
+s32 main_menu_try_unlock_pyoro(void) {
+    u32 microgameID;
+    u32 openedCount;
+    u8* flags;
+
+    if (!save_is_stage_unlocked(STAGE_PYORO)) {
+        openedCount = 0;
+        flags = gSaveBuffer->microgameFlags;
+        for(microgameID = 0; microgameID < 226; microgameID++){
+            if (flags[microgameID] & 1) {
+                openedCount += 1;
+            }
+        }
+        if (openedCount > 212) {
+            save_unlock_stage(STAGE_PYORO);
+            return 1 << 18;
+        }
+    }
+    return 0;
+}
+
+s32 main_menu_try_unlock_pyoro_2(void) {
+    u32 microgameID;
+    u32 beatenCount;
+    u8* flags;
+
+    if (!save_is_stage_unlocked(STAGE_PYORO_2)) {
+        beatenCount = 0;
+        flags = gSaveBuffer->microgameFlags;
+        for(microgameID = 0; microgameID < 226; microgameID++){
+            if (flags[microgameID] & 2) {
+                beatenCount += 1;
+            }
+        }
+        if (beatenCount > 212) {
+            save_unlock_stage(STAGE_PYORO_2);
+            return 1 << 19;
+        }
+    }
+    return 0;
+}
+
+u32 main_menu_try_unlock_dong_dong(void) {
     u32 count;
     u32 tmp;
+
     if (!save_is_stage_unlocked(STAGE_DONG_DONG)) {
         tmp = save_is_stage_beaten(STAGE_KAT);
         count = (tmp | -tmp) >> 31; // fake-match
@@ -734,59 +866,145 @@ u32 main_menu_unlock_dong_dong(void) {
         if (save_is_stage_beaten(STAGE_ORBULON)) {
             count++;
         }
-        if (count != 0) {
+        if (count) {
             save_unlock_stage(STAGE_DONG_DONG);
-            return (1 << 23);
+            return 1 << 23;
         }
     }
     return 0;
 }
 
-#include "asm/scenes/main_menu/asm_08016220.s"
+s32 main_menu_try_unlock_hurdle(void) {
+    u32 count;
+    u32 tmp;
 
-#include "asm/scenes/main_menu/asm_08016268.s"
+    if (!save_is_stage_unlocked(STAGE_HURDLE)) {
+        tmp = save_is_stage_beaten(STAGE_KAT);
+        count = (tmp | -tmp) >> 31; // fake-match
+        if (save_is_stage_beaten(STAGE_DR_CRYGOR)) {
+            count += 1;
+        }
+        if (save_is_stage_beaten(STAGE_ORBULON)) {
+            count += 1;
+        }
+        if (count > 1) {
+            save_unlock_stage(STAGE_HURDLE);
+            return 1 << 24;
+        }
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_080162b0.s"
+s32 main_menu_try_unlock_chiritorie(void) {
+    u32 count;
+    u32 tmp;
 
-#include "asm/scenes/main_menu/asm_080162f8.s"
+    if (!save_is_stage_unlocked(STAGE_CHIRITORIE)) {
+        tmp = save_is_stage_beaten(STAGE_9_VOLT);
+        count = (tmp | -tmp) >> 31; // fake-match
+        if (save_is_stage_beaten(STAGE_DRIBBLE)) {
+            count += 1;
+        }
+        if (save_is_stage_beaten(STAGE_MONA)) {
+            count += 1;
+        }
+        if (count) {
+            save_unlock_stage(STAGE_CHIRITORIE);
+            return 1 << 25;
+        }
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08016328.s"
 
-#include "asm/scenes/main_menu/asm_08016358.s"
+s32 main_menu_try_unlock_chicken_race(void) {
+    u32 count;
+    u32 tmp;
 
-#include "asm/scenes/main_menu/asm_08016388.s"
+    if (!save_is_stage_unlocked(STAGE_CHICKEN_RACE)) {
+        tmp = save_is_stage_beaten(STAGE_9_VOLT);
+        count = (tmp | -tmp) >> 31; // fake-match
+        if (save_is_stage_beaten(STAGE_DRIBBLE)) {
+            count += 1;
+        }
+        if (save_is_stage_beaten(STAGE_MONA)) {
+            count += 1;
+        }
+        if (count > 1) {
+            save_unlock_stage(STAGE_CHICKEN_RACE);
+            return 1 << 26;
+        }
+    }
+    return 0;
+}
 
-s32 main_menu_check_stage_unlock(void) {
+s32 main_menu_try_unlock_jump_forever(void) {
+    if (!save_is_stage_unlocked(STAGE_JUMP_FOREVER) && save_is_stage_beaten(STAGE_JIMMY)) {
+        save_beat_stage(STAGE_JUMP_FOREVER);
+        save_unlock_stage(STAGE_JUMP_FOREVER);
+        return 1 << 20;
+    }
+    return 0;
+}
+
+s32 main_menu_try_unlock_paper_plane(void) {
+    if (!save_is_stage_unlocked(STAGE_PAPER_PLANE) && save_is_stage_beaten(STAGE_JIMMY_REMIX_2)) {
+        save_beat_stage(STAGE_PAPER_PLANE);
+        save_unlock_stage(STAGE_PAPER_PLANE);
+        return 1 << 21;
+    }
+    return 0;
+}
+
+s32 main_menu_try_unlock_skating_board(void) {
+    if (!save_is_stage_unlocked(STAGE_SKATING_BOARD) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
+        save_beat_stage(STAGE_SKATING_BOARD);
+        save_unlock_stage(STAGE_SKATING_BOARD);
+        return 1 << 22;
+    }
+    return 0;
+}
+
+s32 main_menu_try_unlock_staff(void) {
+    if (!save_is_stage_unlocked(STAGE_STAFF) && save_is_stage_beaten(STAGE_WARIO)) {
+        save_beat_stage(STAGE_STAFF);
+        save_unlock_stage(STAGE_STAFF);
+        return 1 << 27;
+    }
+    return 0;
+}
+
+s32 main_menu_try_unlock_stages(void) {
     u32 unlock;
 
-    unlock = func_08015E24();
-    unlock |= func_08015E40();
-    unlock |= func_08015E68();
-    unlock |= func_08015E90();
-    unlock |= func_08015EB8();
-    unlock |= func_08015EE0();
-    unlock |= func_08015F08();
-    unlock |= func_08015F30();
-    unlock |= func_08015F58();
-    unlock |= func_08015F80();
-    unlock |= func_08015FBC();
-    unlock |= func_08015FF8();
-    unlock |= func_08016028();
-    unlock |= func_08016060();
-    unlock |= func_08016098();
-    unlock |= func_080160C8();
-    unlock |= func_080160F0();
-    unlock |= func_08016118();
-    unlock |= func_08016140();
-    unlock |= func_0801618C();
-    unlock |= main_menu_unlock_dong_dong();
-    unlock |= func_08016220();
-    unlock |= func_08016268();
-    unlock |= func_080162B0();
-    unlock |= func_080162F8();
-    unlock |= func_08016328();
-    unlock |= func_08016358();
-    unlock |= func_08016388();
+    unlock = main_menu_try_unlock_introduction();
+    unlock |= main_menu_try_unlock_jimmy();
+    unlock |= main_menu_try_unlock_9_volt();
+    unlock |= main_menu_try_unlock_dribble();
+    unlock |= main_menu_try_unlock_kat();
+    unlock |= main_menu_try_unlock_mona();
+    unlock |= main_menu_try_unlock_dr_crygor();
+    unlock |= main_menu_try_unlock_orbulon();
+    unlock |= main_menu_try_unlock_wario();
+    unlock |= main_menu_try_unlock_remix_1();
+    unlock |= main_menu_try_unlock_remix_2();
+    unlock |= main_menu_try_unlock_easy();
+    unlock |= main_menu_try_unlock_thrilling();
+    unlock |= main_menu_try_unlock_hard();
+    unlock |= main_menu_try_unlock_total_boss();
+    unlock |= main_menu_try_unlock_fly_swatter();
+    unlock |= main_menu_try_unlock_dr_wario();
+    unlock |= main_menu_try_unlock_sheriff();
+    unlock |= main_menu_try_unlock_pyoro();
+    unlock |= main_menu_try_unlock_pyoro_2();
+    unlock |= main_menu_try_unlock_dong_dong();
+    unlock |= main_menu_try_unlock_hurdle();
+    unlock |= main_menu_try_unlock_chiritorie();
+    unlock |= main_menu_try_unlock_chicken_race();
+    unlock |= main_menu_try_unlock_jump_forever();
+    unlock |= main_menu_try_unlock_paper_plane();
+    unlock |= main_menu_try_unlock_skating_board();
+    unlock |= main_menu_try_unlock_staff();
 
     return unlock;
 }

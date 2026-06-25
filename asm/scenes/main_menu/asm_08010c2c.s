@@ -14,7 +14,7 @@ thumb_func_start main_menu_scene_start \n\
 /* 08010C40 */ MOVS R2, #4 \n\
 /* 08010C42 */ ORRS R0, R2 \n\
 /* 08010C44 */ STRB R0, [R1] \n\
-/* 08010C46 */ BL main_menu_check_stage_unlock \n\
+/* 08010C46 */ BL main_menu_try_unlock_stages \n\
 /* 08010C4A */ LDR R1, [R5] \n\
 /* 08010C4C */ MOVS R2, #0XDA \n\
 /* 08010C4E */ LSLS R2, R2, #1 \n\
