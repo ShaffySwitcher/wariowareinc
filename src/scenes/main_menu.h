@@ -17,7 +17,8 @@ struct MainMenuSceneData {
     u8 unk10;
     u8 pad11[0x27];
     s16 unk38;
-    u8 pad3A[0x4E];
+    s16 unk3A[28];
+    u8 pad72[0x16];
     u32 unk88_1:1;
     u32 unk88_2:8;
     u8 pad8A[0x2A];
@@ -40,7 +41,13 @@ struct MainMenuSceneData {
     u32 unkDC_29:4;
     u8 padE0[0x11];
     u8 unkF1;
-    u8 unkF2[11];
+    u8 unkF2[0x2];
+    void (*unkF4)(s32);
+    u8 unkF8;
+    u8 unkF9;
+    u8 unkFA;
+    u8 unkFB;
+    u8 padFC;
     u8 unkFD;
     u8 padFE[0x3E];
     u32 unk13C_1:1;
@@ -69,6 +76,11 @@ struct Unk03006518 {
     u8 unk2;
 };
 
+struct Unk083AA0C4 {
+    u8 unk0[0xC];
+    struct Vector2 *position;
+};
+
 struct Unk083AB478 {
     u16 unk0[4];
 };
@@ -80,6 +92,8 @@ extern struct Vector2 D_083AB2CC[2];
 extern u16 D_0832027C[];
 extern u16 D_083AB470[];
 extern struct Unk083AB478 D_083AB478[];
+extern struct Unk083AA0C4 D_083AA0C4[];
+extern struct Unk083AA0C4 D_083AA294[];
 
 // FUNCTIONS
 extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);
@@ -102,6 +116,7 @@ extern void func_080115DC(void);
 extern void func_08003A70(void*);
 extern void func_08015DBC();
 extern void func_0800C7A4();
+extern void func_08011DFC(void);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);

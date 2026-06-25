@@ -250,19 +250,146 @@ void func_080119B8(void) {
     func_080143A0();
 }
 
-#include "asm/scenes/main_menu/asm_080119ec.s"
+void func_080119EC(void) {
+    u32 i;
+    struct Vector2 *entry;
 
-#include "asm/scenes/main_menu/asm_08011b1c.s"
+    scene_set_current_thread(0);
+    
+    gMainMenu.unkFB--;
+    if(gMainMenu.unkFB > 0) {
+        return;
+    }
+    
+    gMainMenu.unkDC_16 = FALSE;
+    switch(D_03006518.unk2) {
+        case 0:
+            for(i = 0; i < 28; i++) {
+                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], TRUE);
+            }
+            entry = D_083AA0C4[D_03006518.unk0].position;
+            sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
+            func_0800C77C(4);
+            break;
+        case 1:
+            for(i = 0; i < 9; i++) {
+                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], TRUE);
+            }
+            for(i = 9; i < 28; i++) {
+                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], FALSE);
+            }
+            entry = D_083AA294[D_03006518.unk0].position;
+            sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
+            func_0800C77C(4);
+            break;
+        case 2:
+            for(i = 0; i < 28; i++) {
+                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], FALSE);
+            }
+            break;
+    }
+}
 
-#include "asm/scenes/main_menu/asm_08011bec.s"
+void func_08011B1C(s32 arg0) {
+    struct Vector2 *src;
+    struct Vector2 *dst;
+    
+    if (arg0 < 9) {
+        src = D_083AA294[arg0].position;
+        dst = D_083AA0C4[arg0].position;
 
-#include "asm/scenes/main_menu/asm_08011ca4.s"
+        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+    } else {
+        src = D_083AA294->position;
+        dst = D_083AA0C4[arg0].position;
+        
+        sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[arg0], 1U);
+        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+    }
+}
 
-#include "asm/scenes/main_menu/asm_08011d0c.s"
+void func_08011BEC(s32 arg0) {
+    struct Vector2 *src;
+    struct Vector2 *dst;
 
-#include "asm/scenes/main_menu/asm_08011d5c.s"
+    if (arg0 < 9) {
+        src = D_083AA0C4[arg0].position;
+        dst = D_083AA294[arg0].position;
 
-#include "asm/scenes/main_menu/asm_08011dfc.s"
+        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+    } else {
+        dst = D_083AA294[0].position;
+        src = D_083AA0C4[arg0].position;
+
+        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+    }
+}
+
+void func_08011CA4(s32 arg0) {
+    struct Vector2* src;
+    
+    sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[arg0], TRUE);
+    
+    src = D_083AA294[arg0].position;
+    run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], -32, src->y, src->x, src->y, 0xB4), func_080119EC, 0);
+}
+
+void func_08011D0C(s32 arg0) {
+    struct Vector2* src;
+
+    src = D_083AA294[arg0].position;
+    run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, -32, src->y, 0xB4), func_080119EC, 0);
+}
+
+void func_08011D5C(u32 arg0) {
+    void (*callback)(s32);
+    switch(arg0) {
+        case 0:
+            callback = func_08011B1C;
+            gMainMenu.unkFB = 28;
+        break;
+        case 1:
+            if(D_03006518.unk2 == 0) {
+                callback = func_08011BEC;
+                gMainMenu.unkFB = 28;
+            } else {
+                callback = func_08011CA4;
+                gMainMenu.unkFB = 9;
+            }
+        break;
+        case 2:
+            callback = func_08011D0C;
+            gMainMenu.unkFB = 9;
+        break;
+    }
+
+    gMainMenu.unkF4 = callback;
+    gMainMenu.unkF8 = 1;
+    gMainMenu.unkF9 = 0;
+    gMainMenu.unkFA = gMainMenu.unkFB;
+    gMainMenu.unkDC_16 = TRUE;
+}
+
+void func_08011DFC(void) {
+    u32 size;
+    u32 i;
+
+    if (!gMainMenu.unkF8)
+        return;
+
+    size = 1;
+    if (gMainMenu.unkFA > 0x1B)
+        size = 3;
+
+    for (i = 0; i < size; i++) {
+        gMainMenu.unkF4(gMainMenu.unkF9);
+
+        if (++gMainMenu.unkF9 >= gMainMenu.unkFA) {
+            gMainMenu.unkF8 = 0;
+            break;
+        }
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08011e68.s"
 
