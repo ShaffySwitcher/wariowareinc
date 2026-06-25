@@ -779,7 +779,7 @@ _0800E452: \n\
 /* 0800E4BC */ STR R0, [R1] \n\
 /* 0800E4BE */ MOVS R4, #1 \n\
 /* 0800E4C0 */ MOVS R0, #3 \n\
-/* 0800E4C2 */ BL func_0800068C \n\
+/* 0800E4C2 */ BL save_is_stage_beaten \n\
 /* 0800E4C6 */ CMP R0, #0 \n\
 /* 0800E4C8 */ BEQ _0800E4E2 \n\
 /* 0800E4CA */ LDR R2, [R5] \n\
@@ -796,7 +796,7 @@ _0800E452: \n\
 /* 0800E4E0 */ MOVS R4, #2 \n\
 _0800E4E2: \n\
 /* 0800E4E2 */ MOVS R0, #4 \n\
-/* 0800E4E4 */ BL func_0800068C \n\
+/* 0800E4E4 */ BL save_is_stage_beaten \n\
 /* 0800E4E8 */ CMP R0, #0 \n\
 /* 0800E4EA */ BEQ _0800E502 \n\
 /* 0800E4EC */ LDR R2, [R5] \n\
@@ -812,7 +812,7 @@ _0800E4E2: \n\
 /* 0800E500 */ ADDS R4, #1 \n\
 _0800E502: \n\
 /* 0800E502 */ MOVS R0, #6 \n\
-/* 0800E504 */ BL func_0800068C \n\
+/* 0800E504 */ BL save_is_stage_beaten \n\
 /* 0800E508 */ CMP R0, #0 \n\
 /* 0800E50A */ BEQ _0800E522 \n\
 /* 0800E50C */ LDR R2, [R5] \n\

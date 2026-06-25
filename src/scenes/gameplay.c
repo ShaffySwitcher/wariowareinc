@@ -382,7 +382,7 @@ void func_0800912C(u16 arg0) {
     u32 args[3];
     
     if (D_03003848 != 0x63) {
-        if (func_0800068C(D_03003848) != 0) {
+        if (save_is_stage_beaten(D_03003848) != 0) {
             gGameplayData.unk23e = func_080089D8(D_03003848, arg0);
         }
     } else {
@@ -597,7 +597,7 @@ u32 gameplay_run_script(void) {
                 case 4:
                     func_0800A200(0);
                     func_080089D8(D_03003848, gGameplayData.currentScore);
-                    func_080006A4(D_03003848);
+                    save_beat_stage(D_03003848);
                     func_0800A270();
                     set_beatscript_tempo(gGameplayData.unk0->unk0);
                     scene_set_music_pitch(0);
@@ -679,7 +679,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 22:
-                    if (func_0800068C(D_03003848) != 0) {
+                    if (save_is_stage_beaten(D_03003848) != 0) {
                         gGameplayData.unk20 = func_080091B0(cmd, value.u32) + 1;
                     }
                     break;

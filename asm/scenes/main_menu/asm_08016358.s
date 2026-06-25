@@ -7,11 +7,11 @@ thumb_func_start func_08016358 \n\
 /* 08016360 */ CMP R0, #0 \n\
 /* 08016362 */ BNE _08016380 \n\
 /* 08016364 */ MOVS R0, #9 \n\
-/* 08016366 */ BL func_0800068C \n\
+/* 08016366 */ BL save_is_stage_beaten \n\
 /* 0801636A */ CMP R0, #0 \n\
 /* 0801636C */ BEQ _08016380 \n\
 /* 0801636E */ MOVS R0, #0X16 \n\
-/* 08016370 */ BL func_080006A4 \n\
+/* 08016370 */ BL save_beat_stage \n\
 /* 08016374 */ MOVS R0, #0X16 \n\
 /* 08016376 */ BL save_unlock_stage \n\
 /* 0801637A */ MOVS R0, #0X80 \n\

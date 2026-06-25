@@ -7,15 +7,15 @@ thumb_func_start func_08015FBC \n\
 /* 08015FC4 */ CMP R0, #0 \n\
 /* 08015FC6 */ BNE _08015FF2 \n\
 /* 08015FC8 */ MOVS R0, #4 \n\
-/* 08015FCA */ BL func_0800068C \n\
+/* 08015FCA */ BL save_is_stage_beaten \n\
 /* 08015FCE */ CMP R0, #0 \n\
 /* 08015FD0 */ BEQ _08015FF2 \n\
 /* 08015FD2 */ MOVS R0, #6 \n\
-/* 08015FD4 */ BL func_0800068C \n\
+/* 08015FD4 */ BL save_is_stage_beaten \n\
 /* 08015FD8 */ CMP R0, #0 \n\
 /* 08015FDA */ BEQ _08015FF2 \n\
 /* 08015FDC */ MOVS R0, #7 \n\
-/* 08015FDE */ BL func_0800068C \n\
+/* 08015FDE */ BL save_is_stage_beaten \n\
 /* 08015FE2 */ CMP R0, #0 \n\
 /* 08015FE4 */ BEQ _08015FF2 \n\
 /* 08015FE6 */ MOVS R0, #0XA \n\

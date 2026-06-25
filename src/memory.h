@@ -8,7 +8,7 @@
 
 // TYPES
 struct SaveStageFlags {
-    u8 unk0_1 : 1;
+    u8 beat : 1;
     u8 unlocked : 1;
     u8 unk0_3 : 6;
     u8 pad1;
@@ -51,8 +51,8 @@ extern void write_save_main();
 extern void write_save_backup();
 extern u32 save_is_stage_unlocked(u32 id);
 extern void save_unlock_stage(u32 id);
-extern u32 func_0800068C(u32 id);
-extern void func_080006A4(u32 id);
+extern u32 save_is_stage_beaten(u32 id);
+extern void save_beat_stage(u32 id);
 extern u32 func_080006BC(u32 id);
 extern u32 func_080006E4(u32 id);
 extern u32 func_08000700(u32 id);

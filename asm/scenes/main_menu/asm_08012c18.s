@@ -20,7 +20,7 @@ _08012C34: \n\
 /* 08012C36 */ CMP R4, #0XA \n\
 /* 08012C38 */ BHI _08012C46 \n\
 /* 08012C3A */ ADDS R0, R4, #0 \n\
-/* 08012C3C */ BL func_0800068C \n\
+/* 08012C3C */ BL save_is_stage_beaten \n\
 /* 08012C40 */ CMP R0, #0 \n\
 /* 08012C42 */ BEQ _08012C46 \n\
 /* 08012C44 */ LDR R5, =D_083AA500 \n\

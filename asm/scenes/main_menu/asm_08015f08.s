@@ -7,7 +7,7 @@ thumb_func_start func_08015F08 \n\
 /* 08015F10 */ CMP R0, #0 \n\
 /* 08015F12 */ BNE _08015F28 \n\
 /* 08015F14 */ MOVS R0, #9 \n\
-/* 08015F16 */ BL func_0800068C \n\
+/* 08015F16 */ BL save_is_stage_beaten \n\
 /* 08015F1A */ CMP R0, #0 \n\
 /* 08015F1C */ BEQ _08015F28 \n\
 /* 08015F1E */ MOVS R0, #6 \n\

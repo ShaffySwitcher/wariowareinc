@@ -16,7 +16,7 @@ _08016042: \n\
 /* 08016042 */ CMP R4, #0 \n\
 /* 08016044 */ BEQ _08016058 \n\
 /* 08016046 */ MOVS R0, #0XC \n\
-/* 08016048 */ BL func_080006A4 \n\
+/* 08016048 */ BL save_beat_stage \n\
 /* 0801604C */ MOVS R0, #0XC \n\
 /* 0801604E */ BL save_unlock_stage \n\
 /* 08016052 */ MOVS R0, #0X80 \n\

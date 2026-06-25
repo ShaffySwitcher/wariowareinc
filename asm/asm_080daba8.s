@@ -26,7 +26,7 @@ glabel func_080DABA8
 /* 080DABCE */ ADDS R0, #0X54
 /* 080DABD0 */ STRH R1, [R0]
 /* 080DABD2 */ MOVS R0, #3
-/* 080DABD4 */ BL func_0800068C
+/* 080DABD4 */ BL save_is_stage_beaten
 /* 080DABD8 */ CMP R0, #0
 /* 080DABDA */ BEQ _080DABE8
 /* 080DABDC */ LDR R0, [R4]
@@ -54,7 +54,7 @@ _080DABEE:
 /* 080DAC02 */ CMP R0, #0X63
 /* 080DAC04 */ BLS _080DAC1C
 /* 080DAC06 */ MOVS R0, #4
-/* 080DAC08 */ BL func_0800068C
+/* 080DAC08 */ BL save_is_stage_beaten
 /* 080DAC0C */ CMP R0, #0
 /* 080DAC0E */ BEQ _080DAC1C
 /* 080DAC10 */ LDR R1, [R4]

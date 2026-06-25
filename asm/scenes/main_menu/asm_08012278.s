@@ -21,7 +21,7 @@ thumb_func_start func_08012278 \n\
 /* 0801229A */ CMP R4, #0XA \n\
 /* 0801229C */ BHI _080122AA \n\
 /* 0801229E */ ADDS R0, R4, #0 \n\
-/* 080122A0 */ BL func_0800068C \n\
+/* 080122A0 */ BL save_is_stage_beaten \n\
 /* 080122A4 */ CMP R0, #0 \n\
 /* 080122A6 */ BNE _080122AA \n\
 /* 080122A8 */ LDR R5, _080122F0 \n\

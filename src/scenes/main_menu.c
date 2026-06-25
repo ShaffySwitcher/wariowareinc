@@ -32,7 +32,7 @@ void main_menu_scene_init_gfx2(void) {
     task = start_load_gfx_table_task((u16)get_current_mem_id(), main_menu_gfx_table, 0x3000);
     run_func_after_task(task, main_menu_scene_init_gfx3, 0);
     func_08010A18();
-    gMainMenu.unkDF_2 = TRUE;
+    gMainMenu.unkDC_26 = TRUE;
 }
 
 void main_menu_scene_init_gfx1(void) {
@@ -83,18 +83,18 @@ void func_08011504(s16 x, s16 y, void (*callback)(), s32 arg) {
 
     temp_r0 = func_0800C15C(*gCurrentSceneSpritePool, x, y, 0x82);
     run_func_after_task(temp_r0, callback, arg);
-    gMainMenu.unkDD_1 = TRUE;
-    gMainMenu.unk1B8 = temp_r0;
-    gMainMenu.unk1BC = x;
-    gMainMenu.unk1BE = y;
+    gMainMenu.unkDC_9 = TRUE;
+    gMainMenu.unk1AC = temp_r0;
+    gMainMenu.unk1B0 = x;
+    gMainMenu.unk1B2 = y;
 }
 
 void func_08011584(void) {
     s32 temp_r4;
 
-    temp_r4 = gMainMenu.unk1B8;
+    temp_r4 = gMainMenu.unk1AC;
     if (func_08005920(temp_r4) == 1) {
-        sprite_set_x_y(gSpriteHandler, *gCurrentSceneSpritePool, gMainMenu.unk1BC, gMainMenu.unk1BE);
+        sprite_set_x_y(gSpriteHandler, *gCurrentSceneSpritePool, gMainMenu.unk1B0, gMainMenu.unk1B2);
         func_08005834(temp_r4);
     }
 }
@@ -115,14 +115,14 @@ u32 func_08011698(void) {
 }
 
 void func_080116D4(void) {
-    gMainMenu.unkDF_3 = FALSE;
-    if (gMainMenu.unk148_2 || gMainMenu.unk148_3) {
+    gMainMenu.unkDC_27 = FALSE;
+    if (gMainMenu.unk13C_2 || gMainMenu.unk13C_3) {
         set_pause_beatscript_scene(TRUE);
     }
 }
 
 s32 func_08011708(void) {
-    if (gMainMenu.unkDF_3 >= 0 && !func_08011614()) { // fake-match
+    if (gMainMenu.unkDC_27 >= 0 && !func_08011614()) { // fake-match
         return 1;
     }
     return 0;
@@ -215,7 +215,7 @@ void func_080118E0(void) {
     scene_set_current_thread(0);
     func_080117A8(D_03006518.unk2);
     func_08011864(D_03006518.unk2);
-    gMainMenu.unkDD_1 = FALSE;
+    gMainMenu.unkDC_9 = FALSE;
     play_sound(&s_BOMB_Window_Change_seqData);
 }
 
@@ -226,11 +226,11 @@ void func_08011920(void) {
     func_08012C18(D_03006518.unk0);
     func_08015A88();
 
-    if(!gMainMenu.unk88_1 || gMainMenu.unk88_4 < 40) {
+    if(!gMainMenu.unk88_1 || gMainMenu.unk88_2 < 40) {
         func_08012C80(D_03006518.unk0);
     }
 
-    gMainMenu.unkDD_1 = FALSE;
+    gMainMenu.unkDC_9 = FALSE;
 }
 
 void func_0801197C(void) {
@@ -239,14 +239,14 @@ void func_0801197C(void) {
     func_08011824();
     func_080135E8(D_03006518.unk0);
     func_08015A88();
-    gMainMenu.unkDD_1 = FALSE;
+    gMainMenu.unkDC_9 = FALSE;
 }
 
 void func_080119B8(void) {
     scene_set_current_thread(0);
     D_03006518.unk1 = 4;
     func_08011824();
-    gMainMenu.unkDD_1 = FALSE;
+    gMainMenu.unkDC_9 = FALSE;
     func_080143A0();
 }
 
@@ -272,22 +272,22 @@ void func_0801208C(void) {
     struct Vector2* pos;
     
     if (func_08011708() && D_03006518.unk2 == 2) {
-        if(gMainMenu.unk148_2) {
-            gMainMenu.unk106 = 0;
-            pos = D_083AB2CC + (gMainMenu.unk106);
+        if(gMainMenu.unk13C_2) {
+            gMainMenu.unkFD = 0;
+            pos = D_083AB2CC + (gMainMenu.unkFD);
 
             func_08011504(pos->x, pos->y, func_080119B8, 0);
             func_08011730(0);
             return;
         }
 
-        if(gMainMenu.unk148_3 != 0) {
-            gMainMenu.unk106 = 1;
-            pos = D_083AB2CC + (gMainMenu.unk106);
+        if(gMainMenu.unk13C_3 != 0) {
+            gMainMenu.unkFD = 1;
+            pos = D_083AB2CC + (gMainMenu.unkFD);
 
             func_08011504(pos->x, pos->y, func_080119B8, 0);
             func_08011730(0);
-            gMainMenu.unk148_3 = 0;
+            gMainMenu.unk13C_3 = 0;
             set_pause_beatscript_scene(FALSE);
             return;
         }
@@ -422,24 +422,34 @@ void func_0801364C(void) {
 
 #include "asm/scenes/main_menu/asm_08013a94.s"
 
-#include "asm/scenes/main_menu/asm_08013ae0.s"
+void func_08013AE0(void) {
+    func_0800C7A4(8);
+    func_0800C7A4(9);
+}
 
 #include "asm/scenes/main_menu/asm_08013af4.s"
 
-#include "asm/scenes/main_menu/asm_08013b88.s"
+void func_08013B88(void) {
+    func_0800C7A4(7);
+}
 
 #include "asm/scenes/main_menu/asm_08013b94.s"
 
 #include "asm/scenes/main_menu/asm_08013c60.s"
 
-#include "asm/scenes/main_menu/asm_08013e44.s"
+void func_08013E44(void) {
+    func_0800C7A4(27);
+    func_0800C7A4(28);
+    func_0800C7A4(29);
+    func_0800C7A4(30);
+}
 
 void func_08013E64(void) {
-    if ((gPressedKeys & (A_BUTTON | DPAD_ANY)) && (gMainMenu.unkFA != 0)) {
-        if (gMainMenu.unkDD_1) {
+    if ((gPressedKeys & (A_BUTTON | DPAD_ANY)) && (gMainMenu.unkF1 != 0)) {
+        if (gMainMenu.unkDC_9) {
             func_08011584();
         }
-        if (gMainMenu.unkDD_2 < 0) {
+        if (gMainMenu.unkDC_10 < 0) {
             func_08013A4C();
         }
     }
@@ -489,9 +499,9 @@ void func_08013E64(void) {
 #include "asm/scenes/main_menu/asm_08014740.s"
 
 void func_080147B0(void) {
-    if (func_08011708() && gMainMenu.unk148_2) {
-        func_08015944(gMainMenu.unk1D0, func_08014428);
-        gMainMenu.unk148_2 = FALSE;
+    if (func_08011708() && gMainMenu.unk13C_2) {
+        func_08015944(gMainMenu.unk1C4, func_08014428);
+        gMainMenu.unk13C_2 = FALSE;
         set_pause_beatscript_scene(FALSE);
         return;
     }
@@ -601,27 +611,88 @@ void func_08015930(void) {
 
 #include "asm/scenes/main_menu/asm_08015b54.s"
 
-#include "asm/scenes/main_menu/asm_08015c38.s"
+void func_08015C38(void) {
+    if (gMainMenu.unkB4 != 0) {
+        if (func_08005920(gMainMenu.unkC8)) {
+            func_08005834(gMainMenu.unkC8);
+        }
+        func_08004EE8(gMainMenu.unk0);
+        gMainMenu.unkB4 = 0;
+    }
+}
 
-#include "asm/scenes/main_menu/asm_08015c7c.s"
+void func_08015C7C(s32 arg0) {
+    u32 i;
+    void* src; 
+    void* dst;
 
-#include "asm/scenes/main_menu/asm_08015cd8.s"
+    struct Unk083AB478* set = &D_083AB478[arg0];
+    
+    for (i = 0; i < 4; i++) {
+        src = BG_TILESET_BASE(D_0832027C[set->unk0[i]] << 5);
+        dst = BG_TILESET_BASE(D_0832027C[D_083AB470[i]] << 5);
+
+        dma3_set(src, dst, 0x20, 0x20, 0x100);
+    }
+}
+
+void func_08015CD8(s32 arg0) {
+    gMainMenu.unkDC_28 = TRUE;
+    gMainMenu.unkDC_29 = arg0;
+}
 
 #include "asm/scenes/main_menu/asm_08015d04.s"
 
 #include "asm/scenes/main_menu/asm_08015dbc.s"
 
-#include "asm/scenes/main_menu/asm_08015e24.s"
+s32 func_08015E24(void) {
+    if (save_is_stage_unlocked(STAGE_INTRODUCTION)) {
+        return 0;
+    }
 
-#include "asm/scenes/main_menu/asm_08015e40.s"
+    save_unlock_stage(STAGE_INTRODUCTION);
+    return 1 << 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015e68.s"
+s32 func_08015E40(void) {
+    if (!save_is_stage_unlocked(STAGE_JIMMY) && save_is_stage_beaten(STAGE_INTRODUCTION)) {
+        save_unlock_stage(STAGE_JIMMY);
+        return 1 << 1;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015e90.s"
+s32 func_08015E68(void) {
+    if (!save_is_stage_unlocked(STAGE_9_VOLT) && save_is_stage_beaten(STAGE_JIMMY)) {
+        save_unlock_stage(STAGE_9_VOLT);
+        return 1 << 2;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015eb8.s"
+s32 func_08015E90(void) {
+    if (!save_is_stage_unlocked(STAGE_DRIBBLE) && save_is_stage_beaten(STAGE_JIMMY)) {
+        save_unlock_stage(STAGE_DRIBBLE);
+        return 1 << 3;
+    }
+    return 0;
+}
 
-#include "asm/scenes/main_menu/asm_08015ee0.s"
+s32 func_08015EB8(void) {
+    if (!save_is_stage_unlocked(STAGE_KAT) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
+        save_unlock_stage(STAGE_KAT);
+        return 1 << 4;
+    }
+    return 0;
+}
+
+s32 func_08015EE0(void) {
+    if (!save_is_stage_unlocked(STAGE_MONA) && save_is_stage_beaten(STAGE_JIMMY)) {
+        save_unlock_stage(STAGE_MONA);
+        return 1 << 5;
+    }
+    return 0;
+}
 
 #include "asm/scenes/main_menu/asm_08015f08.s"
 
@@ -651,7 +722,25 @@ void func_08015930(void) {
 
 #include "asm/scenes/main_menu/asm_0801618c.s"
 
-#include "asm/scenes/main_menu/asm_080161d8.s"
+u32 main_menu_unlock_dong_dong(void) {
+    u32 count;
+    u32 tmp;
+    if (!save_is_stage_unlocked(STAGE_DONG_DONG)) {
+        tmp = save_is_stage_beaten(STAGE_KAT);
+        count = (tmp | -tmp) >> 31; // fake-match
+        if (save_is_stage_beaten(STAGE_DR_CRYGOR)) {
+            count++;
+        }
+        if (save_is_stage_beaten(STAGE_ORBULON)) {
+            count++;
+        }
+        if (count != 0) {
+            save_unlock_stage(STAGE_DONG_DONG);
+            return (1 << 23);
+        }
+    }
+    return 0;
+}
 
 #include "asm/scenes/main_menu/asm_08016220.s"
 
@@ -667,7 +756,40 @@ void func_08015930(void) {
 
 #include "asm/scenes/main_menu/asm_08016388.s"
 
-#include "asm/scenes/main_menu/asm_080163b8.s"
+s32 main_menu_check_stage_unlock(void) {
+    u32 unlock;
+
+    unlock = func_08015E24();
+    unlock |= func_08015E40();
+    unlock |= func_08015E68();
+    unlock |= func_08015E90();
+    unlock |= func_08015EB8();
+    unlock |= func_08015EE0();
+    unlock |= func_08015F08();
+    unlock |= func_08015F30();
+    unlock |= func_08015F58();
+    unlock |= func_08015F80();
+    unlock |= func_08015FBC();
+    unlock |= func_08015FF8();
+    unlock |= func_08016028();
+    unlock |= func_08016060();
+    unlock |= func_08016098();
+    unlock |= func_080160C8();
+    unlock |= func_080160F0();
+    unlock |= func_08016118();
+    unlock |= func_08016140();
+    unlock |= func_0801618C();
+    unlock |= main_menu_unlock_dong_dong();
+    unlock |= func_08016220();
+    unlock |= func_08016268();
+    unlock |= func_080162B0();
+    unlock |= func_080162F8();
+    unlock |= func_08016328();
+    unlock |= func_08016358();
+    unlock |= func_08016388();
+
+    return unlock;
+}
 
 #include "asm/scenes/main_menu/asm_0801646c.s"
 
@@ -681,4 +803,6 @@ void func_08015930(void) {
 
 #include "asm/scenes/main_menu/asm_0801667c.s"
 
-#include "asm/scenes/main_menu/asm_08016688.s"
+void func_08016688(void) {
+    func_0800207C(gBeatscriptScene.musicPlayer, gMainMenu.unk1D0);
+}

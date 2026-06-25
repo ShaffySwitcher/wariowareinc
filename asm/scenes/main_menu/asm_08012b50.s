@@ -7,7 +7,7 @@ thumb_func_start func_08012B50 \n\
 /* 08012B58 */ CMP R4, #0XA \n\
 /* 08012B5A */ BHI _08012B66 \n\
 /* 08012B5C */ ADDS R0, R4, #0 \n\
-/* 08012B5E */ BL func_0800068C \n\
+/* 08012B5E */ BL save_is_stage_beaten \n\
 /* 08012B62 */ CMP R0, #0 \n\
 /* 08012B64 */ BEQ _08012BB2 \n\
 _08012B66: \n\

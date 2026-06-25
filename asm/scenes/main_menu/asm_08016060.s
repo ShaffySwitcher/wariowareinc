@@ -16,7 +16,7 @@ _0801607A: \n\
 /* 0801607A */ CMP R4, #0 \n\
 /* 0801607C */ BEQ _08016090 \n\
 /* 0801607E */ MOVS R0, #0XD \n\
-/* 08016080 */ BL func_080006A4 \n\
+/* 08016080 */ BL save_beat_stage \n\
 /* 08016084 */ MOVS R0, #0XD \n\
 /* 08016086 */ BL save_unlock_stage \n\
 /* 0801608A */ MOVS R0, #0X80 \n\

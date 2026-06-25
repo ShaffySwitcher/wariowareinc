@@ -88,12 +88,12 @@ void save_unlock_stage(u32 id) {
     gSaveBuffer->stageFlags[id].unlocked = TRUE;
 }
 
-u32 func_0800068C(u32 id) {
-    return gSaveBuffer->stageFlags[id].unk0_1;
+u32 save_is_stage_beaten(u32 id) {
+    return gSaveBuffer->stageFlags[id].beat;
 }
 
-void func_080006A4(u32 id) {
-    gSaveBuffer->stageFlags[id].unk0_1 = TRUE;
+void save_beat_stage(u32 id) {
+    gSaveBuffer->stageFlags[id].beat = TRUE;
 }
 
 // probably those are bit-wise(?) i can't get them to match with a bitfield struct for some reason
