@@ -23,7 +23,7 @@ glabel func_08085E54
 /* 08085E76 */ MOVS R1, #1
 /* 08085E78 */ MOVS R2, #0
 /* 08085E7A */ MOVS R3, #0
-/* 08085E7C */ BL func_0800BF7C
+/* 08085E7C */ BL scene_set_bg_layer_display
 /* 08085E80 */ MOVS R6, #0
 /* 08085E82 */ STR R6, [SP]
 /* 08085E84 */ MOVS R0, #0X1E
@@ -33,7 +33,7 @@ glabel func_08085E54
 /* 08085E8C */ MOVS R1, #1
 /* 08085E8E */ MOVS R2, #0
 /* 08085E90 */ MOVS R3, #0
-/* 08085E92 */ BL func_0800BF7C
+/* 08085E92 */ BL scene_set_bg_layer_display
 /* 08085E96 */ MOVS R0, #3
 /* 08085E98 */ BL func_0800BF20
 /* 08085E9C */ MOVS R0, #1

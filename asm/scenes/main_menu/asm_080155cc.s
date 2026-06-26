@@ -46,7 +46,7 @@ thumb_func_start func_080155CC \n\
 /* 08015626 */ MOVS R1, #1 \n\
 /* 08015628 */ MOVS R2, #0 \n\
 /* 0801562A */ MOVS R3, #0 \n\
-/* 0801562C */ BL func_0800BF7C \n\
+/* 0801562C */ BL scene_set_bg_layer_display \n\
 /* 08015630 */ LDR R0, _080156C8 \n\
 /* 08015632 */ MOV R2, R8 \n\
 /* 08015634 */ LDR R1, [R2] \n\

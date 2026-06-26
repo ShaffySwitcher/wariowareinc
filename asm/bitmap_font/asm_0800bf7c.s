@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BF7C \n\
+thumb_func_start scene_set_bg_layer_display \n\
 /* 0800BF7C */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800BF7E */ MOV R7, R8 \n\
 /* 0800BF80 */ PUSH {R7} \n\

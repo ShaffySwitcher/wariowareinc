@@ -17,7 +17,7 @@ glabel func_080204F4
 /* 08020508 */ MOVS R1, #1
 /* 0802050A */ MOVS R2, #0
 /* 0802050C */ MOVS R3, #0
-/* 0802050E */ BL func_0800BF7C
+/* 0802050E */ BL scene_set_bg_layer_display
 /* 08020512 */ LDR R0, _08020538
 /* 08020514 */ LDR R0, [R0]
 /* 08020516 */ LDR R1, _0802053C

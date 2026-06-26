@@ -15,13 +15,13 @@ glabel func_08005F64
 /* 08005F72 */ LSRS R4, R4, #0X10
 /* 08005F74 */ ADDS R0, R4, #0
 /* 08005F76 */ MOVS R1, #8
-/* 08005F78 */ BL func_08006184
+/* 08005F78 */ BL mem_heap_alloc_id
 /* 08005F7C */ ADDS R5, R0, #0
 /* 08005F7E */ MOV R1, R8
 /* 08005F80 */ MULS R1, R6, R1
 /* 08005F82 */ LSLS R1, R1, #1
 /* 08005F84 */ ADDS R0, R4, #0
-/* 08005F86 */ BL func_08006184
+/* 08005F86 */ BL mem_heap_alloc_id
 /* 08005F8A */ STR R0, [R5]
 /* 08005F8C */ STRH R6, [R5, #4]
 /* 08005F8E */ MOV R0, R8

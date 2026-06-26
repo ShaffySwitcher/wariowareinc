@@ -460,7 +460,7 @@ _08017D44:
 /* 08017EC2 */ BL sprite_set_base_palette
 /* 08017EC6 */ MOVS R0, #1
 /* 08017EC8 */ MOVS R1, #0X80
-/* 08017ECA */ BL func_08006184
+/* 08017ECA */ BL mem_heap_alloc_id
 /* 08017ECE */ MOV R4, R8
 /* 08017ED0 */ LDR R1, [R4]
 /* 08017ED2 */ MOVS R2, #0X88
@@ -595,7 +595,7 @@ _08017F54:
 _08017F58:
 /* 08017F58 */ .word 0x00004010
 _08017F5C:
-/* 08017F5C */ BL func_08006184
+/* 08017F5C */ BL mem_heap_alloc_id
 /* 08017F60 */ LDR R1, [R4]
 /* 08017F62 */ MOVS R3, #0X8A
 /* 08017F64 */ LSLS R3, R3, #1

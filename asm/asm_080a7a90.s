@@ -34,7 +34,7 @@ _080A7AA0:
 /* 080A7ACA */ MOVS R1, #1
 /* 080A7ACC */ MOVS R2, #0
 /* 080A7ACE */ MOVS R3, #0
-/* 080A7AD0 */ BL func_0800BF7C
+/* 080A7AD0 */ BL scene_set_bg_layer_display
 /* 080A7AD4 */ BL func_080A8084
 /* 080A7AD8 */ CMP R4, #0
 /* 080A7ADA */ BNE _080A7AEC

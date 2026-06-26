@@ -36,7 +36,7 @@ glabel func_0801EE10
 /* 0801EE4A */ MOVS R1, #1
 /* 0801EE4C */ MOVS R2, #0
 /* 0801EE4E */ MOVS R3, #0
-/* 0801EE50 */ BL func_0800BF7C
+/* 0801EE50 */ BL scene_set_bg_layer_display
 /* 0801EE54 */ LDR R0, _0801EE74
 /* 0801EE56 */ LDR R0, [R0]
 /* 0801EE58 */ LDR R1, _0801EE78

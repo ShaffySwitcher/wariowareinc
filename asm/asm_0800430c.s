@@ -22,7 +22,7 @@ glabel func_0800430C
 /* 08004328 */ ADDS R0, R6, #0
 /* 0800432A */ MOVS R1, #0X1C
 /* 0800432C */ STR R2, [SP]
-/* 0800432E */ BL func_08006184
+/* 0800432E */ BL mem_heap_alloc_id
 /* 08004332 */ ADDS R4, R0, #0
 /* 08004334 */ MOVS R0, #0
 /* 08004336 */ MOV R8, R0
@@ -34,12 +34,12 @@ glabel func_0800430C
 /* 08004342 */ STRB R5, [R4, #0XA]
 /* 08004344 */ LSLS R1, R5, #5
 /* 08004346 */ ADDS R0, R6, #0
-/* 08004348 */ BL func_08006184
+/* 08004348 */ BL mem_heap_alloc_id
 /* 0800434C */ STR R0, [R4, #0XC]
 /* 0800434E */ LSLS R5, R5, #4
 /* 08004350 */ ADDS R0, R6, #0
 /* 08004352 */ ADDS R1, R5, #0
-/* 08004354 */ BL func_08006184
+/* 08004354 */ BL mem_heap_alloc_id
 /* 08004358 */ STR R0, [R4, #0X10]
 /* 0800435A */ MOV R0, R8
 /* 0800435C */ STR R0, [R4, #0X14]

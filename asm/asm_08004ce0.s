@@ -25,7 +25,7 @@ glabel func_08004CE0
 /* 08004D02 */ LSLS R1, R1, #1
 /* 08004D04 */ ADDS R1, #0X30
 /* 08004D06 */ LDRH R0, [R0]
-/* 08004D08 */ BL func_08006184
+/* 08004D08 */ BL mem_heap_alloc_id
 /* 08004D0C */ STR R0, [SP, #4]
 /* 08004D0E */ ADDS R6, R0, #0
 /* 08004D10 */ ADDS R6, #0X30

@@ -16,7 +16,7 @@ thumb_func_start func_080140C0 \n\
 /* 080140D8 */ MOVS R1, #0 \n\
 /* 080140DA */ MOVS R2, #0 \n\
 /* 080140DC */ MOVS R3, #0 \n\
-/* 080140DE */ BL func_0800BF7C \n\
+/* 080140DE */ BL scene_set_bg_layer_display \n\
 /* 080140E2 */ BL get_current_mem_id \n\
 /* 080140E6 */ LSLS R0, R0, #0X10 \n\
 /* 080140E8 */ LSRS R0, R0, #0X10 \n\

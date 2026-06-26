@@ -47,8 +47,8 @@ void main_menu_scene_init_gfx2(void) {
 
 void main_menu_scene_init_gfx1(void) {
     schedule_function_call(get_current_mem_id(), main_menu_scene_init_gfx2, 0, 2);
-    func_0800BF7C(1, 1, 0, 0, 0, 9, 1);
-    func_0800BF7C(3, 1, 0, 0, 0, 0xC, 3);
+    scene_set_bg_layer_display(BG_LAYER_1, TRUE, 0, 0, 0, 9, 1);
+    scene_set_bg_layer_display(BG_LAYER_3, TRUE, 0, 0, 0, 12, 3);
 }
 
 #include "asm/scenes/main_menu/asm_08010c2c.s"

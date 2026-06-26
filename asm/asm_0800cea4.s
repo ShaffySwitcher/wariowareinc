@@ -22,7 +22,7 @@ glabel func_0800CEA4
 /* 0800CEC2 */ LSRS R0, R0, #0X10
 /* 0800CEC4 */ MOVS R1, #0XA0
 /* 0800CEC6 */ LSLS R1, R1, #1
-/* 0800CEC8 */ BL func_08006184
+/* 0800CEC8 */ BL mem_heap_alloc_id
 /* 0800CECC */ MOV R8, R0
 /* 0800CECE */ ADDS R1, R5, #0
 /* 0800CED0 */ ADDS R2, R6, #0

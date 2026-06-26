@@ -18,7 +18,7 @@ glabel func_0801F1B8
 /* 0801F1CE */ MOVS R1, #1
 /* 0801F1D0 */ MOVS R2, #0
 /* 0801F1D2 */ MOVS R3, #0
-/* 0801F1D4 */ BL func_0800BF7C
+/* 0801F1D4 */ BL scene_set_bg_layer_display
 /* 0801F1D8 */ STR R4, [SP]
 /* 0801F1DA */ MOVS R0, #0X1D
 /* 0801F1DC */ STR R0, [SP, #4]
@@ -27,7 +27,7 @@ glabel func_0801F1B8
 /* 0801F1E2 */ MOVS R1, #1
 /* 0801F1E4 */ MOVS R2, #0
 /* 0801F1E6 */ MOVS R3, #0
-/* 0801F1E8 */ BL func_0800BF7C
+/* 0801F1E8 */ BL scene_set_bg_layer_display
 /* 0801F1EC */ LDR R0, _0801F210
 /* 0801F1EE */ LDR R0, [R0]
 /* 0801F1F0 */ LDR R1, _0801F214

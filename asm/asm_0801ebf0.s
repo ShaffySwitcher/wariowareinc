@@ -28,7 +28,7 @@ glabel func_0801EBF0
 /* 0801EC1A */ STR R0, [SP, #8]
 /* 0801EC1C */ MOVS R1, #1
 /* 0801EC1E */ MOVS R3, #0
-/* 0801EC20 */ BL func_0800BF7C
+/* 0801EC20 */ BL scene_set_bg_layer_display
 /* 0801EC24 */ ADD SP, #0XC
 /* 0801EC26 */ POP {R0}
 /* 0801EC28 */ BX R0

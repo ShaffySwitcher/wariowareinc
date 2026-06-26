@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08006184 \n\
+thumb_func_start mem_heap_alloc_id \n\
 /* 08006184 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08006186 */ MOV R7, SL \n\
 /* 08006188 */ MOV R6, SB \n\
