@@ -11,14 +11,17 @@
 // TYPES
 struct MainMenuSceneData {
     u32 unk0;
-    u8 pad4[4];
+    u32 unk4;
     u8 unk8;
     u8 pad9[7];
     u8 unk10;
     u8 pad11[0x27];
     s16 unk38;
     s16 unk3A[28];
-    u8 pad72[0x16];
+    u8 pad72[0x6];
+    u32 unk78;
+    void* unk7C;
+    u8 pad80[0x8];
     u32 unk88_1:1;
     u32 unk88_2:8;
     u8 pad8A[0x2A];
@@ -31,9 +34,21 @@ struct MainMenuSceneData {
     void* unkD8;
     u32 unkDC_1:8;
     u32 unkDC_9:1;
-    s32 unkDC_10:6;
+    s32 unkDC_10:1;
+    s32 unkDC_11:1;
+    s32 unkDC_12:1;
+    s32 unkDC_13:1;
+    s32 unkDC_14:1;
+    s32 unkDC_15:1;
     u32 unkDC_16:1;
-    u32 unkDC_17:8;
+    u32 unkDC_17:1;
+    u32 unkDC_18:1;
+    u32 unkDC_19:1;
+    u32 unkDC_20:1;
+    u32 unkDC_21:1;
+    u32 unkDC_22:1;
+    u32 unkDC_23:1;
+    u32 unkDC_24:1;
     u32 unkDC_25:1;
     u32 unkDC_26:1;
     s32 unkDC_27:1;
@@ -47,13 +62,15 @@ struct MainMenuSceneData {
     u8 unkF9;
     u8 unkFA;
     u8 unkFB;
-    u8 padFC;
+    u8 unkFC;
     u8 unkFD;
     u8 padFE[0x3E];
     u32 unk13C_1:1;
     u32 unk13C_2:1;
     u32 unk13C_3:30;
-    u8 pad140[0x60];
+    u8 pad140[0x2C];
+    u32 unk16C;
+    u8 unk170[0x30];
     u32 unk1A0;
     u16 unk1A4;
     u16 unk1A6;
@@ -74,6 +91,11 @@ struct Unk03006518 {
     u8 unk0;
     u8 unk1;
     u8 unk2;
+    u8 unk3;
+    u8 unk4;
+    s8 unk5;
+    u8 unk6;
+    u8 unk7;
 };
 
 struct Unk083AA0C4 {
@@ -94,6 +116,9 @@ extern u16 D_083AB470[];
 extern struct Unk083AB478 D_083AB478[];
 extern struct Unk083AA0C4 D_083AA0C4[];
 extern struct Unk083AA0C4 D_083AA294[];
+extern void* D_083AA530;
+extern void* D_083A4A2C;
+extern void* D_083AB394;
 
 // FUNCTIONS
 extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);
@@ -117,9 +142,20 @@ extern void func_08003A70(void*);
 extern void func_08015DBC();
 extern void func_0800C7A4();
 extern void func_08011DFC(void);
+extern void func_08015CD8(s32);
+extern void func_0801216C(void);
+extern void func_080121B8(void);
+extern void func_08012274(void);
+extern void func_08013184(void);
+extern void func_08013624(void);
+extern void func_08014FF4(void);
+extern void func_0801429C(u32, u32);
+extern void func_08014374(void);
+extern void func_080143A0(void);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);
 extern s32 func_08005920(s32);
 extern void func_08005834(s32);
+
 extern struct Vector2* D_083A9CE0[];
