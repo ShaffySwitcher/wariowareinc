@@ -35,7 +35,7 @@ _0809F5E0:
 /* 0809F5E4 */ B _0809F666
 _0809F5E6:
 /* 0809F5E6 */ LDR R0, _0809F5F0
-/* 0809F5E8 */ BL func_0800C7CC
+/* 0809F5E8 */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F5EC */ B _0809F666
 
 .balign 4, 0
@@ -45,7 +45,7 @@ _0809F5F4:
 /* 0809F5F4 */ CMP R2, #0
 /* 0809F5F6 */ BNE _0809F604
 /* 0809F5F8 */ LDR R0, _0809F600
-/* 0809F5FA */ BL func_0800C7CC
+/* 0809F5FA */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F5FE */ B _0809F666
 
 .balign 4, 0
@@ -55,7 +55,7 @@ _0809F604:
 /* 0809F604 */ CMP R2, #1
 /* 0809F606 */ BNE _0809F614
 /* 0809F608 */ LDR R0, _0809F610
-/* 0809F60A */ BL func_0800C7CC
+/* 0809F60A */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F60E */ B _0809F666
 
 .balign 4, 0
@@ -63,7 +63,7 @@ _0809F610:
 /* 0809F610 */ .word D_083FE0B0
 _0809F614:
 /* 0809F614 */ LDR R0, _0809F61C
-/* 0809F616 */ BL func_0800C7CC
+/* 0809F616 */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F61A */ B _0809F666
 
 .balign 4, 0
@@ -73,7 +73,7 @@ _0809F620:
 /* 0809F620 */ CMP R2, #0
 /* 0809F622 */ BNE _0809F630
 /* 0809F624 */ LDR R0, _0809F62C
-/* 0809F626 */ BL func_0800C7CC
+/* 0809F626 */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F62A */ B _0809F666
 
 .balign 4, 0
@@ -83,7 +83,7 @@ _0809F630:
 /* 0809F630 */ CMP R2, #1
 /* 0809F632 */ BNE _0809F640
 /* 0809F634 */ LDR R0, _0809F63C
-/* 0809F636 */ BL func_0800C7CC
+/* 0809F636 */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F63A */ B _0809F666
 
 .balign 4, 0
@@ -93,7 +93,7 @@ _0809F640:
 /* 0809F640 */ CMP R2, #2
 /* 0809F642 */ BNE _0809F650
 /* 0809F644 */ LDR R0, _0809F64C
-/* 0809F646 */ BL func_0800C7CC
+/* 0809F646 */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F64A */ B _0809F666
 
 .balign 4, 0
@@ -103,7 +103,7 @@ _0809F650:
 /* 0809F650 */ CMP R2, #3
 /* 0809F652 */ BNE _0809F666
 /* 0809F654 */ LDR R0, _0809F65C
-/* 0809F656 */ BL func_0800C7CC
+/* 0809F656 */ BL scene_play_sound_to_tempo_and_pitch
 /* 0809F65A */ B _0809F666
 
 .balign 4, 0

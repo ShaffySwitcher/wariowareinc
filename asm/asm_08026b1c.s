@@ -61,7 +61,7 @@ glabel func_08026B1C
 /* 08026B8A */ LDR R0, _08026BC4
 /* 08026B8C */ STRH R0, [R1]
 /* 08026B8E */ LDR R0, _08026BC8
-/* 08026B90 */ BL func_0800C7CC
+/* 08026B90 */ BL scene_play_sound_to_tempo_and_pitch
 /* 08026B94 */ ADDS R1, R6, #0
 /* 08026B96 */ ADDS R1, #0X88
 /* 08026B98 */ STR R0, [R1]
@@ -72,7 +72,7 @@ glabel func_08026B1C
 /* 08026BA2 */ BNE _08026BB4
 /* 08026BA4 */ LDR R4, =D_083FE3F8
 /* 08026BA6 */ ADDS R0, R4, #0
-/* 08026BA8 */ BL func_0800C7CC
+/* 08026BA8 */ BL scene_play_sound_to_tempo_and_pitch
 /* 08026BAC */ ADDS R0, R4, #0
 /* 08026BAE */ MOVS R1, #0X78
 /* 08026BB0 */ BL func_08001F80

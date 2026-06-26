@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_0800C81C
+glabel scene_play_random_sound
 /* 0800C81C */ PUSH {R4, LR}
 /* 0800C81E */ ADDS R4, R0, #0
 /* 0800C820 */ CMP R4, #0

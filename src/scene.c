@@ -94,3 +94,15 @@ void scene_show_sprite(s32 id) {
 void scene_hide_sprite(s32 id) {
     sprite_set_visible(gSpriteHandler, gCurrentSceneSpritePool[id], FALSE);
 }
+
+#include "asm/scene/asm_0800c7cc.s"
+
+#include "asm/scene/asm_0800c7fc.s"
+
+#include "asm/scene/asm_0800c81c.s"
+
+#include "asm/scene/asm_0800c874.s"
+
+#include "asm/scene/asm_0800c8b4.s"
+
+#include "asm/scene/asm_0800c8f4.s"

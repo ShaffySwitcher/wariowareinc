@@ -24,7 +24,7 @@ glabel func_080824CC
 /* 080824EC */ MOVS R0, #1
 /* 080824EE */ STR R0, [R1, #0X18]
 /* 080824F0 */ LDR R0, _08082520
-/* 080824F2 */ BL func_0800C7CC
+/* 080824F2 */ BL scene_play_sound_to_tempo_and_pitch
 _080824F6:
 /* 080824F6 */ LDR R0, _08082518
 /* 080824F8 */ LDR R2, [R0]

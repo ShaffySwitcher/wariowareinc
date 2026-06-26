@@ -120,7 +120,7 @@ _080287E8:
 /* 08028812 */ MOVS R3, #0
 /* 08028814 */ BL sprite_set_anim
 /* 08028818 */ LDR R0, _08028890
-/* 0802881A */ BL func_0800C7CC
+/* 0802881A */ BL scene_play_sound_to_tempo_and_pitch
 _0802881E:
 /* 0802881E */ MOV R1, R8
 /* 08028820 */ LDRH R0, [R1]

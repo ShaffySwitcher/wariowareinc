@@ -7,7 +7,7 @@
 glabel func_080D8E8C
 /* 080D8E8C */ PUSH {LR}
 /* 080D8E8E */ LDR R0, =D_083FDB88
-/* 080D8E90 */ BL func_0800C7CC
+/* 080D8E90 */ BL scene_play_sound_to_tempo_and_pitch
 /* 080D8E94 */ POP {R0}
 /* 080D8E96 */ BX R0
 

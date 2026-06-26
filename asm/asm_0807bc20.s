@@ -43,7 +43,7 @@ _0807BC5C:
 /* 0807BC5C */ .word D_083FD494
 _0807BC60:
 /* 0807BC60 */ LDR R0, _0807BD1C
-/* 0807BC62 */ BL func_0800C7CC
+/* 0807BC62 */ BL scene_play_sound_to_tempo_and_pitch
 _0807BC66:
 /* 0807BC66 */ MOVS R0, #2
 /* 0807BC68 */ BL get_random_range

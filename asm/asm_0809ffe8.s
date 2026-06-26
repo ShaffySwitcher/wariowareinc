@@ -33,7 +33,7 @@ _080A000C:
 /* 080A0016 */ LDR R1, =D_083FEA38
 _080A0018:
 /* 080A0018 */ ADDS R0, R1, #0
-/* 080A001A */ BL func_0800C7CC
+/* 080A001A */ BL scene_play_sound_to_tempo_and_pitch
 /* 080A001E */ POP {R0}
 /* 080A0020 */ BX R0
 

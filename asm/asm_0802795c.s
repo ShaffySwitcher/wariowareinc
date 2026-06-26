@@ -97,7 +97,7 @@ _080279E0:
 /* 080279FA */ MOVS R3, #1
 /* 080279FC */ BL sprite_set_anim
 /* 08027A00 */ LDR R0, _08027A24
-/* 08027A02 */ BL func_0800C7CC
+/* 08027A02 */ BL scene_play_sound_to_tempo_and_pitch
 _08027A06:
 /* 08027A06 */ ADDS R0, R4, #0
 /* 08027A08 */ ADDS R0, #0X5C
@@ -178,7 +178,7 @@ _08027A5C:
 /* 08027A8E */ MOVS R0, #0X63
 /* 08027A90 */ STRB R0, [R6]
 /* 08027A92 */ LDR R0, _08027ADC
-/* 08027A94 */ BL func_0800C7CC
+/* 08027A94 */ BL scene_play_sound_to_tempo_and_pitch
 _08027A98:
 /* 08027A98 */ LDRB R0, [R6]
 /* 08027A9A */ CMP R0, #0
@@ -203,7 +203,7 @@ _08027AA4:
 /* 08027AC0 */ MOVS R2, #1
 /* 08027AC2 */ BL sprite_set_visible
 /* 08027AC6 */ LDR R0, =D_083FD804
-/* 08027AC8 */ BL func_0800C7CC
+/* 08027AC8 */ BL scene_play_sound_to_tempo_and_pitch
 _08027ACC:
 /* 08027ACC */ ADD SP, #0XC
 /* 08027ACE */ POP {R4, R5, R6}

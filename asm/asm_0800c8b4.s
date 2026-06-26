@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_0800C8B4
+glabel scene_play_random_sound_to_tempo_and_pitch
 /* 0800C8B4 */ PUSH {R4, LR}
 /* 0800C8B6 */ ADDS R4, R0, #0
 /* 0800C8B8 */ CMP R4, #0
@@ -30,7 +30,7 @@ _0800C8D0:
 /* 0800C8DE */ LSRS R0, R0, #0XE
 /* 0800C8E0 */ ADDS R0, R0, R4
 /* 0800C8E2 */ LDR R0, [R0]
-/* 0800C8E4 */ BL func_0800C7CC
+/* 0800C8E4 */ BL scene_play_sound_to_tempo_and_pitch
 /* 0800C8E8 */ B _0800C8EC
 _0800C8EA:
 /* 0800C8EA */ MOVS R0, #0

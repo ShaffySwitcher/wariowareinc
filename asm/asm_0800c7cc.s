@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_0800C7CC
+glabel scene_play_sound_to_tempo_and_pitch
 /* 0800C7CC */ PUSH {R4, LR}
 /* 0800C7CE */ BL play_sound
 /* 0800C7D2 */ ADDS R4, R0, #0

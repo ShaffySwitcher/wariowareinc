@@ -24,7 +24,7 @@ _080E4662:
 /* 080E466A */ B _080E4696
 _080E466C:
 /* 080E466C */ LDR R0, _080E4674
-/* 080E466E */ BL func_0800C7CC
+/* 080E466E */ BL scene_play_sound_to_tempo_and_pitch
 /* 080E4672 */ B _080E4696
 
 .balign 4, 0
@@ -32,7 +32,7 @@ _080E4674:
 /* 080E4674 */ .word D_083FE664
 _080E4678:
 /* 080E4678 */ LDR R0, _080E4680
-/* 080E467A */ BL func_0800C7CC
+/* 080E467A */ BL scene_play_sound_to_tempo_and_pitch
 /* 080E467E */ B _080E4696
 
 .balign 4, 0
@@ -40,7 +40,7 @@ _080E4680:
 /* 080E4680 */ .word D_083FE650
 _080E4684:
 /* 080E4684 */ LDR R0, _080E468C
-/* 080E4686 */ BL func_0800C7CC
+/* 080E4686 */ BL scene_play_sound_to_tempo_and_pitch
 /* 080E468A */ B _080E4696
 
 .balign 4, 0
@@ -48,7 +48,7 @@ _080E468C:
 /* 080E468C */ .word D_083FE68C
 _080E4690:
 /* 080E4690 */ LDR R0, =D_083FE678
-/* 080E4692 */ BL func_0800C7CC
+/* 080E4692 */ BL scene_play_sound_to_tempo_and_pitch
 _080E4696:
 /* 080E4696 */ POP {R0}
 /* 080E4698 */ BX R0

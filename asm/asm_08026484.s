@@ -49,7 +49,7 @@ _080264C8:
 /* 080264CA */ LSLS R0, R2, #2
 /* 080264CC */ ADDS R0, R1
 /* 080264CE */ LDR R0, [R0]
-/* 080264D0 */ BL func_0800C81C
+/* 080264D0 */ BL scene_play_random_sound
 /* 080264D4 */ BL func_080020FC
 /* 080264D8 */ POP {R1}
 /* 080264DA */ BX R1

@@ -398,7 +398,7 @@ _080E4B68:
 /* 080E4B94 */ MOVS R0, #1
 /* 080E4B96 */ BL func_0800A128
 /* 080E4B9A */ LDR R0, =D_083FCB84
-/* 080E4B9C */ BL func_0800C7CC
+/* 080E4B9C */ BL scene_play_sound_to_tempo_and_pitch
 /* 080E4BA0 */ LDR R1, [R4]
 /* 080E4BA2 */ MOVS R0, #6
 /* 080E4BA4 */ STRB R0, [R1]
