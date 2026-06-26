@@ -82,7 +82,7 @@ _080AFADE:
 /* 080AFB50 */ LDRSH R0, [R7, R4]
 /* 080AFB52 */ ADDS R2, R5, #0
 /* 080AFB54 */ MOVS R3, #8
-/* 080AFB56 */ BL func_0800C2E4
+/* 080AFB56 */ BL scene_move_sprite_lerp
 /* 080AFB5A */ LDR R1, =func_080AFB98
 /* 080AFB5C */ ADDS R2, R7, #0
 /* 080AFB5E */ BL run_func_after_task

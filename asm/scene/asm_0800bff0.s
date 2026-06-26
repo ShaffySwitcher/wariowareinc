@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BFF0 \n\
+thumb_func_start scene_set_obj_mosaic_size \n\
 /* 0800BFF0 */ PUSH {R4, LR} \n\
 /* 0800BFF2 */ LSLS R1, R1, #0X10 \n\
 /* 0800BFF4 */ LSRS R4, R1, #0X10 \n\

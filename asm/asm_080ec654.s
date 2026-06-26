@@ -18,7 +18,7 @@ glabel func_080EC654
 /* 080EC668 */ MOVS R1, #1
 /* 080EC66A */ MOVS R2, #0X78
 /* 080EC66C */ MOVS R3, #0XA8
-/* 080EC66E */ BL func_0800C4E0
+/* 080EC66E */ BL scene_move_sprite_sine_vel
 /* 080EC672 */ LDR R1, =func_080EC62C + 1
 /* 080EC674 */ MOVS R2, #0
 /* 080EC676 */ BL run_func_after_task

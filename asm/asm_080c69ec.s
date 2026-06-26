@@ -111,7 +111,7 @@ _080C6A74:
 /* 080C6A9A */ LDRH R2, [R5]
 /* 080C6A9C */ STR R2, [SP, #4]
 /* 080C6A9E */ MOVS R2, #0X50
-/* 080C6AA0 */ BL func_0800C298
+/* 080C6AA0 */ BL scene_set_sprite_motion_lerp
 /* 080C6AA4 */ LDR R0, _080C6AC8
 /* 080C6AA6 */ LDR R0, [R0]
 /* 080C6AA8 */ MOV R6, R8
@@ -251,7 +251,7 @@ _080C6B54:
 /* 080C6B9A */ LDRH R1, [R5]
 /* 080C6B9C */ STR R1, [SP, #8]
 /* 080C6B9E */ MOVS R1, #0
-/* 080C6BA0 */ BL func_0800C430
+/* 080C6BA0 */ BL scene_set_sprite_motion_sine_vel
 /* 080C6BA4 */ MOV R6, R8
 /* 080C6BA6 */ LDR R0, [R6]
 /* 080C6BA8 */ LDR R2, _080C6BB8

@@ -62,7 +62,7 @@ _080C4FE4:
 /* 080C5010 */ LDRH R1, [R7, #0X26]
 /* 080C5012 */ STR R1, [SP, #8]
 /* 080C5014 */ MOVS R1, #1
-/* 080C5016 */ BL func_0800C430
+/* 080C5016 */ BL scene_set_sprite_motion_sine_vel
 /* 080C501A */ MOV R0, SL
 /* 080C501C */ LDR R1, [R0]
 /* 080C501E */ MOVS R2, #0X8E
@@ -155,7 +155,7 @@ _080C5064:
 /* 080C50C4 */ LDRH R1, [R5, #0X26]
 /* 080C50C6 */ STR R1, [SP, #8]
 /* 080C50C8 */ MOVS R1, #0
-/* 080C50CA */ BL func_0800C430
+/* 080C50CA */ BL scene_set_sprite_motion_sine_vel
 /* 080C50CE */ MOVS R2, #0
 /* 080C50D0 */ LDRSH R0, [R4, R2]
 /* 080C50D2 */ LSLS R0, R0, #8

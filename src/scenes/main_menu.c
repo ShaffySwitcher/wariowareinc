@@ -91,7 +91,7 @@ void main_menu_scene_paused(void) {
 void func_08011504(s16 x, s16 y, void (*callback)(), s32 arg) {
     s32 temp_r0;
 
-    temp_r0 = func_0800C15C(*gCurrentSceneSpritePool, x, y, 0x82);
+    temp_r0 = scene_move_sprite_decelerate(*gCurrentSceneSpritePool, x, y, 0x82);
     run_func_after_task(temp_r0, callback, arg);
     gMainMenu.unkDC_9 = TRUE;
     gMainMenu.unk1AC = temp_r0;
@@ -308,13 +308,13 @@ void func_08011B1C(s32 arg0) {
         src = D_083AA294[arg0].position;
         dst = D_083AA0C4[arg0].position;
 
-        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     } else {
         src = D_083AA294[0].position;
         dst = D_083AA0C4[arg0].position;
         
         sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[arg0], 1U);
-        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     }
 }
 
@@ -326,12 +326,12 @@ void func_08011BEC(s32 arg0) {
         src = D_083AA0C4[arg0].position;
         dst = D_083AA294[arg0].position;
 
-        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     } else {
         dst = D_083AA294[0].position;
         src = D_083AA0C4[arg0].position;
 
-        run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     }
 }
 
@@ -341,14 +341,14 @@ void func_08011CA4(s32 arg0) {
     sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[arg0], TRUE);
     
     src = D_083AA294[arg0].position;
-    run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], -32, src->y, src->x, src->y, 0xB4), func_080119EC, 0);
+    run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], -32, src->y, src->x, src->y, 0xB4), func_080119EC, 0);
 }
 
 void func_08011D0C(s32 arg0) {
     struct Vector2* src;
 
     src = D_083AA294[arg0].position;
-    run_func_after_task(func_0800C110(gMainMenu.unk3A[arg0], src->x, src->y, -32, src->y, 0xB4), func_080119EC, 0);
+    run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, -32, src->y, 0xB4), func_080119EC, 0);
 }
 
 void func_08011D5C(u32 arg0) {

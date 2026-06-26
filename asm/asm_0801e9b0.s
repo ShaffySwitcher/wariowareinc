@@ -50,7 +50,7 @@ glabel func_0801E9B0
 /* 0801EA06 */ ADDS R1, R4, #0
 /* 0801EA08 */ ADDS R2, R6, #0
 /* 0801EA0A */ MOV R3, R8
-/* 0801EA0C */ BL func_0800C218
+/* 0801EA0C */ BL scene_move_sprite_accelerate
 /* 0801EA10 */ BL func_08017040
 /* 0801EA14 */ MOV R1, SL
 /* 0801EA16 */ LDR R0, [R1]
@@ -60,7 +60,7 @@ glabel func_0801E9B0
 /* 0801EA1E */ MOV R1, SB
 /* 0801EA20 */ ADDS R2, R6, #0
 /* 0801EA22 */ MOV R3, R8
-/* 0801EA24 */ BL func_0800C218
+/* 0801EA24 */ BL scene_move_sprite_accelerate
 _0801EA28:
 /* 0801EA28 */ ADD SP, #0XC
 /* 0801EA2A */ POP {R3, R4, R5}

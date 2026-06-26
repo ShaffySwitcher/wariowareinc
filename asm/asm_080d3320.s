@@ -37,7 +37,7 @@ glabel func_080D3320
 /* 080D335C */ ADDS R1, R5, #0
 /* 080D335E */ ADDS R2, R4, #0
 /* 080D3360 */ MOVS R3, #0X20
-/* 080D3362 */ BL func_0800C5A0
+/* 080D3362 */ BL scene_move_sprite_sine_wave
 /* 080D3366 */ ADDS R5, R0, #0
 /* 080D3368 */ MOVS R4, #0
 /* 080D336A */ MOVS R0, #3

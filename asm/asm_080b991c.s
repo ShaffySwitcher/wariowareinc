@@ -149,7 +149,7 @@ _080B99FE:
 /* 080B9A28 */ ASRS R2, R2, #0X10
 /* 080B9A2A */ LSLS R3, R3, #0X10
 /* 080B9A2C */ LSRS R3, R3, #0X10
-/* 080B9A2E */ BL func_0800C2E4
+/* 080B9A2E */ BL scene_move_sprite_lerp
 /* 080B9A32 */ ADDS R4, R0, #0
 /* 080B9A34 */ MOVS R0, #0
 /* 080B9A36 */ BL func_080B98CC
@@ -179,7 +179,7 @@ _080B9A48:
 /* 080B9A5A */ LSRS R3, R3, #0X10
 /* 080B9A5C */ STR R3, [SP]
 /* 080B9A5E */ MOVS R3, #0X10
-/* 080B9A60 */ BL func_0800C5A0
+/* 080B9A60 */ BL scene_move_sprite_sine_wave
 /* 080B9A64 */ ADDS R4, R0, #0
 /* 080B9A66 */ MOVS R0, #4
 /* 080B9A68 */ BL func_080B98CC

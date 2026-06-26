@@ -58,7 +58,7 @@ _080A56E0:
 /* 080A5710 */ ADDS R0, R4, #0
 /* 080A5712 */ MOVS R2, #0X26
 /* 080A5714 */ MOVS R3, #0X12
-/* 080A5716 */ BL func_0800C5A0
+/* 080A5716 */ BL scene_move_sprite_sine_wave
 /* 080A571A */ ADDS R4, R0, #0
 /* 080A571C */ LDR R1, _080A5754
 /* 080A571E */ MOVS R2, #0

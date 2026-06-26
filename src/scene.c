@@ -63,6 +63,7 @@ void scene_hide_obj_layer(void) {
 
 #include "asm/scene/asm_0800bff0.s"
 #include "asm/scene/asm_0800c038.s"
+
 #include "asm/scene/asm_0800c080.s"
 #include "asm/scene/asm_0800c0bc.s"
 #include "asm/scene/asm_0800c110.s"

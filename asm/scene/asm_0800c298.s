@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800C298 \n\
+thumb_func_start scene_set_sprite_motion_lerp \n\
 /* 0800C298 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800C29A */ MOV R7, R8 \n\
 /* 0800C29C */ PUSH {R7} \n\

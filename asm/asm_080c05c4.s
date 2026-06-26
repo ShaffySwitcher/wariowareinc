@@ -145,7 +145,7 @@ _080C06AC:
 /* 080C06DE */ MOVS R1, #0XCC
 /* 080C06E0 */ ADDS R2, R4, #0
 /* 080C06E2 */ MOVS R3, #0X20
-/* 080C06E4 */ BL func_0800C5A0
+/* 080C06E4 */ BL scene_move_sprite_sine_wave
 /* 080C06E8 */ LDR R1, _080C0710
 /* 080C06EA */ MOVS R2, #0
 /* 080C06EC */ BL run_func_after_task

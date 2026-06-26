@@ -51,7 +51,7 @@ _080B1E84:
 /* 080B1EB4 */ MOVS R1, #0X14
 /* 080B1EB6 */ STR R1, [SP, #8]
 /* 080B1EB8 */ MOVS R1, #2
-/* 080B1EBA */ BL func_0800C430
+/* 080B1EBA */ BL scene_set_sprite_motion_sine_vel
 /* 080B1EBE */ STR R0, [R5, #0X18]
 /* 080B1EC0 */ LDR R1, _080B1F38
 /* 080B1EC2 */ ADDS R2, R5, #0
@@ -92,7 +92,7 @@ _080B1ED8:
 /* 080B1F08 */ MOVS R1, #0X14
 /* 080B1F0A */ STR R1, [SP, #8]
 /* 080B1F0C */ MOVS R1, #2
-/* 080B1F0E */ BL func_0800C430
+/* 080B1F0E */ BL scene_set_sprite_motion_sine_vel
 /* 080B1F12 */ STR R0, [R5, #0X18]
 /* 080B1F14 */ LDR R1, _080B1F38
 /* 080B1F16 */ ADDS R2, R5, #0

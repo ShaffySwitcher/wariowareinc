@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800C5A0 \n\
+thumb_func_start scene_move_sprite_sine_wave \n\
 /* 0800C5A0 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800C5A2 */ MOV R7, SB \n\
 /* 0800C5A4 */ MOV R6, R8 \n\
@@ -27,7 +27,7 @@ thumb_func_start func_0800C5A0 \n\
 /* 0800C5CE */ MOV SB, R2 \n\
 /* 0800C5D0 */ ADD R1, SP, #0XC \n\
 /* 0800C5D2 */ STR R3, [SP, #0X10] \n\
-/* 0800C5D4 */ BL func_08006F84 \n\
+/* 0800C5D4 */ BL get_sprite_xy \n\
 /* 0800C5D8 */ ADD R0, SP, #0XC \n\
 /* 0800C5DA */ MOVS R7, #0 \n\
 /* 0800C5DC */ LDRSH R1, [R0, R7] \n\
@@ -46,7 +46,7 @@ thumb_func_start func_0800C5A0 \n\
 /* 0800C5F6 */ STR R3, [SP, #8] \n\
 /* 0800C5F8 */ MOV R0, R8 \n\
 /* 0800C5FA */ ADDS R3, R6, #0 \n\
-/* 0800C5FC */ BL func_0800C548 \n\
+/* 0800C5FC */ BL scene_set_sprite_motion_sine_wave \n\
 /* 0800C600 */ ADD SP, #0X14 \n\
 /* 0800C602 */ POP {R3, R4} \n\
 /* 0800C604 */ MOV R8, R3 \n\

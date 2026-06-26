@@ -58,7 +58,7 @@ glabel func_08025330
 /* 0802539C */ MOVS R1, #0X78
 /* 0802539E */ MOVS R2, #0X94
 /* 080253A0 */ ADDS R3, R4, #0
-/* 080253A2 */ BL func_0800C2E4
+/* 080253A2 */ BL scene_move_sprite_lerp
 /* 080253A6 */ ADD SP, #4
 /* 080253A8 */ POP {R4, R5}
 /* 080253AA */ POP {R0}

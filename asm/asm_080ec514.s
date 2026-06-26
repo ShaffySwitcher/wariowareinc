@@ -29,7 +29,7 @@ glabel func_080EC514
 /* 080EC540 */ MOVS R1, #0
 /* 080EC542 */ MOVS R2, #0X78
 /* 080EC544 */ MOVS R3, #0XA8
-/* 080EC546 */ BL func_0800C430
+/* 080EC546 */ BL scene_set_sprite_motion_sine_vel
 /* 080EC54A */ ADD SP, #0XC
 /* 080EC54C */ POP {R4, R5}
 /* 080EC54E */ POP {R0}

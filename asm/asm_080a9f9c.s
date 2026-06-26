@@ -192,7 +192,7 @@ _080AA062:
 /* 080AA0EE */ MOVS R1, #0
 /* 080AA0F0 */ MOV R2, R8
 /* 080AA0F2 */ MOVS R3, #0X88
-/* 080AA0F4 */ BL func_0800C4E0
+/* 080AA0F4 */ BL scene_move_sprite_sine_vel
 /* 080AA0F8 */ LDR R1, _080AA154
 /* 080AA0FA */ ADDS R2, R7, #0
 /* 080AA0FC */ BL run_func_after_task

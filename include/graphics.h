@@ -101,28 +101,43 @@ typedef u16 Palette[16];
     | (((((x) >> 8 ) & 0xFF) >> 3) << 5 )   \
     | (((((x) >> 0 ) & 0xFF) >> 3) << 10)
 
+struct AffineBG {
+    u16 dx;
+    u16 dmx;
+    u16 dy;
+    u16 dmy;
+    u32 xRef;
+    u32 yRef;
+};
 
 struct GraphicsBuffer {
-    u16 DISPCNT; // 0x0 size:0x2
-    u8 pad[0x2]; // 0x2 size:0xA
-    u16 BG_CNT[4];
-    struct Vector2 BG_OFS[4];
-    u8 pad1[0x30]; // 0x1C size:0x30
-    u16 unk4C; // 0x4C size:0x2
-    u8 pad4e[2]; // 0x4E size:0x6
-    u16 unk50;
-    u8 pad52[2];
-    u16 bgPalette[16][16]; // 0x54 size:0x200   (0x3004254)
-    u16 objPalette[16][16]; // 0x254 size:0x200 (0x3004454)
-    u8 pad454[0x400]; // 0x454 size:0x400
-    u8 unk854_1 : 1; // 0x854
-    u8 unk854_2 : 1; // 0x854
-    u8 unk854_3 : 1; // 0x854
-    u8 unk854_4 : 1; // 0x854
-    u8 unk854_5 : 1; // 0x854
-    u8 unk854_6 : 1; // 0x854
-    u8 unk854_7 : 1; // 0x854
-    u8 unk854_8 : 1; // 0x854
+    u16 DISPCNT;                    // 0x00
+    u8 pad2[0x2];                   // 0x02
+    u16 BG_CNT[4];                  // 0x04
+    struct Vector2 BG_OFS[4];       // 0x0C
+    struct AffineBG affineBG[2];    // 0x1C
+    u8 pad3C[0x4];                  // 0x3C
+    u16 unk40;                      // 0x40
+    u16 unk42;                      // 0x42
+    u16 unk44;                      // 0x44
+    u16 unk46;                      // 0x46
+    u16 unk48;                      // 0x48
+    u16 unk4A;                      // 0x4A
+    u16 unk4C;                      // 0x4C
+    u16 unk4E;                      // 0x4E
+    u16 unk50;                      // 0x50
+    u16 unk52;                      // 0x52
+    u16 bgPalette[16][16];          // 0x54
+    u16 objPalette[16][16];         // 0x254
+    u8 pad454[0x400];               // 0x454
+    u8 unk854_1 : 1;                // 0x854
+    u8 unk854_2 : 1;                // 0x854
+    u8 unk854_3 : 1;                // 0x854
+    u8 unk854_4 : 1;                // 0x854
+    u8 unk854_5 : 1;                // 0x854
+    u8 unk854_6 : 1;                // 0x854
+    u8 unk854_7 : 1;                // 0x854
+    u8 unk854_8 : 1;                // 0x854
 } gGraphicsBuffer;
 
 #define BG_PALETTE_BUFFER(p)    ((u16 *)gGraphicsBuffer.bgPalette)  + ((u32)((p) * 16))

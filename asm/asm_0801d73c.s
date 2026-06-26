@@ -70,7 +70,7 @@ _0801D7A4:
 /* 0801D7BE */ MOVS R1, #0X80
 /* 0801D7C0 */ RSBS R1, R1, #0
 /* 0801D7C2 */ MOVS R2, #0X80
-/* 0801D7C4 */ BL func_0800C0BC
+/* 0801D7C4 */ BL scene_move_sprite_indefinite
 /* 0801D7C8 */ ADDS R7, #1
 /* 0801D7CA */ CMP R7, #0X17
 /* 0801D7CC */ BLS _0801D770

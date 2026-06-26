@@ -179,7 +179,7 @@ _080D48D0:
 /* 080D4912 */ ASRS R2, R2, #0X10
 /* 080D4914 */ LDRH R3, [R4, #2]
 /* 080D4916 */ MOVS R1, #0X78
-/* 080D4918 */ BL func_0800C2E4
+/* 080D4918 */ BL scene_move_sprite_lerp
 /* 080D491C */ B _080D4B38
 
 .balign 4, 0

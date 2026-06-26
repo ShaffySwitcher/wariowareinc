@@ -59,7 +59,7 @@ glabel func_080C0524
 /* 080C0590 */ ADDS R1, R5, #0
 /* 080C0592 */ ADDS R2, R4, #0
 /* 080C0594 */ MOVS R3, #0X20
-/* 080C0596 */ BL func_0800C5A0
+/* 080C0596 */ BL scene_move_sprite_sine_wave
 /* 080C059A */ LDR R1, _080C05BC
 /* 080C059C */ MOVS R2, #0
 /* 080C059E */ BL run_func_after_task

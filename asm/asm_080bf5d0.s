@@ -51,7 +51,7 @@ _080BF5E6:
 /* 080BF628 */ MOVS R1, #0XC0
 /* 080BF62A */ STR R1, [SP, #4]
 /* 080BF62C */ MOV R1, IP
-/* 080BF62E */ BL func_0800C110
+/* 080BF62E */ BL scene_set_sprite_motion_decelerate
 /* 080BF632 */ ADDS R7, #1
 /* 080BF634 */ ADDS R6, #4
 /* 080BF636 */ CMP R7, #3

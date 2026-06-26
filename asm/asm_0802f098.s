@@ -95,7 +95,7 @@ _0802F10C:
 /* 0802F148 */ MOV R1, SL
 /* 0802F14A */ ADDS R2, R4, #0
 /* 0802F14C */ MOVS R3, #0X80
-/* 0802F14E */ BL func_0800C218
+/* 0802F14E */ BL scene_move_sprite_accelerate
 /* 0802F152 */ LDR R1, _0802F198
 /* 0802F154 */ ADDS R2, R7, #0
 /* 0802F156 */ BL run_func_after_task

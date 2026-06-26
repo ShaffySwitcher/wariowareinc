@@ -72,7 +72,7 @@ _0802F238:
 /* 0802F262 */ LDR R3, [SP, #0XC]
 /* 0802F264 */ ASRS R2, R3, #0X10
 /* 0802F266 */ MOVS R3, #0X80
-/* 0802F268 */ BL func_0800C218
+/* 0802F268 */ BL scene_move_sprite_accelerate
 /* 0802F26C */ LDR R1, =func_0802F098 + 1
 /* 0802F26E */ ADDS R2, R5, #0
 /* 0802F270 */ BL run_func_after_task

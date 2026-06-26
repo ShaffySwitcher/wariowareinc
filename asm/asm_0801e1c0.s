@@ -49,7 +49,7 @@ _0801E1DA:
 /* 0801E214 */ LSRS R4, R4, #0X10
 /* 0801E216 */ STR R4, [SP]
 /* 0801E218 */ MOVS R3, #0X28
-/* 0801E21A */ BL func_0800C5A0
+/* 0801E21A */ BL scene_move_sprite_sine_wave
 _0801E21E:
 /* 0801E21E */ ADD SP, #4
 /* 0801E220 */ POP {R4, R5, R6}

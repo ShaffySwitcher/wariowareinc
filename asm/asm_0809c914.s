@@ -77,7 +77,7 @@ _0809C93A:
 /* 0809C99E */ STR R4, [SP]
 /* 0809C9A0 */ MOV R4, SB
 /* 0809C9A2 */ STR R4, [SP, #4]
-/* 0809C9A4 */ BL func_0800C298
+/* 0809C9A4 */ BL scene_set_sprite_motion_lerp
 /* 0809C9A8 */ ADDS R5, #1
 /* 0809C9AA */ LSLS R5, R5, #0X10
 /* 0809C9AC */ LSRS R3, R5, #0X10

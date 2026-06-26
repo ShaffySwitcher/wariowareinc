@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800C15C \n\
+thumb_func_start scene_move_sprite_decelerate \n\
 /* 0800C15C */ PUSH {R4, R5, R6, LR} \n\
 /* 0800C15E */ MOV R6, SB \n\
 /* 0800C160 */ MOV R5, R8 \n\
@@ -23,7 +23,7 @@ thumb_func_start func_0800C15C \n\
 /* 0800C182 */ ADD R2, SP \n\
 /* 0800C184 */ MOV SB, R2 \n\
 /* 0800C186 */ ADD R1, SP, #8 \n\
-/* 0800C188 */ BL func_08006F84 \n\
+/* 0800C188 */ BL get_sprite_xy \n\
 /* 0800C18C */ ADD R0, SP, #8 \n\
 /* 0800C18E */ MOVS R3, #0 \n\
 /* 0800C190 */ LDRSH R1, [R0, R3] \n\
@@ -40,7 +40,7 @@ thumb_func_start func_0800C15C \n\
 /* 0800C1A6 */ STR R5, [SP, #4] \n\
 /* 0800C1A8 */ MOV R0, R8 \n\
 /* 0800C1AA */ ADDS R3, R6, #0 \n\
-/* 0800C1AC */ BL func_0800C110 \n\
+/* 0800C1AC */ BL scene_set_sprite_motion_decelerate \n\
 /* 0800C1B0 */ ADD SP, #0XC \n\
 /* 0800C1B2 */ POP {R3, R4} \n\
 /* 0800C1B4 */ MOV R8, R3 \n\

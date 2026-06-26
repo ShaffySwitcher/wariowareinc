@@ -84,7 +84,7 @@ _080C6536:
 /* 080C656A */ MOV R1, SB
 /* 080C656C */ STR R1, [SP, #8]
 /* 080C656E */ MOVS R1, #2
-/* 080C6570 */ BL func_0800C430
+/* 080C6570 */ BL scene_set_sprite_motion_sine_vel
 /* 080C6574 */ B _080C6592
 
 .balign 4, 0

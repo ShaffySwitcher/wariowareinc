@@ -167,7 +167,7 @@ _080A9176:
 /* 080A91C2 */ ADDS R0, R4, #0
 /* 080A91C4 */ MOVS R2, #0XA8
 /* 080A91C6 */ MOVS R3, #0X60
-/* 080A91C8 */ BL func_0800C2E4
+/* 080A91C8 */ BL scene_move_sprite_lerp
 /* 080A91CC */ LDR R1, _080A9210
 /* 080A91CE */ MOVS R2, #0
 /* 080A91D0 */ BL run_func_after_task

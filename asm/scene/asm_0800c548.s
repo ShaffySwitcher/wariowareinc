@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800C548 \n\
+thumb_func_start scene_set_sprite_motion_sine_wave \n\
 /* 0800C548 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800C54A */ MOV R7, SB \n\
 /* 0800C54C */ MOV R6, R8 \n\

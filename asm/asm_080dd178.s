@@ -137,7 +137,7 @@ _080DD23C:
 /* 080DD26E */ STR R2, [SP]
 /* 080DD270 */ MOVS R2, #0X84
 /* 080DD272 */ MOVS R3, #0
-/* 080DD274 */ BL func_0800C218
+/* 080DD274 */ BL scene_move_sprite_accelerate
 /* 080DD278 */ LDR R1, [R7]
 /* 080DD27A */ LDRH R0, [R1, #0X1C]
 /* 080DD27C */ SUBS R0, #1
@@ -187,7 +187,7 @@ _080DD29A:
 /* 080DD2D8 */ MOVS R1, #0XA0
 /* 080DD2DA */ MOVS R2, #0X8C
 /* 080DD2DC */ MOVS R3, #0XDC
-/* 080DD2DE */ BL func_0800C15C
+/* 080DD2DE */ BL scene_move_sprite_decelerate
 /* 080DD2E2 */ LDR R1, _080DD318
 /* 080DD2E4 */ MOVS R2, #0
 /* 080DD2E6 */ BL run_func_after_task

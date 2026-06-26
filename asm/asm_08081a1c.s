@@ -25,7 +25,7 @@ glabel func_08081A1C
 /* 08081A3E */ ASRS R2, R2, #0X10
 /* 08081A40 */ MOVS R3, #0X10
 /* 08081A42 */ STR R3, [SP]
-/* 08081A44 */ BL func_0800C5A0
+/* 08081A44 */ BL scene_move_sprite_sine_wave
 _08081A48:
 /* 08081A48 */ ADD SP, #4
 /* 08081A4A */ POP {R0}

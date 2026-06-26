@@ -92,7 +92,7 @@ _080A57C2:
 /* 080A580E */ ADDS R0, R5, #0
 /* 080A5810 */ MOVS R2, #0X80
 /* 080A5812 */ ADDS R3, R4, #0
-/* 080A5814 */ BL func_0800C218
+/* 080A5814 */ BL scene_move_sprite_accelerate
 /* 080A5818 */ MOVS R0, #1
 /* 080A581A */ BL func_0800A128
 /* 080A581E */ MOV R0, SB

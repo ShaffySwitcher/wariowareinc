@@ -35,7 +35,7 @@ glabel func_080DD10C
 /* 080DD148 */ ADDS R0, R4, #0
 /* 080DD14A */ MOVS R2, #0X8C
 /* 080DD14C */ MOVS R3, #0
-/* 080DD14E */ BL func_0800C218
+/* 080DD14E */ BL scene_move_sprite_accelerate
 /* 080DD152 */ LDR R0, =gCurrentSceneVariable
 /* 080DD154 */ LDR R0, [R0]
 /* 080DD156 */ ADDS R0, #0X30

@@ -54,7 +54,7 @@ _0801E340:
 /* 0801E36E */ MOVS R1, #0X30
 /* 0801E370 */ MOVS R2, #0X80
 /* 0801E372 */ MOVS R3, #0X68
-/* 0801E374 */ BL func_0800C548
+/* 0801E374 */ BL scene_set_sprite_motion_sine_wave
 /* 0801E378 */ MOVS R0, #0XA
 /* 0801E37A */ BL scene_show_sprite
 /* 0801E37E */ LDR R2, [R6]
@@ -88,7 +88,7 @@ _0801E398:
 /* 0801E3B6 */ MOVS R1, #0X68
 /* 0801E3B8 */ MOVS R2, #0X6C
 /* 0801E3BA */ MOVS R3, #0XB0
-/* 0801E3BC */ BL func_0800C548
+/* 0801E3BC */ BL scene_set_sprite_motion_sine_wave
 /* 0801E3C0 */ MOVS R0, #0XA
 /* 0801E3C2 */ BL scene_show_sprite
 /* 0801E3C6 */ LDR R2, [R6]

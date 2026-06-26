@@ -80,7 +80,7 @@ _0808BB12:
 /* 0808BB88 */ MOVS R1, #0
 /* 0808BB8A */ ADDS R2, R5, #0
 /* 0808BB8C */ ADDS R3, R4, #0
-/* 0808BB8E */ BL func_0800C4E0
+/* 0808BB8E */ BL scene_move_sprite_sine_vel
 /* 0808BB92 */ LDR R1, [R7]
 /* 0808BB94 */ LDR R2, [R7, #4]
 /* 0808BB96 */ STR R1, [R7, #8]

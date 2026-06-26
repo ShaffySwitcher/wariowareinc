@@ -50,7 +50,7 @@ _08017712:
 /* 08017746 */ ADDS R2, R4, #0
 /* 08017748 */ MOVS R3, #0X10
 /* 0801774A */ RSBS R3, R3, #0
-/* 0801774C */ BL func_0800C430
+/* 0801774C */ BL scene_set_sprite_motion_sine_vel
 /* 08017750 */ ADDS R7, #0X18
 /* 08017752 */ ADDS R6, #1
 /* 08017754 */ CMP R6, #3

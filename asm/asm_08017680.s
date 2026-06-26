@@ -45,7 +45,7 @@ _08017698:
 /* 080176CA */ MOVS R1, #1
 /* 080176CC */ ADDS R2, R4, #0
 /* 080176CE */ MOVS R3, #0X50
-/* 080176D0 */ BL func_0800C430
+/* 080176D0 */ BL scene_set_sprite_motion_sine_vel
 /* 080176D4 */ ADDS R7, #0X18
 /* 080176D6 */ ADDS R6, #1
 /* 080176D8 */ CMP R6, #3

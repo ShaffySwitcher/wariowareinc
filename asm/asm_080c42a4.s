@@ -44,7 +44,7 @@ _080C42C8:
 /* 080C42E8 */ LSLS R2, R2, #8
 /* 080C42EA */ ASRS R2, R2, #0X10
 /* 080C42EC */ MOVS R3, #0X20
-/* 080C42EE */ BL func_0800C2E4
+/* 080C42EE */ BL scene_move_sprite_lerp
 /* 080C42F2 */ LDR R1, _080C4308
 /* 080C42F4 */ ADDS R2, R4, #0
 /* 080C42F6 */ BL run_func_after_task

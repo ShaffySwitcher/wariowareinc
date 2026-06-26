@@ -133,7 +133,7 @@ _080D1B64:
 /* 080D1B80 */ LSLS R2, R2, #8
 /* 080D1B82 */ ASRS R2, R2, #0X10
 /* 080D1B84 */ LDRH R3, [R5, #2]
-/* 080D1B86 */ BL func_0800C2E4
+/* 080D1B86 */ BL scene_move_sprite_lerp
 /* 080D1B8A */ LDR R1, [R4]
 /* 080D1B8C */ B _080D1E9A
 
@@ -168,7 +168,7 @@ _080D1BA4:
 /* 080D1BC4 */ LDRH R1, [R5, #2]
 /* 080D1BC6 */ STR R1, [SP]
 /* 080D1BC8 */ MOVS R1, #1
-/* 080D1BCA */ BL func_0800C4E0
+/* 080D1BCA */ BL scene_move_sprite_sine_vel
 /* 080D1BCE */ LDR R1, [R4]
 /* 080D1BD0 */ B _080D1E9A
 
@@ -361,7 +361,7 @@ _080D1CFE:
 /* 080D1D32 */ LSLS R2, R2, #8
 /* 080D1D34 */ ASRS R2, R2, #0X10
 /* 080D1D36 */ LDRH R3, [R4, #2]
-/* 080D1D38 */ BL func_0800C2E4
+/* 080D1D38 */ BL scene_move_sprite_lerp
 /* 080D1D3C */ LDR R3, [R5]
 /* 080D1D3E */ MOVS R4, #0X34
 /* 080D1D40 */ LDRSH R0, [R3, R4]
@@ -372,7 +372,7 @@ _080D1CFE:
 /* 080D1D4A */ LSLS R2, R2, #8
 /* 080D1D4C */ ASRS R2, R2, #0X10
 /* 080D1D4E */ LDRH R3, [R3, #2]
-/* 080D1D50 */ BL func_0800C2E4
+/* 080D1D50 */ BL scene_move_sprite_lerp
 /* 080D1D54 */ LDR R1, [R5]
 /* 080D1D56 */ B _080D1E9A
 
@@ -679,7 +679,7 @@ _080D1F54:
 /* 080D1F9E */ LSLS R2, R2, #8
 /* 080D1FA0 */ ASRS R2, R2, #0X10
 /* 080D1FA2 */ MOVS R3, #0XA0
-/* 080D1FA4 */ BL func_0800C15C
+/* 080D1FA4 */ BL scene_move_sprite_decelerate
 _080D1FA8:
 /* 080D1FA8 */ BL func_080D19B8
 /* 080D1FAC */ B _080D20B8

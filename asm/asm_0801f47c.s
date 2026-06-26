@@ -77,7 +77,7 @@ _0801F498:
 /* 0801F510 */ ADDS R0, R6, #0
 /* 0801F512 */ ADDS R1, R4, #0
 /* 0801F514 */ ADDS R2, R5, #0
-/* 0801F516 */ BL func_0800C2E4
+/* 0801F516 */ BL scene_move_sprite_lerp
 /* 0801F51A */ ADDS R7, #1
 /* 0801F51C */ CMP R7, #0X17
 /* 0801F51E */ BLS _0801F498

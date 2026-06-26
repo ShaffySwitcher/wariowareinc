@@ -1926,7 +1926,7 @@ _0800B4D4: \n\
 /* 0800B4DC */ LSLS R1, R7, #0X10 \n\
 /* 0800B4DE */ ASRS R1, R1, #0X10 \n\
 /* 0800B4E0 */ ASRS R2, R7, #0X10 \n\
-/* 0800B4E2 */ BL func_0800C0BC \n\
+/* 0800B4E2 */ BL scene_move_sprite_indefinite \n\
 /* 0800B4E6 */ B _0800B654 \n\
 _0800B4E8: \n\
 /* 0800B4E8 */ LSLS R0, R6, #1 \n\
@@ -1939,7 +1939,7 @@ _0800B4E8: \n\
 /* 0800B4F6 */ MOV R4, R8 \n\
 /* 0800B4F8 */ LSLS R3, R4, #0X10 \n\
 /* 0800B4FA */ ASRS R3, R3, #0X10 \n\
-/* 0800B4FC */ BL func_0800C15C \n\
+/* 0800B4FC */ BL scene_move_sprite_decelerate \n\
 /* 0800B500 */ B _0800B654 \n\
 _0800B502: \n\
 /* 0800B502 */ LSLS R0, R6, #1 \n\
@@ -1954,7 +1954,7 @@ _0800B502: \n\
 /* 0800B514 */ ASRS R3, R3, #0X10 \n\
 /* 0800B516 */ ASRS R4, R6, #0X10 \n\
 /* 0800B518 */ STR R4, [SP] \n\
-/* 0800B51A */ BL func_0800C218 \n\
+/* 0800B51A */ BL scene_move_sprite_accelerate \n\
 /* 0800B51E */ B _0800B654 \n\
 _0800B520: \n\
 /* 0800B520 */ LSLS R0, R6, #1 \n\
@@ -1974,7 +1974,7 @@ _0800B520: \n\
 /* 0800B53E */ ADDS R0, R6, #0 \n\
 /* 0800B540 */ ADDS R1, R4, #0 \n\
 /* 0800B542 */ ADDS R2, R5, #0 \n\
-/* 0800B544 */ BL func_0800C2E4 \n\
+/* 0800B544 */ BL scene_move_sprite_lerp \n\
 /* 0800B548 */ B _0800B654 \n\
 _0800B54A: \n\
 /* 0800B54A */ MOV R3, R8 \n\
@@ -1994,7 +1994,7 @@ _0800B54A: \n\
 /* 0800B568 */ ASRS R3, R7, #0X10 \n\
 /* 0800B56A */ STR R0, [SP] \n\
 /* 0800B56C */ ADDS R0, R4, #0 \n\
-/* 0800B56E */ BL func_0800C4E0 \n\
+/* 0800B56E */ BL scene_move_sprite_sine_vel \n\
 /* 0800B572 */ B _0800B654 \n\
 _0800B574: \n\
 /* 0800B574 */ MOV R1, R8 \n\
@@ -2025,7 +2025,7 @@ _0800B596: \n\
 /* 0800B5A6 */ MOV R4, R8 \n\
 /* 0800B5A8 */ LSLS R3, R4, #0X10 \n\
 /* 0800B5AA */ ASRS R3, R3, #0X10 \n\
-/* 0800B5AC */ BL func_0800C15C \n\
+/* 0800B5AC */ BL scene_move_sprite_decelerate \n\
 /* 0800B5B0 */ B _0800B654 \n\
 _0800B5B2: \n\
 /* 0800B5B2 */ LSLS R0, R6, #1 \n\
@@ -2041,7 +2041,7 @@ _0800B5B2: \n\
 /* 0800B5C6 */ ASRS R3, R3, #0X10 \n\
 /* 0800B5C8 */ ASRS R4, R4, #0X10 \n\
 /* 0800B5CA */ STR R4, [SP] \n\
-/* 0800B5CC */ BL func_0800C218 \n\
+/* 0800B5CC */ BL scene_move_sprite_accelerate \n\
 /* 0800B5D0 */ B _0800B654 \n\
 _0800B5D2: \n\
 /* 0800B5D2 */ LSLS R0, R6, #1 \n\
@@ -2062,7 +2062,7 @@ _0800B5D2: \n\
 /* 0800B5F2 */ ADDS R0, R4, #0 \n\
 /* 0800B5F4 */ ADDS R1, R5, #0 \n\
 /* 0800B5F6 */ ADDS R2, R6, #0 \n\
-/* 0800B5F8 */ BL func_0800C2E4 \n\
+/* 0800B5F8 */ BL scene_move_sprite_lerp \n\
 /* 0800B5FC */ B _0800B654 \n\
 _0800B5FE: \n\
 /* 0800B5FE */ MOV R2, R8 \n\
@@ -2083,7 +2083,7 @@ _0800B5FE: \n\
 /* 0800B61E */ LDRSH R3, [R7, R5] \n\
 /* 0800B620 */ STR R0, [SP] \n\
 /* 0800B622 */ ADDS R0, R4, #0 \n\
-/* 0800B624 */ BL func_0800C4E0 \n\
+/* 0800B624 */ BL scene_move_sprite_sine_vel \n\
 /* 0800B628 */ B _0800B654 \n\
 _0800B62A: \n\
 /* 0800B62A */ MOV R1, R8 \n\
@@ -2105,7 +2105,7 @@ _0800B62A: \n\
 _0800B64C: \n\
 /* 0800B64C */ STR R0, [SP] \n\
 /* 0800B64E */ ADDS R0, R4, #0 \n\
-/* 0800B650 */ BL func_0800C5A0 \n\
+/* 0800B650 */ BL scene_move_sprite_sine_wave \n\
 _0800B654: \n\
 /* 0800B654 */ MOV R1, SB \n\
 /* 0800B656 */ ADDS R1, #0X98 \n\

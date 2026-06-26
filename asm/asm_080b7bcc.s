@@ -107,7 +107,7 @@ _080B7C74:
 /* 080B7C7A */ MOVS R2, #0
 /* 080B7C7C */ LDRSH R1, [R0, R2]
 /* 080B7C7E */ ADDS R0, R1, #0
-/* 080B7C80 */ BL func_0800BFF0
+/* 080B7C80 */ BL scene_set_obj_mosaic_size
 /* 080B7C84 */ B _080B7D3A
 
 .balign 4, 0
@@ -200,7 +200,7 @@ _080B7D16:
 /* 080B7D1A */ MOVS R2, #0
 /* 080B7D1C */ LDRSH R1, [R0, R2]
 /* 080B7D1E */ ADDS R0, R1, #0
-/* 080B7D20 */ BL func_0800BFF0
+/* 080B7D20 */ BL scene_set_obj_mosaic_size
 /* 080B7D24 */ LDR R2, [R7]
 /* 080B7D26 */ LDR R1, [R2, #0X78]
 /* 080B7D28 */ ADDS R1, #1

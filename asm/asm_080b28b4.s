@@ -50,7 +50,7 @@ _080B28E8:
 /* 080B2906 */ LSLS R3, R3, #2
 /* 080B2908 */ STR R3, [SP]
 /* 080B290A */ MOVS R3, #0X14
-/* 080B290C */ BL func_0800C218
+/* 080B290C */ BL scene_move_sprite_accelerate
 /* 080B2910 */ LDR R2, [R4]
 /* 080B2912 */ MOVS R3, #0XD6
 /* 080B2914 */ LSLS R3, R3, #1

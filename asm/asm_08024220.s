@@ -32,7 +32,7 @@ glabel func_08024220
 /* 08024252 */ MOVS R1, #0X78
 /* 08024254 */ MOVS R2, #0XA0
 /* 08024256 */ MOVS R3, #0
-/* 08024258 */ BL func_0800C218
+/* 08024258 */ BL scene_move_sprite_accelerate
 /* 0802425C */ ADD SP, #0X14
 /* 0802425E */ POP {R1}
 /* 08024260 */ BX R1

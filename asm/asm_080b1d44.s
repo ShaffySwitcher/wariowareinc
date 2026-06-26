@@ -118,7 +118,7 @@ _080B1E1C:
 /* 080B1E26 */ MOVS R1, #0X14
 /* 080B1E28 */ STR R1, [SP, #8]
 /* 080B1E2A */ MOVS R1, #2
-/* 080B1E2C */ BL func_0800C430
+/* 080B1E2C */ BL scene_set_sprite_motion_sine_vel
 /* 080B1E30 */ STR R0, [R4, #0X18]
 /* 080B1E32 */ LDR R1, _080B1E3C
 /* 080B1E34 */ ADDS R2, R4, #0

@@ -111,7 +111,7 @@ _080D5EC8:
 /* 080D5F28 */ STR R4, [SP, #4]
 /* 080D5F2A */ LDRH R4, [R5, #0X14]
 /* 080D5F2C */ STR R4, [SP, #8]
-/* 080D5F2E */ BL func_0800C548
+/* 080D5F2E */ BL scene_set_sprite_motion_sine_wave
 /* 080D5F32 */ LDRB R0, [R5, #0X18]
 /* 080D5F34 */ ADDS R0, #1
 /* 080D5F36 */ STRB R0, [R5, #0X18]
@@ -196,7 +196,7 @@ _080D5FA2:
 /* 080D5FC6 */ LSLS R2, R2, #0X10
 /* 080D5FC8 */ ASRS R2, R2, #0X10
 /* 080D5FCA */ LDRH R3, [R5, #0X14]
-/* 080D5FCC */ BL func_0800C2E4
+/* 080D5FCC */ BL scene_move_sprite_lerp
 /* 080D5FD0 */ B _080D60F2
 
 .balign 4, 0

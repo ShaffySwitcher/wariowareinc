@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08006F84
+glabel get_sprite_xy
 .thumb_func
 /* 08006F84 */ PUSH {R4, R5, R6, LR}
 /* 08006F86 */ MOV R6, R8

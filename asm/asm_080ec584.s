@@ -35,7 +35,7 @@ glabel func_080EC584
 /* 080EC5BE */ MOVS R1, #1
 /* 080EC5C0 */ MOVS R2, #0X78
 /* 080EC5C2 */ MOVS R3, #0X48
-/* 080EC5C4 */ BL func_0800C430
+/* 080EC5C4 */ BL scene_set_sprite_motion_sine_vel
 /* 080EC5C8 */ LDR R1, =func_080EC55C + 1
 /* 080EC5CA */ MOVS R2, #0
 /* 080EC5CC */ BL run_func_after_task

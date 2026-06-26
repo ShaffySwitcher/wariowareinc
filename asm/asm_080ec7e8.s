@@ -52,7 +52,7 @@ _080EC80C:
 /* 080EC838 */ STR R1, [SP, #4]
 /* 080EC83A */ STR R6, [SP, #8]
 /* 080EC83C */ MOVS R1, #0
-/* 080EC83E */ BL func_0800C430
+/* 080EC83E */ BL scene_set_sprite_motion_sine_vel
 /* 080EC842 */ ADD SP, #0XC
 /* 080EC844 */ POP {R4, R5, R6}
 /* 080EC846 */ POP {R0}

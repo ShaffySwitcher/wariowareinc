@@ -42,7 +42,7 @@ _0801C2FC:
 /* 0801C33A */ MOVS R1, #0X2B
 /* 0801C33C */ MOVS R2, #0X8C
 /* 0801C33E */ ADDS R3, R4, #0
-/* 0801C340 */ BL func_0800C548
+/* 0801C340 */ BL scene_set_sprite_motion_sine_wave
 /* 0801C344 */ LDR R0, =gSpriteHandler
 /* 0801C346 */ LDR R0, [R0]
 /* 0801C348 */ ADDS R1, R5, #0

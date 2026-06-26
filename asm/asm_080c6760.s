@@ -75,7 +75,7 @@ _080C6796:
 /* 080C67EC */ MOVS R1, #0
 /* 080C67EE */ ADDS R2, R5, #0
 /* 080C67F0 */ ADDS R3, R6, #0
-/* 080C67F2 */ BL func_0800C430
+/* 080C67F2 */ BL scene_set_sprite_motion_sine_vel
 /* 080C67F6 */ MOV R3, R8
 /* 080C67F8 */ LDR R1, [R3]
 /* 080C67FA */ LSLS R2, R7, #2

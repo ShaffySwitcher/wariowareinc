@@ -42,7 +42,7 @@ glabel func_080C3BD8
 /* 080C3C1C */ ASRS R2, R2, #0X10
 /* 080C3C1E */ MOVS R3, #8
 /* 080C3C20 */ STR R3, [SP]
-/* 080C3C22 */ BL func_0800C5A0
+/* 080C3C22 */ BL scene_move_sprite_sine_wave
 /* 080C3C26 */ LDR R1, _080C3C58
 /* 080C3C28 */ MOVS R2, #0
 /* 080C3C2A */ BL run_func_after_task

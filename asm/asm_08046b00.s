@@ -25,7 +25,7 @@ glabel func_08046B00
 /* 08046B26 */ MOVS R1, #2
 /* 08046B28 */ MOVS R2, #0X78
 /* 08046B2A */ MOVS R3, #0X96
-/* 08046B2C */ BL func_0800C4E0
+/* 08046B2C */ BL scene_move_sprite_sine_vel
 /* 08046B30 */ LDR R0, =gSpriteHandler
 /* 08046B32 */ LDR R0, [R0]
 /* 08046B34 */ LDR R1, [R5]

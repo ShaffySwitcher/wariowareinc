@@ -44,7 +44,7 @@ glabel func_080D6198
 /* 080D61E8 */ LDRH R3, [R3, #6]
 /* 080D61EA */ STR R3, [SP]
 /* 080D61EC */ MOVS R3, #0X18
-/* 080D61EE */ BL func_0800C5A0
+/* 080D61EE */ BL scene_move_sprite_sine_wave
 /* 080D61F2 */ ADD SP, #4
 /* 080D61F4 */ POP {R3}
 /* 080D61F6 */ MOV R8, R3

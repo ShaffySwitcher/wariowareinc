@@ -48,7 +48,7 @@ glabel func_0801A9B0
 /* 0801AA08 */ ADDS R1, R4, #0
 /* 0801AA0A */ MOVS R2, #0XDC
 /* 0801AA0C */ MOVS R3, #0
-/* 0801AA0E */ BL func_0800C218
+/* 0801AA0E */ BL scene_move_sprite_accelerate
 /* 0801AA12 */ LDR R1, =func_0801A994 + 1
 /* 0801AA14 */ LDR R2, [R7]
 /* 0801AA16 */ LDR R3, _0801AA38

@@ -76,7 +76,7 @@ _0808E37C:
 /* 0808E3A2 */ STR R2, [SP]
 /* 0808E3A4 */ ADDS R2, R5, #0
 /* 0808E3A6 */ MOVS R3, #0
-/* 0808E3A8 */ BL func_0800C218
+/* 0808E3A8 */ BL scene_move_sprite_accelerate
 /* 0808E3AC */ MOV R6, R8
 /* 0808E3AE */ MOVS R7, #0X1C
 /* 0808E3B0 */ LDRSH R0, [R6, R7]
@@ -97,7 +97,7 @@ _0808E37C:
 /* 0808E3CE */ STR R2, [SP]
 /* 0808E3D0 */ ADDS R2, R5, #0
 /* 0808E3D2 */ MOVS R3, #0
-/* 0808E3D4 */ BL func_0800C218
+/* 0808E3D4 */ BL scene_move_sprite_accelerate
 /* 0808E3D8 */ MOV R4, SB
 /* 0808E3DA */ LDR R1, [R4]
 /* 0808E3DC */ ADDS R1, #0X21

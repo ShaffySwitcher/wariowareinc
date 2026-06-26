@@ -268,7 +268,7 @@ _08031364:
 /* 08031374 */ LDR R3, _08031388
 /* 08031376 */ LDR R3, [R3]
 /* 08031378 */ LDRH R3, [R3, #8]
-/* 0803137A */ BL func_0800C2E4
+/* 0803137A */ BL scene_move_sprite_lerp
 /* 0803137E */ LDR R1, _0803138C
 /* 08031380 */ MOVS R2, #0
 /* 08031382 */ BL run_func_after_task
@@ -298,7 +298,7 @@ _08031390:
 /* 080313AA */ LDRH R3, [R0, #8]
 /* 080313AC */ LSRS R3, R3, #1
 /* 080313AE */ ADDS R0, R7, #0
-/* 080313B0 */ BL func_0800C2E4
+/* 080313B0 */ BL scene_move_sprite_lerp
 /* 080313B4 */ LDR R1, _080313C0
 /* 080313B6 */ MOVS R2, #3
 /* 080313B8 */ BL run_func_after_task
@@ -324,7 +324,7 @@ _080313C4:
 /* 080313DE */ LDRH R3, [R0, #8]
 /* 080313E0 */ LSRS R3, R3, #1
 /* 080313E2 */ ADDS R0, R7, #0
-/* 080313E4 */ BL func_0800C2E4
+/* 080313E4 */ BL scene_move_sprite_lerp
 /* 080313E8 */ LDR R1, =func_080310A4 + 1
 /* 080313EA */ MOVS R2, #2
 /* 080313EC */ BL run_func_after_task

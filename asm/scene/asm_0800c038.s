@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800C038 \n\
+thumb_func_start scene_set_bg_mosaic_size \n\
 /* 0800C038 */ PUSH {R4, LR} \n\
 /* 0800C03A */ LSLS R0, R0, #0X10 \n\
 /* 0800C03C */ LSLS R1, R1, #0X10 \n\

@@ -123,7 +123,7 @@ _080D6296:
 /* 080D62D4 */ ASRS R2, R2, #0X10
 /* 080D62D6 */ STR R2, [SP]
 /* 080D62D8 */ MOVS R2, #0X90
-/* 080D62DA */ BL func_0800C218
+/* 080D62DA */ BL scene_move_sprite_accelerate
 /* 080D62DE */ LDR R1, _080D62F4
 /* 080D62E0 */ ADDS R2, R5, #0
 /* 080D62E2 */ BL run_func_after_task
@@ -299,7 +299,7 @@ _080D639C:
 /* 080D641A */ LDRH R3, [R3, #6]
 /* 080D641C */ STR R3, [SP]
 /* 080D641E */ MOVS R3, #0X18
-/* 080D6420 */ BL func_0800C5A0
+/* 080D6420 */ BL scene_move_sprite_sine_wave
 /* 080D6424 */ LDR R0, _080D6440
 /* 080D6426 */ BL scene_play_sound_to_tempo
 /* 080D642A */ B _080D649C

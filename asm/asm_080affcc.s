@@ -122,13 +122,13 @@ _080B008A:
 /* 080B0094 */ MOVS R1, #0X68
 /* 080B0096 */ MOVS R2, #0X40
 /* 080B0098 */ MOVS R3, #0X80
-/* 080B009A */ BL func_0800C2E4
+/* 080B009A */ BL scene_move_sprite_lerp
 /* 080B009E */ MOVS R2, #0XE
 /* 080B00A0 */ LDRSH R0, [R7, R2]
 /* 080B00A2 */ MOVS R1, #0X72
 /* 080B00A4 */ MOVS R2, #0X40
 /* 080B00A6 */ MOVS R3, #0X80
-/* 080B00A8 */ BL func_0800C2E4
+/* 080B00A8 */ BL scene_move_sprite_lerp
 /* 080B00AC */ ADDS R6, #1
 /* 080B00AE */ LDR R0, _080B00B8
 /* 080B00B0 */ BL play_sound
@@ -235,14 +235,14 @@ _080B0166:
 /* 080B0170 */ STR R4, [SP]
 /* 080B0172 */ MOVS R2, #4
 /* 080B0174 */ MOVS R3, #0
-/* 080B0176 */ BL func_0800C218
+/* 080B0176 */ BL scene_move_sprite_accelerate
 /* 080B017A */ MOVS R2, #0XE
 /* 080B017C */ LDRSH R0, [R7, R2]
 /* 080B017E */ SUBS R1, R5, #6
 /* 080B0180 */ STR R4, [SP]
 /* 080B0182 */ MOVS R2, #4
 /* 080B0184 */ MOVS R3, #0
-/* 080B0186 */ BL func_0800C218
+/* 080B0186 */ BL scene_move_sprite_accelerate
 /* 080B018A */ ADDS R6, #1
 /* 080B018C */ B _080B0192
 _080B018E:

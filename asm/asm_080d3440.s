@@ -52,7 +52,7 @@ glabel func_080D3440
 /* 080D349C */ MOVS R1, #0X40
 /* 080D349E */ MOVS R2, #0X90
 /* 080D34A0 */ MOVS R3, #0X78
-/* 080D34A2 */ BL func_0800C5A0
+/* 080D34A2 */ BL scene_move_sprite_sine_wave
 /* 080D34A6 */ LDR R1, =func_080D33BC + 1
 /* 080D34A8 */ ADDS R2, R6, #0
 /* 080D34AA */ BL run_func_after_task

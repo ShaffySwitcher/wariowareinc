@@ -138,7 +138,7 @@ _080D16B0:
 /* 080D16DE */ STR R1, [SP, #4]
 /* 080D16E0 */ ADDS R1, R3, #0
 /* 080D16E2 */ MOVS R2, #0
-/* 080D16E4 */ BL func_0800C298
+/* 080D16E4 */ BL scene_set_sprite_motion_lerp
 /* 080D16E8 */ LDRB R0, [R5, #0X18]
 /* 080D16EA */ ADDS R0, #1
 /* 080D16EC */ STRB R0, [R5, #0X18]

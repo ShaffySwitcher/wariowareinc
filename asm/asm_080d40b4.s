@@ -80,7 +80,7 @@ glabel func_080D40B4
 /* 080D414E */ ADDS R1, R5, #0
 /* 080D4150 */ ADDS R2, R4, #0
 /* 080D4152 */ MOV R3, R8
-/* 080D4154 */ BL func_0800C548
+/* 080D4154 */ BL scene_set_sprite_motion_sine_wave
 /* 080D4158 */ LDR R1, =func_080D409C + 1
 /* 080D415A */ ADDS R2, R7, #0
 /* 080D415C */ BL run_func_after_task

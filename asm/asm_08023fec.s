@@ -20,7 +20,7 @@ glabel func_08023FEC
 /* 08024006 */ MOVS R1, #0X3C
 /* 08024008 */ MOVS R2, #0XD2
 /* 0802400A */ MOVS R3, #0XA0
-/* 0802400C */ BL func_0800C5A0
+/* 0802400C */ BL scene_move_sprite_sine_wave
 /* 08024010 */ LDR R1, =gCurrentSceneVariable
 /* 08024012 */ LDR R1, [R1]
 /* 08024014 */ STR R0, [R1, #8]

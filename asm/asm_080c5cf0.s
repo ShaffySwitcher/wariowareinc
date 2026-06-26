@@ -144,7 +144,7 @@ _080C5D34:
 /* 080C5E02 */ LDRH R1, [R4, #0X20]
 /* 080C5E04 */ STR R1, [SP, #8]
 /* 080C5E06 */ MOVS R1, #2
-/* 080C5E08 */ BL func_0800C430
+/* 080C5E08 */ BL scene_set_sprite_motion_sine_vel
 /* 080C5E0C */ LDR R2, _080C5E30
 /* 080C5E0E */ LDR R1, [R2]
 /* 080C5E10 */ MOVS R3, #0X8D

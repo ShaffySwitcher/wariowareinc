@@ -90,7 +90,7 @@ _080EC74E:
 /* 080EC76A */ STR R5, [SP, #8]
 /* 080EC76C */ MOVS R1, #0
 /* 080EC76E */ MOVS R3, #0XA8
-/* 080EC770 */ BL func_0800C430
+/* 080EC770 */ BL scene_set_sprite_motion_sine_vel
 /* 080EC774 */ LDR R0, [R6]
 /* 080EC776 */ MOVS R2, #0XA
 /* 080EC778 */ LDRSH R0, [R0, R2]
@@ -101,7 +101,7 @@ _080EC74E:
 /* 080EC782 */ STR R5, [SP, #8]
 /* 080EC784 */ MOVS R1, #0
 /* 080EC786 */ MOVS R3, #0XA8
-/* 080EC788 */ BL func_0800C430
+/* 080EC788 */ BL scene_set_sprite_motion_sine_vel
 /* 080EC78C */ LDR R0, [R6]
 /* 080EC78E */ MOVS R3, #0X14
 /* 080EC790 */ LDRSH R0, [R0, R3]
@@ -117,7 +117,7 @@ _080EC74E:
 /* 080EC7A4 */ STR R5, [SP, #8]
 /* 080EC7A6 */ MOVS R1, #0
 /* 080EC7A8 */ ADDS R3, R4, #0
-/* 080EC7AA */ BL func_0800C430
+/* 080EC7AA */ BL scene_set_sprite_motion_sine_vel
 /* 080EC7AE */ LDR R0, [R6]
 /* 080EC7B0 */ MOVS R7, #0X16
 /* 080EC7B2 */ LDRSH R0, [R0, R7]
@@ -131,7 +131,7 @@ _080EC74E:
 /* 080EC7C2 */ STR R5, [SP, #8]
 /* 080EC7C4 */ MOVS R1, #0
 /* 080EC7C6 */ ADDS R3, R4, #0
-/* 080EC7C8 */ BL func_0800C430
+/* 080EC7C8 */ BL scene_set_sprite_motion_sine_vel
 /* 080EC7CC */ ADD SP, #0XC
 /* 080EC7CE */ POP {R3, R4}
 /* 080EC7D0 */ MOV R8, R3

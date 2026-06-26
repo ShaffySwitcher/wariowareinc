@@ -62,7 +62,7 @@ _0801ED6A:
 /* 0801EDA2 */ LSLS R1, R1, #1
 /* 0801EDA4 */ MOVS R2, #0XE8
 /* 0801EDA6 */ MOVS R3, #0X80
-/* 0801EDA8 */ BL func_0800C218
+/* 0801EDA8 */ BL scene_move_sprite_accelerate
 /* 0801EDAC */ ADDS R7, #0X18
 /* 0801EDAE */ ADDS R5, #0X30
 /* 0801EDB0 */ ADDS R4, #1

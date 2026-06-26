@@ -30,7 +30,7 @@ glabel func_080EC688
 /* 080EC6B6 */ STR R4, [SP, #8]
 /* 080EC6B8 */ MOVS R1, #0
 /* 080EC6BA */ MOVS R2, #0X78
-/* 080EC6BC */ BL func_0800C430
+/* 080EC6BC */ BL scene_set_sprite_motion_sine_vel
 /* 080EC6C0 */ ADD SP, #0XC
 /* 080EC6C2 */ POP {R4, R5}
 /* 080EC6C4 */ POP {R0}
