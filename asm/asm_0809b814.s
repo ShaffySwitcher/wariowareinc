@@ -70,7 +70,7 @@ _0809B868:
 /* 0809B878 */ LSRS R0, R0, #0XE
 /* 0809B87A */ ADDS R0, R4
 /* 0809B87C */ LDR R0, [R0]
-/* 0809B87E */ BL func_0800C7FC
+/* 0809B87E */ BL scene_play_sound_to_tempo
 /* 0809B882 */ LDR R4, _0809B8C8
 /* 0809B884 */ LDR R0, [R4]
 /* 0809B886 */ LDR R1, [R6]
@@ -272,7 +272,7 @@ _0809B98C:
 /* 0809B9E8 */ BL __divsi3
 /* 0809B9EC */ STRH R0, [R4, #2]
 /* 0809B9EE */ LDR R0, _0809BA30
-/* 0809B9F0 */ BL func_0800C7FC
+/* 0809B9F0 */ BL scene_play_sound_to_tempo
 /* 0809B9F4 */ LDR R0, _0809BA34
 /* 0809B9F6 */ LDR R0, [R0]
 /* 0809B9F8 */ LDR R1, [R6]

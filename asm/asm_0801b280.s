@@ -70,7 +70,7 @@ glabel func_0801B280
 /* 0801B30E */ LDR R1, [R1]
 /* 0801B310 */ STRH R0, [R1]
 /* 0801B312 */ MOVS R0, #0
-/* 0801B314 */ BL func_0800C7A4
+/* 0801B314 */ BL scene_hide_sprite
 /* 0801B318 */ LDR R1, [R5]
 /* 0801B31A */ LDR R2, _0801B3A0
 /* 0801B31C */ ADDS R0, R1, R2

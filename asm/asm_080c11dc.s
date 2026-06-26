@@ -40,9 +40,9 @@ glabel func_080C11DC
 /* 080C1226 */ MOVS R0, #1
 /* 080C1228 */ BL func_0800A128
 /* 080C122C */ LDR R0, _080C1250
-/* 080C122E */ BL func_0800C7FC
+/* 080C122E */ BL scene_play_sound_to_tempo
 /* 080C1232 */ LDR R0, _080C1254
-/* 080C1234 */ BL func_0800C7FC
+/* 080C1234 */ BL scene_play_sound_to_tempo
 /* 080C1238 */ LDR R1, [R5]
 /* 080C123A */ MOVS R0, #2
 /* 080C123C */ B _080C126A

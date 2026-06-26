@@ -28,7 +28,7 @@ glabel func_080D6198
 /* 080D61C2 */ BL __divsi3
 /* 080D61C6 */ STRH R0, [R5, #6]
 /* 080D61C8 */ LDR R0, =D_083FDE1C
-/* 080D61CA */ BL func_0800C7FC
+/* 080D61CA */ BL scene_play_sound_to_tempo
 /* 080D61CE */ MOVS R0, #0X14
 /* 080D61D0 */ BL func_080D2828
 /* 080D61D4 */ MOVS R2, #8

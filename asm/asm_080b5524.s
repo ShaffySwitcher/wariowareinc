@@ -14,7 +14,7 @@ glabel func_080B5524
 /* 080B5530 */ CMP R0, #0
 /* 080B5532 */ BNE _080B553A
 /* 080B5534 */ LDR R0, _080B555C
-/* 080B5536 */ BL func_0800C7FC
+/* 080B5536 */ BL scene_play_sound_to_tempo
 _080B553A:
 /* 080B553A */ LDR R2, [R4]
 /* 080B553C */ ADDS R1, R2, R5

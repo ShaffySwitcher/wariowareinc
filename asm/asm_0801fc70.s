@@ -35,17 +35,17 @@ glabel func_0801FC70
 /* 0801FCA8 */ ORRS R0, R1
 /* 0801FCAA */ STRB R0, [R2, #0X10]
 /* 0801FCAC */ MOVS R0, #2
-/* 0801FCAE */ BL func_0800C7A4
+/* 0801FCAE */ BL scene_hide_sprite
 /* 0801FCB2 */ MOVS R0, #3
-/* 0801FCB4 */ BL func_0800C7A4
+/* 0801FCB4 */ BL scene_hide_sprite
 /* 0801FCB8 */ MOVS R0, #4
-/* 0801FCBA */ BL func_0800C7A4
+/* 0801FCBA */ BL scene_hide_sprite
 /* 0801FCBE */ MOVS R0, #5
-/* 0801FCC0 */ BL func_0800C7A4
+/* 0801FCC0 */ BL scene_hide_sprite
 /* 0801FCC4 */ MOVS R0, #6
-/* 0801FCC6 */ BL func_0800C7A4
+/* 0801FCC6 */ BL scene_hide_sprite
 /* 0801FCCA */ MOVS R0, #7
-/* 0801FCCC */ BL func_0800C7A4
+/* 0801FCCC */ BL scene_hide_sprite
 /* 0801FCD0 */ ADD SP, #0X10
 /* 0801FCD2 */ POP {R4, R5}
 /* 0801FCD4 */ POP {R0}

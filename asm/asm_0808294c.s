@@ -23,7 +23,7 @@ _08082960:
 /* 08082966 */ MOVS R0, #0
 /* 08082968 */ BL func_0800A128
 /* 0808296C */ LDR R0, _0808299C
-/* 0808296E */ BL func_0800C7FC
+/* 0808296E */ BL scene_play_sound_to_tempo
 /* 08082972 */ BL func_080828B4
 /* 08082976 */ LDR R4, =gSpriteHandler
 /* 08082978 */ LDR R0, [R4]

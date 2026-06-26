@@ -54,7 +54,7 @@ glabel func_080D09E8
 /* 080D0A44 */ BL sprite_set_anim
 /* 080D0A48 */ STRB R5, [R4, #0X1E]
 /* 080D0A4A */ LDR R0, =D_083FD084
-/* 080D0A4C */ BL func_0800C7FC
+/* 080D0A4C */ BL scene_play_sound_to_tempo
 /* 080D0A50 */ ADD SP, #0XC
 /* 080D0A52 */ POP {R4, R5}
 /* 080D0A54 */ POP {R0}

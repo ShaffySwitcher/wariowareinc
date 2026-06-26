@@ -128,7 +128,7 @@ _08045AAA:
 /* 08045AB4 */ STR R0, [R1, #0X7C]
 _08045AB6:
 /* 08045AB6 */ LDR R0, _08045AC0
-/* 08045AB8 */ BL func_0800C7FC
+/* 08045AB8 */ BL scene_play_sound_to_tempo
 /* 08045ABC */ B _08045AD0
 
 .balign 4, 0

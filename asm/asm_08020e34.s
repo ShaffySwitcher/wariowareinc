@@ -44,11 +44,11 @@ glabel func_08020E34
 /* 08020E82 */ CMP R5, R0
 /* 08020E84 */ BLS _08020EA0
 /* 08020E86 */ MOVS R0, #2
-/* 08020E88 */ BL func_0800C7A4
+/* 08020E88 */ BL scene_hide_sprite
 /* 08020E8C */ MOVS R0, #3
-/* 08020E8E */ BL func_0800C7A4
+/* 08020E8E */ BL scene_hide_sprite
 /* 08020E92 */ MOVS R0, #4
-/* 08020E94 */ BL func_0800C7A4
+/* 08020E94 */ BL scene_hide_sprite
 /* 08020E98 */ LDR R0, [R6]
 /* 08020E9A */ ADDS R0, #0X2D
 /* 08020E9C */ MOVS R1, #0

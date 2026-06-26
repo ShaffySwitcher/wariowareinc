@@ -90,7 +90,7 @@ _080BCDBA:
 /* 080BCDC2 */ LDR R0, [R5]
 /* 080BCDC4 */ ADDS R0, #0X98
 /* 080BCDC6 */ LDR R0, [R0]
-/* 080BCDC8 */ BL set_soundplayer_speed
+/* 080BCDC8 */ BL midi_player_set_speed
 /* 080BCDCC */ LDR R0, [R5]
 /* 080BCDCE */ ADDS R0, #0XE8
 /* 080BCDD0 */ MOVS R1, #0

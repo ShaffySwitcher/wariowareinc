@@ -57,7 +57,7 @@ _0806F988:
 /* 0806F9A4 */ MOVS R3, #0
 /* 0806F9A6 */ BL sprite_set_anim
 /* 0806F9AA */ LDR R0, _0806F9CC
-/* 0806F9AC */ BL func_0800C7FC
+/* 0806F9AC */ BL scene_play_sound_to_tempo
 /* 0806F9B0 */ MOVS R0, #0X30
 /* 0806F9B2 */ BL func_0800C9A4
 /* 0806F9B6 */ MOVS R0, #1

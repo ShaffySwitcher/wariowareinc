@@ -26,7 +26,7 @@ _08069E98:
 /* 08069E98 */ MOVS R0, #2
 /* 08069E9A */ STRB R0, [R1]
 /* 08069E9C */ LDR R0, _08069EA4
-/* 08069E9E */ BL func_0800C7FC
+/* 08069E9E */ BL scene_play_sound_to_tempo
 /* 08069EA2 */ B _08069EB2
 
 .balign 4, 0
@@ -36,7 +36,7 @@ _08069EA8:
 /* 08069EA8 */ MOVS R0, #3
 /* 08069EAA */ STRB R0, [R1]
 /* 08069EAC */ LDR R0, =D_083FCF6C
-/* 08069EAE */ BL func_0800C7FC
+/* 08069EAE */ BL scene_play_sound_to_tempo
 _08069EB2:
 /* 08069EB2 */ POP {R0}
 /* 08069EB4 */ BX R0

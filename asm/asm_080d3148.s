@@ -72,7 +72,7 @@ _080D318E:
 /* 080D31B0 */ CMP R0, R1
 /* 080D31B2 */ BLS _080D31BA
 /* 080D31B4 */ LDR R0, _080D3248
-/* 080D31B6 */ BL func_0800C7FC
+/* 080D31B6 */ BL scene_play_sound_to_tempo
 _080D31BA:
 /* 080D31BA */ LDR R1, _080D324C
 /* 080D31BC */ CMP R4, R1
@@ -81,7 +81,7 @@ _080D31BA:
 /* 080D31C2 */ CMP R0, R1
 /* 080D31C4 */ BLS _080D31CC
 /* 080D31C6 */ LDR R0, _080D3250
-/* 080D31C8 */ BL func_0800C7FC
+/* 080D31C8 */ BL scene_play_sound_to_tempo
 _080D31CC:
 /* 080D31CC */ LDR R1, _080D3254
 /* 080D31CE */ LDRH R0, [R5, #0X22]
@@ -133,9 +133,9 @@ _080D31CC:
 /* 080D322C */ RSBS R0, R0, #0
 /* 080D322E */ STRH R0, [R5, #0X16]
 /* 080D3230 */ LDR R0, _080D3268
-/* 080D3232 */ BL func_0800C7FC
+/* 080D3232 */ BL scene_play_sound_to_tempo
 /* 080D3236 */ LDR R0, _080D326C
-/* 080D3238 */ BL func_0800C7FC
+/* 080D3238 */ BL scene_play_sound_to_tempo
 /* 080D323C */ B _080D32D4
 
 .balign 4, 0

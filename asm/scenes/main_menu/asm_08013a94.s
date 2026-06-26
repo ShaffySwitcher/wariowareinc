@@ -3,9 +3,9 @@ asm(".syntax unified \n\
 thumb_func_start func_08013A94 \n\
 /* 08013A94 */ PUSH {R4, R5, LR} \n\
 /* 08013A96 */ MOVS R0, #8 \n\
-/* 08013A98 */ BL func_0800C7A4 \n\
+/* 08013A98 */ BL scene_hide_sprite \n\
 /* 08013A9C */ MOVS R0, #9 \n\
-/* 08013A9E */ BL func_0800C7A4 \n\
+/* 08013A9E */ BL scene_hide_sprite \n\
 /* 08013AA2 */ LDR R5, _08013AD8 \n\
 /* 08013AA4 */ LDR R0, [R5] \n\
 /* 08013AA6 */ ADDS R0, #0XF0 \n\
@@ -17,7 +17,7 @@ thumb_func_start func_08013A94 \n\
 /* 08013AB2 */ CMP R0, #1 \n\
 /* 08013AB4 */ BLS _08013ABC \n\
 /* 08013AB6 */ MOVS R0, #8 \n\
-/* 08013AB8 */ BL func_0800C77C \n\
+/* 08013AB8 */ BL scene_show_sprite \n\
 _08013ABC: \n\
 /* 08013ABC */ LDRB R0, [R4, #3] \n\
 /* 08013ABE */ LDR R1, [R5] \n\
@@ -27,7 +27,7 @@ _08013ABC: \n\
 /* 08013AC6 */ CMP R0, R1 \n\
 /* 08013AC8 */ BGE _08013AD0 \n\
 /* 08013ACA */ MOVS R0, #9 \n\
-/* 08013ACC */ BL func_0800C77C \n\
+/* 08013ACC */ BL scene_show_sprite \n\
 _08013AD0: \n\
 /* 08013AD0 */ POP {R4, R5} \n\
 /* 08013AD2 */ POP {R0} \n\

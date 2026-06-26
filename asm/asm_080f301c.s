@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel set_soundplayer_speed
+glabel midi_player_set_speed
 /* 080F301C */ PUSH {R4, LR}
 /* 080F301E */ ADDS R4, R0, #0
 /* 080F3020 */ LSLS R1, R1, #0X10

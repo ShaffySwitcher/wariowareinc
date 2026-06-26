@@ -30,10 +30,10 @@ _080D3E54:
 /* 080D3E5E */ CMP R0, #5
 /* 080D3E60 */ BNE _080D3E68
 /* 080D3E62 */ LDR R0, _080D3EA8
-/* 080D3E64 */ BL func_0800C7FC
+/* 080D3E64 */ BL scene_play_sound_to_tempo
 _080D3E68:
 /* 080D3E68 */ LDR R0, _080D3EAC
-/* 080D3E6A */ BL func_0800C7FC
+/* 080D3E6A */ BL scene_play_sound_to_tempo
 /* 080D3E6E */ MOVS R0, #1
 /* 080D3E70 */ MOVS R1, #1
 /* 080D3E72 */ BL func_080D2A34

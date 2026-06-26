@@ -4,7 +4,7 @@
 .include "include/gba.inc"
 
 .thumb_func
-glabel func_0800C7FC
+glabel scene_play_sound_to_tempo
 /* 0800C7FC */ PUSH {R4, LR}
 /* 0800C7FE */ BL play_sound
 /* 0800C802 */ ADDS R4, R0, #0
@@ -13,7 +13,7 @@ glabel func_0800C7FC
 /* 0800C80A */ LSLS R1, R1, #0X10
 /* 0800C80C */ LSRS R1, R1, #0X10
 /* 0800C80E */ ADDS R0, R4, #0
-/* 0800C810 */ BL func_08002038
+/* 0800C810 */ BL set_soundplayer_speed
 /* 0800C814 */ ADDS R0, R4, #0
 /* 0800C816 */ POP {R4}
 /* 0800C818 */ POP {R1}

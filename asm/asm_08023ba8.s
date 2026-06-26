@@ -51,7 +51,7 @@ glabel func_08023BA8
 /* 08023C02 */ MOVS R3, #0
 /* 08023C04 */ BL sprite_set_anim
 /* 08023C08 */ MOVS R0, #9
-/* 08023C0A */ BL func_0800C77C
+/* 08023C0A */ BL scene_show_sprite
 /* 08023C0E */ MOV R0, SB
 /* 08023C10 */ BL ticks_to_frames
 /* 08023C14 */ LSLS R0, R0, #0X10

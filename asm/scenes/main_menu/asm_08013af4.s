@@ -17,7 +17,7 @@ thumb_func_start func_08013AF4 \n\
 /* 08013B0E */ ADDS R3, R4, #0 \n\
 /* 08013B10 */ BL func_080136F4 \n\
 /* 08013B14 */ MOVS R0, #7 \n\
-/* 08013B16 */ BL func_0800C77C \n\
+/* 08013B16 */ BL scene_show_sprite \n\
 /* 08013B1A */ LDR R0, _08013B74 \n\
 /* 08013B1C */ MOV R8, R0 \n\
 /* 08013B1E */ LDR R0, [R0] \n\

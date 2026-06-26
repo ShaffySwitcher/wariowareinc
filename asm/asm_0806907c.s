@@ -74,7 +74,7 @@ _080690AC:
 /* 08069102 */ MOVS R2, #0
 /* 08069104 */ BL sprite_set_enable_updates
 /* 08069108 */ LDR R0, =D_083FC6D4
-/* 0806910A */ BL func_0800C7FC
+/* 0806910A */ BL scene_play_sound_to_tempo
 _0806910E:
 /* 0806910E */ POP {R4, R5}
 /* 08069110 */ POP {R0}

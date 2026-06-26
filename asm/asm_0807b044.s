@@ -13,7 +13,7 @@ glabel func_0807B044
 /* 0807B04E */ ADDS R0, #1
 /* 0807B050 */ STRB R0, [R1]
 /* 0807B052 */ LDR R0, =D_083FE04C
-/* 0807B054 */ BL func_0800C7FC
+/* 0807B054 */ BL scene_play_sound_to_tempo
 /* 0807B058 */ POP {R0}
 /* 0807B05A */ BX R0
 

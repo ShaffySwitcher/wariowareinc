@@ -9,9 +9,9 @@ glabel func_080201A8
 /* 080201AA */ SUB SP, #0XC
 /* 080201AC */ BL func_0801FC10
 /* 080201B0 */ MOVS R0, #1
-/* 080201B2 */ BL func_0800C77C
+/* 080201B2 */ BL scene_show_sprite
 /* 080201B6 */ MOVS R0, #0XA
-/* 080201B8 */ BL func_0800C77C
+/* 080201B8 */ BL scene_show_sprite
 /* 080201BC */ LDR R4, _0802022C
 /* 080201BE */ LDR R0, [R4]
 /* 080201C0 */ LDR R5, _08020230

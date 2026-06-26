@@ -203,4 +203,4 @@ extern struct Beatscript *beatscript_rewind_to_loop_begin(struct Beatscript *cur
 
 
 // EXTERN
-void set_soundplayer_speed(struct SoundPlayer*, u16);
+void midi_player_set_speed(struct SoundPlayer*, u16);

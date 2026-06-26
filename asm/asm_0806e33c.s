@@ -148,7 +148,7 @@ _0806E3D2:
 /* 0806E452 */ MOVS R2, #0
 /* 0806E454 */ BL sprite_set_visible
 /* 0806E458 */ LDR R0, _0806E478
-/* 0806E45A */ BL func_0800C7FC
+/* 0806E45A */ BL scene_play_sound_to_tempo
 /* 0806E45E */ B _0806E496
 
 .balign 4, 0

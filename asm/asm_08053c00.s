@@ -50,7 +50,7 @@ glabel func_08053C00
 /* 08053C56 */ MOVS R0, #0
 /* 08053C58 */ BL func_0800A128
 /* 08053C5C */ LDR R0, _08053CA8
-/* 08053C5E */ BL func_0800C7FC
+/* 08053C5E */ BL scene_play_sound_to_tempo
 _08053C62:
 /* 08053C62 */ LDR R0, _08053CAC
 /* 08053C64 */ CMP R5, R0

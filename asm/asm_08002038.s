@@ -3,14 +3,14 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_08002038
+glabel set_soundplayer_speed
 .thumb_func
 /* 08002038 */ PUSH {LR}
 /* 0800203A */ LSLS R1, R1, #0X10
 /* 0800203C */ LSRS R1, R1, #0X10
 /* 0800203E */ CMP R0, #0
 /* 08002040 */ BEQ _08002046
-/* 08002042 */ BL set_soundplayer_speed
+/* 08002042 */ BL midi_player_set_speed
 _08002046:
 /* 08002046 */ POP {R0}
 /* 08002048 */ BX R0

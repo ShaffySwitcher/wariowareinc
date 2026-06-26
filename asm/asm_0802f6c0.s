@@ -147,7 +147,7 @@ _0802F790:
 /* 0802F7B2 */ MOVS R2, #1
 /* 0802F7B4 */ BL sprite_set_anim_cel
 /* 0802F7B8 */ LDR R0, _0802F7C8
-/* 0802F7BA */ BL func_0800C7FC
+/* 0802F7BA */ BL scene_play_sound_to_tempo
 /* 0802F7BE */ ADDS R7, R5, #0
 /* 0802F7C0 */ ADDS R7, #0X7A
 /* 0802F7C2 */ B _0802F91E
@@ -210,7 +210,7 @@ _0802F810:
 /* 0802F828 */ MOVS R2, #2
 /* 0802F82A */ BL sprite_set_anim_cel
 /* 0802F82E */ LDR R0, _0802F83C
-/* 0802F830 */ BL func_0800C7FC
+/* 0802F830 */ BL scene_play_sound_to_tempo
 /* 0802F834 */ B _0802F91E
 
 .balign 4, 0
@@ -239,7 +239,7 @@ _0802F840:
 /* 0802F85E */ LSLS R4, R6, #2
 /* 0802F860 */ ADDS R0, R4, R0
 /* 0802F862 */ LDR R0, [R0]
-/* 0802F864 */ BL func_0800C7FC
+/* 0802F864 */ BL scene_play_sound_to_tempo
 /* 0802F868 */ MOV R2, R8
 /* 0802F86A */ ADDS R1, R2, R7
 /* 0802F86C */ MOVS R0, #4
@@ -326,7 +326,7 @@ _0802F8C4:
 /* 0802F908 */ ADDS R0, #2
 /* 0802F90A */ STRH R1, [R0]
 /* 0802F90C */ LDR R0, =D_083FCAD0
-/* 0802F90E */ BL func_0800C7FC
+/* 0802F90E */ BL scene_play_sound_to_tempo
 /* 0802F912 */ MOVS R0, #0X1C
 /* 0802F914 */ BL func_0800C9A4
 /* 0802F918 */ MOVS R0, #1

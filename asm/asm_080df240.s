@@ -32,7 +32,7 @@ glabel func_080DF240
 /* 080DF276 */ MOV R1, R8
 /* 080DF278 */ LDR R0, [R1]
 /* 080DF27A */ ADDS R1, R5, #0
-/* 080DF27C */ BL func_08002038
+/* 080DF27C */ BL set_soundplayer_speed
 /* 080DF280 */ POP {R3}
 /* 080DF282 */ MOV R8, R3
 /* 080DF284 */ POP {R4, R5, R6}

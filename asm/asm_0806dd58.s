@@ -11,7 +11,7 @@ glabel func_0806DD58
 /* 0806DD5E */ PUSH {R6, R7}
 /* 0806DD60 */ SUB SP, #0XC
 /* 0806DD62 */ LDR R0, _0806DDC4
-/* 0806DD64 */ BL func_0800C7FC
+/* 0806DD64 */ BL scene_play_sound_to_tempo
 /* 0806DD68 */ MOVS R0, #0X30
 /* 0806DD6A */ BL func_0800C9A4
 /* 0806DD6E */ MOVS R0, #0

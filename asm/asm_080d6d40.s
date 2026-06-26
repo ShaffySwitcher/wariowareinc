@@ -74,7 +74,7 @@ _080D6D70:
 /* 080D6DBC */ MOVS R0, #3
 /* 080D6DBE */ STRB R0, [R7, #0X1E]
 /* 080D6DC0 */ LDR R0, _080D6DDC
-/* 080D6DC2 */ BL func_0800C7FC
+/* 080D6DC2 */ BL scene_play_sound_to_tempo
 /* 080D6DC6 */ B _080D6ECC
 
 .balign 4, 0

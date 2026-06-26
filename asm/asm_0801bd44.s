@@ -66,7 +66,7 @@ glabel func_0801BD44
 /* 0801BDC4 */ MOVS R3, #0
 /* 0801BDC6 */ BL interp_lcd_blend_mode
 /* 0801BDCA */ MOVS R0, #7
-/* 0801BDCC */ BL func_0800C7A4
+/* 0801BDCC */ BL scene_hide_sprite
 /* 0801BDD0 */ ADD SP, #0XC
 /* 0801BDD2 */ POP {R4, R5, R6}
 /* 0801BDD4 */ POP {R0}

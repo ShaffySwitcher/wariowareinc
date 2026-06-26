@@ -174,7 +174,7 @@ _080449F0:
 /* 08044A1E */ MOVS R1, #1
 /* 08044A20 */ STR R1, [R0]
 /* 08044A22 */ LDR R0, =D_083FCC4C
-/* 08044A24 */ BL func_0800C7FC
+/* 08044A24 */ BL scene_play_sound_to_tempo
 _08044A28:
 /* 08044A28 */ POP {R3, R4, R5}
 /* 08044A2A */ MOV R8, R3

@@ -63,7 +63,7 @@ _0809B6FA:
 /* 0809B70A */ ADDS R0, R2, R5
 /* 0809B70C */ LDR R0, [R0]
 /* 0809B70E */ LDRH R1, [R1]
-/* 0809B710 */ BL func_08002038
+/* 0809B710 */ BL set_soundplayer_speed
 /* 0809B714 */ POP {R4, R5, R6}
 /* 0809B716 */ POP {R0}
 /* 0809B718 */ BX R0

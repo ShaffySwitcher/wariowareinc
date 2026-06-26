@@ -390,7 +390,7 @@ _0805EC86:
 /* 0805ECDA */ MOVS R2, #0
 /* 0805ECDC */ BL sprite_set_visible
 /* 0805ECE0 */ LDR R0, _0805ED18
-/* 0805ECE2 */ BL func_0800C7FC
+/* 0805ECE2 */ BL scene_play_sound_to_tempo
 /* 0805ECE6 */ MOVS R0, #0X18
 /* 0805ECE8 */ BL func_0800C9A4
 /* 0805ECEC */ MOVS R0, #1

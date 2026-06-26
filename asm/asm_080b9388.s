@@ -36,7 +36,7 @@ _080B93AA:
 /* 080B93BC */ MOVS R1, #1
 /* 080B93BE */ STRB R1, [R0, #0XC]
 /* 080B93C0 */ LDR R0, _080B93CC
-/* 080B93C2 */ BL func_0800C7FC
+/* 080B93C2 */ BL scene_play_sound_to_tempo
 /* 080B93C6 */ B _080B93E8
 
 .balign 4, 0

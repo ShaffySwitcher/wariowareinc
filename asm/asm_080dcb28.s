@@ -50,7 +50,7 @@ _080DCB70:
 /* 080DCB76 */ LDR R0, [R0]
 /* 080DCB78 */ ADDS R1, #0XE6
 /* 080DCB7A */ LDRH R1, [R1]
-/* 080DCB7C */ BL set_soundplayer_speed
+/* 080DCB7C */ BL midi_player_set_speed
 /* 080DCB80 */ LDR R1, [R4]
 /* 080DCB82 */ ADDS R0, R1, #0
 /* 080DCB84 */ ADDS R0, #0XBC

@@ -50,7 +50,7 @@ _080C900C:
 /* 080C9016 */ CMP R0, #0
 /* 080C9018 */ BEQ _080C9030
 /* 080C901A */ LDR R0, _080C9028
-/* 080C901C */ BL func_0800C7FC
+/* 080C901C */ BL scene_play_sound_to_tempo
 /* 080C9020 */ LDR R1, [R4]
 /* 080C9022 */ MOVS R0, #2
 /* 080C9024 */ STRB R0, [R1]

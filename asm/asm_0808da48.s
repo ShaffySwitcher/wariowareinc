@@ -98,7 +98,7 @@ _0808DAB4:
 /* 0808DAF8 */ ADDS R0, #1
 /* 0808DAFA */ STRB R0, [R1]
 /* 0808DAFC */ LDR R0, _0808DB1C
-/* 0808DAFE */ BL func_0800C7FC
+/* 0808DAFE */ BL scene_play_sound_to_tempo
 /* 0808DB02 */ B _0808DCF2
 
 .balign 4, 0

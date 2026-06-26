@@ -74,7 +74,7 @@ _080D7250:
 /* 080D7276 */ CMP R2, R0
 /* 080D7278 */ BLE _080D72B8
 /* 080D727A */ LDR R0, _080D72D8
-/* 080D727C */ BL func_0800C7FC
+/* 080D727C */ BL scene_play_sound_to_tempo
 /* 080D7280 */ MOVS R1, #6
 /* 080D7282 */ LDRSH R0, [R5, R1]
 /* 080D7284 */ SUBS R0, R6, R0
@@ -295,7 +295,7 @@ _080D73BA:
 /* 080D7404 */ LDR R2, _080D742C
 /* 080D7406 */ BL sprite_set_z
 /* 080D740A */ LDR R0, _080D7430
-/* 080D740C */ BL func_0800C7FC
+/* 080D740C */ BL scene_play_sound_to_tempo
 /* 080D7410 */ B _080D7484
 
 .balign 4, 0

@@ -63,7 +63,7 @@ _0805998C:
 /* 080599B2 */ MOVS R0, #0
 /* 080599B4 */ BL func_0800A128
 /* 080599B8 */ LDR R0, _080599CC
-/* 080599BA */ BL func_0800C7FC
+/* 080599BA */ BL scene_play_sound_to_tempo
 /* 080599BE */ LDR R1, [R4]
 /* 080599C0 */ MOVS R0, #2
 /* 080599C2 */ STRB R0, [R1]

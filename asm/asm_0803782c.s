@@ -256,7 +256,7 @@ _08037970:
 /* 080379FA */ LDR R1, _08037A14
 _080379FC:
 /* 080379FC */ ADDS R0, R1, #0
-/* 080379FE */ BL func_0800C7FC
+/* 080379FE */ BL scene_play_sound_to_tempo
 /* 08037A02 */ LDR R0, [R5]
 /* 08037A04 */ ADD R0, R8
 /* 08037A06 */ MOVS R1, #3

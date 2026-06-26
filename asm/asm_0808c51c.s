@@ -46,7 +46,7 @@ _0808C530:
 /* 0808C56C */ ADDS R1, R4, #0
 /* 0808C56E */ BL func_0808BDFC
 /* 0808C572 */ LDR R0, _0808C584
-/* 0808C574 */ BL func_0800C7FC
+/* 0808C574 */ BL scene_play_sound_to_tempo
 /* 0808C578 */ MOVS R0, #1
 /* 0808C57A */ B _0808C5A2
 

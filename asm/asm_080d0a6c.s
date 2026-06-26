@@ -119,7 +119,7 @@ _080D0B1A:
 /* 080D0B22 */ CMP R0, #0
 /* 080D0B24 */ BEQ _080D0B4C
 /* 080D0B26 */ LDR R0, _080D0B68
-/* 080D0B28 */ BL func_0800C7FC
+/* 080D0B28 */ BL scene_play_sound_to_tempo
 /* 080D0B2C */ MOVS R3, #0
 /* 080D0B2E */ MOVS R0, #7
 /* 080D0B30 */ STRB R0, [R5, #0X1C]
@@ -204,7 +204,7 @@ _080D0B8C:
 /* 080D0BB6 */ MOVS R0, #0
 /* 080D0BB8 */ STRB R0, [R5, #0X1E]
 /* 080D0BBA */ LDR R0, _080D0BCC
-/* 080D0BBC */ BL func_0800C7FC
+/* 080D0BBC */ BL scene_play_sound_to_tempo
 /* 080D0BC0 */ B _080D0D12
 
 .balign 4, 0
@@ -237,7 +237,7 @@ _080D0BD0:
 /* 080D0BEE */ B _080D0D12
 _080D0BF0:
 /* 080D0BF0 */ LDR R0, _080D0C28
-/* 080D0BF2 */ BL func_0800C7FC
+/* 080D0BF2 */ BL scene_play_sound_to_tempo
 /* 080D0BF6 */ STRB R6, [R5, #0X1E]
 /* 080D0BF8 */ LDRB R0, [R5, #0X1D]
 /* 080D0BFA */ STRB R0, [R5, #0X1C]

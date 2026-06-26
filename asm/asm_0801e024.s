@@ -123,7 +123,7 @@ _0801E0D2:
 /* 0801E104 */ CMP R0, #0
 /* 0801E106 */ BNE _0801E128
 /* 0801E108 */ MOVS R0, #6
-/* 0801E10A */ BL func_0800C77C
+/* 0801E10A */ BL scene_show_sprite
 /* 0801E10E */ MOVS R0, #1
 /* 0801E110 */ BL func_0801E1C0
 /* 0801E114 */ MOVS R0, #2
@@ -143,7 +143,7 @@ _0801E124:
 /* 0801E124 */ .word gCurrentSceneData
 _0801E128:
 /* 0801E128 */ MOVS R0, #7
-/* 0801E12A */ BL func_0800C77C
+/* 0801E12A */ BL scene_show_sprite
 /* 0801E12E */ MOVS R0, #2
 /* 0801E130 */ BL func_0801E1C0
 /* 0801E134 */ MOVS R0, #0

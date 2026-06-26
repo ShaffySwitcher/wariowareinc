@@ -50,7 +50,7 @@ _080156F0: \n\
 /* 08015736 */ LDRSH R1, [R1, R2] \n\
 /* 08015738 */ BL sprite_delete \n\
 /* 0801573C */ MOVS R0, #4 \n\
-/* 0801573E */ BL func_0800C7A4 \n\
+/* 0801573E */ BL scene_hide_sprite \n\
 /* 08015742 */ LDR R1, [R7] \n\
 /* 08015744 */ ADDS R1, #0XDE \n\
 /* 08015746 */ LDRB R0, [R1] \n\

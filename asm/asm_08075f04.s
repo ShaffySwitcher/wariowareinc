@@ -11,7 +11,7 @@ glabel func_08075F04
 /* 08075F0C */ MOVS R0, #1
 /* 08075F0E */ BL func_0800A128
 /* 08075F12 */ LDR R0, _08075F34
-/* 08075F14 */ BL func_0800C7FC
+/* 08075F14 */ BL scene_play_sound_to_tempo
 /* 08075F18 */ MOVS R0, #1
 /* 08075F1A */ BL func_08075EC4
 /* 08075F1E */ LDR R2, =gCurrentSceneVariable

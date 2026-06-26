@@ -17,7 +17,7 @@ glabel func_080B5630
 /* 080B5644 */ MOVS R0, #0
 /* 080B5646 */ BL func_0800A128
 /* 080B564A */ LDR R0, =D_083FC7EC
-/* 080B564C */ BL func_0800C7FC
+/* 080B564C */ BL scene_play_sound_to_tempo
 _080B5650:
 /* 080B5650 */ POP {R0}
 /* 080B5652 */ BX R0

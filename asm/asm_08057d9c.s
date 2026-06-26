@@ -35,7 +35,7 @@ _08057DB6:
 /* 08057DD4 */ MOVS R2, #0
 /* 08057DD6 */ BL sprite_set_visible
 /* 08057DDA */ LDR R0, =D_083FCC24
-/* 08057DDC */ BL func_0800C7FC
+/* 08057DDC */ BL scene_play_sound_to_tempo
 _08057DE0:
 /* 08057DE0 */ POP {R4}
 /* 08057DE2 */ POP {R0}

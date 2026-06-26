@@ -82,7 +82,7 @@ _08048E4C:
 /* 08048E7A */ LDR R2, _08048EAC
 /* 08048E7C */ BL sprite_set_z
 /* 08048E80 */ LDR R0, =D_083FCC10
-/* 08048E82 */ BL func_0800C7FC
+/* 08048E82 */ BL scene_play_sound_to_tempo
 /* 08048E86 */ MOVS R0, #0X18
 /* 08048E88 */ BL func_0800C9A4
 /* 08048E8C */ MOVS R0, #1

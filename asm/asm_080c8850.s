@@ -80,7 +80,7 @@ _080C88C4:
 /* 080C88E0 */ CMP R5, #9
 /* 080C88E2 */ BLS _080C88C4
 /* 080C88E4 */ LDR R0, _080C88F8
-/* 080C88E6 */ BL func_0800C7FC
+/* 080C88E6 */ BL scene_play_sound_to_tempo
 /* 080C88EA */ B _080C894A
 
 .balign 4, 0

@@ -76,13 +76,13 @@ glabel func_08085E54
 /* 08085EEE */ LDR R3, [R5]
 /* 08085EF0 */ BL func_08005538
 /* 08085EF4 */ MOVS R0, #1
-/* 08085EF6 */ BL func_0800C7A4
+/* 08085EF6 */ BL scene_hide_sprite
 /* 08085EFA */ MOVS R0, #2
-/* 08085EFC */ BL func_0800C7A4
+/* 08085EFC */ BL scene_hide_sprite
 /* 08085F00 */ MOVS R0, #3
-/* 08085F02 */ BL func_0800C7A4
+/* 08085F02 */ BL scene_hide_sprite
 /* 08085F06 */ MOVS R0, #4
-/* 08085F08 */ BL func_0800C7A4
+/* 08085F08 */ BL scene_hide_sprite
 /* 08085F0C */ LDR R0, _08085F58
 /* 08085F0E */ BL func_0800BBB4
 /* 08085F12 */ LDR R0, [R7]

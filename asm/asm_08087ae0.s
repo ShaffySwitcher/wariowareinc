@@ -32,7 +32,7 @@ glabel func_08087AE0
 /* 08087B16 */ CMP R0, #0
 /* 08087B18 */ BNE _08087BA4
 /* 08087B1A */ LDR R0, _08087B3C
-/* 08087B1C */ BL func_0800C7FC
+/* 08087B1C */ BL scene_play_sound_to_tempo
 /* 08087B20 */ LDR R0, [R6]
 /* 08087B22 */ ADDS R0, #0X6F
 /* 08087B24 */ MOVS R1, #1
@@ -88,7 +88,7 @@ _08087B40:
 /* 08087B74 */ CMP R0, #0
 /* 08087B76 */ BNE _08087BA4
 /* 08087B78 */ LDR R0, _08087B98
-/* 08087B7A */ BL func_0800C7FC
+/* 08087B7A */ BL scene_play_sound_to_tempo
 /* 08087B7E */ LDR R0, [R6]
 /* 08087B80 */ ADDS R0, #0X6F
 /* 08087B82 */ MOVS R1, #1

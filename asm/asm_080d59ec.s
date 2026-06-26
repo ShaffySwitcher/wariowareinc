@@ -23,7 +23,7 @@ glabel func_080D59EC
 /* 080D5A0A */ MOVS R2, #1
 /* 080D5A0C */ BL sprite_set_anim_cel
 /* 080D5A10 */ LDR R0, =D_083FD430
-/* 080D5A12 */ BL func_0800C7FC
+/* 080D5A12 */ BL scene_play_sound_to_tempo
 /* 080D5A16 */ POP {R0}
 /* 080D5A18 */ BX R0
 

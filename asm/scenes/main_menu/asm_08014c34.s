@@ -5,7 +5,7 @@ thumb_func_start func_08014C34 \n\
 /* 08014C36 */ MOVS R0, #0 \n\
 /* 08014C38 */ BL scene_set_current_thread \n\
 /* 08014C3C */ MOVS R0, #0X18 \n\
-/* 08014C3E */ BL func_0800C77C \n\
+/* 08014C3E */ BL scene_show_sprite \n\
 /* 08014C42 */ LDR R3, =gCurrentSceneData \n\
 /* 08014C44 */ LDR R1, [R3] \n\
 /* 08014C46 */ ADDS R1, #0XDE \n\

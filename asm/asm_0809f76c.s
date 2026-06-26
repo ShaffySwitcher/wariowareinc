@@ -232,7 +232,7 @@ _0809F8CA:
 /* 0809F916 */ MOVS R2, #1
 /* 0809F918 */ BL sprite_set_anim_cel
 /* 0809F91C */ LDR R0, _0809F954
-/* 0809F91E */ BL func_0800C7FC
+/* 0809F91E */ BL scene_play_sound_to_tempo
 /* 0809F922 */ MOVS R0, #1
 /* 0809F924 */ BL func_0800A0C4
 /* 0809F928 */ LDR R0, [R5]

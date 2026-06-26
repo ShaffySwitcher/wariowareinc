@@ -137,7 +137,7 @@ _08083F80:
 /* 08083FAC */ MOVS R2, #1
 /* 08083FAE */ BL sprite_set_visible
 /* 08083FB2 */ LDR R0, _08083FCC
-/* 08083FB4 */ BL func_0800C7FC
+/* 08083FB4 */ BL scene_play_sound_to_tempo
 /* 08083FB8 */ LDR R1, [R6]
 /* 08083FBA */ MOVS R0, #2
 /* 08083FBC */ STRB R0, [R1]

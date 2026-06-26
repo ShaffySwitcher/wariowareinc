@@ -60,7 +60,7 @@ glabel func_080D7180
 /* 080D71EA */ LSLS R0, R0, #8
 /* 080D71EC */ STR R0, [R4, #0X10]
 /* 080D71EE */ LDR R0, =D_083FD020
-/* 080D71F0 */ BL func_0800C7FC
+/* 080D71F0 */ BL scene_play_sound_to_tempo
 _080D71F4:
 /* 080D71F4 */ POP {R4, R5, R6}
 /* 080D71F6 */ POP {R0}

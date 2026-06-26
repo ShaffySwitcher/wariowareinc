@@ -205,7 +205,7 @@ _080A5D0A:
 /* 080A5D38 */ MOVS R3, #4
 /* 080A5D3A */ BL sprite_set_playback
 /* 080A5D3E */ LDR R0, _080A5D50
-/* 080A5D40 */ BL func_0800C7FC
+/* 080A5D40 */ BL scene_play_sound_to_tempo
 /* 080A5D44 */ B _080A5E5E
 
 .balign 4, 0

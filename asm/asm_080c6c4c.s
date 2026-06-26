@@ -184,7 +184,7 @@ _080C6D14:
 /* 080C6D84 */ MOVS R0, #1
 /* 080C6D86 */ BL func_0800A128
 /* 080C6D8A */ LDR R0, _080C6DC0
-/* 080C6D8C */ BL func_0800C7FC
+/* 080C6D8C */ BL scene_play_sound_to_tempo
 /* 080C6D90 */ LDR R4, [R5]
 /* 080C6D92 */ LDR R0, [R7]
 /* 080C6D94 */ LDRH R1, [R0, #0X16]

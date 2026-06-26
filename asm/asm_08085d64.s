@@ -41,7 +41,7 @@ _08085D86:
 /* 08085DA2 */ MOVS R0, #1
 /* 08085DA4 */ STRB R0, [R5, #1]
 /* 08085DA6 */ LDR R0, _08085DB4
-/* 08085DA8 */ BL func_0800C7FC
+/* 08085DA8 */ BL scene_play_sound_to_tempo
 /* 08085DAC */ B _08085E24
 
 .balign 4, 0
@@ -75,7 +75,7 @@ _08085DB8:
 /* 08085DEE */ BL func_0808578C
 /* 08085DF2 */ BL func_080855FC
 /* 08085DF6 */ LDR R0, _08085E04
-/* 08085DF8 */ BL func_0800C7FC
+/* 08085DF8 */ BL scene_play_sound_to_tempo
 /* 08085DFC */ B _08085E24
 
 .balign 4, 0

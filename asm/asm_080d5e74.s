@@ -253,7 +253,7 @@ _080D601C:
 /* 080D6032 */ ASRS R0, R0, #8
 /* 080D6034 */ STRH R0, [R5, #0XE]
 /* 080D6036 */ LDR R0, _080D604C
-/* 080D6038 */ BL func_0800C7FC
+/* 080D6038 */ BL scene_play_sound_to_tempo
 /* 080D603C */ B _080D618A
 
 .balign 4, 0
@@ -290,7 +290,7 @@ _080D6050:
 /* 080D6070 */ LSLS R0, R0, #8
 /* 080D6072 */ STR R0, [R5, #8]
 /* 080D6074 */ LDR R0, _080D60B8
-/* 080D6076 */ BL func_0800C7FC
+/* 080D6076 */ BL scene_play_sound_to_tempo
 /* 080D607A */ LDRB R0, [R5, #0X18]
 /* 080D607C */ ADDS R0, #1
 /* 080D607E */ STRB R0, [R5, #0X18]

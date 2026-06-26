@@ -117,7 +117,7 @@ _080A2CB0:
 /* 080A2CB2 */ LSLS R0, R0, #2
 /* 080A2CB4 */ ADDS R0, R1
 /* 080A2CB6 */ LDR R0, [R0]
-/* 080A2CB8 */ BL func_0800C7FC
+/* 080A2CB8 */ BL scene_play_sound_to_tempo
 /* 080A2CBC */ B _080A2D08
 
 .balign 4, 0

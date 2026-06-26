@@ -15,7 +15,7 @@ glabel func_080EC960
 /* 080EC970 */ LDR R0, [R0, #0X28]
 /* 080EC972 */ MOVS R1, #0X80
 /* 080EC974 */ LSLS R1, R1, #1
-/* 080EC976 */ BL func_08002038
+/* 080EC976 */ BL set_soundplayer_speed
 /* 080EC97A */ POP {R4}
 /* 080EC97C */ POP {R0}
 /* 080EC97E */ BX R0

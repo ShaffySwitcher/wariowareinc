@@ -316,7 +316,7 @@ _080DC064:
 /* 080DC076 */ LSLS R1, R1, #0X10
 /* 080DC078 */ LSRS R1, R1, #0X10
 /* 080DC07A */ ADDS R0, R4, #0
-/* 080DC07C */ BL set_soundplayer_speed
+/* 080DC07C */ BL midi_player_set_speed
 /* 080DC080 */ B _080DC0C8
 
 .balign 4, 0
@@ -350,7 +350,7 @@ _080DC088:
 /* 080DC0BE */ LSLS R1, R1, #0X10
 /* 080DC0C0 */ LSRS R1, R1, #0X10
 /* 080DC0C2 */ ADDS R0, R4, #0
-/* 080DC0C4 */ BL set_soundplayer_speed
+/* 080DC0C4 */ BL midi_player_set_speed
 _080DC0C8:
 /* 080DC0C8 */ BL func_080DBD34
 /* 080DC0CC */ B _080DC0F0

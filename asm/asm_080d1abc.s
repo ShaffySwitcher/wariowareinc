@@ -212,7 +212,7 @@ _080D1BEA:
 /* 080D1C1A */ BL __divsi3
 /* 080D1C1E */ STRH R0, [R4, #2]
 /* 080D1C20 */ LDR R0, _080D1C34
-/* 080D1C22 */ BL func_0800C7FC
+/* 080D1C22 */ BL scene_play_sound_to_tempo
 /* 080D1C26 */ B _080D20B8
 
 .balign 4, 0
@@ -589,7 +589,7 @@ _080D1EA8:
 /* 080D1EF8 */ BL __divsi3
 /* 080D1EFC */ STRH R0, [R4, #2]
 /* 080D1EFE */ LDR R0, _080D1F10
-/* 080D1F00 */ BL func_0800C7FC
+/* 080D1F00 */ BL scene_play_sound_to_tempo
 /* 080D1F04 */ B _080D20B8
 
 .balign 4, 0
@@ -791,7 +791,7 @@ _080D202C:
 /* 080D2074 */ CMP R0, R1
 /* 080D2076 */ BGE _080D20B8
 /* 080D2078 */ LDR R0, =D_083FDEE4
-/* 080D207A */ BL func_0800C7FC
+/* 080D207A */ BL scene_play_sound_to_tempo
 /* 080D207E */ LDR R0, [R6, #4]
 /* 080D2080 */ ADD R1, SP, #0XC
 /* 080D2082 */ ASRS R0, R0, #8

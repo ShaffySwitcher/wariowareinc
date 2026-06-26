@@ -59,7 +59,7 @@ thumb_func_start func_08015944 \n\
 /* 080159B6 */ MOVS R3, #0 \n\
 /* 080159B8 */ BL func_08011504 \n\
 /* 080159BC */ MOVS R0, #4 \n\
-/* 080159BE */ BL func_0800C77C \n\
+/* 080159BE */ BL scene_show_sprite \n\
 /* 080159C2 */ MOV R1, R8 \n\
 /* 080159C4 */ LDR R0, [R1] \n\
 /* 080159C6 */ LDR R1, [R6] \n\

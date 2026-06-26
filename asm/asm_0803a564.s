@@ -147,7 +147,7 @@ _0803A652:
 /* 0803A660 */ MOVS R0, #0
 /* 0803A662 */ BL func_0800A0C4
 /* 0803A666 */ LDR R0, _0803A68C
-/* 0803A668 */ BL func_0800C7FC
+/* 0803A668 */ BL scene_play_sound_to_tempo
 /* 0803A66C */ LDR R0, =gSpriteHandler
 /* 0803A66E */ LDR R0, [R0]
 /* 0803A670 */ LDR R1, [R4]

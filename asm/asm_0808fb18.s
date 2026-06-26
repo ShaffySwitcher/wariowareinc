@@ -21,7 +21,7 @@ glabel func_0808FB18
 /* 0808FB32 */ BEQ _0808FB44
 /* 0808FB34 */ LDR R0, [R1, #0X1C]
 /* 0808FB36 */ LDRH R1, [R1, #0X10]
-/* 0808FB38 */ BL func_08002038
+/* 0808FB38 */ BL set_soundplayer_speed
 /* 0808FB3C */ B _0808FB4C
 
 .balign 4, 0
@@ -30,7 +30,7 @@ _0808FB40:
 _0808FB44:
 /* 0808FB44 */ LDR R0, [R1, #0X18]
 /* 0808FB46 */ LDRH R1, [R1, #0X10]
-/* 0808FB48 */ BL func_08002038
+/* 0808FB48 */ BL set_soundplayer_speed
 _0808FB4C:
 /* 0808FB4C */ POP {R0}
 /* 0808FB4E */ BX R0

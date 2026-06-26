@@ -60,7 +60,7 @@ _080E67E4:
 /* 080E67F8 */ MOVS R0, #0
 /* 080E67FA */ STRH R0, [R2, #6]
 /* 080E67FC */ LDR R0, _080E6810
-/* 080E67FE */ BL func_0800C7FC
+/* 080E67FE */ BL scene_play_sound_to_tempo
 /* 080E6802 */ LDR R1, [R4]
 /* 080E6804 */ LDRB R0, [R1, #1]
 /* 080E6806 */ ADDS R0, #1

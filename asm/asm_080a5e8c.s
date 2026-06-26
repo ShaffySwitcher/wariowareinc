@@ -146,7 +146,7 @@ _080A5EF2:
 /* 080A5FAE */ CMP SB, R0
 /* 080A5FB0 */ BNE _080A5FDC
 /* 080A5FB2 */ LDR R0, _080A5FD8
-/* 080A5FB4 */ BL func_0800C7FC
+/* 080A5FB4 */ BL scene_play_sound_to_tempo
 /* 080A5FB8 */ MOVS R0, #0X18
 /* 080A5FBA */ BL func_0800C9A4
 /* 080A5FBE */ MOVS R0, #0
@@ -174,7 +174,7 @@ _080A5FD8:
 /* 080A5FD8 */ .word D_083FC788
 _080A5FDC:
 /* 080A5FDC */ LDR R0, _080A5FE4
-/* 080A5FDE */ BL func_0800C7FC
+/* 080A5FDE */ BL scene_play_sound_to_tempo
 /* 080A5FE2 */ B _080A607A
 
 .balign 4, 0
@@ -215,7 +215,7 @@ _080A5FE8:
 /* 080A602C */ MOVS R0, #1
 /* 080A602E */ BL func_0800A128
 /* 080A6032 */ LDR R0, =D_083FCB34
-/* 080A6034 */ BL func_0800C7FC
+/* 080A6034 */ BL scene_play_sound_to_tempo
 /* 080A6038 */ MOV R1, SL
 /* 080A603A */ LDR R0, [R1]
 /* 080A603C */ LDR R1, [R7]

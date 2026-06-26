@@ -9,7 +9,7 @@ glabel func_0801743C
 /* 0801743E */ SUB SP, #0XC
 /* 08017440 */ BL func_080172A8
 /* 08017444 */ MOVS R0, #0
-/* 08017446 */ BL func_0800C7A4
+/* 08017446 */ BL scene_hide_sprite
 /* 0801744A */ LDR R4, _08017494
 /* 0801744C */ MOVS R1, #0
 /* 0801744E */ MOVS R0, #0X80

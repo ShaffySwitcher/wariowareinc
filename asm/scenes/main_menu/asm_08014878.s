@@ -7,15 +7,15 @@ thumb_func_start func_08014878 \n\
 /* 08014880 */ MOVS R0, #1 \n\
 /* 08014882 */ BL func_08014810 \n\
 /* 08014886 */ MOVS R0, #0X13 \n\
-/* 08014888 */ BL func_0800C77C \n\
+/* 08014888 */ BL scene_show_sprite \n\
 /* 0801488C */ MOVS R0, #0X14 \n\
-/* 0801488E */ BL func_0800C77C \n\
+/* 0801488E */ BL scene_show_sprite \n\
 /* 08014892 */ MOVS R0, #0X15 \n\
-/* 08014894 */ BL func_0800C77C \n\
+/* 08014894 */ BL scene_show_sprite \n\
 /* 08014898 */ MOVS R0, #0X16 \n\
-/* 0801489A */ BL func_0800C77C \n\
+/* 0801489A */ BL scene_show_sprite \n\
 /* 0801489E */ MOVS R0, #0X17 \n\
-/* 080148A0 */ BL func_0800C77C \n\
+/* 080148A0 */ BL scene_show_sprite \n\
 /* 080148A4 */ LDR R0, =gCurrentSceneData \n\
 /* 080148A6 */ LDR R1, [R0] \n\
 /* 080148A8 */ ADDS R1, #0XDE \n\

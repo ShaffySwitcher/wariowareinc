@@ -899,7 +899,7 @@ _080BE7D0:
 /* 080BE7F6 */ LDR R0, [R0]
 /* 080BE7F8 */ MOVS R1, #0X80
 /* 080BE7FA */ LSLS R1, R1, #1
-/* 080BE7FC */ BL set_soundplayer_speed
+/* 080BE7FC */ BL midi_player_set_speed
 /* 080BE800 */ LDR R0, [R4]
 /* 080BE802 */ ADDS R0, #0XE8
 /* 080BE804 */ MOVS R1, #0

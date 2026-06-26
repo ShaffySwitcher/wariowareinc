@@ -24,7 +24,7 @@ glabel func_08060F08
 /* 08060F28 */ CMP R0, #0
 /* 08060F2A */ BEQ _08060FFC
 /* 08060F2C */ LDR R0, _08060F50
-/* 08060F2E */ BL func_0800C7FC
+/* 08060F2E */ BL scene_play_sound_to_tempo
 /* 08060F32 */ BL func_08060BD4
 /* 08060F36 */ LSLS R0, R0, #0X10
 /* 08060F38 */ ASRS R4, R0, #0X10
@@ -70,7 +70,7 @@ _08060F74:
 /* 08060F74 */ .word gSpriteHandler
 _08060F78:
 /* 08060F78 */ LDR R0, _08060FA4
-/* 08060F7A */ BL func_0800C7FC
+/* 08060F7A */ BL scene_play_sound_to_tempo
 /* 08060F7E */ MOVS R0, #0
 /* 08060F80 */ BL func_0800A0C4
 /* 08060F84 */ LDR R0, [R5]
@@ -97,7 +97,7 @@ _08060FA8:
 /* 08060FA8 */ .word gSpriteHandler
 _08060FAC:
 /* 08060FAC */ LDR R0, _08060FD8
-/* 08060FAE */ BL func_0800C7FC
+/* 08060FAE */ BL scene_play_sound_to_tempo
 /* 08060FB2 */ MOVS R0, #0
 /* 08060FB4 */ BL func_0800A0C4
 /* 08060FB8 */ LDR R0, [R5]

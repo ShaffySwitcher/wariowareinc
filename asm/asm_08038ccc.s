@@ -12,7 +12,7 @@ glabel func_08038CCC
 /* 08038CD6 */ CMP R0, #0
 /* 08038CD8 */ BEQ _08038D88
 /* 08038CDA */ LDR R0, _08038D90
-/* 08038CDC */ BL func_0800C7FC
+/* 08038CDC */ BL scene_play_sound_to_tempo
 /* 08038CE0 */ MOVS R0, #0X18
 /* 08038CE2 */ BL func_0800C9A4
 /* 08038CE6 */ MOVS R0, #0

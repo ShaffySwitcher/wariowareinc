@@ -186,7 +186,7 @@ _0807DC14:
 /* 0807DC14 */ MOVS R0, #4
 /* 0807DC16 */ STR R0, [R1, #0X28]
 /* 0807DC18 */ LDR R0, _0807DC40
-/* 0807DC1A */ BL func_0800C7FC
+/* 0807DC1A */ BL scene_play_sound_to_tempo
 _0807DC1E:
 /* 0807DC1E */ MOVS R2, #1
 /* 0807DC20 */ ADD R8, R2

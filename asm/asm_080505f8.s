@@ -35,7 +35,7 @@ glabel func_080505F8
 /* 08050630 */ MOVS R2, #1
 /* 08050632 */ BL sprite_set_anim_cel
 /* 08050636 */ LDR R0, _08050654
-/* 08050638 */ BL func_0800C7FC
+/* 08050638 */ BL scene_play_sound_to_tempo
 /* 0805063C */ MOVS R0, #0X24
 /* 0805063E */ BL func_0800C9A4
 /* 08050642 */ MOVS R0, #1
@@ -73,7 +73,7 @@ _08050658:
 /* 0805067A */ MOVS R2, #2
 /* 0805067C */ BL sprite_set_anim_cel
 /* 08050680 */ LDR R0, _08050704
-/* 08050682 */ BL func_0800C7FC
+/* 08050682 */ BL scene_play_sound_to_tempo
 /* 08050686 */ MOVS R0, #0X24
 /* 08050688 */ BL func_0800C9A4
 /* 0805068C */ MOVS R0, #0
@@ -100,7 +100,7 @@ _08050692:
 /* 080506B8 */ MOVS R2, #3
 /* 080506BA */ BL sprite_set_anim_cel
 /* 080506BE */ LDR R0, _0805070C
-/* 080506C0 */ BL func_0800C7FC
+/* 080506C0 */ BL scene_play_sound_to_tempo
 /* 080506C4 */ MOVS R0, #0X24
 /* 080506C6 */ BL func_0800C9A4
 /* 080506CA */ MOVS R0, #1

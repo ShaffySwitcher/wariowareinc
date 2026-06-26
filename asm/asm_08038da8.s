@@ -159,7 +159,7 @@ _08038E80:
 /* 08038ECC */ MOVS R1, #3
 /* 08038ECE */ STRB R1, [R0]
 /* 08038ED0 */ LDR R0, _08038EE0
-/* 08038ED2 */ BL func_0800C7FC
+/* 08038ED2 */ BL scene_play_sound_to_tempo
 /* 08038ED6 */ B _08038F16
 
 .balign 4, 0

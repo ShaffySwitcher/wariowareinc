@@ -69,7 +69,7 @@ glabel func_080D5298
 /* 080D531C */ MOV R2, R8
 /* 080D531E */ STRB R2, [R0]
 /* 080D5320 */ LDR R0, _080D5358
-/* 080D5322 */ BL func_0800C7FC
+/* 080D5322 */ BL scene_play_sound_to_tempo
 /* 080D5326 */ MOVS R0, #3
 /* 080D5328 */ BL get_random_range
 /* 080D532C */ LSLS R0, R0, #0X10
@@ -79,7 +79,7 @@ glabel func_080D5298
 /* 080D5334 */ CMP R0, #1
 /* 080D5336 */ BEQ _080D536C
 /* 080D5338 */ LDR R0, _080D535C
-/* 080D533A */ BL func_0800C7FC
+/* 080D533A */ BL scene_play_sound_to_tempo
 /* 080D533E */ B _080D5380
 
 .balign 4, 0
@@ -115,7 +115,7 @@ _080D535C:
 /* 080D535C */ .word D_083FE3D0
 _080D5360:
 /* 080D5360 */ LDR R0, _080D5368
-/* 080D5362 */ BL func_0800C7FC
+/* 080D5362 */ BL scene_play_sound_to_tempo
 /* 080D5366 */ B _080D5380
 
 .balign 4, 0
@@ -123,7 +123,7 @@ _080D5368:
 /* 080D5368 */ .word D_083FE3A8
 _080D536C:
 /* 080D536C */ LDR R0, _080D5374
-/* 080D536E */ BL func_0800C7FC
+/* 080D536E */ BL scene_play_sound_to_tempo
 /* 080D5372 */ B _080D5380
 
 .balign 4, 0

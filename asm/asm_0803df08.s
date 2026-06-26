@@ -75,7 +75,7 @@ _0803DF46:
 /* 0803DF86 */ LSRS R0, R0, #0XE
 /* 0803DF88 */ ADDS R0, R4
 /* 0803DF8A */ LDR R0, [R0]
-/* 0803DF8C */ BL func_0800C7FC
+/* 0803DF8C */ BL scene_play_sound_to_tempo
 /* 0803DF90 */ LDR R0, [R5]
 /* 0803DF92 */ ADDS R0, #0XC4
 /* 0803DF94 */ MOVS R1, #0
@@ -184,7 +184,7 @@ _0803E04A:
 /* 0803E05E */ LSRS R0, R0, #0XE
 /* 0803E060 */ ADDS R0, R4
 /* 0803E062 */ LDR R0, [R0]
-/* 0803E064 */ BL func_0800C7FC
+/* 0803E064 */ BL scene_play_sound_to_tempo
 /* 0803E068 */ B _0803E084
 
 .balign 4, 0
@@ -198,7 +198,7 @@ _0803E070:
 /* 0803E07A */ LSRS R0, R0, #0XE
 /* 0803E07C */ ADDS R0, R4
 /* 0803E07E */ LDR R0, [R0]
-/* 0803E080 */ BL func_0800C7FC
+/* 0803E080 */ BL scene_play_sound_to_tempo
 _0803E084:
 /* 0803E084 */ BL func_0803DDB4
 /* 0803E088 */ LDR R0, _0803E0D4

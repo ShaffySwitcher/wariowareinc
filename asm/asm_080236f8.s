@@ -8,7 +8,7 @@ glabel func_080236F8
 /* 080236F8 */ PUSH {R4, LR}
 /* 080236FA */ BL func_080234E8
 /* 080236FE */ MOVS R0, #0
-/* 08023700 */ BL func_0800C7A4
+/* 08023700 */ BL scene_hide_sprite
 /* 08023704 */ LDR R4, _08023750
 /* 08023706 */ MOVS R1, #0
 /* 08023708 */ MOVS R0, #0X80

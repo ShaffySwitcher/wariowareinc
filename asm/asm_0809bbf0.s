@@ -42,7 +42,7 @@ glabel func_0809BBF0
 /* 0809BC38 */ MOVS R0, #1
 /* 0809BC3A */ BL func_0800A128
 /* 0809BC3E */ LDR R0, =D_083FBDB0
-/* 0809BC40 */ BL func_0800C7FC
+/* 0809BC40 */ BL scene_play_sound_to_tempo
 /* 0809BC44 */ LDR R0, [R4]
 /* 0809BC46 */ MOVS R1, #0X90
 /* 0809BC48 */ LSLS R1, R1, #1

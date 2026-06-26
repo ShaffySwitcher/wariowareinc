@@ -428,7 +428,7 @@ _080AE99A:
 /* 080AE9AA */ CMP R0, #0X88
 /* 080AE9AC */ BLE _080AE9C8
 /* 080AE9AE */ LDR R0, _080AE9C4
-/* 080AE9B0 */ BL func_0800C7FC
+/* 080AE9B0 */ BL scene_play_sound_to_tempo
 /* 080AE9B4 */ B _080AE9E4
 
 .balign 4, 0
@@ -459,7 +459,7 @@ _080AE9C8:
 /* 080AE9DA */ CMP R0, #0XC7
 /* 080AE9DC */ BGT _080AE9E4
 /* 080AE9DE */ LDR R0, _080AEA10
-/* 080AE9E0 */ BL func_0800C7FC
+/* 080AE9E0 */ BL scene_play_sound_to_tempo
 _080AE9E4:
 /* 080AE9E4 */ LDR R0, =gSpriteHandler
 /* 080AE9E6 */ LDR R0, [R0]

@@ -43,7 +43,7 @@ glabel func_080AC328
 /* 080AC37A */ MOVS R1, #5
 /* 080AC37C */ STR R1, [R0]
 /* 080AC37E */ LDR R0, _080AC3A0
-/* 080AC380 */ BL func_0800C7FC
+/* 080AC380 */ BL scene_play_sound_to_tempo
 /* 080AC384 */ B _080AC3D2
 
 .balign 4, 0

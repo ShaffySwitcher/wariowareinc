@@ -301,7 +301,7 @@ _080D639C:
 /* 080D641E */ MOVS R3, #0X18
 /* 080D6420 */ BL func_0800C5A0
 /* 080D6424 */ LDR R0, _080D6440
-/* 080D6426 */ BL func_0800C7FC
+/* 080D6426 */ BL scene_play_sound_to_tempo
 /* 080D642A */ B _080D649C
 
 .balign 4, 0

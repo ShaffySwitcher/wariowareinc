@@ -70,7 +70,7 @@ _0803C09C:
 /* 0803C0B0 */ MOVS R0, #0
 /* 0803C0B2 */ BL func_0800A128
 /* 0803C0B6 */ LDR R0, =D_083FC6FC
-/* 0803C0B8 */ BL func_0800C7FC
+/* 0803C0B8 */ BL scene_play_sound_to_tempo
 /* 0803C0BC */ MOVS R0, #1
 _0803C0BE:
 /* 0803C0BE */ ADD SP, #0X10

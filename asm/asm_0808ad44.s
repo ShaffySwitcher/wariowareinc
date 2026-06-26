@@ -52,7 +52,7 @@ _0808AD8C:
 /* 0808AD94 */ MOVS R2, #1
 /* 0808AD96 */ BL sprite_set_visible
 /* 0808AD9A */ LDR R0, =D_083FC094
-/* 0808AD9C */ BL func_0800C7FC
+/* 0808AD9C */ BL scene_play_sound_to_tempo
 _0808ADA0:
 /* 0808ADA0 */ MOVS R0, #1
 _0808ADA2:

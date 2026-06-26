@@ -36,7 +36,7 @@ glabel func_080AF40C
 /* 080AF44A */ LDR R1, _080AF48C
 /* 080AF44C */ LDR R1, [R1]
 /* 080AF44E */ LDRH R1, [R1, #0X16]
-/* 080AF450 */ BL func_08002038
+/* 080AF450 */ BL set_soundplayer_speed
 /* 080AF454 */ LDR R0, [R5]
 /* 080AF456 */ ADDS R0, R4
 /* 080AF458 */ LDR R0, [R0]

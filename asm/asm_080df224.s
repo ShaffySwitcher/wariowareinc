@@ -13,7 +13,7 @@ glabel func_080DF224
 /* 080DF22E */ BL play_sound
 /* 080DF232 */ STR R0, [R5]
 /* 080DF234 */ ADDS R1, R4, #0
-/* 080DF236 */ BL func_08002038
+/* 080DF236 */ BL set_soundplayer_speed
 /* 080DF23A */ POP {R4, R5}
 /* 080DF23C */ POP {R0}
 /* 080DF23E */ BX R0

@@ -160,7 +160,7 @@ void func_08011774(void) {
         sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[i+1], 1);
     }
 
-    func_0800C7A4(10);
+    scene_hide_sprite(10);
 }
 
 void func_080117A8(s32 arg0) {
@@ -170,7 +170,7 @@ void func_080117A8(s32 arg0) {
     sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[arg0+1], 0);
     position = D_083A9CE0[arg0];
     sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[10], position->x, position->y);
-    func_0800C77C(10);
+    scene_show_sprite(10);
 }
 
 void func_080117FC(void) {
@@ -179,19 +179,19 @@ void func_080117FC(void) {
     func_080117A8(D_03006518.unk2);
 
     for(i = 0; i < 3;) {
-        func_0800C77C(++i);
+        scene_show_sprite(++i);
     }
     
-    func_0800C7A4(6);
+    scene_hide_sprite(6);
 }
 
 void func_08011824(void) {
-    func_0800C7A4(1);
-    func_0800C7A4(2);
-    func_0800C7A4(3);
-    func_0800C7A4(10);
+    scene_hide_sprite(1);
+    scene_hide_sprite(2);
+    scene_hide_sprite(3);
+    scene_hide_sprite(10);
     sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[6], 0);
-    func_0800C77C(6);
+    scene_show_sprite(6);
 }
 
 #include "asm/scenes/main_menu/asm_08011864.s"
@@ -279,7 +279,7 @@ void func_080119EC(void) {
             }
             entry = D_083AA0C4[D_03006518.unk0].position;
             sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
-            func_0800C77C(4);
+            scene_show_sprite(4);
             break;
         case 1:
             for(i = 0; i < 9; i++) {
@@ -290,7 +290,7 @@ void func_080119EC(void) {
             }
             entry = D_083AA294[D_03006518.unk0].position;
             sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
-            func_0800C77C(4);
+            scene_show_sprite(4);
             break;
         case 2:
             for(i = 0; i < 28; i++) {
@@ -674,14 +674,14 @@ void func_0801364C(void) {
 #include "asm/scenes/main_menu/asm_08013a94.s"
 
 void func_08013AE0(void) {
-    func_0800C7A4(8);
-    func_0800C7A4(9);
+    scene_hide_sprite(8);
+    scene_hide_sprite(9);
 }
 
 #include "asm/scenes/main_menu/asm_08013af4.s"
 
 void func_08013B88(void) {
-    func_0800C7A4(7);
+    scene_hide_sprite(7);
 }
 
 #include "asm/scenes/main_menu/asm_08013b94.s"
@@ -689,10 +689,10 @@ void func_08013B88(void) {
 #include "asm/scenes/main_menu/asm_08013c60.s"
 
 void func_08013E44(void) {
-    func_0800C7A4(27);
-    func_0800C7A4(28);
-    func_0800C7A4(29);
-    func_0800C7A4(30);
+    scene_hide_sprite(27);
+    scene_hide_sprite(28);
+    scene_hide_sprite(29);
+    scene_hide_sprite(30);
 }
 
 void func_08013E64(void) {
@@ -730,7 +730,7 @@ void func_08014354(void) {
         func_0801429C(i, 0);
     }
 
-    func_0800C7A4(18);
+    scene_hide_sprite(18);
 }
 
 #include "asm/scenes/main_menu/asm_08014374.s"
@@ -813,7 +813,7 @@ void func_08014B44(void) {
 
 void func_08014D6C(void) {
     func_0800A240(&D_083A4A2C, gMainMenu.unk16C, 0, 0);
-    func_0800C77C(0);
+    scene_show_sprite(0);
     func_08005600(gSpriteHandler, gMainMenu.unk4, &D_083AB394, gCurrentSceneSpritePool);
     gMainMenu.unkDC_22 = TRUE;
 }

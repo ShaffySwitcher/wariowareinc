@@ -155,7 +155,7 @@ _08099B0E:
 /* 08099B44 */ MOVS R0, #0
 /* 08099B46 */ BL func_0800A128
 /* 08099B4A */ LDR R0, _08099B90
-/* 08099B4C */ BL func_0800C7FC
+/* 08099B4C */ BL scene_play_sound_to_tempo
 _08099B50:
 /* 08099B50 */ MOV R3, SB
 /* 08099B52 */ CMP R3, #0

@@ -121,7 +121,7 @@ _08033464:
 /* 080334B0 */ MOVS R2, #0
 /* 080334B2 */ BL sprite_set_visible
 /* 080334B6 */ LDR R0, _080334D0
-/* 080334B8 */ BL func_0800C7FC
+/* 080334B8 */ BL scene_play_sound_to_tempo
 /* 080334BC */ B _08033614
 
 .balign 4, 0
@@ -154,7 +154,7 @@ _080334D4:
 /* 080334E2 */ ADDS R0, #1
 /* 080334E4 */ STRB R0, [R5]
 /* 080334E6 */ LDR R0, _08033564
-/* 080334E8 */ BL func_0800C7FC
+/* 080334E8 */ BL scene_play_sound_to_tempo
 _080334EC:
 /* 080334EC */ MOV R7, R8
 /* 080334EE */ LDRH R1, [R7]
@@ -166,7 +166,7 @@ _080334EC:
 /* 080334FA */ SUBS R0, #1
 /* 080334FC */ STRB R0, [R5]
 /* 080334FE */ LDR R0, _08033564
-/* 08033500 */ BL func_0800C7FC
+/* 08033500 */ BL scene_play_sound_to_tempo
 _08033504:
 /* 08033504 */ ADDS R1, R5, #0
 /* 08033506 */ MOVS R0, #0

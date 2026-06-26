@@ -83,7 +83,7 @@ glabel func_080C05C4
 /* 080C0668 */ MOVS R2, #0
 /* 080C066A */ BL sprite_set_anim_cel
 /* 080C066E */ LDR R0, _080C06A8
-/* 080C0670 */ BL func_0800C7FC
+/* 080C0670 */ BL scene_play_sound_to_tempo
 /* 080C0674 */ MOV R3, SL
 /* 080C0676 */ LDR R1, [R3]
 /* 080C0678 */ LDR R0, [R1, #0X48]
@@ -154,7 +154,7 @@ _080C06AC:
 /* 080C06F4 */ MOVS R2, #1
 /* 080C06F6 */ BL sprite_set_anim_cel
 /* 080C06FA */ LDR R0, =D_083FCB84
-/* 080C06FC */ BL func_0800C7FC
+/* 080C06FC */ BL scene_play_sound_to_tempo
 _080C0700:
 /* 080C0700 */ ADD SP, #4
 /* 080C0702 */ POP {R3, R4, R5}

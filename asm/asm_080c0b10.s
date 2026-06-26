@@ -89,9 +89,9 @@ _080C0B8A:
 /* 080C0B9C */ MOVS R0, #0
 /* 080C0B9E */ BL func_0800A128
 /* 080C0BA2 */ LDR R0, _080C0BB4
-/* 080C0BA4 */ BL func_0800C7FC
+/* 080C0BA4 */ BL scene_play_sound_to_tempo
 /* 080C0BA8 */ LDR R0, =D_083FC878
-/* 080C0BAA */ BL func_0800C7FC
+/* 080C0BAA */ BL scene_play_sound_to_tempo
 _080C0BAE:
 /* 080C0BAE */ POP {R4, R5}
 /* 080C0BB0 */ POP {R0}

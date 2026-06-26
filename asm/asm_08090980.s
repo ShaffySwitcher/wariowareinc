@@ -142,7 +142,7 @@ _08090A60:
 /* 08090A80 */ CMP R0, #1
 /* 08090A82 */ BHI _08090AA4
 /* 08090A84 */ LDR R0, _08090AA0
-/* 08090A86 */ BL func_0800C7FC
+/* 08090A86 */ BL scene_play_sound_to_tempo
 /* 08090A8A */ B _08090AAA
 
 .balign 4, 0
@@ -170,7 +170,7 @@ _08090AA0:
 /* 08090AA0 */ .word D_083FC490
 _08090AA4:
 /* 08090AA4 */ LDR R0, _08090B10
-/* 08090AA6 */ BL func_0800C7FC
+/* 08090AA6 */ BL scene_play_sound_to_tempo
 _08090AAA:
 /* 08090AAA */ LDR R4, _08090B14
 /* 08090AAC */ LDR R0, [R4]

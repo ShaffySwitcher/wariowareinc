@@ -53,7 +53,7 @@ glabel func_0804969C
 /* 08049704 */ MOVS R0, #1
 /* 08049706 */ BL func_0800A128
 /* 0804970A */ LDR R0, =D_083FCB48
-/* 0804970C */ BL func_0800C7FC
+/* 0804970C */ BL scene_play_sound_to_tempo
 _08049710:
 /* 08049710 */ ADD SP, #0XC
 /* 08049712 */ POP {R4, R5, R6}

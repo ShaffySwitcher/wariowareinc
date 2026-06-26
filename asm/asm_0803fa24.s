@@ -59,7 +59,7 @@ _0803FA44:
 /* 0803FA88 */ MOVS R2, #1
 /* 0803FA8A */ BL sprite_set_visible
 /* 0803FA8E */ LDR R0, _0803FAA4
-/* 0803FA90 */ BL func_0800C7FC
+/* 0803FA90 */ BL scene_play_sound_to_tempo
 /* 0803FA94 */ B _0803FAE6
 
 .balign 4, 0

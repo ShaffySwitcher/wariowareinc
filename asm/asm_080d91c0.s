@@ -110,7 +110,7 @@ _080D9260:
 /* 080D927A */ MOVS R2, #1
 /* 080D927C */ BL sprite_set_visible
 /* 080D9280 */ LDR R0, _080D9288
-/* 080D9282 */ BL func_0800C7FC
+/* 080D9282 */ BL scene_play_sound_to_tempo
 /* 080D9286 */ B _080D92D8
 
 .balign 4, 0
@@ -149,7 +149,7 @@ _080D929E:
 /* 080D92CC */ MOVS R2, #1
 /* 080D92CE */ BL sprite_set_visible
 /* 080D92D2 */ LDR R0, _080D92EC
-/* 080D92D4 */ BL func_0800C7FC
+/* 080D92D4 */ BL scene_play_sound_to_tempo
 _080D92D8:
 /* 080D92D8 */ MOVS R0, #1
 /* 080D92DA */ BL func_080D914C

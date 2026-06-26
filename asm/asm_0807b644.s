@@ -107,7 +107,7 @@ glabel func_0807B644
 /* 0807B712 */ CMP R0, #0
 /* 0807B714 */ BNE _0807B794
 /* 0807B716 */ LDR R0, _0807B734
-/* 0807B718 */ BL func_0800C7FC
+/* 0807B718 */ BL scene_play_sound_to_tempo
 /* 0807B71C */ B _0807B78E
 
 .balign 4, 0

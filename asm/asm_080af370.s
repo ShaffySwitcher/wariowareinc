@@ -53,7 +53,7 @@ glabel func_080AF370
 /* 080AF3D2 */ LSLS R1, R1, #0X10
 /* 080AF3D4 */ LSRS R1, R1, #0X10
 /* 080AF3D6 */ ADDS R0, R6, #0
-/* 080AF3D8 */ BL func_08002038
+/* 080AF3D8 */ BL set_soundplayer_speed
 /* 080AF3DC */ LDR R0, [R5]
 /* 080AF3DE */ ADDS R0, R4
 /* 080AF3E0 */ LDR R0, [R0]

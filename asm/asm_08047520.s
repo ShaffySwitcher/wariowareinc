@@ -109,7 +109,7 @@ _080475AC:
 /* 080475E0 */ ASRS R0, R0, #1
 /* 080475E2 */ STR R0, [R2]
 /* 080475E4 */ LDR R0, =D_083FCC24
-/* 080475E6 */ BL func_0800C7FC
+/* 080475E6 */ BL scene_play_sound_to_tempo
 /* 080475EA */ MOVS R0, #0X18
 /* 080475EC */ BL func_0800C9A4
 /* 080475F0 */ MOVS R0, #1

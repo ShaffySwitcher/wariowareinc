@@ -14,7 +14,7 @@ thumb_func_start func_08014490 \n\
 /* 080144A8 */ LDR R0, [R4] \n\
 /* 080144AA */ STRB R5, [R0, #8] \n\
 /* 080144AC */ MOVS R0, #0 \n\
-/* 080144AE */ BL func_0800C7A4 \n\
+/* 080144AE */ BL scene_hide_sprite \n\
 /* 080144B2 */ POP {R4, R5} \n\
 /* 080144B4 */ POP {R0} \n\
 /* 080144B6 */ BX R0 \n\

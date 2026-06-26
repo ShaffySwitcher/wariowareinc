@@ -88,7 +88,7 @@ _080C6E30:
 /* 080C6E9A */ ADDS R1, R4, R5
 /* 080C6E9C */ STRH R0, [R1]
 /* 080C6E9E */ LDR R0, _080C6EC4
-/* 080C6EA0 */ BL func_0800C7FC
+/* 080C6EA0 */ BL scene_play_sound_to_tempo
 /* 080C6EA4 */ LDR R0, [R6]
 /* 080C6EA6 */ MOVS R1, #0XCA
 /* 080C6EA8 */ LSLS R1, R1, #1

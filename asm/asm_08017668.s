@@ -9,7 +9,7 @@ glabel func_08017668
 /* 0801766A */ MOVS R4, #0
 _0801766C:
 /* 0801766C */ ADDS R0, R4, #4
-/* 0801766E */ BL func_0800C7A4
+/* 0801766E */ BL scene_hide_sprite
 /* 08017672 */ ADDS R4, #1
 /* 08017674 */ CMP R4, #3
 /* 08017676 */ BLS _0801766C

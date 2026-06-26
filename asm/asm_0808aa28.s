@@ -59,7 +59,7 @@ _0808AA4E:
 /* 0808AA8E */ MOVS R2, #1
 /* 0808AA90 */ BL sprite_set_enable_updates
 /* 0808AA94 */ LDR R0, _0808AADC
-/* 0808AA96 */ BL func_0800C7FC
+/* 0808AA96 */ BL scene_play_sound_to_tempo
 /* 0808AA9A */ LDRB R0, [R7, #0X19]
 /* 0808AA9C */ CMP R0, #0
 /* 0808AA9E */ BEQ _0808AAE8

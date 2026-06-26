@@ -43,7 +43,7 @@ glabel func_0803E6D8
 /* 0803E722 */ ADDS R0, R5, R1
 /* 0803E724 */ LDR R0, [R0]
 /* 0803E726 */ LDRH R1, [R4]
-/* 0803E728 */ BL func_08002038
+/* 0803E728 */ BL set_soundplayer_speed
 /* 0803E72C */ BL func_0803DD94
 /* 0803E730 */ POP {R4, R5}
 /* 0803E732 */ POP {R0}

@@ -32,7 +32,7 @@ _080A84A4:
 /* 080A84C4 */ CMP R4, #0
 /* 080A84C6 */ BNE _080A84D8
 /* 080A84C8 */ MOVS R0, #2
-/* 080A84CA */ BL func_0800C7A4
+/* 080A84CA */ BL scene_hide_sprite
 /* 080A84CE */ B _080A85D0
 
 .balign 4, 0

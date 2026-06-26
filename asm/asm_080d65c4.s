@@ -227,7 +227,7 @@ _080D6708:
 /* 080D674C */ BL __divsi3
 /* 080D6750 */ STRH R0, [R4, #6]
 /* 080D6752 */ LDR R0, _080D676C
-/* 080D6754 */ BL func_0800C7FC
+/* 080D6754 */ BL scene_play_sound_to_tempo
 /* 080D6758 */ B _080D6816
 
 .balign 4, 0
@@ -290,7 +290,7 @@ _080D67AC:
 /* 080D67BC */ MOVS R4, #0
 /* 080D67BE */ STRB R0, [R1, #4]
 /* 080D67C0 */ LDR R0, _080D67FC
-/* 080D67C2 */ BL func_0800C7FC
+/* 080D67C2 */ BL scene_play_sound_to_tempo
 /* 080D67C6 */ BL func_080D286C
 /* 080D67CA */ BL func_080D2DDC
 /* 080D67CE */ MOVS R0, #4

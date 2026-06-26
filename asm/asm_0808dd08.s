@@ -72,7 +72,7 @@ _0808DD36:
 /* 0808DD86 */ ADDS R0, #1
 /* 0808DD88 */ STRB R0, [R1]
 /* 0808DD8A */ LDR R0, _0808DDA0
-/* 0808DD8C */ BL func_0800C7FC
+/* 0808DD8C */ BL scene_play_sound_to_tempo
 /* 0808DD90 */ B _0808DE1E
 
 .balign 4, 0

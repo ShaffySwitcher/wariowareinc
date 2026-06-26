@@ -27,7 +27,7 @@ _0801E334:
 /* 0801E334 */ .word gCurrentSceneVariable
 _0801E338:
 /* 0801E338 */ MOVS R0, #0XA
-/* 0801E33A */ BL func_0800C7A4
+/* 0801E33A */ BL scene_hide_sprite
 /* 0801E33E */ B _0801E3E8
 _0801E340:
 /* 0801E340 */ MOVS R0, #0X24
@@ -56,7 +56,7 @@ _0801E340:
 /* 0801E372 */ MOVS R3, #0X68
 /* 0801E374 */ BL func_0800C548
 /* 0801E378 */ MOVS R0, #0XA
-/* 0801E37A */ BL func_0800C77C
+/* 0801E37A */ BL scene_show_sprite
 /* 0801E37E */ LDR R2, [R6]
 /* 0801E380 */ ADDS R2, R4
 /* 0801E382 */ MOVS R0, #0X3C
@@ -90,7 +90,7 @@ _0801E398:
 /* 0801E3BA */ MOVS R3, #0XB0
 /* 0801E3BC */ BL func_0800C548
 /* 0801E3C0 */ MOVS R0, #0XA
-/* 0801E3C2 */ BL func_0800C77C
+/* 0801E3C2 */ BL scene_show_sprite
 /* 0801E3C6 */ LDR R2, [R6]
 /* 0801E3C8 */ MOVS R3, #0X80
 /* 0801E3CA */ LSLS R3, R3, #1

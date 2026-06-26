@@ -50,7 +50,7 @@ glabel func_080DC780
 /* 080DC7DA */ LSLS R1, R1, #0X10
 /* 080DC7DC */ LSRS R1, R1, #0X10
 /* 080DC7DE */ ADDS R0, R4, #0
-/* 080DC7E0 */ BL set_soundplayer_speed
+/* 080DC7E0 */ BL midi_player_set_speed
 _080DC7E4:
 /* 080DC7E4 */ POP {R4}
 /* 080DC7E6 */ POP {R0}

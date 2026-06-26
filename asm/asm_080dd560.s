@@ -61,7 +61,7 @@ _080DD5B8:
 /* 080DD5C0 */ B _080DD5E2
 _080DD5C2:
 /* 080DD5C2 */ LDR R0, _080DD5CC
-/* 080DD5C4 */ BL func_0800C7FC
+/* 080DD5C4 */ BL scene_play_sound_to_tempo
 /* 080DD5C8 */ B _080DD5E2
 
 .balign 4, 0
@@ -69,7 +69,7 @@ _080DD5CC:
 /* 080DD5CC */ .word D_083FC0F8
 _080DD5D0:
 /* 080DD5D0 */ LDR R0, _080DD5D8
-/* 080DD5D2 */ BL func_0800C7FC
+/* 080DD5D2 */ BL scene_play_sound_to_tempo
 /* 080DD5D6 */ B _080DD5E2
 
 .balign 4, 0
@@ -77,7 +77,7 @@ _080DD5D8:
 /* 080DD5D8 */ .word D_083FC0E4
 _080DD5DC:
 /* 080DD5DC */ LDR R0, _080DD600
-/* 080DD5DE */ BL func_0800C7FC
+/* 080DD5DE */ BL scene_play_sound_to_tempo
 _080DD5E2:
 /* 080DD5E2 */ LDR R0, _080DD604
 /* 080DD5E4 */ LDR R0, [R0]

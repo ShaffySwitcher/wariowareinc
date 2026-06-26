@@ -48,7 +48,7 @@ glabel func_0804EA94
 /* 0804EAEA */ MOVS R2, #0
 /* 0804EAEC */ BL sprite_set_enable_updates
 /* 0804EAF0 */ LDR R0, _0804EB14
-/* 0804EAF2 */ BL func_0800C7FC
+/* 0804EAF2 */ BL scene_play_sound_to_tempo
 /* 0804EAF6 */ LDRB R1, [R6]
 /* 0804EAF8 */ MOVS R0, #0X10
 /* 0804EAFA */ RSBS R0, R0, #0

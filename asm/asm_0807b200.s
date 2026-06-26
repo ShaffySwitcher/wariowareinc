@@ -187,7 +187,7 @@ _0807B342:
 /* 0807B346 */ STRB R0, [R1]
 /* 0807B348 */ STRB R0, [R5, #0X16]
 /* 0807B34A */ LDR R0, _0807B35C
-/* 0807B34C */ BL func_0800C7FC
+/* 0807B34C */ BL scene_play_sound_to_tempo
 /* 0807B350 */ B _0807B44E
 
 .balign 4, 0
@@ -283,7 +283,7 @@ _0807B3B6:
 /* 0807B3F4 */ LDR R0, _0807B42C
 /* 0807B3F6 */ BL stop_sound
 /* 0807B3FA */ LDR R0, _0807B430
-/* 0807B3FC */ BL func_0800C7FC
+/* 0807B3FC */ BL scene_play_sound_to_tempo
 /* 0807B400 */ LDR R0, [R4]
 /* 0807B402 */ ADDS R0, #0X7A
 /* 0807B404 */ LDRB R0, [R0]

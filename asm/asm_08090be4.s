@@ -224,7 +224,7 @@ _08090D0E:
 /* 08090D78 */ ADDS R0, R6
 /* 08090D7A */ STRB R5, [R0]
 /* 08090D7C */ LDR R0, _08090D98
-/* 08090D7E */ BL func_0800C7FC
+/* 08090D7E */ BL scene_play_sound_to_tempo
 /* 08090D82 */ B _08090F62
 
 .balign 4, 0

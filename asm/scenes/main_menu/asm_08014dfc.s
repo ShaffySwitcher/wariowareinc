@@ -20,7 +20,7 @@ thumb_func_start func_08014DFC \n\
 /* 08014E1C */ ADDS R0, R3, R5 \n\
 /* 08014E1E */ STR R4, [R0] \n\
 /* 08014E20 */ MOVS R0, #0 \n\
-/* 08014E22 */ BL func_0800C7A4 \n\
+/* 08014E22 */ BL scene_hide_sprite \n\
 /* 08014E26 */ BL func_08014CF8 \n\
 /* 08014E2A */ POP {R4, R5} \n\
 /* 08014E2C */ POP {R0} \n\

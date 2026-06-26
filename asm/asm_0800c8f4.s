@@ -30,7 +30,7 @@ _0800C910:
 /* 0800C91E */ LSRS R0, R0, #0XE
 /* 0800C920 */ ADDS R0, R0, R4
 /* 0800C922 */ LDR R0, [R0]
-/* 0800C924 */ BL func_0800C7FC
+/* 0800C924 */ BL scene_play_sound_to_tempo
 /* 0800C928 */ B _0800C92C
 _0800C92A:
 /* 0800C92A */ MOVS R0, #0

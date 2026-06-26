@@ -85,7 +85,7 @@ _0806768C:
 /* 080676D2 */ CMP R0, #1
 /* 080676D4 */ BNE _080676DC
 /* 080676D6 */ LDR R0, =D_083FCB84
-/* 080676D8 */ BL func_0800C7FC
+/* 080676D8 */ BL scene_play_sound_to_tempo
 _080676DC:
 /* 080676DC */ POP {R4, R5, R6, R7}
 /* 080676DE */ POP {R0}

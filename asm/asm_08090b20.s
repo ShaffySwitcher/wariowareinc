@@ -83,7 +83,7 @@ _08090B86:
 /* 08090BBE */ STR R4, [R0, #4]
 /* 08090BC0 */ STRB R4, [R0, #8]
 /* 08090BC2 */ LDR R0, =D_083FD700
-/* 08090BC4 */ BL func_0800C7FC
+/* 08090BC4 */ BL scene_play_sound_to_tempo
 /* 08090BC8 */ LDR R0, [R5]
 /* 08090BCA */ STRB R4, [R0, #0X1C]
 _08090BCC:

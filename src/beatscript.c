@@ -272,7 +272,7 @@ void set_beatscript_tempo(u16 tempo) {
     gBeatscriptScene.deltaTime = gBeatscriptScene.musicBaseBPM * speed / 150u;
 
     if (gBeatscriptScene.musicPlayer != NULL) {
-        set_soundplayer_speed(gBeatscriptScene.musicPlayer, speed);
+        midi_player_set_speed(gBeatscriptScene.musicPlayer, speed);
     }
 
     if (gBeatscriptScene.mode == 1) {

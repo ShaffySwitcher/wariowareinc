@@ -24,13 +24,13 @@ glabel func_0808AEE0
 /* 0808AF02 */ CMP R7, #0
 /* 0808AF04 */ BNE _0808AF94
 /* 0808AF06 */ LDR R0, _0808AF7C
-/* 0808AF08 */ BL func_0800C7FC
+/* 0808AF08 */ BL scene_play_sound_to_tempo
 /* 0808AF0C */ MOVS R0, #0X18
 /* 0808AF0E */ BL func_0800C9A4
 /* 0808AF12 */ MOVS R0, #1
 /* 0808AF14 */ BL func_0800A128
 /* 0808AF18 */ LDR R0, _0808AF80
-/* 0808AF1A */ BL func_0800C7FC
+/* 0808AF1A */ BL scene_play_sound_to_tempo
 /* 0808AF1E */ STRB R7, [R6, #0X1A]
 /* 0808AF20 */ MOV R1, R8
 /* 0808AF22 */ LDR R0, [R1]

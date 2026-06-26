@@ -8,7 +8,7 @@ glabel func_0801DA44
 /* 0801DA44 */ PUSH {R4, LR}
 /* 0801DA46 */ BL func_0801D82C
 /* 0801DA4A */ MOVS R0, #0
-/* 0801DA4C */ BL func_0800C7A4
+/* 0801DA4C */ BL scene_hide_sprite
 /* 0801DA50 */ LDR R4, _0801DAE4
 /* 0801DA52 */ MOVS R1, #0
 /* 0801DA54 */ MOVS R0, #0X80
@@ -53,12 +53,12 @@ _0801DA96:
 /* 0801DAA4 */ MOVS R0, #0
 /* 0801DAA6 */ BL func_0801DB90
 /* 0801DAAA */ MOVS R0, #5
-/* 0801DAAC */ BL func_0800C77C
+/* 0801DAAC */ BL scene_show_sprite
 /* 0801DAB0 */ BL func_0801DBD4
 /* 0801DAB4 */ MOVS R0, #6
-/* 0801DAB6 */ BL func_0800C7A4
+/* 0801DAB6 */ BL scene_hide_sprite
 /* 0801DABA */ MOVS R0, #7
-/* 0801DABC */ BL func_0800C7A4
+/* 0801DABC */ BL scene_hide_sprite
 /* 0801DAC0 */ LDR R0, _0801DAF4
 /* 0801DAC2 */ LDR R0, [R0]
 /* 0801DAC4 */ LDR R1, =gCurrentSceneSpritePool

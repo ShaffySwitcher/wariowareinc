@@ -26,7 +26,7 @@ glabel func_080A157C
 /* 080A15A2 */ MOVS R2, #0
 /* 080A15A4 */ BL sprite_set_enable_updates
 /* 080A15A8 */ LDR R0, =D_083FE308
-/* 080A15AA */ BL func_0800C7FC
+/* 080A15AA */ BL scene_play_sound_to_tempo
 /* 080A15AE */ MOVS R0, #2
 /* 080A15B0 */ STRB R0, [R4, #2]
 /* 080A15B2 */ ADD SP, #0XC

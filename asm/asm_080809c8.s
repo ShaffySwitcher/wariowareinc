@@ -230,7 +230,7 @@ _08080B34:
 /* 08080B78 */ CMP R0, #1
 /* 08080B7A */ BNE _08080B82
 /* 08080B7C */ LDR R0, _08080C1C
-/* 08080B7E */ BL func_0800C7FC
+/* 08080B7E */ BL scene_play_sound_to_tempo
 _08080B82:
 /* 08080B82 */ MOV R0, SB
 /* 08080B84 */ LDR R6, [R0]
@@ -407,7 +407,7 @@ _08080CBE:
 /* 08080CC4 */ MOVS R0, #0
 /* 08080CC6 */ BL func_0800A128
 /* 08080CCA */ LDR R0, _08080D7C
-/* 08080CCC */ BL func_0800C7FC
+/* 08080CCC */ BL scene_play_sound_to_tempo
 /* 08080CD0 */ LDR R1, [R6]
 /* 08080CD2 */ MOVS R5, #0
 /* 08080CD4 */ MOVS R0, #1
@@ -673,7 +673,7 @@ _08080EC8:
 /* 08080EE4 */ MOVS R0, #0
 /* 08080EE6 */ BL func_0800A0C4
 /* 08080EEA */ LDR R0, =D_083FC8C8
-/* 08080EEC */ BL func_0800C7FC
+/* 08080EEC */ BL scene_play_sound_to_tempo
 _08080EF0:
 /* 08080EF0 */ ADD SP, #4
 /* 08080EF2 */ POP {R3, R4, R5}

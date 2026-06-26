@@ -20,7 +20,7 @@ glabel func_0806A780
 /* 0806A79E */ STRB R1, [R0, #4]
 /* 0806A7A0 */ BL func_08069F74
 /* 0806A7A4 */ LDR R0, =D_083FC800
-/* 0806A7A6 */ BL func_0800C7FC
+/* 0806A7A6 */ BL scene_play_sound_to_tempo
 _0806A7AA:
 /* 0806A7AA */ POP {R4}
 /* 0806A7AC */ POP {R1}

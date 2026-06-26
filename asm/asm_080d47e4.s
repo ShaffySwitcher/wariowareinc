@@ -307,7 +307,7 @@ _080D49E6:
 /* 080D4A00 */ MOVS R0, #9
 /* 080D4A02 */ BL func_080D24BC
 /* 080D4A06 */ LDR R0, _080D4A18
-/* 080D4A08 */ BL func_0800C7FC
+/* 080D4A08 */ BL scene_play_sound_to_tempo
 /* 080D4A0C */ B _080D4B38
 
 .balign 4, 0
@@ -352,9 +352,9 @@ _080D4A3C:
 /* 080D4A50 */ STRB R0, [R1, #1]
 /* 080D4A52 */ BL func_080D39DC
 /* 080D4A56 */ LDR R0, _080D4A90
-/* 080D4A58 */ BL func_0800C7FC
+/* 080D4A58 */ BL scene_play_sound_to_tempo
 /* 080D4A5C */ LDR R0, _080D4A94
-/* 080D4A5E */ BL func_0800C7FC
+/* 080D4A5E */ BL scene_play_sound_to_tempo
 _080D4A62:
 /* 080D4A62 */ MOVS R0, #1
 /* 080D4A64 */ RSBS R0, R0, #0
@@ -364,7 +364,7 @@ _080D4A62:
 /* 080D4A6E */ MOVS R0, #0X3C
 /* 080D4A70 */ BL func_080D2828
 /* 080D4A74 */ LDR R0, _080D4A98
-/* 080D4A76 */ BL func_0800C7FC
+/* 080D4A76 */ BL scene_play_sound_to_tempo
 /* 080D4A7A */ LDR R0, _080D4A8C
 /* 080D4A7C */ LDR R1, [R0]
 /* 080D4A7E */ MOVS R0, #0XD

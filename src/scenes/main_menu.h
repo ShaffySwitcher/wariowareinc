@@ -140,7 +140,7 @@ extern void func_08015A4C(void);
 extern void func_080115DC(void);
 extern void func_08003A70(void*);
 extern void func_08015DBC();
-extern void func_0800C7A4();
+extern void scene_hide_sprite();
 extern void func_08011DFC(void);
 extern void func_08015CD8(s32);
 extern void func_0801216C(void);

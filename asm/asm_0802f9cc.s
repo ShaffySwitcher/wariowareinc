@@ -85,7 +85,7 @@ _0802FA22:
 /* 0802FA56 */ MOVS R3, #0
 /* 0802FA58 */ BL sprite_set_anim
 /* 0802FA5C */ LDR R0, _0802FA84
-/* 0802FA5E */ BL func_0800C7FC
+/* 0802FA5E */ BL scene_play_sound_to_tempo
 /* 0802FA62 */ LDR R0, [R4]
 /* 0802FA64 */ MOV R3, SB
 /* 0802FA66 */ MOVS R2, #0
@@ -151,7 +151,7 @@ _0802FA8C:
 /* 0802FAC2 */ MOVS R3, #0
 /* 0802FAC4 */ BL sprite_set_anim
 /* 0802FAC8 */ LDR R0, _0802FB04
-/* 0802FACA */ BL func_0800C7FC
+/* 0802FACA */ BL scene_play_sound_to_tempo
 /* 0802FACE */ LDR R0, [R4]
 /* 0802FAD0 */ MOV R3, SB
 /* 0802FAD2 */ MOVS R2, #0
@@ -220,7 +220,7 @@ _0802FB0C:
 /* 0802FB42 */ MOVS R3, #0
 /* 0802FB44 */ BL sprite_set_anim
 /* 0802FB48 */ LDR R0, _0802FB90
-/* 0802FB4A */ BL func_0800C7FC
+/* 0802FB4A */ BL scene_play_sound_to_tempo
 /* 0802FB4E */ LDR R0, [R4]
 /* 0802FB50 */ MOV R3, SB
 /* 0802FB52 */ MOVS R2, #0

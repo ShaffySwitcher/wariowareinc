@@ -81,7 +81,7 @@ _080A4DE6:
 /* 080A4E0A */ CMP R0, #1
 /* 080A4E0C */ BNE _080A4E34
 /* 080A4E0E */ LDR R0, _080A4E2C
-/* 080A4E10 */ BL func_0800C7FC
+/* 080A4E10 */ BL scene_play_sound_to_tempo
 /* 080A4E14 */ LDR R0, _080A4E30
 /* 080A4E16 */ ADDS R1, R0, #0
 /* 080A4E18 */ ADDS R1, #0X74
@@ -104,7 +104,7 @@ _080A4E30:
 /* 080A4E30 */ .word gGraphicsBuffer
 _080A4E34:
 /* 080A4E34 */ LDR R0, _080A4E50
-/* 080A4E36 */ BL func_0800C7FC
+/* 080A4E36 */ BL scene_play_sound_to_tempo
 /* 080A4E3A */ LDR R0, =gGraphicsBuffer
 /* 080A4E3C */ ADDS R1, R0, #0
 /* 080A4E3E */ ADDS R1, #0X94

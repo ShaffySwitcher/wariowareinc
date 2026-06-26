@@ -7,7 +7,7 @@
 glabel func_0805E500
 /* 0805E500 */ PUSH {LR}
 /* 0805E502 */ LDR R0, _0805E528
-/* 0805E504 */ BL func_0800C7FC
+/* 0805E504 */ BL scene_play_sound_to_tempo
 /* 0805E508 */ LDR R0, =gCurrentSceneVariable
 /* 0805E50A */ LDR R1, [R0]
 /* 0805E50C */ MOVS R0, #4

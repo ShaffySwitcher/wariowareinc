@@ -23,7 +23,7 @@ glabel func_0809B628
 /* 0809B646 */ ADDS R1, R0
 /* 0809B648 */ LDR R0, [R1]
 /* 0809B64A */ LDRH R1, [R2]
-/* 0809B64C */ BL func_08002038
+/* 0809B64C */ BL set_soundplayer_speed
 /* 0809B650 */ LDR R2, [R5]
 /* 0809B652 */ ADDS R4, R2, R4
 /* 0809B654 */ LDRH R1, [R4]

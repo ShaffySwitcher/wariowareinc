@@ -36,7 +36,7 @@ _08038B16:
 /* 08038B22 */ CMP R0, R1
 /* 08038B24 */ BNE _08038BFE
 /* 08038B26 */ LDR R0, _08038B4C
-/* 08038B28 */ BL func_0800C7FC
+/* 08038B28 */ BL scene_play_sound_to_tempo
 /* 08038B2C */ LDR R0, _08038B50
 /* 08038B2E */ LDR R0, [R0]
 /* 08038B30 */ LDR R1, [R5]
@@ -72,7 +72,7 @@ _08038B54:
 /* 08038B66 */ CMP R1, R0
 /* 08038B68 */ BHI _08038BFE
 /* 08038B6A */ LDR R0, _08038B98
-/* 08038B6C */ BL func_0800C7FC
+/* 08038B6C */ BL scene_play_sound_to_tempo
 /* 08038B70 */ LDR R0, _08038B9C
 /* 08038B72 */ LDR R0, [R0]
 /* 08038B74 */ LDR R1, [R5]
@@ -112,9 +112,9 @@ _08038BA0:
 /* 08038BB2 */ CMP R1, R0
 /* 08038BB4 */ BHI _08038BFE
 /* 08038BB6 */ LDR R0, _08038C04
-/* 08038BB8 */ BL func_0800C7FC
+/* 08038BB8 */ BL scene_play_sound_to_tempo
 /* 08038BBC */ LDR R0, _08038C08
-/* 08038BBE */ BL func_0800C7FC
+/* 08038BBE */ BL scene_play_sound_to_tempo
 /* 08038BC2 */ LDR R4, =gSpriteHandler
 /* 08038BC4 */ LDR R0, [R4]
 /* 08038BC6 */ LDR R1, [R5]

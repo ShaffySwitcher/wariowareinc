@@ -32,9 +32,9 @@ glabel func_0801FAA8
 /* 0801FADA */ BNE _0801FAEC
 /* 0801FADC */ BL func_0801FC70
 /* 0801FAE0 */ MOVS R0, #1
-/* 0801FAE2 */ BL func_0800C7A4
+/* 0801FAE2 */ BL scene_hide_sprite
 /* 0801FAE6 */ MOVS R0, #0XA
-/* 0801FAE8 */ BL func_0800C7A4
+/* 0801FAE8 */ BL scene_hide_sprite
 _0801FAEC:
 /* 0801FAEC */ POP {R4, R5}
 /* 0801FAEE */ POP {R0}

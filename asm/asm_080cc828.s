@@ -46,7 +46,7 @@ _080CC864:
 /* 080CC864 */ MOVS R0, #2
 /* 080CC866 */ STRB R0, [R1]
 /* 080CC868 */ LDR R0, _080CC870
-/* 080CC86A */ BL func_0800C7FC
+/* 080CC86A */ BL scene_play_sound_to_tempo
 /* 080CC86E */ B _080CC87C
 
 .balign 4, 0

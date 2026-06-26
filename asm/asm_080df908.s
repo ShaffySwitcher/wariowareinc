@@ -143,12 +143,12 @@ _080DF9AA:
 /* 080DF9F4 */ STR R3, [SP, #8]
 /* 080DF9F6 */ BL sprite_set_anim
 /* 080DF9FA */ LDR R0, _080DFA6C
-/* 080DF9FC */ BL func_0800C7FC
+/* 080DF9FC */ BL scene_play_sound_to_tempo
 _080DFA00:
 /* 080DFA00 */ CMP R4, #2
 /* 080DFA02 */ BNE _080DFA12
 /* 080DFA04 */ LDR R0, _080DFA70
-/* 080DFA06 */ BL func_0800C7FC
+/* 080DFA06 */ BL scene_play_sound_to_tempo
 /* 080DFA0A */ LDR R0, [R6]
 /* 080DFA0C */ ADDS R0, #0X22
 /* 080DFA0E */ MOVS R1, #5
@@ -180,7 +180,7 @@ _080DFA26:
 /* 080DFA42 */ MOVS R0, #1
 /* 080DFA44 */ BL func_0800A128
 /* 080DFA48 */ LDR R0, _080DFA74
-/* 080DFA4A */ BL func_0800C7FC
+/* 080DFA4A */ BL scene_play_sound_to_tempo
 /* 080DFA4E */ LDR R4, [R6]
 /* 080DFA50 */ LDRH R1, [R4, #4]
 /* 080DFA52 */ MOVS R0, #0XB4
@@ -230,7 +230,7 @@ _080DFA90:
 /* 080DFA98 */ STRB R1, [R0]
 /* 080DFA9A */ BL func_080DF7F0
 /* 080DFA9E */ LDR R0, _080DFABC
-/* 080DFAA0 */ BL func_0800C7FC
+/* 080DFAA0 */ BL scene_play_sound_to_tempo
 /* 080DFAA4 */ LDR R0, [R6]
 /* 080DFAA6 */ ADDS R0, #0X30
 /* 080DFAA8 */ STRB R4, [R0]
@@ -380,7 +380,7 @@ _080DFB9C:
 /* 080DFBBC */ ADDS R0, #1
 /* 080DFBBE */ STRB R0, [R1]
 /* 080DFBC0 */ LDR R0, _080DFBC8
-/* 080DFBC2 */ BL func_0800C7FC
+/* 080DFBC2 */ BL scene_play_sound_to_tempo
 /* 080DFBC6 */ B _080DFC3A
 
 .balign 4, 0

@@ -28,7 +28,7 @@ glabel func_0808D7C0
 /* 0808D7E8 */ LDR R0, [R0]
 /* 0808D7EA */ BL func_0808B748
 /* 0808D7EE */ LDR R0, =D_083FD070
-/* 0808D7F0 */ BL func_0800C7FC
+/* 0808D7F0 */ BL scene_play_sound_to_tempo
 _0808D7F4:
 /* 0808D7F4 */ POP {R4}
 /* 0808D7F6 */ POP {R0}

@@ -44,7 +44,7 @@ glabel func_08052DF0
 /* 08052E3E */ MOVS R0, #1
 /* 08052E40 */ BL func_0800A128
 /* 08052E44 */ LDR R0, =D_083FDCA0
-/* 08052E46 */ BL func_0800C7FC
+/* 08052E46 */ BL scene_play_sound_to_tempo
 /* 08052E4A */ ADD SP, #0XC
 /* 08052E4C */ POP {R3}
 /* 08052E4E */ MOV R8, R3

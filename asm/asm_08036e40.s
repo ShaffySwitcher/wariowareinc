@@ -270,7 +270,7 @@ _08037026:
 /* 0803704C */ ADDS R0, #4
 /* 0803704E */ STR R1, [R0]
 /* 08037050 */ LDR R0, =D_083FCBC0
-/* 08037052 */ BL func_0800C7FC
+/* 08037052 */ BL scene_play_sound_to_tempo
 /* 08037056 */ MOVS R0, #0X24
 /* 08037058 */ BL func_0800C9A4
 /* 0803705C */ MOVS R0, #1

@@ -15,7 +15,7 @@ glabel func_0805EDD8
 /* 0805EDE8 */ CMP R0, #1
 /* 0805EDEA */ BNE _0805EDF8
 /* 0805EDEC */ LDR R0, _0805EDF4
-/* 0805EDEE */ BL func_0800C7FC
+/* 0805EDEE */ BL scene_play_sound_to_tempo
 /* 0805EDF2 */ B _0805EF86
 
 .balign 4, 0
@@ -65,7 +65,7 @@ _0805EE12:
 /* 0805EE48 */ STR R5, [SP, #8]
 /* 0805EE4A */ BL sprite_set_anim
 /* 0805EE4E */ LDR R0, _0805EEA4
-/* 0805EE50 */ BL func_0800C7FC
+/* 0805EE50 */ BL scene_play_sound_to_tempo
 _0805EE54:
 /* 0805EE54 */ LDR R1, _0805EE98
 /* 0805EE56 */ LDR R3, [R1]

@@ -196,7 +196,7 @@ _080D7B6C:
 /* 080D7B9E */ MOVS R0, #0
 /* 080D7BA0 */ BL func_0800A128
 /* 080D7BA4 */ LDR R0, _080D7BB0
-/* 080D7BA6 */ BL func_0800C7FC
+/* 080D7BA6 */ BL scene_play_sound_to_tempo
 /* 080D7BAA */ B _080D7BC6
 
 .balign 4, 0

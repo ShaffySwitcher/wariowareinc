@@ -111,7 +111,7 @@ _0809F65C:
 /* 0809F65C */ .word D_083FE128
 _0809F660:
 /* 0809F660 */ LDR R0, =D_083FCA58
-/* 0809F662 */ BL func_0800C7FC
+/* 0809F662 */ BL scene_play_sound_to_tempo
 _0809F666:
 /* 0809F666 */ POP {R0}
 /* 0809F668 */ BX R0

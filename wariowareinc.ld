@@ -281,8 +281,7 @@ SECTIONS {
         build/asm/asm_0800c720.s.o(.text*);
         build/asm/asm_0800c73c.s.o(.text*);
         build/asm/asm_0800c764.s.o(.text*);
-        build/asm/asm_0800c77c.s.o(.text*);
-        build/asm/asm_0800c7a4.s.o(.text*);
+        build/src/scene.c.o(.text);
         build/asm/asm_0800c7cc.s.o(.text*);
         build/asm/asm_0800c7fc.s.o(.text*);
         build/asm/asm_0800c81c.s.o(.text*);

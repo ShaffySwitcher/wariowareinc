@@ -214,7 +214,7 @@ _08039FEC:
 /* 08039FEC */ CMP R6, #0XA
 /* 08039FEE */ BNE _08039FF6
 /* 08039FF0 */ LDR R0, _0803A008
-/* 08039FF2 */ BL func_0800C7FC
+/* 08039FF2 */ BL scene_play_sound_to_tempo
 _08039FF6:
 /* 08039FF6 */ LDR R0, =gCurrentSceneVariable
 /* 08039FF8 */ LDR R0, [R0]

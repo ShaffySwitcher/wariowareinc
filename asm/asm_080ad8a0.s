@@ -34,7 +34,7 @@ _080AD8C6:
 /* 080AD8CE */ CMP R0, #0
 /* 080AD8D0 */ BEQ _080AD8F8
 /* 080AD8D2 */ LDR R0, _080AD8E4
-/* 080AD8D4 */ BL func_0800C7FC
+/* 080AD8D4 */ BL scene_play_sound_to_tempo
 /* 080AD8D8 */ LDR R1, [R4]
 /* 080AD8DA */ MOVS R0, #1
 /* 080AD8DC */ STRB R0, [R1, #0X18]

@@ -276,7 +276,7 @@ _08049CFA:
 /* 08049D16 */ STR R3, [SP, #8]
 /* 08049D18 */ BL sprite_set_anim
 /* 08049D1C */ LDR R0, _08049D30
-/* 08049D1E */ BL func_0800C7FC
+/* 08049D1E */ BL scene_play_sound_to_tempo
 /* 08049D22 */ B _08049D3A
 
 .balign 4, 0
@@ -296,7 +296,7 @@ _08049D30:
 /* 08049D30 */ .word D_083FCA80
 _08049D34:
 /* 08049D34 */ LDR R0, _08049D64
-/* 08049D36 */ BL func_0800C7FC
+/* 08049D36 */ BL scene_play_sound_to_tempo
 _08049D3A:
 /* 08049D3A */ LDR R0, _08049D68
 /* 08049D3C */ LDR R0, [R0]

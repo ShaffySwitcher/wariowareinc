@@ -43,7 +43,7 @@ _08048CEE:
 /* 08048D08 */ ADDS R0, #1
 /* 08048D0A */ STRB R0, [R3]
 /* 08048D0C */ LDR R0, _08048D28
-/* 08048D0E */ BL func_0800C7FC
+/* 08048D0E */ BL scene_play_sound_to_tempo
 /* 08048D12 */ LDR R0, _08048D2C
 /* 08048D14 */ LDR R0, [R0]
 /* 08048D16 */ LDR R1, [R5]

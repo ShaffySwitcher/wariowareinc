@@ -27,14 +27,14 @@ glabel func_08023B48
 /* 08023B72 */ MOVS R2, #0
 /* 08023B74 */ BL sprite_set_anim_cel
 /* 08023B78 */ MOVS R0, #9
-/* 08023B7A */ BL func_0800C7A4
+/* 08023B7A */ BL scene_hide_sprite
 /* 08023B7E */ LDR R0, _08023BA0
 /* 08023B80 */ LDR R0, [R0]
 /* 08023B82 */ LDR R1, _08023BA4
 /* 08023B84 */ ADDS R0, R1
 /* 08023B86 */ LDRB R0, [R0]
 /* 08023B88 */ ADDS R0, #3
-/* 08023B8A */ BL func_0800C7A4
+/* 08023B8A */ BL scene_hide_sprite
 /* 08023B8E */ ADD SP, #4
 /* 08023B90 */ POP {R4, R5}
 /* 08023B92 */ POP {R0}

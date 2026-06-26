@@ -49,7 +49,7 @@ _080E6A0A:
 /* 080E6A14 */ CMP R4, #0
 /* 080E6A16 */ BEQ _080E6A40
 /* 080E6A18 */ LDR R0, _080E6A2C
-/* 080E6A1A */ BL func_0800C7FC
+/* 080E6A1A */ BL scene_play_sound_to_tempo
 /* 080E6A1E */ LDR R1, [R5]
 /* 080E6A20 */ MOVS R0, #1
 /* 080E6A22 */ STRB R0, [R1]

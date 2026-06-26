@@ -29,7 +29,7 @@ glabel func_08075CE4
 /* 08075D10 */ LDR R1, [R5]
 /* 08075D12 */ LDR R0, [R1, #0X7C]
 /* 08075D14 */ LDRH R1, [R1, #0X28]
-/* 08075D16 */ BL func_08002038
+/* 08075D16 */ BL set_soundplayer_speed
 /* 08075D1A */ POP {R4, R5}
 /* 08075D1C */ POP {R0}
 /* 08075D1E */ BX R0

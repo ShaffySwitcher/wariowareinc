@@ -29,7 +29,7 @@ glabel func_0809E254
 /* 0809E27E */ CMP R0, #0
 /* 0809E280 */ BNE _0809E2A6
 /* 0809E282 */ LDR R0, _0809E29C
-/* 0809E284 */ BL func_0800C7FC
+/* 0809E284 */ BL scene_play_sound_to_tempo
 /* 0809E288 */ LDR R1, [R4]
 /* 0809E28A */ MOVS R0, #1
 /* 0809E28C */ STRB R0, [R1]
@@ -76,7 +76,7 @@ _0809E2A6:
 /* 0809E2CA */ CMP R0, #0
 /* 0809E2CC */ BNE _0809E2F2
 /* 0809E2CE */ LDR R0, _0809E2E8
-/* 0809E2D0 */ BL func_0800C7FC
+/* 0809E2D0 */ BL scene_play_sound_to_tempo
 /* 0809E2D4 */ LDR R1, [R4]
 /* 0809E2D6 */ MOVS R0, #1
 /* 0809E2D8 */ STRB R0, [R1, #1]
@@ -123,7 +123,7 @@ _0809E2F2:
 /* 0809E316 */ CMP R0, #0
 /* 0809E318 */ BNE _0809E33E
 /* 0809E31A */ LDR R0, _0809E334
-/* 0809E31C */ BL func_0800C7FC
+/* 0809E31C */ BL scene_play_sound_to_tempo
 /* 0809E320 */ LDR R1, [R4]
 /* 0809E322 */ MOVS R0, #1
 /* 0809E324 */ STRB R0, [R1, #3]
@@ -170,7 +170,7 @@ _0809E33E:
 /* 0809E362 */ CMP R0, #0
 /* 0809E364 */ BNE _0809E38A
 /* 0809E366 */ LDR R0, _0809E380
-/* 0809E368 */ BL func_0800C7FC
+/* 0809E368 */ BL scene_play_sound_to_tempo
 /* 0809E36C */ LDR R1, [R4]
 /* 0809E36E */ MOVS R0, #1
 /* 0809E370 */ STRB R0, [R1, #2]

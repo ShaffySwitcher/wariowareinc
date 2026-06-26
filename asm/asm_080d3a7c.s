@@ -131,7 +131,7 @@ _080D3B30:
 /* 080D3B6A */ CMP R1, R0
 /* 080D3B6C */ BLT _080D3B80
 /* 080D3B6E */ LDR R0, _080D3B7C
-/* 080D3B70 */ BL func_0800C7FC
+/* 080D3B70 */ BL scene_play_sound_to_tempo
 /* 080D3B74 */ B _080D3B98
 
 .balign 4, 0
@@ -143,7 +143,7 @@ _080D3B7C:
 /* 080D3B7C */ .word D_083FD8A4
 _080D3B80:
 /* 080D3B80 */ LDR R0, _080D3B88
-/* 080D3B82 */ BL func_0800C7FC
+/* 080D3B82 */ BL scene_play_sound_to_tempo
 /* 080D3B86 */ B _080D3B98
 
 .balign 4, 0

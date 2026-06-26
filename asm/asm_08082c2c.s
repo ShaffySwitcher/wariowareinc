@@ -110,7 +110,7 @@ _08082CCA:
 /* 08082CDA */ B _08082EE0
 _08082CDC:
 /* 08082CDC */ LDR R0, _08082CF8
-/* 08082CDE */ BL func_0800C7FC
+/* 08082CDE */ BL scene_play_sound_to_tempo
 /* 08082CE2 */ LDR R0, [R4]
 /* 08082CE4 */ LDRB R0, [R0, #0X1D]
 /* 08082CE6 */ CMP R0, #1
@@ -224,7 +224,7 @@ _08082D9E:
 /* 08082DA8 */ LDRB R0, [R0]
 /* 08082DAA */ BL func_08082934
 /* 08082DAE */ LDR R0, _08082DCC
-/* 08082DB0 */ BL func_0800C7FC
+/* 08082DB0 */ BL scene_play_sound_to_tempo
 /* 08082DB4 */ LDR R0, [R4]
 /* 08082DB6 */ LDRB R0, [R0]
 /* 08082DB8 */ CMP R0, #0

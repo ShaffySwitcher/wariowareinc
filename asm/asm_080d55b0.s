@@ -71,9 +71,9 @@ glabel func_080D55B0
 /* 080D5630 */ ASRS R3, R3, #0X10
 /* 080D5632 */ BL sprite_set_x_y
 /* 080D5636 */ LDR R0, _080D566C
-/* 080D5638 */ BL func_0800C7FC
+/* 080D5638 */ BL scene_play_sound_to_tempo
 /* 080D563C */ LDR R0, _080D5670
-/* 080D563E */ BL func_0800C7FC
+/* 080D563E */ BL scene_play_sound_to_tempo
 /* 080D5642 */ CMP R4, #0
 /* 080D5644 */ BLE _080D5674
 /* 080D5646 */ LDR R0, [R5]

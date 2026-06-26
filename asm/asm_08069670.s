@@ -37,7 +37,7 @@ glabel func_08069670
 /* 080696AC */ ASRS R1, R1, #1
 /* 080696AE */ STR R1, [R2]
 /* 080696B0 */ LDR R0, _080696CC
-/* 080696B2 */ BL func_0800C7FC
+/* 080696B2 */ BL scene_play_sound_to_tempo
 /* 080696B6 */ MOVS R0, #0X24
 /* 080696B8 */ BL func_0800C9A4
 /* 080696BC */ MOVS R0, #1

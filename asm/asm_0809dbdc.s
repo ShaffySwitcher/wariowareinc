@@ -150,7 +150,7 @@ _0809DC8C:
 /* 0809DCFA */ MOVS R0, #0
 /* 0809DCFC */ BL func_0800A128
 /* 0809DD00 */ LDR R0, _0809DD10
-/* 0809DD02 */ BL func_0800C7FC
+/* 0809DD02 */ BL scene_play_sound_to_tempo
 /* 0809DD06 */ B _0809DD26
 
 .balign 4, 0

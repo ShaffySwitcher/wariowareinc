@@ -12,7 +12,7 @@ glabel func_0809A720
 /* 0809A728 */ MOVS R1, #2
 /* 0809A72A */ STRB R1, [R0]
 /* 0809A72C */ LDR R0, =D_083FCB5C
-/* 0809A72E */ BL func_0800C7FC
+/* 0809A72E */ BL scene_play_sound_to_tempo
 /* 0809A732 */ MOVS R0, #0X14
 /* 0809A734 */ BL func_0800C9A4
 /* 0809A738 */ MOVS R0, #1

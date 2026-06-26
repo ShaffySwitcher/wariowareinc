@@ -46,7 +46,7 @@ glabel func_0806A394
 /* 0806A3E2 */ ADDS R0, #1
 /* 0806A3E4 */ STRB R0, [R1]
 /* 0806A3E6 */ LDR R0, =D_083FCE90
-/* 0806A3E8 */ BL func_0800C7FC
+/* 0806A3E8 */ BL scene_play_sound_to_tempo
 /* 0806A3EC */ LDR R0, [R4]
 /* 0806A3EE */ ADDS R1, R0, #0
 /* 0806A3F0 */ ADDS R1, #0X88

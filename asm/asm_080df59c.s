@@ -13,7 +13,7 @@ glabel func_080DF59C
 /* 080DF5A6 */ STRH R0, [R1, #4]
 /* 080DF5A8 */ LDR R0, [R1, #8]
 /* 080DF5AA */ LDRH R1, [R1, #4]
-/* 080DF5AC */ BL func_08002038
+/* 080DF5AC */ BL set_soundplayer_speed
 /* 080DF5B0 */ LDR R1, [R4]
 /* 080DF5B2 */ LDR R2, _080DF5D0
 /* 080DF5B4 */ ADDS R0, R2, #0

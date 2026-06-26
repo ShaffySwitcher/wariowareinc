@@ -128,7 +128,7 @@ _080E9158:
 /* 080E91B2 */ LSLS R1, R1, #0X10
 /* 080E91B4 */ LSRS R1, R1, #0X10
 /* 080E91B6 */ ADDS R0, R4, #0
-/* 080E91B8 */ BL set_soundplayer_speed
+/* 080E91B8 */ BL midi_player_set_speed
 _080E91BC:
 /* 080E91BC */ LDR R1, _080E9328
 /* 080E91BE */ LDR R0, [R1]

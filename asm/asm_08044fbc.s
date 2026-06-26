@@ -35,7 +35,7 @@ glabel func_08044FBC
 /* 08044FF8 */ CMP R0, #0
 /* 08044FFA */ BNE _08045008
 /* 08044FFC */ LDR R0, =D_083FC6E8
-/* 08044FFE */ BL func_0800C7FC
+/* 08044FFE */ BL scene_play_sound_to_tempo
 /* 08045002 */ LDR R0, [R5]
 /* 08045004 */ ADDS R0, #0X78
 /* 08045006 */ STRB R4, [R0]

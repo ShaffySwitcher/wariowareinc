@@ -92,7 +92,7 @@ _080918D4:
 /* 080918F2 */ STRB R1, [R0]
 _080918F4:
 /* 080918F4 */ LDR R0, _08091900
-/* 080918F6 */ BL func_0800C7FC
+/* 080918F6 */ BL scene_play_sound_to_tempo
 /* 080918FA */ B _080919DC
 
 .balign 4, 0
@@ -139,7 +139,7 @@ _08091904:
 /* 08091948 */ MOVS R1, #3
 /* 0809194A */ STRB R1, [R0]
 /* 0809194C */ LDR R0, _08091960
-/* 0809194E */ BL func_0800C7FC
+/* 0809194E */ BL scene_play_sound_to_tempo
 /* 08091952 */ B _080919DC
 
 .balign 4, 0

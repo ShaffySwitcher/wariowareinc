@@ -107,7 +107,7 @@ _080B89CA:
 /* 080B89FC */ STR R3, [SP, #8]
 /* 080B89FE */ BL sprite_set_anim
 /* 080B8A02 */ LDR R0, =D_083FC6E8
-/* 080B8A04 */ BL func_0800C7FC
+/* 080B8A04 */ BL scene_play_sound_to_tempo
 _080B8A08:
 /* 080B8A08 */ ADD SP, #0XC
 /* 080B8A0A */ POP {R3}

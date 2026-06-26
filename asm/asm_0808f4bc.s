@@ -29,7 +29,7 @@ glabel func_0808F4BC
 /* 0808F4E8 */ LDRSH R0, [R0, R1]
 /* 0808F4EA */ BL func_0808A7B8
 /* 0808F4EE */ LDR R0, =D_083FC044
-/* 0808F4F0 */ BL func_0800C7FC
+/* 0808F4F0 */ BL scene_play_sound_to_tempo
 /* 0808F4F4 */ POP {R4}
 /* 0808F4F6 */ POP {R0}
 /* 0808F4F8 */ BX R0

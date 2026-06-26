@@ -26,7 +26,7 @@ glabel func_0804AB38
 /* 0804AB5E */ MOVS R0, #0
 /* 0804AB60 */ BL func_0800A128
 /* 0804AB64 */ LDR R0, _0804AB70
-/* 0804AB66 */ BL func_0800C7FC
+/* 0804AB66 */ BL scene_play_sound_to_tempo
 /* 0804AB6A */ B _0804AB7A
 
 .balign 4, 0

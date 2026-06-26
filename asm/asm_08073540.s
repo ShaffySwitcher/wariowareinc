@@ -53,7 +53,7 @@ glabel func_08073540
 /* 080735A0 */ LDR R1, [R2]
 /* 080735A2 */ ADDS R1, R6
 /* 080735A4 */ LDRH R1, [R1]
-/* 080735A6 */ BL set_soundplayer_speed
+/* 080735A6 */ BL midi_player_set_speed
 _080735AA:
 /* 080735AA */ MOVS R0, #1
 /* 080735AC */ BL func_08070D30

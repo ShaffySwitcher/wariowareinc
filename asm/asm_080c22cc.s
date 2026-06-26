@@ -58,7 +58,7 @@ _080C22EE:
 /* 080C232E */ MOVS R1, #1
 /* 080C2330 */ STRB R1, [R0]
 /* 080C2332 */ LDR R0, _080C2344
-/* 080C2334 */ BL func_0800C7FC
+/* 080C2334 */ BL scene_play_sound_to_tempo
 /* 080C2338 */ B _080C2352
 
 .balign 4, 0

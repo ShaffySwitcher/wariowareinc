@@ -9,7 +9,7 @@ glabel func_08024494
 /* 08024496 */ MOVS R0, #0
 /* 08024498 */ BL scene_set_current_thread
 /* 0802449C */ MOVS R0, #2
-/* 0802449E */ BL func_0800C77C
+/* 0802449E */ BL scene_show_sprite
 /* 080244A2 */ LDR R0, =D_083FC594
 /* 080244A4 */ BL play_sound
 /* 080244A8 */ POP {R0}

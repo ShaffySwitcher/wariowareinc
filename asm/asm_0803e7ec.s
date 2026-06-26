@@ -146,7 +146,7 @@ _0803E8B2:
 /* 0803E8DC */ CMP R1, R0
 /* 0803E8DE */ BNE _0803E8EC
 /* 0803E8E0 */ LDR R0, _0803E8E8
-/* 0803E8E2 */ BL func_0800C7FC
+/* 0803E8E2 */ BL scene_play_sound_to_tempo
 /* 0803E8E6 */ B _0803E8F2
 
 .balign 4, 0
@@ -154,7 +154,7 @@ _0803E8E8:
 /* 0803E8E8 */ .word D_083FF000
 _0803E8EC:
 /* 0803E8EC */ LDR R0, _0803E900
-/* 0803E8EE */ BL func_0800C7FC
+/* 0803E8EE */ BL scene_play_sound_to_tempo
 _0803E8F2:
 /* 0803E8F2 */ LDR R0, _0803E904
 /* 0803E8F4 */ LDR R1, [R0]

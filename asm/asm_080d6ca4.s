@@ -23,13 +23,13 @@ glabel func_080D6CA4
 /* 080D6CC4 */ ADDS R4, R2
 /* 080D6CC6 */ STRH R0, [R4]
 /* 080D6CC8 */ LDR R0, =D_083FA8AC
-/* 080D6CCA */ BL func_0800C7FC
+/* 080D6CCA */ BL scene_play_sound_to_tempo
 /* 080D6CCE */ ADDS R4, R0, #0
 /* 080D6CD0 */ LDR R0, [R5]
 /* 080D6CD2 */ ADDS R0, R6
 /* 080D6CD4 */ LDRH R1, [R0]
 /* 080D6CD6 */ ADDS R0, R4, #0
-/* 080D6CD8 */ BL func_08002038
+/* 080D6CD8 */ BL set_soundplayer_speed
 /* 080D6CDC */ LDR R0, [R5]
 /* 080D6CDE */ MOVS R1, #0X82
 /* 080D6CE0 */ LSLS R1, R1, #3

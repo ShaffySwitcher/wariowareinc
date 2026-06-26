@@ -72,7 +72,7 @@ _080AD820:
 /* 080AD838 */ CMP R0, #0
 /* 080AD83A */ BNE _080AD84C
 /* 080AD83C */ LDR R0, _080AD848
-/* 080AD83E */ BL func_0800C7FC
+/* 080AD83E */ BL scene_play_sound_to_tempo
 /* 080AD842 */ B _080AD852
 
 .balign 4, 0
@@ -84,7 +84,7 @@ _080AD848:
 /* 080AD848 */ .word D_083FD264
 _080AD84C:
 /* 080AD84C */ LDR R0, _080AD890
-/* 080AD84E */ BL func_0800C7FC
+/* 080AD84E */ BL scene_play_sound_to_tempo
 _080AD852:
 /* 080AD852 */ LDR R2, _080AD894
 /* 080AD854 */ LDR R1, [R2]

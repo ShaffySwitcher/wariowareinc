@@ -45,16 +45,16 @@ _0801B4D6:
 /* 0801B4EE */ MOVS R0, #0
 /* 0801B4F0 */ BL func_0800BF20
 /* 0801B4F4 */ MOVS R0, #9
-/* 0801B4F6 */ BL func_0800C7A4
+/* 0801B4F6 */ BL scene_hide_sprite
 /* 0801B4FA */ MOVS R0, #0XA
-/* 0801B4FC */ BL func_0800C7A4
+/* 0801B4FC */ BL scene_hide_sprite
 /* 0801B500 */ MOVS R0, #0X10
-/* 0801B502 */ BL func_0800C7A4
+/* 0801B502 */ BL scene_hide_sprite
 /* 0801B506 */ MOVS R4, #0
 _0801B508:
 /* 0801B508 */ ADDS R0, R4, #0
 /* 0801B50A */ ADDS R0, #0XB
-/* 0801B50C */ BL func_0800C7A4
+/* 0801B50C */ BL scene_hide_sprite
 /* 0801B510 */ ADDS R4, #1
 /* 0801B512 */ CMP R4, #3
 /* 0801B514 */ BLS _0801B508
@@ -75,7 +75,7 @@ _0801B518:
 /* 0801B532 */ CMP R4, #2
 /* 0801B534 */ BLS _0801B518
 /* 0801B536 */ MOVS R0, #0XF
-/* 0801B538 */ BL func_0800C7A4
+/* 0801B538 */ BL scene_hide_sprite
 /* 0801B53C */ BL func_0800CE6C
 /* 0801B540 */ LDR R4, _0801B5B4
 /* 0801B542 */ LDRH R1, [R4]

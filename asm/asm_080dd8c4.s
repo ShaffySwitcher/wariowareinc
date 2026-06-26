@@ -133,7 +133,7 @@ _080DD97E:
 /* 080DD98E */ CMP R0, #0
 /* 080DD990 */ BEQ _080DD9F8
 /* 080DD992 */ LDR R0, _080DD9E8
-/* 080DD994 */ BL func_0800C7FC
+/* 080DD994 */ BL scene_play_sound_to_tempo
 /* 080DD998 */ LDR R1, _080DD9E0
 /* 080DD99A */ LDR R0, [R1]
 /* 080DD99C */ MOVS R5, #0
@@ -214,7 +214,7 @@ _080DD9F8:
 /* 080DDA22 */ MOVS R3, #0
 /* 080DDA24 */ BL sprite_set_anim
 /* 080DDA28 */ LDR R0, _080DDA40
-/* 080DDA2A */ BL func_0800C7FC
+/* 080DDA2A */ BL scene_play_sound_to_tempo
 _080DDA2E:
 /* 080DDA2E */ BL func_080DE1E8
 /* 080DDA32 */ B _080DDCE2
@@ -535,7 +535,7 @@ _080DDC3E:
 /* 080DDC64 */ MOVS R0, #5
 /* 080DDC66 */ STRB R0, [R1, #0X14]
 /* 080DDC68 */ LDR R0, _080DDC78
-/* 080DDC6A */ BL func_0800C7FC
+/* 080DDC6A */ BL scene_play_sound_to_tempo
 /* 080DDC6E */ B _080DDCE2
 
 .balign 4, 0

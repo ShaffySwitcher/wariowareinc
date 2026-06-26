@@ -112,7 +112,7 @@ _08055CD4:
 /* 08055D14 */ STR R5, [SP, #8]
 /* 08055D16 */ BL sprite_set_anim
 /* 08055D1A */ LDR R0, _08055D38
-/* 08055D1C */ BL func_0800C7FC
+/* 08055D1C */ BL scene_play_sound_to_tempo
 /* 08055D20 */ MOVS R0, #0X18
 /* 08055D22 */ BL func_0800C9A4
 /* 08055D26 */ MOVS R0, #0
@@ -160,7 +160,7 @@ _08055D3C:
 /* 08055D78 */ BL sprite_set_z
 /* 08055D7C */ ADDS R7, #8
 /* 08055D7E */ LDR R0, _08055D8C
-/* 08055D80 */ BL func_0800C7FC
+/* 08055D80 */ BL scene_play_sound_to_tempo
 /* 08055D84 */ B _08055D92
 
 .balign 4, 0

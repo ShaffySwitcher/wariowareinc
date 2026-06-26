@@ -1,3 +1,5 @@
+#pragma once
+
 #include "global.h"
 #include "levels.h"
 #include "src/scenes/gameplay.h"

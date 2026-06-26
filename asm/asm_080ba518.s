@@ -107,7 +107,7 @@ _080BA5D8:
 /* 080BA5DE */ MOVS R0, #2
 /* 080BA5E0 */ BL func_0800A128
 /* 080BA5E4 */ LDR R0, _080BA604
-/* 080BA5E6 */ BL func_0800C7FC
+/* 080BA5E6 */ BL scene_play_sound_to_tempo
 /* 080BA5EA */ LDR R0, [R6]
 /* 080BA5EC */ ADDS R0, #0X2C
 /* 080BA5EE */ MOVS R1, #5
@@ -161,7 +161,7 @@ _080BA608:
 /* 080BA63E */ MOVS R0, #2
 /* 080BA640 */ BL func_0800A128
 /* 080BA644 */ LDR R0, _080BA660
-/* 080BA646 */ BL func_0800C7FC
+/* 080BA646 */ BL scene_play_sound_to_tempo
 /* 080BA64A */ LDR R0, [R4]
 /* 080BA64C */ ADDS R0, #0X2C
 /* 080BA64E */ MOVS R1, #5
@@ -220,7 +220,7 @@ _080BA688:
 /* 080BA6A6 */ MOVS R0, #2
 /* 080BA6A8 */ BL func_0800A128
 /* 080BA6AC */ LDR R0, _080BA6DC
-/* 080BA6AE */ BL func_0800C7FC
+/* 080BA6AE */ BL scene_play_sound_to_tempo
 /* 080BA6B2 */ LDR R0, [R7]
 /* 080BA6B4 */ ADDS R0, #0X2C
 /* 080BA6B6 */ MOVS R1, #4

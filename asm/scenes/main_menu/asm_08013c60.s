@@ -205,13 +205,13 @@ _08013DAE: \n\
 /* 08013E04 */ ADDS R3, R5, #0 \n\
 /* 08013E06 */ BL sprite_set_x_y \n\
 /* 08013E0A */ MOVS R0, #0X1B \n\
-/* 08013E0C */ BL func_0800C77C \n\
+/* 08013E0C */ BL scene_show_sprite \n\
 /* 08013E10 */ MOVS R0, #0X1C \n\
-/* 08013E12 */ BL func_0800C77C \n\
+/* 08013E12 */ BL scene_show_sprite \n\
 /* 08013E16 */ MOVS R0, #0X1D \n\
-/* 08013E18 */ BL func_0800C77C \n\
+/* 08013E18 */ BL scene_show_sprite \n\
 /* 08013E1C */ MOVS R0, #0X1E \n\
-/* 08013E1E */ BL func_0800C77C \n\
+/* 08013E1E */ BL scene_show_sprite \n\
 _08013E22: \n\
 /* 08013E22 */ ADD SP, #0XC \n\
 /* 08013E24 */ POP {R3, R4, R5} \n\

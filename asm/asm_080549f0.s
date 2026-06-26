@@ -108,7 +108,7 @@ _08054A98:
 /* 08054AA6 */ MOVS R1, #1
 /* 08054AA8 */ STR R1, [R0]
 /* 08054AAA */ LDR R0, _08054AB8
-/* 08054AAC */ BL func_0800C7FC
+/* 08054AAC */ BL scene_play_sound_to_tempo
 /* 08054AB0 */ B _08054B8E
 
 .balign 4, 0
@@ -165,7 +165,7 @@ _08054ABC:
 /* 08054B1C */ MOVS R1, #2
 /* 08054B1E */ STR R1, [R0]
 /* 08054B20 */ LDR R0, _08054B30
-/* 08054B22 */ BL func_0800C7FC
+/* 08054B22 */ BL scene_play_sound_to_tempo
 /* 08054B26 */ B _08054B8E
 
 .balign 4, 0

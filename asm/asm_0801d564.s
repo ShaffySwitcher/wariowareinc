@@ -16,7 +16,7 @@ glabel func_0801D564
 _0801D574:
 /* 0801D574 */ ADDS R0, R4, #0
 /* 0801D576 */ ADDS R0, #8
-/* 0801D578 */ BL func_0800C77C
+/* 0801D578 */ BL scene_show_sprite
 /* 0801D57C */ ADDS R4, #1
 /* 0801D57E */ CMP R4, #2
 /* 0801D580 */ BLS _0801D574
@@ -31,7 +31,7 @@ _0801D58C:
 _0801D58E:
 /* 0801D58E */ ADDS R0, R4, #0
 /* 0801D590 */ ADDS R0, #8
-/* 0801D592 */ BL func_0800C7A4
+/* 0801D592 */ BL scene_hide_sprite
 /* 0801D596 */ ADDS R4, #1
 /* 0801D598 */ CMP R4, #2
 /* 0801D59A */ BLS _0801D58E

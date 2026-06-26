@@ -65,7 +65,7 @@ _080A41F0:
 /* 080A420E */ MOVS R0, #1
 /* 080A4210 */ STRB R0, [R1, #0X18]
 /* 080A4212 */ LDR R0, _080A4224
-/* 080A4214 */ BL func_0800C7FC
+/* 080A4214 */ BL scene_play_sound_to_tempo
 /* 080A4218 */ B _080A426E
 
 .balign 4, 0

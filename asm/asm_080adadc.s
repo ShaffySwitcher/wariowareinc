@@ -20,7 +20,7 @@ glabel func_080ADADC
 /* 080ADAF4 */ CMP R0, #0
 /* 080ADAF6 */ BNE _080ADB04
 /* 080ADAF8 */ LDR R0, =D_083FD91C
-/* 080ADAFA */ BL func_0800C7FC
+/* 080ADAFA */ BL scene_play_sound_to_tempo
 /* 080ADAFE */ LDR R0, [R4]
 /* 080ADB00 */ ADDS R0, #0X9B
 /* 080ADB02 */ STRB R5, [R0]

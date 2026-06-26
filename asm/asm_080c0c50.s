@@ -24,7 +24,7 @@ glabel func_080C0C50
 /* 080C0C72 */ MOVS R0, #1
 /* 080C0C74 */ BL func_0800A128
 /* 080C0C78 */ LDR R0, _080C0CC4
-/* 080C0C7A */ BL func_0800C7FC
+/* 080C0C7A */ BL scene_play_sound_to_tempo
 /* 080C0C7E */ LDR R0, [R4]
 /* 080C0C80 */ ADDS R0, #0X2B
 /* 080C0C82 */ MOVS R1, #3

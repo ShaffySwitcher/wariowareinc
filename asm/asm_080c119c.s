@@ -22,7 +22,7 @@ glabel func_080C119C
 /* 080C11B8 */ CMP R0, #0
 /* 080C11BA */ BEQ _080C11D8
 /* 080C11BC */ LDR R0, _080C11D0
-/* 080C11BE */ BL func_0800C7FC
+/* 080C11BE */ BL scene_play_sound_to_tempo
 /* 080C11C2 */ BL func_080C10C0
 /* 080C11C6 */ B _080C11D8
 

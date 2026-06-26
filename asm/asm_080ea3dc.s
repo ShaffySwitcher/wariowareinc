@@ -353,7 +353,7 @@ _080EA57A:
 /* 080EA694 */ LDR R0, _080EA700
 /* 080EA696 */ BL stop_sound
 /* 080EA69A */ LDR R0, =D_083FCC24
-/* 080EA69C */ BL func_0800C7FC
+/* 080EA69C */ BL scene_play_sound_to_tempo
 _080EA6A0:
 /* 080EA6A0 */ LDR R1, [SP, #0X20]
 /* 080EA6A2 */ LSLS R0, R1, #0X18

@@ -16,7 +16,7 @@ glabel func_080DE1B8
 /* 080DE1C8 */ MOVS R2, #0
 /* 080DE1CA */ BL sprite_set_visible
 /* 080DE1CE */ LDR R0, =D_083FC120
-/* 080DE1D0 */ BL func_0800C7FC
+/* 080DE1D0 */ BL scene_play_sound_to_tempo
 /* 080DE1D4 */ BL func_080DD7E0
 /* 080DE1D8 */ POP {R1}
 /* 080DE1DA */ BX R1

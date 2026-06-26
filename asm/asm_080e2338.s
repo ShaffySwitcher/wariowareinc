@@ -86,7 +86,7 @@ _080E23CA:
 /* 080E23DA */ ASRS R0, R0, #8
 /* 080E23DC */ STR R0, [R2]
 /* 080E23DE */ LDR R0, _080E240C
-/* 080E23E0 */ BL func_0800C7FC
+/* 080E23E0 */ BL scene_play_sound_to_tempo
 /* 080E23E4 */ MOVS R0, #0X24
 /* 080E23E6 */ BL func_0800C9A4
 /* 080E23EA */ MOVS R0, #0
@@ -132,7 +132,7 @@ _080E2410:
 /* 080E2420 */ MOVS R0, #0
 /* 080E2422 */ STR R0, [R1]
 /* 080E2424 */ LDR R0, =D_083FCB98
-/* 080E2426 */ BL func_0800C7FC
+/* 080E2426 */ BL scene_play_sound_to_tempo
 /* 080E242A */ MOVS R0, #0X24
 /* 080E242C */ BL func_0800C9A4
 /* 080E2430 */ MOVS R0, #1

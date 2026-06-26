@@ -21,7 +21,7 @@ glabel func_08035100
 /* 0803511A */ MOVS R0, #1
 /* 0803511C */ STRB R0, [R4]
 /* 0803511E */ LDR R0, =D_083FE010
-/* 08035120 */ BL func_0800C7FC
+/* 08035120 */ BL scene_play_sound_to_tempo
 _08035124:
 /* 08035124 */ LSLS R0, R5, #0X10
 /* 08035126 */ ASRS R7, R0, #0X10

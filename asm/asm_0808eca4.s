@@ -18,7 +18,7 @@ glabel func_0808ECA4
 /* 0808ECB8 */ CMP R6, #0
 /* 0808ECBA */ BNE _0808ED50
 /* 0808ECBC */ LDR R0, _0808ED38
-/* 0808ECBE */ BL func_0800C7FC
+/* 0808ECBE */ BL scene_play_sound_to_tempo
 /* 0808ECC2 */ LDR R0, _0808ED3C
 /* 0808ECC4 */ LDR R0, [R0]
 /* 0808ECC6 */ LDRB R0, [R0, #4]
@@ -98,7 +98,7 @@ _0808ED4C:
 /* 0808ED4C */ .word func_0808EC5C + 1
 _0808ED50:
 /* 0808ED50 */ LDR R0, =D_083FBFCC
-/* 0808ED52 */ BL func_0800C7FC
+/* 0808ED52 */ BL scene_play_sound_to_tempo
 _0808ED56:
 /* 0808ED56 */ ADD SP, #0XC
 /* 0808ED58 */ POP {R4, R5, R6}

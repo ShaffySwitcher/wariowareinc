@@ -33,7 +33,7 @@ glabel func_08088EFC
 /* 08088F2E */ CMP R0, #0
 /* 08088F30 */ BNE _08088F3C
 /* 08088F32 */ LDR R0, _08088F58
-/* 08088F34 */ BL func_0800C7FC
+/* 08088F34 */ BL scene_play_sound_to_tempo
 /* 08088F38 */ LDR R0, [R7]
 /* 08088F3A */ STR R5, [R0, #0X38]
 _08088F3C:

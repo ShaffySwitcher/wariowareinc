@@ -9,7 +9,7 @@ glabel func_080A904C
 /* 080A904E */ MOVS R0, #1
 /* 080A9050 */ BL scene_set_current_thread
 /* 080A9054 */ MOVS R0, #3
-/* 080A9056 */ BL func_0800C77C
+/* 080A9056 */ BL scene_show_sprite
 /* 080A905A */ LDR R4, _080A9080
 /* 080A905C */ LDR R1, [R4]
 /* 080A905E */ MOVS R5, #0

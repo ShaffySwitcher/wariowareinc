@@ -31,9 +31,9 @@ _080EA7E6:
 /* 080EA7F8 */ BGT _080EA806
 _080EA7FA:
 /* 080EA7FA */ LDR R0, _080EA870
-/* 080EA7FC */ BL func_0800C7FC
+/* 080EA7FC */ BL scene_play_sound_to_tempo
 /* 080EA800 */ LDR R0, _080EA874
-/* 080EA802 */ BL func_0800C7FC
+/* 080EA802 */ BL scene_play_sound_to_tempo
 _080EA806:
 /* 080EA806 */ LDR R0, _080EA878
 /* 080EA808 */ LDRH R1, [R0]

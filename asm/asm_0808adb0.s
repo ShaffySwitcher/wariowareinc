@@ -23,7 +23,7 @@ _0808ADBE:
 /* 0808ADCC */ BL sprite_set_visible
 /* 0808ADD0 */ BL func_0808AD20
 /* 0808ADD4 */ LDR R0, =D_083FC008
-/* 0808ADD6 */ BL func_0800C7FC
+/* 0808ADD6 */ BL scene_play_sound_to_tempo
 /* 0808ADDA */ MOVS R0, #1
 _0808ADDC:
 /* 0808ADDC */ POP {R1}

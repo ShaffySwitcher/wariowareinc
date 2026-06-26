@@ -20,7 +20,7 @@ glabel func_080E4E30
 /* 080E4E48 */ CMP R0, #1
 /* 080E4E4A */ BNE _080E4E52
 /* 080E4E4C */ LDR R0, =D_083FDA20
-/* 080E4E4E */ BL func_0800C7FC
+/* 080E4E4E */ BL scene_play_sound_to_tempo
 _080E4E52:
 /* 080E4E52 */ MOVS R0, #0X18
 /* 080E4E54 */ BL func_0800C9A4

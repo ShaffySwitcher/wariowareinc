@@ -93,7 +93,7 @@ _08058CB4:
 /* 08058CB4 */ .word D_083FBD88
 _08058CB8:
 /* 08058CB8 */ LDR R0, =D_083FBD74
-/* 08058CBA */ BL func_0800C7FC
+/* 08058CBA */ BL scene_play_sound_to_tempo
 _08058CBE:
 /* 08058CBE */ ADD SP, #0XC
 /* 08058CC0 */ POP {R3, R4}

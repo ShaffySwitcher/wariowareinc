@@ -73,7 +73,7 @@ glabel func_08052C44
 /* 08052CCA */ LDR R2, _08052CFC
 /* 08052CCC */ BL sprite_set_callback
 /* 08052CD0 */ LDR R0, =D_083FDC8C
-/* 08052CD2 */ BL func_0800C7FC
+/* 08052CD2 */ BL scene_play_sound_to_tempo
 /* 08052CD6 */ ADD SP, #0XC
 /* 08052CD8 */ POP {R3, R4, R5}
 /* 08052CDA */ MOV R8, R3

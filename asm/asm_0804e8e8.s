@@ -69,7 +69,7 @@ _0804E922:
 /* 0804E95E */ MOV R1, R8
 /* 0804E960 */ STRB R0, [R1]
 /* 0804E962 */ LDR R0, _0804E978
-/* 0804E964 */ BL func_0800C7FC
+/* 0804E964 */ BL scene_play_sound_to_tempo
 /* 0804E968 */ B _0804E99A
 
 .balign 4, 0

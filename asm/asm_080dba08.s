@@ -235,7 +235,7 @@ _080DBBAC:
 /* 080DBBC2 */ LSLS R1, R1, #0X10
 /* 080DBBC4 */ LSRS R1, R1, #0X10
 /* 080DBBC6 */ ADDS R0, R4, #0
-/* 080DBBC8 */ BL set_soundplayer_speed
+/* 080DBBC8 */ BL midi_player_set_speed
 /* 080DBBCC */ B _080DBC0C
 
 .balign 4, 0
@@ -268,7 +268,7 @@ _080DBBD8:
 /* 080DBC02 */ LSLS R1, R1, #0X10
 /* 080DBC04 */ LSRS R1, R1, #0X10
 /* 080DBC06 */ ADDS R0, R4, #0
-/* 080DBC08 */ BL set_soundplayer_speed
+/* 080DBC08 */ BL midi_player_set_speed
 _080DBC0C:
 /* 080DBC0C */ LDR R5, _080DBC84
 /* 080DBC0E */ LDR R4, [R5]

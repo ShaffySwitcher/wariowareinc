@@ -80,7 +80,7 @@ _08031824:
 /* 08031878 */ MOVS R0, #0
 /* 0803187A */ BL func_0800A128
 /* 0803187E */ LDR R0, _08031898
-/* 08031880 */ BL func_0800C7FC
+/* 08031880 */ BL scene_play_sound_to_tempo
 /* 08031884 */ B _080318FC
 
 .balign 4, 0
@@ -108,7 +108,7 @@ _0803189C:
 /* 080318A2 */ MOVS R0, #1
 /* 080318A4 */ BL func_0800A128
 /* 080318A8 */ LDR R0, _08031908
-/* 080318AA */ BL func_0800C7FC
+/* 080318AA */ BL scene_play_sound_to_tempo
 /* 080318AE */ LDR R6, _0803190C
 /* 080318B0 */ LDR R0, [R6]
 /* 080318B2 */ ADDS R1, R7, #0

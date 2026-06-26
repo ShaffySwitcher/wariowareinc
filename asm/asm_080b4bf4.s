@@ -352,7 +352,7 @@ _080B4E2C:
 /* 080B4E64 */ MOVS R3, #4
 /* 080B4E66 */ BL sprite_set_playback
 /* 080B4E6A */ LDR R0, _080B4E7C
-/* 080B4E6C */ BL func_0800C7FC
+/* 080B4E6C */ BL scene_play_sound_to_tempo
 /* 080B4E70 */ B _080B5028
 
 .balign 4, 0

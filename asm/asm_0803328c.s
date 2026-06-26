@@ -39,7 +39,7 @@ glabel func_0803328C
 /* 080332CE */ MOVS R0, #0
 /* 080332D0 */ BL func_0800A128
 /* 080332D4 */ LDR R0, _080332E4
-/* 080332D6 */ BL func_0800C7FC
+/* 080332D6 */ BL scene_play_sound_to_tempo
 /* 080332DA */ B _0803333C
 
 .balign 4, 0
@@ -91,7 +91,7 @@ _080332E8:
 /* 08033330 */ MOVS R0, #1
 /* 08033332 */ BL func_0800A128
 /* 08033336 */ LDR R0, =D_083FCB5C
-/* 08033338 */ BL func_0800C7FC
+/* 08033338 */ BL scene_play_sound_to_tempo
 _0803333C:
 /* 0803333C */ ADD SP, #0X14
 /* 0803333E */ POP {R4, R5, R6}

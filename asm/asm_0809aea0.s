@@ -230,9 +230,9 @@ _0809AFAE:
 /* 0809B046 */ MOVS R0, #0
 /* 0809B048 */ BL func_0800A128
 /* 0809B04C */ LDR R0, _0809B06C
-/* 0809B04E */ BL func_0800C7FC
+/* 0809B04E */ BL scene_play_sound_to_tempo
 /* 0809B052 */ LDR R0, _0809B070
-/* 0809B054 */ BL func_0800C7FC
+/* 0809B054 */ BL scene_play_sound_to_tempo
 /* 0809B058 */ B _0809B10A
 
 .balign 4, 0

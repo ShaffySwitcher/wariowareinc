@@ -9,7 +9,7 @@ glabel func_080AA3F8
 /* 080AA3FA */ MOVS R0, #1
 /* 080AA3FC */ BL scene_set_current_thread
 /* 080AA400 */ MOVS R0, #0XD
-/* 080AA402 */ BL func_0800C7A4
+/* 080AA402 */ BL scene_hide_sprite
 /* 080AA406 */ LDR R0, =gCurrentSceneVariable
 /* 080AA408 */ LDR R1, [R0]
 /* 080AA40A */ MOVS R0, #0XFF

@@ -90,7 +90,7 @@ _0807AB08:
 /* 0807AB18 */ MOVS R0, #1
 /* 0807AB1A */ STR R0, [R1]
 /* 0807AB1C */ LDR R0, _0807AB2C
-/* 0807AB1E */ BL func_0800C7FC
+/* 0807AB1E */ BL scene_play_sound_to_tempo
 /* 0807AB22 */ B _0807AB36
 
 .balign 4, 0

@@ -158,7 +158,7 @@ _080DC502:
 /* 080DC588 */ LSLS R1, R1, #0X10
 /* 080DC58A */ LSRS R1, R1, #0X10
 /* 080DC58C */ ADDS R0, R4, #0
-/* 080DC58E */ BL set_soundplayer_speed
+/* 080DC58E */ BL midi_player_set_speed
 _080DC592:
 /* 080DC592 */ LDR R6, _080DC6B4
 /* 080DC594 */ LDR R1, [R6]
@@ -271,7 +271,7 @@ _080DC65A:
 /* 080DC670 */ LSLS R1, R1, #0X10
 /* 080DC672 */ LSRS R1, R1, #0X10
 /* 080DC674 */ ADDS R0, R4, #0
-/* 080DC676 */ BL set_soundplayer_speed
+/* 080DC676 */ BL midi_player_set_speed
 _080DC67A:
 /* 080DC67A */ LDR R5, _080DC6B4
 /* 080DC67C */ LDR R1, [R5]

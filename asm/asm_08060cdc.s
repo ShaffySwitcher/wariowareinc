@@ -122,7 +122,7 @@ _08060D80:
 /* 08060D9E */ MOVS R3, #0
 /* 08060DA0 */ BL sprite_set_anim
 /* 08060DA4 */ LDR R0, _08060DD4
-/* 08060DA6 */ BL func_0800C7FC
+/* 08060DA6 */ BL scene_play_sound_to_tempo
 _08060DAA:
 /* 08060DAA */ LDR R1, [R5]
 /* 08060DAC */ LDRB R0, [R1, #0X1A]

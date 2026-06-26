@@ -161,7 +161,7 @@ _080B9274:
 /* 080B92F2 */ MOVS R0, #1
 /* 080B92F4 */ BL func_0800A128
 /* 080B92F8 */ LDR R0, =D_083FCD3C
-/* 080B92FA */ BL func_0800C7FC
+/* 080B92FA */ BL scene_play_sound_to_tempo
 _080B92FE:
 /* 080B92FE */ ADD SP, #0XC
 /* 080B9300 */ POP {R3}

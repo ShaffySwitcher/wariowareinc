@@ -211,7 +211,7 @@ _08041ECA:
 /* 08041EDC */ STRB R0, [R1]
 /* 08041EDE */ BL func_08041C24
 /* 08041EE2 */ LDR R0, =D_083FDEE4
-/* 08041EE4 */ BL func_0800C7FC
+/* 08041EE4 */ BL scene_play_sound_to_tempo
 /* 08041EE8 */ LDR R3, [R5]
 /* 08041EEA */ ADDS R0, R3, #0
 /* 08041EEC */ ADDS R0, #0X68

@@ -169,7 +169,7 @@ _0804A6A0:
 /* 0804A6CE */ MOVS R3, #0
 /* 0804A6D0 */ BL sprite_set_anim
 /* 0804A6D4 */ LDR R0, _0804A6E4
-/* 0804A6D6 */ BL func_0800C7FC
+/* 0804A6D6 */ BL scene_play_sound_to_tempo
 /* 0804A6DA */ B _0804A70A
 
 .balign 4, 0
@@ -189,7 +189,7 @@ _0804A6E8:
 /* 0804A6EC */ CMP R0, #5
 /* 0804A6EE */ BNE _0804A704
 /* 0804A6F0 */ LDR R0, _0804A700
-/* 0804A6F2 */ BL func_0800C7FC
+/* 0804A6F2 */ BL scene_play_sound_to_tempo
 /* 0804A6F6 */ LDR R0, [R5]
 /* 0804A6F8 */ ADDS R0, #0X92
 /* 0804A6FA */ MOVS R1, #1
@@ -201,7 +201,7 @@ _0804A700:
 /* 0804A700 */ .word D_083FCA80
 _0804A704:
 /* 0804A704 */ LDR R0, _0804A71C
-/* 0804A706 */ BL func_0800C7FC
+/* 0804A706 */ BL scene_play_sound_to_tempo
 _0804A70A:
 /* 0804A70A */ LDR R0, =gCurrentSceneVariable
 /* 0804A70C */ LDR R0, [R0]

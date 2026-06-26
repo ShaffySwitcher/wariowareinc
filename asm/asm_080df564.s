@@ -13,7 +13,7 @@ glabel func_080DF564
 /* 080DF56E */ STRH R0, [R1, #4]
 /* 080DF570 */ LDR R0, [R1, #8]
 /* 080DF572 */ LDRH R1, [R1, #4]
-/* 080DF574 */ BL func_08002038
+/* 080DF574 */ BL set_soundplayer_speed
 /* 080DF578 */ LDR R1, [R4]
 /* 080DF57A */ MOVS R2, #0X80
 /* 080DF57C */ LSLS R2, R2, #1

@@ -20,7 +20,7 @@ glabel func_080A7B8C
 /* 080A7BA6 */ LDR R0, _080A7BF4
 /* 080A7BA8 */ BL load_gfx_table
 /* 080A7BAC */ MOVS R0, #0
-/* 080A7BAE */ BL func_0800C77C
+/* 080A7BAE */ BL scene_show_sprite
 /* 080A7BB2 */ LDR R0, _080A7BF8
 /* 080A7BB4 */ LDR R0, [R0]
 /* 080A7BB6 */ LDR R1, _080A7BFC
@@ -37,7 +37,7 @@ glabel func_080A7B8C
 /* 080A7BCE */ CMP R0, #1
 /* 080A7BD0 */ BNE _080A7BD8
 /* 080A7BD2 */ MOVS R0, #0XE
-/* 080A7BD4 */ BL func_0800C77C
+/* 080A7BD4 */ BL scene_show_sprite
 _080A7BD8:
 /* 080A7BD8 */ LDR R0, [R5]
 /* 080A7BDA */ MOVS R1, #1

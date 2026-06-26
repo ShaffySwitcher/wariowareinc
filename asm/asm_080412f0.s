@@ -124,7 +124,7 @@ _08041340:
 /* 080413E0 */ MOVS R2, #1
 /* 080413E2 */ BL sprite_set_visible
 /* 080413E6 */ LDR R0, =D_083FCBAC
-/* 080413E8 */ BL func_0800C7FC
+/* 080413E8 */ BL scene_play_sound_to_tempo
 _080413EC:
 /* 080413EC */ MOVS R6, #1
 /* 080413EE */ ADD SB, R6

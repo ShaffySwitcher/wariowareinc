@@ -19,7 +19,7 @@ glabel func_080DF794
 /* 080DF7AA */ CMP R0, #0
 /* 080DF7AC */ BEQ _080DF7C4
 /* 080DF7AE */ LDR R0, _080DF7EC
-/* 080DF7B0 */ BL func_0800C7FC
+/* 080DF7B0 */ BL scene_play_sound_to_tempo
 /* 080DF7B4 */ LDR R0, [R4]
 /* 080DF7B6 */ ADDS R0, #0X30
 /* 080DF7B8 */ MOVS R1, #1
@@ -35,7 +35,7 @@ _080DF7C4:
 /* 080DF7CA */ CMP R0, #0
 /* 080DF7CC */ BEQ _080DF7DC
 /* 080DF7CE */ LDR R0, _080DF7EC
-/* 080DF7D0 */ BL func_0800C7FC
+/* 080DF7D0 */ BL scene_play_sound_to_tempo
 /* 080DF7D4 */ LDR R0, [R4]
 /* 080DF7D6 */ ADDS R0, #0X30
 /* 080DF7D8 */ MOVS R1, #2

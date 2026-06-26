@@ -18,7 +18,7 @@ glabel func_08075FB4
 /* 08075FCC */ MOVS R0, #0
 /* 08075FCE */ BL func_0800A128
 /* 08075FD2 */ LDR R0, =D_083FF000
-/* 08075FD4 */ BL func_0800C7FC
+/* 08075FD4 */ BL scene_play_sound_to_tempo
 /* 08075FD8 */ LDR R0, [R4]
 /* 08075FDA */ LDR R0, [R0, #0X7C]
 /* 08075FDC */ BL stop_soundplayer

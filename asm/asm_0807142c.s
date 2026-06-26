@@ -419,7 +419,7 @@ _080716E0:
 /* 08071718 */ BL play_sound
 /* 0807171C */ MOVS R1, #0X80
 /* 0807171E */ LSLS R1, R1, #1
-/* 08071720 */ BL set_soundplayer_speed
+/* 08071720 */ BL midi_player_set_speed
 /* 08071724 */ B _080717EA
 
 .balign 4, 0
@@ -448,7 +448,7 @@ _0807173C:
 /* 08071744 */ LDR R2, _08071754
 /* 08071746 */ ADDS R1, R2
 /* 08071748 */ LDRH R1, [R1]
-/* 0807174A */ BL set_soundplayer_speed
+/* 0807174A */ BL midi_player_set_speed
 /* 0807174E */ B _080717EA
 
 .balign 4, 0

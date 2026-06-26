@@ -225,7 +225,7 @@ _080E94AE:
 /* 080E94C8 */ BLS _080E94AE
 _080E94CA:
 /* 080E94CA */ ADDS R0, R6, #0
-/* 080E94CC */ BL func_0800C7FC
+/* 080E94CC */ BL scene_play_sound_to_tempo
 /* 080E94D0 */ LDR R4, _080E94FC
 /* 080E94D2 */ MOVS R0, #0XA
 /* 080E94D4 */ BL get_random_range

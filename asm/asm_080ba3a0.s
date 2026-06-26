@@ -51,7 +51,7 @@ glabel func_080BA3A0
 /* 080BA3F6 */ CMP R2, R0
 /* 080BA3F8 */ BGT _080BA414
 /* 080BA3FA */ LDR R0, _080BA410
-/* 080BA3FC */ BL func_0800C7FC
+/* 080BA3FC */ BL scene_play_sound_to_tempo
 /* 080BA400 */ B _080BA44A
 
 .balign 4, 0
@@ -95,7 +95,7 @@ _080BA414:
 /* 080BA440 */ CMP R2, R0
 /* 080BA442 */ BGT _080BA44A
 /* 080BA444 */ LDR R0, _080BA46C
-/* 080BA446 */ BL func_0800C7FC
+/* 080BA446 */ BL scene_play_sound_to_tempo
 _080BA44A:
 /* 080BA44A */ LDR R0, =gSpriteHandler
 /* 080BA44C */ LDR R0, [R0]

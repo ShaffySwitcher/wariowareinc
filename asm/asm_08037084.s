@@ -36,7 +36,7 @@ glabel func_08037084
 /* 080370C0 */ MOVS R2, #0
 /* 080370C2 */ BL sprite_id_set_visible
 /* 080370C6 */ LDR R0, _080370E4
-/* 080370C8 */ BL func_0800C7FC
+/* 080370C8 */ BL scene_play_sound_to_tempo
 _080370CC:
 /* 080370CC */ LDR R0, _080370DC
 /* 080370CE */ LDR R0, [R0]
