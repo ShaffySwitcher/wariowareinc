@@ -114,7 +114,7 @@ _080BE9E0:
 /* 080BE9E6 */ LDRSH R1, [R0, R2]
 /* 080BE9E8 */ MOVS R0, #3
 /* 080BE9EA */ MOVS R2, #0
-/* 080BE9EC */ BL func_0800BF34
+/* 080BE9EC */ BL scene_set_bg_layer_pos
 /* 080BE9F0 */ LDR R5, _080BEA48
 /* 080BE9F2 */ LDR R0, [R5]
 /* 080BE9F4 */ LDR R2, [R6]

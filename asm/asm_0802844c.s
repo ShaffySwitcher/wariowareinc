@@ -24,7 +24,7 @@ glabel func_0802844C
 /* 0802846C */ ADDS R0, R7, #0
 /* 0802846E */ BL func_08002124
 /* 08028472 */ MOVS R0, #0
-/* 08028474 */ BL func_0800BEF4
+/* 08028474 */ BL scene_set_video_mode
 /* 08028478 */ MOVS R4, #2
 /* 0802847A */ STR R4, [SP]
 /* 0802847C */ MOVS R0, #0X1D
@@ -46,7 +46,7 @@ glabel func_0802844C
 /* 0802849E */ MOVS R3, #0
 /* 080284A0 */ BL scene_set_bg_layer_display
 /* 080284A4 */ MOVS R0, #3
-/* 080284A6 */ BL func_0800BF20
+/* 080284A6 */ BL scene_hide_bg_layer
 /* 080284AA */ MOV R2, R8
 /* 080284AC */ LDR R4, [R2]
 /* 080284AE */ MOVS R1, #0XBC

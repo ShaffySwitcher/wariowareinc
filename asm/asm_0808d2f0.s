@@ -65,7 +65,7 @@ _0808D348:
 /* 0808D35C */ LSLS R2, R2, #8
 /* 0808D35E */ ASRS R2, R2, #0X10
 /* 0808D360 */ MOVS R0, #1
-/* 0808D362 */ BL func_0800BF34
+/* 0808D362 */ BL scene_set_bg_layer_pos
 /* 0808D366 */ ADDS R0, R5, #0
 /* 0808D368 */ POP {R4, R5}
 /* 0808D36A */ POP {R1}

@@ -16,7 +16,7 @@ thumb_func_start func_08013188 \n\
 /* 080131A0 */ BL scene_set_bg_layer_display \n\
 /* 080131A4 */ MOVS R0, #3 \n\
 /* 080131A6 */ MOVS R1, #2 \n\
-/* 080131A8 */ BL func_0800BF60 \n\
+/* 080131A8 */ BL scene_set_bg_layer_priority \n\
 /* 080131AC */ LDR R4, _08013240 \n\
 /* 080131AE */ LDR R0, _08013244 \n\
 /* 080131B0 */ STRH R0, [R4, #0X3C] \n\

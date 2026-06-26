@@ -24,22 +24,22 @@ glabel func_080EAC24
 /* 080EAC46 */ LSLS R2, R2, #6
 /* 080EAC48 */ BL start_load_gfx_table_task
 /* 080EAC4C */ MOVS R0, #0
-/* 080EAC4E */ BL func_0800BEF4
+/* 080EAC4E */ BL scene_set_video_mode
 /* 080EAC52 */ MOVS R0, #1
-/* 080EAC54 */ BL func_0800BF0C
+/* 080EAC54 */ BL scene_show_bg_layer
 /* 080EAC58 */ MOVS R0, #2
-/* 080EAC5A */ BL func_0800BF20
+/* 080EAC5A */ BL scene_hide_bg_layer
 /* 080EAC5E */ MOVS R0, #3
-/* 080EAC60 */ BL func_0800BF20
+/* 080EAC60 */ BL scene_hide_bg_layer
 /* 080EAC64 */ MOVS R0, #1
 /* 080EAC66 */ MOVS R1, #0
 /* 080EAC68 */ MOVS R2, #0
-/* 080EAC6A */ BL func_0800BF34
+/* 080EAC6A */ BL scene_set_bg_layer_pos
 /* 080EAC6E */ MOVS R0, #1
 /* 080EAC70 */ MOVS R1, #2
 /* 080EAC72 */ MOVS R2, #0X1D
 /* 080EAC74 */ MOVS R3, #1
-/* 080EAC76 */ BL func_0800BF44
+/* 080EAC76 */ BL scene_set_bg_layer_controls
 /* 080EAC7A */ MOVS R0, #0
 /* 080EAC7C */ BL func_0800A0C4
 /* 080EAC80 */ LDR R6, _080EAD50

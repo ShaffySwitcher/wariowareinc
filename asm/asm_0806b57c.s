@@ -144,7 +144,7 @@ _0806B696:
 /* 0806B69C */ RSBS R2, R4, #0
 /* 0806B69E */ MOVS R0, #2
 /* 0806B6A0 */ MOVS R1, #0
-/* 0806B6A2 */ BL func_0800BF34
+/* 0806B6A2 */ BL scene_set_bg_layer_pos
 /* 0806B6A6 */ LDR R0, _0806B6D8
 /* 0806B6A8 */ LDR R0, [R0]
 /* 0806B6AA */ LDR R1, [R5]

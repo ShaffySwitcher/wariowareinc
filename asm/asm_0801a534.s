@@ -25,14 +25,14 @@ glabel func_0801A534
 /* 0801A558 */ SUBS R0, #4
 /* 0801A55A */ STRH R1, [R0]
 /* 0801A55C */ MOVS R0, #0
-/* 0801A55E */ BL func_0800BF0C
+/* 0801A55E */ BL scene_show_bg_layer
 /* 0801A562 */ LDR R0, [R5]
 /* 0801A564 */ ADDS R0, #0XF8
 /* 0801A566 */ MOVS R1, #0
 /* 0801A568 */ LDRSH R2, [R0, R1]
 /* 0801A56A */ MOVS R0, #0
 /* 0801A56C */ MOVS R1, #0
-/* 0801A56E */ BL func_0800BF34
+/* 0801A56E */ BL scene_set_bg_layer_pos
 /* 0801A572 */ LDR R0, _0801A5A8
 /* 0801A574 */ STRH R0, [R4, #4]
 /* 0801A576 */ LDR R0, _0801A5AC

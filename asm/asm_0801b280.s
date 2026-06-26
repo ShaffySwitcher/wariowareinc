@@ -15,16 +15,16 @@ glabel func_0801B280
 /* 0801B290 */ LSLS R2, R2, #6
 /* 0801B292 */ BL start_load_gfx_table_task
 /* 0801B296 */ MOVS R0, #1
-/* 0801B298 */ BL func_0800BF0C
+/* 0801B298 */ BL scene_show_bg_layer
 /* 0801B29C */ MOVS R0, #1
 /* 0801B29E */ MOVS R1, #0
 /* 0801B2A0 */ MOVS R2, #0
-/* 0801B2A2 */ BL func_0800BF34
+/* 0801B2A2 */ BL scene_set_bg_layer_pos
 /* 0801B2A6 */ MOVS R0, #1
 /* 0801B2A8 */ MOVS R1, #0
 /* 0801B2AA */ MOVS R2, #0X1D
 /* 0801B2AC */ MOVS R3, #1
-/* 0801B2AE */ BL func_0800BF44
+/* 0801B2AE */ BL scene_set_bg_layer_controls
 /* 0801B2B2 */ BL get_current_mem_id
 /* 0801B2B6 */ LSLS R0, R0, #0X10
 /* 0801B2B8 */ LSRS R0, R0, #0X10

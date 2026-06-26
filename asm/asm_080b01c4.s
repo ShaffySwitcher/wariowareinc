@@ -68,9 +68,9 @@ _080B0204:
 /* 080B0226 */ MOVS R2, #1
 /* 080B0228 */ BL sprite_set_visible
 /* 080B022C */ MOVS R0, #2
-/* 080B022E */ BL func_0800BF20
+/* 080B022E */ BL scene_hide_bg_layer
 /* 080B0232 */ MOVS R0, #3
-/* 080B0234 */ BL func_0800BF0C
+/* 080B0234 */ BL scene_show_bg_layer
 /* 080B0238 */ LDR R0, [R5]
 /* 080B023A */ MOVS R1, #0X60
 /* 080B023C */ MOVS R2, #0X50
@@ -230,9 +230,9 @@ _080B0342:
 /* 080B035C */ MOVS R2, #0
 /* 080B035E */ BL sprite_set_visible
 /* 080B0362 */ MOVS R0, #2
-/* 080B0364 */ BL func_0800BF0C
+/* 080B0364 */ BL scene_show_bg_layer
 /* 080B0368 */ MOVS R0, #3
-/* 080B036A */ BL func_0800BF20
+/* 080B036A */ BL scene_hide_bg_layer
 /* 080B036E */ LDR R0, _080B0398
 /* 080B0370 */ BL play_sound
 /* 080B0374 */ LDR R2, [R5]

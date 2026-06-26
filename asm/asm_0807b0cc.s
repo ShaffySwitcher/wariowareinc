@@ -148,7 +148,7 @@ _0807B170:
 /* 0807B1E2 */ MOVS R2, #0
 /* 0807B1E4 */ BL sprite_set_visible
 /* 0807B1E8 */ MOVS R0, #2
-/* 0807B1EA */ BL func_0800BF20
+/* 0807B1EA */ BL scene_hide_bg_layer
 /* 0807B1EE */ B _0807B1F8
 
 .balign 4, 0

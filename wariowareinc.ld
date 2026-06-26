@@ -273,14 +273,6 @@ SECTIONS {
         build/src/scenes/gameplay.c.o(.text);
         build/src/beatscript.c.o(.text);
         build/src/bitmap_font.c.o(.text);
-        build/asm/asm_0800c610.s.o(.text*);
-        build/asm/asm_0800c61c.s.o(.text*);
-        build/asm/asm_0800c69c.s.o(.text*);
-        build/asm/asm_0800c6e4.s.o(.text*);
-        build/asm/asm_0800c704.s.o(.text*);
-        build/asm/asm_0800c720.s.o(.text*);
-        build/asm/asm_0800c73c.s.o(.text*);
-        build/asm/asm_0800c764.s.o(.text*);
         build/src/scene.c.o(.text);
         build/asm/asm_0800c7cc.s.o(.text*);
         build/asm/asm_0800c7fc.s.o(.text*);

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BFC8 \n\
+thumb_func_start scene_show_obj_layer \n\
 /* 0800BFC8 */ LDR R0, =gGraphicsBuffer \n\
 /* 0800BFCA */ LDRH R1, [R0] \n\
 /* 0800BFCC */ MOVS R3, #0X80 \n\

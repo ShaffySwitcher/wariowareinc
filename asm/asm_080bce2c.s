@@ -38,7 +38,7 @@ _080BCE4A:
 /* 080BCE68 */ ASRS R1, R1, #0X10
 /* 080BCE6A */ MOVS R0, #1
 /* 080BCE6C */ MOVS R2, #0
-/* 080BCE6E */ BL func_0800BF34
+/* 080BCE6E */ BL scene_set_bg_layer_pos
 /* 080BCE72 */ LDR R0, [R4]
 /* 080BCE74 */ ADDS R0, #0X8C
 /* 080BCE76 */ LDR R1, [R0]
@@ -47,7 +47,7 @@ _080BCE4A:
 /* 080BCE7C */ MOVS R2, #0X50
 /* 080BCE7E */ RSBS R2, R2, #0
 /* 080BCE80 */ MOVS R0, #2
-/* 080BCE82 */ BL func_0800BF34
+/* 080BCE82 */ BL scene_set_bg_layer_pos
 /* 080BCE86 */ MOVS R7, #0
 /* 080BCE88 */ MOVS R2, #0XA0
 /* 080BCE8A */ LSLS R2, R2, #8

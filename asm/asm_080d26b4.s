@@ -47,7 +47,7 @@ glabel func_080D26B4
 /* 080D2702 */ LSLS R2, R2, #0X10
 /* 080D2704 */ ASRS R2, R2, #0X10
 /* 080D2706 */ MOVS R0, #3
-/* 080D2708 */ BL func_0800BF34
+/* 080D2708 */ BL scene_set_bg_layer_pos
 /* 080D270C */ POP {R0}
 /* 080D270E */ BX R0
 

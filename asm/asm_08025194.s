@@ -38,15 +38,15 @@ glabel func_08025194
 /* 080251D4 */ MOVS R0, #0
 /* 080251D6 */ ADDS R1, R5, #0
 /* 080251D8 */ ADDS R2, R4, #0
-/* 080251DA */ BL func_0800BF34
+/* 080251DA */ BL scene_set_bg_layer_pos
 /* 080251DE */ MOVS R0, #1
 /* 080251E0 */ ADDS R1, R5, #0
 /* 080251E2 */ ADDS R2, R4, #0
-/* 080251E4 */ BL func_0800BF34
+/* 080251E4 */ BL scene_set_bg_layer_pos
 /* 080251E8 */ MOVS R0, #2
 /* 080251EA */ ADDS R1, R5, #0
 /* 080251EC */ ADDS R2, R4, #0
-/* 080251EE */ BL func_0800BF34
+/* 080251EE */ BL scene_set_bg_layer_pos
 /* 080251F2 */ BL get_current_language
 /* 080251F6 */ LDR R1, _08025258
 /* 080251F8 */ LSLS R0, R0, #2

@@ -205,7 +205,7 @@ _080A6766:
 /* 080A6790 */ LDRSH R2, [R0, R3]
 /* 080A6792 */ MOVS R0, #1
 /* 080A6794 */ MOVS R1, #0
-/* 080A6796 */ BL func_0800BF34
+/* 080A6796 */ BL scene_set_bg_layer_pos
 /* 080A679A */ LDR R0, [R4]
 /* 080A679C */ LDRH R2, [R0, #0X38]
 /* 080A679E */ SUBS R2, #0XA0
@@ -213,7 +213,7 @@ _080A6766:
 /* 080A67A2 */ ASRS R2, R2, #0X10
 /* 080A67A4 */ MOVS R0, #2
 /* 080A67A6 */ MOVS R1, #0
-/* 080A67A8 */ BL func_0800BF34
+/* 080A67A8 */ BL scene_set_bg_layer_pos
 _080A67AC:
 /* 080A67AC */ ADDS R0, R6, #0
 _080A67AE:

@@ -27,9 +27,9 @@ _080EE520:
 /* 080EE52C */ MOVS R1, #0X1E
 /* 080EE52E */ BL func_0800207C
 /* 080EE532 */ MOVS R0, #1
-/* 080EE534 */ BL func_0800BF0C
+/* 080EE534 */ BL scene_show_bg_layer
 /* 080EE538 */ MOVS R0, #2
-/* 080EE53A */ BL func_0800BF20
+/* 080EE53A */ BL scene_hide_bg_layer
 /* 080EE53E */ LDR R1, [R4]
 /* 080EE540 */ LDRB R0, [R1, #0X1E]
 /* 080EE542 */ ADDS R0, #1

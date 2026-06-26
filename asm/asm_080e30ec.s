@@ -183,7 +183,7 @@ _080E3218:
 /* 080E323E */ ASRS R2, R2, #0X10
 /* 080E3240 */ MOVS R0, #2
 /* 080E3242 */ MOVS R1, #0
-/* 080E3244 */ BL func_0800BF34
+/* 080E3244 */ BL scene_set_bg_layer_pos
 /* 080E3248 */ LDR R0, [R5]
 /* 080E324A */ ADDS R0, R4
 /* 080E324C */ LDR R2, [R0]
@@ -191,7 +191,7 @@ _080E3218:
 /* 080E3250 */ ASRS R2, R2, #0X10
 /* 080E3252 */ MOVS R0, #1
 /* 080E3254 */ MOVS R1, #0XF0
-/* 080E3256 */ BL func_0800BF34
+/* 080E3256 */ BL scene_set_bg_layer_pos
 /* 080E325A */ LDR R1, [R5]
 /* 080E325C */ MOVS R2, #0XE6
 /* 080E325E */ LSLS R2, R2, #2
@@ -207,7 +207,7 @@ _080E3218:
 /* 080E3272 */ ASRS R2, R2, #0X10
 /* 080E3274 */ MOVS R0, #3
 /* 080E3276 */ MOVS R1, #0
-/* 080E3278 */ BL func_0800BF34
+/* 080E3278 */ BL scene_set_bg_layer_pos
 /* 080E327C */ LDR R1, [R5]
 /* 080E327E */ ADDS R4, #0X1A
 /* 080E3280 */ ADDS R0, R1, R4

@@ -78,9 +78,9 @@ _08059188:
 /* 080591B6 */ MOVS R2, #1
 /* 080591B8 */ BL sprite_set_visible
 /* 080591BC */ MOVS R0, #2
-/* 080591BE */ BL func_0800BF0C
+/* 080591BE */ BL scene_show_bg_layer
 /* 080591C2 */ MOVS R0, #3
-/* 080591C4 */ BL func_0800BF0C
+/* 080591C4 */ BL scene_show_bg_layer
 /* 080591C8 */ POP {R4, R5}
 /* 080591CA */ POP {R0}
 /* 080591CC */ BX R0

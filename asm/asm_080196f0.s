@@ -33,7 +33,7 @@ glabel func_080196F0
 /* 08019726 */ MOVS R5, #2
 /* 08019728 */ LDRSH R3, [R6, R5]
 /* 0801972A */ BL sprite_set_x_y
-/* 0801972E */ BL func_0800BFC8
+/* 0801972E */ BL scene_show_obj_layer
 /* 08019732 */ LDR R1, [R4]
 /* 08019734 */ ADDS R1, #0XD4
 /* 08019736 */ LDRB R0, [R1]

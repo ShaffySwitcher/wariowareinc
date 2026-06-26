@@ -28,7 +28,7 @@ _080C3688:
 /* 080C368E */ ASRS R2, R2, #0X10
 /* 080C3690 */ MOVS R0, #2
 /* 080C3692 */ MOVS R1, #0
-/* 080C3694 */ BL func_0800BF34
+/* 080C3694 */ BL scene_set_bg_layer_pos
 /* 080C3698 */ POP {R0}
 /* 080C369A */ BX R0
 

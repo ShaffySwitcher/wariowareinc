@@ -54,10 +54,10 @@ _08032010:
 /* 08032012 */ CMP R0, #6
 /* 08032014 */ BNE _08032028
 /* 08032016 */ MOVS R0, #1
-/* 08032018 */ BL func_0800BF0C
+/* 08032018 */ BL scene_show_bg_layer
 /* 0803201C */ MOVS R0, #2
-/* 0803201E */ BL func_0800BF0C
-/* 08032022 */ BL func_0800BFC8
+/* 0803201E */ BL scene_show_bg_layer
+/* 08032022 */ BL scene_show_obj_layer
 /* 08032026 */ B _0803202C
 _08032028:
 /* 08032028 */ ADDS R0, #1

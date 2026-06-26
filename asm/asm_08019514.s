@@ -9,7 +9,7 @@ glabel func_08019514
 /* 08019516 */ LDR R1, _0801954C
 /* 08019518 */ BL func_08003DF4
 /* 0801951C */ MOVS R0, #0
-/* 0801951E */ BL func_0800BF0C
+/* 0801951E */ BL scene_show_bg_layer
 /* 08019522 */ LDR R0, _08019550
 /* 08019524 */ LDR R1, [R0]
 /* 08019526 */ ADDS R0, R1, #0

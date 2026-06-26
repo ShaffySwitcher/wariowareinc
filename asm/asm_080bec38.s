@@ -37,7 +37,7 @@ _080BEC5C:
 /* 080BEC72 */ ASRS R1, R1, #0X10
 /* 080BEC74 */ MOVS R0, #3
 /* 080BEC76 */ MOVS R2, #0
-/* 080BEC78 */ BL func_0800BF34
+/* 080BEC78 */ BL scene_set_bg_layer_pos
 /* 080BEC7C */ LDR R5, _080BECDC
 /* 080BEC7E */ LDR R0, [R5]
 /* 080BEC80 */ LDR R2, [R6]

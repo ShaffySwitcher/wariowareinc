@@ -45,13 +45,13 @@ _08017F96:
 /* 08017FCC */ LSLS R0, R0, #5
 /* 08017FCE */ STRH R0, [R4]
 /* 08017FD0 */ MOVS R0, #0
-/* 08017FD2 */ BL func_0800BF0C
+/* 08017FD2 */ BL scene_show_bg_layer
 /* 08017FD6 */ LDR R0, _080180BC
 /* 08017FD8 */ STRH R0, [R4, #4]
 /* 08017FDA */ MOVS R0, #0
 /* 08017FDC */ MOVS R1, #0
 /* 08017FDE */ MOVS R2, #0
-/* 08017FE0 */ BL func_0800BF34
+/* 08017FE0 */ BL scene_set_bg_layer_pos
 /* 08017FE4 */ LDR R1, _080180C0
 /* 08017FE6 */ ADDS R4, R1
 /* 08017FE8 */ LDRB R0, [R4]

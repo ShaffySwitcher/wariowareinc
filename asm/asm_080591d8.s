@@ -99,9 +99,9 @@ _0805923A:
 /* 08059294 */ MOVS R2, #0
 /* 08059296 */ BL sprite_set_visible
 /* 0805929A */ MOVS R0, #2
-/* 0805929C */ BL func_0800BF20
+/* 0805929C */ BL scene_hide_bg_layer
 /* 080592A0 */ MOVS R0, #3
-/* 080592A2 */ BL func_0800BF20
+/* 080592A2 */ BL scene_hide_bg_layer
 /* 080592A6 */ ADD SP, #0XC
 /* 080592A8 */ POP {R4, R5}
 /* 080592AA */ POP {R0}

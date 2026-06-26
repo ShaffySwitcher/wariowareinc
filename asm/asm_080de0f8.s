@@ -25,7 +25,7 @@ _080DE112:
 /* 080DE118 */ ASRS R1, R1, #0X10
 /* 080DE11A */ MOVS R0, #3
 /* 080DE11C */ MOVS R2, #0
-/* 080DE11E */ BL func_0800BF34
+/* 080DE11E */ BL scene_set_bg_layer_pos
 /* 080DE122 */ POP {R0}
 /* 080DE124 */ BX R0
 

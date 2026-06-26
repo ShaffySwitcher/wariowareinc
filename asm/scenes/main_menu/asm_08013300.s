@@ -13,7 +13,7 @@ thumb_func_start func_08013300 \n\
 /* 08013312 */ MOVS R5, #0 \n\
 /* 08013314 */ STRH R0, [R4] \n\
 /* 08013316 */ MOVS R0, #2 \n\
-/* 08013318 */ BL func_0800BF20 \n\
+/* 08013318 */ BL scene_hide_bg_layer \n\
 /* 0801331C */ BL get_current_mem_id \n\
 /* 08013320 */ LSLS R0, R0, #0X10 \n\
 /* 08013322 */ LSRS R0, R0, #0X10 \n\

@@ -19,7 +19,7 @@ glabel func_080592DC
 /* 080592F2 */ MOVS R0, #3
 /* 080592F4 */ MOVS R1, #0
 /* 080592F6 */ MOVS R2, #0X78
-/* 080592F8 */ BL func_0800BF34
+/* 080592F8 */ BL scene_set_bg_layer_pos
 /* 080592FC */ B _0805931A
 
 .balign 4, 0
@@ -29,13 +29,13 @@ _08059304:
 /* 08059304 */ MOVS R0, #3
 /* 08059306 */ MOVS R1, #0
 /* 08059308 */ MOVS R2, #0
-/* 0805930A */ BL func_0800BF34
+/* 0805930A */ BL scene_set_bg_layer_pos
 /* 0805930E */ B _0805931A
 _08059310:
 /* 08059310 */ MOVS R0, #3
 /* 08059312 */ MOVS R1, #0
 /* 08059314 */ MOVS R2, #0
-/* 08059316 */ BL func_0800BF34
+/* 08059316 */ BL scene_set_bg_layer_pos
 _0805931A:
 /* 0805931A */ POP {R0}
 /* 0805931C */ BX R0

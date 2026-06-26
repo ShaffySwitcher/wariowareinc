@@ -160,7 +160,7 @@ _08079EE2:
 /* 08079F4A */ LDRB R2, [R0, #3]
 /* 08079F4C */ MOVS R0, #2
 /* 08079F4E */ MOVS R1, #0
-/* 08079F50 */ BL func_0800BF34
+/* 08079F50 */ BL scene_set_bg_layer_pos
 _08079F54:
 /* 08079F54 */ LDR R0, _08079F70
 /* 08079F56 */ LDR R3, [R0]
@@ -194,12 +194,12 @@ _08079F7C:
 /* 08079F80 */ LDRB R2, [R0, #3]
 /* 08079F82 */ MOVS R0, #2
 /* 08079F84 */ MOVS R1, #0
-/* 08079F86 */ BL func_0800BF34
+/* 08079F86 */ BL scene_set_bg_layer_pos
 /* 08079F8A */ LDR R0, [R4]
 /* 08079F8C */ LDRB R2, [R0, #3]
 /* 08079F8E */ MOVS R0, #3
 /* 08079F90 */ MOVS R1, #0
-/* 08079F92 */ BL func_0800BF34
+/* 08079F92 */ BL scene_set_bg_layer_pos
 /* 08079F96 */ ADD SP, #4
 /* 08079F98 */ POP {R3}
 /* 08079F9A */ MOV R8, R3

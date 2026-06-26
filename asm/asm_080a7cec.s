@@ -8,7 +8,7 @@ glabel func_080A7CEC
 /* 080A7CEC */ PUSH {R4, R5, R6, R7, LR}
 /* 080A7CEE */ SUB SP, #0XC
 /* 080A7CF0 */ MOVS R0, #2
-/* 080A7CF2 */ BL func_0800BF0C
+/* 080A7CF2 */ BL scene_show_bg_layer
 /* 080A7CF6 */ MOVS R6, #0
 /* 080A7CF8 */ STR R6, [SP]
 /* 080A7CFA */ MOVS R0, #0X1E

@@ -276,7 +276,7 @@ _08098AC2:
 /* 08098ADA */ LSLS R2, R2, #8
 /* 08098ADC */ ASRS R2, R2, #0X10
 /* 08098ADE */ MOVS R0, #2
-/* 08098AE0 */ BL func_0800BF34
+/* 08098AE0 */ BL scene_set_bg_layer_pos
 /* 08098AE4 */ LDR R1, [R5]
 /* 08098AE6 */ ADDS R4, R1, R4
 /* 08098AE8 */ LDR R2, [R7]

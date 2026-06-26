@@ -14,22 +14,22 @@ glabel func_080D99E0
 /* 080D99EE */ LSLS R2, R2, #6
 /* 080D99F0 */ BL start_load_gfx_table_task
 /* 080D99F4 */ MOVS R0, #0
-/* 080D99F6 */ BL func_0800BEF4
+/* 080D99F6 */ BL scene_set_video_mode
 /* 080D99FA */ MOVS R0, #1
-/* 080D99FC */ BL func_0800BF0C
+/* 080D99FC */ BL scene_show_bg_layer
 /* 080D9A00 */ MOVS R0, #2
-/* 080D9A02 */ BL func_0800BF20
+/* 080D9A02 */ BL scene_hide_bg_layer
 /* 080D9A06 */ MOVS R0, #3
-/* 080D9A08 */ BL func_0800BF20
+/* 080D9A08 */ BL scene_hide_bg_layer
 /* 080D9A0C */ MOVS R0, #1
 /* 080D9A0E */ MOVS R1, #0
 /* 080D9A10 */ MOVS R2, #0
-/* 080D9A12 */ BL func_0800BF34
+/* 080D9A12 */ BL scene_set_bg_layer_pos
 /* 080D9A16 */ MOVS R0, #1
 /* 080D9A18 */ MOVS R1, #2
 /* 080D9A1A */ MOVS R2, #0X1D
 /* 080D9A1C */ MOVS R3, #1
-/* 080D9A1E */ BL func_0800BF44
+/* 080D9A1E */ BL scene_set_bg_layer_controls
 /* 080D9A22 */ MOVS R0, #1
 /* 080D9A24 */ BL func_0800A0C4
 /* 080D9A28 */ BL func_080DA1DC

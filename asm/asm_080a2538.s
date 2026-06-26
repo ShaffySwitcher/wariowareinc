@@ -17,22 +17,22 @@ glabel func_080A2538
 /* 080A254C */ LSLS R2, R2, #6
 /* 080A254E */ BL start_load_gfx_table_task
 /* 080A2552 */ MOVS R0, #0
-/* 080A2554 */ BL func_0800BEF4
+/* 080A2554 */ BL scene_set_video_mode
 /* 080A2558 */ MOVS R0, #1
-/* 080A255A */ BL func_0800BF0C
+/* 080A255A */ BL scene_show_bg_layer
 /* 080A255E */ MOVS R0, #2
-/* 080A2560 */ BL func_0800BF20
+/* 080A2560 */ BL scene_hide_bg_layer
 /* 080A2564 */ MOVS R0, #3
-/* 080A2566 */ BL func_0800BF20
+/* 080A2566 */ BL scene_hide_bg_layer
 /* 080A256A */ MOVS R0, #1
 /* 080A256C */ MOVS R1, #0
 /* 080A256E */ MOVS R2, #0
-/* 080A2570 */ BL func_0800BF34
+/* 080A2570 */ BL scene_set_bg_layer_pos
 /* 080A2574 */ MOVS R0, #1
 /* 080A2576 */ MOVS R1, #2
 /* 080A2578 */ MOVS R2, #0X1D
 /* 080A257A */ MOVS R3, #1
-/* 080A257C */ BL func_0800BF44
+/* 080A257C */ BL scene_set_bg_layer_controls
 /* 080A2580 */ MOVS R0, #0
 /* 080A2582 */ BL func_0800A0C4
 /* 080A2586 */ LDR R7, _080A2728

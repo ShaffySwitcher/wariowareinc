@@ -9,7 +9,7 @@ glabel func_08019A8C
 /* 08019A8E */ LDR R1, _08019AA0
 /* 08019A90 */ BL func_08003DF4
 /* 08019A94 */ MOVS R0, #0
-/* 08019A96 */ BL func_0800BF0C
+/* 08019A96 */ BL scene_show_bg_layer
 /* 08019A9A */ POP {R0}
 /* 08019A9C */ BX R0
 

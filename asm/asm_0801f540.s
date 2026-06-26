@@ -9,9 +9,9 @@ glabel func_0801F540
 /* 0801F542 */ MOV R6, R8
 /* 0801F544 */ PUSH {R6}
 /* 0801F546 */ SUB SP, #0XC
-/* 0801F548 */ BL func_0800BFC8
+/* 0801F548 */ BL scene_show_obj_layer
 /* 0801F54C */ MOVS R0, #1
-/* 0801F54E */ BL func_0800BEF4
+/* 0801F54E */ BL scene_set_video_mode
 /* 0801F552 */ MOVS R4, #0
 /* 0801F554 */ STR R4, [SP]
 /* 0801F556 */ MOVS R0, #0X1C

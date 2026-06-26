@@ -37,7 +37,7 @@ _080D2C22:
 /* 080D2C34 */ LSLS R2, R2, #8
 /* 080D2C36 */ ASRS R2, R2, #0X10
 /* 080D2C38 */ MOVS R0, #1
-/* 080D2C3A */ BL func_0800BF34
+/* 080D2C3A */ BL scene_set_bg_layer_pos
 /* 080D2C3E */ ADDS R0, R5, #0
 /* 080D2C40 */ POP {R4, R5, R6}
 /* 080D2C42 */ POP {R1}

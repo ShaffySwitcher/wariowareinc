@@ -12,7 +12,7 @@ glabel func_08022EF0
 /* 08022EF8 */ LDR R0, _08022FDC
 /* 08022EFA */ BL load_gfx_table
 /* 08022EFE */ MOVS R0, #0
-/* 08022F00 */ BL func_0800BF20
+/* 08022F00 */ BL scene_hide_bg_layer
 /* 08022F04 */ MOVS R0, #0
 /* 08022F06 */ STR R0, [SP]
 /* 08022F08 */ MOVS R0, #0X1D

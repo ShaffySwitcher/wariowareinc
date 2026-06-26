@@ -12,9 +12,9 @@ glabel func_080A7C08
 /* 080A7C12 */ BL task_pool_force_cancel_id
 /* 080A7C16 */ BL func_080A8418
 /* 080A7C1A */ MOVS R0, #2
-/* 080A7C1C */ BL func_0800BF20
+/* 080A7C1C */ BL scene_hide_bg_layer
 /* 080A7C20 */ MOVS R0, #3
-/* 080A7C22 */ BL func_0800BF20
+/* 080A7C22 */ BL scene_hide_bg_layer
 /* 080A7C26 */ BL func_0800418C
 /* 080A7C2A */ BL get_current_mem_id
 /* 080A7C2E */ LSLS R0, R0, #0X10

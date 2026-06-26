@@ -1296,11 +1296,11 @@ _0800B060: \n\
 /* 0800B068 */ CMP R6, #0 \n\
 /* 0800B06A */ BEQ _0800B074 \n\
 /* 0800B06C */ ADDS R0, R5, #0 \n\
-/* 0800B06E */ BL func_0800BF0C \n\
+/* 0800B06E */ BL scene_show_bg_layer \n\
 /* 0800B072 */ B _0800B07A \n\
 _0800B074: \n\
 /* 0800B074 */ ADDS R0, R5, #0 \n\
-/* 0800B076 */ BL func_0800BF20 \n\
+/* 0800B076 */ BL scene_hide_bg_layer \n\
 _0800B07A: \n\
 /* 0800B07A */ LDR R2, _0800B094 \n\
 /* 0800B07C */ LSLS R0, R5, #2 \n\

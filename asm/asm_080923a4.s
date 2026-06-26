@@ -571,12 +571,12 @@ _08092726:
 /* 08092772 */ LDRSH R1, [R1, R2]
 /* 08092774 */ BL sprite_delete
 /* 08092778 */ MOVS R0, #3
-/* 0809277A */ BL func_0800BF20
+/* 0809277A */ BL scene_hide_bg_layer
 /* 0809277E */ MOVS R2, #0XA0
 /* 08092780 */ RSBS R2, R2, #0
 /* 08092782 */ MOVS R0, #3
 /* 08092784 */ MOVS R1, #0
-/* 08092786 */ BL func_0800BF34
+/* 08092786 */ BL scene_set_bg_layer_pos
 /* 0809278A */ LDR R0, [R5]
 /* 0809278C */ LDR R3, _080927D0
 /* 0809278E */ ADDS R0, R3

@@ -225,13 +225,13 @@ _0805EF54:
 /* 0805EF6E */ ASRS R1, R1, #0X10
 /* 0805EF70 */ MOVS R0, #2
 /* 0805EF72 */ MOVS R2, #8
-/* 0805EF74 */ BL func_0800BF34
+/* 0805EF74 */ BL scene_set_bg_layer_pos
 /* 0805EF78 */ LSLS R4, R4, #7
 /* 0805EF7A */ ASRS R4, R4, #0X10
 /* 0805EF7C */ MOVS R0, #3
 /* 0805EF7E */ ADDS R1, R4, #0
 /* 0805EF80 */ MOVS R2, #0
-/* 0805EF82 */ BL func_0800BF34
+/* 0805EF82 */ BL scene_set_bg_layer_pos
 _0805EF86:
 /* 0805EF86 */ ADD SP, #0XC
 /* 0805EF88 */ POP {R3, R4, R5}

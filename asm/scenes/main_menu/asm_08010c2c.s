@@ -586,8 +586,8 @@ _08011042: \n\
 /* 08011070 */ MOVS R0, #0X3C \n\
 /* 08011072 */ STRH R0, [R1] \n\
 /* 08011074 */ MOVS R0, #0 \n\
-/* 08011076 */ BL func_0800BEF4 \n\
-/* 0801107A */ BL func_0800BFC8 \n\
+/* 08011076 */ BL scene_set_video_mode \n\
+/* 0801107A */ BL scene_show_obj_layer \n\
 /* 0801107E */ BL main_menu_scene_init_gfx1 \n\
 /* 08011082 */ LDR R0, _08011214 \n\
 /* 08011084 */ LDR R0, [R0] \n\

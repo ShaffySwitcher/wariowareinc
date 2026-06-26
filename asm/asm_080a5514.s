@@ -15,7 +15,7 @@ glabel func_080A5514
 /* 080A5524 */ MOVS R0, #2
 /* 080A5526 */ BL start_load_gfx_table_task
 /* 080A552A */ MOVS R0, #0
-/* 080A552C */ BL func_0800BEF4
+/* 080A552C */ BL scene_set_video_mode
 /* 080A5530 */ MOVS R5, #2
 /* 080A5532 */ STR R5, [SP]
 /* 080A5534 */ MOVS R0, #0X1D
@@ -37,7 +37,7 @@ glabel func_080A5514
 /* 080A5556 */ MOVS R3, #0
 /* 080A5558 */ BL scene_set_bg_layer_display
 /* 080A555C */ MOVS R0, #3
-/* 080A555E */ BL func_0800BF20
+/* 080A555E */ BL scene_hide_bg_layer
 /* 080A5562 */ MOVS R0, #1
 /* 080A5564 */ BL func_0800A0C4
 /* 080A5568 */ MOVS R0, #0X18

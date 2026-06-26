@@ -18,31 +18,31 @@ glabel func_08043CE0
 /* 08043CF4 */ LSLS R2, R2, #6
 /* 08043CF6 */ BL func_08002124
 /* 08043CFA */ MOVS R0, #0
-/* 08043CFC */ BL func_0800BEF4
+/* 08043CFC */ BL scene_set_video_mode
 /* 08043D00 */ MOVS R0, #1
-/* 08043D02 */ BL func_0800BF0C
+/* 08043D02 */ BL scene_show_bg_layer
 /* 08043D06 */ MOVS R0, #2
-/* 08043D08 */ BL func_0800BF0C
+/* 08043D08 */ BL scene_show_bg_layer
 /* 08043D0C */ MOVS R0, #3
-/* 08043D0E */ BL func_0800BF20
+/* 08043D0E */ BL scene_hide_bg_layer
 /* 08043D12 */ MOVS R0, #1
 /* 08043D14 */ MOVS R1, #0
 /* 08043D16 */ MOVS R2, #0
-/* 08043D18 */ BL func_0800BF34
+/* 08043D18 */ BL scene_set_bg_layer_pos
 /* 08043D1C */ MOVS R0, #2
 /* 08043D1E */ MOVS R1, #0
 /* 08043D20 */ MOVS R2, #0
-/* 08043D22 */ BL func_0800BF34
+/* 08043D22 */ BL scene_set_bg_layer_pos
 /* 08043D26 */ MOVS R0, #1
 /* 08043D28 */ MOVS R1, #2
 /* 08043D2A */ MOVS R2, #0X1D
 /* 08043D2C */ MOVS R3, #1
-/* 08043D2E */ BL func_0800BF44
+/* 08043D2E */ BL scene_set_bg_layer_controls
 /* 08043D32 */ MOVS R0, #2
 /* 08043D34 */ MOVS R1, #0
 /* 08043D36 */ MOVS R2, #0X1E
 /* 08043D38 */ MOVS R3, #2
-/* 08043D3A */ BL func_0800BF44
+/* 08043D3A */ BL scene_set_bg_layer_controls
 /* 08043D3E */ MOVS R0, #1
 /* 08043D40 */ BL func_0800A0C4
 /* 08043D44 */ LDR R4, [R7]

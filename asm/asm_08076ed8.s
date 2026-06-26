@@ -93,7 +93,7 @@ _08076F66:
 /* 08076F72 */ MOVS R0, #1
 /* 08076F74 */ MOVS R1, #0
 /* 08076F76 */ MOVS R2, #0
-/* 08076F78 */ BL func_0800BF34
+/* 08076F78 */ BL scene_set_bg_layer_pos
 /* 08076F7C */ B _08076F90
 
 .balign 4, 0
@@ -104,7 +104,7 @@ _08076F84:
 /* 08076F86 */ LSLS R2, R2, #1
 /* 08076F88 */ MOVS R0, #1
 /* 08076F8A */ MOVS R1, #0
-/* 08076F8C */ BL func_0800BF34
+/* 08076F8C */ BL scene_set_bg_layer_pos
 _08076F90:
 /* 08076F90 */ LDR R0, =gCurrentSceneVariable
 /* 08076F92 */ LDR R1, [R0]

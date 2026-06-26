@@ -1153,14 +1153,14 @@ _0809791E:
 /* 08097962 */ MOVS R2, #1
 /* 08097964 */ BL sprite_set_visible
 /* 08097968 */ MOVS R0, #2
-/* 0809796A */ BL func_0800BF20
+/* 0809796A */ BL scene_hide_bg_layer
 /* 0809796E */ MOVS R0, #3
-/* 08097970 */ BL func_0800BF20
+/* 08097970 */ BL scene_hide_bg_layer
 /* 08097974 */ MOVS R2, #0XA0
 /* 08097976 */ RSBS R2, R2, #0
 /* 08097978 */ MOVS R0, #2
 /* 0809797A */ MOVS R1, #0
-/* 0809797C */ BL func_0800BF34
+/* 0809797C */ BL scene_set_bg_layer_pos
 /* 08097980 */ LDR R1, [R4]
 /* 08097982 */ MOVS R0, #4
 /* 08097984 */ STRB R0, [R1, #1]

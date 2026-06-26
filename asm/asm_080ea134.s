@@ -18,7 +18,7 @@ glabel func_080EA134
 /* 080EA148 */ LSRS R1, R1, #0X18
 /* 080EA14A */ MOVS R0, #2
 /* 080EA14C */ MOVS R2, #0
-/* 080EA14E */ BL func_0800BF34
+/* 080EA14E */ BL scene_set_bg_layer_pos
 /* 080EA152 */ POP {R0}
 /* 080EA154 */ BX R0
 

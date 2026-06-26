@@ -18,40 +18,40 @@ glabel func_080C7E48
 /* 080C7E5E */ LSLS R2, R2, #6
 /* 080C7E60 */ BL start_load_gfx_table_task
 /* 080C7E64 */ MOVS R0, #0
-/* 080C7E66 */ BL func_0800BEF4
+/* 080C7E66 */ BL scene_set_video_mode
 /* 080C7E6A */ MOVS R0, #1
-/* 080C7E6C */ BL func_0800BF0C
+/* 080C7E6C */ BL scene_show_bg_layer
 /* 080C7E70 */ MOVS R0, #2
-/* 080C7E72 */ BL func_0800BF0C
+/* 080C7E72 */ BL scene_show_bg_layer
 /* 080C7E76 */ MOVS R0, #3
-/* 080C7E78 */ BL func_0800BF0C
+/* 080C7E78 */ BL scene_show_bg_layer
 /* 080C7E7C */ MOVS R0, #1
 /* 080C7E7E */ MOVS R1, #0
 /* 080C7E80 */ MOVS R2, #0
-/* 080C7E82 */ BL func_0800BF34
+/* 080C7E82 */ BL scene_set_bg_layer_pos
 /* 080C7E86 */ MOVS R0, #2
 /* 080C7E88 */ MOVS R1, #0
 /* 080C7E8A */ MOVS R2, #0
-/* 080C7E8C */ BL func_0800BF34
+/* 080C7E8C */ BL scene_set_bg_layer_pos
 /* 080C7E90 */ MOVS R0, #3
 /* 080C7E92 */ MOVS R1, #0
 /* 080C7E94 */ MOVS R2, #0
-/* 080C7E96 */ BL func_0800BF34
+/* 080C7E96 */ BL scene_set_bg_layer_pos
 /* 080C7E9A */ MOVS R0, #1
 /* 080C7E9C */ MOVS R1, #2
 /* 080C7E9E */ MOVS R2, #0X1D
 /* 080C7EA0 */ MOVS R3, #1
-/* 080C7EA2 */ BL func_0800BF44
+/* 080C7EA2 */ BL scene_set_bg_layer_controls
 /* 080C7EA6 */ MOVS R0, #2
 /* 080C7EA8 */ MOVS R1, #0
 /* 080C7EAA */ MOVS R2, #0X1E
 /* 080C7EAC */ MOVS R3, #2
-/* 080C7EAE */ BL func_0800BF44
+/* 080C7EAE */ BL scene_set_bg_layer_controls
 /* 080C7EB2 */ LDR R3, _080C7FC4
 /* 080C7EB4 */ MOVS R0, #3
 /* 080C7EB6 */ MOVS R1, #0
 /* 080C7EB8 */ MOVS R2, #8
-/* 080C7EBA */ BL func_0800BF44
+/* 080C7EBA */ BL scene_set_bg_layer_controls
 /* 080C7EBE */ MOVS R0, #0
 /* 080C7EC0 */ BL func_0800A0C4
 /* 080C7EC4 */ LDR R4, _080C7FC8
@@ -64,7 +64,7 @@ glabel func_080C7E48
 /* 080C7ED2 */ MOVS R7, #0
 /* 080C7ED4 */ MOVS R0, #3
 /* 080C7ED6 */ MOVS R2, #0
-/* 080C7ED8 */ BL func_0800BF34
+/* 080C7ED8 */ BL scene_set_bg_layer_pos
 /* 080C7EDC */ LDR R0, [R4]
 /* 080C7EDE */ STRB R7, [R0, #0XC]
 /* 080C7EE0 */ LDR R0, [R4]
@@ -73,7 +73,7 @@ glabel func_080C7E48
 /* 080C7EE6 */ MOVS R0, #2
 /* 080C7EE8 */ MOVS R1, #0
 /* 080C7EEA */ MOVS R2, #0
-/* 080C7EEC */ BL func_0800BF34
+/* 080C7EEC */ BL scene_set_bg_layer_pos
 /* 080C7EF0 */ LDR R0, [R4]
 /* 080C7EF2 */ MOVS R1, #0XF0
 /* 080C7EF4 */ LSLS R1, R1, #7

@@ -38,9 +38,9 @@ _0804E4F8:
 /* 0804E518 */ MOVS R2, #0
 /* 0804E51A */ BL sprite_id_set_visible
 /* 0804E51E */ MOVS R0, #1
-/* 0804E520 */ BL func_0800BF20
+/* 0804E520 */ BL scene_hide_bg_layer
 /* 0804E524 */ MOVS R0, #3
-/* 0804E526 */ BL func_0800BF0C
+/* 0804E526 */ BL scene_show_bg_layer
 /* 0804E52A */ MOVS R0, #2
 /* 0804E52C */ STRH R0, [R5]
 /* 0804E52E */ B _0804E570
@@ -67,9 +67,9 @@ _0804E53C:
 /* 0804E54C */ CMP R0, #1
 /* 0804E54E */ BNE _0804E570
 /* 0804E550 */ MOVS R0, #1
-/* 0804E552 */ BL func_0800BF0C
+/* 0804E552 */ BL scene_show_bg_layer
 /* 0804E556 */ MOVS R0, #3
-/* 0804E558 */ BL func_0800BF20
+/* 0804E558 */ BL scene_hide_bg_layer
 /* 0804E55C */ MOVS R0, #3
 /* 0804E55E */ STRH R0, [R5]
 /* 0804E560 */ LDR R0, [R4]

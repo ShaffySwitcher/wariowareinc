@@ -24,22 +24,22 @@ glabel func_080EB034
 /* 080EB056 */ LSLS R2, R2, #6
 /* 080EB058 */ BL start_load_gfx_table_task
 /* 080EB05C */ MOVS R0, #0
-/* 080EB05E */ BL func_0800BEF4
+/* 080EB05E */ BL scene_set_video_mode
 /* 080EB062 */ MOVS R0, #1
-/* 080EB064 */ BL func_0800BF0C
+/* 080EB064 */ BL scene_show_bg_layer
 /* 080EB068 */ MOVS R0, #2
-/* 080EB06A */ BL func_0800BF20
+/* 080EB06A */ BL scene_hide_bg_layer
 /* 080EB06E */ MOVS R0, #3
-/* 080EB070 */ BL func_0800BF20
+/* 080EB070 */ BL scene_hide_bg_layer
 /* 080EB074 */ MOVS R0, #1
 /* 080EB076 */ MOVS R1, #0
 /* 080EB078 */ MOVS R2, #0
-/* 080EB07A */ BL func_0800BF34
+/* 080EB07A */ BL scene_set_bg_layer_pos
 /* 080EB07E */ MOVS R0, #1
 /* 080EB080 */ MOVS R1, #2
 /* 080EB082 */ MOVS R2, #0X1D
 /* 080EB084 */ MOVS R3, #1
-/* 080EB086 */ BL func_0800BF44
+/* 080EB086 */ BL scene_set_bg_layer_controls
 /* 080EB08A */ MOVS R0, #0
 /* 080EB08C */ BL func_0800A0C4
 /* 080EB090 */ LDR R5, _080EB1B4

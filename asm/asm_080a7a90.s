@@ -20,11 +20,11 @@ _080A7AA0:
 /* 080A7AA6 */ LDR R0, _080A7AE8
 /* 080A7AA8 */ BL load_gfx_table
 /* 080A7AAC */ MOVS R0, #0
-/* 080A7AAE */ BL func_0800BEF4
+/* 080A7AAE */ BL scene_set_video_mode
 /* 080A7AB2 */ MOVS R0, #2
-/* 080A7AB4 */ BL func_0800BF20
+/* 080A7AB4 */ BL scene_hide_bg_layer
 /* 080A7AB8 */ MOVS R0, #3
-/* 080A7ABA */ BL func_0800BF20
+/* 080A7ABA */ BL scene_hide_bg_layer
 /* 080A7ABE */ MOVS R0, #2
 /* 080A7AC0 */ STR R0, [SP]
 /* 080A7AC2 */ MOVS R0, #0X1D

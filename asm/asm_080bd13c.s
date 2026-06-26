@@ -99,7 +99,7 @@ _080BD1CC:
 /* 080BD1E4 */ ASRS R1, R1, #0X10
 /* 080BD1E6 */ MOVS R0, #3
 /* 080BD1E8 */ MOVS R2, #0
-/* 080BD1EA */ BL func_0800BF34
+/* 080BD1EA */ BL scene_set_bg_layer_pos
 /* 080BD1EE */ LDR R5, _080BD248
 /* 080BD1F0 */ LDR R0, [R5]
 /* 080BD1F2 */ LDR R2, [R6]

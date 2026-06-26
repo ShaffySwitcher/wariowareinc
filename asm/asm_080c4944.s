@@ -36,7 +36,7 @@ _080C496E:
 /* 080C4974 */ ASRS R2, R2, #0X10
 /* 080C4976 */ MOVS R0, #2
 /* 080C4978 */ MOVS R1, #0
-/* 080C497A */ BL func_0800BF34
+/* 080C497A */ BL scene_set_bg_layer_pos
 /* 080C497E */ ADDS R0, R4, #0
 /* 080C4980 */ POP {R4}
 /* 080C4982 */ POP {R1}

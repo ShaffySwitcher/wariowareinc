@@ -315,7 +315,7 @@ _08049D44:
 /* 08049D52 */ ASRS R2, R2, #0X10
 /* 08049D54 */ MOVS R0, #2
 /* 08049D56 */ MOVS R1, #0
-/* 08049D58 */ BL func_0800BF34
+/* 08049D58 */ BL scene_set_bg_layer_pos
 /* 08049D5C */ ADD SP, #0XC
 /* 08049D5E */ POP {R4, R5}
 /* 08049D60 */ POP {R0}

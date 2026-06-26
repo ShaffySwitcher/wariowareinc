@@ -13,7 +13,7 @@ glabel func_0803D91C
 /* 0803D928 */ ASRS R2, R2, #0X10
 /* 0803D92A */ MOVS R0, #2
 /* 0803D92C */ MOVS R1, #0
-/* 0803D92E */ BL func_0800BF34
+/* 0803D92E */ BL scene_set_bg_layer_pos
 /* 0803D932 */ MOVS R2, #0
 /* 0803D934 */ LDR R5, _0803D978
 _0803D936:

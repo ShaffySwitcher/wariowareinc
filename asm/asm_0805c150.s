@@ -114,7 +114,7 @@ _0805C206:
 _0805C20C:
 /* 0805C20C */ MOVS R0, #3
 /* 0805C20E */ MOVS R2, #0
-/* 0805C210 */ BL func_0800BF34
+/* 0805C210 */ BL scene_set_bg_layer_pos
 /* 0805C214 */ B _0805C232
 _0805C216:
 /* 0805C216 */ CMP R2, #0
@@ -129,7 +129,7 @@ _0805C216:
 /* 0805C228 */ ASRS R1, R1, #0X10
 /* 0805C22A */ MOVS R0, #3
 /* 0805C22C */ MOVS R2, #0
-/* 0805C22E */ BL func_0800BF34
+/* 0805C22E */ BL scene_set_bg_layer_pos
 _0805C232:
 /* 0805C232 */ POP {R0}
 /* 0805C234 */ BX R0

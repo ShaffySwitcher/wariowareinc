@@ -171,7 +171,7 @@ glabel func_080C479C
 /* 080C4900 */ MOVS R0, #2
 /* 080C4902 */ MOVS R1, #0
 /* 080C4904 */ MOVS R2, #0X70
-/* 080C4906 */ BL func_0800BF34
+/* 080C4906 */ BL scene_set_bg_layer_pos
 /* 080C490A */ ADD SP, #0X14
 /* 080C490C */ POP {R3, R4, R5}
 /* 080C490E */ MOV R8, R3

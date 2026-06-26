@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BF0C \n\
+thumb_func_start scene_show_bg_layer \n\
 /* 0800BF0C */ LDR R2, =gGraphicsBuffer \n\
 /* 0800BF0E */ MOVS R1, #0X80 \n\
 /* 0800BF10 */ LSLS R1, R1, #1 \n\

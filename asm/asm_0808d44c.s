@@ -23,7 +23,7 @@ glabel func_0808D44C
 /* 0808D46A */ BGE _0808D476
 /* 0808D46C */ STRH R4, [R2]
 /* 0808D46E */ MOVS R0, #1
-/* 0808D470 */ BL func_0800BF20
+/* 0808D470 */ BL scene_hide_bg_layer
 /* 0808D474 */ MOVS R4, #1
 _0808D476:
 /* 0808D476 */ LDR R3, =gGraphicsBuffer

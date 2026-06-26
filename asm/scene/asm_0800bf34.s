@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BF34 \n\
+thumb_func_start scene_set_bg_layer_pos \n\
 /* 0800BF34 */ LDR R3, =D_0300400C \n\
 /* 0800BF36 */ LSLS R0, R0, #2 \n\
 /* 0800BF38 */ ADDS R0, R0, R3 \n\

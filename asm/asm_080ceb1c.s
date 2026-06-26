@@ -18,7 +18,7 @@ glabel func_080CEB1C
 /* 080CEB30 */ ASRS R1, R1, #0X18
 /* 080CEB32 */ MOVS R0, #2
 /* 080CEB34 */ MOVS R2, #0
-/* 080CEB36 */ BL func_0800BF34
+/* 080CEB36 */ BL scene_set_bg_layer_pos
 /* 080CEB3A */ POP {R0}
 /* 080CEB3C */ BX R0
 

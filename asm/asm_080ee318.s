@@ -133,9 +133,9 @@ _080EE3E0:
 /* 080EE3EE */ MOVS R0, #0
 /* 080EE3F0 */ STRH R0, [R1, #0X30]
 /* 080EE3F2 */ MOVS R0, #1
-/* 080EE3F4 */ BL func_0800BF20
+/* 080EE3F4 */ BL scene_hide_bg_layer
 /* 080EE3F8 */ MOVS R0, #2
-/* 080EE3FA */ BL func_0800BF0C
+/* 080EE3FA */ BL scene_show_bg_layer
 /* 080EE3FE */ MOVS R0, #1
 /* 080EE400 */ B _080EE40A
 

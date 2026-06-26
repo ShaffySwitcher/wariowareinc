@@ -30,7 +30,7 @@ _080C8B9C:
 /* 080C8BA6 */ LSLS R2, R2, #8
 /* 080C8BA8 */ ASRS R2, R2, #0X10
 /* 080C8BAA */ MOVS R0, #3
-/* 080C8BAC */ BL func_0800BF34
+/* 080C8BAC */ BL scene_set_bg_layer_pos
 /* 080C8BB0 */ POP {R0}
 /* 080C8BB2 */ BX R0
 

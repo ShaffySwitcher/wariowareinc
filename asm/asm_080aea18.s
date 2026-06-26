@@ -31,9 +31,9 @@ glabel func_080AEA18
 /* 080AEA48 */ BLE _080AEAB0
 /* 080AEA4A */ STRB R7, [R5, #3]
 /* 080AEA4C */ MOVS R0, #2
-/* 080AEA4E */ BL func_0800BF20
+/* 080AEA4E */ BL scene_hide_bg_layer
 /* 080AEA52 */ MOVS R0, #3
-/* 080AEA54 */ BL func_0800BF20
+/* 080AEA54 */ BL scene_hide_bg_layer
 /* 080AEA58 */ LDR R0, _080AEA78
 /* 080AEA5A */ LDR R0, [R0]
 /* 080AEA5C */ LDR R1, [R6]

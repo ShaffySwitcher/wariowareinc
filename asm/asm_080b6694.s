@@ -332,14 +332,14 @@ _080B68AC:
 /* 080B6904 */ ASRS R2, R2, #0X10
 /* 080B6906 */ MOVS R0, #1
 /* 080B6908 */ MOVS R1, #0
-/* 080B690A */ BL func_0800BF34
+/* 080B690A */ BL scene_set_bg_layer_pos
 /* 080B690E */ LDR R0, [R5]
 /* 080B6910 */ LDR R2, [R0, #0X6C]
 /* 080B6912 */ LSLS R2, R2, #8
 /* 080B6914 */ ASRS R2, R2, #0X10
 /* 080B6916 */ MOVS R0, #2
 /* 080B6918 */ MOVS R1, #0
-/* 080B691A */ BL func_0800BF34
+/* 080B691A */ BL scene_set_bg_layer_pos
 /* 080B691E */ ADD SP, #8
 /* 080B6920 */ POP {R3, R4, R5}
 /* 080B6922 */ MOV R8, R3

@@ -265,13 +265,13 @@ _08055E30:
 /* 08055E46 */ ASRS R1, R1, #0X10
 /* 08055E48 */ MOVS R0, #2
 /* 08055E4A */ MOVS R2, #0
-/* 08055E4C */ BL func_0800BF34
+/* 08055E4C */ BL scene_set_bg_layer_pos
 /* 08055E50 */ MOV R2, R8
 /* 08055E52 */ LSLS R1, R2, #0XF
 /* 08055E54 */ ASRS R1, R1, #0X10
 /* 08055E56 */ MOVS R0, #3
 /* 08055E58 */ MOVS R2, #0
-/* 08055E5A */ BL func_0800BF34
+/* 08055E5A */ BL scene_set_bg_layer_pos
 /* 08055E5E */ MOV R3, SL
 /* 08055E60 */ LDR R0, [R3]
 /* 08055E62 */ MOV R1, SB

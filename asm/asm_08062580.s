@@ -17,9 +17,9 @@ glabel func_08062580
 /* 08062592 */ ADD R0, SB
 /* 08062594 */ LDRB R4, [R0]
 /* 08062596 */ MOVS R0, #1
-/* 08062598 */ BL func_0800BF0C
+/* 08062598 */ BL scene_show_bg_layer
 /* 0806259C */ MOVS R0, #3
-/* 0806259E */ BL func_0800BF20
+/* 0806259E */ BL scene_hide_bg_layer
 /* 080625A2 */ LDR R1, [R5]
 /* 080625A4 */ MOVS R2, #0X88
 /* 080625A6 */ LSLS R2, R2, #1

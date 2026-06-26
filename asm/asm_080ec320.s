@@ -30,7 +30,7 @@ glabel func_080EC320
 /* 080EC34C */ MOVS R0, #3
 /* 080EC34E */ MOVS R1, #0
 /* 080EC350 */ MOVS R2, #0
-/* 080EC352 */ BL func_0800BF34
+/* 080EC352 */ BL scene_set_bg_layer_pos
 /* 080EC356 */ B _080EC378
 
 .balign 4, 0
@@ -49,7 +49,7 @@ _080EC35C:
 /* 080EC36E */ MOVS R3, #2
 /* 080EC370 */ LDRSH R2, [R0, R3]
 /* 080EC372 */ MOVS R0, #3
-/* 080EC374 */ BL func_0800BF34
+/* 080EC374 */ BL scene_set_bg_layer_pos
 _080EC378:
 /* 080EC378 */ POP {R0}
 /* 080EC37A */ BX R0

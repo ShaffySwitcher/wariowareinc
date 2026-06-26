@@ -17,14 +17,14 @@ glabel func_08053488
 /* 0805349A */ ASRS R1, R1, #0X10
 /* 0805349C */ MOVS R0, #2
 /* 0805349E */ MOVS R2, #0
-/* 080534A0 */ BL func_0800BF34
+/* 080534A0 */ BL scene_set_bg_layer_pos
 /* 080534A4 */ LDR R0, [R4]
 /* 080534A6 */ LDR R1, [R0, #4]
 /* 080534A8 */ LSLS R1, R1, #8
 /* 080534AA */ ASRS R1, R1, #0X10
 /* 080534AC */ MOVS R0, #3
 /* 080534AE */ MOVS R2, #0
-/* 080534B0 */ BL func_0800BF34
+/* 080534B0 */ BL scene_set_bg_layer_pos
 /* 080534B4 */ POP {R4}
 /* 080534B6 */ POP {R0}
 /* 080534B8 */ BX R0

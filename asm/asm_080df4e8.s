@@ -47,7 +47,7 @@ _080DF526:
 /* 080DF52C */ LDRSH R1, [R0, R2]
 /* 080DF52E */ MOVS R0, #1
 /* 080DF530 */ MOVS R2, #0
-/* 080DF532 */ BL func_0800BF34
+/* 080DF532 */ BL scene_set_bg_layer_pos
 /* 080DF536 */ LDR R0, [R4]
 /* 080DF538 */ ADDS R0, #0X48
 /* 080DF53A */ MOVS R3, #0
@@ -59,7 +59,7 @@ _080DF526:
 /* 080DF548 */ ASRS R1, R1, #0X10
 /* 080DF54A */ MOVS R0, #2
 /* 080DF54C */ MOVS R2, #0
-/* 080DF54E */ BL func_0800BF34
+/* 080DF54E */ BL scene_set_bg_layer_pos
 /* 080DF552 */ BL func_080E0380
 /* 080DF556 */ BL func_080DFC44
 /* 080DF55A */ POP {R4}

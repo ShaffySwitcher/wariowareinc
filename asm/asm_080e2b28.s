@@ -188,15 +188,15 @@ _080E2C48:
 _080E2C8C:
 /* 080E2C8C */ MOVS R0, #1
 /* 080E2C8E */ MOVS R1, #0
-/* 080E2C90 */ BL func_0800BF34
+/* 080E2C90 */ BL scene_set_bg_layer_pos
 /* 080E2C94 */ MOVS R0, #2
 /* 080E2C96 */ MOVS R1, #0
 /* 080E2C98 */ MOVS R2, #0
-/* 080E2C9A */ BL func_0800BF34
+/* 080E2C9A */ BL scene_set_bg_layer_pos
 /* 080E2C9E */ MOVS R0, #3
 /* 080E2CA0 */ MOVS R1, #0
 /* 080E2CA2 */ MOVS R2, #0
-/* 080E2CA4 */ BL func_0800BF34
+/* 080E2CA4 */ BL scene_set_bg_layer_pos
 /* 080E2CA8 */ LDR R4, _080E2EC4
 /* 080E2CAA */ LDR R0, [R4]
 /* 080E2CAC */ LDR R1, [R5]

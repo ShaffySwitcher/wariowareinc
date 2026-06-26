@@ -23,7 +23,7 @@ glabel func_08037EEC
 /* 08037F0A */ ASRS R2, R2, #0X10
 /* 08037F0C */ MOVS R0, #2
 /* 08037F0E */ MOVS R1, #0
-/* 08037F10 */ BL func_0800BF34
+/* 08037F10 */ BL scene_set_bg_layer_pos
 /* 08037F14 */ POP {R0}
 /* 08037F16 */ BX R0
 

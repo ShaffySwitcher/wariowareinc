@@ -9,7 +9,7 @@ glabel func_0801BFE4
 /* 0801BFE6 */ SUB SP, #0X1C
 /* 0801BFE8 */ LDR R0, _0801C078
 /* 0801BFEA */ BL load_gfx_table
-/* 0801BFEE */ BL func_0800BFC8
+/* 0801BFEE */ BL scene_show_obj_layer
 /* 0801BFF2 */ MOVS R0, #2
 /* 0801BFF4 */ STR R0, [SP]
 /* 0801BFF6 */ MOVS R0, #0X1C

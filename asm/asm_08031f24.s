@@ -38,10 +38,10 @@ glabel func_08031F24
 /* 08031F62 */ ADDS R0, R2, R3
 /* 08031F64 */ STRH R1, [R0]
 /* 08031F66 */ MOVS R0, #1
-/* 08031F68 */ BL func_0800BF20
+/* 08031F68 */ BL scene_hide_bg_layer
 /* 08031F6C */ MOVS R0, #2
-/* 08031F6E */ BL func_0800BF20
-/* 08031F72 */ BL func_0800BFDC
+/* 08031F6E */ BL scene_hide_bg_layer
+/* 08031F72 */ BL scene_hide_obj_layer
 /* 08031F76 */ LDR R0, =D_083FD9E4
 /* 08031F78 */ BL play_sound
 _08031F7C:

@@ -7,7 +7,7 @@
 glabel func_0801F2CC
 /* 0801F2CC */ PUSH {LR}
 /* 0801F2CE */ SUB SP, #0XC
-/* 0801F2D0 */ BL func_0800BFC8
+/* 0801F2D0 */ BL scene_show_obj_layer
 /* 0801F2D4 */ MOVS R0, #0
 /* 0801F2D6 */ STR R0, [SP]
 /* 0801F2D8 */ MOVS R0, #0X1D

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BF44 \n\
+thumb_func_start scene_set_bg_layer_controls \n\
 /* 0800BF44 */ PUSH {R4, LR} \n\
 /* 0800BF46 */ LDR R4, =D_03004004 \n\
 /* 0800BF48 */ LSLS R0, R0, #1 \n\

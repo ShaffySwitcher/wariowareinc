@@ -266,7 +266,7 @@ _080CC410:
 /* 080CC41A */ ASRS R2, R2, #0X18
 /* 080CC41C */ MOVS R0, #2
 /* 080CC41E */ MOVS R1, #0
-/* 080CC420 */ BL func_0800BF34
+/* 080CC420 */ BL scene_set_bg_layer_pos
 /* 080CC424 */ POP {R4, R5, R6}
 /* 080CC426 */ POP {R0}
 /* 080CC428 */ BX R0

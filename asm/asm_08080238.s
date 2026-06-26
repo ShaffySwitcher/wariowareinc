@@ -17,40 +17,40 @@ glabel func_08080238
 /* 0808024A */ MOVS R0, #2
 /* 0808024C */ BL start_load_gfx_table_task
 /* 08080250 */ MOVS R0, #0
-/* 08080252 */ BL func_0800BEF4
+/* 08080252 */ BL scene_set_video_mode
 /* 08080256 */ MOVS R0, #1
-/* 08080258 */ BL func_0800BF0C
+/* 08080258 */ BL scene_show_bg_layer
 /* 0808025C */ MOVS R0, #2
-/* 0808025E */ BL func_0800BF0C
+/* 0808025E */ BL scene_show_bg_layer
 /* 08080262 */ MOVS R0, #3
-/* 08080264 */ BL func_0800BF20
+/* 08080264 */ BL scene_hide_bg_layer
 /* 08080268 */ MOVS R0, #1
 /* 0808026A */ MOVS R1, #0
 /* 0808026C */ MOVS R2, #0
-/* 0808026E */ BL func_0800BF34
+/* 0808026E */ BL scene_set_bg_layer_pos
 /* 08080272 */ MOVS R0, #2
 /* 08080274 */ MOVS R1, #0
 /* 08080276 */ MOVS R2, #0
-/* 08080278 */ BL func_0800BF34
+/* 08080278 */ BL scene_set_bg_layer_pos
 /* 0808027C */ MOVS R0, #3
 /* 0808027E */ MOVS R1, #0
 /* 08080280 */ MOVS R2, #0
-/* 08080282 */ BL func_0800BF34
+/* 08080282 */ BL scene_set_bg_layer_pos
 /* 08080286 */ MOVS R0, #1
 /* 08080288 */ MOVS R1, #2
 /* 0808028A */ MOVS R2, #0X1D
 /* 0808028C */ MOVS R3, #1
-/* 0808028E */ BL func_0800BF44
+/* 0808028E */ BL scene_set_bg_layer_controls
 /* 08080292 */ MOVS R0, #2
 /* 08080294 */ MOVS R1, #0
 /* 08080296 */ MOVS R2, #0X1E
 /* 08080298 */ MOVS R3, #2
-/* 0808029A */ BL func_0800BF44
+/* 0808029A */ BL scene_set_bg_layer_controls
 /* 0808029E */ MOVS R0, #3
 /* 080802A0 */ MOVS R1, #0
 /* 080802A2 */ MOVS R2, #0X1F
 /* 080802A4 */ MOVS R3, #2
-/* 080802A6 */ BL func_0800BF44
+/* 080802A6 */ BL scene_set_bg_layer_controls
 /* 080802AA */ MOVS R0, #1
 /* 080802AC */ BL func_0800A0C4
 /* 080802B0 */ LDR R0, _080802DC
@@ -62,9 +62,9 @@ glabel func_08080238
 /* 080802BC */ CMP R4, #2
 /* 080802BE */ BNE _080802E4
 /* 080802C0 */ MOVS R0, #2
-/* 080802C2 */ BL func_0800BF20
+/* 080802C2 */ BL scene_hide_bg_layer
 /* 080802C6 */ MOVS R0, #3
-/* 080802C8 */ BL func_0800BF0C
+/* 080802C8 */ BL scene_show_bg_layer
 /* 080802CC */ LDR R0, _080802E0
 /* 080802CE */ LDR R0, [R0]
 /* 080802D0 */ ADDS R0, #0X3E

@@ -511,22 +511,22 @@ _08084FB8:
 /* 08084FCA */ MOVS R0, #2
 /* 08084FCC */ BL start_load_gfx_table_task
 /* 08084FD0 */ MOVS R0, #0
-/* 08084FD2 */ BL func_0800BEF4
+/* 08084FD2 */ BL scene_set_video_mode
 /* 08084FD6 */ MOVS R0, #1
-/* 08084FD8 */ BL func_0800BF0C
+/* 08084FD8 */ BL scene_show_bg_layer
 /* 08084FDC */ MOVS R0, #2
-/* 08084FDE */ BL func_0800BF20
+/* 08084FDE */ BL scene_hide_bg_layer
 /* 08084FE2 */ MOVS R0, #3
-/* 08084FE4 */ BL func_0800BF20
+/* 08084FE4 */ BL scene_hide_bg_layer
 /* 08084FE8 */ MOVS R0, #1
 /* 08084FEA */ MOVS R1, #0
 /* 08084FEC */ MOVS R2, #0
-/* 08084FEE */ BL func_0800BF34
+/* 08084FEE */ BL scene_set_bg_layer_pos
 /* 08084FF2 */ MOVS R0, #1
 /* 08084FF4 */ MOVS R1, #2
 /* 08084FF6 */ MOVS R2, #0X1D
 /* 08084FF8 */ MOVS R3, #1
-/* 08084FFA */ BL func_0800BF44
+/* 08084FFA */ BL scene_set_bg_layer_controls
 /* 08084FFE */ MOVS R0, #1
 /* 08085000 */ BL func_0800A0C4
 /* 08085004 */ MOVS R0, #6

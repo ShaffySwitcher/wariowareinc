@@ -41,7 +41,7 @@ _0803BB6C:
 /* 0803BB72 */ ASRS R2, R2, #0X10
 /* 0803BB74 */ MOVS R0, #2
 /* 0803BB76 */ MOVS R1, #0
-/* 0803BB78 */ BL func_0800BF34
+/* 0803BB78 */ BL scene_set_bg_layer_pos
 /* 0803BB7C */ LDR R0, _0803BBA8
 /* 0803BB7E */ LDR R0, [R0]
 /* 0803BB80 */ LDR R4, [R5]

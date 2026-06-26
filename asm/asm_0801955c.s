@@ -43,7 +43,7 @@ glabel func_0801955C
 /* 080195A2 */ ADDS R0, #0X4C
 /* 080195A4 */ STRH R1, [R0]
 /* 080195A6 */ MOVS R0, #0
-/* 080195A8 */ BL func_0800BF20
+/* 080195A8 */ BL scene_hide_bg_layer
 _080195AC:
 /* 080195AC */ POP {R0}
 /* 080195AE */ BX R0

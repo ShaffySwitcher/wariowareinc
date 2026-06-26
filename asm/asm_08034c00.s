@@ -17,22 +17,22 @@ glabel func_08034C00
 /* 08034C12 */ LSLS R2, R2, #6
 /* 08034C14 */ BL func_08002124
 /* 08034C18 */ MOVS R0, #0
-/* 08034C1A */ BL func_0800BEF4
+/* 08034C1A */ BL scene_set_video_mode
 /* 08034C1E */ MOVS R0, #1
-/* 08034C20 */ BL func_0800BF0C
+/* 08034C20 */ BL scene_show_bg_layer
 /* 08034C24 */ MOVS R0, #2
-/* 08034C26 */ BL func_0800BF20
+/* 08034C26 */ BL scene_hide_bg_layer
 /* 08034C2A */ MOVS R0, #3
-/* 08034C2C */ BL func_0800BF20
+/* 08034C2C */ BL scene_hide_bg_layer
 /* 08034C30 */ MOVS R0, #1
 /* 08034C32 */ MOVS R1, #0
 /* 08034C34 */ MOVS R2, #0
-/* 08034C36 */ BL func_0800BF34
+/* 08034C36 */ BL scene_set_bg_layer_pos
 /* 08034C3A */ MOVS R0, #1
 /* 08034C3C */ MOVS R1, #2
 /* 08034C3E */ MOVS R2, #0X1D
 /* 08034C40 */ MOVS R3, #1
-/* 08034C42 */ BL func_0800BF44
+/* 08034C42 */ BL scene_set_bg_layer_controls
 /* 08034C46 */ MOVS R0, #1
 /* 08034C48 */ BL func_0800A0C4
 /* 08034C4C */ LDR R0, _08034CE4

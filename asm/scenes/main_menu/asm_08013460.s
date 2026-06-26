@@ -64,7 +64,7 @@ _080134C8: \n\
 /* 080134CE */ ANDS R0, R1 \n\
 /* 080134D0 */ STRH R0, [R2] \n\
 /* 080134D2 */ MOVS R0, #2 \n\
-/* 080134D4 */ BL func_0800BF20 \n\
+/* 080134D4 */ BL scene_hide_bg_layer \n\
 /* 080134D8 */ STRB R5, [R6] \n\
 /* 080134DA */ LSLS R0, R5, #4 \n\
 /* 080134DC */ ADDS R3, R0, R7 \n\

@@ -25,10 +25,10 @@ thumb_func_start func_08013264 \n\
 /* 08013292 */ MOVS R0, #0X1F \n\
 /* 08013294 */ STRH R0, [R1] \n\
 /* 08013296 */ MOVS R0, #2 \n\
-/* 08013298 */ BL func_0800BF20 \n\
+/* 08013298 */ BL scene_hide_bg_layer \n\
 /* 0801329C */ MOVS R0, #3 \n\
 /* 0801329E */ MOVS R1, #3 \n\
-/* 080132A0 */ BL func_0800BF60 \n\
+/* 080132A0 */ BL scene_set_bg_layer_priority \n\
 /* 080132A4 */ LDR R0, [R4] \n\
 /* 080132A6 */ ADDS R1, R0, #0 \n\
 /* 080132A8 */ ADDS R1, #0XAC \n\

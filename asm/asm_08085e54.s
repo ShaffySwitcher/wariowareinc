@@ -13,7 +13,7 @@ glabel func_08085E54
 /* 08085E5E */ MOVS R0, #2
 /* 08085E60 */ BL start_load_gfx_table_task
 /* 08085E64 */ MOVS R0, #0
-/* 08085E66 */ BL func_0800BEF4
+/* 08085E66 */ BL scene_set_video_mode
 /* 08085E6A */ MOVS R4, #2
 /* 08085E6C */ STR R4, [SP]
 /* 08085E6E */ MOVS R0, #0X1D
@@ -35,7 +35,7 @@ glabel func_08085E54
 /* 08085E90 */ MOVS R3, #0
 /* 08085E92 */ BL scene_set_bg_layer_display
 /* 08085E96 */ MOVS R0, #3
-/* 08085E98 */ BL func_0800BF20
+/* 08085E98 */ BL scene_hide_bg_layer
 /* 08085E9C */ MOVS R0, #1
 /* 08085E9E */ BL func_0800A0C4
 /* 08085EA2 */ BL get_current_mem_id

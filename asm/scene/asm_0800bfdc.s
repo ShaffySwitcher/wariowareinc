@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BFDC \n\
+thumb_func_start scene_hide_obj_layer \n\
 /* 0800BFDC */ LDR R2, _0800BFE8 \n\
 /* 0800BFDE */ LDRH R1, [R2] \n\
 /* 0800BFE0 */ LDR R0, _0800BFEC \n\

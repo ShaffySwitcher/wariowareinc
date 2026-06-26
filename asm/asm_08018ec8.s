@@ -46,18 +46,18 @@ glabel func_08018EC8
 /* 08018F1C */ BL load_gfx_table
 /* 08018F20 */ MOVS R0, #0
 /* 08018F22 */ MOVS R1, #1
-/* 08018F24 */ BL func_0800BF60
+/* 08018F24 */ BL scene_set_bg_layer_priority
 /* 08018F28 */ MOVS R0, #1
-/* 08018F2A */ BL func_0800BF0C
+/* 08018F2A */ BL scene_show_bg_layer
 /* 08018F2E */ MOVS R0, #1
 /* 08018F30 */ MOVS R1, #0
 /* 08018F32 */ MOVS R2, #0
-/* 08018F34 */ BL func_0800BF34
+/* 08018F34 */ BL scene_set_bg_layer_pos
 /* 08018F38 */ MOVS R0, #1
 /* 08018F3A */ MOVS R1, #0
 /* 08018F3C */ MOVS R2, #0X1D
 /* 08018F3E */ MOVS R3, #0
-/* 08018F40 */ BL func_0800BF44
+/* 08018F40 */ BL scene_set_bg_layer_controls
 /* 08018F44 */ LDR R0, _08018F98
 /* 08018F46 */ ADDS R0, #0X4C
 /* 08018F48 */ LDR R1, _08018F9C

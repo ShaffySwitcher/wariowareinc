@@ -13,15 +13,15 @@ glabel func_08096D80
 /* 08096D8A */ MOVS R0, #2
 /* 08096D8C */ MOVS R1, #0
 /* 08096D8E */ MOVS R2, #0XA0
-/* 08096D90 */ BL func_0800BF34
+/* 08096D90 */ BL scene_set_bg_layer_pos
 /* 08096D94 */ MOVS R0, #2
-/* 08096D96 */ BL func_0800BF0C
+/* 08096D96 */ BL scene_show_bg_layer
 /* 08096D9A */ MOVS R0, #3
 /* 08096D9C */ MOVS R1, #0
 /* 08096D9E */ MOVS R2, #0
-/* 08096DA0 */ BL func_0800BF34
+/* 08096DA0 */ BL scene_set_bg_layer_pos
 /* 08096DA4 */ MOVS R0, #3
-/* 08096DA6 */ BL func_0800BF0C
+/* 08096DA6 */ BL scene_show_bg_layer
 /* 08096DAA */ LDR R0, _08096F34
 /* 08096DAC */ ADDS R1, R0, #0
 /* 08096DAE */ ADDS R1, #0X78
@@ -496,18 +496,18 @@ _080970D2:
 /* 08097118 */ MOVS R2, #1
 /* 0809711A */ BL sprite_set_visible
 /* 0809711E */ MOVS R0, #2
-/* 08097120 */ BL func_0800BF20
+/* 08097120 */ BL scene_hide_bg_layer
 /* 08097124 */ MOVS R0, #3
-/* 08097126 */ BL func_0800BF20
+/* 08097126 */ BL scene_hide_bg_layer
 /* 0809712A */ MOVS R2, #0XA0
 /* 0809712C */ RSBS R2, R2, #0
 /* 0809712E */ MOVS R0, #2
 /* 08097130 */ MOVS R1, #0
-/* 08097132 */ BL func_0800BF34
+/* 08097132 */ BL scene_set_bg_layer_pos
 /* 08097136 */ MOVS R0, #3
 /* 08097138 */ MOVS R1, #0
 /* 0809713A */ MOVS R2, #0
-/* 0809713C */ BL func_0800BF34
+/* 0809713C */ BL scene_set_bg_layer_pos
 /* 08097140 */ LDR R1, [R5]
 /* 08097142 */ MOVS R0, #4
 /* 08097144 */ STRB R0, [R1, #1]

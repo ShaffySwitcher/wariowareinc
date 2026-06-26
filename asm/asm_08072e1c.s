@@ -61,7 +61,7 @@ glabel func_08072E1C
 /* 08072E96 */ RSBS R0, R0, #0
 /* 08072E98 */ STR R0, [R1]
 /* 08072E9A */ MOVS R0, #3
-/* 08072E9C */ BL func_0800BF0C
+/* 08072E9C */ BL scene_show_bg_layer
 /* 08072EA0 */ POP {R4, R5}
 /* 08072EA2 */ POP {R0}
 /* 08072EA4 */ BX R0

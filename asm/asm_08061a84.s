@@ -134,9 +134,9 @@ _08061B12:
 /* 08061B54 */ MOVS R2, #0
 /* 08061B56 */ BL sprite_id_set_visible
 /* 08061B5A */ MOVS R0, #1
-/* 08061B5C */ BL func_0800BF20
+/* 08061B5C */ BL scene_hide_bg_layer
 /* 08061B60 */ MOVS R0, #3
-/* 08061B62 */ BL func_0800BF0C
+/* 08061B62 */ BL scene_show_bg_layer
 /* 08061B66 */ BL func_080626D0
 /* 08061B6A */ B _08061E58
 

@@ -68,7 +68,7 @@ _080B81CC:
 /* 080B81E6 */ MOVS R0, #1
 /* 080B81E8 */ MOVS R1, #0
 /* 080B81EA */ MOVS R2, #0X78
-/* 080B81EC */ BL func_0800BF34
+/* 080B81EC */ BL scene_set_bg_layer_pos
 /* 080B81F0 */ LDR R0, [R5]
 /* 080B81F2 */ ADDS R0, #0X80
 /* 080B81F4 */ MOVS R1, #3

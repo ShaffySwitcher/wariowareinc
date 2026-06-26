@@ -70,7 +70,7 @@ _0808A626:
 /* 0808A650 */ ASRS R2, R2, #0X10
 /* 0808A652 */ MOVS R0, #2
 /* 0808A654 */ ADDS R1, R4, #0
-/* 0808A656 */ BL func_0800BF34
+/* 0808A656 */ BL scene_set_bg_layer_pos
 /* 0808A65A */ LDR R3, [R5]
 /* 0808A65C */ MOVS R0, #2
 /* 0808A65E */ LDRSH R1, [R3, R0]
@@ -86,7 +86,7 @@ _0808A626:
 /* 0808A672 */ LSLS R2, R2, #8
 /* 0808A674 */ ASRS R2, R2, #0X10
 /* 0808A676 */ MOVS R0, #3
-/* 0808A678 */ BL func_0800BF34
+/* 0808A678 */ BL scene_set_bg_layer_pos
 _0808A67C:
 /* 0808A67C */ ADD SP, #8
 /* 0808A67E */ POP {R4, R5, R6, R7}

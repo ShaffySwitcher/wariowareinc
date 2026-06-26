@@ -10,7 +10,7 @@ glabel func_0801B810
 /* 0801B814 */ MOV R6, R8
 /* 0801B816 */ PUSH {R6, R7}
 /* 0801B818 */ SUB SP, #0X1C
-/* 0801B81A */ BL func_0800BFC8
+/* 0801B81A */ BL scene_show_obj_layer
 /* 0801B81E */ LDR R4, _0801B8EC
 /* 0801B820 */ LDR R0, [R4]
 /* 0801B822 */ LDR R5, _0801B8F0

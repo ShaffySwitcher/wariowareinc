@@ -14,13 +14,13 @@ glabel func_080DD3B0
 /* 080DD3BE */ LSLS R2, R2, #6
 /* 080DD3C0 */ BL start_load_gfx_table_task
 /* 080DD3C4 */ MOVS R0, #0
-/* 080DD3C6 */ BL func_0800BEF4
+/* 080DD3C6 */ BL scene_set_video_mode
 /* 080DD3CA */ MOVS R0, #1
-/* 080DD3CC */ BL func_0800BF0C
+/* 080DD3CC */ BL scene_show_bg_layer
 /* 080DD3D0 */ MOVS R0, #2
-/* 080DD3D2 */ BL func_0800BF0C
+/* 080DD3D2 */ BL scene_show_bg_layer
 /* 080DD3D6 */ MOVS R0, #3
-/* 080DD3D8 */ BL func_0800BF0C
+/* 080DD3D8 */ BL scene_show_bg_layer
 /* 080DD3DC */ MOVS R0, #3
 /* 080DD3DE */ BL get_random_range
 /* 080DD3E2 */ LDR R4, _080DD47C
@@ -31,7 +31,7 @@ glabel func_080DD3B0
 /* 080DD3EC */ MOVS R0, #1
 /* 080DD3EE */ MOVS R1, #0
 /* 080DD3F0 */ MOVS R2, #0
-/* 080DD3F2 */ BL func_0800BF34
+/* 080DD3F2 */ BL scene_set_bg_layer_pos
 /* 080DD3F6 */ LDR R0, [R4]
 /* 080DD3F8 */ ADDS R0, #0X40
 /* 080DD3FA */ LDRB R0, [R0]
@@ -41,16 +41,16 @@ glabel func_080DD3B0
 /* 080DD402 */ ASRS R2, R2, #0X10
 /* 080DD404 */ MOVS R0, #2
 /* 080DD406 */ MOVS R1, #0
-/* 080DD408 */ BL func_0800BF34
+/* 080DD408 */ BL scene_set_bg_layer_pos
 /* 080DD40C */ MOVS R0, #3
 /* 080DD40E */ MOVS R1, #0
 /* 080DD410 */ MOVS R2, #0
-/* 080DD412 */ BL func_0800BF34
+/* 080DD412 */ BL scene_set_bg_layer_pos
 /* 080DD416 */ MOVS R0, #1
 /* 080DD418 */ MOVS R1, #2
 /* 080DD41A */ MOVS R2, #0X1D
 /* 080DD41C */ MOVS R3, #1
-/* 080DD41E */ BL func_0800BF44
+/* 080DD41E */ BL scene_set_bg_layer_controls
 /* 080DD422 */ LDR R0, _080DD480
 /* 080DD424 */ LDR R0, [R0]
 /* 080DD426 */ MOVS R1, #0XBA
@@ -62,12 +62,12 @@ glabel func_080DD3B0
 /* 080DD432 */ LDR R3, _080DD484
 /* 080DD434 */ MOVS R0, #2
 /* 080DD436 */ MOVS R1, #0
-/* 080DD438 */ BL func_0800BF44
+/* 080DD438 */ BL scene_set_bg_layer_controls
 /* 080DD43C */ MOVS R0, #3
 /* 080DD43E */ MOVS R1, #0
 /* 080DD440 */ MOVS R2, #0X1F
 /* 080DD442 */ MOVS R3, #3
-/* 080DD444 */ BL func_0800BF44
+/* 080DD444 */ BL scene_set_bg_layer_controls
 /* 080DD448 */ MOVS R0, #1
 /* 080DD44A */ BL func_0800A0C4
 /* 080DD44E */ LDR R0, [R4]

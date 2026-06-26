@@ -14,8 +14,8 @@ script script_scene_title_loading_start
     rest 24
     rest 24
     rest 24
-    run func_0800BFC8, 0
-    run func_0800BF0C, 0x03
+    run scene_show_obj_layer, 0
+    run scene_show_bg_layer, 0x03
     beatscript_cmd 0x34, 0x806001, 0, title_bg_pal
     beatscript_cmd 0x34, 0x80610F, 0, title_obj_pal
     rest 24
@@ -54,7 +54,7 @@ script script_scene_title_loading_start
     beatscript_cmd 0x8E, 0x0A, 0x002BFFCC, 0x0001000C
     play_music m_BGM_Title_01_seqData
     rest 24
-    run func_0800BF0C, 0x02
+    run scene_show_bg_layer, 0x02
     mod_lcd_blend_from 0x0844, 0x48
     rest 24
     rest 24
@@ -64,7 +64,7 @@ script script_scene_title_loading_start
 
 @ Normal load(?)
 script script_scene_title_normal
-    run func_0800BFC8, 0
+    run scene_show_obj_layer, 0
     set_bg_param 1, TRUE, 0, 0, 0x1D01
     set_bg_param 2, TRUE, 0, 0, 0x1E02
     set_bg_param 3, TRUE, 0, 0, 0x1F03

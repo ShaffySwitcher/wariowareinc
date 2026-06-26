@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BEF4 \n\
+thumb_func_start scene_set_video_mode \n\
 /* 0800BEF4 */ LDR R3, _0800BF04 \n\
 /* 0800BEF6 */ LDRH R2, [R3] \n\
 /* 0800BEF8 */ LDR R1, _0800BF08 \n\

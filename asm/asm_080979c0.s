@@ -221,13 +221,13 @@ _08097B10:
 /* 08097B3E */ LDRSH R1, [R1, R4]
 /* 08097B40 */ BL sprite_delete
 /* 08097B44 */ MOVS R0, #2
-/* 08097B46 */ BL func_0800BF20
+/* 08097B46 */ BL scene_hide_bg_layer
 /* 08097B4A */ MOVS R0, #3
 /* 08097B4C */ MOVS R1, #0
 /* 08097B4E */ MOVS R2, #0XA0
-/* 08097B50 */ BL func_0800BF34
+/* 08097B50 */ BL scene_set_bg_layer_pos
 /* 08097B54 */ MOVS R0, #3
-/* 08097B56 */ BL func_0800BF0C
+/* 08097B56 */ BL scene_show_bg_layer
 /* 08097B5A */ BL func_0809221C
 /* 08097B5E */ LDR R1, [R5]
 /* 08097B60 */ MOVS R0, #2
@@ -483,12 +483,12 @@ _08097D10:
 /* 08097D48 */ CMP R7, #1
 /* 08097D4A */ BLS _08097D10
 /* 08097D4C */ MOVS R0, #3
-/* 08097D4E */ BL func_0800BF20
+/* 08097D4E */ BL scene_hide_bg_layer
 /* 08097D52 */ MOVS R2, #0XA0
 /* 08097D54 */ RSBS R2, R2, #0
 /* 08097D56 */ MOVS R0, #3
 /* 08097D58 */ MOVS R1, #0
-/* 08097D5A */ BL func_0800BF34
+/* 08097D5A */ BL scene_set_bg_layer_pos
 /* 08097D5E */ LDR R1, [R5]
 /* 08097D60 */ MOVS R0, #4
 /* 08097D62 */ STRB R0, [R1, #1]

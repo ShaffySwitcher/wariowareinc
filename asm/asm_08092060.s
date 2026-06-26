@@ -168,11 +168,11 @@ _0809216E:
 /* 080921B0 */ CMP R6, #7
 /* 080921B2 */ BLS _0809216E
 /* 080921B4 */ MOVS R0, #2
-/* 080921B6 */ BL func_0800BF0C
+/* 080921B6 */ BL scene_show_bg_layer
 /* 080921BA */ MOVS R0, #2
 /* 080921BC */ MOVS R1, #0
 /* 080921BE */ MOVS R2, #0
-/* 080921C0 */ BL func_0800BF34
+/* 080921C0 */ BL scene_set_bg_layer_pos
 /* 080921C4 */ LDR R0, [R7]
 /* 080921C6 */ MOVS R1, #0
 /* 080921C8 */ STRB R1, [R0, #1]

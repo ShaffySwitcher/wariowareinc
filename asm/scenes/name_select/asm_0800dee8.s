@@ -15,52 +15,52 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800DEFE */ MOV R1, SL \n\
 /* 0800DF00 */ STRH R1, [R0] \n\
 /* 0800DF02 */ MOVS R0, #0 \n\
-/* 0800DF04 */ BL func_0800BEF4 \n\
-/* 0800DF08 */ BL func_0800BFC8 \n\
+/* 0800DF04 */ BL scene_set_video_mode \n\
+/* 0800DF08 */ BL scene_show_obj_layer \n\
 /* 0800DF0C */ MOVS R0, #0 \n\
-/* 0800DF0E */ BL func_0800BF0C \n\
+/* 0800DF0E */ BL scene_show_bg_layer \n\
 /* 0800DF12 */ MOVS R0, #1 \n\
-/* 0800DF14 */ BL func_0800BF0C \n\
+/* 0800DF14 */ BL scene_show_bg_layer \n\
 /* 0800DF18 */ MOVS R0, #2 \n\
-/* 0800DF1A */ BL func_0800BF0C \n\
+/* 0800DF1A */ BL scene_show_bg_layer \n\
 /* 0800DF1E */ MOVS R0, #3 \n\
-/* 0800DF20 */ BL func_0800BF0C \n\
+/* 0800DF20 */ BL scene_show_bg_layer \n\
 /* 0800DF24 */ MOVS R0, #0 \n\
 /* 0800DF26 */ MOVS R1, #0 \n\
 /* 0800DF28 */ MOVS R2, #0 \n\
-/* 0800DF2A */ BL func_0800BF34 \n\
+/* 0800DF2A */ BL scene_set_bg_layer_pos \n\
 /* 0800DF2E */ MOVS R0, #1 \n\
 /* 0800DF30 */ MOVS R1, #0 \n\
 /* 0800DF32 */ MOVS R2, #0 \n\
-/* 0800DF34 */ BL func_0800BF34 \n\
+/* 0800DF34 */ BL scene_set_bg_layer_pos \n\
 /* 0800DF38 */ MOVS R0, #2 \n\
 /* 0800DF3A */ MOVS R1, #0 \n\
 /* 0800DF3C */ MOVS R2, #0 \n\
-/* 0800DF3E */ BL func_0800BF34 \n\
+/* 0800DF3E */ BL scene_set_bg_layer_pos \n\
 /* 0800DF42 */ MOVS R0, #3 \n\
 /* 0800DF44 */ MOVS R1, #0 \n\
 /* 0800DF46 */ MOVS R2, #0 \n\
-/* 0800DF48 */ BL func_0800BF34 \n\
+/* 0800DF48 */ BL scene_set_bg_layer_pos \n\
 /* 0800DF4C */ MOVS R0, #0 \n\
 /* 0800DF4E */ MOVS R1, #0 \n\
 /* 0800DF50 */ MOVS R2, #0X1B \n\
 /* 0800DF52 */ MOVS R3, #0 \n\
-/* 0800DF54 */ BL func_0800BF44 \n\
+/* 0800DF54 */ BL scene_set_bg_layer_controls \n\
 /* 0800DF58 */ LDR R3, _0800E2E8 \n\
 /* 0800DF5A */ MOVS R0, #1 \n\
 /* 0800DF5C */ MOVS R1, #0 \n\
 /* 0800DF5E */ MOVS R2, #0X1C \n\
-/* 0800DF60 */ BL func_0800BF44 \n\
+/* 0800DF60 */ BL scene_set_bg_layer_controls \n\
 /* 0800DF64 */ MOVS R0, #2 \n\
 /* 0800DF66 */ MOVS R1, #0 \n\
 /* 0800DF68 */ MOVS R2, #0X1E \n\
 /* 0800DF6A */ MOVS R3, #2 \n\
-/* 0800DF6C */ BL func_0800BF44 \n\
+/* 0800DF6C */ BL scene_set_bg_layer_controls \n\
 /* 0800DF70 */ MOVS R0, #3 \n\
 /* 0800DF72 */ MOVS R1, #0 \n\
 /* 0800DF74 */ MOVS R2, #0X1F \n\
 /* 0800DF76 */ MOVS R3, #3 \n\
-/* 0800DF78 */ BL func_0800BF44 \n\
+/* 0800DF78 */ BL scene_set_bg_layer_controls \n\
 /* 0800DF7C */ MOVS R0, #0 \n\
 /* 0800DF7E */ BL func_08006B90 \n\
 /* 0800DF82 */ LDR R2, _0800E2EC \n\

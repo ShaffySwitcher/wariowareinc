@@ -30,9 +30,9 @@ _08012CE6: \n\
 /* 08012CFE */ MOVS R2, #8 \n\
 /* 08012D00 */ RSBS R2, R2, #0 \n\
 /* 08012D02 */ MOVS R0, #2 \n\
-/* 08012D04 */ BL func_0800BF34 \n\
+/* 08012D04 */ BL scene_set_bg_layer_pos \n\
 /* 08012D08 */ MOVS R0, #2 \n\
-/* 08012D0A */ BL func_0800BF0C \n\
+/* 08012D0A */ BL scene_show_bg_layer \n\
 /* 08012D0E */ LDRB R0, [R4] \n\
 /* 08012D10 */ BL save_is_stage_unlocked \n\
 /* 08012D14 */ CMP R0, #0 \n\

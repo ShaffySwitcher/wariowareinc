@@ -102,7 +102,7 @@ _080C8A30:
 /* 080C8A3C */ LSLS R2, R2, #8
 /* 080C8A3E */ ASRS R2, R2, #0X10
 /* 080C8A40 */ MOVS R0, #3
-/* 080C8A42 */ BL func_0800BF34
+/* 080C8A42 */ BL scene_set_bg_layer_pos
 /* 080C8A46 */ ADD SP, #0XC
 /* 080C8A48 */ POP {R4, R5, R6}
 /* 080C8A4A */ POP {R0}

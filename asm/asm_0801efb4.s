@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0801EFB4
 /* 0801EFB4 */ PUSH {LR}
-/* 0801EFB6 */ BL func_0800BFC8
+/* 0801EFB6 */ BL scene_show_obj_layer
 /* 0801EFBA */ LDR R0, _0801EFDC
 /* 0801EFBC */ LDR R0, [R0]
 /* 0801EFBE */ LDR R1, _0801EFE0

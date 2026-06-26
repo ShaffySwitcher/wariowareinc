@@ -36,7 +36,7 @@ thumb_func_start func_08013EC0 \n\
 /* 08013F02 */ ADDS R1, R0 \n\
 /* 08013F04 */ STRH R4, [R1] \n\
 /* 08013F06 */ MOVS R0, #2 \n\
-/* 08013F08 */ BL func_0800BF0C \n\
+/* 08013F08 */ BL scene_show_bg_layer \n\
 /* 08013F0C */ POP {R4} \n\
 /* 08013F0E */ POP {R0} \n\
 /* 08013F10 */ BX R0 \n\

@@ -28,7 +28,7 @@ glabel func_08086B64
 /* 08086B8C */ ASRS R2, R2, #0X10
 /* 08086B8E */ MOVS R0, #2
 /* 08086B90 */ MOVS R1, #0
-/* 08086B92 */ BL func_0800BF34
+/* 08086B92 */ BL scene_set_bg_layer_pos
 /* 08086B96 */ LDR R0, _08086C08
 /* 08086B98 */ LDR R0, [R0]
 /* 08086B9A */ LDR R3, [R5]
@@ -62,7 +62,7 @@ _08086BB0:
 /* 08086BD2 */ ASRS R2, R2, #0X10
 /* 08086BD4 */ MOVS R0, #2
 /* 08086BD6 */ MOVS R1, #0
-/* 08086BD8 */ BL func_0800BF34
+/* 08086BD8 */ BL scene_set_bg_layer_pos
 /* 08086BDC */ LDR R0, _08086C08
 /* 08086BDE */ LDR R0, [R0]
 /* 08086BE0 */ LDR R3, [R5]

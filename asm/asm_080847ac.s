@@ -40,7 +40,7 @@ _080847D8:
 /* 080847E4 */ ASRS R2, R2, #0X18
 /* 080847E6 */ MOVS R0, #2
 /* 080847E8 */ MOVS R1, #0
-/* 080847EA */ BL func_0800BF34
+/* 080847EA */ BL scene_set_bg_layer_pos
 /* 080847EE */ LDR R0, [R4]
 /* 080847F0 */ LDR R0, [R0, #0X28]
 /* 080847F2 */ BL func_080847FC

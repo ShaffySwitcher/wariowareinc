@@ -49,9 +49,9 @@ glabel func_08075D24
 /* 08075D7A */ ADDS R3, R5, #0
 /* 08075D7C */ BL sprite_set_x_y
 /* 08075D80 */ MOVS R0, #2
-/* 08075D82 */ BL func_0800BF0C
+/* 08075D82 */ BL scene_show_bg_layer
 /* 08075D86 */ MOVS R0, #3
-/* 08075D88 */ BL func_0800BF20
+/* 08075D88 */ BL scene_hide_bg_layer
 /* 08075D8C */ LDR R0, [R6]
 /* 08075D8E */ MOV R2, R8
 /* 08075D90 */ LDR R1, [R2]

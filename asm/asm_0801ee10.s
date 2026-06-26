@@ -27,7 +27,7 @@ glabel func_0801EE10
 /* 0801EE36 */ ADDS R0, R2, #0
 /* 0801EE38 */ ADDS R0, #0X46
 /* 0801EE3A */ STRH R4, [R0]
-/* 0801EE3C */ BL func_0800BFC8
+/* 0801EE3C */ BL scene_show_obj_layer
 /* 0801EE40 */ STR R4, [SP]
 /* 0801EE42 */ MOVS R0, #0X1D
 /* 0801EE44 */ STR R0, [SP, #4]

@@ -49,7 +49,7 @@ _080B5396:
 /* 080B539C */ MOVS R5, #0X3C
 /* 080B539E */ LDRSH R2, [R0, R5]
 /* 080B53A0 */ MOVS R0, #3
-/* 080B53A2 */ BL func_0800BF34
+/* 080B53A2 */ BL scene_set_bg_layer_pos
 /* 080B53A6 */ POP {R4, R5}
 /* 080B53A8 */ POP {R0}
 /* 080B53AA */ BX R0

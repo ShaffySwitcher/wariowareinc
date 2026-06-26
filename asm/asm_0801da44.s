@@ -20,11 +20,11 @@ glabel func_0801DA44
 /* 0801DA60 */ SUBS R0, #4
 /* 0801DA62 */ STRH R1, [R0]
 /* 0801DA64 */ MOVS R0, #0
-/* 0801DA66 */ BL func_0800BF0C
+/* 0801DA66 */ BL scene_show_bg_layer
 /* 0801DA6A */ MOVS R0, #0
 /* 0801DA6C */ MOVS R1, #0
 /* 0801DA6E */ MOVS R2, #0
-/* 0801DA70 */ BL func_0800BF34
+/* 0801DA70 */ BL scene_set_bg_layer_pos
 /* 0801DA74 */ LDR R0, _0801DAE8
 /* 0801DA76 */ STRH R0, [R4, #4]
 /* 0801DA78 */ LDR R0, _0801DAEC

@@ -1,0 +1,72 @@
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0800C61C \n\
+/* 0800C61C */ PUSH {R4, R5, R6, LR} \n\
+/* 0800C61E */ SUB SP, #0X14 \n\
+/* 0800C620 */ ADDS R5, R0, #0 \n\
+/* 0800C622 */ ADDS R4, R1, #0 \n\
+/* 0800C624 */ LDR R0, [R4, #0XC] \n\
+/* 0800C626 */ MOVS R1, #0 \n\
+/* 0800C628 */ LDRSH R0, [R0, R1] \n\
+/* 0800C62A */ CMP R0, #0 \n\
+/* 0800C62C */ BGE _0800C68E \n\
+/* 0800C62E */ BL get_current_language \n\
+/* 0800C632 */ LDR R1, [R4] \n\
+/* 0800C634 */ LSLS R0, R0, #2 \n\
+/* 0800C636 */ ADDS R0, R0, R1 \n\
+/* 0800C638 */ LDR R1, [R0] \n\
+/* 0800C63A */ LDRH R0, [R4, #0XA] \n\
+/* 0800C63C */ CMP R0, #1 \n\
+/* 0800C63E */ BEQ _0800C658 \n\
+/* 0800C640 */ CMP R0, #1 \n\
+/* 0800C642 */ BGT _0800C64A \n\
+/* 0800C644 */ CMP R0, #0 \n\
+/* 0800C646 */ BEQ _0800C650 \n\
+/* 0800C648 */ B _0800C668 \n\
+_0800C64A: \n\
+/* 0800C64A */ CMP R0, #2 \n\
+/* 0800C64C */ BEQ _0800C660 \n\
+/* 0800C64E */ B _0800C668 \n\
+_0800C650: \n\
+/* 0800C650 */ ADDS R0, R5, #0 \n\
+/* 0800C652 */ BL func_080049BC \n\
+/* 0800C656 */ B _0800C666 \n\
+_0800C658: \n\
+/* 0800C658 */ ADDS R0, R5, #0 \n\
+/* 0800C65A */ BL func_08004A30 \n\
+/* 0800C65E */ B _0800C666 \n\
+_0800C660: \n\
+/* 0800C660 */ ADDS R0, R5, #0 \n\
+/* 0800C662 */ BL func_08004A74 \n\
+_0800C666: \n\
+/* 0800C666 */ ADDS R6, R0, #0 \n\
+_0800C668: \n\
+/* 0800C668 */ LDR R0, =gSpriteHandler \n\
+/* 0800C66A */ LDR R0, [R0] \n\
+/* 0800C66C */ MOVS R2, #4 \n\
+/* 0800C66E */ LDRSH R3, [R4, R2] \n\
+/* 0800C670 */ MOVS R2, #6 \n\
+/* 0800C672 */ LDRSH R1, [R4, R2] \n\
+/* 0800C674 */ STR R1, [SP] \n\
+/* 0800C676 */ LDRH R1, [R4, #8] \n\
+/* 0800C678 */ STR R1, [SP, #4] \n\
+/* 0800C67A */ MOVS R1, #0 \n\
+/* 0800C67C */ STR R1, [SP, #8] \n\
+/* 0800C67E */ STR R1, [SP, #0XC] \n\
+/* 0800C680 */ STR R1, [SP, #0X10] \n\
+/* 0800C682 */ ADDS R1, R6, #0 \n\
+/* 0800C684 */ MOVS R2, #0 \n\
+/* 0800C686 */ BL sprite_create \n\
+/* 0800C68A */ LDR R1, [R4, #0XC] \n\
+/* 0800C68C */ STRH R0, [R1] \n\
+_0800C68E: \n\
+/* 0800C68E */ ADD SP, #0X14 \n\
+/* 0800C690 */ POP {R4, R5, R6} \n\
+/* 0800C692 */ POP {R0} \n\
+/* 0800C694 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0800C698: \n\
+/* 0800C698 */ @ literal emitted by .ltorg for '=...' \n\
+.ltorg \n\
+.syntax divided");

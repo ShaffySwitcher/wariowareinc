@@ -289,7 +289,7 @@ _08057D40:
 /* 08057D5A */ ASRS R1, R1, #0X18
 /* 08057D5C */ MOVS R0, #3
 /* 08057D5E */ MOVS R2, #0
-/* 08057D60 */ BL func_0800BF34
+/* 08057D60 */ BL scene_set_bg_layer_pos
 /* 08057D64 */ MOV R1, R8
 /* 08057D66 */ LDR R0, [R1]
 /* 08057D68 */ MOVS R2, #0XEF
@@ -304,7 +304,7 @@ _08057D40:
 /* 08057D7A */ ASRS R1, R1, #0X18
 /* 08057D7C */ MOVS R0, #2
 /* 08057D7E */ MOVS R2, #8
-/* 08057D80 */ BL func_0800BF34
+/* 08057D80 */ BL scene_set_bg_layer_pos
 /* 08057D84 */ ADD SP, #0XC
 /* 08057D86 */ POP {R3}
 /* 08057D88 */ MOV R8, R3

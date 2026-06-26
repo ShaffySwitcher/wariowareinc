@@ -30,7 +30,7 @@ glabel func_080414F4
 /* 08041524 */ STR R2, [R0]
 /* 08041526 */ MOVS R0, #2
 /* 08041528 */ MOVS R2, #0
-/* 0804152A */ BL func_0800BF34
+/* 0804152A */ BL scene_set_bg_layer_pos
 _0804152E:
 /* 0804152E */ POP {R4}
 /* 08041530 */ POP {R0}

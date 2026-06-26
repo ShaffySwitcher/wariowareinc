@@ -47,7 +47,7 @@ _080EBE4E:
 /* 080EBE52 */ ASRS R1, R1, #0X10
 /* 080EBE54 */ MOVS R0, #1
 /* 080EBE56 */ MOVS R2, #0
-/* 080EBE58 */ BL func_0800BF34
+/* 080EBE58 */ BL scene_set_bg_layer_pos
 /* 080EBE5C */ POP {R4, R5}
 /* 080EBE5E */ POP {R0}
 /* 080EBE60 */ BX R0

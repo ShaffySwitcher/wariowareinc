@@ -93,7 +93,7 @@ _080B6378:
 /* 080B638E */ LDRB R2, [R0]
 /* 080B6390 */ MOVS R0, #3
 /* 080B6392 */ MOVS R1, #0
-/* 080B6394 */ BL func_0800BF34
+/* 080B6394 */ BL scene_set_bg_layer_pos
 /* 080B6398 */ B _080B63FC
 _080B639A:
 /* 080B639A */ MOVS R0, #2

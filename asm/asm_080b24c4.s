@@ -39,7 +39,7 @@ _080B24E8:
 /* 080B2502 */ MOVS R0, #1
 /* 080B2504 */ ADDS R1, R6, #0
 /* 080B2506 */ ADDS R2, R4, #0
-/* 080B2508 */ BL func_0800BF34
+/* 080B2508 */ BL scene_set_bg_layer_pos
 /* 080B250C */ ADDS R1, R5, #0
 /* 080B250E */ ADDS R1, #8
 /* 080B2510 */ LSLS R1, R1, #0X10
@@ -49,7 +49,7 @@ _080B24E8:
 /* 080B2518 */ LSLS R2, R2, #0X10
 /* 080B251A */ ASRS R2, R2, #0X10
 /* 080B251C */ MOVS R0, #2
-/* 080B251E */ BL func_0800BF34
+/* 080B251E */ BL scene_set_bg_layer_pos
 /* 080B2522 */ MOV R0, R8
 /* 080B2524 */ CMP R0, #0
 /* 080B2526 */ BNE _080B2564

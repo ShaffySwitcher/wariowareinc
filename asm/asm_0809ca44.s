@@ -35,9 +35,9 @@ glabel func_0809CA44
 /* 0809CA7E */ MOVS R2, #0
 /* 0809CA80 */ BL sprite_set_enable_updates
 /* 0809CA84 */ MOVS R0, #2
-/* 0809CA86 */ BL func_0800BF0C
+/* 0809CA86 */ BL scene_show_bg_layer
 /* 0809CA8A */ MOVS R0, #3
-/* 0809CA8C */ BL func_0800BF0C
+/* 0809CA8C */ BL scene_show_bg_layer
 _0809CA90:
 /* 0809CA90 */ POP {R4, R5}
 /* 0809CA92 */ POP {R0}

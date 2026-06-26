@@ -43,7 +43,7 @@ _0801B4D6:
 /* 0801B4E8 */ LDR R0, _0801B5B8
 /* 0801B4EA */ BL load_gfx_table
 /* 0801B4EE */ MOVS R0, #0
-/* 0801B4F0 */ BL func_0800BF20
+/* 0801B4F0 */ BL scene_hide_bg_layer
 /* 0801B4F4 */ MOVS R0, #9
 /* 0801B4F6 */ BL scene_hide_sprite
 /* 0801B4FA */ MOVS R0, #0XA

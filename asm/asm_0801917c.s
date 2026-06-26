@@ -7,7 +7,7 @@
 glabel func_0801917C
 /* 0801917C */ PUSH {LR}
 /* 0801917E */ MOVS R0, #0
-/* 08019180 */ BL func_0800BF0C
+/* 08019180 */ BL scene_show_bg_layer
 /* 08019184 */ POP {R0}
 /* 08019186 */ BX R0
 .ltorg

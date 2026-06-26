@@ -208,7 +208,7 @@ _080B738A:
 /* 080B73DA */ LDRB R2, [R0]
 /* 080B73DC */ MOVS R0, #3
 /* 080B73DE */ MOVS R1, #0
-/* 080B73E0 */ BL func_0800BF34
+/* 080B73E0 */ BL scene_set_bg_layer_pos
 /* 080B73E4 */ B _080B7428
 
 .balign 4, 0

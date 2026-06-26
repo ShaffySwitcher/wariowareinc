@@ -3,7 +3,7 @@ asm(".syntax unified \n\
 thumb_func_start func_08014208 \n\
 /* 08014208 */ PUSH {R4, R5, R6, LR} \n\
 /* 0801420A */ MOVS R0, #2 \n\
-/* 0801420C */ BL func_0800BF20 \n\
+/* 0801420C */ BL scene_hide_bg_layer \n\
 /* 08014210 */ LDR R0, _0801428C \n\
 /* 08014212 */ LDR R1, [R0] \n\
 /* 08014214 */ ADDS R1, #0XDE \n\

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800BF60 \n\
+thumb_func_start scene_set_bg_layer_priority \n\
 /* 0800BF60 */ LDR R2, _0800BF74 \n\
 /* 0800BF62 */ LSLS R0, R0, #1 \n\
 /* 0800BF64 */ ADDS R0, R0, R2 \n\

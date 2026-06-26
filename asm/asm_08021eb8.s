@@ -27,7 +27,7 @@ _08021EDA:
 /* 08021EDE */ ASRS R1, R1, #0X10
 /* 08021EE0 */ MOVS R0, #2
 /* 08021EE2 */ MOVS R2, #0
-/* 08021EE4 */ BL func_0800BF34
+/* 08021EE4 */ BL scene_set_bg_layer_pos
 _08021EE8:
 /* 08021EE8 */ POP {R4}
 /* 08021EEA */ POP {R0}

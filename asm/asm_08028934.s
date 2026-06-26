@@ -25,22 +25,22 @@ glabel func_08028934
 /* 08028956 */ ADDS R0, R7, #0
 /* 08028958 */ BL func_08002124
 /* 0802895C */ MOVS R0, #0
-/* 0802895E */ BL func_0800BEF4
+/* 0802895E */ BL scene_set_video_mode
 /* 08028962 */ MOVS R0, #1
-/* 08028964 */ BL func_0800BF0C
+/* 08028964 */ BL scene_show_bg_layer
 /* 08028968 */ MOVS R0, #2
-/* 0802896A */ BL func_0800BF20
+/* 0802896A */ BL scene_hide_bg_layer
 /* 0802896E */ MOVS R0, #3
-/* 08028970 */ BL func_0800BF20
+/* 08028970 */ BL scene_hide_bg_layer
 /* 08028974 */ MOVS R0, #1
 /* 08028976 */ MOVS R1, #0
 /* 08028978 */ MOVS R2, #0
-/* 0802897A */ BL func_0800BF34
+/* 0802897A */ BL scene_set_bg_layer_pos
 /* 0802897E */ MOVS R0, #1
 /* 08028980 */ MOVS R1, #0
 /* 08028982 */ MOVS R2, #0X1D
 /* 08028984 */ MOVS R3, #1
-/* 08028986 */ BL func_0800BF44
+/* 08028986 */ BL scene_set_bg_layer_controls
 /* 0802898A */ LDR R0, [R4]
 /* 0802898C */ MOVS R2, #0XBC
 /* 0802898E */ LSLS R2, R2, #1

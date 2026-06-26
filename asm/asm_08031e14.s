@@ -64,7 +64,7 @@ _08031E5C:
 /* 08031E82 */ MOVS R1, #2
 /* 08031E84 */ MOVS R2, #0X1E
 /* 08031E86 */ MOVS R3, #1
-/* 08031E88 */ BL func_0800BF44
+/* 08031E88 */ BL scene_set_bg_layer_controls
 /* 08031E8C */ ADDS R0, R5, #0
 /* 08031E8E */ ADDS R0, #0X84
 /* 08031E90 */ LDR R0, [R0]

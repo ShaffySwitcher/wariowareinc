@@ -344,14 +344,14 @@ _080B6120:
 /* 080B6202 */ ASRS R2, R2, #0X10
 /* 080B6204 */ MOVS R0, #1
 /* 080B6206 */ MOVS R1, #0
-/* 080B6208 */ BL func_0800BF34
+/* 080B6208 */ BL scene_set_bg_layer_pos
 /* 080B620C */ LDR R0, [R4]
 /* 080B620E */ LDR R2, [R0, #0X6C]
 /* 080B6210 */ LSLS R2, R2, #8
 /* 080B6212 */ ASRS R2, R2, #0X10
 /* 080B6214 */ MOVS R0, #2
 /* 080B6216 */ MOVS R1, #0
-/* 080B6218 */ BL func_0800BF34
+/* 080B6218 */ BL scene_set_bg_layer_pos
 /* 080B621C */ LDR R1, _080B62D8
 /* 080B621E */ LDR R0, [R1]
 /* 080B6220 */ LDR R1, [R4]

@@ -28,9 +28,9 @@ glabel func_0809C9E8
 /* 0809CA14 */ MOVS R2, #1
 /* 0809CA16 */ BL sprite_set_enable_updates
 /* 0809CA1A */ MOVS R0, #2
-/* 0809CA1C */ BL func_0800BF20
+/* 0809CA1C */ BL scene_hide_bg_layer
 /* 0809CA20 */ MOVS R0, #3
-/* 0809CA22 */ BL func_0800BF20
+/* 0809CA22 */ BL scene_hide_bg_layer
 /* 0809CA26 */ LDR R0, [R4]
 /* 0809CA28 */ MOVS R1, #0X8C
 /* 0809CA2A */ LSLS R1, R1, #1
