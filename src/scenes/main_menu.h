@@ -54,7 +54,13 @@ struct MainMenuSceneData {
     s32 unkDC_27:1;
     u32 unkDC_28:1;
     u32 unkDC_29:4;
-    u8 padE0[0x11];
+    u8 padE0[0x8];
+    u8 unkE8;
+    u8 padE9;
+    s16 unkEA;
+    s16 unkEC;
+    u16 unkEE;
+    u8 unkF0;
     u8 unkF1;
     u8 unkF2[0x2];
     void (*unkF4)(s32);
@@ -107,6 +113,17 @@ struct Unk083AB478 {
     u16 unk0[4];
 };
 
+struct Unk03000E60 {
+    u32 unk0_1 : 8;
+    u32 unk0_9 : 10;
+    u32 unk0_19: 4;
+    u32 unk4;
+    u32 unk8_1 : 8;
+    u32 unk8_9 : 10;
+    u32 unk8_19: 4;
+    u32 unkA;
+};
+
 // DATA
 extern struct GraphicsTable main_menu_gfx_table[];
 extern struct Unk03006518 D_03006518;
@@ -119,6 +136,9 @@ extern struct Unk083AA0C4 D_083AA294[];
 extern void* D_083AA530;
 extern void* D_083A4A2C;
 extern void* D_083AB394;
+extern s8 D_03003630;
+extern struct GameplayData_struct_0 D_083AB020;
+extern struct Unk03000E60 D_03000E60;
 
 // FUNCTIONS
 extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);
@@ -152,6 +172,12 @@ extern void func_08014FF4(void);
 extern void func_0801429C(u32, u32);
 extern void func_08014374(void);
 extern void func_080143A0(void);
+extern void func_08013660(void);
+extern void func_080136A4(void);
+extern void func_08015C38(void);
+extern void func_08013E44(void);
+extern void func_08013B88(void);
+extern void func_08013AE0(void);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);

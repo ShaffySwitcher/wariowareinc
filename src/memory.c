@@ -97,14 +97,14 @@ void save_beat_stage(u32 id) {
 }
 
 // probably those are bit-wise(?) i can't get them to match with a bitfield struct for some reason
-u32 func_080006BC(u32 id) {
+u32 save_is_microgame_unlocked(u32 id) {
     if ((gSaveBuffer->microgameFlags[id] & 1) != 0) {
         return 1;
     }
     return 0;
 }
 
-u32 func_080006E4(u32 id) {
+u32 save_unlock_microgame(u32 id) {
     u32 index = id;
     gSaveBuffer->microgameFlags[index] |= TRUE;
 }

@@ -381,7 +381,7 @@ void func_0800912C(u16 arg0) {
     struct GameplayStageInfo *stageInfo = gGameplayData.unk0->unk4;
     u32 args[3];
     
-    if (D_03003848 != 0x63) {
+    if (D_03003848 != 99) {
         if (save_is_stage_beaten(D_03003848) != 0) {
             gGameplayData.unk23e = func_080089D8(D_03003848, arg0);
         }

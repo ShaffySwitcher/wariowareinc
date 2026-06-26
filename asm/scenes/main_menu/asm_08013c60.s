@@ -9,7 +9,7 @@ thumb_func_start func_08013C60 \n\
 /* 08013C6A */ SUB SP, #0XC \n\
 /* 08013C6C */ BL func_08013628 \n\
 /* 08013C70 */ ADDS R4, R0, #0 \n\
-/* 08013C72 */ BL func_080006BC \n\
+/* 08013C72 */ BL save_is_microgame_unlocked \n\
 /* 08013C76 */ CMP R0, #0 \n\
 /* 08013C78 */ BNE _08013C7C \n\
 /* 08013C7A */ B _08013E22 \n\

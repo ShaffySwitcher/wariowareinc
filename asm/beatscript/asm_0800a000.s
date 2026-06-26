@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800A000 \n\
+thumb_func_start scene_set_music_volume \n\
 /* 0800A000 */ PUSH {LR} \n\
 /* 0800A002 */ ADDS R1, R0, #0 \n\
 /* 0800A004 */ LSLS R1, R1, #0X10 \n\

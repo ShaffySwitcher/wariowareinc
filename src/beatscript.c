@@ -373,8 +373,12 @@ u32 get_current_mem_id(void) {
     return gBeatscriptScene.currentThread + 1;
 }
 
-// [https://decomp.me/scratch/UsJl5] increase lives and clamp them
-#include "asm/beatscript/asm_0800a098.s"
+u32 func_0800A098(void) {
+    gGameplayData.currentLives++;
+    if (gGameplayData.currentLives > 4) {
+         gGameplayData.currentLives = 4;
+    }
+}
 
 #include "asm/beatscript/asm_0800a0c4.s"
 
