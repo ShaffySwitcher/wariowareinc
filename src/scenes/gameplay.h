@@ -30,12 +30,12 @@ struct GameplayStageInfo {
     void (*unk0)(void*);
     u8 pad4[4];
     u32 unk8;
-    u32 unkC;
-    u32 unk10;
-    u32 unk14;
-    u32 unk18;
-    u32 unk1C;
-    u32 unk20;
+    struct SubScene* unkC;
+    struct SubScene* unk10;
+    struct SubScene* unk14;
+    struct SubScene* unk18;
+    struct SubScene* unk1C;
+    struct SubScene* unk20;
     u32 unk24;
     u32 unk28;
     u32 unk2C;
@@ -50,6 +50,8 @@ struct GameplayData_struct_0 {
     struct GameplayStageInfo* unk4;
     struct GameplayScriptCmd* unk8;
 };
+
+struct GameplayScriptSelectorList;
 
 struct GameplayData {
     struct GameplayData_struct_0* unk0; // 0x0 size:0x4
@@ -111,7 +113,7 @@ struct GameplayData {
     u8 unk220; // 0x220
     u8 unk221; // 0x221
     u8 pad222[2]; // 0x222 size:0x2
-    struct GameplayScriptSelector* unk224; // 0x224 size:0x4
+    struct GameplayScriptSelectorList* unk224; // 0x224 size:0x4
     u32 unk228; // 0x228 size:0x4
     void* unk22c; // 0x22C size:0x4
     u8 pad230[8]; // 0x230 size:0xC
@@ -159,8 +161,13 @@ struct GameplayMicrogameInfo {
     void* unkC;
 };
 
+struct GameplayStruct6c_4_0 {
+    u32 difficulty : 8;
+    u32 microgameID : 10;
+};
+
 struct GameplayStruct6c_4 {
-    u32 unk0;
+    struct GameplayStruct6c_4_0 unk0;
     void* unk4;
 };
 
@@ -176,6 +183,13 @@ struct GameplayRandomMicrogameList {
     struct GameplayStruct6c_4* unk4;
 };
 
+struct GameplayScriptSelectorList {
+    u8 unk0_1 : 4;
+    u8 unk0_5 : 4;
+    u8 pad1[3];
+    struct GameplayScriptSelector** unk4;
+};
+
 struct GameplayScriptSelector {
     u8 unk0;
     u8 pad1[3];
@@ -185,6 +199,7 @@ struct GameplayScriptSelector {
 
 // DATA
 extern s16 D_030035E0;
+extern void* D_03005758;
 extern u8 D_03003634;
 extern s16 gCurrentScene;
 extern u32 D_03004054[]; // 0x400 palette buffer (2x0x200)

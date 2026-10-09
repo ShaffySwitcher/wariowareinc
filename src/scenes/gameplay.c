@@ -375,7 +375,140 @@ void func_08008DF4(void) {
     func_08003FB8();
 }
 
-#include "asm/scenes/gameplay/asm_08008e1c.s"
+void gameplay_select_next_microgame(void) {
+    struct GameplayStageInfo *stage;
+    struct GameplayStruct6c *scriptTarget;
+    struct GameplayStruct6c_4 *entry;
+    struct GameplayScriptSelectorList *selectors;
+    const struct SubScene *args[3];
+    u32 argsCursor;
+    u32 clearValue;
+    u32 tempo;
+    u8 progress;
+    u16 minDifficulty, maxDifficulty;
+    u32 idx;
+    u32 gameID;
+
+    func_0800A200(1);
+    func_08008DF4();
+
+    stage = gGameplayData.unk0->unk4;
+
+    // TO-DO: fake match
+    clearValue = 0;
+    argsCursor = (u32)&args[1];
+    do {
+        *(u32 *)argsCursor = clearValue;
+        argsCursor -= sizeof(args[0]);
+    } while ((s32)argsCursor >= (s32)&args[0]);
+
+    scriptTarget = gGameplayData.unk6c;
+    progress = gGameplayData.unk70;
+    minDifficulty = gGameplayData.unk18;
+    maxDifficulty = gGameplayData.unk1A;
+
+    if (scriptTarget->unk0_1 > 1) {
+        s32 span = scriptTarget->unk0_1 - 1;
+        s32 delta = maxDifficulty - minDifficulty;
+        tempo = minDifficulty + (delta * (progress * progress)) / (span * span);
+    } else {
+        tempo = minDifficulty;
+    }
+
+    entry = &scriptTarget->unk4[gGameplayData.unk71[progress]];
+    gGameplayData.currentDifficulty = entry->unk0.difficulty;
+
+    gameID = entry->unk0.microgameID;
+
+    if (gameID == 0xFB) {
+        struct GameplayRandomMicrogameList *randomList = entry->unk4;
+        u32 count;
+
+        entry = randomList->unk4;
+        count = 0;
+        while (entry->unk0.difficulty != 0xFF) {
+            entry++;
+            count++;
+        }
+        entry = &randomList->unk4[get_random_range(count)];
+
+        if (gGameplayData.currentDifficulty == 0xFE) {
+            gGameplayData.currentDifficulty = entry->unk0.difficulty;
+        }
+    }
+
+    gGameplayData.currentDifficulty += gGameplayData.unk6_1;
+    if (gGameplayData.currentDifficulty > 2) {
+        gGameplayData.currentDifficulty = 2;
+    }
+
+    gGameplayData.currentMicrogameID = entry->unk0.microgameID;
+
+    selectors = gGameplayData.unk224;
+    idx = gGameplayData.unk221;
+
+    switch (gGameplayData.unk228) {
+        case 0:
+            gGameplayData.unkC = entry->unk4 != NULL
+                    ? entry->unk4
+                    : D_083A50E0[entry->unk0.microgameID].unk4;
+            break;
+
+        case 1: {
+            struct GameplayScriptSelector *category =
+                    selectors->unk4[gGameplayData.unk220];
+            idx %= category->unk0;
+            gGameplayData.unkC = category->unk8[idx];
+            break;
+        }
+
+        case 2: {
+            struct GameplayScriptSelector *category =
+                    selectors->unk4[get_random_range(selectors->unk0_1)];
+            idx %= category->unk0;
+            gGameplayData.unkC = category->unk8[idx];
+            break;
+        }
+
+        default:
+            break;
+    }
+
+    gGameplayData.unk172 = D_083A50E0[entry->unk0.microgameID].unk8;
+
+    switch (gGameplayData.unk172 - 1) {
+        case 0: args[0] = stage->unkC; break;
+        case 1: args[0] = stage->unk10; break;
+        case 2: args[0] = stage->unk14; break;
+        case 3: args[0] = stage->unk18; break;
+        case 4: args[0] = stage->unk1C; break;
+        case 5: args[0] = stage->unk20; break;
+        default: args[0] = stage->unkC; break;
+    }
+
+    gGameplayData.unk173 = 0;
+    gGameplayData.unk17a = 0;
+    gGameplayData.unk188 = -1;
+    gGameplayData.unk180 = 0;
+    gGameplayData.unk195 = 0;
+    gGameplayData.unk7_3 = TRUE;
+    gGameplayData.unk274 = 0;
+    gGameplayData.unk278 = 0;
+
+    dma3_fill(0, &D_03005758, 0xD68, 0x20, 0x100);
+
+    gGameplayData.unk1f0 = 2;
+    gGameplayData.unk21c = (gGameplayData.currentScore != gGameplayData.unk17e);
+    gGameplayData.unk27e = 0;
+
+    gSaveBuffer->microgameFlags[entry->unk0.microgameID] |= TRUE;
+
+    args[1] = D_083A50E0[entry->unk0.microgameID].unk0;
+    args[2] = NULL;
+
+    set_beatscript_tempo((u16)tempo);
+    set_beatscript_subscenes(args);
+}
 
 void func_0800912C(u16 arg0) {
     struct GameplayStageInfo *stageInfo = gGameplayData.unk0->unk4;
@@ -536,7 +669,7 @@ u32 gameplay_run_script(void) {
                 }
 
                 if (gGameplayData.unk70 < scriptTarget->unk0_1) {
-                    func_08008E1C();
+                    gameplay_select_next_microgame();
                     return 0;
                 }
 
@@ -587,7 +720,7 @@ u32 gameplay_run_script(void) {
                     gGameplayData.unk6c = (struct GameplayStruct6c*)value.u32ptr;
                     gGameplayData.unk18 = gBeatscriptScene.scriptBaseBPM;
                     func_08008B50();
-                    func_08008E1C();
+                    gameplay_select_next_microgame();
                     return 0;
 
                 case 2:
@@ -618,7 +751,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 8:
-                    gGameplayData.unk224 = (struct GameplayScriptSelector *)value.u32;
+                    gGameplayData.unk224 = (struct GameplayScriptSelectorList *)value.u32;
                     break;
 
                 case 9:
