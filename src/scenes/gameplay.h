@@ -51,6 +51,11 @@ struct GameplayData_struct_0 {
     struct GameplayScriptCmd* unk8;
 };
 
+struct GameplayData_struct_1f4 {
+    u32 unk0_1 : 1;
+    u32 unk0_2 : 31;
+};
+
 struct GameplayScriptSelectorList;
 
 struct GameplayData {
@@ -104,10 +109,8 @@ struct GameplayData {
     u8 pad196[0x58]; // 0x196 size:0x58
     s16 unk1ee; // 0x1EE size:0x2
     s32 unk1f0; // 0x1F0 size:0x4
-    u8 unk1f4_1 : 1; // 0x1F4:0
-    u8 pad1f5; // 0x1F5
-    u8 unk1f6; // 0x1F6
-    u8 pad1f7[0x21]; // 0x1F7 size:0x21
+    struct GameplayData_struct_1f4 unk1f4; // 0x1F4 size:0x4
+    u8 pad1f8[0x20]; // 0x1F8 size:0x20
     void* unk218; // 0x218 size:0x4
     u32 scoreChanged; // 0x21C size:0x4
     u8 unk220; // 0x220
@@ -230,8 +233,8 @@ extern u32 gameplay_check_collision(struct Vector2*, struct Rect*, struct Vector
 extern void gameplay_init_scene(void);
 extern void gameplay_stop_scene(void);
 extern u32 gameplay_update_scene(void);
-extern void func_08008798(void);
-extern void func_080088C0(void);
+extern void gameplay_pause_dim_palettes(void);
+extern void gameplay_unpause_restore_palettes(void);
 extern void func_08008940(void);
 extern u32 func_08008AA4(u32);
 extern void func_08008AE8(struct GameplayScriptCmd*);

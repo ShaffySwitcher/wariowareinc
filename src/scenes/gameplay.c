@@ -60,7 +60,7 @@ void gameplay_init_scene(void) {
     gGameplayData.unk0 = D_03003628;
     gGameplayData.unk20 = D_03003628->unk8;
     gGameplayData.unk6_3 = 0;
-    gGameplayData.unk1f4_1 = 0;
+    gGameplayData.unk1f4.unk0_1 = 0;
     gGameplayData.unk218 = mem_heap_alloc(0x8000);
     gGameplayData.unk188 = -1;
     gGameplayData.pauseAvailable = FALSE;
@@ -118,7 +118,7 @@ u32 gameplay_update_scene(void) {
 
     flush_graphics_buffer();
     trigger_pending_dma3();
-    func_08003A70(&gGameplayData.pad1f5 - 1);
+    func_08003A70(&gGameplayData.unk1f4);
 
     if (!gGameplayData.isPaused) {
         update_paused_beatscript_scene();
@@ -156,14 +156,14 @@ u32 gameplay_update_scene(void) {
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
                     func_08002024(1);
                     sprite_handler_set_global_pause(gSpriteHandler, TRUE);
-                    func_08003D28(&gGameplayData.pad1f5 - 1, 1);
+                    func_08003D28(&gGameplayData.unk1f4, 1);
                     for (i = 0; i < 2;) {
                         i++;
                         func_08005A54(i, 1);
                     }
                     gGameplayData.currentState = GAMEPLAY_STATE_PAUSED;
                     play_sound(&s_BASIC_PAUSE_ON_seqData);
-                    func_08008798();
+                    gameplay_pause_dim_palettes();
                     break;
                 }
             }
@@ -202,13 +202,13 @@ u32 gameplay_update_scene(void) {
                 gGameplayData.isPaused = 0;
                 func_08002024(0);
                 sprite_handler_set_global_pause(gSpriteHandler, FALSE);
-                func_08003D28(&gGameplayData.pad1f5 - 1, 0);
+                func_08003D28(&gGameplayData.unk1f4, 0);
                 for (i = 0; i < 2;) {
                     i++;
                     func_08005A54((u16)i, 0);
                 }
                 gGameplayData.currentState = GAMEPLAY_STATE_RUNNING;
-                func_080088C0();
+                gameplay_unpause_restore_palettes();
             }
             break;
         case GAMEPLAY_STATE_EXITING:
@@ -222,14 +222,14 @@ u32 gameplay_update_scene(void) {
         default:
             break;
     }
-    func_08003B58(&gGameplayData.pad1f5 - 1);
+    func_08003B58(&gGameplayData.unk1f4);
     func_08006F68();
     func_08006B00();
     func_080041B4();
     return 0;
 }
 
-void func_08008798(void) {
+void gameplay_pause_dim_palettes(void) {
     u32 i;
     u32 *paletteWords;
 
@@ -262,7 +262,7 @@ void func_08008798(void) {
     }
 }
 
-void func_080088C0(void) {
+void gameplay_unpause_restore_palettes(void) {
     if (gGameplayData.currentOpcode - 2 < 2) {
         dma3_set(gGameplayData.unk288, D_03004054, 0x200, 0x20, 0x100);
         dma3_set(gGameplayData.unk28c, D_03004054 + 0x80, 0x200, 0x20, 0x100);
