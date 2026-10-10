@@ -60,10 +60,10 @@ void gameplay_init_scene(void) {
     gGameplayData.unk0 = D_03003628;
     gGameplayData.unk20 = D_03003628->unk8;
     gGameplayData.unk6_3 = 0;
-    gGameplayData.unk1f4_1 = 0;
+    gGameplayData.unk1f4.unk0_1 = 0;
     gGameplayData.unk218 = mem_heap_alloc(0x8000);
     gGameplayData.unk188 = -1;
-    gGameplayData.unk5_8 = 0;
+    gGameplayData.pauseAvailable = FALSE;
     gGameplayData.isPaused = 0;
     gGameplayData.unk1ee = -1;
     gGameplayData.unk7_4 = 1;
@@ -118,7 +118,7 @@ u32 gameplay_update_scene(void) {
 
     flush_graphics_buffer();
     trigger_pending_dma3();
-    func_08003A70(&gGameplayData.pad1f5 - 1);
+    func_08003A70(&gGameplayData.unk1f4);
 
     if (!gGameplayData.isPaused) {
         update_paused_beatscript_scene();
@@ -146,24 +146,24 @@ u32 gameplay_update_scene(void) {
             break;
         case GAMEPLAY_STATE_RUNNING:
         {
-            u8 pauseAvailable = gGameplayData.unk5_8;
+            u8 pauseAvailable = gGameplayData.pauseAvailable;
 
             if (gPressedKeys & START_BUTTON) {
                 if (pauseAvailable != 0) {
                     gGameplayData.isPaused = 1;
-                    gGameplayData.unk5_6 = 0;
+                    gGameplayData.pauseSelection = 0;
                     sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, language * 2);
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
                     func_08002024(1);
                     sprite_handler_set_global_pause(gSpriteHandler, TRUE);
-                    func_08003D28(&gGameplayData.pad1f5 - 1, 1);
+                    func_08003D28(&gGameplayData.unk1f4, 1);
                     for (i = 0; i < 2;) {
                         i++;
                         func_08005A54(i, 1);
                     }
                     gGameplayData.currentState = GAMEPLAY_STATE_PAUSED;
                     play_sound(&s_BASIC_PAUSE_ON_seqData);
-                    func_08008798();
+                    gameplay_pause_dim_palettes();
                     break;
                 }
             }
@@ -179,9 +179,9 @@ u32 gameplay_update_scene(void) {
         case GAMEPLAY_STATE_PAUSED:
             if (gPressedKeys & (A_BUTTON | B_BUTTON | START_BUTTON)) {
                 if (gPressedKeys & B_BUTTON) {
-                    gGameplayData.unk5_6 = 0;
+                    gGameplayData.pauseSelection = 0;
                 }
-                if (gGameplayData.unk5_6 == 0) {
+                if (gGameplayData.pauseSelection == 0) {
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, FALSE);
                     gGameplayData.currentState = GAMEPLAY_STATE_RESUMING;
                     play_sound(&s_BASIC_PAUSE_OFF_seqData);
@@ -193,8 +193,8 @@ u32 gameplay_update_scene(void) {
                     gGameplayData.currentState = GAMEPLAY_STATE_EXITING;
                 }
             } else if (gPressedKeys & (DPAD_LEFT | DPAD_RIGHT)) {
-                gGameplayData.unk5_6 ^= 1;
-                sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, gGameplayData.unk5_6 + (language * 2));
+                gGameplayData.pauseSelection ^= 1;
+                sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, gGameplayData.pauseSelection + (language * 2));
             }
             break;
         case GAMEPLAY_STATE_RESUMING:
@@ -202,13 +202,13 @@ u32 gameplay_update_scene(void) {
                 gGameplayData.isPaused = 0;
                 func_08002024(0);
                 sprite_handler_set_global_pause(gSpriteHandler, FALSE);
-                func_08003D28(&gGameplayData.pad1f5 - 1, 0);
+                func_08003D28(&gGameplayData.unk1f4, 0);
                 for (i = 0; i < 2;) {
                     i++;
                     func_08005A54((u16)i, 0);
                 }
                 gGameplayData.currentState = GAMEPLAY_STATE_RUNNING;
-                func_080088C0();
+                gameplay_unpause_restore_palettes();
             }
             break;
         case GAMEPLAY_STATE_EXITING:
@@ -222,18 +222,18 @@ u32 gameplay_update_scene(void) {
         default:
             break;
     }
-    func_08003B58(&gGameplayData.pad1f5 - 1);
+    func_08003B58(&gGameplayData.unk1f4);
     func_08006F68();
     func_08006B00();
     func_080041B4();
     return 0;
 }
 
-void func_08008798(void) {
+void gameplay_pause_dim_palettes(void) {
     u32 i;
     u32 *paletteWords;
 
-    if (gGameplayData.unk24 - 2 < 2) {
+    if (gGameplayData.currentOpcode - 2 < 2) {
         dma3_set(D_03004054, gGameplayData.unk288, 0x200, 0x20, 0x100);
         dma3_set(D_03004054 + 0x80, gGameplayData.unk28c, 0x200, 0x20, 0x100);
 
@@ -247,7 +247,7 @@ void func_08008798(void) {
         }
 
         if (gGameplayData.unk7_4 != 0) {
-            if (gGameplayData.unk24 == 2) {
+            if (gGameplayData.currentOpcode == 2) {
                 dma3_fill(0, D_03004054, 0x180, 0x20, 0x100);
                 dma3_fill(0, D_03004054 + 0x80, 0x180, 0x20, 0x100);
             }
@@ -262,8 +262,8 @@ void func_08008798(void) {
     }
 }
 
-void func_080088C0(void) {
-    if (gGameplayData.unk24 - 2 < 2) {
+void gameplay_unpause_restore_palettes(void) {
+    if (gGameplayData.currentOpcode - 2 < 2) {
         dma3_set(gGameplayData.unk288, D_03004054, 0x200, 0x20, 0x100);
         dma3_set(gGameplayData.unk28c, D_03004054 + 0x80, 0x200, 0x20, 0x100);
         if (gGameplayData.unk188 >= 0) {
@@ -318,16 +318,16 @@ struct GameplayScriptCmd* func_08008B18(void) {
 
 void gameplay_stage_init(void) {
     u32 i;
-    u32 args[3];
+    struct SubScene* subscenes[3];
     struct GameplayData_struct_0* unk0 = gGameplayData.unk0; 
     struct GameplayStageInfo* unk4 = unk0->unk4;
 
     gBeatscriptScene.musicBaseBPM = 140;
-    gGameplayData.unk1A = unk0->unk0;
+    gGameplayData.maxTempo = unk0->unk0;
     set_beatscript_tempo(unk0->unk0);
-    gGameplayData.unk280 = 0x12C;
-    gGameplayData.unk284 = 0xC00;
-    gGameplayData.unk6_1 = 0;
+    gGameplayData.tempoLimit = 300;
+    gGameplayData.pitchLimit = 0xC00;
+    gGameplayData.difficultyOffset = 0;
     gGameplayData.unk270 = 0;
     gGameplayData.unk27d = unk4->unk38;
     gGameplayData.unk228 = 0;
@@ -335,8 +335,8 @@ void gameplay_stage_init(void) {
     gGameplayData.unk221 = 0;
     func_0800A200(0);
     for (i = 0; i < 2; i++) {
-        args[i] = 0;
-        gBeatscriptScene.threads[i].active = 0;
+        subscenes[i] = NULL;
+        gBeatscriptScene.threads[i].active = FALSE;
     }
     gGraphicsBuffer.BG_OFS[0].y = 0;
     gGraphicsBuffer.BG_OFS[0].x = 0;
@@ -344,7 +344,7 @@ void gameplay_stage_init(void) {
     gGameplayData.unk274 = 0;
     gGameplayData.unk278 = 0;
     gGameplayData.currentScore = 0;
-    gGameplayData.unk17e = 0;
+    gGameplayData.previousScore = 0;
     scene_set_current_thread(0);
     if (unk4->unk0 != 0) {
         unk4->unk0(D_030049F0);
@@ -352,15 +352,15 @@ void gameplay_stage_init(void) {
     gGameplayData.currentLives = gGameplayData.maxLives;
     gGameplayData.unk6_7 = 0;
     gGameplayData.unk6_8 = 1;
-    gGameplayData.unk24 = 1;
-    args[0] = unk4->unk8;
-    args[1] = 0;
+    gGameplayData.currentOpcode = 1;
+    subscenes[0] = unk4->introScene;
+    subscenes[1] = NULL;
     if (D_03003634 != 0) {
         func_08006E94(1);
         gGameplayData.unk20 = D_083A4BCC;
-        args[0] = 0;
+        subscenes[0] = NULL;
     }
-    set_beatscript_subscenes(args);
+    set_beatscript_subscenes(subscenes);
 }
 
 void func_08008DF4(void) {
@@ -375,11 +375,144 @@ void func_08008DF4(void) {
     func_08003FB8();
 }
 
-#include "asm/scenes/gameplay/asm_08008e1c.s"
+void gameplay_select_next_microgame(void) {
+    struct GameplayStageInfo *stage;
+    struct GameplayStruct6c *scriptTarget;
+    struct GameplayStruct6c_4 *entry;
+    struct GameplayScriptSelectorList *selectors;
+    const struct SubScene *args[3];
+    u32 argsCursor;
+    u32 clearValue;
+    u32 tempo;
+    u8 progress;
+    u16 minTempo, maxTempo;
+    u32 idx;
+    u32 gameID;
+
+    func_0800A200(1);
+    func_08008DF4();
+
+    stage = gGameplayData.unk0->unk4;
+
+    // TO-DO: fake match
+    clearValue = 0;
+    argsCursor = (u32)&args[1];
+    do {
+        *(u32 *)argsCursor = clearValue;
+        argsCursor -= sizeof(args[0]);
+    } while ((s32)argsCursor >= (s32)&args[0]);
+
+    scriptTarget = gGameplayData.unk6c;
+    progress = gGameplayData.unk70;
+    minTempo = gGameplayData.minTempo;
+    maxTempo = gGameplayData.maxTempo;
+
+    if (scriptTarget->unk0_1 > 1) {
+        s32 span = scriptTarget->unk0_1 - 1;
+        s32 delta = maxTempo - minTempo;
+        tempo = minTempo + (delta * (progress * progress)) / (span * span);
+    } else {
+        tempo = minTempo;
+    }
+
+    entry = &scriptTarget->unk4[gGameplayData.unk71[progress]];
+    gGameplayData.currentDifficulty = entry->unk0.difficulty;
+
+    gameID = entry->unk0.microgameID;
+
+    if (gameID == 0xFB) {
+        struct GameplayRandomMicrogameList *randomList = entry->unk4;
+        u32 count;
+
+        entry = randomList->unk4;
+        count = 0;
+        while (entry->unk0.difficulty != 0xFF) {
+            entry++;
+            count++;
+        }
+        entry = &randomList->unk4[get_random_range(count)];
+
+        if (gGameplayData.currentDifficulty == 0xFE) {
+            gGameplayData.currentDifficulty = entry->unk0.difficulty;
+        }
+    }
+
+    gGameplayData.currentDifficulty += gGameplayData.difficultyOffset;
+    if (gGameplayData.currentDifficulty > 2) {
+        gGameplayData.currentDifficulty = 2;
+    }
+
+    gGameplayData.currentMicrogameID = entry->unk0.microgameID;
+
+    selectors = gGameplayData.unk224;
+    idx = gGameplayData.unk221;
+
+    switch (gGameplayData.unk228) {
+        case 0:
+            gGameplayData.unkC = entry->unk4 != NULL
+                    ? entry->unk4
+                    : gMicrogameTable[entry->unk0.microgameID].song;
+            break;
+
+        case 1: {
+            struct GameplayScriptSelector *category =
+                    selectors->unk4[gGameplayData.unk220];
+            idx %= category->unk0;
+            gGameplayData.unkC = category->unk8[idx];
+            break;
+        }
+
+        case 2: {
+            struct GameplayScriptSelector *category =
+                    selectors->unk4[get_random_range(selectors->unk0_1)];
+            idx %= category->unk0;
+            gGameplayData.unkC = category->unk8[idx];
+            break;
+        }
+
+        default:
+            break;
+    }
+
+    gGameplayData.unk172 = gMicrogameTable[entry->unk0.microgameID].unk8;
+
+    switch (gGameplayData.unk172 - 1) {
+        case 0: args[0] = stage->unkC; break;
+        case 1: args[0] = stage->unk10; break;
+        case 2: args[0] = stage->unk14; break;
+        case 3: args[0] = stage->unk18; break;
+        case 4: args[0] = stage->unk1C; break;
+        case 5: args[0] = stage->unk20; break;
+        default: args[0] = stage->unkC; break;
+    }
+
+    gGameplayData.unk173 = 0;
+    gGameplayData.unk17a = 0;
+    gGameplayData.unk188 = -1;
+    gGameplayData.unk180 = 0;
+    gGameplayData.unk195 = 0;
+    gGameplayData.unk7_3 = TRUE;
+    gGameplayData.unk274 = 0;
+    gGameplayData.unk278 = 0;
+
+    dma3_fill(0, &D_03005758, 0xD68, 0x20, 0x100);
+
+    gGameplayData.unk1f0 = 2;
+    gGameplayData.scoreChanged = (gGameplayData.currentScore != gGameplayData.previousScore);
+    gGameplayData.unk27e = 0;
+
+    gSaveBuffer->microgameFlags[entry->unk0.microgameID] |= TRUE;
+
+    args[1] = gMicrogameTable[entry->unk0.microgameID].scenes;
+    args[2] = NULL;
+
+    set_beatscript_tempo((u16)tempo);
+    set_beatscript_subscenes(args);
+}
 
 void func_0800912C(u16 arg0) {
     struct GameplayStageInfo *stageInfo = gGameplayData.unk0->unk4;
-    u32 args[3];
+    struct SubScene* args[3];
     
     if (D_03003848 != 99) {
         if (save_is_stage_beaten(D_03003848) != 0) {
@@ -392,10 +525,10 @@ void func_0800912C(u16 arg0) {
     func_0800A270();
     gGameplayData.unk23c = 0xFF;
     gGameplayData.unk6_8 = TRUE;
-    gGameplayData.unk24 = 0x10;
+    gGameplayData.currentOpcode = 0x10;
     
     args[0] = stageInfo->unk30;
-    args[1] = 0;
+    args[1] = NULL;
     set_beatscript_subscenes(args);
 }
 
@@ -422,14 +555,14 @@ u32 gameplay_run_script(void) {
     struct GameplayScriptCmd *cmd;
     struct GameplayScriptState *scriptState;
     struct GameplayStruct6c *scriptTarget;
-    u32 args[3];
+    struct SubScene* args[3];
     union FreeType value;
     u32 state;
 
     stage = gGameplayData.unk0->unk4;
     value.u32 = 0;
     while (value.u32 < 2) {
-        args[value.u32] = 0;
+        args[value.u32] = NULL;
         value.u32++;
     }
 
@@ -437,7 +570,7 @@ u32 gameplay_run_script(void) {
 
 
     scriptState = &D_030048B8;
-    state = gGameplayData.unk24;
+    state = gGameplayData.currentOpcode;
 
     if ((scriptState->unk0 & 1) != 0) {
         u32 canStop = FALSE;
@@ -479,7 +612,7 @@ u32 gameplay_run_script(void) {
 
 
     if (beatscript_scene_is_inactive()) {
-        switch (gGameplayData.unk24 - 2) {
+        switch (gGameplayData.currentOpcode - 2) {
             case 4:
                 func_0800912C(gGameplayData.currentScore);
                 return 0;
@@ -490,7 +623,7 @@ u32 gameplay_run_script(void) {
                 scene_set_music_pitch(0);
                 gGameplayData.currentLives = gGameplayData.maxLives;
                 gGameplayData.currentScore = 0;
-                gGameplayData.unk17e = 0;
+                gGameplayData.previousScore = 0;
                 gGameplayData.unk270 = 0;
 
                 value.u32 = (gGameplayData.unk23c == 0 ? 0x8000 : 0x8001);
@@ -503,25 +636,25 @@ u32 gameplay_run_script(void) {
                 if (gGameplayData.unk178 == 1) {
                     gGameplayData.currentLives--;
                     if (gGameplayData.currentLives == 0) {
-                        gGameplayData.unk5_4 = TRUE;
+                        gGameplayData.gameOver = TRUE;
                     }
                 } else if (gGameplayData.unk270 != 0) {
                     func_0800A098();
                 }
 
-                if (gGameplayData.unk5_4) {
-                    gGameplayData.unk24 = 6;
+                if (gGameplayData.gameOver) {
+                    gGameplayData.currentOpcode = 6;
                     func_0800A200(0);
                     func_0800CC9C(gGameplayData.unk0->unk0, 0x60);
                     func_0800CD94(0, 0x60);
                     args[0] = stage->unk2C;
-                    args[1] = 0;
+                    args[1] = NULL;
                     set_beatscript_subscenes(args);
                     return 0;
                 }
 
                 if (gGameplayData.unk172 != 6) {
-                    gGameplayData.unk17e = gGameplayData.currentScore;
+                    gGameplayData.previousScore = gGameplayData.currentScore;
                     if (gGameplayData.unk178 == 0 || scriptTarget->unk0_10 == 0) {
                         gGameplayData.unk70++;
                         gGameplayData.currentScore++;
@@ -536,11 +669,11 @@ u32 gameplay_run_script(void) {
                 }
 
                 if (gGameplayData.unk70 < scriptTarget->unk0_1) {
-                    func_08008E1C();
+                    gameplay_select_next_microgame();
                     return 0;
                 }
 
-                set_beatscript_tempo(gGameplayData.unk1A);
+                set_beatscript_tempo(gGameplayData.maxTempo);
                 break;
 
             case 1:
@@ -564,30 +697,32 @@ u32 gameplay_run_script(void) {
                 break;
         }
 
-        args[2] = 0;
-        args[1] = 0;
-        args[0] = 0;
+
+        args[2] = NULL;
+        args[1] = NULL;
+        args[0] = NULL;
 
         while (TRUE) {
             u32 opcode;
             cmd = gGameplayData.unk20;
             gGameplayData.unk20 = cmd + 1;
-            gGameplayData.unk24 = opcode = cmd->opcode;
+            gGameplayData.currentOpcode = opcode = cmd->opcode;
             value.u32 = gGameplayData.unk28 = cmd->arg.u32;
 
+            // TO-DO: fake match?? opcode - 1????
             if (opcode - 1 <= 0x1F) {
                 switch (opcode - 1) {
-                case 0:
-                    args[0] = stage->unk8;
+                case GP_CMD_PLAY_INTRO:
+                    args[0] = stage->introScene;
                     break;
 
                 case 1:
-                    gGameplayData.unk5_4 = FALSE;
+                    gGameplayData.gameOver = FALSE;
                     gGameplayData.unk70 = 0;
                     gGameplayData.unk6c = (struct GameplayStruct6c*)value.u32ptr;
-                    gGameplayData.unk18 = gBeatscriptScene.scriptBaseBPM;
+                    gGameplayData.minTempo = gBeatscriptScene.scriptBaseBPM;
                     func_08008B50();
-                    func_08008E1C();
+                    gameplay_select_next_microgame();
                     return 0;
 
                 case 2:
@@ -610,7 +745,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 6:
-                    gGameplayData.unk6_1 = value.u32;
+                    gGameplayData.difficultyOffset = value.u32;
                     break;
 
                 case 7:
@@ -618,7 +753,7 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 8:
-                    gGameplayData.unk224 = (struct GameplayScriptSelector *)value.u32;
+                    gGameplayData.unk224 = (struct GameplayScriptSelectorList *)value.u32;
                     break;
 
                 case 9:
@@ -630,21 +765,21 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 11:
-                    if (value.u32 > gGameplayData.unk280) {
-                        value.u32 = gGameplayData.unk280;
+                    if (value.u32 > gGameplayData.tempoLimit) {
+                        value.u32 = gGameplayData.tempoLimit;
                     }
                     set_beatscript_tempo((u16)value.u32);
                     break;
 
                 case 12:
-                    if (value.u32 > gGameplayData.unk280) {
-                        value.u32 = gGameplayData.unk280;
+                    if (value.u32 > gGameplayData.tempoLimit) {
+                        value.u32 = gGameplayData.tempoLimit;
                     }
-                    gGameplayData.unk1A = value.u32;
+                    gGameplayData.maxTempo = value.u32;
                     break;
 
                 case 27:
-                    func_0800CC9C(gGameplayData.unk1A, value.u32);
+                    func_0800CC9C(gGameplayData.maxTempo, value.u32);
                     break;
 
                 case 13:
@@ -673,9 +808,9 @@ u32 gameplay_run_script(void) {
 
                 case 21:
                     func_08009EE4(0);
-                    gGameplayData.unk24 = 0x16;
+                    gGameplayData.currentOpcode = 0x16;
                     args[0] = stage->unk34;
-                    args[1] = 0;
+                    args[1] = NULL;
                     break;
 
                 case 22:
@@ -689,33 +824,33 @@ u32 gameplay_run_script(void) {
                     break;
 
                 case 23:
-                    gGameplayData.unk280 = value.u32;
+                    gGameplayData.tempoLimit = value.u32;
                     break;
 
                 case 24:
                     value.u32 += gBeatscriptScene.scriptBaseBPM;
-                    if (value.u32 > gGameplayData.unk280) {
-                        value.u32 = gGameplayData.unk280;
+                    if (value.u32 > gGameplayData.tempoLimit) {
+                        value.u32 = gGameplayData.tempoLimit;
                     }
                     set_beatscript_tempo((u16)value.u32);
                     break;
 
                 case 25:
-                    value.u32 += gGameplayData.unk1A;
-                    if (value.u32 > gGameplayData.unk280) {
-                        value.u32 = gGameplayData.unk280;
+                    value.u32 += gGameplayData.maxTempo;
+                    if (value.u32 > gGameplayData.tempoLimit) {
+                        value.u32 = gGameplayData.tempoLimit;
                     }
-                    gGameplayData.unk1A = value.u32;
+                    gGameplayData.maxTempo = value.u32;
                     break;
 
                 case 30:
-                    gGameplayData.unk284 = value.u32;
+                    gGameplayData.pitchLimit = value.u32;
                     break;
 
                 case 31:
                     value.u32 += gBeatscriptScene.musicPitchSrc1;
-                    if (value.u32 > gGameplayData.unk284) {
-                        value.u32 = gGameplayData.unk284;
+                    if (value.u32 > gGameplayData.pitchLimit) {
+                        value.u32 = gGameplayData.pitchLimit;
                     }
                 case 20:
                     scene_set_music_pitch((s16)value.u32);
@@ -727,7 +862,7 @@ u32 gameplay_run_script(void) {
                 }
             }
 
-            if (args[0] != 0 || args[1] != 0) {
+            if (args[0] || args[1]) {
                 set_beatscript_subscenes(args);
                 return 0;
             }

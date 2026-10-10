@@ -63,14 +63,17 @@ INCLUDES   := include
 BIN        := bin
 DATA	   := data
 SCENE_DATA := $(shell find $(DATA)/scenes -type d)
-GRAPHICS   := $(shell find graphics -type d)
+STAGE_DATA := $(shell find $(DATA)/stages -type d)
+MICROGAMES := microgames
+MICROGAME_DATA := $(shell find $(MICROGAMES) -type d)
+GRAPHICS   := $(shell find graphics -type d) $(shell find $(MICROGAMES) -type d -name "graphics")
 AUDIO      := audio
 MUSIC	:= $(AUDIO)/sequences
 SFX        := $(AUDIO)/samples
 
-C_DIRS     := $(sort $(SOURCES) $(GRAPHICS) $(AUDIO) $(DATA) $(SCENE_DATA))
+C_DIRS     := $(sort $(SOURCES) $(GRAPHICS) $(AUDIO) $(DATA) $(SCENE_DATA) $(STAGE_DATA) $(MICROGAME_DATA))
 ASM_DIRS   := $(sort $(ASM) $(DATA))
-BS_DIRS    := $(SCENE_DATA)
+BS_DIRS    := $(MICROGAME_DATA) $(SCENE_DATA)
 GFX_DIRS   := $(GRAPHICS)
 
 ALL_DIRS   := $(BIN) $(ASM_DIRS) $(C_DIRS) $(SFX) $(MUSIC)

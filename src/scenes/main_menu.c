@@ -31,7 +31,10 @@ void func_080109CC(void) {
     gMainMenu.unkDC_26 = FALSE;
 }
 
-#include "asm/scenes/main_menu/asm_080109ec.s"
+void main_menu_scene_init_gfx3(void) {
+    scene_set_current_thread(0);
+    run_func_after_task(start_new_texture_loader((u16)get_current_mem_id(), &D_083A9C14), &func_080109CC, 0);
+}
 
 #include "asm/scenes/main_menu/asm_08010a18.s"
 

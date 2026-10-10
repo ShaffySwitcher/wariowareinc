@@ -21,7 +21,7 @@ struct GraphicsTable main_menu_gfx_table[] = {
     },
     /* ??? */ {
         /* Src.  */ &D_0854BA84,
-        /* Dest. */ 0x830038DC,
+        /* Dest. */ 0x830038DC, // TO-DO: figure this out
         /* Size. */ COMPRESSED_GFX_SOURCE
     },
     /* BG Palette */ {

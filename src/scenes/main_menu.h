@@ -139,6 +139,7 @@ extern void* D_083AB394;
 extern s8 D_03003630;
 extern struct GameplayData_struct_0 D_083AB020;
 extern struct Unk03000E60 D_03000E60;
+extern void* D_083A9C14;
 
 // FUNCTIONS
 extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);

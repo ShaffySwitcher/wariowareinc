@@ -48,7 +48,7 @@ _08008A24: \n\
  \n\
 .balign 4, 0 \n\
 _08008A28: \n\
-/* 08008A28 */ .word D_083A50E0 \n\
+/* 08008A28 */ .word gMicrogameTable \n\
 _08008A2C: \n\
 /* 08008A2C */ CMP R2, #0X1B \n\
 /* 08008A2E */ BHI _08008A9C \n\
