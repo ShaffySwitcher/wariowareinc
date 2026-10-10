@@ -5220,6 +5220,8 @@ SECTIONS {
         build/bin/data_083A9C14.bin.o(.rodata*);
         build/data/scenes/main_menu/scene.bs.o(.scene);
         build/bin/data_083AB638.bin.o(.rodata*);
+        build/data/stages/introduction/data.c.o(.data);
+        build/bin/data_083C31D8.bin.o(.rodata*);
         build/audio/songs.c.o(.data);
     }
 

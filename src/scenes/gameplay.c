@@ -512,7 +512,7 @@ void gameplay_select_next_microgame(void) {
 
 void func_0800912C(u16 arg0) {
     struct GameplayStageInfo *stageInfo = gGameplayData.unk0->unk4;
-    u32 args[3];
+    struct SubScene* args[3];
     
     if (D_03003848 != 99) {
         if (save_is_stage_beaten(D_03003848) != 0) {
@@ -528,7 +528,7 @@ void func_0800912C(u16 arg0) {
     gGameplayData.currentOpcode = 0x10;
     
     args[0] = stageInfo->unk30;
-    args[1] = 0;
+    args[1] = NULL;
     set_beatscript_subscenes(args);
 }
 

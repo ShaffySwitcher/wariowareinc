@@ -39,7 +39,7 @@ struct GameplayStageInfo {
     struct SubScene* unk24;
     struct SubScene* unk28;
     struct SubScene* unk2C;
-    u32 unk30;
+    struct SubScene* unk30;
     struct SubScene* unk34;
     u8 unk38;
 };

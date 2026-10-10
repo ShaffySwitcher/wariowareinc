@@ -63,12 +63,13 @@ INCLUDES   := include
 BIN        := bin
 DATA	   := data
 SCENE_DATA := $(shell find $(DATA)/scenes -type d)
+STAGE_DATA := $(shell find $(DATA)/stages -type d)
 GRAPHICS   := $(shell find graphics -type d)
 AUDIO      := audio
 MUSIC	:= $(AUDIO)/sequences
 SFX        := $(AUDIO)/samples
 
-C_DIRS     := $(sort $(SOURCES) $(GRAPHICS) $(AUDIO) $(DATA) $(SCENE_DATA))
+C_DIRS     := $(sort $(SOURCES) $(GRAPHICS) $(AUDIO) $(DATA) $(SCENE_DATA) $(STAGE_DATA))
 ASM_DIRS   := $(sort $(ASM) $(DATA))
 BS_DIRS    := $(SCENE_DATA)
 GFX_DIRS   := $(GRAPHICS)
