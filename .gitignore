@@ -16,3 +16,4 @@ cleanup.py
 objdiff.json
 tools/objdiff-cli
 report.json
+tools/beatscript_decompile.py

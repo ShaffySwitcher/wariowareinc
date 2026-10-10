@@ -1043,11 +1043,7 @@ SECTIONS {
         build/asm/asm_08026480.s.o(.text*);
         build/asm/asm_08026484.s.o(.text*);
         build/asm/asm_080264e4.s.o(.text*);
-        build/asm/asm_08026538.s.o(.text*);
-        build/asm/asm_080266f0.s.o(.text*);
-        build/asm/asm_080266fc.s.o(.text*);
-        build/asm/asm_08026b18.s.o(.text*);
-        build/asm/asm_08026b1c.s.o(.text*);
+        build/src/engines/crazy_cars.c.o(.text);
         build/asm/asm_08026bd0.s.o(.text*);
         build/asm/asm_08026e1c.s.o(.text*);
         build/asm/asm_08026e70.s.o(.text*);
@@ -5198,7 +5194,8 @@ SECTIONS {
 
         build/bin/data_080F6140.bin.o(.rodata*);
         build/graphics/generic_pal.c.o(.data);
-        build/bin/data_080F6BAC.bin.o(.rodata*);
+        build/data/microgame_names.c.o(.data);
+        build/bin/data_080F7780.bin.o(.rodata*);
         build/audio/sample_table.json.s.o(.rodata);
         build/graphics/title/title_anim.c.o(.data);
         build/graphics/title/title_pal.c.o(.data);
@@ -5213,6 +5210,8 @@ SECTIONS {
         build/bin/data_083A4494.bin.o(.rodata*);
         build/src/lib_sprite.c.o(.data);
         build/bin/data_083A4A80.bin.o(.rodata*);
+        build/data/microgames.c.o(.data);
+        build/bin/data_083A6080.bin.o(.rodata*);
         build/data/scenes/title/data.c.o(.data);
         build/data/scenes/title/scene.bs.o(.scene);
         build/bin/data_083A9184.bin.o(.rodata*);
@@ -5222,6 +5221,8 @@ SECTIONS {
         build/bin/data_083AB638.bin.o(.rodata*);
         build/data/stages/introduction/data.c.o(.data);
         build/bin/data_083C31D8.bin.o(.rodata*);
+        build/microgames/crazy_cars/crazy_cars.bs.o(.scene);
+        build/bin/data_083CB93C.bin.o(.rodata*);
         build/audio/songs.c.o(.data);
     }
 

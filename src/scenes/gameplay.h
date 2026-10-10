@@ -156,12 +156,12 @@ struct GameplayScriptCmd {
 };
 
 struct GameplayMicrogameInfo {
-    void* unk0;
-    void* unk4;
-    u8 unk8;
-    u8 unk9;
-    u8 padA[2];
-    void* unkC;
+    struct SubScene* scenes;
+    struct SongHeader* song;
+    u8 unk8; // callback
+    u8 targetScore;
+    u16 unkA; // always 0
+    char* name; // internal name?
 };
 
 struct GameplayStruct6c_4_0 {
@@ -225,7 +225,7 @@ extern void* D_083FBAF4;
 extern void* D_083FBB08;
 extern u16 D_0300363C;
 extern struct GameplayData_struct_0* D_03003628;
-extern struct GameplayMicrogameInfo D_083A50E0[];
+extern struct GameplayMicrogameInfo gMicrogameTable[];
 
 // FUNCTIONS
 extern void gameplay_scene_run(void);

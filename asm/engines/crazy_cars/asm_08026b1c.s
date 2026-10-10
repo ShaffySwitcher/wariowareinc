@@ -1,0 +1,100 @@
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_08026B1C \n\
+/* 08026B1C */ PUSH {R4, R5, R6, LR} \n\
+/* 08026B1E */ ADDS R6, R0, #0 \n\
+/* 08026B20 */ ADDS R2, R6, #0 \n\
+/* 08026B22 */ ADDS R2, #0X66 \n\
+/* 08026B24 */ MOVS R5, #0 \n\
+/* 08026B26 */ MOVS R0, #1 \n\
+/* 08026B28 */ STRH R0, [R2] \n\
+/* 08026B2A */ ADDS R0, R6, #0 \n\
+/* 08026B2C */ ADDS R0, #0X68 \n\
+/* 08026B2E */ STRH R5, [R0] \n\
+/* 08026B30 */ MOVS R0, #0X96 \n\
+/* 08026B32 */ MULS R0, R1, R0 \n\
+/* 08026B34 */ LDR R1, _08026BBC \n\
+/* 08026B36 */ LDR R1, [R1] \n\
+/* 08026B38 */ LDRH R1, [R1, #0X14] \n\
+/* 08026B3A */ BL __udivsi3 \n\
+/* 08026B3E */ LSLS R4, R0, #0X10 \n\
+/* 08026B40 */ LSRS R4, R4, #0X10 \n\
+/* 08026B42 */ ADDS R1, R6, #0 \n\
+/* 08026B44 */ ADDS R1, #0X6A \n\
+/* 08026B46 */ STRH R0, [R1] \n\
+/* 08026B48 */ LDRH R1, [R1] \n\
+/* 08026B4A */ LDR R0, _08026BC0 \n\
+/* 08026B4C */ BL __divsi3 \n\
+/* 08026B50 */ STR R0, [R6, #0X74] \n\
+/* 08026B52 */ MOVS R0, #0X82 \n\
+/* 08026B54 */ LSLS R0, R0, #9 \n\
+/* 08026B56 */ STR R0, [R6, #0X78] \n\
+/* 08026B58 */ LSLS R0, R4, #2 \n\
+/* 08026B5A */ ADDS R0, R4 \n\
+/* 08026B5C */ LSLS R3, R0, #4 \n\
+/* 08026B5E */ ASRS R2, R3, #8 \n\
+/* 08026B60 */ ADDS R1, R6, #0 \n\
+/* 08026B62 */ ADDS R1, #0X7C \n\
+/* 08026B64 */ STRH R2, [R1] \n\
+/* 08026B66 */ LSRS R1, R0, #3 \n\
+/* 08026B68 */ ADDS R2, R6, #0 \n\
+/* 08026B6A */ ADDS R2, #0X7E \n\
+/* 08026B6C */ STRH R1, [R2] \n\
+/* 08026B6E */ ADDS R0, R3 \n\
+/* 08026B70 */ ASRS R0, R0, #8 \n\
+/* 08026B72 */ ADDS R1, R6, #0 \n\
+/* 08026B74 */ ADDS R1, #0X80 \n\
+/* 08026B76 */ STRH R0, [R1] \n\
+/* 08026B78 */ MOVS R0, #0XAF \n\
+/* 08026B7A */ MULS R0, R4, R0 \n\
+/* 08026B7C */ ASRS R0, R0, #8 \n\
+/* 08026B7E */ ADDS R1, #2 \n\
+/* 08026B80 */ STRH R0, [R1] \n\
+/* 08026B82 */ ADDS R0, R6, #0 \n\
+/* 08026B84 */ ADDS R0, #0X84 \n\
+/* 08026B86 */ STRH R5, [R0] \n\
+/* 08026B88 */ ADDS R1, #4 \n\
+/* 08026B8A */ LDR R0, _08026BC4 \n\
+/* 08026B8C */ STRH R0, [R1] \n\
+/* 08026B8E */ LDR R0, _08026BC8 \n\
+/* 08026B90 */ BL scene_play_sound_to_tempo_and_pitch \n\
+/* 08026B94 */ ADDS R1, R6, #0 \n\
+/* 08026B96 */ ADDS R1, #0X88 \n\
+/* 08026B98 */ STR R0, [R1] \n\
+/* 08026B9A */ ADDS R0, R6, #0 \n\
+/* 08026B9C */ ADDS R0, #0X70 \n\
+/* 08026B9E */ LDRH R0, [R0] \n\
+/* 08026BA0 */ CMP R0, #4 \n\
+/* 08026BA2 */ BNE _08026BB4 \n\
+/* 08026BA4 */ LDR R4, =D_083FE3F8 \n\
+/* 08026BA6 */ ADDS R0, R4, #0 \n\
+/* 08026BA8 */ BL scene_play_sound_to_tempo_and_pitch \n\
+/* 08026BAC */ ADDS R0, R4, #0 \n\
+/* 08026BAE */ MOVS R1, #0X78 \n\
+/* 08026BB0 */ BL func_08001F80 \n\
+_08026BB4: \n\
+/* 08026BB4 */ POP {R4, R5, R6} \n\
+/* 08026BB6 */ POP {R0} \n\
+/* 08026BB8 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_08026BCC: \n\
+/* 08026BCC */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_08026BBC: \n\
+/* 08026BBC */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_08026BC0: \n\
+/* 08026BC0 */ .word 0xFFFED400 \n\
+ \n\
+.balign 4, 0 \n\
+_08026BC4: \n\
+/* 08026BC4 */ .word 0x0000FFFD \n\
+ \n\
+.balign 4, 0 \n\
+_08026BC8: \n\
+/* 08026BC8 */ .word D_083FDB9C \n\
+.ltorg \n\
+.syntax divided");

@@ -37,4 +37,17 @@ extern void func_08000F10();
 extern void func_080F3C60();
 extern void func_080F3C78();
 extern void func_080F3A90();
+extern void func_080F4090(void);
+extern void func_08003F50(void);
+extern void func_0800DB04(void);
+extern void func_0800DE24(void);
+extern void func_080166AC(void);
+extern void func_08016E6C(void);
+extern void title_scene_run(void);
+extern void gameplay_scene_run(void);
+extern void main_menu_scene_run(void);
+extern void soft_reset_scene_run(void);
+extern void vblank_wait(void);
+extern u16 get_random_u16(void);
+extern void update_key_buffers(void);
 

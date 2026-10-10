@@ -28,7 +28,7 @@ void func_080001D4(void) {
     D_03006514 = 1;
 }
 
-// AgbMain
+// AgbMain (https://decomp.me/scratch/KOzwI ...so close)
 #include "asm/main/asm_0800024c.s"
 
 #include "asm/main/asm_0800043c.s"

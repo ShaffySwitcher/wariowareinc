@@ -451,7 +451,7 @@ void gameplay_select_next_microgame(void) {
         case 0:
             gGameplayData.unkC = entry->unk4 != NULL
                     ? entry->unk4
-                    : D_083A50E0[entry->unk0.microgameID].unk4;
+                    : gMicrogameTable[entry->unk0.microgameID].song;
             break;
 
         case 1: {
@@ -474,7 +474,7 @@ void gameplay_select_next_microgame(void) {
             break;
     }
 
-    gGameplayData.unk172 = D_083A50E0[entry->unk0.microgameID].unk8;
+    gGameplayData.unk172 = gMicrogameTable[entry->unk0.microgameID].unk8;
 
     switch (gGameplayData.unk172 - 1) {
         case 0: args[0] = stage->unkC; break;
@@ -503,7 +503,7 @@ void gameplay_select_next_microgame(void) {
 
     gSaveBuffer->microgameFlags[entry->unk0.microgameID] |= TRUE;
 
-    args[1] = D_083A50E0[entry->unk0.microgameID].unk0;
+    args[1] = gMicrogameTable[entry->unk0.microgameID].scenes;
     args[2] = NULL;
 
     set_beatscript_tempo((u16)tempo);

@@ -89,7 +89,7 @@ _08013C44: \n\
  \n\
 .balign 4, 0 \n\
 _08013C48: \n\
-/* 08013C48 */ .word D_083A50E0 \n\
+/* 08013C48 */ .word gMicrogameTable \n\
  \n\
 .balign 4, 0 \n\
 _08013C4C: \n\
