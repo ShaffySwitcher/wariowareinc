@@ -5221,6 +5221,7 @@ SECTIONS {
         build/bin/data_083AB638.bin.o(.rodata*);
         build/data/stages/introduction/data.c.o(.data);
         build/bin/data_083C31D8.bin.o(.rodata*);
+        build/microgames/crazy_cars/engine.c.o(.data);
         build/microgames/crazy_cars/crazy_cars.bs.o(.scene);
         build/bin/data_083CB93C.bin.o(.rodata*);
         build/audio/songs.c.o(.data);

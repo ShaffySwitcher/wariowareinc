@@ -9,7 +9,7 @@ script script_crazy_cars
     beatscript_cmd 0x07, 0x000000, 0x00000000, 0x00000000
     rest 24
     rest 48
-    scene_run func_08026B1C, 0x00000060
+    scene_run crazy_cars_scene_init, 0x00000060
     rest 120
     beatscript_cmd 0x08, 0x000000, 0x00000000, 0x00000000
     rest 24
@@ -18,9 +18,9 @@ script script_crazy_cars
 
 @ Scene
 struct scene_crazy_cars
-    /* Start  */ .word func_08026538, 0
-    /* Paused */ .word func_080266F0, 0
-    /* Update */ .word func_080266FC, 0
-    /* Stop   */ .word func_08026B18, 0
+    /* Start  */ .word crazy_cars_scene_start, 0
+    /* Paused */ .word crazy_cars_scene_pause, 0
+    /* Update */ .word crazy_cars_scene_update, 0
+    /* Stop   */ .word crazy_cars_scene_stop, 0
     /* Script */ .word script_crazy_cars
 endstruct
