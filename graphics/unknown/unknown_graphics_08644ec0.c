@@ -1,0 +1,39 @@
+#include "global.h"
+#include "graphics.h"
+
+// // //  unknown_graphics_08644ec0  // // //
+
+extern u16 unknown_graphics_08644ec0_data[];
+extern u8 unknown_graphics_08644ec0_rledata[];
+extern u8 D_08644E9C[];
+extern u8 D_08644EBA[];
+
+// [D_08644E6C] unknown_graphics_08644ec0 Data
+u16 unknown_graphics_08644ec0_data[] = {
+	0x0, 0x1, 0x11, 0x10, 0x13, 0x12, 0x0, 0x3, 0x18, 0x15, 0x14, 0x17, 0x16, 0x19, 0x0, 0x3,
+	0x7, 0x6, 0x9, 0x8, 0x5, 0x4, 0x0, 0x3,
+};
+
+// [D_08644E9C] unknown_graphics_08644ec0 Alignment / Unclassified Bytes
+u8 D_08644E9C[] = {
+	0xd, 0x0, 0xf, 0x0, 0xe, 0x0, 0xb, 0x0, 0xa, 0x0, 0xc, 0x0, 0x0, 0x0,
+};
+
+// [D_08644EAA] unknown_graphics_08644ec0 RLE Data
+u8 unknown_graphics_08644ec0_rledata[] = {
+	0x1, 0x0, 0x0, 0x1, 0x6, 0x1a, 0x1, 0x3, 0x7, 0x15, 0x1, 0x8, 0x7, 0x10, 0x1, 0xd,
+};
+
+// [D_08644EBA] unknown_graphics_08644ec0 Alignment / Unclassified Bytes
+u8 D_08644EBA[] = {
+	0x7, 0x0, 0x8c, 0x0, 0x0, 0x0,
+};
+
+// [D_08644EC0] unknown_graphics_08644ec0 Graphics
+struct CompressedData unknown_graphics_08644ec0 = {
+	/* Data */		unknown_graphics_08644ec0_data,
+	/* RLE Data */	unknown_graphics_08644ec0_rledata,
+	/* RLE Size */	0x10,
+	/* RLE Offset */	0x400,
+	/* Double Compressed */	FALSE,
+};

@@ -1,0 +1,34 @@
+#include "global.h"
+#include "graphics.h"
+
+// // //  unknown_graphics_087077f8  // // //
+
+extern u16 unknown_graphics_087077f8_data[];
+extern u8 unknown_graphics_087077f8_rledata[];
+extern u8 D_087077F4[];
+
+// [D_087077A0] unknown_graphics_087077f8 Data
+u16 unknown_graphics_087077f8_data[] = {
+	0x76, 0x79, 0x7a, 0x77, 0x78, 0x76, 0x81, 0x76, 0x76, 0x80, 0x76, 0x7d, 0x76, 0x76, 0x7e, 0x7f,
+	0x76, 0x82, 0x8b, 0x8c, 0x8f, 0x90, 0x8d, 0x8e, 0x82, 0x76, 0x85, 0x86, 0x83, 0x84, 0x89, 0x8a,
+	0x87, 0x88, 0x76,
+};
+
+// [D_087077E6] unknown_graphics_087077f8 RLE Data
+u8 unknown_graphics_087077f8_rledata[] = {
+	0x1, 0xe4, 0x5, 0x1b, 0x5, 0x1b, 0x6, 0x18, 0x8, 0x10, 0x1, 0x7, 0x9, 0x0,
+};
+
+// [D_087077F4] unknown_graphics_087077f8 Alignment / Unclassified Bytes
+u8 D_087077F4[] = {
+	0x0, 0x96, 0x0, 0x0,
+};
+
+// [D_087077F8] unknown_graphics_087077f8 Graphics
+struct CompressedData unknown_graphics_087077f8 = {
+	/* Data */		unknown_graphics_087077f8_data,
+	/* RLE Data */	unknown_graphics_087077f8_rledata,
+	/* RLE Size */	0xe,
+	/* RLE Offset */	0x400,
+	/* Double Compressed */	FALSE,
+};

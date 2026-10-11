@@ -1,0 +1,67 @@
+#include "global.h"
+#include "graphics.h"
+
+// // //  unknown_graphics_0867ad7c  // // //
+
+extern u16 unknown_graphics_0867ad7c_compressedgfx_data[];
+extern u32 unknown_graphics_0867ad7c_window1[];
+extern u32 unknown_graphics_0867ad7c_window2[];
+extern struct CompressedGFX unknown_graphics_0867ad7c_compressedgfx[];
+extern u8 unknown_graphics_0867ad7c_rledata[];
+extern u8 D_0867AD2E[];
+extern u8 D_0867AD7A[];
+
+// [D_0867ACA0] unknown_graphics_0867ad7c CompressedGFX Data
+u16 unknown_graphics_0867ad7c_compressedgfx_data[] = {
+	0x44d1, 0x8f80, 0xcfcf, 0xcfcf, 0xefef, 0x1f1f, 0x3f3f, 0x3f3f, 0x7f7f, 0xefe0, 0xefef, 0x7f7f, 0x7f7f, 0x80f, 0x808, 0x808,
+	0x10f8, 0x1010, 0x1010, 0x8010, 0x8080, 0x8080, 0x8080, 0x1f80, 0x1010, 0x1010, 0x1010, 0x8010, 0x8080, 0x8080, 0x8080, 0x1f80,
+	0x1010, 0x1010, 0x1010, 0x8010, 0x8080, 0x8080, 0x8080, 0x1f80, 0x1010, 0x1010, 0x1010, 0x8010, 0x8080, 0x8080, 0x8080, 0x1f80,
+	0x1010, 0x1010, 0x1010, 0x8010, 0x8080, 0x8080, 0xf080, 0x101, 0x101, 0x101, 0xefef, 0xefef, 0x7f7f, 0x7f7f, 0xefe0, 0xcfcf,
+	0xcfcf, 0x8f8f, 0x7f7f, 0x3f3f, 0x3f3f, 0x1f1f, 0x1111,
+};
+
+// [D_0867AD2E] unknown_graphics_0867ad7c Alignment / Unclassified Bytes
+u8 D_0867AD2E[] = {
+	0x0, 0x0,
+};
+
+// [D_0867AD30] unknown_graphics_0867ad7c CompressedGFX Window 1
+u32 unknown_graphics_0867ad7c_window1[] = {
+	0x47515d,
+};
+
+// [D_0867AD34] unknown_graphics_0867ad7c CompressedGFX Window 2
+u32 unknown_graphics_0867ad7c_window2[] = {
+	0x47515c,
+};
+
+// [D_0867AD38] unknown_graphics_0867ad7c CompressedGFX
+struct CompressedGFX unknown_graphics_0867ad7c_compressedgfx[] = {
+	/* Data */		unknown_graphics_0867ad7c_compressedgfx_data,
+	/* Size */		0x115,
+	/* Count */		0x2,
+	/* Window 1 */	unknown_graphics_0867ad7c_window1,
+	/* Window 2 */	unknown_graphics_0867ad7c_window2,
+};
+
+// [D_0867AD48] unknown_graphics_0867ad7c RLE Data
+u8 unknown_graphics_0867ad7c_rledata[] = {
+	0x1, 0x3f, 0x10, 0x31, 0x10, 0x7f, 0x8, 0x39, 0x8, 0x7, 0x1, 0x74, 0xc, 0x4f, 0x1, 0x3,
+	0xc, 0x61, 0x10, 0x4f, 0x10, 0x61, 0x10, 0x4f, 0x10, 0x61, 0x10, 0x4f, 0x10, 0x61, 0x10, 0x4f,
+	0x10, 0x61, 0xc, 0x3, 0x1, 0x4f, 0xc, 0x74, 0x1, 0x7, 0x8, 0x39, 0x8, 0x7f, 0x10, 0x31,
+	0x10, 0x3f,
+};
+
+// [D_0867AD7A] unknown_graphics_0867ad7c Alignment / Unclassified Bytes
+u8 D_0867AD7A[] = {
+	0x0, 0x0,
+};
+
+// [D_0867AD7C] unknown_graphics_0867ad7c Graphics
+struct CompressedData unknown_graphics_0867ad7c = {
+	/* Data */		unknown_graphics_0867ad7c_compressedgfx,
+	/* RLE Data */	unknown_graphics_0867ad7c_rledata,
+	/* RLE Size */	0x32,
+	/* RLE Offset */	0x820,
+	/* Double Compressed */	TRUE,
+};

@@ -1,0 +1,28 @@
+#include "global.h"
+#include "graphics.h"
+
+// // //  unknown_graphics_087e0020  // // //
+
+// [D_087DFFD4] unknown_graphics_087e0020 Data
+u16 unknown_graphics_087e0020_data[] = {
+	0x0, 0x2222, 0x3333, 0x1111, 0x1111, 0x3222, 0x1333, 0x3222, 0x1333, 0x3222, 0x1333, 0x3222, 0x1333, 0x3222, 0x1333, 0x3222,
+	0x1333, 0x3222, 0x1333, 0x3222, 0x1333, 0x2222, 0x3332, 0x2222, 0x3333, 0x3222, 0x3333, 0x3222, 0x3333, 0x3222, 0x3333, 0x0,
+};
+
+// [D_087E0014] unknown_graphics_087e0020 RLE Data
+u8 unknown_graphics_087e0020_rledata[] = {
+	0x1, 0xf, 0x1, 0x15, 0x1, 0x7, 0x13, 0x6, 0xa, 0x0,
+};
+
+u8 D_087E001E[] = {
+	0xb0, 0x0,
+};
+
+// [D_087E0020] unknown_graphics_087e0020 Graphics
+struct CompressedData unknown_graphics_087e0020 = {
+	/* Data */		unknown_graphics_087e0020_data,
+	/* RLE Data */		unknown_graphics_087e0020_rledata,
+	/* RLE Size */		0xa,
+	/* RLE Offset */	0x200,
+	/* Double Compressed */	FALSE,
+};

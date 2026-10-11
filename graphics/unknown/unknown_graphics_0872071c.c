@@ -1,0 +1,66 @@
+#include "global.h"
+#include "graphics.h"
+
+// // //  unknown_graphics_0872071c  // // //
+
+extern u16 unknown_graphics_0872071c_compressedgfx_data[];
+extern u32 unknown_graphics_0872071c_window1[];
+extern u32 unknown_graphics_0872071c_window2[];
+extern struct CompressedGFX unknown_graphics_0872071c_compressedgfx[];
+extern u8 unknown_graphics_0872071c_rledata[];
+extern u8 D_08720718[];
+extern u8 D_0872072C[];
+
+// [D_08720648] unknown_graphics_0872071c CompressedGFX Data
+u16 unknown_graphics_0872071c_compressedgfx_data[] = {
+	0xba0, 0xe0e0, 0xe3e0, 0xe3e3, 0x7070, 0x7070, 0x7c7c, 0x3e3c, 0x3ffe, 0x3e3e, 0xc70e, 0xffc7, 0xc7c7, 0xf0a, 0x4000, 0x5505,
+	0x332, 0x8080, 0x8080, 0x8080, 0x8080, 0x0, 0x332, 0xc0c0, 0xc0c0, 0xc0c0, 0xc0c0, 0x312, 0x8080, 0x8080, 0x8080, 0x8080,
+	0x2730, 0x43c, 0x3c04, 0x2020, 0x3c20, 0x2424, 0x3c24, 0x2020, 0x2020, 0x203c, 0x2020, 0x2020, 0x2020, 0x43c, 0x3c04, 0x2424,
+	0x3c24, 0x2020, 0x2020, 0x2020, 0x2020, 0x243c, 0x2424, 0x2424, 0x3c24, 0x203c, 0x3c20, 0x2020, 0x3c20, 0x203c, 0x3c20, 0x404,
+	0x3c04, 0x243c, 0x3c24, 0x2020, 0x3c20, 0x243c, 0x3c24, 0x2424, 0x3c24, 0x7a0, 0x3ff0, 0x3e3e, 0xe0e, 0x3e0e, 0x7ffe, 0x7c7c,
+	0x707c, 0x7070, 0xaa00, 0x0,
+};
+
+// [D_087206F0] unknown_graphics_0872071c CompressedGFX Window 1
+u32 unknown_graphics_0872071c_window1[] = {
+	0xd048f7,
+};
+
+// [D_087206F4] unknown_graphics_0872071c CompressedGFX Window 2
+u32 unknown_graphics_0872071c_window2[] = {
+	0xd04882,
+};
+
+// [D_087206F8] unknown_graphics_0872071c CompressedGFX
+struct CompressedGFX unknown_graphics_0872071c_compressedgfx[] = {
+	/* Data */		unknown_graphics_0872071c_compressedgfx_data,
+	/* Size */		0x126,
+	/* Count */		0xa,
+	/* Window 1 */	unknown_graphics_0872071c_window1,
+	/* Window 2 */	unknown_graphics_0872071c_window2,
+};
+
+// [D_08720708] unknown_graphics_0872071c RLE Data
+u8 unknown_graphics_0872071c_rledata[] = {
+	0x1, 0x4, 0xc, 0x3, 0x19, 0x3, 0xd, 0x3, 0x1, 0x10, 0x10, 0xf, 0xc1, 0xcf, 0x21, 0x0,
+};
+
+// [D_08720718] unknown_graphics_0872071c Alignment / Unclassified Bytes
+u8 D_08720718[] = {
+	0xe0, 0x0, 0x0, 0x0,
+};
+
+// [D_0872071C] unknown_graphics_0872071c Graphics
+struct CompressedData unknown_graphics_0872071c = {
+	/* Data */		unknown_graphics_0872071c_compressedgfx,
+	/* RLE Data */	unknown_graphics_0872071c_rledata,
+	/* RLE Size */	0x10,
+	/* RLE Offset */	0x400,
+	/* Double Compressed */	TRUE,
+};
+
+// [D_0872072C] unknown_graphics_0872071c Ambiguous Bytes (preserved verbatim)
+u8 D_0872072C[] = {
+	0x50, 0x0, 0x8c, 0x0, 0x50, 0x0, 0x8c, 0x0, 0x40, 0x0, 0x40, 0x0, 0x40, 0x0, 0x18, 0x0,
+	0x40, 0x0, 0x8c, 0x0, 0x40, 0x0, 0x8c, 0x0,
+};

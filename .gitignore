@@ -26,3 +26,4 @@ tools/read_sjis_string.py
 tools/compressed_graphics_to_c.py
 
 *.pyc
+tools/split_unknown_graphics.py
