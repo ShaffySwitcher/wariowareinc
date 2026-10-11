@@ -1,15 +1,15 @@
 #include "global.h"
 #include "graphics.h"
 
-// // //  unknown_graphics_0854bf48  // // //
+// // //  main_menu_bg_tiles_2  // // //
 
-extern u16 unknown_graphics_0854bf48_data[];
-extern u8 unknown_graphics_0854bf48_rledata[];
+extern u16 main_menu_bg_tiles_2_data[];
+extern u8 main_menu_bg_tiles_2_rledata[];
 extern u8 D_0854BF2C[];
 extern u8 D_0854BF44[];
 
-// [D_0854BA94] unknown_graphics_0854bf48 Data
-u16 unknown_graphics_0854bf48_data[] = {
+// [D_0854BA94] main_menu_bg_tiles_2 Data
+u16 main_menu_bg_tiles_2_data[] = {
 	0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc,
 	0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x20dd, 0x20dc, 0x0, 0x0,
 	0x20da, 0x20d9, 0x20da, 0x20d9, 0x20da, 0x20d9, 0x20da, 0x20d9, 0x20da, 0x20d9, 0x20da, 0x20d9, 0x20da, 0x20d9, 0x20da, 0x20d9,
@@ -49,25 +49,25 @@ u16 unknown_graphics_0854bf48_data[] = {
 	0xdb, 0x0, 0x0, 0xdb, 0x0, 0x20d8, 0x20e3, 0x20de, 0x20e0, 0x20e2, 0x20e4, 0x0,
 };
 
-// [D_0854BF2C] unknown_graphics_0854bf48 Alignment / Unclassified Bytes
+// [D_0854BF2C] main_menu_bg_tiles_2 Alignment / Unclassified Bytes
 u8 D_0854BF2C[] = {
 	0xe3, 0x20, 0xd8, 0x20, 0xe0, 0x20, 0xde, 0x20, 0xdf, 0x20, 0xe1, 0x20, 0x0, 0x0,
 };
 
-// [D_0854BF3A] unknown_graphics_0854bf48 RLE Data
-u8 unknown_graphics_0854bf48_rledata[] = {
+// [D_0854BF3A] main_menu_bg_tiles_2 RLE Data
+u8 main_menu_bg_tiles_2_rledata[] = {
 	0x0, 0x0, 0x43, 0x1d, 0x3, 0x1d, 0x1, 0x81, 0x7, 0x19,
 };
 
-// [D_0854BF44] unknown_graphics_0854bf48 Alignment / Unclassified Bytes
+// [D_0854BF44] main_menu_bg_tiles_2 Alignment / Unclassified Bytes
 u8 D_0854BF44[] = {
 	0x7, 0xd9, 0x0, 0x0,
 };
 
-// [D_0854BF48] unknown_graphics_0854bf48 Graphics
-struct CompressedData unknown_graphics_0854bf48 = {
-	/* Data */		unknown_graphics_0854bf48_data,
-	/* RLE Data */	unknown_graphics_0854bf48_rledata,
+// [D_0854BF48] main_menu_bg_tiles_2 Graphics
+struct CompressedData main_menu_bg_tiles_2 = {
+	/* Data */		main_menu_bg_tiles_2_data,
+	/* RLE Data */	main_menu_bg_tiles_2_rledata,
 	/* RLE Size */	0xa,
 	/* RLE Offset */	0x400,
 	/* Double Compressed */	FALSE,

@@ -6593,12 +6593,12 @@ SECTIONS {
         build/graphics/unknown/unknown_graphics_08547fe8.c.o(.data*);
         build/graphics/unknown/unknown_graphics_085481e8.c.o(.data*);
         build/graphics/unknown/unknown_graphics_08548210.c.o(.data*);
-        build/graphics/unknown/unknown_graphics_08548ed4.c.o(.data*);
+        build/graphics/main_menu/main_menu_graphics_08548ed4.c.o(.data*);
         build/graphics/unknown/unknown_graphics_0854b340.c.o(.data*);
         build/graphics/unknown/unknown_graphics_0854b4dc.c.o(.data*);
         build/graphics/unknown/unknown_graphics_0854b7c0.c.o(.data*);
         build/graphics/unknown/unknown_graphics_0854ba84.c.o(.data*);
-        build/graphics/unknown/unknown_graphics_0854bf48.c.o(.data*);
+        build/graphics/main_menu/main_menu_graphics_0854bf48.c.o(.data*);
         build/graphics/unknown/unknown_graphics_0854c53c.c.o(.data*);
         build/graphics/unknown/unknown_graphics_0854cb38.c.o(.data*);
         build/graphics/unknown/unknown_graphics_0854cf48.c.o(.data*);

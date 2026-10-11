@@ -27,7 +27,7 @@ u8 unknown_graphics_0858dc50_rledata[] = {
 };
 
 // [D_0858DC50] unknown_graphics_0858dc50 Graphics
-struct CompressedData unknown_graphics_0858dc50 = {
+struct CompressedData D_0858DC50 = {
 	/* Data */		unknown_graphics_0858dc50_data,
 	/* RLE Data */	unknown_graphics_0858dc50_rledata,
 	/* RLE Size */	0x24,

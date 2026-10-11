@@ -1,18 +1,18 @@
 #include "global.h"
 #include "graphics.h"
 
-// // //  unknown_graphics_08548ed4  // // //
+// // //  main_menu_bg_tiles  // // //
 
-extern u16 unknown_graphics_08548ed4_compressedgfx_data[];
-extern u32 unknown_graphics_08548ed4_window1[];
-extern u32 unknown_graphics_08548ed4_window2[];
-extern struct CompressedGFX unknown_graphics_08548ed4_compressedgfx[];
-extern u8 unknown_graphics_08548ed4_rledata[];
+extern u16 main_menu_bg_tiles_compressedgfx_data[];
+extern u32 main_menu_bg_tiles_window1[];
+extern u32 main_menu_bg_tiles_window2[];
+extern struct CompressedGFX main_menu_bg_tiles_compressedgfx[];
+extern u8 main_menu_bg_tiles_rledata[];
 extern u8 D_08548CD2[];
 extern u8 D_08548ED0[];
 
-// [D_08548220] unknown_graphics_08548ed4 CompressedGFX Data
-u16 unknown_graphics_08548ed4_compressedgfx_data[] = {
+// [D_08548220] main_menu_bg_tiles CompressedGFX Data
+u16 main_menu_bg_tiles_compressedgfx_data[] = {
 	0x10, 0xf0f0, 0x2222, 0x10, 0xf0c0, 0xf210, 0x4002, 0x5095, 0x54a9, 0x94aa, 0x12, 0x3070, 0x2222, 0x1, 0xf0fc, 0xf012,
 	0x5402, 0x40a9, 0xa5, 0x95, 0x112, 0x12, 0xc0e0, 0xeeee, 0x25, 0xff00, 0x13, 0xff00, 0x3102, 0x7, 0xe95, 0xf95,
 	0x3a5, 0x3e5, 0xe9, 0xf9, 0x3a, 0x3e, 0x10, 0xff00, 0x3f24, 0x0, 0x5500, 0x10, 0xff00, 0xf243, 0x4000, 0xa855,
@@ -101,34 +101,34 @@ u16 unknown_graphics_08548ed4_compressedgfx_data[] = {
 	0x202, 0xffde, 0x400, 0xa200, 0xffff, 0x1de, 0x202, 0x202, 0x0,
 };
 
-// [D_08548CD2] unknown_graphics_08548ed4 Alignment / Unclassified Bytes
+// [D_08548CD2] main_menu_bg_tiles Alignment / Unclassified Bytes
 u8 D_08548CD2[] = {
 	0x0, 0x0,
 };
 
-// [D_08548CD4] unknown_graphics_08548ed4 CompressedGFX Window 1
-u32 unknown_graphics_08548ed4_window1[] = {
+// [D_08548CD4] main_menu_bg_tiles CompressedGFX Window 1
+u32 main_menu_bg_tiles_window1[] = {
 	0xf1dffadd, 0xc9cf0001, 0xeffbcede, 0x800002d, 0x6ee9e000, 0xe5de6ee0, 0x7993b6, 0xbf3f1cc8,
 	0x72e27d6f, 0x272db400, 0x6e5df4f9, 0xefaf7edf, 0xbf3f6eee, 0x90f5fd96, 0x2383c1b0, 0x16aadb8,
 };
 
-// [D_08548D14] unknown_graphics_08548ed4 CompressedGFX Window 2
-u32 unknown_graphics_08548ed4_window2[] = {
+// [D_08548D14] main_menu_bg_tiles CompressedGFX Window 2
+u32 main_menu_bg_tiles_window2[] = {
 	0x4f912a24, 0xd52aa554, 0x1badada4, 0x555c43dd, 0x952254a9, 0xa950a850, 0xab6da8aa, 0xfe9aa4aa,
 	0x1757ff,
 };
 
-// [D_08548D38] unknown_graphics_08548ed4 CompressedGFX
-struct CompressedGFX unknown_graphics_08548ed4_compressedgfx[] = {
-	/* Data */		unknown_graphics_08548ed4_compressedgfx_data,
+// [D_08548D38] main_menu_bg_tiles CompressedGFX
+struct CompressedGFX main_menu_bg_tiles_compressedgfx[] = {
+	/* Data */		main_menu_bg_tiles_compressedgfx_data,
 	/* Size */		0x9ec,
 	/* Count */		0x1fa,
-	/* Window 1 */	unknown_graphics_08548ed4_window1,
-	/* Window 2 */	unknown_graphics_08548ed4_window2,
+	/* Window 1 */	main_menu_bg_tiles_window1,
+	/* Window 2 */	main_menu_bg_tiles_window2,
 };
 
-// [D_08548D48] unknown_graphics_08548ed4 RLE Data
-u8 unknown_graphics_08548ed4_rledata[] = {
+// [D_08548D48] main_menu_bg_tiles RLE Data
+u8 main_menu_bg_tiles_rledata[] = {
 	0x1, 0xf, 0x1, 0x3, 0x1, 0xb, 0x1, 0x3, 0x1, 0xb, 0x21, 0x7, 0x9, 0xf, 0x17, 0x9,
 	0x8, 0x8, 0x11, 0xf, 0x9, 0x7, 0x1, 0x5, 0x1, 0x9, 0x6, 0xb, 0x6, 0x9, 0x1, 0x5,
 	0x29, 0x7, 0x9, 0x12, 0x1f, 0x4, 0x45, 0x7, 0x9, 0x7, 0x9, 0x7, 0x11, 0x9, 0x1, 0x6,
@@ -156,15 +156,15 @@ u8 unknown_graphics_08548ed4_rledata[] = {
 	0x37, 0xf, 0x2d, 0x3, 0x11, 0xf, 0x41, 0x0,
 };
 
-// [D_08548ED0] unknown_graphics_08548ed4 Alignment / Unclassified Bytes
+// [D_08548ED0] main_menu_bg_tiles Alignment / Unclassified Bytes
 u8 D_08548ED0[] = {
 	0xb0, 0x0, 0x0, 0x0,
 };
 
-// [D_08548ED4] unknown_graphics_08548ed4 Graphics
-struct CompressedData unknown_graphics_08548ed4 = {
-	/* Data */		unknown_graphics_08548ed4_compressedgfx,
-	/* RLE Data */	unknown_graphics_08548ed4_rledata,
+// [D_08548ED4] main_menu_bg_tiles Graphics
+struct CompressedData main_menu_bg_tiles = {
+	/* Data */		main_menu_bg_tiles_compressedgfx,
+	/* RLE Data */	main_menu_bg_tiles_rledata,
 	/* RLE Size */	0x188,
 	/* RLE Offset */	0x1000,
 	/* Double Compressed */	TRUE,

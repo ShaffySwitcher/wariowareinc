@@ -40,7 +40,7 @@ u8 D_0873919E[] = {
 };
 
 // [D_087391A0] unknown_graphics_087391a0 Graphics
-struct CompressedData unknown_graphics_087391a0 = {
+struct CompressedData D_087391A0 = {
 	/* Data */		unknown_graphics_087391a0_data,
 	/* RLE Data */	unknown_graphics_087391a0_rledata,
 	/* RLE Size */	0x44,
