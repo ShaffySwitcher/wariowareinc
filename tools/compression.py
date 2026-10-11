@@ -209,6 +209,11 @@ class RleCompressedData:
                 self.compressed.append(curValue)
                 if (i+1 >= self.offset):
                     break
+            if i+3 < self.offset and count % 255 == 0:
+                i += 1
+                count += 1
+                curValue = data[i]
+                self.compressed.append(curValue)
             self.add_count(count)
             i += 1
             if (i+1 >= self.offset):
@@ -221,8 +226,11 @@ class RleCompressedData:
                 count += 1
                 if (i+1 >= self.offset):
                     break
+            if i+1 < self.offset and count % 255 == 0:
+                count -= 1
+            else:
+                i += 1
             self.add_count(count)
-            i += 1
             if (i >= self.offset):
                 break
 
@@ -261,8 +269,9 @@ def compress_file(input, output, double):
 
     rleData = RleCompressedData(data)
     rleData.offset = get_rle_offset(len(data), double)
-    if rleData.offset != rleData.inputLength and data[-1] == 0:
-        rleData.add_count(rleData.offset - rleData.inputLength, rleData.trailingPadCounts)
+    if rleData.offset != rleData.inputLength and data and data[-1] == 0:
+        rleData.add_count(rleData.offset - len(data), rleData.trailingPadCounts)
+
     if double:
         compressedData = CompressedData(rleData.compressed)
         compressedData.output_to_file(outputFile, symbol)

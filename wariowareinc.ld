@@ -5196,10 +5196,13 @@ SECTIONS {
         build/graphics/generic_pal.c.o(.data);
         build/data/microgame_names.c.o(.data);
         build/bin/data_080F7780.bin.o(.rodata*);
+        build/microgames/crazy_cars/crazy_cars_text.c.o(.rodata);
+        build/bin/data_081199F4.bin.o(.rodata*);
         build/audio/sample_table.json.s.o(.rodata);
         build/graphics/title/title_anim.c.o(.data);
         build/graphics/title/title_pal.c.o(.data);
         build/bin/data_0830C3B0.bin.o(.rodata*);
+        build/microgames/crazy_cars/graphics/crazy_cars_anim.c.o(.data);
         build/microgames/crazy_cars/graphics/crazy_cars_pal.c.o(.data);
         build/bin/data_0834543C.bin.o(.rodata*);
         build/data/scenes.c.o(.data);

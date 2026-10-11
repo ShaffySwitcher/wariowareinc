@@ -16,6 +16,10 @@ cleanup.py
 objdiff.json
 tools/objdiff-cli
 report.json
+
+# random helpers
 tools/beatscript_decompile.py
 tools/rom_animation_to_c.py
 tools/rom_palette_to_c.py
+tools/clean_undefined_syms.py
+tools/read_sjis_string.py

@@ -2120,7 +2120,7 @@
 .set D_083CB76C, 0x083CB76C;
 .set D_083CB778, 0x083CB778;
 .set crazy_cars_gfx_table, 0x083CB78C;
-.set D_083CB7F8, 0x083CB7F8;
+.set crazy_cars_cars_table, 0x083CB7F8;
 .set D_083CB93C, 0x083CB93C;
 .set D_083CB944, 0x083CB944;
 .set D_083CB94C, 0x083CB94C;

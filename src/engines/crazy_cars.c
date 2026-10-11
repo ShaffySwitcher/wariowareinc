@@ -9,6 +9,7 @@ void crazy_cars_scene_start(struct CrazyCarsSceneData* data) {
 
     difficulty = gGameplayData.currentDifficulty;
 
+    // Load graphic table
     func_08002124(data->unk4, crazy_cars_gfx_table, 0x2000);
 
     scene_set_video_mode(0);
@@ -25,24 +26,24 @@ void crazy_cars_scene_start(struct CrazyCarsSceneData* data) {
     variant = data->variant = get_random_range(3);
     
     row = get_random_range(16);
-    data->type = D_083CB7F8[difficulty][(u16)row];
+    data->type = crazy_cars_cars_table[difficulty][(u16)row];
 
-    data->state = 0;
+    data->state = CRAZY_CARS_STATE_WAITING;
     data->carPosition.x = 260;
     data->carPosition.y = 112;
-    data->warioState = 0;
+    data->warioState = CRAZY_CARS_WARIO_STANDING;
     data->warioPosition.x = 48;
     data->warioPosition.y = 112;
     
-    data->warioSprite = sprite_create(gSpriteHandler, D_08345134, 0, 0x30, 0x70, 0x8000, 1, 0, 0);
+    data->warioSprite = sprite_create(gSpriteHandler, D_08345134, 0, 48, 112, 0x8000, 1, 0, 0);
 
-    if(data->type != 4) {
-        data->carSprite = sprite_create(gSpriteHandler, D_083CB760[variant], 0, 0x104, 0x70, 0x8000, 1, 0, 0);
+    if(data->type != CRAZY_CARS_CAR_TINY) {
+        data->carSprite = sprite_create(gSpriteHandler, D_083CB760[variant], 0, 260, 112, 0x8000, 1, 0, 0);
     } else {
-        data->carSprite = sprite_create(gSpriteHandler, D_083CB778[variant], 0, 0x104, 0x70, 0x8000, 1, 0, 0);
+        data->carSprite = sprite_create(gSpriteHandler, D_083CB778[variant], 0, 260, 112, 0x8000, 1, 0, 0);
     }
 
-    data->sprite2 = sprite_create(gSpriteHandler, D_08345214, 0, 0x44, 0x78, 0x8000, 1, 0, 2);
+    data->sprite2 = sprite_create(gSpriteHandler, D_08345214, 0, 68, 120, 0x8000, 1, 0, 2);
     sprite_set_visible(gSpriteHandler, data->sprite2, 0);
 
     if (data->type < 3) {
@@ -60,17 +61,17 @@ void crazy_cars_scene_update(struct CrazyCarsSceneData* data) {
     u16 timer;
 
     switch (data->state) {
-    case 0:
+    case CRAZY_CARS_STATE_WAITING:
         break;
-    case 1:
+    case CRAZY_CARS_STATE_RUNNING:
         timer = data->timer;
 
         switch(data->type) {
-            case 0:
+            case CRAZY_CARS_CAR_NORMAL:
                 data->xPosition += data->speed;
             break;
             
-            case 1:
+            case CRAZY_CARS_CAR_FAKE_OUT:
                 if(timer < data->unk7c || timer > data->unk7e) {
                     data->xPosition += data->speed;
                     sprite_set_enable_updates(gSpriteHandler, data->carSprite, 0);
@@ -81,7 +82,7 @@ void crazy_cars_scene_update(struct CrazyCarsSceneData* data) {
                 }
             break;
 
-            case 2:
+            case CRAZY_CARS_CAR_JUMPING:
                 data->xPosition += data->speed;
                 if(timer > data->unk80) {
                     u16 idx = ((timer - data->unk80) << 7) / data->unk82;
@@ -95,7 +96,7 @@ void crazy_cars_scene_update(struct CrazyCarsSceneData* data) {
                 }
             break;
 
-            case 3:
+            case CRAZY_CARS_CAR_FAKE:
                 if(timer >= data->unk7c && timer < data->unk7e) {
                     sprite_set_enable_updates(gSpriteHandler, data->carSprite, 1);
                     set_soundplayer_volume(data->sp, 0);
@@ -116,7 +117,7 @@ void crazy_cars_scene_update(struct CrazyCarsSceneData* data) {
                 }
             break;
 
-            case 4:
+            case CRAZY_CARS_CAR_TINY:
                 if (data->unk84 == 0) {
                     data->xPosition += data->speed;
                 } else {
@@ -134,12 +135,12 @@ void crazy_cars_scene_update(struct CrazyCarsSceneData* data) {
     }
 
     switch(data->warioState) {
-        case 0:
-            data->warioPosition.y = 0x70;
-            sprite_set_x_y(gSpriteHandler, data->warioSprite, 0x30, 0x70);
+        case CRAZY_CARS_WARIO_STANDING:
+            data->warioPosition.y = 112;
+            sprite_set_x_y(gSpriteHandler, data->warioSprite, 48, 112);
             if(gPressedKeys & A_BUTTON) {
                 if(gGameplayData.unk173 == 1) {
-                    data->warioState = 1;
+                    data->warioState = CRAZY_CARS_WARIO_JUMPING;
                     data->unk8e = 3;
                     sprite_set_anim(gSpriteHandler, data->warioSprite, &D_0834515C, 0, 1, 0, 0);
                     play_sound(&s_BOMB_JUMP_02_seqData);
@@ -147,25 +148,25 @@ void crazy_cars_scene_update(struct CrazyCarsSceneData* data) {
             }
         break;
 
-        case 1:
-            data->warioPosition.y = 0x70 - ((gSineTable[data->unk8e] * 5) >> 4);
+        case CRAZY_CARS_WARIO_JUMPING:
+            data->warioPosition.y = 112 - FIXED_POINT_MUL(gSineTable[data->unk8e], 80);
             sprite_set_anim_cel(gSpriteHandler, data->warioSprite, 0);
-            sprite_set_x_y(gSpriteHandler, data->warioSprite, 0x30, data->warioPosition.y);
+            sprite_set_x_y(gSpriteHandler, data->warioSprite, 48, data->warioPosition.y);
             data->unk8e += 3;
             if (data->unk8e > 0x7F) {
-                data->warioState = 0;
+                data->warioState = CRAZY_CARS_WARIO_STANDING;
                 sprite_set_anim(gSpriteHandler, data->warioSprite, D_08345134, 0, 1, 0, 0);
             }
         break;
 
-        case 2:
+        case CRAZY_CARS_WARIO_HIT:
             break;
     }
 
-    if(data->warioState != 2) {
-        if(data->type != 4) {
+    if(data->warioState != CRAZY_CARS_WARIO_HIT) {
+        if(data->type != CRAZY_CARS_CAR_TINY) {
             if (gameplay_check_collision(&data->warioPosition, &crazy_cars_wario_hitbox, &data->carPosition, &crazy_cars_cars_hitbox[data->variant])) {
-                data->warioState = 2;
+                data->warioState = CRAZY_CARS_WARIO_HIT;
                 func_0800C9A4(0x24);
                 func_0800A128(1);
                 sprite_set_anim(gSpriteHandler, data->warioSprite, &D_08345174, 0, 1, 0, 0);
@@ -187,7 +188,7 @@ void crazy_cars_scene_init(struct CrazyCarsSceneData *data, u32 param) {
     u32 result;
     u16 x;
 
-    data->state = 1;
+    data->state = CRAZY_CARS_STATE_RUNNING;
     data->timer = 0;
 
     data->unk6a = x = (param * 150) / gGameplayData.unk14;
@@ -204,7 +205,7 @@ void crazy_cars_scene_init(struct CrazyCarsSceneData *data, u32 param) {
 
     data->sp = scene_play_sound_to_tempo_and_pitch(&s_BOMB_CAR_05_seqData);
 
-    if (data->type == 4) {
+    if (data->type == CRAZY_CARS_CAR_TINY) {
         scene_play_sound_to_tempo_and_pitch(&s_BOMB_Voice_Child_02_seqData);
         func_08001F80(&s_BOMB_Voice_Child_02_seqData, 0x78);
     }

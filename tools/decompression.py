@@ -41,8 +41,16 @@ def parse_symbol_table(path):
 
 
 def resolve_asset(asset, symbol_path):
-    if asset.startswith("0x") or asset.isdigit():
-        return int(asset, 0), asset
+    try:
+        value = int(asset, 0)
+    except ValueError:
+        value = None
+
+    if value is not None:
+        if value < 0:
+            raise ValueError("ROM offset cannot be negative")
+        address = value if value >= ROM_BASE else ROM_BASE + value
+        return address, asset
 
     symbols = parse_symbol_table(symbol_path)
     if asset not in symbols:
@@ -220,11 +228,62 @@ def write_hwords(path, hwords):
         output_file.write(struct.pack("<%dH" % len(hwords), *hwords))
 
 
+def infer_format(output_path):
+    if output_path is None:
+        return None
+    if output_path.lower().endswith(".tilemap"):
+        return "tilemap"
+    if output_path.lower().endswith(".4bpp"):
+        return "4bpp"
+    return None
+
+
+def default_output_name(asset_name, address, output_format, double_compressed):
+    try:
+        int(asset_name, 0)
+        numeric_asset = True
+    except ValueError:
+        numeric_asset = False
+
+    if numeric_asset:
+        stem = "D_%08X" % address
+    else:
+        stem = asset_name
+    if output_format == "tilemap":
+        suffix = "tilemap"
+    elif double_compressed:
+        suffix = "4bpp"
+    else:
+        suffix = "rle.4bpp"
+    return "%s.%s" % (stem, suffix)
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Extract a CompressedData asset from a ROM.")
+    parser = argparse.ArgumentParser(
+        description="Decompress a CompressedData asset from a ROM into raw 4bpp or tilemap data.",
+        epilog=(
+            "Examples:\n"
+            "  %(prog)s baserom.gba 0x087E021C --format 4bpp\n"
+            "  %(prog)s baserom.gba 0x007E021C --format 4bpp output.rle.4bpp\n"
+            "  %(prog)s baserom.gba 0x0854613C output.tilemap"
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
     parser.add_argument("rom", help="input ROM path")
-    parser.add_argument("asset", help="symbol name from undefined_syms.ld or a ROM address")
-    parser.add_argument("output", help="output file path")
+    parser.add_argument(
+        "asset",
+        help="symbol name, GBA ROM address (0x08...), or file offset (for example 0x007E021C)",
+    )
+    parser.add_argument(
+        "output",
+        nargs="?",
+        help="output path; .4bpp, .rle.4bpp, or .tilemap suffix is inferred when possible",
+    )
+    parser.add_argument(
+        "--format",
+        choices=("4bpp", "tilemap"),
+        help="data type; if omitted, infer it from the output path (default: 4bpp)",
+    )
     parser.add_argument("--symbols", default="undefined_syms.ld", help="symbol table to resolve asset names")
     args = parser.parse_args()
 
@@ -234,15 +293,23 @@ def main():
             rom = rom_file.read()
 
         result = decompress_compressed_data(rom, address)
-        write_hwords(args.output, result["output"])
+        output_format = args.format or infer_format(args.output) or "4bpp"
+        output_path = args.output or default_output_name(
+            asset_name, address, output_format, result["double_compressed"]
+        )
+        inferred_format = infer_format(output_path)
+        if args.format and inferred_format and inferred_format != args.format:
+            raise ValueError("output path extension conflicts with --format")
+        write_hwords(output_path, result["output"])
     except Exception as exc:
         print(str(exc), file=sys.stderr)
         return 1
 
     print(
-        "wrote %d bytes from %s at 0x%08X%s"
+        "wrote %d bytes to %s from %s at 0x%08X%s"
         % (
             len(result["output"]) << 1,
+            output_path,
             asset_name,
             address,
             " (double compressed)" if result["double_compressed"] else "",

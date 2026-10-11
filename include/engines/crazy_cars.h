@@ -8,6 +8,25 @@
 #define gGameplayData CURRENT_SCENE_DATA(struct GameplayData)
 
 // TYPES
+enum CrazyCarsWarioState {
+    CRAZY_CARS_WARIO_STANDING = 0,
+    CRAZY_CARS_WARIO_JUMPING = 1,
+    CRAZY_CARS_WARIO_HIT = 2,
+};
+
+enum CrazyCarsCarType {
+    CRAZY_CARS_CAR_NORMAL = 0,
+    CRAZY_CARS_CAR_FAKE_OUT = 1,
+    CRAZY_CARS_CAR_JUMPING = 2,
+    CRAZY_CARS_CAR_FAKE = 3,
+    CRAZY_CARS_CAR_TINY = 4,
+};
+
+enum CrazyCarsState {
+    CRAZY_CARS_STATE_WAITING = 0,
+    CRAZY_CARS_STATE_RUNNING = 1,
+};
+
 struct CrazyCarsSceneData {
     u16 variant;        // 0x00
     u16 unk2;           // 0x02
@@ -36,19 +55,18 @@ struct CrazyCarsSceneData {
 };
 
 // DATA
-extern struct Animation D_08345214[];
-extern struct Animation D_08345134[];
-extern struct Animation D_0834515C;
-extern struct Animation D_08345174;
-
 extern struct Rect crazy_cars_cars_hitbox[];
+extern struct Rect crazy_cars_wario_hitbox;
 extern struct Rect D_083CB758;
+
 extern struct Animation* D_083CB760[];
 extern struct Animation* D_083CB76C[];
 extern struct Animation* D_083CB778[];
-extern struct Rect crazy_cars_wario_hitbox;
+
+extern u16 crazy_cars_cars_table[][16];
+
 extern struct GraphicsTable crazy_cars_gfx_table[];
-extern u16 D_083CB7F8[][16];
+
 extern char** crazy_cars_dodge_texts[];
 extern char** crazy_cars_dodge_fakeout_texts[];
 
@@ -58,13 +76,8 @@ extern char* D_08119A04;
 extern char* D_081199FC;
 extern char* D_081199F4;
 extern char* D_081199EC;
-
 extern char* D_08119A38;
 extern char* D_08119A28;
-extern char* D_08119A04;
-extern char* D_081199FC;
-extern char* D_081199F4;
-extern char* D_081199EC;
 
 // FUNCTIONS
 void crazy_cars_scene_start(struct CrazyCarsSceneData* data);

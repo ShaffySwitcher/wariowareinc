@@ -73,7 +73,7 @@ struct GraphicsTable crazy_cars_gfx_table[] = {
     END_OF_GRAPHICS_TABLE
 };
 
-u16 D_083CB7F8[][16] = {
+u16 crazy_cars_cars_table[][16] = {
     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 },
     { 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 4 },
