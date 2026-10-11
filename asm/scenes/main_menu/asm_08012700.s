@@ -24,7 +24,7 @@ thumb_func_start func_08012700 \n\
  \n\
 .balign 4, 0 \n\
 _0801272C: \n\
-/* 0801272C */ .word D_03006518 \n\
+/* 0801272C */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08012730: \n\

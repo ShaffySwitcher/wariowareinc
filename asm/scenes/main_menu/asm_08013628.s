@@ -2,7 +2,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_08013628 \n\
 /* 08013628 */ LDR R0, _08013644 \n\
-/* 0801362A */ LDR R2, =D_03006518 \n\
+/* 0801362A */ LDR R2, =gMainMenuSelectionState \n\
 /* 0801362C */ LDRB R1, [R2] \n\
 /* 0801362E */ LSLS R1, R1, #2 \n\
 /* 08013630 */ ADDS R1, R0 \n\

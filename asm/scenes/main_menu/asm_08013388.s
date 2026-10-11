@@ -43,7 +43,7 @@ _080133E8: \n\
  \n\
 .balign 4, 0 \n\
 _080133D8: \n\
-/* 080133D8 */ .word D_03006518 \n\
+/* 080133D8 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _080133DC: \n\

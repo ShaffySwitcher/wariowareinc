@@ -23,9 +23,9 @@ _08014460: \n\
  \n\
 .balign 4, 0 \n\
 _08014464: \n\
-/* 08014464 */ .word D_03006518 \n\
+/* 08014464 */ .word gMainMenuSelectionState \n\
 _08014468: \n\
-/* 08014468 */ LDR R1, =D_03006518 \n\
+/* 08014468 */ LDR R1, =gMainMenuSelectionState \n\
 /* 0801446A */ MOVS R0, #9 \n\
 /* 0801446C */ STRB R0, [R1, #1] \n\
 /* 0801446E */ MOVS R4, #0 \n\

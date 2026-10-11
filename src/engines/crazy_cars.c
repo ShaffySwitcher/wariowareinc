@@ -207,6 +207,6 @@ void crazy_cars_scene_init(struct CrazyCarsSceneData *data, u32 param) {
 
     if (data->type == CRAZY_CARS_CAR_TINY) {
         scene_play_sound_to_tempo_and_pitch(&s_BOMB_Voice_Child_02_seqData);
-        func_08001F80(&s_BOMB_Voice_Child_02_seqData, 0x78);
+        fade_out_sound(&s_BOMB_Voice_Child_02_seqData, 0x78);
     }
 }

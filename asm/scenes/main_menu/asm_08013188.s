@@ -119,7 +119,7 @@ _08013254: \n\
  \n\
 .balign 4, 0 \n\
 _08013258: \n\
-/* 08013258 */ .word D_03006518 \n\
+/* 08013258 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _0801325C: \n\

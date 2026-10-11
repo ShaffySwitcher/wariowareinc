@@ -20,7 +20,7 @@ thumb_func_start func_080136A4 \n\
 /* 080136C8 */ RSBS R0, R0, #0 \n\
 /* 080136CA */ ANDS R0, R2 \n\
 /* 080136CC */ STRB R0, [R1] \n\
-/* 080136CE */ LDR R4, =D_03006518 \n\
+/* 080136CE */ LDR R4, =gMainMenuSelectionState \n\
 /* 080136D0 */ LDRB R0, [R4] \n\
 /* 080136D2 */ BL func_080135E8 \n\
 /* 080136D6 */ BL func_08015A88 \n\

@@ -8,7 +8,28 @@
 // MACROS
 #define gMainMenu CURRENT_SCENE_DATA(struct MainMenuSceneData)
 
+#define MAIN_MENU_GRID_ROWS 4
+
 // TYPES
+enum MainMenuCategory {
+    MAIN_MENU_CATEGORY_GAMES = 0,
+    MAIN_MENU_CATEGORY_GRID = 1,
+    MAIN_MENU_CATEGORY_OPTIONS = 2,
+};
+
+enum MainMenuState {
+    MAIN_MENU_STATE_MAIN = 0,
+    MAIN_MENU_STATE_GAMES = 1,
+    MAIN_MENU_STATE_GRID = 2,
+    MAIN_MENU_STATE_MICROGAME_SELECT = 3,
+    MAIN_MENU_STATE_OPTIONS = 4,
+    MAIN_MENU_STATE_PROMPT = 5,
+    MAIN_MENU_STATE_FADE_OUT = 6,
+    MAIN_MENU_STATE_7 = 7,
+    MAIN_MENU_STATE_EPILOGUE_SELECT = 8,
+    MAIN_MENU_STATE_TRANSITION = 99,
+};
+
 struct MainMenuSceneData {
     u32 unk0;
     u32 unk4;
@@ -21,7 +42,8 @@ struct MainMenuSceneData {
     u8 pad72[0x6];
     u32 unk78;
     void* unk7C;
-    u8 pad80[0x8];
+    u8 pad80[0x4];
+    struct SongHeader *unk84;
     u32 unk88_1:1;
     u32 unk88_2:8;
     u8 pad8A[0x2A];
@@ -32,16 +54,16 @@ struct MainMenuSceneData {
     void* unkD0;
     void* unkD4;
     void* unkD8;
-    u32 unkDC_1:8;
-    u32 unkDC_9:1;
-    s32 unkDC_10:1;
-    s32 unkDC_11:1;
-    s32 unkDC_12:1;
-    s32 unkDC_13:1;
-    s32 unkDC_14:1;
-    s32 unkDC_15:1;
+    u32 unkDC_1:8; // DC
+    u32 unkDC_9:1; // DD
+    u32 unkDC_10:1;
+    u32 unkDC_11:1;
+    u32 unkDC_12:1;
+    u32 unkDC_13:1;
+    u32 unkDC_14:1;
+    u32 unkDC_15:1;
     u32 unkDC_16:1;
-    u32 unkDC_17:1;
+    u32 unkDC_17:1; // DE
     u32 unkDC_18:1;
     u32 unkDC_19:1;
     u32 unkDC_20:1;
@@ -49,18 +71,23 @@ struct MainMenuSceneData {
     u32 unkDC_22:1;
     u32 unkDC_23:1;
     u32 unkDC_24:1;
-    u32 unkDC_25:1;
+    u32 unkDC_25:1; // DF
     u32 unkDC_26:1;
     s32 unkDC_27:1;
     u32 unkDC_28:1;
     u32 unkDC_29:4;
-    u8 padE0[0x8];
-    u8 unkE8;
+    u32 unkE0_1 : 1;
+    u32 unkE0_2 : 8;
+    u32 unkE0_10 : 4;
+    u32 unkE0_14 : 3;
+    u32 unkE0_15 : 16;
+    u8 padE4[0x4];
+    u8 microgameGridColumns;
     u8 padE9;
     s16 unkEA;
     s16 unkEC;
     u16 unkEE;
-    u8 unkF0;
+    u8 microgameGridItems;
     u8 unkF1;
     u8 unkF2[0x2];
     void (*unkF4)(s32);
@@ -85,7 +112,11 @@ struct MainMenuSceneData {
     u32 unk1AC;
     u16 unk1B0;
     u16 unk1B2;
-    u8 unk1B4[12];
+    u32 unk1B4;
+    u8 unk1B8;
+    u8 pad1B9;
+    u16 unk1BA;
+    u8 pad1BC[4];
     u32 unk1C0;
     u16 unk1C4;
     u8 unk1C6[10];
@@ -93,19 +124,26 @@ struct MainMenuSceneData {
     u8 unk1D2[0x24];
 };
 
-struct Unk03006518 {
-    u8 unk0;
-    u8 unk1;
-    u8 unk2;
-    u8 unk3;
-    u8 unk4;
+struct MainMenuSelectionState {
+    u8 stage;
+    u8 state;
+    u8 category;
+    u8 gridColumn;
+    u8 gridRow;
     s8 unk5;
     u8 unk6;
     u8 unk7;
 };
 
+struct GameplayData_struct_0;
+
 struct Unk083AA0C4 {
-    u8 unk0[0xC];
+    struct GameplayData_struct_0 *unk0;
+    s8 unk4;
+    s8 unk5;
+    s8 unk6;
+    s8 unk7;
+    u8 pad8[4];
     struct Vector2 *position;
 };
 
@@ -126,13 +164,15 @@ struct Unk03000E60 {
 
 // DATA
 extern struct GraphicsTable main_menu_gfx_table[];
-extern struct Unk03006518 D_03006518;
+extern struct MainMenuSelectionState gMainMenuSelectionState;
 extern struct Vector2 D_083AB2CC[2];
 extern u16 D_0832027C[];
 extern u16 D_083AB470[];
 extern struct Unk083AB478 D_083AB478[];
 extern struct Unk083AA0C4 D_083AA0C4[];
 extern struct Unk083AA0C4 D_083AA294[];
+extern struct Vector2* D_083A9CE0[];
+extern const u8 D_083AB490[];
 extern void* D_083AA530;
 extern void* D_083A4A2C;
 extern void* D_083AB394;
@@ -143,6 +183,7 @@ extern void* D_083A9C14;
 
 // FUNCTIONS
 extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);
+extern void func_080126C8(void);
 extern void func_080119B8(void);
 extern void main_menu_scene_init_gfx2(void);
 extern void main_menu_scene_init_gfx3(void);
@@ -179,10 +220,9 @@ extern void func_08015C38(void);
 extern void func_08013E44(void);
 extern void func_08013B88(void);
 extern void func_08013AE0(void);
+extern void func_08012658(void);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);
 extern s32 func_08005920(s32);
 extern void func_08005834(s32);
-
-extern struct Vector2* D_083A9CE0[];

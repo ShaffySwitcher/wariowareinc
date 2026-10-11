@@ -32,6 +32,6 @@ _08014E34: \n\
  \n\
 .balign 4, 0 \n\
 _08014E30: \n\
-/* 08014E30 */ .word D_03006518 \n\
+/* 08014E30 */ .word gMainMenuSelectionState \n\
 .ltorg \n\
 .syntax divided");

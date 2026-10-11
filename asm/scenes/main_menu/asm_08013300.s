@@ -43,7 +43,7 @@ thumb_func_start func_08013300 \n\
 /* 08013354 */ MOVS R2, #8 \n\
 /* 08013356 */ MOVS R3, #0X20 \n\
 /* 08013358 */ BL dma3_set \n\
-/* 0801335C */ LDR R0, =D_03006518 \n\
+/* 0801335C */ LDR R0, =gMainMenuSelectionState \n\
 /* 0801335E */ STRB R5, [R0, #4] \n\
 /* 08013360 */ STRB R5, [R0, #3] \n\
 /* 08013362 */ ADDS R0, R6, #0 \n\

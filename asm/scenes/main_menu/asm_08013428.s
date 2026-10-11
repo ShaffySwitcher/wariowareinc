@@ -28,6 +28,6 @@ _0801345C: \n\
  \n\
 .balign 4, 0 \n\
 _08013458: \n\
-/* 08013458 */ .word D_03006518 \n\
+/* 08013458 */ .word gMainMenuSelectionState \n\
 .ltorg \n\
 .syntax divided");

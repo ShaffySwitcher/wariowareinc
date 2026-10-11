@@ -33,6 +33,6 @@ _08012D78: \n\
  \n\
 .balign 4, 0 \n\
 _08012D74: \n\
-/* 08012D74 */ .word D_03006518 \n\
+/* 08012D74 */ .word gMainMenuSelectionState \n\
 .ltorg \n\
 .syntax divided");

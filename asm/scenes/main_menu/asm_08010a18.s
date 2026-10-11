@@ -196,7 +196,7 @@ _08010B84: \n\
  \n\
 .balign 4, 0 \n\
 _08010B88: \n\
-/* 08010B88 */ .word D_03006518 \n\
+/* 08010B88 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08010B8C: \n\

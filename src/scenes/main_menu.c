@@ -18,12 +18,12 @@ void main_menu_scene_run(void) {
 }
 
 void func_080109B4(void) {
-    D_03006518.unk0 = 0;
-    D_03006518.unk1 = 0;
-    D_03006518.unk2 = 0;
-    D_03006518.unk3 = 0;
-    D_03006518.unk4 = 0;
-    D_03006518.unk5 = 0;
+    gMainMenuSelectionState.stage = 0;
+    gMainMenuSelectionState.state = MAIN_MENU_STATE_MAIN;
+    gMainMenuSelectionState.category = MAIN_MENU_CATEGORY_GAMES;
+    gMainMenuSelectionState.gridColumn = 0;
+    gMainMenuSelectionState.gridRow = 0;
+    gMainMenuSelectionState.unk5 = 0;
 }
 
 void func_080109CC(void) {
@@ -63,16 +63,16 @@ void main_menu_scene_init_gfx1(void) {
 #include "asm/scenes/main_menu/asm_080113ec.s"
 
 void main_menu_scene_update(void) {
-    switch (D_03006518.unk1) {
-        case 0: func_0801208C(); break;
-        case 1: func_08012CB4(); break;
-        case 2: func_0801364C(); break;
-        case 3: func_08013E64(); break;
-        case 4: func_080147B0(); break;
-        case 5: func_08014B44(); break;
-        case 6: func_08014DE8(); break;
-        case 7: func_080153E0(); break;
-        case 8: func_08015930(); break;
+    switch (gMainMenuSelectionState.state) {
+        case MAIN_MENU_STATE_MAIN: func_0801208C(); break;
+        case MAIN_MENU_STATE_GAMES: func_08012CB4(); break;
+        case MAIN_MENU_STATE_GRID: func_0801364C(); break;
+        case MAIN_MENU_STATE_MICROGAME_SELECT: func_08013E64(); break;
+        case MAIN_MENU_STATE_OPTIONS: func_080147B0(); break;
+        case MAIN_MENU_STATE_PROMPT: func_08014B44(); break;
+        case MAIN_MENU_STATE_FADE_OUT: func_08014DE8(); break;
+        case MAIN_MENU_STATE_7: func_080153E0(); break;
+        case MAIN_MENU_STATE_EPILOGUE_SELECT: func_08015930(); break;
     }
 
     func_080165D4();
@@ -118,7 +118,26 @@ void func_080115DC(void) {
     }
 }
 
-#include "asm/scenes/main_menu/asm_08011614.s"
+u32 func_08011614(void) {
+    return gMainMenu.unkDC_9
+         | gMainMenu.unkDC_10
+         | gMainMenu.unkDC_11
+         | gMainMenu.unkDC_12
+         | gMainMenu.unkDC_13
+         | gMainMenu.unkDC_14
+         | gMainMenu.unkDC_15
+         | gMainMenu.unkDC_17
+         | gMainMenu.unkDC_18
+         | gMainMenu.unkDC_19
+         | gMainMenu.unkDC_20
+         | gMainMenu.unkDC_16
+         | gMainMenu.unkDC_21
+         | gMainMenu.unkDC_22
+         | gMainMenu.unkDC_23
+         | gMainMenu.unkDC_24
+         | gMainMenu.unkDC_25
+         | gMainMenu.unkDC_26;
+}
 
 u32 func_08011698(void) {
     if (gMainMenu.unk8 && !gGraphicsBuffer.unk854_2 && func_08011614() == 0) {
@@ -179,7 +198,7 @@ void func_080117A8(s32 arg0) {
 void func_080117FC(void) {
     s32 i;
 
-    func_080117A8(D_03006518.unk2);
+    func_080117A8(gMainMenuSelectionState.category);
 
     for(i = 0; i < 3;) {
         scene_show_sprite(++i);
@@ -226,21 +245,21 @@ void func_080118C4(s32 arg0) {
 
 void func_080118E0(void) {
     scene_set_current_thread(0);
-    func_080117A8(D_03006518.unk2);
-    func_08011864(D_03006518.unk2);
+    func_080117A8(gMainMenuSelectionState.category);
+    func_08011864(gMainMenuSelectionState.category);
     gMainMenu.unkDC_9 = FALSE;
     play_sound(&s_BOMB_Window_Change_seqData);
 }
 
 void func_08011920(void) {
     scene_set_current_thread(0);
-    D_03006518.unk1 = 1;
+    gMainMenuSelectionState.state = MAIN_MENU_STATE_GAMES;
     func_08011824();
-    func_08012C18(D_03006518.unk0);
+    func_08012C18(gMainMenuSelectionState.stage);
     func_08015A88();
 
     if(!gMainMenu.unk88_1 || gMainMenu.unk88_2 < 40) {
-        func_08012C80(D_03006518.unk0);
+        func_08012C80(gMainMenuSelectionState.stage);
     }
 
     gMainMenu.unkDC_9 = FALSE;
@@ -248,16 +267,16 @@ void func_08011920(void) {
 
 void func_0801197C(void) {
     scene_set_current_thread(0);
-    D_03006518.unk1 = 2;
+    gMainMenuSelectionState.state = MAIN_MENU_STATE_GRID;
     func_08011824();
-    func_080135E8(D_03006518.unk0);
+    func_080135E8(gMainMenuSelectionState.stage);
     func_08015A88();
     gMainMenu.unkDC_9 = FALSE;
 }
 
 void func_080119B8(void) {
     scene_set_current_thread(0);
-    D_03006518.unk1 = 4;
+    gMainMenuSelectionState.state = MAIN_MENU_STATE_OPTIONS;
     func_08011824();
     gMainMenu.unkDC_9 = FALSE;
     func_080143A0();
@@ -275,12 +294,12 @@ void func_080119EC(void) {
     }
     
     gMainMenu.unkDC_16 = FALSE;
-    switch(D_03006518.unk2) {
+    switch(gMainMenuSelectionState.category) {
         case 0:
             for(i = 0; i < 28; i++) {
                 sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], TRUE);
             }
-            entry = D_083AA0C4[D_03006518.unk0].position;
+            entry = D_083AA0C4[gMainMenuSelectionState.stage].position;
             sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
             scene_show_sprite(4);
             break;
@@ -291,7 +310,7 @@ void func_080119EC(void) {
             for(i = 9; i < 28; i++) {
                 sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], FALSE);
             }
-            entry = D_083AA294[D_03006518.unk0].position;
+            entry = D_083AA294[gMainMenuSelectionState.stage].position;
             sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
             scene_show_sprite(4);
             break;
@@ -362,7 +381,7 @@ void func_08011D5C(u32 arg0) {
             gMainMenu.unkFB = 28;
         break;
         case 1:
-            if(D_03006518.unk2 == 0) {
+            if(gMainMenuSelectionState.category == MAIN_MENU_CATEGORY_GAMES) {
                 callback = func_08011BEC;
                 gMainMenu.unkFB = 28;
             } else {
@@ -408,61 +427,61 @@ void func_08011E68(void) {
     struct Vector2* pos;
     struct Unk083AA0C4 *entry;
     u8 idx;
-    u32 mode = D_03006518.unk2;
+    u32 category = gMainMenuSelectionState.category;
 
-    if ((gCurrentKeys & DPAD_LEFT) && mode > 0) {
-        mode--;
+    if ((gCurrentKeys & DPAD_LEFT) && category > MAIN_MENU_CATEGORY_GAMES) {
+        category--;
     }
-    if ((gCurrentKeys & DPAD_RIGHT) && mode < 2) {
-        mode++;
+    if ((gCurrentKeys & DPAD_RIGHT) && category < MAIN_MENU_CATEGORY_OPTIONS) {
+        category++;
     }
-    if (D_03006518.unk2 != mode) {
-        if (mode == 0) {
+    if (gMainMenuSelectionState.category != category) {
+        if (category == MAIN_MENU_CATEGORY_GAMES) {
             idx = gMainMenu.unkFC;
-            D_03006518.unk0 = idx;
+            gMainMenuSelectionState.stage = idx;
             pos = D_083AA0C4[idx].position;
             sprite_set_x_y(gSpriteHandler, (s16)gCurrentSceneSpritePool[4], pos->x, pos->y);
         }
-        if (mode == 1) {
-            if (D_03006518.unk2 == 0) {
-                gMainMenu.unkFC = D_03006518.unk0;
+        if (category == MAIN_MENU_CATEGORY_GRID) {
+            if (gMainMenuSelectionState.category == MAIN_MENU_CATEGORY_GAMES) {
+                gMainMenu.unkFC = gMainMenuSelectionState.stage;
             }
-            if (D_03006518.unk0 > 8) {
-                D_03006518.unk0 = 0;
-                D_03006518.unk4 = 0;
-                D_03006518.unk3 = 0;
+            if (gMainMenuSelectionState.stage > 8) {
+                gMainMenuSelectionState.stage = 0;
+                gMainMenuSelectionState.gridRow = 0;
+                gMainMenuSelectionState.gridColumn = 0;
                 pos = D_083AA0C4[0].position;
                 sprite_set_x_y(gSpriteHandler, (s16)gCurrentSceneSpritePool[4], pos->x, pos->y);
             }
         }
         func_08011774();
-        func_080118A0(D_03006518.unk2);
-        func_080118C4(mode);
-        func_08015CD8(mode);
-        func_08011D5C(mode);
-        D_03006518.unk2 = mode;
-        pos = D_083A9CE0[mode];
+        func_080118A0(gMainMenuSelectionState.category);
+        func_080118C4(category);
+        func_08015CD8(category);
+        func_08011D5C(category);
+        gMainMenuSelectionState.category = category;
+        pos = D_083A9CE0[category];
         func_08011504(pos->x, pos->y, func_080118E0, 0);
         sprite_set_visible(gSpriteHandler, (s16)gCurrentSceneSpritePool[4], FALSE);
         play_sound(&s_BASIC_CURSOR_01_seqData);
     } else if (gPressedKeys & A_BUTTON) {
-        switch ((s32)mode) {
-            case 0:
-                entry = &D_083AA0C4[D_03006518.unk0];
+        switch ((s32)category) {
+            case MAIN_MENU_CATEGORY_GAMES:
+                entry = &D_083AA0C4[gMainMenuSelectionState.stage];
                 pos = entry->position;
                 func_08011504(pos->x, pos->y, func_08011920, 0);
                 func_08011730(0);
                 play_sound(&s_BASIC_BUTTON_A_seqData);
                 break;
-            case 1:
-                entry = &D_083AA294[D_03006518.unk0];
+            case MAIN_MENU_CATEGORY_GRID:
+                entry = &D_083AA294[gMainMenuSelectionState.stage];
                 pos = entry->position;
                 func_08011504(pos->x, pos->y, func_0801197C, 0);
-                gMainMenu.unkFC = D_03006518.unk0;
+                gMainMenu.unkFC = gMainMenuSelectionState.stage;
                 func_08011730(0);
                 play_sound(&s_BASIC_BUTTON_A_seqData);
                 break;
-            case 2:
+            case MAIN_MENU_CATEGORY_OPTIONS:
                 gMainMenu.unkFD = 0;
                 pos = &D_083AB2CC[gMainMenu.unkFD];
                 func_08011504(pos->x, pos->y, func_080119B8, 0);
@@ -474,7 +493,7 @@ void func_08011E68(void) {
 }
 
 void func_08012058(void) {
-    struct Vector2* position = (D_03006518.unk0 + D_083AA0C4)->position; // fake-match of death
+    struct Vector2* position = (gMainMenuSelectionState.stage + D_083AA0C4)->position; // fake-match of death
     func_08011504(position->x, position->y, func_08011920, 0);
     func_08011730(0);
 }
@@ -482,7 +501,7 @@ void func_08012058(void) {
 void func_0801208C(void) {
     struct Vector2* pos;
     
-    if (func_08011708() && D_03006518.unk2 == 2) {
+    if (func_08011708() && gMainMenuSelectionState.category == MAIN_MENU_CATEGORY_OPTIONS) {
         if(gMainMenu.unk13C_2) {
             gMainMenu.unkFD = 0;
             pos = D_083AB2CC + (gMainMenu.unkFD);
@@ -516,7 +535,7 @@ void func_0801214C(void* arg0) {
 void func_0801216C(void) {
     gMainMenu.unkDC_10 = 0;
     func_08005E48(&gMainMenu.unk7C, 15, 0, 14, 2, gMainMenu.unkD0, 15, 0);
-    func_08012420(D_03006518.unk0);
+    func_08012420(gMainMenuSelectionState.stage);
 }
 
 void func_080121B8(void) {
@@ -562,7 +581,25 @@ void func_08012274(void) {
 
 #include "asm/scenes/main_menu/asm_080126c8.s"
 
-#include "asm/scenes/main_menu/asm_08012700.s"
+void func_08012700(s32 idx) {
+    struct Vector2 *pos;
+    struct Unk083AA0C4 *list;
+
+    gMainMenuSelectionState.stage = idx;
+    list = &D_083AA0C4[idx];
+    pos = list->position;
+    gMainMenuSelectionState.gridRow = 0;
+    gMainMenuSelectionState.gridColumn = 0;
+
+    if (gMainMenuSelectionState.state == MAIN_MENU_STATE_GAMES) {
+        func_08011504(pos->x, pos->y, func_08012658, 0);
+    } else {
+        func_08012658();
+    }
+
+    play_sound(&s_BASIC_CURSOR_01_seqData);
+}
+
 
 s32 func_0801274C(u32 arg0) {
     if (!save_is_stage_unlocked(arg0) && (arg0 > 10)) {
@@ -571,15 +608,125 @@ s32 func_0801274C(u32 arg0) {
     return 1;
 }
 
-#include "asm/scenes/main_menu/asm_08012768.s"
+s32 func_08012768(s32 idx) {
+    s32 next;
+    struct Unk083AA0C4* list = D_083AA0C4;
 
-#include "asm/scenes/main_menu/asm_08012798.s"
+    while ((next = list[idx].unk4) >= 0) {
+        if (func_0801274C(next)) {
+            return next;
+        }
+        idx = next;
+    }
+    return -1;
+}
 
-#include "asm/scenes/main_menu/asm_080127c8.s"
+s32 func_08012798(s32 idx) {
+    s32 next;
+    struct Unk083AA0C4* list = D_083AA0C4;
 
-#include "asm/scenes/main_menu/asm_080127f8.s"
+    while ((next = list[idx].unk5) >= 0) {
+        if (func_0801274C(next)) {
+            return next;
+        }
+        idx = next;
+    }
+    return -1;
+}
 
-#include "asm/scenes/main_menu/asm_08012828.s"
+s32 func_080127C8(s32 idx) {
+    s32 next;
+    struct Unk083AA0C4* list = D_083AA0C4;
+
+    while ((next = list[idx].unk6) >= 0) {
+        if (func_0801274C(next)) {
+            return next;
+        }
+        idx = next;
+    }
+    return -1;
+}
+
+s32 func_080127F8(s32 idx) {
+    s32 next;
+    struct Unk083AA0C4* list = D_083AA0C4;
+
+    while ((next = list[idx].unk7) >= 0) {
+        if (func_0801274C(next)) {
+            return next;
+        }
+        idx = next;
+    }
+    return -1;
+}
+
+void func_08012828(void) {
+    u8 unusedLevel = gMainMenuSelectionState.stage; // ???
+    struct Vector2 *pos;
+    s32 level = -1;
+
+    if (gPressedKeys & DPAD_UP) {
+        level = func_08012768(gMainMenuSelectionState.stage);
+    }
+
+    if ((gPressedKeys & DPAD_DOWN) && (level < 0)) {
+        level = func_08012798(gMainMenuSelectionState.stage);
+    }
+
+    if ((gPressedKeys & DPAD_LEFT) && (level < 0)) {
+        level = func_080127C8(gMainMenuSelectionState.stage);
+    }
+
+    if ((gPressedKeys & DPAD_RIGHT) && (level < 0)) {
+        level = func_080127F8(gMainMenuSelectionState.stage);
+    }
+
+    if (level != -1) {
+        fade_out_sound(gMainMenu.unk84, 64);
+
+        if (gSaveBuffer->stageFlags[level].unlocked || level <= 10) {
+            func_08012700(level);
+            return;
+        }
+    }
+
+    if (gPressedKeys & A_BUTTON) {
+        s32 level = gMainMenuSelectionState.stage;
+        s32 why = 0xf; // had to READ the agbcc source code for this (ble for register/immediates, blt for register/register)
+
+        if (save_is_stage_unlocked(gMainMenuSelectionState.stage)) {
+           
+            D_03003848 = level;
+            D_03003634 = 0;
+            D_03003628 = D_083AA0C4[level].unk0;
+
+            gMainMenu.unk38 = 2;
+            set_pause_beatscript_scene(FALSE);
+            gMainMenu.unk8 = 0;
+            fade_out_sound(gMainMenu.unk84, 0x20);
+
+            if (level <= 26 && (level >= why)) {
+                play_sound(&s_BASIC_BUTTON_A_seqData);
+            } else {
+                play_sound(&s_BASIC_BUTTON_A1_seqData);
+            }
+
+            if (level < 9)
+                gMainMenu.unk1D0 = 360;
+
+            if ((level - 11U) < 4)
+                gMainMenu.unk1D0 = 360;
+        } else {
+            play_sound(&s_BASIC_DAME_1_seqData);
+        }
+    } else if (gPressedKeys & B_BUTTON) {
+        func_08011504(D_083A9CE0[gMainMenuSelectionState.category]->x, D_083A9CE0[gMainMenuSelectionState.category]->y, func_080126C8, 0);
+        sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[6], 1);
+        play_sound(&s_BASIC_BUTTON_B_seqData);
+        fade_out_sound(gMainMenu.unk84, 0x20);
+        gMainMenuSelectionState.state = MAIN_MENU_STATE_TRANSITION;
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08012a0c.s"
 
@@ -592,8 +739,8 @@ s32 func_0801274C(u32 arg0) {
 #include "asm/scenes/main_menu/asm_08012c18.s"
 
 void func_08012C64(void) {
-    if (D_03006518.unk1 == 1) {
-        func_08012C18(D_03006518.unk0);
+    if (gMainMenuSelectionState.state == MAIN_MENU_STATE_GAMES) {
+        func_08012C18(gMainMenuSelectionState.stage);
         func_08015A88();
     }
 }
@@ -686,8 +833,8 @@ void func_080137B0(void) {
     s16 func_080136F4_return2;
     s16 func_080136F4_return3;
     
-    x = D_03006518.unk3;
-    y = D_03006518.unk4;
+    x = gMainMenuSelectionState.gridColumn;
+    y = gMainMenuSelectionState.gridRow;
     
     if ((gPressedKeys & DPAD_UP) && (y != 0)) {
         y--;
@@ -702,16 +849,16 @@ void func_080137B0(void) {
     }
 
     if ((gPressedKeys & DPAD_RIGHT)) {
-        if(x < gMainMenu.unkE8 - 1) {
+        if(x < (gMainMenu.microgameGridColumns - 1)) {
             x++;
         }
     }
 
-    if(x == gMainMenu.unkE8 - 1) {
+    if(x == (gMainMenu.microgameGridColumns - 1)) {
         y = 3;
     }
 
-    if (!((x == D_03006518.unk3) && (y == D_03006518.unk4)) && ((x * 4) + y) < gMainMenu.unkF0) {
+    if (!((x == gMainMenuSelectionState.gridColumn) && (y == gMainMenuSelectionState.gridRow)) && ((x * MAIN_MENU_GRID_ROWS) + y) < gMainMenu.microgameGridItems) {
         func_080136F4(x, y, &func_080136F4_return1, &func_080136F4_return2, &func_080136F4_return3);
         func_08011504(func_080136F4_return2, func_080136F4_return3, func_08013660, 0);
 
@@ -724,8 +871,8 @@ void func_080137B0(void) {
 
         func_08013B88();
 
-        D_03006518.unk3 = x;
-        D_03006518.unk4 = y;
+        gMainMenuSelectionState.gridColumn = x;
+        gMainMenuSelectionState.gridRow = y;
 
         func_08013A94();
         func_08013E44();
@@ -756,7 +903,7 @@ void func_080137B0(void) {
         }
 
         if(gPressedKeys & B_BUTTON) {
-            pos = D_083AA294[D_03006518.unk0].position;
+            pos = D_083AA294[gMainMenuSelectionState.stage].position;
             func_08011504(pos->x, pos->y, func_080136A4, 0);
             sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[6], 1);
             func_08013B88();
@@ -847,7 +994,7 @@ void func_080143A0(void) {
 
 void func_08014428(void) {
     scene_set_current_thread(0);
-    D_03006518.unk1 = 4;
+    gMainMenuSelectionState.state = MAIN_MENU_STATE_OPTIONS;
 }
 
 #include "asm/scenes/main_menu/asm_08014440.s"
@@ -1022,9 +1169,41 @@ void func_08015CD8(s32 arg0) {
     gMainMenu.unkDC_29 = arg0;
 }
 
-#include "asm/scenes/main_menu/asm_08015d04.s"
+void func_08015D04(void) {
+    u32 frame = gMainMenu.unkE0_2;
+    struct Unk083AB478 *entry = &D_083AB478[gMainMenu.unkE0_10];
+    u32 i;
 
-#include "asm/scenes/main_menu/asm_08015dbc.s"
+    for (i = 0; i < 4; i++) {
+        u16 *src = (u16 *)(VRAMBase + D_0832027C[entry->unk0[i]] * 32);
+        u16 *dst = (u16 *)(VRAMBase + D_0832027C[D_083AB470[i]] * 32);
+        u32 off = D_083AB490[frame + i * 0x10];
+
+        dst[off] = src[off];
+    }
+
+    frame++;
+    gMainMenu.unkE0_2 = frame;
+
+    if (frame > 0xF) {
+        gMainMenu.unkE0_1 = 0;
+    }
+}
+
+void func_08015DBC(void) {
+    if (gMainMenu.unkE0_1) {
+        func_08015D04();
+        return;
+    }
+
+    if (gMainMenu.unkDC_28) {
+        gMainMenu.unkDC_28 = 0;
+
+        gMainMenu.unkE0_10 = gMainMenu.unkDC_29;
+        gMainMenu.unkE0_2 = 0;
+        gMainMenu.unkE0_1 = 1;
+    }
+}
 
 s32 main_menu_try_unlock_introduction(void) {
     if (save_is_stage_unlocked(STAGE_INTRODUCTION)) {
@@ -1390,20 +1569,111 @@ s32 main_menu_try_unlock_stages(void) {
     return unlock;
 }
 
-#include "asm/scenes/main_menu/asm_0801646c.s"
+void func_0801646C(void) {
+    u32 temp_r5;
+    u32 var_r4;
 
-#include "asm/scenes/main_menu/asm_080164cc.s"
+    gMainMenu.unk1BA = 0x3C;
+    gMainMenu.unk1B8 = 1;
+    temp_r5 = gMainMenu.unk1B4;
+    var_r4 = 0;
+    do {
+        if ((temp_r5 >> var_r4) & 1) {
+            sprite_set_anim_cel(gSpriteHandler, gMainMenu.unk3A[var_r4], 0);
+        }
+        var_r4 += 1;
+    } while (var_r4 <= 0x1BU);
+}
 
-#include "asm/scenes/main_menu/asm_08016520.s"
+void func_080164CC(void) {
+    s16 temp_r5;
 
-#include "asm/scenes/main_menu/asm_080165d4.s"
+    if ((--gMainMenu.unk1BA << 0x10) == 0) {
+        gMainMenu.unk1B8 = 2;
+        temp_r5 = gCurrentSceneSpritePool[0x19];
+        sprite_set_visible(gSpriteHandler, temp_r5, TRUE);
+        sprite_set_anim_cel(gSpriteHandler, temp_r5, 0);
+    }
+}
+
+void func_08016520(void) {
+    u32 timer;
+    s32 anim;
+    u32 mask;
+    u32 i;
+
+    timer = ++gMainMenu.unk1BA;
+    anim = ((timer / 15) & 1) << 1;
+
+    if (timer % 30 == 15) {
+        play_sound(&s_BOMB_BOSS_Galala_CORE_03_seqData);
+    }
+
+    if (sprite_get_data(gSpriteHandler, gCurrentSceneSpritePool[0x19], 0) == 0) {
+        anim = 2;
+        gMainMenu.unkDC_25 = 0;
+        play_sound(&s_BOMB_Tennis_Hit_0_seqData);
+    }
+
+    mask = gMainMenu.unk1B4;
+
+    for (i = 0; i < 28; i++) {
+        if ((mask >> i) & 1) {
+            sprite_set_anim_cel(gSpriteHandler, gMainMenu.unk3A[i], anim);
+        }
+    }
+}
+
+
+void func_080165D4(void) {
+    u32 mask;
+    u32 i;
+
+    if(!gMainMenu.unkDC_25) {
+        return;
+    }
+
+    switch(gMainMenu.unk1B8) {
+        case 0:
+            func_0801646C();
+        break;
+        case 1:
+            func_080164CC();
+        break;
+        case 2:
+            func_08016520();
+        break;
+    }
+
+    if(gMainMenu.unkDC_25) {
+        return;
+    }
+
+    mask = gMainMenu.unk1B4;
+
+    for (i = 0; i < 28; i++) {
+        if ((mask >> i) & 1) {
+            break;
+        }
+    }
+
+    if (i == 2 || i == 3) {
+        i = 5;
+    }
+    if (i == 7 || i == 4) {
+        i = 6;
+    }
+
+    func_08012700(i);
+    func_08012058();
+}
 
 void func_08016670(s8 arg0) {
-    D_03006518.unk5 = arg0;
+    gMainMenuSelectionState.unk5 = arg0;
 }
 
 u8 func_0801667C(void) {
-    return D_03006518.unk6;
+    return gMainMenuSelectionState.unk6;
 }
 
 void func_08016688(void) {

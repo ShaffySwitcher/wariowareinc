@@ -12,7 +12,7 @@ thumb_func_start func_08013A94 \n\
 /* 08013AA8 */ LDRB R0, [R0] \n\
 /* 08013AAA */ CMP R0, #0XC \n\
 /* 08013AAC */ BLS _08013AD0 \n\
-/* 08013AAE */ LDR R4, =D_03006518 \n\
+/* 08013AAE */ LDR R4, =gMainMenuSelectionState \n\
 /* 08013AB0 */ LDRB R0, [R4, #3] \n\
 /* 08013AB2 */ CMP R0, #1 \n\
 /* 08013AB4 */ BLS _08013ABC \n\

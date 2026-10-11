@@ -354,7 +354,7 @@ _08010F00: \n\
  \n\
 .balign 4, 0 \n\
 _08010F04: \n\
-/* 08010F04 */ .word D_03006518 \n\
+/* 08010F04 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08010F08: \n\
@@ -514,7 +514,7 @@ _08010FDE: \n\
  \n\
 .balign 4, 0 \n\
 _08010FEC: \n\
-/* 08010FEC */ .word D_03006518 \n\
+/* 08010FEC */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08010FF0: \n\
@@ -807,7 +807,7 @@ _0801121C: \n\
  \n\
 .balign 4, 0 \n\
 _08011220: \n\
-/* 08011220 */ .word D_03006518 \n\
+/* 08011220 */ .word gMainMenuSelectionState \n\
 _08011224: \n\
 /* 08011224 */ MOVS R0, #1 \n\
 /* 08011226 */ BL func_08011730 \n\

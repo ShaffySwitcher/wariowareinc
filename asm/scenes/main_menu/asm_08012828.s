@@ -62,7 +62,7 @@ _08012890: \n\
 /* 0801289C */ ADDS R0, #0X84 \n\
 /* 0801289E */ LDR R0, [R0] \n\
 /* 080128A0 */ MOVS R1, #0X40 \n\
-/* 080128A2 */ BL func_08001F80 \n\
+/* 080128A2 */ BL fade_out_sound \n\
 /* 080128A6 */ LDR R0, _080128D0 \n\
 /* 080128A8 */ LDR R0, [R0] \n\
 /* 080128AA */ LSLS R1, R4, #3 \n\
@@ -81,7 +81,7 @@ _080128BC: \n\
  \n\
 .balign 4, 0 \n\
 _080128C4: \n\
-/* 080128C4 */ .word D_03006518 \n\
+/* 080128C4 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _080128C8: \n\
@@ -131,7 +131,7 @@ _080128D4: \n\
 /* 0801291A */ ADDS R0, #0X84 \n\
 /* 0801291C */ LDR R0, [R0] \n\
 /* 0801291E */ MOVS R1, #0X20 \n\
-/* 08012920 */ BL func_08001F80 \n\
+/* 08012920 */ BL fade_out_sound \n\
 /* 08012924 */ CMP R6, #0X1A \n\
 /* 08012926 */ BGT _08012954 \n\
 /* 08012928 */ CMP R6, #0XF \n\
@@ -146,7 +146,7 @@ _08012934: \n\
  \n\
 .balign 4, 0 \n\
 _08012938: \n\
-/* 08012938 */ .word D_03006518 \n\
+/* 08012938 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _0801293C: \n\
@@ -247,7 +247,7 @@ _0801299C: \n\
 /* 080129DC */ ADDS R0, #0X84 \n\
 /* 080129DE */ LDR R0, [R0] \n\
 /* 080129E0 */ MOVS R1, #0X20 \n\
-/* 080129E2 */ BL func_08001F80 \n\
+/* 080129E2 */ BL fade_out_sound \n\
 /* 080129E6 */ MOVS R0, #0X63 \n\
 /* 080129E8 */ STRB R0, [R4, #1] \n\
 _080129EA: \n\
@@ -265,7 +265,7 @@ _080129F0: \n\
  \n\
 .balign 4, 0 \n\
 _080129F4: \n\
-/* 080129F4 */ .word D_03006518 \n\
+/* 080129F4 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _080129F8: \n\

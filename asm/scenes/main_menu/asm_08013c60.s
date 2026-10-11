@@ -162,7 +162,7 @@ _08013D5C: \n\
 /* 08013DA8 */ MOVS R3, #0 \n\
 /* 08013DAA */ BL sprite_set_anim \n\
 _08013DAE: \n\
-/* 08013DAE */ LDR R1, =D_03006518 \n\
+/* 08013DAE */ LDR R1, =gMainMenuSelectionState \n\
 /* 08013DB0 */ LDRB R0, [R1, #3] \n\
 /* 08013DB2 */ LSLS R4, R0, #1 \n\
 /* 08013DB4 */ ADDS R4, R0 \n\

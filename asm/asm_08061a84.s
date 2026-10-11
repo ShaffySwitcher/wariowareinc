@@ -291,7 +291,7 @@ _08061C60:
 /* 08061C76 */ LSLS R1, R1, #0X10
 /* 08061C78 */ LSRS R1, R1, #0X10
 /* 08061C7A */ ADDS R0, R4, #0
-/* 08061C7C */ BL func_08001F80
+/* 08061C7C */ BL fade_out_sound
 /* 08061C80 */ B _08061E58
 
 .balign 4, 0

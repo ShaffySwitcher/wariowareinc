@@ -73,7 +73,7 @@ _08012F36: \n\
  \n\
 .balign 4, 0 \n\
 _08012F4C: \n\
-/* 08012F4C */ .word D_03006518 \n\
+/* 08012F4C */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08012F50: \n\

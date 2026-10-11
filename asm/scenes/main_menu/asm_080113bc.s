@@ -7,7 +7,7 @@ thumb_func_start func_080113BC \n\
 /* 080113C6 */ BL func_080148EC \n\
 /* 080113CA */ BL func_08014C9C \n\
 /* 080113CE */ BL func_08014FF4 \n\
-/* 080113D2 */ LDR R4, =D_03006518 \n\
+/* 080113D2 */ LDR R4, =gMainMenuSelectionState \n\
 /* 080113D4 */ LDRB R0, [R4, #2] \n\
 /* 080113D6 */ BL func_08011864 \n\
 /* 080113DA */ LDRB R0, [R4, #2] \n\

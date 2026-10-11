@@ -21,7 +21,7 @@ _08014580: \n\
  \n\
 .balign 4, 0 \n\
 _08014584: \n\
-/* 08014584 */ .word D_03006518 \n\
+/* 08014584 */ .word gMainMenuSelectionState \n\
 _08014588: \n\
 /* 08014588 */ MOVS R0, #0 \n\
 /* 0801458A */ BL scene_hide_sprite \n\

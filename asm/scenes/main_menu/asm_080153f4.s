@@ -57,7 +57,7 @@ _0801544E: \n\
  \n\
 .balign 4, 0 \n\
 _0801545C: \n\
-/* 0801545C */ .word D_03006518 \n\
+/* 0801545C */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08015460: \n\

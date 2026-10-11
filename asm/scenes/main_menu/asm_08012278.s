@@ -60,7 +60,7 @@ _080122F8: \n\
  \n\
 .balign 4, 0 \n\
 _080122E4: \n\
-/* 080122E4 */ .word D_03006518 \n\
+/* 080122E4 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _080122E8: \n\

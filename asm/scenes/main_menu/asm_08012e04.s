@@ -100,7 +100,7 @@ _08012EB4: \n\
  \n\
 .balign 4, 0 \n\
 _08012EB8: \n\
-/* 08012EB8 */ .word D_03006518 \n\
+/* 08012EB8 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08012EBC: \n\

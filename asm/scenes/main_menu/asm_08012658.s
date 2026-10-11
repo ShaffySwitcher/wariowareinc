@@ -49,7 +49,7 @@ _080126C4: \n\
  \n\
 .balign 4, 0 \n\
 _080126B4: \n\
-/* 080126B4 */ .word D_03006518 \n\
+/* 080126B4 */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _080126B8: \n\

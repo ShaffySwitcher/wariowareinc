@@ -28,6 +28,6 @@ _080126FC: \n\
  \n\
 .balign 4, 0 \n\
 _080126F8: \n\
-/* 080126F8 */ .word D_03006518 \n\
+/* 080126F8 */ .word gMainMenuSelectionState \n\
 .ltorg \n\
 .syntax divided");

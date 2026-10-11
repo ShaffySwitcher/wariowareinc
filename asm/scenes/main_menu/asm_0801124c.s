@@ -73,7 +73,7 @@ _080112C8: \n\
  \n\
 .balign 4, 0 \n\
 _080112CC: \n\
-/* 080112CC */ .word D_03006518 \n\
+/* 080112CC */ .word gMainMenuSelectionState \n\
 _080112D0: \n\
 /* 080112D0 */ CMP R0, #2 \n\
 /* 080112D2 */ BEQ _08011384 \n\
@@ -176,7 +176,7 @@ _08011378: \n\
  \n\
 .balign 4, 0 \n\
 _0801137C: \n\
-/* 0801137C */ .word D_03006518 \n\
+/* 0801137C */ .word gMainMenuSelectionState \n\
  \n\
 .balign 4, 0 \n\
 _08011380: \n\
