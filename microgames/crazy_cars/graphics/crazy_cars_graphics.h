@@ -18,11 +18,11 @@ extern struct Animation D_083452B4;
 extern struct Animation D_083452CC;
 extern struct Animation D_083452E4;
 
-/* CRAZY CARS - COMPRESSED GRAPHICS */
-extern struct CompressedGraphics D_087E021C;
-extern struct CompressedGraphics D_087E2120;
-extern struct CompressedGraphics D_086CC6B8;
-extern struct CompressedGraphics D_086CC80C;
+/* CRAZY CARS - COMPRESSED DATA */
+extern struct CompressedData D_087E021C;
+extern struct CompressedData D_087E2120;
+extern struct CompressedData D_086CC6B8;
+extern struct CompressedData D_086CC80C;
 
 /* CRAZY CARS - PALETTES */
 extern Palette crazy_cars_pal;

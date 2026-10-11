@@ -6588,6 +6588,8 @@ SECTIONS {
         build/graphics/title/title_bg_map_logo.tilemap.s.o(.data*);
         build/graphics/title/title_bg_map_border.tilemap.s.o(.data*);
         build/graphics/title/title_bg_map.tilemap.s.o(.data*);
+        build/bin/data_085466E0.bin.o(.rodata*);
+        build/microgames/crazy_cars/graphics/crazy_cars_graphics_087e021c.c.o(.data*);
         build/bin/data.bin.o(.rodata*);
     }
 

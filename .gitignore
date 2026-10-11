@@ -23,3 +23,6 @@ tools/rom_animation_to_c.py
 tools/rom_palette_to_c.py
 tools/clean_undefined_syms.py
 tools/read_sjis_string.py
+tools/compressed_graphics_to_c.py
+
+*.pyc
