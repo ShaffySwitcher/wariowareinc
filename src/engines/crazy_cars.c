@@ -9,7 +9,7 @@ void crazy_cars_scene_start(struct CrazyCarsSceneData* data) {
 
     difficulty = gGameplayData.currentDifficulty;
 
-    func_08002124(data->unk4, D_083CB78C, 0x2000);
+    func_08002124(data->unk4, crazy_cars_gfx_table, 0x2000);
 
     scene_set_video_mode(0);
     scene_show_bg_layer(1);

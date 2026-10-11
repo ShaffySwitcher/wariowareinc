@@ -17,3 +17,5 @@ objdiff.json
 tools/objdiff-cli
 report.json
 tools/beatscript_decompile.py
+tools/rom_animation_to_c.py
+tools/rom_palette_to_c.py

@@ -2,6 +2,7 @@
 
 #include "global.h"
 #include "src/scenes/gameplay.h"
+#include "microgames/crazy_cars/graphics/crazy_cars_graphics.h"
 
 // MACROS
 #define gGameplayData CURRENT_SCENE_DATA(struct GameplayData)
@@ -46,10 +47,24 @@ extern struct Animation* D_083CB760[];
 extern struct Animation* D_083CB76C[];
 extern struct Animation* D_083CB778[];
 extern struct Rect crazy_cars_wario_hitbox;
-extern struct GraphicsTable D_083CB78C[];
+extern struct GraphicsTable crazy_cars_gfx_table[];
 extern u16 D_083CB7F8[][16];
 extern char** crazy_cars_dodge_texts[];
 extern char** crazy_cars_dodge_fakeout_texts[];
+
+extern char* D_08119A1C;
+extern char* D_08119A0C;
+extern char* D_08119A04;
+extern char* D_081199FC;
+extern char* D_081199F4;
+extern char* D_081199EC;
+
+extern char* D_08119A38;
+extern char* D_08119A28;
+extern char* D_08119A04;
+extern char* D_081199FC;
+extern char* D_081199F4;
+extern char* D_081199EC;
 
 // FUNCTIONS
 void crazy_cars_scene_start(struct CrazyCarsSceneData* data);

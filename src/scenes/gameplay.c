@@ -234,11 +234,12 @@ void gameplay_pause_dim_palettes(void) {
     u32 *paletteWords;
 
     if (gGameplayData.currentOpcode - 2 < 2) {
-        dma3_set(D_03004054, gGameplayData.unk288, 0x200, 0x20, 0x100);
-        dma3_set(D_03004054 + 0x80, gGameplayData.unk28c, 0x200, 0x20, 0x100);
+        dma3_set(BG_PALETTE_BUFFER(0), gGameplayData.unk288, 0x200, 0x20, 0x100);
+        dma3_set(OBJ_PALETTE_BUFFER(0), gGameplayData.unk28c, 0x200, 0x20, 0x100);
 
-        paletteWords = D_03004054;
+        paletteWords = BG_PALETTE_BUFFER(0);
 
+        // TO-DO: fakematch
         for (i = 0; i < 0x40; i++, paletteWords += 4) {
             paletteWords[0] = (paletteWords[0] >> 1) & 0x3DEF3DEF;
             paletteWords[1] = (paletteWords[1] >> 1) & 0x3DEF3DEF;
@@ -248,8 +249,8 @@ void gameplay_pause_dim_palettes(void) {
 
         if (gGameplayData.unk7_4 != 0) {
             if (gGameplayData.currentOpcode == 2) {
-                dma3_fill(0, D_03004054, 0x180, 0x20, 0x100);
-                dma3_fill(0, D_03004054 + 0x80, 0x180, 0x20, 0x100);
+                dma3_fill(0, BG_PALETTE_BUFFER(0), 0x180, 0x20, 0x100);
+                dma3_fill(0, OBJ_PALETTE_BUFFER(0), 0x180, 0x20, 0x100);
             }
         }
 
@@ -264,8 +265,8 @@ void gameplay_pause_dim_palettes(void) {
 
 void gameplay_unpause_restore_palettes(void) {
     if (gGameplayData.currentOpcode - 2 < 2) {
-        dma3_set(gGameplayData.unk288, D_03004054, 0x200, 0x20, 0x100);
-        dma3_set(gGameplayData.unk28c, D_03004054 + 0x80, 0x200, 0x20, 0x100);
+        dma3_set(gGameplayData.unk288, BG_PALETTE_BUFFER(0), 0x200, 0x20, 0x100);
+        dma3_set(gGameplayData.unk28c, OBJ_PALETTE_BUFFER(0), 0x200, 0x20, 0x100);
         if (gGameplayData.unk188 >= 0) {
             sprite_set_visible(gSpriteHandler, gGameplayData.unk188, gGameplayData.unk290);
         }

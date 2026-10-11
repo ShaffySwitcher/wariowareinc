@@ -5200,6 +5200,8 @@ SECTIONS {
         build/graphics/title/title_anim.c.o(.data);
         build/graphics/title/title_pal.c.o(.data);
         build/bin/data_0830C3B0.bin.o(.rodata*);
+        build/microgames/crazy_cars/graphics/crazy_cars_pal.c.o(.data);
+        build/bin/data_0834543C.bin.o(.rodata*);
         build/data/scenes.c.o(.data);
         build/data/agb_main_data.c.o(.data);
         build/bin/data_083A3D94.bin.o(.rodata*);

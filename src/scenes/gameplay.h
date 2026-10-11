@@ -209,7 +209,6 @@ extern s16 D_030035E0;
 extern void* D_03005758;
 extern u8 D_03003634;
 extern s16 gCurrentScene;
-extern u32 D_03004054[]; // 0x400 palette buffer (2x0x200)
 extern u8 D_03004394[]; 
 extern struct BeatscriptLocalData D_030049F0[];
 extern struct GameplayScriptState D_030048B8;
