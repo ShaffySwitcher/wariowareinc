@@ -30,25 +30,37 @@ enum MainMenuState {
     MAIN_MENU_STATE_TRANSITION = 99,
 };
 
+struct MainMenuSceneData_struct_10 {
+    u32 unk10_1:1;              // was u8 unk10
+};
+
 struct MainMenuSceneData {
     u32 unk0;
     u32 unk4;
     u8 unk8;
-    u8 pad9[7];
-    u8 unk10;
-    u8 pad11[0x27];
+    u8 pad9[3];
+    u32 *unkC;
+    struct MainMenuSceneData_struct_10 unk10;
+    u8 pad14[0x24];
     s16 nextScene; // 0x38
     s16 stageIconSprites[28];
     u8 pad72[0x6];
     u32 unk78;
     void* unk7C;
-    u8 pad80[0x4];
+    u16 unk80;
+    u16 unk82;
     struct SongHeader *unk84;
     u32 unk88_1:1;
     u32 unk88_2:8;
-    u8 pad8A[0x2A];
+    s16 unk8A[3][3];
+    s16 unk9C[8];
+    u16 unkAC;
+    u8 padAE[6];
     u8 unkB4;
-    u8 padB5[0x13];
+    u8 padB5[3];
+    u32 *unkB8;
+    u32 *unkBC;
+    u8 padC0[8];
     u32 unkC8;
     u8 padCC[4];
     void* unkD0;
@@ -121,7 +133,9 @@ struct MainMenuSceneData {
     u16 unk1C4;
     u8 unk1C6[10];
     u16 unk1D0;
-    u8 unk1D2[0x24];
+    u8 pad1D2[0x2];
+    s16* unk1D4;
+    u8 pad1D8[0x20];
 };
 
 struct MainMenuSelectionState {
@@ -143,7 +157,7 @@ struct Unk083AA0C4 {
     s8 unk5;
     s8 unk6;
     s8 unk7;
-    u8 pad8[4];
+    struct Animation* unk8;
     struct Vector2 *position;
 };
 
@@ -168,24 +182,37 @@ struct Unk083AAD70 {
 };
 
 // DATA
-extern struct GraphicsTable main_menu_gfx_table[];
-extern struct MainMenuSelectionState gMainMenuSelectionState;
-extern struct Vector2 D_083AB2CC[2];
+extern struct Animation D_0831FB0C;
 extern u16 D_0832027C[];
-extern u16 D_083AB470[];
-extern struct Unk083AB478 D_083AB478[];
+extern void* D_083A4A2C;
+extern void* D_083A9B14;
+extern struct Animation* D_083A9B60[];
+extern struct Animation* D_083A9B78[];
+extern struct Animation* D_083A9B90[];
+extern struct Animation* D_083A9BA8[];
+extern struct GraphicsTable main_menu_gfx_table[];
+extern struct CompressedData* main_menu_buffered_textures[];
+extern struct Animation* D_083A9CD4[];
+extern struct Vector2* D_083A9CE0[];
 extern struct Unk083AA0C4 D_083AA0C4[];
 extern struct Unk083AA0C4 D_083AA294[];
-extern struct Vector2* D_083A9CE0[];
-extern const u8 D_083AB490[];
 extern void* D_083AA530;
-extern void* D_083A4A2C;
-extern void* D_083AB394;
-extern s8 D_03003630;
-extern struct GameplayData_struct_0 D_083AB020;
-extern struct Unk03000E60 D_03000E60;
-extern void* D_083A9C14;
 extern struct Unk083AAD70* D_083AAD70[];
+extern struct GameplayData_struct_0 D_083AB020;
+extern struct Vector2 D_083AB2CC[2];
+extern void* D_083AB394;
+extern u16 D_083AB470[];
+extern struct Unk083AB478 D_083AB478[];
+extern const u8 D_083AB490[];
+extern void* D_083ADADC;
+extern void* D_083ADB4C;
+
+extern s8 D_03003630;
+extern struct Unk03000E60 D_03000E60;
+extern struct Vector2 D_03004014;
+extern u8 D_03006514;
+
+extern struct MainMenuSelectionState gMainMenuSelectionState;
 
 // FUNCTIONS
 extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);
@@ -227,6 +254,7 @@ extern void func_08013E44(void);
 extern void func_08013B88(void);
 extern void func_08013AE0(void);
 extern void func_08012658(void);
+extern s16* func_0800A228(s32);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);

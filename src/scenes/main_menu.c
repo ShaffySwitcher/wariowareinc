@@ -33,10 +33,60 @@ void func_080109CC(void) {
 
 void main_menu_scene_init_gfx3(void) {
     scene_set_current_thread(0);
-    run_func_after_task(start_new_texture_loader((u16)get_current_mem_id(), &D_083A9C14), &func_080109CC, 0);
+    run_func_after_task(start_new_texture_loader((u16)get_current_mem_id(), main_menu_buffered_textures), &func_080109CC, 0);
 }
 
-#include "asm/scenes/main_menu/asm_08010a18.s"
+void func_08010A18(void) {
+    u32 i, j;
+    u32 flags;
+    struct Unk083AA0C4* def;
+    s16 *px, *py;
+    s16 *p;
+
+    for (i = 0, def = D_083AA0C4; def->unk0 != NULL; def++, i++) {
+        flags = 0x880A;
+        if (i <= 8) {
+            flags -= 0xA;
+        }
+
+        gMainMenu.stageIconSprites[i] =
+            sprite_create(gSpriteHandler, def->unk8, 0, def->position->x, def->position->y, flags, 0, 0x7F, 0);
+    }
+
+    if (gMainMenuSelectionState.category == 1) {
+        struct Vector2 *pos;
+        for (i = 0; i <= 8; i++) {
+            pos = D_083AA294[i].position;
+            sprite_set_x_y(gSpriteHandler,
+                           gMainMenu.stageIconSprites[i],
+                           pos->x,
+                           pos->y);
+        }
+    }
+
+    func_0801124C();
+
+    gMainMenu.unkFC = gMainMenuSelectionState.stage;
+    gMainMenu.unk1D4 = func_0800A228(0x3C);
+
+    j = 0;
+    px = &D_03004014.x;
+    py = &D_03004014.y;
+
+    for (i = 0 ; i < 30; i++) {
+        s16 spr = sprite_create(gSpriteHandler, &D_0831FB0C, 1, 0, 0, 0xC800, 1, 0, 0x8000);
+        s16 *base = gMainMenu.unk1D4;
+        base[j] = spr;
+        p = &base[j];
+        j++;
+        sprite_set_origin_x_y(gSpriteHandler, *p, px, py);
+    }
+
+    sprite_set_origin_x_y(gSpriteHandler, gCurrentSceneSpritePool[0x1B], px, py);
+    sprite_set_origin_x_y(gSpriteHandler, gCurrentSceneSpritePool[0x1C], px, py);
+    sprite_set_origin_x_y(gSpriteHandler, gCurrentSceneSpritePool[0x1D], px, py);
+    sprite_set_origin_x_y(gSpriteHandler, gCurrentSceneSpritePool[0x1E], px, py);
+}
 
 void main_menu_scene_init_gfx2(void) {
     s32 task;
@@ -54,7 +104,174 @@ void main_menu_scene_init_gfx1(void) {
     scene_set_bg_layer_display(BG_LAYER_3, TRUE, 0, 0, 0, 12, 3);
 }
 
-#include "asm/scenes/main_menu/asm_08010c2c.s"
+void main_menu_scene_start(void) {
+    u32 i, j;
+    s16 x, y;
+    u32 *p;
+    u32 category;
+    struct Vector2 *pos;
+
+    gMainMenu.unkDC_27 = 1;
+
+    gMainMenu.unk1B4 = main_menu_try_unlock_stages();
+    if (gMainMenu.unk1B4 != 0) {
+        gMainMenuSelectionState.state = 0;
+        gMainMenuSelectionState.category = 0;
+    }
+
+    write_save_main();
+    gMainMenuSelectionState.unk6 = 0;
+    gMainMenu.unk1C4 = 0;
+    gMainMenu.unk13C_2 = 0;
+
+    if (gMainMenuSelectionState.state == 8) {
+        gMainMenu.unk1C4 = D_03003848;
+        gMainMenu.unk13C_2 = 1;
+        gMainMenuSelectionState.state = 0;
+        gMainMenuSelectionState.category = 2;
+    }
+
+    gMainMenu.unk13C_3 = 0;
+    if (gMainMenuSelectionState.state == 9) {
+        gMainMenu.unk13C_3 = 1;
+        gMainMenuSelectionState.state = 0;
+        gMainMenuSelectionState.category = 2;
+    }
+
+    gMainMenu.unkD0 = func_08005F64((u16)get_current_mem_id(), 0x20, 0x14);
+    func_08005B20(gMainMenu.unkD0, D_0832027C[0]);
+    gMainMenu.unkD4 = *(void **)gMainMenu.unkD0;
+    gMainMenu.unkD8 = (void *)(VRAMBase + 0x4800);
+    gMainMenu.unkDC_1 = 1;
+    gMainMenu.unk80 = 0x20;
+    gMainMenu.unk82 = 0x20;
+    gMainMenu.unk7C = func_0800A228(0x800);
+
+    gMainMenu.unk0 = func_08004E48((u16)get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
+    gMainMenu.unk4 = func_080042F4((u16)get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
+
+    func_08005538(gSpriteHandler, gMainMenu.unk4, &D_083A9B14, gCurrentSceneSpritePool);
+    sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[1], D_083A9B60[get_current_language()], 1, 0, 0, 0);
+    sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[2], D_083A9B78[get_current_language()], 1, 0, 0, 0);
+    sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[3], D_083A9B90[get_current_language()], 1, 0, 0, 0);
+    sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[0x1E], D_083A9BA8[get_current_language()], 0, 1, 0, 0);
+
+    for (i = 0; i <= 2; i++) {
+        for (j = 0; j <= 2; j++) {
+            y = 0x6D + i * 12;
+            x = 0xC5 + j * 9;
+            gMainMenu.unk8A[i][j] = sprite_create(gSpriteHandler, D_083A9CD4[i], 0x7F, x, y, 0x4800, 0, 0x7F, 0x8000);
+        }
+    }
+
+    y = 0x79;
+    for (i = 0; i <= 7; i++) {
+        x = 0xE0 - i * 9;
+        gMainMenu.unk9C[i] = sprite_create(gSpriteHandler, D_083A9CD4[0], 0x7F, x, y, 0x4800, 0, 0x7F, 0x8000);
+    }
+
+
+    gMainMenu.unkF8 = 0;
+    gMainMenu.unkAC = 0xFFFF;
+    gMainMenu.unk10.unk10_1 = 0;
+    gMainMenu.unk88_1 = 0;
+
+    category = gMainMenuSelectionState.category;
+    switch (gMainMenuSelectionState.state) {
+    case 0:
+        pos = D_083A9CE0[category];
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[0], pos->x, pos->y);
+        break;
+    case 1:
+        pos = D_083AA0C4[gMainMenuSelectionState.stage].position;
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[0], pos->x, pos->y);
+        break;
+    case 3:
+        pos = D_083AA0C4[gMainMenuSelectionState.stage].position;
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], pos->x, pos->y);
+        break;
+    default:
+        gMainMenuSelectionState.state = 0;
+        pos = D_083A9CE0[category];
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[0], pos->x, pos->y);
+        break;
+    }
+
+    if (gMainMenuSelectionState.state == 0) {
+        func_080117FC();
+    } else {
+        func_08011824();
+    }
+
+    gMainMenu.unkC = func_0800A228(0x280);
+    gMainMenu.unkB8 = func_0800A228(0x400);
+    gMainMenu.unkB4 = 0;
+    gMainMenu.unkBC = func_0800A228(0x1000);
+    gMainMenu.unkC8 = 0;
+
+    p = gMainMenu.unkC;
+    for (i = 0; i <= 0x27; i++) {
+        *p++ = 0;
+        *p++ = 0;
+        *p++ = 0;
+        *p++ = 0;
+    }
+
+    func_08003F8C(gMainMenu.unkC, (void *)(IORAMBase + 0x1C), 2, 0);
+    gMainMenu.unk84 = NULL;
+    gMainMenu.unk1D0 = 0x3C;
+
+    scene_set_video_mode(0);
+    scene_show_obj_layer();
+    main_menu_scene_init_gfx1();
+    sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[category + 1], 0);
+
+    gMainMenu.unk8 = 0;
+    gMainMenu.unkDC_9 = 0;
+    gMainMenu.unkDC_10 = 0;
+    gMainMenu.unkDC_11 = 0;
+    gMainMenu.unkDC_12 = 0;
+    gMainMenu.unkDC_13 = 0;
+    gMainMenu.unkDC_14 = 0;
+    gMainMenu.unkDC_15 = 0;
+    gMainMenu.unkDC_16 = 0;
+    gMainMenu.unkDC_17 = 0;
+    gMainMenu.unkDC_18 = 0;
+    gMainMenu.unkDC_19 = 0;
+    gMainMenu.unkDC_20 = 0;
+    gMainMenu.unkDC_21 = 0;
+    gMainMenu.unkDC_22 = 0;
+    gMainMenu.unkDC_23 = 0;
+    gMainMenu.unkDC_24 = 0;
+    gMainMenu.unkDC_25 = 0;
+    gMainMenu.unkF1 = 0;
+    gMainMenu.unkDC_28 = 0;
+    gMainMenu.unkE0_1 = 0;
+
+    if (gMainMenu.unk1B4 != 0) {
+        gMainMenu.unkDC_25 = 1;
+        gMainMenu.unk1B8 = 0;
+    }
+
+    gGraphicsBuffer.DISPCNT |= DISPCNT_ENABLE_WINDOW1;
+    gGraphicsBuffer.unk3E = 0xF0;
+    gGraphicsBuffer.unk42 = 0x90;
+    gGraphicsBuffer.unk44 = 0x3F00;
+    gGraphicsBuffer.unk46 = 0x1F;
+    gGraphicsBuffer.unk4C = 0xFF;
+
+    if (gMainMenuSelectionState.state == 0) {
+        if (gMainMenu.unk1B4 != 0) {
+            func_08011730(0);
+        } else {
+            func_08011730(1);
+        }
+    } else {
+        func_08011730(0);
+    }
+
+    D_03006514 = 1;
+}
 
 #include "asm/scenes/main_menu/asm_0801124c.s"
 

@@ -116,7 +116,8 @@ struct GraphicsBuffer {
     u16 BG_CNT[4];                  // 0x04
     struct Vector2 BG_OFS[4];       // 0x0C
     struct AffineBG affineBG[2];    // 0x1C
-    u8 pad3C[0x4];                  // 0x3C
+    u16 unk3C;                      // 0x3C
+    u16 unk3E;                      // 0x3E
     u16 unk40;                      // 0x40
     u16 unk42;                      // 0x42
     u16 unk44;                      // 0x44
