@@ -7,7 +7,7 @@ thumb_func_start func_08013C60 \n\
 /* 08013C66 */ MOV R5, R8 \n\
 /* 08013C68 */ PUSH {R5, R6, R7} \n\
 /* 08013C6A */ SUB SP, #0XC \n\
-/* 08013C6C */ BL func_08013628 \n\
+/* 08013C6C */ BL main_menu_get_selected_microgame_id \n\
 /* 08013C70 */ ADDS R4, R0, #0 \n\
 /* 08013C72 */ BL save_is_microgame_unlocked \n\
 /* 08013C76 */ CMP R0, #0 \n\

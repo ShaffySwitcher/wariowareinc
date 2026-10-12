@@ -37,8 +37,8 @@ struct MainMenuSceneData {
     u8 pad9[7];
     u8 unk10;
     u8 pad11[0x27];
-    s16 unk38;
-    s16 unk3A[28];
+    s16 nextScene; // 0x38
+    s16 stageIconSprites[28];
     u8 pad72[0x6];
     u32 unk78;
     void* unk7C;
@@ -162,6 +162,11 @@ struct Unk03000E60 {
     u32 unkA;
 };
 
+struct Unk083AAD70 {
+    u8 unk0;
+    u8 pad1[7];
+};
+
 // DATA
 extern struct GraphicsTable main_menu_gfx_table[];
 extern struct MainMenuSelectionState gMainMenuSelectionState;
@@ -180,6 +185,7 @@ extern s8 D_03003630;
 extern struct GameplayData_struct_0 D_083AB020;
 extern struct Unk03000E60 D_03000E60;
 extern void* D_083A9C14;
+extern struct Unk083AAD70* D_083AAD70[];
 
 // FUNCTIONS
 extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);
@@ -189,15 +195,15 @@ extern void main_menu_scene_init_gfx2(void);
 extern void main_menu_scene_init_gfx3(void);
 extern void func_08014428(void);
 extern void func_08015944(s16, void*);
-extern void func_0801208C(void);
-extern void func_08012CB4(void);
-extern void func_0801364C(void);
-extern void func_08013E64(void);
-extern void func_080147B0(void);
-extern void func_08014B44(void);
-extern void func_08014DE8(void);
+extern void main_menu_state_main(void);
+extern void main_menu_state_games(void);
+extern void main_menu_state_grid(void);
+extern void main_menu_state_microgame_select(void);
+extern void main_menu_state_options(void);
+extern void main_menu_state_prompt(void);
+extern void main_menu_state_fade_out(void);
 extern void func_080153E0(void);
-extern void func_08015930(void);
+extern void main_menu_state_epilogue_select(void);
 extern void func_08015A4C(void);
 extern void func_080115DC(void);
 extern void func_08003A70(void*);

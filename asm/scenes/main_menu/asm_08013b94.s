@@ -3,7 +3,7 @@ asm(".syntax unified \n\
 thumb_func_start func_08013B94 \n\
 /* 08013B94 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08013B96 */ SUB SP, #0X50 \n\
-/* 08013B98 */ BL func_08013628 \n\
+/* 08013B98 */ BL main_menu_get_selected_microgame_id \n\
 /* 08013B9C */ ADDS R7, R0, #0 \n\
 /* 08013B9E */ LDR R0, _08013BBC \n\
 /* 08013BA0 */ LDR R0, [R0] \n\

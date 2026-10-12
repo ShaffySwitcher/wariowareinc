@@ -13,11 +13,11 @@ void main_menu_scene_run(void) {
         func_08016CBC(&scene_main_menu);
     }
     if (func_08016D00() != 0) {
-        gCurrentScene = gMainMenu.unk38;
+        gCurrentScene = gMainMenu.nextScene;
     }
 }
 
-void func_080109B4(void) {
+void main_menu_reset_selection_state(void) {
     gMainMenuSelectionState.stage = 0;
     gMainMenuSelectionState.state = MAIN_MENU_STATE_MAIN;
     gMainMenuSelectionState.category = MAIN_MENU_CATEGORY_GAMES;
@@ -64,15 +64,15 @@ void main_menu_scene_init_gfx1(void) {
 
 void main_menu_scene_update(void) {
     switch (gMainMenuSelectionState.state) {
-        case MAIN_MENU_STATE_MAIN: func_0801208C(); break;
-        case MAIN_MENU_STATE_GAMES: func_08012CB4(); break;
-        case MAIN_MENU_STATE_GRID: func_0801364C(); break;
-        case MAIN_MENU_STATE_MICROGAME_SELECT: func_08013E64(); break;
-        case MAIN_MENU_STATE_OPTIONS: func_080147B0(); break;
-        case MAIN_MENU_STATE_PROMPT: func_08014B44(); break;
-        case MAIN_MENU_STATE_FADE_OUT: func_08014DE8(); break;
+        case MAIN_MENU_STATE_MAIN: main_menu_state_main(); break;
+        case MAIN_MENU_STATE_GAMES: main_menu_state_games(); break;
+        case MAIN_MENU_STATE_GRID: main_menu_state_grid(); break;
+        case MAIN_MENU_STATE_MICROGAME_SELECT: main_menu_state_microgame_select(); break;
+        case MAIN_MENU_STATE_OPTIONS: main_menu_state_options(); break;
+        case MAIN_MENU_STATE_PROMPT: main_menu_state_prompt(); break;
+        case MAIN_MENU_STATE_FADE_OUT: main_menu_state_fade_out(); break;
         case MAIN_MENU_STATE_7: func_080153E0(); break;
-        case MAIN_MENU_STATE_EPILOGUE_SELECT: func_08015930(); break;
+        case MAIN_MENU_STATE_EPILOGUE_SELECT: main_menu_state_epilogue_select(); break;
     }
 
     func_080165D4();
@@ -139,7 +139,7 @@ u32 func_08011614(void) {
          | gMainMenu.unkDC_26;
 }
 
-u32 func_08011698(void) {
+u32 main_menu_can_accept_input(void) {
     if (gMainMenu.unk8 && !gGraphicsBuffer.unk854_2 && func_08011614() == 0) {
         return 1;
     }
@@ -297,7 +297,7 @@ void func_080119EC(void) {
     switch(gMainMenuSelectionState.category) {
         case 0:
             for(i = 0; i < 28; i++) {
-                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], TRUE);
+                sprite_set_visible(gSpriteHandler, gMainMenu.stageIconSprites[i], TRUE);
             }
             entry = D_083AA0C4[gMainMenuSelectionState.stage].position;
             sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
@@ -305,10 +305,10 @@ void func_080119EC(void) {
             break;
         case 1:
             for(i = 0; i < 9; i++) {
-                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], TRUE);
+                sprite_set_visible(gSpriteHandler, gMainMenu.stageIconSprites[i], TRUE);
             }
             for(i = 9; i < 28; i++) {
-                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], FALSE);
+                sprite_set_visible(gSpriteHandler, gMainMenu.stageIconSprites[i], FALSE);
             }
             entry = D_083AA294[gMainMenuSelectionState.stage].position;
             sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], entry->x, entry->y);
@@ -316,13 +316,13 @@ void func_080119EC(void) {
             break;
         case 2:
             for(i = 0; i < 28; i++) {
-                sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[i], FALSE);
+                sprite_set_visible(gSpriteHandler, gMainMenu.stageIconSprites[i], FALSE);
             }
             break;
     }
 }
 
-void func_08011B1C(s32 arg0) {
+void main_menu_icon_slide_grid_to_games(s32 arg0) {
     struct Vector2 *src;
     struct Vector2 *dst;
     
@@ -330,17 +330,17 @@ void func_08011B1C(s32 arg0) {
         src = D_083AA294[arg0].position;
         dst = D_083AA0C4[arg0].position;
 
-        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.stageIconSprites[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     } else {
         src = D_083AA294[0].position;
         dst = D_083AA0C4[arg0].position;
         
-        sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[arg0], 1U);
-        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        sprite_set_visible(gSpriteHandler, gMainMenu.stageIconSprites[arg0], 1U);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.stageIconSprites[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     }
 }
 
-void func_08011BEC(s32 arg0) {
+void main_menu_icon_slide_games_to_grid(s32 arg0) {
     struct Vector2 *src;
     struct Vector2 *dst;
 
@@ -348,49 +348,49 @@ void func_08011BEC(s32 arg0) {
         src = D_083AA0C4[arg0].position;
         dst = D_083AA294[arg0].position;
 
-        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.stageIconSprites[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     } else {
         dst = D_083AA294[0].position;
         src = D_083AA0C4[arg0].position;
 
-        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
+        run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.stageIconSprites[arg0], src->x, src->y, dst->x, dst->y, 0xB4), func_080119EC, 0);
     }
 }
 
-void func_08011CA4(s32 arg0) {
+void main_menu_icon_slide_in_from_left(s32 arg0) {
     struct Vector2* src;
     
-    sprite_set_visible(gSpriteHandler, gMainMenu.unk3A[arg0], TRUE);
+    sprite_set_visible(gSpriteHandler, gMainMenu.stageIconSprites[arg0], TRUE);
     
     src = D_083AA294[arg0].position;
-    run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], -32, src->y, src->x, src->y, 0xB4), func_080119EC, 0);
+    run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.stageIconSprites[arg0], -32, src->y, src->x, src->y, 0xB4), func_080119EC, 0);
 }
 
-void func_08011D0C(s32 arg0) {
+void main_menu_icon_slide_out_to_left(s32 arg0) {
     struct Vector2* src;
 
     src = D_083AA294[arg0].position;
-    run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.unk3A[arg0], src->x, src->y, -32, src->y, 0xB4), func_080119EC, 0);
+    run_func_after_task(scene_set_sprite_motion_decelerate(gMainMenu.stageIconSprites[arg0], src->x, src->y, -32, src->y, 0xB4), func_080119EC, 0);
 }
 
 void func_08011D5C(u32 arg0) {
     void (*callback)(s32);
     switch(arg0) {
         case 0:
-            callback = func_08011B1C;
+            callback = main_menu_icon_slide_grid_to_games;
             gMainMenu.unkFB = 28;
         break;
         case 1:
             if(gMainMenuSelectionState.category == MAIN_MENU_CATEGORY_GAMES) {
-                callback = func_08011BEC;
+                callback = main_menu_icon_slide_games_to_grid;
                 gMainMenu.unkFB = 28;
             } else {
-                callback = func_08011CA4;
+                callback = main_menu_icon_slide_in_from_left;
                 gMainMenu.unkFB = 9;
             }
         break;
         case 2:
-            callback = func_08011D0C;
+            callback = main_menu_icon_slide_out_to_left;
             gMainMenu.unkFB = 9;
         break;
     }
@@ -423,7 +423,7 @@ void func_08011DFC(void) {
     }
 }
 
-void func_08011E68(void) {
+void main_menu_category_handle_input(void) {
     struct Vector2* pos;
     struct Unk083AA0C4 *entry;
     u8 idx;
@@ -498,7 +498,7 @@ void func_08012058(void) {
     func_08011730(0);
 }
 
-void func_0801208C(void) {
+void main_menu_state_main(void) {
     struct Vector2* pos;
     
     if (func_08011708() && gMainMenuSelectionState.category == MAIN_MENU_CATEGORY_OPTIONS) {
@@ -523,8 +523,8 @@ void func_0801208C(void) {
         }
     }
 
-    if (func_08011698()) {
-        func_08011E68();
+    if (main_menu_can_accept_input()) {
+        main_menu_category_handle_input();
     }
 }
 
@@ -601,19 +601,19 @@ void func_08012700(s32 idx) {
 }
 
 
-s32 func_0801274C(u32 arg0) {
+s32 main_menu_is_stage_selectable(u32 arg0) {
     if (!save_is_stage_unlocked(arg0) && (arg0 > 10)) {
         return 0;
     }
     return 1;
 }
 
-s32 func_08012768(s32 idx) {
+s32 main_menu_find_stage_up(s32 idx) {
     s32 next;
     struct Unk083AA0C4* list = D_083AA0C4;
 
     while ((next = list[idx].unk4) >= 0) {
-        if (func_0801274C(next)) {
+        if (main_menu_is_stage_selectable(next)) {
             return next;
         }
         idx = next;
@@ -621,12 +621,12 @@ s32 func_08012768(s32 idx) {
     return -1;
 }
 
-s32 func_08012798(s32 idx) {
+s32 main_menu_find_stage_down(s32 idx) {
     s32 next;
     struct Unk083AA0C4* list = D_083AA0C4;
 
     while ((next = list[idx].unk5) >= 0) {
-        if (func_0801274C(next)) {
+        if (main_menu_is_stage_selectable(next)) {
             return next;
         }
         idx = next;
@@ -634,12 +634,12 @@ s32 func_08012798(s32 idx) {
     return -1;
 }
 
-s32 func_080127C8(s32 idx) {
+s32 main_menu_find_stage_left(s32 idx) {
     s32 next;
     struct Unk083AA0C4* list = D_083AA0C4;
 
     while ((next = list[idx].unk6) >= 0) {
-        if (func_0801274C(next)) {
+        if (main_menu_is_stage_selectable(next)) {
             return next;
         }
         idx = next;
@@ -647,12 +647,12 @@ s32 func_080127C8(s32 idx) {
     return -1;
 }
 
-s32 func_080127F8(s32 idx) {
+s32 main_menu_find_stage_right(s32 idx) {
     s32 next;
     struct Unk083AA0C4* list = D_083AA0C4;
 
     while ((next = list[idx].unk7) >= 0) {
-        if (func_0801274C(next)) {
+        if (main_menu_is_stage_selectable(next)) {
             return next;
         }
         idx = next;
@@ -660,25 +660,25 @@ s32 func_080127F8(s32 idx) {
     return -1;
 }
 
-void func_08012828(void) {
+void main_menu_games_handle_input(void) {
     u8 unusedLevel = gMainMenuSelectionState.stage; // ???
     struct Vector2 *pos;
     s32 level = -1;
 
     if (gPressedKeys & DPAD_UP) {
-        level = func_08012768(gMainMenuSelectionState.stage);
+        level = main_menu_find_stage_up(gMainMenuSelectionState.stage);
     }
 
     if ((gPressedKeys & DPAD_DOWN) && (level < 0)) {
-        level = func_08012798(gMainMenuSelectionState.stage);
+        level = main_menu_find_stage_down(gMainMenuSelectionState.stage);
     }
 
     if ((gPressedKeys & DPAD_LEFT) && (level < 0)) {
-        level = func_080127C8(gMainMenuSelectionState.stage);
+        level = main_menu_find_stage_left(gMainMenuSelectionState.stage);
     }
 
     if ((gPressedKeys & DPAD_RIGHT) && (level < 0)) {
-        level = func_080127F8(gMainMenuSelectionState.stage);
+        level = main_menu_find_stage_right(gMainMenuSelectionState.stage);
     }
 
     if (level != -1) {
@@ -700,7 +700,7 @@ void func_08012828(void) {
             D_03003634 = 0;
             D_03003628 = D_083AA0C4[level].unk0;
 
-            gMainMenu.unk38 = 2;
+            gMainMenu.nextScene = GLOBAL_SCENE_GAMEPLAY;
             set_pause_beatscript_scene(FALSE);
             gMainMenu.unk8 = 0;
             fade_out_sound(gMainMenu.unk84, 0x20);
@@ -747,9 +747,9 @@ void func_08012C64(void) {
 
 #include "asm/scenes/main_menu/asm_08012c80.s"
 
-void func_08012CB4(void) {
-    if (func_08011698()) {
-        func_08012828();
+void main_menu_state_games(void) {
+    if (main_menu_can_accept_input()) {
+        main_menu_games_handle_input();
     }
 }
 
@@ -799,10 +799,12 @@ void func_08013624(void) {
 
 }
 
-#include "asm/scenes/main_menu/asm_08013628.s"
+u32 main_menu_get_selected_microgame_id(void) {
+    return D_083AAD70[gMainMenuSelectionState.stage][gMainMenuSelectionState.gridColumn * MAIN_MENU_GRID_ROWS + gMainMenuSelectionState.gridRow].unk0;
+}
 
-void func_0801364C(void) {
-    if (func_08011698()) {
+void main_menu_state_grid(void) {
+    if (main_menu_can_accept_input()) {
         func_08013460();
     }
 }
@@ -866,7 +868,7 @@ void func_080137B0(void) {
         gMainMenu.unkF1 = 1;
 
         gMainMenu.unkEE = 0x100;
-        gMainMenu.unkEA = gGraphicsBuffer.BG_OFS[2].x;
+        gMainMenu.unkEA = gGraphicsBuffer.BG_OFS[BG_LAYER_2].x;
         gMainMenu.unkEC = func_080136F4_return1;
 
         func_08013B88();
@@ -884,15 +886,15 @@ void func_080137B0(void) {
         }
     } else {
         if(gPressedKeys & A_BUTTON) {
-            id = func_08013628();
-            if(save_is_microgame_unlocked(id) != 0) {
+            id = main_menu_get_selected_microgame_id();
+            if(save_is_microgame_unlocked(id)) {
                 func_08013764(id);
                 D_03003848 = 99;
                 D_03003634 = 0;
                 D_03003630 = id;
                 D_03003628 = &D_083AB020;
 
-                gMainMenu.unk38 = GLOBAL_SCENE_GAMEPLAY;
+                gMainMenu.nextScene = GLOBAL_SCENE_GAMEPLAY;
                 set_pause_beatscript_scene(FALSE);
                 gMainMenu.unk8 = 0;
                 play_sound(&s_BASIC_BUTTON_A_seqData);
@@ -943,7 +945,7 @@ void func_08013E44(void) {
     scene_hide_sprite(30);
 }
 
-void func_08013E64(void) {
+void main_menu_state_microgame_select(void) {
     if ((gPressedKeys & (A_BUTTON | DPAD_ANY)) && (gMainMenu.unkF1 != 0)) {
         if (gMainMenu.unkDC_9) {
             func_08011584();
@@ -953,7 +955,7 @@ void func_08013E64(void) {
         }
     }
     
-    if (func_08011698()) {
+    if (main_menu_can_accept_input()) {
         func_080137B0();
     }
     func_080139D4();
@@ -1014,7 +1016,7 @@ void func_080144BC(void) {
 
 #include "asm/scenes/main_menu/asm_08014740.s"
 
-void func_080147B0(void) {
+void main_menu_state_options(void) {
     if (func_08011708() && gMainMenu.unk13C_2) {
         func_08015944(gMainMenu.unk1C4, func_08014428);
         gMainMenu.unk13C_2 = FALSE;
@@ -1022,7 +1024,7 @@ void func_080147B0(void) {
         return;
     }
     
-    if (func_08011698()) {
+    if (main_menu_can_accept_input()) {
         func_080145D4();
     }
 }
@@ -1043,8 +1045,8 @@ void func_080147B0(void) {
 
 #include "asm/scenes/main_menu/asm_08014a34.s"
 
-void func_08014B44(void) {
-    if (func_08011698()) {
+void main_menu_state_prompt(void) {
+    if (main_menu_can_accept_input()) {
         func_08014A34();
     }
 }
@@ -1073,8 +1075,8 @@ void func_08014DC4(void) {
     }
 }
 
-void func_08014DE8(void) {
-    if (func_08011698()) {
+void main_menu_state_fade_out(void) {
+    if (main_menu_can_accept_input()) {
         func_08014DC4();
     }
 }
@@ -1104,7 +1106,7 @@ void func_08014FF4(void) {
 #include "asm/scenes/main_menu/asm_080152d4.s"
 
 void func_080153E0(void) {
-    if (func_08011698()) {
+    if (main_menu_can_accept_input()) {
         func_080152D4();
     }
 }
@@ -1123,8 +1125,8 @@ void func_080153E0(void) {
 
 #include "asm/scenes/main_menu/asm_080157c4.s"
 
-void func_08015930(void) {
-    if (func_08011698()) {
+void main_menu_state_epilogue_select(void) {
+    if (main_menu_can_accept_input()) {
         func_080157C4();
     }
 }
@@ -1579,7 +1581,7 @@ void func_0801646C(void) {
     var_r4 = 0;
     do {
         if ((temp_r5 >> var_r4) & 1) {
-            sprite_set_anim_cel(gSpriteHandler, gMainMenu.unk3A[var_r4], 0);
+            sprite_set_anim_cel(gSpriteHandler, gMainMenu.stageIconSprites[var_r4], 0);
         }
         var_r4 += 1;
     } while (var_r4 <= 0x1BU);
@@ -1619,7 +1621,7 @@ void func_08016520(void) {
 
     for (i = 0; i < 28; i++) {
         if ((mask >> i) & 1) {
-            sprite_set_anim_cel(gSpriteHandler, gMainMenu.unk3A[i], anim);
+            sprite_set_anim_cel(gSpriteHandler, gMainMenu.stageIconSprites[i], anim);
         }
     }
 }

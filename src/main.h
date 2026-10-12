@@ -32,7 +32,7 @@ extern void func_08006F28();
 extern void func_08007EA0();
 extern void get_current_language();
 extern void func_08005570();
-extern void func_080109B4();
+extern void main_menu_reset_selection_state();
 extern void func_08000F10();
 extern void func_080F3C60();
 extern void func_080F3C78();

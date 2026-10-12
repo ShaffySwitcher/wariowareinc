@@ -44,7 +44,7 @@ void init_save_buffer(void) {
     func_080089D8(STAGE_PAPER_PLANE, 30);
     func_080089D8(STAGE_SKATING_BOARD, 40);
 
-    func_080109B4();
+    main_menu_reset_selection_state();
 }
 
 u32 validate_save(u8* base) {

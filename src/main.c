@@ -23,7 +23,7 @@ void func_080001D4(void) {
     write_save_backup();
     get_current_language();
     func_08005570();
-    func_080109B4();
+    main_menu_reset_selection_state();
     func_08000F10();
     D_03006514 = 1;
 }
