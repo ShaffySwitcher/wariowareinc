@@ -4,245 +4,245 @@
 // Microgame scene data.
 
 extern struct SubScene scene_crazy_cars;
-extern struct SubScene D_083CBA3C;
-extern struct SubScene D_083CBB68;
-extern struct SubScene D_083CBC7C;
-extern struct SubScene D_083CBD7C;
-extern struct SubScene D_083CBFF8;
-extern struct SubScene D_083CC2D0;
-extern struct SubScene D_083CC3F4;
-extern struct SubScene D_083CC4F8;
-extern struct SubScene D_083CC60C;
-extern struct SubScene D_083CC728;
-extern struct SubScene D_083CC97C;
+extern struct SubScene scene_repellion;
+extern struct SubScene scene_wario_whirled;
+extern struct SubScene scene_log_chop;
+extern struct SubScene scene_space_escape;
+extern struct SubScene scene_jumpin_rope;
+extern struct SubScene scene_fruit_fall;
+extern struct SubScene scene_hare_scare;
+extern struct SubScene scene_munch_a_bunch;
+extern struct SubScene scene_space_fighter;
+extern struct SubScene scene_dodge_balls;
+extern struct SubScene scene_saving_face;
 extern struct SubScene D_083CCB20;
-extern struct SubScene D_083CCC28;
-extern struct SubScene D_083CCD54;
-extern struct SubScene D_083CCE78;
-extern struct SubScene D_083CCFC0;
-extern struct SubScene D_083CD0B4;
-extern struct SubScene D_083CD254;
-extern struct SubScene D_083CD398;
-extern struct SubScene D_083CD4D8;
-extern struct SubScene D_083CD64C;
-extern struct SubScene D_083CD784;
-extern struct SubScene D_083CD8D4;
-extern struct SubScene D_083CDA00;
-extern struct SubScene D_083CDB98;
+extern struct SubScene scene_arrow_space;
+extern struct SubScene scene_bam_fu;
+extern struct SubScene scene_sloppy_salon;
+extern struct SubScene scene_zero_to_hero;
+extern struct SubScene scene_lickety_split;
+extern struct SubScene scene_manic_mechanic;
+extern struct SubScene scene_heads_up;
+extern struct SubScene scene_diamond_dig;
+extern struct SubScene scene_terminal_velocity;
+extern struct SubScene scene_bad_man_bash;
+extern struct SubScene scene_flower_shower;
+extern struct SubScene scene_dry_eye;
+extern struct SubScene scene_go_fer_the_tater;
 extern struct SubScene D_083CDCF4;
-extern struct SubScene D_083CDD9C;
-extern struct SubScene D_083CDF3C;
-extern struct SubScene D_083CE050;
-extern struct SubScene D_083CE288;
+extern struct SubScene scene_getcha_groove_on;
+extern struct SubScene scene_picture_perfect;
+extern struct SubScene scene_hover_for_cover;
+extern struct SubScene scene_right_in_the_eye;
 extern struct SubScene D_083CE39C;
-extern struct SubScene D_083CE42C;
-extern struct SubScene D_083CE574;
-extern struct SubScene D_083CE830;
-extern struct SubScene D_083CE9BC;
+extern struct SubScene scene_noodle_cup;
+extern struct SubScene scene_ground_control;
+extern struct SubScene scene_fruit_shoot;
+extern struct SubScene scene_busted;
 extern struct SubScene D_083CEAF4;
-extern struct SubScene D_083CEB84;
-extern struct SubScene D_083CECB4;
-extern struct SubScene D_083CEDBC;
-extern struct SubScene D_083CEEC4;
-extern struct SubScene D_083CF014;
-extern struct SubScene D_083CF1B4;
-extern struct SubScene D_083CF2C8;
-extern struct SubScene D_083CF4D0;
-extern struct SubScene D_083CF5FC;
-extern struct SubScene D_083CF870;
-extern struct SubScene D_083CF9F0;
-extern struct SubScene D_083CFB2C;
-extern struct SubScene D_083CFC48;
-extern struct SubScene D_083CFD7C;
-extern struct SubScene D_083D0190;
+extern struct SubScene scene_odd_man_out;
+extern struct SubScene scene_boing;
+extern struct SubScene scene_crash_test_dummy;
+extern struct SubScene scene_helmet;
+extern struct SubScene scene_page_panic;
+extern struct SubScene scene_hectic_highway;
+extern struct SubScene scene_batter_up;
+extern struct SubScene scene_petri_panic;
+extern struct SubScene scene_balancing_act;
+extern struct SubScene scene_parking_prowess;
+extern struct SubScene scene_spare_me;
+extern struct SubScene scene_mountain_mountin;
+extern struct SubScene scene_pro_curling;
+extern struct SubScene scene_hammer_toss;
+extern struct SubScene scene_ultra_machine;
 extern struct SubScene D_083D02B4;
-extern struct SubScene D_083D03E0;
-extern struct SubScene D_083D05A8;
-extern struct SubScene D_083D0704;
-extern struct SubScene D_083D083C;
-extern struct SubScene D_083D0940;
-extern struct SubScene D_083D0B20;
-extern struct SubScene D_083D0C34;
-extern struct SubScene D_083D0D70;
-extern struct SubScene D_083D0E84;
-extern struct SubScene D_083D0FAC;
-extern struct SubScene D_083D10FC;
-extern struct SubScene D_083D1210;
-extern struct SubScene D_083D147C;
-extern struct SubScene D_083D1878;
+extern struct SubScene scene_electric_groove_fish;
+extern struct SubScene scene_veggie_might;
+extern struct SubScene scene_ring_my_bell;
+extern struct SubScene scene_hurry_hurdles;
+extern struct SubScene scene_hoppin_mad;
+extern struct SubScene scene_guy_scraper;
+extern struct SubScene scene_ufo_assist;
+extern struct SubScene scene_super_wario_bros;
+extern struct SubScene scene_bug_bite;
+extern struct SubScene scene_baseline_bash;
+extern struct SubScene scene_high_hoops;
+extern struct SubScene scene_gifted_goalie;
+extern struct SubScene scene_chiritorie;
+extern struct SubScene scene_praise_or_haze_ii;
 extern struct SubScene D_083D1914;
-extern struct SubScene D_083D1A48;
-extern struct SubScene D_083D1C30;
-extern struct SubScene D_083D1EA8;
+extern struct SubScene scene_lift_and_shout;
+extern struct SubScene scene_ski_jump;
+extern struct SubScene scene_the_maze_that_pays;
 extern struct SubScene D_083D1FFC;
-extern struct SubScene D_083D20A4;
-extern struct SubScene D_083D21D0;
-extern struct SubScene D_083D22FC;
-extern struct SubScene D_083D2458;
-extern struct SubScene D_083D2578;
-extern struct SubScene D_083D26B8;
-extern struct SubScene D_083D284C;
-extern struct SubScene D_083D2990;
-extern struct SubScene D_083D2AB0;
-extern struct SubScene D_083D2BDC;
-extern struct SubScene D_083D2CF0;
-extern struct SubScene D_083D2E78;
-extern struct SubScene D_083D2F74;
-extern struct SubScene D_083D309C;
-extern struct SubScene D_083D31A4;
-extern struct SubScene D_083D32C0;
-extern struct SubScene D_083D33F4;
-extern struct SubScene D_083D35FC;
-extern struct SubScene D_083D3710;
-extern struct SubScene D_083D3860;
-extern struct SubScene D_083D3974;
-extern struct SubScene D_083D3AB4;
-extern struct SubScene D_083D3BE4;
-extern struct SubScene D_083D3D70;
-extern struct SubScene D_083D3E94;
-extern struct SubScene D_083D4058;
-extern struct SubScene D_083D41FC;
-extern struct SubScene D_083D442C;
-extern struct SubScene D_083D4528;
-extern struct SubScene D_083D4728;
+extern struct SubScene scene_code_buster;
+extern struct SubScene scene_butterfingers;
+extern struct SubScene scene_classic_clash_i;
+extern struct SubScene scene_mouse_trap;
+extern struct SubScene scene_alien_ambush;
+extern struct SubScene scene_lazerblazer;
+extern struct SubScene scene_identity_crisis;
+extern struct SubScene scene_putt_for_dough;
+extern struct SubScene scene_bubble_trouble;
+extern struct SubScene scene_laser_outlaw;
+extern struct SubScene scene_hogans_alley;
+extern struct SubScene scene_mug_shot;
+extern struct SubScene scene_mars_ball_destroy;
+extern struct SubScene scene_wild_gunman;
+extern struct SubScene scene_duck_hunt;
+extern struct SubScene scene_classic_clash_ii;
+extern struct SubScene scene_pompeii_back;
+extern struct SubScene scene_balloon_fight;
+extern struct SubScene scene_coconut_catapult;
+extern struct SubScene scene_sunny_side_up;
+extern struct SubScene scene_classic_clash;
+extern struct SubScene scene_gold_digger;
+extern struct SubScene scene_stack_up;
+extern struct SubScene scene_scooter_commuter;
+extern struct SubScene scene_air_supplies;
+extern struct SubScene scene_donkey_kong;
+extern struct SubScene scene_scoot_or_die;
+extern struct SubScene scene_punch_out;
+extern struct SubScene scene_tilt_n_tumble;
+extern struct SubScene scene_urban_champion;
 extern struct SubScene D_083D48F0;
-extern struct SubScene D_083D4BA8;
-extern struct SubScene D_083D4DF4;
-extern struct SubScene D_083D4F14;
-extern struct SubScene D_083D5044;
-extern struct SubScene D_083D51C8;
-extern struct SubScene D_083D52C4;
-extern struct SubScene D_083D56F8;
+extern struct SubScene scene_family_basic;
+extern struct SubScene scene_tidal_cave;
+extern struct SubScene scene_i_came_i_saw;
+extern struct SubScene scene_slick_wheelie;
+extern struct SubScene scene_mario_clash;
+extern struct SubScene scene_chicken_pinch;
+extern struct SubScene scene_mario_paint_fly_swatter;
 extern struct SubScene D_083D5788;
 extern struct SubScene D_083D58AC;
-extern struct SubScene D_083D59D0;
-extern struct SubScene D_083D5C28;
-extern struct SubScene D_083D5D58;
-extern struct SubScene D_083D5E74;
-extern struct SubScene D_083D60B0;
-extern struct SubScene D_083D61CC;
-extern struct SubScene D_083D6324;
-extern struct SubScene D_083D6438;
-extern struct SubScene D_083D6548;
-extern struct SubScene D_083D66E4;
-extern struct SubScene D_083D698C;
-extern struct SubScene D_083D6AD8;
-extern struct SubScene D_083D70A0;
+extern struct SubScene scene_mars_jars;
+extern struct SubScene scene_super_fly;
+extern struct SubScene scene_noodle_rama;
+extern struct SubScene scene_racing_112;
+extern struct SubScene scene_word_up;
+extern struct SubScene scene_metroid;
+extern struct SubScene scene_fries_with_that;
+extern struct SubScene scene_dr_mario;
+extern struct SubScene scene_disc_odog;
+extern struct SubScene scene_wario_wear;
+extern struct SubScene scene_gear_head_fred;
+extern struct SubScene scene_ninja_pipe_cleaner;
+extern struct SubScene scene_sheriff;
 extern struct SubScene D_083D7124;
-extern struct SubScene D_083D7250;
-extern struct SubScene D_083D7750;
-extern struct SubScene D_083D78D0;
-extern struct SubScene D_083D79E4;
-extern struct SubScene D_083D7B20;
-extern struct SubScene D_083D7C5C;
-extern struct SubScene D_083D7D7C;
-extern struct SubScene D_083D7EE8;
-extern struct SubScene D_083D8094;
-extern struct SubScene D_083D81C8;
-extern struct SubScene D_083D839C;
-extern struct SubScene D_083D84BC;
-extern struct SubScene D_083D8B68;
-extern struct SubScene D_083D8C88;
-extern struct SubScene D_083D8E44;
-extern struct SubScene D_083D8FC4;
-extern struct SubScene D_083D90EC;
-extern struct SubScene D_083D920C;
-extern struct SubScene D_083D93B4;
-extern struct SubScene D_083D94FC;
-extern struct SubScene D_083D97CC;
-extern struct SubScene D_083D99B8;
-extern struct SubScene D_083D9ACC;
-extern struct SubScene D_083D9CB8;
-extern struct SubScene D_083D9E90;
-extern struct SubScene D_083DA384;
-extern struct SubScene D_083DA498;
-extern struct SubScene D_083DA624;
+extern struct SubScene scene_sphinx_hijinks;
+extern struct SubScene scene_nail_call;
+extern struct SubScene scene_the_legend_of_zelda;
+extern struct SubScene scene_douse_the_house;
+extern struct SubScene scene_sole_man;
+extern struct SubScene scene_strength_in_numbers;
+extern struct SubScene scene_mirror_mirror;
+extern struct SubScene scene_banana_munch;
+extern struct SubScene scene_worm_squirm;
+extern struct SubScene scene_super_mario_bros;
+extern struct SubScene scene_kitty_cover;
+extern struct SubScene scene_the_claw;
+extern struct SubScene scene_long_lost_love;
+extern struct SubScene scene_nighttime_allergies;
+extern struct SubScene scene_button_masher;
+extern struct SubScene scene_hard_core;
+extern struct SubScene scene_the_brush_off;
+extern struct SubScene scene_paddle_parade;
+extern struct SubScene scene_wrong_way_highway;
+extern struct SubScene scene_boom_box;
+extern struct SubScene scene_ninja_vision;
+extern struct SubScene scene_spunky_monkey;
+extern struct SubScene scene_toast_the_ghosts;
+extern struct SubScene scene_ultra_hand;
+extern struct SubScene scene_set_n_spike;
+extern struct SubScene scene_galaxy_2003;
+extern struct SubScene scene_the_great_cover_cup;
+extern struct SubScene scene_city_surfer;
 extern struct SubScene D_083DA81C;
-extern struct SubScene D_083DAA68;
-extern struct SubScene D_083DABA0;
-extern struct SubScene D_083DAF2C;
-extern struct SubScene D_083DB108;
-extern struct SubScene D_083DB2AC;
-extern struct SubScene D_083DB40C;
-extern struct SubScene D_083DB594;
-extern struct SubScene D_083DB694;
-extern struct SubScene D_083DBA10;
-extern struct SubScene D_083DBB94;
-extern struct SubScene D_083DBCB8;
-extern struct SubScene D_083DBF14;
-extern struct SubScene D_083DC13C;
-extern struct SubScene D_083DC294;
-extern struct SubScene D_083DC3F8;
-extern struct SubScene D_083DC52C;
-extern struct SubScene D_083DC6B0;
-extern struct SubScene D_083DCA1C;
-extern struct SubScene D_083DCB48;
+extern struct SubScene scene_crack_down;
+extern struct SubScene scene_butterfly_stroke;
+extern struct SubScene scene_snowboard_slalom;
+extern struct SubScene scene_catterwall;
+extern struct SubScene scene_sparring_wario;
+extern struct SubScene scene_whats_the_toadal;
+extern struct SubScene scene_whoop_de_doodle;
+extern struct SubScene scene_raging_rhino;
+extern struct SubScene scene_cymbalism;
+extern struct SubScene scene_mashin_martians;
+extern struct SubScene scene_raaaarrrrggghh;
+extern struct SubScene scene_quickie_quiz;
+extern struct SubScene scene_veg_out;
+extern struct SubScene scene_body_block;
+extern struct SubScene scene_berry_berry_good;
+extern struct SubScene scene_funky_fountain;
+extern struct SubScene scene_tip_the_scale;
+extern struct SubScene scene_stick_and_move;
+extern struct SubScene scene_cheeky_monkey;
 extern struct SubScene D_083DCC60;
 extern struct SubScene D_083DCFEC;
-extern struct SubScene D_083DD134;
-extern struct SubScene D_083DD294;
-extern struct SubScene D_083DD3D4;
-extern struct SubScene D_083DD53C;
-extern struct SubScene D_083DD67C;
-extern struct SubScene D_083DD7B0;
+extern struct SubScene scene_cat_nap;
+extern struct SubScene scene_find_my_behind;
+extern struct SubScene scene_four_leaf_hover;
+extern struct SubScene scene_assembly_line;
+extern struct SubScene scene_crane_game;
+extern struct SubScene scene_whats_your_beef;
 extern struct SubScene D_083DD914;
-extern struct SubScene D_083DDA64;
-extern struct SubScene D_083DF348;
-extern struct SubScene D_083DF4C0;
-extern struct SubScene D_083DF6D0;
+extern struct SubScene scene_dungeon_dilemma;
+extern struct SubScene scene_wario_bros;
+extern struct SubScene scene_pod_pinch;
+extern struct SubScene scene_blow_hole_bridge;
 extern struct SubScene D_083DF9E4;
-extern struct SubScene D_083DFB10;
-extern struct SubScene D_083DFC30;
-extern struct SubScene D_083DFD58;
-extern struct SubScene D_083DFF48;
-extern struct SubScene D_083E0084;
-extern struct SubScene D_083E021C;
+extern struct SubScene scene_focus_pocus;
+extern struct SubScene scene_hot_dog_hog;
+extern struct SubScene scene_two_birds_big_rocks;
+extern struct SubScene scene_cavity_calamity;
+extern struct SubScene scene_shingle_smasher;
+extern struct SubScene scene_wario_pinball;
 extern struct SubScene D_083E183C;
-extern struct SubScene D_083E19BC;
-extern struct SubScene D_083E1BD8;
-extern struct SubScene D_083E1D08;
-extern struct SubScene D_083E1E6C;
-extern struct SubScene D_083E1F74;
-extern struct SubScene D_083E20BC;
-extern struct SubScene D_083E2350;
-extern struct SubScene D_083E24B4;
-extern struct SubScene D_083E28FC;
-extern struct SubScene D_083E2FFC;
-extern struct SubScene D_083E3148;
-extern struct SubScene D_083E3288;
-extern struct SubScene D_083E3434;
-extern struct SubScene D_083E3584;
-extern struct SubScene D_083E36B0;
-extern struct SubScene D_083E381C;
-extern struct SubScene D_083E3968;
-extern struct SubScene D_083E3AD8;
+extern struct SubScene scene_the_real_mccoy;
+extern struct SubScene scene_down_and_outie;
+extern struct SubScene scene_matchboxes;
+extern struct SubScene scene_laser_vision;
+extern struct SubScene scene_thumb_wrestling;
+extern struct SubScene scene_hasty_pastry;
+extern struct SubScene scene_wario_facial;
+extern struct SubScene scene_grow_wario_grow;
+extern struct SubScene scene_alien_laser_hero;
+extern struct SubScene scene_shake;
+extern struct SubScene scene_wario_windsock;
+extern struct SubScene scene_loot_scoot;
+extern struct SubScene scene_float_your_boat;
+extern struct SubScene scene_vermin;
+extern struct SubScene scene_mix_and_match;
+extern struct SubScene scene_bug_birdie;
+extern struct SubScene scene_apple_shrapnel;
+extern struct SubScene scene_airpain;
 extern struct SubScene D_083E3BC8;
 extern struct SubScene D_083E3D9C;
 extern struct SubScene D_083E4000;
-extern struct SubScene D_083E445C;
-extern struct SubScene D_083E5520;
-extern struct SubScene D_083E565C;
+extern struct SubScene scene_warios_adventure;
+extern struct SubScene scene_unexcite_bike;
+extern struct SubScene scene_rock_paper_scissors;
 extern struct SubScene D_083E5808;
 extern struct SubScene D_083E59D0;
-extern struct SubScene D_083E5BE4;
+extern struct SubScene scene_spoon_spectacular;
 extern struct SubScene D_083E5E24;
-extern struct SubScene D_083E6570;
-extern struct SubScene D_083E6738;
-extern struct SubScene D_083E692C;
-extern struct SubScene D_083E73B0;
-extern struct SubScene D_083E82B0;
-extern struct SubScene D_083E8424;
-extern struct SubScene D_083E8558;
+extern struct SubScene scene_high_treeson;
+extern struct SubScene scene_leafy_greens;
+extern struct SubScene scene_rough_puff;
+extern struct SubScene scene_the_frog_flap;
+extern struct SubScene scene_make_my_clay;
+extern struct SubScene scene_wario_kendo;
+extern struct SubScene scene_sinking_feeling;
 extern struct SubScene D_083E8698;
-extern struct SubScene D_083E87E4;
-extern struct SubScene D_083E8940;
-extern struct SubScene D_083E8B04;
-extern struct SubScene D_083E8C00;
+extern struct SubScene scene_garage_rock;
+extern struct SubScene scene_kettle_mettle;
+extern struct SubScene scene_ice_climber;
+extern struct SubScene scene_game_boy;
 extern struct SubScene D_083E8DE0;
-extern struct SubScene D_083E8F18;
+extern struct SubScene scene_produce_pandemonium;
 extern struct SubScene D_083E90D4;
 extern struct SubScene D_083E9290;
-extern struct SubScene D_083EB660;
+extern struct SubScene scene_f_zero;
 extern struct SubScene D_083EB840;
 extern struct SubScene D_083EBA50;
 
@@ -501,231 +501,231 @@ extern char D_080F7770[];
 
 struct GameplayMicrogameInfo gMicrogameTable[] = {
     { &scene_crazy_cars, &m_BGM_BOMB_01_seqData, 0x01, 20, 0x0000, D_080F7770 }, // 000
-    { &D_083CBA3C, &m_BGM_BOMB_02_seqData, 0x01, 15, 0x0000, D_080F7760 }, // 001
-    { &D_083CBB68, &m_BGM_BOMB_03_seqData, 0x01, 15, 0x0000, D_080F7750 }, // 002
-    { &D_083CBC7C, &m_BGM_BOMB_04_seqData, 0x01, 20, 0x0000, D_080F7740 }, // 003
-    { &D_083CBD7C, &m_BGM_BOMB_05_seqData, 0x01, 10, 0x0000, D_080F7730 }, // 004
-    { &D_083CBFF8, &m_BGM_BOMB_13_seqData, 0x01, 15, 0x0000, D_080F7724 }, // 005
-    { &D_083CC2D0, &m_BGM_BOMB_07_seqData, 0x01, 20, 0x0000, D_080F7714 }, // 006
+    { &scene_repellion, &m_BGM_BOMB_02_seqData, 0x01, 15, 0x0000, D_080F7760 }, // 001
+    { &scene_wario_whirled, &m_BGM_BOMB_03_seqData, 0x01, 15, 0x0000, D_080F7750 }, // 002
+    { &scene_log_chop, &m_BGM_BOMB_04_seqData, 0x01, 20, 0x0000, D_080F7740 }, // 003
+    { &scene_space_escape, &m_BGM_BOMB_05_seqData, 0x01, 10, 0x0000, D_080F7730 }, // 004
+    { &scene_jumpin_rope, &m_BGM_BOMB_13_seqData, 0x01, 15, 0x0000, D_080F7724 }, // 005
+    { &scene_fruit_fall, &m_BGM_BOMB_07_seqData, 0x01, 20, 0x0000, D_080F7714 }, // 006
     { &scene_crazy_cars, &m_BGM_BOMB_09_seqData, 0x01, 10, 0x0000, D_080F7704 }, // 007
-    { &D_083CC3F4, &m_BGM_BOMB_09_seqData, 0x01, 10, 0x0000, D_080F76F8 }, // 008
-    { &D_083CC4F8, &m_BGM_BOMB_11_seqData, 0x01, 20, 0x0000, D_080F76F0 }, // 009
-    { &D_083CC60C, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F76E4 }, // 010
-    { &D_083CC728, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F76D8 }, // 011
-    { &D_083CC97C, &m_BGM_BOMB_10_seqData, 0x01, 15, 0x0000, D_080F76CC }, // 012
-    { &D_083CCC28, &m_BGM_BOMB_04_seqData, 0x01, 20, 0x0000, D_080F76C0 }, // 013
-    { &D_083CCD54, &m_BGM_BOMB_04_seqData, 0x01, 20, 0x0000, D_080F76B8 }, // 014
-    { &D_083CCE78, &m_BGM_Monna_06_seqData, 0x01, 20, 0x0000, D_080F76A8 }, // 015
-    { &D_083CCFC0, &m_BGM_BOMB_08_seqData, 0x01, 20, 0x0000, D_080F76A0 }, // 016
-    { &D_083CD0B4, &m_BGM_BOMB_18_seqData, 0x01, 15, 0x0000, D_080F7698 }, // 017
-    { &D_083CD254, &m_BGM_BOMB_20_seqData, 0x01, 10, 0x0000, D_080F768C }, // 018
-    { &D_083CD398, &m_BGM_BOMB_19_seqData, 0x01, 15, 0x0000, D_080F7680 }, // 019
-    { &D_083CD4D8, &m_BGM_BOMB_15_seqData, 0x01, 20, 0x0000, D_080F7678 }, // 020
-    { &D_083CD64C, &m_BGM_Monna_10_seqData, 0x01, 15, 0x0000, D_080F7668 }, // 021
-    { &D_083CD784, &m_BGM_BOMB_01_seqData, 0x01, 15, 0x0000, D_080F7658 }, // 022
-    { &D_083CD8D4, &m_BGM_BOMB_17_seqData, 0x01, 20, 0x0000, D_080F764C }, // 023
-    { &D_083CDA00, &m_BGM_Monna_08_seqData, 0x01, 10, 0x0000, D_080F7640 }, // 024
-    { &D_083CDB98, &m_BGM_BOMB_09_seqData, 0x01, 15, 0x0000, D_080F7634 }, // 025
+    { &scene_hare_scare, &m_BGM_BOMB_09_seqData, 0x01, 10, 0x0000, D_080F76F8 }, // 008
+    { &scene_munch_a_bunch, &m_BGM_BOMB_11_seqData, 0x01, 20, 0x0000, D_080F76F0 }, // 009
+    { &scene_space_fighter, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F76E4 }, // 010
+    { &scene_dodge_balls, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F76D8 }, // 011
+    { &scene_saving_face, &m_BGM_BOMB_10_seqData, 0x01, 15, 0x0000, D_080F76CC }, // 012
+    { &scene_arrow_space, &m_BGM_BOMB_04_seqData, 0x01, 20, 0x0000, D_080F76C0 }, // 013
+    { &scene_bam_fu, &m_BGM_BOMB_04_seqData, 0x01, 20, 0x0000, D_080F76B8 }, // 014
+    { &scene_sloppy_salon, &m_BGM_Monna_06_seqData, 0x01, 20, 0x0000, D_080F76A8 }, // 015
+    { &scene_zero_to_hero, &m_BGM_BOMB_08_seqData, 0x01, 20, 0x0000, D_080F76A0 }, // 016
+    { &scene_lickety_split, &m_BGM_BOMB_18_seqData, 0x01, 15, 0x0000, D_080F7698 }, // 017
+    { &scene_manic_mechanic, &m_BGM_BOMB_20_seqData, 0x01, 10, 0x0000, D_080F768C }, // 018
+    { &scene_heads_up, &m_BGM_BOMB_19_seqData, 0x01, 15, 0x0000, D_080F7680 }, // 019
+    { &scene_diamond_dig, &m_BGM_BOMB_15_seqData, 0x01, 20, 0x0000, D_080F7678 }, // 020
+    { &scene_terminal_velocity, &m_BGM_Monna_10_seqData, 0x01, 15, 0x0000, D_080F7668 }, // 021
+    { &scene_bad_man_bash, &m_BGM_BOMB_01_seqData, 0x01, 15, 0x0000, D_080F7658 }, // 022
+    { &scene_flower_shower, &m_BGM_BOMB_17_seqData, 0x01, 20, 0x0000, D_080F764C }, // 023
+    { &scene_dry_eye, &m_BGM_Monna_08_seqData, 0x01, 10, 0x0000, D_080F7640 }, // 024
+    { &scene_go_fer_the_tater, &m_BGM_BOMB_09_seqData, 0x01, 15, 0x0000, D_080F7634 }, // 025
     { &D_083CDCF4, &m_BGM_BOMB_02_seqData, 0x01, 10, 0x0000, D_080F7624 }, // 026
-    { &D_083CDF3C, &m_BGM_BOMB_02_seqData, 0x01, 10, 0x0000, D_080F761C }, // 027
-    { &D_083CE050, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F7610 }, // 028
-    { &D_083CE288, &m_BGM_BOMB_21_seqData, 0x01, 10, 0x0000, D_080F7600 }, // 029
+    { &scene_picture_perfect, &m_BGM_BOMB_02_seqData, 0x01, 10, 0x0000, D_080F761C }, // 027
+    { &scene_hover_for_cover, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F7610 }, // 028
+    { &scene_right_in_the_eye, &m_BGM_BOMB_21_seqData, 0x01, 10, 0x0000, D_080F7600 }, // 029
     { &D_083CE39C, &m_BGM_BOMB_08_seqData, 0x01, 10, 0x0000, D_080F75F4 }, // 030
-    { &D_083CE574, &m_BGM_Monna_05_seqData, 0x01, 15, 0x0000, D_080F75E8 }, // 031
-    { &D_083CE830, &m_BGM_BOMB_11_seqData, 0x01, 30, 0x0000, D_080F75E0 }, // 032
-    { &D_083CE9BC, &m_BGM_BOMB_02_seqData, 0x01, 20, 0x0000, D_080F75DC }, // 033
+    { &scene_ground_control, &m_BGM_Monna_05_seqData, 0x01, 15, 0x0000, D_080F75E8 }, // 031
+    { &scene_fruit_shoot, &m_BGM_BOMB_11_seqData, 0x01, 30, 0x0000, D_080F75E0 }, // 032
+    { &scene_busted, &m_BGM_BOMB_02_seqData, 0x01, 20, 0x0000, D_080F75DC }, // 033
     { &D_083CEAF4, &m_BGM_BOMB_02_seqData, 0x01, 10, 0x0000, D_080F75D0 }, // 034
-    { &D_083CECB4, &m_BGM_BOMB_10_seqData, 0x01, 20, 0x0000, D_080F75C4 }, // 035
-    { &D_083CEDBC, &m_BGM_Monna_01_seqData, 0x01, 10, 0x0000, D_080F75BC }, // 036
-    { &D_083CEEC4, &m_BGM_BOMB_98_seqData, 0x01, 15, 0x0000, D_080F75B4 }, // 037
-    { &D_083CF014, &m_BGM_BOMB_78_seqData, 0x01, 10, 0x0000, D_080F75AC }, // 038
-    { &D_083CF1B4, &m_BGM_BOMB_10_seqData, 0x01, 15, 0x0000, D_080F75A4 }, // 039
-    { &D_083CF2C8, &m_BGM_BOMB_01_seqData, 0x01, 20, 0x0000, D_080F7598 }, // 040
-    { &D_083CF5FC, &m_BGM_BOMB_14_seqData, 0x01, 30, 0x0000, D_080F758C }, // 041
-    { &D_083CF870, &m_BGM_Monna_01_seqData, 0x01, 10, 0x0000, D_080F7584 }, // 042
-    { &D_083CF9F0, &m_BGM_BOMB_07_seqData, 0x01, 15, 0x0000, D_080F757C }, // 043
-    { &D_083CFB2C, &m_BGM_BOMB_19_seqData, 0x01, 20, 0x0000, D_080F7570 }, // 044
-    { &D_083CFC48, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F7568 }, // 045
-    { &D_083CFD7C, &m_BGM_BOMB_17_seqData, 0x01, 15, 0x0000, D_080F7560 }, // 046
+    { &scene_boing, &m_BGM_BOMB_10_seqData, 0x01, 20, 0x0000, D_080F75C4 }, // 035
+    { &scene_crash_test_dummy, &m_BGM_Monna_01_seqData, 0x01, 10, 0x0000, D_080F75BC }, // 036
+    { &scene_helmet, &m_BGM_BOMB_98_seqData, 0x01, 15, 0x0000, D_080F75B4 }, // 037
+    { &scene_page_panic, &m_BGM_BOMB_78_seqData, 0x01, 10, 0x0000, D_080F75AC }, // 038
+    { &scene_hectic_highway, &m_BGM_BOMB_10_seqData, 0x01, 15, 0x0000, D_080F75A4 }, // 039
+    { &scene_batter_up, &m_BGM_BOMB_01_seqData, 0x01, 20, 0x0000, D_080F7598 }, // 040
+    { &scene_balancing_act, &m_BGM_BOMB_14_seqData, 0x01, 30, 0x0000, D_080F758C }, // 041
+    { &scene_parking_prowess, &m_BGM_Monna_01_seqData, 0x01, 10, 0x0000, D_080F7584 }, // 042
+    { &scene_spare_me, &m_BGM_BOMB_07_seqData, 0x01, 15, 0x0000, D_080F757C }, // 043
+    { &scene_mountain_mountin, &m_BGM_BOMB_19_seqData, 0x01, 20, 0x0000, D_080F7570 }, // 044
+    { &scene_pro_curling, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F7568 }, // 045
+    { &scene_hammer_toss, &m_BGM_BOMB_17_seqData, 0x01, 15, 0x0000, D_080F7560 }, // 046
     { &D_083D02B4, &m_BGM_BOMB_02_seqData, 0x01, 10, 0x0000, D_080F7558 }, // 047
-    { &D_083D05A8, &m_BGM_BOMB_09_seqData, 0x01, 15, 0x0000, D_080F754C }, // 048
-    { &D_083D0704, &m_BGM_BOMB_08_seqData, 0x01, 10, 0x0000, D_080F7540 }, // 049
-    { &D_083D083C, &m_BGM_BOMB_13_seqData, 0x01, 10, 0x0000, D_080F7538 }, // 050
-    { &D_083D0940, &m_BGM_BOMB_10_seqData, 0x01, 10, 0x0000, D_080F752C }, // 051
+    { &scene_veggie_might, &m_BGM_BOMB_09_seqData, 0x01, 15, 0x0000, D_080F754C }, // 048
+    { &scene_ring_my_bell, &m_BGM_BOMB_08_seqData, 0x01, 10, 0x0000, D_080F7540 }, // 049
+    { &scene_hurry_hurdles, &m_BGM_BOMB_13_seqData, 0x01, 10, 0x0000, D_080F7538 }, // 050
+    { &scene_hoppin_mad, &m_BGM_BOMB_10_seqData, 0x01, 10, 0x0000, D_080F752C }, // 051
     { &scene_crazy_cars, &m_BGM_BOMB_10_seqData, 0x01, 10, 0x0000, D_080F7518 }, // 052
-    { &D_083D0B20, &m_BGM_BOMB_20_seqData, 0x01, 10, 0x0000, D_080F7510 }, // 053
-    { &D_083D0C34, &m_BGM_BOMB_05_seqData, 0x01, 15, 0x0000, D_080F7500 }, // 054
-    { &D_083D0D70, &m_BGM_BOMB_23_seqData, 0x01, 20, 0x0000, D_080F74F0 }, // 055
-    { &D_083D0E84, &m_BGM_BOMB_01_seqData, 0x01, 15, 0x0000, D_080F74E4 }, // 056
-    { &D_083D0FAC, &m_BGM_BOMB_10_seqData, 0x01, 20, 0x0000, D_080F74DC }, // 057
-    { &D_083D10FC, &m_BGM_BOMB_03_seqData, 0x01, 25, 0x0000, D_080F74D0 }, // 058
-    { &D_083D1210, &m_BGM_BOMB_07_seqData, 0x01, 10, 0x0000, D_080F74C4 }, // 059
-    { &D_083D147C, &m_BGM_BOMB_10_seqData, 0x01, 10, 0x0000, D_080F74B8 }, // 060
+    { &scene_guy_scraper, &m_BGM_BOMB_20_seqData, 0x01, 10, 0x0000, D_080F7510 }, // 053
+    { &scene_ufo_assist, &m_BGM_BOMB_05_seqData, 0x01, 15, 0x0000, D_080F7500 }, // 054
+    { &scene_super_wario_bros, &m_BGM_BOMB_23_seqData, 0x01, 20, 0x0000, D_080F74F0 }, // 055
+    { &scene_bug_bite, &m_BGM_BOMB_01_seqData, 0x01, 15, 0x0000, D_080F74E4 }, // 056
+    { &scene_baseline_bash, &m_BGM_BOMB_10_seqData, 0x01, 20, 0x0000, D_080F74DC }, // 057
+    { &scene_high_hoops, &m_BGM_BOMB_03_seqData, 0x01, 25, 0x0000, D_080F74D0 }, // 058
+    { &scene_gifted_goalie, &m_BGM_BOMB_07_seqData, 0x01, 10, 0x0000, D_080F74C4 }, // 059
+    { &scene_chiritorie, &m_BGM_BOMB_10_seqData, 0x01, 10, 0x0000, D_080F74B8 }, // 060
     { &D_083D1914, &m_BGM_BOMB_02_seqData, 0x01, 10, 0x0000, D_080F74A8 }, // 061
-    { &D_083D1A48, &m_BGM_BOMB_20_seqData, 0x01, 20, 0x0000, D_080F7498 }, // 062
-    { &D_083D1C30, &m_BGM_BOMB_19_seqData, 0x01, 25, 0x0000, D_080F748C }, // 063
-    { &D_083D1EA8, &m_BGM_BOMB_08_seqData, 0x01, 20, 0x0000, D_080F7484 }, // 064
+    { &scene_lift_and_shout, &m_BGM_BOMB_20_seqData, 0x01, 20, 0x0000, D_080F7498 }, // 062
+    { &scene_ski_jump, &m_BGM_BOMB_19_seqData, 0x01, 25, 0x0000, D_080F748C }, // 063
+    { &scene_the_maze_that_pays, &m_BGM_BOMB_08_seqData, 0x01, 20, 0x0000, D_080F7484 }, // 064
     { &D_083D1FFC, &m_BGM_BOMB_05_seqData, 0x01, 10, 0x0000, D_080F7474 }, // 065
-    { &D_083D21D0, &m_BGM_Monna_07_seqData, 0x01, 15, 0x0000, D_080F7468 }, // 066
-    { &D_083D22FC, &m_BGM_BOMB_11_seqData, 0x01, 20, 0x0000, D_080F7458 }, // 067
-    { &D_083D2458, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F744C }, // 068
-    { &D_083D2578, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F7440 }, // 069
-    { &D_083D26B8, &m_BGM_BOMB_99_seqData, 0x01, 15, 0x0000, D_080F7434 }, // 070
-    { &D_083D2990, &m_BGM_BOMB_17_seqData, 0x01, 25, 0x0000, D_080F742C }, // 071
-    { &D_083D2AB0, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F7428 }, // 072
-    { &D_083D2BDC, &m_BGM_BOMB_20_seqData, 0x01, 15, 0x0000, D_080F741C }, // 073
-    { &D_083D2CF0, &m_BGM_BOMB_102_seqData, 0x01, 15, 0x0000, D_080F740C }, // 074
-    { &D_083D2E78, &m_BGM_Monna_02_seqData, 0x01, 20, 0x0000, D_080F7400 }, // 075
-    { &D_083D2F74, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F73F0 }, // 076
-    { &D_083D309C, &m_BGM_BOMB_97_seqData, 0x01, 15, 0x0000, D_080F73E4 }, // 077
-    { &D_083D31A4, &m_BGM_BOMB_101_seqData, 0x01, 25, 0x0000, D_080F73D8 }, // 078
-    { &D_083D32C0, &m_BGM_BOMB_11_seqData, 0x01, 25, 0x0000, D_080F73C8 }, // 079
-    { &D_083D33F4, &m_BGM_Monna_03_seqData, 0x01, 10, 0x0000, D_080F73C0 }, // 080
-    { &D_083D35FC, &m_BGM_BOMB_92_seqData, 0x01, 20, 0x0000, D_080F73B0 }, // 081
-    { &D_083D3710, &m_BGM_BOMB_11_seqData, 0x01, 15, 0x0000, D_080F73A8 }, // 082
+    { &scene_butterfingers, &m_BGM_Monna_07_seqData, 0x01, 15, 0x0000, D_080F7468 }, // 066
+    { &scene_classic_clash_i, &m_BGM_BOMB_11_seqData, 0x01, 20, 0x0000, D_080F7458 }, // 067
+    { &scene_mouse_trap, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F744C }, // 068
+    { &scene_alien_ambush, &m_BGM_BOMB_08_seqData, 0x01, 15, 0x0000, D_080F7440 }, // 069
+    { &scene_lazerblazer, &m_BGM_BOMB_99_seqData, 0x01, 15, 0x0000, D_080F7434 }, // 070
+    { &scene_putt_for_dough, &m_BGM_BOMB_17_seqData, 0x01, 25, 0x0000, D_080F742C }, // 071
+    { &scene_bubble_trouble, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F7428 }, // 072
+    { &scene_laser_outlaw, &m_BGM_BOMB_20_seqData, 0x01, 15, 0x0000, D_080F741C }, // 073
+    { &scene_hogans_alley, &m_BGM_BOMB_102_seqData, 0x01, 15, 0x0000, D_080F740C }, // 074
+    { &scene_mug_shot, &m_BGM_Monna_02_seqData, 0x01, 20, 0x0000, D_080F7400 }, // 075
+    { &scene_mars_ball_destroy, &m_BGM_BOMB_12_seqData, 0x01, 15, 0x0000, D_080F73F0 }, // 076
+    { &scene_wild_gunman, &m_BGM_BOMB_97_seqData, 0x01, 15, 0x0000, D_080F73E4 }, // 077
+    { &scene_duck_hunt, &m_BGM_BOMB_101_seqData, 0x01, 25, 0x0000, D_080F73D8 }, // 078
+    { &scene_classic_clash_ii, &m_BGM_BOMB_11_seqData, 0x01, 25, 0x0000, D_080F73C8 }, // 079
+    { &scene_pompeii_back, &m_BGM_Monna_03_seqData, 0x01, 10, 0x0000, D_080F73C0 }, // 080
+    { &scene_balloon_fight, &m_BGM_BOMB_92_seqData, 0x01, 20, 0x0000, D_080F73B0 }, // 081
+    { &scene_coconut_catapult, &m_BGM_BOMB_11_seqData, 0x01, 15, 0x0000, D_080F73A8 }, // 082
     { &scene_crazy_cars, &m_BGM_BOMB_25_seqData, 0x01, 10, 0x0000, D_080F7390 }, // 083
-    { &D_083D3860, &m_BGM_Monna_04_seqData, 0x01, 15, 0x0000, D_080F738C }, // 084
-    { &D_083D3974, &m_BGM_BOMB_11_seqData, 0x01, 20, 0x0000, D_080F737C }, // 085
-    { &D_083D3AB4, &m_BGM_BOMB_18_seqData, 0x01, 10, 0x0000, D_080F7374 }, // 086
-    { &D_083D3BE4, &m_BGM_BOMB_75_seqData, 0x01, 15, 0x0000, D_080F7368 }, // 087
-    { &D_083D3D70, &m_BGM_BOMB_07_seqData, 0x01, 30, 0x0000, D_080F7358 }, // 088
-    { &D_083D3E94, &m_BGM_Monna_05_seqData, 0x01, 25, 0x0000, D_080F734C }, // 089
-    { &D_083D4058, &m_BGM_BOMB_29_Donkey_seqData, 0x01, 25, 0x0000, D_080F7340 }, // 090
-    { &D_083D41FC, &m_BGM_BOMB_07_seqData, 0x01, 15, 0x0000, D_080F7330 }, // 091
-    { &D_083D4528, &m_BGM_Monna_08_seqData, 0x01, 15, 0x0000, D_080F7328 }, // 092
-    { &D_083D4728, &m_BGM_BOMB_91_seqData, 0x01, 15, 0x0000, D_080F731C }, // 093
+    { &scene_sunny_side_up, &m_BGM_Monna_04_seqData, 0x01, 15, 0x0000, D_080F738C }, // 084
+    { &scene_classic_clash, &m_BGM_BOMB_11_seqData, 0x01, 20, 0x0000, D_080F737C }, // 085
+    { &scene_gold_digger, &m_BGM_BOMB_18_seqData, 0x01, 10, 0x0000, D_080F7374 }, // 086
+    { &scene_stack_up, &m_BGM_BOMB_75_seqData, 0x01, 15, 0x0000, D_080F7368 }, // 087
+    { &scene_scooter_commuter, &m_BGM_BOMB_07_seqData, 0x01, 30, 0x0000, D_080F7358 }, // 088
+    { &scene_air_supplies, &m_BGM_Monna_05_seqData, 0x01, 25, 0x0000, D_080F734C }, // 089
+    { &scene_donkey_kong, &m_BGM_BOMB_29_Donkey_seqData, 0x01, 25, 0x0000, D_080F7340 }, // 090
+    { &scene_scoot_or_die, &m_BGM_BOMB_07_seqData, 0x01, 15, 0x0000, D_080F7330 }, // 091
+    { &scene_tilt_n_tumble, &m_BGM_Monna_08_seqData, 0x01, 15, 0x0000, D_080F7328 }, // 092
+    { &scene_urban_champion, &m_BGM_BOMB_91_seqData, 0x01, 15, 0x0000, D_080F731C }, // 093
     { &D_083D48F0, &m_BGM_BOMB_11_seqData, 0x01, 10, 0x0000, D_080F7314 }, // 094
-    { &D_083D4BA8, &m_BGM_BOMB_10_seqData, 0x01, 15, 0x0000, D_080F7308 }, // 095
-    { &D_083D4DF4, &m_BGM_BOMB_26_seqData, 0x01, 20, 0x0000, D_080F7304 }, // 096
-    { &D_083D4F14, &m_BGM_BOMB_78_seqData, 0x01, 30, 0x0000, D_080F7300 }, // 097
-    { &D_083D5044, &m_BGM_BOMB_07_seqData, 0x01, 25, 0x0000, D_080F72F0 }, // 098
-    { &D_083D51C8, &m_BGM_BOMB_100_seqData, 0x01, 20, 0x0000, D_080F72E4 }, // 099
-    { &D_083D52C4, &m_BGM_Monna_02_seqData, 0x01, 15, 0x0000, D_080F72D8 }, // 100
-    { &D_083D56F8, &m_BGM_BOMB_30_MPaint_seqData, 0x01, 25, 0x0000, D_080F72CC }, // 101
+    { &scene_family_basic, &m_BGM_BOMB_10_seqData, 0x01, 15, 0x0000, D_080F7308 }, // 095
+    { &scene_tidal_cave, &m_BGM_BOMB_26_seqData, 0x01, 20, 0x0000, D_080F7304 }, // 096
+    { &scene_i_came_i_saw, &m_BGM_BOMB_78_seqData, 0x01, 30, 0x0000, D_080F7300 }, // 097
+    { &scene_slick_wheelie, &m_BGM_BOMB_07_seqData, 0x01, 25, 0x0000, D_080F72F0 }, // 098
+    { &scene_mario_clash, &m_BGM_BOMB_100_seqData, 0x01, 20, 0x0000, D_080F72E4 }, // 099
+    { &scene_chicken_pinch, &m_BGM_Monna_02_seqData, 0x01, 15, 0x0000, D_080F72D8 }, // 100
+    { &scene_mario_paint_fly_swatter, &m_BGM_BOMB_30_MPaint_seqData, 0x01, 25, 0x0000, D_080F72CC }, // 101
     { &D_083D58AC, &m_BGM_BOMB_75_seqData, 0x01, 10, 0x0000, D_080F72C0 }, // 102
-    { &D_083D59D0, &m_BGM_BOMB_19_seqData, 0x01, 15, 0x0000, D_080F72B4 }, // 103
-    { &D_083D5C28, &m_BGM_BOMB_20_seqData, 0x01, 25, 0x0000, D_080F72A8 }, // 104
-    { &D_083D5D58, &m_BGM_BOMB_77_seqData, 0x01, 25, 0x0000, D_080F72A0 }, // 105
-    { &D_083D5E74, &m_BGM_BOMB_103_seqData, 0x01, 10, 0x0000, D_080F7294 }, // 106
-    { &D_083D60B0, &m_BGM_BOMB_12_seqData, 0x01, 20, 0x0000, D_080F7288 }, // 107
-    { &D_083D61CC, &m_BGM_BOMB_96_seqData, 0x01, 30, 0x0000, D_080F7280 }, // 108
-    { &D_083D6324, &m_BGM_BOMB_79_seqData, 0x01, 15, 0x0000, D_080F7274 }, // 109
-    { &D_083D6438, &m_BGM_BOMB_28_DrMario_seqData, 0x01, 25, 0x0000, D_080F7268 }, // 110
-    { &D_083D6548, &m_BGM_BOMB_07_seqData, 0x01, 15, 0x0000, D_080F7260 }, // 111
-    { &D_083D66E4, &m_BGM_Monna_09_seqData, 0x01, 15, 0x0000, D_080F7258 }, // 112
-    { &D_083D6AD8, &m_BGM_BOMB_01_seqData, 0x01, 20, 0x0000, D_080F724C }, // 113
-    { &D_083D70A0, &m_BGM_BOMB_74_seqData, 0x01, 15, 0x0000, D_080F7244 }, // 114
-    { &D_083D78D0, &m_BGM_BOMB_27_Zelda1_seqData, 0x01, 20, 0x0000, D_080F7238 }, // 115
-    { &D_083D79E4, &m_BGM_BOMB_77_seqData, 0x01, 15, 0x0000, D_080F7228 }, // 116
-    { &D_083D7B20, &m_BGM_BOMB_64_seqData, 0x01, 10, 0x0000, D_080F7220 }, // 117
-    { &D_083D7D7C, &m_BGM_BOMB_63_seqData, 0x01, 10, 0x0000, D_080F7218 }, // 118
-    { &D_083D7EE8, &m_BGM_BOMB_69_seqData, 0x01, 25, 0x0000, D_080F7210 }, // 119
-    { &D_083D8094, &m_BGM_BOMB_66_seqData, 0x01, 20, 0x0000, D_080F7208 }, // 120
-    { &D_083D81C8, &m_BGM_BOMB_31_Mario_seqData, 0x01, 15, 0x0000, D_080F71FC }, // 121
-    { &D_083D839C, &m_BGM_BOMB_63_seqData, 0x01, 15, 0x0000, D_080F71F0 }, // 122
-    { &D_083D84BC, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F71E4 }, // 123
-    { &D_083D8C88, &m_BGM_BOMB_65_seqData, 0x01, 20, 0x0000, D_080F71D8 }, // 124
-    { &D_083D8FC4, &m_BGM_BOMB_69_seqData, 0x01, 30, 0x0000, D_080F71D0 }, // 125
-    { &D_083D90EC, &m_BGM_BOMB_67_seqData, 0x01, 25, 0x0000, D_080F71C8 }, // 126
-    { &D_083D920C, &m_BGM_BOMB_66_seqData, 0x01, 15, 0x0000, D_080F71C0 }, // 127
-    { &D_083D93B4, &m_BGM_BOMB_71_seqData, 0x01, 10, 0x0000, D_080F71B0 }, // 128
-    { &D_083D94FC, &m_x_BGM_BOMB_2bar_seqData, 0x01, 15, 0x0000, D_080F71A4 }, // 129
-    { &D_083D97CC, &m_BGM_BOMB_04_seqData, 0x01, 15, 0x0000, D_080F7194 }, // 130
-    { &D_083D99B8, &m_BGM_BOMB_62_seqData, 0x01, 15, 0x0000, D_080F7184 }, // 131
-    { &D_083D9ACC, &m_BGM_BOMB_70_seqData, 0x01, 10, 0x0000, D_080F7178 }, // 132
-    { &D_083D9CB8, &m_BGM_BOMB_67_seqData, 0x01, 15, 0x0000, D_080F716C }, // 133
-    { &D_083D9E90, &m_BGM_BOMB_63_seqData, 0x01, 30, 0x0000, D_080F7160 }, // 134
-    { &D_083DA624, &m_x_BGM_BOMB_2bar_seqData, 0x01, 15, 0x0000, D_080F7154 }, // 135
-    { &D_083DAA68, &m_BGM_BOMB_61_seqData, 0x01, 10, 0x0000, D_080F7148 }, // 136
-    { &D_083DABA0, &m_BGM_BOMB_61_seqData, 0x01, 20, 0x0000, D_080F7138 }, // 137
-    { &D_083DAF2C, &m_BGM_BOMB_71_seqData, 0x01, 10, 0x0000, D_080F7128 }, // 138
-    { &D_083DB594, &m_BGM_BOMB_63_seqData, 0x01, 20, 0x0000, D_080F7120 }, // 139
-    { &D_083DB694, &m_BGM_BOMB_70_seqData, 0x01, 15, 0x0000, D_080F7114 }, // 140
-    { &D_083DBA10, NULL, 0x01, 15, 0x0000, D_080F7108 }, // 141
-    { &D_083DBB94, &m_BGM_BOMB_09_seqData, 0x01, 15, 0x0000, D_080F70FC }, // 142
-    { &D_083DBCB8, &m_x_BGM_BOMB_2bar_seqData, 0x01, 10, 0x0000, D_080F70F4 }, // 143
-    { &D_083DBF14, &m_BGM_BOMB_67_seqData, 0x01, 25, 0x0000, D_080F70EC }, // 144
-    { &D_083DC13C, &m_BGM_BOMB_68_seqData, 0x01, 10, 0x0000, D_080F70DC }, // 145
-    { &D_083DC294, &m_BGM_BOMB_80_seqData, 0x01, 15, 0x0000, D_080F70D0 }, // 146
-    { &D_083DC3F8, &m_BGM_BOMB_62_seqData, 0x01, 20, 0x0000, D_080F70C8 }, // 147
-    { &D_083DC52C, &m_BGM_BOMB_17_seqData, 0x01, 25, 0x0000, D_080F70C0 }, // 148
-    { &D_083DCA1C, &m_BGM_BOMB_04_seqData, 0x01, 15, 0x0000, D_080F70B4 }, // 149
-    { &D_083DCB48, &m_BGM_BOMB_62_seqData, 0x01, 15, 0x0000, D_080F70A8 }, // 150
-    { &D_083DD134, &m_BGM_BOMB_62_seqData, 0x01, 10, 0x0000, D_080F70A0 }, // 151
-    { &D_083DD53C, &m_BGM_BOMB_70_seqData, 0x01, 20, 0x0000, D_080F7098 }, // 152
-    { &D_083DD67C, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F708C }, // 153
-    { &D_083DD7B0, &m_BGM_BOMB_69_seqData, 0x01, 25, 0x0000, D_080F7084 }, // 154
-    { &D_083DF348, &m_BGM_BOMB_73_seqData, 0x01, 10, 0x0000, D_080F7078 }, // 155
-    { &D_083DF4C0, &m_BGM_BOMB_67_seqData, 0x01, 20, 0x0000, D_080F7070 }, // 156
-    { &D_083DF6D0, &m_BGM_BOMB_64_seqData, 0x01, 10, 0x0000, D_080F7068 }, // 157
-    { &D_083DFC30, &m_BGM_BOMB_81_seqData, 0x01, 10, 0x0000, D_080F7060 }, // 158
-    { &D_083DFD58, &m_BGM_BOMB_61_seqData, 0x01, 15, 0x0000, D_080F7058 }, // 159
-    { &D_083E0084, &m_BGM_BOMB_24_seqData, 0x01, 20, 0x0000, D_080F7050 }, // 160
-    { &D_083E021C, &m_BGM_BOMB_61_seqData, 0x01, 10, 0x0000, D_080F7048 }, // 161
-    { &D_083E1BD8, &m_BGM_BOMB_81_seqData, 0x01, 20, 0x0000, D_080F7040 }, // 162
-    { &D_083E1E6C, &m_BGM_BOMB_63_seqData, 0x01, 15, 0x0000, D_080F7034 }, // 163
-    { &D_083E1F74, &m_BGM_BOMB_81_seqData, 0x01, 10, 0x0000, D_080F7024 }, // 164
-    { &D_083E20BC, &m_BGM_BOMB_62_seqData, 0x01, 10, 0x0000, D_080F701C }, // 165
-    { &D_083E2350, &m_BGM_BOMB_80_seqData, 0x01, 15, 0x0000, D_080F7014 }, // 166
-    { &D_083E24B4, &m_BGM_BOMB_95_seqData, 0x01, 10, 0x0000, D_080F7008 }, // 167
-    { &D_083E2FFC, &m_BGM_BOMB_72_seqData, 0x01, 15, 0x0000, D_080F7000 }, // 168
-    { &D_083E3148, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F6FF4 }, // 169
-    { &D_083E3288, &m_BGM_BOMB_87_seqData, 0x01, 15, 0x0000, D_080F6FEC }, // 170
-    { &D_083E3434, &m_BGM_BOMB_83_seqData, 0x01, 15, 0x0000, D_080F6FE0 }, // 171
-    { &D_083E3584, &m_BGM_BOMB_82_seqData, 0x01, 20, 0x0000, D_080F6FD8 }, // 172
-    { &D_083E36B0, &m_BGM_BOMB_80_seqData, 0x01, 20, 0x0000, D_080F6FCC }, // 173
-    { &D_083E381C, &m_BGM_BOMB_84_seqData, 0x01, 10, 0x0000, D_080F6FC4 }, // 174
-    { &D_083E3968, &m_BGM_BOMB_24_seqData, 0x01, 20, 0x0000, D_080F6FB4 }, // 175
-    { &D_083E3AD8, &m_BGM_BOMB_88_seqData, 0x01, 10, 0x0000, D_080F6FA8 }, // 176
-    { &D_083E5520, &m_BGM_BOMB_87_seqData, 0x01, 15, 0x0000, D_080F6F9C }, // 177
-    { &D_083E565C, &m_BGM_BOMB_76_seqData, 0x01, 10, 0x0000, D_080F6F94 }, // 178
-    { &D_083E5BE4, &m_BGM_BOMB_84_seqData, 0x01, 20, 0x0000, D_080F6F8C }, // 179
-    { &D_083E6570, &m_BGM_BOMB_76_seqData, 0x01, 20, 0x0000, D_080F6F80 }, // 180
-    { &D_083E6738, &m_x_BGM_BOMB_2bar_seqData, 0x01, 20, 0x0000, D_080F6F78 }, // 181
-    { &D_083E692C, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F6F6C }, // 182
-    { &D_083E82B0, &m_BGM_BOMB_80_seqData, 0x01, 25, 0x0000, D_080F6F64 }, // 183
-    { &D_083E8424, &m_BGM_BOMB_85_seqData, 0x01, 10, 0x0000, D_080F6F5C }, // 184
-    { &D_083E8558, &m_BGM_BOMB_89_seqData, 0x01, 20, 0x0000, D_080F6F50 }, // 185
-    { &D_083E8940, &m_BGM_BOMB_70_seqData, 0x01, 15, 0x0000, D_080F6F48 }, // 186
-    { &D_083E8B04, &m_BGM_BOMB_94_seqData, 0x01, 10, 0x0000, D_080F6F3C }, // 187
-    { &D_083E8C00, &m_BGM_BOMB_82_seqData, 0x01, 20, 0x0000, D_080F6F38 }, // 188
-    { &D_083E8F18, &m_BGM_BOMB_87_seqData, 0x01, 10, 0x0000, D_080F6F2C }, // 189
-    { &D_083EB660, &m_BGM_BOMB_93_seqData, 0x01, 20, 0x0000, D_080F6F24 }, // 190
-    { &D_083CE42C, &m_BGM_BOMB_48_seqData, 0x02, 20, 0x0000, D_080F6F14 }, // 191
-    { &D_083CEB84, &m_BGM_BOMB_53_seqData, 0x02, 10, 0x0000, D_080F6F04 }, // 192
-    { &D_083CF4D0, &m_BGM_BOMB_52_seqData, 0x02, 20, 0x0000, D_080F6EF8 }, // 193
-    { &D_083D03E0, &m_BGM_BOMB_57_seqData, 0x02, 20, 0x0000, D_080F6EE8 }, // 194
-    { &D_083D284C, &m_BGM_BOMB_36_seqData, 0x02, 30, 0x0000, D_080F6EDC }, // 195
-    { &D_083D7250, &m_BGM_BOMB_38_seqData, 0x02, 30, 0x0000, D_080F6ED4 }, // 196
-    { &D_083D7C5C, &m_BGM_BOMB_41_seqData, 0x02, 25, 0x0000, D_080F6EC8 }, // 197
-    { &D_083D8B68, &m_BGM_BOMB_51_seqData, 0x02, 15, 0x0000, D_080F6EC0 }, // 198
-    { &D_083D8E44, &m_BGM_BOMB_44_seqData, 0x02, 25, 0x0000, D_080F6EB4 }, // 199
-    { &D_083D698C, &m_BGM_BOMB_37_seqData, 0x02, 10, 0x0000, D_080F6EAC }, // 200
-    { &D_083DA498, &m_BGM_BOMB_50_seqData, 0x02, 30, 0x0000, D_080F6E9C }, // 201
-    { &D_083CDD9C, &m_BGM_BOMB_43_seqData, 0x02, 20, 0x0000, D_080F6E90 }, // 202
-    { &D_083DB108, &m_BGM_BOMB_39_seqData, 0x02, 15, 0x0000, D_080F6E84 }, // 203
-    { &D_083DB40C, &m_BGM_BOMB_59_seqData, 0x02, 15, 0x0000, D_080F6E78 }, // 204
-    { &D_083DC6B0, &m_BGM_BOMB_46_seqData, 0x02, 25, 0x0000, D_080F6E6C }, // 205
-    { &D_083DD3D4, &m_BGM_BOMB_42_seqData, 0x02, 20, 0x0000, D_080F6E60 }, // 206
-    { &D_083DD294, &m_BGM_BOMB_40_seqData, 0x02, 15, 0x0000, D_080F6E54 }, // 207
-    { &D_083DFB10, &m_BGM_BOMB_58_seqData, 0x02, 20, 0x0000, D_080F6E48 }, // 208
-    { &D_083DFF48, &m_BGM_BOMB_56_seqData, 0x02, 10, 0x0000, D_080F6E40 }, // 209
-    { &D_083E19BC, &m_BGM_BOMB_55_seqData, 0x02, 10, 0x0000, D_080F6E34 }, // 210
-    { &D_083E1D08, &m_BGM_BOMB_54_seqData, 0x02, 15, 0x0000, D_080F6E28 }, // 211
-    { &D_083D1878, &m_BGM_BOMB_59_seqData, 0x02, 20, 0x0000, D_080F6E14 }, // 212
-    { &D_083D20A4, &m_BGM_BOMB_60_seqData, 0x02, 25, 0x0000, D_080F6E00 }, // 213
-    { &D_083E87E4, &m_BGM_BOMB_90_seqData, 0x02, 20, 0x0000, D_080F6DF4 }, // 214
-    { &D_083D0190, NULL, 0x04, 5, 0x0000, D_080F6DE0 }, // 215
+    { &scene_mars_jars, &m_BGM_BOMB_19_seqData, 0x01, 15, 0x0000, D_080F72B4 }, // 103
+    { &scene_super_fly, &m_BGM_BOMB_20_seqData, 0x01, 25, 0x0000, D_080F72A8 }, // 104
+    { &scene_noodle_rama, &m_BGM_BOMB_77_seqData, 0x01, 25, 0x0000, D_080F72A0 }, // 105
+    { &scene_racing_112, &m_BGM_BOMB_103_seqData, 0x01, 10, 0x0000, D_080F7294 }, // 106
+    { &scene_word_up, &m_BGM_BOMB_12_seqData, 0x01, 20, 0x0000, D_080F7288 }, // 107
+    { &scene_metroid, &m_BGM_BOMB_96_seqData, 0x01, 30, 0x0000, D_080F7280 }, // 108
+    { &scene_fries_with_that, &m_BGM_BOMB_79_seqData, 0x01, 15, 0x0000, D_080F7274 }, // 109
+    { &scene_dr_mario, &m_BGM_BOMB_28_DrMario_seqData, 0x01, 25, 0x0000, D_080F7268 }, // 110
+    { &scene_disc_odog, &m_BGM_BOMB_07_seqData, 0x01, 15, 0x0000, D_080F7260 }, // 111
+    { &scene_wario_wear, &m_BGM_Monna_09_seqData, 0x01, 15, 0x0000, D_080F7258 }, // 112
+    { &scene_ninja_pipe_cleaner, &m_BGM_BOMB_01_seqData, 0x01, 20, 0x0000, D_080F724C }, // 113
+    { &scene_sheriff, &m_BGM_BOMB_74_seqData, 0x01, 15, 0x0000, D_080F7244 }, // 114
+    { &scene_the_legend_of_zelda, &m_BGM_BOMB_27_Zelda1_seqData, 0x01, 20, 0x0000, D_080F7238 }, // 115
+    { &scene_douse_the_house, &m_BGM_BOMB_77_seqData, 0x01, 15, 0x0000, D_080F7228 }, // 116
+    { &scene_sole_man, &m_BGM_BOMB_64_seqData, 0x01, 10, 0x0000, D_080F7220 }, // 117
+    { &scene_mirror_mirror, &m_BGM_BOMB_63_seqData, 0x01, 10, 0x0000, D_080F7218 }, // 118
+    { &scene_banana_munch, &m_BGM_BOMB_69_seqData, 0x01, 25, 0x0000, D_080F7210 }, // 119
+    { &scene_worm_squirm, &m_BGM_BOMB_66_seqData, 0x01, 20, 0x0000, D_080F7208 }, // 120
+    { &scene_super_mario_bros, &m_BGM_BOMB_31_Mario_seqData, 0x01, 15, 0x0000, D_080F71FC }, // 121
+    { &scene_kitty_cover, &m_BGM_BOMB_63_seqData, 0x01, 15, 0x0000, D_080F71F0 }, // 122
+    { &scene_the_claw, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F71E4 }, // 123
+    { &scene_nighttime_allergies, &m_BGM_BOMB_65_seqData, 0x01, 20, 0x0000, D_080F71D8 }, // 124
+    { &scene_hard_core, &m_BGM_BOMB_69_seqData, 0x01, 30, 0x0000, D_080F71D0 }, // 125
+    { &scene_the_brush_off, &m_BGM_BOMB_67_seqData, 0x01, 25, 0x0000, D_080F71C8 }, // 126
+    { &scene_paddle_parade, &m_BGM_BOMB_66_seqData, 0x01, 15, 0x0000, D_080F71C0 }, // 127
+    { &scene_wrong_way_highway, &m_BGM_BOMB_71_seqData, 0x01, 10, 0x0000, D_080F71B0 }, // 128
+    { &scene_boom_box, &m_x_BGM_BOMB_2bar_seqData, 0x01, 15, 0x0000, D_080F71A4 }, // 129
+    { &scene_ninja_vision, &m_BGM_BOMB_04_seqData, 0x01, 15, 0x0000, D_080F7194 }, // 130
+    { &scene_spunky_monkey, &m_BGM_BOMB_62_seqData, 0x01, 15, 0x0000, D_080F7184 }, // 131
+    { &scene_toast_the_ghosts, &m_BGM_BOMB_70_seqData, 0x01, 10, 0x0000, D_080F7178 }, // 132
+    { &scene_ultra_hand, &m_BGM_BOMB_67_seqData, 0x01, 15, 0x0000, D_080F716C }, // 133
+    { &scene_set_n_spike, &m_BGM_BOMB_63_seqData, 0x01, 30, 0x0000, D_080F7160 }, // 134
+    { &scene_city_surfer, &m_x_BGM_BOMB_2bar_seqData, 0x01, 15, 0x0000, D_080F7154 }, // 135
+    { &scene_crack_down, &m_BGM_BOMB_61_seqData, 0x01, 10, 0x0000, D_080F7148 }, // 136
+    { &scene_butterfly_stroke, &m_BGM_BOMB_61_seqData, 0x01, 20, 0x0000, D_080F7138 }, // 137
+    { &scene_snowboard_slalom, &m_BGM_BOMB_71_seqData, 0x01, 10, 0x0000, D_080F7128 }, // 138
+    { &scene_whoop_de_doodle, &m_BGM_BOMB_63_seqData, 0x01, 20, 0x0000, D_080F7120 }, // 139
+    { &scene_raging_rhino, &m_BGM_BOMB_70_seqData, 0x01, 15, 0x0000, D_080F7114 }, // 140
+    { &scene_cymbalism, NULL, 0x01, 15, 0x0000, D_080F7108 }, // 141
+    { &scene_mashin_martians, &m_BGM_BOMB_09_seqData, 0x01, 15, 0x0000, D_080F70FC }, // 142
+    { &scene_raaaarrrrggghh, &m_x_BGM_BOMB_2bar_seqData, 0x01, 10, 0x0000, D_080F70F4 }, // 143
+    { &scene_quickie_quiz, &m_BGM_BOMB_67_seqData, 0x01, 25, 0x0000, D_080F70EC }, // 144
+    { &scene_veg_out, &m_BGM_BOMB_68_seqData, 0x01, 10, 0x0000, D_080F70DC }, // 145
+    { &scene_body_block, &m_BGM_BOMB_80_seqData, 0x01, 15, 0x0000, D_080F70D0 }, // 146
+    { &scene_berry_berry_good, &m_BGM_BOMB_62_seqData, 0x01, 20, 0x0000, D_080F70C8 }, // 147
+    { &scene_funky_fountain, &m_BGM_BOMB_17_seqData, 0x01, 25, 0x0000, D_080F70C0 }, // 148
+    { &scene_stick_and_move, &m_BGM_BOMB_04_seqData, 0x01, 15, 0x0000, D_080F70B4 }, // 149
+    { &scene_cheeky_monkey, &m_BGM_BOMB_62_seqData, 0x01, 15, 0x0000, D_080F70A8 }, // 150
+    { &scene_cat_nap, &m_BGM_BOMB_62_seqData, 0x01, 10, 0x0000, D_080F70A0 }, // 151
+    { &scene_assembly_line, &m_BGM_BOMB_70_seqData, 0x01, 20, 0x0000, D_080F7098 }, // 152
+    { &scene_crane_game, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F708C }, // 153
+    { &scene_whats_your_beef, &m_BGM_BOMB_69_seqData, 0x01, 25, 0x0000, D_080F7084 }, // 154
+    { &scene_wario_bros, &m_BGM_BOMB_73_seqData, 0x01, 10, 0x0000, D_080F7078 }, // 155
+    { &scene_pod_pinch, &m_BGM_BOMB_67_seqData, 0x01, 20, 0x0000, D_080F7070 }, // 156
+    { &scene_blow_hole_bridge, &m_BGM_BOMB_64_seqData, 0x01, 10, 0x0000, D_080F7068 }, // 157
+    { &scene_hot_dog_hog, &m_BGM_BOMB_81_seqData, 0x01, 10, 0x0000, D_080F7060 }, // 158
+    { &scene_two_birds_big_rocks, &m_BGM_BOMB_61_seqData, 0x01, 15, 0x0000, D_080F7058 }, // 159
+    { &scene_shingle_smasher, &m_BGM_BOMB_24_seqData, 0x01, 20, 0x0000, D_080F7050 }, // 160
+    { &scene_wario_pinball, &m_BGM_BOMB_61_seqData, 0x01, 10, 0x0000, D_080F7048 }, // 161
+    { &scene_down_and_outie, &m_BGM_BOMB_81_seqData, 0x01, 20, 0x0000, D_080F7040 }, // 162
+    { &scene_laser_vision, &m_BGM_BOMB_63_seqData, 0x01, 15, 0x0000, D_080F7034 }, // 163
+    { &scene_thumb_wrestling, &m_BGM_BOMB_81_seqData, 0x01, 10, 0x0000, D_080F7024 }, // 164
+    { &scene_hasty_pastry, &m_BGM_BOMB_62_seqData, 0x01, 10, 0x0000, D_080F701C }, // 165
+    { &scene_wario_facial, &m_BGM_BOMB_80_seqData, 0x01, 15, 0x0000, D_080F7014 }, // 166
+    { &scene_grow_wario_grow, &m_BGM_BOMB_95_seqData, 0x01, 10, 0x0000, D_080F7008 }, // 167
+    { &scene_shake, &m_BGM_BOMB_72_seqData, 0x01, 15, 0x0000, D_080F7000 }, // 168
+    { &scene_wario_windsock, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F6FF4 }, // 169
+    { &scene_loot_scoot, &m_BGM_BOMB_87_seqData, 0x01, 15, 0x0000, D_080F6FEC }, // 170
+    { &scene_float_your_boat, &m_BGM_BOMB_83_seqData, 0x01, 15, 0x0000, D_080F6FE0 }, // 171
+    { &scene_vermin, &m_BGM_BOMB_82_seqData, 0x01, 20, 0x0000, D_080F6FD8 }, // 172
+    { &scene_mix_and_match, &m_BGM_BOMB_80_seqData, 0x01, 20, 0x0000, D_080F6FCC }, // 173
+    { &scene_bug_birdie, &m_BGM_BOMB_84_seqData, 0x01, 10, 0x0000, D_080F6FC4 }, // 174
+    { &scene_apple_shrapnel, &m_BGM_BOMB_24_seqData, 0x01, 20, 0x0000, D_080F6FB4 }, // 175
+    { &scene_airpain, &m_BGM_BOMB_88_seqData, 0x01, 10, 0x0000, D_080F6FA8 }, // 176
+    { &scene_unexcite_bike, &m_BGM_BOMB_87_seqData, 0x01, 15, 0x0000, D_080F6F9C }, // 177
+    { &scene_rock_paper_scissors, &m_BGM_BOMB_76_seqData, 0x01, 10, 0x0000, D_080F6F94 }, // 178
+    { &scene_spoon_spectacular, &m_BGM_BOMB_84_seqData, 0x01, 20, 0x0000, D_080F6F8C }, // 179
+    { &scene_high_treeson, &m_BGM_BOMB_76_seqData, 0x01, 20, 0x0000, D_080F6F80 }, // 180
+    { &scene_leafy_greens, &m_x_BGM_BOMB_2bar_seqData, 0x01, 20, 0x0000, D_080F6F78 }, // 181
+    { &scene_rough_puff, &m_BGM_BOMB_68_seqData, 0x01, 15, 0x0000, D_080F6F6C }, // 182
+    { &scene_make_my_clay, &m_BGM_BOMB_80_seqData, 0x01, 25, 0x0000, D_080F6F64 }, // 183
+    { &scene_wario_kendo, &m_BGM_BOMB_85_seqData, 0x01, 10, 0x0000, D_080F6F5C }, // 184
+    { &scene_sinking_feeling, &m_BGM_BOMB_89_seqData, 0x01, 20, 0x0000, D_080F6F50 }, // 185
+    { &scene_kettle_mettle, &m_BGM_BOMB_70_seqData, 0x01, 15, 0x0000, D_080F6F48 }, // 186
+    { &scene_ice_climber, &m_BGM_BOMB_94_seqData, 0x01, 10, 0x0000, D_080F6F3C }, // 187
+    { &scene_game_boy, &m_BGM_BOMB_82_seqData, 0x01, 20, 0x0000, D_080F6F38 }, // 188
+    { &scene_produce_pandemonium, &m_BGM_BOMB_87_seqData, 0x01, 10, 0x0000, D_080F6F2C }, // 189
+    { &scene_f_zero, &m_BGM_BOMB_93_seqData, 0x01, 20, 0x0000, D_080F6F24 }, // 190
+    { &scene_noodle_cup, &m_BGM_BOMB_48_seqData, 0x02, 20, 0x0000, D_080F6F14 }, // 191
+    { &scene_odd_man_out, &m_BGM_BOMB_53_seqData, 0x02, 10, 0x0000, D_080F6F04 }, // 192
+    { &scene_petri_panic, &m_BGM_BOMB_52_seqData, 0x02, 20, 0x0000, D_080F6EF8 }, // 193
+    { &scene_electric_groove_fish, &m_BGM_BOMB_57_seqData, 0x02, 20, 0x0000, D_080F6EE8 }, // 194
+    { &scene_identity_crisis, &m_BGM_BOMB_36_seqData, 0x02, 30, 0x0000, D_080F6EDC }, // 195
+    { &scene_sphinx_hijinks, &m_BGM_BOMB_38_seqData, 0x02, 30, 0x0000, D_080F6ED4 }, // 196
+    { &scene_strength_in_numbers, &m_BGM_BOMB_41_seqData, 0x02, 25, 0x0000, D_080F6EC8 }, // 197
+    { &scene_long_lost_love, &m_BGM_BOMB_51_seqData, 0x02, 15, 0x0000, D_080F6EC0 }, // 198
+    { &scene_button_masher, &m_BGM_BOMB_44_seqData, 0x02, 25, 0x0000, D_080F6EB4 }, // 199
+    { &scene_gear_head_fred, &m_BGM_BOMB_37_seqData, 0x02, 10, 0x0000, D_080F6EAC }, // 200
+    { &scene_the_great_cover_cup, &m_BGM_BOMB_50_seqData, 0x02, 30, 0x0000, D_080F6E9C }, // 201
+    { &scene_getcha_groove_on, &m_BGM_BOMB_43_seqData, 0x02, 20, 0x0000, D_080F6E90 }, // 202
+    { &scene_catterwall, &m_BGM_BOMB_39_seqData, 0x02, 15, 0x0000, D_080F6E84 }, // 203
+    { &scene_whats_the_toadal, &m_BGM_BOMB_59_seqData, 0x02, 15, 0x0000, D_080F6E78 }, // 204
+    { &scene_tip_the_scale, &m_BGM_BOMB_46_seqData, 0x02, 25, 0x0000, D_080F6E6C }, // 205
+    { &scene_four_leaf_hover, &m_BGM_BOMB_42_seqData, 0x02, 20, 0x0000, D_080F6E60 }, // 206
+    { &scene_find_my_behind, &m_BGM_BOMB_40_seqData, 0x02, 15, 0x0000, D_080F6E54 }, // 207
+    { &scene_focus_pocus, &m_BGM_BOMB_58_seqData, 0x02, 20, 0x0000, D_080F6E48 }, // 208
+    { &scene_cavity_calamity, &m_BGM_BOMB_56_seqData, 0x02, 10, 0x0000, D_080F6E40 }, // 209
+    { &scene_the_real_mccoy, &m_BGM_BOMB_55_seqData, 0x02, 10, 0x0000, D_080F6E34 }, // 210
+    { &scene_matchboxes, &m_BGM_BOMB_54_seqData, 0x02, 15, 0x0000, D_080F6E28 }, // 211
+    { &scene_praise_or_haze_ii, &m_BGM_BOMB_59_seqData, 0x02, 20, 0x0000, D_080F6E14 }, // 212
+    { &scene_code_buster, &m_BGM_BOMB_60_seqData, 0x02, 25, 0x0000, D_080F6E00 }, // 213
+    { &scene_garage_rock, &m_BGM_BOMB_90_seqData, 0x02, 20, 0x0000, D_080F6DF4 }, // 214
+    { &scene_ultra_machine, NULL, 0x04, 5, 0x0000, D_080F6DE0 }, // 215
     { &scene_crazy_cars, &m_x_BGM_BOMB_2bar_seqData, 0x04, 5, 0x0000, D_080F6DCC }, // 216
-    { &D_083D442C, NULL, 0x04, 5, 0x0000, D_080F6DC0 }, // 217
-    { &D_083D7750, NULL, 0x04, 5, 0x0000, D_080F6DB4 }, // 218
-    { &D_083DA384, NULL, 0x04, 5, 0x0000, D_080F6DA8 }, // 219
-    { &D_083DB2AC, NULL, 0x04, 5, 0x0000, D_080F6D94 }, // 220
-    { &D_083DDA64, NULL, 0x04, 5, 0x0000, D_080F6D80 }, // 221
+    { &scene_punch_out, NULL, 0x04, 5, 0x0000, D_080F6DC0 }, // 217
+    { &scene_nail_call, NULL, 0x04, 5, 0x0000, D_080F6DB4 }, // 218
+    { &scene_galaxy_2003, NULL, 0x04, 5, 0x0000, D_080F6DA8 }, // 219
+    { &scene_sparring_wario, NULL, 0x04, 5, 0x0000, D_080F6D94 }, // 220
+    { &scene_dungeon_dilemma, NULL, 0x04, 5, 0x0000, D_080F6D80 }, // 221
     { &scene_crazy_cars, NULL, 0x04, 5, 0x0000, D_080F6D6C }, // 222
-    { &D_083E73B0, NULL, 0x04, 5, 0x0000, D_080F6D58 }, // 223
-    { &D_083E28FC, NULL, 0x04, 5, 0x0000, D_080F6D48 }, // 224
-    { &D_083E445C, NULL, 0x04, 5, 0x0000, D_080F6D38 }, // 225
+    { &scene_the_frog_flap, NULL, 0x04, 5, 0x0000, D_080F6D58 }, // 223
+    { &scene_alien_laser_hero, NULL, 0x04, 5, 0x0000, D_080F6D48 }, // 224
+    { &scene_warios_adventure, NULL, 0x04, 5, 0x0000, D_080F6D38 }, // 225
     { &D_083D7124, NULL, 0x04, 10, 0x0000, D_080F6D2C }, // 226
     { &D_083DA81C, NULL, 0x04, 10, 0x0000, D_080F6D20 }, // 227
     { &D_083D5788, NULL, 0x04, 10, 0x0000, D_080F6D10 }, // 228
