@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_cat_nap at 0x083DD134
+struct scene_cat_nap
+    /* Start  */ .word func_080AAB88, 0x00000000
+    /* Paused */ .word func_080AAC70, 0x00000000
+    /* Update */ .word func_080AABF8, 0x00000000
+    /* Stop   */ .word func_080AAC74, 0x00000000
+    /* Script */ .word 0x083DD0B0
+endstruct
+
+.incbin "microgames/cat_nap/cat_nap.bin", 36, 316

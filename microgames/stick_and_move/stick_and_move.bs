@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_stick_and_move at 0x083DCA1C
+struct scene_stick_and_move
+    /* Start  */ .word func_080A5514, 0x00000000
+    /* Paused */ .word func_080A5864, 0x00000000
+    /* Update */ .word func_080A5854, 0x00000000
+    /* Stop   */ .word func_080A5868, 0x00000000
+    /* Script */ .word 0x083DC770
+endstruct
+
+.incbin "microgames/stick_and_move/stick_and_move.bin", 36, 264

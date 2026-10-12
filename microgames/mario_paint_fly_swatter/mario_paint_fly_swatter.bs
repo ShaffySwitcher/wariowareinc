@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mario_paint_fly_swatter at 0x083D56F8
+struct scene_mario_paint_fly_swatter
+    /* Start  */ .word func_08066848, 0x00000000
+    /* Paused */ .word func_0806707C, 0x00000000
+    /* Update */ .word func_08067040, 0x00000000
+    /* Stop   */ .word func_08067080, 0x00000000
+    /* Script */ .word 0x083D568C
+endstruct
+
+.incbin "microgames/mario_paint_fly_swatter/mario_paint_fly_swatter.bin", 36, 692

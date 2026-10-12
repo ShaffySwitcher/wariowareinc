@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_high_treeson at 0x083E6570
+struct scene_high_treeson
+    /* Start  */ .word func_080DCD6C, 0x00000000
+    /* Paused */ .word func_080DD3A8, 0x00000000
+    /* Update */ .word func_080DD394, 0x00000000
+    /* Stop   */ .word func_080DD3AC, 0x00000000
+    /* Script */ .word 0x083E6504
+endstruct
+
+.incbin "microgames/high_treeson/high_treeson.bin", 36, 420

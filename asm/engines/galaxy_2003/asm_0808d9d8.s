@@ -1,0 +1,71 @@
+/* Generated from asm/asm_0808d9d8.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0808D9D8 \n\
+/* 0808D9D8 */ PUSH {R4, LR} \n\
+/* 0808D9DA */ ADDS R2, R0, #0 \n\
+/* 0808D9DC */ LDR R1, _0808DA10 \n\
+/* 0808D9DE */ LDR R3, [R1] \n\
+/* 0808D9E0 */ MOVS R4, #0XCF \n\
+/* 0808D9E2 */ LSLS R4, R4, #4 \n\
+/* 0808D9E4 */ ADDS R1, R3, R4 \n\
+/* 0808D9E6 */ LDRH R1, [R1] \n\
+/* 0808D9E8 */ LSRS R1, R1, #8 \n\
+/* 0808D9EA */ ADDS R4, R1, #0 \n\
+/* 0808D9EC */ LSLS R2, R2, #0X10 \n\
+/* 0808D9EE */ ASRS R2, R2, #0X10 \n\
+/* 0808D9F0 */ CMP R2, #0 \n\
+/* 0808D9F2 */ BNE _0808DA1C \n\
+/* 0808D9F4 */ LDR R2, _0808DA14 \n\
+/* 0808D9F6 */ ADDS R0, R3, R2 \n\
+/* 0808D9F8 */ LDR R0, [R0] \n\
+/* 0808D9FA */ LDR R2, _0808DA18 \n\
+/* 0808D9FC */ LSLS R1, R1, #1 \n\
+/* 0808D9FE */ ADDS R1, R2 \n\
+/* 0808DA00 */ MOVS R4, #0 \n\
+/* 0808DA02 */ LDRSH R1, [R1, R4] \n\
+/* 0808DA04 */ LSLS R1, R1, #4 \n\
+/* 0808DA06 */ ADDS R0, R1 \n\
+/* 0808DA08 */ LSLS R0, R0, #0X10 \n\
+/* 0808DA0A */ ASRS R0, R0, #0X10 \n\
+/* 0808DA0C */ B _0808DA3C \n\
+ \n\
+.balign 4, 0 \n\
+_0808DA10: \n\
+/* 0808DA10 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0808DA14: \n\
+/* 0808DA14 */ .word 0x00000D0C \n\
+ \n\
+.balign 4, 0 \n\
+_0808DA18: \n\
+/* 0808DA18 */ .word gSineTable \n\
+_0808DA1C: \n\
+/* 0808DA1C */ CMP R2, #1 \n\
+/* 0808DA1E */ BNE _0808DA3C \n\
+/* 0808DA20 */ MOVS R1, #0XD1 \n\
+/* 0808DA22 */ LSLS R1, R1, #4 \n\
+/* 0808DA24 */ ADDS R0, R3, R1 \n\
+/* 0808DA26 */ LDR R0, [R0] \n\
+/* 0808DA28 */ LDR R2, =gSineTable \n\
+/* 0808DA2A */ LSLS R1, R4, #0X19 \n\
+/* 0808DA2C */ LSRS R1, R1, #0X17 \n\
+/* 0808DA2E */ ADDS R1, R2 \n\
+/* 0808DA30 */ MOVS R2, #0 \n\
+/* 0808DA32 */ LDRSH R1, [R1, R2] \n\
+/* 0808DA34 */ LSLS R1, R1, #4 \n\
+/* 0808DA36 */ ADDS R0, R1 \n\
+/* 0808DA38 */ LSLS R0, R0, #0X10 \n\
+/* 0808DA3A */ ASRS R0, R0, #0X10 \n\
+_0808DA3C: \n\
+/* 0808DA3C */ POP {R4} \n\
+/* 0808DA3E */ POP {R1} \n\
+/* 0808DA40 */ BX R1 \n\
+ \n\
+.balign 4, 0 \n\
+_0808DA44: \n\
+/* 0808DA44 */ @ literal emitted by .ltorg for '=...'  \n\
+.ltorg \n\
+.syntax divided");
+

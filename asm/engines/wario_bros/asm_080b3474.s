@@ -1,0 +1,105 @@
+/* Generated from asm/asm_080b3474.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080B3474 \n\
+/* 080B3474 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080B3476 */ ADDS R4, R0, #0 \n\
+/* 080B3478 */ ADDS R5, R1, #0 \n\
+/* 080B347A */ LDR R1, [R5, #0X38] \n\
+/* 080B347C */ CMP R1, #0 \n\
+/* 080B347E */ BGE _080B34B0 \n\
+/* 080B3480 */ LDR R3, [R4, #0X38] \n\
+/* 080B3482 */ CMP R3, #0 \n\
+/* 080B3484 */ BLE _080B34B0 \n\
+/* 080B3486 */ RSBS R2, R1, #0 \n\
+/* 080B3488 */ CMP R2, R3 \n\
+/* 080B348A */ BLE _080B349C \n\
+/* 080B348C */ ASRS R2, R2, #1 \n\
+/* 080B348E */ LDR R1, [R5, #4] \n\
+/* 080B3490 */ LDR R3, _080B3498 \n\
+/* 080B3492 */ ADDS R1, R3 \n\
+/* 080B3494 */ STR R1, [R4, #4] \n\
+/* 080B3496 */ B _080B34A8 \n\
+ \n\
+.balign 4, 0 \n\
+_080B3498: \n\
+/* 080B3498 */ .word 0xFFFFF000 \n\
+_080B349C: \n\
+/* 080B349C */ ASRS R2, R3, #1 \n\
+/* 080B349E */ LDR R1, [R4, #4] \n\
+/* 080B34A0 */ MOVS R7, #0X80 \n\
+/* 080B34A2 */ LSLS R7, R7, #5 \n\
+/* 080B34A4 */ ADDS R1, R7 \n\
+/* 080B34A6 */ STR R1, [R5, #4] \n\
+_080B34A8: \n\
+/* 080B34A8 */ RSBS R1, R2, #0 \n\
+/* 080B34AA */ STR R1, [R4, #0X38] \n\
+/* 080B34AC */ STR R2, [R5, #0X38] \n\
+/* 080B34AE */ B _080B350E \n\
+_080B34B0: \n\
+/* 080B34B0 */ LDR R6, [R5, #0X38] \n\
+/* 080B34B2 */ LDR R3, [R4, #0X38] \n\
+/* 080B34B4 */ CMP R6, #0 \n\
+/* 080B34B6 */ BLE _080B34E8 \n\
+/* 080B34B8 */ CMP R3, #0 \n\
+/* 080B34BA */ BGE _080B34E8 \n\
+/* 080B34BC */ RSBS R2, R3, #0 \n\
+/* 080B34BE */ CMP R2, R6 \n\
+/* 080B34C0 */ BLE _080B34D4 \n\
+/* 080B34C2 */ ASRS R2, R2, #1 \n\
+/* 080B34C4 */ LDR R1, [R4, #4] \n\
+/* 080B34C6 */ LDR R3, _080B34D0 \n\
+/* 080B34C8 */ ADDS R1, R3 \n\
+/* 080B34CA */ STR R1, [R5, #4] \n\
+/* 080B34CC */ B _080B34E0 \n\
+ \n\
+.balign 4, 0 \n\
+_080B34D0: \n\
+/* 080B34D0 */ .word 0xFFFFF000 \n\
+_080B34D4: \n\
+/* 080B34D4 */ ASRS R2, R6, #1 \n\
+/* 080B34D6 */ LDR R1, [R5, #4] \n\
+/* 080B34D8 */ MOVS R7, #0X80 \n\
+/* 080B34DA */ LSLS R7, R7, #5 \n\
+/* 080B34DC */ ADDS R1, R7 \n\
+/* 080B34DE */ STR R1, [R4, #4] \n\
+_080B34E0: \n\
+/* 080B34E0 */ STR R2, [R4, #0X38] \n\
+/* 080B34E2 */ RSBS R1, R2, #0 \n\
+/* 080B34E4 */ STR R1, [R5, #0X38] \n\
+/* 080B34E6 */ B _080B350E \n\
+_080B34E8: \n\
+/* 080B34E8 */ LDR R2, [R5, #4] \n\
+/* 080B34EA */ LDR R1, [R4, #4] \n\
+/* 080B34EC */ CMP R2, R1 \n\
+/* 080B34EE */ BLE _080B34FC \n\
+/* 080B34F0 */ LDR R7, _080B34F8 \n\
+/* 080B34F2 */ ADDS R1, R2, R7 \n\
+/* 080B34F4 */ STR R1, [R4, #4] \n\
+/* 080B34F6 */ B _080B3502 \n\
+ \n\
+.balign 4, 0 \n\
+_080B34F8: \n\
+/* 080B34F8 */ .word 0xFFFFF000 \n\
+_080B34FC: \n\
+/* 080B34FC */ LDR R2, _080B3514 \n\
+/* 080B34FE */ ADDS R1, R2 \n\
+/* 080B3500 */ STR R1, [R5, #4] \n\
+_080B3502: \n\
+/* 080B3502 */ ADDS R1, R6, R3 \n\
+/* 080B3504 */ LSRS R2, R1, #0X1F \n\
+/* 080B3506 */ ADDS R1, R2 \n\
+/* 080B3508 */ ASRS R2, R1, #1 \n\
+/* 080B350A */ STR R2, [R5, #0X38] \n\
+/* 080B350C */ STR R2, [R4, #0X38] \n\
+_080B350E: \n\
+/* 080B350E */ POP {R4, R5, R6, R7} \n\
+/* 080B3510 */ POP {R1} \n\
+/* 080B3512 */ BX R1 \n\
+ \n\
+.balign 4, 0 \n\
+_080B3514: \n\
+/* 080B3514 */ .word 0xFFFFF000 \n\
+.ltorg \n\
+.syntax divided");
+

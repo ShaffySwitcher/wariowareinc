@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hogans_alley at 0x083D2CF0
+struct scene_hogans_alley
+    /* Start  */ .word func_0804D888, 0x00000000
+    /* Paused */ .word func_0804E580, 0x00000000
+    /* Update */ .word func_0804DE20, 0x00000000
+    /* Stop   */ .word func_0804E594, 0x00000000
+    /* Script */ .word 0x083D2C84
+endstruct
+
+.incbin "microgames/hogans_alley/hogans_alley.bin", 36, 356

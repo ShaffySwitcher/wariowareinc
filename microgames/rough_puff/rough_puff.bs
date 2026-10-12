@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_rough_puff at 0x083E692C
+struct scene_rough_puff
+    /* Start  */ .word func_080DE304, 0x00000000
+    /* Paused */ .word func_080DE584, 0x00000000
+    /* Update */ .word func_080DE58C, 0x00000000
+    /* Stop   */ .word func_080DE588, 0x00000000
+    /* Script */ .word 0x083E68C0
+endstruct
+
+.incbin "microgames/rough_puff/rough_puff.bin", 36, 2656

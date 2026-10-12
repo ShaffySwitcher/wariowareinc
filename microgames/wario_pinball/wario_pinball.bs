@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wario_pinball at 0x083E021C
+struct scene_wario_pinball
+    /* Start  */ .word func_080BA8E4, 0x00000000
+    /* Paused */ .word func_080BA9D0, 0x00000000
+    /* Update */ .word func_080BA968, 0x00000000
+    /* Stop   */ .word func_080BA9D4, 0x00000000
+    /* Script */ .word 0x083E0198
+endstruct
+
+.incbin "microgames/wario_pinball/wario_pinball.bin", 36, 6012

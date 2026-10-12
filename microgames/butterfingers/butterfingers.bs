@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_butterfingers at 0x083D21D0
+struct scene_butterfingers
+    /* Start  */ .word func_08048A08, 0x00000000
+    /* Paused */ .word func_08048ED8, 0x00000000
+    /* Update */ .word func_08048EB4, 0x00000000
+    /* Stop   */ .word func_08048EEC, 0x00000000
+    /* Script */ .word 0x083D2164
+endstruct
+
+.incbin "microgames/butterfingers/butterfingers.bin", 36, 264

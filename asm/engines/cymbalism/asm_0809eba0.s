@@ -1,0 +1,549 @@
+/* Generated from asm/asm_0809eba0.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0809EBA0 \n\
+/* 0809EBA0 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0809EBA2 */ MOV R7, SB \n\
+/* 0809EBA4 */ MOV R6, R8 \n\
+/* 0809EBA6 */ PUSH {R6, R7} \n\
+/* 0809EBA8 */ SUB SP, #0X18 \n\
+/* 0809EBAA */ BL get_current_mem_id \n\
+/* 0809EBAE */ LSLS R0, R0, #0X10 \n\
+/* 0809EBB0 */ LSRS R0, R0, #0X10 \n\
+/* 0809EBB2 */ LDR R1, _0809EC90 \n\
+/* 0809EBB4 */ MOVS R2, #0X80 \n\
+/* 0809EBB6 */ LSLS R2, R2, #6 \n\
+/* 0809EBB8 */ BL start_load_gfx_table_task \n\
+/* 0809EBBC */ MOVS R0, #0 \n\
+/* 0809EBBE */ BL scene_set_video_mode \n\
+/* 0809EBC2 */ MOVS R0, #1 \n\
+/* 0809EBC4 */ BL scene_show_bg_layer \n\
+/* 0809EBC8 */ MOVS R0, #2 \n\
+/* 0809EBCA */ BL scene_show_bg_layer \n\
+/* 0809EBCE */ MOVS R0, #3 \n\
+/* 0809EBD0 */ BL scene_hide_bg_layer \n\
+/* 0809EBD4 */ MOVS R0, #1 \n\
+/* 0809EBD6 */ MOVS R1, #0 \n\
+/* 0809EBD8 */ MOVS R2, #0 \n\
+/* 0809EBDA */ BL scene_set_bg_layer_pos \n\
+/* 0809EBDE */ MOVS R0, #2 \n\
+/* 0809EBE0 */ MOVS R1, #0 \n\
+/* 0809EBE2 */ MOVS R2, #0 \n\
+/* 0809EBE4 */ BL scene_set_bg_layer_pos \n\
+/* 0809EBE8 */ MOVS R0, #1 \n\
+/* 0809EBEA */ MOVS R1, #2 \n\
+/* 0809EBEC */ MOVS R2, #0X1D \n\
+/* 0809EBEE */ MOVS R3, #1 \n\
+/* 0809EBF0 */ BL scene_set_bg_layer_controls \n\
+/* 0809EBF4 */ MOVS R0, #2 \n\
+/* 0809EBF6 */ MOVS R1, #0 \n\
+/* 0809EBF8 */ MOVS R2, #0X1E \n\
+/* 0809EBFA */ MOVS R3, #2 \n\
+/* 0809EBFC */ BL scene_set_bg_layer_controls \n\
+/* 0809EC00 */ MOVS R0, #0 \n\
+/* 0809EC02 */ BL func_0800A0C4 \n\
+/* 0809EC06 */ LDR R4, _0809EC94 \n\
+/* 0809EC08 */ LDR R3, [R4] \n\
+/* 0809EC0A */ MOVS R0, #0XA1 \n\
+/* 0809EC0C */ LSLS R0, R0, #1 \n\
+/* 0809EC0E */ ADDS R2, R3, R0 \n\
+/* 0809EC10 */ MOVS R1, #0 \n\
+/* 0809EC12 */ MOVS R0, #0 \n\
+/* 0809EC14 */ STRH R0, [R2] \n\
+/* 0809EC16 */ MOVS R2, #0XA5 \n\
+/* 0809EC18 */ LSLS R2, R2, #1 \n\
+/* 0809EC1A */ ADDS R0, R3, R2 \n\
+/* 0809EC1C */ STRB R1, [R0] \n\
+/* 0809EC1E */ LDR R0, [R4] \n\
+/* 0809EC20 */ MOVS R5, #0XA6 \n\
+/* 0809EC22 */ LSLS R5, R5, #1 \n\
+/* 0809EC24 */ ADDS R0, R5 \n\
+/* 0809EC26 */ STRB R1, [R0] \n\
+/* 0809EC28 */ LDR R0, [R4] \n\
+/* 0809EC2A */ ADDS R2, #3 \n\
+/* 0809EC2C */ ADDS R0, R2 \n\
+/* 0809EC2E */ STRB R1, [R0] \n\
+/* 0809EC30 */ LDR R0, [R4] \n\
+/* 0809EC32 */ SUBS R5, #1 \n\
+/* 0809EC34 */ ADDS R0, R5 \n\
+/* 0809EC36 */ STRB R1, [R0] \n\
+/* 0809EC38 */ LDR R0, [R4] \n\
+/* 0809EC3A */ ADDS R2, #3 \n\
+/* 0809EC3C */ ADDS R0, R2 \n\
+/* 0809EC3E */ STRB R1, [R0] \n\
+/* 0809EC40 */ LDR R0, [R4] \n\
+/* 0809EC42 */ ADDS R5, #3 \n\
+/* 0809EC44 */ ADDS R0, R5 \n\
+/* 0809EC46 */ STRB R1, [R0] \n\
+/* 0809EC48 */ LDR R0, [R4] \n\
+/* 0809EC4A */ SUBS R2, #1 \n\
+/* 0809EC4C */ ADDS R0, R2 \n\
+/* 0809EC4E */ STRB R1, [R0] \n\
+/* 0809EC50 */ LDR R0, [R4] \n\
+/* 0809EC52 */ ADDS R5, #3 \n\
+/* 0809EC54 */ ADDS R0, R5 \n\
+/* 0809EC56 */ STRB R1, [R0] \n\
+/* 0809EC58 */ LDR R2, [R4] \n\
+/* 0809EC5A */ MOVS R0, #0X9C \n\
+/* 0809EC5C */ LSLS R0, R0, #8 \n\
+/* 0809EC5E */ STR R0, [R2, #4] \n\
+/* 0809EC60 */ MOVS R0, #0XBC \n\
+/* 0809EC62 */ LSLS R0, R0, #8 \n\
+/* 0809EC64 */ STR R0, [R2, #0XC] \n\
+/* 0809EC66 */ MOVS R0, #0X90 \n\
+/* 0809EC68 */ LSLS R0, R0, #7 \n\
+/* 0809EC6A */ STR R0, [R2, #8] \n\
+/* 0809EC6C */ STR R0, [R2, #0X10] \n\
+/* 0809EC6E */ MOVS R1, #0X80 \n\
+/* 0809EC70 */ STRB R1, [R2, #0X14] \n\
+/* 0809EC72 */ LDR R0, [R4] \n\
+/* 0809EC74 */ STRB R1, [R0, #0X15] \n\
+/* 0809EC76 */ LDR R0, [R4] \n\
+/* 0809EC78 */ STRB R1, [R0, #0X16] \n\
+/* 0809EC7A */ LDR R0, _0809EC98 \n\
+/* 0809EC7C */ LDR R0, [R0] \n\
+/* 0809EC7E */ ADDS R1, #0XF4 \n\
+/* 0809EC80 */ ADDS R0, R1 \n\
+/* 0809EC82 */ LDRB R0, [R0] \n\
+/* 0809EC84 */ CMP R0, #0 \n\
+/* 0809EC86 */ BNE _0809EC9C \n\
+/* 0809EC88 */ LDR R0, [R4] \n\
+/* 0809EC8A */ ADDS R0, #0X98 \n\
+/* 0809EC8C */ MOVS R1, #1 \n\
+/* 0809EC8E */ B _0809ECAE \n\
+ \n\
+.balign 4, 0 \n\
+_0809EC90: \n\
+/* 0809EC90 */ .word D_083DB7B8 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EC94: \n\
+/* 0809EC94 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809EC98: \n\
+/* 0809EC98 */ .word gCurrentSceneData \n\
+_0809EC9C: \n\
+/* 0809EC9C */ CMP R0, #1 \n\
+/* 0809EC9E */ BNE _0809ECA8 \n\
+/* 0809ECA0 */ LDR R0, [R4] \n\
+/* 0809ECA2 */ ADDS R0, #0X98 \n\
+/* 0809ECA4 */ MOVS R1, #3 \n\
+/* 0809ECA6 */ B _0809ECAE \n\
+_0809ECA8: \n\
+/* 0809ECA8 */ LDR R0, [R4] \n\
+/* 0809ECAA */ ADDS R0, #0X98 \n\
+/* 0809ECAC */ MOVS R1, #4 \n\
+_0809ECAE: \n\
+/* 0809ECAE */ STRB R1, [R0] \n\
+/* 0809ECB0 */ MOVS R6, #0 \n\
+/* 0809ECB2 */ LDR R1, _0809ED04 \n\
+/* 0809ECB4 */ LDR R0, [R1] \n\
+/* 0809ECB6 */ ADDS R0, #0X98 \n\
+/* 0809ECB8 */ LDRB R0, [R0] \n\
+/* 0809ECBA */ CMP R6, R0 \n\
+/* 0809ECBC */ BHS _0809ECE8 \n\
+/* 0809ECBE */ ADDS R4, R1, #0 \n\
+/* 0809ECC0 */ MOVS R5, #0 \n\
+_0809ECC2: \n\
+/* 0809ECC2 */ BL func_08001AC0 \n\
+/* 0809ECC6 */ LDR R1, [R4] \n\
+/* 0809ECC8 */ ADDS R1, #0X24 \n\
+/* 0809ECCA */ ADDS R1, R6 \n\
+/* 0809ECCC */ STRB R0, [R1] \n\
+/* 0809ECCE */ LDR R2, [R4] \n\
+/* 0809ECD0 */ LSLS R1, R6, #1 \n\
+/* 0809ECD2 */ ADDS R0, R2, #0 \n\
+/* 0809ECD4 */ ADDS R0, #0X5A \n\
+/* 0809ECD6 */ ADDS R0, R1 \n\
+/* 0809ECD8 */ STRH R5, [R0] \n\
+/* 0809ECDA */ ADDS R0, R6, #1 \n\
+/* 0809ECDC */ LSLS R0, R0, #0X18 \n\
+/* 0809ECDE */ LSRS R6, R0, #0X18 \n\
+/* 0809ECE0 */ ADDS R2, #0X98 \n\
+/* 0809ECE2 */ LDRB R2, [R2] \n\
+/* 0809ECE4 */ CMP R6, R2 \n\
+/* 0809ECE6 */ BLO _0809ECC2 \n\
+_0809ECE8: \n\
+/* 0809ECE8 */ LDR R0, _0809ED08 \n\
+/* 0809ECEA */ LDR R0, [R0] \n\
+/* 0809ECEC */ MOVS R2, #0XBA \n\
+/* 0809ECEE */ LSLS R2, R2, #1 \n\
+/* 0809ECF0 */ ADDS R0, R2 \n\
+/* 0809ECF2 */ LDRB R0, [R0] \n\
+/* 0809ECF4 */ CMP R0, #0 \n\
+/* 0809ECF6 */ BNE _0809ED10 \n\
+/* 0809ECF8 */ LDR R2, _0809ED04 \n\
+/* 0809ECFA */ LDR R1, [R2] \n\
+/* 0809ECFC */ LDR R0, _0809ED0C \n\
+/* 0809ECFE */ STR R0, [R1, #0X68] \n\
+/* 0809ED00 */ B _0809ED50 \n\
+ \n\
+.balign 4, 0 \n\
+_0809ED04: \n\
+/* 0809ED04 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809ED08: \n\
+/* 0809ED08 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_0809ED0C: \n\
+/* 0809ED0C */ .word 0xFFFFFA00 \n\
+_0809ED10: \n\
+/* 0809ED10 */ CMP R0, #1 \n\
+/* 0809ED12 */ BNE _0809ED34 \n\
+/* 0809ED14 */ LDR R2, _0809ED2C \n\
+/* 0809ED16 */ LDR R1, [R2] \n\
+/* 0809ED18 */ MOVS R0, #0XA8 \n\
+/* 0809ED1A */ LSLS R0, R0, #6 \n\
+/* 0809ED1C */ STR R0, [R1, #0X68] \n\
+/* 0809ED1E */ MOVS R0, #0X90 \n\
+/* 0809ED20 */ LSLS R0, R0, #5 \n\
+/* 0809ED22 */ STR R0, [R1, #0X70] \n\
+/* 0809ED24 */ LDR R0, _0809ED30 \n\
+/* 0809ED26 */ STR R0, [R1, #0X78] \n\
+/* 0809ED28 */ B _0809ED50 \n\
+ \n\
+.balign 4, 0 \n\
+_0809ED2C: \n\
+/* 0809ED2C */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809ED30: \n\
+/* 0809ED30 */ .word 0xFFFFFA00 \n\
+_0809ED34: \n\
+/* 0809ED34 */ LDR R2, _0809EF40 \n\
+/* 0809ED36 */ LDR R1, [R2] \n\
+/* 0809ED38 */ MOVS R0, #0X84 \n\
+/* 0809ED3A */ LSLS R0, R0, #7 \n\
+/* 0809ED3C */ STR R0, [R1, #0X68] \n\
+/* 0809ED3E */ MOVS R0, #0XA8 \n\
+/* 0809ED40 */ LSLS R0, R0, #6 \n\
+/* 0809ED42 */ STR R0, [R1, #0X70] \n\
+/* 0809ED44 */ MOVS R0, #0X90 \n\
+/* 0809ED46 */ LSLS R0, R0, #5 \n\
+/* 0809ED48 */ STR R0, [R1, #0X78] \n\
+/* 0809ED4A */ ADDS R1, #0X80 \n\
+/* 0809ED4C */ LDR R0, _0809EF44 \n\
+/* 0809ED4E */ STR R0, [R1] \n\
+_0809ED50: \n\
+/* 0809ED50 */ ADDS R7, R2, #0 \n\
+/* 0809ED52 */ LDR R0, [R7] \n\
+/* 0809ED54 */ ADDS R0, #0X99 \n\
+/* 0809ED56 */ MOVS R4, #0 \n\
+/* 0809ED58 */ STRB R4, [R0] \n\
+/* 0809ED5A */ LDR R0, [R7] \n\
+/* 0809ED5C */ MOVS R5, #0X9E \n\
+/* 0809ED5E */ LSLS R5, R5, #1 \n\
+/* 0809ED60 */ ADDS R0, R5 \n\
+/* 0809ED62 */ STRB R4, [R0] \n\
+/* 0809ED64 */ LDR R0, [R7] \n\
+/* 0809ED66 */ LDR R1, _0809EF48 \n\
+/* 0809ED68 */ ADDS R0, R1 \n\
+/* 0809ED6A */ STRB R4, [R0] \n\
+/* 0809ED6C */ LDR R5, _0809EF4C \n\
+/* 0809ED6E */ LDR R0, [R5] \n\
+/* 0809ED70 */ LDR R1, _0809EF50 \n\
+/* 0809ED72 */ LDR R2, [R7] \n\
+/* 0809ED74 */ LDR R3, [R2, #4] \n\
+/* 0809ED76 */ LSLS R3, R3, #8 \n\
+/* 0809ED78 */ ASRS R3, R3, #0X10 \n\
+/* 0809ED7A */ LDR R2, [R2, #8] \n\
+/* 0809ED7C */ LSLS R2, R2, #8 \n\
+/* 0809ED7E */ ASRS R2, R2, #0X10 \n\
+/* 0809ED80 */ STR R2, [SP] \n\
+/* 0809ED82 */ LDR R2, _0809EF54 \n\
+/* 0809ED84 */ STR R2, [SP, #4] \n\
+/* 0809ED86 */ STR R4, [SP, #8] \n\
+/* 0809ED88 */ STR R4, [SP, #0XC] \n\
+/* 0809ED8A */ STR R4, [SP, #0X10] \n\
+/* 0809ED8C */ MOVS R2, #0 \n\
+/* 0809ED8E */ BL sprite_create \n\
+/* 0809ED92 */ LDR R2, [R7] \n\
+/* 0809ED94 */ STRH R0, [R2] \n\
+/* 0809ED96 */ LDR R0, [R5] \n\
+/* 0809ED98 */ LDR R1, _0809EF58 \n\
+/* 0809ED9A */ LDR R3, [R2, #0XC] \n\
+/* 0809ED9C */ LSLS R3, R3, #8 \n\
+/* 0809ED9E */ ASRS R3, R3, #0X10 \n\
+/* 0809EDA0 */ LDR R2, [R2, #0X10] \n\
+/* 0809EDA2 */ LSLS R2, R2, #8 \n\
+/* 0809EDA4 */ ASRS R2, R2, #0X10 \n\
+/* 0809EDA6 */ STR R2, [SP] \n\
+/* 0809EDA8 */ LDR R2, _0809EF5C \n\
+/* 0809EDAA */ STR R2, [SP, #4] \n\
+/* 0809EDAC */ STR R4, [SP, #8] \n\
+/* 0809EDAE */ STR R4, [SP, #0XC] \n\
+/* 0809EDB0 */ STR R4, [SP, #0X10] \n\
+/* 0809EDB2 */ MOVS R2, #0 \n\
+/* 0809EDB4 */ BL sprite_create \n\
+/* 0809EDB8 */ LDR R1, [R7] \n\
+/* 0809EDBA */ STRH R0, [R1, #2] \n\
+/* 0809EDBC */ MOVS R6, #0 \n\
+/* 0809EDBE */ ADDS R1, #0X98 \n\
+/* 0809EDC0 */ LDRB R1, [R1] \n\
+/* 0809EDC2 */ CMP R6, R1 \n\
+/* 0809EDC4 */ BHS _0809EE84 \n\
+/* 0809EDC6 */ MOV SB, R5 \n\
+/* 0809EDC8 */ MOVS R2, #0X80 \n\
+/* 0809EDCA */ LSLS R2, R2, #1 \n\
+/* 0809EDCC */ MOV R8, R2 \n\
+_0809EDCE: \n\
+/* 0809EDCE */ MOV R4, SB \n\
+/* 0809EDD0 */ LDR R0, [R4] \n\
+/* 0809EDD2 */ LDR R4, [R7] \n\
+/* 0809EDD4 */ LSLS R5, R6, #3 \n\
+/* 0809EDD6 */ ADDS R1, R4, #0 \n\
+/* 0809EDD8 */ ADDS R1, #0X68 \n\
+/* 0809EDDA */ ADDS R1, R5 \n\
+/* 0809EDDC */ LDR R2, [R1] \n\
+/* 0809EDDE */ ASRS R2, R2, #8 \n\
+/* 0809EDE0 */ LSLS R3, R2, #0X10 \n\
+/* 0809EDE2 */ ASRS R3, R3, #0X10 \n\
+/* 0809EDE4 */ LDR R1, _0809EF60 \n\
+/* 0809EDE6 */ ADDS R2, R1 \n\
+/* 0809EDE8 */ LDRB R1, [R2] \n\
+/* 0809EDEA */ STR R1, [SP] \n\
+/* 0809EDEC */ LDR R1, _0809EF64 \n\
+/* 0809EDEE */ STR R1, [SP, #4] \n\
+/* 0809EDF0 */ MOVS R1, #0 \n\
+/* 0809EDF2 */ STR R1, [SP, #8] \n\
+/* 0809EDF4 */ STR R1, [SP, #0XC] \n\
+/* 0809EDF6 */ STR R1, [SP, #0X10] \n\
+/* 0809EDF8 */ ADDS R4, #0X24 \n\
+/* 0809EDFA */ ADDS R4, R6 \n\
+/* 0809EDFC */ MOVS R1, #0 \n\
+/* 0809EDFE */ LDRSB R1, [R4, R1] \n\
+/* 0809EE00 */ LSLS R1, R1, #9 \n\
+/* 0809EE02 */ STR R1, [SP, #0X14] \n\
+/* 0809EE04 */ LDR R1, _0809EF68 \n\
+/* 0809EE06 */ MOVS R2, #0 \n\
+/* 0809EE08 */ BL sprite_create_w_attr \n\
+/* 0809EE0C */ LDR R2, [R7] \n\
+/* 0809EE0E */ LSLS R4, R6, #1 \n\
+/* 0809EE10 */ ADDS R1, R2, #0 \n\
+/* 0809EE12 */ ADDS R1, #0X18 \n\
+/* 0809EE14 */ ADDS R1, R4 \n\
+/* 0809EE16 */ STRH R0, [R1] \n\
+/* 0809EE18 */ ADDS R0, R2, #0 \n\
+/* 0809EE1A */ ADDS R0, #0X24 \n\
+/* 0809EE1C */ ADDS R0, R6 \n\
+/* 0809EE1E */ LDRB R0, [R0] \n\
+/* 0809EE20 */ LSLS R0, R0, #0X18 \n\
+/* 0809EE22 */ ASRS R0, R0, #0X18 \n\
+/* 0809EE24 */ ADDS R2, #0X5A \n\
+/* 0809EE26 */ ADDS R2, R4 \n\
+/* 0809EE28 */ LDRH R2, [R2] \n\
+/* 0809EE2A */ ADD R2, R8 \n\
+/* 0809EE2C */ LSLS R2, R2, #0X10 \n\
+/* 0809EE2E */ ASRS R2, R2, #0X10 \n\
+/* 0809EE30 */ ADDS R1, R2, #0 \n\
+/* 0809EE32 */ MOVS R3, #0 \n\
+/* 0809EE34 */ BL func_08001C08 \n\
+/* 0809EE38 */ ADDS R5, #0X2A \n\
+/* 0809EE3A */ LDR R1, [R7] \n\
+/* 0809EE3C */ ADDS R0, R1, R5 \n\
+/* 0809EE3E */ ADDS R1, #0X5A \n\
+/* 0809EE40 */ ADDS R1, R4 \n\
+/* 0809EE42 */ LDRH R2, [R1] \n\
+/* 0809EE44 */ ADD R2, R8 \n\
+/* 0809EE46 */ LSLS R2, R2, #0X10 \n\
+/* 0809EE48 */ ASRS R2, R2, #0X10 \n\
+/* 0809EE4A */ ADDS R1, R2, #0 \n\
+/* 0809EE4C */ MOVS R3, #0 \n\
+/* 0809EE4E */ BL func_08001CD0 \n\
+/* 0809EE52 */ MOV R1, SB \n\
+/* 0809EE54 */ LDR R0, [R1] \n\
+/* 0809EE56 */ LDR R3, [R7] \n\
+/* 0809EE58 */ ADDS R1, R3, #0 \n\
+/* 0809EE5A */ ADDS R1, #0X18 \n\
+/* 0809EE5C */ ADDS R1, R4 \n\
+/* 0809EE5E */ MOVS R2, #0 \n\
+/* 0809EE60 */ LDRSH R1, [R1, R2] \n\
+/* 0809EE62 */ ADDS R2, R3, #0 \n\
+/* 0809EE64 */ ADDS R2, #0X24 \n\
+/* 0809EE66 */ ADDS R2, R6 \n\
+/* 0809EE68 */ LDRB R2, [R2] \n\
+/* 0809EE6A */ LSLS R2, R2, #0X18 \n\
+/* 0809EE6C */ ASRS R2, R2, #0X18 \n\
+/* 0809EE6E */ ADDS R3, R5 \n\
+/* 0809EE70 */ BL sprite_set_affine_params \n\
+/* 0809EE74 */ ADDS R0, R6, #1 \n\
+/* 0809EE76 */ LSLS R0, R0, #0X18 \n\
+/* 0809EE78 */ LSRS R6, R0, #0X18 \n\
+/* 0809EE7A */ LDR R0, [R7] \n\
+/* 0809EE7C */ ADDS R0, #0X98 \n\
+/* 0809EE7E */ LDRB R0, [R0] \n\
+/* 0809EE80 */ CMP R6, R0 \n\
+/* 0809EE82 */ BLO _0809EDCE \n\
+_0809EE84: \n\
+/* 0809EE84 */ BL func_0809EF90 \n\
+/* 0809EE88 */ MOVS R6, #0 \n\
+/* 0809EE8A */ LDR R5, _0809EF4C \n\
+/* 0809EE8C */ MOVS R4, #0 \n\
+_0809EE8E: \n\
+/* 0809EE8E */ LDR R0, [R5] \n\
+/* 0809EE90 */ STR R4, [SP] \n\
+/* 0809EE92 */ LDR R1, _0809EF6C \n\
+/* 0809EE94 */ STR R1, [SP, #4] \n\
+/* 0809EE96 */ STR R4, [SP, #8] \n\
+/* 0809EE98 */ STR R4, [SP, #0XC] \n\
+/* 0809EE9A */ STR R4, [SP, #0X10] \n\
+/* 0809EE9C */ LDR R1, _0809EF70 \n\
+/* 0809EE9E */ MOVS R2, #0 \n\
+/* 0809EEA0 */ MOVS R3, #0 \n\
+/* 0809EEA2 */ BL sprite_create \n\
+/* 0809EEA6 */ LDR R7, _0809EF40 \n\
+/* 0809EEA8 */ LDR R1, [R7] \n\
+/* 0809EEAA */ LSLS R2, R6, #1 \n\
+/* 0809EEAC */ ADDS R1, #0X9A \n\
+/* 0809EEAE */ ADDS R1, R2 \n\
+/* 0809EEB0 */ STRH R0, [R1] \n\
+/* 0809EEB2 */ LDR R0, [R5] \n\
+/* 0809EEB4 */ MOVS R2, #0 \n\
+/* 0809EEB6 */ LDRSH R1, [R1, R2] \n\
+/* 0809EEB8 */ MOVS R2, #0 \n\
+/* 0809EEBA */ BL sprite_set_visible \n\
+/* 0809EEBE */ ADDS R0, R6, #1 \n\
+/* 0809EEC0 */ LSLS R0, R0, #0X18 \n\
+/* 0809EEC2 */ LSRS R6, R0, #0X18 \n\
+/* 0809EEC4 */ CMP R6, #0XF \n\
+/* 0809EEC6 */ BLS _0809EE8E \n\
+/* 0809EEC8 */ LDR R5, _0809EF4C \n\
+/* 0809EECA */ LDR R0, [R5] \n\
+/* 0809EECC */ LDR R1, _0809EF74 \n\
+/* 0809EECE */ LDR R2, _0809EF78 \n\
+/* 0809EED0 */ MOVS R4, #0 \n\
+/* 0809EED2 */ LDRSH R3, [R2, R4] \n\
+/* 0809EED4 */ MOVS R4, #2 \n\
+/* 0809EED6 */ LDRSH R2, [R2, R4] \n\
+/* 0809EED8 */ STR R2, [SP] \n\
+/* 0809EEDA */ LDR R2, _0809EF7C \n\
+/* 0809EEDC */ STR R2, [SP, #4] \n\
+/* 0809EEDE */ MOVS R4, #0 \n\
+/* 0809EEE0 */ STR R4, [SP, #8] \n\
+/* 0809EEE2 */ STR R4, [SP, #0XC] \n\
+/* 0809EEE4 */ STR R4, [SP, #0X10] \n\
+/* 0809EEE6 */ MOVS R2, #0 \n\
+/* 0809EEE8 */ BL sprite_create \n\
+/* 0809EEEC */ LDR R1, [R7] \n\
+/* 0809EEEE */ MOVS R2, #0X9F \n\
+/* 0809EEF0 */ LSLS R2, R2, #1 \n\
+/* 0809EEF2 */ ADDS R1, R2 \n\
+/* 0809EEF4 */ STRH R0, [R1] \n\
+/* 0809EEF6 */ LDR R0, [R5] \n\
+/* 0809EEF8 */ LDR R1, _0809EF80 \n\
+/* 0809EEFA */ LDR R2, _0809EF84 \n\
+/* 0809EEFC */ MOVS R5, #0 \n\
+/* 0809EEFE */ LDRSH R3, [R2, R5] \n\
+/* 0809EF00 */ MOVS R5, #2 \n\
+/* 0809EF02 */ LDRSH R2, [R2, R5] \n\
+/* 0809EF04 */ STR R2, [SP] \n\
+/* 0809EF06 */ LDR R2, _0809EF88 \n\
+/* 0809EF08 */ STR R2, [SP, #4] \n\
+/* 0809EF0A */ MOVS R2, #1 \n\
+/* 0809EF0C */ STR R2, [SP, #8] \n\
+/* 0809EF0E */ STR R2, [SP, #0XC] \n\
+/* 0809EF10 */ STR R4, [SP, #0X10] \n\
+/* 0809EF12 */ BL sprite_create \n\
+/* 0809EF16 */ LDR R1, [R7] \n\
+/* 0809EF18 */ MOVS R2, #0XA0 \n\
+/* 0809EF1A */ LSLS R2, R2, #1 \n\
+/* 0809EF1C */ ADDS R1, R2 \n\
+/* 0809EF1E */ STRH R0, [R1] \n\
+/* 0809EF20 */ LDR R4, =D_083DB824 \n\
+/* 0809EF22 */ BL get_current_language \n\
+/* 0809EF26 */ LSLS R0, R0, #2 \n\
+/* 0809EF28 */ ADDS R0, R4 \n\
+/* 0809EF2A */ LDR R0, [R0] \n\
+/* 0809EF2C */ BL func_0800BB74 \n\
+/* 0809EF30 */ ADD SP, #0X18 \n\
+/* 0809EF32 */ POP {R3, R4} \n\
+/* 0809EF34 */ MOV R8, R3 \n\
+/* 0809EF36 */ MOV SB, R4 \n\
+/* 0809EF38 */ POP {R4, R5, R6, R7} \n\
+/* 0809EF3A */ POP {R0} \n\
+/* 0809EF3C */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF8C: \n\
+/* 0809EF8C */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF40: \n\
+/* 0809EF40 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF44: \n\
+/* 0809EF44 */ .word 0xFFFFFA00 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF48: \n\
+/* 0809EF48 */ .word 0x0000013D \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF4C: \n\
+/* 0809EF4C */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF50: \n\
+/* 0809EF50 */ .word D_0837DFAC \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF54: \n\
+/* 0809EF54 */ .word 0x0000401E \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF58: \n\
+/* 0809EF58 */ .word D_0837DF94 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF5C: \n\
+/* 0809EF5C */ .word 0x00004014 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF60: \n\
+/* 0809EF60 */ .word D_083DB6B8 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF64: \n\
+/* 0809EF64 */ .word 0x00008007 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF68: \n\
+/* 0809EF68 */ .word D_0837DF5C \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF6C: \n\
+/* 0809EF6C */ .word 0x0000400A \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF70: \n\
+/* 0809EF70 */ .word D_0837E01C \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF74: \n\
+/* 0809EF74 */ .word D_0837DFEC \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF78: \n\
+/* 0809EF78 */ .word D_08759EB8 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF7C: \n\
+/* 0809EF7C */ .word 0x00008014 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF80: \n\
+/* 0809EF80 */ .word D_0837E004 \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF84: \n\
+/* 0809EF84 */ .word D_08759EBC \n\
+ \n\
+.balign 4, 0 \n\
+_0809EF88: \n\
+/* 0809EF88 */ .word 0x0000800A \n\
+.ltorg \n\
+.syntax divided");

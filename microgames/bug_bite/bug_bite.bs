@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_bug_bite at 0x083D0E84
+struct scene_bug_bite
+    /* Start  */ .word func_08043CE0, 0x00000000
+    /* Paused */ .word func_0804446C, 0x00000000
+    /* Update */ .word func_08044458, 0x00000000
+    /* Stop   */ .word func_08044480, 0x00000000
+    /* Script */ .word 0x083D0E18
+endstruct
+
+.incbin "microgames/bug_bite/bug_bite.bin", 36, 260

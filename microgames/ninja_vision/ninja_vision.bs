@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ninja_vision at 0x083D97CC
+struct scene_ninja_vision
+    /* Start  */ .word func_08085E54, 0x00000000
+    /* Paused */ .word func_080862C8, 0x00000000
+    /* Update */ .word func_080862B8, 0x00000000
+    /* Stop   */ .word func_080862CC, 0x00000000
+    /* Script */ .word 0x083D961C
+endstruct
+
+.incbin "microgames/ninja_vision/ninja_vision.bin", 36, 456

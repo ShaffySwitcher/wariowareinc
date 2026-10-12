@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_punch_out at 0x083D442C
+struct scene_punch_out
+    /* Start  */ .word func_080580B4, 0x00000000
+    /* Paused */ .word func_080597A4, 0x00000000
+    /* Update */ .word func_080596EC, 0x00000000
+    /* Stop   */ .word func_080597A8, 0x00000000
+    /* Script */ .word 0x083D4330
+endstruct
+
+.incbin "microgames/punch_out/punch_out.bin", 36, 216

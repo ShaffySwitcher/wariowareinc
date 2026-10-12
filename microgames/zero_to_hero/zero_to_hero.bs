@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_zero_to_hero at 0x083CCFC0
+struct scene_zero_to_hero
+    /* Start  */ .word func_0802CA88, 0x00000000
+    /* Paused */ .word func_0802CDF0, 0x00000000
+    /* Update */ .word func_0802CCA0, 0x00000000
+    /* Stop   */ .word func_0802CDFC, 0x00000000
+    /* Script */ .word 0x083CCF54
+endstruct
+
+.incbin "microgames/zero_to_hero/zero_to_hero.bin", 36, 208

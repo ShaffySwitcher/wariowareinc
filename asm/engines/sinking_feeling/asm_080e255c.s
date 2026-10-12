@@ -1,0 +1,88 @@
+/* Generated from asm/asm_080e255c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080E255C \n\
+/* 080E255C */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080E255E */ MOV R7, SB \n\
+/* 080E2560 */ MOV R6, R8 \n\
+/* 080E2562 */ PUSH {R6, R7} \n\
+/* 080E2564 */ LDR R0, _080E25EC \n\
+/* 080E2566 */ LDR R0, [R0] \n\
+/* 080E2568 */ ADDS R7, R0, #0 \n\
+/* 080E256A */ ADDS R7, #0X28 \n\
+/* 080E256C */ LDR R0, _080E25F0 \n\
+/* 080E256E */ MOV SB, R0 \n\
+/* 080E2570 */ MOVS R1, #7 \n\
+/* 080E2572 */ MOV R8, R1 \n\
+_080E2574: \n\
+/* 080E2574 */ LDR R2, [R7, #0XC] \n\
+/* 080E2576 */ LDR R0, [R7, #0X10] \n\
+/* 080E2578 */ ADDS R2, R0 \n\
+/* 080E257A */ STR R2, [R7, #0XC] \n\
+/* 080E257C */ MOV R3, SB \n\
+/* 080E257E */ LDR R0, [R3] \n\
+/* 080E2580 */ MOVS R3, #4 \n\
+/* 080E2582 */ LDRSH R1, [R7, R3] \n\
+/* 080E2584 */ LSLS R2, R2, #8 \n\
+/* 080E2586 */ ASRS R2, R2, #0X10 \n\
+/* 080E2588 */ BL sprite_set_y \n\
+/* 080E258C */ LDR R1, [R7, #0XC] \n\
+/* 080E258E */ LDR R0, _080E25F4 \n\
+/* 080E2590 */ CMP R1, R0 \n\
+/* 080E2592 */ BGT _080E25D2 \n\
+/* 080E2594 */ MOVS R0, #0X11 \n\
+/* 080E2596 */ BL get_random_range \n\
+/* 080E259A */ LSLS R0, R0, #0X10 \n\
+/* 080E259C */ LSRS R0, R0, #8 \n\
+/* 080E259E */ MOVS R1, #0XC0 \n\
+/* 080E25A0 */ LSLS R1, R1, #8 \n\
+/* 080E25A2 */ ADDS R0, R1 \n\
+/* 080E25A4 */ STR R0, [R7, #0XC] \n\
+/* 080E25A6 */ MOV R3, SB \n\
+/* 080E25A8 */ LDR R5, [R3] \n\
+/* 080E25AA */ MOVS R0, #4 \n\
+/* 080E25AC */ LDRSH R6, [R7, R0] \n\
+/* 080E25AE */ MOVS R0, #0X10 \n\
+/* 080E25B0 */ BL get_random_range \n\
+/* 080E25B4 */ ADDS R4, R0, #0 \n\
+/* 080E25B6 */ MOVS R0, #0X11 \n\
+/* 080E25B8 */ BL get_random_range \n\
+/* 080E25BC */ ADDS R2, R0, #0 \n\
+/* 080E25BE */ LSLS R4, R4, #0X10 \n\
+/* 080E25C0 */ LSRS R4, R4, #0XC \n\
+/* 080E25C2 */ ADDS R2, R4 \n\
+/* 080E25C4 */ SUBS R2, #8 \n\
+/* 080E25C6 */ LSLS R2, R2, #0X10 \n\
+/* 080E25C8 */ ASRS R2, R2, #0X10 \n\
+/* 080E25CA */ ADDS R0, R5, #0 \n\
+/* 080E25CC */ ADDS R1, R6, #0 \n\
+/* 080E25CE */ BL sprite_set_x \n\
+_080E25D2: \n\
+/* 080E25D2 */ MOVS R1, #1 \n\
+/* 080E25D4 */ RSBS R1, R1, #0 \n\
+/* 080E25D6 */ ADD R8, R1 \n\
+/* 080E25D8 */ ADDS R7, #0X14 \n\
+/* 080E25DA */ MOV R3, R8 \n\
+/* 080E25DC */ CMP R3, #0 \n\
+/* 080E25DE */ BGE _080E2574 \n\
+/* 080E25E0 */ POP {R3, R4} \n\
+/* 080E25E2 */ MOV R8, R3 \n\
+/* 080E25E4 */ MOV SB, R4 \n\
+/* 080E25E6 */ POP {R4, R5, R6, R7} \n\
+/* 080E25E8 */ POP {R0} \n\
+/* 080E25EA */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080E25EC: \n\
+/* 080E25EC */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080E25F0: \n\
+/* 080E25F0 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_080E25F4: \n\
+/* 080E25F4 */ .word 0xFFFFE000 \n\
+.ltorg \n\
+.syntax divided");
+

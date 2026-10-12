@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wario_whirled at 0x083CBB68
+struct scene_wario_whirled
+    /* Start  */ .word func_080272F4, 0x00000000
+    /* Paused */ .word func_08027494, 0x00000000
+    /* Update */ .word func_080275B4, 0x00000000
+    /* Stop   */ .word func_08027720, 0x00000000
+    /* Script */ .word 0x083CBAE4
+endstruct
+
+.incbin "microgames/wario_whirled/wario_whirled.bin", 36, 240

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_cymbalism at 0x083DBA10
+struct scene_cymbalism
+    /* Start  */ .word func_0809EBA0, 0x00000000
+    /* Paused */ .word func_0809FFA8, 0x00000000
+    /* Update */ .word func_0809FE54, 0x00000000
+    /* Stop   */ .word func_0809FFAC, 0x00000000
+    /* Script */ .word 0x083DB83C
+endstruct
+
+.incbin "microgames/cymbalism/cymbalism.bin", 36, 352

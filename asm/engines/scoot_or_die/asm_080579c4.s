@@ -1,0 +1,208 @@
+/* Generated from asm/asm_080579c4.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080579C4 \n\
+/* 080579C4 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080579C6 */ MOV R7, SL \n\
+/* 080579C8 */ MOV R6, SB \n\
+/* 080579CA */ MOV R5, R8 \n\
+/* 080579CC */ PUSH {R5, R6, R7} \n\
+/* 080579CE */ SUB SP, #0X3C \n\
+/* 080579D0 */ LDR R0, _08057B14 \n\
+/* 080579D2 */ LDR R1, [R0] \n\
+/* 080579D4 */ ADDS R5, R1, #0 \n\
+/* 080579D6 */ ADDS R5, #0X24 \n\
+/* 080579D8 */ MOVS R2, #0XC8 \n\
+/* 080579DA */ LSLS R2, R2, #1 \n\
+/* 080579DC */ ADDS R2, R1 \n\
+/* 080579DE */ MOV SB, R2 \n\
+/* 080579E0 */ ADDS R2, R0, #0 \n\
+/* 080579E2 */ MOVS R1, #0XB \n\
+/* 080579E4 */ ADD R0, SP, #0X38 \n\
+_080579E6: \n\
+/* 080579E6 */ STR R1, [R0] \n\
+/* 080579E8 */ SUBS R0, #4 \n\
+/* 080579EA */ SUBS R1, #1 \n\
+/* 080579EC */ CMP R1, #0 \n\
+/* 080579EE */ BGE _080579E6 \n\
+/* 080579F0 */ MOVS R1, #0 \n\
+/* 080579F2 */ LDR R0, [R2] \n\
+/* 080579F4 */ MOVS R3, #0XA8 \n\
+/* 080579F6 */ LSLS R3, R3, #1 \n\
+/* 080579F8 */ ADDS R0, R3 \n\
+/* 080579FA */ LDR R0, [R0] \n\
+/* 080579FC */ CMP R1, R0 \n\
+/* 080579FE */ BLT _08057A02 \n\
+/* 08057A00 */ B _08057B38 \n\
+_08057A02: \n\
+/* 08057A02 */ LDR R7, _08057B18 \n\
+/* 08057A04 */ MOVS R4, #1 \n\
+/* 08057A06 */ MOV SL, R4 \n\
+/* 08057A08 */ MOV R8, R1 \n\
+_08057A0A: \n\
+/* 08057A0A */ LDR R0, [R5, #0X34] \n\
+/* 08057A0C */ CMP R0, #0 \n\
+/* 08057A0E */ BEQ _08057A12 \n\
+/* 08057A10 */ B _08057B24 \n\
+_08057A12: \n\
+/* 08057A12 */ MOVS R4, #0XC \n\
+/* 08057A14 */ SUBS R4, R1 \n\
+/* 08057A16 */ BL get_random_u16 \n\
+/* 08057A1A */ LSLS R0, R0, #0X10 \n\
+/* 08057A1C */ LSRS R0, R0, #0X10 \n\
+/* 08057A1E */ ADDS R1, R4, #0 \n\
+/* 08057A20 */ BL __modsi3 \n\
+/* 08057A24 */ ADDS R3, R0, #0 \n\
+/* 08057A26 */ LSLS R0, R3, #2 \n\
+/* 08057A28 */ MOV R2, SP \n\
+/* 08057A2A */ ADDS R2, R0 \n\
+/* 08057A2C */ ADDS R2, #0XC \n\
+/* 08057A2E */ LDR R1, [R2] \n\
+/* 08057A30 */ LSLS R1, R1, #3 \n\
+/* 08057A32 */ LDR R0, _08057B14 \n\
+/* 08057A34 */ LDR R0, [R0] \n\
+/* 08057A36 */ MOVS R6, #0XEE \n\
+/* 08057A38 */ LSLS R6, R6, #1 \n\
+/* 08057A3A */ ADDS R0, R6 \n\
+/* 08057A3C */ MOVS R6, #0 \n\
+/* 08057A3E */ LDRSH R0, [R0, R6] \n\
+/* 08057A40 */ RSBS R0, R0, #0 \n\
+/* 08057A42 */ ASRS R0, R0, #8 \n\
+/* 08057A44 */ ADDS R0, #0X20 \n\
+/* 08057A46 */ ADDS R6, R1, R0 \n\
+/* 08057A48 */ SUBS R4, #1 \n\
+/* 08057A4A */ CMP R3, R4 \n\
+/* 08057A4C */ BGE _08057A5A \n\
+/* 08057A4E */ ADDS R1, R2, #0 \n\
+_08057A50: \n\
+/* 08057A50 */ LDR R0, [R1, #4] \n\
+/* 08057A52 */ STM R1!, {R0} \n\
+/* 08057A54 */ ADDS R3, #1 \n\
+/* 08057A56 */ CMP R3, R4 \n\
+/* 08057A58 */ BLT _08057A50 \n\
+_08057A5A: \n\
+/* 08057A5A */ LSLS R2, R6, #8 \n\
+/* 08057A5C */ STR R2, [R5, #4] \n\
+/* 08057A5E */ LDR R0, _08057B14 \n\
+/* 08057A60 */ LDR R3, [R0] \n\
+/* 08057A62 */ MOVS R1, #0XEE \n\
+/* 08057A64 */ LSLS R1, R1, #1 \n\
+/* 08057A66 */ ADDS R0, R3, R1 \n\
+/* 08057A68 */ LDRH R1, [R0] \n\
+/* 08057A6A */ LSLS R1, R1, #0X10 \n\
+/* 08057A6C */ ASRS R1, R1, #0X18 \n\
+/* 08057A6E */ ADDS R1, R6, R1 \n\
+/* 08057A70 */ MOVS R0, #0XFF \n\
+/* 08057A72 */ ANDS R1, R0 \n\
+/* 08057A74 */ MOVS R4, #0XF0 \n\
+/* 08057A76 */ LSLS R4, R4, #1 \n\
+/* 08057A78 */ ADDS R0, R3, R4 \n\
+/* 08057A7A */ ADDS R0, R1 \n\
+/* 08057A7C */ LDRB R3, [R0] \n\
+/* 08057A7E */ LSLS R3, R3, #8 \n\
+/* 08057A80 */ STR R3, [R5, #8] \n\
+/* 08057A82 */ LDR R0, [R7] \n\
+/* 08057A84 */ MOVS R6, #0 \n\
+/* 08057A86 */ LDRSH R1, [R5, R6] \n\
+/* 08057A88 */ LSLS R2, R2, #8 \n\
+/* 08057A8A */ ASRS R2, R2, #0X10 \n\
+/* 08057A8C */ LSRS R3, R3, #8 \n\
+/* 08057A8E */ BL sprite_set_x_y \n\
+/* 08057A92 */ LDR R0, [R7] \n\
+/* 08057A94 */ MOVS R2, #0 \n\
+/* 08057A96 */ LDRSH R1, [R5, R2] \n\
+/* 08057A98 */ MOVS R2, #1 \n\
+/* 08057A9A */ BL sprite_set_anim_cel \n\
+/* 08057A9E */ LDR R0, [R7] \n\
+/* 08057AA0 */ MOVS R3, #0 \n\
+/* 08057AA2 */ LDRSH R1, [R5, R3] \n\
+/* 08057AA4 */ MOVS R2, #1 \n\
+/* 08057AA6 */ BL sprite_set_visible \n\
+/* 08057AAA */ LDR R0, [R5, #0XC] \n\
+/* 08057AAC */ MOVS R1, #0X80 \n\
+/* 08057AAE */ LSLS R1, R1, #1 \n\
+/* 08057AB0 */ MOVS R2, #0 \n\
+/* 08057AB2 */ BL func_08001BA4 \n\
+/* 08057AB6 */ LDR R0, [R7] \n\
+/* 08057AB8 */ MOVS R4, #0X10 \n\
+/* 08057ABA */ LDRSH R1, [R5, R4] \n\
+/* 08057ABC */ MOV R6, SL \n\
+/* 08057ABE */ STR R6, [SP] \n\
+/* 08057AC0 */ MOV R2, R8 \n\
+/* 08057AC2 */ STR R2, [SP, #4] \n\
+/* 08057AC4 */ STR R2, [SP, #8] \n\
+/* 08057AC6 */ LDR R2, _08057B1C \n\
+/* 08057AC8 */ MOVS R3, #0 \n\
+/* 08057ACA */ BL sprite_set_anim \n\
+/* 08057ACE */ MOVS R0, #0X32 \n\
+/* 08057AD0 */ BL get_random_range \n\
+/* 08057AD4 */ ADDS R4, R0, #0 \n\
+/* 08057AD6 */ MOVS R0, #3 \n\
+/* 08057AD8 */ BL get_random_range \n\
+/* 08057ADC */ LSLS R4, R4, #0X10 \n\
+/* 08057ADE */ LSRS R4, R4, #0X10 \n\
+/* 08057AE0 */ LSLS R0, R0, #0X10 \n\
+/* 08057AE2 */ LSRS R0, R0, #0X10 \n\
+/* 08057AE4 */ SUBS R0, #1 \n\
+/* 08057AE6 */ LSLS R1, R0, #2 \n\
+/* 08057AE8 */ ADDS R1, R0 \n\
+/* 08057AEA */ LSLS R1, R1, #1 \n\
+/* 08057AEC */ RSBS R1, R1, #0 \n\
+/* 08057AEE */ MULS R1, R4, R1 \n\
+/* 08057AF0 */ LDR R0, _08057B20 \n\
+/* 08057AF2 */ LDR R0, [R0] \n\
+/* 08057AF4 */ LDRH R0, [R0, #0X16] \n\
+/* 08057AF6 */ MULS R0, R1, R0 \n\
+/* 08057AF8 */ ASRS R0, R0, #8 \n\
+/* 08057AFA */ STR R0, [R5, #0X1C] \n\
+/* 08057AFC */ MOV R3, R8 \n\
+/* 08057AFE */ STR R3, [R5, #0X20] \n\
+/* 08057B00 */ MOV R4, SB \n\
+/* 08057B02 */ LDR R0, [R4, #0X24] \n\
+/* 08057B04 */ STR R0, [R5, #0X24] \n\
+/* 08057B06 */ LDR R0, [R4, #0X28] \n\
+/* 08057B08 */ STR R0, [R5, #0X28] \n\
+/* 08057B0A */ LDR R0, [R4, #0X30] \n\
+/* 08057B0C */ STR R0, [R5, #0X30] \n\
+/* 08057B0E */ STR R6, [R5, #0X34] \n\
+/* 08057B10 */ STR R3, [R5, #0X38] \n\
+/* 08057B12 */ B _08057B38 \n\
+ \n\
+.balign 4, 0 \n\
+_08057B14: \n\
+/* 08057B14 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_08057B18: \n\
+/* 08057B18 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_08057B1C: \n\
+/* 08057B1C */ .word D_083627E8 \n\
+ \n\
+.balign 4, 0 \n\
+_08057B20: \n\
+/* 08057B20 */ .word gCurrentSceneData \n\
+_08057B24: \n\
+/* 08057B24 */ ADDS R1, #1 \n\
+/* 08057B26 */ ADDS R5, #0X3C \n\
+/* 08057B28 */ LDR R0, [R2] \n\
+/* 08057B2A */ MOVS R6, #0XA8 \n\
+/* 08057B2C */ LSLS R6, R6, #1 \n\
+/* 08057B2E */ ADDS R0, R6 \n\
+/* 08057B30 */ LDR R0, [R0] \n\
+/* 08057B32 */ CMP R1, R0 \n\
+/* 08057B34 */ BGE _08057B38 \n\
+/* 08057B36 */ B _08057A0A \n\
+_08057B38: \n\
+/* 08057B38 */ ADD SP, #0X3C \n\
+/* 08057B3A */ POP {R3, R4, R5} \n\
+/* 08057B3C */ MOV R8, R3 \n\
+/* 08057B3E */ MOV SB, R4 \n\
+/* 08057B40 */ MOV SL, R5 \n\
+/* 08057B42 */ POP {R4, R5, R6, R7} \n\
+/* 08057B44 */ POP {R0} \n\
+/* 08057B46 */ BX R0 \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,105 @@
+/* Generated from asm/asm_080c85e8.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080C85E8 \n\
+/* 080C85E8 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080C85EA */ SUB SP, #0XC \n\
+/* 080C85EC */ LDR R0, _080C8674 \n\
+/* 080C85EE */ LDRH R1, [R0] \n\
+/* 080C85F0 */ MOVS R4, #1 \n\
+/* 080C85F2 */ ADDS R0, R4, #0 \n\
+/* 080C85F4 */ ANDS R0, R1 \n\
+/* 080C85F6 */ LDR R3, _080C8678 \n\
+/* 080C85F8 */ CMP R0, #0 \n\
+/* 080C85FA */ BEQ _080C8652 \n\
+/* 080C85FC */ LDR R0, _080C867C \n\
+/* 080C85FE */ LDR R0, [R0] \n\
+/* 080C8600 */ LDR R1, [R3] \n\
+/* 080C8602 */ MOVS R2, #0X18 \n\
+/* 080C8604 */ LDRSH R1, [R1, R2] \n\
+/* 080C8606 */ LDR R2, _080C8680 \n\
+/* 080C8608 */ STR R4, [SP] \n\
+/* 080C860A */ MOVS R3, #0 \n\
+/* 080C860C */ STR R3, [SP, #4] \n\
+/* 080C860E */ STR R3, [SP, #8] \n\
+/* 080C8610 */ BL sprite_set_anim \n\
+/* 080C8614 */ MOVS R4, #0 \n\
+/* 080C8616 */ MOVS R7, #0 \n\
+_080C8618: \n\
+/* 080C8618 */ LDR R0, _080C867C \n\
+/* 080C861A */ LDR R0, [R0] \n\
+/* 080C861C */ LDR R6, _080C8678 \n\
+/* 080C861E */ LDR R1, [R6] \n\
+/* 080C8620 */ LSLS R2, R4, #1 \n\
+/* 080C8622 */ ADDS R1, #0X28 \n\
+/* 080C8624 */ ADDS R1, R2 \n\
+/* 080C8626 */ MOVS R2, #0 \n\
+/* 080C8628 */ LDRSH R1, [R1, R2] \n\
+/* 080C862A */ MOVS R5, #1 \n\
+/* 080C862C */ STR R5, [SP] \n\
+/* 080C862E */ STR R7, [SP, #4] \n\
+/* 080C8630 */ STR R7, [SP, #8] \n\
+/* 080C8632 */ LDR R2, _080C8680 \n\
+/* 080C8634 */ MOVS R3, #0 \n\
+/* 080C8636 */ BL sprite_set_anim \n\
+/* 080C863A */ ADDS R0, R4, #1 \n\
+/* 080C863C */ LSLS R0, R0, #0X18 \n\
+/* 080C863E */ LSRS R4, R0, #0X18 \n\
+/* 080C8640 */ CMP R4, #1 \n\
+/* 080C8642 */ BLS _080C8618 \n\
+/* 080C8644 */ LDR R0, [R6] \n\
+/* 080C8646 */ ADDS R0, #0X3C \n\
+/* 080C8648 */ STRB R5, [R0] \n\
+/* 080C864A */ LDR R0, [R6] \n\
+/* 080C864C */ ADDS R0, #0X24 \n\
+/* 080C864E */ STRB R5, [R0] \n\
+/* 080C8650 */ ADDS R3, R6, #0 \n\
+_080C8652: \n\
+/* 080C8652 */ LDR R1, [R3] \n\
+/* 080C8654 */ MOVS R2, #0XA4 \n\
+/* 080C8656 */ LSLS R2, R2, #2 \n\
+/* 080C8658 */ ADDS R1, R2 \n\
+/* 080C865A */ LDRB R0, [R1] \n\
+/* 080C865C */ ADDS R0, #1 \n\
+/* 080C865E */ STRB R0, [R1] \n\
+/* 080C8660 */ LDR R0, [R3] \n\
+/* 080C8662 */ ADDS R1, R0, R2 \n\
+/* 080C8664 */ LDRB R0, [R1] \n\
+/* 080C8666 */ CMP R0, #1 \n\
+/* 080C8668 */ BNE _080C8688 \n\
+/* 080C866A */ LDR R0, _080C8684 \n\
+/* 080C866C */ BL play_sound \n\
+/* 080C8670 */ B _080C8690 \n\
+ \n\
+.balign 4, 0 \n\
+_080C8674: \n\
+/* 080C8674 */ .word gPressedKeys \n\
+ \n\
+.balign 4, 0 \n\
+_080C8678: \n\
+/* 080C8678 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080C867C: \n\
+/* 080C867C */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_080C8680: \n\
+/* 080C8680 */ .word D_083925FC \n\
+ \n\
+.balign 4, 0 \n\
+_080C8684: \n\
+/* 080C8684 */ .word D_083FD444 \n\
+_080C8688: \n\
+/* 080C8688 */ CMP R0, #9 \n\
+/* 080C868A */ BNE _080C8690 \n\
+/* 080C868C */ MOVS R0, #0 \n\
+/* 080C868E */ STRB R0, [R1] \n\
+_080C8690: \n\
+/* 080C8690 */ ADD SP, #0XC \n\
+/* 080C8692 */ POP {R4, R5, R6, R7} \n\
+/* 080C8694 */ POP {R0} \n\
+/* 080C8696 */ BX R0 \n\
+.ltorg \n\
+.syntax divided");
+

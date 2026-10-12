@@ -1,0 +1,226 @@
+/* Generated from asm/asm_080d10bc.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080D10BC \n\
+/* 080D10BC */ PUSH {R4, R5, R6, LR} \n\
+/* 080D10BE */ LDR R6, _080D10D8 \n\
+/* 080D10C0 */ LDR R0, [R6] \n\
+/* 080D10C2 */ MOVS R2, #0XDD \n\
+/* 080D10C4 */ LSLS R2, R2, #2 \n\
+/* 080D10C6 */ ADDS R1, R0, R2 \n\
+/* 080D10C8 */ LDRB R0, [R1] \n\
+/* 080D10CA */ CMP R0, #1 \n\
+/* 080D10CC */ BEQ _080D1134 \n\
+/* 080D10CE */ CMP R0, #1 \n\
+/* 080D10D0 */ BGT _080D10DC \n\
+/* 080D10D2 */ CMP R0, #0 \n\
+/* 080D10D4 */ BEQ _080D10E4 \n\
+/* 080D10D6 */ B _080D1230 \n\
+ \n\
+.balign 4, 0 \n\
+_080D10D8: \n\
+/* 080D10D8 */ .word gCurrentSceneVariable \n\
+_080D10DC: \n\
+/* 080D10DC */ CMP R0, #2 \n\
+/* 080D10DE */ BNE _080D10E2 \n\
+/* 080D10E0 */ B _080D122C \n\
+_080D10E2: \n\
+/* 080D10E2 */ B _080D1230 \n\
+_080D10E4: \n\
+/* 080D10E4 */ MOVS R0, #1 \n\
+/* 080D10E6 */ STRB R0, [R1] \n\
+/* 080D10E8 */ LDR R5, [R6] \n\
+/* 080D10EA */ LDR R0, _080D1164 \n\
+/* 080D10EC */ LDR R4, [R0] \n\
+/* 080D10EE */ MOVS R3, #0XBA \n\
+/* 080D10F0 */ LSLS R3, R3, #1 \n\
+/* 080D10F2 */ ADDS R4, R3 \n\
+/* 080D10F4 */ LDRB R0, [R4] \n\
+/* 080D10F6 */ LSLS R1, R0, #2 \n\
+/* 080D10F8 */ ADDS R1, R0 \n\
+/* 080D10FA */ LSLS R1, R1, #1 \n\
+/* 080D10FC */ MOVS R0, #0X46 \n\
+/* 080D10FE */ SUBS R0, R1 \n\
+/* 080D1100 */ LSLS R0, R0, #8 \n\
+/* 080D1102 */ LDR R2, _080D1168 \n\
+/* 080D1104 */ ADDS R1, R5, R2 \n\
+/* 080D1106 */ LDRH R1, [R1] \n\
+/* 080D1108 */ BL __divsi3 \n\
+/* 080D110C */ LDR R3, _080D116C \n\
+/* 080D110E */ ADDS R1, R5, R3 \n\
+/* 080D1110 */ STRH R0, [R1] \n\
+/* 080D1112 */ LDRB R0, [R4] \n\
+/* 080D1114 */ ADDS R0, #3 \n\
+/* 080D1116 */ MOVS R1, #0XDE \n\
+/* 080D1118 */ LSLS R1, R1, #2 \n\
+/* 080D111A */ ADDS R5, R1 \n\
+/* 080D111C */ STRH R0, [R5] \n\
+/* 080D111E */ MOVS R0, #0X10 \n\
+/* 080D1120 */ BL get_random_range \n\
+/* 080D1124 */ LDR R1, [R6] \n\
+/* 080D1126 */ LDR R2, _080D1170 \n\
+/* 080D1128 */ ADDS R1, R2 \n\
+/* 080D112A */ STRH R0, [R1] \n\
+/* 080D112C */ MOVS R0, #1 \n\
+/* 080D112E */ MOVS R1, #0 \n\
+/* 080D1130 */ BL func_080D1054 \n\
+_080D1134: \n\
+/* 080D1134 */ LDR R0, _080D1174 \n\
+/* 080D1136 */ LDR R2, [R0] \n\
+/* 080D1138 */ LDR R3, _080D116C \n\
+/* 080D113A */ ADDS R1, R2, R3 \n\
+/* 080D113C */ LDRH R0, [R1] \n\
+/* 080D113E */ SUBS R0, #1 \n\
+/* 080D1140 */ STRH R0, [R1] \n\
+/* 080D1142 */ LSLS R0, R0, #0X10 \n\
+/* 080D1144 */ CMP R0, #0 \n\
+/* 080D1146 */ BNE _080D1230 \n\
+/* 080D1148 */ MOVS R0, #0XDE \n\
+/* 080D114A */ LSLS R0, R0, #2 \n\
+/* 080D114C */ ADDS R1, R2, R0 \n\
+/* 080D114E */ LDRH R0, [R1] \n\
+/* 080D1150 */ SUBS R0, #1 \n\
+/* 080D1152 */ STRH R0, [R1] \n\
+/* 080D1154 */ LSLS R0, R0, #0X10 \n\
+/* 080D1156 */ CMP R0, #0 \n\
+/* 080D1158 */ BNE _080D1178 \n\
+/* 080D115A */ MOVS R0, #0 \n\
+/* 080D115C */ MOVS R1, #0 \n\
+/* 080D115E */ BL func_080D1054 \n\
+/* 080D1162 */ B _080D11C2 \n\
+ \n\
+.balign 4, 0 \n\
+_080D1164: \n\
+/* 080D1164 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_080D1168: \n\
+/* 080D1168 */ .word 0x000003EE \n\
+ \n\
+.balign 4, 0 \n\
+_080D116C: \n\
+/* 080D116C */ .word 0x00000376 \n\
+ \n\
+.balign 4, 0 \n\
+_080D1170: \n\
+/* 080D1170 */ .word 0x0000037E \n\
+ \n\
+.balign 4, 0 \n\
+_080D1174: \n\
+/* 080D1174 */ .word gCurrentSceneVariable \n\
+_080D1178: \n\
+/* 080D1178 */ LDR R1, _080D11E4 \n\
+/* 080D117A */ LDR R3, _080D11E8 \n\
+/* 080D117C */ ADDS R0, R2, R3 \n\
+/* 080D117E */ MOVS R2, #0 \n\
+/* 080D1180 */ LDRSH R0, [R0, R2] \n\
+/* 080D1182 */ LSLS R0, R0, #1 \n\
+/* 080D1184 */ ADDS R0, R1 \n\
+/* 080D1186 */ LDRH R1, [R0] \n\
+/* 080D1188 */ LDR R0, _080D11EC \n\
+/* 080D118A */ LDR R0, [R0] \n\
+/* 080D118C */ MOVS R3, #0XBA \n\
+/* 080D118E */ LSLS R3, R3, #1 \n\
+/* 080D1190 */ ADDS R0, R3 \n\
+/* 080D1192 */ LDRB R0, [R0] \n\
+/* 080D1194 */ CMP R0, #0 \n\
+/* 080D1196 */ BNE _080D119E \n\
+/* 080D1198 */ CMP R1, #2 \n\
+/* 080D119A */ BNE _080D119E \n\
+/* 080D119C */ MOVS R1, #1 \n\
+_080D119E: \n\
+/* 080D119E */ LSLS R0, R1, #0X18 \n\
+/* 080D11A0 */ LSRS R0, R0, #0X18 \n\
+/* 080D11A2 */ MOVS R1, #0 \n\
+/* 080D11A4 */ BL func_080D1054 \n\
+/* 080D11A8 */ LDR R0, _080D11F0 \n\
+/* 080D11AA */ LDR R0, [R0] \n\
+/* 080D11AC */ LDR R2, _080D11E8 \n\
+/* 080D11AE */ ADDS R1, R0, R2 \n\
+/* 080D11B0 */ LDRH R0, [R1] \n\
+/* 080D11B2 */ ADDS R0, #1 \n\
+/* 080D11B4 */ STRH R0, [R1] \n\
+/* 080D11B6 */ LSLS R0, R0, #0X10 \n\
+/* 080D11B8 */ ASRS R0, R0, #0X10 \n\
+/* 080D11BA */ CMP R0, #0XF \n\
+/* 080D11BC */ BLE _080D11C2 \n\
+/* 080D11BE */ MOVS R0, #0 \n\
+/* 080D11C0 */ STRH R0, [R1] \n\
+_080D11C2: \n\
+/* 080D11C2 */ LDR R0, _080D11F0 \n\
+/* 080D11C4 */ LDR R4, [R0] \n\
+/* 080D11C6 */ MOVS R3, #0XDE \n\
+/* 080D11C8 */ LSLS R3, R3, #2 \n\
+/* 080D11CA */ ADDS R0, R4, R3 \n\
+/* 080D11CC */ MOVS R1, #0 \n\
+/* 080D11CE */ LDRSH R0, [R0, R1] \n\
+/* 080D11D0 */ CMP R0, #0 \n\
+/* 080D11D2 */ BNE _080D11F4 \n\
+/* 080D11D4 */ MOVS R2, #0XDD \n\
+/* 080D11D6 */ LSLS R2, R2, #2 \n\
+/* 080D11D8 */ ADDS R1, R4, R2 \n\
+/* 080D11DA */ LDRB R0, [R1] \n\
+/* 080D11DC */ ADDS R0, #1 \n\
+/* 080D11DE */ STRB R0, [R1] \n\
+/* 080D11E0 */ B _080D1230 \n\
+ \n\
+.balign 4, 0 \n\
+_080D11E4: \n\
+/* 080D11E4 */ .word D_083E4686 \n\
+ \n\
+.balign 4, 0 \n\
+_080D11E8: \n\
+/* 080D11E8 */ .word 0x0000037E \n\
+ \n\
+.balign 4, 0 \n\
+_080D11EC: \n\
+/* 080D11EC */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_080D11F0: \n\
+/* 080D11F0 */ .word gCurrentSceneVariable \n\
+_080D11F4: \n\
+/* 080D11F4 */ LDR R0, _080D1220 \n\
+/* 080D11F6 */ LDR R0, [R0] \n\
+/* 080D11F8 */ MOVS R3, #0XBA \n\
+/* 080D11FA */ LSLS R3, R3, #1 \n\
+/* 080D11FC */ ADDS R0, R3 \n\
+/* 080D11FE */ LDRB R0, [R0] \n\
+/* 080D1200 */ LSLS R1, R0, #2 \n\
+/* 080D1202 */ ADDS R1, R0 \n\
+/* 080D1204 */ LSLS R1, R1, #1 \n\
+/* 080D1206 */ MOVS R0, #0X46 \n\
+/* 080D1208 */ SUBS R0, R1 \n\
+/* 080D120A */ LSLS R0, R0, #8 \n\
+/* 080D120C */ LDR R2, _080D1224 \n\
+/* 080D120E */ ADDS R1, R4, R2 \n\
+/* 080D1210 */ LDRH R1, [R1] \n\
+/* 080D1212 */ BL __divsi3 \n\
+/* 080D1216 */ LDR R3, _080D1228 \n\
+/* 080D1218 */ ADDS R1, R4, R3 \n\
+/* 080D121A */ STRH R0, [R1] \n\
+/* 080D121C */ B _080D1230 \n\
+ \n\
+.balign 4, 0 \n\
+_080D1220: \n\
+/* 080D1220 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_080D1224: \n\
+/* 080D1224 */ .word 0x000003EE \n\
+ \n\
+.balign 4, 0 \n\
+_080D1228: \n\
+/* 080D1228 */ .word 0x00000376 \n\
+_080D122C: \n\
+/* 080D122C */ MOVS R0, #1 \n\
+/* 080D122E */ B _080D1232 \n\
+_080D1230: \n\
+/* 080D1230 */ MOVS R0, #0 \n\
+_080D1232: \n\
+/* 080D1232 */ POP {R4, R5, R6} \n\
+/* 080D1234 */ POP {R1} \n\
+/* 080D1236 */ BX R1 \n\
+.ltorg \n\
+.syntax divided");
+

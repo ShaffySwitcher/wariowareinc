@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_log_chop at 0x083CBC7C
+struct scene_log_chop
+    /* Start  */ .word func_08027740, 0x00000000
+    /* Paused */ .word func_080278C8, 0x00000000
+    /* Update */ .word func_0802795C, 0x00000000
+    /* Stop   */ .word func_08027AE4, 0x00000000
+    /* Script */ .word 0x083CBC10
+endstruct
+
+.incbin "microgames/log_chop/log_chop.bin", 36, 220

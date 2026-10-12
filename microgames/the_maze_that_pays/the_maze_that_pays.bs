@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_the_maze_that_pays at 0x083D1EA8
+struct scene_the_maze_that_pays
+    /* Start  */ .word func_080477E8, 0x00000000
+    /* Paused */ .word func_08048608, 0x00000000
+    /* Update */ .word func_08048594, 0x00000000
+    /* Stop   */ .word func_0804861C, 0x00000000
+    /* Script */ .word 0x083D1E3C
+endstruct
+
+.incbin "microgames/the_maze_that_pays/the_maze_that_pays.bin", 36, 472

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_gifted_goalie at 0x083D1210
+struct scene_gifted_goalie
+    /* Start  */ .word func_08045518, 0x00000000
+    /* Paused */ .word func_08045C0C, 0x00000000
+    /* Update */ .word func_08045BA8, 0x00000000
+    /* Stop   */ .word func_08045C20, 0x00000000
+    /* Script */ .word 0x083D11A4
+endstruct
+
+.incbin "microgames/gifted_goalie/gifted_goalie.bin", 36, 584

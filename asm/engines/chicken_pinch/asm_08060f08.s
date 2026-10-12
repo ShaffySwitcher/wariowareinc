@@ -1,0 +1,149 @@
+/* Generated from asm/asm_08060f08.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_08060F08 \n\
+/* 08060F08 */ PUSH {R4, R5, LR} \n\
+/* 08060F0A */ LDR R5, _08060F48 \n\
+/* 08060F0C */ LDR R0, [R5] \n\
+/* 08060F0E */ ADDS R2, R0, #0 \n\
+/* 08060F10 */ ADDS R2, #0X24 \n\
+/* 08060F12 */ LDRB R1, [R2] \n\
+/* 08060F14 */ CMP R1, #1 \n\
+/* 08060F16 */ BEQ _08060FE0 \n\
+/* 08060F18 */ CMP R1, #1 \n\
+/* 08060F1A */ BGT _08060FFC \n\
+/* 08060F1C */ CMP R1, #0 \n\
+/* 08060F1E */ BNE _08060FFC \n\
+/* 08060F20 */ LDR R0, _08060F4C \n\
+/* 08060F22 */ LDRH R1, [R0] \n\
+/* 08060F24 */ MOVS R0, #1 \n\
+/* 08060F26 */ ANDS R0, R1 \n\
+/* 08060F28 */ CMP R0, #0 \n\
+/* 08060F2A */ BEQ _08060FFC \n\
+/* 08060F2C */ LDR R0, _08060F50 \n\
+/* 08060F2E */ BL scene_play_sound_to_tempo \n\
+/* 08060F32 */ BL func_08060BD4 \n\
+/* 08060F36 */ LSLS R0, R0, #0X10 \n\
+/* 08060F38 */ ASRS R4, R0, #0X10 \n\
+/* 08060F3A */ CMP R4, #1 \n\
+/* 08060F3C */ BEQ _08060F78 \n\
+/* 08060F3E */ CMP R4, #1 \n\
+/* 08060F40 */ BGT _08060F54 \n\
+/* 08060F42 */ CMP R4, #0 \n\
+/* 08060F44 */ BEQ _08060F5A \n\
+/* 08060F46 */ B _08060FFC \n\
+ \n\
+.balign 4, 0 \n\
+_08060F48: \n\
+/* 08060F48 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_08060F4C: \n\
+/* 08060F4C */ .word gPressedKeys \n\
+ \n\
+.balign 4, 0 \n\
+_08060F50: \n\
+/* 08060F50 */ .word D_083FDD54 \n\
+_08060F54: \n\
+/* 08060F54 */ CMP R4, #2 \n\
+/* 08060F56 */ BEQ _08060FAC \n\
+/* 08060F58 */ B _08060FFC \n\
+_08060F5A: \n\
+/* 08060F5A */ LDR R0, [R5] \n\
+/* 08060F5C */ ADDS R0, #0X24 \n\
+/* 08060F5E */ MOVS R1, #1 \n\
+/* 08060F60 */ STRB R1, [R0] \n\
+/* 08060F62 */ LDR R0, _08060F74 \n\
+/* 08060F64 */ LDR R0, [R0] \n\
+/* 08060F66 */ LDR R1, [R5] \n\
+/* 08060F68 */ MOVS R2, #0X22 \n\
+/* 08060F6A */ LDRSH R1, [R1, R2] \n\
+/* 08060F6C */ MOVS R2, #2 \n\
+/* 08060F6E */ BL sprite_set_anim_cel \n\
+/* 08060F72 */ B _08060FFC \n\
+ \n\
+.balign 4, 0 \n\
+_08060F74: \n\
+/* 08060F74 */ .word gSpriteHandler \n\
+_08060F78: \n\
+/* 08060F78 */ LDR R0, _08060FA4 \n\
+/* 08060F7A */ BL scene_play_sound_to_tempo \n\
+/* 08060F7E */ MOVS R0, #0 \n\
+/* 08060F80 */ BL func_0800A0C4 \n\
+/* 08060F84 */ LDR R0, [R5] \n\
+/* 08060F86 */ ADDS R0, #0X24 \n\
+/* 08060F88 */ MOVS R1, #2 \n\
+/* 08060F8A */ STRB R1, [R0] \n\
+/* 08060F8C */ LDR R0, _08060FA8 \n\
+/* 08060F8E */ LDR R0, [R0] \n\
+/* 08060F90 */ LDR R1, [R5] \n\
+/* 08060F92 */ MOVS R2, #0X22 \n\
+/* 08060F94 */ LDRSH R1, [R1, R2] \n\
+/* 08060F96 */ MOVS R2, #1 \n\
+/* 08060F98 */ BL sprite_set_anim_cel \n\
+/* 08060F9C */ MOVS R0, #1 \n\
+/* 08060F9E */ BL func_08060C04 \n\
+/* 08060FA2 */ B _08060FFC \n\
+ \n\
+.balign 4, 0 \n\
+_08060FA4: \n\
+/* 08060FA4 */ .word D_083FC83C \n\
+ \n\
+.balign 4, 0 \n\
+_08060FA8: \n\
+/* 08060FA8 */ .word gSpriteHandler \n\
+_08060FAC: \n\
+/* 08060FAC */ LDR R0, _08060FD8 \n\
+/* 08060FAE */ BL scene_play_sound_to_tempo \n\
+/* 08060FB2 */ MOVS R0, #0 \n\
+/* 08060FB4 */ BL func_0800A0C4 \n\
+/* 08060FB8 */ LDR R0, [R5] \n\
+/* 08060FBA */ ADDS R0, #0X24 \n\
+/* 08060FBC */ STRB R4, [R0] \n\
+/* 08060FBE */ LDR R0, _08060FDC \n\
+/* 08060FC0 */ LDR R0, [R0] \n\
+/* 08060FC2 */ LDR R1, [R5] \n\
+/* 08060FC4 */ MOVS R2, #0X22 \n\
+/* 08060FC6 */ LDRSH R1, [R1, R2] \n\
+/* 08060FC8 */ MOVS R2, #2 \n\
+/* 08060FCA */ BL sprite_set_anim_cel \n\
+/* 08060FCE */ MOVS R0, #2 \n\
+/* 08060FD0 */ BL func_08060C04 \n\
+/* 08060FD4 */ B _08060FFC \n\
+ \n\
+.balign 4, 0 \n\
+_08060FD8: \n\
+/* 08060FD8 */ .word D_083FC83C \n\
+ \n\
+.balign 4, 0 \n\
+_08060FDC: \n\
+/* 08060FDC */ .word gSpriteHandler \n\
+_08060FE0: \n\
+/* 08060FE0 */ LDR R0, _08061004 \n\
+/* 08060FE2 */ LDRH R0, [R0] \n\
+/* 08060FE4 */ ANDS R0, R1 \n\
+/* 08060FE6 */ CMP R0, #0 \n\
+/* 08060FE8 */ BNE _08060FFC \n\
+/* 08060FEA */ STRB R0, [R2] \n\
+/* 08060FEC */ LDR R0, =gSpriteHandler \n\
+/* 08060FEE */ LDR R0, [R0] \n\
+/* 08060FF0 */ LDR R1, [R5] \n\
+/* 08060FF2 */ MOVS R2, #0X22 \n\
+/* 08060FF4 */ LDRSH R1, [R1, R2] \n\
+/* 08060FF6 */ MOVS R2, #0 \n\
+/* 08060FF8 */ BL sprite_set_anim_cel \n\
+_08060FFC: \n\
+/* 08060FFC */ POP {R4, R5} \n\
+/* 08060FFE */ POP {R0} \n\
+/* 08061000 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_08061008: \n\
+/* 08061008 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_08061004: \n\
+/* 08061004 */ .word gCurrentKeys \n\
+.ltorg \n\
+.syntax divided");
+

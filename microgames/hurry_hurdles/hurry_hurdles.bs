@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hurry_hurdles at 0x083D083C
+struct scene_hurry_hurdles
+    /* Start  */ .word func_08041008, 0x00000000
+    /* Paused */ .word func_08041540, 0x00000000
+    /* Update */ .word func_080414F4, 0x00000000
+    /* Stop   */ .word func_08041554, 0x00000000
+    /* Script */ .word 0x083D07D0
+endstruct
+
+.incbin "microgames/hurry_hurdles/hurry_hurdles.bin", 36, 224

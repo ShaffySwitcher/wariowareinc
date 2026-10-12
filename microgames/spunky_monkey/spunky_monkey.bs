@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_spunky_monkey at 0x083D99B8
+struct scene_spunky_monkey
+    /* Start  */ .word func_080862F0, 0x00000000
+    /* Paused */ .word func_08086544, 0x00000000
+    /* Update */ .word func_0808654C, 0x00000000
+    /* Stop   */ .word func_08086548, 0x00000000
+    /* Script */ .word 0x083D994C
+endstruct
+
+.incbin "microgames/spunky_monkey/spunky_monkey.bin", 36, 240

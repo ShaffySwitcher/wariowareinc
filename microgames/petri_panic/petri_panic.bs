@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_petri_panic at 0x083CF4D0
+struct scene_petri_panic
+    /* Start  */ .word func_08038F88, 0x00000000
+    /* Paused */ .word func_08039A30, 0x00000000
+    /* Update */ .word func_08039A18, 0x00000000
+    /* Stop   */ .word func_08039A44, 0x00000000
+    /* Script */ .word 0x083CF41C
+endstruct
+
+.incbin "microgames/petri_panic/petri_panic.bin", 36, 264

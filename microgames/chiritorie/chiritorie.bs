@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_chiritorie at 0x083D147C
+struct scene_chiritorie
+    /* Start  */ .word func_08045C24, 0x00000000
+    /* Paused */ .word func_08046504, 0x00000000
+    /* Update */ .word func_080464DC, 0x00000000
+    /* Stop   */ .word func_08046518, 0x00000000
+    /* Script */ .word 0x083D1410
+endstruct
+
+.incbin "microgames/chiritorie/chiritorie.bin", 36, 984

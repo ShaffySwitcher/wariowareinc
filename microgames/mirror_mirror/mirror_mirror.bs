@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mirror_mirror at 0x083D7D7C
+struct scene_mirror_mirror
+    /* Start  */ .word func_0807AB48, 0x00000000
+    /* Paused */ .word func_0807B9D8, 0x00000000
+    /* Update */ .word func_0807B980, 0x00000000
+    /* Stop   */ .word func_0807B9DC, 0x00000000
+    /* Script */ .word 0x083D7D10
+endstruct
+
+.incbin "microgames/mirror_mirror/mirror_mirror.bin", 36, 328

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_blow_hole_bridge at 0x083DF6D0
+struct scene_blow_hole_bridge
+    /* Start  */ .word func_080B46B0, 0x00000000
+    /* Paused */ .word func_080B5890, 0x00000000
+    /* Update */ .word func_080B57DC, 0x00000000
+    /* Stop   */ .word func_080B5894, 0x00000000
+    /* Script */ .word 0x083DF664
+endstruct
+
+.incbin "microgames/blow_hole_bridge/blow_hole_bridge.bin", 36, 1052

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_classic_clash_i at 0x083D22FC
+struct scene_classic_clash_i
+    /* Start  */ .word func_08048F28, 0x00000000
+    /* Paused */ .word func_08049734, 0x00000000
+    /* Update */ .word func_0804969C, 0x00000000
+    /* Stop   */ .word func_08049738, 0x00000000
+    /* Script */ .word 0x083D2290
+endstruct
+
+.incbin "microgames/classic_clash_i/classic_clash_i.bin", 36, 312

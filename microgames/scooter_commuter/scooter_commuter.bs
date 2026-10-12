@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_scooter_commuter at 0x083D3D70
+struct scene_scooter_commuter
+    /* Start  */ .word func_080558CC, 0x00000000
+    /* Paused */ .word func_08055F98, 0x00000000
+    /* Update */ .word func_08055F74, 0x00000000
+    /* Stop   */ .word func_08055F9C, 0x00000000
+    /* Script */ .word 0x083D3D04
+endstruct
+
+.incbin "microgames/scooter_commuter/scooter_commuter.bin", 36, 256

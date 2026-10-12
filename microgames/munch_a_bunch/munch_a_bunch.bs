@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_munch_a_bunch at 0x083CC4F8
+struct scene_munch_a_bunch
+    /* Start  */ .word func_08029454, 0x00000000
+    /* Paused */ .word func_080299EC, 0x00000000
+    /* Update */ .word func_080297D8, 0x00000000
+    /* Stop   */ .word func_080299F8, 0x00000000
+    /* Script */ .word 0x083CC48C
+endstruct
+
+.incbin "microgames/munch_a_bunch/munch_a_bunch.bin", 36, 240

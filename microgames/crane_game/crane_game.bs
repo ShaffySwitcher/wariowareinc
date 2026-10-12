@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_crane_game at 0x083DD67C
+struct scene_crane_game
+    /* Start  */ .word func_080AD054, 0x00000000
+    /* Paused */ .word func_080ADB34, 0x00000000
+    /* Update */ .word func_080ADADC, 0x00000000
+    /* Stop   */ .word func_080ADB38, 0x00000000
+    /* Script */ .word 0x083DD610
+endstruct
+
+.incbin "microgames/crane_game/crane_game.bin", 36, 272

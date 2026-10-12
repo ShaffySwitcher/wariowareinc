@@ -1,0 +1,287 @@
+/* Generated from asm/asm_0803ce2c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0803CE2C \n\
+/* 0803CE2C */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0803CE2E */ MOV R7, SB \n\
+/* 0803CE30 */ MOV R6, R8 \n\
+/* 0803CE32 */ PUSH {R6, R7} \n\
+/* 0803CE34 */ LDR R5, _0803CE48 \n\
+/* 0803CE36 */ LDR R0, [R5] \n\
+/* 0803CE38 */ ADDS R0, #0XC6 \n\
+/* 0803CE3A */ LDRB R0, [R0] \n\
+/* 0803CE3C */ CMP R0, #1 \n\
+/* 0803CE3E */ BEQ _0803CE4C \n\
+/* 0803CE40 */ CMP R0, #2 \n\
+/* 0803CE42 */ BEQ _0803CE6E \n\
+/* 0803CE44 */ B _0803CE96 \n\
+ \n\
+.balign 4, 0 \n\
+_0803CE48: \n\
+/* 0803CE48 */ .word gCurrentSceneVariable \n\
+_0803CE4C: \n\
+/* 0803CE4C */ MOVS R0, #3 \n\
+/* 0803CE4E */ BL get_random_range \n\
+/* 0803CE52 */ LSLS R0, R0, #0X10 \n\
+/* 0803CE54 */ CMP R0, #0 \n\
+/* 0803CE56 */ BNE _0803CE8E \n\
+/* 0803CE58 */ MOVS R0, #3 \n\
+/* 0803CE5A */ BL get_random_range \n\
+/* 0803CE5E */ MOVS R1, #0X1C \n\
+/* 0803CE60 */ SUBS R1, R0 \n\
+/* 0803CE62 */ LSLS R1, R1, #0X10 \n\
+/* 0803CE64 */ LSRS R4, R1, #0X10 \n\
+/* 0803CE66 */ LDR R0, [R5] \n\
+/* 0803CE68 */ ADDS R0, #0XC6 \n\
+/* 0803CE6A */ MOVS R1, #2 \n\
+/* 0803CE6C */ B _0803CE94 \n\
+_0803CE6E: \n\
+/* 0803CE6E */ MOVS R0, #3 \n\
+/* 0803CE70 */ BL get_random_range \n\
+/* 0803CE74 */ LSLS R0, R0, #0X10 \n\
+/* 0803CE76 */ CMP R0, #0 \n\
+/* 0803CE78 */ BNE _0803CE8E \n\
+/* 0803CE7A */ MOVS R0, #3 \n\
+/* 0803CE7C */ BL get_random_range \n\
+/* 0803CE80 */ ADDS R0, #0X3C \n\
+/* 0803CE82 */ LSLS R0, R0, #0X10 \n\
+/* 0803CE84 */ LSRS R4, R0, #0X10 \n\
+/* 0803CE86 */ LDR R0, [R5] \n\
+/* 0803CE88 */ ADDS R0, #0XC6 \n\
+/* 0803CE8A */ MOVS R1, #1 \n\
+/* 0803CE8C */ B _0803CE94 \n\
+_0803CE8E: \n\
+/* 0803CE8E */ LDR R0, [R5] \n\
+/* 0803CE90 */ ADDS R0, #0XC6 \n\
+/* 0803CE92 */ MOVS R1, #0 \n\
+_0803CE94: \n\
+/* 0803CE94 */ STRB R1, [R0] \n\
+_0803CE96: \n\
+/* 0803CE96 */ LDR R5, _0803CEE0 \n\
+/* 0803CE98 */ LDR R0, [R5] \n\
+/* 0803CE9A */ ADDS R0, #0XC6 \n\
+/* 0803CE9C */ LDRB R0, [R0] \n\
+/* 0803CE9E */ SUBS R0, #1 \n\
+/* 0803CEA0 */ LSLS R0, R0, #0X18 \n\
+/* 0803CEA2 */ LSRS R0, R0, #0X18 \n\
+/* 0803CEA4 */ CMP R0, #1 \n\
+/* 0803CEA6 */ BLS _0803CF28 \n\
+/* 0803CEA8 */ MOVS R0, #0XA \n\
+/* 0803CEAA */ BL get_random_range \n\
+/* 0803CEAE */ LSLS R0, R0, #0X10 \n\
+/* 0803CEB0 */ ASRS R3, R0, #0X10 \n\
+/* 0803CEB2 */ LDR R1, _0803CEE4 \n\
+/* 0803CEB4 */ LDR R0, _0803CEE8 \n\
+/* 0803CEB6 */ LDR R0, [R0] \n\
+/* 0803CEB8 */ MOVS R2, #0XBA \n\
+/* 0803CEBA */ LSLS R2, R2, #1 \n\
+/* 0803CEBC */ ADDS R0, R2 \n\
+/* 0803CEBE */ LDRB R2, [R0] \n\
+/* 0803CEC0 */ ADDS R1, R2, R1 \n\
+/* 0803CEC2 */ LDRB R1, [R1] \n\
+/* 0803CEC4 */ CMP R3, R1 \n\
+/* 0803CEC6 */ BGE _0803CEEC \n\
+/* 0803CEC8 */ MOVS R0, #3 \n\
+/* 0803CECA */ BL get_random_range \n\
+/* 0803CECE */ MOVS R1, #0X1C \n\
+/* 0803CED0 */ SUBS R1, R0 \n\
+/* 0803CED2 */ LSLS R1, R1, #0X10 \n\
+/* 0803CED4 */ LSRS R4, R1, #0X10 \n\
+/* 0803CED6 */ LDR R0, [R5] \n\
+/* 0803CED8 */ ADDS R0, #0XC6 \n\
+/* 0803CEDA */ MOVS R1, #2 \n\
+/* 0803CEDC */ B _0803CF26 \n\
+ \n\
+.balign 4, 0 \n\
+_0803CEE0: \n\
+/* 0803CEE0 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0803CEE4: \n\
+/* 0803CEE4 */ .word func_0811AA0A \n\
+ \n\
+.balign 4, 0 \n\
+_0803CEE8: \n\
+/* 0803CEE8 */ .word gCurrentSceneData \n\
+_0803CEEC: \n\
+/* 0803CEEC */ LDR R0, _0803CF10 \n\
+/* 0803CEEE */ ADDS R0, R2, R0 \n\
+/* 0803CEF0 */ LDRB R1, [R0] \n\
+/* 0803CEF2 */ MOVS R0, #9 \n\
+/* 0803CEF4 */ SUBS R0, R1 \n\
+/* 0803CEF6 */ CMP R3, R0 \n\
+/* 0803CEF8 */ BLE _0803CF14 \n\
+/* 0803CEFA */ MOVS R0, #3 \n\
+/* 0803CEFC */ BL get_random_range \n\
+/* 0803CF00 */ ADDS R0, #0X3C \n\
+/* 0803CF02 */ LSLS R0, R0, #0X10 \n\
+/* 0803CF04 */ LSRS R4, R0, #0X10 \n\
+/* 0803CF06 */ LDR R0, [R5] \n\
+/* 0803CF08 */ ADDS R0, #0XC6 \n\
+/* 0803CF0A */ MOVS R1, #1 \n\
+/* 0803CF0C */ B _0803CF26 \n\
+ \n\
+.balign 4, 0 \n\
+_0803CF10: \n\
+/* 0803CF10 */ .word D_0811AA08 \n\
+_0803CF14: \n\
+/* 0803CF14 */ MOVS R0, #0X20 \n\
+/* 0803CF16 */ BL get_random_range \n\
+/* 0803CF1A */ ADDS R0, #0X1C \n\
+/* 0803CF1C */ LSLS R0, R0, #0X10 \n\
+/* 0803CF1E */ LSRS R4, R0, #0X10 \n\
+/* 0803CF20 */ LDR R0, [R5] \n\
+/* 0803CF22 */ ADDS R0, #0XC6 \n\
+/* 0803CF24 */ MOVS R1, #0 \n\
+_0803CF26: \n\
+/* 0803CF26 */ STRB R1, [R0] \n\
+_0803CF28: \n\
+/* 0803CF28 */ LDR R3, _0803CFE8 \n\
+/* 0803CF2A */ MOV SB, R3 \n\
+/* 0803CF2C */ LDR R7, [R3] \n\
+/* 0803CF2E */ LSLS R0, R4, #0X10 \n\
+/* 0803CF30 */ ASRS R0, R0, #8 \n\
+/* 0803CF32 */ ADDS R1, R7, #0 \n\
+/* 0803CF34 */ ADDS R1, #0X60 \n\
+/* 0803CF36 */ LDRH R1, [R1] \n\
+/* 0803CF38 */ BL __divsi3 \n\
+/* 0803CF3C */ ADDS R6, R7, #0 \n\
+/* 0803CF3E */ ADDS R6, #0XC0 \n\
+/* 0803CF40 */ STRH R0, [R6] \n\
+/* 0803CF42 */ LDR R0, _0803CFEC \n\
+/* 0803CF44 */ MOVS R1, #0XA0 \n\
+/* 0803CF46 */ LSLS R1, R1, #1 \n\
+/* 0803CF48 */ ADDS R0, R1 \n\
+/* 0803CF4A */ MOVS R2, #0 \n\
+/* 0803CF4C */ LDRSH R3, [R0, R2] \n\
+/* 0803CF4E */ LSLS R4, R3, #4 \n\
+/* 0803CF50 */ LDR R0, _0803CFF0 \n\
+/* 0803CF52 */ ADDS R0, R1 \n\
+/* 0803CF54 */ MOVS R2, #0 \n\
+/* 0803CF56 */ LDRSH R1, [R0, R2] \n\
+/* 0803CF58 */ LSLS R2, R1, #1 \n\
+/* 0803CF5A */ ADDS R2, R1 \n\
+/* 0803CF5C */ SUBS R2, R4 \n\
+/* 0803CF5E */ LSLS R1, R1, #4 \n\
+/* 0803CF60 */ LSLS R0, R3, #1 \n\
+/* 0803CF62 */ ADDS R0, R3 \n\
+/* 0803CF64 */ ADDS R1, R0 \n\
+/* 0803CF66 */ ADDS R5, R7, #0 \n\
+/* 0803CF68 */ ADDS R5, #0XB4 \n\
+/* 0803CF6A */ LDR R3, _0803CFF4 \n\
+/* 0803CF6C */ LDRH R0, [R3] \n\
+/* 0803CF6E */ LSLS R0, R0, #8 \n\
+/* 0803CF70 */ ADDS R0, R2 \n\
+/* 0803CF72 */ STR R0, [R5] \n\
+/* 0803CF74 */ MOVS R0, #0XB8 \n\
+/* 0803CF76 */ ADDS R0, R7 \n\
+/* 0803CF78 */ MOV R8, R0 \n\
+/* 0803CF7A */ LDRH R0, [R3, #2] \n\
+/* 0803CF7C */ LSLS R0, R0, #8 \n\
+/* 0803CF7E */ ADDS R0, R1 \n\
+/* 0803CF80 */ MOV R1, R8 \n\
+/* 0803CF82 */ STR R0, [R1] \n\
+/* 0803CF84 */ LDR R4, _0803CFF8 \n\
+/* 0803CF86 */ LDRH R0, [R4] \n\
+/* 0803CF88 */ ADDS R0, #4 \n\
+/* 0803CF8A */ LSLS R0, R0, #8 \n\
+/* 0803CF8C */ LDR R1, [R5] \n\
+/* 0803CF8E */ SUBS R0, R1 \n\
+/* 0803CF90 */ LDRH R1, [R6] \n\
+/* 0803CF92 */ BL __divsi3 \n\
+/* 0803CF96 */ ADDS R1, R7, #0 \n\
+/* 0803CF98 */ ADDS R1, #0XBC \n\
+/* 0803CF9A */ STRH R0, [R1] \n\
+/* 0803CF9C */ LDRH R0, [R6] \n\
+/* 0803CF9E */ LDRH R1, [R4, #2] \n\
+/* 0803CFA0 */ ADDS R1, #0X10 \n\
+/* 0803CFA2 */ LSLS R1, R1, #8 \n\
+/* 0803CFA4 */ MOV R3, R8 \n\
+/* 0803CFA6 */ LDR R2, [R3] \n\
+/* 0803CFA8 */ SUBS R1, R2 \n\
+/* 0803CFAA */ ADDS R2, R7, #0 \n\
+/* 0803CFAC */ ADDS R2, #0XC2 \n\
+/* 0803CFAE */ MOVS R3, #0 \n\
+/* 0803CFB0 */ LDRSH R2, [R2, R3] \n\
+/* 0803CFB2 */ BL func_0803CE08 \n\
+/* 0803CFB6 */ MOV R2, SB \n\
+/* 0803CFB8 */ LDR R1, [R2] \n\
+/* 0803CFBA */ ADDS R1, #0XBE \n\
+/* 0803CFBC */ STRH R0, [R1] \n\
+/* 0803CFBE */ MOVS R0, #0XA \n\
+/* 0803CFC0 */ BL get_random_range \n\
+/* 0803CFC4 */ LDR R2, _0803CFFC \n\
+/* 0803CFC6 */ LDR R1, _0803D000 \n\
+/* 0803CFC8 */ LDR R1, [R1] \n\
+/* 0803CFCA */ MOVS R3, #0XBA \n\
+/* 0803CFCC */ LSLS R3, R3, #1 \n\
+/* 0803CFCE */ ADDS R1, R3 \n\
+/* 0803CFD0 */ LDRB R1, [R1] \n\
+/* 0803CFD2 */ ADDS R1, R2 \n\
+/* 0803CFD4 */ LSLS R0, R0, #0X10 \n\
+/* 0803CFD6 */ LSRS R0, R0, #0X10 \n\
+/* 0803CFD8 */ LDRB R1, [R1] \n\
+/* 0803CFDA */ CMP R0, R1 \n\
+/* 0803CFDC */ BHS _0803D004 \n\
+/* 0803CFDE */ MOV R1, SB \n\
+/* 0803CFE0 */ LDR R0, [R1] \n\
+/* 0803CFE2 */ ADDS R0, #0XC5 \n\
+/* 0803CFE4 */ MOVS R1, #1 \n\
+/* 0803CFE6 */ B _0803D00C \n\
+ \n\
+.balign 4, 0 \n\
+_0803CFE8: \n\
+/* 0803CFE8 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0803CFEC: \n\
+/* 0803CFEC */ .word gCosineTable \n\
+ \n\
+.balign 4, 0 \n\
+_0803CFF0: \n\
+/* 0803CFF0 */ .word gSineTable \n\
+ \n\
+.balign 4, 0 \n\
+_0803CFF4: \n\
+/* 0803CFF4 */ .word D_086F0F68 \n\
+ \n\
+.balign 4, 0 \n\
+_0803CFF8: \n\
+/* 0803CFF8 */ .word D_086F0F6C \n\
+ \n\
+.balign 4, 0 \n\
+_0803CFFC: \n\
+/* 0803CFFC */ .word D_0811AA0E \n\
+ \n\
+.balign 4, 0 \n\
+_0803D000: \n\
+/* 0803D000 */ .word gCurrentSceneData \n\
+_0803D004: \n\
+/* 0803D004 */ MOV R2, SB \n\
+/* 0803D006 */ LDR R0, [R2] \n\
+/* 0803D008 */ ADDS R0, #0XC5 \n\
+/* 0803D00A */ MOVS R1, #0 \n\
+_0803D00C: \n\
+/* 0803D00C */ STRB R1, [R0] \n\
+/* 0803D00E */ LDR R2, =gCurrentSceneVariable \n\
+/* 0803D010 */ LDR R0, [R2] \n\
+/* 0803D012 */ ADDS R0, #0XC8 \n\
+/* 0803D014 */ MOVS R3, #0 \n\
+/* 0803D016 */ MOVS R1, #1 \n\
+/* 0803D018 */ STRB R1, [R0] \n\
+/* 0803D01A */ LDR R0, [R2] \n\
+/* 0803D01C */ ADDS R0, #0XC7 \n\
+/* 0803D01E */ STRB R3, [R0] \n\
+/* 0803D020 */ POP {R3, R4} \n\
+/* 0803D022 */ MOV R8, R3 \n\
+/* 0803D024 */ MOV SB, R4 \n\
+/* 0803D026 */ POP {R4, R5, R6, R7} \n\
+/* 0803D028 */ POP {R0} \n\
+/* 0803D02A */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0803D02C: \n\
+/* 0803D02C */ @ literal emitted by .ltorg for '=...'  \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mario_clash at 0x083D51C8
+struct scene_mario_clash
+    /* Start  */ .word func_0805F100, 0x00000000
+    /* Paused */ .word func_0805F434, 0x00000000
+    /* Update */ .word func_0805F180, 0x00000000
+    /* Stop   */ .word func_0805F438, 0x00000000
+    /* Script */ .word 0x083D5144
+endstruct
+
+.incbin "microgames/mario_clash/mario_clash.bin", 36, 216

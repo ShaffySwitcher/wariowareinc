@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wario_wear at 0x083D66E4
+struct scene_wario_wear
+    /* Start  */ .word func_0806E5E8, 0x00000000
+    /* Paused */ .word func_0806F3A4, 0x00000000
+    /* Update */ .word func_0806F36C, 0x00000000
+    /* Stop   */ .word func_0806F3A8, 0x00000000
+    /* Script */ .word 0x083D6678
+endstruct
+
+.incbin "microgames/wario_wear/wario_wear.bin", 36, 644

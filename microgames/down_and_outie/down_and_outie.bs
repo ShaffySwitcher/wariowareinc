@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_down_and_outie at 0x083E1BD8
+struct scene_down_and_outie
+    /* Start  */ .word func_080BF894, 0x00000000
+    /* Paused */ .word func_080BFAC4, 0x00000000
+    /* Update */ .word func_080BFACC, 0x00000000
+    /* Stop   */ .word func_080BFAC8, 0x00000000
+    /* Script */ .word 0x083E1B6C
+endstruct
+
+.incbin "microgames/down_and_outie/down_and_outie.bin", 36, 268

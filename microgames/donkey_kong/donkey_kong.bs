@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_donkey_kong at 0x083D4058
+struct scene_donkey_kong
+    /* Start  */ .word func_080564E8, 0x00000000
+    /* Paused */ .word func_08056784, 0x00000000
+    /* Update */ .word func_08056568, 0x00000000
+    /* Stop   */ .word func_08056788, 0x00000000
+    /* Script */ .word 0x083D3FD4
+endstruct
+
+.incbin "microgames/donkey_kong/donkey_kong.bin", 36, 384

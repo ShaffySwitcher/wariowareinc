@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_crash_test_dummy at 0x083CEDBC
+struct scene_crash_test_dummy
+    /* Start  */ .word func_08036000, 0x00000000
+    /* Paused */ .word func_0803679C, 0x00000000
+    /* Update */ .word func_08036740, 0x00000000
+    /* Stop   */ .word func_080367A8, 0x00000000
+    /* Script */ .word 0x083CED5C
+endstruct
+
+.incbin "microgames/crash_test_dummy/crash_test_dummy.bin", 36, 228

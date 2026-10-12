@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_sheriff at 0x083D70A0
+struct scene_sheriff
+    /* Start  */ .word func_08074160, 0x00000000
+    /* Paused */ .word func_08074958, 0x00000000
+    /* Update */ .word func_08074818, 0x00000000
+    /* Stop   */ .word func_080749C4, 0x00000000
+    /* Script */ .word 0x083D7034
+endstruct
+
+.incbin "microgames/sheriff/sheriff.bin", 36, 396

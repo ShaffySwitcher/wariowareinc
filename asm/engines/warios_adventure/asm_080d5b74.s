@@ -1,0 +1,59 @@
+/* Generated from asm/asm_080d5b74.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080D5B74 \n\
+/* 080D5B74 */ PUSH {R4, R5, LR} \n\
+/* 080D5B76 */ SUB SP, #0X14 \n\
+/* 080D5B78 */ LDR R2, _080D5BA4 \n\
+/* 080D5B7A */ MOV R1, SP \n\
+/* 080D5B7C */ ADDS R2, #0X28 \n\
+/* 080D5B7E */ LDM R2!, {R3, R4, R5} \n\
+/* 080D5B80 */ STM R1!, {R3, R4, R5} \n\
+/* 080D5B82 */ LDM R2!, {R3, R4} \n\
+/* 080D5B84 */ STM R1!, {R3, R4} \n\
+/* 080D5B86 */ LDR R1, _080D5BA8 \n\
+/* 080D5B88 */ LDR R2, [R1] \n\
+/* 080D5B8A */ MOV R1, SP \n\
+/* 080D5B8C */ MOVS R5, #4 \n\
+/* 080D5B8E */ LDRSH R3, [R1, R5] \n\
+/* 080D5B90 */ LSLS R1, R3, #8 \n\
+/* 080D5B92 */ LDR R4, [R0, #4] \n\
+/* 080D5B94 */ ADDS R1, R4, R1 \n\
+/* 080D5B96 */ LDR R2, [R2, #0XC] \n\
+/* 080D5B98 */ CMP R1, R2 \n\
+/* 080D5B9A */ BLE _080D5BAC \n\
+/* 080D5B9C */ MOVS R0, #1 \n\
+/* 080D5B9E */ RSBS R0, R0, #0 \n\
+/* 080D5BA0 */ B _080D5BC2 \n\
+ \n\
+.balign 4, 0 \n\
+_080D5BA4: \n\
+/* 080D5BA4 */ .word D_083E520C \n\
+ \n\
+.balign 4, 0 \n\
+_080D5BA8: \n\
+/* 080D5BA8 */ .word gCurrentSceneVariable \n\
+_080D5BAC: \n\
+/* 080D5BAC */ MOV R0, SP \n\
+/* 080D5BAE */ MOVS R1, #8 \n\
+/* 080D5BB0 */ LDRSH R0, [R0, R1] \n\
+/* 080D5BB2 */ ADDS R0, R3, R0 \n\
+/* 080D5BB4 */ LSLS R0, R0, #8 \n\
+/* 080D5BB6 */ ADDS R0, R4, R0 \n\
+/* 080D5BB8 */ CMP R0, R2 \n\
+/* 080D5BBA */ BLT _080D5BC0 \n\
+/* 080D5BBC */ MOVS R0, #0 \n\
+/* 080D5BBE */ B _080D5BC2 \n\
+_080D5BC0: \n\
+/* 080D5BC0 */ MOVS R0, #1 \n\
+_080D5BC2: \n\
+/* 080D5BC2 */ ADD SP, #0X14 \n\
+/* 080D5BC4 */ POP {R4, R5} \n\
+/* 080D5BC6 */ POP {R1} \n\
+/* 080D5BC8 */ BX R1 \n\
+ \n\
+/* 080D5BCA */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
+

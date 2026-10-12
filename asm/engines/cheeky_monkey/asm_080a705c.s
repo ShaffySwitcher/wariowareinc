@@ -1,0 +1,144 @@
+/* Generated from asm/asm_080a705c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080A705C \n\
+/* 080A705C */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080A705E */ MOV R7, R8 \n\
+/* 080A7060 */ PUSH {R7} \n\
+/* 080A7062 */ ADDS R4, R0, #0 \n\
+/* 080A7064 */ MOVS R0, #8 \n\
+/* 080A7066 */ LDR R6, _080A7144 \n\
+/* 080A7068 */ LDR R1, _080A7148 \n\
+/* 080A706A */ MOV IP, R1 \n\
+/* 080A706C */ LDR R3, _080A714C \n\
+/* 080A706E */ MOV R8, R3 \n\
+/* 080A7070 */ ADDS R7, R6, #0 \n\
+_080A7072: \n\
+/* 080A7072 */ LDR R1, [R7] \n\
+/* 080A7074 */ LSLS R2, R0, #0X10 \n\
+/* 080A7076 */ ASRS R2, R2, #0X10 \n\
+/* 080A7078 */ LSLS R3, R2, #3 \n\
+/* 080A707A */ ADDS R1, #0XC8 \n\
+/* 080A707C */ ADDS R3, R1, R3 \n\
+/* 080A707E */ SUBS R2, #1 \n\
+/* 080A7080 */ LSLS R0, R2, #3 \n\
+/* 080A7082 */ ADDS R1, R0 \n\
+/* 080A7084 */ LDR R0, [R1] \n\
+/* 080A7086 */ LDR R1, [R1, #4] \n\
+/* 080A7088 */ STR R0, [R3] \n\
+/* 080A708A */ STR R1, [R3, #4] \n\
+/* 080A708C */ LSLS R2, R2, #0X10 \n\
+/* 080A708E */ LSRS R0, R2, #0X10 \n\
+/* 080A7090 */ CMP R2, #0 \n\
+/* 080A7092 */ BGT _080A7072 \n\
+/* 080A7094 */ LDR R2, [R6] \n\
+/* 080A7096 */ ADDS R2, #0XC8 \n\
+/* 080A7098 */ LDR R0, [R4, #4] \n\
+/* 080A709A */ LDR R1, [R4, #8] \n\
+/* 080A709C */ STR R0, [R2] \n\
+/* 080A709E */ STR R1, [R2, #4] \n\
+/* 080A70A0 */ MOVS R0, #0 \n\
+_080A70A2: \n\
+/* 080A70A2 */ LDR R1, [R6] \n\
+/* 080A70A4 */ LSLS R2, R0, #0X10 \n\
+/* 080A70A6 */ ASRS R2, R2, #0X10 \n\
+/* 080A70A8 */ LSLS R0, R2, #3 \n\
+/* 080A70AA */ ADDS R3, R1, #0 \n\
+/* 080A70AC */ ADDS R3, #0XB0 \n\
+/* 080A70AE */ ADDS R3, R0 \n\
+/* 080A70B0 */ ADDS R2, #1 \n\
+/* 080A70B2 */ LSLS R0, R2, #1 \n\
+/* 080A70B4 */ ADDS R0, R2 \n\
+/* 080A70B6 */ SUBS R0, #1 \n\
+/* 080A70B8 */ LSLS R0, R0, #3 \n\
+/* 080A70BA */ ADDS R1, #0XC8 \n\
+/* 080A70BC */ ADDS R1, R0 \n\
+/* 080A70BE */ LDR R0, [R1] \n\
+/* 080A70C0 */ LDR R1, [R1, #4] \n\
+/* 080A70C2 */ STR R0, [R3] \n\
+/* 080A70C4 */ STR R1, [R3, #4] \n\
+/* 080A70C6 */ LSLS R2, R2, #0X10 \n\
+/* 080A70C8 */ LSRS R0, R2, #0X10 \n\
+/* 080A70CA */ ASRS R2, R2, #0X10 \n\
+/* 080A70CC */ CMP R2, #2 \n\
+/* 080A70CE */ BLE _080A70A2 \n\
+/* 080A70D0 */ MOVS R0, #0XC \n\
+/* 080A70D2 */ LDRSH R2, [R4, R0] \n\
+/* 080A70D4 */ LDRB R0, [R4, #0XF] \n\
+/* 080A70D6 */ LSLS R0, R0, #1 \n\
+/* 080A70D8 */ MOV R3, IP \n\
+/* 080A70DA */ ADDS R1, R0, R3 \n\
+/* 080A70DC */ MOVS R3, #0 \n\
+/* 080A70DE */ LDRSH R1, [R1, R3] \n\
+/* 080A70E0 */ MULS R1, R2, R1 \n\
+/* 080A70E2 */ LSLS R1, R1, #8 \n\
+/* 080A70E4 */ ADD R0, R8 \n\
+/* 080A70E6 */ MOVS R3, #0 \n\
+/* 080A70E8 */ LDRSH R0, [R0, R3] \n\
+/* 080A70EA */ MULS R0, R2, R0 \n\
+/* 080A70EC */ LSLS R0, R0, #8 \n\
+/* 080A70EE */ LSRS R0, R0, #0X10 \n\
+/* 080A70F0 */ LSLS R0, R0, #0X10 \n\
+/* 080A70F2 */ LSRS R5, R1, #0X10 \n\
+/* 080A70F4 */ ORRS R5, R0 \n\
+/* 080A70F6 */ LSLS R1, R5, #0X10 \n\
+/* 080A70F8 */ ASRS R1, R1, #0X10 \n\
+/* 080A70FA */ LDR R0, [R4, #4] \n\
+/* 080A70FC */ ADDS R0, R1 \n\
+/* 080A70FE */ STR R0, [R4, #4] \n\
+/* 080A7100 */ ASRS R1, R5, #0X10 \n\
+/* 080A7102 */ LDR R0, [R4, #8] \n\
+/* 080A7104 */ ADDS R0, R1 \n\
+/* 080A7106 */ STR R0, [R4, #8] \n\
+/* 080A7108 */ LDR R1, _080A7150 \n\
+/* 080A710A */ CMP R0, R1 \n\
+/* 080A710C */ BGT _080A7120 \n\
+/* 080A710E */ MOVS R0, #0XE0 \n\
+/* 080A7110 */ LSLS R0, R0, #5 \n\
+/* 080A7112 */ STR R0, [R4, #8] \n\
+/* 080A7114 */ LDRB R0, [R4, #0XF] \n\
+/* 080A7116 */ RSBS R0, R0, #0 \n\
+/* 080A7118 */ STRB R0, [R4, #0XF] \n\
+/* 080A711A */ LDR R0, _080A7154 \n\
+/* 080A711C */ BL play_sound \n\
+_080A7120: \n\
+/* 080A7120 */ LDR R0, [R4, #8] \n\
+/* 080A7122 */ MOVS R1, #0X94 \n\
+/* 080A7124 */ LSLS R1, R1, #8 \n\
+/* 080A7126 */ CMP R0, R1 \n\
+/* 080A7128 */ BLE _080A7138 \n\
+/* 080A712A */ STR R1, [R4, #8] \n\
+/* 080A712C */ LDRB R0, [R4, #0XF] \n\
+/* 080A712E */ RSBS R0, R0, #0 \n\
+/* 080A7130 */ STRB R0, [R4, #0XF] \n\
+/* 080A7132 */ LDR R0, _080A7154 \n\
+/* 080A7134 */ BL play_sound \n\
+_080A7138: \n\
+/* 080A7138 */ POP {R3} \n\
+/* 080A713A */ MOV R8, R3 \n\
+/* 080A713C */ POP {R4, R5, R6, R7} \n\
+/* 080A713E */ POP {R0} \n\
+/* 080A7140 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080A7144: \n\
+/* 080A7144 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080A7148: \n\
+/* 080A7148 */ .word gCosineTable \n\
+ \n\
+.balign 4, 0 \n\
+_080A714C: \n\
+/* 080A714C */ .word gSineTable \n\
+ \n\
+.balign 4, 0 \n\
+_080A7150: \n\
+/* 080A7150 */ .word 0x00001BFF \n\
+ \n\
+.balign 4, 0 \n\
+_080A7154: \n\
+/* 080A7154 */ .word D_083FF410 \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_raging_rhino at 0x083DB694
+struct scene_raging_rhino
+    /* Start  */ .word func_0809E55C, 0x00000000
+    /* Paused */ .word func_0809EB98, 0x00000000
+    /* Update */ .word func_0809EAE8, 0x00000000
+    /* Stop   */ .word func_0809EB9C, 0x00000000
+    /* Script */ .word 0x083DB628
+endstruct
+
+.incbin "microgames/raging_rhino/raging_rhino.bin", 36, 856

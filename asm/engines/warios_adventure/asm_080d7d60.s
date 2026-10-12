@@ -1,0 +1,77 @@
+/* Generated from asm/asm_080d7d60.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080D7D60 \n\
+/* 080D7D60 */ PUSH {R4, LR} \n\
+/* 080D7D62 */ LDR R4, _080D7D78 \n\
+/* 080D7D64 */ LDR R1, [R4] \n\
+/* 080D7D66 */ LDRB R0, [R1, #1] \n\
+/* 080D7D68 */ CMP R0, #1 \n\
+/* 080D7D6A */ BEQ _080D7D8A \n\
+/* 080D7D6C */ CMP R0, #1 \n\
+/* 080D7D6E */ BGT _080D7D7C \n\
+/* 080D7D70 */ CMP R0, #0 \n\
+/* 080D7D72 */ BEQ _080D7D86 \n\
+/* 080D7D74 */ B _080D7DCA \n\
+ \n\
+.balign 4, 0 \n\
+_080D7D78: \n\
+/* 080D7D78 */ .word gCurrentSceneVariable \n\
+_080D7D7C: \n\
+/* 080D7D7C */ CMP R0, #2 \n\
+/* 080D7D7E */ BEQ _080D7DAC \n\
+/* 080D7D80 */ CMP R0, #3 \n\
+/* 080D7D82 */ BEQ _080D7DC6 \n\
+/* 080D7D84 */ B _080D7DCA \n\
+_080D7D86: \n\
+/* 080D7D86 */ MOVS R0, #1 \n\
+/* 080D7D88 */ STRB R0, [R1, #1] \n\
+_080D7D8A: \n\
+/* 080D7D8A */ BL func_080D78F0 \n\
+/* 080D7D8E */ LSLS R0, R0, #0X10 \n\
+/* 080D7D90 */ CMP R0, #0 \n\
+/* 080D7D92 */ BEQ _080D7DCA \n\
+/* 080D7D94 */ LDR R3, _080D7DA8 \n\
+/* 080D7D96 */ LDR R1, [R3] \n\
+/* 080D7D98 */ LDRB R0, [R1, #1] \n\
+/* 080D7D9A */ ADDS R0, #1 \n\
+/* 080D7D9C */ MOVS R2, #0 \n\
+/* 080D7D9E */ STRB R0, [R1, #1] \n\
+/* 080D7DA0 */ LDR R0, [R3] \n\
+/* 080D7DA2 */ STRB R2, [R0, #4] \n\
+/* 080D7DA4 */ B _080D7DCA \n\
+ \n\
+.balign 4, 0 \n\
+_080D7DA8: \n\
+/* 080D7DA8 */ .word gCurrentSceneVariable \n\
+_080D7DAC: \n\
+/* 080D7DAC */ BL func_080D79E4 \n\
+/* 080D7DB0 */ LSLS R0, R0, #0X10 \n\
+/* 080D7DB2 */ CMP R0, #0 \n\
+/* 080D7DB4 */ BEQ _080D7DCA \n\
+/* 080D7DB6 */ LDR R1, [R4] \n\
+/* 080D7DB8 */ LDRB R0, [R1, #1] \n\
+/* 080D7DBA */ ADDS R0, #1 \n\
+/* 080D7DBC */ MOVS R2, #0 \n\
+/* 080D7DBE */ STRB R0, [R1, #1] \n\
+/* 080D7DC0 */ LDR R0, [R4] \n\
+/* 080D7DC2 */ STRB R2, [R0, #4] \n\
+/* 080D7DC4 */ B _080D7DCA \n\
+_080D7DC6: \n\
+/* 080D7DC6 */ BL func_080D7A4C \n\
+_080D7DCA: \n\
+/* 080D7DCA */ BL func_080D76B4 \n\
+/* 080D7DCE */ BL func_080D6D40 \n\
+/* 080D7DD2 */ BL func_080D6C54 \n\
+/* 080D7DD6 */ BL func_080D7608 \n\
+/* 080D7DDA */ BL func_080D720C \n\
+/* 080D7DDE */ MOVS R0, #0 \n\
+/* 080D7DE0 */ POP {R4} \n\
+/* 080D7DE2 */ POP {R1} \n\
+/* 080D7DE4 */ BX R1 \n\
+ \n\
+/* 080D7DE6 */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
+

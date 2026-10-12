@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ice_climber at 0x083E8B04
+struct scene_ice_climber
+    /* Start  */ .word func_080E5A28, 0x00000000
+    /* Paused */ .word func_080E6388, 0x00000000
+    /* Update */ .word func_080E6290, 0x00000000
+    /* Stop   */ .word func_080E638C, 0x00000000
+    /* Script */ .word 0x083E8A98
+endstruct
+
+.incbin "microgames/ice_climber/ice_climber.bin", 36, 216

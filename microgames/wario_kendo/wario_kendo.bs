@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wario_kendo at 0x083E8424
+struct scene_wario_kendo
+    /* Start  */ .word func_080E0EDC, 0x00000000
+    /* Paused */ .word func_080E0FA4, 0x00000000
+    /* Update */ .word func_080E0F4C, 0x00000000
+    /* Stop   */ .word func_080E0FA8, 0x00000000
+    /* Script */ .word 0x083E83A0
+endstruct
+
+.incbin "microgames/wario_kendo/wario_kendo.bin", 36, 272

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_funky_fountain at 0x083DC52C
+struct scene_funky_fountain
+    /* Start  */ .word func_080A4314, 0x00000000
+    /* Paused */ .word func_080A4420, 0x00000000
+    /* Update */ .word func_080A4384, 0x00000000
+    /* Stop   */ .word func_080A4424, 0x00000000
+    /* Script */ .word 0x083DC4A8
+endstruct
+
+.incbin "microgames/funky_fountain/funky_fountain.bin", 36, 352

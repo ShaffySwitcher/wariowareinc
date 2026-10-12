@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_guy_scraper at 0x083D0B20
+struct scene_guy_scraper
+    /* Start  */ .word func_08042204, 0x00000000
+    /* Paused */ .word func_08042350, 0x00000000
+    /* Update */ .word func_08042368, 0x00000000
+    /* Stop   */ .word func_08042364, 0x00000000
+    /* Script */ .word 0x083D0AB4
+endstruct
+
+.incbin "microgames/guy_scraper/guy_scraper.bin", 36, 240

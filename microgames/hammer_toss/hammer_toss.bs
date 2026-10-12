@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hammer_toss at 0x083CFD7C
+struct scene_hammer_toss
+    /* Start  */ .word func_0803C6F0, 0x00000000
+    /* Paused */ .word func_0803CDB0, 0x00000000
+    /* Update */ .word func_0803CD90, 0x00000000
+    /* Stop   */ .word func_0803CDC4, 0x00000000
+    /* Script */ .word 0x083CFD10
+endstruct
+
+.incbin "microgames/hammer_toss/hammer_toss.bin", 36, 1008

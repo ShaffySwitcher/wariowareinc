@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mug_shot at 0x083D2E78
+struct scene_mug_shot
+    /* Start  */ .word func_0804E5B4, 0x00000000
+    /* Paused */ .word func_0804E6C0, 0x00000000
+    /* Update */ .word func_0804E638, 0x00000000
+    /* Stop   */ .word func_0804E6C4, 0x00000000
+    /* Script */ .word 0x083D2DF4
+endstruct
+
+.incbin "microgames/mug_shot/mug_shot.bin", 36, 216

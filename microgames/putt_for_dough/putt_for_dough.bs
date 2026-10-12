@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_putt_for_dough at 0x083D2990
+struct scene_putt_for_dough
+    /* Start  */ .word func_0804BCA0, 0x00000000
+    /* Paused */ .word func_0804C374, 0x00000000
+    /* Update */ .word func_0804C280, 0x00000000
+    /* Stop   */ .word func_0804C388, 0x00000000
+    /* Script */ .word 0x083D290C
+endstruct
+
+.incbin "microgames/putt_for_dough/putt_for_dough.bin", 36, 252

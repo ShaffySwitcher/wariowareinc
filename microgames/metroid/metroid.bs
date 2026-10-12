@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_metroid at 0x083D61CC
+struct scene_metroid
+    /* Start  */ .word func_0806A9A0, 0x00000000
+    /* Paused */ .word func_0806B6EC, 0x00000000
+    /* Update */ .word func_0806B57C, 0x00000000
+    /* Stop   */ .word func_0806B6F0, 0x00000000
+    /* Script */ .word 0x083D6160
+endstruct
+
+.incbin "microgames/metroid/metroid.bin", 36, 308

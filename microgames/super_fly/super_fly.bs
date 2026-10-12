@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_super_fly at 0x083D5C28
+struct scene_super_fly
+    /* Start  */ .word func_08068284, 0x00000000
+    /* Paused */ .word func_08068438, 0x00000000
+    /* Update */ .word func_08068304, 0x00000000
+    /* Stop   */ .word func_0806843C, 0x00000000
+    /* Script */ .word 0x083D5BA4
+endstruct
+
+.incbin "microgames/super_fly/super_fly.bin", 36, 268

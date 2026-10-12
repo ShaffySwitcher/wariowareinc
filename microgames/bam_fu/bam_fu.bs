@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_bam_fu at 0x083CCD54
+struct scene_bam_fu
+    /* Start  */ .word func_0802C0E0, 0x00000000
+    /* Paused */ .word func_0802C264, 0x00000000
+    /* Update */ .word func_0802C2F8, 0x00000000
+    /* Stop   */ .word func_0802C4EC, 0x00000000
+    /* Script */ .word 0x083CCCD0
+endstruct
+
+.incbin "microgames/bam_fu/bam_fu.bin", 36, 256

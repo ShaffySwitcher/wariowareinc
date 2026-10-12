@@ -1,0 +1,107 @@
+/* Generated from asm/asm_080c6210.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080C6210 \n\
+/* 080C6210 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080C6212 */ MOV R7, SB \n\
+/* 080C6214 */ MOV R6, R8 \n\
+/* 080C6216 */ PUSH {R6, R7} \n\
+/* 080C6218 */ SUB SP, #8 \n\
+/* 080C621A */ MOV SB, R0 \n\
+/* 080C621C */ MOVS R0, #1 \n\
+/* 080C621E */ BL scene_set_current_thread \n\
+/* 080C6222 */ MOV R0, SB \n\
+/* 080C6224 */ CMP R0, #0 \n\
+/* 080C6226 */ BNE _080C6258 \n\
+/* 080C6228 */ LDR R0, _080C624C \n\
+/* 080C622A */ LDR R0, [R0] \n\
+/* 080C622C */ MOVS R1, #0X91 \n\
+/* 080C622E */ LSLS R1, R1, #1 \n\
+/* 080C6230 */ ADDS R0, R1 \n\
+/* 080C6232 */ LDRB R1, [R0] \n\
+/* 080C6234 */ LDR R3, _080C6250 \n\
+/* 080C6236 */ ADDS R0, R3, #0 \n\
+/* 080C6238 */ ADDS R0, #0X20 \n\
+/* 080C623A */ STR R0, [SP] \n\
+/* 080C623C */ LDR R0, _080C6254 \n\
+/* 080C623E */ STR R0, [SP, #4] \n\
+/* 080C6240 */ MOVS R0, #2 \n\
+/* 080C6242 */ MOVS R2, #1 \n\
+/* 080C6244 */ BL start_pal_interp_pal_pal_task \n\
+/* 080C6248 */ ADDS R7, R0, #0 \n\
+/* 080C624A */ B _080C629A \n\
+ \n\
+.balign 4, 0 \n\
+_080C624C: \n\
+/* 080C624C */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080C6250: \n\
+/* 080C6250 */ .word D_08391554 \n\
+ \n\
+.balign 4, 0 \n\
+_080C6254: \n\
+/* 080C6254 */ .word D_030040B4 \n\
+_080C6258: \n\
+/* 080C6258 */ LDR R0, _080C62B4 \n\
+/* 080C625A */ MOV R8, R0 \n\
+/* 080C625C */ LDR R0, [R0] \n\
+/* 080C625E */ MOVS R6, #0X91 \n\
+/* 080C6260 */ LSLS R6, R6, #1 \n\
+/* 080C6262 */ ADDS R0, R6 \n\
+/* 080C6264 */ LDRB R1, [R0] \n\
+/* 080C6266 */ LDR R5, _080C62B8 \n\
+/* 080C6268 */ ADDS R0, R5, #0 \n\
+/* 080C626A */ SUBS R0, #0XC0 \n\
+/* 080C626C */ STR R0, [SP] \n\
+/* 080C626E */ LDR R4, _080C62BC \n\
+/* 080C6270 */ STR R4, [SP, #4] \n\
+/* 080C6272 */ MOVS R0, #2 \n\
+/* 080C6274 */ MOVS R2, #1 \n\
+/* 080C6276 */ ADDS R3, R5, #0 \n\
+/* 080C6278 */ BL start_pal_interp_pal_pal_task \n\
+/* 080C627C */ ADDS R7, R0, #0 \n\
+/* 080C627E */ MOV R1, R8 \n\
+/* 080C6280 */ LDR R0, [R1] \n\
+/* 080C6282 */ ADDS R0, R6 \n\
+/* 080C6284 */ LDRB R1, [R0] \n\
+/* 080C6286 */ ADDS R0, R5, #0 \n\
+/* 080C6288 */ SUBS R0, #0X60 \n\
+/* 080C628A */ STR R0, [SP] \n\
+/* 080C628C */ ADDS R4, #0X60 \n\
+/* 080C628E */ STR R4, [SP, #4] \n\
+/* 080C6290 */ MOVS R0, #2 \n\
+/* 080C6292 */ MOVS R2, #1 \n\
+/* 080C6294 */ ADDS R3, R5, #0 \n\
+/* 080C6296 */ BL start_pal_interp_pal_pal_task \n\
+_080C629A: \n\
+/* 080C629A */ LDR R1, =func_080C61E4 + 1 \n\
+/* 080C629C */ ADDS R0, R7, #0 \n\
+/* 080C629E */ MOV R2, SB \n\
+/* 080C62A0 */ BL run_func_after_task \n\
+/* 080C62A4 */ ADD SP, #8 \n\
+/* 080C62A6 */ POP {R3, R4} \n\
+/* 080C62A8 */ MOV R8, R3 \n\
+/* 080C62AA */ MOV SB, R4 \n\
+/* 080C62AC */ POP {R4, R5, R6, R7} \n\
+/* 080C62AE */ POP {R0} \n\
+/* 080C62B0 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080C62C0: \n\
+/* 080C62C0 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_080C62B4: \n\
+/* 080C62B4 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080C62B8: \n\
+/* 080C62B8 */ .word D_08391594 \n\
+ \n\
+.balign 4, 0 \n\
+_080C62BC: \n\
+/* 080C62BC */ .word D_03004054 \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_the_real_mccoy at 0x083E19BC
+struct scene_the_real_mccoy
+    /* Start  */ .word func_080BF198, 0x00000000
+    /* Paused */ .word func_080BF88C, 0x00000000
+    /* Update */ .word func_080BF7E8, 0x00000000
+    /* Stop   */ .word func_080BF890, 0x00000000
+    /* Script */ .word 0x083E1938
+endstruct
+
+.incbin "microgames/the_real_mccoy/the_real_mccoy.bin", 36, 504

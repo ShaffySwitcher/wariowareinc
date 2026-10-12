@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_right_in_the_eye at 0x083CE288
+struct scene_right_in_the_eye
+    /* Start  */ .word func_08032978, 0x00000000
+    /* Paused */ .word func_08032E28, 0x00000000
+    /* Update */ .word func_08032E1C, 0x00000000
+    /* Stop   */ .word func_08032E34, 0x00000000
+    /* Script */ .word 0x083CE21C
+endstruct
+
+.incbin "microgames/right_in_the_eye/right_in_the_eye.bin", 36, 384

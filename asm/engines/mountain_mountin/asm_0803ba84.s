@@ -1,0 +1,105 @@
+/* Generated from asm/asm_0803ba84.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0803BA84 \n\
+/* 0803BA84 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0803BA86 */ MOV R7, SL \n\
+/* 0803BA88 */ MOV R6, SB \n\
+/* 0803BA8A */ MOV R5, R8 \n\
+/* 0803BA8C */ PUSH {R5, R6, R7} \n\
+/* 0803BA8E */ LDR R0, _0803BAB0 \n\
+/* 0803BA90 */ LDR R0, [R0] \n\
+/* 0803BA92 */ MOVS R1, #0X64 \n\
+/* 0803BA94 */ ADDS R1, R0 \n\
+/* 0803BA96 */ MOV SL, R1 \n\
+/* 0803BA98 */ ADDS R4, R0, #0 \n\
+/* 0803BA9A */ ADDS R4, #0X7C \n\
+/* 0803BA9C */ ADDS R6, R0, #0 \n\
+/* 0803BA9E */ ADDS R6, #0XBC \n\
+/* 0803BAA0 */ ADDS R5, R0, #0 \n\
+/* 0803BAA2 */ ADDS R5, #0XC4 \n\
+/* 0803BAA4 */ LDR R2, [R0, #0X78] \n\
+/* 0803BAA6 */ MOV SB, R2 \n\
+/* 0803BAA8 */ MOVS R3, #0 \n\
+/* 0803BAAA */ MOV R8, R3 \n\
+/* 0803BAAC */ B _0803BB10 \n\
+ \n\
+.balign 4, 0 \n\
+_0803BAB0: \n\
+/* 0803BAB0 */ .word gCurrentSceneVariable \n\
+_0803BAB4: \n\
+/* 0803BAB4 */ MOVS R0, #0 \n\
+/* 0803BAB6 */ LDRSB R0, [R6, R0] \n\
+/* 0803BAB8 */ ADDS R6, #1 \n\
+/* 0803BABA */ CMP R0, #0 \n\
+/* 0803BABC */ BNE _0803BAD0 \n\
+/* 0803BABE */ LDR R1, [R4] \n\
+/* 0803BAC0 */ LDR R0, [R5] \n\
+/* 0803BAC2 */ SUBS R1, R0 \n\
+/* 0803BAC4 */ STR R1, [R4] \n\
+/* 0803BAC6 */ CMP R1, #0 \n\
+/* 0803BAC8 */ BGT _0803BAE2 \n\
+/* 0803BACA */ MOVS R0, #0XF0 \n\
+/* 0803BACC */ LSLS R0, R0, #8 \n\
+/* 0803BACE */ B _0803BAE0 \n\
+_0803BAD0: \n\
+/* 0803BAD0 */ LDR R0, [R4] \n\
+/* 0803BAD2 */ LDR R1, [R5] \n\
+/* 0803BAD4 */ ADDS R0, R1 \n\
+/* 0803BAD6 */ STR R0, [R4] \n\
+/* 0803BAD8 */ LDR R1, _0803BB28 \n\
+/* 0803BADA */ CMP R0, R1 \n\
+/* 0803BADC */ BLE _0803BAE2 \n\
+/* 0803BADE */ MOVS R0, #0 \n\
+_0803BAE0: \n\
+/* 0803BAE0 */ STR R0, [R4] \n\
+_0803BAE2: \n\
+/* 0803BAE2 */ LDR R0, _0803BB2C \n\
+/* 0803BAE4 */ LDR R0, [R0] \n\
+/* 0803BAE6 */ MOV R7, SL \n\
+/* 0803BAE8 */ MOVS R2, #0 \n\
+/* 0803BAEA */ LDRSH R1, [R7, R2] \n\
+/* 0803BAEC */ MOVS R3, #2 \n\
+/* 0803BAEE */ ADD SL, R3 \n\
+/* 0803BAF0 */ LDR R2, [R4] \n\
+/* 0803BAF2 */ LSLS R2, R2, #8 \n\
+/* 0803BAF4 */ ASRS R2, R2, #0X10 \n\
+/* 0803BAF6 */ LDR R3, [R4, #4] \n\
+/* 0803BAF8 */ MOV R7, SB \n\
+/* 0803BAFA */ SUBS R3, R7 \n\
+/* 0803BAFC */ LSLS R3, R3, #0X10 \n\
+/* 0803BAFE */ ASRS R3, R3, #0X10 \n\
+/* 0803BB00 */ BL sprite_set_x_y \n\
+/* 0803BB04 */ ADDS R4, #8 \n\
+/* 0803BB06 */ ADDS R5, #4 \n\
+/* 0803BB08 */ MOVS R0, #1 \n\
+/* 0803BB0A */ ADD R8, R0 \n\
+/* 0803BB0C */ LDR R0, =gCurrentSceneVariable \n\
+/* 0803BB0E */ LDR R0, [R0] \n\
+_0803BB10: \n\
+/* 0803BB10 */ ADDS R0, #0XE4 \n\
+/* 0803BB12 */ LDR R0, [R0] \n\
+/* 0803BB14 */ CMP R8, R0 \n\
+/* 0803BB16 */ BLT _0803BAB4 \n\
+/* 0803BB18 */ POP {R3, R4, R5} \n\
+/* 0803BB1A */ MOV R8, R3 \n\
+/* 0803BB1C */ MOV SB, R4 \n\
+/* 0803BB1E */ MOV SL, R5 \n\
+/* 0803BB20 */ POP {R4, R5, R6, R7} \n\
+/* 0803BB22 */ POP {R0} \n\
+/* 0803BB24 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0803BB30: \n\
+/* 0803BB30 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0803BB28: \n\
+/* 0803BB28 */ .word 0x0000EFFF \n\
+ \n\
+.balign 4, 0 \n\
+_0803BB2C: \n\
+/* 0803BB2C */ .word gSpriteHandler \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_cavity_calamity at 0x083DFF48
+struct scene_cavity_calamity
+    /* Start  */ .word func_080B97A0, 0x00000000
+    /* Paused */ .word func_080BA00C, 0x00000000
+    /* Update */ .word func_080B9E94, 0x00000000
+    /* Stop   */ .word func_080BA010, 0x00000000
+    /* Script */ .word 0x083DFEC4
+endstruct
+
+.incbin "microgames/cavity_calamity/cavity_calamity.bin", 36, 280

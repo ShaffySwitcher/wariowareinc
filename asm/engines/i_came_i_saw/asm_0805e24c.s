@@ -1,0 +1,57 @@
+/* Generated from asm/asm_0805e24c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0805E24C \n\
+/* 0805E24C */ PUSH {R4, R5, R6, LR} \n\
+/* 0805E24E */ SUB SP, #0XC \n\
+/* 0805E250 */ LDR R6, _0805E294 \n\
+/* 0805E252 */ LDR R1, [R6] \n\
+/* 0805E254 */ MOVS R2, #0X80 \n\
+/* 0805E256 */ LSLS R2, R2, #2 \n\
+/* 0805E258 */ ADDS R0, R1, R2 \n\
+/* 0805E25A */ LDRB R3, [R0] \n\
+/* 0805E25C */ CMP R3, #1 \n\
+/* 0805E25E */ BNE _0805E28A \n\
+/* 0805E260 */ LDR R4, _0805E298 \n\
+/* 0805E262 */ LDR R0, [R4] \n\
+/* 0805E264 */ LDR R5, _0805E29C \n\
+/* 0805E266 */ ADDS R1, R5 \n\
+/* 0805E268 */ MOVS R2, #0 \n\
+/* 0805E26A */ LDRSH R1, [R1, R2] \n\
+/* 0805E26C */ LDR R2, =D_083669F4 \n\
+/* 0805E26E */ STR R3, [SP] \n\
+/* 0805E270 */ MOVS R3, #0 \n\
+/* 0805E272 */ STR R3, [SP, #4] \n\
+/* 0805E274 */ STR R3, [SP, #8] \n\
+/* 0805E276 */ BL sprite_set_anim \n\
+/* 0805E27A */ LDR R0, [R4] \n\
+/* 0805E27C */ LDR R1, [R6] \n\
+/* 0805E27E */ ADDS R1, R5 \n\
+/* 0805E280 */ MOVS R2, #0 \n\
+/* 0805E282 */ LDRSH R1, [R1, R2] \n\
+/* 0805E284 */ MOVS R2, #1 \n\
+/* 0805E286 */ BL sprite_set_visible \n\
+_0805E28A: \n\
+/* 0805E28A */ ADD SP, #0XC \n\
+/* 0805E28C */ POP {R4, R5, R6} \n\
+/* 0805E28E */ POP {R0} \n\
+/* 0805E290 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0805E2A0: \n\
+/* 0805E2A0 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0805E294: \n\
+/* 0805E294 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0805E298: \n\
+/* 0805E298 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0805E29C: \n\
+/* 0805E29C */ .word 0x00000206 \n\
+.ltorg \n\
+.syntax divided");
+

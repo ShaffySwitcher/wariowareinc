@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_rock_paper_scissors at 0x083E565C
+struct scene_rock_paper_scissors
+    /* Start  */ .word func_080D8EAC, 0x00000000
+    /* Paused */ .word func_080D9340, 0x00000000
+    /* Update */ .word func_080D91C0, 0x00000000
+    /* Stop   */ .word func_080D9344, 0x00000000
+    /* Script */ .word 0x083E55F0
+endstruct
+
+.incbin "microgames/rock_paper_scissors/rock_paper_scissors.bin", 36, 1380

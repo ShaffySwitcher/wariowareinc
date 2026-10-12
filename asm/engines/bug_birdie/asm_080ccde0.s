@@ -1,0 +1,282 @@
+/* Generated from asm/asm_080ccde0.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080CCDE0 \n\
+/* 080CCDE0 */ PUSH {R4, R5, R6, LR} \n\
+/* 080CCDE2 */ MOV IP, R0 \n\
+/* 080CCDE4 */ LDRB R4, [R0, #0X1E] \n\
+/* 080CCDE6 */ ADDS R6, R4, #0 \n\
+/* 080CCDE8 */ MOVS R5, #0 \n\
+/* 080CCDEA */ ADDS R0, #0X40 \n\
+/* 080CCDEC */ LDRB R1, [R0] \n\
+/* 080CCDEE */ MOVS R0, #1 \n\
+/* 080CCDF0 */ ANDS R0, R1 \n\
+/* 080CCDF2 */ CMP R0, #0 \n\
+/* 080CCDF4 */ BEQ _080CCE8C \n\
+/* 080CCDF6 */ LSLS R0, R4, #0X10 \n\
+/* 080CCDF8 */ ASRS R1, R0, #0X10 \n\
+/* 080CCDFA */ ADDS R6, R0, #0 \n\
+/* 080CCDFC */ CMP R1, #0X80 \n\
+/* 080CCDFE */ BGT _080CCE0C \n\
+/* 080CCE00 */ MOVS R4, #0 \n\
+/* 080CCE02 */ LDR R5, _080CCE08 \n\
+/* 080CCE04 */ B _080CCE12 \n\
+ \n\
+.balign 4, 0 \n\
+_080CCE08: \n\
+/* 080CCE08 */ .word 0x0000FFF4 \n\
+_080CCE0C: \n\
+/* 080CCE0C */ MOVS R4, #0X80 \n\
+/* 080CCE0E */ LSLS R4, R4, #1 \n\
+/* 080CCE10 */ MOVS R5, #0XC \n\
+_080CCE12: \n\
+/* 080CCE12 */ MOV R2, IP \n\
+/* 080CCE14 */ ADDS R2, #0X40 \n\
+/* 080CCE16 */ LDRB R1, [R2] \n\
+/* 080CCE18 */ MOVS R0, #8 \n\
+/* 080CCE1A */ ANDS R0, R1 \n\
+/* 080CCE1C */ CMP R0, #0 \n\
+/* 080CCE1E */ BEQ _080CCE56 \n\
+/* 080CCE20 */ ASRS R3, R6, #0X10 \n\
+/* 080CCE22 */ LDR R1, _080CCE34 \n\
+/* 080CCE24 */ ADDS R0, R6, R1 \n\
+/* 080CCE26 */ LSRS R0, R0, #0X10 \n\
+/* 080CCE28 */ CMP R0, #0X7F \n\
+/* 080CCE2A */ BHI _080CCE3C \n\
+/* 080CCE2C */ MOVS R4, #0X20 \n\
+/* 080CCE2E */ LDR R5, _080CCE38 \n\
+/* 080CCE30 */ B _080CCE56 \n\
+ \n\
+.balign 4, 0 \n\
+_080CCE34: \n\
+/* 080CCE34 */ .word 0xFFDF0000 \n\
+ \n\
+.balign 4, 0 \n\
+_080CCE38: \n\
+/* 080CCE38 */ .word 0x0000FFF4 \n\
+_080CCE3C: \n\
+/* 080CCE3C */ CMP R3, #0X20 \n\
+/* 080CCE3E */ BGT _080CCE44 \n\
+/* 080CCE40 */ MOVS R4, #0X20 \n\
+/* 080CCE42 */ B _080CCE54 \n\
+_080CCE44: \n\
+/* 080CCE44 */ ADDS R0, R3, #0 \n\
+/* 080CCE46 */ SUBS R0, #0XA1 \n\
+/* 080CCE48 */ LSLS R0, R0, #0X10 \n\
+/* 080CCE4A */ LSRS R0, R0, #0X10 \n\
+/* 080CCE4C */ CMP R0, #0X5E \n\
+/* 080CCE4E */ BHI _080CCE56 \n\
+/* 080CCE50 */ MOVS R4, #0X90 \n\
+/* 080CCE52 */ LSLS R4, R4, #1 \n\
+_080CCE54: \n\
+/* 080CCE54 */ MOVS R5, #0XC \n\
+_080CCE56: \n\
+/* 080CCE56 */ LDRB R1, [R2] \n\
+/* 080CCE58 */ MOVS R0, #4 \n\
+/* 080CCE5A */ ANDS R0, R1 \n\
+/* 080CCE5C */ CMP R0, #0 \n\
+/* 080CCE5E */ BNE _080CCE62 \n\
+/* 080CCE60 */ B _080CCF5C \n\
+_080CCE62: \n\
+/* 080CCE62 */ ASRS R1, R6, #0X10 \n\
+/* 080CCE64 */ LDR R2, _080CCE74 \n\
+/* 080CCE66 */ ADDS R0, R6, R2 \n\
+/* 080CCE68 */ LSRS R0, R0, #0X10 \n\
+/* 080CCE6A */ CMP R0, #0X7F \n\
+/* 080CCE6C */ BHI _080CCE78 \n\
+/* 080CCE6E */ MOVS R4, #0XE0 \n\
+/* 080CCE70 */ MOVS R5, #0XC \n\
+/* 080CCE72 */ B _080CCF5C \n\
+ \n\
+.balign 4, 0 \n\
+_080CCE74: \n\
+/* 080CCE74 */ .word 0xFF9F0000 \n\
+_080CCE78: \n\
+/* 080CCE78 */ CMP R1, #0XE0 \n\
+/* 080CCE7A */ BLE _080CCE80 \n\
+/* 080CCE7C */ MOVS R4, #0XE0 \n\
+/* 080CCE7E */ B _080CCF5A \n\
+_080CCE80: \n\
+/* 080CCE80 */ CMP R1, #0X60 \n\
+/* 080CCE82 */ BGT _080CCF5C \n\
+/* 080CCE84 */ LDR R4, _080CCE88 \n\
+/* 080CCE86 */ B _080CCF5A \n\
+ \n\
+.balign 4, 0 \n\
+_080CCE88: \n\
+/* 080CCE88 */ .word 0x0000FFE0 \n\
+_080CCE8C: \n\
+/* 080CCE8C */ MOVS R0, #2 \n\
+/* 080CCE8E */ ANDS R0, R1 \n\
+/* 080CCE90 */ CMP R0, #0 \n\
+/* 080CCE92 */ BEQ _080CCF10 \n\
+/* 080CCE94 */ LSLS R0, R4, #0X10 \n\
+/* 080CCE96 */ ASRS R0, R0, #0X10 \n\
+/* 080CCE98 */ CMP R0, #0X7F \n\
+/* 080CCE9A */ BGT _080CCEA2 \n\
+/* 080CCE9C */ MOVS R4, #0X80 \n\
+/* 080CCE9E */ MOVS R5, #0XC \n\
+/* 080CCEA0 */ B _080CCEA6 \n\
+_080CCEA2: \n\
+/* 080CCEA2 */ MOVS R4, #0X80 \n\
+/* 080CCEA4 */ LDR R5, _080CCEC8 \n\
+_080CCEA6: \n\
+/* 080CCEA6 */ MOV R2, IP \n\
+/* 080CCEA8 */ ADDS R2, #0X40 \n\
+/* 080CCEAA */ LDRB R1, [R2] \n\
+/* 080CCEAC */ MOVS R0, #8 \n\
+/* 080CCEAE */ ANDS R0, R1 \n\
+/* 080CCEB0 */ CMP R0, #0 \n\
+/* 080CCEB2 */ BEQ _080CCEDE \n\
+/* 080CCEB4 */ ADDS R3, R6, #0 \n\
+/* 080CCEB6 */ ADDS R0, R3, #0 \n\
+/* 080CCEB8 */ SUBS R0, #0X61 \n\
+/* 080CCEBA */ LSLS R0, R0, #0X10 \n\
+/* 080CCEBC */ LSRS R0, R0, #0X10 \n\
+/* 080CCEBE */ CMP R0, #0X7F \n\
+/* 080CCEC0 */ BHI _080CCECC \n\
+/* 080CCEC2 */ MOVS R4, #0X60 \n\
+/* 080CCEC4 */ LDR R5, _080CCEC8 \n\
+/* 080CCEC6 */ B _080CCEDE \n\
+ \n\
+.balign 4, 0 \n\
+_080CCEC8: \n\
+/* 080CCEC8 */ .word 0x0000FFF4 \n\
+_080CCECC: \n\
+/* 080CCECC */ CMP R3, #0XE0 \n\
+/* 080CCECE */ BLE _080CCED6 \n\
+/* 080CCED0 */ MOVS R4, #0XB0 \n\
+/* 080CCED2 */ LSLS R4, R4, #1 \n\
+/* 080CCED4 */ B _080CCEDC \n\
+_080CCED6: \n\
+/* 080CCED6 */ CMP R3, #0X60 \n\
+/* 080CCED8 */ BGT _080CCEDE \n\
+/* 080CCEDA */ MOVS R4, #0X60 \n\
+_080CCEDC: \n\
+/* 080CCEDC */ MOVS R5, #0XC \n\
+_080CCEDE: \n\
+/* 080CCEDE */ LDRB R1, [R2] \n\
+/* 080CCEE0 */ MOVS R0, #4 \n\
+/* 080CCEE2 */ ANDS R0, R1 \n\
+/* 080CCEE4 */ CMP R0, #0 \n\
+/* 080CCEE6 */ BEQ _080CCF5C \n\
+/* 080CCEE8 */ ADDS R1, R6, #0 \n\
+/* 080CCEEA */ ADDS R0, R1, #0 \n\
+/* 080CCEEC */ SUBS R0, #0X21 \n\
+/* 080CCEEE */ LSLS R0, R0, #0X10 \n\
+/* 080CCEF0 */ LSRS R0, R0, #0X10 \n\
+/* 080CCEF2 */ CMP R0, #0X7F \n\
+/* 080CCEF4 */ BHI _080CCEFC \n\
+/* 080CCEF6 */ MOVS R4, #0XA0 \n\
+/* 080CCEF8 */ MOVS R5, #0XC \n\
+/* 080CCEFA */ B _080CCF5C \n\
+_080CCEFC: \n\
+/* 080CCEFC */ CMP R1, #0XA0 \n\
+/* 080CCEFE */ BLE _080CCF04 \n\
+/* 080CCF00 */ MOVS R4, #0XA0 \n\
+/* 080CCF02 */ B _080CCF5A \n\
+_080CCF04: \n\
+/* 080CCF04 */ CMP R1, #0X20 \n\
+/* 080CCF06 */ BGT _080CCF5C \n\
+/* 080CCF08 */ LDR R4, _080CCF0C \n\
+/* 080CCF0A */ B _080CCF5A \n\
+ \n\
+.balign 4, 0 \n\
+_080CCF0C: \n\
+/* 080CCF0C */ .word 0x0000FFA0 \n\
+_080CCF10: \n\
+/* 080CCF10 */ MOVS R0, #4 \n\
+/* 080CCF12 */ ANDS R0, R1 \n\
+/* 080CCF14 */ CMP R0, #0 \n\
+/* 080CCF16 */ BEQ _080CCF36 \n\
+/* 080CCF18 */ LSLS R0, R4, #0X10 \n\
+/* 080CCF1A */ ASRS R0, R0, #0X10 \n\
+/* 080CCF1C */ CMP R0, #0X40 \n\
+/* 080CCF1E */ BGT _080CCF28 \n\
+/* 080CCF20 */ LDR R4, _080CCF24 \n\
+/* 080CCF22 */ B _080CCF5A \n\
+ \n\
+.balign 4, 0 \n\
+_080CCF24: \n\
+/* 080CCF24 */ .word 0x0000FFC0 \n\
+_080CCF28: \n\
+/* 080CCF28 */ CMP R0, #0XBF \n\
+/* 080CCF2A */ BLE _080CCF30 \n\
+/* 080CCF2C */ MOVS R4, #0XC0 \n\
+/* 080CCF2E */ B _080CCF5A \n\
+_080CCF30: \n\
+/* 080CCF30 */ MOVS R4, #0XC0 \n\
+/* 080CCF32 */ MOVS R5, #0XC \n\
+/* 080CCF34 */ B _080CCF5C \n\
+_080CCF36: \n\
+/* 080CCF36 */ MOVS R0, #8 \n\
+/* 080CCF38 */ ANDS R0, R1 \n\
+/* 080CCF3A */ CMP R0, #0 \n\
+/* 080CCF3C */ BEQ _080CCF5C \n\
+/* 080CCF3E */ LSLS R0, R4, #0X10 \n\
+/* 080CCF40 */ ASRS R0, R0, #0X10 \n\
+/* 080CCF42 */ CMP R0, #0X40 \n\
+/* 080CCF44 */ BGT _080CCF4C \n\
+/* 080CCF46 */ MOVS R4, #0X40 \n\
+/* 080CCF48 */ MOVS R5, #0XC \n\
+/* 080CCF4A */ B _080CCF5C \n\
+_080CCF4C: \n\
+/* 080CCF4C */ CMP R0, #0XBF \n\
+/* 080CCF4E */ BLE _080CCF58 \n\
+/* 080CCF50 */ MOVS R4, #0X9B \n\
+/* 080CCF52 */ LSLS R4, R4, #2 \n\
+/* 080CCF54 */ MOVS R5, #0XC \n\
+/* 080CCF56 */ B _080CCF5C \n\
+_080CCF58: \n\
+/* 080CCF58 */ MOVS R4, #0X40 \n\
+_080CCF5A: \n\
+/* 080CCF5A */ LDR R5, _080CCF78 \n\
+_080CCF5C: \n\
+/* 080CCF5C */ MOV R3, IP \n\
+/* 080CCF5E */ LDRH R1, [R3, #0X1E] \n\
+/* 080CCF60 */ LSLS R0, R5, #0X10 \n\
+/* 080CCF62 */ ASRS R0, R0, #0X10 \n\
+/* 080CCF64 */ ADDS R1, R0, R1 \n\
+/* 080CCF66 */ STRH R1, [R3, #0X1E] \n\
+/* 080CCF68 */ CMP R0, #0 \n\
+/* 080CCF6A */ BLE _080CCF7C \n\
+/* 080CCF6C */ LSLS R1, R1, #0X10 \n\
+/* 080CCF6E */ LSLS R0, R4, #0X10 \n\
+/* 080CCF70 */ CMP R1, R0 \n\
+/* 080CCF72 */ BLE _080CCF8C \n\
+/* 080CCF74 */ STRH R4, [R3, #0X1E] \n\
+/* 080CCF76 */ B _080CCF8C \n\
+ \n\
+.balign 4, 0 \n\
+_080CCF78: \n\
+/* 080CCF78 */ .word 0x0000FFF4 \n\
+_080CCF7C: \n\
+/* 080CCF7C */ CMP R0, #0 \n\
+/* 080CCF7E */ BGE _080CCF8C \n\
+/* 080CCF80 */ LSLS R1, R1, #0X10 \n\
+/* 080CCF82 */ LSLS R0, R4, #0X10 \n\
+/* 080CCF84 */ CMP R1, R0 \n\
+/* 080CCF86 */ BGE _080CCF8C \n\
+/* 080CCF88 */ MOV R0, IP \n\
+/* 080CCF8A */ STRH R4, [R0, #0X1E] \n\
+_080CCF8C: \n\
+/* 080CCF8C */ MOV R1, IP \n\
+/* 080CCF8E */ LDRB R0, [R1, #0X1E] \n\
+/* 080CCF90 */ STRH R0, [R1, #0X1E] \n\
+/* 080CCF92 */ MOV R0, IP \n\
+/* 080CCF94 */ ADDS R0, #0X10 \n\
+/* 080CCF96 */ MOVS R2, #0X1C \n\
+/* 080CCF98 */ LDRSH R1, [R1, R2] \n\
+/* 080CCF9A */ MOV R3, IP \n\
+/* 080CCF9C */ MOVS R4, #0X1E \n\
+/* 080CCF9E */ LDRSH R2, [R3, R4] \n\
+/* 080CCFA0 */ BL func_08007000 \n\
+/* 080CCFA4 */ POP {R4, R5, R6} \n\
+/* 080CCFA6 */ POP {R0} \n\
+/* 080CCFA8 */ BX R0 \n\
+ \n\
+/* 080CCFAA */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
+

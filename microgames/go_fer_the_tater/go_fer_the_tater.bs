@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_go_fer_the_tater at 0x083CDB98
+struct scene_go_fer_the_tater
+    /* Start  */ .word func_08030CA4, 0x00000000
+    /* Paused */ .word func_080315E8, 0x00000000
+    /* Update */ .word func_080315D8, 0x00000000
+    /* Stop   */ .word func_080315EC, 0x00000000
+    /* Script */ .word 0x083CDB2C
+endstruct
+
+.incbin "microgames/go_fer_the_tater/go_fer_the_tater.bin", 36, 480

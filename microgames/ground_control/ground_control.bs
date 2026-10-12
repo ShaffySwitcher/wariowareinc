@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ground_control at 0x083CE574
+struct scene_ground_control
+    /* Start  */ .word func_08033634, 0x00000000
+    /* Paused */ .word func_08033D2C, 0x00000000
+    /* Update */ .word func_08033D10, 0x00000000
+    /* Stop   */ .word func_08033D38, 0x00000000
+    /* Script */ .word 0x083CE508
+endstruct
+
+.incbin "microgames/ground_control/ground_control.bin", 36, 664

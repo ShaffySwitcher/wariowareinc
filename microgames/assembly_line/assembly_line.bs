@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_assembly_line at 0x083DD53C
+struct scene_assembly_line
+    /* Start  */ .word func_080AC3E8, 0x00000000
+    /* Paused */ .word func_080AC520, 0x00000000
+    /* Update */ .word func_080AC458, 0x00000000
+    /* Stop   */ .word func_080AC524, 0x00000000
+    /* Script */ .word 0x083DD4B8
+endstruct
+
+.incbin "microgames/assembly_line/assembly_line.bin", 36, 284

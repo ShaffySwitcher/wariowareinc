@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_grow_wario_grow at 0x083E24B4
+struct scene_grow_wario_grow
+    /* Start  */ .word func_080C38F8, 0x00000000
+    /* Paused */ .word func_080C450C, 0x00000000
+    /* Update */ .word func_080C4450, 0x00000000
+    /* Stop   */ .word func_080C4510, 0x00000000
+    /* Script */ .word 0x083E2448
+endstruct
+
+.incbin "microgames/grow_wario_grow/grow_wario_grow.bin", 36, 1060

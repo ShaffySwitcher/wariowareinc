@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_whats_the_toadal at 0x083DB40C
+struct scene_whats_the_toadal
+    /* Start  */ .word func_0809CFE4, 0x00000000
+    /* Paused */ .word func_0809DD54, 0x00000000
+    /* Update */ .word func_0809DBDC, 0x00000000
+    /* Stop   */ .word func_0809DD58, 0x00000000
+    /* Script */ .word 0x083DB388
+endstruct
+
+.incbin "microgames/whats_the_toadal/whats_the_toadal.bin", 36, 356

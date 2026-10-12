@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_douse_the_house at 0x083D79E4
+struct scene_douse_the_house
+    /* Start  */ .word func_08078ADC, 0x00000000
+    /* Paused */ .word func_08079554, 0x00000000
+    /* Update */ .word func_0807952C, 0x00000000
+    /* Stop   */ .word func_08079558, 0x00000000
+    /* Script */ .word 0x083D7978
+endstruct
+
+.incbin "microgames/douse_the_house/douse_the_house.bin", 36, 280

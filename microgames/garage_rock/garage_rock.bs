@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_garage_rock at 0x083E87E4
+struct scene_garage_rock
+    /* Start  */ .word func_080E4464, 0x00000000
+    /* Paused */ .word func_080E4D0C, 0x00000000
+    /* Update */ .word func_080E4C84, 0x00000000
+    /* Stop   */ .word func_080E4D10, 0x00000000
+    /* Script */ .word 0x083E8760
+endstruct
+
+.incbin "microgames/garage_rock/garage_rock.bin", 36, 312

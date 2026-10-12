@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_banana_munch at 0x083D7EE8
+struct scene_banana_munch
+    /* Start  */ .word func_0807BA28, 0x00000000
+    /* Paused */ .word func_0807BE28, 0x00000000
+    /* Update */ .word func_0807BD80, 0x00000000
+    /* Stop   */ .word func_0807BE2C, 0x00000000
+    /* Script */ .word 0x083D7E7C
+endstruct
+
+.incbin "microgames/banana_munch/banana_munch.bin", 36, 392

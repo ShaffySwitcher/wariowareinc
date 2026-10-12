@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_loot_scoot at 0x083E3288
+struct scene_loot_scoot
+    /* Start  */ .word func_080C7E48, 0x00000000
+    /* Paused */ .word func_080C8F24, 0x00000000
+    /* Update */ .word func_080C8EAC, 0x00000000
+    /* Stop   */ .word func_080C8F28, 0x00000000
+    /* Script */ .word 0x083E321C
+endstruct
+
+.incbin "microgames/loot_scoot/loot_scoot.bin", 36, 392

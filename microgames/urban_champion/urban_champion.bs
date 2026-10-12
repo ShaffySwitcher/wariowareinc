@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_urban_champion at 0x083D4728
+struct scene_urban_champion
+    /* Start  */ .word func_0805AA10, 0x00000000
+    /* Paused */ .word func_0805AB28, 0x00000000
+    /* Update */ .word func_0805AA88, 0x00000000
+    /* Stop   */ .word func_0805AB2C, 0x00000000
+    /* Script */ .word 0x083D46A4
+endstruct
+
+.incbin "microgames/urban_champion/urban_champion.bin", 36, 1116

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_four_leaf_hover at 0x083DD3D4
+struct scene_four_leaf_hover
+    /* Start  */ .word func_080AB8F0, 0x00000000
+    /* Paused */ .word func_080AC3E0, 0x00000000
+    /* Update */ .word func_080AC328, 0x00000000
+    /* Stop   */ .word func_080AC3E4, 0x00000000
+    /* Script */ .word 0x083DD350
+endstruct
+
+.incbin "microgames/four_leaf_hover/four_leaf_hover.bin", 36, 324

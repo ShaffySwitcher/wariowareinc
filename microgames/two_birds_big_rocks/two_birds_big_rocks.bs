@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_two_birds_big_rocks at 0x083DFD58
+struct scene_two_birds_big_rocks
+    /* Start  */ .word func_080B8C50, 0x00000000
+    /* Paused */ .word func_080B9798, 0x00000000
+    /* Update */ .word func_080B9744, 0x00000000
+    /* Stop   */ .word func_080B979C, 0x00000000
+    /* Script */ .word 0x083DFCEC
+endstruct
+
+.incbin "microgames/two_birds_big_rocks/two_birds_big_rocks.bin", 36, 460

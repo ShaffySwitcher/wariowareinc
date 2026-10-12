@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_bug_birdie at 0x083E381C
+struct scene_bug_birdie
+    /* Start  */ .word func_080CC7A4, 0x00000000
+    /* Paused */ .word func_080CC880, 0x00000000
+    /* Update */ .word func_080CC828, 0x00000000
+    /* Stop   */ .word func_080CC884, 0x00000000
+    /* Script */ .word 0x083E3798
+endstruct
+
+.incbin "microgames/bug_birdie/bug_birdie.bin", 36, 296

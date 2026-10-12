@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_sole_man at 0x083D7B20
+struct scene_sole_man
+    /* Start  */ .word func_0807955C, 0x00000000
+    /* Paused */ .word func_0807A2B8, 0x00000000
+    /* Update */ .word func_0807A234, 0x00000000
+    /* Stop   */ .word func_0807A2BC, 0x00000000
+    /* Script */ .word 0x083D7AB4
+endstruct
+
+.incbin "microgames/sole_man/sole_man.bin", 36, 280

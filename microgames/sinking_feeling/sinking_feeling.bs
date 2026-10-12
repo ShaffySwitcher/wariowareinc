@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_sinking_feeling at 0x083E8558
+struct scene_sinking_feeling
+    /* Start  */ .word func_080E1F60, 0x00000000
+    /* Paused */ .word func_080E26A8, 0x00000000
+    /* Update */ .word func_080E2634, 0x00000000
+    /* Stop   */ .word func_080E26AC, 0x00000000
+    /* Script */ .word 0x083E84EC
+endstruct
+
+.incbin "microgames/sinking_feeling/sinking_feeling.bin", 36, 616

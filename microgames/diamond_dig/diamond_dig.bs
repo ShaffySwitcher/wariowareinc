@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_diamond_dig at 0x083CD4D8
+struct scene_diamond_dig
+    /* Start  */ .word func_0802E4F8, 0x00000000
+    /* Paused */ .word func_0802ECB0, 0x00000000
+    /* Update */ .word func_0802ECA0, 0x00000000
+    /* Stop   */ .word func_0802ECBC, 0x00000000
+    /* Script */ .word 0x083CD454
+endstruct
+
+.incbin "microgames/diamond_dig/diamond_dig.bin", 36, 336

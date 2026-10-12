@@ -1,0 +1,114 @@
+/* Generated from asm/asm_080c9704.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080C9704 \n\
+/* 080C9704 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080C9706 */ ADDS R4, R0, #0 \n\
+/* 080C9708 */ LDR R7, _080C9734 \n\
+/* 080C970A */ LDR R0, [R7] \n\
+/* 080C970C */ LDRH R1, [R0, #0X16] \n\
+/* 080C970E */ LSRS R6, R1, #2 \n\
+/* 080C9710 */ LSLS R0, R1, #1 \n\
+/* 080C9712 */ ADDS R0, R1 \n\
+/* 080C9714 */ LSRS R5, R0, #4 \n\
+/* 080C9716 */ ADDS R0, R4, #0 \n\
+/* 080C9718 */ BL func_080C950C \n\
+/* 080C971C */ ADDS R2, R4, #0 \n\
+/* 080C971E */ ADDS R2, #0X20 \n\
+/* 080C9720 */ LDRB R3, [R2] \n\
+/* 080C9722 */ LSRS R0, R3, #4 \n\
+/* 080C9724 */ CMP R0, #1 \n\
+/* 080C9726 */ BEQ _080C9764 \n\
+/* 080C9728 */ CMP R0, #1 \n\
+/* 080C972A */ BGT _080C9738 \n\
+/* 080C972C */ CMP R0, #0 \n\
+/* 080C972E */ BEQ _080C973E \n\
+/* 080C9730 */ B _080C97B4 \n\
+ \n\
+.balign 4, 0 \n\
+_080C9734: \n\
+/* 080C9734 */ .word gCurrentSceneData \n\
+_080C9738: \n\
+/* 080C9738 */ CMP R0, #2 \n\
+/* 080C973A */ BEQ _080C9798 \n\
+/* 080C973C */ B _080C97B4 \n\
+_080C973E: \n\
+/* 080C973E */ LDR R0, _080C9758 \n\
+/* 080C9740 */ LDRH R0, [R0, #2] \n\
+/* 080C9742 */ LSLS R0, R0, #8 \n\
+/* 080C9744 */ LDR R1, [R4, #8] \n\
+/* 080C9746 */ CMP R1, R0 \n\
+/* 080C9748 */ BGE _080C975C \n\
+/* 080C974A */ MOVS R0, #0XF \n\
+/* 080C974C */ ANDS R0, R3 \n\
+/* 080C974E */ MOVS R1, #0X10 \n\
+/* 080C9750 */ ORRS R0, R1 \n\
+/* 080C9752 */ STRB R0, [R2] \n\
+/* 080C9754 */ B _080C97B4 \n\
+ \n\
+.balign 4, 0 \n\
+_080C9758: \n\
+/* 080C9758 */ .word D_087A43E8 \n\
+_080C975C: \n\
+/* 080C975C */ LDR R0, [R4, #0X14] \n\
+/* 080C975E */ SUBS R0, R6 \n\
+/* 080C9760 */ STR R0, [R4, #0X14] \n\
+/* 080C9762 */ B _080C97B4 \n\
+_080C9764: \n\
+/* 080C9764 */ LDR R0, [R4, #0X14] \n\
+/* 080C9766 */ CMP R0, #0 \n\
+/* 080C9768 */ BGE _080C976E \n\
+/* 080C976A */ ADDS R0, R5 \n\
+/* 080C976C */ STR R0, [R4, #0X14] \n\
+_080C976E: \n\
+/* 080C976E */ LDR R0, [R7] \n\
+/* 080C9770 */ LDRH R0, [R0, #0X16] \n\
+/* 080C9772 */ LSLS R1, R0, #1 \n\
+/* 080C9774 */ ADDS R1, R0 \n\
+/* 080C9776 */ LSRS R1, R1, #5 \n\
+/* 080C9778 */ LDR R0, [R4, #0X14] \n\
+/* 080C977A */ ADDS R0, R1 \n\
+/* 080C977C */ STR R0, [R4, #0X14] \n\
+/* 080C977E */ LDR R0, _080C9794 \n\
+/* 080C9780 */ LDRH R0, [R0, #2] \n\
+/* 080C9782 */ LSLS R0, R0, #8 \n\
+/* 080C9784 */ LDR R1, [R4, #8] \n\
+/* 080C9786 */ CMP R1, R0 \n\
+/* 080C9788 */ BLE _080C97B4 \n\
+/* 080C978A */ LDRB R1, [R2] \n\
+/* 080C978C */ MOVS R0, #0XF \n\
+/* 080C978E */ ANDS R0, R1 \n\
+/* 080C9790 */ STRB R0, [R2] \n\
+/* 080C9792 */ B _080C97B4 \n\
+ \n\
+.balign 4, 0 \n\
+_080C9794: \n\
+/* 080C9794 */ .word D_087A43E8 \n\
+_080C9798: \n\
+/* 080C9798 */ LDR R0, _080C97AC \n\
+/* 080C979A */ LDRH R0, [R0, #2] \n\
+/* 080C979C */ LSLS R0, R0, #8 \n\
+/* 080C979E */ STR R0, [R4, #8] \n\
+/* 080C97A0 */ LDR R0, _080C97B0 \n\
+/* 080C97A2 */ LDR R1, [R0] \n\
+/* 080C97A4 */ MOVS R0, #0 \n\
+/* 080C97A6 */ STRH R0, [R1, #0X18] \n\
+/* 080C97A8 */ MOVS R0, #1 \n\
+/* 080C97AA */ B _080C97B6 \n\
+ \n\
+.balign 4, 0 \n\
+_080C97AC: \n\
+/* 080C97AC */ .word D_087A43E8 \n\
+ \n\
+.balign 4, 0 \n\
+_080C97B0: \n\
+/* 080C97B0 */ .word gCurrentSceneVariable \n\
+_080C97B4: \n\
+/* 080C97B4 */ MOVS R0, #0 \n\
+_080C97B6: \n\
+/* 080C97B6 */ POP {R4, R5, R6, R7} \n\
+/* 080C97B8 */ POP {R1} \n\
+/* 080C97BA */ BX R1 \n\
+.ltorg \n\
+.syntax divided");
+

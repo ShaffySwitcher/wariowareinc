@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_nail_call at 0x083D7750
+struct scene_nail_call
+    /* Start  */ .word func_08075854, 0x00000000
+    /* Paused */ .word func_08076FAC, 0x00000000
+    /* Update */ .word func_08076ED8, 0x00000000
+    /* Stop   */ .word func_08076FB0, 0x00000000
+    /* Script */ .word 0x083D769C
+endstruct
+
+.incbin "microgames/nail_call/nail_call.bin", 36, 348

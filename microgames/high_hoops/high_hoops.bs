@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_high_hoops at 0x083D10FC
+struct scene_high_hoops
+    /* Start  */ .word func_08044CFC, 0x00000000
+    /* Paused */ .word func_08045500, 0x00000000
+    /* Update */ .word func_080454D8, 0x00000000
+    /* Stop   */ .word func_08045514, 0x00000000
+    /* Script */ .word 0x083D1090
+endstruct
+
+.incbin "microgames/high_hoops/high_hoops.bin", 36, 240

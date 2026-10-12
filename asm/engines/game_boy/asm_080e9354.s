@@ -1,0 +1,310 @@
+/* Generated from asm/asm_080e9354.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080E9354 \n\
+/* 080E9354 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080E9356 */ SUB SP, #4 \n\
+/* 080E9358 */ LDR R6, _080E937C \n\
+/* 080E935A */ LDR R4, [R6] \n\
+/* 080E935C */ LDR R3, _080E9380 \n\
+/* 080E935E */ ADDS R0, R4, R3 \n\
+/* 080E9360 */ LDRB R0, [R0] \n\
+/* 080E9362 */ CMP R0, #0 \n\
+/* 080E9364 */ BNE _080E9368 \n\
+/* 080E9366 */ B _080E9546 \n\
+_080E9368: \n\
+/* 080E9368 */ LDR R5, _080E9384 \n\
+/* 080E936A */ ADDS R0, R4, R5 \n\
+/* 080E936C */ LDRB R0, [R0] \n\
+/* 080E936E */ CMP R0, #1 \n\
+/* 080E9370 */ BEQ _080E93C4 \n\
+/* 080E9372 */ CMP R0, #1 \n\
+/* 080E9374 */ BGT _080E9388 \n\
+/* 080E9376 */ CMP R0, #0 \n\
+/* 080E9378 */ BEQ _080E9390 \n\
+/* 080E937A */ B _080E9546 \n\
+ \n\
+.balign 4, 0 \n\
+_080E937C: \n\
+/* 080E937C */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080E9380: \n\
+/* 080E9380 */ .word 0x00000281 \n\
+ \n\
+.balign 4, 0 \n\
+_080E9384: \n\
+/* 080E9384 */ .word 0x00000282 \n\
+_080E9388: \n\
+/* 080E9388 */ CMP R0, #2 \n\
+/* 080E938A */ BNE _080E938E \n\
+/* 080E938C */ B _080E9508 \n\
+_080E938E: \n\
+/* 080E938E */ B _080E9546 \n\
+_080E9390: \n\
+/* 080E9390 */ LDR R1, _080E93C0 \n\
+/* 080E9392 */ ADDS R2, R1, #0 \n\
+/* 080E9394 */ ADDS R2, #0X4C \n\
+/* 080E9396 */ MOVS R0, #0XE8 \n\
+/* 080E9398 */ STRH R0, [R2] \n\
+/* 080E939A */ MOVS R3, #0XA1 \n\
+/* 080E939C */ LSLS R3, R3, #2 \n\
+/* 080E939E */ ADDS R2, R4, R3 \n\
+/* 080E93A0 */ LDRB R0, [R2] \n\
+/* 080E93A2 */ ADDS R0, #1 \n\
+/* 080E93A4 */ STRB R0, [R2] \n\
+/* 080E93A6 */ ADDS R1, #0X50 \n\
+/* 080E93A8 */ LDRH R0, [R1] \n\
+/* 080E93AA */ ADDS R0, #1 \n\
+/* 080E93AC */ STRH R0, [R1] \n\
+/* 080E93AE */ LDR R1, [R6] \n\
+/* 080E93B0 */ ADDS R3, R1, R3 \n\
+/* 080E93B2 */ LDRB R0, [R3] \n\
+/* 080E93B4 */ CMP R0, #0X10 \n\
+/* 080E93B6 */ BEQ _080E93BA \n\
+/* 080E93B8 */ B _080E9546 \n\
+_080E93BA: \n\
+/* 080E93BA */ ADDS R1, R5 \n\
+/* 080E93BC */ B _080E94EC \n\
+ \n\
+.balign 4, 0 \n\
+_080E93C0: \n\
+/* 080E93C0 */ .word gGraphicsBuffer \n\
+_080E93C4: \n\
+/* 080E93C4 */ LDR R1, _080E9428 \n\
+/* 080E93C6 */ ADDS R0, R4, R1 \n\
+/* 080E93C8 */ LDRB R0, [R0] \n\
+/* 080E93CA */ ADDS R0, #8 \n\
+/* 080E93CC */ LSLS R0, R0, #0XB \n\
+/* 080E93CE */ MOVS R1, #0XC0 \n\
+/* 080E93D0 */ LSLS R1, R1, #0X13 \n\
+/* 080E93D2 */ ADDS R0, R1 \n\
+/* 080E93D4 */ LDR R1, _080E942C \n\
+/* 080E93D6 */ MOVS R2, #0X80 \n\
+/* 080E93D8 */ LSLS R2, R2, #4 \n\
+/* 080E93DA */ MOVS R3, #0X80 \n\
+/* 080E93DC */ LSLS R3, R3, #1 \n\
+/* 080E93DE */ STR R3, [SP] \n\
+/* 080E93E0 */ MOVS R3, #0X20 \n\
+/* 080E93E2 */ BL dma3_set \n\
+/* 080E93E6 */ MOVS R5, #0 \n\
+/* 080E93E8 */ LDR R7, _080E9430 \n\
+_080E93EA: \n\
+/* 080E93EA */ LDR R0, [R7] \n\
+/* 080E93EC */ LDR R1, [R6] \n\
+/* 080E93EE */ LSLS R4, R5, #1 \n\
+/* 080E93F0 */ MOVS R2, #0XDE \n\
+/* 080E93F2 */ LSLS R2, R2, #1 \n\
+/* 080E93F4 */ ADDS R1, R2 \n\
+/* 080E93F6 */ ADDS R1, R4 \n\
+/* 080E93F8 */ MOVS R3, #0 \n\
+/* 080E93FA */ LDRSH R1, [R1, R3] \n\
+/* 080E93FC */ MOVS R2, #7 \n\
+/* 080E93FE */ BL sprite_get_data \n\
+/* 080E9402 */ LDR R1, _080E9434 \n\
+/* 080E9404 */ CMP R0, R1 \n\
+/* 080E9406 */ BNE _080E9438 \n\
+/* 080E9408 */ LDR R0, [R7] \n\
+/* 080E940A */ LDR R2, [R6] \n\
+/* 080E940C */ MOVS R3, #0XDE \n\
+/* 080E940E */ LSLS R3, R3, #1 \n\
+/* 080E9410 */ ADDS R1, R2, R3 \n\
+/* 080E9412 */ ADDS R1, R4 \n\
+/* 080E9414 */ MOVS R3, #0 \n\
+/* 080E9416 */ LDRSH R1, [R1, R3] \n\
+/* 080E9418 */ LDR R3, _080E9428 \n\
+/* 080E941A */ ADDS R2, R3 \n\
+/* 080E941C */ LDRB R2, [R2] \n\
+/* 080E941E */ LSLS R2, R2, #0X18 \n\
+/* 080E9420 */ ASRS R2, R2, #0X18 \n\
+/* 080E9422 */ BL sprite_set_base_palette \n\
+/* 080E9426 */ B _080E944E \n\
+ \n\
+.balign 4, 0 \n\
+_080E9428: \n\
+/* 080E9428 */ .word 0x00000283 \n\
+ \n\
+.balign 4, 0 \n\
+_080E942C: \n\
+/* 080E942C */ .word VRAMBase + 0xF800 \n\
+ \n\
+.balign 4, 0 \n\
+_080E9430: \n\
+/* 080E9430 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_080E9434: \n\
+/* 080E9434 */ .word D_0839FA50 \n\
+_080E9438: \n\
+/* 080E9438 */ LDR R0, [R7] \n\
+/* 080E943A */ LDR R1, [R6] \n\
+/* 080E943C */ MOVS R2, #0XDE \n\
+/* 080E943E */ LSLS R2, R2, #1 \n\
+/* 080E9440 */ ADDS R1, R2 \n\
+/* 080E9442 */ ADDS R1, R4 \n\
+/* 080E9444 */ MOVS R3, #0 \n\
+/* 080E9446 */ LDRSH R1, [R1, R3] \n\
+/* 080E9448 */ MOVS R2, #0 \n\
+/* 080E944A */ BL sprite_set_base_palette \n\
+_080E944E: \n\
+/* 080E944E */ ADDS R0, R5, #1 \n\
+/* 080E9450 */ LSLS R0, R0, #0X18 \n\
+/* 080E9452 */ LSRS R5, R0, #0X18 \n\
+/* 080E9454 */ CMP R5, #4 \n\
+/* 080E9456 */ BLS _080E93EA \n\
+/* 080E9458 */ LDR R3, _080E9498 \n\
+/* 080E945A */ LDR R0, [R3] \n\
+/* 080E945C */ LDR R1, _080E949C \n\
+/* 080E945E */ ADDS R0, R1 \n\
+/* 080E9460 */ LDRB R0, [R0] \n\
+/* 080E9462 */ CMP R0, #2 \n\
+/* 080E9464 */ BHI _080E94A8 \n\
+/* 080E9466 */ MOVS R5, #0 \n\
+/* 080E9468 */ LDR R6, _080E94A0 \n\
+/* 080E946A */ LDR R2, _080E94A4 \n\
+/* 080E946C */ ADDS R4, R3, #0 \n\
+/* 080E946E */ ADDS R3, R1, #0 \n\
+_080E9470: \n\
+/* 080E9470 */ ADDS R1, R5, #0 \n\
+/* 080E9472 */ ADDS R1, #0XC \n\
+/* 080E9474 */ LSLS R1, R1, #1 \n\
+/* 080E9476 */ ADDS R1, R2 \n\
+/* 080E9478 */ LDR R0, [R4] \n\
+/* 080E947A */ ADDS R0, R3 \n\
+/* 080E947C */ LDRB R0, [R0] \n\
+/* 080E947E */ LSLS R0, R0, #2 \n\
+/* 080E9480 */ ADDS R0, #0X11 \n\
+/* 080E9482 */ ADDS R0, R5, R0 \n\
+/* 080E9484 */ LSLS R0, R0, #1 \n\
+/* 080E9486 */ ADDS R0, R2 \n\
+/* 080E9488 */ LDRH R0, [R0] \n\
+/* 080E948A */ STRH R0, [R1] \n\
+/* 080E948C */ ADDS R0, R5, #1 \n\
+/* 080E948E */ LSLS R0, R0, #0X18 \n\
+/* 080E9490 */ LSRS R5, R0, #0X18 \n\
+/* 080E9492 */ CMP R5, #3 \n\
+/* 080E9494 */ BLS _080E9470 \n\
+/* 080E9496 */ B _080E94CA \n\
+ \n\
+.balign 4, 0 \n\
+_080E9498: \n\
+/* 080E9498 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080E949C: \n\
+/* 080E949C */ .word 0x00000283 \n\
+ \n\
+.balign 4, 0 \n\
+_080E94A0: \n\
+/* 080E94A0 */ .word D_083FD8CC \n\
+ \n\
+.balign 4, 0 \n\
+_080E94A4: \n\
+/* 080E94A4 */ .word D_03004054 \n\
+_080E94A8: \n\
+/* 080E94A8 */ MOVS R5, #0 \n\
+/* 080E94AA */ LDR R6, _080E94F4 \n\
+/* 080E94AC */ LDR R2, _080E94F8 \n\
+_080E94AE: \n\
+/* 080E94AE */ ADDS R1, R5, #0 \n\
+/* 080E94B0 */ ADDS R1, #0XC \n\
+/* 080E94B2 */ LSLS R1, R1, #1 \n\
+/* 080E94B4 */ ADDS R1, R2 \n\
+/* 080E94B6 */ ADDS R0, R5, #4 \n\
+/* 080E94B8 */ LSLS R0, R0, #1 \n\
+/* 080E94BA */ ADDS R0, R2 \n\
+/* 080E94BC */ LDRH R0, [R0] \n\
+/* 080E94BE */ STRH R0, [R1] \n\
+/* 080E94C0 */ ADDS R0, R5, #1 \n\
+/* 080E94C2 */ LSLS R0, R0, #0X18 \n\
+/* 080E94C4 */ LSRS R5, R0, #0X18 \n\
+/* 080E94C6 */ CMP R5, #3 \n\
+/* 080E94C8 */ BLS _080E94AE \n\
+_080E94CA: \n\
+/* 080E94CA */ ADDS R0, R6, #0 \n\
+/* 080E94CC */ BL scene_play_sound_to_tempo \n\
+/* 080E94D0 */ LDR R4, _080E94FC \n\
+/* 080E94D2 */ MOVS R0, #0XA \n\
+/* 080E94D4 */ BL get_random_range \n\
+/* 080E94D8 */ LSLS R0, R0, #0X10 \n\
+/* 080E94DA */ LSRS R0, R0, #0XE \n\
+/* 080E94DC */ ADDS R0, R4 \n\
+/* 080E94DE */ LDR R0, [R0] \n\
+/* 080E94E0 */ BL play_sound \n\
+/* 080E94E4 */ LDR R0, _080E9500 \n\
+/* 080E94E6 */ LDR R1, [R0] \n\
+/* 080E94E8 */ LDR R0, _080E9504 \n\
+/* 080E94EA */ ADDS R1, R0 \n\
+_080E94EC: \n\
+/* 080E94EC */ LDRB R0, [R1] \n\
+/* 080E94EE */ ADDS R0, #1 \n\
+/* 080E94F0 */ STRB R0, [R1] \n\
+/* 080E94F2 */ B _080E9546 \n\
+ \n\
+.balign 4, 0 \n\
+_080E94F4: \n\
+/* 080E94F4 */ .word D_083FD8CC \n\
+ \n\
+.balign 4, 0 \n\
+_080E94F8: \n\
+/* 080E94F8 */ .word D_03004054 \n\
+ \n\
+.balign 4, 0 \n\
+_080E94FC: \n\
+/* 080E94FC */ .word D_083E8C98 \n\
+ \n\
+.balign 4, 0 \n\
+_080E9500: \n\
+/* 080E9500 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080E9504: \n\
+/* 080E9504 */ .word 0x00000282 \n\
+_080E9508: \n\
+/* 080E9508 */ MOVS R2, #0XA1 \n\
+/* 080E950A */ LSLS R2, R2, #2 \n\
+/* 080E950C */ ADDS R1, R4, R2 \n\
+/* 080E950E */ LDRB R0, [R1] \n\
+/* 080E9510 */ SUBS R0, #1 \n\
+/* 080E9512 */ STRB R0, [R1] \n\
+/* 080E9514 */ LDR R4, _080E9550 \n\
+/* 080E9516 */ ADDS R1, R4, #0 \n\
+/* 080E9518 */ ADDS R1, #0X50 \n\
+/* 080E951A */ LDRH R0, [R1] \n\
+/* 080E951C */ SUBS R0, #1 \n\
+/* 080E951E */ MOVS R7, #0 \n\
+/* 080E9520 */ STRH R0, [R1] \n\
+/* 080E9522 */ LDR R1, [R6] \n\
+/* 080E9524 */ ADDS R2, R1, R2 \n\
+/* 080E9526 */ LDRB R0, [R2] \n\
+/* 080E9528 */ CMP R0, #0 \n\
+/* 080E952A */ BNE _080E9546 \n\
+/* 080E952C */ ADDS R0, R1, R5 \n\
+/* 080E952E */ STRB R7, [R0] \n\
+/* 080E9530 */ LDR R0, [R6] \n\
+/* 080E9532 */ ADDS R0, R3 \n\
+/* 080E9534 */ STRB R7, [R0] \n\
+/* 080E9536 */ ADDS R1, R4, #0 \n\
+/* 080E9538 */ ADDS R1, #0X4C \n\
+/* 080E953A */ MOVS R0, #0XA1 \n\
+/* 080E953C */ LSLS R0, R0, #6 \n\
+/* 080E953E */ STRH R0, [R1] \n\
+/* 080E9540 */ ADDS R1, #2 \n\
+/* 080E9542 */ LDR R0, _080E9554 \n\
+/* 080E9544 */ STRH R0, [R1] \n\
+_080E9546: \n\
+/* 080E9546 */ ADD SP, #4 \n\
+/* 080E9548 */ POP {R4, R5, R6, R7} \n\
+/* 080E954A */ POP {R0} \n\
+/* 080E954C */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080E9550: \n\
+/* 080E9550 */ .word gGraphicsBuffer \n\
+ \n\
+.balign 4, 0 \n\
+_080E9554: \n\
+/* 080E9554 */ .word 0x00000A0A \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_thumb_wrestling at 0x083E1F74
+struct scene_thumb_wrestling
+    /* Start  */ .word func_080C0ED0, 0x00000000
+    /* Paused */ .word func_080C1B94, 0x00000000
+    /* Update */ .word func_080C1B58, 0x00000000
+    /* Stop   */ .word func_080C1B98, 0x00000000
+    /* Script */ .word 0x083E1F08
+endstruct
+
+.incbin "microgames/thumb_wrestling/thumb_wrestling.bin", 36, 292

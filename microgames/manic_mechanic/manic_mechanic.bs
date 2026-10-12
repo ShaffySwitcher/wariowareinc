@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_manic_mechanic at 0x083CD254
+struct scene_manic_mechanic
+    /* Start  */ .word func_0802D31C, 0x00000000
+    /* Paused */ .word func_0802DA54, 0x00000000
+    /* Update */ .word func_0802DA38, 0x00000000
+    /* Stop   */ .word func_0802DA60, 0x00000000
+    /* Script */ .word 0x083CD1E8
+endstruct
+
+.incbin "microgames/manic_mechanic/manic_mechanic.bin", 36, 288

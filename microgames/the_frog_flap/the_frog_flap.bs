@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_the_frog_flap at 0x083E73B0
+struct scene_the_frog_flap
+    /* Start  */ .word func_080DF2EC, 0x00000000
+    /* Paused */ .word func_080DF41C, 0x00000000
+    /* Update */ .word func_080DF3BC, 0x00000000
+    /* Stop   */ .word func_080DF420, 0x00000000
+    /* Script */ .word 0x083E7308
+endstruct
+
+.incbin "microgames/the_frog_flap/the_frog_flap.bin", 36, 3804

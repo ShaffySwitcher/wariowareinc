@@ -1,0 +1,95 @@
+/* Generated from asm/asm_080d9f50.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080D9F50 \n\
+/* 080D9F50 */ PUSH {R4, LR} \n\
+/* 080D9F52 */ ADDS R2, R0, #0 \n\
+/* 080D9F54 */ LDR R0, _080D9FA4 \n\
+/* 080D9F56 */ LDR R0, [R0] \n\
+/* 080D9F58 */ MOV IP, R0 \n\
+/* 080D9F5A */ LDRH R0, [R0, #0X16] \n\
+/* 080D9F5C */ LSLS R1, R0, #1 \n\
+/* 080D9F5E */ ADDS R4, R1, R0 \n\
+/* 080D9F60 */ LSRS R1, R0, #1 \n\
+/* 080D9F62 */ LDR R0, _080D9FA8 \n\
+/* 080D9F64 */ LDR R3, [R0] \n\
+/* 080D9F66 */ LDR R0, [R3, #4] \n\
+/* 080D9F68 */ CMP R0, #1 \n\
+/* 080D9F6A */ BEQ _080D9FDA \n\
+/* 080D9F6C */ LDR R0, [R3, #8] \n\
+/* 080D9F6E */ CMP R0, #1 \n\
+/* 080D9F70 */ BEQ _080D9FDA \n\
+/* 080D9F72 */ ADDS R0, R2, #0 \n\
+/* 080D9F74 */ ADDS R0, #0X30 \n\
+/* 080D9F76 */ LDRB R3, [R0] \n\
+/* 080D9F78 */ MOVS R0, #1 \n\
+/* 080D9F7A */ ANDS R0, R3 \n\
+/* 080D9F7C */ CMP R0, #0 \n\
+/* 080D9F7E */ BEQ _080D9FB4 \n\
+/* 080D9F80 */ RSBS R0, R1, #0 \n\
+/* 080D9F82 */ STR R0, [R2, #0X24] \n\
+/* 080D9F84 */ RSBS R0, R4, #0 \n\
+/* 080D9F86 */ STR R0, [R2, #0X28] \n\
+/* 080D9F88 */ ADDS R2, #0X38 \n\
+/* 080D9F8A */ LDRB R0, [R2] \n\
+/* 080D9F8C */ MOVS R1, #0X10 \n\
+/* 080D9F8E */ ORRS R0, R1 \n\
+/* 080D9F90 */ STRB R0, [R2] \n\
+/* 080D9F92 */ LDR R0, _080D9FAC \n\
+/* 080D9F94 */ ADD R0, IP \n\
+/* 080D9F96 */ LDRB R0, [R0] \n\
+/* 080D9F98 */ CMP R0, #1 \n\
+/* 080D9F9A */ BNE _080D9FDA \n\
+/* 080D9F9C */ LDR R0, _080D9FB0 \n\
+/* 080D9F9E */ BL play_sound \n\
+/* 080D9FA2 */ B _080D9FDA \n\
+ \n\
+.balign 4, 0 \n\
+_080D9FA4: \n\
+/* 080D9FA4 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_080D9FA8: \n\
+/* 080D9FA8 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080D9FAC: \n\
+/* 080D9FAC */ .word 0x00000173 \n\
+ \n\
+.balign 4, 0 \n\
+_080D9FB0: \n\
+/* 080D9FB0 */ .word D_083FD818 \n\
+_080D9FB4: \n\
+/* 080D9FB4 */ MOVS R0, #2 \n\
+/* 080D9FB6 */ ANDS R0, R3 \n\
+/* 080D9FB8 */ CMP R0, #0 \n\
+/* 080D9FBA */ BEQ _080D9FDA \n\
+/* 080D9FBC */ STR R1, [R2, #0X24] \n\
+/* 080D9FBE */ STR R4, [R2, #0X28] \n\
+/* 080D9FC0 */ ADDS R2, #0X38 \n\
+/* 080D9FC2 */ LDRB R0, [R2] \n\
+/* 080D9FC4 */ MOVS R1, #0X10 \n\
+/* 080D9FC6 */ ORRS R0, R1 \n\
+/* 080D9FC8 */ STRB R0, [R2] \n\
+/* 080D9FCA */ LDR R0, _080D9FE0 \n\
+/* 080D9FCC */ ADD R0, IP \n\
+/* 080D9FCE */ LDRB R0, [R0] \n\
+/* 080D9FD0 */ CMP R0, #1 \n\
+/* 080D9FD2 */ BNE _080D9FDA \n\
+/* 080D9FD4 */ LDR R0, =D_083FD818 \n\
+/* 080D9FD6 */ BL play_sound \n\
+_080D9FDA: \n\
+/* 080D9FDA */ POP {R4} \n\
+/* 080D9FDC */ POP {R0} \n\
+/* 080D9FDE */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080D9FE4: \n\
+/* 080D9FE4 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_080D9FE0: \n\
+/* 080D9FE0 */ .word 0x00000173 \n\
+.ltorg \n\
+.syntax divided");
+

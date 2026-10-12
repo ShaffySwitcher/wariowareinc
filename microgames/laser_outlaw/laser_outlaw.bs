@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_laser_outlaw at 0x083D2BDC
+struct scene_laser_outlaw
+    /* Start  */ .word func_0804D32C, 0x00000000
+    /* Paused */ .word func_0804D870, 0x00000000
+    /* Update */ .word func_0804D800, 0x00000000
+    /* Stop   */ .word func_0804D884, 0x00000000
+    /* Script */ .word 0x083D2B70
+endstruct
+
+.incbin "microgames/laser_outlaw/laser_outlaw.bin", 36, 240

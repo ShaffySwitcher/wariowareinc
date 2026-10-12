@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_duck_hunt at 0x083D31A4
+struct scene_duck_hunt
+    /* Start  */ .word func_080508DC, 0x00000000
+    /* Paused */ .word func_08051714, 0x00000000
+    /* Update */ .word func_08050D84, 0x00000000
+    /* Stop   */ .word func_08051728, 0x00000000
+    /* Script */ .word 0x083D3138
+endstruct
+
+.incbin "microgames/duck_hunt/duck_hunt.bin", 36, 248

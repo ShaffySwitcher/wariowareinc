@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mashin_martians at 0x083DBB94
+struct scene_mashin_martians
+    /* Start  */ .word func_080A0044, 0x00000000
+    /* Paused */ .word func_080A0D48, 0x00000000
+    /* Update */ .word func_080A0D20, 0x00000000
+    /* Stop   */ .word func_080A0D4C, 0x00000000
+    /* Script */ .word 0x083DBB28
+endstruct
+
+.incbin "microgames/mashin_martians/mashin_martians.bin", 36, 256

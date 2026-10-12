@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_tilt_n_tumble at 0x083D4528
+struct scene_tilt_n_tumble
+    /* Start  */ .word func_080597C8, 0x00000000
+    /* Paused */ .word func_08059A0C, 0x00000000
+    /* Update */ .word func_08059948, 0x00000000
+    /* Stop   */ .word func_08059A10, 0x00000000
+    /* Script */ .word 0x083D44BC
+endstruct
+
+.incbin "microgames/tilt_n_tumble/tilt_n_tumble.bin", 36, 476

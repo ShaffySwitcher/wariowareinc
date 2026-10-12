@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_unexcite_bike at 0x083E5520
+struct scene_unexcite_bike
+    /* Start  */ .word func_080D7DE8, 0x00000000
+    /* Paused */ .word func_080D8E84, 0x00000000
+    /* Update */ .word func_080D8E10, 0x00000000
+    /* Stop   */ .word func_080D8E88, 0x00000000
+    /* Script */ .word 0x083E549C
+endstruct
+
+.incbin "microgames/unexcite_bike/unexcite_bike.bin", 36, 280

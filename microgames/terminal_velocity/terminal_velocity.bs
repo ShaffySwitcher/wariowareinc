@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_terminal_velocity at 0x083CD64C
+struct scene_terminal_velocity
+    /* Start  */ .word func_0802ECC0, 0x00000000
+    /* Paused */ .word func_0802F4A0, 0x00000000
+    /* Update */ .word func_0802F48C, 0x00000000
+    /* Stop   */ .word func_0802F4B4, 0x00000000
+    /* Script */ .word 0x083CD5C8
+endstruct
+
+.incbin "microgames/terminal_velocity/terminal_velocity.bin", 36, 276

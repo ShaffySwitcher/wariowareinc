@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hasty_pastry at 0x083E20BC
+struct scene_hasty_pastry
+    /* Start  */ .word func_080C1B9C, 0x00000000
+    /* Paused */ .word func_080C2B1C, 0x00000000
+    /* Update */ .word func_080C2ACC, 0x00000000
+    /* Stop   */ .word func_080C2B20, 0x00000000
+    /* Script */ .word 0x083E2050
+endstruct
+
+.incbin "microgames/hasty_pastry/hasty_pastry.bin", 36, 624

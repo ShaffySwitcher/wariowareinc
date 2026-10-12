@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_gear_head_fred at 0x083D698C
+struct scene_gear_head_fred
+    /* Start  */ .word func_0806F3AC, 0x00000000
+    /* Paused */ .word func_0806FC28, 0x00000000
+    /* Update */ .word func_0806FBAC, 0x00000000
+    /* Stop   */ .word func_0806FC2C, 0x00000000
+    /* Script */ .word 0x083D6908
+endstruct
+
+.incbin "microgames/gear_head_fred/gear_head_fred.bin", 36, 296

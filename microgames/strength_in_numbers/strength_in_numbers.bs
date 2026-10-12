@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_strength_in_numbers at 0x083D7C5C
+struct scene_strength_in_numbers
+    /* Start  */ .word func_0807A2EC, 0x00000000
+    /* Paused */ .word func_0807AB40, 0x00000000
+    /* Update */ .word func_0807AA7C, 0x00000000
+    /* Stop   */ .word func_0807AB44, 0x00000000
+    /* Script */ .word 0x083D7BD8
+endstruct
+
+.incbin "microgames/strength_in_numbers/strength_in_numbers.bin", 36, 252

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_space_escape at 0x083CBD7C
+struct scene_space_escape
+    /* Start  */ .word func_08027AE8, 0x00000000
+    /* Paused */ .word func_08027E38, 0x00000000
+    /* Update */ .word func_08028380, 0x00000000
+    /* Stop   */ .word func_08028448, 0x00000000
+    /* Script */ .word 0x083CBD10
+endstruct
+
+.incbin "microgames/space_escape/space_escape.bin", 36, 600

@@ -1,0 +1,106 @@
+/* Generated from asm/asm_080dd6fc.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080DD6FC \n\
+/* 080DD6FC */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080DD6FE */ MOV R7, SB \n\
+/* 080DD700 */ MOV R6, R8 \n\
+/* 080DD702 */ PUSH {R6, R7} \n\
+/* 080DD704 */ SUB SP, #4 \n\
+/* 080DD706 */ MOVS R0, #0 \n\
+/* 080DD708 */ MOV R8, R0 \n\
+/* 080DD70A */ LDR R4, _080DD740 \n\
+/* 080DD70C */ LDR R3, [R4] \n\
+/* 080DD70E */ LDR R0, [R3, #8] \n\
+/* 080DD710 */ ASRS R0, R0, #8 \n\
+/* 080DD712 */ LDRH R1, [R3, #0X2C] \n\
+/* 080DD714 */ ADDS R0, R1 \n\
+/* 080DD716 */ LSLS R0, R0, #0X10 \n\
+/* 080DD718 */ LSRS R0, R0, #0X10 \n\
+/* 080DD71A */ LDR R2, _080DD744 \n\
+/* 080DD71C */ LDR R1, [SP] \n\
+/* 080DD71E */ ANDS R1, R2 \n\
+/* 080DD720 */ ORRS R1, R0 \n\
+/* 080DD722 */ STR R1, [SP] \n\
+/* 080DD724 */ LDR R0, [R3, #0XC] \n\
+/* 080DD726 */ LSLS R0, R0, #8 \n\
+/* 080DD728 */ LSRS R0, R0, #0X10 \n\
+/* 080DD72A */ LSLS R0, R0, #0X10 \n\
+/* 080DD72C */ LDR R2, _080DD748 \n\
+/* 080DD72E */ ANDS R1, R2 \n\
+/* 080DD730 */ ORRS R1, R0 \n\
+/* 080DD732 */ STR R1, [SP] \n\
+/* 080DD734 */ MOV R0, SP \n\
+/* 080DD736 */ LDRH R0, [R0] \n\
+/* 080DD738 */ MOV SB, R0 \n\
+/* 080DD73A */ MOVS R6, #0 \n\
+/* 080DD73C */ MOV R5, SP \n\
+/* 080DD73E */ B _080DD77C \n\
+ \n\
+.balign 4, 0 \n\
+_080DD740: \n\
+/* 080DD740 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080DD744: \n\
+/* 080DD744 */ .word 0xFFFF0000 \n\
+ \n\
+.balign 4, 0 \n\
+_080DD748: \n\
+/* 080DD748 */ .word 0x0000FFFF \n\
+_080DD74C: \n\
+/* 080DD74C */ LDRH R1, [R5] \n\
+/* 080DD74E */ ADDS R1, #8 \n\
+/* 080DD750 */ LSLS R1, R1, #0X10 \n\
+/* 080DD752 */ LSRS R1, R1, #0X10 \n\
+/* 080DD754 */ LDR R2, _080DD7AC \n\
+/* 080DD756 */ LDR R0, [SP] \n\
+/* 080DD758 */ ANDS R0, R2 \n\
+/* 080DD75A */ ORRS R0, R1 \n\
+/* 080DD75C */ STR R0, [SP] \n\
+/* 080DD75E */ MOVS R2, #0 \n\
+/* 080DD760 */ LDRSH R1, [R5, R2] \n\
+/* 080DD762 */ MOV R7, SB \n\
+/* 080DD764 */ LSLS R0, R7, #0X10 \n\
+/* 080DD766 */ ASRS R3, R0, #0X10 \n\
+/* 080DD768 */ LDR R2, [R4] \n\
+/* 080DD76A */ MOVS R7, #0X30 \n\
+/* 080DD76C */ LDRSH R0, [R2, R7] \n\
+/* 080DD76E */ ADDS R0, R3, R0 \n\
+/* 080DD770 */ CMP R1, R0 \n\
+/* 080DD772 */ BLT _080DD77C \n\
+/* 080DD774 */ LDRH R0, [R2, #0X30] \n\
+/* 080DD776 */ ADDS R0, R3, R0 \n\
+/* 080DD778 */ STRH R0, [R5] \n\
+/* 080DD77A */ MOVS R6, #1 \n\
+_080DD77C: \n\
+/* 080DD77C */ MOV R0, SP \n\
+/* 080DD77E */ BL func_080DE05C \n\
+/* 080DD782 */ LSLS R0, R0, #0X10 \n\
+/* 080DD784 */ CMP R0, #0 \n\
+/* 080DD786 */ BEQ _080DD796 \n\
+/* 080DD788 */ LDR R1, [R4] \n\
+/* 080DD78A */ MOVS R2, #2 \n\
+/* 080DD78C */ LDRSH R0, [R5, R2] \n\
+/* 080DD78E */ LSLS R0, R0, #8 \n\
+/* 080DD790 */ STR R0, [R1, #0XC] \n\
+/* 080DD792 */ MOVS R7, #1 \n\
+/* 080DD794 */ MOV R8, R7 \n\
+_080DD796: \n\
+/* 080DD796 */ CMP R6, #0 \n\
+/* 080DD798 */ BEQ _080DD74C \n\
+/* 080DD79A */ MOV R0, R8 \n\
+/* 080DD79C */ ADD SP, #4 \n\
+/* 080DD79E */ POP {R3, R4} \n\
+/* 080DD7A0 */ MOV R8, R3 \n\
+/* 080DD7A2 */ MOV SB, R4 \n\
+/* 080DD7A4 */ POP {R4, R5, R6, R7} \n\
+/* 080DD7A6 */ POP {R1} \n\
+/* 080DD7A8 */ BX R1 \n\
+ \n\
+.balign 4, 0 \n\
+_080DD7AC: \n\
+/* 080DD7AC */ .word 0xFFFF0000 \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,30 @@
+/* Generated from asm/asm_080e04d0.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080E04D0 \n\
+/* 080E04D0 */ PUSH {R4, R5, LR} \n\
+/* 080E04D2 */ ADDS R5, R0, #0 \n\
+/* 080E04D4 */ ADDS R4, R2, #0 \n\
+/* 080E04D6 */ MOVS R0, #1 \n\
+/* 080E04D8 */ BL scene_set_current_thread \n\
+/* 080E04DC */ MOVS R0, #0 \n\
+/* 080E04DE */ STRB R0, [R4, #0X12] \n\
+/* 080E04E0 */ MOVS R0, #0 \n\
+/* 080E04E2 */ LDRSH R1, [R4, R0] \n\
+/* 080E04E4 */ ADDS R0, R5, #0 \n\
+/* 080E04E6 */ MOVS R2, #0 \n\
+/* 080E04E8 */ MOVS R3, #0 \n\
+/* 080E04EA */ BL sprite_set_callback \n\
+/* 080E04EE */ MOVS R0, #0 \n\
+/* 080E04F0 */ LDRSH R1, [R4, R0] \n\
+/* 080E04F2 */ ADDS R0, R5, #0 \n\
+/* 080E04F4 */ BL sprite_delete \n\
+/* 080E04F8 */ POP {R4, R5} \n\
+/* 080E04FA */ POP {R0} \n\
+/* 080E04FC */ BX R0 \n\
+ \n\
+/* 080E04FE */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
+

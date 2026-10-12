@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_whats_your_beef at 0x083DD7B0
+struct scene_whats_your_beef
+    /* Start  */ .word func_080ADB3C, 0x00000000
+    /* Paused */ .word func_080AEAB8, 0x00000000
+    /* Update */ .word func_080AEA18, 0x00000000
+    /* Stop   */ .word func_080AEABC, 0x00000000
+    /* Script */ .word 0x083DD744
+endstruct
+
+.incbin "microgames/whats_your_beef/whats_your_beef.bin", 36, 656

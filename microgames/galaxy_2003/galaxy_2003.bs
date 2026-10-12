@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_galaxy_2003 at 0x083DA384
+struct scene_galaxy_2003
+    /* Start  */ .word func_08089A18, 0x00000000
+    /* Paused */ .word func_0808EBF4, 0x00000000
+    /* Update */ .word func_0808EA60, 0x00000000
+    /* Stop   */ .word func_0808EBF8, 0x00000000
+    /* Script */ .word 0x083DA2C4
+endstruct
+
+.incbin "microgames/galaxy_2003/galaxy_2003.bin", 36, 240

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wild_gunman at 0x083D309C
+struct scene_wild_gunman
+    /* Start  */ .word func_08050358, 0x00000000
+    /* Paused */ .word func_08050860, 0x00000000
+    /* Update */ .word func_08050810, 0x00000000
+    /* Stop   */ .word func_080508D8, 0x00000000
+    /* Script */ .word 0x083D3030
+endstruct
+
+.incbin "microgames/wild_gunman/wild_gunman.bin", 36, 228

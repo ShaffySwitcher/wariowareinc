@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_nighttime_allergies at 0x083D8C88
+struct scene_nighttime_allergies
+    /* Start  */ .word func_08080238, 0x00000000
+    /* Paused */ .word func_080815E8, 0x00000000
+    /* Update */ .word func_08081558, 0x00000000
+    /* Stop   */ .word func_080815EC, 0x00000000
+    /* Script */ .word 0x083D8C1C
+endstruct
+
+.incbin "microgames/nighttime_allergies/nighttime_allergies.bin", 36, 408

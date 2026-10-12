@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_sphinx_hijinks at 0x083D7250
+struct scene_sphinx_hijinks
+    /* Start  */ .word func_080749E8, 0x00000000
+    /* Paused */ .word func_0807584C, 0x00000000
+    /* Update */ .word func_08075788, 0x00000000
+    /* Stop   */ .word func_08075850, 0x00000000
+    /* Script */ .word 0x083D71CC
+endstruct
+
+.incbin "microgames/sphinx_hijinks/sphinx_hijinks.bin", 36, 1244

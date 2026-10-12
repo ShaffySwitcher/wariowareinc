@@ -1,0 +1,136 @@
+/* Generated from asm/asm_080ad7c0.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080AD7C0 \n\
+/* 080AD7C0 */ PUSH {R4, R5, R6, LR} \n\
+/* 080AD7C2 */ LDR R0, _080AD814 \n\
+/* 080AD7C4 */ LDR R0, [R0] \n\
+/* 080AD7C6 */ LDR R0, [R0, #0XC] \n\
+/* 080AD7C8 */ ASRS R0, R0, #8 \n\
+/* 080AD7CA */ CMP R0, #0X3F \n\
+/* 080AD7CC */ BLE _080AD820 \n\
+/* 080AD7CE */ MOVS R5, #0 \n\
+_080AD7D0: \n\
+/* 080AD7D0 */ LDR R6, _080AD814 \n\
+/* 080AD7D2 */ LDR R4, [R6] \n\
+/* 080AD7D4 */ LSLS R0, R5, #3 \n\
+/* 080AD7D6 */ ADDS R3, R4, #0 \n\
+/* 080AD7D8 */ ADDS R3, #0XC \n\
+/* 080AD7DA */ ADDS R3, R0 \n\
+/* 080AD7DC */ LDR R0, _080AD818 \n\
+/* 080AD7DE */ LDR R0, [R0] \n\
+/* 080AD7E0 */ LDRH R1, [R0, #0X14] \n\
+/* 080AD7E2 */ LSLS R0, R1, #1 \n\
+/* 080AD7E4 */ ADDS R0, R1 \n\
+/* 080AD7E6 */ LSLS R0, R0, #2 \n\
+/* 080AD7E8 */ LDR R2, [R3] \n\
+/* 080AD7EA */ SUBS R2, R0 \n\
+/* 080AD7EC */ STR R2, [R3] \n\
+/* 080AD7EE */ LDR R0, _080AD81C \n\
+/* 080AD7F0 */ LDR R0, [R0] \n\
+/* 080AD7F2 */ LSLS R1, R5, #1 \n\
+/* 080AD7F4 */ ADDS R4, #2 \n\
+/* 080AD7F6 */ ADDS R4, R1 \n\
+/* 080AD7F8 */ MOVS R3, #0 \n\
+/* 080AD7FA */ LDRSH R1, [R4, R3] \n\
+/* 080AD7FC */ LSLS R2, R2, #8 \n\
+/* 080AD7FE */ ASRS R2, R2, #0X10 \n\
+/* 080AD800 */ BL sprite_set_y \n\
+/* 080AD804 */ ADDS R0, R5, #1 \n\
+/* 080AD806 */ LSLS R0, R0, #0X18 \n\
+/* 080AD808 */ LSRS R5, R0, #0X18 \n\
+/* 080AD80A */ CMP R5, #1 \n\
+/* 080AD80C */ BLS _080AD7D0 \n\
+/* 080AD80E */ ADDS R2, R6, #0 \n\
+/* 080AD810 */ B _080AD85A \n\
+ \n\
+.balign 4, 0 \n\
+_080AD814: \n\
+/* 080AD814 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080AD818: \n\
+/* 080AD818 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_080AD81C: \n\
+/* 080AD81C */ .word gSpriteHandler \n\
+_080AD820: \n\
+/* 080AD820 */ MOVS R0, #0X18 \n\
+/* 080AD822 */ BL func_0800C9A4 \n\
+/* 080AD826 */ MOVS R0, #2 \n\
+/* 080AD828 */ BL func_0800A0C4 \n\
+/* 080AD82C */ LDR R0, _080AD844 \n\
+/* 080AD82E */ LDR R0, [R0] \n\
+/* 080AD830 */ MOVS R1, #0XBC \n\
+/* 080AD832 */ LSLS R1, R1, #1 \n\
+/* 080AD834 */ ADDS R0, R1 \n\
+/* 080AD836 */ LDRH R0, [R0] \n\
+/* 080AD838 */ CMP R0, #0 \n\
+/* 080AD83A */ BNE _080AD84C \n\
+/* 080AD83C */ LDR R0, _080AD848 \n\
+/* 080AD83E */ BL scene_play_sound_to_tempo \n\
+/* 080AD842 */ B _080AD852 \n\
+ \n\
+.balign 4, 0 \n\
+_080AD844: \n\
+/* 080AD844 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_080AD848: \n\
+/* 080AD848 */ .word D_083FD264 \n\
+_080AD84C: \n\
+/* 080AD84C */ LDR R0, _080AD890 \n\
+/* 080AD84E */ BL scene_play_sound_to_tempo \n\
+_080AD852: \n\
+/* 080AD852 */ LDR R2, _080AD894 \n\
+/* 080AD854 */ LDR R1, [R2] \n\
+/* 080AD856 */ MOVS R0, #4 \n\
+/* 080AD858 */ STRB R0, [R1, #0X18] \n\
+_080AD85A: \n\
+/* 080AD85A */ LDR R4, [R2] \n\
+/* 080AD85C */ LDRB R0, [R4] \n\
+/* 080AD85E */ CMP R0, #1 \n\
+/* 080AD860 */ BNE _080AD88A \n\
+/* 080AD862 */ LDR R1, [R4, #0X20] \n\
+/* 080AD864 */ ASRS R0, R1, #8 \n\
+/* 080AD866 */ CMP R0, #0X3F \n\
+/* 080AD868 */ BLE _080AD88A \n\
+/* 080AD86A */ LDR R0, _080AD898 \n\
+/* 080AD86C */ LDR R0, [R0] \n\
+/* 080AD86E */ LDRH R0, [R0, #0X14] \n\
+/* 080AD870 */ LSLS R2, R0, #1 \n\
+/* 080AD872 */ ADDS R2, R0 \n\
+/* 080AD874 */ LSLS R2, R2, #2 \n\
+/* 080AD876 */ SUBS R2, R1, R2 \n\
+/* 080AD878 */ STR R2, [R4, #0X20] \n\
+/* 080AD87A */ LDR R0, =gSpriteHandler \n\
+/* 080AD87C */ LDR R0, [R0] \n\
+/* 080AD87E */ MOVS R3, #0X1A \n\
+/* 080AD880 */ LDRSH R1, [R4, R3] \n\
+/* 080AD882 */ LSLS R2, R2, #8 \n\
+/* 080AD884 */ ASRS R2, R2, #0X10 \n\
+/* 080AD886 */ BL sprite_set_y \n\
+_080AD88A: \n\
+/* 080AD88A */ POP {R4, R5, R6} \n\
+/* 080AD88C */ POP {R0} \n\
+/* 080AD88E */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080AD89C: \n\
+/* 080AD89C */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_080AD890: \n\
+/* 080AD890 */ .word D_083FCB5C \n\
+ \n\
+.balign 4, 0 \n\
+_080AD894: \n\
+/* 080AD894 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080AD898: \n\
+/* 080AD898 */ .word gCurrentSceneData \n\
+.ltorg \n\
+.syntax divided");
+

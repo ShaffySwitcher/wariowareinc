@@ -1,0 +1,87 @@
+/* Generated from asm/asm_080d4bac.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080D4BAC \n\
+/* 080D4BAC */ PUSH {R4, R5, LR} \n\
+/* 080D4BAE */ SUB SP, #8 \n\
+/* 080D4BB0 */ LDR R0, _080D4C14 \n\
+/* 080D4BB2 */ LDR R2, [R0] \n\
+/* 080D4BB4 */ ADDS R3, R2, #0 \n\
+/* 080D4BB6 */ ADDS R3, #8 \n\
+/* 080D4BB8 */ LDR R0, [R3, #4] \n\
+/* 080D4BBA */ LSLS R0, R0, #8 \n\
+/* 080D4BBC */ LSRS R0, R0, #0X10 \n\
+/* 080D4BBE */ LDR R5, _080D4C18 \n\
+/* 080D4BC0 */ LDR R1, [SP] \n\
+/* 080D4BC2 */ ANDS R1, R5 \n\
+/* 080D4BC4 */ ORRS R1, R0 \n\
+/* 080D4BC6 */ STR R1, [SP] \n\
+/* 080D4BC8 */ LDR R0, [R3, #8] \n\
+/* 080D4BCA */ LSLS R0, R0, #8 \n\
+/* 080D4BCC */ LSRS R0, R0, #0X10 \n\
+/* 080D4BCE */ LSLS R0, R0, #0X10 \n\
+/* 080D4BD0 */ LDR R4, _080D4C1C \n\
+/* 080D4BD2 */ ANDS R1, R4 \n\
+/* 080D4BD4 */ ORRS R1, R0 \n\
+/* 080D4BD6 */ STR R1, [SP] \n\
+/* 080D4BD8 */ LDR R0, [R2, #0X48] \n\
+/* 080D4BDA */ LSLS R0, R0, #8 \n\
+/* 080D4BDC */ LSRS R0, R0, #0X10 \n\
+/* 080D4BDE */ LDR R1, [SP, #4] \n\
+/* 080D4BE0 */ ANDS R1, R5 \n\
+/* 080D4BE2 */ ORRS R1, R0 \n\
+/* 080D4BE4 */ STR R1, [SP, #4] \n\
+/* 080D4BE6 */ LDR R0, [R2, #0X4C] \n\
+/* 080D4BE8 */ LSLS R0, R0, #8 \n\
+/* 080D4BEA */ LSRS R0, R0, #0X10 \n\
+/* 080D4BEC */ LSLS R0, R0, #0X10 \n\
+/* 080D4BEE */ ANDS R1, R4 \n\
+/* 080D4BF0 */ ORRS R1, R0 \n\
+/* 080D4BF2 */ STR R1, [SP, #4] \n\
+/* 080D4BF4 */ LDRB R0, [R3, #0X1C] \n\
+/* 080D4BF6 */ LSLS R1, R0, #1 \n\
+/* 080D4BF8 */ ADDS R1, R0 \n\
+/* 080D4BFA */ LSLS R1, R1, #2 \n\
+/* 080D4BFC */ LDR R0, _080D4C20 \n\
+/* 080D4BFE */ ADDS R1, R0 \n\
+/* 080D4C00 */ ADD R2, SP, #4 \n\
+/* 080D4C02 */ LDR R3, _080D4C24 \n\
+/* 080D4C04 */ MOV R0, SP \n\
+/* 080D4C06 */ BL gameplay_check_collision \n\
+/* 080D4C0A */ CMP R0, #0 \n\
+/* 080D4C0C */ BNE _080D4C28 \n\
+/* 080D4C0E */ MOVS R0, #0 \n\
+/* 080D4C10 */ B _080D4C2A \n\
+ \n\
+.balign 4, 0 \n\
+_080D4C14: \n\
+/* 080D4C14 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080D4C18: \n\
+/* 080D4C18 */ .word 0xFFFF0000 \n\
+ \n\
+.balign 4, 0 \n\
+_080D4C1C: \n\
+/* 080D4C1C */ .word 0x0000FFFF \n\
+ \n\
+.balign 4, 0 \n\
+_080D4C20: \n\
+/* 080D4C20 */ .word D_083E5084 \n\
+ \n\
+.balign 4, 0 \n\
+_080D4C24: \n\
+/* 080D4C24 */ .word D_083E5248 \n\
+_080D4C28: \n\
+/* 080D4C28 */ MOVS R0, #1 \n\
+_080D4C2A: \n\
+/* 080D4C2A */ ADD SP, #8 \n\
+/* 080D4C2C */ POP {R4, R5} \n\
+/* 080D4C2E */ POP {R1} \n\
+/* 080D4C30 */ BX R1 \n\
+ \n\
+/* 080D4C32 */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
+

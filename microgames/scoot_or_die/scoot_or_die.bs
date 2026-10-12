@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_scoot_or_die at 0x083D41FC
+struct scene_scoot_or_die
+    /* Start  */ .word func_080576BC, 0x00000000
+    /* Paused */ .word func_080580AC, 0x00000000
+    /* Update */ .word func_08058004, 0x00000000
+    /* Stop   */ .word func_080580B0, 0x00000000
+    /* Script */ .word 0x083D4190
+endstruct
+
+.incbin "microgames/scoot_or_die/scoot_or_die.bin", 36, 524

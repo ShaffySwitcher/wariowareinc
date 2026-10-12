@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_super_mario_bros at 0x083D81C8
+struct scene_super_mario_bros
+    /* Start  */ .word func_0807D5A4, 0x00000000
+    /* Paused */ .word func_0807DEC8, 0x00000000
+    /* Update */ .word func_0807DE84, 0x00000000
+    /* Stop   */ .word func_0807DECC, 0x00000000
+    /* Script */ .word 0x083D815C
+endstruct
+
+.incbin "microgames/super_mario_bros/super_mario_bros.bin", 36, 432

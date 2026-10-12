@@ -1,0 +1,523 @@
+/* Generated from asm/asm_0802ab00.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0802AB00 \n\
+/* 0802AB00 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0802AB02 */ MOV R7, SL \n\
+/* 0802AB04 */ MOV R6, SB \n\
+/* 0802AB06 */ MOV R5, R8 \n\
+/* 0802AB08 */ PUSH {R5, R6, R7} \n\
+/* 0802AB0A */ SUB SP, #0X50 \n\
+/* 0802AB0C */ ADDS R2, R0, #0 \n\
+/* 0802AB0E */ MOVS R0, #0 \n\
+/* 0802AB10 */ STR R0, [SP, #0X24] \n\
+/* 0802AB12 */ ADDS R0, R2, #0 \n\
+/* 0802AB14 */ ADDS R0, #0X68 \n\
+/* 0802AB16 */ LDRH R0, [R0] \n\
+/* 0802AB18 */ MOV SB, R0 \n\
+/* 0802AB1A */ ADDS R1, R2, #0 \n\
+/* 0802AB1C */ ADDS R1, #0X78 \n\
+/* 0802AB1E */ STR R1, [SP, #0X30] \n\
+/* 0802AB20 */ ADDS R3, R2, #0 \n\
+/* 0802AB22 */ ADDS R3, #0X6C \n\
+/* 0802AB24 */ STR R3, [SP, #0X2C] \n\
+/* 0802AB26 */ ADDS R7, R2, #0 \n\
+/* 0802AB28 */ ADDS R7, #0XD6 \n\
+/* 0802AB2A */ STR R7, [SP, #0X34] \n\
+/* 0802AB2C */ ADDS R0, R2, #0 \n\
+/* 0802AB2E */ ADDS R0, #0XCA \n\
+/* 0802AB30 */ STR R0, [SP, #0X38] \n\
+/* 0802AB32 */ LDR R1, _0802AB7C \n\
+/* 0802AB34 */ LDR R0, [R1] \n\
+/* 0802AB36 */ LDR R3, _0802AB80 \n\
+/* 0802AB38 */ ADDS R0, R3 \n\
+/* 0802AB3A */ LDRB R0, [R0] \n\
+/* 0802AB3C */ ADDS R4, R1, #0 \n\
+/* 0802AB3E */ CMP R0, #2 \n\
+/* 0802AB40 */ BNE _0802AB8C \n\
+/* 0802AB42 */ MOVS R5, #0 \n\
+/* 0802AB44 */ CMP R5, SB \n\
+/* 0802AB46 */ BLO _0802AB4A \n\
+/* 0802AB48 */ B _0802AE90 \n\
+_0802AB4A: \n\
+/* 0802AB4A */ LDR R7, _0802AB84 \n\
+/* 0802AB4C */ MOVS R6, #0 \n\
+/* 0802AB4E */ LDR R4, [SP, #0X34] \n\
+_0802AB50: \n\
+/* 0802AB50 */ LDR R0, [R7] \n\
+/* 0802AB52 */ MOVS R2, #0 \n\
+/* 0802AB54 */ LDRSH R1, [R4, R2] \n\
+/* 0802AB56 */ BL func_080EF31C \n\
+/* 0802AB5A */ ADDS R3, R0, #0 \n\
+/* 0802AB5C */ LDR R0, [R7] \n\
+/* 0802AB5E */ MOVS R2, #0 \n\
+/* 0802AB60 */ LDRSH R1, [R4, R2] \n\
+/* 0802AB62 */ LSLS R3, R3, #0X18 \n\
+/* 0802AB64 */ ASRS R3, R3, #0X18 \n\
+/* 0802AB66 */ STR R6, [SP] \n\
+/* 0802AB68 */ STR R6, [SP, #4] \n\
+/* 0802AB6A */ STR R6, [SP, #8] \n\
+/* 0802AB6C */ LDR R2, _0802AB88 \n\
+/* 0802AB6E */ BL sprite_set_anim \n\
+/* 0802AB72 */ ADDS R4, #2 \n\
+/* 0802AB74 */ ADDS R5, #1 \n\
+/* 0802AB76 */ CMP R5, SB \n\
+/* 0802AB78 */ BLO _0802AB50 \n\
+/* 0802AB7A */ B _0802AE90 \n\
+ \n\
+.balign 4, 0 \n\
+_0802AB7C: \n\
+/* 0802AB7C */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_0802AB80: \n\
+/* 0802AB80 */ .word 0x00000173 \n\
+ \n\
+.balign 4, 0 \n\
+_0802AB84: \n\
+/* 0802AB84 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0802AB88: \n\
+/* 0802AB88 */ .word D_08347198 \n\
+_0802AB8C: \n\
+/* 0802AB8C */ MOVS R5, #0 \n\
+/* 0802AB8E */ ADDS R3, R2, #0 \n\
+/* 0802AB90 */ ADDS R3, #0X5C \n\
+/* 0802AB92 */ STR R3, [SP, #0X40] \n\
+/* 0802AB94 */ CMP R5, SB \n\
+/* 0802AB96 */ BHS _0802ABA6 \n\
+/* 0802AB98 */ ADD R1, SP, #0X18 \n\
+/* 0802AB9A */ MOVS R3, #0 \n\
+_0802AB9C: \n\
+/* 0802AB9C */ ADDS R0, R1, R5 \n\
+/* 0802AB9E */ STRB R3, [R0] \n\
+/* 0802ABA0 */ ADDS R5, #1 \n\
+/* 0802ABA2 */ CMP R5, SB \n\
+/* 0802ABA4 */ BLO _0802AB9C \n\
+_0802ABA6: \n\
+/* 0802ABA6 */ LDR R7, [SP, #0X40] \n\
+/* 0802ABA8 */ LDRH R0, [R7] \n\
+/* 0802ABAA */ CMP R0, #0 \n\
+/* 0802ABAC */ BEQ _0802ACA0 \n\
+/* 0802ABAE */ ADDS R1, R2, #0 \n\
+/* 0802ABB0 */ ADDS R1, #0X6A \n\
+/* 0802ABB2 */ LDR R0, [R4] \n\
+/* 0802ABB4 */ LDRH R0, [R0, #0X16] \n\
+/* 0802ABB6 */ LSLS R0, R0, #1 \n\
+/* 0802ABB8 */ LDRH R2, [R1] \n\
+/* 0802ABBA */ ADDS R0, R2 \n\
+/* 0802ABBC */ STRH R0, [R1] \n\
+/* 0802ABBE */ LSLS R0, R0, #0X10 \n\
+/* 0802ABC0 */ LSRS R6, R0, #0X18 \n\
+/* 0802ABC2 */ MOVS R5, #0 \n\
+/* 0802ABC4 */ STR R1, [SP, #0X44] \n\
+/* 0802ABC6 */ CMP R5, SB \n\
+/* 0802ABC8 */ BHS _0802AC54 \n\
+/* 0802ABCA */ MOVS R3, #0X80 \n\
+/* 0802ABCC */ LSLS R3, R3, #1 \n\
+/* 0802ABCE */ MOV SL, R3 \n\
+/* 0802ABD0 */ LDR R7, [SP, #0X34] \n\
+/* 0802ABD2 */ MOV R8, R7 \n\
+/* 0802ABD4 */ LDR R0, [SP, #0X30] \n\
+/* 0802ABD6 */ STR R0, [SP, #0X4C] \n\
+_0802ABD8: \n\
+/* 0802ABD8 */ LDR R1, [SP, #0X2C] \n\
+/* 0802ABDA */ ADDS R4, R1, R5 \n\
+/* 0802ABDC */ ADDS R0, R6, #0 \n\
+/* 0802ABDE */ ADDS R0, #0X40 \n\
+/* 0802ABE0 */ STRB R0, [R4] \n\
+/* 0802ABE2 */ LDR R0, _0802AC94 \n\
+/* 0802ABE4 */ LSLS R1, R6, #1 \n\
+/* 0802ABE6 */ ADDS R0, R1, R0 \n\
+/* 0802ABE8 */ MOVS R3, #0 \n\
+/* 0802ABEA */ LDRSH R2, [R0, R3] \n\
+/* 0802ABEC */ LSLS R2, R2, #5 \n\
+/* 0802ABEE */ MOVS R7, #0XF0 \n\
+/* 0802ABF0 */ LSLS R7, R7, #7 \n\
+/* 0802ABF2 */ ADDS R2, R7 \n\
+/* 0802ABF4 */ LDR R0, [SP, #0X4C] \n\
+/* 0802ABF6 */ STR R2, [R0] \n\
+/* 0802ABF8 */ LDR R0, _0802AC98 \n\
+/* 0802ABFA */ ADDS R1, R0 \n\
+/* 0802ABFC */ MOVS R7, #0 \n\
+/* 0802ABFE */ LDRSH R3, [R1, R7] \n\
+/* 0802AC00 */ LSLS R3, R3, #5 \n\
+/* 0802AC02 */ MOVS R0, #0XA0 \n\
+/* 0802AC04 */ LSLS R0, R0, #7 \n\
+/* 0802AC06 */ ADDS R3, R0 \n\
+/* 0802AC08 */ LDR R1, [SP, #0X4C] \n\
+/* 0802AC0A */ STR R3, [R1, #4] \n\
+/* 0802AC0C */ LDR R0, _0802AC9C \n\
+/* 0802AC0E */ LDR R0, [R0] \n\
+/* 0802AC10 */ MOV R7, R8 \n\
+/* 0802AC12 */ MOVS R1, #0 \n\
+/* 0802AC14 */ LDRSH R7, [R7, R1] \n\
+/* 0802AC16 */ MOV IP, R7 \n\
+/* 0802AC18 */ ASRS R2, R2, #8 \n\
+/* 0802AC1A */ ASRS R3, R3, #8 \n\
+/* 0802AC1C */ MOV R1, IP \n\
+/* 0802AC1E */ BL sprite_set_x_y \n\
+/* 0802AC22 */ LDR R2, [SP, #0X38] \n\
+/* 0802AC24 */ ADDS R0, R2, R5 \n\
+/* 0802AC26 */ LDRB R0, [R0] \n\
+/* 0802AC28 */ LSLS R0, R0, #0X18 \n\
+/* 0802AC2A */ ASRS R0, R0, #0X18 \n\
+/* 0802AC2C */ LDRB R2, [R4] \n\
+/* 0802AC2E */ RSBS R2, R2, #0 \n\
+/* 0802AC30 */ MOV R1, SL \n\
+/* 0802AC32 */ BL func_08001BA4 \n\
+/* 0802AC36 */ MOV R0, SL \n\
+/* 0802AC38 */ MOV R1, SB \n\
+/* 0802AC3A */ BL __udivsi3 \n\
+/* 0802AC3E */ ADDS R0, R6, R0 \n\
+/* 0802AC40 */ LSLS R0, R0, #0X18 \n\
+/* 0802AC42 */ LSRS R6, R0, #0X18 \n\
+/* 0802AC44 */ MOVS R3, #2 \n\
+/* 0802AC46 */ ADD R8, R3 \n\
+/* 0802AC48 */ LDR R7, [SP, #0X4C] \n\
+/* 0802AC4A */ ADDS R7, #8 \n\
+/* 0802AC4C */ STR R7, [SP, #0X4C] \n\
+/* 0802AC4E */ ADDS R5, #1 \n\
+/* 0802AC50 */ CMP R5, SB \n\
+/* 0802AC52 */ BLO _0802ABD8 \n\
+_0802AC54: \n\
+/* 0802AC54 */ LDR R1, [SP, #0X40] \n\
+/* 0802AC56 */ LDRH R0, [R1] \n\
+/* 0802AC58 */ SUBS R0, #1 \n\
+/* 0802AC5A */ STRH R0, [R1] \n\
+/* 0802AC5C */ LSLS R0, R0, #0X10 \n\
+/* 0802AC5E */ CMP R0, #0 \n\
+/* 0802AC60 */ BEQ _0802AC64 \n\
+/* 0802AC62 */ B _0802AE90 \n\
+_0802AC64: \n\
+/* 0802AC64 */ LDR R2, [SP, #0X44] \n\
+/* 0802AC66 */ LDRH R0, [R2] \n\
+/* 0802AC68 */ LSRS R6, R0, #8 \n\
+/* 0802AC6A */ MOVS R5, #0 \n\
+/* 0802AC6C */ CMP R5, SB \n\
+/* 0802AC6E */ BLO _0802AC72 \n\
+/* 0802AC70 */ B _0802AE90 \n\
+_0802AC72: \n\
+/* 0802AC72 */ MOVS R0, #0X80 \n\
+/* 0802AC74 */ LSLS R0, R0, #1 \n\
+/* 0802AC76 */ MOV R1, SB \n\
+/* 0802AC78 */ BL __udivsi3 \n\
+/* 0802AC7C */ ADDS R1, R0, #0 \n\
+_0802AC7E: \n\
+/* 0802AC7E */ LDR R3, [SP, #0X2C] \n\
+/* 0802AC80 */ ADDS R0, R3, R5 \n\
+/* 0802AC82 */ STRB R6, [R0] \n\
+/* 0802AC84 */ ADDS R0, R6, R1 \n\
+/* 0802AC86 */ LSLS R0, R0, #0X18 \n\
+/* 0802AC88 */ LSRS R6, R0, #0X18 \n\
+/* 0802AC8A */ ADDS R5, #1 \n\
+/* 0802AC8C */ CMP R5, SB \n\
+/* 0802AC8E */ BLO _0802AC7E \n\
+/* 0802AC90 */ B _0802AE90 \n\
+ \n\
+.balign 4, 0 \n\
+_0802AC94: \n\
+/* 0802AC94 */ .word gCosineTable \n\
+ \n\
+.balign 4, 0 \n\
+_0802AC98: \n\
+/* 0802AC98 */ .word gSineTable \n\
+ \n\
+.balign 4, 0 \n\
+_0802AC9C: \n\
+/* 0802AC9C */ .word gSpriteHandler \n\
+_0802ACA0: \n\
+/* 0802ACA0 */ LDR R0, [R4] \n\
+/* 0802ACA2 */ LDRH R1, [R0, #0X16] \n\
+/* 0802ACA4 */ LSLS R0, R1, #1 \n\
+/* 0802ACA6 */ ADDS R0, R1 \n\
+/* 0802ACA8 */ LSRS R0, R0, #1 \n\
+/* 0802ACAA */ STR R0, [SP, #0X3C] \n\
+/* 0802ACAC */ MOVS R5, #0 \n\
+/* 0802ACAE */ CMP R5, SB \n\
+/* 0802ACB0 */ BHS _0802AD98 \n\
+/* 0802ACB2 */ MOVS R7, #0X90 \n\
+/* 0802ACB4 */ LSLS R7, R7, #6 \n\
+/* 0802ACB6 */ MOV SL, R7 \n\
+/* 0802ACB8 */ LDR R4, [SP, #0X30] \n\
+_0802ACBA: \n\
+/* 0802ACBA */ LDR R0, [SP, #0X2C] \n\
+/* 0802ACBC */ ADDS R0, R5 \n\
+/* 0802ACBE */ MOV R8, R0 \n\
+/* 0802ACC0 */ LDRB R6, [R0] \n\
+/* 0802ACC2 */ LDR R0, _0802AEA0 \n\
+/* 0802ACC4 */ LSLS R1, R6, #1 \n\
+/* 0802ACC6 */ ADDS R0, R1, R0 \n\
+/* 0802ACC8 */ MOVS R2, #0 \n\
+/* 0802ACCA */ LDRSH R0, [R0, R2] \n\
+/* 0802ACCC */ LDR R3, [SP, #0X3C] \n\
+/* 0802ACCE */ MULS R0, R3, R0 \n\
+/* 0802ACD0 */ ASRS R0, R0, #8 \n\
+/* 0802ACD2 */ LDR R2, [R4] \n\
+/* 0802ACD4 */ ADDS R2, R0 \n\
+/* 0802ACD6 */ STR R2, [R4] \n\
+/* 0802ACD8 */ LDR R0, _0802AEA4 \n\
+/* 0802ACDA */ ADDS R1, R0 \n\
+/* 0802ACDC */ MOVS R7, #0 \n\
+/* 0802ACDE */ LDRSH R0, [R1, R7] \n\
+/* 0802ACE0 */ MULS R0, R3, R0 \n\
+/* 0802ACE2 */ ASRS R0, R0, #8 \n\
+/* 0802ACE4 */ LDR R3, [R4, #4] \n\
+/* 0802ACE6 */ ADDS R3, R0 \n\
+/* 0802ACE8 */ STR R3, [R4, #4] \n\
+/* 0802ACEA */ LDR R0, _0802AEA8 \n\
+/* 0802ACEC */ LDR R0, [R0] \n\
+/* 0802ACEE */ LSLS R1, R5, #1 \n\
+/* 0802ACF0 */ LDR R7, [SP, #0X34] \n\
+/* 0802ACF2 */ ADDS R1, R7 \n\
+/* 0802ACF4 */ MOVS R7, #0 \n\
+/* 0802ACF6 */ LDRSH R1, [R1, R7] \n\
+/* 0802ACF8 */ LSLS R2, R2, #8 \n\
+/* 0802ACFA */ ASRS R2, R2, #0X10 \n\
+/* 0802ACFC */ LSLS R3, R3, #8 \n\
+/* 0802ACFE */ ASRS R3, R3, #0X10 \n\
+/* 0802AD00 */ BL sprite_set_x_y \n\
+/* 0802AD04 */ LDR R1, [SP, #0X38] \n\
+/* 0802AD06 */ ADDS R0, R1, R5 \n\
+/* 0802AD08 */ LDRB R0, [R0] \n\
+/* 0802AD0A */ LSLS R0, R0, #0X18 \n\
+/* 0802AD0C */ ASRS R0, R0, #0X18 \n\
+/* 0802AD0E */ RSBS R2, R6, #0 \n\
+/* 0802AD10 */ MOVS R1, #0X80 \n\
+/* 0802AD12 */ LSLS R1, R1, #1 \n\
+/* 0802AD14 */ BL func_08001BA4 \n\
+/* 0802AD18 */ LDR R1, [R4] \n\
+/* 0802AD1A */ LSLS R1, R1, #8 \n\
+/* 0802AD1C */ LDR R0, [R4, #4] \n\
+/* 0802AD1E */ LSLS R0, R0, #8 \n\
+/* 0802AD20 */ LSRS R3, R0, #0X10 \n\
+/* 0802AD22 */ ASRS R1, R1, #0X10 \n\
+/* 0802AD24 */ ADD R2, SP, #0X18 \n\
+/* 0802AD26 */ CMP R1, #0X24 \n\
+/* 0802AD28 */ BGE _0802AD38 \n\
+/* 0802AD2A */ MOV R7, SL \n\
+/* 0802AD2C */ STR R7, [R4] \n\
+/* 0802AD2E */ ADDS R0, R2, R5 \n\
+/* 0802AD30 */ MOVS R7, #1 \n\
+/* 0802AD32 */ STRB R7, [R0] \n\
+/* 0802AD34 */ MOVS R0, #0 \n\
+/* 0802AD36 */ STR R0, [SP, #0X28] \n\
+_0802AD38: \n\
+/* 0802AD38 */ MOVS R0, #0XCB \n\
+/* 0802AD3A */ CMP R1, #0XCB \n\
+/* 0802AD3C */ BLE _0802AD4C \n\
+/* 0802AD3E */ LSLS R0, R0, #8 \n\
+/* 0802AD40 */ STR R0, [R4] \n\
+/* 0802AD42 */ ADDS R0, R2, R5 \n\
+/* 0802AD44 */ MOVS R1, #1 \n\
+/* 0802AD46 */ STRB R1, [R0] \n\
+/* 0802AD48 */ MOVS R7, #0 \n\
+/* 0802AD4A */ STR R7, [SP, #0X28] \n\
+_0802AD4C: \n\
+/* 0802AD4C */ LSLS R0, R3, #0X10 \n\
+/* 0802AD4E */ ASRS R1, R0, #0X10 \n\
+/* 0802AD50 */ MOVS R0, #0X14 \n\
+/* 0802AD52 */ CMP R1, #0X14 \n\
+/* 0802AD54 */ BGE _0802AD64 \n\
+/* 0802AD56 */ LSLS R0, R0, #8 \n\
+/* 0802AD58 */ STR R0, [R4, #4] \n\
+/* 0802AD5A */ ADDS R0, R2, R5 \n\
+/* 0802AD5C */ MOVS R3, #1 \n\
+/* 0802AD5E */ STRB R3, [R0] \n\
+/* 0802AD60 */ MOVS R7, #0X40 \n\
+/* 0802AD62 */ STR R7, [SP, #0X28] \n\
+_0802AD64: \n\
+/* 0802AD64 */ MOVS R0, #0X8B \n\
+/* 0802AD66 */ CMP R1, #0X8B \n\
+/* 0802AD68 */ BLE _0802AD78 \n\
+/* 0802AD6A */ LSLS R0, R0, #8 \n\
+/* 0802AD6C */ STR R0, [R4, #4] \n\
+/* 0802AD6E */ ADDS R0, R2, R5 \n\
+/* 0802AD70 */ MOVS R1, #1 \n\
+/* 0802AD72 */ STRB R1, [R0] \n\
+/* 0802AD74 */ MOVS R3, #0X40 \n\
+/* 0802AD76 */ STR R3, [SP, #0X28] \n\
+_0802AD78: \n\
+/* 0802AD78 */ ADDS R0, R2, R5 \n\
+/* 0802AD7A */ LDRB R0, [R0] \n\
+/* 0802AD7C */ CMP R0, #0 \n\
+/* 0802AD7E */ BEQ _0802AD90 \n\
+/* 0802AD80 */ LDR R7, [SP, #0X28] \n\
+/* 0802AD82 */ SUBS R0, R6, R7 \n\
+/* 0802AD84 */ ADDS R0, #0X80 \n\
+/* 0802AD86 */ SUBS R0, R7, R0 \n\
+/* 0802AD88 */ MOV R1, R8 \n\
+/* 0802AD8A */ STRB R0, [R1] \n\
+/* 0802AD8C */ MOVS R2, #1 \n\
+/* 0802AD8E */ STR R2, [SP, #0X24] \n\
+_0802AD90: \n\
+/* 0802AD90 */ ADDS R4, #8 \n\
+/* 0802AD92 */ ADDS R5, #1 \n\
+/* 0802AD94 */ CMP R5, SB \n\
+/* 0802AD96 */ BLO _0802ACBA \n\
+_0802AD98: \n\
+/* 0802AD98 */ MOVS R5, #0 \n\
+/* 0802AD9A */ CMP R5, SB \n\
+/* 0802AD9C */ BHS _0802ADAC \n\
+/* 0802AD9E */ ADD R1, SP, #0X18 \n\
+/* 0802ADA0 */ MOVS R2, #0 \n\
+_0802ADA2: \n\
+/* 0802ADA2 */ ADDS R0, R1, R5 \n\
+/* 0802ADA4 */ STRB R2, [R0] \n\
+/* 0802ADA6 */ ADDS R5, #1 \n\
+/* 0802ADA8 */ CMP R5, SB \n\
+/* 0802ADAA */ BLO _0802ADA2 \n\
+_0802ADAC: \n\
+/* 0802ADAC */ MOVS R5, #0 \n\
+/* 0802ADAE */ CMP R5, SB \n\
+/* 0802ADB0 */ BHS _0802AE34 \n\
+_0802ADB2: \n\
+/* 0802ADB2 */ MOVS R6, #0 \n\
+/* 0802ADB4 */ ADDS R3, R5, #1 \n\
+/* 0802ADB6 */ STR R3, [SP, #0X48] \n\
+/* 0802ADB8 */ CMP R6, SB \n\
+/* 0802ADBA */ BHS _0802AE2E \n\
+/* 0802ADBC */ LSLS R0, R5, #3 \n\
+/* 0802ADBE */ LDR R7, [SP, #0X30] \n\
+/* 0802ADC0 */ ADDS R0, R7 \n\
+/* 0802ADC2 */ MOV R8, R0 \n\
+/* 0802ADC4 */ ADDS R4, R7, #0 \n\
+/* 0802ADC6 */ LDR R0, [SP, #0X2C] \n\
+/* 0802ADC8 */ ADDS R7, R0, R5 \n\
+/* 0802ADCA */ ADD R0, SP, #0X18 \n\
+/* 0802ADCC */ ADDS R0, R5 \n\
+/* 0802ADCE */ MOV SL, R0 \n\
+_0802ADD0: \n\
+/* 0802ADD0 */ CMP R5, R6 \n\
+/* 0802ADD2 */ BEQ _0802AE26 \n\
+/* 0802ADD4 */ LDR R2, [R4] \n\
+/* 0802ADD6 */ MOV R1, R8 \n\
+/* 0802ADD8 */ LDR R0, [R1] \n\
+/* 0802ADDA */ SUBS R2, R0 \n\
+/* 0802ADDC */ LSLS R2, R2, #8 \n\
+/* 0802ADDE */ LDR R0, [R4, #4] \n\
+/* 0802ADE0 */ LDR R1, [R1, #4] \n\
+/* 0802ADE2 */ SUBS R0, R1 \n\
+/* 0802ADE4 */ LSLS R0, R0, #8 \n\
+/* 0802ADE6 */ ASRS R2, R2, #0X10 \n\
+/* 0802ADE8 */ ADDS R1, R2, #0 \n\
+/* 0802ADEA */ MULS R1, R2, R1 \n\
+/* 0802ADEC */ ASRS R3, R0, #0X10 \n\
+/* 0802ADEE */ ADDS R0, R3, #0 \n\
+/* 0802ADF0 */ MULS R0, R3, R0 \n\
+/* 0802ADF2 */ ADDS R1, R0 \n\
+/* 0802ADF4 */ LDR R0, _0802AEAC \n\
+/* 0802ADF6 */ CMP R1, R0 \n\
+/* 0802ADF8 */ BGT _0802AE26 \n\
+/* 0802ADFA */ ADDS R0, R2, #0 \n\
+/* 0802ADFC */ ADDS R1, R3, #0 \n\
+/* 0802ADFE */ BL func_08002654 \n\
+/* 0802AE02 */ LSLS R0, R0, #0X18 \n\
+/* 0802AE04 */ LSRS R0, R0, #0X18 \n\
+/* 0802AE06 */ STR R0, [SP, #0X28] \n\
+/* 0802AE08 */ LDRB R0, [R7] \n\
+/* 0802AE0A */ LDR R1, [SP, #0X28] \n\
+/* 0802AE0C */ SUBS R0, R1 \n\
+/* 0802AE0E */ ADDS R0, #0X80 \n\
+/* 0802AE10 */ SUBS R0, R1, R0 \n\
+/* 0802AE12 */ STRB R0, [R7] \n\
+/* 0802AE14 */ MOVS R0, #1 \n\
+/* 0802AE16 */ MOV R2, SL \n\
+/* 0802AE18 */ STRB R0, [R2] \n\
+/* 0802AE1A */ MOVS R3, #1 \n\
+/* 0802AE1C */ STR R3, [SP, #0X24] \n\
+/* 0802AE1E */ MOV R0, SP \n\
+/* 0802AE20 */ ADDS R0, R5 \n\
+/* 0802AE22 */ ADDS R0, #0XC \n\
+/* 0802AE24 */ STRB R1, [R0] \n\
+_0802AE26: \n\
+/* 0802AE26 */ ADDS R4, #8 \n\
+/* 0802AE28 */ ADDS R6, #1 \n\
+/* 0802AE2A */ CMP R6, SB \n\
+/* 0802AE2C */ BLO _0802ADD0 \n\
+_0802AE2E: \n\
+/* 0802AE2E */ LDR R5, [SP, #0X48] \n\
+/* 0802AE30 */ CMP R5, SB \n\
+/* 0802AE32 */ BLO _0802ADB2 \n\
+_0802AE34: \n\
+/* 0802AE34 */ LDR R2, [SP, #0X24] \n\
+/* 0802AE36 */ CMP R2, #0 \n\
+/* 0802AE38 */ BEQ _0802AE40 \n\
+/* 0802AE3A */ LDR R0, =D_083FD4F8 \n\
+/* 0802AE3C */ BL play_sound \n\
+_0802AE40: \n\
+/* 0802AE40 */ MOVS R5, #0 \n\
+/* 0802AE42 */ CMP R5, SB \n\
+/* 0802AE44 */ BHS _0802AE90 \n\
+/* 0802AE46 */ LDR R6, _0802AEA0 \n\
+/* 0802AE48 */ LDR R4, _0802AEA4 \n\
+/* 0802AE4A */ ADD R3, SP, #0XC \n\
+/* 0802AE4C */ LDR R2, [SP, #0X30] \n\
+_0802AE4E: \n\
+/* 0802AE4E */ ADD R0, SP, #0X18 \n\
+/* 0802AE50 */ ADDS R0, R5 \n\
+/* 0802AE52 */ LDRB R0, [R0] \n\
+/* 0802AE54 */ CMP R0, #0 \n\
+/* 0802AE56 */ BEQ _0802AE86 \n\
+/* 0802AE58 */ LDRB R0, [R3] \n\
+/* 0802AE5A */ LSLS R0, R0, #1 \n\
+/* 0802AE5C */ ADDS R0, R6 \n\
+/* 0802AE5E */ MOVS R7, #0 \n\
+/* 0802AE60 */ LDRSH R0, [R0, R7] \n\
+/* 0802AE62 */ LDR R7, [SP, #0X3C] \n\
+/* 0802AE64 */ ADDS R1, R7, #0 \n\
+/* 0802AE66 */ MULS R1, R0, R1 \n\
+/* 0802AE68 */ ASRS R1, R1, #8 \n\
+/* 0802AE6A */ LDR R0, [R2] \n\
+/* 0802AE6C */ SUBS R0, R1 \n\
+/* 0802AE6E */ STR R0, [R2] \n\
+/* 0802AE70 */ LDRB R0, [R3] \n\
+/* 0802AE72 */ LSLS R0, R0, #1 \n\
+/* 0802AE74 */ ADDS R0, R4 \n\
+/* 0802AE76 */ MOVS R1, #0 \n\
+/* 0802AE78 */ LDRSH R0, [R0, R1] \n\
+/* 0802AE7A */ ADDS R1, R7, #0 \n\
+/* 0802AE7C */ MULS R1, R0, R1 \n\
+/* 0802AE7E */ ASRS R1, R1, #8 \n\
+/* 0802AE80 */ LDR R0, [R2, #4] \n\
+/* 0802AE82 */ SUBS R0, R1 \n\
+/* 0802AE84 */ STR R0, [R2, #4] \n\
+_0802AE86: \n\
+/* 0802AE86 */ ADDS R3, #1 \n\
+/* 0802AE88 */ ADDS R2, #8 \n\
+/* 0802AE8A */ ADDS R5, #1 \n\
+/* 0802AE8C */ CMP R5, SB \n\
+/* 0802AE8E */ BLO _0802AE4E \n\
+_0802AE90: \n\
+/* 0802AE90 */ ADD SP, #0X50 \n\
+/* 0802AE92 */ POP {R3, R4, R5} \n\
+/* 0802AE94 */ MOV R8, R3 \n\
+/* 0802AE96 */ MOV SB, R4 \n\
+/* 0802AE98 */ MOV SL, R5 \n\
+/* 0802AE9A */ POP {R4, R5, R6, R7} \n\
+/* 0802AE9C */ POP {R0} \n\
+/* 0802AE9E */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0802AEB0: \n\
+/* 0802AEB0 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0802AEA0: \n\
+/* 0802AEA0 */ .word gCosineTable \n\
+ \n\
+.balign 4, 0 \n\
+_0802AEA4: \n\
+/* 0802AEA4 */ .word gSineTable \n\
+ \n\
+.balign 4, 0 \n\
+_0802AEA8: \n\
+/* 0802AEA8 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0802AEAC: \n\
+/* 0802AEAC */ .word 0x00000211 \n\
+.ltorg \n\
+.syntax divided");
+

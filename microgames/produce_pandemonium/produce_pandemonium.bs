@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_produce_pandemonium at 0x083E8F18
+struct scene_produce_pandemonium
+    /* Start  */ .word func_080E9B7C, 0x00000000
+    /* Paused */ .word func_080EABFC, 0x00000000
+    /* Update */ .word func_080EAB9C, 0x00000000
+    /* Stop   */ .word func_080EAC00, 0x00000000
+    /* Script */ .word 0x083E8E94
+endstruct
+
+.incbin "microgames/produce_pandemonium/produce_pandemonium.bin", 36, 10020

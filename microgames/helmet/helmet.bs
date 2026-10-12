@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_helmet at 0x083CEEC4
+struct scene_helmet
+    /* Start  */ .word func_080367C8, 0x00000000
+    /* Paused */ .word func_08037174, 0x00000000
+    /* Update */ .word func_08037084, 0x00000000
+    /* Stop   */ .word func_08037188, 0x00000000
+    /* Script */ .word 0x083CEE64
+endstruct
+
+.incbin "microgames/helmet/helmet.bin", 36, 300

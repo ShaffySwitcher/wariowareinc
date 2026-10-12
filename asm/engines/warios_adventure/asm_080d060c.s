@@ -1,0 +1,130 @@
+/* Generated from asm/asm_080d060c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080D060C \n\
+/* 080D060C */ PUSH {R4, R5, R6, LR} \n\
+/* 080D060E */ SUB SP, #0X14 \n\
+/* 080D0610 */ BL get_current_mem_id \n\
+/* 080D0614 */ LSLS R0, R0, #0X10 \n\
+/* 080D0616 */ LSRS R0, R0, #0X10 \n\
+/* 080D0618 */ LDR R1, _080D06FC \n\
+/* 080D061A */ MOVS R2, #0X80 \n\
+/* 080D061C */ LSLS R2, R2, #5 \n\
+/* 080D061E */ BL start_load_gfx_table_task \n\
+/* 080D0622 */ MOVS R0, #0 \n\
+/* 080D0624 */ BL scene_set_video_mode \n\
+/* 080D0628 */ MOVS R0, #1 \n\
+/* 080D062A */ BL scene_show_bg_layer \n\
+/* 080D062E */ MOVS R0, #2 \n\
+/* 080D0630 */ BL scene_hide_bg_layer \n\
+/* 080D0634 */ MOVS R0, #3 \n\
+/* 080D0636 */ BL scene_show_bg_layer \n\
+/* 080D063A */ MOVS R0, #1 \n\
+/* 080D063C */ MOVS R1, #0 \n\
+/* 080D063E */ MOVS R2, #0 \n\
+/* 080D0640 */ BL scene_set_bg_layer_pos \n\
+/* 080D0644 */ MOVS R0, #2 \n\
+/* 080D0646 */ MOVS R1, #0 \n\
+/* 080D0648 */ MOVS R2, #0 \n\
+/* 080D064A */ BL scene_set_bg_layer_pos \n\
+/* 080D064E */ MOVS R0, #3 \n\
+/* 080D0650 */ MOVS R1, #0 \n\
+/* 080D0652 */ MOVS R2, #0 \n\
+/* 080D0654 */ BL scene_set_bg_layer_pos \n\
+/* 080D0658 */ LDR R3, _080D0700 \n\
+/* 080D065A */ MOVS R0, #1 \n\
+/* 080D065C */ MOVS R1, #0 \n\
+/* 080D065E */ MOVS R2, #0X1D \n\
+/* 080D0660 */ BL scene_set_bg_layer_controls \n\
+/* 080D0664 */ MOVS R0, #3 \n\
+/* 080D0666 */ MOVS R1, #0 \n\
+/* 080D0668 */ MOVS R2, #0X1F \n\
+/* 080D066A */ MOVS R3, #3 \n\
+/* 080D066C */ BL scene_set_bg_layer_controls \n\
+/* 080D0670 */ MOVS R0, #1 \n\
+/* 080D0672 */ BL func_0800A0C4 \n\
+/* 080D0676 */ MOVS R0, #0 \n\
+/* 080D0678 */ BL func_0800CDB0 \n\
+/* 080D067C */ LDR R5, _080D0704 \n\
+/* 080D067E */ LDR R0, [R5] \n\
+/* 080D0680 */ MOVS R4, #0 \n\
+/* 080D0682 */ STRB R4, [R0] \n\
+/* 080D0684 */ LDR R1, [R5] \n\
+/* 080D0686 */ MOVS R2, #0XF5 \n\
+/* 080D0688 */ LSLS R2, R2, #2 \n\
+/* 080D068A */ ADDS R0, R1, R2 \n\
+/* 080D068C */ STR R4, [R0] \n\
+/* 080D068E */ ADDS R2, #4 \n\
+/* 080D0690 */ ADDS R0, R1, R2 \n\
+/* 080D0692 */ STR R4, [R0] \n\
+/* 080D0694 */ BL func_080D290C \n\
+/* 080D0698 */ BL func_080D2768 \n\
+/* 080D069C */ BL func_080D2138 \n\
+/* 080D06A0 */ BL func_080D24A8 \n\
+/* 080D06A4 */ BL func_080D25E8 \n\
+/* 080D06A8 */ BL func_080D28A4 \n\
+/* 080D06AC */ BL func_080D085C \n\
+/* 080D06B0 */ LDR R0, [R5] \n\
+/* 080D06B2 */ ADDS R0, #0X44 \n\
+/* 080D06B4 */ STRB R4, [R0] \n\
+/* 080D06B6 */ LDR R6, _080D0708 \n\
+/* 080D06B8 */ LDR R0, [R6] \n\
+/* 080D06BA */ LDR R1, _080D070C \n\
+/* 080D06BC */ STR R4, [SP] \n\
+/* 080D06BE */ LDR R2, _080D0710 \n\
+/* 080D06C0 */ STR R2, [SP, #4] \n\
+/* 080D06C2 */ MOVS R2, #1 \n\
+/* 080D06C4 */ STR R2, [SP, #8] \n\
+/* 080D06C6 */ STR R4, [SP, #0XC] \n\
+/* 080D06C8 */ STR R4, [SP, #0X10] \n\
+/* 080D06CA */ MOVS R2, #0 \n\
+/* 080D06CC */ MOVS R3, #0 \n\
+/* 080D06CE */ BL sprite_create \n\
+/* 080D06D2 */ LDR R1, [R5] \n\
+/* 080D06D4 */ ADDS R1, #0X46 \n\
+/* 080D06D6 */ STRH R0, [R1] \n\
+/* 080D06D8 */ LDR R0, [R6] \n\
+/* 080D06DA */ MOVS R2, #0 \n\
+/* 080D06DC */ LDRSH R1, [R1, R2] \n\
+/* 080D06DE */ MOVS R2, #0 \n\
+/* 080D06E0 */ BL sprite_set_visible \n\
+/* 080D06E4 */ LDR R4, =D_083E4210 \n\
+/* 080D06E6 */ BL get_current_language \n\
+/* 080D06EA */ LSLS R0, R0, #2 \n\
+/* 080D06EC */ ADDS R0, R4 \n\
+/* 080D06EE */ LDR R0, [R0] \n\
+/* 080D06F0 */ BL func_0800BB74 \n\
+/* 080D06F4 */ ADD SP, #0X14 \n\
+/* 080D06F6 */ POP {R4, R5, R6} \n\
+/* 080D06F8 */ POP {R0} \n\
+/* 080D06FA */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080D0714: \n\
+/* 080D0714 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_080D06FC: \n\
+/* 080D06FC */ .word D_083E41B0 \n\
+ \n\
+.balign 4, 0 \n\
+_080D0700: \n\
+/* 080D0700 */ .word 0x00008001 \n\
+ \n\
+.balign 4, 0 \n\
+_080D0704: \n\
+/* 080D0704 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080D0708: \n\
+/* 080D0708 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_080D070C: \n\
+/* 080D070C */ .word D_083981F4 \n\
+ \n\
+.balign 4, 0 \n\
+_080D0710: \n\
+/* 080D0710 */ .word 0x0000800F \n\
+.ltorg \n\
+.syntax divided");

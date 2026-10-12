@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_set_n_spike at 0x083D9E90
+struct scene_set_n_spike
+    /* Start  */ .word func_0808848C, 0x00000000
+    /* Paused */ .word func_08088560, 0x00000000
+    /* Update */ .word func_0808850C, 0x00000000
+    /* Stop   */ .word func_08088564, 0x00000000
+    /* Script */ .word 0x083D9E18
+endstruct
+
+.incbin "microgames/set_n_spike/set_n_spike.bin", 36, 1232

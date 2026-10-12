@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_paddle_parade at 0x083D920C
+struct scene_paddle_parade
+    /* Start  */ .word func_08082F1C, 0x00000000
+    /* Paused */ .word func_08083E30, 0x00000000
+    /* Update */ .word func_08083D40, 0x00000000
+    /* Stop   */ .word func_08083E34, 0x00000000
+    /* Script */ .word 0x083D91A0
+endstruct
+
+.incbin "microgames/paddle_parade/paddle_parade.bin", 36, 388

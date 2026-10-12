@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mars_ball_destroy at 0x083D2F74
+struct scene_mars_ball_destroy
+    /* Start  */ .word func_0804F480, 0x00000000
+    /* Paused */ .word func_080502FC, 0x00000000
+    /* Update */ .word func_080502A8, 0x00000000
+    /* Stop   */ .word func_08050310, 0x00000000
+    /* Script */ .word 0x083D2F08
+endstruct
+
+.incbin "microgames/mars_ball_destroy/mars_ball_destroy.bin", 36, 260

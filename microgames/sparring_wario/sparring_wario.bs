@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_sparring_wario at 0x083DB2AC
+struct scene_sparring_wario
+    /* Start  */ .word func_0809B2B8, 0x00000000
+    /* Paused */ .word func_0809CE60, 0x00000000
+    /* Update */ .word func_0809CD4C, 0x00000000
+    /* Stop   */ .word func_0809CE64, 0x00000000
+    /* Script */ .word 0x083DB1EC
+endstruct
+
+.incbin "microgames/sparring_wario/sparring_wario.bin", 36, 316

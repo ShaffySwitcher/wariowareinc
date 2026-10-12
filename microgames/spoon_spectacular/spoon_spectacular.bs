@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_spoon_spectacular at 0x083E5BE4
+struct scene_spoon_spectacular
+    /* Start  */ .word func_080D99E0, 0x00000000
+    /* Paused */ .word func_080D9B08, 0x00000000
+    /* Update */ .word func_080D9A50, 0x00000000
+    /* Stop   */ .word func_080D9B0C, 0x00000000
+    /* Script */ .word 0x083E5B60
+endstruct
+
+.incbin "microgames/spoon_spectacular/spoon_spectacular.bin", 36, 2408

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_fruit_shoot at 0x083CE830
+struct scene_fruit_shoot
+    /* Start  */ .word func_08033D3C, 0x00000000
+    /* Paused */ .word func_080342BC, 0x00000000
+    /* Update */ .word func_08034288, 0x00000000
+    /* Stop   */ .word func_080342C0, 0x00000000
+    /* Script */ .word 0x083CE7C4
+endstruct
+
+.incbin "microgames/fruit_shoot/fruit_shoot.bin", 36, 360

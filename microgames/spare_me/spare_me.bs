@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_spare_me at 0x083CF9F0
+struct scene_spare_me
+    /* Start  */ .word func_0803A760, 0x00000000
+    /* Paused */ .word func_0803B624, 0x00000000
+    /* Update */ .word func_0803B5FC, 0x00000000
+    /* Stop   */ .word func_0803B638, 0x00000000
+    /* Script */ .word 0x083CF984
+endstruct
+
+.incbin "microgames/spare_me/spare_me.bin", 36, 280

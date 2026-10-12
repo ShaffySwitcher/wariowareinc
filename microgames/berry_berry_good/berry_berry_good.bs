@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_berry_berry_good at 0x083DC3F8
+struct scene_berry_berry_good
+    /* Start  */ .word func_080A2FA8, 0x00000000
+    /* Paused */ .word func_080A430C, 0x00000000
+    /* Update */ .word func_080A42E8, 0x00000000
+    /* Stop   */ .word func_080A4310, 0x00000000
+    /* Script */ .word 0x083DC38C
+endstruct
+
+.incbin "microgames/berry_berry_good/berry_berry_good.bin", 36, 272

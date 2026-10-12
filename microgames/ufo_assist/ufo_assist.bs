@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ufo_assist at 0x083D0C34
+struct scene_ufo_assist
+    /* Start  */ .word func_08042E70, 0x00000000
+    /* Paused */ .word func_080434A8, 0x00000000
+    /* Update */ .word func_0804348C, 0x00000000
+    /* Stop   */ .word func_080434BC, 0x00000000
+    /* Script */ .word 0x083D0BA4
+endstruct
+
+.incbin "microgames/ufo_assist/ufo_assist.bin", 36, 280

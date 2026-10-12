@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_shingle_smasher at 0x083E0084
+struct scene_shingle_smasher
+    /* Start  */ .word func_080BA014, 0x00000000
+    /* Paused */ .word func_080BA8DC, 0x00000000
+    /* Update */ .word func_080BA8A8, 0x00000000
+    /* Stop   */ .word func_080BA8E0, 0x00000000
+    /* Script */ .word 0x083E0018
+endstruct
+
+.incbin "microgames/shingle_smasher/shingle_smasher.bin", 36, 372

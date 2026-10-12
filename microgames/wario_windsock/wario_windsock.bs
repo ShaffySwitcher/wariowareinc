@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wario_windsock at 0x083E3148
+struct scene_wario_windsock
+    /* Start  */ .word func_080C78A0, 0x00000000
+    /* Paused */ .word func_080C7E38, 0x00000000
+    /* Update */ .word func_080C7DE0, 0x00000000
+    /* Stop   */ .word func_080C7E3C, 0x00000000
+    /* Script */ .word 0x083E30DC
+endstruct
+
+.incbin "microgames/wario_windsock/wario_windsock.bin", 36, 284

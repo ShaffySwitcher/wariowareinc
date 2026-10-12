@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_balloon_fight at 0x083D35FC
+struct scene_balloon_fight
+    /* Start  */ .word func_08052710, 0x00000000
+    /* Paused */ .word func_08053538, 0x00000000
+    /* Update */ .word func_080534C0, 0x00000000
+    /* Stop   */ .word func_0805353C, 0x00000000
+    /* Script */ .word 0x083D3590
+endstruct
+
+.incbin "microgames/balloon_fight/balloon_fight.bin", 36, 240

@@ -1,0 +1,64 @@
+/* Generated from asm/asm_0809d76c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0809D76C \n\
+/* 0809D76C */ PUSH {R4, R5, LR} \n\
+/* 0809D76E */ LDR R0, _0809D7C0 \n\
+/* 0809D770 */ LDRH R1, [R0] \n\
+/* 0809D772 */ MOVS R5, #1 \n\
+/* 0809D774 */ ADDS R0, R5, #0 \n\
+/* 0809D776 */ ANDS R0, R1 \n\
+/* 0809D778 */ CMP R0, #0 \n\
+/* 0809D77A */ BEQ _0809D7BA \n\
+/* 0809D77C */ LDR R4, _0809D7C4 \n\
+/* 0809D77E */ LDR R1, [R4] \n\
+/* 0809D780 */ MOVS R2, #0XE0 \n\
+/* 0809D782 */ LSLS R2, R2, #1 \n\
+/* 0809D784 */ ADDS R0, R1, R2 \n\
+/* 0809D786 */ LDR R0, [R0] \n\
+/* 0809D788 */ CMP R0, #0 \n\
+/* 0809D78A */ BNE _0809D7BA \n\
+/* 0809D78C */ LDR R0, _0809D7C8 \n\
+/* 0809D78E */ LDR R0, [R0] \n\
+/* 0809D790 */ SUBS R2, #0X28 \n\
+/* 0809D792 */ ADDS R1, R2 \n\
+/* 0809D794 */ MOVS R2, #0 \n\
+/* 0809D796 */ LDRSH R1, [R1, R2] \n\
+/* 0809D798 */ MOVS R2, #0 \n\
+/* 0809D79A */ BL sprite_set_enable_updates \n\
+/* 0809D79E */ LDR R1, [R4] \n\
+/* 0809D7A0 */ MOVS R2, #0XE0 \n\
+/* 0809D7A2 */ LSLS R2, R2, #1 \n\
+/* 0809D7A4 */ ADDS R0, R1, R2 \n\
+/* 0809D7A6 */ STR R5, [R0] \n\
+/* 0809D7A8 */ MOVS R0, #0XA4 \n\
+/* 0809D7AA */ LSLS R0, R0, #1 \n\
+/* 0809D7AC */ ADDS R1, R0 \n\
+/* 0809D7AE */ LDR R0, [R1] \n\
+/* 0809D7B0 */ ADDS R0, #1 \n\
+/* 0809D7B2 */ STR R0, [R1] \n\
+/* 0809D7B4 */ LDR R0, =D_083FD660 \n\
+/* 0809D7B6 */ BL play_sound \n\
+_0809D7BA: \n\
+/* 0809D7BA */ POP {R4, R5} \n\
+/* 0809D7BC */ POP {R0} \n\
+/* 0809D7BE */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0809D7CC: \n\
+/* 0809D7CC */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0809D7C0: \n\
+/* 0809D7C0 */ .word gPressedKeys \n\
+ \n\
+.balign 4, 0 \n\
+_0809D7C4: \n\
+/* 0809D7C4 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809D7C8: \n\
+/* 0809D7C8 */ .word gSpriteHandler \n\
+.ltorg \n\
+.syntax divided");
+

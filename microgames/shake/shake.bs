@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_shake at 0x083E2FFC
+struct scene_shake
+    /* Start  */ .word func_080C6F00, 0x00000000
+    /* Paused */ .word func_080C7898, 0x00000000
+    /* Update */ .word func_080C7830, 0x00000000
+    /* Stop   */ .word func_080C789C, 0x00000000
+    /* Script */ .word 0x083E2F90
+endstruct
+
+.incbin "microgames/shake/shake.bin", 36, 296

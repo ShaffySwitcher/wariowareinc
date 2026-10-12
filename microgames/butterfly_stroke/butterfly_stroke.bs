@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_butterfly_stroke at 0x083DABA0
+struct scene_butterfly_stroke
+    /* Start  */ .word func_08099760, 0x00000000
+    /* Paused */ .word func_08099D34, 0x00000000
+    /* Update */ .word func_08099CF8, 0x00000000
+    /* Stop   */ .word func_08099D38, 0x00000000
+    /* Script */ .word 0x083DAB34
+endstruct
+
+.incbin "microgames/butterfly_stroke/butterfly_stroke.bin", 36, 872

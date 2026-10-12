@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_praise_or_haze_ii at 0x083D1878
+struct scene_praise_or_haze_ii
+    /* Start  */ .word func_08046538, 0x00000000
+    /* Paused */ .word func_08046AE8, 0x00000000
+    /* Update */ .word func_08046ADC, 0x00000000
+    /* Stop   */ .word func_08046AFC, 0x00000000
+    /* Script */ .word 0x083D17B8
+endstruct
+
+.incbin "microgames/praise_or_haze_ii/praise_or_haze_ii.bin", 36, 428

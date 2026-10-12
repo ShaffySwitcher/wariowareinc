@@ -1,0 +1,350 @@
+/* Generated from asm/asm_0807d5a4.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0807D5A4 \n\
+/* 0807D5A4 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0807D5A6 */ MOV R7, SB \n\
+/* 0807D5A8 */ MOV R6, R8 \n\
+/* 0807D5AA */ PUSH {R6, R7} \n\
+/* 0807D5AC */ SUB SP, #0X14 \n\
+/* 0807D5AE */ LDR R1, _0807D808 \n\
+/* 0807D5B0 */ MOVS R2, #0X80 \n\
+/* 0807D5B2 */ LSLS R2, R2, #6 \n\
+/* 0807D5B4 */ MOVS R0, #2 \n\
+/* 0807D5B6 */ BL start_load_gfx_table_task \n\
+/* 0807D5BA */ MOVS R0, #0 \n\
+/* 0807D5BC */ BL scene_set_video_mode \n\
+/* 0807D5C0 */ MOVS R0, #1 \n\
+/* 0807D5C2 */ BL scene_show_bg_layer \n\
+/* 0807D5C6 */ MOVS R0, #2 \n\
+/* 0807D5C8 */ BL scene_show_bg_layer \n\
+/* 0807D5CC */ MOVS R0, #3 \n\
+/* 0807D5CE */ BL scene_hide_bg_layer \n\
+/* 0807D5D2 */ MOVS R0, #1 \n\
+/* 0807D5D4 */ MOVS R1, #0 \n\
+/* 0807D5D6 */ MOVS R2, #0 \n\
+/* 0807D5D8 */ BL scene_set_bg_layer_pos \n\
+/* 0807D5DC */ MOVS R0, #2 \n\
+/* 0807D5DE */ MOVS R1, #0 \n\
+/* 0807D5E0 */ MOVS R2, #0 \n\
+/* 0807D5E2 */ BL scene_set_bg_layer_pos \n\
+/* 0807D5E6 */ MOVS R0, #1 \n\
+/* 0807D5E8 */ MOVS R1, #2 \n\
+/* 0807D5EA */ MOVS R2, #0X1D \n\
+/* 0807D5EC */ MOVS R3, #1 \n\
+/* 0807D5EE */ BL scene_set_bg_layer_controls \n\
+/* 0807D5F2 */ MOVS R0, #2 \n\
+/* 0807D5F4 */ MOVS R1, #0 \n\
+/* 0807D5F6 */ MOVS R2, #0X1E \n\
+/* 0807D5F8 */ MOVS R3, #2 \n\
+/* 0807D5FA */ BL scene_set_bg_layer_controls \n\
+/* 0807D5FE */ MOVS R0, #1 \n\
+/* 0807D600 */ BL func_0800A0C4 \n\
+/* 0807D604 */ LDR R2, _0807D80C \n\
+/* 0807D606 */ LDR R0, _0807D810 \n\
+/* 0807D608 */ LDR R0, [R0] \n\
+/* 0807D60A */ LDR R1, _0807D814 \n\
+/* 0807D60C */ LDRH R5, [R2] \n\
+/* 0807D60E */ MOVS R4, #0 \n\
+/* 0807D610 */ LDRSH R3, [R2, R4] \n\
+/* 0807D612 */ LDRH R6, [R2, #2] \n\
+/* 0807D614 */ MOVS R4, #2 \n\
+/* 0807D616 */ LDRSH R2, [R2, R4] \n\
+/* 0807D618 */ STR R2, [SP] \n\
+/* 0807D61A */ MOVS R2, #0X80 \n\
+/* 0807D61C */ LSLS R2, R2, #8 \n\
+/* 0807D61E */ STR R2, [SP, #4] \n\
+/* 0807D620 */ MOVS R7, #1 \n\
+/* 0807D622 */ STR R7, [SP, #8] \n\
+/* 0807D624 */ MOVS R4, #0 \n\
+/* 0807D626 */ STR R4, [SP, #0XC] \n\
+/* 0807D628 */ STR R4, [SP, #0X10] \n\
+/* 0807D62A */ MOVS R2, #0 \n\
+/* 0807D62C */ BL sprite_create \n\
+/* 0807D630 */ LDR R1, _0807D818 \n\
+/* 0807D632 */ LDR R1, [R1] \n\
+/* 0807D634 */ STRH R0, [R1] \n\
+/* 0807D636 */ LSLS R5, R5, #8 \n\
+/* 0807D638 */ STR R5, [R1, #4] \n\
+/* 0807D63A */ LSLS R0, R6, #8 \n\
+/* 0807D63C */ STR R0, [R1, #8] \n\
+/* 0807D63E */ STR R4, [R1, #0XC] \n\
+/* 0807D640 */ STR R4, [R1, #0X10] \n\
+/* 0807D642 */ MOVS R0, #0XA0 \n\
+/* 0807D644 */ LSLS R0, R0, #1 \n\
+/* 0807D646 */ STR R0, [R1, #0X14] \n\
+/* 0807D648 */ LDR R0, _0807D81C \n\
+/* 0807D64A */ STR R0, [R1, #0X18] \n\
+/* 0807D64C */ MOVS R0, #0X10 \n\
+/* 0807D64E */ STR R0, [R1, #0X1C] \n\
+/* 0807D650 */ MOVS R0, #0X48 \n\
+/* 0807D652 */ STR R0, [R1, #0X20] \n\
+/* 0807D654 */ STR R7, [R1, #0X24] \n\
+/* 0807D656 */ STR R4, [R1, #0X28] \n\
+/* 0807D658 */ STR R4, [R1, #0X2C] \n\
+/* 0807D65A */ STR R4, [R1, #0X30] \n\
+/* 0807D65C */ STR R4, [R1, #0X34] \n\
+/* 0807D65E */ STR R4, [R1, #0X38] \n\
+/* 0807D660 */ LDR R0, _0807D820 \n\
+/* 0807D662 */ LDR R0, [R0] \n\
+/* 0807D664 */ MOVS R2, #0XBA \n\
+/* 0807D666 */ LSLS R2, R2, #1 \n\
+/* 0807D668 */ ADDS R0, R2 \n\
+/* 0807D66A */ LDRB R0, [R0] \n\
+/* 0807D66C */ ADDS R0, #1 \n\
+/* 0807D66E */ STR R0, [R1, #0X3C] \n\
+/* 0807D670 */ STR R0, [R1, #0X40] \n\
+/* 0807D672 */ ADDS R4, R1, #0 \n\
+/* 0807D674 */ ADDS R4, #0X44 \n\
+/* 0807D676 */ MOVS R7, #0 \n\
+/* 0807D678 */ CMP R7, R0 \n\
+/* 0807D67A */ BGE _0807D6E2 \n\
+/* 0807D67C */ MOVS R6, #0X88 \n\
+/* 0807D67E */ MOVS R0, #1 \n\
+/* 0807D680 */ MOV SB, R0 \n\
+/* 0807D682 */ MOVS R1, #0X98 \n\
+/* 0807D684 */ LSLS R1, R1, #8 \n\
+/* 0807D686 */ MOV R8, R1 \n\
+/* 0807D688 */ MOVS R5, #0X98 \n\
+/* 0807D68A */ LSLS R5, R5, #0X10 \n\
+_0807D68C: \n\
+/* 0807D68C */ LDR R0, _0807D810 \n\
+/* 0807D68E */ LDR R0, [R0] \n\
+/* 0807D690 */ ASRS R3, R5, #0X10 \n\
+/* 0807D692 */ STR R6, [SP] \n\
+/* 0807D694 */ MOVS R1, #0X81 \n\
+/* 0807D696 */ LSLS R1, R1, #8 \n\
+/* 0807D698 */ STR R1, [SP, #4] \n\
+/* 0807D69A */ MOV R2, SB \n\
+/* 0807D69C */ STR R2, [SP, #8] \n\
+/* 0807D69E */ MOVS R1, #0 \n\
+/* 0807D6A0 */ STR R1, [SP, #0XC] \n\
+/* 0807D6A2 */ STR R1, [SP, #0X10] \n\
+/* 0807D6A4 */ LDR R1, _0807D824 \n\
+/* 0807D6A6 */ MOVS R2, #0 \n\
+/* 0807D6A8 */ BL sprite_create \n\
+/* 0807D6AC */ STRH R0, [R4] \n\
+/* 0807D6AE */ MOV R0, R8 \n\
+/* 0807D6B0 */ STR R0, [R4, #4] \n\
+/* 0807D6B2 */ LSLS R0, R6, #8 \n\
+/* 0807D6B4 */ STR R0, [R4, #8] \n\
+/* 0807D6B6 */ LDR R0, _0807D820 \n\
+/* 0807D6B8 */ LDR R0, [R0] \n\
+/* 0807D6BA */ LDRH R0, [R0, #0X16] \n\
+/* 0807D6BC */ LSLS R0, R0, #7 \n\
+/* 0807D6BE */ RSBS R0, R0, #0 \n\
+/* 0807D6C0 */ ASRS R0, R0, #8 \n\
+/* 0807D6C2 */ STR R0, [R4, #0XC] \n\
+/* 0807D6C4 */ MOV R1, SB \n\
+/* 0807D6C6 */ STR R1, [R4, #0X14] \n\
+/* 0807D6C8 */ MOVS R2, #0X80 \n\
+/* 0807D6CA */ LSLS R2, R2, #6 \n\
+/* 0807D6CC */ ADD R8, R2 \n\
+/* 0807D6CE */ MOVS R0, #0X80 \n\
+/* 0807D6D0 */ LSLS R0, R0, #0XE \n\
+/* 0807D6D2 */ ADDS R5, R0 \n\
+/* 0807D6D4 */ ADDS R7, #1 \n\
+/* 0807D6D6 */ ADDS R4, #0X18 \n\
+/* 0807D6D8 */ LDR R0, _0807D818 \n\
+/* 0807D6DA */ LDR R0, [R0] \n\
+/* 0807D6DC */ LDR R0, [R0, #0X3C] \n\
+/* 0807D6DE */ CMP R7, R0 \n\
+/* 0807D6E0 */ BLT _0807D68C \n\
+_0807D6E2: \n\
+/* 0807D6E2 */ LDR R0, _0807D818 \n\
+/* 0807D6E4 */ LDR R0, [R0] \n\
+/* 0807D6E6 */ ADDS R4, R0, #0 \n\
+/* 0807D6E8 */ ADDS R4, #0X8C \n\
+/* 0807D6EA */ MOVS R7, #3 \n\
+/* 0807D6EC */ LDR R6, _0807D810 \n\
+/* 0807D6EE */ MOVS R5, #0 \n\
+_0807D6F0: \n\
+/* 0807D6F0 */ LDR R0, [R6] \n\
+/* 0807D6F2 */ STR R5, [SP] \n\
+/* 0807D6F4 */ MOVS R1, #0X83 \n\
+/* 0807D6F6 */ LSLS R1, R1, #8 \n\
+/* 0807D6F8 */ STR R1, [SP, #4] \n\
+/* 0807D6FA */ STR R5, [SP, #8] \n\
+/* 0807D6FC */ STR R5, [SP, #0XC] \n\
+/* 0807D6FE */ STR R5, [SP, #0X10] \n\
+/* 0807D700 */ LDR R1, _0807D828 \n\
+/* 0807D702 */ MOVS R2, #0 \n\
+/* 0807D704 */ MOVS R3, #0 \n\
+/* 0807D706 */ BL sprite_create \n\
+/* 0807D70A */ STRH R0, [R4] \n\
+/* 0807D70C */ STR R5, [R4, #0X14] \n\
+/* 0807D70E */ LDR R0, [R6] \n\
+/* 0807D710 */ MOVS R2, #0 \n\
+/* 0807D712 */ LDRSH R1, [R4, R2] \n\
+/* 0807D714 */ MOVS R2, #0 \n\
+/* 0807D716 */ BL sprite_set_visible \n\
+/* 0807D71A */ SUBS R7, #1 \n\
+/* 0807D71C */ ADDS R4, #0X18 \n\
+/* 0807D71E */ CMP R7, #0 \n\
+/* 0807D720 */ BNE _0807D6F0 \n\
+/* 0807D722 */ LDR R4, _0807D818 \n\
+/* 0807D724 */ MOV SB, R4 \n\
+/* 0807D726 */ LDR R0, [R4] \n\
+/* 0807D728 */ ADDS R0, #0XD4 \n\
+/* 0807D72A */ STR R7, [R0] \n\
+/* 0807D72C */ MOVS R6, #0X16 \n\
+/* 0807D72E */ LDR R0, _0807D810 \n\
+/* 0807D730 */ MOV R8, R0 \n\
+/* 0807D732 */ LDR R0, [R0] \n\
+/* 0807D734 */ LDR R5, _0807D82C \n\
+/* 0807D736 */ STR R6, [SP] \n\
+/* 0807D738 */ MOVS R4, #0X82 \n\
+/* 0807D73A */ LSLS R4, R4, #8 \n\
+/* 0807D73C */ STR R4, [SP, #4] \n\
+/* 0807D73E */ STR R7, [SP, #8] \n\
+/* 0807D740 */ STR R7, [SP, #0XC] \n\
+/* 0807D742 */ STR R7, [SP, #0X10] \n\
+/* 0807D744 */ ADDS R1, R5, #0 \n\
+/* 0807D746 */ MOVS R2, #0 \n\
+/* 0807D748 */ MOVS R3, #0XD8 \n\
+/* 0807D74A */ BL sprite_create \n\
+/* 0807D74E */ MOV R2, SB \n\
+/* 0807D750 */ LDR R1, [R2] \n\
+/* 0807D752 */ ADDS R1, #0XD8 \n\
+/* 0807D754 */ STRH R0, [R1] \n\
+/* 0807D756 */ MOV R1, R8 \n\
+/* 0807D758 */ LDR R0, [R1] \n\
+/* 0807D75A */ STR R6, [SP] \n\
+/* 0807D75C */ STR R4, [SP, #4] \n\
+/* 0807D75E */ STR R7, [SP, #8] \n\
+/* 0807D760 */ STR R7, [SP, #0XC] \n\
+/* 0807D762 */ STR R7, [SP, #0X10] \n\
+/* 0807D764 */ ADDS R1, R5, #0 \n\
+/* 0807D766 */ MOVS R2, #0 \n\
+/* 0807D768 */ MOVS R3, #0XD0 \n\
+/* 0807D76A */ BL sprite_create \n\
+/* 0807D76E */ MOV R2, SB \n\
+/* 0807D770 */ LDR R1, [R2] \n\
+/* 0807D772 */ ADDS R1, #0XDA \n\
+/* 0807D774 */ STRH R0, [R1] \n\
+/* 0807D776 */ MOV R1, R8 \n\
+/* 0807D778 */ LDR R0, [R1] \n\
+/* 0807D77A */ STR R6, [SP] \n\
+/* 0807D77C */ STR R4, [SP, #4] \n\
+/* 0807D77E */ STR R7, [SP, #8] \n\
+/* 0807D780 */ STR R7, [SP, #0XC] \n\
+/* 0807D782 */ STR R7, [SP, #0X10] \n\
+/* 0807D784 */ ADDS R1, R5, #0 \n\
+/* 0807D786 */ MOVS R2, #4 \n\
+/* 0807D788 */ MOVS R3, #0XC8 \n\
+/* 0807D78A */ BL sprite_create \n\
+/* 0807D78E */ MOV R2, SB \n\
+/* 0807D790 */ LDR R1, [R2] \n\
+/* 0807D792 */ ADDS R2, R1, #0 \n\
+/* 0807D794 */ ADDS R2, #0XDC \n\
+/* 0807D796 */ STRH R0, [R2] \n\
+/* 0807D798 */ ADDS R1, #0XE0 \n\
+/* 0807D79A */ LDR R0, _0807D830 \n\
+/* 0807D79C */ STR R0, [R1] \n\
+/* 0807D79E */ MOV R1, R8 \n\
+/* 0807D7A0 */ LDR R0, [R1] \n\
+/* 0807D7A2 */ STR R6, [SP] \n\
+/* 0807D7A4 */ STR R4, [SP, #4] \n\
+/* 0807D7A6 */ STR R7, [SP, #8] \n\
+/* 0807D7A8 */ STR R7, [SP, #0XC] \n\
+/* 0807D7AA */ STR R7, [SP, #0X10] \n\
+/* 0807D7AC */ ADDS R1, R5, #0 \n\
+/* 0807D7AE */ MOVS R2, #0 \n\
+/* 0807D7B0 */ MOVS R3, #0X38 \n\
+/* 0807D7B2 */ BL sprite_create \n\
+/* 0807D7B6 */ MOV R2, SB \n\
+/* 0807D7B8 */ LDR R1, [R2] \n\
+/* 0807D7BA */ ADDS R2, R1, #0 \n\
+/* 0807D7BC */ ADDS R2, #0XE4 \n\
+/* 0807D7BE */ STRH R0, [R2] \n\
+/* 0807D7C0 */ ADDS R1, #0XE8 \n\
+/* 0807D7C2 */ STR R7, [R1] \n\
+/* 0807D7C4 */ MOV R4, R8 \n\
+/* 0807D7C6 */ LDR R0, [R4] \n\
+/* 0807D7C8 */ LDR R1, _0807D834 \n\
+/* 0807D7CA */ LDR R2, _0807D838 \n\
+/* 0807D7CC */ MOVS R4, #0 \n\
+/* 0807D7CE */ LDRSH R3, [R2, R4] \n\
+/* 0807D7D0 */ MOVS R4, #2 \n\
+/* 0807D7D2 */ LDRSH R2, [R2, R4] \n\
+/* 0807D7D4 */ STR R2, [SP] \n\
+/* 0807D7D6 */ MOVS R2, #0X84 \n\
+/* 0807D7D8 */ LSLS R2, R2, #8 \n\
+/* 0807D7DA */ STR R2, [SP, #4] \n\
+/* 0807D7DC */ MOVS R2, #1 \n\
+/* 0807D7DE */ STR R2, [SP, #8] \n\
+/* 0807D7E0 */ STR R7, [SP, #0XC] \n\
+/* 0807D7E2 */ STR R7, [SP, #0X10] \n\
+/* 0807D7E4 */ MOVS R2, #0 \n\
+/* 0807D7E6 */ BL sprite_create \n\
+/* 0807D7EA */ LDR R4, =D_083D8124 \n\
+/* 0807D7EC */ BL get_current_language \n\
+/* 0807D7F0 */ LSLS R0, R0, #2 \n\
+/* 0807D7F2 */ ADDS R0, R4 \n\
+/* 0807D7F4 */ LDR R0, [R0] \n\
+/* 0807D7F6 */ BL func_0800BB74 \n\
+/* 0807D7FA */ ADD SP, #0X14 \n\
+/* 0807D7FC */ POP {R3, R4} \n\
+/* 0807D7FE */ MOV R8, R3 \n\
+/* 0807D800 */ MOV SB, R4 \n\
+/* 0807D802 */ POP {R4, R5, R6, R7} \n\
+/* 0807D804 */ POP {R0} \n\
+/* 0807D806 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D83C: \n\
+/* 0807D83C */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0807D808: \n\
+/* 0807D808 */ .word D_083D80B8 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D80C: \n\
+/* 0807D80C */ .word D_08733888 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D810: \n\
+/* 0807D810 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0807D814: \n\
+/* 0807D814 */ .word D_083709D4 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D818: \n\
+/* 0807D818 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0807D81C: \n\
+/* 0807D81C */ .word 0xFFFFFDC0 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D820: \n\
+/* 0807D820 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_0807D824: \n\
+/* 0807D824 */ .word D_08370A94 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D828: \n\
+/* 0807D828 */ .word D_08370ABC \n\
+ \n\
+.balign 4, 0 \n\
+_0807D82C: \n\
+/* 0807D82C */ .word D_08370ADC \n\
+ \n\
+.balign 4, 0 \n\
+_0807D830: \n\
+/* 0807D830 */ .word 0x00002EE0 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D834: \n\
+/* 0807D834 */ .word D_08370B34 \n\
+ \n\
+.balign 4, 0 \n\
+_0807D838: \n\
+/* 0807D838 */ .word D_087338BC \n\
+.ltorg \n\
+.syntax divided");

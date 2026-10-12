@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_the_great_cover_cup at 0x083DA498
+struct scene_the_great_cover_cup
+    /* Start  */ .word func_0808FC60, 0x00000000
+    /* Paused */ .word func_080903E4, 0x00000000
+    /* Update */ .word func_080901D4, 0x00000000
+    /* Stop   */ .word func_080903E8, 0x00000000
+    /* Script */ .word 0x083DA414
+endstruct
+
+.incbin "microgames/the_great_cover_cup/the_great_cover_cup.bin", 36, 360

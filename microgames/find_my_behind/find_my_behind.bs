@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_find_my_behind at 0x083DD294
+struct scene_find_my_behind
+    /* Start  */ .word func_080AB098, 0x00000000
+    /* Paused */ .word func_080AB8E8, 0x00000000
+    /* Update */ .word func_080AB894, 0x00000000
+    /* Stop   */ .word func_080AB8EC, 0x00000000
+    /* Script */ .word 0x083DD210
+endstruct
+
+.incbin "microgames/find_my_behind/find_my_behind.bin", 36, 284

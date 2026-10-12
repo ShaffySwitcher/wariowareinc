@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hard_core at 0x083D8FC4
+struct scene_hard_core
+    /* Start  */ .word func_08081FFC, 0x00000000
+    /* Paused */ .word func_080825E0, 0x00000000
+    /* Update */ .word func_08082528, 0x00000000
+    /* Stop   */ .word func_080825E4, 0x00000000
+    /* Script */ .word 0x083D8F58
+endstruct
+
+.incbin "microgames/hard_core/hard_core.bin", 36, 260

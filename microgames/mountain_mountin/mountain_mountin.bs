@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mountain_mountin at 0x083CFB2C
+struct scene_mountain_mountin
+    /* Start  */ .word func_0803B698, 0x00000000
+    /* Paused */ .word func_0803C13C, 0x00000000
+    /* Update */ .word func_0803C0D0, 0x00000000
+    /* Stop   */ .word func_0803C150, 0x00000000
+    /* Script */ .word 0x083CFAC0
+endstruct
+
+.incbin "microgames/mountain_mountin/mountain_mountin.bin", 36, 248

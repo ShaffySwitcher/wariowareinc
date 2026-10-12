@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_noodle_rama at 0x083D5D58
+struct scene_noodle_rama
+    /* Start  */ .word func_08068CF0, 0x00000000
+    /* Paused */ .word func_0806911C, 0x00000000
+    /* Update */ .word func_0806907C, 0x00000000
+    /* Stop   */ .word func_08069120, 0x00000000
+    /* Script */ .word 0x083D5CEC
+endstruct
+
+.incbin "microgames/noodle_rama/noodle_rama.bin", 36, 248

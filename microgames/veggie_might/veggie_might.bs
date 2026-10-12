@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_veggie_might at 0x083D05A8
+struct scene_veggie_might
+    /* Start  */ .word func_0803FB8C, 0x00000000
+    /* Paused */ .word func_0803FE70, 0x00000000
+    /* Update */ .word func_0803FE60, 0x00000000
+    /* Stop   */ .word func_0803FE74, 0x00000000
+    /* Script */ .word 0x083D0530
+endstruct
+
+.incbin "microgames/veggie_might/veggie_might.bin", 36, 312

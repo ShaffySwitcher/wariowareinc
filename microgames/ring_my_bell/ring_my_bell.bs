@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ring_my_bell at 0x083D0704
+struct scene_ring_my_bell
+    /* Start  */ .word func_08040504, 0x00000000
+    /* Paused */ .word func_08040964, 0x00000000
+    /* Update */ .word func_0804068C, 0x00000000
+    /* Stop   */ .word func_08040978, 0x00000000
+    /* Script */ .word 0x083D0698
+endstruct
+
+.incbin "microgames/ring_my_bell/ring_my_bell.bin", 36, 276

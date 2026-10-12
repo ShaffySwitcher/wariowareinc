@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_toast_the_ghosts at 0x083D9ACC
+struct scene_toast_the_ghosts
+    /* Start  */ .word func_08086EF4, 0x00000000
+    /* Paused */ .word func_08087D58, 0x00000000
+    /* Update */ .word func_08087C94, 0x00000000
+    /* Stop   */ .word func_08087D5C, 0x00000000
+    /* Script */ .word 0x083D9A60
+endstruct
+
+.incbin "microgames/toast_the_ghosts/toast_the_ghosts.bin", 36, 456

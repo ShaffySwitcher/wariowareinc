@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_worm_squirm at 0x083D8094
+struct scene_worm_squirm
+    /* Start  */ .word func_0807BE30, 0x00000000
+    /* Paused */ .word func_0807D508, 0x00000000
+    /* Update */ .word func_0807D494, 0x00000000
+    /* Stop   */ .word func_0807D50C, 0x00000000
+    /* Script */ .word 0x083D7FF8
+endstruct
+
+.incbin "microgames/worm_squirm/worm_squirm.bin", 36, 272

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_float_your_boat at 0x083E3434
+struct scene_float_your_boat
+    /* Start  */ .word func_080C8F34, 0x00000000
+    /* Paused */ .word func_080C904C, 0x00000000
+    /* Update */ .word func_080C8FD0, 0x00000000
+    /* Stop   */ .word func_080C9050, 0x00000000
+    /* Script */ .word 0x083E33B0
+endstruct
+
+.incbin "microgames/float_your_boat/float_your_boat.bin", 36, 300

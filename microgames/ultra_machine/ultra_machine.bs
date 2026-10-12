@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ultra_machine at 0x083D0190
+struct scene_ultra_machine
+    /* Start  */ .word func_0803D150, 0x00000000
+    /* Paused */ .word func_0803E958, 0x00000000
+    /* Update */ .word func_0803E7EC, 0x00000000
+    /* Stop   */ .word func_0803E96C, 0x00000000
+    /* Script */ .word 0x083D00DC
+endstruct
+
+.incbin "microgames/ultra_machine/ultra_machine.bin", 36, 556

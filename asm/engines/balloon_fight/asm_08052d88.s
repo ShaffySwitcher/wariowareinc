@@ -1,0 +1,60 @@
+/* Generated from asm/asm_08052d88.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_08052D88 \n\
+/* 08052D88 */ PUSH {R4, R5, R6, LR} \n\
+/* 08052D8A */ MOV R6, R8 \n\
+/* 08052D8C */ PUSH {R6} \n\
+/* 08052D8E */ SUB SP, #0XC \n\
+/* 08052D90 */ MOV R8, R0 \n\
+/* 08052D92 */ MOVS R0, #1 \n\
+/* 08052D94 */ BL scene_set_current_thread \n\
+/* 08052D98 */ LDR R4, _08052DE8 \n\
+/* 08052D9A */ LDR R1, [R4] \n\
+/* 08052D9C */ MOVS R5, #0 \n\
+/* 08052D9E */ MOVS R0, #4 \n\
+/* 08052DA0 */ STRB R0, [R1, #0X1D] \n\
+/* 08052DA2 */ LDR R0, [R4] \n\
+/* 08052DA4 */ MOVS R6, #0XAC \n\
+/* 08052DA6 */ LSLS R6, R6, #1 \n\
+/* 08052DA8 */ ADDS R0, R6 \n\
+/* 08052DAA */ MOVS R2, #0 \n\
+/* 08052DAC */ LDRSH R1, [R0, R2] \n\
+/* 08052DAE */ LDR R2, =D_08360BA0 \n\
+/* 08052DB0 */ MOVS R0, #1 \n\
+/* 08052DB2 */ STR R0, [SP] \n\
+/* 08052DB4 */ STR R5, [SP, #4] \n\
+/* 08052DB6 */ STR R5, [SP, #8] \n\
+/* 08052DB8 */ MOV R0, R8 \n\
+/* 08052DBA */ MOVS R3, #0 \n\
+/* 08052DBC */ BL sprite_set_anim \n\
+/* 08052DC0 */ LDR R0, [R4] \n\
+/* 08052DC2 */ ADDS R0, R6 \n\
+/* 08052DC4 */ MOVS R2, #0 \n\
+/* 08052DC6 */ LDRSH R1, [R0, R2] \n\
+/* 08052DC8 */ MOV R0, R8 \n\
+/* 08052DCA */ MOVS R2, #0 \n\
+/* 08052DCC */ MOVS R3, #0 \n\
+/* 08052DCE */ BL sprite_set_callback \n\
+/* 08052DD2 */ LDR R1, [R4] \n\
+/* 08052DD4 */ STRH R5, [R1, #0X18] \n\
+/* 08052DD6 */ MOVS R0, #0XA0 \n\
+/* 08052DD8 */ LSLS R0, R0, #1 \n\
+/* 08052DDA */ STRH R0, [R1, #0X1A] \n\
+/* 08052DDC */ ADD SP, #0XC \n\
+/* 08052DDE */ POP {R3} \n\
+/* 08052DE0 */ MOV R8, R3 \n\
+/* 08052DE2 */ POP {R4, R5, R6} \n\
+/* 08052DE4 */ POP {R0} \n\
+/* 08052DE6 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_08052DEC: \n\
+/* 08052DEC */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_08052DE8: \n\
+/* 08052DE8 */ .word gCurrentSceneVariable \n\
+.ltorg \n\
+.syntax divided");
+

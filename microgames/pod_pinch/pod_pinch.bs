@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_pod_pinch at 0x083DF4C0
+struct scene_pod_pinch
+    /* Start  */ .word func_080B4268, 0x00000000
+    /* Paused */ .word func_080B46A8, 0x00000000
+    /* Update */ .word func_080B4684, 0x00000000
+    /* Stop   */ .word func_080B46AC, 0x00000000
+    /* Script */ .word 0x083DF454
+endstruct
+
+.incbin "microgames/pod_pinch/pod_pinch.bin", 36, 492

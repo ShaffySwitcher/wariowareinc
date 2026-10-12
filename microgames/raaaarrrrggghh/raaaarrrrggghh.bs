@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_raaaarrrrggghh at 0x083DBCB8
+struct scene_raaaarrrrggghh
+    /* Start  */ .word func_080A0D50, 0x00000000
+    /* Paused */ .word func_080A17BC, 0x00000000
+    /* Update */ .word func_080A1744, 0x00000000
+    /* Stop   */ .word func_080A17C0, 0x00000000
+    /* Script */ .word 0x083DBC4C
+endstruct
+
+.incbin "microgames/raaaarrrrggghh/raaaarrrrggghh.bin", 36, 568

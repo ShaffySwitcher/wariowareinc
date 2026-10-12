@@ -1,0 +1,195 @@
+/* Generated from asm/asm_0805fea0.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0805FEA0 \n\
+/* 0805FEA0 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0805FEA2 */ LDR R7, _0805FEB8 \n\
+/* 0805FEA4 */ LDR R1, [R7] \n\
+/* 0805FEA6 */ LDRB R6, [R1, #1] \n\
+/* 0805FEA8 */ CMP R6, #1 \n\
+/* 0805FEAA */ BEQ _0805FF1C \n\
+/* 0805FEAC */ CMP R6, #1 \n\
+/* 0805FEAE */ BGT _0805FEBC \n\
+/* 0805FEB0 */ CMP R6, #0 \n\
+/* 0805FEB2 */ BEQ _0805FEC2 \n\
+/* 0805FEB4 */ B _0805FFC6 \n\
+ \n\
+.balign 4, 0 \n\
+_0805FEB8: \n\
+/* 0805FEB8 */ .word gCurrentSceneVariable \n\
+_0805FEBC: \n\
+/* 0805FEBC */ CMP R6, #2 \n\
+/* 0805FEBE */ BEQ _0805FF98 \n\
+/* 0805FEC0 */ B _0805FFC6 \n\
+_0805FEC2: \n\
+/* 0805FEC2 */ LDR R4, _0805FF18 \n\
+/* 0805FEC4 */ LDR R0, [R4] \n\
+/* 0805FEC6 */ MOVS R5, #0XA1 \n\
+/* 0805FEC8 */ LSLS R5, R5, #2 \n\
+/* 0805FECA */ ADDS R1, R5 \n\
+/* 0805FECC */ MOVS R2, #0 \n\
+/* 0805FECE */ LDRSH R1, [R1, R2] \n\
+/* 0805FED0 */ MOVS R2, #0 \n\
+/* 0805FED2 */ BL sprite_set_visible \n\
+/* 0805FED6 */ LDR R1, [R7] \n\
+/* 0805FED8 */ ADDS R0, R1, #0 \n\
+/* 0805FEDA */ ADDS R0, #0X74 \n\
+/* 0805FEDC */ LDRH R0, [R0] \n\
+/* 0805FEDE */ ADDS R1, R5 \n\
+/* 0805FEE0 */ STRH R0, [R1] \n\
+/* 0805FEE2 */ LDR R0, [R4] \n\
+/* 0805FEE4 */ MOVS R2, #0 \n\
+/* 0805FEE6 */ LDRSH R1, [R1, R2] \n\
+/* 0805FEE8 */ MOVS R2, #1 \n\
+/* 0805FEEA */ BL sprite_set_visible \n\
+/* 0805FEEE */ LDR R0, [R4] \n\
+/* 0805FEF0 */ LDR R1, [R7] \n\
+/* 0805FEF2 */ ADDS R1, R5 \n\
+/* 0805FEF4 */ MOVS R2, #0 \n\
+/* 0805FEF6 */ LDRSH R1, [R1, R2] \n\
+/* 0805FEF8 */ MOVS R2, #1 \n\
+/* 0805FEFA */ BL sprite_set_enable_updates \n\
+/* 0805FEFE */ LDR R0, [R4] \n\
+/* 0805FF00 */ LDR R1, [R7] \n\
+/* 0805FF02 */ ADDS R1, R5 \n\
+/* 0805FF04 */ MOVS R4, #0 \n\
+/* 0805FF06 */ LDRSH R1, [R1, R4] \n\
+/* 0805FF08 */ MOVS R2, #0 \n\
+/* 0805FF0A */ BL sprite_set_anim_cel \n\
+/* 0805FF0E */ LDR R1, [R7] \n\
+/* 0805FF10 */ STRH R6, [R1, #0X18] \n\
+/* 0805FF12 */ MOVS R0, #2 \n\
+/* 0805FF14 */ STRB R0, [R1, #1] \n\
+/* 0805FF16 */ B _0805FFC6 \n\
+ \n\
+.balign 4, 0 \n\
+_0805FF18: \n\
+/* 0805FF18 */ .word gSpriteHandler \n\
+_0805FF1C: \n\
+/* 0805FF1C */ LDR R0, _0805FF54 \n\
+/* 0805FF1E */ LDR R0, [R0] \n\
+/* 0805FF20 */ MOVS R2, #0XA1 \n\
+/* 0805FF22 */ LSLS R2, R2, #2 \n\
+/* 0805FF24 */ ADDS R1, R2 \n\
+/* 0805FF26 */ MOVS R4, #0 \n\
+/* 0805FF28 */ LDRSH R1, [R1, R4] \n\
+/* 0805FF2A */ MOVS R2, #1 \n\
+/* 0805FF2C */ BL sprite_set_anim_cel \n\
+/* 0805FF30 */ LDR R3, [R7] \n\
+/* 0805FF32 */ MOVS R0, #0X9F \n\
+/* 0805FF34 */ LSLS R0, R0, #2 \n\
+/* 0805FF36 */ ADDS R4, R3, R0 \n\
+/* 0805FF38 */ LDR R0, _0805FF58 \n\
+/* 0805FF3A */ LDRH R0, [R0, #2] \n\
+/* 0805FF3C */ LSLS R0, R0, #8 \n\
+/* 0805FF3E */ LDR R5, [R4] \n\
+/* 0805FF40 */ CMP R5, R0 \n\
+/* 0805FF42 */ BLE _0805FF5C \n\
+/* 0805FF44 */ STR R0, [R4] \n\
+/* 0805FF46 */ MOVS R0, #0 \n\
+/* 0805FF48 */ MOVS R1, #2 \n\
+/* 0805FF4A */ STRB R1, [R3, #1] \n\
+/* 0805FF4C */ LDR R1, [R7] \n\
+/* 0805FF4E */ STR R0, [R1, #0X14] \n\
+/* 0805FF50 */ B _0805FFC6 \n\
+ \n\
+.balign 4, 0 \n\
+_0805FF54: \n\
+/* 0805FF54 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0805FF58: \n\
+/* 0805FF58 */ .word D_087185CC \n\
+_0805FF5C: \n\
+/* 0805FF5C */ LDR R2, _0805FF90 \n\
+/* 0805FF5E */ LDR R0, [R3, #0X14] \n\
+/* 0805FF60 */ ASRS R0, R0, #8 \n\
+/* 0805FF62 */ MOVS R1, #0XFF \n\
+/* 0805FF64 */ ANDS R0, R1 \n\
+/* 0805FF66 */ LSLS R0, R0, #1 \n\
+/* 0805FF68 */ ADDS R0, R2 \n\
+/* 0805FF6A */ MOVS R1, #0 \n\
+/* 0805FF6C */ LDRSH R0, [R0, R1] \n\
+/* 0805FF6E */ LSLS R1, R0, #2 \n\
+/* 0805FF70 */ ADDS R1, R0 \n\
+/* 0805FF72 */ LSLS R0, R1, #4 \n\
+/* 0805FF74 */ SUBS R0, R1 \n\
+/* 0805FF76 */ ASRS R0, R0, #6 \n\
+/* 0805FF78 */ SUBS R0, R5, R0 \n\
+/* 0805FF7A */ STR R0, [R4] \n\
+/* 0805FF7C */ LDR R1, [R3, #0X14] \n\
+/* 0805FF7E */ LDR R0, _0805FF94 \n\
+/* 0805FF80 */ CMP R1, R0 \n\
+/* 0805FF82 */ BGT _0805FFC6 \n\
+/* 0805FF84 */ MOVS R2, #0X80 \n\
+/* 0805FF86 */ LSLS R2, R2, #4 \n\
+/* 0805FF88 */ ADDS R0, R1, R2 \n\
+/* 0805FF8A */ STR R0, [R3, #0X14] \n\
+/* 0805FF8C */ B _0805FFC6 \n\
+ \n\
+.balign 4, 0 \n\
+_0805FF90: \n\
+/* 0805FF90 */ .word gCosineTable \n\
+ \n\
+.balign 4, 0 \n\
+_0805FF94: \n\
+/* 0805FF94 */ .word 0x00007FFF \n\
+_0805FF98: \n\
+/* 0805FF98 */ LDR R0, _0805FFF8 \n\
+/* 0805FF9A */ LDR R0, [R0] \n\
+/* 0805FF9C */ MOVS R4, #0XA1 \n\
+/* 0805FF9E */ LSLS R4, R4, #2 \n\
+/* 0805FFA0 */ ADDS R1, R4 \n\
+/* 0805FFA2 */ MOVS R2, #0 \n\
+/* 0805FFA4 */ LDRSH R1, [R1, R2] \n\
+/* 0805FFA6 */ MOVS R2, #0 \n\
+/* 0805FFA8 */ BL sprite_set_anim_cel \n\
+/* 0805FFAC */ LDR R2, [R7] \n\
+/* 0805FFAE */ LDRH R0, [R2, #0X18] \n\
+/* 0805FFB0 */ CMP R0, #0XF \n\
+/* 0805FFB2 */ BLS _0805FFBE \n\
+/* 0805FFB4 */ MOVS R0, #0 \n\
+/* 0805FFB6 */ MOVS R1, #1 \n\
+/* 0805FFB8 */ STRB R1, [R2, #1] \n\
+/* 0805FFBA */ LDR R1, [R7] \n\
+/* 0805FFBC */ STRH R0, [R1, #0X18] \n\
+_0805FFBE: \n\
+/* 0805FFBE */ LDR R1, [R7] \n\
+/* 0805FFC0 */ LDRH R0, [R1, #0X18] \n\
+/* 0805FFC2 */ ADDS R0, #1 \n\
+/* 0805FFC4 */ STRH R0, [R1, #0X18] \n\
+_0805FFC6: \n\
+/* 0805FFC6 */ LDR R0, _0805FFF8 \n\
+/* 0805FFC8 */ LDR R0, [R0] \n\
+/* 0805FFCA */ LDR R1, =gCurrentSceneVariable \n\
+/* 0805FFCC */ LDR R3, [R1] \n\
+/* 0805FFCE */ MOVS R4, #0XA1 \n\
+/* 0805FFD0 */ LSLS R4, R4, #2 \n\
+/* 0805FFD2 */ ADDS R1, R3, R4 \n\
+/* 0805FFD4 */ MOVS R2, #0 \n\
+/* 0805FFD6 */ LDRSH R1, [R1, R2] \n\
+/* 0805FFD8 */ SUBS R4, #0XC \n\
+/* 0805FFDA */ ADDS R2, R3, R4 \n\
+/* 0805FFDC */ LDR R2, [R2] \n\
+/* 0805FFDE */ LSLS R2, R2, #8 \n\
+/* 0805FFE0 */ ASRS R2, R2, #0X10 \n\
+/* 0805FFE2 */ ADDS R4, #4 \n\
+/* 0805FFE4 */ ADDS R3, R4 \n\
+/* 0805FFE6 */ LDR R3, [R3] \n\
+/* 0805FFE8 */ LSLS R3, R3, #8 \n\
+/* 0805FFEA */ ASRS R3, R3, #0X10 \n\
+/* 0805FFEC */ BL sprite_set_x_y \n\
+/* 0805FFF0 */ POP {R4, R5, R6, R7} \n\
+/* 0805FFF2 */ POP {R0} \n\
+/* 0805FFF4 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0805FFFC: \n\
+/* 0805FFFC */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0805FFF8: \n\
+/* 0805FFF8 */ .word gSpriteHandler \n\
+.ltorg \n\
+.syntax divided");
+

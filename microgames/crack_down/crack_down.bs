@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_crack_down at 0x083DAA68
+struct scene_crack_down
+    /* Start  */ .word func_08097E48, 0x00000000
+    /* Paused */ .word func_08097FC8, 0x00000000
+    /* Update */ .word func_08097ECC, 0x00000000
+    /* Stop   */ .word func_08097FCC, 0x00000000
+    /* Script */ .word 0x083DA9E4
+endstruct
+
+.incbin "microgames/crack_down/crack_down.bin", 36, 276

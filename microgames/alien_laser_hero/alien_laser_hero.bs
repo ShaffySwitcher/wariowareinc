@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_alien_laser_hero at 0x083E28FC
+struct scene_alien_laser_hero
+    /* Start  */ .word func_080C4514, 0x00000000
+    /* Paused */ .word func_080C4750, 0x00000000
+    /* Update */ .word func_080C45D8, 0x00000000
+    /* Stop   */ .word func_080C4754, 0x00000000
+    /* Script */ .word 0x083E2848
+endstruct
+
+.incbin "microgames/alien_laser_hero/alien_laser_hero.bin", 36, 1756

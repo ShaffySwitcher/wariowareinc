@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_veg_out at 0x083DC13C
+struct scene_veg_out
+    /* Start  */ .word func_080A1CBC, 0x00000000
+    /* Paused */ .word func_080A2520, 0x00000000
+    /* Update */ .word func_080A24B8, 0x00000000
+    /* Stop   */ .word func_080A2524, 0x00000000
+    /* Script */ .word 0x083DC0D0
+endstruct
+
+.incbin "microgames/veg_out/veg_out.bin", 36, 308

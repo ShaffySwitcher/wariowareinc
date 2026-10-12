@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_coconut_catapult at 0x083D3710
+struct scene_coconut_catapult
+    /* Start  */ .word func_08053540, 0x00000000
+    /* Paused */ .word func_08053E38, 0x00000000
+    /* Update */ .word func_08053E0C, 0x00000000
+    /* Stop   */ .word func_08053E3C, 0x00000000
+    /* Script */ .word 0x083D36A4
+endstruct
+
+.incbin "microgames/coconut_catapult/coconut_catapult.bin", 36, 300

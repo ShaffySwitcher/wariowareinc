@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_pompeii_back at 0x083D33F4
+struct scene_pompeii_back
+    /* Start  */ .word func_08051E50, 0x00000000
+    /* Paused */ .word func_0805219C, 0x00000000
+    /* Update */ .word func_08051FD4, 0x00000000
+    /* Stop   */ .word func_080521B0, 0x00000000
+    /* Script */ .word 0x083D3388
+endstruct
+
+.incbin "microgames/pompeii_back/pompeii_back.bin", 36, 484

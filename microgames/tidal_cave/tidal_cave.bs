@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_tidal_cave at 0x083D4DF4
+struct scene_tidal_cave
+    /* Start  */ .word func_0805D1A0, 0x00000000
+    /* Paused */ .word func_0805D390, 0x00000000
+    /* Update */ .word func_0805D208, 0x00000000
+    /* Stop   */ .word func_0805D394, 0x00000000
+    /* Script */ .word 0x083D4D70
+endstruct
+
+.incbin "microgames/tidal_cave/tidal_cave.bin", 36, 252

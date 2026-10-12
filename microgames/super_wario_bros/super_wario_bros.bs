@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_super_wario_bros at 0x083D0D70
+struct scene_super_wario_bros
+    /* Start  */ .word func_080434C0, 0x00000000
+    /* Paused */ .word func_08043C60, 0x00000000
+    /* Update */ .word func_08043C1C, 0x00000000
+    /* Stop   */ .word func_08043C74, 0x00000000
+    /* Script */ .word 0x083D0D04
+endstruct
+
+.incbin "microgames/super_wario_bros/super_wario_bros.bin", 36, 240

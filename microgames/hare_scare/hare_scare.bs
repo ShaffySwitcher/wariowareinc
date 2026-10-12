@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hare_scare at 0x083CC3F4
+struct scene_hare_scare
+    /* Start  */ .word func_08028E80, 0x00000000
+    /* Paused */ .word func_08029444, 0x00000000
+    /* Update */ .word func_0802940C, 0x00000000
+    /* Stop   */ .word func_08029450, 0x00000000
+    /* Script */ .word 0x083CC388
+endstruct
+
+.incbin "microgames/hare_scare/hare_scare.bin", 36, 224

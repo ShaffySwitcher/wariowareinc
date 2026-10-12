@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_stack_up at 0x083D3BE4
+struct scene_stack_up
+    /* Start  */ .word func_080550EC, 0x00000000
+    /* Paused */ .word func_08055824, 0x00000000
+    /* Update */ .word func_08055324, 0x00000000
+    /* Stop   */ .word func_08055828, 0x00000000
+    /* Script */ .word 0x083D3B78
+endstruct
+
+.incbin "microgames/stack_up/stack_up.bin", 36, 360

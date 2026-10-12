@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_city_surfer at 0x083DA624
+struct scene_city_surfer
+    /* Start  */ .word func_080903EC, 0x00000000
+    /* Paused */ .word func_08091A68, 0x00000000
+    /* Update */ .word func_080919F0, 0x00000000
+    /* Stop   */ .word func_08091A6C, 0x00000000
+    /* Script */ .word 0x083DA5B8
+endstruct
+
+.incbin "microgames/city_surfer/city_surfer.bin", 36, 1056

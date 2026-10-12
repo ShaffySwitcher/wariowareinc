@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hoppin_mad at 0x083D0940
+struct scene_hoppin_mad
+    /* Start  */ .word func_080415CC, 0x00000000
+    /* Paused */ .word func_080421D4, 0x00000000
+    /* Update */ .word func_08042190, 0x00000000
+    /* Stop   */ .word func_080421E8, 0x00000000
+    /* Script */ .word 0x083D08D4
+endstruct
+
+.incbin "microgames/hoppin_mad/hoppin_mad.bin", 36, 444

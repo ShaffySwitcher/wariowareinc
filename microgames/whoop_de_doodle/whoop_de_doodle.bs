@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_whoop_de_doodle at 0x083DB594
+struct scene_whoop_de_doodle
+    /* Start  */ .word func_0809DD5C, 0x00000000
+    /* Paused */ .word func_0809E4D0, 0x00000000
+    /* Update */ .word func_0809E4AC, 0x00000000
+    /* Stop   */ .word func_0809E4D4, 0x00000000
+    /* Script */ .word 0x083DB528
+endstruct
+
+.incbin "microgames/whoop_de_doodle/whoop_de_doodle.bin", 36, 220

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_jumpin_rope at 0x083CBFF8
+struct scene_jumpin_rope
+    /* Start  */ .word func_0802844C, 0x00000000
+    /* Paused */ .word func_080285D8, 0x00000000
+    /* Update */ .word func_08028748, 0x00000000
+    /* Stop   */ .word func_08028930, 0x00000000
+    /* Script */ .word 0x083CBF8C
+endstruct
+
+.incbin "microgames/jumpin_rope/jumpin_rope.bin", 36, 692

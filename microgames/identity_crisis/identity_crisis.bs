@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_identity_crisis at 0x083D284C
+struct scene_identity_crisis
+    /* Start  */ .word func_0804B190, 0x00000000
+    /* Paused */ .word func_0804BC38, 0x00000000
+    /* Update */ .word func_0804BAC8, 0x00000000
+    /* Stop   */ .word func_0804BC4C, 0x00000000
+    /* Script */ .word 0x083D27C8
+endstruct
+
+.incbin "microgames/identity_crisis/identity_crisis.bin", 36, 288

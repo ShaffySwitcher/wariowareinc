@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_kettle_mettle at 0x083E8940
+struct scene_kettle_mettle
+    /* Start  */ .word func_080E4D14, 0x00000000
+    /* Paused */ .word func_080E4E08, 0x00000000
+    /* Update */ .word func_080E4D98, 0x00000000
+    /* Stop   */ .word func_080E4E0C, 0x00000000
+    /* Script */ .word 0x083E88BC
+endstruct
+
+.incbin "microgames/kettle_mettle/kettle_mettle.bin", 36, 416

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_batter_up at 0x083CF2C8
+struct scene_batter_up
+    /* Start  */ .word func_080386DC, 0x00000000
+    /* Paused */ .word func_08038F58, 0x00000000
+    /* Update */ .word func_08038F20, 0x00000000
+    /* Stop   */ .word func_08038F6C, 0x00000000
+    /* Script */ .word 0x083CF25C
+endstruct
+
+.incbin "microgames/batter_up/batter_up.bin", 36, 484

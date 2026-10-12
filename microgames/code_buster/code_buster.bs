@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_code_buster at 0x083D20A4
+struct scene_code_buster
+    /* Start  */ .word func_08048620, 0x00000000
+    /* Paused */ .word func_080489D0, 0x00000000
+    /* Update */ .word func_080489C0, 0x00000000
+    /* Stop   */ .word func_08048A04, 0x00000000
+    /* Script */ .word 0x083D2020
+endstruct
+
+.incbin "microgames/code_buster/code_buster.bin", 36, 264

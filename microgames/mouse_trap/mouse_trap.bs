@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mouse_trap at 0x083D2458
+struct scene_mouse_trap
+    /* Start  */ .word func_0804973C, 0x00000000
+    /* Paused */ .word func_08049E04, 0x00000000
+    /* Update */ .word func_08049924, 0x00000000
+    /* Stop   */ .word func_08049E18, 0x00000000
+    /* Script */ .word 0x083D23EC
+endstruct
+
+.incbin "microgames/mouse_trap/mouse_trap.bin", 36, 252

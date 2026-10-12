@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_baseline_bash at 0x083D0FAC
+struct scene_baseline_bash
+    /* Start  */ .word func_08044504, 0x00000000
+    /* Paused */ .word func_08044C64, 0x00000000
+    /* Update */ .word func_08044BDC, 0x00000000
+    /* Stop   */ .word func_08044C78, 0x00000000
+    /* Script */ .word 0x083D0F40
+endstruct
+
+.incbin "microgames/baseline_bash/baseline_bash.bin", 36, 300

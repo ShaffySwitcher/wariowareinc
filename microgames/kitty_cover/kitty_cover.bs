@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_kitty_cover at 0x083D839C
+struct scene_kitty_cover
+    /* Start  */ .word func_0807DED0, 0x00000000
+    /* Paused */ .word func_0807E684, 0x00000000
+    /* Update */ .word func_0807E600, 0x00000000
+    /* Stop   */ .word func_0807E688, 0x00000000
+    /* Script */ .word 0x083D8330
+endstruct
+
+.incbin "microgames/kitty_cover/kitty_cover.bin", 36, 252

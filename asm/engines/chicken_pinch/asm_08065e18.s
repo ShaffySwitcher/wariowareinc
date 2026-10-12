@@ -1,0 +1,78 @@
+/* Generated from asm/asm_08065e18.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_08065E18 \n\
+/* 08065E18 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 08065E1A */ LDR R0, _08065E8C \n\
+/* 08065E1C */ LDR R0, [R0] \n\
+/* 08065E1E */ MOVS R1, #0XED \n\
+/* 08065E20 */ LSLS R1, R1, #2 \n\
+/* 08065E22 */ ADDS R4, R0, R1 \n\
+/* 08065E24 */ LDR R2, _08065E90 \n\
+/* 08065E26 */ ADDS R5, R0, R2 \n\
+/* 08065E28 */ MOVS R6, #0 \n\
+/* 08065E2A */ MOVS R0, #3 \n\
+/* 08065E2C */ RSBS R0, R0, #0 \n\
+/* 08065E2E */ ADDS R7, R0, #0 \n\
+_08065E30: \n\
+/* 08065E30 */ LDRB R1, [R4, #3] \n\
+/* 08065E32 */ MOVS R0, #2 \n\
+/* 08065E34 */ ANDS R0, R1 \n\
+/* 08065E36 */ CMP R0, #0 \n\
+/* 08065E38 */ BEQ _08065E4E \n\
+/* 08065E3A */ ADDS R0, R1, #0 \n\
+/* 08065E3C */ ANDS R0, R7 \n\
+/* 08065E3E */ STRB R0, [R4, #3] \n\
+/* 08065E40 */ LDR R0, _08065E94 \n\
+/* 08065E42 */ LDR R0, [R0] \n\
+/* 08065E44 */ MOVS R2, #0 \n\
+/* 08065E46 */ LDRSH R1, [R4, R2] \n\
+/* 08065E48 */ MOVS R2, #0 \n\
+/* 08065E4A */ BL sprite_set_visible \n\
+_08065E4E: \n\
+/* 08065E4E */ ADDS R6, #1 \n\
+/* 08065E50 */ ADDS R4, #0X20 \n\
+/* 08065E52 */ CMP R6, #0X17 \n\
+/* 08065E54 */ BLS _08065E30 \n\
+/* 08065E56 */ MOVS R6, #0 \n\
+/* 08065E58 */ MOVS R0, #3 \n\
+/* 08065E5A */ RSBS R0, R0, #0 \n\
+/* 08065E5C */ ADDS R4, R0, #0 \n\
+_08065E5E: \n\
+/* 08065E5E */ LDRB R1, [R5, #3] \n\
+/* 08065E60 */ MOVS R0, #2 \n\
+/* 08065E62 */ ANDS R0, R1 \n\
+/* 08065E64 */ CMP R0, #0 \n\
+/* 08065E66 */ BEQ _08065E7C \n\
+/* 08065E68 */ ADDS R0, R1, #0 \n\
+/* 08065E6A */ ANDS R0, R4 \n\
+/* 08065E6C */ STRB R0, [R5, #3] \n\
+/* 08065E6E */ LDR R0, _08065E94 \n\
+/* 08065E70 */ LDR R0, [R0] \n\
+/* 08065E72 */ MOVS R2, #0 \n\
+/* 08065E74 */ LDRSH R1, [R5, R2] \n\
+/* 08065E76 */ MOVS R2, #0 \n\
+/* 08065E78 */ BL sprite_set_visible \n\
+_08065E7C: \n\
+/* 08065E7C */ ADDS R6, #1 \n\
+/* 08065E7E */ ADDS R5, #0X20 \n\
+/* 08065E80 */ CMP R6, #0X17 \n\
+/* 08065E82 */ BLS _08065E5E \n\
+/* 08065E84 */ POP {R4, R5, R6, R7} \n\
+/* 08065E86 */ POP {R0} \n\
+/* 08065E88 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_08065E8C: \n\
+/* 08065E8C */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_08065E90: \n\
+/* 08065E90 */ .word 0x000008B4 \n\
+ \n\
+.balign 4, 0 \n\
+_08065E94: \n\
+/* 08065E94 */ .word gSpriteHandler \n\
+.ltorg \n\
+.syntax divided");
+

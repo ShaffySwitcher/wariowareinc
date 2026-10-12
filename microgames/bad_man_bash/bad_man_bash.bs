@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_bad_man_bash at 0x083CD784
+struct scene_bad_man_bash
+    /* Start  */ .word func_0802F4C0, 0x00000000
+    /* Paused */ .word func_0802FBB8, 0x00000000
+    /* Update */ .word func_0802FB98, 0x00000000
+    /* Stop   */ .word func_0802FBC4, 0x00000000
+    /* Script */ .word 0x083CD718
+endstruct
+
+.incbin "microgames/bad_man_bash/bad_man_bash.bin", 36, 300

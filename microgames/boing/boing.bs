@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_boing at 0x083CECB4
+struct scene_boing
+    /* Start  */ .word func_0803573C, 0x00000000
+    /* Paused */ .word func_080359A8, 0x00000000
+    /* Update */ .word func_080358A0, 0x00000000
+    /* Stop   */ .word func_080359B4, 0x00000000
+    /* Script */ .word 0x083CEC54
+endstruct
+
+.incbin "microgames/boing/boing.bin", 36, 228

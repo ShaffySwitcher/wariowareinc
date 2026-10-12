@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wrong_way_highway at 0x083D93B4
+struct scene_wrong_way_highway
+    /* Start  */ .word func_08083E38, 0x00000000
+    /* Paused */ .word func_080840B0, 0x00000000
+    /* Update */ .word func_08083EB8, 0x00000000
+    /* Stop   */ .word func_080840B4, 0x00000000
+    /* Script */ .word 0x083D9330
+endstruct
+
+.incbin "microgames/wrong_way_highway/wrong_way_highway.bin", 36, 292

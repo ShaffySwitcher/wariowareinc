@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_make_my_clay at 0x083E82B0
+struct scene_make_my_clay
+    /* Start  */ .word func_080E0630, 0x00000000
+    /* Paused */ .word func_080E0ED4, 0x00000000
+    /* Update */ .word func_080E0E68, 0x00000000
+    /* Stop   */ .word func_080E0ED8, 0x00000000
+    /* Script */ .word 0x083E8244
+endstruct
+
+.incbin "microgames/make_my_clay/make_my_clay.bin", 36, 336

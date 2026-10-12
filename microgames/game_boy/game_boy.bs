@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_game_boy at 0x083E8C00
+struct scene_game_boy
+    /* Start  */ .word func_080E6390, 0x00000000
+    /* Paused */ .word func_080E6A48, 0x00000000
+    /* Update */ .word func_080E69D0, 0x00000000
+    /* Stop   */ .word func_080E6A4C, 0x00000000
+    /* Script */ .word 0x083E8B94
+endstruct
+
+.incbin "microgames/game_boy/game_boy.bin", 36, 756

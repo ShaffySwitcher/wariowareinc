@@ -1,0 +1,71 @@
+/* Generated from asm/asm_0803f87c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0803F87C \n\
+/* 0803F87C */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0803F87E */ LDR R5, _0803F8E0 \n\
+/* 0803F880 */ LDR R3, [R5] \n\
+/* 0803F882 */ MOVS R1, #0XBE \n\
+/* 0803F884 */ LSLS R1, R1, #3 \n\
+/* 0803F886 */ ADDS R0, R3, R1 \n\
+/* 0803F888 */ LDR R4, [R0] \n\
+/* 0803F88A */ LDR R6, _0803F8E4 \n\
+/* 0803F88C */ LDR R0, [R6] \n\
+/* 0803F88E */ ADDS R1, R3, #0 \n\
+/* 0803F890 */ ADDS R1, #0X5C \n\
+/* 0803F892 */ MOVS R2, #0 \n\
+/* 0803F894 */ LDRSH R1, [R1, R2] \n\
+/* 0803F896 */ MOVS R7, #0XB1 \n\
+/* 0803F898 */ LSLS R7, R7, #1 \n\
+/* 0803F89A */ ADDS R2, R3, R7 \n\
+/* 0803F89C */ ADDS R2, R4 \n\
+/* 0803F89E */ LDRB R2, [R2] \n\
+/* 0803F8A0 */ ADDS R7, #0X80 \n\
+/* 0803F8A2 */ ADDS R3, R7 \n\
+/* 0803F8A4 */ ADDS R3, R4 \n\
+/* 0803F8A6 */ LDRB R3, [R3] \n\
+/* 0803F8A8 */ BL sprite_set_x_y \n\
+/* 0803F8AC */ MOVS R2, #0 \n\
+/* 0803F8AE */ CMP R4, #0 \n\
+/* 0803F8B0 */ BEQ _0803F8CA \n\
+/* 0803F8B2 */ LDR R0, [R5] \n\
+/* 0803F8B4 */ LDR R2, _0803F8E8 \n\
+/* 0803F8B6 */ ADDS R1, R0, R2 \n\
+/* 0803F8B8 */ LDR R3, _0803F8EC \n\
+/* 0803F8BA */ ADDS R0, R3 \n\
+/* 0803F8BC */ LDR R1, [R1] \n\
+/* 0803F8BE */ ADDS R0, R1 \n\
+/* 0803F8C0 */ LDRB R1, [R0] \n\
+/* 0803F8C2 */ EORS R1, R4 \n\
+/* 0803F8C4 */ RSBS R0, R1, #0 \n\
+/* 0803F8C6 */ ORRS R0, R1 \n\
+/* 0803F8C8 */ LSRS R2, R0, #0X1F \n\
+_0803F8CA: \n\
+/* 0803F8CA */ LDR R0, [R6] \n\
+/* 0803F8CC */ LDR R1, [R5] \n\
+/* 0803F8CE */ ADDS R1, #0X5C \n\
+/* 0803F8D0 */ MOVS R7, #0 \n\
+/* 0803F8D2 */ LDRSH R1, [R1, R7] \n\
+/* 0803F8D4 */ BL sprite_set_visible \n\
+/* 0803F8D8 */ POP {R4, R5, R6, R7} \n\
+/* 0803F8DA */ POP {R0} \n\
+/* 0803F8DC */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0803F8E0: \n\
+/* 0803F8E0 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0803F8E4: \n\
+/* 0803F8E4 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0803F8E8: \n\
+/* 0803F8E8 */ .word 0x000005EC \n\
+ \n\
+.balign 4, 0 \n\
+_0803F8EC: \n\
+/* 0803F8EC */ .word 0x00000584 \n\
+.ltorg \n\
+.syntax divided");
+

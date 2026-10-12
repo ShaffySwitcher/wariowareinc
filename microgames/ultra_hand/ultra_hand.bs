@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ultra_hand at 0x083D9CB8
+struct scene_ultra_hand
+    /* Start  */ .word func_08087D9C, 0x00000000
+    /* Paused */ .word func_08088484, 0x00000000
+    /* Update */ .word func_0808844C, 0x00000000
+    /* Stop   */ .word func_08088488, 0x00000000
+    /* Script */ .word 0x083D9C4C
+endstruct
+
+.incbin "microgames/ultra_hand/ultra_hand.bin", 36, 436

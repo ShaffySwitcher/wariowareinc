@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_saving_face at 0x083CC97C
+struct scene_saving_face
+    /* Start  */ .word func_0802B0D4, 0x00000000
+    /* Paused */ .word func_0802B4E8, 0x00000000
+    /* Update */ .word func_0802B4D4, 0x00000000
+    /* Stop   */ .word func_0802B4F4, 0x00000000
+    /* Script */ .word 0x083CC910
+endstruct
+
+.incbin "microgames/saving_face/saving_face.bin", 36, 648

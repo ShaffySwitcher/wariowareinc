@@ -1,0 +1,274 @@
+/* Generated from asm/asm_0809e254.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0809E254 \n\
+/* 0809E254 */ PUSH {R4, R5, R6, LR} \n\
+/* 0809E256 */ MOV R6, R8 \n\
+/* 0809E258 */ PUSH {R6} \n\
+/* 0809E25A */ MOVS R6, #0 \n\
+/* 0809E25C */ LDR R0, _0809E290 \n\
+/* 0809E25E */ LDRH R1, [R0] \n\
+/* 0809E260 */ MOVS R0, #0X10 \n\
+/* 0809E262 */ ANDS R0, R1 \n\
+/* 0809E264 */ LSLS R0, R0, #0X10 \n\
+/* 0809E266 */ LSRS R1, R0, #0X10 \n\
+/* 0809E268 */ CMP R1, #0 \n\
+/* 0809E26A */ BEQ _0809E2A0 \n\
+/* 0809E26C */ LDR R4, _0809E294 \n\
+/* 0809E26E */ LDR R2, [R4] \n\
+/* 0809E270 */ LDRH R1, [R2, #0X10] \n\
+/* 0809E272 */ ADDS R0, R6, #0 \n\
+/* 0809E274 */ ORRS R0, R1 \n\
+/* 0809E276 */ LDR R1, _0809E298 \n\
+/* 0809E278 */ ANDS R6, R1 \n\
+/* 0809E27A */ ORRS R6, R0 \n\
+/* 0809E27C */ LDRB R0, [R2] \n\
+/* 0809E27E */ CMP R0, #0 \n\
+/* 0809E280 */ BNE _0809E2A6 \n\
+/* 0809E282 */ LDR R0, _0809E29C \n\
+/* 0809E284 */ BL scene_play_sound_to_tempo \n\
+/* 0809E288 */ LDR R1, [R4] \n\
+/* 0809E28A */ MOVS R0, #1 \n\
+/* 0809E28C */ STRB R0, [R1] \n\
+/* 0809E28E */ B _0809E2A6 \n\
+ \n\
+.balign 4, 0 \n\
+_0809E290: \n\
+/* 0809E290 */ .word gCurrentKeys \n\
+ \n\
+.balign 4, 0 \n\
+_0809E294: \n\
+/* 0809E294 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809E298: \n\
+/* 0809E298 */ .word 0xFFFF0000 \n\
+ \n\
+.balign 4, 0 \n\
+_0809E29C: \n\
+/* 0809E29C */ .word D_083FDEA8 \n\
+_0809E2A0: \n\
+/* 0809E2A0 */ LDR R0, _0809E2DC \n\
+/* 0809E2A2 */ LDR R0, [R0] \n\
+/* 0809E2A4 */ STRB R1, [R0] \n\
+_0809E2A6: \n\
+/* 0809E2A6 */ LDR R0, _0809E2E0 \n\
+/* 0809E2A8 */ LDRH R1, [R0] \n\
+/* 0809E2AA */ MOVS R0, #0X20 \n\
+/* 0809E2AC */ ANDS R0, R1 \n\
+/* 0809E2AE */ LSLS R0, R0, #0X10 \n\
+/* 0809E2B0 */ LSRS R1, R0, #0X10 \n\
+/* 0809E2B2 */ CMP R1, #0 \n\
+/* 0809E2B4 */ BEQ _0809E2EC \n\
+/* 0809E2B6 */ LDR R4, _0809E2DC \n\
+/* 0809E2B8 */ LDR R2, [R4] \n\
+/* 0809E2BA */ LDRH R0, [R2, #0X10] \n\
+/* 0809E2BC */ SUBS R0, R6, R0 \n\
+/* 0809E2BE */ LSLS R0, R0, #0X10 \n\
+/* 0809E2C0 */ LSRS R0, R0, #0X10 \n\
+/* 0809E2C2 */ LDR R1, _0809E2E4 \n\
+/* 0809E2C4 */ ANDS R6, R1 \n\
+/* 0809E2C6 */ ORRS R6, R0 \n\
+/* 0809E2C8 */ LDRB R0, [R2, #1] \n\
+/* 0809E2CA */ CMP R0, #0 \n\
+/* 0809E2CC */ BNE _0809E2F2 \n\
+/* 0809E2CE */ LDR R0, _0809E2E8 \n\
+/* 0809E2D0 */ BL scene_play_sound_to_tempo \n\
+/* 0809E2D4 */ LDR R1, [R4] \n\
+/* 0809E2D6 */ MOVS R0, #1 \n\
+/* 0809E2D8 */ STRB R0, [R1, #1] \n\
+/* 0809E2DA */ B _0809E2F2 \n\
+ \n\
+.balign 4, 0 \n\
+_0809E2DC: \n\
+/* 0809E2DC */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809E2E0: \n\
+/* 0809E2E0 */ .word gCurrentKeys \n\
+ \n\
+.balign 4, 0 \n\
+_0809E2E4: \n\
+/* 0809E2E4 */ .word 0xFFFF0000 \n\
+ \n\
+.balign 4, 0 \n\
+_0809E2E8: \n\
+/* 0809E2E8 */ .word D_083FDEA8 \n\
+_0809E2EC: \n\
+/* 0809E2EC */ LDR R0, _0809E328 \n\
+/* 0809E2EE */ LDR R0, [R0] \n\
+/* 0809E2F0 */ STRB R1, [R0, #1] \n\
+_0809E2F2: \n\
+/* 0809E2F2 */ LDR R0, _0809E32C \n\
+/* 0809E2F4 */ LDRH R1, [R0] \n\
+/* 0809E2F6 */ MOVS R0, #0X40 \n\
+/* 0809E2F8 */ ANDS R0, R1 \n\
+/* 0809E2FA */ LSLS R0, R0, #0X10 \n\
+/* 0809E2FC */ LSRS R1, R0, #0X10 \n\
+/* 0809E2FE */ CMP R1, #0 \n\
+/* 0809E300 */ BEQ _0809E338 \n\
+/* 0809E302 */ ASRS R1, R6, #0X10 \n\
+/* 0809E304 */ LDR R4, _0809E328 \n\
+/* 0809E306 */ LDR R2, [R4] \n\
+/* 0809E308 */ LDRH R0, [R2, #0X12] \n\
+/* 0809E30A */ SUBS R1, R0 \n\
+/* 0809E30C */ LSLS R1, R1, #0X10 \n\
+/* 0809E30E */ LDR R0, _0809E330 \n\
+/* 0809E310 */ ANDS R6, R0 \n\
+/* 0809E312 */ ORRS R6, R1 \n\
+/* 0809E314 */ LDRB R0, [R2, #3] \n\
+/* 0809E316 */ CMP R0, #0 \n\
+/* 0809E318 */ BNE _0809E33E \n\
+/* 0809E31A */ LDR R0, _0809E334 \n\
+/* 0809E31C */ BL scene_play_sound_to_tempo \n\
+/* 0809E320 */ LDR R1, [R4] \n\
+/* 0809E322 */ MOVS R0, #1 \n\
+/* 0809E324 */ STRB R0, [R1, #3] \n\
+/* 0809E326 */ B _0809E33E \n\
+ \n\
+.balign 4, 0 \n\
+_0809E328: \n\
+/* 0809E328 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809E32C: \n\
+/* 0809E32C */ .word gCurrentKeys \n\
+ \n\
+.balign 4, 0 \n\
+_0809E330: \n\
+/* 0809E330 */ .word 0x0000FFFF \n\
+ \n\
+.balign 4, 0 \n\
+_0809E334: \n\
+/* 0809E334 */ .word D_083FDEA8 \n\
+_0809E338: \n\
+/* 0809E338 */ LDR R0, _0809E374 \n\
+/* 0809E33A */ LDR R0, [R0] \n\
+/* 0809E33C */ STRB R1, [R0, #3] \n\
+_0809E33E: \n\
+/* 0809E33E */ LDR R0, _0809E378 \n\
+/* 0809E340 */ LDRH R1, [R0] \n\
+/* 0809E342 */ MOVS R0, #0X80 \n\
+/* 0809E344 */ ANDS R0, R1 \n\
+/* 0809E346 */ LSLS R0, R0, #0X10 \n\
+/* 0809E348 */ LSRS R1, R0, #0X10 \n\
+/* 0809E34A */ CMP R1, #0 \n\
+/* 0809E34C */ BEQ _0809E384 \n\
+/* 0809E34E */ LDR R4, _0809E374 \n\
+/* 0809E350 */ LDR R2, [R4] \n\
+/* 0809E352 */ ASRS R0, R6, #0X10 \n\
+/* 0809E354 */ LDRH R1, [R2, #0X12] \n\
+/* 0809E356 */ ADDS R0, R1 \n\
+/* 0809E358 */ LSLS R0, R0, #0X10 \n\
+/* 0809E35A */ LDR R1, _0809E37C \n\
+/* 0809E35C */ ANDS R6, R1 \n\
+/* 0809E35E */ ORRS R6, R0 \n\
+/* 0809E360 */ LDRB R0, [R2, #2] \n\
+/* 0809E362 */ CMP R0, #0 \n\
+/* 0809E364 */ BNE _0809E38A \n\
+/* 0809E366 */ LDR R0, _0809E380 \n\
+/* 0809E368 */ BL scene_play_sound_to_tempo \n\
+/* 0809E36C */ LDR R1, [R4] \n\
+/* 0809E36E */ MOVS R0, #1 \n\
+/* 0809E370 */ STRB R0, [R1, #2] \n\
+/* 0809E372 */ B _0809E38A \n\
+ \n\
+.balign 4, 0 \n\
+_0809E374: \n\
+/* 0809E374 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809E378: \n\
+/* 0809E378 */ .word gCurrentKeys \n\
+ \n\
+.balign 4, 0 \n\
+_0809E37C: \n\
+/* 0809E37C */ .word 0x0000FFFF \n\
+ \n\
+.balign 4, 0 \n\
+_0809E380: \n\
+/* 0809E380 */ .word D_083FDEA8 \n\
+_0809E384: \n\
+/* 0809E384 */ LDR R0, _0809E3FC \n\
+/* 0809E386 */ LDR R0, [R0] \n\
+/* 0809E388 */ STRB R1, [R0, #2] \n\
+_0809E38A: \n\
+/* 0809E38A */ LDR R2, _0809E400 \n\
+/* 0809E38C */ LSLS R5, R6, #0X10 \n\
+/* 0809E38E */ ASRS R5, R5, #0X10 \n\
+/* 0809E390 */ ADDS R0, R5, #0 \n\
+/* 0809E392 */ MULS R0, R5, R0 \n\
+/* 0809E394 */ ASRS R6, R6, #0X10 \n\
+/* 0809E396 */ ADDS R1, R6, #0 \n\
+/* 0809E398 */ MULS R1, R6, R1 \n\
+/* 0809E39A */ ADDS R0, R1 \n\
+/* 0809E39C */ LDR R1, [R2] \n\
+/* 0809E39E */ BL _call_via_r1 \n\
+/* 0809E3A2 */ LDR R2, _0809E3FC \n\
+/* 0809E3A4 */ MOV R8, R2 \n\
+/* 0809E3A6 */ LDR R4, [R2] \n\
+/* 0809E3A8 */ LDR R1, [R4, #0X14] \n\
+/* 0809E3AA */ ADDS R1, R0 \n\
+/* 0809E3AC */ STR R1, [R4, #0X14] \n\
+/* 0809E3AE */ LDR R2, [R4, #8] \n\
+/* 0809E3B0 */ ADDS R2, R5 \n\
+/* 0809E3B2 */ STR R2, [R4, #8] \n\
+/* 0809E3B4 */ LDR R3, [R4, #0XC] \n\
+/* 0809E3B6 */ ADDS R3, R6 \n\
+/* 0809E3B8 */ STR R3, [R4, #0XC] \n\
+/* 0809E3BA */ LDR R5, _0809E404 \n\
+/* 0809E3BC */ LDR R0, [R5] \n\
+/* 0809E3BE */ MOVS R6, #4 \n\
+/* 0809E3C0 */ LDRSH R1, [R4, R6] \n\
+/* 0809E3C2 */ LSLS R2, R2, #8 \n\
+/* 0809E3C4 */ ASRS R2, R2, #0X10 \n\
+/* 0809E3C6 */ LSLS R3, R3, #8 \n\
+/* 0809E3C8 */ ASRS R3, R3, #0X10 \n\
+/* 0809E3CA */ BL sprite_set_x_y \n\
+/* 0809E3CE */ LDR R0, [R5] \n\
+/* 0809E3D0 */ MOV R1, R8 \n\
+/* 0809E3D2 */ LDR R3, [R1] \n\
+/* 0809E3D4 */ LDR R2, _0809E408 \n\
+/* 0809E3D6 */ ADDS R1, R3, R2 \n\
+/* 0809E3D8 */ MOVS R6, #0 \n\
+/* 0809E3DA */ LDRSH R1, [R1, R6] \n\
+/* 0809E3DC */ LDR R2, [R3, #8] \n\
+/* 0809E3DE */ LSLS R2, R2, #8 \n\
+/* 0809E3E0 */ ASRS R2, R2, #0X10 \n\
+/* 0809E3E2 */ LDR R3, [R3, #0XC] \n\
+/* 0809E3E4 */ LSLS R3, R3, #8 \n\
+/* 0809E3E6 */ ASRS R3, R3, #0X10 \n\
+/* 0809E3E8 */ BL sprite_set_x_y \n\
+/* 0809E3EC */ BL func_0809E1FC \n\
+/* 0809E3F0 */ LSLS R0, R0, #0X10 \n\
+/* 0809E3F2 */ CMP R0, #0 \n\
+/* 0809E3F4 */ BNE _0809E40C \n\
+/* 0809E3F6 */ MOVS R0, #0 \n\
+/* 0809E3F8 */ B _0809E40E \n\
+ \n\
+.balign 4, 0 \n\
+_0809E3FC: \n\
+/* 0809E3FC */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809E400: \n\
+/* 0809E400 */ .word D_03003FE4 \n\
+ \n\
+.balign 4, 0 \n\
+_0809E404: \n\
+/* 0809E404 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0809E408: \n\
+/* 0809E408 */ .word 0x0000028A \n\
+_0809E40C: \n\
+/* 0809E40C */ MOVS R0, #1 \n\
+_0809E40E: \n\
+/* 0809E40E */ POP {R3} \n\
+/* 0809E410 */ MOV R8, R3 \n\
+/* 0809E412 */ POP {R4, R5, R6} \n\
+/* 0809E414 */ POP {R1} \n\
+/* 0809E416 */ BX R1 \n\
+.ltorg \n\
+.syntax divided");
+

@@ -1,0 +1,130 @@
+/* Generated from asm/asm_080e3aa4.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080E3AA4 \n\
+/* 080E3AA4 */ PUSH {R4, R5, R6, LR} \n\
+/* 080E3AA6 */ SUB SP, #8 \n\
+/* 080E3AA8 */ LDR R0, _080E3B90 \n\
+/* 080E3AAA */ LDR R0, [R0] \n\
+/* 080E3AAC */ MOVS R1, #0XE4 \n\
+/* 080E3AAE */ LSLS R1, R1, #2 \n\
+/* 080E3AB0 */ ADDS R0, R1 \n\
+/* 080E3AB2 */ LDRH R4, [R0] \n\
+/* 080E3AB4 */ MOV R5, SP \n\
+/* 080E3AB6 */ MOVS R1, #0XE1 \n\
+/* 080E3AB8 */ LSLS R1, R1, #4 \n\
+/* 080E3ABA */ ADDS R0, R4, #0 \n\
+/* 080E3ABC */ BL __udivsi3 \n\
+/* 080E3AC0 */ STRB R0, [R5] \n\
+/* 080E3AC2 */ MOV R0, SP \n\
+/* 080E3AC4 */ LDRB R1, [R0] \n\
+/* 080E3AC6 */ LSLS R0, R1, #3 \n\
+/* 080E3AC8 */ SUBS R0, R1 \n\
+/* 080E3ACA */ LSLS R0, R0, #5 \n\
+/* 080E3ACC */ ADDS R0, R1 \n\
+/* 080E3ACE */ LSLS R0, R0, #4 \n\
+/* 080E3AD0 */ SUBS R4, R0 \n\
+/* 080E3AD2 */ LSLS R4, R4, #0X10 \n\
+/* 080E3AD4 */ LSRS R4, R4, #0X10 \n\
+/* 080E3AD6 */ MOV R5, SP \n\
+/* 080E3AD8 */ MOVS R1, #0X96 \n\
+/* 080E3ADA */ LSLS R1, R1, #2 \n\
+/* 080E3ADC */ ADDS R0, R4, #0 \n\
+/* 080E3ADE */ BL __udivsi3 \n\
+/* 080E3AE2 */ STRB R0, [R5, #1] \n\
+/* 080E3AE4 */ MOV R5, SP \n\
+/* 080E3AE6 */ ADDS R0, R4, #0 \n\
+/* 080E3AE8 */ MOVS R1, #0X3C \n\
+/* 080E3AEA */ BL __udivsi3 \n\
+/* 080E3AEE */ LSLS R0, R0, #0X10 \n\
+/* 080E3AF0 */ LSRS R0, R0, #0X10 \n\
+/* 080E3AF2 */ MOVS R1, #0XA \n\
+/* 080E3AF4 */ BL __umodsi3 \n\
+/* 080E3AF8 */ STRB R0, [R5, #2] \n\
+/* 080E3AFA */ MOV R0, SP \n\
+/* 080E3AFC */ LDRB R0, [R0, #1] \n\
+/* 080E3AFE */ LSLS R1, R0, #2 \n\
+/* 080E3B00 */ ADDS R1, R0 \n\
+/* 080E3B02 */ LSLS R0, R1, #4 \n\
+/* 080E3B04 */ SUBS R0, R1 \n\
+/* 080E3B06 */ LSLS R0, R0, #3 \n\
+/* 080E3B08 */ SUBS R4, R0 \n\
+/* 080E3B0A */ LSLS R4, R4, #0X10 \n\
+/* 080E3B0C */ LSRS R4, R4, #0X10 \n\
+/* 080E3B0E */ MOV R0, SP \n\
+/* 080E3B10 */ LDRB R1, [R0, #2] \n\
+/* 080E3B12 */ LSLS R0, R1, #4 \n\
+/* 080E3B14 */ SUBS R0, R1 \n\
+/* 080E3B16 */ LSLS R0, R0, #2 \n\
+/* 080E3B18 */ SUBS R4, R0 \n\
+/* 080E3B1A */ LSLS R4, R4, #0X10 \n\
+/* 080E3B1C */ LSRS R4, R4, #0X10 \n\
+/* 080E3B1E */ MOV R6, SP \n\
+/* 080E3B20 */ LSLS R0, R4, #2 \n\
+/* 080E3B22 */ ADDS R0, R4 \n\
+/* 080E3B24 */ LSLS R0, R0, #1 \n\
+/* 080E3B26 */ MOVS R1, #6 \n\
+/* 080E3B28 */ BL __divsi3 \n\
+/* 080E3B2C */ ADDS R5, R0, #0 \n\
+/* 080E3B2E */ STRB R5, [R6, #3] \n\
+/* 080E3B30 */ MOV R4, SP \n\
+/* 080E3B32 */ MOV R0, SP \n\
+/* 080E3B34 */ LDRB R0, [R0, #3] \n\
+/* 080E3B36 */ MOVS R1, #0XA \n\
+/* 080E3B38 */ BL __udivsi3 \n\
+/* 080E3B3C */ STRB R0, [R4, #3] \n\
+/* 080E3B3E */ MOV R0, SP \n\
+/* 080E3B40 */ STRB R5, [R0, #4] \n\
+/* 080E3B42 */ MOV R4, SP \n\
+/* 080E3B44 */ LDRB R0, [R0, #4] \n\
+/* 080E3B46 */ MOVS R1, #0XA \n\
+/* 080E3B48 */ BL __umodsi3 \n\
+/* 080E3B4C */ STRB R0, [R4, #4] \n\
+/* 080E3B4E */ MOVS R4, #0 \n\
+_080E3B50: \n\
+/* 080E3B50 */ LDR R0, _080E3B94 \n\
+/* 080E3B52 */ LDR R0, [R0] \n\
+/* 080E3B54 */ LDR R5, _080E3B90 \n\
+/* 080E3B56 */ LDR R1, [R5] \n\
+/* 080E3B58 */ LSLS R2, R4, #1 \n\
+/* 080E3B5A */ LDR R3, _080E3B98 \n\
+/* 080E3B5C */ ADDS R1, R3 \n\
+/* 080E3B5E */ ADDS R1, R2 \n\
+/* 080E3B60 */ MOVS R2, #0 \n\
+/* 080E3B62 */ LDRSH R1, [R1, R2] \n\
+/* 080E3B64 */ MOV R3, SP \n\
+/* 080E3B66 */ ADDS R2, R3, R4 \n\
+/* 080E3B68 */ LDRB R2, [R2] \n\
+/* 080E3B6A */ LSLS R2, R2, #0X18 \n\
+/* 080E3B6C */ ASRS R2, R2, #0X18 \n\
+/* 080E3B6E */ BL sprite_set_anim_cel \n\
+/* 080E3B72 */ ADDS R0, R4, #1 \n\
+/* 080E3B74 */ LSLS R0, R0, #0X18 \n\
+/* 080E3B76 */ LSRS R4, R0, #0X18 \n\
+/* 080E3B78 */ CMP R4, #4 \n\
+/* 080E3B7A */ BLS _080E3B50 \n\
+/* 080E3B7C */ LDR R0, [R5] \n\
+/* 080E3B7E */ MOVS R1, #0XE4 \n\
+/* 080E3B80 */ LSLS R1, R1, #2 \n\
+/* 080E3B82 */ ADDS R0, R1 \n\
+/* 080E3B84 */ MOVS R1, #0 \n\
+/* 080E3B86 */ STRH R1, [R0] \n\
+/* 080E3B88 */ ADD SP, #8 \n\
+/* 080E3B8A */ POP {R4, R5, R6} \n\
+/* 080E3B8C */ POP {R0} \n\
+/* 080E3B8E */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080E3B90: \n\
+/* 080E3B90 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080E3B94: \n\
+/* 080E3B94 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_080E3B98: \n\
+/* 080E3B98 */ .word 0x00000386 \n\
+.ltorg \n\
+.syntax divided");
+

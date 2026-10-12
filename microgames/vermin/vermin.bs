@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_vermin at 0x083E3584
+struct scene_vermin
+    /* Start  */ .word func_080CA150, 0x00000000
+    /* Paused */ .word func_080CA304, 0x00000000
+    /* Update */ .word func_080CA30C, 0x00000000
+    /* Stop   */ .word func_080CA308, 0x00000000
+    /* Script */ .word 0x083E3518
+endstruct
+
+.incbin "microgames/vermin/vermin.bin", 36, 264

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_dr_mario at 0x083D6438
+struct scene_dr_mario
+    /* Start  */ .word func_0806C5A4, 0x00000000
+    /* Paused */ .word func_0806E0F0, 0x00000000
+    /* Update */ .word func_0806E074, 0x00000000
+    /* Stop   */ .word func_0806E0F4, 0x00000000
+    /* Script */ .word 0x083D63CC
+endstruct
+
+.incbin "microgames/dr_mario/dr_mario.bin", 36, 236

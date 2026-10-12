@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_sunny_side_up at 0x083D3860
+struct scene_sunny_side_up
+    /* Start  */ .word func_08053E40, 0x00000000
+    /* Paused */ .word func_08054474, 0x00000000
+    /* Update */ .word func_08053FD0, 0x00000000
+    /* Stop   */ .word func_08054478, 0x00000000
+    /* Script */ .word 0x083D37F4
+endstruct
+
+.incbin "microgames/sunny_side_up/sunny_side_up.bin", 36, 240

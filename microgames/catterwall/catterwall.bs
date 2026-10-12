@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_catterwall at 0x083DB108
+struct scene_catterwall
+    /* Start  */ .word func_0809A8B8, 0x00000000
+    /* Paused */ .word func_0809B27C, 0x00000000
+    /* Update */ .word func_0809B1D4, 0x00000000
+    /* Stop   */ .word func_0809B280, 0x00000000
+    /* Script */ .word 0x083DB084
+endstruct
+
+.incbin "microgames/catterwall/catterwall.bin", 36, 384

@@ -1,0 +1,48 @@
+/* Generated from asm/asm_0803e0dc.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0803E0DC \n\
+/* 0803E0DC */ PUSH {R4, R5, LR} \n\
+/* 0803E0DE */ LDR R5, _0803E124 \n\
+/* 0803E0E0 */ LDR R0, [R5] \n\
+/* 0803E0E2 */ LDR R4, =gCurrentSceneVariable \n\
+/* 0803E0E4 */ LDR R1, [R4] \n\
+/* 0803E0E6 */ ADDS R1, #0XE8 \n\
+/* 0803E0E8 */ MOVS R2, #0 \n\
+/* 0803E0EA */ LDRSH R1, [R1, R2] \n\
+/* 0803E0EC */ MOVS R2, #1 \n\
+/* 0803E0EE */ BL sprite_set_visible \n\
+/* 0803E0F2 */ LDR R0, [R5] \n\
+/* 0803E0F4 */ LDR R3, [R4] \n\
+/* 0803E0F6 */ ADDS R1, R3, #0 \n\
+/* 0803E0F8 */ ADDS R1, #0XE8 \n\
+/* 0803E0FA */ MOVS R2, #0 \n\
+/* 0803E0FC */ LDRSH R1, [R1, R2] \n\
+/* 0803E0FE */ ADDS R2, R3, #0 \n\
+/* 0803E100 */ ADDS R2, #0XB4 \n\
+/* 0803E102 */ LDR R2, [R2] \n\
+/* 0803E104 */ LSLS R2, R2, #8 \n\
+/* 0803E106 */ ASRS R2, R2, #0X10 \n\
+/* 0803E108 */ ADDS R3, #0XB8 \n\
+/* 0803E10A */ LDR R3, [R3] \n\
+/* 0803E10C */ LSLS R3, R3, #8 \n\
+/* 0803E10E */ ASRS R3, R3, #0X10 \n\
+/* 0803E110 */ BL sprite_set_x_y \n\
+/* 0803E114 */ LDR R0, [R4] \n\
+/* 0803E116 */ ADDS R0, #0XC4 \n\
+/* 0803E118 */ MOVS R1, #1 \n\
+/* 0803E11A */ STRB R1, [R0] \n\
+/* 0803E11C */ POP {R4, R5} \n\
+/* 0803E11E */ POP {R0} \n\
+/* 0803E120 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0803E128: \n\
+/* 0803E128 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0803E124: \n\
+/* 0803E124 */ .word gSpriteHandler \n\
+.ltorg \n\
+.syntax divided");
+

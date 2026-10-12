@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mix_and_match at 0x083E36B0
+struct scene_mix_and_match
+    /* Start  */ .word func_080CAB08, 0x00000000
+    /* Paused */ .word func_080CC79C, 0x00000000
+    /* Update */ .word func_080CC6E8, 0x00000000
+    /* Stop   */ .word func_080CC7A0, 0x00000000
+    /* Script */ .word 0x083E3644
+endstruct
+
+.incbin "microgames/mix_and_match/mix_and_match.bin", 36, 328

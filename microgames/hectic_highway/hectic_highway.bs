@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hectic_highway at 0x083CF1B4
+struct scene_hectic_highway
+    /* Start  */ .word func_08037B28, 0x00000000
+    /* Paused */ .word func_08037DD0, 0x00000000
+    /* Update */ .word func_08037C68, 0x00000000
+    /* Stop   */ .word func_08037DE4, 0x00000000
+    /* Script */ .word 0x083CF148
+endstruct
+
+.incbin "microgames/hectic_highway/hectic_highway.bin", 36, 240

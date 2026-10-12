@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_dungeon_dilemma at 0x083DDA64
+struct scene_dungeon_dilemma
+    /* Start  */ .word func_080B0628, 0x00000000
+    /* Paused */ .word func_080B0E38, 0x00000000
+    /* Update */ .word func_080B0CF0, 0x00000000
+    /* Stop   */ .word func_080B0E80, 0x00000000
+    /* Script */ .word 0x083DD9A4
+endstruct
+
+.incbin "microgames/dungeon_dilemma/dungeon_dilemma.bin", 36, 6336

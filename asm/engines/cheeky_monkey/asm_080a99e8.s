@@ -1,0 +1,160 @@
+/* Generated from asm/asm_080a99e8.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080A99E8 \n\
+/* 080A99E8 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080A99EA */ MOV R7, SL \n\
+/* 080A99EC */ MOV R6, SB \n\
+/* 080A99EE */ MOV R5, R8 \n\
+/* 080A99F0 */ PUSH {R5, R6, R7} \n\
+/* 080A99F2 */ SUB SP, #0X10 \n\
+/* 080A99F4 */ ADDS R5, R0, #0 \n\
+/* 080A99F6 */ ADDS R6, R1, #0 \n\
+/* 080A99F8 */ ADDS R7, R2, #0 \n\
+/* 080A99FA */ LSLS R5, R5, #0X10 \n\
+/* 080A99FC */ LSRS R5, R5, #0X10 \n\
+/* 080A99FE */ LSLS R6, R6, #0X10 \n\
+/* 080A9A00 */ LSRS R6, R6, #0X10 \n\
+/* 080A9A02 */ MOVS R0, #6 \n\
+/* 080A9A04 */ BL get_random_range \n\
+/* 080A9A08 */ LDR R4, _080A9B08 \n\
+/* 080A9A0A */ ADDS R0, R4 \n\
+/* 080A9A0C */ ADDS R5, R0 \n\
+/* 080A9A0E */ LSLS R5, R5, #0X10 \n\
+/* 080A9A10 */ LSRS R5, R5, #0X10 \n\
+/* 080A9A12 */ MOVS R0, #6 \n\
+/* 080A9A14 */ BL get_random_range \n\
+/* 080A9A18 */ ADDS R0, R4 \n\
+/* 080A9A1A */ ADDS R6, R0 \n\
+/* 080A9A1C */ LSLS R6, R6, #0X10 \n\
+/* 080A9A1E */ LSRS R6, R6, #0X10 \n\
+/* 080A9A20 */ LDR R0, _080A9B0C \n\
+/* 080A9A22 */ MOV SB, R0 \n\
+/* 080A9A24 */ LDR R4, [R0] \n\
+/* 080A9A26 */ MOVS R1, #0XF3 \n\
+/* 080A9A28 */ LSLS R1, R1, #2 \n\
+/* 080A9A2A */ ADDS R4, R1 \n\
+/* 080A9A2C */ LDRB R2, [R4] \n\
+/* 080A9A2E */ MOV SL, R2 \n\
+/* 080A9A30 */ MOV R0, SL \n\
+/* 080A9A32 */ ADDS R0, #1 \n\
+/* 080A9A34 */ MOVS R1, #0X12 \n\
+/* 080A9A36 */ BL __modsi3 \n\
+/* 080A9A3A */ MOVS R3, #0 \n\
+/* 080A9A3C */ STRB R0, [R4] \n\
+/* 080A9A3E */ MOV R0, SB \n\
+/* 080A9A40 */ LDR R1, [R0] \n\
+/* 080A9A42 */ MOV R2, SL \n\
+/* 080A9A44 */ LSLS R4, R2, #1 \n\
+/* 080A9A46 */ MOVS R2, #0X87 \n\
+/* 080A9A48 */ LSLS R2, R2, #2 \n\
+/* 080A9A4A */ ADDS R0, R1, R2 \n\
+/* 080A9A4C */ ADDS R0, R4 \n\
+/* 080A9A4E */ LDRH R0, [R0] \n\
+/* 080A9A50 */ MOV R8, R0 \n\
+/* 080A9A52 */ ADDS R2, #0X30 \n\
+/* 080A9A54 */ ADDS R0, R1, R2 \n\
+/* 080A9A56 */ ADD R0, SL \n\
+/* 080A9A58 */ MOVS R1, #1 \n\
+/* 080A9A5A */ STRB R1, [R0] \n\
+/* 080A9A5C */ MOV R2, SB \n\
+/* 080A9A5E */ LDR R1, [R2] \n\
+/* 080A9A60 */ MOVS R2, #0XD5 \n\
+/* 080A9A62 */ LSLS R2, R2, #2 \n\
+/* 080A9A64 */ ADDS R0, R1, R2 \n\
+/* 080A9A66 */ ADDS R0, R4 \n\
+/* 080A9A68 */ STRH R3, [R0] \n\
+/* 080A9A6A */ ADDS R2, #0X30 \n\
+/* 080A9A6C */ ADDS R0, R1, R2 \n\
+/* 080A9A6E */ ADDS R0, R4 \n\
+/* 080A9A70 */ STRH R3, [R0] \n\
+/* 080A9A72 */ MOVS R0, #0X80 \n\
+/* 080A9A74 */ STR R3, [SP, #0XC] \n\
+/* 080A9A76 */ BL get_random_range \n\
+/* 080A9A7A */ MOV R1, SB \n\
+/* 080A9A7C */ LDR R1, [R1] \n\
+/* 080A9A7E */ MOV SB, R1 \n\
+/* 080A9A80 */ MOVS R1, #0XC9 \n\
+/* 080A9A82 */ LSLS R1, R1, #2 \n\
+/* 080A9A84 */ ADD R1, SB \n\
+/* 080A9A86 */ ADDS R1, R4 \n\
+/* 080A9A88 */ ADDS R0, #0X40 \n\
+/* 080A9A8A */ STRH R0, [R1] \n\
+/* 080A9A8C */ MOV R0, SL \n\
+/* 080A9A8E */ LSLS R2, R0, #2 \n\
+/* 080A9A90 */ MOVS R1, #0X99 \n\
+/* 080A9A92 */ LSLS R1, R1, #2 \n\
+/* 080A9A94 */ ADD R1, SB \n\
+/* 080A9A96 */ ADDS R1, R2 \n\
+/* 080A9A98 */ LSLS R5, R5, #0X10 \n\
+/* 080A9A9A */ ASRS R5, R5, #0X10 \n\
+/* 080A9A9C */ LSLS R0, R5, #8 \n\
+/* 080A9A9E */ STR R0, [R1] \n\
+/* 080A9AA0 */ MOVS R1, #0XB1 \n\
+/* 080A9AA2 */ LSLS R1, R1, #2 \n\
+/* 080A9AA4 */ ADD R1, SB \n\
+/* 080A9AA6 */ ADDS R1, R2 \n\
+/* 080A9AA8 */ LSLS R6, R6, #0X10 \n\
+/* 080A9AAA */ ASRS R6, R6, #0X10 \n\
+/* 080A9AAC */ LSLS R0, R6, #8 \n\
+/* 080A9AAE */ STR R0, [R1] \n\
+/* 080A9AB0 */ MOVS R0, #0XED \n\
+/* 080A9AB2 */ LSLS R0, R0, #2 \n\
+/* 080A9AB4 */ ADD R0, SB \n\
+/* 080A9AB6 */ ADD R0, SL \n\
+/* 080A9AB8 */ STRB R7, [R0] \n\
+/* 080A9ABA */ LDR R4, _080A9B10 \n\
+/* 080A9ABC */ LDR R0, [R4] \n\
+/* 080A9ABE */ MOV R1, R8 \n\
+/* 080A9AC0 */ LSLS R1, R1, #0X10 \n\
+/* 080A9AC2 */ ASRS R1, R1, #0X10 \n\
+/* 080A9AC4 */ MOV R8, R1 \n\
+/* 080A9AC6 */ LDR R1, =D_083DCF24 \n\
+/* 080A9AC8 */ LSLS R2, R7, #2 \n\
+/* 080A9ACA */ ADDS R2, R1 \n\
+/* 080A9ACC */ LDR R2, [R2] \n\
+/* 080A9ACE */ MOVS R1, #1 \n\
+/* 080A9AD0 */ STR R1, [SP] \n\
+/* 080A9AD2 */ LDR R3, [SP, #0XC] \n\
+/* 080A9AD4 */ STR R3, [SP, #4] \n\
+/* 080A9AD6 */ STR R3, [SP, #8] \n\
+/* 080A9AD8 */ MOV R1, R8 \n\
+/* 080A9ADA */ MOVS R3, #0 \n\
+/* 080A9ADC */ BL sprite_set_anim \n\
+/* 080A9AE0 */ LDR R0, [R4] \n\
+/* 080A9AE2 */ MOV R1, R8 \n\
+/* 080A9AE4 */ ADDS R2, R5, #0 \n\
+/* 080A9AE6 */ ADDS R3, R6, #0 \n\
+/* 080A9AE8 */ BL sprite_set_x_y \n\
+/* 080A9AEC */ LDR R0, [R4] \n\
+/* 080A9AEE */ MOV R1, R8 \n\
+/* 080A9AF0 */ MOVS R2, #1 \n\
+/* 080A9AF2 */ BL sprite_set_visible \n\
+/* 080A9AF6 */ MOV R0, SL \n\
+/* 080A9AF8 */ ADD SP, #0X10 \n\
+/* 080A9AFA */ POP {R3, R4, R5} \n\
+/* 080A9AFC */ MOV R8, R3 \n\
+/* 080A9AFE */ MOV SB, R4 \n\
+/* 080A9B00 */ MOV SL, R5 \n\
+/* 080A9B02 */ POP {R4, R5, R6, R7} \n\
+/* 080A9B04 */ POP {R1} \n\
+/* 080A9B06 */ BX R1 \n\
+ \n\
+.balign 4, 0 \n\
+_080A9B14: \n\
+/* 080A9B14 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_080A9B08: \n\
+/* 080A9B08 */ .word 0x0000FFFD \n\
+ \n\
+.balign 4, 0 \n\
+_080A9B0C: \n\
+/* 080A9B0C */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080A9B10: \n\
+/* 080A9B10 */ .word gSpriteHandler \n\
+.ltorg \n\
+.syntax divided");
+

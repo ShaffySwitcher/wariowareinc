@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_dodge_balls at 0x083CC728
+struct scene_dodge_balls
+    /* Start  */ .word func_0802A800, 0x00000000
+    /* Paused */ .word func_0802B098, 0x00000000
+    /* Update */ .word func_0802B078, 0x00000000
+    /* Stop   */ .word func_0802B0A4, 0x00000000
+    /* Script */ .word 0x083CC6BC
+endstruct
+
+.incbin "microgames/dodge_balls/dodge_balls.bin", 36, 560

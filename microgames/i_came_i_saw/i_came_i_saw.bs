@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_i_came_i_saw at 0x083D4F14
+struct scene_i_came_i_saw
+    /* Start  */ .word func_0805DD94, 0x00000000
+    /* Paused */ .word func_0805E6EC, 0x00000000
+    /* Update */ .word func_0805E6C4, 0x00000000
+    /* Stop   */ .word func_0805E6F0, 0x00000000
+    /* Script */ .word 0x083D4EA8
+endstruct
+
+.incbin "microgames/i_came_i_saw/i_came_i_saw.bin", 36, 268

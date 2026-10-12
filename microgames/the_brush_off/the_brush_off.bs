@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_the_brush_off at 0x083D90EC
+struct scene_the_brush_off
+    /* Start  */ .word func_080825E8, 0x00000000
+    /* Paused */ .word func_08082F14, 0x00000000
+    /* Update */ .word func_08082EEC, 0x00000000
+    /* Stop   */ .word func_08082F18, 0x00000000
+    /* Script */ .word 0x083D9080
+endstruct
+
+.incbin "microgames/the_brush_off/the_brush_off.bin", 36, 252

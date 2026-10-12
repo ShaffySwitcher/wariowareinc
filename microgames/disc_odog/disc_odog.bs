@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_disc_odog at 0x083D6548
+struct scene_disc_odog
+    /* Start  */ .word func_0806E0F8, 0x00000000
+    /* Paused */ .word func_0806E5E0, 0x00000000
+    /* Update */ .word func_0806E550, 0x00000000
+    /* Stop   */ .word func_0806E5E4, 0x00000000
+    /* Script */ .word 0x083D64DC
+endstruct
+
+.incbin "microgames/disc_odog/disc_odog.bin", 36, 376

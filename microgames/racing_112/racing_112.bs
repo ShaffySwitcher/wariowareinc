@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_racing_112 at 0x083D5E74
+struct scene_racing_112
+    /* Start  */ .word func_08069124, 0x00000000
+    /* Paused */ .word func_0806983C, 0x00000000
+    /* Update */ .word func_0806980C, 0x00000000
+    /* Stop   */ .word func_08069840, 0x00000000
+    /* Script */ .word 0x083D5E08
+endstruct
+
+.incbin "microgames/racing_112/racing_112.bin", 36, 536

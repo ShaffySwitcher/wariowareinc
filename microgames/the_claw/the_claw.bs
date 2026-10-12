@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_the_claw at 0x083D84BC
+struct scene_the_claw
+    /* Start  */ .word func_0807E6B0, 0x00000000
+    /* Paused */ .word func_0807EA04, 0x00000000
+    /* Update */ .word func_0807EA0C, 0x00000000
+    /* Stop   */ .word func_0807EA08, 0x00000000
+    /* Script */ .word 0x083D8450
+endstruct
+
+.incbin "microgames/the_claw/the_claw.bin", 36, 1672

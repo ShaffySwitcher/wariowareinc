@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_bubble_trouble at 0x083D2AB0
+struct scene_bubble_trouble
+    /* Start  */ .word func_0804C824, 0x00000000
+    /* Paused */ .word func_0804D1C0, 0x00000000
+    /* Update */ .word func_0804D10C, 0x00000000
+    /* Stop   */ .word func_0804D1D4, 0x00000000
+    /* Script */ .word 0x083D2A38
+endstruct
+
+.incbin "microgames/bubble_trouble/bubble_trouble.bin", 36, 264

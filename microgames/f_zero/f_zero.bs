@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_f_zero at 0x083EB660
+struct scene_f_zero
+    /* Start  */ .word func_080EB688, 0x00000000
+    /* Paused */ .word func_080EBEC4, 0x00000000
+    /* Update */ .word func_080EBDFC, 0x00000000
+    /* Stop   */ .word func_080EBEEC, 0x00000000
+    /* Script */ .word 0x083EB5C4
+endstruct
+
+.incbin "microgames/f_zero/f_zero.bin", 36, 34192

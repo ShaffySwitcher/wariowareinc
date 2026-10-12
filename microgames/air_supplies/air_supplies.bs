@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_air_supplies at 0x083D3E94
+struct scene_air_supplies
+    /* Start  */ .word func_08055FA0, 0x00000000
+    /* Paused */ .word func_080564E0, 0x00000000
+    /* Update */ .word func_08056170, 0x00000000
+    /* Stop   */ .word func_080564E4, 0x00000000
+    /* Script */ .word 0x083D3E28
+endstruct
+
+.incbin "microgames/air_supplies/air_supplies.bin", 36, 416

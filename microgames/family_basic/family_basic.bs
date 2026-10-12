@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_family_basic at 0x083D4BA8
+struct scene_family_basic
+    /* Start  */ .word func_0805C2F8, 0x00000000
+    /* Paused */ .word func_0805C54C, 0x00000000
+    /* Update */ .word func_0805C38C, 0x00000000
+    /* Stop   */ .word func_0805C550, 0x00000000
+    /* Script */ .word 0x083D4AD0
+endstruct
+
+.incbin "microgames/family_basic/family_basic.bin", 36, 552

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_the_legend_of_zelda at 0x083D78D0
+struct scene_the_legend_of_zelda
+    /* Start  */ .word func_08076FBC, 0x00000000
+    /* Paused */ .word func_08077170, 0x00000000
+    /* Update */ .word func_0807703C, 0x00000000
+    /* Stop   */ .word func_08077174, 0x00000000
+    /* Script */ .word 0x083D784C
+endstruct
+
+.incbin "microgames/the_legend_of_zelda/the_legend_of_zelda.bin", 36, 240

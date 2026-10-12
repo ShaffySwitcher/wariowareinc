@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_getcha_groove_on at 0x083CDD9C
+struct scene_getcha_groove_on
+    /* Start  */ .word func_080315F0, 0x00000000
+    /* Paused */ .word func_08031C58, 0x00000000
+    /* Update */ .word func_08031C24, 0x00000000
+    /* Stop   */ .word func_08031C64, 0x00000000
+    /* Script */ .word 0x083CDD18
+endstruct
+
+.incbin "microgames/getcha_groove_on/getcha_groove_on.bin", 36, 380

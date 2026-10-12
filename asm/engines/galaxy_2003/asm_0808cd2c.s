@@ -1,0 +1,79 @@
+/* Generated from asm/asm_0808cd2c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0808CD2C \n\
+/* 0808CD2C */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0808CD2E */ MOV R7, R8 \n\
+/* 0808CD30 */ PUSH {R7} \n\
+/* 0808CD32 */ LDR R4, _0808CD88 \n\
+/* 0808CD34 */ LDR R0, [R4] \n\
+/* 0808CD36 */ LDR R1, _0808CD8C \n\
+/* 0808CD38 */ ADDS R0, R1 \n\
+/* 0808CD3A */ MOVS R1, #1 \n\
+/* 0808CD3C */ STRB R1, [R0] \n\
+/* 0808CD3E */ LDR R2, _0808CD90 \n\
+/* 0808CD40 */ MOV R8, R2 \n\
+/* 0808CD42 */ LDR R0, [R2] \n\
+/* 0808CD44 */ LDR R2, [R4] \n\
+/* 0808CD46 */ LDR R6, _0808CD94 \n\
+/* 0808CD48 */ ADDS R1, R2, R6 \n\
+/* 0808CD4A */ MOVS R3, #0 \n\
+/* 0808CD4C */ LDRSH R1, [R1, R3] \n\
+/* 0808CD4E */ LDR R5, _0808CD98 \n\
+/* 0808CD50 */ LDR R3, _0808CD9C \n\
+/* 0808CD52 */ LDR R7, _0808CDA0 \n\
+/* 0808CD54 */ ADDS R2, R7 \n\
+/* 0808CD56 */ LDRB R2, [R2] \n\
+/* 0808CD58 */ ADDS R2, R3 \n\
+/* 0808CD5A */ LDRB R2, [R2] \n\
+/* 0808CD5C */ LSLS R2, R2, #0X18 \n\
+/* 0808CD5E */ ASRS R2, R2, #0X18 \n\
+/* 0808CD60 */ ADDS R2, R5 \n\
+/* 0808CD62 */ LDRB R2, [R2] \n\
+/* 0808CD64 */ LSLS R2, R2, #0X18 \n\
+/* 0808CD66 */ ASRS R2, R2, #0X18 \n\
+/* 0808CD68 */ BL sprite_set_base_palette \n\
+/* 0808CD6C */ MOV R1, R8 \n\
+/* 0808CD6E */ LDR R0, [R1] \n\
+/* 0808CD70 */ LDR R1, [R4] \n\
+/* 0808CD72 */ ADDS R1, R6 \n\
+/* 0808CD74 */ MOVS R2, #0 \n\
+/* 0808CD76 */ LDRSH R1, [R1, R2] \n\
+/* 0808CD78 */ MOVS R2, #1 \n\
+/* 0808CD7A */ BL sprite_set_visible \n\
+/* 0808CD7E */ POP {R3} \n\
+/* 0808CD80 */ MOV R8, R3 \n\
+/* 0808CD82 */ POP {R4, R5, R6, R7} \n\
+/* 0808CD84 */ POP {R0} \n\
+/* 0808CD86 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0808CD88: \n\
+/* 0808CD88 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0808CD8C: \n\
+/* 0808CD8C */ .word 0x00000CDF \n\
+ \n\
+.balign 4, 0 \n\
+_0808CD90: \n\
+/* 0808CD90 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0808CD94: \n\
+/* 0808CD94 */ .word 0x00000CE2 \n\
+ \n\
+.balign 4, 0 \n\
+_0808CD98: \n\
+/* 0808CD98 */ .word D_083D9EEC \n\
+ \n\
+.balign 4, 0 \n\
+_0808CD9C: \n\
+/* 0808CD9C */ .word D_083DA25C \n\
+ \n\
+.balign 4, 0 \n\
+_0808CDA0: \n\
+/* 0808CDA0 */ .word 0x00000CF4 \n\
+.ltorg \n\
+.syntax divided");
+

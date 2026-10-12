@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_laser_vision at 0x083E1E6C
+struct scene_laser_vision
+    /* Start  */ .word func_080C0824, 0x00000000
+    /* Paused */ .word func_080C09B8, 0x00000000
+    /* Update */ .word func_080C09C0, 0x00000000
+    /* Stop   */ .word func_080C09BC, 0x00000000
+    /* Script */ .word 0x083E1E00
+endstruct
+
+.incbin "microgames/laser_vision/laser_vision.bin", 36, 228

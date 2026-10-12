@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_airpain at 0x083E3AD8
+struct scene_airpain
+    /* Start  */ .word func_080CEBAC, 0x00000000
+    /* Paused */ .word func_080CF804, 0x00000000
+    /* Update */ .word func_080CF774, 0x00000000
+    /* Stop   */ .word func_080CF820, 0x00000000
+    /* Script */ .word 0x083E3A6C
+endstruct
+
+.incbin "microgames/airpain/airpain.bin", 36, 2400

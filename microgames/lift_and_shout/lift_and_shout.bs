@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_lift_and_shout at 0x083D1A48
+struct scene_lift_and_shout
+    /* Start  */ .word func_08046B54, 0x00000000
+    /* Paused */ .word func_08046FE4, 0x00000000
+    /* Update */ .word func_08046FB4, 0x00000000
+    /* Stop   */ .word func_08046FF8, 0x00000000
+    /* Script */ .word 0x083D19DC
+endstruct
+
+.incbin "microgames/lift_and_shout/lift_and_shout.bin", 36, 452

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_fries_with_that at 0x083D6324
+struct scene_fries_with_that
+    /* Start  */ .word func_0806B6F4, 0x00000000
+    /* Paused */ .word func_0806B998, 0x00000000
+    /* Update */ .word func_0806B774, 0x00000000
+    /* Stop   */ .word func_0806B99C, 0x00000000
+    /* Script */ .word 0x083D62A0
+endstruct
+
+.incbin "microgames/fries_with_that/fries_with_that.bin", 36, 240

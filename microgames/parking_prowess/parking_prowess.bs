@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_parking_prowess at 0x083CF870
+struct scene_parking_prowess
+    /* Start  */ .word func_0803A09C, 0x00000000
+    /* Paused */ .word func_0803A758, 0x00000000
+    /* Update */ .word func_0803A6DC, 0x00000000
+    /* Stop   */ .word func_0803A75C, 0x00000000
+    /* Script */ .word 0x083CF804
+endstruct
+
+.incbin "microgames/parking_prowess/parking_prowess.bin", 36, 348

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_arrow_space at 0x083CCC28
+struct scene_arrow_space
+    /* Start  */ .word func_0802BAA4, 0x00000000
+    /* Paused */ .word func_0802C0D0, 0x00000000
+    /* Update */ .word func_0802C068, 0x00000000
+    /* Stop   */ .word func_0802C0DC, 0x00000000
+    /* Script */ .word 0x083CCBBC
+endstruct
+
+.incbin "microgames/arrow_space/arrow_space.bin", 36, 264

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_button_masher at 0x083D8E44
+struct scene_button_masher
+    /* Start  */ .word func_0808166C, 0x00000000
+    /* Paused */ .word func_08081FD0, 0x00000000
+    /* Update */ .word func_08081F94, 0x00000000
+    /* Stop   */ .word func_08081FD4, 0x00000000
+    /* Script */ .word 0x083D8DC0
+endstruct
+
+.incbin "microgames/button_masher/button_masher.bin", 36, 348

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_pro_curling at 0x083CFC48
+struct scene_pro_curling
+    /* Start  */ .word func_0803C154, 0x00000000
+    /* Paused */ .word func_0803C6D0, 0x00000000
+    /* Update */ .word func_0803C6A0, 0x00000000
+    /* Stop   */ .word func_0803C6E4, 0x00000000
+    /* Script */ .word 0x083CFBDC
+endstruct
+
+.incbin "microgames/pro_curling/pro_curling.bin", 36, 272

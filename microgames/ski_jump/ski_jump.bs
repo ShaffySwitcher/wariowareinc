@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ski_jump at 0x083D1C30
+struct scene_ski_jump
+    /* Start  */ .word func_0804704C, 0x00000000
+    /* Paused */ .word func_080477E0, 0x00000000
+    /* Update */ .word func_08047784, 0x00000000
+    /* Stop   */ .word func_080477E4, 0x00000000
+    /* Script */ .word 0x083D1BC4
+endstruct
+
+.incbin "microgames/ski_jump/ski_jump.bin", 36, 596

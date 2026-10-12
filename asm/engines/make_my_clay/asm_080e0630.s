@@ -1,0 +1,248 @@
+/* Generated from asm/asm_080e0630.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080E0630 \n\
+/* 080E0630 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 080E0632 */ SUB SP, #0X14 \n\
+/* 080E0634 */ BL get_current_mem_id \n\
+/* 080E0638 */ LSLS R0, R0, #0X10 \n\
+/* 080E063A */ LSRS R0, R0, #0X10 \n\
+/* 080E063C */ LDR R1, _080E07D8 \n\
+/* 080E063E */ MOVS R2, #0X80 \n\
+/* 080E0640 */ LSLS R2, R2, #6 \n\
+/* 080E0642 */ BL start_load_gfx_table_task \n\
+/* 080E0646 */ MOVS R0, #0 \n\
+/* 080E0648 */ BL scene_set_video_mode \n\
+/* 080E064C */ MOVS R0, #1 \n\
+/* 080E064E */ BL scene_show_bg_layer \n\
+/* 080E0652 */ MOVS R0, #2 \n\
+/* 080E0654 */ BL scene_show_bg_layer \n\
+/* 080E0658 */ MOVS R0, #3 \n\
+/* 080E065A */ BL scene_hide_bg_layer \n\
+/* 080E065E */ MOVS R0, #1 \n\
+/* 080E0660 */ MOVS R1, #0 \n\
+/* 080E0662 */ MOVS R2, #0 \n\
+/* 080E0664 */ BL scene_set_bg_layer_pos \n\
+/* 080E0668 */ MOVS R0, #2 \n\
+/* 080E066A */ MOVS R1, #0 \n\
+/* 080E066C */ MOVS R2, #0 \n\
+/* 080E066E */ BL scene_set_bg_layer_pos \n\
+/* 080E0672 */ MOVS R0, #1 \n\
+/* 080E0674 */ MOVS R1, #2 \n\
+/* 080E0676 */ MOVS R2, #0X1D \n\
+/* 080E0678 */ MOVS R3, #1 \n\
+/* 080E067A */ BL scene_set_bg_layer_controls \n\
+/* 080E067E */ MOVS R0, #2 \n\
+/* 080E0680 */ MOVS R1, #0 \n\
+/* 080E0682 */ MOVS R2, #0X1E \n\
+/* 080E0684 */ MOVS R3, #2 \n\
+/* 080E0686 */ BL scene_set_bg_layer_controls \n\
+/* 080E068A */ MOVS R0, #1 \n\
+/* 080E068C */ BL func_0800A0C4 \n\
+/* 080E0690 */ LDR R3, _080E07DC \n\
+/* 080E0692 */ LDR R1, [R3] \n\
+/* 080E0694 */ MOVS R2, #0XF0 \n\
+/* 080E0696 */ LSLS R2, R2, #7 \n\
+/* 080E0698 */ STR R2, [R1, #4] \n\
+/* 080E069A */ LDR R0, _080E07E0 \n\
+/* 080E069C */ LDRH R0, [R0, #2] \n\
+/* 080E069E */ LSLS R0, R0, #8 \n\
+/* 080E06A0 */ STR R0, [R1, #8] \n\
+/* 080E06A2 */ STR R2, [R1, #0X10] \n\
+/* 080E06A4 */ LDR R0, _080E07E4 \n\
+/* 080E06A6 */ STR R0, [R1, #0X14] \n\
+/* 080E06A8 */ ASRS R0, R0, #8 \n\
+/* 080E06AA */ STRH R0, [R1, #0X18] \n\
+/* 080E06AC */ MOVS R6, #0 \n\
+/* 080E06AE */ ADDS R5, R3, #0 \n\
+_080E06B0: \n\
+/* 080E06B0 */ MOVS R0, #0XF0 \n\
+/* 080E06B2 */ BL get_random_range \n\
+/* 080E06B6 */ LDR R1, [R5] \n\
+/* 080E06B8 */ LSLS R4, R6, #3 \n\
+/* 080E06BA */ ADDS R1, #0X24 \n\
+/* 080E06BC */ ADDS R1, R4 \n\
+/* 080E06BE */ LSLS R0, R0, #0X10 \n\
+/* 080E06C0 */ LSRS R0, R0, #8 \n\
+/* 080E06C2 */ MOVS R2, #0XA0 \n\
+/* 080E06C4 */ LSLS R2, R2, #8 \n\
+/* 080E06C6 */ ADDS R0, R2 \n\
+/* 080E06C8 */ STR R0, [R1] \n\
+/* 080E06CA */ MOVS R0, #0XA0 \n\
+/* 080E06CC */ BL get_random_range \n\
+/* 080E06D0 */ LDR R1, [R5] \n\
+/* 080E06D2 */ ADDS R1, #0X28 \n\
+/* 080E06D4 */ ADDS R1, R4 \n\
+/* 080E06D6 */ LSLS R0, R0, #0X10 \n\
+/* 080E06D8 */ LSRS R0, R0, #8 \n\
+/* 080E06DA */ RSBS R0, R0, #0 \n\
+/* 080E06DC */ STR R0, [R1] \n\
+/* 080E06DE */ ADDS R0, R6, #1 \n\
+/* 080E06E0 */ LSLS R0, R0, #0X18 \n\
+/* 080E06E2 */ LSRS R6, R0, #0X18 \n\
+/* 080E06E4 */ CMP R6, #3 \n\
+/* 080E06E6 */ BLS _080E06B0 \n\
+/* 080E06E8 */ LDR R5, _080E07DC \n\
+/* 080E06EA */ LDR R0, [R5] \n\
+/* 080E06EC */ ADDS R0, #0X44 \n\
+/* 080E06EE */ MOVS R6, #0 \n\
+/* 080E06F0 */ STRB R6, [R0] \n\
+/* 080E06F2 */ LDR R0, [R5] \n\
+/* 080E06F4 */ ADDS R2, R0, #0 \n\
+/* 080E06F6 */ ADDS R2, #0X46 \n\
+/* 080E06F8 */ MOVS R1, #0 \n\
+/* 080E06FA */ STRH R6, [R2] \n\
+/* 080E06FC */ ADDS R0, #0X48 \n\
+/* 080E06FE */ STRB R1, [R0] \n\
+/* 080E0700 */ LDR R0, [R5] \n\
+/* 080E0702 */ ADDS R0, #0X49 \n\
+/* 080E0704 */ STRB R1, [R0] \n\
+/* 080E0706 */ LDR R0, [R5] \n\
+/* 080E0708 */ ADDS R0, #0X4A \n\
+/* 080E070A */ STRB R1, [R0] \n\
+/* 080E070C */ LDR R0, [R5] \n\
+/* 080E070E */ STRB R1, [R0] \n\
+/* 080E0710 */ LDR R0, [R5] \n\
+/* 080E0712 */ STRB R1, [R0, #1] \n\
+/* 080E0714 */ LDR R4, _080E07E8 \n\
+/* 080E0716 */ BL get_current_language \n\
+/* 080E071A */ LSLS R0, R0, #2 \n\
+/* 080E071C */ ADDS R0, R4 \n\
+/* 080E071E */ LDR R0, [R0] \n\
+/* 080E0720 */ BL func_0800BB74 \n\
+/* 080E0724 */ LDR R4, _080E07EC \n\
+/* 080E0726 */ LDR R0, [R4] \n\
+/* 080E0728 */ LDR R1, _080E07F0 \n\
+/* 080E072A */ LDR R2, [R5] \n\
+/* 080E072C */ LDR R3, [R2, #4] \n\
+/* 080E072E */ LSLS R3, R3, #8 \n\
+/* 080E0730 */ ASRS R3, R3, #0X10 \n\
+/* 080E0732 */ LDR R2, [R2, #8] \n\
+/* 080E0734 */ LSLS R2, R2, #8 \n\
+/* 080E0736 */ ASRS R2, R2, #0X10 \n\
+/* 080E0738 */ STR R2, [SP] \n\
+/* 080E073A */ LDR R2, _080E07F4 \n\
+/* 080E073C */ STR R2, [SP, #4] \n\
+/* 080E073E */ MOVS R2, #1 \n\
+/* 080E0740 */ STR R2, [SP, #8] \n\
+/* 080E0742 */ STR R6, [SP, #0XC] \n\
+/* 080E0744 */ STR R6, [SP, #0X10] \n\
+/* 080E0746 */ MOVS R2, #0 \n\
+/* 080E0748 */ BL sprite_create \n\
+/* 080E074C */ LDR R1, [R5] \n\
+/* 080E074E */ STRH R0, [R1, #2] \n\
+/* 080E0750 */ LDR R0, [R4] \n\
+/* 080E0752 */ MOVS R2, #2 \n\
+/* 080E0754 */ LDRSH R1, [R1, R2] \n\
+/* 080E0756 */ MOVS R2, #1 \n\
+/* 080E0758 */ BL sprite_set_enable_updates \n\
+/* 080E075C */ LDR R0, [R4] \n\
+/* 080E075E */ LDR R1, _080E07F8 \n\
+/* 080E0760 */ LDR R2, [R5] \n\
+/* 080E0762 */ LDR R3, [R2, #0X10] \n\
+/* 080E0764 */ LSLS R3, R3, #8 \n\
+/* 080E0766 */ ASRS R3, R3, #0X10 \n\
+/* 080E0768 */ LDR R2, [R2, #0X14] \n\
+/* 080E076A */ LSLS R2, R2, #8 \n\
+/* 080E076C */ ASRS R2, R2, #0X10 \n\
+/* 080E076E */ STR R2, [SP] \n\
+/* 080E0770 */ LDR R2, _080E07FC \n\
+/* 080E0772 */ STR R2, [SP, #4] \n\
+/* 080E0774 */ STR R6, [SP, #8] \n\
+/* 080E0776 */ STR R6, [SP, #0XC] \n\
+/* 080E0778 */ STR R6, [SP, #0X10] \n\
+/* 080E077A */ MOVS R2, #0 \n\
+/* 080E077C */ BL sprite_create \n\
+/* 080E0780 */ LDR R1, [R5] \n\
+/* 080E0782 */ STRH R0, [R1, #0XC] \n\
+/* 080E0784 */ ADDS R7, R5, #0 \n\
+/* 080E0786 */ MOVS R5, #0 \n\
+_080E0788: \n\
+/* 080E0788 */ LDR R0, _080E07EC \n\
+/* 080E078A */ LDR R0, [R0] \n\
+/* 080E078C */ LDR R2, [R7] \n\
+/* 080E078E */ LSLS R4, R6, #3 \n\
+/* 080E0790 */ ADDS R1, R2, #0 \n\
+/* 080E0792 */ ADDS R1, #0X24 \n\
+/* 080E0794 */ ADDS R1, R4 \n\
+/* 080E0796 */ LDR R3, [R1] \n\
+/* 080E0798 */ LSLS R3, R3, #8 \n\
+/* 080E079A */ ASRS R3, R3, #0X10 \n\
+/* 080E079C */ ADDS R2, #0X28 \n\
+/* 080E079E */ ADDS R2, R4 \n\
+/* 080E07A0 */ LDR R1, [R2] \n\
+/* 080E07A2 */ LSLS R1, R1, #8 \n\
+/* 080E07A4 */ ASRS R1, R1, #0X10 \n\
+/* 080E07A6 */ STR R1, [SP] \n\
+/* 080E07A8 */ LDR R1, _080E0800 \n\
+/* 080E07AA */ STR R1, [SP, #4] \n\
+/* 080E07AC */ STR R5, [SP, #8] \n\
+/* 080E07AE */ STR R5, [SP, #0XC] \n\
+/* 080E07B0 */ STR R5, [SP, #0X10] \n\
+/* 080E07B2 */ LDR R1, =D_0839CF54 \n\
+/* 080E07B4 */ MOVS R2, #0 \n\
+/* 080E07B6 */ BL sprite_create \n\
+/* 080E07BA */ LDR R1, [R7] \n\
+/* 080E07BC */ LSLS R2, R6, #1 \n\
+/* 080E07BE */ ADDS R1, #0X1A \n\
+/* 080E07C0 */ ADDS R1, R2 \n\
+/* 080E07C2 */ STRH R0, [R1] \n\
+/* 080E07C4 */ ADDS R0, R6, #1 \n\
+/* 080E07C6 */ LSLS R0, R0, #0X18 \n\
+/* 080E07C8 */ LSRS R6, R0, #0X18 \n\
+/* 080E07CA */ CMP R6, #3 \n\
+/* 080E07CC */ BLS _080E0788 \n\
+/* 080E07CE */ ADD SP, #0X14 \n\
+/* 080E07D0 */ POP {R4, R5, R6, R7} \n\
+/* 080E07D2 */ POP {R0} \n\
+/* 080E07D4 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080E0804: \n\
+/* 080E0804 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_080E07D8: \n\
+/* 080E07D8 */ .word D_083E81B4 \n\
+ \n\
+.balign 4, 0 \n\
+_080E07DC: \n\
+/* 080E07DC */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080E07E0: \n\
+/* 080E07E0 */ .word D_087C4338 \n\
+ \n\
+.balign 4, 0 \n\
+_080E07E4: \n\
+/* 080E07E4 */ .word 0xFFFFE800 \n\
+ \n\
+.balign 4, 0 \n\
+_080E07E8: \n\
+/* 080E07E8 */ .word D_083E822C \n\
+ \n\
+.balign 4, 0 \n\
+_080E07EC: \n\
+/* 080E07EC */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_080E07F0: \n\
+/* 080E07F0 */ .word D_0839CEBC \n\
+ \n\
+.balign 4, 0 \n\
+_080E07F4: \n\
+/* 080E07F4 */ .word 0x00008014 \n\
+ \n\
+.balign 4, 0 \n\
+_080E07F8: \n\
+/* 080E07F8 */ .word D_0839CF44 \n\
+ \n\
+.balign 4, 0 \n\
+_080E07FC: \n\
+/* 080E07FC */ .word 0x0000401E \n\
+ \n\
+.balign 4, 0 \n\
+_080E0800: \n\
+/* 080E0800 */ .word 0x0000801E \n\
+.ltorg \n\
+.syntax divided");

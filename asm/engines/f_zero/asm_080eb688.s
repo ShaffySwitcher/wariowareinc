@@ -1,0 +1,198 @@
+/* Generated from asm/asm_080eb688.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_080EB688 \n\
+/* 080EB688 */ PUSH {R4, R5, R6, LR} \n\
+/* 080EB68A */ MOV R6, SB \n\
+/* 080EB68C */ MOV R5, R8 \n\
+/* 080EB68E */ PUSH {R5, R6} \n\
+/* 080EB690 */ SUB SP, #0X14 \n\
+/* 080EB692 */ BL get_current_mem_id \n\
+/* 080EB696 */ LSLS R0, R0, #0X10 \n\
+/* 080EB698 */ LSRS R0, R0, #0X10 \n\
+/* 080EB69A */ LDR R1, _080EB7E4 \n\
+/* 080EB69C */ MOVS R2, #0X80 \n\
+/* 080EB69E */ LSLS R2, R2, #6 \n\
+/* 080EB6A0 */ BL start_load_gfx_table_task \n\
+/* 080EB6A4 */ MOVS R0, #1 \n\
+/* 080EB6A6 */ BL scene_set_video_mode \n\
+/* 080EB6AA */ MOVS R0, #1 \n\
+/* 080EB6AC */ BL scene_show_bg_layer \n\
+/* 080EB6B0 */ MOVS R0, #2 \n\
+/* 080EB6B2 */ BL scene_show_bg_layer \n\
+/* 080EB6B6 */ MOVS R0, #3 \n\
+/* 080EB6B8 */ BL scene_hide_bg_layer \n\
+/* 080EB6BC */ MOVS R0, #1 \n\
+/* 080EB6BE */ MOVS R1, #0 \n\
+/* 080EB6C0 */ MOVS R2, #0 \n\
+/* 080EB6C2 */ BL scene_set_bg_layer_pos \n\
+/* 080EB6C6 */ MOVS R0, #2 \n\
+/* 080EB6C8 */ MOVS R1, #0 \n\
+/* 080EB6CA */ MOVS R2, #0 \n\
+/* 080EB6CC */ BL scene_set_bg_layer_pos \n\
+/* 080EB6D0 */ MOVS R0, #1 \n\
+/* 080EB6D2 */ MOVS R1, #0 \n\
+/* 080EB6D4 */ MOVS R2, #0X1D \n\
+/* 080EB6D6 */ MOVS R3, #1 \n\
+/* 080EB6D8 */ BL scene_set_bg_layer_controls \n\
+/* 080EB6DC */ LDR R3, _080EB7E8 \n\
+/* 080EB6DE */ MOVS R0, #2 \n\
+/* 080EB6E0 */ MOVS R1, #1 \n\
+/* 080EB6E2 */ MOVS R2, #0XC \n\
+/* 080EB6E4 */ BL scene_set_bg_layer_controls \n\
+/* 080EB6E8 */ MOVS R0, #0 \n\
+/* 080EB6EA */ BL func_0800A0C4 \n\
+/* 080EB6EE */ BL func_0800A024 \n\
+/* 080EB6F2 */ ADDS R3, R0, #0 \n\
+/* 080EB6F4 */ LDR R6, _080EB7EC \n\
+/* 080EB6F6 */ LDR R2, [R6] \n\
+/* 080EB6F8 */ ADDS R0, R3, #3 \n\
+/* 080EB6FA */ MOV SB, R0 \n\
+/* 080EB6FC */ STR R0, [R2, #0X14] \n\
+/* 080EB6FE */ ADDS R2, #0X2C \n\
+/* 080EB700 */ ADDS R3, #4 \n\
+/* 080EB702 */ MOVS R0, #0X88 \n\
+/* 080EB704 */ LSLS R0, R0, #8 \n\
+/* 080EB706 */ STR R0, [SP] \n\
+/* 080EB708 */ STR R3, [SP, #4] \n\
+/* 080EB70A */ MOVS R0, #8 \n\
+/* 080EB70C */ MOVS R1, #0X98 \n\
+/* 080EB70E */ BL func_0800D254 \n\
+/* 080EB712 */ ADDS R4, R0, #0 \n\
+/* 080EB714 */ LDR R0, [R6] \n\
+/* 080EB716 */ STR R4, [R0, #0X28] \n\
+/* 080EB718 */ MOVS R1, #0X80 \n\
+/* 080EB71A */ LSLS R1, R1, #9 \n\
+/* 080EB71C */ MOV R8, R1 \n\
+/* 080EB71E */ MOVS R2, #0X80 \n\
+/* 080EB720 */ LSLS R2, R2, #7 \n\
+/* 080EB722 */ ADDS R0, R4, #0 \n\
+/* 080EB724 */ MOVS R3, #0 \n\
+/* 080EB726 */ BL func_0800D75C \n\
+/* 080EB72A */ MOVS R2, #0XA \n\
+/* 080EB72C */ RSBS R2, R2, #0 \n\
+/* 080EB72E */ ADDS R0, R4, #0 \n\
+/* 080EB730 */ MOVS R1, #0X40 \n\
+/* 080EB732 */ BL func_0800D764 \n\
+/* 080EB736 */ ADDS R0, R4, #0 \n\
+/* 080EB738 */ MOVS R1, #0X24 \n\
+/* 080EB73A */ MOVS R2, #0X24 \n\
+/* 080EB73C */ BL func_0800D76C \n\
+/* 080EB740 */ LDR R0, [R6] \n\
+/* 080EB742 */ LDR R1, _080EB7F0 \n\
+/* 080EB744 */ ADDS R0, R1 \n\
+/* 080EB746 */ MOVS R5, #0 \n\
+/* 080EB748 */ STRB R5, [R0] \n\
+/* 080EB74A */ ADDS R0, R4, #0 \n\
+/* 080EB74C */ MOV R1, SB \n\
+/* 080EB74E */ BL func_080EBB1C \n\
+/* 080EB752 */ LDR R2, _080EB7F4 \n\
+/* 080EB754 */ MOVS R1, #0X80 \n\
+/* 080EB756 */ LSLS R1, R1, #4 \n\
+/* 080EB758 */ STR R1, [SP] \n\
+/* 080EB75A */ MOVS R0, #0XC8 \n\
+/* 080EB75C */ LSLS R0, R0, #7 \n\
+/* 080EB75E */ STR R0, [SP, #4] \n\
+/* 080EB760 */ STR R1, [SP, #8] \n\
+/* 080EB762 */ ADDS R0, R4, #0 \n\
+/* 080EB764 */ ADDS R1, R2, #0 \n\
+/* 080EB766 */ MOV R3, R8 \n\
+/* 080EB768 */ BL func_0800D9C4 \n\
+/* 080EB76C */ LSLS R0, R0, #0X10 \n\
+/* 080EB76E */ ASRS R0, R0, #0X10 \n\
+/* 080EB770 */ LDR R2, [R6] \n\
+/* 080EB772 */ LDR R3, [R4, #0X50] \n\
+/* 080EB774 */ LSLS R1, R0, #1 \n\
+/* 080EB776 */ ADDS R1, R0 \n\
+/* 080EB778 */ LSLS R1, R1, #4 \n\
+/* 080EB77A */ ADDS R1, R3 \n\
+/* 080EB77C */ LDRH R1, [R1] \n\
+/* 080EB77E */ STRH R1, [R2] \n\
+/* 080EB780 */ STRH R0, [R2, #2] \n\
+/* 080EB782 */ STR R5, [R2, #4] \n\
+/* 080EB784 */ LDR R0, _080EB7F8 \n\
+/* 080EB786 */ LDR R0, [R0] \n\
+/* 080EB788 */ LDRH R1, [R0, #0X16] \n\
+/* 080EB78A */ LSLS R0, R1, #2 \n\
+/* 080EB78C */ ADDS R0, R1 \n\
+/* 080EB78E */ LSLS R0, R0, #1 \n\
+/* 080EB790 */ STR R0, [R2, #8] \n\
+/* 080EB792 */ MOVS R0, #0X14 \n\
+/* 080EB794 */ STR R0, [R2, #0XC] \n\
+/* 080EB796 */ STR R5, [R2, #0X10] \n\
+/* 080EB798 */ LDR R0, _080EB7FC \n\
+/* 080EB79A */ LDR R0, [R0] \n\
+/* 080EB79C */ LDR R1, _080EB800 \n\
+/* 080EB79E */ LDR R2, _080EB804 \n\
+/* 080EB7A0 */ MOVS R4, #0 \n\
+/* 080EB7A2 */ LDRSH R3, [R2, R4] \n\
+/* 080EB7A4 */ MOVS R4, #2 \n\
+/* 080EB7A6 */ LDRSH R2, [R2, R4] \n\
+/* 080EB7A8 */ STR R2, [SP] \n\
+/* 080EB7AA */ MOVS R2, #0X82 \n\
+/* 080EB7AC */ LSLS R2, R2, #7 \n\
+/* 080EB7AE */ STR R2, [SP, #4] \n\
+/* 080EB7B0 */ STR R5, [SP, #8] \n\
+/* 080EB7B2 */ STR R5, [SP, #0XC] \n\
+/* 080EB7B4 */ STR R5, [SP, #0X10] \n\
+/* 080EB7B6 */ MOVS R2, #1 \n\
+/* 080EB7B8 */ BL sprite_create \n\
+/* 080EB7BC */ LDR R1, [R6] \n\
+/* 080EB7BE */ STRH R0, [R1, #0X18] \n\
+/* 080EB7C0 */ STR R5, [R1, #0X24] \n\
+/* 080EB7C2 */ STR R5, [R1, #0X20] \n\
+/* 080EB7C4 */ LDR R4, =D_083E9338 \n\
+/* 080EB7C6 */ BL get_current_language \n\
+/* 080EB7CA */ LSLS R0, R0, #2 \n\
+/* 080EB7CC */ ADDS R0, R4 \n\
+/* 080EB7CE */ LDR R0, [R0] \n\
+/* 080EB7D0 */ BL func_0800BB74 \n\
+/* 080EB7D4 */ ADD SP, #0X14 \n\
+/* 080EB7D6 */ POP {R3, R4} \n\
+/* 080EB7D8 */ MOV R8, R3 \n\
+/* 080EB7DA */ MOV SB, R4 \n\
+/* 080EB7DC */ POP {R4, R5, R6} \n\
+/* 080EB7DE */ POP {R0} \n\
+/* 080EB7E0 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080EB808: \n\
+/* 080EB808 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_080EB7E4: \n\
+/* 080EB7E4 */ .word D_083E92B4 \n\
+ \n\
+.balign 4, 0 \n\
+_080EB7E8: \n\
+/* 080EB7E8 */ .word 0x0000A082 \n\
+ \n\
+.balign 4, 0 \n\
+_080EB7EC: \n\
+/* 080EB7EC */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_080EB7F0: \n\
+/* 080EB7F0 */ .word 0x00000A2C \n\
+ \n\
+.balign 4, 0 \n\
+_080EB7F4: \n\
+/* 080EB7F4 */ .word D_083A2800 \n\
+ \n\
+.balign 4, 0 \n\
+_080EB7F8: \n\
+/* 080EB7F8 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_080EB7FC: \n\
+/* 080EB7FC */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_080EB800: \n\
+/* 080EB800 */ .word D_083A2950 \n\
+ \n\
+.balign 4, 0 \n\
+_080EB804: \n\
+/* 080EB804 */ .word D_087DB3FC \n\
+.ltorg \n\
+.syntax divided");

@@ -1,0 +1,121 @@
+/* Generated from asm/asm_0805ca74.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0805CA74 \n\
+/* 0805CA74 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0805CA76 */ MOV R7, SL \n\
+/* 0805CA78 */ MOV R6, SB \n\
+/* 0805CA7A */ MOV R5, R8 \n\
+/* 0805CA7C */ PUSH {R5, R6, R7} \n\
+/* 0805CA7E */ BL get_current_language \n\
+/* 0805CA82 */ MOV SB, R0 \n\
+/* 0805CA84 */ LDR R2, _0805CB3C \n\
+/* 0805CA86 */ LDR R6, _0805CB40 \n\
+/* 0805CA88 */ LDR R0, [R6] \n\
+/* 0805CA8A */ LDRB R1, [R0, #0X15] \n\
+/* 0805CA8C */ ADDS R1, R2 \n\
+/* 0805CA8E */ LDRB R4, [R1] \n\
+/* 0805CA90 */ LDRB R1, [R0, #0X14] \n\
+/* 0805CA92 */ ADDS R4, R1 \n\
+/* 0805CA94 */ LSLS R4, R4, #2 \n\
+/* 0805CA96 */ LDR R1, _0805CB44 \n\
+/* 0805CA98 */ ADDS R4, R1 \n\
+/* 0805CA9A */ ADDS R0, #0X4E \n\
+/* 0805CA9C */ LDR R7, _0805CB48 \n\
+/* 0805CA9E */ ADDS R1, R7, #0 \n\
+/* 0805CAA0 */ BL func_0805C5D8 \n\
+/* 0805CAA4 */ LDR R1, _0805CB4C \n\
+/* 0805CAA6 */ MOV SL, R1 \n\
+/* 0805CAA8 */ BL func_0805C5D8 \n\
+/* 0805CAAC */ ADDS R1, R4, #0 \n\
+/* 0805CAAE */ BL func_0805C5D8 \n\
+/* 0805CAB2 */ LDR R5, _0805CB50 \n\
+/* 0805CAB4 */ ADDS R1, R5, #0 \n\
+/* 0805CAB6 */ BL func_0805C5D8 \n\
+/* 0805CABA */ LDR R2, _0805CB54 \n\
+/* 0805CABC */ MOV R8, R2 \n\
+/* 0805CABE */ LDR R1, [R2] \n\
+/* 0805CAC0 */ BL func_0805C5D8 \n\
+/* 0805CAC4 */ LDR R0, [R6] \n\
+/* 0805CAC6 */ ADDS R0, #0X6E \n\
+/* 0805CAC8 */ ADDS R1, R5, #0 \n\
+/* 0805CACA */ BL func_0805C5D8 \n\
+/* 0805CACE */ MOV R2, R8 \n\
+/* 0805CAD0 */ LDR R1, [R2, #4] \n\
+/* 0805CAD2 */ BL func_0805C5D8 \n\
+/* 0805CAD6 */ ADDS R1, R7, #0 \n\
+/* 0805CAD8 */ BL func_0805C5D8 \n\
+/* 0805CADC */ MOV R1, SL \n\
+/* 0805CADE */ BL func_0805C5D8 \n\
+/* 0805CAE2 */ ADDS R1, R4, #0 \n\
+/* 0805CAE4 */ BL func_0805C5D8 \n\
+/* 0805CAE8 */ ADDS R1, R5, #0 \n\
+/* 0805CAEA */ BL func_0805C5D8 \n\
+/* 0805CAEE */ LDR R1, =D_0811CDA0 \n\
+/* 0805CAF0 */ BL func_0805C5D8 \n\
+/* 0805CAF4 */ LDR R0, [R6] \n\
+/* 0805CAF6 */ ADDS R0, #0X8E \n\
+/* 0805CAF8 */ ADDS R1, R5, #0 \n\
+/* 0805CAFA */ BL func_0805C5D8 \n\
+/* 0805CAFE */ LDR R0, [R6] \n\
+/* 0805CB00 */ ADDS R0, #0XAE \n\
+/* 0805CB02 */ ADDS R1, R5, #0 \n\
+/* 0805CB04 */ BL func_0805C5D8 \n\
+/* 0805CB08 */ LDR R0, [R6] \n\
+/* 0805CB0A */ ADDS R0, #0XCE \n\
+/* 0805CB0C */ ADDS R1, R5, #0 \n\
+/* 0805CB0E */ BL func_0805C5D8 \n\
+/* 0805CB12 */ LDR R0, [R6] \n\
+/* 0805CB14 */ ADDS R0, #0XEE \n\
+/* 0805CB16 */ ADDS R1, R5, #0 \n\
+/* 0805CB18 */ BL func_0805C5D8 \n\
+/* 0805CB1C */ MOV R0, SB \n\
+/* 0805CB1E */ LSLS R0, R0, #5 \n\
+/* 0805CB20 */ MOV SB, R0 \n\
+/* 0805CB22 */ MOVS R1, #0X4E \n\
+/* 0805CB24 */ ADD SB, R1 \n\
+/* 0805CB26 */ LDR R0, [R6] \n\
+/* 0805CB28 */ ADD R0, SB \n\
+/* 0805CB2A */ BL func_0800BB74 \n\
+/* 0805CB2E */ POP {R3, R4, R5} \n\
+/* 0805CB30 */ MOV R8, R3 \n\
+/* 0805CB32 */ MOV SB, R4 \n\
+/* 0805CB34 */ MOV SL, R5 \n\
+/* 0805CB36 */ POP {R4, R5, R6, R7} \n\
+/* 0805CB38 */ POP {R0} \n\
+/* 0805CB3A */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB58: \n\
+/* 0805CB58 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB3C: \n\
+/* 0805CB3C */ .word func_083D49A4 \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB40: \n\
+/* 0805CB40 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB44: \n\
+/* 0805CB44 */ .word D_083D4914 \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB48: \n\
+/* 0805CB48 */ .word D_0811CD94 \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB4C: \n\
+/* 0805CB4C */ .word D_0811CD98 \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB50: \n\
+/* 0805CB50 */ .word D_0811CD9C \n\
+ \n\
+.balign 4, 0 \n\
+_0805CB54: \n\
+/* 0805CB54 */ .word D_083D4AB8 \n\
+.ltorg \n\
+.syntax divided");
+

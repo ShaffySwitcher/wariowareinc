@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_flower_shower at 0x083CD8D4
+struct scene_flower_shower
+    /* Start  */ .word func_0802FBC8, 0x00000000
+    /* Paused */ .word func_080307CC, 0x00000000
+    /* Update */ .word func_080307A4, 0x00000000
+    /* Stop   */ .word func_080307D8, 0x00000000
+    /* Script */ .word 0x083CD85C
+endstruct
+
+.incbin "microgames/flower_shower/flower_shower.bin", 36, 264

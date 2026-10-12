@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_leafy_greens at 0x083E6738
+struct scene_leafy_greens
+    /* Start  */ .word func_080DD3B0, 0x00000000
+    /* Paused */ .word func_080DD4C4, 0x00000000
+    /* Update */ .word func_080DD48C, 0x00000000
+    /* Stop   */ .word func_080DD4C8, 0x00000000
+    /* Script */ .word 0x083E66C0
+endstruct
+
+.incbin "microgames/leafy_greens/leafy_greens.bin", 36, 464

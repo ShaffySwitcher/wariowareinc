@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_sloppy_salon at 0x083CCE78
+struct scene_sloppy_salon
+    /* Start  */ .word func_0802C4F0, 0x00000000
+    /* Paused */ .word func_0802CA78, 0x00000000
+    /* Update */ .word func_0802C774, 0x00000000
+    /* Stop   */ .word func_0802CA84, 0x00000000
+    /* Script */ .word 0x083CCE0C
+endstruct
+
+.incbin "microgames/sloppy_salon/sloppy_salon.bin", 36, 292

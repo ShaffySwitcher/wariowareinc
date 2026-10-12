@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_gold_digger at 0x083D3AB4
+struct scene_gold_digger
+    /* Start  */ .word func_08054BF4, 0x00000000
+    /* Paused */ .word func_080550E4, 0x00000000
+    /* Update */ .word func_080550C4, 0x00000000
+    /* Stop   */ .word func_080550E8, 0x00000000
+    /* Script */ .word 0x083D3A48
+endstruct
+
+.incbin "microgames/gold_digger/gold_digger.bin", 36, 268

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_wario_facial at 0x083E2350
+struct scene_wario_facial
+    /* Start  */ .word func_080C2B24, 0x00000000
+    /* Paused */ .word func_080C2BB8, 0x00000000
+    /* Update */ .word func_080C2BC0, 0x00000000
+    /* Stop   */ .word func_080C2BBC, 0x00000000
+    /* Script */ .word 0x083E22E4
+endstruct
+
+.incbin "microgames/wario_facial/wario_facial.bin", 36, 320

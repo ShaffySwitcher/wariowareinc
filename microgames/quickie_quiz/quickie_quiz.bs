@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_quickie_quiz at 0x083DBF14
+struct scene_quickie_quiz
+    /* Start  */ .word func_080A17C4, 0x00000000
+    /* Paused */ .word func_080A1CB4, 0x00000000
+    /* Update */ .word func_080A1C48, 0x00000000
+    /* Stop   */ .word func_080A1CB8, 0x00000000
+    /* Script */ .word 0x083DBEA8
+endstruct
+
+.incbin "microgames/quickie_quiz/quickie_quiz.bin", 36, 516

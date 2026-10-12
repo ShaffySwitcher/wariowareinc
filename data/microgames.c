@@ -4,245 +4,245 @@
 // Microgame scene data.
 
 extern struct SubScene scene_crazy_cars;
-extern struct SubScene scene_repellion;
-extern struct SubScene scene_wario_whirled;
-extern struct SubScene scene_log_chop;
-extern struct SubScene scene_space_escape;
-extern struct SubScene scene_jumpin_rope;
-extern struct SubScene scene_fruit_fall;
-extern struct SubScene scene_hare_scare;
-extern struct SubScene scene_munch_a_bunch;
-extern struct SubScene scene_space_fighter;
-extern struct SubScene scene_dodge_balls;
-extern struct SubScene scene_saving_face;
+#include "engines/repellion.h"
+#include "engines/wario_whirled.h"
+#include "engines/log_chop.h"
+#include "engines/space_escape.h"
+#include "engines/jumpin_rope.h"
+#include "engines/fruit_fall.h"
+#include "engines/hare_scare.h"
+#include "engines/munch_a_bunch.h"
+#include "engines/space_fighter.h"
+#include "engines/dodge_balls.h"
+#include "engines/saving_face.h"
 extern struct SubScene D_083CCB20;
-extern struct SubScene scene_arrow_space;
-extern struct SubScene scene_bam_fu;
-extern struct SubScene scene_sloppy_salon;
-extern struct SubScene scene_zero_to_hero;
-extern struct SubScene scene_lickety_split;
-extern struct SubScene scene_manic_mechanic;
-extern struct SubScene scene_heads_up;
-extern struct SubScene scene_diamond_dig;
-extern struct SubScene scene_terminal_velocity;
-extern struct SubScene scene_bad_man_bash;
-extern struct SubScene scene_flower_shower;
-extern struct SubScene scene_dry_eye;
-extern struct SubScene scene_go_fer_the_tater;
+#include "engines/arrow_space.h"
+#include "engines/bam_fu.h"
+#include "engines/sloppy_salon.h"
+#include "engines/zero_to_hero.h"
+#include "engines/lickety_split.h"
+#include "engines/manic_mechanic.h"
+#include "engines/heads_up.h"
+#include "engines/diamond_dig.h"
+#include "engines/terminal_velocity.h"
+#include "engines/bad_man_bash.h"
+#include "engines/flower_shower.h"
+#include "engines/dry_eye.h"
+#include "engines/go_fer_the_tater.h"
 extern struct SubScene D_083CDCF4;
-extern struct SubScene scene_getcha_groove_on;
-extern struct SubScene scene_picture_perfect;
-extern struct SubScene scene_hover_for_cover;
-extern struct SubScene scene_right_in_the_eye;
+#include "engines/getcha_groove_on.h"
+#include "engines/picture_perfect.h"
+#include "engines/hover_for_cover.h"
+#include "engines/right_in_the_eye.h"
 extern struct SubScene D_083CE39C;
-extern struct SubScene scene_noodle_cup;
-extern struct SubScene scene_ground_control;
-extern struct SubScene scene_fruit_shoot;
-extern struct SubScene scene_busted;
+#include "engines/noodle_cup.h"
+#include "engines/ground_control.h"
+#include "engines/fruit_shoot.h"
+#include "engines/busted.h"
 extern struct SubScene D_083CEAF4;
-extern struct SubScene scene_odd_man_out;
-extern struct SubScene scene_boing;
-extern struct SubScene scene_crash_test_dummy;
-extern struct SubScene scene_helmet;
-extern struct SubScene scene_page_panic;
-extern struct SubScene scene_hectic_highway;
-extern struct SubScene scene_batter_up;
-extern struct SubScene scene_petri_panic;
-extern struct SubScene scene_balancing_act;
-extern struct SubScene scene_parking_prowess;
-extern struct SubScene scene_spare_me;
-extern struct SubScene scene_mountain_mountin;
-extern struct SubScene scene_pro_curling;
-extern struct SubScene scene_hammer_toss;
-extern struct SubScene scene_ultra_machine;
+#include "engines/odd_man_out.h"
+#include "engines/boing.h"
+#include "engines/crash_test_dummy.h"
+#include "engines/helmet.h"
+#include "engines/page_panic.h"
+#include "engines/hectic_highway.h"
+#include "engines/batter_up.h"
+#include "engines/petri_panic.h"
+#include "engines/balancing_act.h"
+#include "engines/parking_prowess.h"
+#include "engines/spare_me.h"
+#include "engines/mountain_mountin.h"
+#include "engines/pro_curling.h"
+#include "engines/hammer_toss.h"
+#include "engines/ultra_machine.h"
 extern struct SubScene D_083D02B4;
-extern struct SubScene scene_electric_groove_fish;
-extern struct SubScene scene_veggie_might;
-extern struct SubScene scene_ring_my_bell;
-extern struct SubScene scene_hurry_hurdles;
-extern struct SubScene scene_hoppin_mad;
-extern struct SubScene scene_guy_scraper;
-extern struct SubScene scene_ufo_assist;
-extern struct SubScene scene_super_wario_bros;
-extern struct SubScene scene_bug_bite;
-extern struct SubScene scene_baseline_bash;
-extern struct SubScene scene_high_hoops;
-extern struct SubScene scene_gifted_goalie;
-extern struct SubScene scene_chiritorie;
-extern struct SubScene scene_praise_or_haze_ii;
+#include "engines/electric_groove_fish.h"
+#include "engines/veggie_might.h"
+#include "engines/ring_my_bell.h"
+#include "engines/hurry_hurdles.h"
+#include "engines/hoppin_mad.h"
+#include "engines/guy_scraper.h"
+#include "engines/ufo_assist.h"
+#include "engines/super_wario_bros.h"
+#include "engines/bug_bite.h"
+#include "engines/baseline_bash.h"
+#include "engines/high_hoops.h"
+#include "engines/gifted_goalie.h"
+#include "engines/chiritorie.h"
+#include "engines/praise_or_haze_ii.h"
 extern struct SubScene D_083D1914;
-extern struct SubScene scene_lift_and_shout;
-extern struct SubScene scene_ski_jump;
-extern struct SubScene scene_the_maze_that_pays;
+#include "engines/lift_and_shout.h"
+#include "engines/ski_jump.h"
+#include "engines/the_maze_that_pays.h"
 extern struct SubScene D_083D1FFC;
-extern struct SubScene scene_code_buster;
-extern struct SubScene scene_butterfingers;
-extern struct SubScene scene_classic_clash_i;
-extern struct SubScene scene_mouse_trap;
-extern struct SubScene scene_alien_ambush;
-extern struct SubScene scene_lazerblazer;
-extern struct SubScene scene_identity_crisis;
-extern struct SubScene scene_putt_for_dough;
-extern struct SubScene scene_bubble_trouble;
-extern struct SubScene scene_laser_outlaw;
-extern struct SubScene scene_hogans_alley;
-extern struct SubScene scene_mug_shot;
-extern struct SubScene scene_mars_ball_destroy;
-extern struct SubScene scene_wild_gunman;
-extern struct SubScene scene_duck_hunt;
-extern struct SubScene scene_classic_clash_ii;
-extern struct SubScene scene_pompeii_back;
-extern struct SubScene scene_balloon_fight;
-extern struct SubScene scene_coconut_catapult;
-extern struct SubScene scene_sunny_side_up;
-extern struct SubScene scene_classic_clash;
-extern struct SubScene scene_gold_digger;
-extern struct SubScene scene_stack_up;
-extern struct SubScene scene_scooter_commuter;
-extern struct SubScene scene_air_supplies;
-extern struct SubScene scene_donkey_kong;
-extern struct SubScene scene_scoot_or_die;
-extern struct SubScene scene_punch_out;
-extern struct SubScene scene_tilt_n_tumble;
-extern struct SubScene scene_urban_champion;
+#include "engines/code_buster.h"
+#include "engines/butterfingers.h"
+#include "engines/classic_clash_i.h"
+#include "engines/mouse_trap.h"
+#include "engines/alien_ambush.h"
+#include "engines/lazerblazer.h"
+#include "engines/identity_crisis.h"
+#include "engines/putt_for_dough.h"
+#include "engines/bubble_trouble.h"
+#include "engines/laser_outlaw.h"
+#include "engines/hogans_alley.h"
+#include "engines/mug_shot.h"
+#include "engines/mars_ball_destroy.h"
+#include "engines/wild_gunman.h"
+#include "engines/duck_hunt.h"
+#include "engines/classic_clash_ii.h"
+#include "engines/pompeii_back.h"
+#include "engines/balloon_fight.h"
+#include "engines/coconut_catapult.h"
+#include "engines/sunny_side_up.h"
+#include "engines/classic_clash.h"
+#include "engines/gold_digger.h"
+#include "engines/stack_up.h"
+#include "engines/scooter_commuter.h"
+#include "engines/air_supplies.h"
+#include "engines/donkey_kong.h"
+#include "engines/scoot_or_die.h"
+#include "engines/punch_out.h"
+#include "engines/tilt_n_tumble.h"
+#include "engines/urban_champion.h"
 extern struct SubScene D_083D48F0;
-extern struct SubScene scene_family_basic;
-extern struct SubScene scene_tidal_cave;
-extern struct SubScene scene_i_came_i_saw;
-extern struct SubScene scene_slick_wheelie;
-extern struct SubScene scene_mario_clash;
-extern struct SubScene scene_chicken_pinch;
-extern struct SubScene scene_mario_paint_fly_swatter;
+#include "engines/family_basic.h"
+#include "engines/tidal_cave.h"
+#include "engines/i_came_i_saw.h"
+#include "engines/slick_wheelie.h"
+#include "engines/mario_clash.h"
+#include "engines/chicken_pinch.h"
+#include "engines/mario_paint_fly_swatter.h"
 extern struct SubScene D_083D5788;
 extern struct SubScene D_083D58AC;
-extern struct SubScene scene_mars_jars;
-extern struct SubScene scene_super_fly;
-extern struct SubScene scene_noodle_rama;
-extern struct SubScene scene_racing_112;
-extern struct SubScene scene_word_up;
-extern struct SubScene scene_metroid;
-extern struct SubScene scene_fries_with_that;
-extern struct SubScene scene_dr_mario;
-extern struct SubScene scene_disc_odog;
-extern struct SubScene scene_wario_wear;
-extern struct SubScene scene_gear_head_fred;
-extern struct SubScene scene_ninja_pipe_cleaner;
-extern struct SubScene scene_sheriff;
+#include "engines/mars_jars.h"
+#include "engines/super_fly.h"
+#include "engines/noodle_rama.h"
+#include "engines/racing_112.h"
+#include "engines/word_up.h"
+#include "engines/metroid.h"
+#include "engines/fries_with_that.h"
+#include "engines/dr_mario.h"
+#include "engines/disc_odog.h"
+#include "engines/wario_wear.h"
+#include "engines/gear_head_fred.h"
+#include "engines/ninja_pipe_cleaner.h"
+#include "engines/sheriff.h"
 extern struct SubScene D_083D7124;
-extern struct SubScene scene_sphinx_hijinks;
-extern struct SubScene scene_nail_call;
-extern struct SubScene scene_the_legend_of_zelda;
-extern struct SubScene scene_douse_the_house;
-extern struct SubScene scene_sole_man;
-extern struct SubScene scene_strength_in_numbers;
-extern struct SubScene scene_mirror_mirror;
-extern struct SubScene scene_banana_munch;
-extern struct SubScene scene_worm_squirm;
-extern struct SubScene scene_super_mario_bros;
-extern struct SubScene scene_kitty_cover;
-extern struct SubScene scene_the_claw;
-extern struct SubScene scene_long_lost_love;
-extern struct SubScene scene_nighttime_allergies;
-extern struct SubScene scene_button_masher;
-extern struct SubScene scene_hard_core;
-extern struct SubScene scene_the_brush_off;
-extern struct SubScene scene_paddle_parade;
-extern struct SubScene scene_wrong_way_highway;
-extern struct SubScene scene_boom_box;
-extern struct SubScene scene_ninja_vision;
-extern struct SubScene scene_spunky_monkey;
-extern struct SubScene scene_toast_the_ghosts;
-extern struct SubScene scene_ultra_hand;
-extern struct SubScene scene_set_n_spike;
-extern struct SubScene scene_galaxy_2003;
-extern struct SubScene scene_the_great_cover_cup;
-extern struct SubScene scene_city_surfer;
+#include "engines/sphinx_hijinks.h"
+#include "engines/nail_call.h"
+#include "engines/the_legend_of_zelda.h"
+#include "engines/douse_the_house.h"
+#include "engines/sole_man.h"
+#include "engines/strength_in_numbers.h"
+#include "engines/mirror_mirror.h"
+#include "engines/banana_munch.h"
+#include "engines/worm_squirm.h"
+#include "engines/super_mario_bros.h"
+#include "engines/kitty_cover.h"
+#include "engines/the_claw.h"
+#include "engines/long_lost_love.h"
+#include "engines/nighttime_allergies.h"
+#include "engines/button_masher.h"
+#include "engines/hard_core.h"
+#include "engines/the_brush_off.h"
+#include "engines/paddle_parade.h"
+#include "engines/wrong_way_highway.h"
+#include "engines/boom_box.h"
+#include "engines/ninja_vision.h"
+#include "engines/spunky_monkey.h"
+#include "engines/toast_the_ghosts.h"
+#include "engines/ultra_hand.h"
+#include "engines/set_n_spike.h"
+#include "engines/galaxy_2003.h"
+#include "engines/the_great_cover_cup.h"
+#include "engines/city_surfer.h"
 extern struct SubScene D_083DA81C;
-extern struct SubScene scene_crack_down;
-extern struct SubScene scene_butterfly_stroke;
-extern struct SubScene scene_snowboard_slalom;
-extern struct SubScene scene_catterwall;
-extern struct SubScene scene_sparring_wario;
-extern struct SubScene scene_whats_the_toadal;
-extern struct SubScene scene_whoop_de_doodle;
-extern struct SubScene scene_raging_rhino;
-extern struct SubScene scene_cymbalism;
-extern struct SubScene scene_mashin_martians;
-extern struct SubScene scene_raaaarrrrggghh;
-extern struct SubScene scene_quickie_quiz;
-extern struct SubScene scene_veg_out;
-extern struct SubScene scene_body_block;
-extern struct SubScene scene_berry_berry_good;
-extern struct SubScene scene_funky_fountain;
-extern struct SubScene scene_tip_the_scale;
-extern struct SubScene scene_stick_and_move;
-extern struct SubScene scene_cheeky_monkey;
+#include "engines/crack_down.h"
+#include "engines/butterfly_stroke.h"
+#include "engines/snowboard_slalom.h"
+#include "engines/catterwall.h"
+#include "engines/sparring_wario.h"
+#include "engines/whats_the_toadal.h"
+#include "engines/whoop_de_doodle.h"
+#include "engines/raging_rhino.h"
+#include "engines/cymbalism.h"
+#include "engines/mashin_martians.h"
+#include "engines/raaaarrrrggghh.h"
+#include "engines/quickie_quiz.h"
+#include "engines/veg_out.h"
+#include "engines/body_block.h"
+#include "engines/berry_berry_good.h"
+#include "engines/funky_fountain.h"
+#include "engines/tip_the_scale.h"
+#include "engines/stick_and_move.h"
+#include "engines/cheeky_monkey.h"
 extern struct SubScene D_083DCC60;
 extern struct SubScene D_083DCFEC;
-extern struct SubScene scene_cat_nap;
-extern struct SubScene scene_find_my_behind;
-extern struct SubScene scene_four_leaf_hover;
-extern struct SubScene scene_assembly_line;
-extern struct SubScene scene_crane_game;
-extern struct SubScene scene_whats_your_beef;
+#include "engines/cat_nap.h"
+#include "engines/find_my_behind.h"
+#include "engines/four_leaf_hover.h"
+#include "engines/assembly_line.h"
+#include "engines/crane_game.h"
+#include "engines/whats_your_beef.h"
 extern struct SubScene D_083DD914;
-extern struct SubScene scene_dungeon_dilemma;
-extern struct SubScene scene_wario_bros;
-extern struct SubScene scene_pod_pinch;
-extern struct SubScene scene_blow_hole_bridge;
+#include "engines/dungeon_dilemma.h"
+#include "engines/wario_bros.h"
+#include "engines/pod_pinch.h"
+#include "engines/blow_hole_bridge.h"
 extern struct SubScene D_083DF9E4;
-extern struct SubScene scene_focus_pocus;
-extern struct SubScene scene_hot_dog_hog;
-extern struct SubScene scene_two_birds_big_rocks;
-extern struct SubScene scene_cavity_calamity;
-extern struct SubScene scene_shingle_smasher;
-extern struct SubScene scene_wario_pinball;
+#include "engines/focus_pocus.h"
+#include "engines/hot_dog_hog.h"
+#include "engines/two_birds_big_rocks.h"
+#include "engines/cavity_calamity.h"
+#include "engines/shingle_smasher.h"
+#include "engines/wario_pinball.h"
 extern struct SubScene D_083E183C;
-extern struct SubScene scene_the_real_mccoy;
-extern struct SubScene scene_down_and_outie;
-extern struct SubScene scene_matchboxes;
-extern struct SubScene scene_laser_vision;
-extern struct SubScene scene_thumb_wrestling;
-extern struct SubScene scene_hasty_pastry;
-extern struct SubScene scene_wario_facial;
-extern struct SubScene scene_grow_wario_grow;
-extern struct SubScene scene_alien_laser_hero;
-extern struct SubScene scene_shake;
-extern struct SubScene scene_wario_windsock;
-extern struct SubScene scene_loot_scoot;
-extern struct SubScene scene_float_your_boat;
-extern struct SubScene scene_vermin;
-extern struct SubScene scene_mix_and_match;
-extern struct SubScene scene_bug_birdie;
-extern struct SubScene scene_apple_shrapnel;
-extern struct SubScene scene_airpain;
+#include "engines/the_real_mccoy.h"
+#include "engines/down_and_outie.h"
+#include "engines/matchboxes.h"
+#include "engines/laser_vision.h"
+#include "engines/thumb_wrestling.h"
+#include "engines/hasty_pastry.h"
+#include "engines/wario_facial.h"
+#include "engines/grow_wario_grow.h"
+#include "engines/alien_laser_hero.h"
+#include "engines/shake.h"
+#include "engines/wario_windsock.h"
+#include "engines/loot_scoot.h"
+#include "engines/float_your_boat.h"
+#include "engines/vermin.h"
+#include "engines/mix_and_match.h"
+#include "engines/bug_birdie.h"
+#include "engines/apple_shrapnel.h"
+#include "engines/airpain.h"
 extern struct SubScene D_083E3BC8;
 extern struct SubScene D_083E3D9C;
 extern struct SubScene D_083E4000;
-extern struct SubScene scene_warios_adventure;
-extern struct SubScene scene_unexcite_bike;
-extern struct SubScene scene_rock_paper_scissors;
+#include "engines/warios_adventure.h"
+#include "engines/unexcite_bike.h"
+#include "engines/rock_paper_scissors.h"
 extern struct SubScene D_083E5808;
 extern struct SubScene D_083E59D0;
-extern struct SubScene scene_spoon_spectacular;
+#include "engines/spoon_spectacular.h"
 extern struct SubScene D_083E5E24;
-extern struct SubScene scene_high_treeson;
-extern struct SubScene scene_leafy_greens;
-extern struct SubScene scene_rough_puff;
-extern struct SubScene scene_the_frog_flap;
-extern struct SubScene scene_make_my_clay;
-extern struct SubScene scene_wario_kendo;
-extern struct SubScene scene_sinking_feeling;
+#include "engines/high_treeson.h"
+#include "engines/leafy_greens.h"
+#include "engines/rough_puff.h"
+#include "engines/the_frog_flap.h"
+#include "engines/make_my_clay.h"
+#include "engines/wario_kendo.h"
+#include "engines/sinking_feeling.h"
 extern struct SubScene D_083E8698;
-extern struct SubScene scene_garage_rock;
-extern struct SubScene scene_kettle_mettle;
-extern struct SubScene scene_ice_climber;
-extern struct SubScene scene_game_boy;
+#include "engines/garage_rock.h"
+#include "engines/kettle_mettle.h"
+#include "engines/ice_climber.h"
+#include "engines/game_boy.h"
 extern struct SubScene D_083E8DE0;
-extern struct SubScene scene_produce_pandemonium;
+#include "engines/produce_pandemonium.h"
 extern struct SubScene D_083E90D4;
 extern struct SubScene D_083E9290;
-extern struct SubScene scene_f_zero;
+#include "engines/f_zero.h"
 extern struct SubScene D_083EB840;
 extern struct SubScene D_083EBA50;
 

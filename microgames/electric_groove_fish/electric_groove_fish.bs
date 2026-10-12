@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_electric_groove_fish at 0x083D03E0
+struct scene_electric_groove_fish
+    /* Start  */ .word func_0803F330, 0x00000000
+    /* Paused */ .word func_0803FB74, 0x00000000
+    /* Update */ .word func_0803FB30, 0x00000000
+    /* Stop   */ .word func_0803FB88, 0x00000000
+    /* Script */ .word 0x083D035C
+endstruct
+
+.incbin "microgames/electric_groove_fish/electric_groove_fish.bin", 36, 420

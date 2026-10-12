@@ -1,0 +1,54 @@
+/* Generated from asm/asm_0806b52c.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0806B52C \n\
+/* 0806B52C */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0806B52E */ MOV R7, R8 \n\
+/* 0806B530 */ PUSH {R7} \n\
+/* 0806B532 */ ADDS R5, R0, #0 \n\
+/* 0806B534 */ MOVS R4, #0 \n\
+/* 0806B536 */ MOVS R3, #0 \n\
+/* 0806B538 */ LDR R0, _0806B564 \n\
+/* 0806B53A */ MOV R8, R0 \n\
+/* 0806B53C */ MOVS R6, #0XE2 \n\
+/* 0806B53E */ LSLS R6, R6, #1 \n\
+/* 0806B540 */ MOVS R7, #0XC6 \n\
+/* 0806B542 */ LSLS R7, R7, #1 \n\
+/* 0806B544 */ MOVS R2, #4 \n\
+/* 0806B546 */ MOVS R1, #0X80 \n\
+/* 0806B548 */ LSLS R1, R1, #1 \n\
+/* 0806B54A */ MOV IP, R1 \n\
+_0806B54C: \n\
+/* 0806B54C */ MOV R0, R8 \n\
+/* 0806B54E */ LDR R1, [R0] \n\
+/* 0806B550 */ ADDS R0, R1, R6 \n\
+/* 0806B552 */ LDR R0, [R0] \n\
+/* 0806B554 */ ADDS R4, R0 \n\
+/* 0806B556 */ CMP R5, R4 \n\
+/* 0806B558 */ BNE _0806B568 \n\
+/* 0806B55A */ ADDS R0, R1, R7 \n\
+/* 0806B55C */ ADDS R0, R2 \n\
+/* 0806B55E */ MOV R1, IP \n\
+/* 0806B560 */ STRH R1, [R0] \n\
+/* 0806B562 */ B _0806B570 \n\
+ \n\
+.balign 4, 0 \n\
+_0806B564: \n\
+/* 0806B564 */ .word gCurrentSceneVariable \n\
+_0806B568: \n\
+/* 0806B568 */ ADDS R2, #6 \n\
+/* 0806B56A */ ADDS R3, #3 \n\
+/* 0806B56C */ CMP R3, #0X11 \n\
+/* 0806B56E */ BLE _0806B54C \n\
+_0806B570: \n\
+/* 0806B570 */ POP {R3} \n\
+/* 0806B572 */ MOV R8, R3 \n\
+/* 0806B574 */ POP {R4, R5, R6, R7} \n\
+/* 0806B576 */ POP {R0} \n\
+/* 0806B578 */ BX R0 \n\
+ \n\
+/* 0806B57A */ .short 0x0000 \n\
+.balign 4, 0 \n\
+.ltorg \n\
+.syntax divided");
+

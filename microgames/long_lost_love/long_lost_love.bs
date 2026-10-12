@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_long_lost_love at 0x083D8B68
+struct scene_long_lost_love
+    /* Start  */ .word func_0807EEC0, 0x00000000
+    /* Paused */ .word func_0807F074, 0x00000000
+    /* Update */ .word func_0807EF40, 0x00000000
+    /* Stop   */ .word func_0807F078, 0x00000000
+    /* Script */ .word 0x083D8ACC
+endstruct
+
+.incbin "microgames/long_lost_love/long_lost_love.bin", 36, 252

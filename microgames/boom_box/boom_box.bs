@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_boom_box at 0x083D94FC
+struct scene_boom_box
+    /* Start  */ .word func_08084FB8, 0x00000000
+    /* Paused */ .word func_08085E4C, 0x00000000
+    /* Update */ .word func_08085E2C, 0x00000000
+    /* Stop   */ .word func_08085E50, 0x00000000
+    /* Script */ .word 0x083D9460
+endstruct
+
+.incbin "microgames/boom_box/boom_box.bin", 36, 684

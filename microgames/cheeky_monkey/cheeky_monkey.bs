@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_cheeky_monkey at 0x083DCB48
+struct scene_cheeky_monkey
+    /* Start  */ .word func_080A58CC, 0x00000000
+    /* Paused */ .word func_080A6130, 0x00000000
+    /* Update */ .word func_080A60F8, 0x00000000
+    /* Stop   */ .word func_080A6134, 0x00000000
+    /* Script */ .word 0x083DCADC
+endstruct
+
+.incbin "microgames/cheeky_monkey/cheeky_monkey.bin", 36, 1480

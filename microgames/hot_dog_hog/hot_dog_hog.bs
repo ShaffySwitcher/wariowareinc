@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hot_dog_hog at 0x083DFC30
+struct scene_hot_dog_hog
+    /* Start  */ .word func_080B84A4, 0x00000000
+    /* Paused */ .word func_080B8C48, 0x00000000
+    /* Update */ .word func_080B8C00, 0x00000000
+    /* Stop   */ .word func_080B8C4C, 0x00000000
+    /* Script */ .word 0x083DFBC4
+endstruct
+
+.incbin "microgames/hot_dog_hog/hot_dog_hog.bin", 36, 260

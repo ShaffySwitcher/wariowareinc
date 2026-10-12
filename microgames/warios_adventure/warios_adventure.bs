@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_warios_adventure at 0x083E445C
+struct scene_warios_adventure
+    /* Start  */ .word func_080D060C, 0x00000000
+    /* Paused */ .word func_080D0828, 0x00000000
+    /* Update */ .word func_080D0718, 0x00000000
+    /* Stop   */ .word func_080D082C, 0x00000000
+    /* Script */ .word 0x083E43B4
+endstruct
+
+.incbin "microgames/warios_adventure/warios_adventure.bin", 36, 4256

@@ -1,0 +1,70 @@
+/* Generated from asm/asm_0804d800.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0804D800 \n\
+/* 0804D800 */ PUSH {LR} \n\
+/* 0804D802 */ LDR R0, _0804D828 \n\
+/* 0804D804 */ LDR R0, [R0] \n\
+/* 0804D806 */ LDR R1, _0804D82C \n\
+/* 0804D808 */ ADDS R0, R1 \n\
+/* 0804D80A */ LDRB R0, [R0] \n\
+/* 0804D80C */ CMP R0, #1 \n\
+/* 0804D80E */ BNE _0804D838 \n\
+/* 0804D810 */ BL func_0804D5D4 \n\
+/* 0804D814 */ LDR R0, _0804D830 \n\
+/* 0804D816 */ LDR R2, [R0] \n\
+/* 0804D818 */ ADDS R1, R2, #0 \n\
+/* 0804D81A */ ADDS R1, #0XA4 \n\
+/* 0804D81C */ LDR R0, [R1] \n\
+/* 0804D81E */ CMP R0, #0 \n\
+/* 0804D820 */ BLE _0804D834 \n\
+/* 0804D822 */ SUBS R0, #1 \n\
+/* 0804D824 */ STR R0, [R1] \n\
+/* 0804D826 */ B _0804D838 \n\
+ \n\
+.balign 4, 0 \n\
+_0804D828: \n\
+/* 0804D828 */ .word gCurrentSceneData \n\
+ \n\
+.balign 4, 0 \n\
+_0804D82C: \n\
+/* 0804D82C */ .word 0x00000173 \n\
+ \n\
+.balign 4, 0 \n\
+_0804D830: \n\
+/* 0804D830 */ .word gCurrentSceneVariable \n\
+_0804D834: \n\
+/* 0804D834 */ MOVS R0, #0 \n\
+/* 0804D836 */ STR R0, [R2, #0X7C] \n\
+_0804D838: \n\
+/* 0804D838 */ LDR R0, _0804D868 \n\
+/* 0804D83A */ LDR R1, [R0] \n\
+/* 0804D83C */ ADDS R0, R1, #0 \n\
+/* 0804D83E */ ADDS R0, #0X80 \n\
+/* 0804D840 */ LDR R0, [R0] \n\
+/* 0804D842 */ CMP R0, #1 \n\
+/* 0804D844 */ BNE _0804D862 \n\
+/* 0804D846 */ LDR R0, =gSpriteHandler \n\
+/* 0804D848 */ LDR R0, [R0] \n\
+/* 0804D84A */ ADDS R1, #0X5E \n\
+/* 0804D84C */ MOVS R2, #0 \n\
+/* 0804D84E */ LDRSH R1, [R1, R2] \n\
+/* 0804D850 */ MOVS R2, #2 \n\
+/* 0804D852 */ BL sprite_set_anim_cel \n\
+/* 0804D856 */ MOVS R0, #0X18 \n\
+/* 0804D858 */ BL func_0800C9A4 \n\
+/* 0804D85C */ MOVS R0, #0 \n\
+/* 0804D85E */ BL func_0800A128 \n\
+_0804D862: \n\
+/* 0804D862 */ POP {R0} \n\
+/* 0804D864 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0804D86C: \n\
+/* 0804D86C */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0804D868: \n\
+/* 0804D868 */ .word gCurrentSceneVariable \n\
+.ltorg \n\
+.syntax divided");

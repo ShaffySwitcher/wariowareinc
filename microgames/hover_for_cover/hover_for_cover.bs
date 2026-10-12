@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_hover_for_cover at 0x083CE050
+struct scene_hover_for_cover
+    /* Start  */ .word func_08032044, 0x00000000
+    /* Paused */ .word func_0803294C, 0x00000000
+    /* Update */ .word func_0803292C, 0x00000000
+    /* Stop   */ .word func_08032958, 0x00000000
+    /* Script */ .word 0x083CDFE4
+endstruct
+
+.incbin "microgames/hover_for_cover/hover_for_cover.bin", 36, 532

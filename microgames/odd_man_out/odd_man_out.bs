@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_odd_man_out at 0x083CEB84
+struct scene_odd_man_out
+    /* Start  */ .word func_08034C00, 0x00000000
+    /* Paused */ .word func_0803572C, 0x00000000
+    /* Update */ .word func_080353E0, 0x00000000
+    /* Stop   */ .word func_08035738, 0x00000000
+    /* Script */ .word 0x083CEB18
+endstruct
+
+.incbin "microgames/odd_man_out/odd_man_out.bin", 36, 268

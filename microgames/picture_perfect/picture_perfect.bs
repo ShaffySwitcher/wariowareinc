@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_picture_perfect at 0x083CDF3C
+struct scene_picture_perfect
+    /* Start  */ .word func_08031C68, 0x00000000
+    /* Paused */ .word func_08032034, 0x00000000
+    /* Update */ .word func_08031FBC, 0x00000000
+    /* Stop   */ .word func_08032040, 0x00000000
+    /* Script */ .word 0x083CDEB8
+endstruct
+
+.incbin "microgames/picture_perfect/picture_perfect.bin", 36, 240

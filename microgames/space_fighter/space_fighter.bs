@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_space_fighter at 0x083CC60C
+struct scene_space_fighter
+    /* Start  */ .word func_08029B94, 0x00000000
+    /* Paused */ .word func_0802A790, 0x00000000
+    /* Update */ .word func_0802A5E4, 0x00000000
+    /* Stop   */ .word func_0802A7A4, 0x00000000
+    /* Script */ .word 0x083CC588
+endstruct
+
+.incbin "microgames/space_fighter/space_fighter.bin", 36, 248

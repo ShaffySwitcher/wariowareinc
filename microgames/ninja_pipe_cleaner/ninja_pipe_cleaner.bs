@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_ninja_pipe_cleaner at 0x083D6AD8
+struct scene_ninja_pipe_cleaner
+    /* Start  */ .word func_0806FC30, 0x00000000
+    /* Paused */ .word func_0806FE1C, 0x00000000
+    /* Update */ .word func_0806FCB0, 0x00000000
+    /* Stop   */ .word func_0806FE20, 0x00000000
+    /* Script */ .word 0x083D6A54
+endstruct
+
+.incbin "microgames/ninja_pipe_cleaner/ninja_pipe_cleaner.bin", 36, 1444

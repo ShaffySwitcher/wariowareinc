@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_balancing_act at 0x083CF5FC
+struct scene_balancing_act
+    /* Start  */ .word func_08039ABC, 0x00000000
+    /* Paused */ .word func_0803A07C, 0x00000000
+    /* Update */ .word func_0803A010, 0x00000000
+    /* Stop   */ .word func_0803A090, 0x00000000
+    /* Script */ .word 0x083CF590
+endstruct
+
+.incbin "microgames/balancing_act/balancing_act.bin", 36, 592

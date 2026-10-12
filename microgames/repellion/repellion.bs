@@ -1,0 +1,16 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+.incbin "microgames/repellion/repellion.bin", 0, 256
+
+@ extracted scene_repellion at 0x083CBA3C
+struct scene_repellion
+    /* Start  */ .word func_08026BD0, 0x00000000
+    /* Paused */ .word func_08026E1C, 0x00000000
+    /* Update */ .word func_08026EF8, 0x00000000
+    /* Stop   */ .word func_080272F0, 0x00000000
+    /* Script */ .word 0x083CB9B8
+endstruct
+
+.incbin "microgames/repellion/repellion.bin", 292, 264

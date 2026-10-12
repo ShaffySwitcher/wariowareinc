@@ -1,0 +1,124 @@
+/* Generated from asm/asm_0805c080.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0805C080 \n\
+/* 0805C080 */ PUSH {R4, R5, R6, R7, LR} \n\
+/* 0805C082 */ MOV R7, SL \n\
+/* 0805C084 */ MOV R6, SB \n\
+/* 0805C086 */ MOV R5, R8 \n\
+/* 0805C088 */ PUSH {R5, R6, R7} \n\
+/* 0805C08A */ LDR R2, _0805C140 \n\
+/* 0805C08C */ LDR R1, [R2] \n\
+/* 0805C08E */ LDR R0, _0805C144 \n\
+/* 0805C090 */ ADDS R3, R1, R0 \n\
+/* 0805C092 */ MOVS R4, #0XBD \n\
+/* 0805C094 */ LSLS R4, R4, #2 \n\
+/* 0805C096 */ ADDS R0, R1, R4 \n\
+/* 0805C098 */ LDRH R7, [R0] \n\
+/* 0805C09A */ MOVS R6, #0 \n\
+/* 0805C09C */ LDR R0, [R1, #4] \n\
+/* 0805C09E */ MOV SL, R2 \n\
+/* 0805C0A0 */ CMP R0, #0 \n\
+/* 0805C0A2 */ BGE _0805C0A6 \n\
+/* 0805C0A4 */ ADDS R0, #0X3F \n\
+_0805C0A6: \n\
+/* 0805C0A6 */ ASRS R2, R0, #6 \n\
+/* 0805C0A8 */ MOVS R4, #0X9F \n\
+/* 0805C0AA */ LDR R0, _0805C148 \n\
+/* 0805C0AC */ MOV SB, R0 \n\
+/* 0805C0AE */ MOVS R0, #0X57 \n\
+/* 0805C0B0 */ ADDS R1, R2, #0 \n\
+/* 0805C0B2 */ MULS R1, R0, R1 \n\
+/* 0805C0B4 */ RSBS R5, R2, #0 \n\
+_0805C0B6: \n\
+/* 0805C0B6 */ ASRS R0, R1, #8 \n\
+/* 0805C0B8 */ STRH R0, [R3] \n\
+/* 0805C0BA */ SUBS R3, #2 \n\
+/* 0805C0BC */ ADDS R1, R5 \n\
+/* 0805C0BE */ SUBS R4, #1 \n\
+/* 0805C0C0 */ CMP R4, #0X8F \n\
+/* 0805C0C2 */ BGT _0805C0B6 \n\
+/* 0805C0C4 */ CMP R4, #0X47 \n\
+/* 0805C0C6 */ BLE _0805C110 \n\
+/* 0805C0C8 */ LDR R1, =gSineTable \n\
+/* 0805C0CA */ MOV R8, R1 \n\
+/* 0805C0CC */ LSLS R0, R7, #0X10 \n\
+/* 0805C0CE */ ASRS R0, R0, #0X10 \n\
+/* 0805C0D0 */ MOV IP, R0 \n\
+/* 0805C0D2 */ ADDS R0, R4, #0 \n\
+/* 0805C0D4 */ SUBS R0, #0X48 \n\
+/* 0805C0D6 */ ADDS R5, R0, #0 \n\
+/* 0805C0D8 */ MULS R5, R2, R5 \n\
+/* 0805C0DA */ RSBS R7, R2, #0 \n\
+_0805C0DC: \n\
+/* 0805C0DC */ LSLS R0, R6, #0X10 \n\
+/* 0805C0DE */ ASRS R2, R0, #0X10 \n\
+/* 0805C0E0 */ LSRS R0, R0, #0X18 \n\
+/* 0805C0E2 */ LSLS R0, R0, #1 \n\
+/* 0805C0E4 */ ADD R0, R8 \n\
+/* 0805C0E6 */ MOVS R6, #0 \n\
+/* 0805C0E8 */ LDRSH R1, [R0, R6] \n\
+/* 0805C0EA */ MOVS R0, #0X8F \n\
+/* 0805C0EC */ SUBS R0, R4 \n\
+/* 0805C0EE */ MULS R1, R0, R1 \n\
+/* 0805C0F0 */ LSLS R0, R1, #1 \n\
+/* 0805C0F2 */ ADDS R0, R1 \n\
+/* 0805C0F4 */ LSRS R1, R0, #0X1F \n\
+/* 0805C0F6 */ ADDS R0, R1 \n\
+/* 0805C0F8 */ ASRS R0, R0, #9 \n\
+/* 0805C0FA */ ASRS R1, R5, #8 \n\
+/* 0805C0FC */ ADDS R0, R1 \n\
+/* 0805C0FE */ STRH R0, [R3] \n\
+/* 0805C100 */ SUBS R3, #2 \n\
+/* 0805C102 */ ADD R2, IP \n\
+/* 0805C104 */ LSLS R2, R2, #0X10 \n\
+/* 0805C106 */ LSRS R6, R2, #0X10 \n\
+/* 0805C108 */ ADDS R5, R7 \n\
+/* 0805C10A */ SUBS R4, #1 \n\
+/* 0805C10C */ CMP R4, #0X47 \n\
+/* 0805C10E */ BGT _0805C0DC \n\
+_0805C110: \n\
+/* 0805C110 */ CMP R4, #0 \n\
+/* 0805C112 */ BLT _0805C120 \n\
+/* 0805C114 */ MOVS R0, #0 \n\
+_0805C116: \n\
+/* 0805C116 */ STRH R0, [R3] \n\
+/* 0805C118 */ SUBS R3, #2 \n\
+/* 0805C11A */ SUBS R4, #1 \n\
+/* 0805C11C */ CMP R4, #0 \n\
+/* 0805C11E */ BGE _0805C116 \n\
+_0805C120: \n\
+/* 0805C120 */ MOV R1, SL \n\
+/* 0805C122 */ LDR R0, [R1] \n\
+/* 0805C124 */ MOVS R4, #0XDA \n\
+/* 0805C126 */ LSLS R4, R4, #1 \n\
+/* 0805C128 */ ADDS R0, R4 \n\
+/* 0805C12A */ LDRH R0, [R0] \n\
+/* 0805C12C */ MOV R6, SB \n\
+/* 0805C12E */ STRH R0, [R6, #0X14] \n\
+/* 0805C130 */ POP {R3, R4, R5} \n\
+/* 0805C132 */ MOV R8, R3 \n\
+/* 0805C134 */ MOV SB, R4 \n\
+/* 0805C136 */ MOV SL, R5 \n\
+/* 0805C138 */ POP {R4, R5, R6, R7} \n\
+/* 0805C13A */ POP {R0} \n\
+/* 0805C13C */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0805C14C: \n\
+/* 0805C14C */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0805C140: \n\
+/* 0805C140 */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0805C144: \n\
+/* 0805C144 */ .word 0x000002F2 \n\
+ \n\
+.balign 4, 0 \n\
+_0805C148: \n\
+/* 0805C148 */ .word gGraphicsBuffer \n\
+.ltorg \n\
+.syntax divided");
+

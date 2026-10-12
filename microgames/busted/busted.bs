@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_busted at 0x083CE9BC
+struct scene_busted
+    /* Start  */ .word func_080342C4, 0x00000000
+    /* Paused */ .word func_08034BB8, 0x00000000
+    /* Update */ .word func_08034BA4, 0x00000000
+    /* Stop   */ .word func_08034BCC, 0x00000000
+    /* Script */ .word 0x083CE92C
+endstruct
+
+.incbin "microgames/busted/busted.bin", 36, 420

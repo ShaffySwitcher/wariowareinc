@@ -1,0 +1,61 @@
+/* Generated from asm/asm_0804e5b4.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0804E5B4 \n\
+/* 0804E5B4 */ PUSH {R4, LR} \n\
+/* 0804E5B6 */ BL get_current_mem_id \n\
+/* 0804E5BA */ LSLS R0, R0, #0X10 \n\
+/* 0804E5BC */ LSRS R0, R0, #0X10 \n\
+/* 0804E5BE */ LDR R1, _0804E630 \n\
+/* 0804E5C0 */ MOVS R2, #0X80 \n\
+/* 0804E5C2 */ LSLS R2, R2, #6 \n\
+/* 0804E5C4 */ BL start_load_gfx_table_task \n\
+/* 0804E5C8 */ MOVS R0, #0 \n\
+/* 0804E5CA */ BL scene_set_video_mode \n\
+/* 0804E5CE */ MOVS R0, #1 \n\
+/* 0804E5D0 */ BL scene_show_bg_layer \n\
+/* 0804E5D4 */ MOVS R0, #2 \n\
+/* 0804E5D6 */ BL scene_show_bg_layer \n\
+/* 0804E5DA */ MOVS R0, #3 \n\
+/* 0804E5DC */ BL scene_hide_bg_layer \n\
+/* 0804E5E0 */ MOVS R0, #1 \n\
+/* 0804E5E2 */ MOVS R1, #0 \n\
+/* 0804E5E4 */ MOVS R2, #0 \n\
+/* 0804E5E6 */ BL scene_set_bg_layer_pos \n\
+/* 0804E5EA */ MOVS R0, #2 \n\
+/* 0804E5EC */ MOVS R1, #0 \n\
+/* 0804E5EE */ MOVS R2, #0 \n\
+/* 0804E5F0 */ BL scene_set_bg_layer_pos \n\
+/* 0804E5F4 */ MOVS R0, #1 \n\
+/* 0804E5F6 */ MOVS R1, #2 \n\
+/* 0804E5F8 */ MOVS R2, #0X1D \n\
+/* 0804E5FA */ MOVS R3, #1 \n\
+/* 0804E5FC */ BL scene_set_bg_layer_controls \n\
+/* 0804E600 */ MOVS R0, #2 \n\
+/* 0804E602 */ MOVS R1, #0 \n\
+/* 0804E604 */ MOVS R2, #0X1E \n\
+/* 0804E606 */ MOVS R3, #2 \n\
+/* 0804E608 */ BL scene_set_bg_layer_controls \n\
+/* 0804E60C */ MOVS R0, #1 \n\
+/* 0804E60E */ BL func_0800A0C4 \n\
+/* 0804E612 */ BL func_0804F03C \n\
+/* 0804E616 */ BL func_0804F220 \n\
+/* 0804E61A */ LDR R4, =D_083D2DDC \n\
+/* 0804E61C */ BL get_current_language \n\
+/* 0804E620 */ LSLS R0, R0, #2 \n\
+/* 0804E622 */ ADDS R0, R4 \n\
+/* 0804E624 */ LDR R0, [R0] \n\
+/* 0804E626 */ BL func_0800BB74 \n\
+/* 0804E62A */ POP {R4} \n\
+/* 0804E62C */ POP {R0} \n\
+/* 0804E62E */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0804E634: \n\
+/* 0804E634 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0804E630: \n\
+/* 0804E630 */ .word D_083D2D64 \n\
+.ltorg \n\
+.syntax divided");

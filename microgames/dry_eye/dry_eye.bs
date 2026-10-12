@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_dry_eye at 0x083CDA00
+struct scene_dry_eye
+    /* Start  */ .word func_080307DC, 0x00000000
+    /* Paused */ .word func_08030C94, 0x00000000
+    /* Update */ .word func_08030C58, 0x00000000
+    /* Stop   */ .word func_08030CA0, 0x00000000
+    /* Script */ .word 0x083CD994
+endstruct
+
+.incbin "microgames/dry_eye/dry_eye.bin", 36, 372

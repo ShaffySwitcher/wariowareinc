@@ -1,0 +1,71 @@
+/* Generated from asm/asm_0809bbf0.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0809BBF0 \n\
+/* 0809BBF0 */ PUSH {R4, LR} \n\
+/* 0809BBF2 */ SUB SP, #0XC \n\
+/* 0809BBF4 */ LDR R0, _0809BC58 \n\
+/* 0809BBF6 */ LDR R0, [R0] \n\
+/* 0809BBF8 */ LDR R4, _0809BC5C \n\
+/* 0809BBFA */ LDR R1, [R4] \n\
+/* 0809BBFC */ ADDS R1, #0XF8 \n\
+/* 0809BBFE */ MOVS R2, #0 \n\
+/* 0809BC00 */ LDRSH R1, [R1, R2] \n\
+/* 0809BC02 */ LDR R2, _0809BC60 \n\
+/* 0809BC04 */ MOVS R3, #0 \n\
+/* 0809BC06 */ STR R3, [SP] \n\
+/* 0809BC08 */ STR R3, [SP, #4] \n\
+/* 0809BC0A */ STR R3, [SP, #8] \n\
+/* 0809BC0C */ BL sprite_set_anim \n\
+/* 0809BC10 */ LDR R2, [R4] \n\
+/* 0809BC12 */ LDR R0, [R2, #0X20] \n\
+/* 0809BC14 */ ASRS R0, R0, #7 \n\
+/* 0809BC16 */ MOVS R3, #0X84 \n\
+/* 0809BC18 */ LSLS R3, R3, #1 \n\
+/* 0809BC1A */ ADDS R1, R2, R3 \n\
+/* 0809BC1C */ STRH R0, [R1] \n\
+/* 0809BC1E */ LDR R0, [R2, #0X20] \n\
+/* 0809BC20 */ ASRS R0, R0, #8 \n\
+/* 0809BC22 */ ADDS R3, #2 \n\
+/* 0809BC24 */ ADDS R1, R2, R3 \n\
+/* 0809BC26 */ STRH R0, [R1] \n\
+/* 0809BC28 */ MOVS R0, #0X82 \n\
+/* 0809BC2A */ LSLS R0, R0, #1 \n\
+/* 0809BC2C */ ADDS R1, R2, R0 \n\
+/* 0809BC2E */ MOVS R0, #4 \n\
+/* 0809BC30 */ STRB R0, [R1] \n\
+/* 0809BC32 */ MOVS R0, #0X30 \n\
+/* 0809BC34 */ BL func_0800C9A4 \n\
+/* 0809BC38 */ MOVS R0, #1 \n\
+/* 0809BC3A */ BL func_0800A128 \n\
+/* 0809BC3E */ LDR R0, =D_083FBDB0 \n\
+/* 0809BC40 */ BL scene_play_sound_to_tempo \n\
+/* 0809BC44 */ LDR R0, [R4] \n\
+/* 0809BC46 */ MOVS R1, #0X90 \n\
+/* 0809BC48 */ LSLS R1, R1, #1 \n\
+/* 0809BC4A */ ADDS R0, R1 \n\
+/* 0809BC4C */ MOVS R1, #1 \n\
+/* 0809BC4E */ STRB R1, [R0] \n\
+/* 0809BC50 */ ADD SP, #0XC \n\
+/* 0809BC52 */ POP {R4} \n\
+/* 0809BC54 */ POP {R0} \n\
+/* 0809BC56 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0809BC64: \n\
+/* 0809BC64 */ @ literal emitted by .ltorg for '=...'  \n\
+ \n\
+.balign 4, 0 \n\
+_0809BC58: \n\
+/* 0809BC58 */ .word gSpriteHandler \n\
+ \n\
+.balign 4, 0 \n\
+_0809BC5C: \n\
+/* 0809BC5C */ .word gCurrentSceneVariable \n\
+ \n\
+.balign 4, 0 \n\
+_0809BC60: \n\
+/* 0809BC60 */ .word D_0837CB04 \n\
+.ltorg \n\
+.syntax divided");
+

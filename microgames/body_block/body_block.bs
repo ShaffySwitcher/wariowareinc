@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_body_block at 0x083DC294
+struct scene_body_block
+    /* Start  */ .word func_080A2538, 0x00000000
+    /* Paused */ .word func_080A2FA0, 0x00000000
+    /* Update */ .word func_080A2F7C, 0x00000000
+    /* Stop   */ .word func_080A2FA4, 0x00000000
+    /* Script */ .word 0x083DC228
+endstruct
+
+.incbin "microgames/body_block/body_block.bin", 36, 320

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_fruit_fall at 0x083CC2D0
+struct scene_fruit_fall
+    /* Start  */ .word func_08028934, 0x00000000
+    /* Paused */ .word func_08028E70, 0x00000000
+    /* Update */ .word func_08028DE4, 0x00000000
+    /* Stop   */ .word func_08028E7C, 0x00000000
+    /* Script */ .word 0x083CC1E0
+endstruct
+
+.incbin "microgames/fruit_fall/fruit_fall.bin", 36, 256

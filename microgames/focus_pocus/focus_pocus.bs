@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_focus_pocus at 0x083DFB10
+struct scene_focus_pocus
+    /* Start  */ .word func_080B77A8, 0x00000000
+    /* Paused */ .word func_080B7B08, 0x00000000
+    /* Update */ .word func_080B7B18, 0x00000000
+    /* Stop   */ .word func_080B7B0C, 0x00000000
+    /* Script */ .word 0x083DFA8C
+endstruct
+
+.incbin "microgames/focus_pocus/focus_pocus.bin", 36, 252

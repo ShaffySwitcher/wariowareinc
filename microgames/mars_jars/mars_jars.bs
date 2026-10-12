@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_mars_jars at 0x083D59D0
+struct scene_mars_jars
+    /* Start  */ .word func_080676F4, 0x00000000
+    /* Paused */ .word func_0806827C, 0x00000000
+    /* Update */ .word func_080681FC, 0x00000000
+    /* Stop   */ .word func_08068280, 0x00000000
+    /* Script */ .word 0x083D5964
+endstruct
+
+.incbin "microgames/mars_jars/mars_jars.bin", 36, 564

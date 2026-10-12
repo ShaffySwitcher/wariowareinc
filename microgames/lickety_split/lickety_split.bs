@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_lickety_split at 0x083CD0B4
+struct scene_lickety_split
+    /* Start  */ .word func_0802CE00, 0x00000000
+    /* Paused */ .word func_0802D304, 0x00000000
+    /* Update */ .word func_0802D2F0, 0x00000000
+    /* Stop   */ .word func_0802D318, 0x00000000
+    /* Script */ .word 0x083CD048
+endstruct
+
+.incbin "microgames/lickety_split/lickety_split.bin", 36, 380

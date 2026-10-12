@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_apple_shrapnel at 0x083E3968
+struct scene_apple_shrapnel
+    /* Start  */ .word func_080CDADC, 0x00000000
+    /* Paused */ .word func_080CEBA4, 0x00000000
+    /* Update */ .word func_080CEB44, 0x00000000
+    /* Stop   */ .word func_080CEBA8, 0x00000000
+    /* Script */ .word 0x083E38FC
+endstruct
+
+.incbin "microgames/apple_shrapnel/apple_shrapnel.bin", 36, 332

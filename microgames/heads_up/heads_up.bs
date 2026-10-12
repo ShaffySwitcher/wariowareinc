@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_heads_up at 0x083CD398
+struct scene_heads_up
+    /* Start  */ .word func_0802DA88, 0x00000000
+    /* Paused */ .word func_0802E4C8, 0x00000000
+    /* Update */ .word func_0802E4AC, 0x00000000
+    /* Stop   */ .word func_0802E4D4, 0x00000000
+    /* Script */ .word 0x083CD32C
+endstruct
+
+.incbin "microgames/heads_up/heads_up.bin", 36, 284

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_page_panic at 0x083CF014
+struct scene_page_panic
+    /* Start  */ .word func_080373B8, 0x00000000
+    /* Paused */ .word func_08037ACC, 0x00000000
+    /* Update */ .word func_08037AAC, 0x00000000
+    /* Stop   */ .word func_08037AD0, 0x00000000
+    /* Script */ .word 0x083CEF90
+endstruct
+
+.incbin "microgames/page_panic/page_panic.bin", 36, 380

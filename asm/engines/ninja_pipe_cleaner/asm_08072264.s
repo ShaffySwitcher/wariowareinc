@@ -1,0 +1,92 @@
+/* Generated from asm/asm_08072264.s. */
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_08072264 \n\
+/* 08072264 */ PUSH {R4, R5, LR} \n\
+/* 08072266 */ ADDS R4, R0, #0 \n\
+/* 08072268 */ LDR R0, _080722BC \n\
+/* 0807226A */ LDR R1, _080722C0 \n\
+/* 0807226C */ LSLS R4, R4, #1 \n\
+/* 0807226E */ ADDS R4, R1 \n\
+/* 08072270 */ LDRH R1, [R4] \n\
+/* 08072272 */ LSLS R1, R1, #5 \n\
+/* 08072274 */ LDR R5, _080722C4 \n\
+/* 08072276 */ ADDS R1, R5 \n\
+/* 08072278 */ MOVS R2, #0X20 \n\
+/* 0807227A */ BL func_080721BC \n\
+/* 0807227E */ LDR R0, _080722C8 \n\
+/* 08072280 */ LDRH R1, [R4] \n\
+/* 08072282 */ LSLS R1, R1, #5 \n\
+/* 08072284 */ ADDS R1, R5 \n\
+/* 08072286 */ MOVS R2, #0X20 \n\
+/* 08072288 */ BL func_080721BC \n\
+/* 0807228C */ LDR R0, _080722CC \n\
+/* 0807228E */ LDR R1, _080722D0 \n\
+/* 08072290 */ MOVS R2, #0X10 \n\
+/* 08072292 */ BL func_080721BC \n\
+/* 08072296 */ LDR R0, _080722D4 \n\
+/* 08072298 */ LDR R1, _080722D8 \n\
+/* 0807229A */ MOVS R2, #0X10 \n\
+/* 0807229C */ BL func_080721BC \n\
+/* 080722A0 */ LDR R0, _080722DC \n\
+/* 080722A2 */ LDR R1, _080722E0 \n\
+/* 080722A4 */ MOVS R2, #0X10 \n\
+/* 080722A6 */ BL func_080721BC \n\
+/* 080722AA */ LDR R0, _080722E4 \n\
+/* 080722AC */ LDR R1, _080722E8 \n\
+/* 080722AE */ MOVS R2, #0X10 \n\
+/* 080722B0 */ BL func_080721BC \n\
+/* 080722B4 */ POP {R4, R5} \n\
+/* 080722B6 */ POP {R0} \n\
+/* 080722B8 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_080722BC: \n\
+/* 080722BC */ .word VRAMBase + 0x125C0 \n\
+ \n\
+.balign 4, 0 \n\
+_080722C0: \n\
+/* 080722C0 */ .word D_083D6CA2 \n\
+ \n\
+.balign 4, 0 \n\
+_080722C4: \n\
+/* 080722C4 */ .word VRAMBase + 0x10000 \n\
+ \n\
+.balign 4, 0 \n\
+_080722C8: \n\
+/* 080722C8 */ .word VRAMBase + 0x12580 \n\
+ \n\
+.balign 4, 0 \n\
+_080722CC: \n\
+/* 080722CC */ .word VRAMBase + 0x12000 \n\
+ \n\
+.balign 4, 0 \n\
+_080722D0: \n\
+/* 080722D0 */ .word VRAMBase + 0x120A0 \n\
+ \n\
+.balign 4, 0 \n\
+_080722D4: \n\
+/* 080722D4 */ .word VRAMBase + 0x12400 \n\
+ \n\
+.balign 4, 0 \n\
+_080722D8: \n\
+/* 080722D8 */ .word VRAMBase + 0x124A0 \n\
+ \n\
+.balign 4, 0 \n\
+_080722DC: \n\
+/* 080722DC */ .word VRAMBase + 0x12060 \n\
+ \n\
+.balign 4, 0 \n\
+_080722E0: \n\
+/* 080722E0 */ .word VRAMBase + 0x12020 \n\
+ \n\
+.balign 4, 0 \n\
+_080722E4: \n\
+/* 080722E4 */ .word VRAMBase + 0x12460 \n\
+ \n\
+.balign 4, 0 \n\
+_080722E8: \n\
+/* 080722E8 */ .word VRAMBase + 0x12420 \n\
+.ltorg \n\
+.syntax divided");
+

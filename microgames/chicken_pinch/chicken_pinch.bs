@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_chicken_pinch at 0x083D52C4
+struct scene_chicken_pinch
+    /* Start  */ .word func_080609EC, 0x00000000
+    /* Paused */ .word func_08061030, 0x00000000
+    /* Update */ .word func_0806100C, 0x00000000
+    /* Stop   */ .word func_08061034, 0x00000000
+    /* Script */ .word 0x083D5258
+endstruct
+
+.incbin "microgames/chicken_pinch/chicken_pinch.bin", 36, 1040

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_tip_the_scale at 0x083DC6B0
+struct scene_tip_the_scale
+    /* Start  */ .word func_080A4BCC, 0x00000000
+    /* Paused */ .word func_080A550C, 0x00000000
+    /* Update */ .word func_080A5414, 0x00000000
+    /* Stop   */ .word func_080A5510, 0x00000000
+    /* Script */ .word 0x083DC62C
+endstruct
+
+.incbin "microgames/tip_the_scale/tip_the_scale.bin", 36, 840

@@ -1,0 +1,14 @@
+.include "include/beatscript.inc"
+
+.section .scene
+
+@ extracted scene_slick_wheelie at 0x083D5044
+struct scene_slick_wheelie
+    /* Start  */ .word func_0805E6F4, 0x00000000
+    /* Paused */ .word func_0805F0F8, 0x00000000
+    /* Update */ .word func_0805F0AC, 0x00000000
+    /* Stop   */ .word func_0805F0FC, 0x00000000
+    /* Script */ .word 0x083D4FD8
+endstruct
+
+.incbin "microgames/slick_wheelie/slick_wheelie.bin", 36, 352
