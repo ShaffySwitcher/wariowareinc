@@ -185,7 +185,7 @@ class RleCompressedData:
         if counts is None:
             counts = self.counts
 
-        while (count >= 255):
+        while (count > 255):
             counts.append(0)
             count -= 255
         if count > 0:

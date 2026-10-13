@@ -1,6 +1,7 @@
 """Synthetic compression fixtures; no game ROM or assets required."""
 
 import io
+import random
 import struct
 import unittest
 
@@ -24,6 +25,32 @@ def fixture(counts, run_count, source, double=False, extent=512):
 
 
 class RleTests(unittest.TestCase):
+    def assert_compression_roundtrip(self, source):
+        encoded = compression.RleCompressedData(source)
+        count = sum(value != 0 for value in encoded.counts)
+        stream = decompression.read_rle_counts(bytes(encoded.counts), BASE, count)
+        self.assertEqual(decompression.expand_rle(encoded.compressed, stream), source)
+        extent = max(len(source), len(encoded.compressed))
+        self.assertEqual(decompression.expand_rle_in_place(encoded.compressed, stream, extent), source)
+
+    def test_terminal_exact_255_multiples(self):
+        for length in (255, 510, 765):
+            with self.subTest(kind="literal", length=length):
+                self.assert_compression_roundtrip(list(range(length)))
+            with self.subTest(kind="repeat", length=length):
+                self.assert_compression_roundtrip([7] * (length + 1))
+
+    def test_seeded_run_roundtrips(self):
+        rng = random.Random(42)
+        for case in range(2000):
+            source = []
+            for _ in range(rng.randrange(1, 8)):
+                length = rng.choice((1, 2, 3, 254, 255, 256, 509, 510, 511))
+                value = rng.randrange(16)
+                source.extend([value] * length)
+            with self.subTest(case=case):
+                self.assert_compression_roundtrip(source)
+
     def test_literal_zero_run_does_not_consume_descriptor_count(self):
         source = list(range(256))
         result = decompression.decompress_compressed_data(fixture([0, 1], 1, source), BASE)
