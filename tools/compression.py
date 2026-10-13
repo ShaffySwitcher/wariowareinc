@@ -185,7 +185,7 @@ class RleCompressedData:
         if counts is None:
             counts = self.counts
 
-        while (count >= 255):
+        while (count > 255):
             counts.append(0)
             count -= 255
         if count > 0:
@@ -254,7 +254,7 @@ class RleCompressedData:
         else:
             f.write(".word %s_data\n" % symbol)
         f.write(".word %s_rle_segments\n" % symbol)
-        f.write(".hword %d\n" % len(self.counts))
+        f.write(".hword %d\n" % sum(count != 0 for count in self.counts))
         f.write(".hword %d\n" % self.offset)
         f.write(".word %s\n" % ("1" if double else "0"))
 
