@@ -192,13 +192,30 @@ def expand_rle_in_place(source, counts, rle_offset):
     return buffer[:dest_index]
 
 
+def read_rle_counts(rom, address, nonzero_count):
+    offset = rom_offset(address)
+    counts = []
+    remaining = nonzero_count
+    while remaining:
+        if offset >= len(rom):
+            raise ValueError("RLE count stream ends before its nonzero run count")
+        value = rom[offset]
+        offset += 1
+        counts.append(value)
+        # The original routine resumes the same mode after a zero/255 run.
+        # Only nonzero runs consume the descriptor counter.
+        if value:
+            remaining -= 1
+    return counts
+
+
 def decompress_compressed_data(rom, address):
     offset = rom_offset(address)
     data_address, rle_address = struct.unpack_from("<II", rom, offset)
     rle_size, rle_offset = struct.unpack_from("<HH", rom, offset + 8)
     double_compressed = read_u32(rom, offset + 12) != 0
 
-    counts = list(rom[rom_offset(rle_address):rom_offset(rle_address) + rle_size])
+    counts = read_rle_counts(rom, rle_address, rle_size)
 
     if double_compressed:
         source = decompress_compressed_gfx(rom, data_address)
