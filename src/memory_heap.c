@@ -2,6 +2,8 @@
 
 asm(".include \"include/gba.inc\"");
 
+#include "asm/memory_heap/asm_08006148.s"
+
 void *mem_heap_alloc(u32 size) {
 	return mem_heap_alloc_id(0, size);
 }
@@ -9,3 +11,7 @@ void *mem_heap_alloc(u32 size) {
 #include "asm/memory_heap/asm_08006184.s"
 
 #include "asm/memory_heap/asm_08006240.s"
+
+#include "asm/memory_heap/asm_080062e4.s"
+
+#include "asm/memory_heap/asm_080063b4.s"

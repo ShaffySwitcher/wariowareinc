@@ -24,7 +24,7 @@ extern void AgbMain(void);
 // EXTERNS
 extern void func_0800774C();
 extern void func_08002620();
-extern void func_08006148(u32* arg0, u32 arg1);
+extern void mem_heap_init(u32* arg0, u32 arg1);
 extern void task_pool_init();
 extern void func_08003DA0();
 extern void func_08003E64();

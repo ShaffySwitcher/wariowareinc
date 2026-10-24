@@ -3,7 +3,7 @@
 .syntax unified
 .include "include/gba.inc"
 
-glabel func_080063B4
+glabel mem_heap_get_allocated_space
 .thumb_func
 /* 080063B4 */ PUSH {R4, R5, R6, R7, LR}
 /* 080063B6 */ MOVS R2, #0

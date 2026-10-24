@@ -5,7 +5,7 @@ asm(".include \"include/gba.inc\"");
 void func_080001D4(void) {
     func_0800774C(); // init_fast_udivsi3 
     func_08002620(); // init_math_sqrt
-    func_08006148(D_083A3D94 + 0xBF1, 0x38000); // mem_heap_init
+    mem_heap_init(D_083A3D94 + 0xBF1, 0x38000);
     
     task_pool_init(); // task_pool_init
     func_08003DA0();
