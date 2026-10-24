@@ -61,7 +61,7 @@ void stop_sound(struct SongHeader *song) {
         isPlayingThisSound = (soundPlayer->song == song);
 
         if (isPlayingThisSound) {
-            func_080F30E0(soundPlayer, 0);
+            midi_player_fade_out_to_stop(soundPlayer, 0);
         }
     }
 }
@@ -99,14 +99,14 @@ void fade_out_sound(struct SongHeader* song, u16 duration) {
         isPlayingThisSound = (soundPlayer->song == song);
 
         if (isPlayingThisSound) {
-            func_080F30E0(soundPlayer, duration / 16);
+            midi_player_fade_out_to_stop(soundPlayer, duration / 16);
         }
     }
 }
 
 void stop_soundplayer(struct SoundPlayer *soundPlayer) {
     if (soundPlayer != NULL) {
-        func_080F30E0(soundPlayer, 0);
+        midi_player_fade_out_to_stop(soundPlayer, 0);
     }
 }
 
@@ -116,7 +116,7 @@ void stop_all_soundplayers(void) {
 
     for (i = 0; i < sound_player_count; i++) {
         soundPlayer = sound_player_table[i].soundPlayer;
-        func_080F30E0(soundPlayer, 1);
+        midi_player_fade_out_to_stop(soundPlayer, 1);
     }
 }
 #include "asm/audio/asm_0800200c.s"

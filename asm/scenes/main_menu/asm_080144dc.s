@@ -46,7 +46,7 @@ thumb_func_start func_080144DC \n\
 /* 08014538 */ LDR R0, =gBeatscriptScene \n\
 /* 0801453A */ LDR R0, [R0, #4] \n\
 /* 0801453C */ MOVS R1, #4 \n\
-/* 0801453E */ BL func_080F30E0 \n\
+/* 0801453E */ BL midi_player_fade_out_to_stop \n\
 /* 08014542 */ BL func_080141C8 \n\
 /* 08014546 */ POP {R0} \n\
 /* 08014548 */ BX R0 \n\

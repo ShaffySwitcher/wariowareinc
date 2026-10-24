@@ -22,7 +22,7 @@ _080AA9F8: \n\
 /* 080AAA10 */ ADDS R0, R1 \n\
 /* 080AAA12 */ LDR R0, [R0] \n\
 /* 080AAA14 */ LSRS R1, R5, #0X10 \n\
-/* 080AAA16 */ BL func_080F30E0 \n\
+/* 080AAA16 */ BL midi_player_fade_out_to_stop \n\
 _080AAA1A: \n\
 /* 080AAA1A */ ADDS R4, #1 \n\
 /* 080AAA1C */ CMP R4, #2 \n\

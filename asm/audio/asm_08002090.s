@@ -15,7 +15,7 @@ thumb_func_start func_08002090 \n\
 _080020A6: \n\
 /* 080020A6 */ LDR R0, [R5] \n\
 /* 080020A8 */ LSRS R1, R6, #0X10 \n\
-/* 080020AA */ BL func_080F30E0 \n\
+/* 080020AA */ BL midi_player_fade_out_to_stop \n\
 /* 080020AE */ ADDS R5, #0XC \n\
 /* 080020B0 */ ADDS R4, #1 \n\
 /* 080020B2 */ LDRB R0, [R7] \n\

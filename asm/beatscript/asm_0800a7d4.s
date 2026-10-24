@@ -1049,7 +1049,7 @@ _0800AE7C: \n\
 /* 0800AE80 */ MOV R6, R8 \n\
 /* 0800AE82 */ LSLS R1, R6, #0X10 \n\
 /* 0800AE84 */ LSRS R1, R1, #0X10 \n\
-/* 0800AE86 */ BL func_080F30E0 \n\
+/* 0800AE86 */ BL midi_player_fade_out_to_stop \n\
 /* 0800AE8A */ BL _0800B74C \n\
  \n\
 .balign 4, 0 \n\
