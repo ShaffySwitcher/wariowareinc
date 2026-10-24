@@ -1,5 +1,7 @@
 #include "code_08006f84.h"
 
+// "Can be better split": yes.
+
 asm(".include \"include/gba.inc\"");
 #include "asm/code_08006f84/asm_08006f84.s"
 

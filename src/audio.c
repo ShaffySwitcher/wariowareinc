@@ -119,3 +119,22 @@ void stop_all_soundplayers(void) {
         func_080F30E0(soundPlayer, 1);
     }
 }
+#include "asm/audio/asm_0800200c.s"
+
+#include "asm/audio/asm_08002024.s"
+
+#include "asm/audio/asm_08002038.s"
+
+#include "asm/audio/asm_0800204c.s"
+
+#include "asm/audio/asm_08002068.s"
+
+#include "asm/audio/asm_0800207c.s"
+
+#include "asm/audio/asm_08002090.s"
+
+#include "asm/audio/asm_080020c8.s"
+
+#include "asm/audio/asm_080020e0.s"
+
+#include "asm/audio/asm_080020fc.s"
