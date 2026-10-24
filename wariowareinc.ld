@@ -5,6 +5,7 @@ SECTIONS {
 
     . = 0x03000000;
     .bss . : SUBALIGN(4) {
+        build/src/task_pool.c.o(.bss);
         build/src/code_08000f10.c.o(.bss);
     }
 
@@ -150,7 +151,7 @@ SECTIONS {
         build/asm/asm_0800559c.s.o(.text*);
         build/asm/asm_080055d4.s.o(.text*);
         build/asm/asm_08005600.s.o(.text*);
-        build/asm/asm_0800567c.s.o(.text*);
+        build/src/task_pool.c.o(.text);
         build/asm/asm_080056b0.s.o(.text*);
         build/asm/asm_080056f4.s.o(.text*);
         build/asm/asm_08005744.s.o(.text*);
