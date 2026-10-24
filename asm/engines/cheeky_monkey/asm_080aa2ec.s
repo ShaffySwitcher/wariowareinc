@@ -20,7 +20,7 @@ thumb_func_start func_080AA2EC \n\
 /* 080AA30A */ LSLS R2, R2, #1 \n\
 /* 080AA30C */ ADDS R0, R1, R2 \n\
 /* 080AA30E */ LDR R0, [R0] \n\
-/* 080AA310 */ BL func_08005834 \n\
+/* 080AA310 */ BL force_stop_task \n\
 _080AA314: \n\
 /* 080AA314 */ BL get_current_mem_id \n\
 /* 080AA318 */ LSLS R0, R0, #0X10 \n\

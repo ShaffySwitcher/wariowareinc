@@ -23,7 +23,7 @@ _080B1B50: \n\
 /* 080B1B5A */ LDR R1, [R6] \n\
 /* 080B1B5C */ ADDS R0, R1 \n\
 /* 080B1B5E */ LDR R0, [R0, #0X64] \n\
-/* 080B1B60 */ BL func_08005920 \n\
+/* 080B1B60 */ BL get_task_state \n\
 /* 080B1B64 */ CMP R0, #0 \n\
 /* 080B1B66 */ BNE _080B1B70 \n\
 /* 080B1B68 */ LSLS R0, R5, #0X10 \n\
@@ -49,7 +49,7 @@ _080B1B80: \n\
 /* 080B1B8C */ LDR R1, [R6] \n\
 /* 080B1B8E */ ADDS R0, R1, R0 \n\
 /* 080B1B90 */ LDR R0, [R0, #0X18] \n\
-/* 080B1B92 */ BL func_08005920 \n\
+/* 080B1B92 */ BL get_task_state \n\
 /* 080B1B96 */ CMP R0, #0 \n\
 /* 080B1B98 */ BNE _080B1BA2 \n\
 /* 080B1B9A */ LSLS R0, R5, #0X10 \n\

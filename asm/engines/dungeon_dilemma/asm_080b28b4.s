@@ -16,7 +16,7 @@ thumb_func_start func_080B28B4 \n\
 /* 080B28CA */ LSLS R2, R2, #1 \n\
 /* 080B28CC */ ADDS R0, R1, R2 \n\
 /* 080B28CE */ LDR R0, [R0] \n\
-/* 080B28D0 */ BL func_08005920 \n\
+/* 080B28D0 */ BL get_task_state \n\
 /* 080B28D4 */ ADDS R1, R0, #0 \n\
 /* 080B28D6 */ CMP R1, #0 \n\
 /* 080B28D8 */ BNE _080B2926 \n\

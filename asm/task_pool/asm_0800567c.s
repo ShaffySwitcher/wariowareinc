@@ -1,7 +1,7 @@
 asm(".syntax unified \n\
  \n\
  \n\
-thumb_func_start func_0800567C \n\
+thumb_func_start task_pool_init \n\
 /* 0800567C */ PUSH {R4, R5, LR} \n\
 /* 0800567E */ LDR R1, =D_03000698 \n\
 /* 08005680 */ MOVS R0, #0 \n\

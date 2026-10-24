@@ -27,7 +27,7 @@ thumb_func_start func_080C6760 \n\
 /* 080C678C */ ADDS R1, R2 \n\
 /* 080C678E */ ADDS R1, R0 \n\
 /* 080C6790 */ LDR R0, [R1] \n\
-/* 080C6792 */ BL func_08005870 \n\
+/* 080C6792 */ BL force_cancel_task \n\
 _080C6796: \n\
 /* 080C6796 */ MOVS R0, #0X18 \n\
 /* 080C6798 */ BL get_random_range \n\

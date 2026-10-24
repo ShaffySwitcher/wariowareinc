@@ -159,7 +159,7 @@ u32 gameplay_update_scene(void) {
                     func_08003D28(&gGameplayData.unk1f4, 1);
                     for (i = 0; i < 2;) {
                         i++;
-                        func_08005A54(i, 1);
+                        task_pool_pause_id(i, 1);
                     }
                     gGameplayData.currentState = GAMEPLAY_STATE_PAUSED;
                     play_sound(&s_BASIC_PAUSE_ON_seqData);
@@ -205,7 +205,7 @@ u32 gameplay_update_scene(void) {
                 func_08003D28(&gGameplayData.unk1f4, 0);
                 for (i = 0; i < 2;) {
                     i++;
-                    func_08005A54((u16)i, 0);
+                    task_pool_pause_id((u16)i, 0);
                 }
                 gGameplayData.currentState = GAMEPLAY_STATE_RUNNING;
                 gameplay_unpause_restore_palettes();
@@ -214,7 +214,7 @@ u32 gameplay_update_scene(void) {
         case GAMEPLAY_STATE_EXITING:
             if (gGraphicsBuffer.unk854_4) {
                 stop_soundplayer(gBeatscriptScene.musicPlayer);
-                func_08005914(0);
+                task_pool_pause(0);
                 stop_beatscript_scene();
                 return 2;
             }

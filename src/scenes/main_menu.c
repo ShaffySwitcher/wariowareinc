@@ -323,9 +323,9 @@ void func_08011584(void) {
     s32 temp_r4;
 
     temp_r4 = gMainMenu.unk1AC;
-    if (func_08005920(temp_r4) == 1) {
+    if (get_task_state(temp_r4) == 1) {
         sprite_set_x_y(gSpriteHandler, *gCurrentSceneSpritePool, gMainMenu.unk1B0, gMainMenu.unk1B2);
-        func_08005834(temp_r4);
+        force_stop_task(temp_r4);
     }
 }
 
@@ -1360,8 +1360,8 @@ void main_menu_state_epilogue_select(void) {
 
 void func_08015C38(void) {
     if (gMainMenu.unkB4 != 0) {
-        if (func_08005920(gMainMenu.unkC8)) {
-            func_08005834(gMainMenu.unkC8);
+        if (get_task_state(gMainMenu.unkC8)) {
+            force_stop_task(gMainMenu.unkC8);
         }
         func_08004EE8(gMainMenu.unk0);
         gMainMenu.unkB4 = 0;

@@ -58,7 +58,7 @@ _080A57C2: \n\
 /* 080A57C6 */ MOV R2, SB \n\
 /* 080A57C8 */ LDR R0, [R2] \n\
 /* 080A57CA */ LDR R0, [R0, #4] \n\
-/* 080A57CC */ BL func_08005870 \n\
+/* 080A57CC */ BL force_cancel_task \n\
 /* 080A57D0 */ LDR R0, [R7] \n\
 /* 080A57D2 */ LDR R2, _080A584C \n\
 /* 080A57D4 */ STR R6, [SP] \n\

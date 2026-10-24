@@ -10,7 +10,7 @@ thumb_func_start func_080D2E34 \n\
 /* 080D2E3E */ ADDS R0, R1 \n\
 /* 080D2E40 */ MOVS R1, #0 \n\
 /* 080D2E42 */ LDRSH R0, [R0, R1] \n\
-/* 080D2E44 */ BL func_08005870 \n\
+/* 080D2E44 */ BL force_cancel_task \n\
 /* 080D2E48 */ LDR R3, _080D2E68 \n\
 /* 080D2E4A */ LDR R0, =D_083986FC \n\
 /* 080D2E4C */ STR R0, [SP] \n\

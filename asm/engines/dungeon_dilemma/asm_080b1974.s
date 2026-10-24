@@ -28,7 +28,7 @@ thumb_func_start func_080B1974 \n\
 /* 080B19A2 */ BL func_08005B70 \n\
 /* 080B19A6 */ LDR R0, [R4] \n\
 /* 080B19A8 */ LDR R0, [R0, #0X20] \n\
-/* 080B19AA */ BL func_08005870 \n\
+/* 080B19AA */ BL force_cancel_task \n\
 /* 080B19AE */ ADD SP, #8 \n\
 /* 080B19B0 */ POP {R4} \n\
 /* 080B19B2 */ POP {R0} \n\

@@ -9,7 +9,7 @@ thumb_func_start func_0809BB20 \n\
 /* 0809BB28 */ LSLS R1, R1, #1 \n\
 /* 0809BB2A */ ADDS R0, R1 \n\
 /* 0809BB2C */ LDR R0, [R0] \n\
-/* 0809BB2E */ BL func_08005870 \n\
+/* 0809BB2E */ BL force_cancel_task \n\
 /* 0809BB32 */ MOVS R0, #0 \n\
 /* 0809BB34 */ MOVS R5, #0X98 \n\
 /* 0809BB36 */ LSLS R5, R5, #1 \n\

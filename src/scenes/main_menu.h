@@ -258,5 +258,3 @@ extern s16* func_0800A228(s32);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);
-extern s32 func_08005920(s32);
-extern void func_08005834(s32);
