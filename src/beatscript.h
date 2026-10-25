@@ -200,6 +200,7 @@ extern struct Beatscript *beatscript_skip_to_case_or_endswitch(struct Beatscript
 extern struct Beatscript *beatscript_skip_to_default(struct Beatscript *currentCmd);
 extern struct Beatscript *beatscript_skip_to_loop_end(struct Beatscript *currentCmd);
 extern struct Beatscript *beatscript_rewind_to_loop_begin(struct Beatscript *currentCmd);
+extern void *scene_mem_heap_alloc(u32 size);
 
 
 // EXTERN

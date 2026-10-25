@@ -406,7 +406,9 @@ void func_0800A160(struct Animation* anim, struct Vector2* pos) {
 
 #include "asm/beatscript/asm_0800a218.s"
 
-#include "asm/beatscript/asm_0800a228.s"
+void *scene_mem_heap_alloc(u32 size) {
+    return mem_heap_alloc_id(get_current_mem_id(), size);
+}
 
 #include "asm/beatscript/asm_0800a240.s"
 

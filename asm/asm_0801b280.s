@@ -99,14 +99,14 @@ glabel func_0801B280
 /* 0801B34A */ MOVS R4, #0X80
 /* 0801B34C */ LSLS R4, R4, #3
 /* 0801B34E */ ADDS R0, R4, #0
-/* 0801B350 */ BL func_0800A228
+/* 0801B350 */ BL scene_mem_heap_alloc
 /* 0801B354 */ LDR R1, [R5]
 /* 0801B356 */ MOVS R2, #0X92
 /* 0801B358 */ LSLS R2, R2, #1
 /* 0801B35A */ ADDS R1, R2
 /* 0801B35C */ STR R0, [R1]
 /* 0801B35E */ ADDS R0, R4, #0
-/* 0801B360 */ BL func_0800A228
+/* 0801B360 */ BL scene_mem_heap_alloc
 /* 0801B364 */ LDR R1, [R5]
 /* 0801B366 */ MOVS R2, #0X94
 /* 0801B368 */ LSLS R2, R2, #1

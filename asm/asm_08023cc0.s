@@ -56,12 +56,12 @@ glabel func_08023CC0
 /* 08023D2E */ MOVS R4, #0X80
 /* 08023D30 */ LSLS R4, R4, #3
 /* 08023D32 */ ADDS R0, R4, #0
-/* 08023D34 */ BL func_0800A228
+/* 08023D34 */ BL scene_mem_heap_alloc
 /* 08023D38 */ LDR R1, [R5]
 /* 08023D3A */ ADDS R1, #0XB8
 /* 08023D3C */ STR R0, [R1]
 /* 08023D3E */ ADDS R0, R4, #0
-/* 08023D40 */ BL func_0800A228
+/* 08023D40 */ BL scene_mem_heap_alloc
 /* 08023D44 */ LDR R1, [R5]
 /* 08023D46 */ ADDS R2, R1, #0
 /* 08023D48 */ ADDS R2, #0XBC

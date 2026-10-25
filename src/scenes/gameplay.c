@@ -374,7 +374,7 @@ void func_08008DF4(void) {
     gGraphicsBuffer.BG_OFS[1].y = 0;
     gGraphicsBuffer.BG_OFS[1].x = 0;
     gGraphicsBuffer.unk4C = 0;
-    func_08003FB8();
+    backdrop_disable_renderer();
 }
 
 void gameplay_select_next_microgame(void) {

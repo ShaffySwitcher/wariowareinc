@@ -83,6 +83,6 @@ u32 title_scene_inputs_enabled(void) {
 
 void title_scene_stop(void) {
     func_08007EAC();
-    func_08003FB8();
+    backdrop_disable_renderer();
 }
 

@@ -67,7 +67,7 @@ void func_08010A18(void) {
     func_0801124C();
 
     gMainMenu.unkFC = gMainMenuSelectionState.stage;
-    gMainMenu.unk1D4 = func_0800A228(0x3C);
+    gMainMenu.unk1D4 = scene_mem_heap_alloc(0x3C);
 
     j = 0;
     px = &D_03004014.x;
@@ -145,7 +145,7 @@ void main_menu_scene_start(void) {
     gMainMenu.unkDC_1 = 1;
     gMainMenu.unk80 = 0x20;
     gMainMenu.unk82 = 0x20;
-    gMainMenu.unk7C = func_0800A228(0x800);
+    gMainMenu.unk7C = scene_mem_heap_alloc(0x800);
 
     gMainMenu.unk0 = create_new_bmp_font_bg((u16)get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
     gMainMenu.unk4 = create_new_bmp_font_obj_alt((u16)get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
@@ -203,10 +203,10 @@ void main_menu_scene_start(void) {
         func_08011824();
     }
 
-    gMainMenu.unkC = func_0800A228(0x280);
-    gMainMenu.unkB8 = func_0800A228(0x400);
+    gMainMenu.unkC = scene_mem_heap_alloc(0x280);
+    gMainMenu.unkB8 = scene_mem_heap_alloc(0x400);
     gMainMenu.unkB4 = 0;
-    gMainMenu.unkBC = func_0800A228(0x1000);
+    gMainMenu.unkBC = scene_mem_heap_alloc(0x1000);
     gMainMenu.unkC8 = 0;
 
     p = gMainMenu.unkC;
@@ -389,7 +389,7 @@ void func_08011730(u32 arg0) {
 
 void main_menu_scene_stop(void) {
     func_08007EAC();
-    func_08003FB8();
+    backdrop_disable_renderer();
 }
 
 void func_08011774(void) {

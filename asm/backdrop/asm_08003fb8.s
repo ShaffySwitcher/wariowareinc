@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08003FB8 \n\
+thumb_func_start backdrop_disable_renderer \n\
 /* 08003FB8 */ LDR R2, =D_03000528 \n\
 /* 08003FBA */ LDRB R1, [R2] \n\
 /* 08003FBC */ MOVS R0, #2 \n\

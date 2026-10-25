@@ -17,12 +17,12 @@ glabel func_08022704
 /* 0802271A */ MOVS R4, #0X80
 /* 0802271C */ LSLS R4, R4, #2
 /* 0802271E */ ADDS R0, R4, #0
-/* 08022720 */ BL func_0800A228
+/* 08022720 */ BL scene_mem_heap_alloc
 /* 08022724 */ LDR R5, _08022780
 /* 08022726 */ LDR R1, [R5]
 /* 08022728 */ STR R0, [R1, #4]
 /* 0802272A */ ADDS R0, R4, #0
-/* 0802272C */ BL func_0800A228
+/* 0802272C */ BL scene_mem_heap_alloc
 /* 08022730 */ LDR R1, [R5]
 /* 08022732 */ STR R0, [R1, #8]
 /* 08022734 */ BL get_current_mem_id

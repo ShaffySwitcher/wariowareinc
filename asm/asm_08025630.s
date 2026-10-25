@@ -81,7 +81,7 @@ glabel func_08025630
 /* 080256CA */ STRB R0, [R2, #4]
 /* 080256CC */ MOVS R0, #0XB4
 /* 080256CE */ LSLS R0, R0, #2
-/* 080256D0 */ BL func_0800A228
+/* 080256D0 */ BL scene_mem_heap_alloc
 /* 080256D4 */ LDR R2, [R4]
 /* 080256D6 */ STR R0, [R2, #8]
 /* 080256D8 */ ADDS R7, R0, #0

@@ -9,7 +9,7 @@ glabel func_0801D03C
 /* 0801D03E */ SUB SP, #0X14
 /* 0801D040 */ MOVS R0, #0XC8
 /* 0801D042 */ LSLS R0, R0, #1
-/* 0801D044 */ BL func_0800A228
+/* 0801D044 */ BL scene_mem_heap_alloc
 /* 0801D048 */ LDR R1, _0801D0C0
 /* 0801D04A */ LDR R1, [R1]
 /* 0801D04C */ STR R0, [R1, #0X24]

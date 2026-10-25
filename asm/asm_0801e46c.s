@@ -28,7 +28,7 @@ glabel func_0801E46C
 /* 0801E49C */ STR R0, [R1]
 /* 0801E49E */ MOVS R0, #0XA0
 /* 0801E4A0 */ LSLS R0, R0, #1
-/* 0801E4A2 */ BL func_0800A228
+/* 0801E4A2 */ BL scene_mem_heap_alloc
 /* 0801E4A6 */ LDR R1, [R4]
 /* 0801E4A8 */ STR R0, [R1, #0XC]
 /* 0801E4AA */ BL func_0800A218

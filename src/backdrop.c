@@ -13,6 +13,7 @@ asm(".include \"include/gba.inc\"");
 
 #include "asm/backdrop/asm_08003f8c.s"
 
+// Disable Gradient Backdrop
 #include "asm/backdrop/asm_08003fb8.s"
 
 #include "asm/backdrop/asm_08003fd0.s"

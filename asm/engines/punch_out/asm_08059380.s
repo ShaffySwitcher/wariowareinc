@@ -3,7 +3,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_08059380 \n\
 /* 08059380 */ PUSH {LR} \n\
-/* 08059382 */ BL func_08003FB8 \n\
+/* 08059382 */ BL backdrop_disable_renderer \n\
 /* 08059386 */ LDR R2, _080593A0 \n\
 /* 08059388 */ LDR R0, [R2] \n\
 /* 0805938A */ LDR R1, _080593A4 \n\

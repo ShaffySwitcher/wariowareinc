@@ -36,7 +36,7 @@ glabel func_0801BA40
 /* 0801BA7E */ BL interp_lcd_blend_mode
 /* 0801BA82 */ MOVS R0, #0XA0
 /* 0801BA84 */ LSLS R0, R0, #1
-/* 0801BA86 */ BL func_0800A228
+/* 0801BA86 */ BL scene_mem_heap_alloc
 /* 0801BA8A */ LDR R1, [R4]
 /* 0801BA8C */ ADDS R1, #0X9C
 /* 0801BA8E */ STR R0, [R1]

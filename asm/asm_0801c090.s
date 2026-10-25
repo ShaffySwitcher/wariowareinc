@@ -17,13 +17,13 @@ glabel func_0801C090
 /* 0801C0A2 */ MOVS R3, #0
 /* 0801C0A4 */ BL sprite_set_origin_x_y
 /* 0801C0A8 */ MOVS R0, #0X20
-/* 0801C0AA */ BL func_0800A228
+/* 0801C0AA */ BL scene_mem_heap_alloc
 /* 0801C0AE */ LDR R4, _0801C184
 /* 0801C0B0 */ LDR R1, [R4]
 /* 0801C0B2 */ ADDS R1, #0XC4
 /* 0801C0B4 */ STR R0, [R1]
 /* 0801C0B6 */ MOVS R0, #0X40
-/* 0801C0B8 */ BL func_0800A228
+/* 0801C0B8 */ BL scene_mem_heap_alloc
 /* 0801C0BC */ LDR R1, [R4]
 /* 0801C0BE */ ADDS R1, #0XC8
 /* 0801C0C0 */ STR R0, [R1]
@@ -70,7 +70,7 @@ _0801C0CC:
 /* 0801C112 */ MOVS R1, #0
 /* 0801C114 */ STRB R1, [R0]
 /* 0801C116 */ MOVS R0, #0X10
-/* 0801C118 */ BL func_0800A228
+/* 0801C118 */ BL scene_mem_heap_alloc
 /* 0801C11C */ LDR R1, [R4]
 /* 0801C11E */ MOVS R2, #0X98
 /* 0801C120 */ LSLS R2, R2, #1

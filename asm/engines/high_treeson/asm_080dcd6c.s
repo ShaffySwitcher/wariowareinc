@@ -93,19 +93,19 @@ thumb_func_start func_080DCD6C \n\
 /* 080DCE42 */ STRH R1, [R0, #0X1A] \n\
 /* 080DCE44 */ STRH R1, [R0, #0X1C] \n\
 /* 080DCE46 */ MOVS R0, #0X1A \n\
-/* 080DCE48 */ BL func_0800A228 \n\
+/* 080DCE48 */ BL scene_mem_heap_alloc \n\
 /* 080DCE4C */ LDR R1, [R4] \n\
 /* 080DCE4E */ STR R0, [R1, #0X20] \n\
 /* 080DCE50 */ MOVS R0, #0X1A \n\
-/* 080DCE52 */ BL func_0800A228 \n\
+/* 080DCE52 */ BL scene_mem_heap_alloc \n\
 /* 080DCE56 */ LDR R1, [R4] \n\
 /* 080DCE58 */ STR R0, [R1, #0X24] \n\
 /* 080DCE5A */ MOVS R0, #0X1A \n\
-/* 080DCE5C */ BL func_0800A228 \n\
+/* 080DCE5C */ BL scene_mem_heap_alloc \n\
 /* 080DCE60 */ LDR R1, [R4] \n\
 /* 080DCE62 */ STR R0, [R1, #0X28] \n\
 /* 080DCE64 */ MOVS R0, #0X1A \n\
-/* 080DCE66 */ BL func_0800A228 \n\
+/* 080DCE66 */ BL scene_mem_heap_alloc \n\
 /* 080DCE6A */ LDR R1, [R4] \n\
 /* 080DCE6C */ STR R0, [R1, #0X2C] \n\
 /* 080DCE6E */ MOVS R7, #0 \n\

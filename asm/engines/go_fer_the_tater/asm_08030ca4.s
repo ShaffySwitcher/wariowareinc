@@ -44,7 +44,7 @@ thumb_func_start func_08030CA4 \n\
 /* 08030D06 */ MOVS R0, #1 \n\
 /* 08030D08 */ BL func_0800A0C4 \n\
 /* 08030D0C */ MOVS R0, #0X8C \n\
-/* 08030D0E */ BL func_0800A228 \n\
+/* 08030D0E */ BL scene_mem_heap_alloc \n\
 /* 08030D12 */ LDR R2, _08030F34 \n\
 /* 08030D14 */ LDR R1, [R2] \n\
 /* 08030D16 */ STR R0, [R1, #0X14] \n\

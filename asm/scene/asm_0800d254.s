@@ -13,7 +13,7 @@ thumb_func_start func_0800D254 \n\
 /* 0800D266 */ LSLS R5, R5, #0X10 \n\
 /* 0800D268 */ LSRS R5, R5, #0X10 \n\
 /* 0800D26A */ MOVS R0, #0X9C \n\
-/* 0800D26C */ BL func_0800A228 \n\
+/* 0800D26C */ BL scene_mem_heap_alloc \n\
 /* 0800D270 */ ADDS R7, R0, #0 \n\
 /* 0800D272 */ BL get_current_mem_id \n\
 /* 0800D276 */ STRH R0, [R7] \n\
@@ -29,7 +29,7 @@ thumb_func_start func_0800D254 \n\
 /* 0800D28A */ STRH R4, [R0] \n\
 /* 0800D28C */ LDRH R0, [R0] \n\
 /* 0800D28E */ LSLS R0, R0, #4 \n\
-/* 0800D290 */ BL func_0800A228 \n\
+/* 0800D290 */ BL scene_mem_heap_alloc \n\
 /* 0800D294 */ STR R0, [R7, #8] \n\
 /* 0800D296 */ ADDS R0, R7, #0 \n\
 /* 0800D298 */ ADDS R0, #0X4F \n\
@@ -41,7 +41,7 @@ thumb_func_start func_0800D254 \n\
 /* 0800D2A4 */ LSLS R0, R1, #1 \n\
 /* 0800D2A6 */ ADD R0, R8 \n\
 /* 0800D2A8 */ LSLS R0, R0, #4 \n\
-/* 0800D2AA */ BL func_0800A228 \n\
+/* 0800D2AA */ BL scene_mem_heap_alloc \n\
 /* 0800D2AE */ STR R0, [R7, #0X50] \n\
 /* 0800D2B0 */ MOVS R2, #0 \n\
 /* 0800D2B2 */ CMP R2, R8 \n\
@@ -81,7 +81,7 @@ _0800D2D4: \n\
 _0800D2F4: \n\
 /* 0800D2F4 */ STRB R4, [R5] \n\
 /* 0800D2F6 */ LSLS R0, R4, #3 \n\
-/* 0800D2F8 */ BL func_0800A228 \n\
+/* 0800D2F8 */ BL scene_mem_heap_alloc \n\
 /* 0800D2FC */ STR R0, [R7, #0X74] \n\
 /* 0800D2FE */ LDR R1, _0800D31C \n\
 /* 0800D300 */ MOV R0, SB \n\

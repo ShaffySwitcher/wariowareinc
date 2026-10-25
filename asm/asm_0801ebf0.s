@@ -8,7 +8,7 @@ glabel func_0801EBF0
 /* 0801EBF0 */ PUSH {LR}
 /* 0801EBF2 */ SUB SP, #0XC
 /* 0801EBF4 */ MOVS R0, #0X10
-/* 0801EBF6 */ BL func_0800A228
+/* 0801EBF6 */ BL scene_mem_heap_alloc
 /* 0801EBFA */ LDR R1, _0801EC2C
 /* 0801EBFC */ LDR R1, [R1]
 /* 0801EBFE */ STR R0, [R1, #4]

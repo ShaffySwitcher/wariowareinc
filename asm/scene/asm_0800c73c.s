@@ -3,7 +3,7 @@ asm(".syntax unified \n\
 thumb_func_start func_0800C73C \n\
 /* 0800C73C */ PUSH {R4, LR} \n\
 /* 0800C73E */ MOVS R0, #0XC \n\
-/* 0800C740 */ BL func_0800A228 \n\
+/* 0800C740 */ BL scene_mem_heap_alloc \n\
 /* 0800C744 */ ADDS R4, R0, #0 \n\
 /* 0800C746 */ BL func_0800A218 \n\
 /* 0800C74A */ MOVS R1, #0 \n\

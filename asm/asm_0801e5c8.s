@@ -45,7 +45,7 @@ glabel func_0801E5C8
 /* 0801E61C */ MOVS R5, #0X80
 /* 0801E61E */ LSLS R5, R5, #2
 /* 0801E620 */ ADDS R0, R5, #0
-/* 0801E622 */ BL func_0800A228
+/* 0801E622 */ BL scene_mem_heap_alloc
 /* 0801E626 */ LDR R1, [R4]
 /* 0801E628 */ MOVS R3, #0X82
 /* 0801E62A */ LSLS R3, R3, #1
@@ -53,7 +53,7 @@ glabel func_0801E5C8
 /* 0801E62E */ ADD R1, R8
 /* 0801E630 */ STR R0, [R1]
 /* 0801E632 */ ADDS R0, R5, #0
-/* 0801E634 */ BL func_0800A228
+/* 0801E634 */ BL scene_mem_heap_alloc
 /* 0801E638 */ LDR R2, [R4]
 /* 0801E63A */ MOVS R1, #0X84
 /* 0801E63C */ LSLS R1, R1, #1
@@ -79,7 +79,7 @@ glabel func_0801E5C8
 /* 0801E666 */ ADDS R3, R6, #0
 /* 0801E668 */ BL pal_interp_blend_now_col_pal
 /* 0801E66C */ ADDS R0, R5, #0
-/* 0801E66E */ BL func_0800A228
+/* 0801E66E */ BL scene_mem_heap_alloc
 /* 0801E672 */ LDR R1, [R4]
 /* 0801E674 */ MOVS R3, #0X86
 /* 0801E676 */ LSLS R3, R3, #1
@@ -87,7 +87,7 @@ glabel func_0801E5C8
 /* 0801E67A */ ADD R1, R8
 /* 0801E67C */ STR R0, [R1]
 /* 0801E67E */ ADDS R0, R5, #0
-/* 0801E680 */ BL func_0800A228
+/* 0801E680 */ BL scene_mem_heap_alloc
 /* 0801E684 */ LDR R2, [R4]
 /* 0801E686 */ SUBS R5, #0XF0
 /* 0801E688 */ ADDS R1, R2, R5

@@ -8,7 +8,7 @@ thumb_func_start func_08014FF8 \n\
 /* 08015000 */ PUSH {R5, R6, R7} \n\
 /* 08015002 */ SUB SP, #0X14 \n\
 /* 08015004 */ MOVS R0, #0X20 \n\
-/* 08015006 */ BL func_0800A228 \n\
+/* 08015006 */ BL scene_mem_heap_alloc \n\
 /* 0801500A */ ADDS R5, R0, #0 \n\
 /* 0801500C */ LDR R0, _08015214 \n\
 /* 0801500E */ MOV SL, R0 \n\
@@ -99,7 +99,7 @@ thumb_func_start func_08014FF8 \n\
 /* 080150C4 */ LDRB R0, [R0] \n\
 /* 080150C6 */ ADDS R0, #1 \n\
 /* 080150C8 */ LSLS R0, R0, #1 \n\
-/* 080150CA */ BL func_0800A228 \n\
+/* 080150CA */ BL scene_mem_heap_alloc \n\
 /* 080150CE */ MOV R2, SL \n\
 /* 080150D0 */ LDR R1, [R2] \n\
 /* 080150D2 */ MOVS R3, #0XCA \n\
@@ -112,7 +112,7 @@ thumb_func_start func_08014FF8 \n\
 /* 080150E0 */ LSLS R0, R1, #1 \n\
 /* 080150E2 */ ADDS R0, R1 \n\
 /* 080150E4 */ LSLS R0, R0, #3 \n\
-/* 080150E6 */ BL func_0800A228 \n\
+/* 080150E6 */ BL scene_mem_heap_alloc \n\
 /* 080150EA */ MOV R2, SL \n\
 /* 080150EC */ LDR R1, [R2] \n\
 /* 080150EE */ ADDS R5, #0X1C \n\
@@ -122,7 +122,7 @@ thumb_func_start func_08014FF8 \n\
 /* 080150F6 */ LDRB R0, [R1] \n\
 /* 080150F8 */ ADDS R0, #2 \n\
 /* 080150FA */ LSLS R0, R0, #2 \n\
-/* 080150FC */ BL func_0800A228 \n\
+/* 080150FC */ BL scene_mem_heap_alloc \n\
 /* 08015100 */ MOV R3, SL \n\
 /* 08015102 */ LDR R1, [R3] \n\
 /* 08015104 */ MOVS R3, #0XCE \n\

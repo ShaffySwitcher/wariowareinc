@@ -254,7 +254,7 @@ extern void func_08013E44(void);
 extern void func_08013B88(void);
 extern void func_08013AE0(void);
 extern void func_08012658(void);
-extern s16* func_0800A228(s32);
+extern void *scene_mem_heap_alloc(u32 size);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);

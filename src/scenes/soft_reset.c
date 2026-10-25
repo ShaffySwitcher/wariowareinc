@@ -37,7 +37,7 @@ s32 soft_reset_update_scene(void) {
 
     case 1:
         if (!(gGraphicsBuffer.unk854_2)) {
-            func_08003FB8();
+            backdrop_disable_renderer();
             gSoftReset.state++;
         }
         break;
