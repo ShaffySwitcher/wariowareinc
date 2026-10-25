@@ -21,14 +21,14 @@ _0800CE34: \n\
 /* 0800CE3C */ LSLS R0, R0, #3 \n\
 /* 0800CE3E */ STR R0, [SP] \n\
 /* 0800CE40 */ ADDS R0, R5, #0 \n\
-/* 0800CE42 */ BL func_08003B10 \n\
+/* 0800CE42 */ BL bg_anim_play \n\
 /* 0800CE46 */ LDR R0, =gCurrentSceneData \n\
 /* 0800CE48 */ LDR R0, [R0] \n\
 /* 0800CE4A */ MOVS R1, #0XFA \n\
 /* 0800CE4C */ LSLS R1, R1, #1 \n\
 /* 0800CE4E */ ADDS R0, R0, R1 \n\
 /* 0800CE50 */ LDR R1, [R4, #4] \n\
-/* 0800CE52 */ BL func_08003B54 \n\
+/* 0800CE52 */ BL bg_anim_set_func_arg \n\
 _0800CE56: \n\
 /* 0800CE56 */ ADD SP, #4 \n\
 /* 0800CE58 */ POP {R4, R5} \n\

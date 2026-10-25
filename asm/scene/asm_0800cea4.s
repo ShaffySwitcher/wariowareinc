@@ -32,7 +32,7 @@ thumb_func_start func_0800CEA4 \n\
 /* 0800CEE2 */ ADDS R1, R4, #0 \n\
 /* 0800CEE4 */ MOVS R2, #1 \n\
 /* 0800CEE6 */ MOVS R3, #0 \n\
-/* 0800CEE8 */ BL func_08003F8C \n\
+/* 0800CEE8 */ BL hdma_queue \n\
 /* 0800CEEC */ POP {R3} \n\
 /* 0800CEEE */ MOV R8, R3 \n\
 /* 0800CEF0 */ POP {R4, R5, R6} \n\

@@ -3,7 +3,7 @@ asm(".syntax unified \n\
 thumb_func_start func_0800D320 \n\
 /* 0800D320 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800D322 */ ADDS R5, R0, #0 \n\
-/* 0800D324 */ BL backdrop_disable_renderer \n\
+/* 0800D324 */ BL hdma_disable \n\
 /* 0800D328 */ MOVS R4, #0 \n\
 /* 0800D32A */ ADDS R0, R5, #0 \n\
 /* 0800D32C */ ADDS R0, #0X4F \n\

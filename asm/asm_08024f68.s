@@ -12,7 +12,7 @@ glabel func_08024F68
 /* 08024F70 */ BL scene_set_current_thread
 /* 08024F74 */ LDR R0, [R4, #0X50]
 /* 08024F76 */ BL delete_bmp_font_obj
-/* 08024F7A */ BL func_0800418C
+/* 08024F7A */ BL backdrop_gradient_stop
 /* 08024F7E */ BL func_08016FD8
 /* 08024F82 */ POP {R4}
 /* 08024F84 */ POP {R0}

@@ -3,7 +3,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_0805C2EC \n\
 /* 0805C2EC */ PUSH {LR} \n\
-/* 0805C2EE */ BL backdrop_disable_renderer \n\
+/* 0805C2EE */ BL hdma_disable \n\
 /* 0805C2F2 */ POP {R0} \n\
 /* 0805C2F4 */ BX R0 \n\
  \n\

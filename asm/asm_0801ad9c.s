@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_0801AD9C
 /* 0801AD9C */ PUSH {LR}
-/* 0801AD9E */ BL backdrop_disable_renderer
+/* 0801AD9E */ BL hdma_disable
 /* 0801ADA2 */ POP {R0}
 /* 0801ADA4 */ BX R0
 

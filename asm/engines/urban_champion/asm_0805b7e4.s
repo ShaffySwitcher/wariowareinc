@@ -311,7 +311,7 @@ _0805B9E4: \n\
 /* 0805BA4C */ LDR R1, _0805BA8C \n\
 /* 0805BA4E */ MOVS R2, #1 \n\
 /* 0805BA50 */ MOVS R3, #0 \n\
-/* 0805BA52 */ BL func_08003F8C \n\
+/* 0805BA52 */ BL hdma_queue \n\
 /* 0805BA56 */ ADD SP, #0X18 \n\
 /* 0805BA58 */ POP {R3, R4, R5} \n\
 /* 0805BA5A */ MOV R8, R3 \n\

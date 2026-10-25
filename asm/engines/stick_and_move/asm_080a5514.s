@@ -89,7 +89,7 @@ _080A55CE: \n\
 /* 080A55CE */ MOVS R0, #0 \n\
 /* 080A55D0 */ MOVS R1, #0X17 \n\
 /* 080A55D2 */ MOVS R2, #0 \n\
-/* 080A55D4 */ BL func_08004130 \n\
+/* 080A55D4 */ BL backdrop_gradient_start \n\
 /* 080A55D8 */ ADD SP, #0XC \n\
 /* 080A55DA */ POP {R4, R5, R6} \n\
 /* 080A55DC */ POP {R0} \n\

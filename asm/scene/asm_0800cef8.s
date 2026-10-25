@@ -3,7 +3,7 @@ asm(".syntax unified \n\
 thumb_func_start func_0800CEF8 \n\
 /* 0800CEF8 */ PUSH {LR} \n\
 /* 0800CEFA */ BL mem_heap_dealloc \n\
-/* 0800CEFE */ BL backdrop_disable_renderer \n\
+/* 0800CEFE */ BL hdma_disable \n\
 /* 0800CF02 */ POP {R0} \n\
 /* 0800CF04 */ BX R0 \n\
  \n\

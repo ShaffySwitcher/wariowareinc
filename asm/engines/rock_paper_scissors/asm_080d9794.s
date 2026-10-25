@@ -3,7 +3,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_080D9794 \n\
 /* 080D9794 */ PUSH {LR} \n\
-/* 080D9796 */ BL func_0800418C \n\
+/* 080D9796 */ BL backdrop_gradient_stop \n\
 /* 080D979A */ POP {R0} \n\
 /* 080D979C */ BX R0 \n\
  \n\

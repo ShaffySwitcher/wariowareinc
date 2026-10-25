@@ -653,7 +653,7 @@ _080E6F0C: \n\
 /* 080E6F68 */ MOVS R0, #0 \n\
 /* 080E6F6A */ MOVS R1, #3 \n\
 /* 080E6F6C */ MOVS R2, #0 \n\
-/* 080E6F6E */ BL func_08004130 \n\
+/* 080E6F6E */ BL backdrop_gradient_start \n\
 /* 080E6F72 */ ADD SP, #0X28 \n\
 /* 080E6F74 */ POP {R3, R4, R5} \n\
 /* 080E6F76 */ MOV R8, R3 \n\

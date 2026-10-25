@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08003F50 \n\
+thumb_func_start hdma_apply_queued \n\
 /* 08003F50 */ PUSH {R4, LR} \n\
 /* 08003F52 */ LDR R3, =D_03000528 \n\
 /* 08003F54 */ LDRB R4, [R3] \n\

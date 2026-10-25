@@ -12,7 +12,7 @@ thumb_func_start func_0800CE6C \n\
 /* 0800CE7C */ CMP R0, #0 \n\
 /* 0800CE7E */ BEQ _0800CE86 \n\
 /* 0800CE80 */ ADDS R0, R1, #0 \n\
-/* 0800CE82 */ BL func_08003D1C \n\
+/* 0800CE82 */ BL bg_anim_stop \n\
 _0800CE86: \n\
 /* 0800CE86 */ POP {R0} \n\
 /* 0800CE88 */ BX R0 \n\

@@ -30,7 +30,7 @@ glabel func_080204F4
 /* 08020526 */ MOVS R0, #0XF
 /* 08020528 */ MOVS R1, #8
 /* 0802052A */ MOVS R2, #0XF
-/* 0802052C */ BL func_08004130
+/* 0802052C */ BL backdrop_gradient_start
 /* 08020530 */ ADD SP, #0XC
 /* 08020532 */ POP {R0}
 /* 08020534 */ BX R0

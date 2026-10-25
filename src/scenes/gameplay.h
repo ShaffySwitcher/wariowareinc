@@ -245,23 +245,13 @@ extern struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd*, s32);
 extern u32 gameplay_run_script(void);
 
 // EXTERNS
-extern u32 backdrop_disable_renderer(void);
 extern void func_08007EAC(void);
-extern void func_08003A70(void*);
-extern void func_08003B58(void*);
-extern void func_08003D28(void*, u32);
-extern void trigger_pending_dma3(void);
-extern void func_080041B4(void);
-extern void task_pool_pause(u32);
-extern void flush_graphics_buffer(void);
 extern void func_08006B00(void);
 extern void func_08006C40(u32, u32);
 extern void func_08006F68(void);
-extern void task_pool_pause_id(u16, u32);
 extern u32 func_0800A098(void);
 extern void func_0800A200(u32);
 extern void func_0800A270(void);
 extern void func_0800CC9C(s32, s32);
 extern void func_0800CD94(s32, s32);
-extern void sprite_handler_set_global_pause(void*, u32);
 extern void func_08008130(void);

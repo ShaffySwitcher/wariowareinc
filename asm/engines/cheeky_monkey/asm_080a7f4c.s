@@ -12,7 +12,7 @@ thumb_func_start func_080A7F4C \n\
 /* 080A7F60 */ BL scene_hide_bg_layer \n\
 /* 080A7F64 */ MOVS R0, #3 \n\
 /* 080A7F66 */ BL scene_hide_bg_layer \n\
-/* 080A7F6A */ BL func_0800418C \n\
+/* 080A7F6A */ BL backdrop_gradient_stop \n\
 /* 080A7F6E */ BL get_current_mem_id \n\
 /* 080A7F72 */ LSLS R0, R0, #0X10 \n\
 /* 080A7F74 */ LSRS R3, R0, #0X10 \n\

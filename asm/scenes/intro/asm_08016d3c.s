@@ -4,7 +4,7 @@ thumb_func_start func_08016D3C \n\
 /* 08016D3C */ PUSH {R4, R5, LR} \n\
 /* 08016D3E */ MOVS R0, #0 \n\
 /* 08016D40 */ BL func_08000F74 \n\
-/* 08016D44 */ BL func_08003E64 \n\
+/* 08016D44 */ BL hdma_reset \n\
 /* 08016D48 */ MOVS R5, #0 \n\
 _08016D4A: \n\
 /* 08016D4A */ ADDS R5, #1 \n\

@@ -22,7 +22,7 @@ glabel func_0801AB4C
 /* 0801AB6A */ BHI _0801ABB0
 /* 0801AB6C */ LDR R0, _0801ABA0
 /* 0801AB6E */ ADDS R1, R2, #0
-/* 0801AB70 */ BL func_08003DF4
+/* 0801AB70 */ BL rle_decompress_bg
 /* 0801AB74 */ MOVS R4, #0XF0
 /* 0801AB76 */ LSLS R4, R4, #3
 /* 0801AB78 */ LDR R0, _0801AB9C
@@ -32,12 +32,12 @@ glabel func_0801AB4C
 /* 0801AB80 */ ADDS R0, R1
 /* 0801AB82 */ LDR R0, [R0]
 /* 0801AB84 */ ADDS R1, R2, #0
-/* 0801AB86 */ BL func_08003DF4
+/* 0801AB86 */ BL rle_decompress_bg
 /* 0801AB8A */ LDR R0, _0801ABA8
 /* 0801AB8C */ ADDS R2, R4, R0
 /* 0801AB8E */ LDR R0, _0801ABAC
 /* 0801AB90 */ ADDS R1, R2, #0
-/* 0801AB92 */ BL func_08003DF4
+/* 0801AB92 */ BL rle_decompress_bg
 /* 0801AB96 */ B _0801ABBE
 
 .balign 4, 0
@@ -69,7 +69,7 @@ _0801ABB0:
 /* 0801ABB4 */ ADDS R1, R0
 /* 0801ABB6 */ LDR R0, [R1]
 /* 0801ABB8 */ ADDS R1, R2, #0
-/* 0801ABBA */ BL func_08003DF4
+/* 0801ABBA */ BL rle_decompress_bg
 _0801ABBE:
 /* 0801ABBE */ LDR R0, =gCurrentSceneVariable
 /* 0801ABC0 */ LDR R2, [R0]

@@ -9,7 +9,7 @@ thumb_func_start func_08059320 \n\
 /* 08059328 */ LDR R1, _08059348 \n\
 /* 0805932A */ MOVS R2, #4 \n\
 /* 0805932C */ MOVS R3, #0 \n\
-/* 0805932E */ BL func_08003F8C \n\
+/* 0805932E */ BL hdma_queue \n\
 /* 08059332 */ LDR R0, [R4] \n\
 /* 08059334 */ LDR R1, _0805934C \n\
 /* 08059336 */ ADDS R0, R1 \n\

@@ -10,7 +10,7 @@ thumb_func_start func_080E9B60 \n\
 /* 080E9B6A */ STRH R2, [R1] \n\
 /* 080E9B6C */ ADDS R0, #0X4E \n\
 /* 080E9B6E */ STRH R2, [R0] \n\
-/* 080E9B70 */ BL func_0800418C \n\
+/* 080E9B70 */ BL backdrop_gradient_stop \n\
 /* 080E9B74 */ POP {R0} \n\
 /* 080E9B76 */ BX R0 \n\
  \n\

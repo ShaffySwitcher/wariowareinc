@@ -16,7 +16,7 @@ glabel func_08016FD8
 /* 08016FEA */ BL func_08016FB0
 /* 08016FEE */ BL func_08016FCC
 /* 08016FF2 */ BL func_0800CE6C
-/* 08016FF6 */ BL func_0800418C
+/* 08016FF6 */ BL backdrop_gradient_stop
 /* 08016FFA */ ADDS R0, R5, #0
 /* 08016FFC */ ADDS R0, #0X4C
 /* 08016FFE */ STRH R4, [R0]

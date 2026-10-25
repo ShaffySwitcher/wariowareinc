@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start trigger_pending_dma3 \n\
+thumb_func_start hdma_run_dma3_now \n\
 /* 08003F14 */ PUSH {LR} \n\
 /* 08003F16 */ LDR R2, _08003F44 \n\
 /* 08003F18 */ LDRB R3, [R2] \n\

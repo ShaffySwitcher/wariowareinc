@@ -92,7 +92,7 @@ _080DC366: \n\
 /* 080DC36C */ LDRB R0, [R0] \n\
 /* 080DC36E */ MOVS R1, #0XF \n\
 /* 080DC370 */ MOVS R2, #0 \n\
-/* 080DC372 */ BL func_08004130 \n\
+/* 080DC372 */ BL backdrop_gradient_start \n\
 _080DC376: \n\
 /* 080DC376 */ LDR R4, _080DC3C4 \n\
 /* 080DC378 */ LDR R1, [R4] \n\
@@ -122,7 +122,7 @@ _080DC376: \n\
 /* 080DC3A8 */ LDRB R0, [R0] \n\
 /* 080DC3AA */ MOVS R1, #0XF \n\
 /* 080DC3AC */ MOVS R2, #0 \n\
-/* 080DC3AE */ BL func_08004130 \n\
+/* 080DC3AE */ BL backdrop_gradient_start \n\
 /* 080DC3B2 */ LDR R0, [R4] \n\
 /* 080DC3B4 */ ADDS R0, #0XD5 \n\
 /* 080DC3B6 */ STRB R5, [R0] \n\
@@ -146,7 +146,7 @@ _080DC3C8: \n\
 /* 080DC3D0 */ ADDS R0, #1 \n\
 /* 080DC3D2 */ MOVS R1, #0XF \n\
 /* 080DC3D4 */ MOVS R2, #0 \n\
-/* 080DC3D6 */ BL func_08004130 \n\
+/* 080DC3D6 */ BL backdrop_gradient_start \n\
 _080DC3DA: \n\
 /* 080DC3DA */ LDR R0, _080DC404 \n\
 /* 080DC3DC */ LDR R0, [R0] \n\

@@ -75,7 +75,7 @@ void gameplay_init_scene(void) {
     D_03006524 = mem_heap_alloc(0x68);
     D_03006528 = mem_heap_alloc(0x10);
     D_0300652C = mem_heap_alloc(8);
-    func_08003E64();
+    hdma_reset();
     func_08000F74(func_08008940);
     gGameplayData.unk8 = -1;
     *PALETTE_RAM = 0;
@@ -94,7 +94,7 @@ void gameplay_stop_scene(void) {
     u32 i;
 
     func_08000F74(NULL);
-    func_08003E64();
+    hdma_reset();
     
     for(i = 0; i < 2;){
         i++; // why?
@@ -118,8 +118,8 @@ u32 gameplay_update_scene(void) {
     u32 i;
 
     flush_graphics_buffer();
-    trigger_pending_dma3();
-    func_08003A70(&gGameplayData.unk1f4);
+    hdma_run_dma3_now();
+    bg_anim_write_to_vram(&gGameplayData.unk1f4);
 
     if (!gGameplayData.isPaused) {
         update_paused_beatscript_scene();
@@ -157,7 +157,7 @@ u32 gameplay_update_scene(void) {
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
                     func_08002024(1);
                     sprite_handler_set_global_pause(gSpriteHandler, TRUE);
-                    func_08003D28(&gGameplayData.unk1f4, 1);
+                    bg_anim_set_pause(&gGameplayData.unk1f4, 1);
                     for (i = 0; i < 2;) {
                         i++;
                         task_pool_pause_id(i, 1);
@@ -203,7 +203,7 @@ u32 gameplay_update_scene(void) {
                 gGameplayData.isPaused = 0;
                 func_08002024(0);
                 sprite_handler_set_global_pause(gSpriteHandler, FALSE);
-                func_08003D28(&gGameplayData.unk1f4, 0);
+                bg_anim_set_pause(&gGameplayData.unk1f4, 0);
                 for (i = 0; i < 2;) {
                     i++;
                     task_pool_pause_id((u16)i, 0);
@@ -223,10 +223,10 @@ u32 gameplay_update_scene(void) {
         default:
             break;
     }
-    func_08003B58(&gGameplayData.unk1f4);
+    bg_anim_update_script(&gGameplayData.unk1f4);
     func_08006F68();
     func_08006B00();
-    func_080041B4();
+    backdrop_gradient_update();
     return 0;
 }
 
@@ -275,7 +275,7 @@ void gameplay_unpause_restore_palettes(void) {
 }
 
 void func_08008940(void) {
-    func_08003EB0();
+    hdma_start();
 }
 
 #include "asm/scenes/gameplay/asm_0800894c.s"
@@ -374,7 +374,7 @@ void func_08008DF4(void) {
     gGraphicsBuffer.BG_OFS[1].y = 0;
     gGraphicsBuffer.BG_OFS[1].x = 0;
     gGraphicsBuffer.unk4C = 0;
-    backdrop_disable_renderer();
+    hdma_disable();
 }
 
 void gameplay_select_next_microgame(void) {

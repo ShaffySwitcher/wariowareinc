@@ -269,7 +269,7 @@ _080C7A90: \n\
 /* 080C7AD6 */ MOVS R0, #0 \n\
 /* 080C7AD8 */ MOVS R1, #3 \n\
 /* 080C7ADA */ MOVS R2, #0 \n\
-/* 080C7ADC */ BL func_08004130 \n\
+/* 080C7ADC */ BL backdrop_gradient_start \n\
 /* 080C7AE0 */ ADD SP, #0X14 \n\
 /* 080C7AE2 */ POP {R3, R4, R5} \n\
 /* 080C7AE4 */ MOV R8, R3 \n\

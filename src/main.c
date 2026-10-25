@@ -8,8 +8,8 @@ void func_080001D4(void) {
     mem_heap_init(D_083A3D94 + 0xBF1, 0x38000);
     
     task_pool_init(); // task_pool_init
-    func_08003DA0();
-    func_08003E64();
+    rle_decompressor_init();
+    hdma_reset();
     func_08006F28();
     func_08007EA0();
     load_default_save();

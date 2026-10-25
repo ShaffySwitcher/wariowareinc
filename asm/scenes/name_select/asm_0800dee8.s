@@ -94,7 +94,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800DFBA */ LDR R1, _0800E2FC \n\
 /* 0800DFBC */ MOVS R2, #1 \n\
 /* 0800DFBE */ MOVS R3, #0 \n\
-/* 0800DFC0 */ BL func_08003F8C \n\
+/* 0800DFC0 */ BL hdma_queue \n\
 /* 0800DFC4 */ LDR R1, [R6] \n\
 /* 0800DFC6 */ ADDS R1, #0XC \n\
 /* 0800DFC8 */ MOVS R2, #0XA0 \n\

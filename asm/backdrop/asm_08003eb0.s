@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08003EB0 \n\
+thumb_func_start hdma_start \n\
 /* 08003EB0 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08003EB2 */ LDR R0, _08003F00 \n\
 /* 08003EB4 */ MOV IP, R0 \n\

@@ -7,7 +7,7 @@
 glabel func_08016F7C
 /* 08016F7C */ PUSH {LR}
 /* 08016F7E */ BL func_08007EAC
-/* 08016F82 */ BL backdrop_disable_renderer
+/* 08016F82 */ BL hdma_disable
 /* 08016F86 */ POP {R0}
 /* 08016F88 */ BX R0
 

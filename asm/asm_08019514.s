@@ -7,7 +7,7 @@
 glabel func_08019514
 /* 08019514 */ PUSH {LR}
 /* 08019516 */ LDR R1, _0801954C
-/* 08019518 */ BL func_08003DF4
+/* 08019518 */ BL rle_decompress_bg
 /* 0801951C */ MOVS R0, #0
 /* 0801951E */ BL scene_show_bg_layer
 /* 08019522 */ LDR R0, _08019550

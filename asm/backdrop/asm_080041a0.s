@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080041A0 \n\
+thumb_func_start backdrop_gradient_set_range \n\
 /* 080041A0 */ LDR R2, _080041AC \n\
 /* 080041A2 */ STRB R0, [R2] \n\
 /* 080041A4 */ LDR R0, =D_0300068B \n\

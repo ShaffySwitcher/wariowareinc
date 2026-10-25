@@ -24,9 +24,9 @@ void soft_reset_init_scene(void) {
 }
 
 s32 soft_reset_update_scene(void) {
-    func_08003EB0();
+    hdma_start();
     flush_graphics_buffer();
-    trigger_pending_dma3();
+    hdma_run_dma3_now();
 
     switch (gSoftReset.state) {
     case 0:
@@ -37,7 +37,7 @@ s32 soft_reset_update_scene(void) {
 
     case 1:
         if (!(gGraphicsBuffer.unk854_2)) {
-            backdrop_disable_renderer();
+            hdma_disable();
             gSoftReset.state++;
         }
         break;
@@ -53,6 +53,6 @@ s32 soft_reset_update_scene(void) {
 
     func_08006F68();
     func_08006B00();
-    func_080041B4();
+    backdrop_gradient_update();
     return GLOBAL_SCENE_INIT;
 }

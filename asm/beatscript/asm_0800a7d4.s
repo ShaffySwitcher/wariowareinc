@@ -1407,7 +1407,7 @@ _0800B12C: \n\
 /* 0800B134 */ MOV R5, R8 \n\
 /* 0800B136 */ LSLS R2, R5, #0X10 \n\
 /* 0800B138 */ LSRS R2, R2, #0X10 \n\
-/* 0800B13A */ BL func_08004130 \n\
+/* 0800B13A */ BL backdrop_gradient_start \n\
 /* 0800B13E */ B _0800B74C \n\
 _0800B140: \n\
 /* 0800B140 */ LDR R2, _0800B150 \n\

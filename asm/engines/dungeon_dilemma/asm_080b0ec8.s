@@ -52,7 +52,7 @@ thumb_func_start func_080B0EC8 \n\
 /* 080B0F32 */ LDR R0, _080B10AC \n\
 /* 080B0F34 */ MOV R2, SL \n\
 /* 080B0F36 */ LDR R1, [R2] \n\
-/* 080B0F38 */ BL func_08003DF4 \n\
+/* 080B0F38 */ BL rle_decompress_bg \n\
 /* 080B0F3C */ LDR R0, [R7] \n\
 /* 080B0F3E */ LDR R2, [R0, #0X2C] \n\
 /* 080B0F40 */ LDR R3, [R0, #0X30] \n\

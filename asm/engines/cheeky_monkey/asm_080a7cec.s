@@ -60,10 +60,10 @@ _080A7D2E: \n\
 /* 080A7D66 */ MOVS R0, #0X30 \n\
 /* 080A7D68 */ MOVS R1, #0X31 \n\
 /* 080A7D6A */ MOVS R2, #0 \n\
-/* 080A7D6C */ BL func_08004130 \n\
+/* 080A7D6C */ BL backdrop_gradient_start \n\
 /* 080A7D70 */ MOVS R0, #0X10 \n\
 /* 080A7D72 */ MOVS R1, #0X88 \n\
-/* 080A7D74 */ BL func_080041A0 \n\
+/* 080A7D74 */ BL backdrop_gradient_set_range \n\
 /* 080A7D78 */ MOVS R0, #1 \n\
 /* 080A7D7A */ BL scene_show_sprite \n\
 /* 080A7D7E */ LDR R1, [R7] \n\

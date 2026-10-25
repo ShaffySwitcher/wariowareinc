@@ -87,7 +87,7 @@ _0800D2F4: \n\
 /* 0800D300 */ MOV R0, SB \n\
 /* 0800D302 */ MOVS R2, #8 \n\
 /* 0800D304 */ MOVS R3, #0 \n\
-/* 0800D306 */ BL func_08003F8C \n\
+/* 0800D306 */ BL hdma_queue \n\
 /* 0800D30A */ ADDS R0, R7, #0 \n\
 /* 0800D30C */ POP {R3, R4} \n\
 /* 0800D30E */ MOV R8, R3 \n\

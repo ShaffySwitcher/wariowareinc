@@ -580,7 +580,7 @@ _080DA908: \n\
 /* 080DA90A */ LDRB R0, [R0] \n\
 /* 080DA90C */ MOVS R1, #0XF \n\
 /* 080DA90E */ MOVS R2, #0 \n\
-/* 080DA910 */ BL func_08004130 \n\
+/* 080DA910 */ BL backdrop_gradient_start \n\
 /* 080DA914 */ ADD SP, #0X24 \n\
 /* 080DA916 */ POP {R3, R4, R5} \n\
 /* 080DA918 */ MOV R8, R3 \n\

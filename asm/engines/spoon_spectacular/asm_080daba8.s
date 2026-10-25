@@ -150,7 +150,7 @@ _080DAC22: \n\
 /* 080DACC4 */ LDRB R0, [R0] \n\
 /* 080DACC6 */ MOVS R1, #0XF \n\
 /* 080DACC8 */ MOVS R2, #0 \n\
-/* 080DACCA */ BL func_08004130 \n\
+/* 080DACCA */ BL backdrop_gradient_start \n\
 /* 080DACCE */ LDR R0, [R6] \n\
 /* 080DACD0 */ ADDS R0, #0X70 \n\
 /* 080DACD2 */ STRB R4, [R0] \n\

@@ -64,7 +64,7 @@ _080D93CA: \n\
 /* 080D93CE */ MOVS R0, #0 \n\
 /* 080D93D0 */ MOVS R1, #3 \n\
 /* 080D93D2 */ MOVS R2, #0 \n\
-/* 080D93D4 */ BL func_08004130 \n\
+/* 080D93D4 */ BL backdrop_gradient_start \n\
 /* 080D93D8 */ MOVS R0, #0XC0 \n\
 /* 080D93DA */ LSLS R0, R0, #1 \n\
 /* 080D93DC */ MOVS R1, #2 \n\

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08003FD0 \n\
+thumb_func_start backdrop_gradient_build \n\
 /* 08003FD0 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08003FD2 */ MOV R7, SL \n\
 /* 08003FD4 */ MOV R6, SB \n\

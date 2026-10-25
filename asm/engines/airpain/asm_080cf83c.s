@@ -46,7 +46,7 @@ thumb_func_start func_080CF83C \n\
 /* 080CF8A0 */ MOVS R0, #0 \n\
 /* 080CF8A2 */ MOVS R1, #3 \n\
 /* 080CF8A4 */ MOVS R2, #0 \n\
-/* 080CF8A6 */ BL func_08004130 \n\
+/* 080CF8A6 */ BL backdrop_gradient_start \n\
 /* 080CF8AA */ MOVS R0, #0XC0 \n\
 /* 080CF8AC */ LSLS R0, R0, #1 \n\
 /* 080CF8AE */ MOVS R1, #2 \n\

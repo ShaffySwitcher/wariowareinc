@@ -2,7 +2,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_0800FB9C \n\
 /* 0800FB9C */ PUSH {LR} \n\
-/* 0800FB9E */ BL backdrop_disable_renderer \n\
+/* 0800FB9E */ BL hdma_disable \n\
 /* 0800FBA2 */ POP {R0} \n\
 /* 0800FBA4 */ BX R0 \n\
  \n\

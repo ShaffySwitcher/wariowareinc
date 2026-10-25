@@ -43,7 +43,7 @@ thumb_func_start func_0802B4F8 \n\
 /* 0802B556 */ MOVS R0, #0 \n\
 /* 0802B558 */ MOVS R1, #3 \n\
 /* 0802B55A */ MOVS R2, #0 \n\
-/* 0802B55C */ BL func_08004130 \n\
+/* 0802B55C */ BL backdrop_gradient_start \n\
 /* 0802B560 */ LDR R6, _0802B6D0 \n\
 /* 0802B562 */ LDR R2, [R6] \n\
 /* 0802B564 */ LDR R1, _0802B6D4 \n\

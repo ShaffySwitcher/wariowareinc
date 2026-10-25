@@ -389,7 +389,7 @@ _0802EF42: \n\
 /* 0802EFAA */ MOVS R0, #0 \n\
 /* 0802EFAC */ MOVS R1, #1 \n\
 /* 0802EFAE */ MOVS R2, #0 \n\
-/* 0802EFB0 */ BL func_08004130 \n\
+/* 0802EFB0 */ BL backdrop_gradient_start \n\
 /* 0802EFB4 */ ADD SP, #0X14 \n\
 /* 0802EFB6 */ POP {R3, R4, R5} \n\
 /* 0802EFB8 */ MOV R8, R3 \n\

@@ -4,6 +4,7 @@
 #include "graphics.h"
 #include "scenes.h"
 #include "src/lib_sprite.h"
+#include "src/code_08003a70.h"
 
 // MACROS
 #define gMainMenu CURRENT_SCENE_DATA(struct MainMenuSceneData)
@@ -30,18 +31,13 @@ enum MainMenuState {
     MAIN_MENU_STATE_TRANSITION = 99,
 };
 
-struct MainMenuSceneData_struct_10 {
-    u32 unk10_1:1;              // was u8 unk10
-};
-
 struct MainMenuSceneData {
     u32 unk0;
     u32 unk4;
     u8 unk8;
     u8 pad9[3];
     u32 *unkC;
-    struct MainMenuSceneData_struct_10 unk10;
-    u8 pad14[0x24];
+    struct BgAnimator unk10;
     s16 nextScene; // 0x38
     s16 stageIconSprites[28];
     u8 pad72[0x6];
@@ -233,9 +229,7 @@ extern void func_080153E0(void);
 extern void main_menu_state_epilogue_select(void);
 extern void func_08015A4C(void);
 extern void func_080115DC(void);
-extern void func_08003A70(void*);
 extern void func_08015DBC();
-extern void scene_hide_sprite();
 extern void func_08011DFC(void);
 extern void func_08015CD8(s32);
 extern void func_0801216C(void);
@@ -254,7 +248,6 @@ extern void func_08013E44(void);
 extern void func_08013B88(void);
 extern void func_08013AE0(void);
 extern void func_08012658(void);
-extern void *scene_mem_heap_alloc(u32 size);
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);

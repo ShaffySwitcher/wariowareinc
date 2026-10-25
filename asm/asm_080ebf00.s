@@ -68,7 +68,7 @@ glabel func_080EBF00
 /* 080EBF90 */ MOVS R0, #0
 /* 080EBF92 */ MOVS R1, #3
 /* 080EBF94 */ MOVS R2, #0
-/* 080EBF96 */ BL func_08004130
+/* 080EBF96 */ BL backdrop_gradient_start
 /* 080EBF9A */ MOVS R0, #0XD8
 /* 080EBF9C */ LSLS R0, R0, #1
 /* 080EBF9E */ MOVS R1, #2

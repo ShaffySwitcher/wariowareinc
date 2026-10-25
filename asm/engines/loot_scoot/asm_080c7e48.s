@@ -456,7 +456,7 @@ _080C814A: \n\
 /* 080C81B4 */ MOVS R0, #0 \n\
 /* 080C81B6 */ MOVS R1, #4 \n\
 /* 080C81B8 */ MOVS R2, #0 \n\
-/* 080C81BA */ BL func_08004130 \n\
+/* 080C81BA */ BL backdrop_gradient_start \n\
 /* 080C81BE */ LDR R4, _080C8460 \n\
 /* 080C81C0 */ LDR R0, [R4] \n\
 /* 080C81C2 */ LDR R1, _080C8464 \n\

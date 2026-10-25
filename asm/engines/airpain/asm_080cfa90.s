@@ -69,7 +69,7 @@ _080CFB08: \n\
 /* 080CFB20 */ MOVS R0, #0 \n\
 /* 080CFB22 */ MOVS R1, #3 \n\
 /* 080CFB24 */ MOVS R2, #0 \n\
-/* 080CFB26 */ BL func_08004130 \n\
+/* 080CFB26 */ BL backdrop_gradient_start \n\
 /* 080CFB2A */ MOVS R0, #0XC0 \n\
 /* 080CFB2C */ LSLS R0, R0, #1 \n\
 /* 080CFB2E */ MOVS R1, #2 \n\

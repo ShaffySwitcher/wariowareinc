@@ -92,7 +92,7 @@ _08024F34:
 /* 08024F42 */ ADDS R1, #0X56
 /* 08024F44 */ LDRH R1, [R1]
 /* 08024F46 */ MOVS R2, #0
-/* 08024F48 */ BL func_08004130
+/* 08024F48 */ BL backdrop_gradient_start
 _08024F4C:
 /* 08024F4C */ ADD SP, #0X14
 /* 08024F4E */ POP {R3, R4}

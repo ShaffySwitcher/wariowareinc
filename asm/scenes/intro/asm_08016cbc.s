@@ -10,7 +10,7 @@ thumb_func_start func_08016CBC \n\
 /* 08016CCC */ BL func_08006B90 \n\
 /* 08016CD0 */ BL func_08006B68 \n\
 /* 08016CD4 */ BL func_08006F28 \n\
-/* 08016CD8 */ BL func_08003E64 \n\
+/* 08016CD8 */ BL hdma_reset \n\
 /* 08016CDC */ LDR R0, =func_08016D7C \n\
 /* 08016CDE */ BL func_08000F74 \n\
 /* 08016CE2 */ STR R4, [SP] \n\

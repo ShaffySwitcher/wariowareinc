@@ -14,7 +14,7 @@ thumb_func_start func_08012350 \n\
 /* 08012366 */ LDR R4, _080123E4 \n\
 /* 08012368 */ LDR R0, [R4] \n\
 /* 0801236A */ ADDS R0, #0X10 \n\
-/* 0801236C */ BL func_08003D1C \n\
+/* 0801236C */ BL bg_anim_stop \n\
 /* 08012370 */ LDR R1, [R4] \n\
 /* 08012372 */ ADDS R1, #0X88 \n\
 /* 08012374 */ LDRB R2, [R1] \n\

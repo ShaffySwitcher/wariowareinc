@@ -3,7 +3,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_080DCD54 \n\
 /* 080DCD54 */ PUSH {LR} \n\
-/* 080DCD56 */ BL func_0800418C \n\
+/* 080DCD56 */ BL backdrop_gradient_stop \n\
 /* 080DCD5A */ LDR R0, =gGraphicsBuffer \n\
 /* 080DCD5C */ ADDS R0, #0X4C \n\
 /* 080DCD5E */ MOVS R1, #0 \n\

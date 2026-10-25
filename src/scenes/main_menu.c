@@ -1,5 +1,6 @@
 #include "src/scenes/main_menu.h"
 #include "src/beatscript.h"
+#include "src/backdrop.h"
 #include "src/audio.h"
 #include "src/memory.h"
 #include "src/task_pool.h"
@@ -173,7 +174,7 @@ void main_menu_scene_start(void) {
 
     gMainMenu.unkF8 = 0;
     gMainMenu.unkAC = 0xFFFF;
-    gMainMenu.unk10.unk10_1 = 0;
+    gMainMenu.unk10.active = FALSE;
     gMainMenu.unk88_1 = 0;
 
     category = gMainMenuSelectionState.category;
@@ -210,14 +211,14 @@ void main_menu_scene_start(void) {
     gMainMenu.unkC8 = 0;
 
     p = gMainMenu.unkC;
-    for (i = 0; i <= 0x27; i++) {
+    for (i = 0; i < 40; i++) {
         *p++ = 0;
         *p++ = 0;
         *p++ = 0;
         *p++ = 0;
     }
 
-    func_08003F8C(gMainMenu.unkC, (void *)(IORAMBase + 0x1C), 2, 0);
+    hdma_queue(gMainMenu.unkC, (u16*)&REG_BG3HOFS, 2, 0);
     gMainMenu.unk84 = NULL;
     gMainMenu.unk1D0 = 0x3C;
 
@@ -298,13 +299,13 @@ void main_menu_scene_update(void) {
     func_08011DFC();
     func_08014740();
     func_08015B54();
-    func_08003B58(&gMainMenu.unk10);
+    bg_anim_update_script(&gMainMenu.unk10);
 }
 
 void main_menu_scene_paused(void) {
     func_08015A4C();
     func_080115DC();
-    func_08003A70(&gMainMenu.unk10);
+    bg_anim_write_to_vram(&gMainMenu.unk10);
     func_08015DBC();
 }
 
@@ -389,7 +390,7 @@ void func_08011730(u32 arg0) {
 
 void main_menu_scene_stop(void) {
     func_08007EAC();
-    backdrop_disable_renderer();
+    hdma_disable();
 }
 
 void func_08011774(void) {

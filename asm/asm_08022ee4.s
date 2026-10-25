@@ -6,7 +6,7 @@
 .thumb_func
 glabel func_08022EE4
 /* 08022EE4 */ PUSH {LR}
-/* 08022EE6 */ BL func_0800418C
+/* 08022EE6 */ BL backdrop_gradient_stop
 /* 08022EEA */ POP {R0}
 /* 08022EEC */ BX R0
 

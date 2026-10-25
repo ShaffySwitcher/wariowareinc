@@ -3,7 +3,7 @@ asm(".syntax unified \n\
 thumb_func_start func_08016D00 \n\
 /* 08016D00 */ PUSH {LR} \n\
 /* 08016D02 */ BL flush_graphics_buffer \n\
-/* 08016D06 */ BL trigger_pending_dma3 \n\
+/* 08016D06 */ BL hdma_run_dma3_now \n\
 /* 08016D0A */ BL update_paused_beatscript_scene \n\
 /* 08016D0E */ BL task_pool_update_constant \n\
 /* 08016D12 */ BL task_pool_update_delayed \n\
@@ -13,7 +13,7 @@ thumb_func_start func_08016D00 \n\
 /* 08016D20 */ BNE _08016D32 \n\
 /* 08016D22 */ BL func_08006F68 \n\
 /* 08016D26 */ BL func_08006B00 \n\
-/* 08016D2A */ BL func_080041B4 \n\
+/* 08016D2A */ BL backdrop_gradient_update \n\
 /* 08016D2E */ MOVS R0, #0 \n\
 /* 08016D30 */ B _08016D38 \n\
 _08016D32: \n\

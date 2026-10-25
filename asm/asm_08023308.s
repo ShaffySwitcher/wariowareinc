@@ -9,7 +9,7 @@ glabel func_08023308
 /* 0802330A */ MOVS R0, #0XC0
 /* 0802330C */ MOVS R1, #0XC2
 /* 0802330E */ MOVS R2, #0
-/* 08023310 */ BL func_08004130
+/* 08023310 */ BL backdrop_gradient_start
 /* 08023314 */ POP {R0}
 /* 08023316 */ BX R0
 .ltorg

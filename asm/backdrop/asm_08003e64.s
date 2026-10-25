@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08003E64 \n\
+thumb_func_start hdma_reset \n\
 /* 08003E64 */ SUB SP, #4 \n\
 /* 08003E66 */ LDR R2, _08003E9C \n\
 /* 08003E68 */ LDRB R1, [R2] \n\

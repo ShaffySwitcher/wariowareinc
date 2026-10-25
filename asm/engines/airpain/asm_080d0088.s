@@ -62,7 +62,7 @@ thumb_func_start func_080D0088 \n\
 /* 080D010C */ MOVS R0, #0 \n\
 /* 080D010E */ MOVS R1, #3 \n\
 /* 080D0110 */ MOVS R2, #0 \n\
-/* 080D0112 */ BL func_08004130 \n\
+/* 080D0112 */ BL backdrop_gradient_start \n\
 /* 080D0116 */ LDR R1, _080D0214 \n\
 /* 080D0118 */ MOVS R2, #0XC0 \n\
 /* 080D011A */ LSLS R2, R2, #1 \n\
