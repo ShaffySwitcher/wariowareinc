@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004BF4 \n\
+thumb_func_start bmp_font_obj_update_multi_printer \n\
 /* 08004BF4 */ PUSH {R4, R5, R6, LR} \n\
 /* 08004BF6 */ ADDS R4, R0, #0 \n\
 /* 08004BF8 */ LDR R6, [R4, #0XC] \n\
@@ -42,7 +42,7 @@ _08004C32: \n\
 /* 08004C36 */ LDRB R3, [R5, #5] \n\
 /* 08004C38 */ LSLS R3, R3, #0X1C \n\
 /* 08004C3A */ LSRS R3, R3, #0X1C \n\
-/* 08004C3C */ BL func_080049A4 \n\
+/* 08004C3C */ BL bmp_font_obj_print_unaligned \n\
 /* 08004C40 */ B _08004C76 \n\
 _08004C42: \n\
 /* 08004C42 */ LDR R0, [R4] \n\
@@ -51,7 +51,7 @@ _08004C42: \n\
 /* 08004C48 */ LDRB R3, [R5, #5] \n\
 /* 08004C4A */ LSLS R3, R3, #0X1C \n\
 /* 08004C4C */ LSRS R3, R3, #0X1C \n\
-/* 08004C4E */ BL func_080049CC \n\
+/* 08004C4E */ BL bmp_font_obj_print_c \n\
 /* 08004C52 */ B _08004C76 \n\
 _08004C54: \n\
 /* 08004C54 */ LDR R0, [R4] \n\
@@ -60,7 +60,7 @@ _08004C54: \n\
 /* 08004C5A */ LDRB R3, [R5, #5] \n\
 /* 08004C5C */ LSLS R3, R3, #0X1C \n\
 /* 08004C5E */ LSRS R3, R3, #0X1C \n\
-/* 08004C60 */ BL func_08004A40 \n\
+/* 08004C60 */ BL bmp_font_obj_print_l \n\
 /* 08004C64 */ B _08004C76 \n\
 _08004C66: \n\
 /* 08004C66 */ LDR R0, [R4] \n\
@@ -69,7 +69,7 @@ _08004C66: \n\
 /* 08004C6C */ LDRB R3, [R5, #5] \n\
 /* 08004C6E */ LSLS R3, R3, #0X1C \n\
 /* 08004C70 */ LSRS R3, R3, #0X1C \n\
-/* 08004C72 */ BL func_08004A84 \n\
+/* 08004C72 */ BL bmp_font_obj_print_r \n\
 _08004C76: \n\
 /* 08004C76 */ LDR R2, [R4, #4] \n\
 /* 08004C78 */ LSLS R1, R6, #2 \n\

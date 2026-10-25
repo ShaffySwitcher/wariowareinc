@@ -406,7 +406,7 @@ _0804B46A: \n\
 /* 0804B4E4 */ STR R0, [SP, #4] \n\
 /* 0804B4E6 */ MOVS R0, #2 \n\
 /* 0804B4E8 */ MOVS R3, #2 \n\
-/* 0804B4EA */ BL func_080042F4 \n\
+/* 0804B4EA */ BL create_new_bmp_font_obj_alt \n\
 /* 0804B4EE */ LDR R1, [R6] \n\
 /* 0804B4F0 */ STR R0, [R1, #0X5C] \n\
 /* 0804B4F2 */ ADD SP, #0X1C \n\

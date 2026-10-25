@@ -20,7 +20,7 @@ thumb_func_start func_080DA924 \n\
 /* 080DA944 */ LSLS R6, R2, #2 \n\
 /* 080DA946 */ ADDS R1, R6, R1 \n\
 /* 080DA948 */ LDR R1, [R1] \n\
-/* 080DA94A */ BL func_080049BC \n\
+/* 080DA94A */ BL bmp_font_obj_print_c_default \n\
 /* 080DA94E */ ADDS R1, R0, #0 \n\
 /* 080DA950 */ LDR R2, [R5] \n\
 /* 080DA952 */ STR R1, [R2, #0X64] \n\
@@ -57,7 +57,7 @@ thumb_func_start func_080DA924 \n\
 /* 080DA994 */ LDR R1, _080DAB74 \n\
 /* 080DA996 */ ADDS R1, R6, R1 \n\
 /* 080DA998 */ LDR R1, [R1] \n\
-/* 080DA99A */ BL func_080049BC \n\
+/* 080DA99A */ BL bmp_font_obj_print_c_default \n\
 /* 080DA99E */ ADDS R1, R0, #0 \n\
 /* 080DA9A0 */ LDR R2, [R5] \n\
 /* 080DA9A2 */ STR R1, [R2, #0X74] \n\
@@ -85,7 +85,7 @@ thumb_func_start func_080DA924 \n\
 /* 080DA9D0 */ LDR R1, _080DAB78 \n\
 /* 080DA9D2 */ ADDS R6, R1 \n\
 /* 080DA9D4 */ LDR R1, [R6] \n\
-/* 080DA9D6 */ BL func_080049BC \n\
+/* 080DA9D6 */ BL bmp_font_obj_print_c_default \n\
 /* 080DA9DA */ ADDS R1, R0, #0 \n\
 /* 080DA9DC */ LDR R6, [R5] \n\
 /* 080DA9DE */ ADDS R0, R6, #0 \n\
@@ -237,7 +237,7 @@ _080DAA18: \n\
 /* 080DAB0E */ LSLS R1, R3, #2 \n\
 /* 080DAB10 */ ADDS R1, R2 \n\
 /* 080DAB12 */ LDR R1, [R1] \n\
-/* 080DAB14 */ BL func_080049BC \n\
+/* 080DAB14 */ BL bmp_font_obj_print_c_default \n\
 /* 080DAB18 */ ADDS R1, R0, #0 \n\
 /* 080DAB1A */ MOV R0, R8 \n\
 /* 080DAB1C */ LDR R4, [R0] \n\

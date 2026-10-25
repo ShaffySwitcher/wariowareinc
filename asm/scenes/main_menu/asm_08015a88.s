@@ -19,7 +19,7 @@ thumb_func_start func_08015A88 \n\
 /* 08015AAC */ LDR R0, [R4] \n\
 /* 08015AAE */ ADDS R0, #0XB8 \n\
 /* 08015AB0 */ LDR R0, [R0] \n\
-/* 08015AB2 */ BL func_08005364 \n\
+/* 08015AB2 */ BL bmp_font_bg_get_total_printable_chars \n\
 /* 08015AB6 */ LDR R2, [R4] \n\
 /* 08015AB8 */ ADDS R1, R2, #0 \n\
 /* 08015ABA */ ADDS R1, #0XC0 \n\
@@ -34,7 +34,7 @@ thumb_func_start func_08015A88 \n\
 /* 08015ACC */ STR R1, [SP] \n\
 /* 08015ACE */ ADDS R1, R4, #0 \n\
 /* 08015AD0 */ MOVS R2, #0X20 \n\
-/* 08015AD2 */ BL func_08005090 \n\
+/* 08015AD2 */ BL bmp_font_bg_print_text \n\
 /* 08015AD6 */ LDRH R3, [R4] \n\
 /* 08015AD8 */ ADDS R0, R4, #0 \n\
 /* 08015ADA */ ADDS R0, #0X40 \n\
@@ -69,7 +69,7 @@ _08015AE6: \n\
 /* 08015B14 */ STR R4, [SP, #4] \n\
 /* 08015B16 */ MOVS R4, #1 \n\
 /* 08015B18 */ STR R4, [SP, #8] \n\
-/* 08015B1A */ BL func_08005320 \n\
+/* 08015B1A */ BL start_bmp_font_bg_printer_task \n\
 /* 08015B1E */ LDR R2, [R5] \n\
 /* 08015B20 */ ADDS R1, R2, #0 \n\
 /* 08015B22 */ ADDS R1, #0XC8 \n\

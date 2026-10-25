@@ -245,7 +245,7 @@ _080151C8: \n\
 /* 080151EC */ ADDS R4, R6 \n\
 /* 080151EE */ LDR R4, [R4] \n\
 /* 080151F0 */ STR R4, [SP] \n\
-/* 080151F2 */ BL func_080055D4 \n\
+/* 080151F2 */ BL start_new_scene_object_importer \n\
 /* 080151F6 */ LDR R1, [R5] \n\
 /* 080151F8 */ ADDS R1, #0XDE \n\
 /* 080151FA */ LDRB R0, [R1] \n\

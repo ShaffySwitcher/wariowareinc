@@ -56,7 +56,7 @@ thumb_func_start func_080DCD6C \n\
 /* 080DCDEA */ LDR R5, _080DCF04 \n\
 /* 080DCDEC */ LDR R3, [R5] \n\
 /* 080DCDEE */ MOVS R1, #0 \n\
-/* 080DCDF0 */ BL func_08005538 \n\
+/* 080DCDF0 */ BL import_all_scene_objects \n\
 /* 080DCDF4 */ LDR R0, [R4] \n\
 /* 080DCDF6 */ STRB R6, [R0, #0X18] \n\
 /* 080DCDF8 */ BL func_0800A218 \n\

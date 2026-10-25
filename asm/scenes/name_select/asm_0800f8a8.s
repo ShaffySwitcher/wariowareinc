@@ -23,7 +23,7 @@ thumb_func_start func_0800F8A8 \n\
 /* 0800F8D0 */ LDR R0, [R7] \n\
 /* 0800F8D2 */ LDR R0, [R0, #8] \n\
 /* 0800F8D4 */ ADD R1, SP, #0X14 \n\
-/* 0800F8D6 */ BL func_080049BC \n\
+/* 0800F8D6 */ BL bmp_font_obj_print_c_default \n\
 /* 0800F8DA */ ADDS R1, R0, #0 \n\
 /* 0800F8DC */ LDR R0, [R7] \n\
 /* 0800F8DE */ LSLS R2, R5, #2 \n\

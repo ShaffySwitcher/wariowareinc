@@ -158,7 +158,7 @@ _0800FCC6: \n\
 /* 0800FCCA */ LDR R0, [R1, #8] \n\
 /* 0800FCCC */ LSLS R5, R6, #1 \n\
 /* 0800FCCE */ ADD R1, SB \n\
-/* 0800FCD0 */ BL func_080049BC \n\
+/* 0800FCD0 */ BL bmp_font_obj_print_c_default \n\
 /* 0800FCD4 */ ADDS R1, R0, #0 \n\
 /* 0800FCD6 */ LDR R2, _0800FDB4 \n\
 /* 0800FCD8 */ LDR R4, [R2] \n\

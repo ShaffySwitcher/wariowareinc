@@ -29,7 +29,7 @@ glabel func_08023CC0
 /* 08023CF0 */ MOVS R3, #0XA
 /* 08023CF2 */ STR R3, [SP, #4]
 /* 08023CF4 */ MOVS R3, #4
-/* 08023CF6 */ BL func_080042F4
+/* 08023CF6 */ BL create_new_bmp_font_obj_alt
 /* 08023CFA */ ADDS R1, R0, #0
 /* 08023CFC */ LDR R5, _08023D94
 /* 08023CFE */ LDR R0, [R5]
@@ -39,7 +39,7 @@ glabel func_08023CC0
 /* 08023D06 */ LDR R2, _08023D9C
 /* 08023D08 */ LDR R3, _08023DA0
 /* 08023D0A */ LDR R3, [R3]
-/* 08023D0C */ BL func_08005538
+/* 08023D0C */ BL import_all_scene_objects
 /* 08023D10 */ LDR R0, [R5]
 /* 08023D12 */ LDR R0, [R0]
 /* 08023D14 */ LDR R1, _08023DA4

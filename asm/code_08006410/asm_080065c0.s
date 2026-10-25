@@ -20,7 +20,7 @@ _080065D4: \n\
 _080065E0: \n\
 /* 080065E0 */ LDR R0, [R5] \n\
 /* 080065E2 */ LDR R1, [R4, #4] \n\
-/* 080065E4 */ BL func_08005148 \n\
+/* 080065E4 */ BL bmp_font_bg_delete_printed_data \n\
 /* 080065E8 */ ADDS R4, #8 \n\
 _080065EA: \n\
 /* 080065EA */ LDR R0, [R4, #4] \n\

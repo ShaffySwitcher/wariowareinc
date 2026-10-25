@@ -101,7 +101,7 @@ _0801F7C4:
 /* 0801F7E2 */ MOVS R0, #1
 /* 0801F7E4 */ ADDS R1, R5, #0
 /* 0801F7E6 */ MOVS R3, #2
-/* 0801F7E8 */ BL func_080042F4
+/* 0801F7E8 */ BL create_new_bmp_font_obj_alt
 /* 0801F7EC */ LDR R1, _0801F924
 /* 0801F7EE */ MOV SB, R1
 /* 0801F7F0 */ LDR R1, [R1]
@@ -161,7 +161,7 @@ _0801F7C4:
 /* 0801F866 */ LDR R0, [R4]
 /* 0801F868 */ LDR R0, [R0]
 /* 0801F86A */ ADD R1, SP, #0X14
-/* 0801F86C */ BL func_080049BC
+/* 0801F86C */ BL bmp_font_obj_print_c_default
 /* 0801F870 */ ADDS R1, R0, #0
 /* 0801F872 */ MOV R2, R8
 /* 0801F874 */ LDR R0, [R2]
@@ -194,7 +194,7 @@ _0801F7C4:
 /* 0801F8AC */ LDR R0, [R1]
 /* 0801F8AE */ LDR R2, =D_083BBB74
 /* 0801F8B0 */ MOVS R1, #0
-/* 0801F8B2 */ BL func_08005538
+/* 0801F8B2 */ BL import_all_scene_objects
 /* 0801F8B6 */ LDR R0, [R5]
 /* 0801F8B8 */ MOVS R2, #2
 /* 0801F8BA */ LDRSH R0, [R0, R2]

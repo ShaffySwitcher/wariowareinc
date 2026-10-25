@@ -195,14 +195,14 @@ _080E7946: \n\
 /* 080E7950 */ LSLS R4, R4, #2 \n\
 /* 080E7952 */ ADDS R1, R3, R4 \n\
 /* 080E7954 */ LDR R1, [R1] \n\
-/* 080E7956 */ BL func_08004B78 \n\
+/* 080E7956 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080E795A */ LDR R0, [R5] \n\
 /* 080E795C */ LDR R0, [R0, #4] \n\
 /* 080E795E */ LDR R2, _080E79A4 \n\
 /* 080E7960 */ LSLS R1, R6, #2 \n\
 /* 080E7962 */ ADDS R1, R2 \n\
 /* 080E7964 */ LDR R1, [R1] \n\
-/* 080E7966 */ BL func_080049BC \n\
+/* 080E7966 */ BL bmp_font_obj_print_c_default \n\
 /* 080E796A */ ADDS R2, R0, #0 \n\
 /* 080E796C */ LDR R1, [R5] \n\
 /* 080E796E */ ADDS R4, R1, R4 \n\

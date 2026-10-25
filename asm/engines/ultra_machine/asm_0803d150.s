@@ -331,7 +331,7 @@ _0803D27C: \n\
 /* 0803D3CE */ MOVS R0, #2 \n\
 /* 0803D3D0 */ ADDS R2, R7, #0 \n\
 /* 0803D3D2 */ MOVS R3, #4 \n\
-/* 0803D3D4 */ BL func_080042F4 \n\
+/* 0803D3D4 */ BL create_new_bmp_font_obj_alt \n\
 /* 0803D3D8 */ MOV R4, R8 \n\
 /* 0803D3DA */ LDR R1, [R4] \n\
 /* 0803D3DC */ STR R0, [R1, #0X5C] \n\

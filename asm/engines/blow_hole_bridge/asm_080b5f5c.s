@@ -393,14 +393,14 @@ _080B626C: \n\
 /* 080B6270 */ LDR R0, [R1] \n\
 /* 080B6272 */ ADDS R1, #0X84 \n\
 /* 080B6274 */ LDR R1, [R1] \n\
-/* 080B6276 */ BL func_08004B78 \n\
+/* 080B6276 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080B627A */ LDR R0, [R4] \n\
 /* 080B627C */ LDR R0, [R0] \n\
 /* 080B627E */ LDR R1, =D_083DF810 \n\
 /* 080B6280 */ LDR R6, [SP, #0X14] \n\
 /* 080B6282 */ ADDS R1, R6, R1 \n\
 /* 080B6284 */ LDR R1, [R1] \n\
-/* 080B6286 */ BL func_080049BC \n\
+/* 080B6286 */ BL bmp_font_obj_print_c_default \n\
 /* 080B628A */ LDR R1, [R4] \n\
 /* 080B628C */ ADDS R1, #0X84 \n\
 /* 080B628E */ STR R0, [R1] \n\

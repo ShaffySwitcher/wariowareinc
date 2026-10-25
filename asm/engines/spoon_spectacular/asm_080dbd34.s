@@ -41,14 +41,14 @@ _080DBD7C: \n\
 /* 080DBD7E */ LDR R6, [R0] \n\
 /* 080DBD80 */ LDR R0, [R5, #4] \n\
 /* 080DBD82 */ LDR R1, [R5, #0XC] \n\
-/* 080DBD84 */ BL func_08004B78 \n\
+/* 080DBD84 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080DBD88 */ MOV R1, R8 \n\
 /* 080DBD8A */ LDR R0, [R1] \n\
 /* 080DBD8C */ LDR R0, [R0, #4] \n\
 /* 080DBD8E */ LSLS R1, R4, #2 \n\
 /* 080DBD90 */ ADDS R1, R6 \n\
 /* 080DBD92 */ LDR R1, [R1] \n\
-/* 080DBD94 */ BL func_080049BC \n\
+/* 080DBD94 */ BL bmp_font_obj_print_c_default \n\
 /* 080DBD98 */ MOV R2, R8 \n\
 /* 080DBD9A */ LDR R1, [R2] \n\
 /* 080DBD9C */ STR R0, [R1, #0XC] \n\
@@ -109,13 +109,13 @@ _080DBDF2: \n\
 /* 080DBE00 */ LDR R1, [R5] \n\
 /* 080DBE02 */ LDR R0, [R1, #4] \n\
 /* 080DBE04 */ LDR R1, [R1, #0XC] \n\
-/* 080DBE06 */ BL func_08004B78 \n\
+/* 080DBE06 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080DBE0A */ LDR R0, [R5] \n\
 /* 080DBE0C */ LDR R0, [R0, #4] \n\
 /* 080DBE0E */ LSLS R1, R4, #2 \n\
 /* 080DBE10 */ ADDS R1, R6 \n\
 /* 080DBE12 */ LDR R1, [R1] \n\
-/* 080DBE14 */ BL func_080049BC \n\
+/* 080DBE14 */ BL bmp_font_obj_print_c_default \n\
 /* 080DBE18 */ LDR R1, [R5] \n\
 /* 080DBE1A */ STR R0, [R1, #0XC] \n\
 /* 080DBE1C */ LDR R4, =gSpriteHandler \n\

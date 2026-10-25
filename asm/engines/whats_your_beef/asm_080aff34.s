@@ -30,12 +30,12 @@ thumb_func_start func_080AFF34 \n\
 /* 080AFF68 */ LSLS R4, R4, #2 \n\
 /* 080AFF6A */ ADDS R1, R4 \n\
 /* 080AFF6C */ LDR R1, [R1] \n\
-/* 080AFF6E */ BL func_08004B78 \n\
+/* 080AFF6E */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080AFF72 */ LDR R0, [R6] \n\
 /* 080AFF74 */ ADDS R0, R5 \n\
 /* 080AFF76 */ LDR R0, [R0] \n\
 /* 080AFF78 */ ADDS R1, R7, #0 \n\
-/* 080AFF7A */ BL func_080049BC \n\
+/* 080AFF7A */ BL bmp_font_obj_print_c_default \n\
 /* 080AFF7E */ ADDS R2, R0, #0 \n\
 /* 080AFF80 */ LDR R1, [R6] \n\
 /* 080AFF82 */ ADDS R4, R1, R4 \n\

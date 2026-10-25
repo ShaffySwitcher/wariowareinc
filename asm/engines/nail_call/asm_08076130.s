@@ -43,7 +43,7 @@ _0807616C: \n\
 /* 0807617A */ LDR R1, [R6] \n\
 /* 0807617C */ LDR R0, [R1] \n\
 /* 0807617E */ LDR R1, [R1, #0X18] \n\
-/* 08076180 */ BL func_08004B78 \n\
+/* 08076180 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 08076184 */ LDR R3, [R6] \n\
 /* 08076186 */ LDR R0, [R3] \n\
 /* 08076188 */ LDR R2, _08076218 \n\
@@ -61,7 +61,7 @@ _0807616C: \n\
 /* 080761A0 */ ASRS R4, R4, #0XE \n\
 /* 080761A2 */ ADDS R4, R1 \n\
 /* 080761A4 */ LDR R1, [R4] \n\
-/* 080761A6 */ BL func_080049BC \n\
+/* 080761A6 */ BL bmp_font_obj_print_c_default \n\
 /* 080761AA */ ADDS R2, R0, #0 \n\
 /* 080761AC */ LDR R1, [R6] \n\
 /* 080761AE */ STR R2, [R1, #0X18] \n\

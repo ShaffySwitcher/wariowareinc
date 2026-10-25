@@ -17,7 +17,7 @@ thumb_func_start func_08005DE0 \n\
 /* 08005DFA */ ADDS R0, R6, #0 \n\
 /* 08005DFC */ ADDS R2, R4, #0 \n\
 /* 08005DFE */ ADDS R3, R7, #0 \n\
-/* 08005E00 */ BL func_08005090 \n\
+/* 08005E00 */ BL bmp_font_bg_print_text \n\
 /* 08005E04 */ ADD SP, #4 \n\
 /* 08005E06 */ POP {R4, R5, R6, R7} \n\
 /* 08005E08 */ POP {R0} \n\

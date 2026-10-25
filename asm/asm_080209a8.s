@@ -59,7 +59,7 @@ _080209BC:
 /* 08020A16 */ LDR R2, =D_083BE214
 /* 08020A18 */ LDR R3, [R6]
 /* 08020A1A */ MOVS R1, #0
-/* 08020A1C */ BL func_08005538
+/* 08020A1C */ BL import_all_scene_objects
 /* 08020A20 */ MOVS R0, #1
 /* 08020A22 */ BL func_08017080
 /* 08020A26 */ MOVS R0, #2

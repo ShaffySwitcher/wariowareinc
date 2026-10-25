@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004F14 \n\
+thumb_func_start bmp_font_bg_write_glyph \n\
 /* 08004F14 */ PUSH {LR} \n\
 /* 08004F16 */ SUB SP, #4 \n\
 /* 08004F18 */ MOVS R2, #0X80 \n\

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004F2C \n\
+thumb_func_start bmp_font_bg_print_glyph \n\
 /* 08004F2C */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08004F2E */ MOV R7, SL \n\
 /* 08004F30 */ MOV R6, SB \n\
@@ -101,10 +101,10 @@ _08004FAC: \n\
 /* 08004FDA */ ADDS R1, R7, #0 \n\
 /* 08004FDC */ MOV R2, SP \n\
 /* 08004FDE */ MOVS R3, #0 \n\
-/* 08004FE0 */ BL func_080041CC \n\
+/* 08004FE0 */ BL bmp_font_get_glyph \n\
 /* 08004FE4 */ LDR R0, [SP] \n\
 /* 08004FE6 */ ADDS R1, R5, #0 \n\
-/* 08004FE8 */ BL func_08004F14 \n\
+/* 08004FE8 */ BL bmp_font_bg_write_glyph \n\
 /* 08004FEC */ LDR R1, [SP, #4] \n\
 /* 08004FEE */ LSLS R0, R1, #4 \n\
 /* 08004FF0 */ MOV R1, SL \n\

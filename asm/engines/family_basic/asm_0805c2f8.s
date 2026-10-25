@@ -43,7 +43,7 @@ thumb_func_start func_0805C2F8 \n\
 /* 0805C356 */ STR R0, [SP, #4] \n\
 /* 0805C358 */ MOVS R0, #2 \n\
 /* 0805C35A */ MOVS R3, #4 \n\
-/* 0805C35C */ BL func_080042F4 \n\
+/* 0805C35C */ BL create_new_bmp_font_obj_alt \n\
 /* 0805C360 */ LDR R1, =gCurrentSceneVariable \n\
 /* 0805C362 */ LDR R1, [R1] \n\
 /* 0805C364 */ STR R0, [R1, #4] \n\

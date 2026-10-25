@@ -389,13 +389,13 @@ _080DAE9A: \n\
 /* 080DAEBC */ LDR R1, [R4] \n\
 /* 080DAEBE */ LDR R0, [R1, #4] \n\
 /* 080DAEC0 */ LDR R1, [R1, #0X74] \n\
-/* 080DAEC2 */ BL func_08004B78 \n\
+/* 080DAEC2 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080DAEC6 */ LDR R0, [R4] \n\
 /* 080DAEC8 */ LDR R0, [R0, #4] \n\
 /* 080DAECA */ LDR R1, =D_083E5C30 \n\
 /* 080DAECC */ ADD R1, R8 \n\
 /* 080DAECE */ LDR R1, [R1] \n\
-/* 080DAED0 */ BL func_080049BC \n\
+/* 080DAED0 */ BL bmp_font_obj_print_c_default \n\
 /* 080DAED4 */ ADDS R2, R0, #0 \n\
 /* 080DAED6 */ LDR R1, [R4] \n\
 /* 080DAED8 */ STR R2, [R1, #0X74] \n\

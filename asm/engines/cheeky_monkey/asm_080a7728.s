@@ -45,7 +45,7 @@ _080A773E: \n\
 /* 080A7776 */ MOVS R0, #2 \n\
 /* 080A7778 */ ADDS R1, R5, #0 \n\
 /* 080A777A */ MOVS R3, #4 \n\
-/* 080A777C */ BL func_080042F4 \n\
+/* 080A777C */ BL create_new_bmp_font_obj_alt \n\
 /* 080A7780 */ LDR R1, [R6] \n\
 /* 080A7782 */ STR R0, [R1] \n\
 /* 080A7784 */ LDR R5, _080A77C4 \n\

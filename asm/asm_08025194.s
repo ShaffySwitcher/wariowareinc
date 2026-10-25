@@ -19,7 +19,7 @@ glabel func_08025194
 /* 080251AC */ MOVS R3, #0XA
 /* 080251AE */ STR R3, [SP, #4]
 /* 080251B0 */ MOVS R3, #4
-/* 080251B2 */ BL func_080042F4
+/* 080251B2 */ BL create_new_bmp_font_obj_alt
 /* 080251B6 */ LDR R6, _08025250
 /* 080251B8 */ LDR R1, [R6]
 /* 080251BA */ STR R0, [R1, #8]
@@ -64,7 +64,7 @@ glabel func_08025194
 /* 08025212 */ ADD R1, SP, #0X14
 /* 08025214 */ MOVS R2, #0
 /* 08025216 */ MOVS R3, #0
-/* 08025218 */ BL func_080049CC
+/* 08025218 */ BL bmp_font_obj_print_c
 /* 0802521C */ ADDS R1, R0, #0
 /* 0802521E */ LDR R0, =gSpriteHandler
 /* 08025220 */ LDR R0, [R0]

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004798 \n\
+thumb_func_start bmp_font_obj_get_latin_glyph_type \n\
 /* 08004798 */ PUSH {LR} \n\
 /* 0800479A */ ADDS R1, R0, #0 \n\
 /* 0800479C */ LDRB R0, [R1] \n\

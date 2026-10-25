@@ -1,10 +1,10 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004A30 \n\
+thumb_func_start bmp_font_obj_print_l_default \n\
 /* 08004A30 */ PUSH {LR} \n\
 /* 08004A32 */ MOVS R2, #0 \n\
 /* 08004A34 */ MOVS R3, #0 \n\
-/* 08004A36 */ BL func_08004A40 \n\
+/* 08004A36 */ BL bmp_font_obj_print_l \n\
 /* 08004A3A */ POP {R1} \n\
 /* 08004A3C */ BX R1 \n\
  \n\

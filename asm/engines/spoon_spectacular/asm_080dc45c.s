@@ -32,14 +32,14 @@ _080DC47A: \n\
 /* 080DC492 */ STRH R1, [R0] \n\
 /* 080DC494 */ LDR R0, [R2, #4] \n\
 /* 080DC496 */ LDR R1, [R2, #0X64] \n\
-/* 080DC498 */ BL func_08004B78 \n\
+/* 080DC498 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080DC49C */ LDR R0, [R6] \n\
 /* 080DC49E */ LDR R0, [R0, #4] \n\
 /* 080DC4A0 */ LDR R2, _080DC4D4 \n\
 /* 080DC4A2 */ LSLS R1, R7, #2 \n\
 /* 080DC4A4 */ ADDS R1, R2 \n\
 /* 080DC4A6 */ LDR R1, [R1] \n\
-/* 080DC4A8 */ BL func_080049BC \n\
+/* 080DC4A8 */ BL bmp_font_obj_print_c_default \n\
 /* 080DC4AC */ ADDS R2, R0, #0 \n\
 /* 080DC4AE */ LDR R1, [R6] \n\
 /* 080DC4B0 */ STR R2, [R1, #0X64] \n\
@@ -118,14 +118,14 @@ _080DC502: \n\
 /* 080DC536 */ LDR R1, [R6] \n\
 /* 080DC538 */ LDR R0, [R1, #4] \n\
 /* 080DC53A */ LDR R1, [R1, #0X64] \n\
-/* 080DC53C */ BL func_08004B78 \n\
+/* 080DC53C */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080DC540 */ LDR R0, [R6] \n\
 /* 080DC542 */ LDR R0, [R0, #4] \n\
 /* 080DC544 */ LDR R2, _080DC6B8 \n\
 /* 080DC546 */ LSLS R1, R7, #2 \n\
 /* 080DC548 */ ADDS R1, R2 \n\
 /* 080DC54A */ LDR R1, [R1] \n\
-/* 080DC54C */ BL func_080049BC \n\
+/* 080DC54C */ BL bmp_font_obj_print_c_default \n\
 /* 080DC550 */ ADDS R2, R0, #0 \n\
 /* 080DC552 */ LDR R1, [R6] \n\
 /* 080DC554 */ STR R2, [R1, #0X64] \n\
@@ -177,14 +177,14 @@ _080DC592: \n\
 /* 080DC5B4 */ LDR R1, [R6] \n\
 /* 080DC5B6 */ LDR R0, [R1, #4] \n\
 /* 080DC5B8 */ LDR R1, [R1, #0X64] \n\
-/* 080DC5BA */ BL func_08004B78 \n\
+/* 080DC5BA */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080DC5BE */ LDR R0, [R6] \n\
 /* 080DC5C0 */ LDR R0, [R0, #4] \n\
 /* 080DC5C2 */ LDR R2, _080DC6C0 \n\
 /* 080DC5C4 */ LSLS R1, R7, #2 \n\
 /* 080DC5C6 */ ADDS R1, R2 \n\
 /* 080DC5C8 */ LDR R1, [R1] \n\
-/* 080DC5CA */ BL func_080049BC \n\
+/* 080DC5CA */ BL bmp_font_obj_print_c_default \n\
 /* 080DC5CE */ ADDS R2, R0, #0 \n\
 /* 080DC5D0 */ LDR R1, [R6] \n\
 /* 080DC5D2 */ STR R2, [R1, #0X64] \n\

@@ -46,7 +46,7 @@ thumb_func_start func_08085E54 \n\
 /* 08085EB4 */ MOVS R3, #0XA \n\
 /* 08085EB6 */ STR R3, [SP, #4] \n\
 /* 08085EB8 */ MOVS R3, #2 \n\
-/* 08085EBA */ BL func_080042F4 \n\
+/* 08085EBA */ BL create_new_bmp_font_obj_alt \n\
 /* 08085EBE */ ADDS R1, R0, #0 \n\
 /* 08085EC0 */ LDR R7, _08085F40 \n\
 /* 08085EC2 */ LDR R0, [R7] \n\
@@ -56,7 +56,7 @@ thumb_func_start func_08085E54 \n\
 /* 08085ECA */ LDR R2, _08085F48 \n\
 /* 08085ECC */ LDR R5, _08085F4C \n\
 /* 08085ECE */ LDR R3, [R5] \n\
-/* 08085ED0 */ BL func_08005538 \n\
+/* 08085ED0 */ BL import_all_scene_objects \n\
 /* 08085ED4 */ LDR R0, [R4] \n\
 /* 08085ED6 */ LDR R1, [R7] \n\
 /* 08085ED8 */ LDR R1, [R1] \n\
@@ -71,7 +71,7 @@ thumb_func_start func_08085E54 \n\
 /* 08085EEA */ ADDS R2, R3 \n\
 /* 08085EEC */ LDR R2, [R2] \n\
 /* 08085EEE */ LDR R3, [R5] \n\
-/* 08085EF0 */ BL func_08005538 \n\
+/* 08085EF0 */ BL import_all_scene_objects \n\
 /* 08085EF4 */ MOVS R0, #1 \n\
 /* 08085EF6 */ BL scene_hide_sprite \n\
 /* 08085EFA */ MOVS R0, #2 \n\

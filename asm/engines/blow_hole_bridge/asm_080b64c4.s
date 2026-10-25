@@ -107,14 +107,14 @@ _080B6570: \n\
 /* 080B657C */ LDR R0, [R1] \n\
 /* 080B657E */ ADDS R1, #0X84 \n\
 /* 080B6580 */ LDR R1, [R1] \n\
-/* 080B6582 */ BL func_08004B78 \n\
+/* 080B6582 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080B6586 */ LDR R0, [R4] \n\
 /* 080B6588 */ LDR R0, [R0] \n\
 /* 080B658A */ LDR R2, _080B65D4 \n\
 /* 080B658C */ LSLS R1, R5, #2 \n\
 /* 080B658E */ ADDS R1, R2 \n\
 /* 080B6590 */ LDR R1, [R1] \n\
-/* 080B6592 */ BL func_080049BC \n\
+/* 080B6592 */ BL bmp_font_obj_print_c_default \n\
 /* 080B6596 */ LDR R1, [R4] \n\
 /* 080B6598 */ ADDS R1, #0X84 \n\
 /* 080B659A */ STR R0, [R1] \n\

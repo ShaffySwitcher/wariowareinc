@@ -31,7 +31,7 @@ _0800F83E: \n\
 /* 0800F85E */ ADDS R1, R3 \n\
 /* 0800F860 */ ADDS R1, R2 \n\
 /* 0800F862 */ LDR R1, [R1] \n\
-/* 0800F864 */ BL func_08004B78 \n\
+/* 0800F864 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 0800F868 */ ADDS R5, #1 \n\
 /* 0800F86A */ LDR R0, [R6] \n\
 /* 0800F86C */ LDR R1, _0800F888 \n\

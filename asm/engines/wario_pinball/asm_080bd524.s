@@ -461,7 +461,7 @@ _080BD864: \n\
 /* 080BD878 */ LDR R1, [R4] \n\
 /* 080BD87A */ LDR R0, [R1] \n\
 /* 080BD87C */ LDR R1, [R1, #0X50] \n\
-/* 080BD87E */ BL func_08004B78 \n\
+/* 080BD87E */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080BD882 */ LDR R0, [R4] \n\
 /* 080BD884 */ LDR R0, [R0] \n\
 /* 080BD886 */ LDR R2, _080BD964 \n\
@@ -469,7 +469,7 @@ _080BD864: \n\
 /* 080BD88A */ LSLS R1, R3, #2 \n\
 /* 080BD88C */ ADDS R1, R2 \n\
 /* 080BD88E */ LDR R1, [R1] \n\
-/* 080BD890 */ BL func_080049BC \n\
+/* 080BD890 */ BL bmp_font_obj_print_c_default \n\
 /* 080BD894 */ LDR R1, [R4] \n\
 /* 080BD896 */ STR R0, [R1, #0X50] \n\
 /* 080BD898 */ MOVS R6, #0 \n\

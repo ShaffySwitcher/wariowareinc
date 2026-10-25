@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005364 \n\
+thumb_func_start bmp_font_bg_get_total_printable_chars \n\
 /* 08005364 */ PUSH {LR} \n\
 /* 08005366 */ ADDS R1, R0, #0 \n\
 /* 08005368 */ MOVS R2, #0 \n\

@@ -26,7 +26,7 @@ glabel func_0801BA40
 /* 0801BA66 */ LDR R2, _0801BACC
 /* 0801BA68 */ LDR R3, _0801BAD0
 /* 0801BA6A */ LDR R3, [R3]
-/* 0801BA6C */ BL func_08005538
+/* 0801BA6C */ BL import_all_scene_objects
 /* 0801BA70 */ BL get_current_mem_id
 /* 0801BA74 */ LSLS R0, R0, #0X10
 /* 0801BA76 */ LSRS R0, R0, #0X10

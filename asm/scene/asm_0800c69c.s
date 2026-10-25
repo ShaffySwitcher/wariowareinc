@@ -23,7 +23,7 @@ thumb_func_start func_0800C69C \n\
 /* 0800C6C4 */ BL sprite_delete \n\
 /* 0800C6C8 */ ADDS R0, R7, #0 \n\
 /* 0800C6CA */ ADDS R1, R5, #0 \n\
-/* 0800C6CC */ BL func_08004B78 \n\
+/* 0800C6CC */ BL bmp_font_obj_delete_printed_anim \n\
 /* 0800C6D0 */ LDR R1, [R6, #0XC] \n\
 /* 0800C6D2 */ MOVS R2, #1 \n\
 /* 0800C6D4 */ RSBS R2, R2, #0 \n\

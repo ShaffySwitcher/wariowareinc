@@ -31,7 +31,7 @@ extern void func_08003E64();
 extern void func_08006F28();
 extern void func_08007EA0();
 extern void get_current_language();
-extern void func_08005570();
+extern void set_scene_object_current_text_id();
 extern void main_menu_reset_selection_state();
 extern void func_08000F10();
 extern void func_080F3C60();

@@ -50,7 +50,7 @@ glabel func_08022898
 /* 080228F4 */ LDR R1, [R1]
 /* 080228F6 */ LDR R2, _08022924
 /* 080228F8 */ LDR R3, [R6]
-/* 080228FA */ BL func_08005538
+/* 080228FA */ BL import_all_scene_objects
 /* 080228FE */ LDR R0, =D_083FC3B4
 /* 08022900 */ BL play_sound
 /* 08022904 */ ADD SP, #0XC

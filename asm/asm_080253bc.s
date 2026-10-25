@@ -11,7 +11,7 @@ glabel func_080253BC
 /* 080253C4 */ LDR R0, =D_03006528
 /* 080253C6 */ LDR R0, [R0]
 /* 080253C8 */ LDR R0, [R0, #8]
-/* 080253CA */ BL func_08004378
+/* 080253CA */ BL delete_bmp_font_obj
 /* 080253CE */ BL func_08016FD8
 /* 080253D2 */ POP {R0}
 /* 080253D4 */ BX R0

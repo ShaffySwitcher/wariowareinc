@@ -87,7 +87,7 @@ glabel func_080EBF00
 /* 080EBFBA */ LDR R2, [R7]
 /* 080EBFBC */ LDR R3, _080EC118
 /* 080EBFBE */ LDR R3, [R3]
-/* 080EBFC0 */ BL func_08005538
+/* 080EBFC0 */ BL import_all_scene_objects
 /* 080EBFC4 */ LDR R0, [R6]
 /* 080EBFC6 */ LDR R1, _080EC11C
 /* 080EBFC8 */ LDR R2, _080EC120

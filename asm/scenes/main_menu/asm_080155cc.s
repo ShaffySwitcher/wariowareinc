@@ -66,14 +66,14 @@ thumb_func_start func_080155CC \n\
 /* 08015654 */ ADDS R0, R5, #0 \n\
 /* 08015656 */ MOVS R2, #1 \n\
 /* 08015658 */ MOVS R3, #0XD \n\
-/* 0801565A */ BL func_080049CC \n\
+/* 0801565A */ BL bmp_font_obj_print_c \n\
 /* 0801565E */ STR R0, [SP, #0X14] \n\
 /* 08015660 */ MOV R1, R8 \n\
 /* 08015662 */ LDR R0, [R1] \n\
 /* 08015664 */ LDR R0, [R0, #4] \n\
 /* 08015666 */ ADD R1, SP, #0X14 \n\
 /* 08015668 */ MOVS R2, #4 \n\
-/* 0801566A */ BL func_08004E28 \n\
+/* 0801566A */ BL bmp_font_obj_wobble_printed_anim \n\
 /* 0801566E */ LDR R0, =gSpriteHandler \n\
 /* 08015670 */ LDR R0, [R0] \n\
 /* 08015672 */ LDR R1, [SP, #0X14] \n\

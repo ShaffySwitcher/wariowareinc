@@ -85,7 +85,7 @@ glabel func_080EDDE4
 /* 080EDE98 */ STR R0, [SP, #4]
 /* 080EDE9A */ MOVS R0, #2
 /* 080EDE9C */ MOVS R3, #6
-/* 080EDE9E */ BL func_080042F4
+/* 080EDE9E */ BL create_new_bmp_font_obj_alt
 /* 080EDEA2 */ MOV R2, R8
 /* 080EDEA4 */ LDR R1, [R2]
 /* 080EDEA6 */ STR R0, [R1]
@@ -94,7 +94,7 @@ glabel func_080EDDE4
 /* 080EDEAC */ ASRS R6, R6, #0XE
 /* 080EDEAE */ ADDS R1, R6, R1
 /* 080EDEB0 */ LDR R1, [R1]
-/* 080EDEB2 */ BL func_080049BC
+/* 080EDEB2 */ BL bmp_font_obj_print_c_default
 /* 080EDEB6 */ ADDS R1, R0, #0
 /* 080EDEB8 */ LDR R5, _080EE1FC
 /* 080EDEBA */ LDR R0, [R5]
@@ -122,7 +122,7 @@ glabel func_080EDDE4
 /* 080EDEEA */ LDR R1, _080EE200
 /* 080EDEEC */ ADDS R1, R6, R1
 /* 080EDEEE */ LDR R1, [R1]
-/* 080EDEF0 */ BL func_080049BC
+/* 080EDEF0 */ BL bmp_font_obj_print_c_default
 /* 080EDEF4 */ ADDS R1, R0, #0
 /* 080EDEF6 */ LDR R0, [R5]
 /* 080EDEF8 */ STR R4, [SP]
@@ -147,7 +147,7 @@ glabel func_080EDDE4
 /* 080EDF22 */ LDR R1, _080EE204
 /* 080EDF24 */ ADDS R1, R6, R1
 /* 080EDF26 */ LDR R1, [R1]
-/* 080EDF28 */ BL func_080049BC
+/* 080EDF28 */ BL bmp_font_obj_print_c_default
 /* 080EDF2C */ ADDS R1, R0, #0
 /* 080EDF2E */ LDR R0, [R5]
 /* 080EDF30 */ STR R4, [SP]
@@ -173,7 +173,7 @@ glabel func_080EDDE4
 /* 080EDF5C */ LDR R1, _080EE208
 /* 080EDF5E */ ADDS R1, R6, R1
 /* 080EDF60 */ LDR R1, [R1]
-/* 080EDF62 */ BL func_080049BC
+/* 080EDF62 */ BL bmp_font_obj_print_c_default
 /* 080EDF66 */ ADDS R1, R0, #0
 /* 080EDF68 */ LDR R0, [R5]
 /* 080EDF6A */ STR R4, [SP]
@@ -199,7 +199,7 @@ glabel func_080EDDE4
 /* 080EDF96 */ LDR R1, _080EE20C
 /* 080EDF98 */ ADDS R1, R6, R1
 /* 080EDF9A */ LDR R1, [R1]
-/* 080EDF9C */ BL func_080049BC
+/* 080EDF9C */ BL bmp_font_obj_print_c_default
 /* 080EDFA0 */ ADDS R1, R0, #0
 /* 080EDFA2 */ LDR R0, [R5]
 /* 080EDFA4 */ STR R4, [SP]
@@ -225,7 +225,7 @@ glabel func_080EDDE4
 /* 080EDFD0 */ LDR R1, _080EE210
 /* 080EDFD2 */ ADDS R1, R6, R1
 /* 080EDFD4 */ LDR R1, [R1]
-/* 080EDFD6 */ BL func_080049BC
+/* 080EDFD6 */ BL bmp_font_obj_print_c_default
 /* 080EDFDA */ ADDS R1, R0, #0
 /* 080EDFDC */ LDR R0, [R5]
 /* 080EDFDE */ STR R4, [SP]
@@ -252,7 +252,7 @@ glabel func_080EDDE4
 /* 080EE00C */ LDR R1, _080EE214
 /* 080EE00E */ ADDS R6, R1
 /* 080EE010 */ LDR R1, [R6]
-/* 080EE012 */ BL func_080049BC
+/* 080EE012 */ BL bmp_font_obj_print_c_default
 /* 080EE016 */ ADDS R1, R0, #0
 /* 080EE018 */ LDR R0, [R5]
 /* 080EE01A */ STR R4, [SP]

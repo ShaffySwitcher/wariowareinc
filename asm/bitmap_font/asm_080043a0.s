@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080043A0 \n\
+thumb_func_start bmp_font_obj_set_format_parser \n\
 /* 080043A0 */ PUSH {R4, LR} \n\
 /* 080043A2 */ ADDS R4, R0, #0 \n\
 /* 080043A4 */ STR R1, [R4, #0X14] \n\

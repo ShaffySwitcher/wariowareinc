@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800430C \n\
+thumb_func_start create_new_bmp_font_obj \n\
 /* 0800430C */ PUSH {R4, R5, R6, LR} \n\
 /* 0800430E */ MOV R6, SB \n\
 /* 08004310 */ MOV R5, R8 \n\
@@ -41,7 +41,7 @@ thumb_func_start func_0800430C \n\
 /* 0800435C */ STR R0, [R4, #0X14] \n\
 /* 0800435E */ STR R0, [R4, #0X18] \n\
 /* 08004360 */ ADDS R0, R4, #0 \n\
-/* 08004362 */ BL func_080043D4 \n\
+/* 08004362 */ BL bmp_font_obj_clear_print_data \n\
 /* 08004366 */ ADDS R0, R4, #0 \n\
 /* 08004368 */ ADD SP, #4 \n\
 /* 0800436A */ POP {R3, R4} \n\

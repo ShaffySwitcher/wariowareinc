@@ -23,7 +23,7 @@ thumb_func_start func_08005E0C \n\
 /* 08005E32 */ STR R7, [SP, #8] \n\
 /* 08005E34 */ MOV R1, R8 \n\
 /* 08005E36 */ ADDS R3, R4, #0 \n\
-/* 08005E38 */ BL func_08005320 \n\
+/* 08005E38 */ BL start_bmp_font_bg_printer_task \n\
 /* 08005E3C */ ADD SP, #0XC \n\
 /* 08005E3E */ POP {R3} \n\
 /* 08005E40 */ MOV R8, R3 \n\

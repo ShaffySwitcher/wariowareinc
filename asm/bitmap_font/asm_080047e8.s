@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080047E8 \n\
+thumb_func_start bmp_font_obj_print_text \n\
 /* 080047E8 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080047EA */ MOV R7, SL \n\
 /* 080047EC */ MOV R6, SB \n\
@@ -20,7 +20,7 @@ thumb_func_start func_080047E8 \n\
 /* 0800480A */ LDR R5, [R0, #0X18] \n\
 _0800480C: \n\
 /* 0800480C */ ADDS R0, R5, #0 \n\
-/* 0800480E */ BL func_08004400 \n\
+/* 0800480E */ BL bmp_font_obj_get_anim_total \n\
 /* 08004812 */ LSLS R1, R0, #1 \n\
 /* 08004814 */ ADDS R1, R1, R0 \n\
 /* 08004816 */ LSLS R1, R1, #1 \n\
@@ -48,7 +48,7 @@ _08004840: \n\
 /* 08004840 */ CMP R0, #0X2E \n\
 /* 08004842 */ BNE _08004858 \n\
 /* 08004844 */ LDRB R0, [R5, #1] \n\
-/* 08004846 */ BL func_08004480 \n\
+/* 08004846 */ BL bmp_font_obj_parse_hex_digit \n\
 /* 0800484A */ LSLS R0, R0, #0X18 \n\
 /* 0800484C */ LSRS R0, R0, #0X18 \n\
 /* 0800484E */ STR R0, [SP, #0X2C] \n\
@@ -62,7 +62,7 @@ _08004858: \n\
 /* 08004858 */ CMP R0, #0X3A \n\
 /* 0800485A */ BNE _08004868 \n\
 /* 0800485C */ LDRB R0, [R5, #1] \n\
-/* 0800485E */ BL func_08004480 \n\
+/* 0800485E */ BL bmp_font_obj_parse_hex_digit \n\
 /* 08004862 */ MOV R1, SL \n\
 /* 08004864 */ STRB R0, [R1] \n\
 /* 08004866 */ B _0800494E \n\
@@ -83,7 +83,7 @@ _08004868: \n\
 /* 08004882 */ ADDS R6, R6, R0 \n\
 _08004884: \n\
 /* 08004884 */ ADDS R0, R5, #0 \n\
-/* 08004886 */ BL func_08004770 \n\
+/* 08004886 */ BL bmp_font_obj_glyph_is_whitespace \n\
 /* 0800488A */ CMP R0, #0 \n\
 /* 0800488C */ BEQ _080048A4 \n\
 /* 0800488E */ MOV R0, SL \n\
@@ -101,14 +101,14 @@ _080048A4: \n\
 /* 080048A4 */ MOV R0, R8 \n\
 /* 080048A6 */ ADDS R1, R5, #0 \n\
 /* 080048A8 */ MOV R2, SP \n\
-/* 080048AA */ BL func_08004580 \n\
+/* 080048AA */ BL bmp_font_obj_print_glyph \n\
 /* 080048AE */ LSLS R0, R0, #0X10 \n\
 /* 080048B0 */ LSRS R7, R0, #0X10 \n\
 /* 080048B2 */ LDR R0, _080048D8 \n\
 /* 080048B4 */ CMP R7, R0 \n\
 /* 080048B6 */ BEQ _08004958 \n\
 /* 080048B8 */ ADDS R0, R5, #0 \n\
-/* 080048BA */ BL func_08004798 \n\
+/* 080048BA */ BL bmp_font_obj_get_latin_glyph_type \n\
 /* 080048BE */ CMP R0, #0 \n\
 /* 080048C0 */ BEQ _080048DC \n\
 /* 080048C2 */ MOV R1, SL \n\

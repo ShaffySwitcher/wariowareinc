@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080041CC \n\
+thumb_func_start bmp_font_get_glyph \n\
 /* 080041CC */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080041CE */ MOV R7, R8 \n\
 /* 080041D0 */ PUSH {R7} \n\

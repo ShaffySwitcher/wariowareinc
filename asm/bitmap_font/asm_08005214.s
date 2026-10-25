@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005214 \n\
+thumb_func_start bmp_font_bg_update_printer \n\
 /* 08005214 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005216 */ MOV R7, SL \n\
 /* 08005218 */ MOV R6, SB \n\
@@ -53,7 +53,7 @@ _08005262: \n\
 /* 0800526C */ B _08005308 \n\
 _0800526E: \n\
 /* 0800526E */ LDRB R0, [R4, #1] \n\
-/* 08005270 */ BL func_0800504C \n\
+/* 08005270 */ BL bmp_font_bg_parse_hex_digit \n\
 /* 08005274 */ LSLS R0, R0, #0X18 \n\
 /* 08005276 */ LSRS R0, R0, #0X18 \n\
 /* 08005278 */ MOV SB, R0 \n\
@@ -61,7 +61,7 @@ _0800526E: \n\
 /* 0800527C */ B _08005308 \n\
 _0800527E: \n\
 /* 0800527E */ LDRB R0, [R4, #1] \n\
-/* 08005280 */ BL func_0800504C \n\
+/* 08005280 */ BL bmp_font_bg_parse_hex_digit \n\
 /* 08005284 */ LSLS R0, R0, #0X18 \n\
 /* 08005286 */ LSRS R0, R0, #0X18 \n\
 /* 08005288 */ LDR R2, _08005290 \n\
@@ -75,7 +75,7 @@ _08005290: \n\
 _08005294: \n\
 /* 08005294 */ LDR R0, [R6] \n\
 /* 08005296 */ ADDS R1, R4, #0 \n\
-/* 08005298 */ BL func_08004F2C \n\
+/* 08005298 */ BL bmp_font_bg_print_glyph \n\
 /* 0800529C */ LSLS R0, R0, #0X10 \n\
 /* 0800529E */ LSRS R0, R0, #0X10 \n\
 /* 080052A0 */ LDR R7, _080052FC \n\

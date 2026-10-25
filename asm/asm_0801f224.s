@@ -27,7 +27,7 @@ glabel func_0801F224
 /* 0801F24E */ LDR R2, _0801F294
 /* 0801F250 */ LDR R4, _0801F298
 /* 0801F252 */ LDR R3, [R4]
-/* 0801F254 */ BL func_08005538
+/* 0801F254 */ BL import_all_scene_objects
 /* 0801F258 */ LDR R0, [R4]
 /* 0801F25A */ MOVS R1, #0XE
 /* 0801F25C */ LDRSH R0, [R0, R1]

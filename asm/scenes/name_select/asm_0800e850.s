@@ -178,7 +178,7 @@ _0800E99A: \n\
 /* 0800E9AA */ CMP R1, R0 \n\
 /* 0800E9AC */ BEQ _0800E9B4 \n\
 /* 0800E9AE */ LDR R0, [R2, #8] \n\
-/* 0800E9B0 */ BL func_08004B78 \n\
+/* 0800E9B0 */ BL bmp_font_obj_delete_printed_anim \n\
 _0800E9B4: \n\
 /* 0800E9B4 */ LDR R0, _0800EA28 \n\
 /* 0800E9B6 */ LDR R0, [R0] \n\

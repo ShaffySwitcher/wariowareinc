@@ -86,7 +86,7 @@ thumb_func_start func_08046538 \n\
 /* 080465EE */ STR R0, [SP, #4] \n\
 /* 080465F0 */ MOVS R0, #2 \n\
 /* 080465F2 */ MOVS R3, #4 \n\
-/* 080465F4 */ BL func_080042F4 \n\
+/* 080465F4 */ BL create_new_bmp_font_obj_alt \n\
 /* 080465F8 */ LDR R1, [R5] \n\
 /* 080465FA */ STR R0, [R1, #0X5C] \n\
 /* 080465FC */ LDR R5, [SP, #0X40] \n\
@@ -161,13 +161,13 @@ _08046662: \n\
 /* 08046670 */ LDR R1, [R4] \n\
 /* 08046672 */ LDR R0, [R1, #0X5C] \n\
 /* 08046674 */ ADDS R1, #0X60 \n\
-/* 08046676 */ BL func_080049BC \n\
+/* 08046676 */ BL bmp_font_obj_print_c_default \n\
 /* 0804667A */ STR R0, [SP, #0X34] \n\
 /* 0804667C */ LDR R0, [R4] \n\
 /* 0804667E */ LDR R0, [R0, #0X5C] \n\
 /* 08046680 */ ADD R1, SP, #0X34 \n\
 /* 08046682 */ MOVS R2, #4 \n\
-/* 08046684 */ BL func_08004E28 \n\
+/* 08046684 */ BL bmp_font_obj_wobble_printed_anim \n\
 /* 08046688 */ LDR R5, _080468E8 \n\
 /* 0804668A */ LDR R0, [R5] \n\
 /* 0804668C */ LDR R1, [SP, #0X34] \n\
@@ -312,7 +312,7 @@ _08046788: \n\
 /* 0804679C */ LDR R1, [R1] \n\
 /* 0804679E */ MOVS R2, #0 \n\
 /* 080467A0 */ MOVS R3, #8 \n\
-/* 080467A2 */ BL func_08004AE0 \n\
+/* 080467A2 */ BL bmp_font_obj_print_to_xy_default \n\
 /* 080467A6 */ ADDS R1, R0, #0 \n\
 /* 080467A8 */ STR R1, [SP, #0X34] \n\
 /* 080467AA */ LDR R0, _080468E8 \n\
@@ -374,7 +374,7 @@ _08046800: \n\
 /* 08046816 */ ADDS R0, R2, #0 \n\
 /* 08046818 */ MOVS R2, #0 \n\
 /* 0804681A */ MOVS R3, #8 \n\
-/* 0804681C */ BL func_08004AE0 \n\
+/* 0804681C */ BL bmp_font_obj_print_to_xy_default \n\
 /* 08046820 */ ADDS R1, R0, #0 \n\
 /* 08046822 */ STR R1, [SP, #0X34] \n\
 /* 08046824 */ LDR R0, _080468E8 \n\

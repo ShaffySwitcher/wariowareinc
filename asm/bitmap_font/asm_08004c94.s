@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004C94 \n\
+thumb_func_start bmp_font_obj_print_multiple \n\
 /* 08004C94 */ PUSH {LR} \n\
 /* 08004C96 */ SUB SP, #0X14 \n\
 /* 08004C98 */ LSLS R0, R0, #0X10 \n\

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800559C \n\
+thumb_func_start update_scene_object_importer \n\
 /* 0800559C */ PUSH {R4, R5, LR} \n\
 /* 0800559E */ ADDS R5, R0, #0 \n\
 /* 080055A0 */ LDR R4, [R5, #8] \n\
@@ -10,7 +10,7 @@ _080055A4: \n\
 /* 080055A6 */ LDR R1, [R5, #4] \n\
 /* 080055A8 */ LDR R2, [R4] \n\
 /* 080055AA */ LDR R3, [R5, #0XC] \n\
-/* 080055AC */ BL func_080053B0 \n\
+/* 080055AC */ BL import_scene_object \n\
 /* 080055B0 */ LDM R4!, {R0} \n\
 /* 080055B2 */ LDRB R0, [R0] \n\
 /* 080055B4 */ STR R4, [R5, #8] \n\

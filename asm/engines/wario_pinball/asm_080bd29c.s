@@ -157,14 +157,14 @@ _080BD39E: \n\
 /* 080BD3AE */ LDR R1, [R4] \n\
 /* 080BD3B0 */ LDR R0, [R1] \n\
 /* 080BD3B2 */ LDR R1, [R1, #0X50] \n\
-/* 080BD3B4 */ BL func_08004B78 \n\
+/* 080BD3B4 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080BD3B8 */ LDR R0, [R4] \n\
 /* 080BD3BA */ LDR R0, [R0] \n\
 /* 080BD3BC */ LDR R2, _080BD408 \n\
 /* 080BD3BE */ LSLS R1, R5, #2 \n\
 /* 080BD3C0 */ ADDS R1, R2 \n\
 /* 080BD3C2 */ LDR R1, [R1] \n\
-/* 080BD3C4 */ BL func_080049BC \n\
+/* 080BD3C4 */ BL bmp_font_obj_print_c_default \n\
 /* 080BD3C8 */ LDR R1, [R4] \n\
 /* 080BD3CA */ STR R0, [R1, #0X50] \n\
 /* 080BD3CC */ MOVS R6, #0 \n\

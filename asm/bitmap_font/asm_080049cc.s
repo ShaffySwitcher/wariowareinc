@@ -1,13 +1,13 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080049CC \n\
+thumb_func_start bmp_font_obj_print_c \n\
 /* 080049CC */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080049CE */ SUB SP, #8 \n\
 /* 080049D0 */ ADDS R4, R2, #0 \n\
 /* 080049D2 */ STR R3, [SP] \n\
 /* 080049D4 */ ADD R2, SP, #4 \n\
 /* 080049D6 */ ADDS R3, R4, #0 \n\
-/* 080049D8 */ BL func_080047E8 \n\
+/* 080049D8 */ BL bmp_font_obj_print_text \n\
 /* 080049DC */ ADDS R6, R0, #0 \n\
 /* 080049DE */ LDR R0, [SP, #4] \n\
 /* 080049E0 */ LSRS R0, R0, #1 \n\

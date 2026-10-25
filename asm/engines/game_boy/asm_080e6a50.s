@@ -448,7 +448,7 @@ _080E6D94: \n\
 /* 080E6E0A */ LDR R5, [SP, #0X24] \n\
 /* 080E6E0C */ ADDS R1, R5, R1 \n\
 /* 080E6E0E */ LDR R1, [R1] \n\
-/* 080E6E10 */ BL func_080049BC \n\
+/* 080E6E10 */ BL bmp_font_obj_print_c_default \n\
 /* 080E6E14 */ ADDS R1, R0, #0 \n\
 /* 080E6E16 */ LDR R5, [R7] \n\
 /* 080E6E18 */ MOVS R6, #0X85 \n\
@@ -568,7 +568,7 @@ _080E6E88: \n\
 /* 080E6EB8 */ LDR R6, [SP, #0X24] \n\
 /* 080E6EBA */ ADDS R1, R6, R1 \n\
 /* 080E6EBC */ LDR R1, [R1] \n\
-/* 080E6EBE */ BL func_080049BC \n\
+/* 080E6EBE */ BL bmp_font_obj_print_c_default \n\
 /* 080E6EC2 */ ADDS R1, R0, #0 \n\
 /* 080E6EC4 */ LDR R5, [R7] \n\
 /* 080E6EC6 */ MOVS R7, #0X89 \n\

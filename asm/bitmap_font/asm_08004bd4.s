@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004BD4 \n\
+thumb_func_start bmp_font_obj_init_multi_printer \n\
 /* 08004BD4 */ PUSH {R4, LR} \n\
 /* 08004BD6 */ ADDS R4, R0, #0 \n\
 /* 08004BD8 */ MOVS R0, #0X10 \n\

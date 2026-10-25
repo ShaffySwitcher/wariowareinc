@@ -273,7 +273,7 @@ _0801A2A8:
 /* 0801A3BE */ MOV R1, SB
 /* 0801A3C0 */ LDR R3, [R1]
 /* 0801A3C2 */ MOVS R1, #0
-/* 0801A3C4 */ BL func_08005538
+/* 0801A3C4 */ BL import_all_scene_objects
 /* 0801A3C8 */ MOV R2, SB
 /* 0801A3CA */ LDR R0, [R2]
 /* 0801A3CC */ MOVS R7, #0X20

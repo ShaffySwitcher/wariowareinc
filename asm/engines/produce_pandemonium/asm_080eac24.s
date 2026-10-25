@@ -71,7 +71,7 @@ thumb_func_start func_080EAC24 \n\
 /* 080EACBE */ LDR R2, [R3] \n\
 /* 080EACC0 */ LDR R3, _080EAD60 \n\
 /* 080EACC2 */ LDR R3, [R3] \n\
-/* 080EACC4 */ BL func_08005538 \n\
+/* 080EACC4 */ BL import_all_scene_objects \n\
 /* 080EACC8 */ LDR R0, [R5] \n\
 /* 080EACCA */ LDR R1, _080EAD64 \n\
 /* 080EACCC */ MOVS R2, #0X88 \n\

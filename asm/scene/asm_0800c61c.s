@@ -29,15 +29,15 @@ _0800C64A: \n\
 /* 0800C64E */ B _0800C668 \n\
 _0800C650: \n\
 /* 0800C650 */ ADDS R0, R5, #0 \n\
-/* 0800C652 */ BL func_080049BC \n\
+/* 0800C652 */ BL bmp_font_obj_print_c_default \n\
 /* 0800C656 */ B _0800C666 \n\
 _0800C658: \n\
 /* 0800C658 */ ADDS R0, R5, #0 \n\
-/* 0800C65A */ BL func_08004A30 \n\
+/* 0800C65A */ BL bmp_font_obj_print_l_default \n\
 /* 0800C65E */ B _0800C666 \n\
 _0800C660: \n\
 /* 0800C660 */ ADDS R0, R5, #0 \n\
-/* 0800C662 */ BL func_08004A74 \n\
+/* 0800C662 */ BL bmp_font_obj_print_r_default \n\
 _0800C666: \n\
 /* 0800C666 */ ADDS R6, R0, #0 \n\
 _0800C668: \n\

@@ -24,7 +24,7 @@ thumb_func_start func_0801522C \n\
 /* 08015256 */ LSLS R5, R5, #1 \n\
 /* 08015258 */ ADDS R3, R5 \n\
 /* 0801525A */ LDR R3, [R3] \n\
-/* 0801525C */ BL func_08005600 \n\
+/* 0801525C */ BL display_all_scene_objects \n\
 /* 08015260 */ LDR R0, [R4] \n\
 /* 08015262 */ ADDS R0, R5 \n\
 /* 08015264 */ LDR R0, [R0] \n\

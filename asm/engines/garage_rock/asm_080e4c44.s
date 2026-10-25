@@ -16,7 +16,7 @@ thumb_func_start func_080E4C44 \n\
 /* 080E4C5A */ LDR R2, _080E4C7C \n\
 /* 080E4C5C */ LDR R3, =gCurrentSceneSpritePool \n\
 /* 080E4C5E */ LDR R3, [R3] \n\
-/* 080E4C60 */ BL func_08005600 \n\
+/* 080E4C60 */ BL display_all_scene_objects \n\
 /* 080E4C64 */ LDR R0, [R4] \n\
 /* 080E4C66 */ ADDS R0, #0X21 \n\
 /* 080E4C68 */ MOVS R1, #1 \n\

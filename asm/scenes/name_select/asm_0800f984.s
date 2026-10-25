@@ -31,7 +31,7 @@ thumb_func_start func_0800F984 \n\
 /* 0800F9BC */ ADDS R1, R3 \n\
 /* 0800F9BE */ ADDS R1, R4 \n\
 /* 0800F9C0 */ LDR R1, [R1] \n\
-/* 0800F9C2 */ BL func_08004B78 \n\
+/* 0800F9C2 */ BL bmp_font_obj_delete_printed_anim \n\
 _0800F9C6: \n\
 /* 0800F9C6 */ POP {R4, R5} \n\
 /* 0800F9C8 */ POP {R0} \n\

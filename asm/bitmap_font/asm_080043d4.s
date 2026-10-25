@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080043D4 \n\
+thumb_func_start bmp_font_obj_clear_print_data \n\
 /* 080043D4 */ PUSH {R4, LR} \n\
 /* 080043D6 */ ADDS R3, R0, #0 \n\
 /* 080043D8 */ LDRB R0, [R3, #0XA] \n\

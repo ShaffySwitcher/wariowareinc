@@ -85,7 +85,7 @@ thumb_func_start func_080140C0 \n\
 /* 08014170 */ ADDS R0, R4, #0 \n\
 /* 08014172 */ MOV R1, R8 \n\
 /* 08014174 */ ADDS R2, R5, #0 \n\
-/* 08014176 */ BL func_08004C94 \n\
+/* 08014176 */ BL bmp_font_obj_print_multiple \n\
 /* 0801417A */ LDR R1, =func_08013F18 + 1 \n\
 /* 0801417C */ MOVS R2, #0 \n\
 /* 0801417E */ BL run_func_after_task \n\

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800557C \n\
+thumb_func_start init_scene_object_importer \n\
 /* 0800557C */ PUSH {R4, LR} \n\
 /* 0800557E */ ADDS R4, R0, #0 \n\
 /* 08005580 */ MOVS R0, #0X10 \n\

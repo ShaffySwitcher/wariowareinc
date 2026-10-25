@@ -36,7 +36,7 @@ glabel func_0801F1B8
 /* 0801F1F6 */ LDR R2, _0801F218
 /* 0801F1F8 */ LDR R3, _0801F21C
 /* 0801F1FA */ LDR R3, [R3]
-/* 0801F1FC */ BL func_08005538
+/* 0801F1FC */ BL import_all_scene_objects
 /* 0801F200 */ LDR R0, =D_083BB0C4
 /* 0801F202 */ BL func_0800CDCC
 /* 0801F206 */ ADD SP, #0XC

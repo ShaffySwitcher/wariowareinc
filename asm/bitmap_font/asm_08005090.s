@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005090 \n\
+thumb_func_start bmp_font_bg_print_text \n\
 /* 08005090 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005092 */ MOV R7, SL \n\
 /* 08005094 */ MOV R6, SB \n\
@@ -45,14 +45,14 @@ _080050CE: \n\
 /* 080050D8 */ B _0800512E \n\
 _080050DA: \n\
 /* 080050DA */ LDRB R0, [R4, #1] \n\
-/* 080050DC */ BL func_0800504C \n\
+/* 080050DC */ BL bmp_font_bg_parse_hex_digit \n\
 /* 080050E0 */ LSLS R0, R0, #0X18 \n\
 /* 080050E2 */ LSRS R6, R0, #0X18 \n\
 /* 080050E4 */ ADDS R4, #2 \n\
 /* 080050E6 */ B _0800512E \n\
 _080050E8: \n\
 /* 080050E8 */ LDRB R0, [R4, #1] \n\
-/* 080050EA */ BL func_0800504C \n\
+/* 080050EA */ BL bmp_font_bg_parse_hex_digit \n\
 /* 080050EE */ LSLS R0, R0, #0X18 \n\
 /* 080050F0 */ LSRS R0, R0, #0X18 \n\
 /* 080050F2 */ MOV R1, SL \n\
@@ -62,7 +62,7 @@ _080050E8: \n\
 _080050FA: \n\
 /* 080050FA */ MOV R0, SB \n\
 /* 080050FC */ ADDS R1, R4, #0 \n\
-/* 080050FE */ BL func_08004F2C \n\
+/* 080050FE */ BL bmp_font_bg_print_glyph \n\
 /* 08005102 */ LSLS R0, R0, #0X10 \n\
 /* 08005104 */ LSRS R0, R0, #0X10 \n\
 /* 08005106 */ LDR R2, _08005144 \n\

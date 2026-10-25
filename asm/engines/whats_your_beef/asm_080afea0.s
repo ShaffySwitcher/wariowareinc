@@ -20,14 +20,14 @@ thumb_func_start func_080AFEA0 \n\
 /* 080AFEC0 */ STR R0, [SP, #4] \n\
 /* 080AFEC2 */ MOVS R0, #2 \n\
 /* 080AFEC4 */ MOVS R3, #2 \n\
-/* 080AFEC6 */ BL func_080042F4 \n\
+/* 080AFEC6 */ BL create_new_bmp_font_obj_alt \n\
 /* 080AFECA */ LDR R1, [R5] \n\
 /* 080AFECC */ MOVS R2, #0X9D \n\
 /* 080AFECE */ LSLS R2, R2, #2 \n\
 /* 080AFED0 */ ADDS R1, R2 \n\
 /* 080AFED2 */ STR R0, [R1] \n\
 /* 080AFED4 */ LDR R1, _080AFF2C \n\
-/* 080AFED6 */ BL func_080049BC \n\
+/* 080AFED6 */ BL bmp_font_obj_print_c_default \n\
 /* 080AFEDA */ ADDS R1, R0, #0 \n\
 /* 080AFEDC */ LDR R0, [R5] \n\
 /* 080AFEDE */ MOVS R2, #0X9E \n\

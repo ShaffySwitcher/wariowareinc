@@ -197,7 +197,7 @@ _08019D88:
 /* 08019DC2 */ MOVS R3, #0XA
 /* 08019DC4 */ STR R3, [SP, #4]
 /* 08019DC6 */ MOVS R3, #4
-/* 08019DC8 */ BL func_080042F4
+/* 08019DC8 */ BL create_new_bmp_font_obj_alt
 /* 08019DCC */ LDR R1, [R5]
 /* 08019DCE */ MOVS R2, #0X90
 /* 08019DD0 */ LSLS R2, R2, #1

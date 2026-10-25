@@ -23,7 +23,7 @@ thumb_func_start func_08014EBC \n\
 /* 08014EE4 */ LDR R0, [R3, #4] \n\
 /* 08014EE6 */ LDR R0, [R0, #4] \n\
 /* 08014EE8 */ ADDS R0, #0X38 \n\
-/* 08014EEA */ BL func_080044C4 \n\
+/* 08014EEA */ BL bmp_font_obj_get_string_width \n\
 /* 08014EEE */ LSLS R0, R0, #0X10 \n\
 /* 08014EF0 */ ASRS R1, R0, #0X10 \n\
 /* 08014EF2 */ LSRS R0, R0, #0X1F \n\

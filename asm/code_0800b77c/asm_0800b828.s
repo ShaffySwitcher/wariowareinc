@@ -59,7 +59,7 @@ _0800B88C: \n\
 /* 0800B88C */ CMP R0, #0X2E \n\
 /* 0800B88E */ BNE _0800B89E \n\
 /* 0800B890 */ LDRB R0, [R6, #1] \n\
-/* 0800B892 */ BL bmp_font_obj_parse_hex_digit \n\
+/* 0800B892 */ BL parse_hex_digit \n\
 /* 0800B896 */ LSLS R0, R0, #0X18 \n\
 /* 0800B898 */ LSRS R0, R0, #0X18 \n\
 /* 0800B89A */ STR R0, [SP, #0X60] \n\
@@ -68,14 +68,14 @@ _0800B89E: \n\
 /* 0800B89E */ CMP R0, #0X3A \n\
 /* 0800B8A0 */ BNE _0800B8B0 \n\
 /* 0800B8A2 */ LDRB R0, [R6, #1] \n\
-/* 0800B8A4 */ BL bmp_font_obj_parse_hex_digit \n\
+/* 0800B8A4 */ BL parse_hex_digit \n\
 /* 0800B8A8 */ LSLS R0, R0, #0X18 \n\
 /* 0800B8AA */ LSRS R0, R0, #0X18 \n\
 /* 0800B8AC */ STR R0, [SP, #0X68] \n\
 /* 0800B8AE */ B _0800B9F0 \n\
 _0800B8B0: \n\
 /* 0800B8B0 */ ADDS R0, R6, #0 \n\
-/* 0800B8B2 */ BL func_08004770 \n\
+/* 0800B8B2 */ BL bmp_font_obj_glyph_is_whitespace \n\
 /* 0800B8B6 */ CMP R0, #0 \n\
 /* 0800B8B8 */ BEQ _0800B8D0 \n\
 /* 0800B8BA */ LDR R1, [SP, #0X68] \n\
@@ -91,7 +91,7 @@ _0800B8B0: \n\
 /* 0800B8CE */ B _0800B9F0 \n\
 _0800B8D0: \n\
 /* 0800B8D0 */ ADDS R0, R6, #0 \n\
-/* 0800B8D2 */ BL func_08004798 \n\
+/* 0800B8D2 */ BL bmp_font_obj_get_latin_glyph_type \n\
 /* 0800B8D6 */ MOV R8, R0 \n\
 /* 0800B8D8 */ LSLS R0, R7, #3 \n\
 /* 0800B8DA */ MOV R3, SP \n\
@@ -171,13 +171,13 @@ _0800B8FC: \n\
 /* 0800B96C */ LDR R4, [SP, #0X6C] \n\
 _0800B96E: \n\
 /* 0800B96E */ ADDS R0, R6, R5 \n\
-/* 0800B970 */ BL func_080047D4 \n\
+/* 0800B970 */ BL bmp_font_obj_convert_latin_hw_to_fw \n\
 /* 0800B974 */ ADDS R1, R0, #0 \n\
 /* 0800B976 */ LDR R2, [SP, #0X5C] \n\
 /* 0800B978 */ ADDS R0, R2, R7 \n\
 /* 0800B97A */ LDR R2, [SP, #0X74] \n\
 /* 0800B97C */ MOV R3, SL \n\
-/* 0800B97E */ BL func_080041CC \n\
+/* 0800B97E */ BL bmp_font_get_glyph \n\
 /* 0800B982 */ LDR R0, [SP, #0X54] \n\
 /* 0800B984 */ ADDS R1, R4, #0 \n\
 /* 0800B986 */ BL func_0800B77C \n\
@@ -223,7 +223,7 @@ _0800B9B8: \n\
 /* 0800B9C2 */ ADDS R1, R6, #0 \n\
 /* 0800B9C4 */ ADD R2, SP, #0X54 \n\
 /* 0800B9C6 */ ADD R3, SP, #0X58 \n\
-/* 0800B9C8 */ BL func_080041CC \n\
+/* 0800B9C8 */ BL bmp_font_get_glyph \n\
 /* 0800B9CC */ LDR R0, [SP, #0X54] \n\
 /* 0800B9CE */ LDR R1, [SP, #0X6C] \n\
 /* 0800B9D0 */ BL func_0800B7B0 \n\

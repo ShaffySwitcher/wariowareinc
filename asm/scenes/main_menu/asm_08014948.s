@@ -34,7 +34,7 @@ thumb_func_start func_08014948 \n\
 /* 0801498A */ LDR R4, =gCurrentSceneSpritePool \n\
 /* 0801498C */ LDR R4, [R4] \n\
 /* 0801498E */ STR R4, [SP] \n\
-/* 08014990 */ BL func_080055D4 \n\
+/* 08014990 */ BL start_new_scene_object_importer \n\
 /* 08014994 */ LDR R1, [R5] \n\
 /* 08014996 */ ADDS R1, #0XDE \n\
 /* 08014998 */ LDRB R0, [R1] \n\

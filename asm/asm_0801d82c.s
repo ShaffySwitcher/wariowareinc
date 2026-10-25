@@ -73,7 +73,7 @@ _0801D856:
 /* 0801D8B2 */ LDR R4, _0801DA2C
 /* 0801D8B4 */ LDR R3, [R4]
 /* 0801D8B6 */ MOVS R1, #0
-/* 0801D8B8 */ BL func_08005538
+/* 0801D8B8 */ BL import_all_scene_objects
 /* 0801D8BC */ LDR R0, [R4]
 /* 0801D8BE */ MOVS R1, #2
 /* 0801D8C0 */ LDRSH R0, [R0, R1]

@@ -117,7 +117,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800DFEE */ STR R0, [SP, #4] \n\
 /* 0800DFF0 */ MOVS R0, #1 \n\
 /* 0800DFF2 */ MOVS R3, #4 \n\
-/* 0800DFF4 */ BL func_080042F4 \n\
+/* 0800DFF4 */ BL create_new_bmp_font_obj_alt \n\
 /* 0800DFF8 */ LDR R1, [R6] \n\
 /* 0800DFFA */ STR R0, [R1, #8] \n\
 /* 0800DFFC */ LDR R7, _0800E304 \n\
@@ -149,7 +149,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800E032 */ LDR R0, [R1, #8] \n\
 /* 0800E034 */ LDR R1, _0800E310 \n\
 /* 0800E036 */ LDR R1, [R1, #4] \n\
-/* 0800E038 */ BL func_08004A74 \n\
+/* 0800E038 */ BL bmp_font_obj_print_r_default \n\
 /* 0800E03C */ ADDS R2, R0, #0 \n\
 /* 0800E03E */ LDR R0, [R5] \n\
 /* 0800E040 */ MOVS R1, #0 \n\
@@ -199,7 +199,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800E09C */ LDR R0, [R2, #8] \n\
 /* 0800E09E */ LDR R1, _0800E320 \n\
 /* 0800E0A0 */ LDR R1, [R1, #4] \n\
-/* 0800E0A2 */ BL func_08004A74 \n\
+/* 0800E0A2 */ BL bmp_font_obj_print_r_default \n\
 /* 0800E0A6 */ ADDS R2, R0, #0 \n\
 /* 0800E0A8 */ LDR R0, [R5] \n\
 /* 0800E0AA */ MOVS R1, #0 \n\
@@ -265,7 +265,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800E128 */ LDR R0, [R0, #8] \n\
 /* 0800E12A */ LDR R1, _0800E334 \n\
 /* 0800E12C */ LDR R1, [R1, #4] \n\
-/* 0800E12E */ BL func_08004994 \n\
+/* 0800E12E */ BL bmp_font_obj_print_unaligned_default \n\
 /* 0800E132 */ ADDS R2, R0, #0 \n\
 /* 0800E134 */ LDR R0, [R5] \n\
 /* 0800E136 */ MOVS R3, #0X8E \n\
@@ -284,7 +284,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800E152 */ LDR R0, [R0, #8] \n\
 /* 0800E154 */ LDR R1, _0800E338 \n\
 /* 0800E156 */ LDR R1, [R1, #4] \n\
-/* 0800E158 */ BL func_08004994 \n\
+/* 0800E158 */ BL bmp_font_obj_print_unaligned_default \n\
 /* 0800E15C */ ADDS R2, R0, #0 \n\
 /* 0800E15E */ LDR R0, [R5] \n\
 /* 0800E160 */ LDRH R3, [R7] \n\

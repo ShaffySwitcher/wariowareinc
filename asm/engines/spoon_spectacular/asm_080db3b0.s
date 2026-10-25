@@ -208,14 +208,14 @@ _080DB4D8: \n\
 /* 080DB4F2 */ STR R0, [R2, #0X78] \n\
 /* 080DB4F4 */ LDR R0, [R2, #4] \n\
 /* 080DB4F6 */ LDR R1, [R2, #0X74] \n\
-/* 080DB4F8 */ BL func_08004B78 \n\
+/* 080DB4F8 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080DB4FC */ LDR R0, [R4] \n\
 /* 080DB4FE */ LDR R0, [R0, #4] \n\
 /* 080DB500 */ LDR R2, _080DB53C \n\
 /* 080DB502 */ LSLS R1, R5, #2 \n\
 /* 080DB504 */ ADDS R1, R2 \n\
 /* 080DB506 */ LDR R1, [R1] \n\
-/* 080DB508 */ BL func_080049BC \n\
+/* 080DB508 */ BL bmp_font_obj_print_c_default \n\
 /* 080DB50C */ ADDS R2, R0, #0 \n\
 /* 080DB50E */ LDR R1, [R4] \n\
 /* 080DB510 */ STR R2, [R1, #0X74] \n\

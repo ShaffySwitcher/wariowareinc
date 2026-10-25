@@ -768,14 +768,14 @@ _080E758C: \n\
 /* 080E7594 */ LSLS R4, R4, #2 \n\
 /* 080E7596 */ ADDS R1, R4 \n\
 /* 080E7598 */ LDR R1, [R1] \n\
-/* 080E759A */ BL func_08004B78 \n\
+/* 080E759A */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080E759E */ LDR R0, [R5] \n\
 /* 080E75A0 */ LDR R0, [R0, #4] \n\
 /* 080E75A2 */ LDR R1, _080E76C8 \n\
 /* 080E75A4 */ LDR R6, [SP, #0X10] \n\
 /* 080E75A6 */ ADDS R1, R6, R1 \n\
 /* 080E75A8 */ LDR R1, [R1] \n\
-/* 080E75AA */ BL func_080049BC \n\
+/* 080E75AA */ BL bmp_font_obj_print_c_default \n\
 /* 080E75AE */ ADDS R2, R0, #0 \n\
 /* 080E75B0 */ LDR R1, [R5] \n\
 /* 080E75B2 */ ADDS R4, R1, R4 \n\

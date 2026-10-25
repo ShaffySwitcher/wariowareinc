@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080053B0 \n\
+thumb_func_start import_scene_object \n\
 /* 080053B0 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080053B2 */ MOV R7, SL \n\
 /* 080053B4 */ MOV R6, SB \n\
@@ -130,19 +130,19 @@ _08005490: \n\
 /* 08005498 */ B _080054BA \n\
 _0800549A: \n\
 /* 0800549A */ MOV R0, R8 \n\
-/* 0800549C */ BL func_080049A4 \n\
+/* 0800549C */ BL bmp_font_obj_print_unaligned \n\
 /* 080054A0 */ B _080054B8 \n\
 _080054A2: \n\
 /* 080054A2 */ MOV R0, R8 \n\
-/* 080054A4 */ BL func_080049CC \n\
+/* 080054A4 */ BL bmp_font_obj_print_c \n\
 /* 080054A8 */ B _080054B8 \n\
 _080054AA: \n\
 /* 080054AA */ MOV R0, R8 \n\
-/* 080054AC */ BL func_08004A40 \n\
+/* 080054AC */ BL bmp_font_obj_print_l \n\
 /* 080054B0 */ B _080054B8 \n\
 _080054B2: \n\
 /* 080054B2 */ MOV R0, R8 \n\
-/* 080054B4 */ BL func_08004A84 \n\
+/* 080054B4 */ BL bmp_font_obj_print_r \n\
 _080054B8: \n\
 /* 080054B8 */ ADDS R6, R0, #0 \n\
 _080054BA: \n\
@@ -154,7 +154,7 @@ _080054BA: \n\
 /* 080054C4 */ MOV R0, R8 \n\
 /* 080054C6 */ ADDS R1, R6, #0 \n\
 /* 080054C8 */ MOVS R2, #4 \n\
-/* 080054CA */ BL func_08004CE0 \n\
+/* 080054CA */ BL bmp_font_obj_print_wobbly \n\
 /* 080054CE */ ADDS R4, R0, #0 \n\
 /* 080054D0 */ ADDS R0, R6, #0 \n\
 /* 080054D2 */ BL mem_heap_dealloc \n\

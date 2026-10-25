@@ -29,7 +29,7 @@ glabel func_0801BB40
 /* 0801BB6C */ LDR R3, _0801BC18
 /* 0801BB6E */ MOV R8, R3
 /* 0801BB70 */ LDR R3, [R3]
-/* 0801BB72 */ BL func_08005538
+/* 0801BB72 */ BL import_all_scene_objects
 /* 0801BB76 */ BL get_current_language
 /* 0801BB7A */ ADDS R4, R0, #0
 /* 0801BB7C */ LDR R0, _0801BC1C
@@ -54,7 +54,7 @@ glabel func_0801BB40
 /* 0801BBA8 */ ADDS R0, #0XC0
 /* 0801BBAA */ LDR R0, [R0]
 /* 0801BBAC */ ADD R1, SP, #0X14
-/* 0801BBAE */ BL func_080049BC
+/* 0801BBAE */ BL bmp_font_obj_print_c_default
 /* 0801BBB2 */ ADDS R1, R0, #0
 /* 0801BBB4 */ LDR R0, [R6]
 /* 0801BBB6 */ MOVS R2, #0X92

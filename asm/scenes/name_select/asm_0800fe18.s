@@ -23,7 +23,7 @@ _0800FE36: \n\
 /* 0800FE40 */ ADDS R1, R3 \n\
 /* 0800FE42 */ ADDS R1, R2 \n\
 /* 0800FE44 */ LDR R1, [R1] \n\
-/* 0800FE46 */ BL func_08004B78 \n\
+/* 0800FE46 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 0800FE4A */ LDR R0, _0800FEA0 \n\
 /* 0800FE4C */ LDR R0, [R0] \n\
 /* 0800FE4E */ LDR R1, [R6] \n\

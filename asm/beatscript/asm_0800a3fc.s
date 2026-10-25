@@ -14,7 +14,7 @@ thumb_func_start func_0800A3FC \n\
 /* 0800A412 */ LDR R1, =D_083ADADC \n\
 /* 0800A414 */ ADDS R2, R4, #0 \n\
 /* 0800A416 */ ADDS R3, R5, #0 \n\
-/* 0800A418 */ BL func_0800430C \n\
+/* 0800A418 */ BL create_new_bmp_font_obj \n\
 /* 0800A41C */ ADDS R4, R0, #0 \n\
 /* 0800A41E */ BL func_0800D23C \n\
 /* 0800A422 */ ADDS R0, R4, #0 \n\

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004518 \n\
+thumb_func_start bmp_font_obj_write_glyph_hw \n\
 /* 08004518 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800451A */ SUB SP, #4 \n\
 /* 0800451C */ ADDS R5, R0, #0 \n\

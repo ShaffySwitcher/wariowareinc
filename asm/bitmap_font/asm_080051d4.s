@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080051D4 \n\
+thumb_func_start bmp_font_bg_init_printer \n\
 /* 080051D4 */ PUSH {R4, R5, LR} \n\
 /* 080051D6 */ SUB SP, #4 \n\
 /* 080051D8 */ ADDS R5, R0, #0 \n\

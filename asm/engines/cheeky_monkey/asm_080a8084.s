@@ -14,7 +14,7 @@ thumb_func_start func_080A8084 \n\
 /* 080A8096 */ LDR R1, _080A83C8 \n\
 /* 080A8098 */ LDR R3, [R1] \n\
 /* 080A809A */ MOVS R1, #0 \n\
-/* 080A809C */ BL func_08005538 \n\
+/* 080A809C */ BL import_all_scene_objects \n\
 /* 080A80A0 */ MOVS R5, #0 \n\
 /* 080A80A2 */ LDR R0, _080A83CC \n\
 /* 080A80A4 */ MOV SL, R0 \n\
@@ -325,7 +325,7 @@ _080A8312: \n\
 /* 080A8314 */ LDR R3, [R5] \n\
 /* 080A8316 */ ADDS R0, R1, #0 \n\
 /* 080A8318 */ MOVS R1, #0 \n\
-/* 080A831A */ BL func_08005538 \n\
+/* 080A831A */ BL import_all_scene_objects \n\
 /* 080A831E */ LDR R0, [R6] \n\
 /* 080A8320 */ LDR R1, [R5] \n\
 /* 080A8322 */ MOVS R2, #8 \n\

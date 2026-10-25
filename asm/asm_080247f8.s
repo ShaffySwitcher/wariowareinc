@@ -123,7 +123,7 @@ _080248C0:
 _080248CC:
 /* 080248CC */ LDR R0, [SP, #0X64]
 /* 080248CE */ ADDS R1, R5, #0
-/* 080248D0 */ BL func_080049BC
+/* 080248D0 */ BL bmp_font_obj_print_c_default
 /* 080248D4 */ STR R0, [SP, #0X60]
 /* 080248D6 */ LDR R0, _08024994
 /* 080248D8 */ LDR R0, [R0]
@@ -135,7 +135,7 @@ _080248CC:
 /* 080248E4 */ LDR R0, [SP, #0X64]
 /* 080248E6 */ ADD R1, SP, #0X60
 /* 080248E8 */ MOVS R2, #4
-/* 080248EA */ BL func_08004E28
+/* 080248EA */ BL bmp_font_obj_wobble_printed_anim
 _080248EE:
 /* 080248EE */ LDR R2, _0802499C
 /* 080248F0 */ LDR R0, [R2]

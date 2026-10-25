@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800504C \n\
+thumb_func_start bmp_font_bg_parse_hex_digit \n\
 /* 0800504C */ PUSH {LR} \n\
 /* 0800504E */ LSLS R0, R0, #0X18 \n\
 /* 08005050 */ LSRS R1, R0, #0X18 \n\

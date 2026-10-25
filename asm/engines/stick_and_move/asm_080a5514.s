@@ -45,7 +45,7 @@ thumb_func_start func_080A5514 \n\
 /* 080A5574 */ LDR R1, _080A55EC \n\
 /* 080A5576 */ LDR R3, [R1] \n\
 /* 080A5578 */ MOVS R1, #0 \n\
-/* 080A557A */ BL func_08005538 \n\
+/* 080A557A */ BL import_all_scene_objects \n\
 /* 080A557E */ LDR R0, _080A55F0 \n\
 /* 080A5580 */ BL func_0800BBB4 \n\
 /* 080A5584 */ LDR R1, _080A55F4 \n\

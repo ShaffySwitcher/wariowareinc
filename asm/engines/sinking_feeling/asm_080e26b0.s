@@ -445,7 +445,7 @@ _080E29C8: \n\
 /* 080E2A5A */ LDR R6, [SP, #0X18] \n\
 /* 080E2A5C */ ADDS R1, R6, R1 \n\
 /* 080E2A5E */ LDR R1, [R1] \n\
-/* 080E2A60 */ BL func_080049BC \n\
+/* 080E2A60 */ BL bmp_font_obj_print_c_default \n\
 /* 080E2A64 */ ADDS R1, R0, #0 \n\
 /* 080E2A66 */ LDR R5, [R4] \n\
 /* 080E2A68 */ MOVS R2, #0XDA \n\

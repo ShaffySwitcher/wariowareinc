@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080047D4 \n\
+thumb_func_start bmp_font_obj_convert_latin_hw_to_fw \n\
 /* 080047D4 */ LDR R2, =D_083A49E8 \n\
 /* 080047D6 */ LDRB R1, [R0] \n\
 /* 080047D8 */ SUBS R1, #0X61 \n\

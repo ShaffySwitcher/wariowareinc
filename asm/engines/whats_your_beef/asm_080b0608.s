@@ -12,7 +12,7 @@ thumb_func_start func_080B0608 \n\
 /* 080B0616 */ ADDS R2, #4 \n\
 /* 080B0618 */ ADDS R1, R2 \n\
 /* 080B061A */ LDR R1, [R1] \n\
-/* 080B061C */ BL func_08004B78 \n\
+/* 080B061C */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080B0620 */ POP {R0} \n\
 /* 080B0622 */ BX R0 \n\
  \n\

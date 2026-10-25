@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004E48 \n\
+thumb_func_start create_new_bmp_font_bg \n\
 /* 08004E48 */ PUSH {R4, R5, R6, LR} \n\
 /* 08004E4A */ MOV R6, R8 \n\
 /* 08004E4C */ PUSH {R6} \n\
@@ -39,7 +39,7 @@ thumb_func_start func_08004E48 \n\
 /* 08004E92 */ BL mem_heap_alloc_id \n\
 /* 08004E96 */ STR R0, [R4, #0XC] \n\
 /* 08004E98 */ ADDS R0, R4, #0 \n\
-/* 08004E9A */ BL func_08004EE8 \n\
+/* 08004E9A */ BL bmp_font_bg_clear_print_data \n\
 /* 08004E9E */ ADDS R0, R4, #0 \n\
 /* 08004EA0 */ ADD SP, #8 \n\
 /* 08004EA2 */ POP {R3} \n\

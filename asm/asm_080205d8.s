@@ -26,7 +26,7 @@ glabel func_080205D8
 /* 08020600 */ LDR R2, _08020620
 /* 08020602 */ LDR R3, _08020624
 /* 08020604 */ LDR R3, [R3]
-/* 08020606 */ BL func_08005538
+/* 08020606 */ BL import_all_scene_objects
 /* 0802060A */ LDR R0, =gGraphicsBuffer
 /* 0802060C */ ADDS R0, #0X4E
 /* 0802060E */ MOVS R1, #0X10

@@ -69,7 +69,7 @@ thumb_func_start func_080D97A0 \n\
 /* 080D9836 */ LDR R2, [R6] \n\
 /* 080D9838 */ LDR R3, _080D98C0 \n\
 /* 080D983A */ LDR R3, [R3] \n\
-/* 080D983C */ BL func_08005538 \n\
+/* 080D983C */ BL import_all_scene_objects \n\
 /* 080D9840 */ LDR R0, [R5] \n\
 /* 080D9842 */ LDR R1, _080D98C4 \n\
 /* 080D9844 */ LDR R2, _080D98C8 \n\

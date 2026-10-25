@@ -14,7 +14,7 @@ thumb_func_start func_0800DE84 \n\
 /* 0800DE98 */ LDR R0, [R0] \n\
 /* 0800DE9A */ LDR R0, [R0, #8] \n\
 /* 0800DE9C */ ADDS R1, R3, #0 \n\
-/* 0800DE9E */ BL func_080049BC \n\
+/* 0800DE9E */ BL bmp_font_obj_print_c_default \n\
 /* 0800DEA2 */ ADDS R1, R0, #0 \n\
 /* 0800DEA4 */ LDR R6, =gSpriteHandler \n\
 /* 0800DEA6 */ LDR R0, [R6] \n\

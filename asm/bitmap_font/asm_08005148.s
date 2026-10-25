@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005148 \n\
+thumb_func_start bmp_font_bg_delete_printed_data \n\
 /* 08005148 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 0800514A */ ADDS R7, R0, #0 \n\
 /* 0800514C */ ADDS R4, R1, #0 \n\
@@ -25,7 +25,7 @@ _0800516A: \n\
 /* 0800516C */ B _080051C8 \n\
 _0800516E: \n\
 /* 0800516E */ LDRB R0, [R4, #1] \n\
-/* 08005170 */ BL func_0800504C \n\
+/* 08005170 */ BL bmp_font_bg_parse_hex_digit \n\
 /* 08005174 */ LSLS R0, R0, #0X18 \n\
 /* 08005176 */ LSRS R0, R0, #0X18 \n\
 /* 08005178 */ MOV IP, R0 \n\

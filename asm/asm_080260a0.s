@@ -50,7 +50,7 @@ _080260D8:
 /* 080260F6 */ BL sprite_get_data
 /* 080260FA */ ADDS R1, R0, #0
 /* 080260FC */ ADDS R0, R4, #0
-/* 080260FE */ BL func_08004B78
+/* 080260FE */ BL bmp_font_obj_delete_printed_anim
 /* 08026102 */ MOV R2, R8
 /* 08026104 */ LDR R0, [R2]
 /* 08026106 */ ADDS R1, R5, #0

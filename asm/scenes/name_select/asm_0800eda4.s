@@ -37,7 +37,7 @@ thumb_func_start func_0800EDA4 \n\
 /* 0800EDE6 */ BEQ _0800EDF0 \n\
 /* 0800EDE8 */ LDR R0, [R2, #8] \n\
 /* 0800EDEA */ ADDS R1, R6, #0 \n\
-/* 0800EDEC */ BL func_08004B78 \n\
+/* 0800EDEC */ BL bmp_font_obj_delete_printed_anim \n\
 _0800EDF0: \n\
 /* 0800EDF0 */ MOVS R5, #0 \n\
 /* 0800EDF2 */ LDR R0, [SP, #0X10] \n\
@@ -101,7 +101,7 @@ _0800EE02: \n\
 /* 0800EE6A */ LDR R0, [R3] \n\
 /* 0800EE6C */ LDR R0, [R0, #8] \n\
 /* 0800EE6E */ ADD R1, SP, #0XC \n\
-/* 0800EE70 */ BL func_080049BC \n\
+/* 0800EE70 */ BL bmp_font_obj_print_c_default \n\
 /* 0800EE74 */ ADDS R6, R0, #0 \n\
 /* 0800EE76 */ B _0800EE8A \n\
  \n\

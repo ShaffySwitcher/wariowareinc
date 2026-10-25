@@ -8,11 +8,11 @@ thumb_func_start func_080B8344 \n\
 /* 080B834A */ LDR R1, [R5] \n\
 /* 080B834C */ LDR R0, [R1, #0X38] \n\
 /* 080B834E */ LDR R1, [R1, #0X3C] \n\
-/* 080B8350 */ BL func_08004B78 \n\
+/* 080B8350 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080B8354 */ LDR R0, [R5] \n\
 /* 080B8356 */ LDR R0, [R0, #0X38] \n\
 /* 080B8358 */ LDR R1, _080B83A8 \n\
-/* 080B835A */ BL func_080049BC \n\
+/* 080B835A */ BL bmp_font_obj_print_c_default \n\
 /* 080B835E */ ADDS R2, R0, #0 \n\
 /* 080B8360 */ LDR R1, [R5] \n\
 /* 080B8362 */ STR R2, [R1, #0X3C] \n\

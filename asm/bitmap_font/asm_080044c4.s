@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080044C4 \n\
+thumb_func_start bmp_font_obj_get_string_width \n\
 /* 080044C4 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 080044C6 */ ADDS R7, R0, #0 \n\
 /* 080044C8 */ ADDS R4, R1, #0 \n\
@@ -14,7 +14,7 @@ _080044D0: \n\
 /* 080044D6 */ CMP R0, #0X3A \n\
 /* 080044D8 */ BNE _080044EE \n\
 /* 080044DA */ LDRB R0, [R4, #1] \n\
-/* 080044DC */ BL func_08004480 \n\
+/* 080044DC */ BL bmp_font_obj_parse_hex_digit \n\
 /* 080044E0 */ LSLS R0, R0, #0X18 \n\
 /* 080044E2 */ LSRS R0, R0, #0X18 \n\
 /* 080044E4 */ LSLS R1, R0, #3 \n\
@@ -31,7 +31,7 @@ _080044EE: \n\
 _080044F8: \n\
 /* 080044F8 */ ADDS R0, R6, #0 \n\
 /* 080044FA */ ADDS R1, R4, #0 \n\
-/* 080044FC */ BL func_0800442C \n\
+/* 080044FC */ BL bmp_font_obj_get_glyph_width \n\
 /* 08004500 */ ADDS R5, R5, R0 \n\
 _08004502: \n\
 /* 08004502 */ ADDS R4, #2 \n\

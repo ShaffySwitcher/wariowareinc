@@ -37,7 +37,7 @@ glabel func_0801B280
 /* 0801B2C6 */ MOVS R3, #0XA
 /* 0801B2C8 */ STR R3, [SP, #4]
 /* 0801B2CA */ MOVS R3, #4
-/* 0801B2CC */ BL func_080042F4
+/* 0801B2CC */ BL create_new_bmp_font_obj_alt
 /* 0801B2D0 */ LDR R5, _0801B38C
 /* 0801B2D2 */ LDR R1, [R5]
 /* 0801B2D4 */ ADDS R1, #0XC0

@@ -81,7 +81,7 @@ _080D93CA: \n\
 /* 080D93F4 */ LDR R2, [R2] \n\
 /* 080D93F6 */ LDR R3, _080D9504 \n\
 /* 080D93F8 */ LDR R3, [R3] \n\
-/* 080D93FA */ BL func_08005538 \n\
+/* 080D93FA */ BL import_all_scene_objects \n\
 /* 080D93FE */ MOV R1, R8 \n\
 /* 080D9400 */ LDR R0, [R1] \n\
 /* 080D9402 */ LDR R1, _080D9508 \n\

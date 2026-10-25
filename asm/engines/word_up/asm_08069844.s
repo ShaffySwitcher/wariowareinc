@@ -423,7 +423,7 @@ _08069B42: \n\
 /* 08069B7C */ STR R0, [SP, #4] \n\
 /* 08069B7E */ MOVS R0, #2 \n\
 /* 08069B80 */ MOVS R3, #4 \n\
-/* 08069B82 */ BL func_080042F4 \n\
+/* 08069B82 */ BL create_new_bmp_font_obj_alt \n\
 /* 08069B86 */ LDR R2, _08069BF0 \n\
 /* 08069B88 */ LDR R1, [R2] \n\
 /* 08069B8A */ STR R0, [R1] \n\
@@ -462,7 +462,7 @@ _08069B90: \n\
 /* 08069BCC */ LDR R0, [R5] \n\
 /* 08069BCE */ LDR R0, [R0] \n\
 /* 08069BD0 */ LDR R1, _08069BFC \n\
-/* 08069BD2 */ BL func_080049BC \n\
+/* 08069BD2 */ BL bmp_font_obj_print_c_default \n\
 /* 08069BD6 */ STR R0, [SP, #0X28] \n\
 _08069BD8: \n\
 /* 08069BD8 */ LDR R0, [R6] \n\
@@ -572,7 +572,7 @@ _08069C5A: \n\
 /* 08069C84 */ LDR R0, [R4] \n\
 /* 08069C86 */ LDR R0, [R0] \n\
 _08069C88: \n\
-/* 08069C88 */ BL func_080049BC \n\
+/* 08069C88 */ BL bmp_font_obj_print_c_default \n\
 /* 08069C8C */ STR R0, [SP, #0X28] \n\
 _08069C8E: \n\
 /* 08069C8E */ LDR R6, _08069E58 \n\

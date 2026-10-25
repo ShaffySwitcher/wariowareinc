@@ -116,7 +116,7 @@ _0804BB54: \n\
 /* 0804BB7E */ ADDS R0, R4 \n\
 /* 0804BB80 */ LDR R1, [R0] \n\
 /* 0804BB82 */ ADDS R0, R6, #0 \n\
-/* 0804BB84 */ BL func_080049BC \n\
+/* 0804BB84 */ BL bmp_font_obj_print_c_default \n\
 /* 0804BB88 */ ADDS R1, R0, #0 \n\
 /* 0804BB8A */ LDR R0, _0804BBB4 \n\
 /* 0804BB8C */ LDR R0, [R0] \n\

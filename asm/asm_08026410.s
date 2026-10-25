@@ -20,7 +20,7 @@ glabel func_08026410
 /* 0802642C */ STR R0, [SP, #4]
 /* 0802642E */ MOVS R0, #1
 /* 08026430 */ MOVS R3, #4
-/* 08026432 */ BL func_080042F4
+/* 08026432 */ BL create_new_bmp_font_obj_alt
 /* 08026436 */ LDR R1, =gCurrentSceneVariable
 /* 08026438 */ LDR R1, [R1]
 /* 0802643A */ STR R0, [R1]

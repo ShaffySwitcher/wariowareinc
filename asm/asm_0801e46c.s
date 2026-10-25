@@ -22,7 +22,7 @@ glabel func_0801E46C
 /* 0801E48E */ STR R0, [SP, #4]
 /* 0801E490 */ MOVS R0, #1
 /* 0801E492 */ MOVS R3, #4
-/* 0801E494 */ BL func_080042F4
+/* 0801E494 */ BL create_new_bmp_font_obj_alt
 /* 0801E498 */ LDR R4, _0801E4E0
 /* 0801E49A */ LDR R1, [R4]
 /* 0801E49C */ STR R0, [R1]

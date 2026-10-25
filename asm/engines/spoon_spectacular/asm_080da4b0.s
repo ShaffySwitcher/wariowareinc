@@ -362,7 +362,7 @@ _080DA73E: \n\
 /* 080DA7B2 */ LDR R1, [R0] \n\
 /* 080DA7B4 */ LDR R0, [R2, #4] \n\
 /* 080DA7B6 */ LDR R1, [R1] \n\
-/* 080DA7B8 */ BL func_080049BC \n\
+/* 080DA7B8 */ BL bmp_font_obj_print_c_default \n\
 /* 080DA7BC */ ADDS R1, R0, #0 \n\
 /* 080DA7BE */ LDR R0, [R6] \n\
 /* 080DA7C0 */ STR R1, [R0, #0XC] \n\

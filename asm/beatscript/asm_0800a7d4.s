@@ -2132,7 +2132,7 @@ _0800B66C: \n\
 /* 0800B67E */ BL sprite_get_data \n\
 /* 0800B682 */ ADDS R1, R0, #0 \n\
 /* 0800B684 */ LDR R0, [R7] \n\
-/* 0800B686 */ BL func_08004B78 \n\
+/* 0800B686 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 0800B68A */ CMP R6, #0 \n\
 /* 0800B68C */ BEQ _0800B69C \n\
 /* 0800B68E */ LDR R0, [R5] \n\
@@ -2174,7 +2174,7 @@ _0800B6C0: \n\
 /* 0800B6D4 */ LDR R3, [R3] \n\
 /* 0800B6D6 */ STR R3, [SP] \n\
 /* 0800B6D8 */ MOV R3, R8 \n\
-/* 0800B6DA */ BL func_080055D4 \n\
+/* 0800B6DA */ BL start_new_scene_object_importer \n\
 /* 0800B6DE */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\
@@ -2191,7 +2191,7 @@ _0800B6E8: \n\
 /* 0800B6EE */ LDR R2, _0800B700 \n\
 /* 0800B6F0 */ LDR R3, [R2] \n\
 /* 0800B6F2 */ MOV R2, R8 \n\
-/* 0800B6F4 */ BL func_08005538 \n\
+/* 0800B6F4 */ BL import_all_scene_objects \n\
 /* 0800B6F8 */ B _0800B74C \n\
  \n\
 .balign 4, 0 \n\

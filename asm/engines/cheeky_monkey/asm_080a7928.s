@@ -104,7 +104,7 @@ _080A79DC: \n\
 _080A79E0: \n\
 /* 080A79E0 */ LDR R0, [R3] \n\
 /* 080A79E2 */ LDR R1, [R3, #0X2C] \n\
-/* 080A79E4 */ BL func_08004B78 \n\
+/* 080A79E4 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080A79E8 */ LDR R3, [R6] \n\
 /* 080A79EA */ LDR R0, [R3] \n\
 /* 080A79EC */ LDR R1, _080A7A6C \n\
@@ -115,7 +115,7 @@ _080A79E0: \n\
 /* 080A79F6 */ LSLS R1, R1, #2 \n\
 /* 080A79F8 */ ADDS R1, R2 \n\
 /* 080A79FA */ LDR R1, [R1] \n\
-/* 080A79FC */ BL func_080049BC \n\
+/* 080A79FC */ BL bmp_font_obj_print_c_default \n\
 /* 080A7A00 */ ADDS R2, R0, #0 \n\
 /* 080A7A02 */ LDR R1, [R6] \n\
 /* 080A7A04 */ STR R2, [R1, #0X2C] \n\

@@ -13,7 +13,7 @@ thumb_func_start func_08007724 \n\
 /* 08007736 */ BL sprite_get_data \n\
 /* 0800773A */ ADDS R1, R0, #0 \n\
 /* 0800773C */ ADDS R0, R4, #0 \n\
-/* 0800773E */ BL func_08004B78 \n\
+/* 0800773E */ BL bmp_font_obj_delete_printed_anim \n\
 _08007742: \n\
 /* 08007742 */ POP {R4} \n\
 /* 08007744 */ POP {R0} \n\

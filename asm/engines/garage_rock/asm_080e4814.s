@@ -28,7 +28,7 @@ thumb_func_start func_080E4814 \n\
 /* 080E4844 */ LDR R2, _080E485C \n\
 /* 080E4846 */ LDR R3, _080E4860 \n\
 /* 080E4848 */ LDR R3, [R3] \n\
-/* 080E484A */ BL func_08005538 \n\
+/* 080E484A */ BL import_all_scene_objects \n\
 /* 080E484E */ B _080E4882 \n\
  \n\
 .balign 4, 0 \n\
@@ -60,7 +60,7 @@ _080E4864: \n\
 /* 080E4870 */ LDR R2, _080E488C \n\
 /* 080E4872 */ LDR R3, =gCurrentSceneSpritePool \n\
 /* 080E4874 */ LDR R3, [R3] \n\
-/* 080E4876 */ BL func_08005600 \n\
+/* 080E4876 */ BL display_all_scene_objects \n\
 /* 080E487A */ LDR R0, [R4] \n\
 /* 080E487C */ ADDS R0, #0X21 \n\
 /* 080E487E */ MOVS R1, #1 \n\

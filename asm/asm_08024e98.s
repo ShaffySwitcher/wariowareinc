@@ -51,7 +51,7 @@ _08024EEC:
 /* 08024EEE */ LDM R7!, {R1}
 /* 08024EF0 */ MOVS R2, #0
 /* 08024EF2 */ MOVS R3, #0
-/* 08024EF4 */ BL func_08004A40
+/* 08024EF4 */ BL bmp_font_obj_print_l
 /* 08024EF8 */ ADDS R1, R0, #0
 /* 08024EFA */ LDR R0, =gSpriteHandler
 /* 08024EFC */ LDR R0, [R0]

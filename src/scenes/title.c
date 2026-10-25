@@ -37,9 +37,9 @@ void title_scene_init_gfx1(void) {
 }
 
 void title_scene_start(void) {
-    gTitle.unk0 = func_08004E48(get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
-    gTitle.unk4 = func_080042F4(get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
-    func_08005538(gSpriteHandler, gTitle.unk4, D_083A8C7C, gCurrentSceneSpritePool);
+    gTitle.unk0 = create_new_bmp_font_bg(get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
+    gTitle.unk4 = create_new_bmp_font_obj_alt(get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
+    import_all_scene_objects(gSpriteHandler, gTitle.unk4, D_083A8C7C, gCurrentSceneSpritePool);
     title_scene_init_gfx1();
     gTitle.inputsEnabled = FALSE;
     gTitle.timeUntilIntro = TO_FRAMES(63);

@@ -194,7 +194,7 @@ _0807598E: \n\
 /* 080759D0 */ STR R0, [SP, #4] \n\
 /* 080759D2 */ MOVS R0, #2 \n\
 /* 080759D4 */ MOVS R3, #4 \n\
-/* 080759D6 */ BL func_080042F4 \n\
+/* 080759D6 */ BL create_new_bmp_font_obj_alt \n\
 /* 080759DA */ MOV R1, R8 \n\
 /* 080759DC */ LDR R4, [R1] \n\
 /* 080759DE */ STR R0, [R4] \n\

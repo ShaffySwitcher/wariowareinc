@@ -15,7 +15,7 @@ thumb_func_start func_080B0EC8 \n\
 /* 080B0EDC */ STR R0, [SP] \n\
 /* 080B0EDE */ MOVS R0, #2 \n\
 /* 080B0EE0 */ MOVS R2, #0 \n\
-/* 080B0EE2 */ BL func_08004E48 \n\
+/* 080B0EE2 */ BL create_new_bmp_font_bg \n\
 /* 080B0EE6 */ LDR R1, _080B10A4 \n\
 /* 080B0EE8 */ MOV R8, R1 \n\
 /* 080B0EEA */ LDR R1, [R1] \n\

@@ -11,7 +11,7 @@ thumb_func_start func_08076248 \n\
 /* 08076254 */ LDR R1, [R5] \n\
 /* 08076256 */ LDR R0, [R1] \n\
 /* 08076258 */ LDR R1, [R1, #0X18] \n\
-/* 0807625A */ BL func_08004B78 \n\
+/* 0807625A */ BL bmp_font_obj_delete_printed_anim \n\
 /* 0807625E */ LDR R0, [R5] \n\
 /* 08076260 */ LDR R0, [R0] \n\
 /* 08076262 */ LDR R1, _080762D4 \n\
@@ -20,7 +20,7 @@ thumb_func_start func_08076248 \n\
 /* 08076268 */ SUBS R4, #4 \n\
 /* 0807626A */ ADDS R4, R1 \n\
 /* 0807626C */ LDR R1, [R4] \n\
-/* 0807626E */ BL func_080049BC \n\
+/* 0807626E */ BL bmp_font_obj_print_c_default \n\
 /* 08076272 */ ADDS R2, R0, #0 \n\
 /* 08076274 */ LDR R1, [R5] \n\
 /* 08076276 */ STR R2, [R1, #0X18] \n\

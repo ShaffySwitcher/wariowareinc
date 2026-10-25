@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004580 \n\
+thumb_func_start bmp_font_obj_print_glyph \n\
 /* 08004580 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08004582 */ MOV R7, SL \n\
 /* 08004584 */ MOV R6, SB \n\
@@ -11,7 +11,7 @@ thumb_func_start func_08004580 \n\
 /* 0800458E */ ADDS R7, R1, #0 \n\
 /* 08004590 */ MOV SB, R2 \n\
 /* 08004592 */ ADDS R0, R7, #0 \n\
-/* 08004594 */ BL func_08004798 \n\
+/* 08004594 */ BL bmp_font_obj_get_latin_glyph_type \n\
 /* 08004598 */ MOV IP, R0 \n\
 /* 0800459A */ MOVS R0, #0X63 \n\
 /* 0800459C */ STR R0, [SP, #0X10] \n\
@@ -134,7 +134,7 @@ _0800463C: \n\
 /* 0800466A */ ADDS R4, R5, #0 \n\
 _0800466C: \n\
 /* 0800466C */ ADDS R0, R7, R6 \n\
-/* 0800466E */ BL func_080047D4 \n\
+/* 0800466E */ BL bmp_font_obj_convert_latin_hw_to_fw \n\
 /* 08004672 */ ADDS R1, R0, #0 \n\
 /* 08004674 */ LDR R0, _080046AC \n\
 /* 08004676 */ LDRB R0, [R0] \n\
@@ -146,10 +146,10 @@ _0800466C: \n\
 /* 08004682 */ ADDS R0, R0, R2 \n\
 /* 08004684 */ MOV R2, SP \n\
 /* 08004686 */ LDR R3, [SP, #0X14] \n\
-/* 08004688 */ BL func_080041CC \n\
+/* 08004688 */ BL bmp_font_get_glyph \n\
 /* 0800468C */ LDR R0, [SP] \n\
 /* 0800468E */ ADDS R1, R4, #0 \n\
-/* 08004690 */ BL func_08004518 \n\
+/* 08004690 */ BL bmp_font_obj_write_glyph_hw \n\
 /* 08004694 */ MOV R0, SB \n\
 /* 08004696 */ LDR R1, [R0] \n\
 /* 08004698 */ CMP R6, #0 \n\
@@ -188,7 +188,7 @@ _080046C2: \n\
 /* 080046CE */ LDR R0, [R2, #4] \n\
 /* 080046D0 */ ADDS R0, R0, R1 \n\
 /* 080046D2 */ ADDS R1, R7, #0 \n\
-/* 080046D4 */ BL func_0800442C \n\
+/* 080046D4 */ BL bmp_font_obj_get_glyph_width \n\
 /* 080046D8 */ MOV R3, SB \n\
 /* 080046DA */ STR R0, [R3] \n\
 /* 080046DC */ MOV R0, R8 \n\
@@ -224,10 +224,10 @@ _08004704: \n\
 /* 08004714 */ ADD R3, SP, #4 \n\
 /* 08004716 */ ADDS R1, R7, #0 \n\
 /* 08004718 */ MOV R2, SP \n\
-/* 0800471A */ BL func_080041CC \n\
+/* 0800471A */ BL bmp_font_get_glyph \n\
 /* 0800471E */ LDR R0, [SP] \n\
 /* 08004720 */ ADDS R1, R5, #0 \n\
-/* 08004722 */ BL func_0800454C \n\
+/* 08004722 */ BL bmp_font_obj_write_glyph_fw \n\
 /* 08004726 */ LDR R0, [SP, #4] \n\
 /* 08004728 */ MOV R1, SB \n\
 /* 0800472A */ STR R0, [R1] \n\

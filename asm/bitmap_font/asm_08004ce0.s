@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004CE0 \n\
+thumb_func_start bmp_font_obj_print_wobbly \n\
 /* 08004CE0 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08004CE2 */ MOV R7, SL \n\
 /* 08004CE4 */ MOV R6, SB \n\

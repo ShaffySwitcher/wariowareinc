@@ -15,7 +15,7 @@ thumb_func_start func_08016730 \n\
 /* 08016748 */ MOVS R3, #0X40 \n\
 /* 0801674A */ STR R3, [SP, #4] \n\
 /* 0801674C */ MOVS R3, #4 \n\
-/* 0801674E */ BL func_080042F4 \n\
+/* 0801674E */ BL create_new_bmp_font_obj_alt \n\
 /* 08016752 */ LDR R3, _0801678C \n\
 /* 08016754 */ LDR R1, [R3] \n\
 /* 08016756 */ STR R0, [R1, #4] \n\

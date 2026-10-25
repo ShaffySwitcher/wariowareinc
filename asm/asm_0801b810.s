@@ -20,7 +20,7 @@ glabel func_0801B810
 /* 0801B82A */ LDR R2, _0801B8F4
 /* 0801B82C */ LDR R3, _0801B8F8
 /* 0801B82E */ LDR R3, [R3]
-/* 0801B830 */ BL func_08005538
+/* 0801B830 */ BL import_all_scene_objects
 /* 0801B834 */ MOVS R6, #0
 /* 0801B836 */ MOV SB, R4
 /* 0801B838 */ MOVS R7, #0

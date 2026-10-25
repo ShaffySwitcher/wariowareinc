@@ -43,13 +43,13 @@ _0801300E: \n\
 /* 08013012 */ LDR R0, [R0, #4] \n\
 /* 08013014 */ MOVS R2, #1 \n\
 /* 08013016 */ MOVS R3, #0XE \n\
-/* 08013018 */ BL func_080049CC \n\
+/* 08013018 */ BL bmp_font_obj_print_c \n\
 /* 0801301C */ ADDS R4, R0, #0 \n\
 /* 0801301E */ LDR R0, [R5] \n\
 /* 08013020 */ LDR R0, [R0, #4] \n\
 /* 08013022 */ ADDS R1, R4, #0 \n\
 /* 08013024 */ MOVS R2, #4 \n\
-/* 08013026 */ BL func_08004CE0 \n\
+/* 08013026 */ BL bmp_font_obj_print_wobbly \n\
 /* 0801302A */ ADDS R1, R0, #0 \n\
 /* 0801302C */ LDR R0, [R5] \n\
 /* 0801302E */ ADDS R0, #0XB0 \n\
@@ -82,7 +82,7 @@ _0801300E: \n\
 /* 0801306A */ LDR R0, [R5] \n\
 /* 0801306C */ LDR R0, [R0, #4] \n\
 /* 0801306E */ MOV R1, R8 \n\
-/* 08013070 */ BL func_08004B78 \n\
+/* 08013070 */ BL bmp_font_obj_delete_printed_anim \n\
 _08013074: \n\
 /* 08013074 */ ADD SP, #0X14 \n\
 /* 08013076 */ POP {R3} \n\

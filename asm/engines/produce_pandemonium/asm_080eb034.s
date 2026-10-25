@@ -97,7 +97,7 @@ thumb_func_start func_080EB034 \n\
 /* 080EB102 */ LDR R2, [R7] \n\
 /* 080EB104 */ LDR R3, _080EB1C8 \n\
 /* 080EB106 */ LDR R3, [R3] \n\
-/* 080EB108 */ BL func_08005538 \n\
+/* 080EB108 */ BL import_all_scene_objects \n\
 /* 080EB10C */ LDR R0, [R6] \n\
 /* 080EB10E */ LDR R1, _080EB1CC \n\
 /* 080EB110 */ LDR R2, _080EB1D0 \n\

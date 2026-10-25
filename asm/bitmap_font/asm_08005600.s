@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005600 \n\
+thumb_func_start display_all_scene_objects \n\
 /* 08005600 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005602 */ MOV R7, R8 \n\
 /* 08005604 */ PUSH {R7} \n\
@@ -49,7 +49,7 @@ _0800563C: \n\
 /* 08005654 */ BL sprite_get_data \n\
 /* 08005658 */ ADDS R1, R0, #0 \n\
 /* 0800565A */ MOV R0, R8 \n\
-/* 0800565C */ BL func_08004B78 \n\
+/* 0800565C */ BL bmp_font_obj_delete_printed_anim \n\
 /* 08005660 */ ADDS R0, R6, #0 \n\
 /* 08005662 */ ADDS R1, R4, #0 \n\
 /* 08005664 */ BL sprite_delete \n\

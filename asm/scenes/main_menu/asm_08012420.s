@@ -171,13 +171,13 @@ _08012548: \n\
 /* 0801254E */ ADDS R1, R4, #0 \n\
 /* 08012550 */ MOVS R2, #1 \n\
 /* 08012552 */ MOVS R3, #0XE \n\
-/* 08012554 */ BL func_08004A84 \n\
+/* 08012554 */ BL bmp_font_obj_print_r \n\
 /* 08012558 */ ADDS R4, R0, #0 \n\
 /* 0801255A */ LDR R0, [R5] \n\
 /* 0801255C */ LDR R0, [R0, #4] \n\
 /* 0801255E */ ADDS R1, R4, #0 \n\
 /* 08012560 */ MOVS R2, #4 \n\
-/* 08012562 */ BL func_08004CE0 \n\
+/* 08012562 */ BL bmp_font_obj_print_wobbly \n\
 /* 08012566 */ ADDS R1, R0, #0 \n\
 /* 08012568 */ LDR R0, [R5] \n\
 /* 0801256A */ ADDS R0, #0XB0 \n\
@@ -210,7 +210,7 @@ _08012548: \n\
 /* 080125A6 */ LDR R0, [R5] \n\
 /* 080125A8 */ LDR R0, [R0, #4] \n\
 /* 080125AA */ MOV R1, R8 \n\
-/* 080125AC */ BL func_08004B78 \n\
+/* 080125AC */ BL bmp_font_obj_delete_printed_anim \n\
 _080125B0: \n\
 /* 080125B0 */ ADD SP, #0X14 \n\
 /* 080125B2 */ POP {R3} \n\

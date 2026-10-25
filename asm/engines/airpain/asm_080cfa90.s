@@ -87,7 +87,7 @@ _080CFB08: \n\
 /* 080CFB48 */ LDR R2, [R2] \n\
 /* 080CFB4A */ LDR R3, _080CFBE4 \n\
 /* 080CFB4C */ LDR R3, [R3] \n\
-/* 080CFB4E */ BL func_08005538 \n\
+/* 080CFB4E */ BL import_all_scene_objects \n\
 /* 080CFB52 */ LDR R0, [R5] \n\
 /* 080CFB54 */ LDR R1, _080CFBE8 \n\
 /* 080CFB56 */ MOVS R2, #0X80 \n\

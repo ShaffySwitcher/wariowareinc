@@ -72,7 +72,7 @@ thumb_func_start func_080D0088 \n\
 /* 080D0122 */ STR R0, [SP, #4] \n\
 /* 080D0124 */ MOVS R0, #2 \n\
 /* 080D0126 */ MOVS R3, #2 \n\
-/* 080D0128 */ BL func_080042F4 \n\
+/* 080D0128 */ BL create_new_bmp_font_obj_alt \n\
 /* 080D012C */ ADDS R1, R0, #0 \n\
 /* 080D012E */ LDR R0, [R5] \n\
 /* 080D0130 */ STR R1, [R0] \n\
@@ -85,7 +85,7 @@ thumb_func_start func_080D0088 \n\
 /* 080D013E */ LDR R2, [R2] \n\
 /* 080D0140 */ LDR R3, _080D0220 \n\
 /* 080D0142 */ LDR R3, [R3] \n\
-/* 080D0144 */ BL func_08005538 \n\
+/* 080D0144 */ BL import_all_scene_objects \n\
 /* 080D0148 */ LDR R0, [R6] \n\
 /* 080D014A */ LDR R1, _080D0224 \n\
 /* 080D014C */ MOVS R2, #0X80 \n\

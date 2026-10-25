@@ -26,7 +26,7 @@ glabel func_080204AC
 /* 080204D4 */ LDR R2, _080204EC
 /* 080204D6 */ LDR R3, =gCurrentSceneSpritePool
 /* 080204D8 */ LDR R3, [R3]
-/* 080204DA */ BL func_08005538
+/* 080204DA */ BL import_all_scene_objects
 /* 080204DE */ ADD SP, #0XC
 /* 080204E0 */ POP {R0}
 /* 080204E2 */ BX R0

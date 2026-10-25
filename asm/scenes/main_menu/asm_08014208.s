@@ -56,7 +56,7 @@ _08014226: \n\
 /* 0801427A */ LDR R2, [R0] \n\
 /* 0801427C */ ADDS R0, R6, #0 \n\
 /* 0801427E */ ADDS R1, R4, #0 \n\
-/* 08014280 */ BL func_08004CBC \n\
+/* 08014280 */ BL bmp_font_obj_delete_multi_printed_anim \n\
 /* 08014284 */ POP {R4, R5, R6} \n\
 /* 08014286 */ POP {R0} \n\
 /* 08014288 */ BX R0 \n\

@@ -24,7 +24,7 @@ thumb_func_start func_080B77A8 \n\
 /* 080B77D2 */ MOVS R0, #2 \n\
 /* 080B77D4 */ ADDS R2, R7, #0 \n\
 /* 080B77D6 */ MOVS R3, #4 \n\
-/* 080B77D8 */ BL func_080042F4 \n\
+/* 080B77D8 */ BL create_new_bmp_font_obj_alt \n\
 /* 080B77DC */ LDR R5, _080B78FC \n\
 /* 080B77DE */ LDR R1, [R5] \n\
 /* 080B77E0 */ STR R0, [R1, #0X38] \n\

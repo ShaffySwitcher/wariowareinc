@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004770 \n\
+thumb_func_start bmp_font_obj_glyph_is_whitespace \n\
 /* 08004770 */ PUSH {LR} \n\
 /* 08004772 */ ADDS R1, R0, #0 \n\
 /* 08004774 */ LDRB R0, [R1] \n\

@@ -31,13 +31,13 @@ glabel func_080249A4
 /* 080249D6 */ LDR R1, [R1]
 /* 080249D8 */ LDRB R3, [R2, #0X18]
 /* 080249DA */ MOVS R2, #0
-/* 080249DC */ BL func_080049CC
+/* 080249DC */ BL bmp_font_obj_print_c
 /* 080249E0 */ STR R0, [SP, #0X14]
 /* 080249E2 */ LDR R0, [R4]
 /* 080249E4 */ LDR R0, [R0, #8]
 /* 080249E6 */ ADD R1, SP, #0X14
 /* 080249E8 */ MOVS R2, #4
-/* 080249EA */ BL func_08004E28
+/* 080249EA */ BL bmp_font_obj_wobble_printed_anim
 /* 080249EE */ LDR R0, _08024A14
 /* 080249F0 */ LDR R0, [R0]
 /* 080249F2 */ LDR R1, [SP, #0X14]
@@ -77,13 +77,13 @@ _08024A18:
 /* 08024A24 */ LDR R1, [R1]
 /* 08024A26 */ LDRB R3, [R2, #0X18]
 /* 08024A28 */ MOVS R2, #0
-/* 08024A2A */ BL func_080049CC
+/* 08024A2A */ BL bmp_font_obj_print_c
 /* 08024A2E */ STR R0, [SP, #0X14]
 /* 08024A30 */ LDR R0, [R4]
 /* 08024A32 */ LDR R0, [R0, #8]
 /* 08024A34 */ ADD R1, SP, #0X14
 /* 08024A36 */ MOVS R2, #4
-/* 08024A38 */ BL func_08004E28
+/* 08024A38 */ BL bmp_font_obj_wobble_printed_anim
 /* 08024A3C */ LDR R0, _08024B44
 /* 08024A3E */ LDR R0, [R0]
 /* 08024A40 */ LDR R1, [SP, #0X14]
@@ -113,7 +113,7 @@ _08024A52:
 /* 08024A70 */ LDR R1, [R1]
 /* 08024A72 */ LDRB R3, [R2, #0X1A]
 /* 08024A74 */ MOVS R2, #0
-/* 08024A76 */ BL func_080049CC
+/* 08024A76 */ BL bmp_font_obj_print_c
 /* 08024A7A */ ADDS R1, R0, #0
 /* 08024A7C */ STR R1, [SP, #0X14]
 /* 08024A7E */ LDR R0, _08024B44
@@ -142,7 +142,7 @@ _08024A52:
 /* 08024AAE */ LDR R1, [R1]
 /* 08024AB0 */ LDRB R3, [R2, #0X1A]
 /* 08024AB2 */ MOVS R2, #0
-/* 08024AB4 */ BL func_080049CC
+/* 08024AB4 */ BL bmp_font_obj_print_c
 /* 08024AB8 */ ADDS R1, R0, #0
 /* 08024ABA */ STR R1, [SP, #0X14]
 /* 08024ABC */ MOV R2, R8

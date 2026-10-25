@@ -147,10 +147,10 @@ void main_menu_scene_start(void) {
     gMainMenu.unk82 = 0x20;
     gMainMenu.unk7C = func_0800A228(0x800);
 
-    gMainMenu.unk0 = func_08004E48((u16)get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
-    gMainMenu.unk4 = func_080042F4((u16)get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
+    gMainMenu.unk0 = create_new_bmp_font_bg((u16)get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
+    gMainMenu.unk4 = create_new_bmp_font_obj_alt((u16)get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
 
-    func_08005538(gSpriteHandler, gMainMenu.unk4, &D_083A9B14, gCurrentSceneSpritePool);
+    import_all_scene_objects(gSpriteHandler, gMainMenu.unk4, &D_083A9B14, gCurrentSceneSpritePool);
     sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[1], D_083A9B60[get_current_language()], 1, 0, 0, 0);
     sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[2], D_083A9B78[get_current_language()], 1, 0, 0, 0);
     sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[3], D_083A9B90[get_current_language()], 1, 0, 0, 0);
@@ -1281,7 +1281,7 @@ void main_menu_state_prompt(void) {
 void func_08014D6C(void) {
     func_0800A240(&D_083A4A2C, gMainMenu.unk16C, 0, 0);
     scene_show_sprite(0);
-    func_08005600(gSpriteHandler, gMainMenu.unk4, &D_083AB394, gCurrentSceneSpritePool);
+    display_all_scene_objects(gSpriteHandler, gMainMenu.unk4, &D_083AB394, gCurrentSceneSpritePool);
     gMainMenu.unkDC_22 = TRUE;
 }
 
@@ -1363,7 +1363,7 @@ void func_08015C38(void) {
         if (get_task_state(gMainMenu.unkC8)) {
             force_stop_task(gMainMenu.unkC8);
         }
-        func_08004EE8(gMainMenu.unk0);
+        bmp_font_bg_clear_print_data(gMainMenu.unk0);
         gMainMenu.unkB4 = 0;
     }
 }

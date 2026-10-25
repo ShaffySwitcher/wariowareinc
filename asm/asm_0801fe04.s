@@ -70,7 +70,7 @@ _0801FE38:
 /* 0801FE7E */ LDR R1, [R1]
 /* 0801FE80 */ MOVS R2, #1
 /* 0801FE82 */ MOVS R3, #0XE
-/* 0801FE84 */ BL func_08004A40
+/* 0801FE84 */ BL bmp_font_obj_print_l
 /* 0801FE88 */ STR R0, [SP, #0X14]
 /* 0801FE8A */ CMP R4, #0
 /* 0801FE8C */ BEQ _0801FE9A
@@ -78,7 +78,7 @@ _0801FE38:
 /* 0801FE90 */ LDR R0, [R0]
 /* 0801FE92 */ ADD R1, SP, #0X14
 /* 0801FE94 */ ADDS R2, R4, #0
-/* 0801FE96 */ BL func_08004E28
+/* 0801FE96 */ BL bmp_font_obj_wobble_printed_anim
 _0801FE9A:
 /* 0801FE9A */ LDR R1, _0801FF50
 /* 0801FE9C */ LDR R0, [R1]
@@ -106,7 +106,7 @@ _0801FE9A:
 /* 0801FECA */ LDR R1, [R1, #4]
 /* 0801FECC */ MOVS R2, #1
 /* 0801FECE */ MOVS R3, #0XE
-/* 0801FED0 */ BL func_08004A40
+/* 0801FED0 */ BL bmp_font_obj_print_l
 /* 0801FED4 */ STR R0, [SP, #0X14]
 /* 0801FED6 */ CMP R4, #0
 /* 0801FED8 */ BEQ _0801FEE6
@@ -114,7 +114,7 @@ _0801FE9A:
 /* 0801FEDC */ LDR R0, [R0]
 /* 0801FEDE */ ADD R1, SP, #0X14
 /* 0801FEE0 */ ADDS R2, R4, #0
-/* 0801FEE2 */ BL func_08004E28
+/* 0801FEE2 */ BL bmp_font_obj_wobble_printed_anim
 _0801FEE6:
 /* 0801FEE6 */ LDR R3, _0801FF50
 /* 0801FEE8 */ LDR R0, [R3]

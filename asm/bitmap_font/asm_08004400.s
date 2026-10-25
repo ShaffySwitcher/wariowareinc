@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004400 \n\
+thumb_func_start bmp_font_obj_get_anim_total \n\
 /* 08004400 */ PUSH {R4, R5, LR} \n\
 /* 08004402 */ ADDS R4, R0, #0 \n\
 /* 08004404 */ MOVS R5, #0 \n\
@@ -11,7 +11,7 @@ _08004408: \n\
 /* 0800440C */ CMP R0, #0X3A \n\
 /* 0800440E */ BEQ _0800441C \n\
 /* 08004410 */ ADDS R0, R4, #0 \n\
-/* 08004412 */ BL func_08004770 \n\
+/* 08004412 */ BL bmp_font_obj_glyph_is_whitespace \n\
 /* 08004416 */ CMP R0, #0 \n\
 /* 08004418 */ BNE _0800441C \n\
 /* 0800441A */ ADDS R5, #1 \n\

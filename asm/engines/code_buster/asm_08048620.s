@@ -74,7 +74,7 @@ thumb_func_start func_08048620 \n\
 /* 080486C2 */ MOVS R0, #2 \n\
 /* 080486C4 */ ADDS R2, R7, #0 \n\
 /* 080486C6 */ MOVS R3, #4 \n\
-/* 080486C8 */ BL func_080042F4 \n\
+/* 080486C8 */ BL create_new_bmp_font_obj_alt \n\
 /* 080486CC */ LDR R1, [R6] \n\
 /* 080486CE */ STR R0, [R1, #0X60] \n\
 /* 080486D0 */ LDR R1, _08048814 \n\
@@ -82,7 +82,7 @@ thumb_func_start func_08048620 \n\
 /* 080486D4 */ LSLS R4, R5, #2 \n\
 /* 080486D6 */ ADDS R1, R4, R1 \n\
 /* 080486D8 */ LDR R1, [R1] \n\
-/* 080486DA */ BL func_080049BC \n\
+/* 080486DA */ BL bmp_font_obj_print_c_default \n\
 /* 080486DE */ ADDS R1, R0, #0 \n\
 /* 080486E0 */ LDR R5, _08048818 \n\
 /* 080486E2 */ LDR R0, [R5] \n\
@@ -113,7 +113,7 @@ thumb_func_start func_08048620 \n\
 /* 08048718 */ LDR R1, _0804881C \n\
 /* 0804871A */ ADDS R4, R1 \n\
 /* 0804871C */ LDR R1, [R4] \n\
-/* 0804871E */ BL func_080049BC \n\
+/* 0804871E */ BL bmp_font_obj_print_c_default \n\
 /* 08048722 */ ADDS R1, R0, #0 \n\
 /* 08048724 */ LDR R0, [R5] \n\
 /* 08048726 */ MOV R2, SL \n\
@@ -149,7 +149,7 @@ thumb_func_start func_08048620 \n\
 /* 08048768 */ STR R0, [SP] \n\
 /* 0804876A */ MOVS R0, #2 \n\
 /* 0804876C */ MOVS R2, #0 \n\
-/* 0804876E */ BL func_08004E48 \n\
+/* 0804876E */ BL create_new_bmp_font_bg \n\
 /* 08048772 */ LDR R1, [R6] \n\
 /* 08048774 */ STR R0, [R1, #0X5C] \n\
 /* 08048776 */ MOVS R0, #2 \n\

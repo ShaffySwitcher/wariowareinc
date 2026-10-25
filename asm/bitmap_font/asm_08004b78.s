@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08004B78 \n\
+thumb_func_start bmp_font_obj_delete_printed_anim \n\
 /* 08004B78 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08004B7A */ ADDS R4, R0, #0 \n\
 /* 08004B7C */ MOV IP, R1 \n\

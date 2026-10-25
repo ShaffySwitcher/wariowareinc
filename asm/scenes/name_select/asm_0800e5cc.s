@@ -93,7 +93,7 @@ _0800E64C: \n\
 /* 0800E660 */ LDR R0, [R0] \n\
 /* 0800E662 */ LDR R0, [R0, #8] \n\
 /* 0800E664 */ ADD R1, SP, #0X14 \n\
-/* 0800E666 */ BL func_080049BC \n\
+/* 0800E666 */ BL bmp_font_obj_print_c_default \n\
 /* 0800E66A */ ADDS R5, R0, #0 \n\
 _0800E66C: \n\
 /* 0800E66C */ MOV R2, SL \n\

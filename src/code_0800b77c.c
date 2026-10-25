@@ -32,7 +32,7 @@ void func_0800B7B0(u8* source, u8* destination) {
     }
 }
 
-u8 bmp_font_obj_parse_hex_digit(char c) {
+u8 parse_hex_digit(char c) {
     if ((c >= '0') && (c <= '9')) {
         return c - '0';
     }

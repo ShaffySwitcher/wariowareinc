@@ -40,7 +40,7 @@ thumb_func_start func_08012350 \n\
 /* 080123A2 */ LDR R0, [R1, #4] \n\
 /* 080123A4 */ ADDS R1, #0XB0 \n\
 /* 080123A6 */ LDR R1, [R1] \n\
-/* 080123A8 */ BL func_08004B78 \n\
+/* 080123A8 */ BL bmp_font_obj_delete_printed_anim \n\
 /* 080123AC */ LDR R0, [R4] \n\
 /* 080123AE */ ADDS R0, #0XAC \n\
 /* 080123B0 */ LDR R1, _080123EC \n\

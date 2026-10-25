@@ -46,7 +46,7 @@ _080245D0:
 /* 080245E2 */ ADDS R0, R4, #0
 /* 080245E4 */ MOVS R2, #1
 /* 080245E6 */ MOVS R3, #0
-/* 080245E8 */ BL func_080049CC
+/* 080245E8 */ BL bmp_font_obj_print_c
 /* 080245EC */ ADDS R1, R0, #0
 /* 080245EE */ LDR R0, =gSpriteHandler
 /* 080245F0 */ LDR R0, [R0]
