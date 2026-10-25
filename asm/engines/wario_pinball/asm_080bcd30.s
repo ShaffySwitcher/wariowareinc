@@ -43,7 +43,7 @@ _080BCD70: \n\
 /* 080BCD72 */ CMP R1, R0 \n\
 /* 080BCD74 */ BLS _080BCDA4 \n\
 /* 080BCD76 */ ADDS R0, R1, #0 \n\
-/* 080BCD78 */ BL func_080F5568 \n\
+/* 080BCD78 */ BL __floatsidf \n\
 /* 080BCD7C */ LDR R2, _080BCD94 \n\
 /* 080BCD7E */ LDR R3, _080BCD98 \n\
 /* 080BCD80 */ BL __muldf3 \n\
@@ -73,7 +73,7 @@ _080BCDA0: \n\
 /* 080BCDA0 */ .word BIOSROMBase \n\
 _080BCDA4: \n\
 /* 080BCDA4 */ ADDS R0, R1, #0 \n\
-/* 080BCDA6 */ BL func_080F5568 \n\
+/* 080BCDA6 */ BL __floatsidf \n\
 /* 080BCDAA */ LDR R3, _080BCDE0 \n\
 /* 080BCDAC */ LDR R2, _080BCDDC \n\
 /* 080BCDAE */ BL __muldf3 \n\
@@ -81,7 +81,7 @@ _080BCDA4: \n\
 /* 080BCDB4 */ LDR R3, _080BCDE8 \n\
 /* 080BCDB6 */ BL __adddf3 \n\
 _080BCDBA: \n\
-/* 080BCDBA */ BL func_080F4288 \n\
+/* 080BCDBA */ BL __fixunsdfsi \n\
 /* 080BCDBE */ LSLS R0, R0, #0X10 \n\
 /* 080BCDC0 */ LSRS R1, R0, #0X10 \n\
 /* 080BCDC2 */ LDR R0, [R5] \n\

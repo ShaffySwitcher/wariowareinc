@@ -98,13 +98,13 @@ _08079A0E: \n\
 /* 08079A22 */ CMP R2, R0 \n\
 /* 08079A24 */ BLE _08079A60 \n\
 /* 08079A26 */ ADDS R0, R2, #0 \n\
-/* 08079A28 */ BL func_080F5568 \n\
+/* 08079A28 */ BL __floatsidf \n\
 /* 08079A2C */ ADDS R5, R1, #0 \n\
 /* 08079A2E */ ADDS R4, R0, #0 \n\
 /* 08079A30 */ LDR R0, _08079A54 \n\
 /* 08079A32 */ LDR R0, [R0] \n\
 /* 08079A34 */ LDRH R0, [R0, #0X14] \n\
-/* 08079A36 */ BL func_080F5568 \n\
+/* 08079A36 */ BL __floatsidf \n\
 /* 08079A3A */ LDR R2, _08079A58 \n\
 /* 08079A3C */ LDR R3, _08079A5C \n\
 /* 08079A3E */ BL __muldf3 \n\
@@ -142,13 +142,13 @@ _08079A66: \n\
 /* 08079A6E */ CMP R1, R0 \n\
 /* 08079A70 */ BGT _08079AB4 \n\
 /* 08079A72 */ ADDS R0, R1, #0 \n\
-/* 08079A74 */ BL func_080F5568 \n\
+/* 08079A74 */ BL __floatsidf \n\
 /* 08079A78 */ ADDS R5, R1, #0 \n\
 /* 08079A7A */ ADDS R4, R0, #0 \n\
 /* 08079A7C */ LDR R0, _08079AA8 \n\
 /* 08079A7E */ LDR R0, [R0] \n\
 /* 08079A80 */ LDRH R0, [R0, #0X14] \n\
-/* 08079A82 */ BL func_080F5568 \n\
+/* 08079A82 */ BL __floatsidf \n\
 /* 08079A86 */ LDR R2, _08079AAC \n\
 /* 08079A88 */ LDR R3, _08079AB0 \n\
 /* 08079A8A */ BL __muldf3 \n\
@@ -158,7 +158,7 @@ _08079A66: \n\
 /* 08079A94 */ ADDS R0, R4, #0 \n\
 /* 08079A96 */ BL __adddf3 \n\
 _08079A9A: \n\
-/* 08079A9A */ BL func_080F55E4 \n\
+/* 08079A9A */ BL __fixdfsi \n\
 /* 08079A9E */ STR R0, [R6, #0X28] \n\
 /* 08079AA0 */ B _08079ABC \n\
  \n\

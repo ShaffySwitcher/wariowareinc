@@ -168,14 +168,14 @@ _08050A18: \n\
 /* 08050A3A */ MOVS R2, #0X16 \n\
 /* 08050A3C */ LDRSH R4, [R4, R2] \n\
 /* 08050A3E */ ADDS R0, R4, #0 \n\
-/* 08050A40 */ BL func_080F5F08 \n\
+/* 08050A40 */ BL __floatsisf \n\
 /* 08050A44 */ CMP R4, #0 \n\
 /* 08050A46 */ BGE _08050A4E \n\
 /* 08050A48 */ LDR R1, _08050BB4 \n\
-/* 08050A4A */ BL func_080F599C \n\
+/* 08050A4A */ BL __addsf3 \n\
 _08050A4E: \n\
 /* 08050A4E */ LDR R1, _08050BB8 \n\
-/* 08050A50 */ BL func_080F5B60 \n\
+/* 08050A50 */ BL __divsf3 \n\
 /* 08050A54 */ STR R0, [R5] \n\
 /* 08050A56 */ MOVS R0, #2 \n\
 /* 08050A58 */ BL get_random_range \n\

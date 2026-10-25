@@ -197,7 +197,7 @@ _080B4D40: \n\
 /* 080B4D40 */ .word gSpriteHandler \n\
 _080B4D44: \n\
 /* 080B4D44 */ ADDS R0, R7, #0 \n\
-/* 080B4D46 */ BL func_080F5568 \n\
+/* 080B4D46 */ BL __floatsidf \n\
 /* 080B4D4A */ LDR R3, _080B4DE0 \n\
 /* 080B4D4C */ LDR R2, _080B4DDC \n\
 /* 080B4D4E */ BL __muldf3 \n\
@@ -212,7 +212,7 @@ _080B4D44: \n\
 /* 080B4D66 */ ADDS R5, R1, #0 \n\
 /* 080B4D68 */ ADDS R4, R0, #0 \n\
 /* 080B4D6A */ LDRH R0, [R6, #0X14] \n\
-/* 080B4D6C */ BL func_080F5568 \n\
+/* 080B4D6C */ BL __floatsidf \n\
 /* 080B4D70 */ ADDS R3, R1, #0 \n\
 /* 080B4D72 */ ADDS R2, R0, #0 \n\
 /* 080B4D74 */ ADDS R1, R5, #0 \n\
@@ -226,13 +226,13 @@ _080B4D44: \n\
 /* 080B4D86 */ LDRB R0, [R0] \n\
 /* 080B4D88 */ LSLS R0, R0, #0X18 \n\
 /* 080B4D8A */ ASRS R0, R0, #0X18 \n\
-/* 080B4D8C */ BL func_080F5568 \n\
+/* 080B4D8C */ BL __floatsidf \n\
 /* 080B4D90 */ ADDS R3, R1, #0 \n\
 /* 080B4D92 */ ADDS R2, R0, #0 \n\
 /* 080B4D94 */ ADDS R1, R5, #0 \n\
 /* 080B4D96 */ ADDS R0, R4, #0 \n\
 /* 080B4D98 */ BL __adddf3 \n\
-/* 080B4D9C */ BL func_080F4288 \n\
+/* 080B4D9C */ BL __fixunsdfsi \n\
 /* 080B4DA0 */ LDR R2, [SP, #0XC] \n\
 /* 080B4DA2 */ LSLS R1, R2, #0X10 \n\
 /* 080B4DA4 */ LSLS R0, R0, #0X10 \n\

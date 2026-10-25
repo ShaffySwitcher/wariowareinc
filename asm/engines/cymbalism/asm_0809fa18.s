@@ -79,13 +79,13 @@ _0809FA88: \n\
 /* 0809FAAC */ CMP R6, R0 \n\
 /* 0809FAAE */ BEQ _0809FB3C \n\
 /* 0809FAB0 */ ADDS R0, R7, #0 \n\
-/* 0809FAB2 */ BL func_080F5568 \n\
+/* 0809FAB2 */ BL __floatsidf \n\
 /* 0809FAB6 */ ADDS R5, R1, #0 \n\
 /* 0809FAB8 */ ADDS R4, R0, #0 \n\
 /* 0809FABA */ LDR R2, _0809FB50 \n\
 /* 0809FABC */ LDR R3, _0809FB54 \n\
 /* 0809FABE */ BL __muldf3 \n\
-/* 0809FAC2 */ BL func_080F4288 \n\
+/* 0809FAC2 */ BL __fixunsdfsi \n\
 /* 0809FAC6 */ LSLS R0, R0, #0X10 \n\
 /* 0809FAC8 */ LSRS R0, R0, #0X10 \n\
 /* 0809FACA */ CMP R6, R0 \n\
@@ -95,7 +95,7 @@ _0809FA88: \n\
 /* 0809FAD2 */ ADDS R1, R5, #0 \n\
 /* 0809FAD4 */ ADDS R0, R4, #0 \n\
 /* 0809FAD6 */ BL __muldf3 \n\
-/* 0809FADA */ BL func_080F4288 \n\
+/* 0809FADA */ BL __fixunsdfsi \n\
 /* 0809FADE */ LSLS R0, R0, #0X10 \n\
 /* 0809FAE0 */ LSRS R0, R0, #0X10 \n\
 /* 0809FAE2 */ CMP R6, R0 \n\
@@ -111,7 +111,7 @@ _0809FA88: \n\
 /* 0809FAF6 */ ADDS R1, R5, #0 \n\
 /* 0809FAF8 */ ADDS R0, R4, #0 \n\
 /* 0809FAFA */ BL __muldf3 \n\
-/* 0809FAFE */ BL func_080F4288 \n\
+/* 0809FAFE */ BL __fixunsdfsi \n\
 /* 0809FB02 */ LSLS R0, R0, #0X10 \n\
 /* 0809FB04 */ LSRS R0, R0, #0X10 \n\
 /* 0809FB06 */ CMP R6, R0 \n\
@@ -127,7 +127,7 @@ _0809FA88: \n\
 /* 0809FB1A */ ADDS R1, R5, #0 \n\
 /* 0809FB1C */ ADDS R0, R4, #0 \n\
 /* 0809FB1E */ BL __muldf3 \n\
-/* 0809FB22 */ BL func_080F4288 \n\
+/* 0809FB22 */ BL __fixunsdfsi \n\
 /* 0809FB26 */ LSLS R0, R0, #0X10 \n\
 /* 0809FB28 */ LSRS R0, R0, #0X10 \n\
 /* 0809FB2A */ CMP R6, R0 \n\
@@ -233,13 +233,13 @@ _0809FBAC: \n\
 /* 0809FBC6 */ B _0809FCD4 \n\
 _0809FBC8: \n\
 /* 0809FBC8 */ ADDS R0, R7, #0 \n\
-/* 0809FBCA */ BL func_080F5568 \n\
+/* 0809FBCA */ BL __floatsidf \n\
 /* 0809FBCE */ ADDS R5, R1, #0 \n\
 /* 0809FBD0 */ ADDS R4, R0, #0 \n\
 /* 0809FBD2 */ LDR R3, _0809FCE8 \n\
 /* 0809FBD4 */ LDR R2, _0809FCE4 \n\
 /* 0809FBD6 */ BL __muldf3 \n\
-/* 0809FBDA */ BL func_080F4288 \n\
+/* 0809FBDA */ BL __fixunsdfsi \n\
 /* 0809FBDE */ LSLS R0, R0, #0X10 \n\
 /* 0809FBE0 */ LSRS R0, R0, #0X10 \n\
 /* 0809FBE2 */ CMP R6, R0 \n\
@@ -256,7 +256,7 @@ _0809FBC8: \n\
 /* 0809FBF8 */ ADDS R1, R5, #0 \n\
 /* 0809FBFA */ ADDS R0, R4, #0 \n\
 /* 0809FBFC */ BL __muldf3 \n\
-/* 0809FC00 */ BL func_080F4288 \n\
+/* 0809FC00 */ BL __fixunsdfsi \n\
 /* 0809FC04 */ LSLS R0, R0, #0X10 \n\
 /* 0809FC06 */ LSRS R0, R0, #0X10 \n\
 /* 0809FC08 */ CMP R6, R0 \n\
@@ -266,7 +266,7 @@ _0809FBC8: \n\
 /* 0809FC10 */ ADDS R1, R5, #0 \n\
 /* 0809FC12 */ ADDS R0, R4, #0 \n\
 /* 0809FC14 */ BL __muldf3 \n\
-/* 0809FC18 */ BL func_080F4288 \n\
+/* 0809FC18 */ BL __fixunsdfsi \n\
 /* 0809FC1C */ LSLS R0, R0, #0X10 \n\
 /* 0809FC1E */ LSRS R0, R0, #0X10 \n\
 /* 0809FC20 */ CMP R6, R0 \n\
@@ -282,7 +282,7 @@ _0809FBC8: \n\
 /* 0809FC34 */ ADDS R1, R5, #0 \n\
 /* 0809FC36 */ ADDS R0, R4, #0 \n\
 /* 0809FC38 */ BL __muldf3 \n\
-/* 0809FC3C */ BL func_080F4288 \n\
+/* 0809FC3C */ BL __fixunsdfsi \n\
 /* 0809FC40 */ LSLS R0, R0, #0X10 \n\
 /* 0809FC42 */ LSRS R0, R0, #0X10 \n\
 /* 0809FC44 */ CMP R6, R0 \n\
@@ -299,7 +299,7 @@ _0809FBC8: \n\
 /* 0809FC5A */ ADDS R1, R5, #0 \n\
 /* 0809FC5C */ ADDS R0, R4, #0 \n\
 /* 0809FC5E */ BL __muldf3 \n\
-/* 0809FC62 */ BL func_080F4288 \n\
+/* 0809FC62 */ BL __fixunsdfsi \n\
 /* 0809FC66 */ LSLS R0, R0, #0X10 \n\
 /* 0809FC68 */ LSRS R0, R0, #0X10 \n\
 /* 0809FC6A */ CMP R6, R0 \n\
@@ -313,7 +313,7 @@ _0809FBC8: \n\
 /* 0809FC7A */ ADDS R1, R5, #0 \n\
 /* 0809FC7C */ ADDS R0, R4, #0 \n\
 /* 0809FC7E */ BL __muldf3 \n\
-/* 0809FC82 */ BL func_080F4288 \n\
+/* 0809FC82 */ BL __fixunsdfsi \n\
 /* 0809FC86 */ LSLS R0, R0, #0X10 \n\
 /* 0809FC88 */ LSRS R0, R0, #0X10 \n\
 /* 0809FC8A */ CMP R6, R0 \n\
@@ -329,7 +329,7 @@ _0809FBC8: \n\
 /* 0809FC9E */ ADDS R1, R5, #0 \n\
 /* 0809FCA0 */ ADDS R0, R4, #0 \n\
 /* 0809FCA2 */ BL __muldf3 \n\
-/* 0809FCA6 */ BL func_080F4288 \n\
+/* 0809FCA6 */ BL __fixunsdfsi \n\
 /* 0809FCAA */ LSLS R0, R0, #0X10 \n\
 /* 0809FCAC */ LSRS R0, R0, #0X10 \n\
 /* 0809FCAE */ CMP R6, R0 \n\
@@ -339,7 +339,7 @@ _0809FBC8: \n\
 /* 0809FCB6 */ ADDS R1, R5, #0 \n\
 /* 0809FCB8 */ ADDS R0, R4, #0 \n\
 /* 0809FCBA */ BL __muldf3 \n\
-/* 0809FCBE */ BL func_080F4288 \n\
+/* 0809FCBE */ BL __fixunsdfsi \n\
 /* 0809FCC2 */ LSLS R0, R0, #0X10 \n\
 /* 0809FCC4 */ LSRS R0, R0, #0X10 \n\
 /* 0809FCC6 */ CMP R6, R0 \n\

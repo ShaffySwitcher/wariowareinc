@@ -9,6 +9,12 @@ SECTIONS {
         build/src/code_08000f10.c.o(.bss);
     }
 
+    . = 0x030035B0;
+    .libgcc_dp_bss : { *libgcc.a:dp-bit.o(.bss); }
+
+    . = 0x030035C8;
+    .libgcc_fp_bss : { *libgcc.a:fp-bit.o(.bss); }
+
     . = 0x08000000;
     .cartrom . : SUBALIGN(2) {
         build/asm/rom_header.s.o(.text*);
@@ -1203,60 +1209,20 @@ SECTIONS {
         build/src/midi/random.c.o(.text);
         build/src/midi/psg.c.o(.text);
         build/src/midi/player.c.o(.text);
-        build/asm/asm_080f4180.s.o(.text*);
-
+        
+        *libgcc.a:_ashldi3.o(.text);
         *libgcc.a:_call_via_rX.o(.text);
         *libgcc.a:_divsi3.o(.text);
         *libgcc.a:_dvmd_tls.o(.text);
-        
-
-        build/asm/asm_080f4288.s.o(.text*);
-        build/asm/asm_080f42cc.s.o(.text*);
+        *libgcc.a:_fixunsdfsi.o(.text);
+        *libgcc.a:_lshrdi3.o(.text);
         *libgcc.a:_modsi3.o(.text);
-        build/asm/asm_080f43d0.s.o(.text*);
-        build/asm/asm_080f4440.s.o(.text*);
-        build/asm/asm_080f4818.s.o(.text*);
-        build/asm/asm_080f4890.s.o(.text*);
-        build/asm/asm_080f4950.s.o(.text*);
-        build/asm/asm_080f4a98.s.o(.text*);
-        build/asm/asm_080f4b70.s.o(.text*);
-        build/asm/asm_080f4ddc.s.o(.text*);
-        build/asm/asm_080f4e0c.s.o(.text*);
-        build/asm/asm_080f4e44.s.o(.text*);
-        build/asm/asm_080f50ec.s.o(.text*);
-        build/asm/asm_080f5274.s.o(.text*);
-        build/asm/asm_080f5374.s.o(.text*);
-        build/asm/asm_080f53a0.s.o(.text*);
-        build/asm/asm_080f53ec.s.o(.text*);
-        build/asm/asm_080f5438.s.o(.text*);
-        build/asm/asm_080f5484.s.o(.text*);
-        build/asm/asm_080f54d0.s.o(.text*);
-        build/asm/asm_080f551c.s.o(.text*);
-        build/asm/asm_080f5568.s.o(.text*);
-        build/asm/asm_080f55e4.s.o(.text*);
-        build/asm/asm_080f5658.s.o(.text*);
-        build/asm/asm_080f5680.s.o(.text*);
-        build/asm/asm_080f56a8.s.o(.text*);
-        build/asm/asm_080f56ec.s.o(.text*);
-        build/asm/asm_080f57a4.s.o(.text*);
-        build/asm/asm_080f5820.s.o(.text*);
-        build/asm/asm_080f599c.s.o(.text*);
-        build/asm/asm_080f59c8.s.o(.text*);
-        build/asm/asm_080f59fc.s.o(.text*);
-        build/asm/asm_080f5b60.s.o(.text*);
-        build/asm/asm_080f5c4c.s.o(.text*);
-        build/asm/asm_080f5d30.s.o(.text*);
-        build/asm/asm_080f5d58.s.o(.text*);
-        build/asm/asm_080f5da0.s.o(.text*);
-        build/asm/asm_080f5de8.s.o(.text*);
-        build/asm/asm_080f5e30.s.o(.text*);
-        build/asm/asm_080f5e78.s.o(.text*);
-        build/asm/asm_080f5ec0.s.o(.text*);
-        build/asm/asm_080f5f08.s.o(.text*);
-        build/asm/asm_080f5f68.s.o(.text*);
-        build/asm/asm_080f5fd0.s.o(.text*);
-        build/asm/asm_080f5ff4.s.o(.text*);
-        build/asm/asm_080f600c.s.o(.text*);
+        *libgcc.a:_muldi3.o(.text);
+        *libgcc.a:_udivdi3.o(.text);
+        *libgcc.a:_udivsi3.o(.text);
+        *libgcc.a:_umodsi3.o(.text);
+        *libgcc.a:dp-bit.o(.text);
+        *libgcc.a:fp-bit.o(.text);
         *libgcc.a:_negdi2.o(.text);
         *libc.a:memcpy.o(.text);
         *libc.a:strcpy.o(.text);
@@ -1277,6 +1243,8 @@ SECTIONS {
         build/microgames/crazy_cars/graphics/crazy_cars_anim.c.o(.data);
         build/microgames/crazy_cars/graphics/crazy_cars_pal.c.o(.data);
         build/bin/data_0834543C.bin.o(.rodata*);
+        *libgcc.a:_udivdi3.o(.rodata);
+        build/bin/data_083A3C90.bin.o(.rodata*);
         build/data/scenes.c.o(.data);
         build/data/agb_main_data.c.o(.data);
         build/bin/data_083A3D94.bin.o(.rodata*);

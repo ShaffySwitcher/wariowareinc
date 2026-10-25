@@ -34,7 +34,7 @@ _0809EFAC: \n\
 /* 0809EFC6 */ ADD R0, R8 \n\
 /* 0809EFC8 */ LDR R0, [R0] \n\
 /* 0809EFCA */ ASRS R0, R0, #8 \n\
-/* 0809EFCC */ BL func_080F5568 \n\
+/* 0809EFCC */ BL __floatsidf \n\
 /* 0809EFD0 */ ADDS R5, R1, #0 \n\
 /* 0809EFD2 */ ADDS R4, R0, #0 \n\
 /* 0809EFD4 */ LDR R2, _0809F0A0 \n\
@@ -58,7 +58,7 @@ _0809EFAC: \n\
 /* 0809F000 */ LDR R2, _0809F0B0 \n\
 /* 0809F002 */ LDR R3, _0809F0B4 \n\
 /* 0809F004 */ BL __adddf3 \n\
-/* 0809F008 */ BL func_080F55E4 \n\
+/* 0809F008 */ BL __fixdfsi \n\
 /* 0809F00C */ ADDS R2, R0, #0 \n\
 /* 0809F00E */ STRH R2, [R6] \n\
 /* 0809F010 */ ADDS R0, R7, #0 \n\

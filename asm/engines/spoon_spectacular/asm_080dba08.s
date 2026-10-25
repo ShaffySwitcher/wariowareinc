@@ -13,7 +13,7 @@ thumb_func_start func_080DBA08 \n\
 /* 080DBA18 */ BEQ _080DBA74 \n\
 /* 080DBA1A */ LDR R0, [R4, #0X14] \n\
 /* 080DBA1C */ ASRS R0, R0, #8 \n\
-/* 080DBA1E */ BL func_080F5568 \n\
+/* 080DBA1E */ BL __floatsidf \n\
 /* 080DBA22 */ STR R0, [SP, #0XC] \n\
 /* 080DBA24 */ STR R1, [SP, #0X10] \n\
 /* 080DBA26 */ ADDS R0, R4, #0 \n\
@@ -22,7 +22,7 @@ thumb_func_start func_080DBA08 \n\
 /* 080DBA2C */ LSLS R0, R0, #0X10 \n\
 /* 080DBA2E */ ASRS R0, R0, #0X18 \n\
 /* 080DBA30 */ ADDS R0, #0X78 \n\
-/* 080DBA32 */ BL func_080F5568 \n\
+/* 080DBA32 */ BL __floatsidf \n\
 /* 080DBA36 */ ADDS R5, R1, #0 \n\
 /* 080DBA38 */ ADDS R4, R0, #0 \n\
 /* 080DBA3A */ LDR R6, _080DBB84 \n\
@@ -34,7 +34,7 @@ thumb_func_start func_080DBA08 \n\
 /* 080DBA48 */ ADDS R2, R0, #0 \n\
 /* 080DBA4A */ LDR R0, [SP, #0XC] \n\
 /* 080DBA4C */ LDR R1, [SP, #0X10] \n\
-/* 080DBA4E */ BL func_080F5438 \n\
+/* 080DBA4E */ BL __gtdf2 \n\
 /* 080DBA52 */ CMP R0, #0 \n\
 /* 080DBA54 */ BGT _080DBA74 \n\
 /* 080DBA56 */ ADDS R1, R5, #0 \n\
@@ -46,7 +46,7 @@ thumb_func_start func_080DBA08 \n\
 /* 080DBA64 */ ADDS R2, R0, #0 \n\
 /* 080DBA66 */ LDR R0, [SP, #0XC] \n\
 /* 080DBA68 */ LDR R1, [SP, #0X10] \n\
-/* 080DBA6A */ BL func_080F54D0 \n\
+/* 080DBA6A */ BL __ltdf2 \n\
 /* 080DBA6E */ CMP R0, #0 \n\
 /* 080DBA70 */ BLT _080DBA74 \n\
 /* 080DBA72 */ B _080DBC58 \n\

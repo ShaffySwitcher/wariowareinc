@@ -38,13 +38,13 @@ _0807A09E: \n\
 /* 0807A0C0 */ MOV R3, R8 \n\
 /* 0807A0C2 */ LDR R4, [R3] \n\
 /* 0807A0C4 */ LDR R0, [R4, #0XC] \n\
-/* 0807A0C6 */ BL func_080F5568 \n\
+/* 0807A0C6 */ BL __floatsidf \n\
 /* 0807A0CA */ ADDS R6, R1, #0 \n\
 /* 0807A0CC */ ADDS R5, R0, #0 \n\
 /* 0807A0CE */ MOV R1, SB \n\
 /* 0807A0D0 */ LDR R0, [R1] \n\
 /* 0807A0D2 */ LDRH R0, [R0, #0X14] \n\
-/* 0807A0D4 */ BL func_080F5568 \n\
+/* 0807A0D4 */ BL __floatsidf \n\
 /* 0807A0D8 */ LDR R2, _0807A11C \n\
 /* 0807A0DA */ LDR R3, _0807A120 \n\
 /* 0807A0DC */ BL __muldf3 \n\
@@ -53,7 +53,7 @@ _0807A09E: \n\
 /* 0807A0E4 */ ADDS R1, R6, #0 \n\
 /* 0807A0E6 */ ADDS R0, R5, #0 \n\
 /* 0807A0E8 */ BL __subdf3 \n\
-/* 0807A0EC */ BL func_080F55E4 \n\
+/* 0807A0EC */ BL __fixdfsi \n\
 /* 0807A0F0 */ STR R0, [R4, #0XC] \n\
 /* 0807A0F2 */ LDRB R0, [R4, #6] \n\
 /* 0807A0F4 */ ADDS R0, #1 \n\
@@ -109,13 +109,13 @@ _0807A124: \n\
 /* 0807A140 */ STRB R0, [R2, #0X14] \n\
 /* 0807A142 */ LDR R4, [R7] \n\
 /* 0807A144 */ LDR R0, [R4, #0XC] \n\
-/* 0807A146 */ BL func_080F5568 \n\
+/* 0807A146 */ BL __floatsidf \n\
 /* 0807A14A */ ADDS R6, R1, #0 \n\
 /* 0807A14C */ ADDS R5, R0, #0 \n\
 /* 0807A14E */ MOV R1, SB \n\
 /* 0807A150 */ LDR R0, [R1] \n\
 /* 0807A152 */ LDRH R0, [R0, #0X14] \n\
-/* 0807A154 */ BL func_080F5568 \n\
+/* 0807A154 */ BL __floatsidf \n\
 /* 0807A158 */ LDR R2, _0807A18C \n\
 /* 0807A15A */ LDR R3, _0807A190 \n\
 /* 0807A15C */ BL __muldf3 \n\
@@ -124,7 +124,7 @@ _0807A124: \n\
 /* 0807A164 */ ADDS R1, R6, #0 \n\
 /* 0807A166 */ ADDS R0, R5, #0 \n\
 /* 0807A168 */ BL __adddf3 \n\
-/* 0807A16C */ BL func_080F55E4 \n\
+/* 0807A16C */ BL __fixdfsi \n\
 /* 0807A170 */ STR R0, [R4, #0XC] \n\
 /* 0807A172 */ LDRB R0, [R4, #6] \n\
 /* 0807A174 */ ADDS R0, #1 \n\

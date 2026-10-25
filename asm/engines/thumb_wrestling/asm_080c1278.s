@@ -160,11 +160,11 @@ _080C139C: \n\
 /* 080C139C */ .word gSpriteHandler \n\
 _080C13A0: \n\
 /* 080C13A0 */ ADDS R0, R4, #0 \n\
-/* 080C13A2 */ BL func_080F5568 \n\
+/* 080C13A2 */ BL __floatsidf \n\
 /* 080C13A6 */ STR R0, [SP] \n\
 /* 080C13A8 */ STR R1, [SP, #4] \n\
 /* 080C13AA */ ADDS R0, R6, #0 \n\
-/* 080C13AC */ BL func_080F5568 \n\
+/* 080C13AC */ BL __floatsidf \n\
 /* 080C13B0 */ ADDS R5, R1, #0 \n\
 /* 080C13B2 */ ADDS R4, R0, #0 \n\
 /* 080C13B4 */ LDR R1, _080C13E4 \n\
@@ -176,7 +176,7 @@ _080C13A0: \n\
 /* 080C13C2 */ ADDS R2, R0, #0 \n\
 /* 080C13C4 */ LDR R0, [SP] \n\
 /* 080C13C6 */ LDR R1, [SP, #4] \n\
-/* 080C13C8 */ BL func_080F5484 \n\
+/* 080C13C8 */ BL __gedf2 \n\
 /* 080C13CC */ CMP R0, #0 \n\
 /* 080C13CE */ BLT _080C13EC \n\
 /* 080C13D0 */ LDR R0, _080C13E8 \n\
@@ -208,7 +208,7 @@ _080C13EC: \n\
 /* 080C13FA */ ADDS R2, R0, #0 \n\
 /* 080C13FC */ LDR R0, [SP] \n\
 /* 080C13FE */ LDR R1, [SP, #4] \n\
-/* 080C1400 */ BL func_080F5484 \n\
+/* 080C1400 */ BL __gedf2 \n\
 /* 080C1404 */ CMP R0, #0 \n\
 /* 080C1406 */ BLT _080C142E \n\
 /* 080C1408 */ LDRB R0, [R7, #0X19] \n\
@@ -357,11 +357,11 @@ _080C1504: \n\
 /* 080C1504 */ .word gSpriteHandler \n\
 _080C1508: \n\
 /* 080C1508 */ ADDS R0, R4, #0 \n\
-/* 080C150A */ BL func_080F5568 \n\
+/* 080C150A */ BL __floatsidf \n\
 /* 080C150E */ ADDS R7, R1, #0 \n\
 /* 080C1510 */ ADDS R6, R0, #0 \n\
 /* 080C1512 */ MOV R0, R8 \n\
-/* 080C1514 */ BL func_080F5568 \n\
+/* 080C1514 */ BL __floatsidf \n\
 /* 080C1518 */ ADDS R5, R1, #0 \n\
 /* 080C151A */ ADDS R4, R0, #0 \n\
 /* 080C151C */ LDR R1, _080C1560 \n\
@@ -373,7 +373,7 @@ _080C1508: \n\
 /* 080C152A */ ADDS R2, R0, #0 \n\
 /* 080C152C */ ADDS R1, R7, #0 \n\
 /* 080C152E */ ADDS R0, R6, #0 \n\
-/* 080C1530 */ BL func_080F5484 \n\
+/* 080C1530 */ BL __gedf2 \n\
 /* 080C1534 */ CMP R0, #0 \n\
 /* 080C1536 */ BLT _080C1570 \n\
 /* 080C1538 */ MOV R3, SB \n\
@@ -424,7 +424,7 @@ _080C1570: \n\
 /* 080C157E */ ADDS R2, R0, #0 \n\
 /* 080C1580 */ ADDS R1, R7, #0 \n\
 /* 080C1582 */ ADDS R0, R6, #0 \n\
-/* 080C1584 */ BL func_080F5484 \n\
+/* 080C1584 */ BL __gedf2 \n\
 /* 080C1588 */ CMP R0, #0 \n\
 /* 080C158A */ BLT _080C15A4 \n\
 /* 080C158C */ LDR R0, _080C15A0 \n\
@@ -455,7 +455,7 @@ _080C15A4: \n\
 /* 080C15B2 */ ADDS R2, R0, #0 \n\
 /* 080C15B4 */ ADDS R1, R7, #0 \n\
 /* 080C15B6 */ ADDS R0, R6, #0 \n\
-/* 080C15B8 */ BL func_080F5484 \n\
+/* 080C15B8 */ BL __gedf2 \n\
 /* 080C15BC */ CMP R0, #0 \n\
 /* 080C15BE */ BGE _080C15C2 \n\
 /* 080C15C0 */ B _080C1A28 \n\
@@ -551,11 +551,11 @@ _080C1654: \n\
 /* 080C1654 */ .word gSpriteHandler \n\
 _080C1658: \n\
 /* 080C1658 */ MOV R0, SB \n\
-/* 080C165A */ BL func_080F5568 \n\
+/* 080C165A */ BL __floatsidf \n\
 /* 080C165E */ ADDS R7, R1, #0 \n\
 /* 080C1660 */ ADDS R6, R0, #0 \n\
 /* 080C1662 */ MOV R0, SL \n\
-/* 080C1664 */ BL func_080F5568 \n\
+/* 080C1664 */ BL __floatsidf \n\
 /* 080C1668 */ ADDS R5, R1, #0 \n\
 /* 080C166A */ ADDS R4, R0, #0 \n\
 /* 080C166C */ LDR R1, _080C16B4 \n\
@@ -567,7 +567,7 @@ _080C1658: \n\
 /* 080C167A */ ADDS R2, R0, #0 \n\
 /* 080C167C */ ADDS R1, R7, #0 \n\
 /* 080C167E */ ADDS R0, R6, #0 \n\
-/* 080C1680 */ BL func_080F5484 \n\
+/* 080C1680 */ BL __gedf2 \n\
 /* 080C1684 */ CMP R0, #0 \n\
 /* 080C1686 */ BLT _080C16C4 \n\
 /* 080C1688 */ MOV R1, R8 \n\
@@ -639,7 +639,7 @@ _080C16E4: \n\
 /* 080C16F2 */ ADDS R2, R0, #0 \n\
 /* 080C16F4 */ ADDS R1, R7, #0 \n\
 /* 080C16F6 */ ADDS R0, R6, #0 \n\
-/* 080C16F8 */ BL func_080F5484 \n\
+/* 080C16F8 */ BL __gedf2 \n\
 /* 080C16FC */ CMP R0, #0 \n\
 /* 080C16FE */ BLT _080C173C \n\
 /* 080C1700 */ MOV R1, R8 \n\
@@ -691,7 +691,7 @@ _080C173C: \n\
 /* 080C174A */ ADDS R2, R0, #0 \n\
 /* 080C174C */ ADDS R1, R7, #0 \n\
 /* 080C174E */ ADDS R0, R6, #0 \n\
-/* 080C1750 */ BL func_080F5484 \n\
+/* 080C1750 */ BL __gedf2 \n\
 /* 080C1754 */ CMP R0, #0 \n\
 /* 080C1756 */ BLT _080C1770 \n\
 /* 080C1758 */ LDR R0, _080C176C \n\
@@ -722,7 +722,7 @@ _080C1770: \n\
 /* 080C177E */ ADDS R2, R0, #0 \n\
 /* 080C1780 */ ADDS R1, R7, #0 \n\
 /* 080C1782 */ ADDS R0, R6, #0 \n\
-/* 080C1784 */ BL func_080F5484 \n\
+/* 080C1784 */ BL __gedf2 \n\
 /* 080C1788 */ CMP R0, #0 \n\
 /* 080C178A */ BGE _080C178E \n\
 /* 080C178C */ B _080C1A28 \n\
@@ -813,11 +813,11 @@ _080C1814: \n\
 /* 080C181A */ LDRH R3, [R2, #0XE] \n\
 /* 080C181C */ MOV SL, R3 \n\
 /* 080C181E */ MOV R0, SL \n\
-/* 080C1820 */ BL func_080F5568 \n\
+/* 080C1820 */ BL __floatsidf \n\
 /* 080C1824 */ ADDS R7, R1, #0 \n\
 /* 080C1826 */ ADDS R6, R0, #0 \n\
 /* 080C1828 */ MOV R0, SB \n\
-/* 080C182A */ BL func_080F5568 \n\
+/* 080C182A */ BL __floatsidf \n\
 /* 080C182E */ ADDS R5, R1, #0 \n\
 /* 080C1830 */ ADDS R4, R0, #0 \n\
 /* 080C1832 */ LDR R0, _080C1860 \n\
@@ -829,7 +829,7 @@ _080C1814: \n\
 /* 080C1840 */ ADDS R2, R0, #0 \n\
 /* 080C1842 */ ADDS R1, R7, #0 \n\
 /* 080C1844 */ ADDS R0, R6, #0 \n\
-/* 080C1846 */ BL func_080F5484 \n\
+/* 080C1846 */ BL __gedf2 \n\
 /* 080C184A */ CMP R0, #0 \n\
 /* 080C184C */ BLT _080C186C \n\
 /* 080C184E */ LDR R0, _080C1868 \n\
@@ -864,7 +864,7 @@ _080C186C: \n\
 /* 080C187A */ ADDS R2, R0, #0 \n\
 /* 080C187C */ ADDS R1, R7, #0 \n\
 /* 080C187E */ ADDS R0, R6, #0 \n\
-/* 080C1880 */ BL func_080F5484 \n\
+/* 080C1880 */ BL __gedf2 \n\
 /* 080C1884 */ CMP R0, #0 \n\
 /* 080C1886 */ BLT _080C18B0 \n\
 /* 080C1888 */ MOV R1, R8 \n\
@@ -911,7 +911,7 @@ _080C18BE: \n\
 /* 080C18CC */ ADDS R2, R0, #0 \n\
 /* 080C18CE */ ADDS R1, R7, #0 \n\
 /* 080C18D0 */ ADDS R0, R6, #0 \n\
-/* 080C18D2 */ BL func_080F5484 \n\
+/* 080C18D2 */ BL __gedf2 \n\
 /* 080C18D6 */ CMP R0, #0 \n\
 /* 080C18D8 */ BLT _080C1918 \n\
 /* 080C18DA */ MOV R3, R8 \n\
@@ -966,7 +966,7 @@ _080C1918: \n\
 /* 080C1926 */ ADDS R2, R0, #0 \n\
 /* 080C1928 */ ADDS R1, R7, #0 \n\
 /* 080C192A */ ADDS R0, R6, #0 \n\
-/* 080C192C */ BL func_080F5484 \n\
+/* 080C192C */ BL __gedf2 \n\
 /* 080C1930 */ CMP R0, #0 \n\
 /* 080C1932 */ BLT _080C194C \n\
 /* 080C1934 */ LDR R0, _080C1948 \n\
@@ -997,7 +997,7 @@ _080C194C: \n\
 /* 080C195A */ ADDS R2, R0, #0 \n\
 /* 080C195C */ ADDS R1, R7, #0 \n\
 /* 080C195E */ ADDS R0, R6, #0 \n\
-/* 080C1960 */ BL func_080F5484 \n\
+/* 080C1960 */ BL __gedf2 \n\
 /* 080C1964 */ CMP R0, #0 \n\
 /* 080C1966 */ BLT _080C19A8 \n\
 /* 080C1968 */ MOV R1, R8 \n\
@@ -1051,7 +1051,7 @@ _080C19A8: \n\
 /* 080C19B6 */ ADDS R2, R0, #0 \n\
 /* 080C19B8 */ ADDS R1, R7, #0 \n\
 /* 080C19BA */ ADDS R0, R6, #0 \n\
-/* 080C19BC */ BL func_080F5484 \n\
+/* 080C19BC */ BL __gedf2 \n\
 /* 080C19C0 */ CMP R0, #0 \n\
 /* 080C19C2 */ BLT _080C19E4 \n\
 _080C19C4: \n\
@@ -1087,7 +1087,7 @@ _080C19E4: \n\
 /* 080C19F2 */ ADDS R2, R0, #0 \n\
 /* 080C19F4 */ ADDS R1, R7, #0 \n\
 /* 080C19F6 */ ADDS R0, R6, #0 \n\
-/* 080C19F8 */ BL func_080F5484 \n\
+/* 080C19F8 */ BL __gedf2 \n\
 /* 080C19FC */ CMP R0, #0 \n\
 /* 080C19FE */ BLT _080C1A28 \n\
 /* 080C1A00 */ MOV R3, R8 \n\

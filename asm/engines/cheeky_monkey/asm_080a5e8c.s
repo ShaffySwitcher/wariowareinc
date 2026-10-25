@@ -26,7 +26,7 @@ _080A5EAE: \n\
 /* 080A5EB2 */ MOV R8, R0 \n\
 /* 080A5EB4 */ LDR R0, [R0, #0X60] \n\
 /* 080A5EB6 */ ASRS R0, R0, #8 \n\
-/* 080A5EB8 */ BL func_080F5568 \n\
+/* 080A5EB8 */ BL __floatsidf \n\
 /* 080A5EBC */ STR R0, [SP, #4] \n\
 /* 080A5EBE */ STR R1, [SP, #8] \n\
 /* 080A5EC0 */ LDR R2, _080A5FD0 \n\
@@ -42,12 +42,12 @@ _080A5EAE: \n\
 /* 080A5ED6 */ LDR R0, [R0] \n\
 /* 080A5ED8 */ ASRS R7, R0, #8 \n\
 /* 080A5EDA */ ADDS R0, R7, #0 \n\
-/* 080A5EDC */ BL func_080F5568 \n\
+/* 080A5EDC */ BL __floatsidf \n\
 /* 080A5EE0 */ ADDS R3, R1, #0 \n\
 /* 080A5EE2 */ ADDS R2, R0, #0 \n\
 /* 080A5EE4 */ ADDS R1, R5, #0 \n\
 /* 080A5EE6 */ ADDS R0, R4, #0 \n\
-/* 080A5EE8 */ BL func_080F5438 \n\
+/* 080A5EE8 */ BL __gtdf2 \n\
 /* 080A5EEC */ CMP R0, #0 \n\
 /* 080A5EEE */ BGT _080A5EF2 \n\
 /* 080A5EF0 */ B _080A5FE8 \n\
@@ -60,12 +60,12 @@ _080A5EF2: \n\
 /* 080A5EFE */ ADDS R5, R1, #0 \n\
 /* 080A5F00 */ ADDS R4, R0, #0 \n\
 /* 080A5F02 */ ADDS R0, R7, #4 \n\
-/* 080A5F04 */ BL func_080F5568 \n\
+/* 080A5F04 */ BL __floatsidf \n\
 /* 080A5F08 */ ADDS R3, R1, #0 \n\
 /* 080A5F0A */ ADDS R2, R0, #0 \n\
 /* 080A5F0C */ ADDS R1, R5, #0 \n\
 /* 080A5F0E */ ADDS R0, R4, #0 \n\
-/* 080A5F10 */ BL func_080F54D0 \n\
+/* 080A5F10 */ BL __ltdf2 \n\
 /* 080A5F14 */ CMP R0, #0 \n\
 /* 080A5F16 */ BGE _080A5FE8 \n\
 /* 080A5F18 */ MOV R2, R8 \n\

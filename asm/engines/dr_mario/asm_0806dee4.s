@@ -128,11 +128,11 @@ _0806DFB8: \n\
 /* 0806DFBC */ MOV SB, R0 \n\
 /* 0806DFBE */ LDR R0, [R0] \n\
 /* 0806DFC0 */ LDRH R0, [R0, #0X14] \n\
-/* 0806DFC2 */ BL func_080F5568 \n\
+/* 0806DFC2 */ BL __floatsidf \n\
 /* 0806DFC6 */ LDR R2, _0806E030 \n\
 /* 0806DFC8 */ LDR R3, _0806E034 \n\
 /* 0806DFCA */ BL __muldf3 \n\
-/* 0806DFCE */ BL func_080F4288 \n\
+/* 0806DFCE */ BL __fixunsdfsi \n\
 /* 0806DFD2 */ LSLS R0, R0, #0X18 \n\
 /* 0806DFD4 */ LSRS R0, R0, #0X18 \n\
 /* 0806DFD6 */ MOVS R1, #0X96 \n\

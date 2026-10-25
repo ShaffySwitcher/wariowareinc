@@ -50,7 +50,7 @@ _08092EDA: \n\
 /* 08092EE4 */ MOVS R1, #0XC0 \n\
 /* 08092EE6 */ SUBS R6, R1, R0 \n\
 /* 08092EE8 */ ADDS R0, R6, #0 \n\
-/* 08092EEA */ BL func_080F5568 \n\
+/* 08092EEA */ BL __floatsidf \n\
 /* 08092EEE */ CMP R6, #0 \n\
 /* 08092EF0 */ BGE _08092EFA \n\
 /* 08092EF2 */ LDR R2, _08092F88 \n\
@@ -63,7 +63,7 @@ _08092EFA: \n\
 /* 08092F02 */ STR R0, [SP, #0XC] \n\
 /* 08092F04 */ STR R1, [SP, #0X10] \n\
 /* 08092F06 */ ADDS R0, R6, #0 \n\
-/* 08092F08 */ BL func_080F5568 \n\
+/* 08092F08 */ BL __floatsidf \n\
 /* 08092F0C */ ADDS R5, R1, #0 \n\
 /* 08092F0E */ ADDS R4, R0, #0 \n\
 /* 08092F10 */ CMP R6, #0 \n\
@@ -82,7 +82,7 @@ _08092F20: \n\
 /* 08092F2C */ ADDS R5, R1, #0 \n\
 /* 08092F2E */ ADDS R4, R0, #0 \n\
 /* 08092F30 */ ADDS R0, R6, #0 \n\
-/* 08092F32 */ BL func_080F5568 \n\
+/* 08092F32 */ BL __floatsidf \n\
 /* 08092F36 */ CMP R6, #0 \n\
 /* 08092F38 */ BGE _08092F42 \n\
 /* 08092F3A */ LDR R2, _08092F88 \n\
@@ -100,7 +100,7 @@ _08092F42: \n\
 /* 08092F56 */ LDR R2, _08092FA0 \n\
 /* 08092F58 */ LDR R3, _08092FA4 \n\
 /* 08092F5A */ BL __adddf3 \n\
-/* 08092F5E */ BL func_080F55E4 \n\
+/* 08092F5E */ BL __fixdfsi \n\
 /* 08092F62 */ STR R0, [R7, #0X64] \n\
 /* 08092F64 */ CMP R6, #0X11 \n\
 /* 08092F66 */ BHI _08092FAC \n\

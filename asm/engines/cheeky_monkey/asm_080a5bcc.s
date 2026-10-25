@@ -97,13 +97,13 @@ _080A5C70: \n\
 /* 080A5C70 */ ADDS R0, R1, #0 \n\
 /* 080A5C72 */ ADDS R0, #0X6F \n\
 /* 080A5C74 */ LDRB R0, [R0] \n\
-/* 080A5C76 */ BL func_080F5568 \n\
+/* 080A5C76 */ BL __floatsidf \n\
 /* 080A5C7A */ ADDS R5, R1, #0 \n\
 /* 080A5C7C */ ADDS R4, R0, #0 \n\
 /* 080A5C7E */ LDR R0, _080A5CD4 \n\
 /* 080A5C80 */ LDR R0, [R0] \n\
 /* 080A5C82 */ LDRH R0, [R0, #0X14] \n\
-/* 080A5C84 */ BL func_080F5568 \n\
+/* 080A5C84 */ BL __floatsidf \n\
 /* 080A5C88 */ LDR R2, _080A5CD8 \n\
 /* 080A5C8A */ LDR R3, _080A5CDC \n\
 /* 080A5C8C */ BL __muldf3 \n\
@@ -116,7 +116,7 @@ _080A5C70: \n\
 /* 080A5C9E */ ADDS R2, R0, #0 \n\
 /* 080A5CA0 */ ADDS R1, R5, #0 \n\
 /* 080A5CA2 */ ADDS R0, R4, #0 \n\
-/* 080A5CA4 */ BL func_080F5484 \n\
+/* 080A5CA4 */ BL __gedf2 \n\
 /* 080A5CA8 */ ADDS R5, R7, #1 \n\
 /* 080A5CAA */ CMP R0, #0 \n\
 /* 080A5CAC */ BGE _080A5CB0 \n\

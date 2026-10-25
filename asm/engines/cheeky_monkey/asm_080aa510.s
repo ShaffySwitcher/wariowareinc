@@ -42,7 +42,7 @@ _080AA554: \n\
 /* 080AA554 */ ADDS R1, R7, #0 \n\
 /* 080AA556 */ ADDS R0, R6, #0 \n\
 /* 080AA558 */ ADDS R2, R4, #0 \n\
-/* 080AA55A */ BL func_080F42CC \n\
+/* 080AA55A */ BL __lshrdi3 \n\
 /* 080AA55E */ MOVS R2, #1 \n\
 /* 080AA560 */ ANDS R0, R2 \n\
 /* 080AA562 */ MOVS R1, #0 \n\
@@ -54,7 +54,7 @@ _080AA56C: \n\
 /* 080AA56C */ MOVS R0, #1 \n\
 /* 080AA56E */ MOVS R1, #0 \n\
 /* 080AA570 */ ADDS R2, R4, #0 \n\
-/* 080AA572 */ BL func_080F4180 \n\
+/* 080AA572 */ BL __ashldi3 \n\
 /* 080AA576 */ ADDS R2, R6, #0 \n\
 /* 080AA578 */ ORRS R2, R0 \n\
 /* 080AA57A */ ADDS R3, R7, #0 \n\

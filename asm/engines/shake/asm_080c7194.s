@@ -27,7 +27,7 @@ thumb_func_start func_080C7194 \n\
 /* 080C71C0 */ BEQ _080C7218 \n\
 /* 080C71C2 */ LDRB R0, [R6, #0X1E] \n\
 /* 080C71C4 */ ADDS R0, #0X78 \n\
-/* 080C71C6 */ BL func_080F5568 \n\
+/* 080C71C6 */ BL __floatsidf \n\
 /* 080C71CA */ ADDS R5, R1, #0 \n\
 /* 080C71CC */ ADDS R4, R0, #0 \n\
 /* 080C71CE */ LDR R1, _080C720C \n\
@@ -38,7 +38,7 @@ thumb_func_start func_080C7194 \n\
 /* 080C71D8 */ ADD R0, R8 \n\
 /* 080C71DA */ MOVS R2, #0 \n\
 /* 080C71DC */ LDRSH R0, [R0, R2] \n\
-/* 080C71DE */ BL func_080F5568 \n\
+/* 080C71DE */ BL __floatsidf \n\
 /* 080C71E2 */ LDR R2, _080C7210 \n\
 /* 080C71E4 */ LDR R3, _080C7214 \n\
 /* 080C71E6 */ BL __divdf3 \n\
@@ -47,7 +47,7 @@ thumb_func_start func_080C7194 \n\
 /* 080C71EE */ ADDS R1, R5, #0 \n\
 /* 080C71F0 */ ADDS R0, R4, #0 \n\
 /* 080C71F2 */ BL __adddf3 \n\
-/* 080C71F6 */ BL func_080F4288 \n\
+/* 080C71F6 */ BL __fixunsdfsi \n\
 /* 080C71FA */ LSLS R0, R0, #0X18 \n\
 /* 080C71FC */ LSRS R0, R0, #0X10 \n\
 /* 080C71FE */ STR R0, [R6, #0X14] \n\
@@ -198,7 +198,7 @@ _080C72DC: \n\
 /* 080C72F8 */ ADDS R0, R1 \n\
 /* 080C72FA */ MOVS R2, #0 \n\
 /* 080C72FC */ LDRSH R0, [R0, R2] \n\
-/* 080C72FE */ BL func_080F5568 \n\
+/* 080C72FE */ BL __floatsidf \n\
 /* 080C7302 */ LDR R2, _080C739C \n\
 /* 080C7304 */ LDR R3, _080C73A0 \n\
 /* 080C7306 */ BL __divdf3 \n\
@@ -207,7 +207,7 @@ _080C72DC: \n\
 /* 080C730E */ LDR R0, _080C73A4 \n\
 /* 080C7310 */ LDR R1, _080C73A8 \n\
 /* 080C7312 */ BL __subdf3 \n\
-/* 080C7316 */ BL func_080F4288 \n\
+/* 080C7316 */ BL __fixunsdfsi \n\
 /* 080C731A */ LSLS R0, R0, #0X18 \n\
 /* 080C731C */ LSRS R0, R0, #0X10 \n\
 /* 080C731E */ STR R0, [R4, #8] \n\

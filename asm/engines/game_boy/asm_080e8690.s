@@ -24,7 +24,7 @@ _080E86B0: \n\
 /* 080E86B4 */ MOV SB, R3 \n\
 /* 080E86B6 */ LDR R0, [R3, #0XC] \n\
 /* 080E86B8 */ ASRS R0, R0, #8 \n\
-/* 080E86BA */ BL func_080F5568 \n\
+/* 080E86BA */ BL __floatsidf \n\
 /* 080E86BE */ STR R0, [SP, #4] \n\
 /* 080E86C0 */ STR R1, [SP, #8] \n\
 /* 080E86C2 */ MOVS R1, #0XF8 \n\
@@ -56,12 +56,12 @@ _080E86DA: \n\
 /* 080E86F6 */ LDRH R0, [R0] \n\
 /* 080E86F8 */ LSRS R6, R0, #1 \n\
 /* 080E86FA */ SUBS R0, R7, R6 \n\
-/* 080E86FC */ BL func_080F5568 \n\
+/* 080E86FC */ BL __floatsidf \n\
 /* 080E8700 */ ADDS R3, R1, #0 \n\
 /* 080E8702 */ ADDS R2, R0, #0 \n\
 /* 080E8704 */ LDR R0, [SP, #0XC] \n\
 /* 080E8706 */ LDR R1, [SP, #0X10] \n\
-/* 080E8708 */ BL func_080F5484 \n\
+/* 080E8708 */ BL __gedf2 \n\
 /* 080E870C */ CMP R0, #0 \n\
 /* 080E870E */ BLT _080E873A \n\
 /* 080E8710 */ LDR R0, [SP, #4] \n\
@@ -72,12 +72,12 @@ _080E86DA: \n\
 /* 080E871C */ ADDS R5, R1, #0 \n\
 /* 080E871E */ ADDS R4, R0, #0 \n\
 /* 080E8720 */ ADDS R0, R7, R6 \n\
-/* 080E8722 */ BL func_080F5568 \n\
+/* 080E8722 */ BL __floatsidf \n\
 /* 080E8726 */ ADDS R3, R1, #0 \n\
 /* 080E8728 */ ADDS R2, R0, #0 \n\
 /* 080E872A */ ADDS R1, R5, #0 \n\
 /* 080E872C */ ADDS R0, R4, #0 \n\
-/* 080E872E */ BL func_080F551C \n\
+/* 080E872E */ BL __ledf2 \n\
 /* 080E8732 */ CMP R0, #0 \n\
 /* 080E8734 */ BGT _080E873A \n\
 /* 080E8736 */ MOVS R0, #1 \n\

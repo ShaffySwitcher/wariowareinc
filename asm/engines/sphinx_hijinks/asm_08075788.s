@@ -22,11 +22,11 @@ thumb_func_start func_08075788 \n\
 /* 080757AA */ CMP R0, #0 \n\
 /* 080757AC */ BNE _080757E2 \n\
 /* 080757AE */ LDRH R0, [R1, #2] \n\
-/* 080757B0 */ BL func_080F5568 \n\
+/* 080757B0 */ BL __floatsidf \n\
 /* 080757B4 */ ADDS R5, R1, #0 \n\
 /* 080757B6 */ ADDS R4, R0, #0 \n\
 /* 080757B8 */ LDRH R0, [R6, #0X14] \n\
-/* 080757BA */ BL func_080F5568 \n\
+/* 080757BA */ BL __floatsidf \n\
 /* 080757BE */ LDR R2, _0807583C \n\
 /* 080757C0 */ LDR R3, _08075840 \n\
 /* 080757C2 */ BL __muldf3 \n\
@@ -37,7 +37,7 @@ thumb_func_start func_08075788 \n\
 /* 080757D0 */ ADDS R2, R0, #0 \n\
 /* 080757D2 */ ADDS R1, R5, #0 \n\
 /* 080757D4 */ ADDS R0, R4, #0 \n\
-/* 080757D6 */ BL func_080F5438 \n\
+/* 080757D6 */ BL __gtdf2 \n\
 /* 080757DA */ CMP R0, #0 \n\
 /* 080757DC */ BLE _080757E2 \n\
 /* 080757DE */ BL func_0807561C \n\

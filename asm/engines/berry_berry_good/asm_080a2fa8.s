@@ -47,7 +47,7 @@ thumb_func_start func_080A2FA8 \n\
 /* 080A3012 */ MOV R8, R0 \n\
 /* 080A3014 */ LDR R0, [R0] \n\
 /* 080A3016 */ LDRH R0, [R0, #0X14] \n\
-/* 080A3018 */ BL func_080F5568 \n\
+/* 080A3018 */ BL __floatsidf \n\
 /* 080A301C */ LDR R2, _080A3130 \n\
 /* 080A301E */ LDR R3, _080A3134 \n\
 /* 080A3020 */ BL __muldf3 \n\
@@ -57,7 +57,7 @@ thumb_func_start func_080A2FA8 \n\
 /* 080A302C */ LDR R2, _080A3140 \n\
 /* 080A302E */ LDR R3, _080A3144 \n\
 /* 080A3030 */ BL __muldf3 \n\
-/* 080A3034 */ BL func_080F55E4 \n\
+/* 080A3034 */ BL __fixdfsi \n\
 /* 080A3038 */ STR R0, [R6, #4] \n\
 /* 080A303A */ MOVS R0, #0X88 \n\
 /* 080A303C */ LSLS R0, R0, #8 \n\

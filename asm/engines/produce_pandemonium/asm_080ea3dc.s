@@ -28,7 +28,7 @@ _080EA400: \n\
 /* 080EA406 */ LDR R0, [R3, #8] \n\
 /* 080EA408 */ ASRS R7, R0, #8 \n\
 /* 080EA40A */ ADDS R0, R7, #0 \n\
-/* 080EA40C */ BL func_080F5568 \n\
+/* 080EA40C */ BL __floatsidf \n\
 /* 080EA410 */ LDR R2, _080EA514 \n\
 /* 080EA412 */ LDR R3, _080EA518 \n\
 /* 080EA414 */ BL __subdf3 \n\
@@ -49,12 +49,12 @@ _080EA400: \n\
 /* 080EA434 */ ASRS R6, R0, #8 \n\
 /* 080EA436 */ ADDS R0, R6, #0 \n\
 /* 080EA438 */ ADDS R0, #8 \n\
-/* 080EA43A */ BL func_080F5568 \n\
+/* 080EA43A */ BL __floatsidf \n\
 /* 080EA43E */ ADDS R3, R1, #0 \n\
 /* 080EA440 */ ADDS R2, R0, #0 \n\
 /* 080EA442 */ ADDS R1, R5, #0 \n\
 /* 080EA444 */ ADDS R0, R4, #0 \n\
-/* 080EA446 */ BL func_080F5438 \n\
+/* 080EA446 */ BL __gtdf2 \n\
 /* 080EA44A */ LDR R2, [SP, #0X1C] \n\
 /* 080EA44C */ ADDS R2, #1 \n\
 /* 080EA44E */ STR R2, [SP, #0X20] \n\
@@ -73,7 +73,7 @@ _080EA464: \n\
 /* 080EA464 */ MOV R3, SB \n\
 /* 080EA466 */ LDR R0, [R3, #4] \n\
 /* 080EA468 */ ASRS R0, R0, #8 \n\
-/* 080EA46A */ BL func_080F5568 \n\
+/* 080EA46A */ BL __floatsidf \n\
 /* 080EA46E */ ADDS R7, R1, #0 \n\
 /* 080EA470 */ ADDS R6, R0, #0 \n\
 /* 080EA472 */ LDR R2, _080EA51C \n\
@@ -88,12 +88,12 @@ _080EA464: \n\
 /* 080EA486 */ ASRS R0, R0, #8 \n\
 /* 080EA488 */ MOV R8, R0 \n\
 /* 080EA48A */ ADDS R0, #8 \n\
-/* 080EA48C */ BL func_080F5568 \n\
+/* 080EA48C */ BL __floatsidf \n\
 /* 080EA490 */ ADDS R3, R1, #0 \n\
 /* 080EA492 */ ADDS R2, R0, #0 \n\
 /* 080EA494 */ ADDS R1, R5, #0 \n\
 /* 080EA496 */ ADDS R0, R4, #0 \n\
-/* 080EA498 */ BL func_080F5438 \n\
+/* 080EA498 */ BL __gtdf2 \n\
 /* 080EA49C */ CMP R0, #0 \n\
 /* 080EA49E */ BLE _080EA4A2 \n\
 /* 080EA4A0 */ B _080EA6A0 \n\
@@ -107,12 +107,12 @@ _080EA4A2: \n\
 /* 080EA4B0 */ ADDS R4, R0, #0 \n\
 /* 080EA4B2 */ MOV R0, R8 \n\
 /* 080EA4B4 */ SUBS R0, #8 \n\
-/* 080EA4B6 */ BL func_080F5568 \n\
+/* 080EA4B6 */ BL __floatsidf \n\
 /* 080EA4BA */ ADDS R3, R1, #0 \n\
 /* 080EA4BC */ ADDS R2, R0, #0 \n\
 /* 080EA4BE */ ADDS R1, R5, #0 \n\
 /* 080EA4C0 */ ADDS R0, R4, #0 \n\
-/* 080EA4C2 */ BL func_080F54D0 \n\
+/* 080EA4C2 */ BL __ltdf2 \n\
 /* 080EA4C6 */ CMP R0, #0 \n\
 /* 080EA4C8 */ BGE _080EA4CC \n\
 /* 080EA4CA */ B _080EA6A0 \n\

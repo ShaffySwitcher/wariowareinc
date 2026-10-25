@@ -109,7 +109,7 @@ _0807CA36: \n\
 /* 0807CA48 */ ADD SB, SL \n\
 /* 0807CA4A */ MOV R1, SB \n\
 /* 0807CA4C */ LDR R0, [R1] \n\
-/* 0807CA4E */ BL func_080F5568 \n\
+/* 0807CA4E */ BL __floatsidf \n\
 /* 0807CA52 */ ADDS R5, R1, #0 \n\
 /* 0807CA54 */ ADDS R4, R0, #0 \n\
 /* 0807CA56 */ MOVS R2, #0XF6 \n\
@@ -119,7 +119,7 @@ _0807CA36: \n\
 /* 0807CA5E */ ADDS R6, R3 \n\
 /* 0807CA60 */ MOVS R0, #0 \n\
 /* 0807CA62 */ LDRSB R0, [R6, R0] \n\
-/* 0807CA64 */ BL func_080F5568 \n\
+/* 0807CA64 */ BL __floatsidf \n\
 /* 0807CA68 */ LDR R2, _0807CC8C \n\
 /* 0807CA6A */ LDR R3, _0807CC90 \n\
 /* 0807CA6C */ BL __muldf3 \n\
@@ -128,7 +128,7 @@ _0807CA36: \n\
 /* 0807CA74 */ ADDS R1, R5, #0 \n\
 /* 0807CA76 */ ADDS R0, R4, #0 \n\
 /* 0807CA78 */ BL __adddf3 \n\
-/* 0807CA7C */ BL func_080F55E4 \n\
+/* 0807CA7C */ BL __fixdfsi \n\
 /* 0807CA80 */ MOV R4, SB \n\
 /* 0807CA82 */ STR R0, [R4] \n\
 /* 0807CA84 */ MOVS R0, #0XEF \n\
@@ -138,12 +138,12 @@ _0807CA36: \n\
 /* 0807CA8C */ ADD R8, SL \n\
 /* 0807CA8E */ MOV R1, R8 \n\
 /* 0807CA90 */ LDR R0, [R1] \n\
-/* 0807CA92 */ BL func_080F5568 \n\
+/* 0807CA92 */ BL __floatsidf \n\
 /* 0807CA96 */ STR R0, [SP, #4] \n\
 /* 0807CA98 */ STR R1, [SP, #8] \n\
 /* 0807CA9A */ MOVS R0, #0 \n\
 /* 0807CA9C */ LDRSB R0, [R6, R0] \n\
-/* 0807CA9E */ BL func_080F5568 \n\
+/* 0807CA9E */ BL __floatsidf \n\
 /* 0807CAA2 */ LDR R2, _0807CC8C \n\
 /* 0807CAA4 */ LDR R3, _0807CC90 \n\
 /* 0807CAA6 */ BL __muldf3 \n\
@@ -159,7 +159,7 @@ _0807CA36: \n\
 /* 0807CABC */ LSLS R0, R1, #4 \n\
 /* 0807CABE */ SUBS R0, R1 \n\
 /* 0807CAC0 */ LSLS R0, R0, #1 \n\
-/* 0807CAC2 */ BL func_080F5568 \n\
+/* 0807CAC2 */ BL __floatsidf \n\
 /* 0807CAC6 */ ADDS R3, R1, #0 \n\
 /* 0807CAC8 */ ADDS R2, R0, #0 \n\
 /* 0807CACA */ ADDS R1, R5, #0 \n\
@@ -170,7 +170,7 @@ _0807CA36: \n\
 /* 0807CAD6 */ LDR R0, [SP, #4] \n\
 /* 0807CAD8 */ LDR R1, [SP, #8] \n\
 /* 0807CADA */ BL __adddf3 \n\
-/* 0807CADE */ BL func_080F55E4 \n\
+/* 0807CADE */ BL __fixdfsi \n\
 /* 0807CAE2 */ ADDS R3, R0, #0 \n\
 /* 0807CAE4 */ MOV R4, R8 \n\
 /* 0807CAE6 */ STR R3, [R4] \n\

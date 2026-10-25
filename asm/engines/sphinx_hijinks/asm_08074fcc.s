@@ -17,14 +17,14 @@ _08074FE2: \n\
 /* 08074FE2 */ LDRH R4, [R7, #6] \n\
 /* 08074FE4 */ ADDS R0, R4, #0 \n\
 /* 08074FE6 */ MULS R0, R4, R0 \n\
-/* 08074FE8 */ BL func_080F5568 \n\
+/* 08074FE8 */ BL __floatsidf \n\
 /* 08074FEC */ LDR R2, _0807508C \n\
 /* 08074FEE */ LDR R3, _08075090 \n\
 /* 08074FF0 */ BL __muldf3 \n\
 /* 08074FF4 */ ADDS R6, R1, #0 \n\
 /* 08074FF6 */ ADDS R5, R0, #0 \n\
 /* 08074FF8 */ ADDS R0, R4, #0 \n\
-/* 08074FFA */ BL func_080F5568 \n\
+/* 08074FFA */ BL __floatsidf \n\
 /* 08074FFE */ LDR R2, _08075094 \n\
 /* 08075000 */ LDR R3, _08075098 \n\
 /* 08075002 */ BL __muldf3 \n\
@@ -33,7 +33,7 @@ _08074FE2: \n\
 /* 0807500A */ ADDS R1, R6, #0 \n\
 /* 0807500C */ ADDS R0, R5, #0 \n\
 /* 0807500E */ BL __subdf3 \n\
-/* 08075012 */ BL func_080F55E4 \n\
+/* 08075012 */ BL __fixdfsi \n\
 /* 08075016 */ LSLS R0, R0, #0X10 \n\
 /* 08075018 */ LSRS R2, R0, #0X10 \n\
 /* 0807501A */ ASRS R0, R0, #0X10 \n\

@@ -16,11 +16,11 @@ thumb_func_start func_08087AE0 \n\
 /* 08087AF6 */ LDR R0, _08087B30 \n\
 /* 08087AF8 */ LDR R0, [R0] \n\
 /* 08087AFA */ LDRH R0, [R0, #0X14] \n\
-/* 08087AFC */ BL func_080F5568 \n\
+/* 08087AFC */ BL __floatsidf \n\
 /* 08087B00 */ LDR R2, _08087B34 \n\
 /* 08087B02 */ LDR R3, _08087B38 \n\
 /* 08087B04 */ BL __muldf3 \n\
-/* 08087B08 */ BL func_080F4288 \n\
+/* 08087B08 */ BL __fixunsdfsi \n\
 /* 08087B0C */ LDRH R1, [R5] \n\
 /* 08087B0E */ ADDS R1, R0 \n\
 /* 08087B10 */ STRH R1, [R5] \n\
@@ -72,11 +72,11 @@ _08087B40: \n\
 /* 08087B54 */ LDR R0, _08087B8C \n\
 /* 08087B56 */ LDR R0, [R0] \n\
 /* 08087B58 */ LDRH R0, [R0, #0X14] \n\
-/* 08087B5A */ BL func_080F5568 \n\
+/* 08087B5A */ BL __floatsidf \n\
 /* 08087B5E */ LDR R2, _08087B90 \n\
 /* 08087B60 */ LDR R3, _08087B94 \n\
 /* 08087B62 */ BL __muldf3 \n\
-/* 08087B66 */ BL func_080F4288 \n\
+/* 08087B66 */ BL __fixunsdfsi \n\
 /* 08087B6A */ LDRH R1, [R5] \n\
 /* 08087B6C */ SUBS R1, R0 \n\
 /* 08087B6E */ STRH R1, [R5] \n\

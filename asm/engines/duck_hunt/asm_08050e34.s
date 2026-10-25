@@ -32,9 +32,9 @@ _08050E64: \n\
 /* 08050E66 */ LDRSH R0, [R2, R1] \n\
 /* 08050E68 */ SUBS R0, #0X78 \n\
 _08050E6A: \n\
-/* 08050E6A */ BL func_080F5F08 \n\
+/* 08050E6A */ BL __floatsisf \n\
 /* 08050E6E */ ADDS R1, R0, #0 \n\
-/* 08050E70 */ BL func_080F599C \n\
+/* 08050E70 */ BL __addsf3 \n\
 /* 08050E74 */ ADDS R4, R0, #0 \n\
 /* 08050E76 */ MOV R3, SL \n\
 /* 08050E78 */ LDR R6, [R3] \n\
@@ -42,14 +42,14 @@ _08050E6A: \n\
 /* 08050E7C */ ADDS R0, #0X86 \n\
 /* 08050E7E */ MOVS R1, #0 \n\
 /* 08050E80 */ LDRSH R0, [R0, R1] \n\
-/* 08050E82 */ BL func_080F5F08 \n\
+/* 08050E82 */ BL __floatsisf \n\
 /* 08050E86 */ ADDS R1, R6, #0 \n\
 /* 08050E88 */ ADDS R1, #0X88 \n\
 /* 08050E8A */ LDR R5, [R1] \n\
 /* 08050E8C */ ADDS R1, R5, #0 \n\
-/* 08050E8E */ BL func_080F59FC \n\
+/* 08050E8E */ BL __mulsf3 \n\
 /* 08050E92 */ ADDS R1, R4, #0 \n\
-/* 08050E94 */ BL func_080F5B60 \n\
+/* 08050E94 */ BL __divsf3 \n\
 /* 08050E98 */ MOV SB, R0 \n\
 /* 08050E9A */ ADDS R0, R6, #0 \n\
 /* 08050E9C */ ADDS R0, #0X84 \n\
@@ -61,22 +61,22 @@ _08050E6A: \n\
 /* 08050EA8 */ MOV R0, R8 \n\
 /* 08050EAA */ LSLS R4, R0, #0X10 \n\
 /* 08050EAC */ ASRS R0, R4, #0X10 \n\
-/* 08050EAE */ BL func_080F5F08 \n\
+/* 08050EAE */ BL __floatsisf \n\
 /* 08050EB2 */ ADDS R1, R0, #0 \n\
 /* 08050EB4 */ ADDS R0, R5, #0 \n\
-/* 08050EB6 */ BL func_080F59FC \n\
-/* 08050EBA */ BL func_080F5F68 \n\
+/* 08050EB6 */ BL __mulsf3 \n\
+/* 08050EBA */ BL __fixsfsi \n\
 /* 08050EBE */ ADDS R0, R7, R0 \n\
 /* 08050EC0 */ B _08050EDA \n\
 _08050EC2: \n\
 /* 08050EC2 */ MOV R1, R8 \n\
 /* 08050EC4 */ LSLS R4, R1, #0X10 \n\
 /* 08050EC6 */ ASRS R0, R4, #0X10 \n\
-/* 08050EC8 */ BL func_080F5F08 \n\
+/* 08050EC8 */ BL __floatsisf \n\
 /* 08050ECC */ ADDS R1, R0, #0 \n\
 /* 08050ECE */ ADDS R0, R5, #0 \n\
-/* 08050ED0 */ BL func_080F59FC \n\
-/* 08050ED4 */ BL func_080F5F68 \n\
+/* 08050ED0 */ BL __mulsf3 \n\
+/* 08050ED4 */ BL __fixsfsi \n\
 /* 08050ED8 */ SUBS R0, R7, R0 \n\
 _08050EDA: \n\
 /* 08050EDA */ ADDS R1, R6, #0 \n\
@@ -88,11 +88,11 @@ _08050EDA: \n\
 /* 08050EE6 */ ADDS R5, R4, #0 \n\
 /* 08050EE8 */ ADDS R5, #0X86 \n\
 /* 08050EEA */ ASRS R0, R0, #0X10 \n\
-/* 08050EEC */ BL func_080F5F08 \n\
+/* 08050EEC */ BL __floatsisf \n\
 /* 08050EF0 */ ADDS R1, R0, #0 \n\
 /* 08050EF2 */ MOV R0, SB \n\
-/* 08050EF4 */ BL func_080F59FC \n\
-/* 08050EF8 */ BL func_080F5F68 \n\
+/* 08050EF4 */ BL __mulsf3 \n\
+/* 08050EF8 */ BL __fixsfsi \n\
 /* 08050EFC */ LDRH R1, [R5] \n\
 /* 08050EFE */ SUBS R1, R0 \n\
 /* 08050F00 */ ADDS R4, #0X82 \n\

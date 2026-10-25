@@ -109,11 +109,11 @@ _080EAAFC: \n\
 /* 080EAAFC */ .word gCurrentSceneVariable \n\
 _080EAB00: \n\
 /* 080EAB00 */ LDRB R0, [R4] \n\
-/* 080EAB02 */ BL func_080F5568 \n\
+/* 080EAB02 */ BL __floatsidf \n\
 /* 080EAB06 */ LDR R3, _080EAB68 \n\
 /* 080EAB08 */ LDR R2, _080EAB64 \n\
 /* 080EAB0A */ BL __muldf3 \n\
-/* 080EAB0E */ BL func_080F4288 \n\
+/* 080EAB0E */ BL __fixunsdfsi \n\
 _080EAB12: \n\
 /* 080EAB12 */ STRB R0, [R4] \n\
 /* 080EAB14 */ LDR R5, _080EAB6C \n\

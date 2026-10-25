@@ -226,7 +226,7 @@ _0807BFDC: \n\
 /* 0807BFF2 */ ADDS R1, R0, #0 \n\
 /* 0807BFF4 */ CMP R1, #0 \n\
 /* 0807BFF6 */ BLT _0807C014 \n\
-/* 0807BFF8 */ BL func_080F5F08 \n\
+/* 0807BFF8 */ BL __floatsisf \n\
 /* 0807BFFC */ B _0807C028 \n\
  \n\
 .balign 4, 0 \n\
@@ -250,18 +250,18 @@ _0807C014: \n\
 /* 0807C016 */ ANDS R0, R1 \n\
 /* 0807C018 */ LSRS R1, R1, #1 \n\
 /* 0807C01A */ ORRS R0, R1 \n\
-/* 0807C01C */ BL func_080F5F08 \n\
+/* 0807C01C */ BL __floatsisf \n\
 /* 0807C020 */ ADDS R4, R0, #0 \n\
 /* 0807C022 */ ADDS R1, R4, #0 \n\
-/* 0807C024 */ BL func_080F599C \n\
+/* 0807C024 */ BL __addsf3 \n\
 _0807C028: \n\
 /* 0807C028 */ ADDS R4, R0, #0 \n\
 /* 0807C02A */ ADDS R0, R5, #0 \n\
-/* 0807C02C */ BL func_080F5F08 \n\
+/* 0807C02C */ BL __floatsisf \n\
 /* 0807C030 */ ADDS R1, R4, #0 \n\
-/* 0807C032 */ BL func_080F5B60 \n\
+/* 0807C032 */ BL __divsf3 \n\
 /* 0807C036 */ LDR R1, _0807C0B8 \n\
-/* 0807C038 */ BL func_080F59FC \n\
+/* 0807C038 */ BL __mulsf3 \n\
 /* 0807C03C */ ADDS R4, R0, #0 \n\
 /* 0807C03E */ MOVS R7, #0 \n\
 /* 0807C040 */ LDR R0, _0807C0BC \n\
@@ -274,10 +274,10 @@ _0807C04A: \n\
 /* 0807C04C */ ADD R0, R8 \n\
 /* 0807C04E */ MOVS R2, #0 \n\
 /* 0807C050 */ LDRSH R0, [R0, R2] \n\
-/* 0807C052 */ BL func_080F5F08 \n\
+/* 0807C052 */ BL __floatsisf \n\
 /* 0807C056 */ ADDS R5, R0, #0 \n\
 /* 0807C058 */ ADDS R1, R4, #0 \n\
-/* 0807C05A */ BL func_080F5E30 \n\
+/* 0807C05A */ BL __gesf2 \n\
 /* 0807C05E */ ADDS R6, R7, #1 \n\
 /* 0807C060 */ CMP R0, #0 \n\
 /* 0807C062 */ BLT _0807C07A \n\
@@ -285,24 +285,24 @@ _0807C04A: \n\
 /* 0807C066 */ ADD R0, SB \n\
 /* 0807C068 */ MOVS R3, #0 \n\
 /* 0807C06A */ LDRSH R0, [R0, R3] \n\
-/* 0807C06C */ BL func_080F5F08 \n\
+/* 0807C06C */ BL __floatsisf \n\
 /* 0807C070 */ ADDS R1, R4, #0 \n\
-/* 0807C072 */ BL func_080F5EC0 \n\
+/* 0807C072 */ BL __lesf2 \n\
 /* 0807C076 */ CMP R0, #0 \n\
 /* 0807C078 */ BLE _0807C09C \n\
 _0807C07A: \n\
 /* 0807C07A */ ADDS R0, R5, #0 \n\
 /* 0807C07C */ ADDS R1, R4, #0 \n\
-/* 0807C07E */ BL func_080F5EC0 \n\
+/* 0807C07E */ BL __lesf2 \n\
 /* 0807C082 */ CMP R0, #0 \n\
 /* 0807C084 */ BGT _0807C0D4 \n\
 /* 0807C086 */ LSLS R0, R6, #1 \n\
 /* 0807C088 */ ADD R0, R8 \n\
 /* 0807C08A */ MOVS R5, #0 \n\
 /* 0807C08C */ LDRSH R0, [R0, R5] \n\
-/* 0807C08E */ BL func_080F5F08 \n\
+/* 0807C08E */ BL __floatsisf \n\
 /* 0807C092 */ ADDS R1, R4, #0 \n\
-/* 0807C094 */ BL func_080F5E30 \n\
+/* 0807C094 */ BL __gesf2 \n\
 /* 0807C098 */ CMP R0, #0 \n\
 /* 0807C09A */ BLT _0807C0D4 \n\
 _0807C09C: \n\

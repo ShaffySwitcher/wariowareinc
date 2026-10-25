@@ -7,14 +7,14 @@ thumb_func_start func_0806D6B0 \n\
 /* 0806D6B4 */ LDR R0, _0806D718 \n\
 /* 0806D6B6 */ LDR R0, [R0] \n\
 /* 0806D6B8 */ LDRH R0, [R0, #0X14] \n\
-/* 0806D6BA */ BL func_080F5568 \n\
+/* 0806D6BA */ BL __floatsidf \n\
 /* 0806D6BE */ LDR R2, _0806D71C \n\
 /* 0806D6C0 */ LDR R3, _0806D720 \n\
 /* 0806D6C2 */ BL __muldf3 \n\
 /* 0806D6C6 */ LDR R2, _0806D724 \n\
 /* 0806D6C8 */ LDR R3, _0806D728 \n\
 /* 0806D6CA */ BL __adddf3 \n\
-/* 0806D6CE */ BL func_080F55E4 \n\
+/* 0806D6CE */ BL __fixdfsi \n\
 /* 0806D6D2 */ LDR R3, _0806D72C \n\
 /* 0806D6D4 */ LDR R2, [R3] \n\
 /* 0806D6D6 */ ADDS R2, #0X67 \n\

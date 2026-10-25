@@ -11,13 +11,13 @@ thumb_func_start func_08079CF8 \n\
 /* 08079D04 */ CMP R1, R0 \n\
 /* 08079D06 */ BLE _08079DAC \n\
 /* 08079D08 */ ADDS R0, R1, #0 \n\
-/* 08079D0A */ BL func_080F5568 \n\
+/* 08079D0A */ BL __floatsidf \n\
 /* 08079D0E */ ADDS R5, R1, #0 \n\
 /* 08079D10 */ ADDS R4, R0, #0 \n\
 /* 08079D12 */ LDR R0, _08079D88 \n\
 /* 08079D14 */ LDR R0, [R0] \n\
 /* 08079D16 */ LDRH R0, [R0, #0X14] \n\
-/* 08079D18 */ BL func_080F5568 \n\
+/* 08079D18 */ BL __floatsidf \n\
 /* 08079D1C */ LDR R2, _08079D8C \n\
 /* 08079D1E */ LDR R3, _08079D90 \n\
 /* 08079D20 */ BL __muldf3 \n\
@@ -26,7 +26,7 @@ thumb_func_start func_08079CF8 \n\
 /* 08079D28 */ ADDS R1, R5, #0 \n\
 /* 08079D2A */ ADDS R0, R4, #0 \n\
 /* 08079D2C */ BL __subdf3 \n\
-/* 08079D30 */ BL func_080F55E4 \n\
+/* 08079D30 */ BL __fixdfsi \n\
 /* 08079D34 */ ADDS R2, R0, #0 \n\
 /* 08079D36 */ STR R2, [R6, #0X20] \n\
 /* 08079D38 */ LDR R0, _08079D94 \n\
@@ -39,14 +39,14 @@ thumb_func_start func_08079CF8 \n\
 /* 08079D48 */ LDR R4, [R7] \n\
 /* 08079D4A */ LDR R0, [R4, #0X20] \n\
 /* 08079D4C */ ASRS R0, R0, #8 \n\
-/* 08079D4E */ BL func_080F5568 \n\
+/* 08079D4E */ BL __floatsidf \n\
 /* 08079D52 */ LDR R2, _08079D98 \n\
 /* 08079D54 */ LDR R3, _08079D9C \n\
 /* 08079D56 */ BL __muldf3 \n\
 /* 08079D5A */ LDR R2, _08079DA0 \n\
 /* 08079D5C */ LDR R3, _08079DA4 \n\
 /* 08079D5E */ BL __adddf3 \n\
-/* 08079D62 */ BL func_080F4288 \n\
+/* 08079D62 */ BL __fixunsdfsi \n\
 /* 08079D66 */ STRB R0, [R4, #4] \n\
 /* 08079D68 */ LDR R1, [R7] \n\
 /* 08079D6A */ LDRB R0, [R1, #4] \n\

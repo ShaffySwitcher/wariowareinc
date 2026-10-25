@@ -50,13 +50,13 @@ thumb_func_start func_08091718 \n\
 /* 08091774 */ LDR R0, [R7] \n\
 /* 08091776 */ MOV R8, R0 \n\
 /* 08091778 */ LDRB R0, [R0, #0XA] \n\
-/* 0809177A */ BL func_080F5568 \n\
+/* 0809177A */ BL __floatsidf \n\
 /* 0809177E */ ADDS R5, R1, #0 \n\
 /* 08091780 */ ADDS R4, R0, #0 \n\
 /* 08091782 */ MOV R1, SB \n\
 /* 08091784 */ LDR R0, [R1] \n\
 /* 08091786 */ LDRH R0, [R0, #0X14] \n\
-/* 08091788 */ BL func_080F5568 \n\
+/* 08091788 */ BL __floatsidf \n\
 /* 0809178C */ LDR R2, _080917F0 \n\
 /* 0809178E */ LDR R3, _080917F4 \n\
 /* 08091790 */ BL __muldf3 \n\
@@ -69,7 +69,7 @@ thumb_func_start func_08091718 \n\
 /* 080917A2 */ ADDS R2, R0, #0 \n\
 /* 080917A4 */ ADDS R1, R5, #0 \n\
 /* 080917A6 */ ADDS R0, R4, #0 \n\
-/* 080917A8 */ BL func_080F5438 \n\
+/* 080917A8 */ BL __gtdf2 \n\
 /* 080917AC */ CMP R0, #0 \n\
 /* 080917AE */ BLE _0809183A \n\
 /* 080917B0 */ MOV R2, SL \n\

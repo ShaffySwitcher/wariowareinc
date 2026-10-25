@@ -41,11 +41,11 @@ thumb_func_start func_080D8D10 \n\
 /* 080D8D58 */ STRH R0, [R3] \n\
 /* 080D8D5A */ MOVS R3, #0X10 \n\
 /* 080D8D5C */ LDRSH R0, [R4, R3] \n\
-/* 080D8D5E */ BL func_080F5568 \n\
+/* 080D8D5E */ BL __floatsidf \n\
 /* 080D8D62 */ LDR R2, _080D8E04 \n\
 /* 080D8D64 */ LDR R3, _080D8E08 \n\
 /* 080D8D66 */ BL __muldf3 \n\
-/* 080D8D6A */ BL func_080F55E4 \n\
+/* 080D8D6A */ BL __fixdfsi \n\
 /* 080D8D6E */ STRH R0, [R4, #0X10] \n\
 _080D8D70: \n\
 /* 080D8D70 */ LDR R0, _080D8E0C \n\
