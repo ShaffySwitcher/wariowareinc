@@ -17,6 +17,7 @@ enum GlobalSceneEnum {
 #define gCurrentSceneDataRam D_03003860
 #define CURRENT_SCENE_DATA(type) (*(type *)gCurrentSceneData)
 #define CURRENT_SCENE_DATA_PTR(type) ((type *)gCurrentSceneData)
+#define CURRENT_SCENE_DATA_RAM(type) (*(type *)gCurrentSceneDataRam) // used by the init scene... thanks wario.
 
 // DATA
 extern u8 D_03003860[];

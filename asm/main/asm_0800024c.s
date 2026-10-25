@@ -230,7 +230,7 @@ func_080003AA: \n\
 /* 080003B8 */ BEQ _080003EC \n\
 /* 080003BA */ B _080003F0 \n\
 func_080003BC: \n\
-/* 080003BC */ BL func_0800DB04 \n\
+/* 080003BC */ BL init_scene_run \n\
 /* 080003C0 */ B _080003F0 \n\
 func_080003C2: \n\
 /* 080003C2 */ BL title_scene_run \n\

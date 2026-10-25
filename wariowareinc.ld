@@ -41,7 +41,7 @@ SECTIONS {
         build/src/beatscript.c.o(.text);
         build/src/code_0800b77c.c.o(.text);
         build/src/scene.c.o(.text);
-        build/src/scenes/miw_main_scene.c.o(.text);
+        build/src/scenes/init.c.o(.text);
         build/src/scenes/title.c.o(.text);
         build/src/scenes/name_select.c.o(.text);
         build/src/scenes/main_menu.c.o(.text);
