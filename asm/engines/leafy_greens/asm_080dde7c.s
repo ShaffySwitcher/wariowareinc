@@ -57,13 +57,13 @@ _080DDEC2: \n\
 /* 080DDED6 */ ADDS R1, R4, #0 \n\
 /* 080DDED8 */ ADDS R2, R5, #0 \n\
 /* 080DDEDA */ MOVS R3, #0 \n\
-/* 080DDEDC */ BL func_08001C08 \n\
+/* 080DDEDC */ BL affine_param_set_rot_scale_xy \n\
 /* 080DDEE0 */ LDR R0, [R6] \n\
 /* 080DDEE2 */ ADDS R0, #0X22 \n\
 /* 080DDEE4 */ ADDS R1, R4, #0 \n\
 /* 080DDEE6 */ ADDS R2, R5, #0 \n\
 /* 080DDEE8 */ MOVS R3, #0 \n\
-/* 080DDEEA */ BL func_08001CD0 \n\
+/* 080DDEEA */ BL affine_matrix_set_rot_scale_inv_xy \n\
 _080DDEEE: \n\
 /* 080DDEEE */ POP {R4, R5, R6} \n\
 /* 080DDEF0 */ POP {R0} \n\

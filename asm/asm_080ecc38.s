@@ -80,12 +80,12 @@ _080ECC72:
 /* 080ECCB8 */ ADDS R1, R5, #0
 /* 080ECCBA */ ADDS R2, R4, #0
 /* 080ECCBC */ MOVS R3, #0
-/* 080ECCBE */ BL func_08001C08
+/* 080ECCBE */ BL affine_param_set_rot_scale_xy
 /* 080ECCC2 */ ADDS R0, R7, #4
 /* 080ECCC4 */ ADDS R1, R5, #0
 /* 080ECCC6 */ ADDS R2, R4, #0
 /* 080ECCC8 */ MOVS R3, #0
-/* 080ECCCA */ BL func_08001CD0
+/* 080ECCCA */ BL affine_matrix_set_rot_scale_inv_xy
 _080ECCCE:
 /* 080ECCCE */ POP {R4, R5, R6, R7}
 /* 080ECCD0 */ POP {R0}

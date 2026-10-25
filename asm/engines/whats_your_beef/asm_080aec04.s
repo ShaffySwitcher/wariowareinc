@@ -21,7 +21,7 @@ thumb_func_start func_080AEC04 \n\
 /* 080AEC26 */ LSLS R4, R4, #1 \n\
 /* 080AEC28 */ ADDS R1, R4, #0 \n\
 /* 080AEC2A */ MOVS R2, #0 \n\
-/* 080AEC2C */ BL func_08001BA4 \n\
+/* 080AEC2C */ BL affine_param_set_rot_scale \n\
 /* 080AEC30 */ LDR R6, _080AECA4 \n\
 /* 080AEC32 */ LDR R0, [R6] \n\
 /* 080AEC34 */ LDR R1, _080AECA8 \n\
@@ -223,7 +223,7 @@ _080AED48: \n\
 /* 080AEDA8 */ MOVS R1, #0X80 \n\
 /* 080AEDAA */ LSLS R1, R1, #1 \n\
 /* 080AEDAC */ MOVS R2, #0 \n\
-/* 080AEDAE */ BL func_08001BA4 \n\
+/* 080AEDAE */ BL affine_param_set_rot_scale \n\
 /* 080AEDB2 */ MOV R3, SB \n\
 /* 080AEDB4 */ LDR R0, [R3] \n\
 /* 080AEDB6 */ LDR R1, _080AEE34 \n\

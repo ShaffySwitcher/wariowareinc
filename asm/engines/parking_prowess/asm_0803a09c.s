@@ -99,7 +99,7 @@ thumb_func_start func_0803A09C \n\
 /* 0803A172 */ MOVS R1, #0X80 \n\
 /* 0803A174 */ LSLS R1, R1, #1 \n\
 /* 0803A176 */ MOVS R2, #0 \n\
-/* 0803A178 */ BL func_08001BA4 \n\
+/* 0803A178 */ BL affine_param_set_rot_scale \n\
 /* 0803A17C */ MOV R7, R8 \n\
 /* 0803A17E */ LDR R6, _0803A1D4 \n\
 _0803A180: \n\

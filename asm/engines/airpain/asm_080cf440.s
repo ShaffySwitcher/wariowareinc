@@ -13,7 +13,7 @@ _080CF44C: \n\
 /* 080CF44E */ ASRS R1, R1, #0X10 \n\
 /* 080CF450 */ ADDS R0, R2, #0 \n\
 /* 080CF452 */ MOVS R2, #0 \n\
-/* 080CF454 */ BL func_08001BA4 \n\
+/* 080CF454 */ BL affine_param_set_rot_scale \n\
 /* 080CF458 */ POP {R0} \n\
 /* 080CF45A */ BX R0 \n\
 .ltorg \n\

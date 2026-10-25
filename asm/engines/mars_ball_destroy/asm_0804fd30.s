@@ -96,7 +96,7 @@ _0804FD56: \n\
 /* 0804FDEC */ ASRS R1, R1, #0X10 \n\
 /* 0804FDEE */ ADDS R0, R4, #0 \n\
 /* 0804FDF0 */ MOVS R2, #0 \n\
-/* 0804FDF2 */ BL func_08001BA4 \n\
+/* 0804FDF2 */ BL affine_param_set_rot_scale \n\
 /* 0804FDF6 */ B _0804FE1E \n\
  \n\
 .balign 4, 0 \n\

@@ -246,7 +246,6 @@ extern u32 gameplay_run_script(void);
 
 // EXTERNS
 extern u32 func_08003FB8(void);
-extern void func_08001B70(u32);
 extern void func_08007EAC(void);
 extern void func_08003A70(void*);
 extern void func_08003B58(void*);

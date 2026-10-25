@@ -1,6 +1,7 @@
 #include "src/scenes/gameplay.h"
 #include "src/beatscript.h"
 #include "src/audio.h"
+#include "src/affine_param.h"
 #include "src/memory_heap.h"
 #include "src/task_pool.h"
 #include "src/lib_sprite.h"
@@ -173,7 +174,7 @@ void update_active_beatscript_scene(void) {
 
                 if (!thread->unk0_b7) {
                     sprite_id_delete(gSpriteHandler, memID);
-                    func_08001B70(memID);
+                    affine_param_free_by_owner(memID);
                     mem_heap_dealloc_with_id(memID);
                     task_pool_force_cancel_id(memID);
                 }
@@ -247,7 +248,7 @@ void stop_beatscript_scene(void) {
             }
 
             sprite_id_delete(gSpriteHandler, i + 1);
-            func_08001B70(i + 1);
+            affine_param_free_by_owner(i + 1);
             mem_heap_dealloc_with_id(i + 1);
             task_pool_force_cancel_id(i + 1);
 

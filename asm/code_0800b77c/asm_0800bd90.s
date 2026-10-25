@@ -95,7 +95,7 @@ _0800BE1C: \n\
 /* 0800BE2C */ MOVS R3, #0 \n\
 /* 0800BE2E */ LDRSH R1, [R1, R3] \n\
 /* 0800BE30 */ MOVS R2, #0 \n\
-/* 0800BE32 */ BL func_08001BA4 \n\
+/* 0800BE32 */ BL affine_param_set_rot_scale \n\
 /* 0800BE36 */ LDR R1, [R4] \n\
 /* 0800BE38 */ MOVS R2, #0XC6 \n\
 /* 0800BE3A */ LSLS R2, R2, #1 \n\
@@ -104,7 +104,7 @@ _0800BE1C: \n\
 /* 0800BE40 */ MOVS R3, #0 \n\
 /* 0800BE42 */ LDRSH R1, [R1, R3] \n\
 /* 0800BE44 */ MOVS R2, #0 \n\
-/* 0800BE46 */ BL func_08001C74 \n\
+/* 0800BE46 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0800BE4A */ B _0800BEBA \n\
 _0800BE4C: \n\
 /* 0800BE4C */ LDR R3, [R4] \n\
@@ -152,7 +152,7 @@ _0800BE8C: \n\
 /* 0800BE98 */ MOVS R3, #0 \n\
 /* 0800BE9A */ LDRSH R1, [R2, R3] \n\
 /* 0800BE9C */ MOVS R2, #0 \n\
-/* 0800BE9E */ BL func_08001BA4 \n\
+/* 0800BE9E */ BL affine_param_set_rot_scale \n\
 /* 0800BEA2 */ LDR R1, [R4] \n\
 /* 0800BEA4 */ MOVS R2, #0XC6 \n\
 /* 0800BEA6 */ LSLS R2, R2, #1 \n\
@@ -163,7 +163,7 @@ _0800BE8C: \n\
 /* 0800BEB0 */ MOVS R2, #0 \n\
 /* 0800BEB2 */ LDRSH R1, [R1, R2] \n\
 /* 0800BEB4 */ MOVS R2, #0 \n\
-/* 0800BEB6 */ BL func_08001C74 \n\
+/* 0800BEB6 */ BL affine_matrix_set_rot_scale_inv \n\
 _0800BEBA: \n\
 /* 0800BEBA */ POP {R4, R5, R6} \n\
 /* 0800BEBC */ POP {R0} \n\

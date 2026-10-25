@@ -9,7 +9,7 @@ thumb_func_start func_080597A8 \n\
 /* 080597B0 */ LDRB R0, [R0] \n\
 /* 080597B2 */ LSLS R0, R0, #0X18 \n\
 /* 080597B4 */ ASRS R0, R0, #0X18 \n\
-/* 080597B6 */ BL func_08001B28 \n\
+/* 080597B6 */ BL affine_param_free \n\
 /* 080597BA */ MOVS R0, #1 \n\
 /* 080597BC */ BL func_0800CDB0 \n\
 /* 080597C0 */ POP {R0} \n\

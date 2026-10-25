@@ -78,7 +78,7 @@ thumb_func_start func_0804C824 \n\
 /* 0804C8CA */ MOVS R0, #0X50 \n\
 /* 0804C8CC */ RSBS R0, R0, #0 \n\
 /* 0804C8CE */ STR R0, [R1, #0X70] \n\
-/* 0804C8D0 */ BL func_08001AC0 \n\
+/* 0804C8D0 */ BL affine_param_alloc \n\
 /* 0804C8D4 */ LDR R1, [R6] \n\
 /* 0804C8D6 */ MOVS R2, #0X87 \n\
 /* 0804C8D8 */ LSLS R2, R2, #2 \n\
@@ -107,7 +107,7 @@ thumb_func_start func_0804C824 \n\
 /* 0804C908 */ LDR R2, _0804CB2C \n\
 /* 0804C90A */ ADDS R1, R2 \n\
 /* 0804C90C */ STRH R0, [R1] \n\
-/* 0804C90E */ BL func_08001AC0 \n\
+/* 0804C90E */ BL affine_param_alloc \n\
 /* 0804C912 */ LDR R1, [R6] \n\
 /* 0804C914 */ LDR R3, _0804CB30 \n\
 /* 0804C916 */ ADDS R1, R3 \n\
@@ -223,7 +223,7 @@ _0804C980: \n\
 /* 0804C9F2 */ ADDS R2, R4 \n\
 /* 0804C9F4 */ MOVS R0, #1 \n\
 /* 0804C9F6 */ STRB R0, [R2] \n\
-/* 0804C9F8 */ BL func_08001AC0 \n\
+/* 0804C9F8 */ BL affine_param_alloc \n\
 /* 0804C9FC */ MOV R2, SB \n\
 /* 0804C9FE */ LDR R1, [R2] \n\
 /* 0804CA00 */ LDR R3, _0804CB48 \n\
@@ -255,7 +255,7 @@ _0804C980: \n\
 /* 0804CA36 */ ADDS R1, R2 \n\
 /* 0804CA38 */ ADDS R1, R6 \n\
 /* 0804CA3A */ STRH R0, [R1] \n\
-/* 0804CA3C */ BL func_08001AC0 \n\
+/* 0804CA3C */ BL affine_param_alloc \n\
 /* 0804CA40 */ LDR R2, [R5] \n\
 /* 0804CA42 */ MOVS R3, #0X8A \n\
 /* 0804CA44 */ LSLS R3, R3, #2 \n\

@@ -146,7 +146,7 @@ _0801B06E:
 /* 0801B0A6 */ MOVS R2, #0
 /* 0801B0A8 */ LDRSB R2, [R1, R2]
 /* 0801B0AA */ ADDS R1, R5, #0
-/* 0801B0AC */ BL func_08001BA4
+/* 0801B0AC */ BL affine_param_set_rot_scale
 /* 0801B0B0 */ LDR R1, [R4]
 /* 0801B0B2 */ ADDS R0, R1, #0
 /* 0801B0B4 */ ADDS R0, #0XB4
@@ -154,7 +154,7 @@ _0801B06E:
 /* 0801B0B8 */ MOVS R2, #0
 /* 0801B0BA */ LDRSB R2, [R1, R2]
 /* 0801B0BC */ ADDS R1, R5, #0
-/* 0801B0BE */ BL func_08001C74
+/* 0801B0BE */ BL affine_matrix_set_rot_scale_inv
 _0801B0C2:
 /* 0801B0C2 */ POP {R4, R5, R6, R7}
 /* 0801B0C4 */ POP {R0}

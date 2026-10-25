@@ -122,7 +122,7 @@ _08057A5A: \n\
 /* 08057AAC */ MOVS R1, #0X80 \n\
 /* 08057AAE */ LSLS R1, R1, #1 \n\
 /* 08057AB0 */ MOVS R2, #0 \n\
-/* 08057AB2 */ BL func_08001BA4 \n\
+/* 08057AB2 */ BL affine_param_set_rot_scale \n\
 /* 08057AB6 */ LDR R0, [R7] \n\
 /* 08057AB8 */ MOVS R4, #0X10 \n\
 /* 08057ABA */ LDRSH R1, [R5, R4] \n\

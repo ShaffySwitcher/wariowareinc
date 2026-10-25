@@ -243,7 +243,7 @@ thumb_func_start func_0805447C \n\
 /* 0805467E */ STR R1, [R0] \n\
 /* 08054680 */ LDR R0, [R2] \n\
 /* 08054682 */ MOVS R2, #0 \n\
-/* 08054684 */ BL func_08001BA4 \n\
+/* 08054684 */ BL affine_param_set_rot_scale \n\
 /* 08054688 */ BL func_08054784 \n\
 /* 0805468C */ LDR R4, _08054708 \n\
 /* 0805468E */ LDR R0, [R4] \n\

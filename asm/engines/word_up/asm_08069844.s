@@ -162,7 +162,7 @@ _0806996A: \n\
 /* 0806998A */ LDRH R0, [R7, #2] \n\
 /* 0806998C */ LSLS R0, R0, #8 \n\
 /* 0806998E */ STR R0, [R2] \n\
-/* 08069990 */ BL func_08001AC0 \n\
+/* 08069990 */ BL affine_param_alloc \n\
 /* 08069994 */ LDR R1, [R6] \n\
 /* 08069996 */ ADDS R1, #0XCC \n\
 /* 08069998 */ ADDS R1, R4 \n\
@@ -181,7 +181,7 @@ _0806996A: \n\
 /* 080699B2 */ MOV R1, R8 \n\
 /* 080699B4 */ MOV R2, R8 \n\
 /* 080699B6 */ MOVS R3, #0 \n\
-/* 080699B8 */ BL func_08001C08 \n\
+/* 080699B8 */ BL affine_param_set_rot_scale_xy \n\
 /* 080699BC */ ADDS R0, R4, #1 \n\
 /* 080699BE */ LSLS R0, R0, #0X10 \n\
 /* 080699C0 */ LSRS R7, R0, #0X10 \n\

@@ -140,7 +140,7 @@ _08035F0C: \n\
 /* 08035F14 */ LSLS R1, R1, #1 \n\
 /* 08035F16 */ MOVS R3, #0 \n\
 /* 08035F18 */ LDRSH R2, [R5, R3] \n\
-/* 08035F1A */ BL func_08001BA4 \n\
+/* 08035F1A */ BL affine_param_set_rot_scale \n\
 /* 08035F1E */ ADDS R5, R4, #0 \n\
 /* 08035F20 */ ADDS R5, #0X8F \n\
 /* 08035F22 */ MOVS R3, #0 \n\

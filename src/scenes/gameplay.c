@@ -1,5 +1,6 @@
 #include "src/scenes/gameplay.h"
 #include "src/audio.h"
+#include "src/affine_param.h"
 #include "src/memory.h"
 #include "src/memory_heap.h"
 #include "src/task_pool.h"
@@ -98,7 +99,7 @@ void gameplay_stop_scene(void) {
     for(i = 0; i < 2;){
         i++; // why?
         sprite_id_delete(gSpriteHandler, i);
-        func_08001B70(i);
+        affine_param_free_by_owner(i);
         task_pool_force_cancel_id(i);
         mem_heap_dealloc_with_id(i);
     }

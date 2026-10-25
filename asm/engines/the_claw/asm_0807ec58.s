@@ -81,7 +81,7 @@ _0807ECE8: \n\
 /* 0807ECF2 */ ADDS R1, #0X24 \n\
 /* 0807ECF4 */ LDRB R2, [R1] \n\
 /* 0807ECF6 */ ADDS R1, R5, #0 \n\
-/* 0807ECF8 */ BL func_08001BA4 \n\
+/* 0807ECF8 */ BL affine_param_set_rot_scale \n\
 /* 0807ECFC */ LDR R1, [R4] \n\
 /* 0807ECFE */ LDR R0, [R1, #0X20] \n\
 /* 0807ED00 */ ADDS R1, #0X24 \n\
@@ -89,7 +89,7 @@ _0807ECE8: \n\
 /* 0807ED04 */ MOVS R2, #0XFF \n\
 /* 0807ED06 */ SUBS R2, R1 \n\
 /* 0807ED08 */ ADDS R1, R5, #0 \n\
-/* 0807ED0A */ BL func_08001BA4 \n\
+/* 0807ED0A */ BL affine_param_set_rot_scale \n\
 /* 0807ED0E */ POP {R4, R5} \n\
 /* 0807ED10 */ POP {R0} \n\
 /* 0807ED12 */ BX R0 \n\

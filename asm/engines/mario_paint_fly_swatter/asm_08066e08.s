@@ -136,7 +136,7 @@ _08066EE8: \n\
 /* 08066EF8 */ ASRS R2, R2, #0X10 \n\
 /* 08066EFA */ MOVS R1, #0X80 \n\
 /* 08066EFC */ LSLS R1, R1, #1 \n\
-/* 08066EFE */ BL func_08001BA4 \n\
+/* 08066EFE */ BL affine_param_set_rot_scale \n\
 /* 08066F02 */ LDR R0, _08066F40 \n\
 /* 08066F04 */ LDR R0, [R0] \n\
 /* 08066F06 */ MOVS R2, #4 \n\

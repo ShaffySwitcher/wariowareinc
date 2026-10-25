@@ -129,7 +129,7 @@ _080EAB12: \n\
 /* 080EAB28 */ ASRS R2, R2, #0X10 \n\
 /* 080EAB2A */ ADDS R1, R2, #0 \n\
 /* 080EAB2C */ MOVS R3, #0 \n\
-/* 080EAB2E */ BL func_08001C08 \n\
+/* 080EAB2E */ BL affine_param_set_rot_scale_xy \n\
 /* 080EAB32 */ LDR R1, [R5] \n\
 /* 080EAB34 */ ADDS R0, R1, #0 \n\
 /* 080EAB36 */ ADDS R0, #0X10 \n\
@@ -140,7 +140,7 @@ _080EAB12: \n\
 /* 080EAB40 */ ADDS R1, R4, #0 \n\
 /* 080EAB42 */ ADDS R2, R4, #0 \n\
 /* 080EAB44 */ MOVS R3, #0 \n\
-/* 080EAB46 */ BL func_08001CD0 \n\
+/* 080EAB46 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080EAB4A */ LDR R0, =gSpriteHandler \n\
 /* 080EAB4C */ LDR R0, [R0] \n\
 /* 080EAB4E */ LDR R3, [R5] \n\

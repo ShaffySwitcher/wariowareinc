@@ -31,12 +31,12 @@ _080AEF04: \n\
 /* 080AEF28 */ LSLS R4, R4, #1 \n\
 /* 080AEF2A */ ADDS R1, R4, #0 \n\
 /* 080AEF2C */ MOVS R2, #0 \n\
-/* 080AEF2E */ BL func_08001BA4 \n\
+/* 080AEF2E */ BL affine_param_set_rot_scale \n\
 /* 080AEF32 */ MOVS R0, #1 \n\
 /* 080AEF34 */ LDRSB R0, [R5, R0] \n\
 /* 080AEF36 */ ADDS R1, R4, #0 \n\
 /* 080AEF38 */ MOVS R2, #0 \n\
-/* 080AEF3A */ BL func_08001BA4 \n\
+/* 080AEF3A */ BL affine_param_set_rot_scale \n\
 /* 080AEF3E */ LDR R0, [R6] \n\
 /* 080AEF40 */ MOVS R2, #2 \n\
 /* 080AEF42 */ LDRSH R1, [R5, R2] \n\

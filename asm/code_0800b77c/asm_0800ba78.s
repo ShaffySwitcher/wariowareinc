@@ -8,7 +8,7 @@ thumb_func_start func_0800BA78 \n\
 /* 0800BA80 */ PUSH {R5, R6, R7} \n\
 /* 0800BA82 */ SUB SP, #0X18 \n\
 /* 0800BA84 */ MOVS R0, #2 \n\
-/* 0800BA86 */ BL func_08001B04 \n\
+/* 0800BA86 */ BL affine_param_alloc_owner \n\
 /* 0800BA8A */ LDR R5, _0800BB68 \n\
 /* 0800BA8C */ LDR R1, [R5] \n\
 /* 0800BA8E */ MOVS R2, #0XCA \n\
@@ -65,7 +65,7 @@ thumb_func_start func_0800BA78 \n\
 /* 0800BAFA */ LDRSB R0, [R1, R0] \n\
 /* 0800BAFC */ MOVS R1, #0X40 \n\
 /* 0800BAFE */ MOVS R2, #0 \n\
-/* 0800BB00 */ BL func_08001BA4 \n\
+/* 0800BB00 */ BL affine_param_set_rot_scale \n\
 /* 0800BB04 */ LDR R1, [R5] \n\
 /* 0800BB06 */ ADDS R7, #6 \n\
 /* 0800BB08 */ MOV R8, R7 \n\
@@ -75,7 +75,7 @@ thumb_func_start func_0800BA78 \n\
 /* 0800BB10 */ MOVS R3, #0 \n\
 /* 0800BB12 */ LDRSH R1, [R1, R3] \n\
 /* 0800BB14 */ MOVS R2, #0 \n\
-/* 0800BB16 */ BL func_08001C74 \n\
+/* 0800BB16 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0800BB1A */ MOV R4, SL \n\
 /* 0800BB1C */ LDR R0, [R4] \n\
 /* 0800BB1E */ LDR R3, [R5] \n\

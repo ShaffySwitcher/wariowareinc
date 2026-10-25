@@ -13,7 +13,7 @@ _080CF6CC: \n\
 /* 080CF6CE */ ASRS R1, R1, #0X10 \n\
 /* 080CF6D0 */ ADDS R0, R2, #0 \n\
 /* 080CF6D2 */ MOVS R2, #0 \n\
-/* 080CF6D4 */ BL func_08001BA4 \n\
+/* 080CF6D4 */ BL affine_param_set_rot_scale \n\
 /* 080CF6D8 */ POP {R0} \n\
 /* 080CF6DA */ BX R0 \n\
 .ltorg \n\

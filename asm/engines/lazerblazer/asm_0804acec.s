@@ -83,7 +83,7 @@ _0804AD04: \n\
 /* 0804AD8C */ LSLS R1, R1, #0X10 \n\
 /* 0804AD8E */ ASRS R1, R1, #0X10 \n\
 /* 0804AD90 */ MOVS R2, #0 \n\
-/* 0804AD92 */ BL func_08001BA4 \n\
+/* 0804AD92 */ BL affine_param_set_rot_scale \n\
 /* 0804AD96 */ MOVS R0, #0X80 \n\
 /* 0804AD98 */ LSLS R0, R0, #2 \n\
 /* 0804AD9A */ CMP R8, R0 \n\

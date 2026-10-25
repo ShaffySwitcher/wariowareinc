@@ -166,7 +166,7 @@ _0802ABD8: \n\
 /* 0802AC2C */ LDRB R2, [R4] \n\
 /* 0802AC2E */ RSBS R2, R2, #0 \n\
 /* 0802AC30 */ MOV R1, SL \n\
-/* 0802AC32 */ BL func_08001BA4 \n\
+/* 0802AC32 */ BL affine_param_set_rot_scale \n\
 /* 0802AC36 */ MOV R0, SL \n\
 /* 0802AC38 */ MOV R1, SB \n\
 /* 0802AC3A */ BL __udivsi3 \n\
@@ -286,7 +286,7 @@ _0802ACBA: \n\
 /* 0802AD0E */ RSBS R2, R6, #0 \n\
 /* 0802AD10 */ MOVS R1, #0X80 \n\
 /* 0802AD12 */ LSLS R1, R1, #1 \n\
-/* 0802AD14 */ BL func_08001BA4 \n\
+/* 0802AD14 */ BL affine_param_set_rot_scale \n\
 /* 0802AD18 */ LDR R1, [R4] \n\
 /* 0802AD1A */ LSLS R1, R1, #8 \n\
 /* 0802AD1C */ LDR R0, [R4, #4] \n\

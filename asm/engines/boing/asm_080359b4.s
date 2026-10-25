@@ -5,7 +5,7 @@ thumb_func_start func_080359B4 \n\
 /* 080359B4 */ PUSH {LR} \n\
 /* 080359B6 */ ADDS R0, #0X88 \n\
 /* 080359B8 */ LDR R0, [R0] \n\
-/* 080359BA */ BL func_08001B28 \n\
+/* 080359BA */ BL affine_param_free \n\
 /* 080359BE */ POP {R0} \n\
 /* 080359C0 */ BX R0 \n\
  \n\

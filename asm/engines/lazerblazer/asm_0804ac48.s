@@ -28,7 +28,7 @@ _0804AC6C: \n\
 /* 0804AC74 */ MOVS R1, #0X80 \n\
 /* 0804AC76 */ LSLS R1, R1, #1 \n\
 /* 0804AC78 */ MOVS R2, #0 \n\
-/* 0804AC7A */ BL func_08001BA4 \n\
+/* 0804AC7A */ BL affine_param_set_rot_scale \n\
 /* 0804AC7E */ LDR R0, [R6] \n\
 /* 0804AC80 */ MOVS R2, #4 \n\
 /* 0804AC82 */ LDRSH R1, [R4, R2] \n\

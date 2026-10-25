@@ -35,7 +35,7 @@ _0800D35A: \n\
 /* 0800D35C */ LDRB R0, [R0] \n\
 /* 0800D35E */ LSLS R0, R0, #0X18 \n\
 /* 0800D360 */ ASRS R0, R0, #0X18 \n\
-/* 0800D362 */ BL func_08001B28 \n\
+/* 0800D362 */ BL affine_param_free \n\
 /* 0800D366 */ ADDS R4, #1 \n\
 /* 0800D368 */ LDRB R0, [R6] \n\
 /* 0800D36A */ CMP R4, R0 \n\

@@ -557,7 +557,7 @@ _080DC24A: \n\
 /* 080DC264 */ ASRS R2, R2, #0X10 \n\
 /* 080DC266 */ ADDS R1, R2, #0 \n\
 /* 080DC268 */ MOVS R3, #0 \n\
-/* 080DC26A */ BL func_08001C08 \n\
+/* 080DC26A */ BL affine_param_set_rot_scale_xy \n\
 /* 080DC26E */ LDR R2, [R7] \n\
 /* 080DC270 */ ADDS R0, R2, #0 \n\
 /* 080DC272 */ ADDS R0, #0X5E \n\

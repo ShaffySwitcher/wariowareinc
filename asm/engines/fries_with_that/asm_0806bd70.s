@@ -177,7 +177,7 @@ _0806BE94: \n\
 /* 0806BE9A */ LDRSH R1, [R6, R2] \n\
 /* 0806BE9C */ MOVS R3, #0X24 \n\
 /* 0806BE9E */ LDRSH R2, [R6, R3] \n\
-/* 0806BEA0 */ BL func_08001BA4 \n\
+/* 0806BEA0 */ BL affine_param_set_rot_scale \n\
 /* 0806BEA4 */ ADDS R5, R6, #0 \n\
 /* 0806BEA6 */ ADDS R5, #0X1A \n\
 /* 0806BEA8 */ MOVS R0, #0X22 \n\
@@ -185,7 +185,7 @@ _0806BE94: \n\
 /* 0806BEAC */ MOVS R3, #0X24 \n\
 /* 0806BEAE */ LDRSH R2, [R6, R3] \n\
 /* 0806BEB0 */ ADDS R0, R5, #0 \n\
-/* 0806BEB2 */ BL func_08001C74 \n\
+/* 0806BEB2 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0806BEB6 */ LDR R4, =gSpriteHandler \n\
 /* 0806BEB8 */ LDR R0, [R4] \n\
 /* 0806BEBA */ MOVS R2, #0XC \n\

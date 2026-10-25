@@ -286,7 +286,7 @@ _0805B9E4: \n\
 /* 0805BA12 */ MOVS R1, #0X80 \n\
 /* 0805BA14 */ LSLS R1, R1, #5 \n\
 /* 0805BA16 */ MOVS R2, #0 \n\
-/* 0805BA18 */ BL func_08001BA4 \n\
+/* 0805BA18 */ BL affine_param_set_rot_scale \n\
 /* 0805BA1C */ LDR R0, [R7] \n\
 /* 0805BA1E */ MOVS R2, #4 \n\
 /* 0805BA20 */ LDRSH R1, [R4, R2] \n\

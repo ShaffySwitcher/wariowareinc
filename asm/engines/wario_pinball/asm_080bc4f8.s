@@ -440,7 +440,7 @@ _080BC7F8: \n\
 /* 080BC87C */ ASRS R1, R1, #0X10 \n\
 /* 080BC87E */ ADDS R2, R3, #0 \n\
 /* 080BC880 */ MOVS R3, #0 \n\
-/* 080BC882 */ BL func_08001C08 \n\
+/* 080BC882 */ BL affine_param_set_rot_scale_xy \n\
 /* 080BC886 */ ADDS R0, R7, #1 \n\
 /* 080BC888 */ LSLS R0, R0, #0X18 \n\
 /* 080BC88A */ LSRS R7, R0, #0X18 \n\

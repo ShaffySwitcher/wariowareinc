@@ -43,7 +43,7 @@ _080E246E: \n\
 /* 080E249A */ MOVS R1, #0X80 \n\
 /* 080E249C */ LSLS R1, R1, #1 \n\
 /* 080E249E */ MOV R2, SL \n\
-/* 080E24A0 */ BL func_08001BA4 \n\
+/* 080E24A0 */ BL affine_param_set_rot_scale \n\
 /* 080E24A4 */ LDR R0, [R7] \n\
 /* 080E24A6 */ LDR R1, [R0, #0X1C] \n\
 /* 080E24A8 */ STR R1, [SP] \n\
@@ -114,7 +114,7 @@ _080E246E: \n\
 /* 080E2530 */ MOVS R1, #0X80 \n\
 /* 080E2532 */ LSLS R1, R1, #1 \n\
 /* 080E2534 */ MOV R2, SL \n\
-/* 080E2536 */ BL func_08001BA4 \n\
+/* 080E2536 */ BL affine_param_set_rot_scale \n\
 _080E253A: \n\
 /* 080E253A */ ADD SP, #4 \n\
 /* 080E253C */ POP {R3, R4, R5} \n\

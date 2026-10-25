@@ -82,7 +82,7 @@ thumb_func_start func_080BFDD4 \n\
 /* 080BFE74 */ LSLS R1, R1, #1 \n\
 /* 080BFE76 */ ADDS R2, #0X20 \n\
 /* 080BFE78 */ LDRB R2, [R2] \n\
-/* 080BFE7A */ BL func_08001BA4 \n\
+/* 080BFE7A */ BL affine_param_set_rot_scale \n\
 /* 080BFE7E */ POP {R3, R4, R5} \n\
 /* 080BFE80 */ MOV R8, R3 \n\
 /* 080BFE82 */ MOV SB, R4 \n\

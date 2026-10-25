@@ -55,12 +55,12 @@ glabel func_0801AE84
 /* 0801AEE6 */ LSLS R4, R4, #1
 /* 0801AEE8 */ ADDS R1, R4, #0
 /* 0801AEEA */ MOVS R2, #0
-/* 0801AEEC */ BL func_08001BA4
+/* 0801AEEC */ BL affine_param_set_rot_scale
 /* 0801AEF0 */ LDR R0, [R5]
 /* 0801AEF2 */ ADDS R0, #0XB4
 /* 0801AEF4 */ ADDS R1, R4, #0
 /* 0801AEF6 */ MOVS R2, #0
-/* 0801AEF8 */ BL func_08001C74
+/* 0801AEF8 */ BL affine_matrix_set_rot_scale_inv
 /* 0801AEFC */ POP {R4, R5}
 /* 0801AEFE */ POP {R0}
 /* 0801AF00 */ BX R0

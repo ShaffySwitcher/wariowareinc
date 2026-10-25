@@ -200,12 +200,12 @@ _08039894: \n\
 /* 080398CE */ LSLS R5, R5, #1 \n\
 /* 080398D0 */ ADDS R1, R5, #0 \n\
 /* 080398D2 */ ADDS R2, R4, #0 \n\
-/* 080398D4 */ BL func_08001BA4 \n\
+/* 080398D4 */ BL affine_param_set_rot_scale \n\
 /* 080398D8 */ ADDS R0, R6, #0 \n\
 /* 080398DA */ ADDS R0, #0X16 \n\
 /* 080398DC */ ADDS R1, R5, #0 \n\
 /* 080398DE */ ADDS R2, R4, #0 \n\
-/* 080398E0 */ BL func_08001C74 \n\
+/* 080398E0 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080398E4 */ B _0803990E \n\
 _080398E6: \n\
 /* 080398E6 */ LDR R4, _080399DC \n\

@@ -205,7 +205,7 @@ _080AF0F2: \n\
 /* 080AF116 */ MOVS R1, #0X80 \n\
 /* 080AF118 */ LSLS R1, R1, #1 \n\
 /* 080AF11A */ LDRB R2, [R4, #0X1C] \n\
-/* 080AF11C */ BL func_08001BA4 \n\
+/* 080AF11C */ BL affine_param_set_rot_scale \n\
 /* 080AF120 */ ADDS R0, R4, #0 \n\
 /* 080AF122 */ BL func_080AF170 \n\
 _080AF126: \n\

@@ -13,7 +13,7 @@ _0806FE26: \n\
 /* 0806FE2E */ LDRB R0, [R0] \n\
 /* 0806FE30 */ LSLS R0, R0, #0X18 \n\
 /* 0806FE32 */ ASRS R0, R0, #0X18 \n\
-/* 0806FE34 */ BL func_08001B28 \n\
+/* 0806FE34 */ BL affine_param_free \n\
 /* 0806FE38 */ ADDS R4, #1 \n\
 /* 0806FE3A */ CMP R4, #1 \n\
 /* 0806FE3C */ BLS _0806FE26 \n\
@@ -23,13 +23,13 @@ _0806FE26: \n\
 /* 0806FE44 */ LDRB R0, [R0] \n\
 /* 0806FE46 */ LSLS R0, R0, #0X18 \n\
 /* 0806FE48 */ ASRS R0, R0, #0X18 \n\
-/* 0806FE4A */ BL func_08001B28 \n\
+/* 0806FE4A */ BL affine_param_free \n\
 /* 0806FE4E */ LDR R0, [R4] \n\
 /* 0806FE50 */ ADDS R0, #0XA3 \n\
 /* 0806FE52 */ LDRB R0, [R0] \n\
 /* 0806FE54 */ LSLS R0, R0, #0X18 \n\
 /* 0806FE56 */ ASRS R0, R0, #0X18 \n\
-/* 0806FE58 */ BL func_08001B28 \n\
+/* 0806FE58 */ BL affine_param_free \n\
 /* 0806FE5C */ LDR R0, =gSpriteHandler \n\
 /* 0806FE5E */ LDR R0, [R0] \n\
 /* 0806FE60 */ LDR R1, [R4] \n\

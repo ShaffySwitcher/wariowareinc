@@ -148,13 +148,13 @@ thumb_func_start func_0807E6B0 \n\
 /* 0807E7EE */ ADDS R1, #0X24 \n\
 /* 0807E7F0 */ LDRB R2, [R1] \n\
 /* 0807E7F2 */ ADDS R1, R4, #0 \n\
-/* 0807E7F4 */ BL func_08001BA4 \n\
+/* 0807E7F4 */ BL affine_param_set_rot_scale \n\
 /* 0807E7F8 */ LDR R1, [R7] \n\
 /* 0807E7FA */ LDR R0, [R1, #0X20] \n\
 /* 0807E7FC */ ADDS R1, #0X24 \n\
 /* 0807E7FE */ LDRB R2, [R1] \n\
 /* 0807E800 */ ADDS R1, R4, #0 \n\
-/* 0807E802 */ BL func_08001BA4 \n\
+/* 0807E802 */ BL affine_param_set_rot_scale \n\
 /* 0807E806 */ MOV R1, SB \n\
 /* 0807E808 */ LDR R0, [R1] \n\
 /* 0807E80A */ LDR R1, _0807E8F4 \n\

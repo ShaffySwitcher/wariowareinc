@@ -100,13 +100,13 @@ _080DD6A4: \n\
 /* 080DD6BA */ ADDS R1, R4, #0 \n\
 /* 080DD6BC */ ADDS R2, R6, #0 \n\
 /* 080DD6BE */ MOVS R3, #0 \n\
-/* 080DD6C0 */ BL func_08001C08 \n\
+/* 080DD6C0 */ BL affine_param_set_rot_scale_xy \n\
 /* 080DD6C4 */ LDR R0, [R5] \n\
 /* 080DD6C6 */ ADDS R0, #0X22 \n\
 /* 080DD6C8 */ ADDS R1, R4, #0 \n\
 /* 080DD6CA */ ADDS R2, R6, #0 \n\
 /* 080DD6CC */ MOVS R3, #0 \n\
-/* 080DD6CE */ BL func_08001CD0 \n\
+/* 080DD6CE */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080DD6D2 */ LDR R0, =gSpriteHandler \n\
 /* 080DD6D4 */ LDR R0, [R0] \n\
 /* 080DD6D6 */ LDR R3, [R5] \n\

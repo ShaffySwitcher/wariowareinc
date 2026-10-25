@@ -88,7 +88,7 @@ _0802DFC6: \n\
 /* 0802E008 */ LSLS R1, R1, #8 \n\
 /* 0802E00A */ ASRS R1, R1, #0X10 \n\
 /* 0802E00C */ MOVS R2, #0 \n\
-/* 0802E00E */ BL func_08001BA4 \n\
+/* 0802E00E */ BL affine_param_set_rot_scale \n\
 /* 0802E012 */ POP {R4, R5, R6, R7} \n\
 /* 0802E014 */ POP {R0} \n\
 /* 0802E016 */ BX R0 \n\

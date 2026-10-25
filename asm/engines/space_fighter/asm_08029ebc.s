@@ -106,7 +106,7 @@ _08029EF6: \n\
 /* 08029F86 */ ASRS R1, R1, #0X10 \n\
 /* 08029F88 */ ADDS R0, R4, #0 \n\
 /* 08029F8A */ MOVS R2, #0 \n\
-/* 08029F8C */ BL func_08001BA4 \n\
+/* 08029F8C */ BL affine_param_set_rot_scale \n\
 _08029F90: \n\
 /* 08029F90 */ LDR R0, [R5] \n\
 /* 08029F92 */ MOV R6, R8 \n\

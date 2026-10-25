@@ -14,7 +14,7 @@ thumb_func_start func_0802E4D4 \n\
 /* 0802E4E6 */ LDRB R0, [R0] \n\
 /* 0802E4E8 */ LSLS R0, R0, #0X18 \n\
 /* 0802E4EA */ ASRS R0, R0, #0X18 \n\
-/* 0802E4EC */ BL func_08001B28 \n\
+/* 0802E4EC */ BL affine_param_free \n\
 /* 0802E4F0 */ POP {R0} \n\
 /* 0802E4F2 */ BX R0 \n\
  \n\

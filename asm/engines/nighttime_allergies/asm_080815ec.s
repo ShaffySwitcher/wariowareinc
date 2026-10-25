@@ -12,7 +12,7 @@ _080815F2: \n\
 /* 080815F8 */ LDRB R0, [R0] \n\
 /* 080815FA */ LSLS R0, R0, #0X18 \n\
 /* 080815FC */ ASRS R0, R0, #0X18 \n\
-/* 080815FE */ BL func_08001B28 \n\
+/* 080815FE */ BL affine_param_free \n\
 /* 08081602 */ ADDS R0, R4, #1 \n\
 /* 08081604 */ LSLS R0, R0, #0X18 \n\
 /* 08081606 */ LSRS R4, R0, #0X18 \n\

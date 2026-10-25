@@ -14,7 +14,7 @@ _0805D39A: \n\
 /* 0805D3A4 */ LDRB R0, [R0] \n\
 /* 0805D3A6 */ LSLS R0, R0, #0X18 \n\
 /* 0805D3A8 */ ASRS R0, R0, #0X18 \n\
-/* 0805D3AA */ BL func_08001B28 \n\
+/* 0805D3AA */ BL affine_param_free \n\
 /* 0805D3AE */ ADDS R4, #1 \n\
 /* 0805D3B0 */ CMP R4, #2 \n\
 /* 0805D3B2 */ BLS _0805D39A \n\

@@ -92,7 +92,7 @@ _0809F7EA: \n\
 /* 0809F80A */ ASRS R2, R2, #0X10 \n\
 /* 0809F80C */ ADDS R1, R2, #0 \n\
 /* 0809F80E */ MOVS R3, #0 \n\
-/* 0809F810 */ BL func_08001C08 \n\
+/* 0809F810 */ BL affine_param_set_rot_scale_xy \n\
 /* 0809F814 */ LDR R1, [R5] \n\
 /* 0809F816 */ ADDS R0, R1, #0 \n\
 /* 0809F818 */ ADDS R0, #0X99 \n\
@@ -109,7 +109,7 @@ _0809F7EA: \n\
 /* 0809F82E */ ASRS R2, R2, #0X10 \n\
 /* 0809F830 */ ADDS R1, R2, #0 \n\
 /* 0809F832 */ MOVS R3, #0 \n\
-/* 0809F834 */ BL func_08001CD0 \n\
+/* 0809F834 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 0809F838 */ LDR R4, _0809F8A4 \n\
 /* 0809F83A */ LDR R0, [R4] \n\
 /* 0809F83C */ LDR R1, [R5] \n\

@@ -76,7 +76,7 @@ thumb_func_start func_08029454 \n\
 /* 080294F2 */ LSLS R2, R2, #1 \n\
 /* 080294F4 */ ADDS R1, R7, R2 \n\
 /* 080294F6 */ STRH R0, [R1] \n\
-/* 080294F8 */ BL func_08001AC0 \n\
+/* 080294F8 */ BL affine_param_alloc \n\
 /* 080294FC */ LSLS R1, R0, #0X18 \n\
 /* 080294FE */ LSRS R2, R1, #0X18 \n\
 /* 08029500 */ MOVS R3, #0X9A \n\
@@ -164,7 +164,7 @@ _08029550: \n\
 /* 0802958E */ CMP R5, R8 \n\
 /* 08029590 */ BLO _08029520 \n\
 _08029592: \n\
-/* 08029592 */ BL func_08001AC0 \n\
+/* 08029592 */ BL affine_param_alloc \n\
 /* 08029596 */ LDR R1, _08029620 \n\
 /* 08029598 */ ADDS R2, R7, R1 \n\
 /* 0802959A */ MOVS R1, #0 \n\

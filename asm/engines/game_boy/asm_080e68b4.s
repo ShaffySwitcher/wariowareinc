@@ -115,14 +115,14 @@ _080E6972: \n\
 /* 080E697C */ LDRB R3, [R1, #0X15] \n\
 /* 080E697E */ ADDS R1, R4, #0 \n\
 /* 080E6980 */ ADDS R2, R4, #0 \n\
-/* 080E6982 */ BL func_08001C08 \n\
+/* 080E6982 */ BL affine_param_set_rot_scale_xy \n\
 /* 080E6986 */ LDR R1, [R6] \n\
 /* 080E6988 */ ADDS R0, R1, #0 \n\
 /* 080E698A */ ADDS R0, #0X16 \n\
 /* 080E698C */ LDRB R3, [R1, #0X15] \n\
 /* 080E698E */ ADDS R1, R4, #0 \n\
 /* 080E6990 */ ADDS R2, R4, #0 \n\
-/* 080E6992 */ BL func_08001CD0 \n\
+/* 080E6992 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080E6996 */ LDR R4, =gSpriteHandler \n\
 /* 080E6998 */ LDR R0, [R4] \n\
 /* 080E699A */ LDR R3, [R6] \n\

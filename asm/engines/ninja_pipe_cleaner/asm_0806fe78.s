@@ -54,7 +54,7 @@ _0806FECE: \n\
 /* 0806FED6 */ LDRH R2, [R6, #0X1A] \n\
 /* 0806FED8 */ LSLS R2, R2, #0X10 \n\
 /* 0806FEDA */ ASRS R2, R2, #0X18 \n\
-/* 0806FEDC */ BL func_08001BA4 \n\
+/* 0806FEDC */ BL affine_param_set_rot_scale \n\
 /* 0806FEE0 */ MOV R4, R8 \n\
 /* 0806FEE2 */ ADDS R4, #0X50 \n\
 /* 0806FEE4 */ MOVS R0, #0X18 \n\
@@ -63,7 +63,7 @@ _0806FECE: \n\
 /* 0806FEEA */ LSLS R2, R2, #0X10 \n\
 /* 0806FEEC */ ASRS R2, R2, #0X18 \n\
 /* 0806FEEE */ ADDS R0, R4, #0 \n\
-/* 0806FEF0 */ BL func_08001C74 \n\
+/* 0806FEF0 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0806FEF4 */ LDR R5, =gSpriteHandler \n\
 /* 0806FEF6 */ LDR R0, [R5] \n\
 /* 0806FEF8 */ MOVS R2, #0XC \n\
@@ -79,7 +79,7 @@ _0806FECE: \n\
 /* 0806FF0E */ LDRH R2, [R7, #0X1A] \n\
 /* 0806FF10 */ LSLS R2, R2, #0X10 \n\
 /* 0806FF12 */ ASRS R2, R2, #0X18 \n\
-/* 0806FF14 */ BL func_08001BA4 \n\
+/* 0806FF14 */ BL affine_param_set_rot_scale \n\
 /* 0806FF18 */ MOV R4, R8 \n\
 /* 0806FF1A */ ADDS R4, #0X6C \n\
 /* 0806FF1C */ MOVS R0, #0X18 \n\
@@ -88,7 +88,7 @@ _0806FECE: \n\
 /* 0806FF22 */ LSLS R2, R2, #0X10 \n\
 /* 0806FF24 */ ASRS R2, R2, #0X18 \n\
 /* 0806FF26 */ ADDS R0, R4, #0 \n\
-/* 0806FF28 */ BL func_08001C74 \n\
+/* 0806FF28 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0806FF2C */ LDR R0, [R5] \n\
 /* 0806FF2E */ MOVS R2, #0XC \n\
 /* 0806FF30 */ LDRSH R1, [R7, R2] \n\

@@ -8,7 +8,7 @@ thumb_func_start func_0807D50C \n\
 /* 0807D512 */ LDRB R0, [R0, #0X13] \n\
 /* 0807D514 */ LSLS R0, R0, #0X18 \n\
 /* 0807D516 */ ASRS R0, R0, #0X18 \n\
-/* 0807D518 */ BL func_08001B28 \n\
+/* 0807D518 */ BL affine_param_free \n\
 /* 0807D51C */ MOVS R4, #0 \n\
 /* 0807D51E */ B _0807D53C \n\
  \n\
@@ -23,7 +23,7 @@ _0807D524: \n\
 /* 0807D52C */ LDRB R0, [R0] \n\
 /* 0807D52E */ LSLS R0, R0, #0X18 \n\
 /* 0807D530 */ ASRS R0, R0, #0X18 \n\
-/* 0807D532 */ BL func_08001B28 \n\
+/* 0807D532 */ BL affine_param_free \n\
 /* 0807D536 */ ADDS R0, R4, #1 \n\
 /* 0807D538 */ LSLS R0, R0, #0X18 \n\
 /* 0807D53A */ LSRS R4, R0, #0X18 \n\

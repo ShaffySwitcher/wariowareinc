@@ -423,7 +423,7 @@ _0807A5C8: \n\
 /* 0807A636 */ MOVS R1, #0X80 \n\
 /* 0807A638 */ LSLS R1, R1, #1 \n\
 /* 0807A63A */ MOVS R2, #0 \n\
-/* 0807A63C */ BL func_08001BA4 \n\
+/* 0807A63C */ BL affine_param_set_rot_scale \n\
 /* 0807A640 */ MOV R2, SB \n\
 /* 0807A642 */ LDR R0, [R2] \n\
 /* 0807A644 */ LDR R1, [R7] \n\

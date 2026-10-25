@@ -310,7 +310,7 @@ _080A0254: \n\
 /* 080A02A8 */ LDRB R3, [R1] \n\
 /* 080A02AA */ ADDS R1, R4, #0 \n\
 /* 080A02AC */ ADDS R2, R4, #0 \n\
-/* 080A02AE */ BL func_08001C08 \n\
+/* 080A02AE */ BL affine_param_set_rot_scale_xy \n\
 /* 080A02B2 */ LDR R1, [R6] \n\
 /* 080A02B4 */ ADDS R0, R1, #0 \n\
 /* 080A02B6 */ ADDS R0, #0X24 \n\
@@ -318,7 +318,7 @@ _080A0254: \n\
 /* 080A02BA */ LDRB R3, [R1] \n\
 /* 080A02BC */ ADDS R1, R4, #0 \n\
 /* 080A02BE */ ADDS R2, R4, #0 \n\
-/* 080A02C0 */ BL func_08001CD0 \n\
+/* 080A02C0 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080A02C4 */ MOV R1, R8 \n\
 /* 080A02C6 */ LDR R0, [R1] \n\
 /* 080A02C8 */ LDR R3, [R6] \n\

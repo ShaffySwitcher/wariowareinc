@@ -103,7 +103,7 @@ _0806F624: \n\
 /* 0806F666 */ LDRSB R2, [R5, R2] \n\
 /* 0806F668 */ MOVS R1, #0X80 \n\
 /* 0806F66A */ LSLS R1, R1, #1 \n\
-/* 0806F66C */ BL func_08001BA4 \n\
+/* 0806F66C */ BL affine_param_set_rot_scale \n\
 /* 0806F670 */ MOVS R0, #3 \n\
 /* 0806F672 */ LDRSB R0, [R5, R0] \n\
 /* 0806F674 */ LSLS R0, R0, #8 \n\

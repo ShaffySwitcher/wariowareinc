@@ -107,7 +107,7 @@ thumb_func_start func_0802A800 \n\
 /* 0802A8E2 */ MOVS R5, #0 \n\
 /* 0802A8E4 */ MOVS R6, #1 \n\
 _0802A8E6: \n\
-/* 0802A8E6 */ BL func_08001AC0 \n\
+/* 0802A8E6 */ BL affine_param_alloc \n\
 /* 0802A8EA */ ADDS R1, R7, #0 \n\
 /* 0802A8EC */ ADDS R1, #0XCA \n\
 /* 0802A8EE */ ADDS R1, R4 \n\

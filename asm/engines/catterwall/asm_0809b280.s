@@ -8,7 +8,7 @@ thumb_func_start func_0809B280 \n\
 /* 0809B286 */ LDRB R0, [R0, #0X10] \n\
 /* 0809B288 */ LSLS R0, R0, #0X18 \n\
 /* 0809B28A */ ASRS R0, R0, #0X18 \n\
-/* 0809B28C */ BL func_08001B28 \n\
+/* 0809B28C */ BL affine_param_free \n\
 /* 0809B290 */ LDR R1, _0809B2B0 \n\
 /* 0809B292 */ LDRH R2, [R1] \n\
 /* 0809B294 */ LDR R0, _0809B2B4 \n\

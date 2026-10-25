@@ -160,11 +160,11 @@ _0800D8D6: \n\
 /* 0800D936 */ ASRS R4, R4, #0X10 \n\
 /* 0800D938 */ ADDS R1, R4, #0 \n\
 /* 0800D93A */ MOVS R2, #0 \n\
-/* 0800D93C */ BL func_08001BA4 \n\
+/* 0800D93C */ BL affine_param_set_rot_scale \n\
 /* 0800D940 */ MOV R0, SB \n\
 /* 0800D942 */ ADDS R1, R4, #0 \n\
 /* 0800D944 */ MOVS R2, #0 \n\
-/* 0800D946 */ BL func_08001C74 \n\
+/* 0800D946 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0800D94A */ CMP R4, #0X7F \n\
 /* 0800D94C */ BLE _0800D974 \n\
 /* 0800D94E */ LDR R2, _0800D970 \n\

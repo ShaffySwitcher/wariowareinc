@@ -28,7 +28,7 @@ _0806EFF0: \n\
 /* 0806EFFC */ LSLS R4, R4, #1 \n\
 /* 0806EFFE */ ADDS R2, R4, #0 \n\
 /* 0806F000 */ MOVS R3, #0 \n\
-/* 0806F002 */ BL func_08001C08 \n\
+/* 0806F002 */ BL affine_param_set_rot_scale_xy \n\
 /* 0806F006 */ LDR R1, [R5] \n\
 /* 0806F008 */ ADDS R0, R1, #0 \n\
 /* 0806F00A */ ADDS R0, #0X12 \n\
@@ -36,7 +36,7 @@ _0806EFF0: \n\
 /* 0806F00E */ LDRSH R1, [R1, R2] \n\
 /* 0806F010 */ ADDS R2, R4, #0 \n\
 /* 0806F012 */ MOVS R3, #0 \n\
-/* 0806F014 */ BL func_08001CD0 \n\
+/* 0806F014 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 0806F018 */ ADDS R0, R6, #0 \n\
 /* 0806F01A */ POP {R4, R5, R6} \n\
 /* 0806F01C */ POP {R1} \n\

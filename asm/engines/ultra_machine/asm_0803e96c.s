@@ -9,7 +9,7 @@ thumb_func_start func_0803E96C \n\
 /* 0803E974 */ LDRB R0, [R0] \n\
 /* 0803E976 */ LSLS R0, R0, #0X18 \n\
 /* 0803E978 */ ASRS R0, R0, #0X18 \n\
-/* 0803E97A */ BL func_08001B28 \n\
+/* 0803E97A */ BL affine_param_free \n\
 /* 0803E97E */ LDR R0, =gSpriteHandler \n\
 /* 0803E980 */ LDR R0, [R0] \n\
 /* 0803E982 */ LDR R1, [R4] \n\

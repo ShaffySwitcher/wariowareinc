@@ -25,12 +25,12 @@ thumb_func_start func_08043428 \n\
 /* 08043452 */ ASRS R4, R4, #0X10 \n\
 /* 08043454 */ ADDS R1, R4, #0 \n\
 /* 08043456 */ MOVS R2, #0 \n\
-/* 08043458 */ BL func_08001BA4 \n\
+/* 08043458 */ BL affine_param_set_rot_scale \n\
 /* 0804345C */ LDR R0, [R6] \n\
 /* 0804345E */ ADDS R0, #0X82 \n\
 /* 08043460 */ ADDS R1, R4, #0 \n\
 /* 08043462 */ MOVS R2, #0 \n\
-/* 08043464 */ BL func_08001C74 \n\
+/* 08043464 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 08043468 */ LDR R0, [R6] \n\
 /* 0804346A */ ADDS R1, R0, #0 \n\
 /* 0804346C */ ADDS R1, #0X8A \n\

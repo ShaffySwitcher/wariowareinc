@@ -235,7 +235,7 @@ _080DE92A: \n\
 /* 080DE92E */ ADDS R0, R2, #0 \n\
 /* 080DE930 */ ADDS R2, R4, #0 \n\
 /* 080DE932 */ MOVS R3, #0 \n\
-/* 080DE934 */ BL func_08001C08 \n\
+/* 080DE934 */ BL affine_param_set_rot_scale_xy \n\
 /* 080DE938 */ LDR R0, [R6] \n\
 /* 080DE93A */ ADDS R2, R0, #0 \n\
 /* 080DE93C */ ADDS R2, #0X82 \n\
@@ -249,7 +249,7 @@ _080DE94A: \n\
 /* 080DE94A */ ADDS R0, R2, #0 \n\
 /* 080DE94C */ ADDS R2, R4, #0 \n\
 /* 080DE94E */ MOVS R3, #0 \n\
-/* 080DE950 */ BL func_08001CD0 \n\
+/* 080DE950 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080DE954 */ LDR R0, [R7] \n\
 /* 080DE956 */ MOV R4, SL \n\
 /* 080DE958 */ LDR R3, [R4] \n\

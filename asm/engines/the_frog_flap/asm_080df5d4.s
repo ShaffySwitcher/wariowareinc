@@ -101,7 +101,7 @@ thumb_func_start func_080DF5D4 \n\
 /* 080DF698 */ MOVS R1, #0X80 \n\
 /* 080DF69A */ LSLS R1, R1, #1 \n\
 /* 080DF69C */ MOVS R2, #0 \n\
-/* 080DF69E */ BL func_08001BA4 \n\
+/* 080DF69E */ BL affine_param_set_rot_scale \n\
 /* 080DF6A2 */ LDR R0, _080DF6F8 \n\
 /* 080DF6A4 */ LDR R0, [R0] \n\
 /* 080DF6A6 */ LDR R1, _080DF6FC \n\

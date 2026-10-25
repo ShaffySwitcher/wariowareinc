@@ -29,7 +29,7 @@ _0807C482: \n\
 /* 0807C484 */ LDR R3, _0807C590 \n\
 /* 0807C486 */ MOV SB, R3 \n\
 _0807C488: \n\
-/* 0807C488 */ BL func_08001AC0 \n\
+/* 0807C488 */ BL affine_param_alloc \n\
 /* 0807C48C */ LDR R1, [R7] \n\
 /* 0807C48E */ LDR R2, _0807C594 \n\
 /* 0807C490 */ ADDS R1, R2 \n\
@@ -52,7 +52,7 @@ _0807C488: \n\
 /* 0807C4B4 */ LDRB R2, [R1] \n\
 /* 0807C4B6 */ MOVS R1, #0X80 \n\
 /* 0807C4B8 */ LSLS R1, R1, #1 \n\
-/* 0807C4BA */ BL func_08001BA4 \n\
+/* 0807C4BA */ BL affine_param_set_rot_scale \n\
 /* 0807C4BE */ LDR R4, _0807C598 \n\
 /* 0807C4C0 */ MOVS R0, #2 \n\
 /* 0807C4C2 */ BL get_random_range \n\

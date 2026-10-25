@@ -136,7 +136,7 @@ _08057C20: \n\
 /* 08057C3A */ MOVS R2, #0X2C \n\
 /* 08057C3C */ LDRSH R1, [R4, R2] \n\
 /* 08057C3E */ MOVS R2, #0 \n\
-/* 08057C40 */ BL func_08001BA4 \n\
+/* 08057C40 */ BL affine_param_set_rot_scale \n\
 /* 08057C44 */ LDR R1, [R4, #0X18] \n\
 /* 08057C46 */ LDR R0, _08057CC8 \n\
 /* 08057C48 */ CMP R1, R0 \n\
@@ -171,7 +171,7 @@ _08057C20: \n\
 /* 08057C86 */ MOVS R1, #0X80 \n\
 /* 08057C88 */ LSLS R1, R1, #1 \n\
 /* 08057C8A */ MOVS R2, #0 \n\
-/* 08057C8C */ BL func_08001BA4 \n\
+/* 08057C8C */ BL affine_param_set_rot_scale \n\
 /* 08057C90 */ LDR R5, [R6] \n\
 /* 08057C92 */ MOVS R3, #0X10 \n\
 /* 08057C94 */ LDRSH R6, [R4, R3] \n\

@@ -118,7 +118,7 @@ _080296EE: \n\
 /* 08029700 */ ADDS R4, R6, #0 \n\
 /* 08029702 */ ADDS R4, #0X7E \n\
 /* 08029704 */ LDRB R2, [R4] \n\
-/* 08029706 */ BL func_08001BA4 \n\
+/* 08029706 */ BL affine_param_set_rot_scale \n\
 /* 0802970A */ LDRB R0, [R4] \n\
 /* 0802970C */ ADDS R0, #4 \n\
 /* 0802970E */ STRB R0, [R4] \n\

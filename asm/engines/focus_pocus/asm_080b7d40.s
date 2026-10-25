@@ -56,7 +56,7 @@ _080B7D9A: \n\
 /* 080B7D9E */ ADDS R1, #0X70 \n\
 /* 080B7DA0 */ LDRB R2, [R1] \n\
 /* 080B7DA2 */ MOVS R1, #0X98 \n\
-/* 080B7DA4 */ BL func_08001BA4 \n\
+/* 080B7DA4 */ BL affine_param_set_rot_scale \n\
 /* 080B7DA8 */ B _080B7DCE \n\
 _080B7DAA: \n\
 /* 080B7DAA */ LDR R0, =gCurrentSceneVariable \n\
@@ -74,7 +74,7 @@ _080B7DAA: \n\
 /* 080B7DC4 */ LSLS R1, R3, #0X10 \n\
 /* 080B7DC6 */ ASRS R1, R1, #0X10 \n\
 /* 080B7DC8 */ MOVS R2, #0 \n\
-/* 080B7DCA */ BL func_08001BA4 \n\
+/* 080B7DCA */ BL affine_param_set_rot_scale \n\
 _080B7DCE: \n\
 /* 080B7DCE */ POP {R4, R5} \n\
 /* 080B7DD0 */ POP {R0} \n\

@@ -152,7 +152,7 @@ _080700D4: \n\
 /* 080700DC */ LDRH R2, [R5, #0X1A] \n\
 /* 080700DE */ LSLS R2, R2, #0X10 \n\
 /* 080700E0 */ ASRS R2, R2, #0X18 \n\
-/* 080700E2 */ BL func_08001BA4 \n\
+/* 080700E2 */ BL affine_param_set_rot_scale \n\
 /* 080700E6 */ ADDS R4, R5, #0 \n\
 /* 080700E8 */ ADDS R4, #0X10 \n\
 /* 080700EA */ MOVS R0, #0X18 \n\
@@ -161,7 +161,7 @@ _080700D4: \n\
 /* 080700F0 */ LSLS R2, R2, #0X10 \n\
 /* 080700F2 */ ASRS R2, R2, #0X18 \n\
 /* 080700F4 */ ADDS R0, R4, #0 \n\
-/* 080700F6 */ BL func_08001C74 \n\
+/* 080700F6 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080700FA */ LDR R0, [R6] \n\
 /* 080700FC */ MOVS R2, #0XC \n\
 /* 080700FE */ LDRSH R1, [R5, R2] \n\

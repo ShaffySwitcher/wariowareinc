@@ -22,7 +22,7 @@ _0804ABD4: \n\
 /* 0804ABDA */ MOVS R1, #0X80 \n\
 /* 0804ABDC */ LSLS R1, R1, #1 \n\
 /* 0804ABDE */ MOVS R2, #0 \n\
-/* 0804ABE0 */ BL func_08001BA4 \n\
+/* 0804ABE0 */ BL affine_param_set_rot_scale \n\
 /* 0804ABE4 */ MOV R1, R8 \n\
 /* 0804ABE6 */ LDR R0, [R1] \n\
 /* 0804ABE8 */ STR R5, [SP] \n\

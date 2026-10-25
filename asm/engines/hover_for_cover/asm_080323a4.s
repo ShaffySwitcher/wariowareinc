@@ -30,13 +30,13 @@ thumb_func_start func_080323A4 \n\
 /* 080323D6 */ LSLS R5, R5, #1 \n\
 /* 080323D8 */ LDRB R2, [R4] \n\
 /* 080323DA */ ADDS R1, R5, #0 \n\
-/* 080323DC */ BL func_08001BA4 \n\
+/* 080323DC */ BL affine_param_set_rot_scale \n\
 /* 080323E0 */ MOVS R0, #0X8B \n\
 /* 080323E2 */ LSLS R0, R0, #3 \n\
 /* 080323E4 */ ADD R0, SB \n\
 /* 080323E6 */ LDRB R2, [R4] \n\
 /* 080323E8 */ ADDS R1, R5, #0 \n\
-/* 080323EA */ BL func_08001C74 \n\
+/* 080323EA */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080323EE */ MOVS R7, #0X9E \n\
 /* 080323F0 */ LSLS R7, R7, #2 \n\
 /* 080323F2 */ ADD R7, SB \n\

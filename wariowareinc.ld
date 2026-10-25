@@ -5,8 +5,8 @@ SECTIONS {
 
     . = 0x03000000;
     .bss . : SUBALIGN(4) {
-        build/src/task_pool.c.o(.bss);
         build/src/code_08000f10.c.o(.bss);
+        build/src/affine_param.c.o(.bss);
     }
 
     . = 0x030035B0;
@@ -24,7 +24,7 @@ SECTIONS {
         build/asm/math.s.o(.text*);
         build/src/code_08000f10.c.o(.text);
         build/src/palette.c.o(.text);
-        build/src/code_08001a70.c.o(.text);
+        build/src/affine_param.c.o(.text);
         build/src/audio.c.o(.text);
         build/src/graphics_table.c.o(.text);
         build/src/code_08002620.c.o(.text);

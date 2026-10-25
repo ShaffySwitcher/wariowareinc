@@ -23,7 +23,7 @@ thumb_func_start func_080D24BC \n\
 /* 080D24E2 */ LDRB R0, [R0] \n\
 /* 080D24E4 */ LSLS R0, R0, #0X18 \n\
 /* 080D24E6 */ ASRS R0, R0, #0X18 \n\
-/* 080D24E8 */ BL func_08001B28 \n\
+/* 080D24E8 */ BL affine_param_free \n\
 /* 080D24EC */ BL get_current_language \n\
 /* 080D24F0 */ LDR R1, _080D2548 \n\
 /* 080D24F2 */ LSLS R4, R4, #2 \n\

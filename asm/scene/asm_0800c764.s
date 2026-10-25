@@ -5,7 +5,7 @@ thumb_func_start func_0800C764 \n\
 /* 0800C766 */ ADDS R4, R0, #0 \n\
 /* 0800C768 */ MOVS R1, #0 \n\
 /* 0800C76A */ LDRSH R0, [R4, R1] \n\
-/* 0800C76C */ BL func_08001B28 \n\
+/* 0800C76C */ BL affine_param_free \n\
 /* 0800C770 */ ADDS R0, R4, #0 \n\
 /* 0800C772 */ BL mem_heap_dealloc \n\
 /* 0800C776 */ POP {R4} \n\

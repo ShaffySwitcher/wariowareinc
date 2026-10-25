@@ -187,7 +187,7 @@ _08045970: \n\
 /* 0804599C */ ADDS R2, #0X90 \n\
 /* 0804599E */ MOVS R3, #0 \n\
 /* 080459A0 */ LDRSH R2, [R2, R3] \n\
-/* 080459A2 */ BL func_08001BA4 \n\
+/* 080459A2 */ BL affine_param_set_rot_scale \n\
 /* 080459A6 */ LDR R1, [R4] \n\
 /* 080459A8 */ LDR R0, [R1, #0X6C] \n\
 /* 080459AA */ ASRS R2, R0, #8 \n\

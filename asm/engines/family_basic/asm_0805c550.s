@@ -57,7 +57,7 @@ _0805C59C: \n\
 /* 0805C5C0 */ LDRB R0, [R0] \n\
 /* 0805C5C2 */ LSLS R0, R0, #0X18 \n\
 /* 0805C5C4 */ ASRS R0, R0, #0X18 \n\
-/* 0805C5C6 */ BL func_08001B28 \n\
+/* 0805C5C6 */ BL affine_param_free \n\
 /* 0805C5CA */ POP {R4, R5} \n\
 /* 0805C5CC */ POP {R0} \n\
 /* 0805C5CE */ BX R0 \n\

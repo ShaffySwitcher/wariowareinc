@@ -198,7 +198,7 @@ _08051C9A: \n\
 /* 08051CF8 */ LSLS R1, R1, #1 \n\
 /* 08051CFA */ MOVS R3, #0X28 \n\
 /* 08051CFC */ LDRSH R2, [R2, R3] \n\
-/* 08051CFE */ BL func_08001BA4 \n\
+/* 08051CFE */ BL affine_param_set_rot_scale \n\
 /* 08051D02 */ ADD SP, #0XC \n\
 /* 08051D04 */ POP {R3, R4} \n\
 /* 08051D06 */ MOV R8, R3 \n\

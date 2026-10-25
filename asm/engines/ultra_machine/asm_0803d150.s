@@ -205,7 +205,7 @@ _0803D27C: \n\
 /* 0803D2C8 */ LDR R0, [R1] \n\
 /* 0803D2CA */ ADDS R0, #0XD4 \n\
 /* 0803D2CC */ STRB R4, [R0] \n\
-/* 0803D2CE */ BL func_08001AC0 \n\
+/* 0803D2CE */ BL affine_param_alloc \n\
 /* 0803D2D2 */ MOV R2, R8 \n\
 /* 0803D2D4 */ LDR R1, [R2] \n\
 /* 0803D2D6 */ ADDS R1, #0XE4 \n\
@@ -222,7 +222,7 @@ _0803D27C: \n\
 /* 0803D2EC */ LSLS R7, R7, #1 \n\
 /* 0803D2EE */ ADDS R1, R7, #0 \n\
 /* 0803D2F0 */ MOVS R2, #0 \n\
-/* 0803D2F2 */ BL func_08001BA4 \n\
+/* 0803D2F2 */ BL affine_param_set_rot_scale \n\
 /* 0803D2F6 */ MOV R3, R8 \n\
 /* 0803D2F8 */ LDR R5, [R3] \n\
 /* 0803D2FA */ LDR R1, [R5, #0X64] \n\

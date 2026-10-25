@@ -85,7 +85,7 @@ _0803A3C2: \n\
 /* 0803A420 */ LSLS R4, R4, #0X10 \n\
 /* 0803A422 */ ASRS R4, R4, #0X10 \n\
 /* 0803A424 */ ADDS R2, R4, #0 \n\
-/* 0803A426 */ BL func_08001BA4 \n\
+/* 0803A426 */ BL affine_param_set_rot_scale \n\
 /* 0803A42A */ LDR R0, [R5] \n\
 /* 0803A42C */ LDR R1, [SP] \n\
 /* 0803A42E */ STR R1, [R0, #8] \n\

@@ -50,7 +50,7 @@ _080A1C86: \n\
 /* 080A1C94 */ ASRS R1, R1, #2 \n\
 /* 080A1C96 */ ADDS R1, #0XC0 \n\
 /* 080A1C98 */ MOVS R2, #0 \n\
-/* 080A1C9A */ BL func_08001BA4 \n\
+/* 080A1C9A */ BL affine_param_set_rot_scale \n\
 /* 080A1C9E */ LDR R2, [R4] \n\
 /* 080A1CA0 */ LDR R0, [R2, #0X20] \n\
 /* 080A1CA2 */ ADDS R0, #8 \n\

@@ -145,7 +145,7 @@ _080DBAE0: \n\
 /* 080DBB2E */ LSLS R2, R2, #1 \n\
 /* 080DBB30 */ ADDS R1, R2, #0 \n\
 /* 080DBB32 */ MOVS R3, #0 \n\
-/* 080DBB34 */ BL func_08001C08 \n\
+/* 080DBB34 */ BL affine_param_set_rot_scale_xy \n\
 /* 080DBB38 */ LDR R1, [R5] \n\
 /* 080DBB3A */ MOVS R2, #0X96 \n\
 /* 080DBB3C */ LSLS R2, R2, #9 \n\

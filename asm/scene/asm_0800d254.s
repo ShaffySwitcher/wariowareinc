@@ -65,7 +65,7 @@ _0800D2CE: \n\
 /* 0800D2D2 */ ADDS R5, #0X4E \n\
 _0800D2D4: \n\
 /* 0800D2D4 */ BL get_current_mem_id \n\
-/* 0800D2D8 */ BL func_08001B04 \n\
+/* 0800D2D8 */ BL affine_param_alloc_owner \n\
 /* 0800D2DC */ LSLS R0, R0, #0X18 \n\
 /* 0800D2DE */ LSRS R1, R0, #0X18 \n\
 /* 0800D2E0 */ CMP R0, #0 \n\

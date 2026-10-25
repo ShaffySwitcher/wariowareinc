@@ -102,7 +102,7 @@ _0807B170: \n\
 /* 0807B184 */ MOVS R2, #0 \n\
 /* 0807B186 */ LDRSH R1, [R1, R2] \n\
 /* 0807B188 */ MOVS R2, #0 \n\
-/* 0807B18A */ BL func_08001BA4 \n\
+/* 0807B18A */ BL affine_param_set_rot_scale \n\
 /* 0807B18E */ LDR R1, [R6] \n\
 /* 0807B190 */ ADDS R0, R1, #0 \n\
 /* 0807B192 */ ADDS R0, #0X82 \n\
@@ -110,7 +110,7 @@ _0807B170: \n\
 /* 0807B196 */ MOVS R2, #0 \n\
 /* 0807B198 */ LDRSH R1, [R1, R2] \n\
 /* 0807B19A */ MOVS R2, #0 \n\
-/* 0807B19C */ BL func_08001C74 \n\
+/* 0807B19C */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0807B1A0 */ LDR R1, [R6] \n\
 /* 0807B1A2 */ ADDS R0, R1, #0 \n\
 /* 0807B1A4 */ ADDS R0, #0X8A \n\

@@ -440,7 +440,7 @@ _080AB360: \n\
 /* 080AB3FC */ ASRS R1, R1, #0X10 \n\
 /* 080AB3FE */ ADDS R2, R3, #0 \n\
 /* 080AB400 */ MOVS R3, #0 \n\
-/* 080AB402 */ BL func_08001C08 \n\
+/* 080AB402 */ BL affine_param_set_rot_scale_xy \n\
 /* 080AB406 */ LDR R5, _080AB488 \n\
 /* 080AB408 */ LDR R0, [R5] \n\
 /* 080AB40A */ LDR R1, _080AB4A8 \n\

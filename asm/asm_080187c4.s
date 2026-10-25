@@ -66,12 +66,12 @@ _080187E0:
 /* 08018838 */ ADDS R1, R4, #0
 /* 0801883A */ ADDS R2, R5, #0
 /* 0801883C */ MOVS R3, #0
-/* 0801883E */ BL func_08001C08
+/* 0801883E */ BL affine_param_set_rot_scale_xy
 /* 08018842 */ MOV R0, SB
 /* 08018844 */ ADDS R1, R4, #0
 /* 08018846 */ ADDS R2, R5, #0
 /* 08018848 */ MOVS R3, #0
-/* 0801884A */ BL func_08001CD0
+/* 0801884A */ BL affine_matrix_set_rot_scale_inv_xy
 /* 0801884E */ B _0801891A
 
 .balign 4, 0

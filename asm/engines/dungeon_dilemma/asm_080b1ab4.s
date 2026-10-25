@@ -12,7 +12,7 @@ thumb_func_start func_080B1AB4 \n\
 /* 080B1AC2 */ LDRSH R2, [R4, R1] \n\
 /* 080B1AC4 */ ADDS R1, R5, #0 \n\
 /* 080B1AC6 */ MOVS R3, #0 \n\
-/* 080B1AC8 */ BL func_08001C08 \n\
+/* 080B1AC8 */ BL affine_param_set_rot_scale_xy \n\
 /* 080B1ACC */ ADDS R6, R4, #0 \n\
 /* 080B1ACE */ ADDS R6, #0XC \n\
 /* 080B1AD0 */ MOVS R0, #8 \n\
@@ -20,7 +20,7 @@ thumb_func_start func_080B1AB4 \n\
 /* 080B1AD4 */ ADDS R0, R6, #0 \n\
 /* 080B1AD6 */ ADDS R1, R5, #0 \n\
 /* 080B1AD8 */ MOVS R3, #0 \n\
-/* 080B1ADA */ BL func_08001CD0 \n\
+/* 080B1ADA */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080B1ADE */ LDR R0, =gSpriteHandler \n\
 /* 080B1AE0 */ LDR R0, [R0] \n\
 /* 080B1AE2 */ MOVS R2, #0 \n\

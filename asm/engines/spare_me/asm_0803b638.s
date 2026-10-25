@@ -8,7 +8,7 @@ thumb_func_start func_0803B638 \n\
 /* 0803B63E */ ADDS R0, #0XB2 \n\
 /* 0803B640 */ MOVS R1, #0 \n\
 /* 0803B642 */ LDRSH R0, [R0, R1] \n\
-/* 0803B644 */ BL func_08001B28 \n\
+/* 0803B644 */ BL affine_param_free \n\
 /* 0803B648 */ MOVS R1, #0 \n\
 /* 0803B64A */ LDR R0, _0803B694 \n\
 /* 0803B64C */ LDR R0, [R0] \n\
@@ -28,7 +28,7 @@ _0803B65A: \n\
 /* 0803B666 */ ADDS R0, R1 \n\
 /* 0803B668 */ MOVS R1, #0 \n\
 /* 0803B66A */ LDRSH R0, [R0, R1] \n\
-/* 0803B66C */ BL func_08001B28 \n\
+/* 0803B66C */ BL affine_param_free \n\
 /* 0803B670 */ ADDS R4, #1 \n\
 /* 0803B672 */ LSLS R4, R4, #0X10 \n\
 /* 0803B674 */ LSRS R1, R4, #0X10 \n\

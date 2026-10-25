@@ -504,7 +504,7 @@ _0802725E: \n\
 /* 08027298 */ ASRS R1, R1, #0X10 \n\
 /* 0802729A */ ADDS R0, R4, #0 \n\
 /* 0802729C */ MOVS R2, #0 \n\
-/* 0802729E */ BL func_08001BA4 \n\
+/* 0802729E */ BL affine_param_set_rot_scale \n\
 /* 080272A2 */ LDRH R0, [R5] \n\
 /* 080272A4 */ ADDS R0, #1 \n\
 /* 080272A6 */ STRH R0, [R5] \n\

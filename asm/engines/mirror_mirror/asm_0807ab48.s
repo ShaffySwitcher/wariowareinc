@@ -248,14 +248,14 @@ _0807AD06: \n\
 /* 0807AD52 */ LSRS R2, R2, #8 \n\
 /* 0807AD54 */ ADDS R0, R4, #0 \n\
 /* 0807AD56 */ MOV R1, SL \n\
-/* 0807AD58 */ BL func_08001BA4 \n\
+/* 0807AD58 */ BL affine_param_set_rot_scale \n\
 /* 0807AD5C */ ADDS R7, R6, #0 \n\
 /* 0807AD5E */ ADDS R7, #0XE \n\
 /* 0807AD60 */ LDRH R2, [R6, #8] \n\
 /* 0807AD62 */ LSRS R2, R2, #8 \n\
 /* 0807AD64 */ ADDS R0, R7, #0 \n\
 /* 0807AD66 */ MOV R1, SL \n\
-/* 0807AD68 */ BL func_08001C74 \n\
+/* 0807AD68 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0807AD6C */ LDR R0, [R5] \n\
 /* 0807AD6E */ MOV R5, R8 \n\
 /* 0807AD70 */ LSLS R1, R5, #0X10 \n\
@@ -331,7 +331,7 @@ _0807ADB0: \n\
 /* 0807AE00 */ ADDS R0, R4, #0 \n\
 /* 0807AE02 */ MOVS R2, #0X80 \n\
 /* 0807AE04 */ LSLS R2, R2, #1 \n\
-/* 0807AE06 */ BL func_08001C08 \n\
+/* 0807AE06 */ BL affine_param_set_rot_scale_xy \n\
 /* 0807AE0A */ ADDS R5, R7, #0 \n\
 /* 0807AE0C */ ADDS R5, #0XE \n\
 /* 0807AE0E */ MOVS R0, #0XA \n\
@@ -339,7 +339,7 @@ _0807ADB0: \n\
 /* 0807AE12 */ LDRB R3, [R7, #8] \n\
 /* 0807AE14 */ ADDS R0, R5, #0 \n\
 /* 0807AE16 */ ADDS R1, R2, #0 \n\
-/* 0807AE18 */ BL func_08001CD0 \n\
+/* 0807AE18 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 0807AE1C */ LDR R1, _0807AF50 \n\
 /* 0807AE1E */ LDR R0, [R1] \n\
 /* 0807AE20 */ MOV R2, R8 \n\
@@ -392,7 +392,7 @@ _0807ADB0: \n\
 /* 0807AE84 */ MOVS R2, #0 \n\
 /* 0807AE86 */ LDRSH R1, [R1, R2] \n\
 /* 0807AE88 */ MOVS R2, #0 \n\
-/* 0807AE8A */ BL func_08001BA4 \n\
+/* 0807AE8A */ BL affine_param_set_rot_scale \n\
 /* 0807AE8E */ LDR R1, [R6] \n\
 /* 0807AE90 */ ADDS R0, R1, #0 \n\
 /* 0807AE92 */ ADDS R0, #0X82 \n\
@@ -400,7 +400,7 @@ _0807ADB0: \n\
 /* 0807AE96 */ MOVS R5, #0 \n\
 /* 0807AE98 */ LDRSH R1, [R1, R5] \n\
 /* 0807AE9A */ MOVS R2, #0 \n\
-/* 0807AE9C */ BL func_08001C74 \n\
+/* 0807AE9C */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0807AEA0 */ LDR R0, [R4] \n\
 /* 0807AEA2 */ LDR R3, [R6] \n\
 /* 0807AEA4 */ ADDS R1, R3, #0 \n\

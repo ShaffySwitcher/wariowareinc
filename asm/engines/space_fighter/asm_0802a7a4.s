@@ -20,7 +20,7 @@ _0802A7B6: \n\
 /* 0802A7C0 */ LDRB R0, [R0] \n\
 /* 0802A7C2 */ LSLS R0, R0, #0X18 \n\
 /* 0802A7C4 */ ASRS R0, R0, #0X18 \n\
-/* 0802A7C6 */ BL func_08001B28 \n\
+/* 0802A7C6 */ BL affine_param_free \n\
 /* 0802A7CA */ ADDS R4, #1 \n\
 /* 0802A7CC */ LDR R0, [R5] \n\
 /* 0802A7CE */ ADDS R0, #0X5D \n\
@@ -38,7 +38,7 @@ _0802A7DA: \n\
 /* 0802A7E2 */ LDRB R0, [R0] \n\
 /* 0802A7E4 */ LSLS R0, R0, #0X18 \n\
 /* 0802A7E6 */ ASRS R0, R0, #0X18 \n\
-/* 0802A7E8 */ BL func_08001B28 \n\
+/* 0802A7E8 */ BL affine_param_free \n\
 /* 0802A7EC */ ADDS R4, #1 \n\
 /* 0802A7EE */ CMP R4, #4 \n\
 /* 0802A7F0 */ BLS _0802A7DA \n\

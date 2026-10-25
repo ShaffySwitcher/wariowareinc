@@ -22,7 +22,7 @@ glabel func_080EC14C
 /* 080EC168 */ ASRS R2, R2, #0X10
 /* 080EC16A */ ADDS R1, R2, #0
 /* 080EC16C */ MOVS R3, #0
-/* 080EC16E */ BL func_08001C08
+/* 080EC16E */ BL affine_param_set_rot_scale_xy
 /* 080EC172 */ LDR R1, [R5]
 /* 080EC174 */ ADDS R0, R1, #0
 /* 080EC176 */ ADDS R0, #0X12
@@ -34,7 +34,7 @@ glabel func_080EC14C
 /* 080EC182 */ ASRS R2, R2, #0X10
 /* 080EC184 */ ADDS R1, R2, #0
 /* 080EC186 */ MOVS R3, #0
-/* 080EC188 */ BL func_08001CD0
+/* 080EC188 */ BL affine_matrix_set_rot_scale_inv_xy
 /* 080EC18C */ LDR R4, _080EC20C
 /* 080EC18E */ LDR R0, [R4]
 /* 080EC190 */ LDR R3, [R5]

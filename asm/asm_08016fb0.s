@@ -11,7 +11,7 @@ glabel func_08016FB0
 /* 08016FB6 */ MOVS R1, #1
 /* 08016FB8 */ BL sprite_id_delete
 /* 08016FBC */ MOVS R0, #1
-/* 08016FBE */ BL func_08001B70
+/* 08016FBE */ BL affine_param_free_by_owner
 /* 08016FC2 */ POP {R0}
 /* 08016FC4 */ BX R0
 

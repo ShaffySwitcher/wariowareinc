@@ -93,7 +93,7 @@ _080B7864: \n\
 /* 080B7878 */ LDR R0, [R1, #0X68] \n\
 /* 080B787A */ ADDS R1, R7, #0 \n\
 /* 080B787C */ MOVS R2, #0 \n\
-/* 080B787E */ BL func_08001BA4 \n\
+/* 080B787E */ BL affine_param_set_rot_scale \n\
 /* 080B7882 */ LDR R0, _080B7904 \n\
 /* 080B7884 */ LDR R0, [R0] \n\
 /* 080B7886 */ LDR R2, _080B7908 \n\

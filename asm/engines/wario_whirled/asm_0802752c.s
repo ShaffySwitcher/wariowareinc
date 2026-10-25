@@ -45,7 +45,7 @@ thumb_func_start func_0802752C \n\
 /* 0802757C */ MOVS R1, #0X80 \n\
 /* 0802757E */ LSLS R1, R1, #1 \n\
 /* 08027580 */ RSBS R2, R2, #0 \n\
-/* 08027582 */ BL func_08001BA4 \n\
+/* 08027582 */ BL affine_param_set_rot_scale \n\
 /* 08027586 */ LDR R0, =gSpriteHandler \n\
 /* 08027588 */ LDR R0, [R0] \n\
 /* 0802758A */ ADDS R1, R6, #0 \n\

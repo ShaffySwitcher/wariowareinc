@@ -58,14 +58,14 @@ _080C63EE: \n\
 /* 080C6446 */ LDRSB R0, [R4, R0] \n\
 /* 080C6448 */ ASRS R1, R1, #8 \n\
 /* 080C644A */ MOVS R2, #0 \n\
-/* 080C644C */ BL func_08001BA4 \n\
+/* 080C644C */ BL affine_param_set_rot_scale \n\
 /* 080C6450 */ ADDS R6, R4, #4 \n\
 /* 080C6452 */ LDR R1, [R4, #0XC] \n\
 /* 080C6454 */ LSLS R1, R1, #8 \n\
 /* 080C6456 */ ASRS R1, R1, #0X10 \n\
 /* 080C6458 */ ADDS R0, R6, #0 \n\
 /* 080C645A */ MOVS R2, #0 \n\
-/* 080C645C */ BL func_08001C74 \n\
+/* 080C645C */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080C6460 */ MOV R3, R8 \n\
 /* 080C6462 */ LDR R0, [R3] \n\
 /* 080C6464 */ MOVS R2, #0 \n\

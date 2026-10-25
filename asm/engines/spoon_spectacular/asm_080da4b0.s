@@ -277,7 +277,7 @@ _080DA692: \n\
 /* 080DA6FE */ ASRS R2, R2, #0X10 \n\
 /* 080DA700 */ ADDS R1, R2, #0 \n\
 /* 080DA702 */ MOVS R3, #0 \n\
-/* 080DA704 */ BL func_08001C08 \n\
+/* 080DA704 */ BL affine_param_set_rot_scale_xy \n\
 /* 080DA708 */ ADD R5, SP, #0X18 \n\
 /* 080DA70A */ LDR R4, [R4] \n\
 /* 080DA70C */ ADDS R4, #0X5E \n\

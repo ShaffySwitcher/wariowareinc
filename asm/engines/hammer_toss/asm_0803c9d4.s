@@ -66,7 +66,7 @@ _0803CA3E: \n\
 /* 0803CA48 */ LSLS R1, R1, #1 \n\
 /* 0803CA4A */ LSLS R2, R4, #0X10 \n\
 /* 0803CA4C */ ASRS R2, R2, #0X10 \n\
-/* 0803CA4E */ BL func_08001BA4 \n\
+/* 0803CA4E */ BL affine_param_set_rot_scale \n\
 /* 0803CA52 */ SUBS R4, #0X60 \n\
 /* 0803CA54 */ MOVS R0, #0XFF \n\
 /* 0803CA56 */ MOV SB, R0 \n\

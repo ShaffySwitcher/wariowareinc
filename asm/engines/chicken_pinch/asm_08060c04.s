@@ -74,7 +74,7 @@ _08060C50: \n\
 /* 08060C8A */ MOVS R1, #0X80 \n\
 /* 08060C8C */ LSLS R1, R1, #1 \n\
 /* 08060C8E */ MOVS R2, #0 \n\
-/* 08060C90 */ BL func_08001BA4 \n\
+/* 08060C90 */ BL affine_param_set_rot_scale \n\
 _08060C94: \n\
 /* 08060C94 */ ADD SP, #0XC \n\
 /* 08060C96 */ POP {R4, R5} \n\

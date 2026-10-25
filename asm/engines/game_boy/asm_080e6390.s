@@ -190,14 +190,14 @@ _080E642E: \n\
 /* 080E6500 */ LDRB R3, [R1, #0X15] \n\
 /* 080E6502 */ ADDS R1, R4, #0 \n\
 /* 080E6504 */ ADDS R2, R4, #0 \n\
-/* 080E6506 */ BL func_08001C08 \n\
+/* 080E6506 */ BL affine_param_set_rot_scale_xy \n\
 /* 080E650A */ LDR R1, [R7] \n\
 /* 080E650C */ ADDS R0, R1, #0 \n\
 /* 080E650E */ ADDS R0, #0X16 \n\
 /* 080E6510 */ LDRB R3, [R1, #0X15] \n\
 /* 080E6512 */ ADDS R1, R4, #0 \n\
 /* 080E6514 */ ADDS R2, R4, #0 \n\
-/* 080E6516 */ BL func_08001CD0 \n\
+/* 080E6516 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080E651A */ LDR R0, [R6] \n\
 /* 080E651C */ LDR R3, [R7] \n\
 /* 080E651E */ MOVS R2, #8 \n\

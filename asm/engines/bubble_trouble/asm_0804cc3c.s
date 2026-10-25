@@ -153,7 +153,7 @@ _0804CCA0: \n\
 /* 0804CD6C */ ASRS R1, R1, #0X10 \n\
 /* 0804CD6E */ ADDS R0, R4, #0 \n\
 /* 0804CD70 */ MOVS R2, #0 \n\
-/* 0804CD72 */ BL func_08001BA4 \n\
+/* 0804CD72 */ BL affine_param_set_rot_scale \n\
 /* 0804CD76 */ MOV R3, SB \n\
 /* 0804CD78 */ LDR R0, [R3] \n\
 /* 0804CD7A */ MOVS R6, #0X8A \n\
@@ -174,7 +174,7 @@ _0804CCA0: \n\
 /* 0804CD9A */ MOVS R2, #0X80 \n\
 /* 0804CD9C */ LSLS R2, R2, #1 \n\
 /* 0804CD9E */ MOVS R3, #0 \n\
-/* 0804CDA0 */ BL func_08001C08 \n\
+/* 0804CDA0 */ BL affine_param_set_rot_scale_xy \n\
 /* 0804CDA4 */ B _0804CDF0 \n\
  \n\
 .balign 4, 0 \n\

@@ -93,7 +93,7 @@ _08038ACE: \n\
 /* 08038ADC */ LSLS R1, R1, #1 \n\
 /* 08038ADE */ ADDS R2, #0X90 \n\
 /* 08038AE0 */ LDRB R2, [R2] \n\
-/* 08038AE2 */ BL func_08001BA4 \n\
+/* 08038AE2 */ BL affine_param_set_rot_scale \n\
 /* 08038AE6 */ BL func_080389D4 \n\
 _08038AEA: \n\
 /* 08038AEA */ POP {R4} \n\

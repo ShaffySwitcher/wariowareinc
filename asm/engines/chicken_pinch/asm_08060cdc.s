@@ -272,7 +272,7 @@ _08060E9A: \n\
 /* 08060EBC */ LSLS R1, R1, #1 \n\
 /* 08060EBE */ LDRH R2, [R2, #0X12] \n\
 /* 08060EC0 */ LSRS R2, R2, #8 \n\
-/* 08060EC2 */ BL func_08001BA4 \n\
+/* 08060EC2 */ BL affine_param_set_rot_scale \n\
 /* 08060EC6 */ B _08060EF8 \n\
  \n\
 .balign 4, 0 \n\

@@ -46,7 +46,7 @@ _080CF282: \n\
 /* 080CF2BE */ MOVS R1, #0X80 \n\
 /* 080CF2C0 */ LSLS R1, R1, #1 \n\
 /* 080CF2C2 */ MOVS R2, #0 \n\
-/* 080CF2C4 */ BL func_08001BA4 \n\
+/* 080CF2C4 */ BL affine_param_set_rot_scale \n\
 /* 080CF2C8 */ SUBS R5, #1 \n\
 /* 080CF2CA */ ADDS R4, #0X2C \n\
 /* 080CF2CC */ CMP R5, #0 \n\

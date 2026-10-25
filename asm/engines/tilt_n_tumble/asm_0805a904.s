@@ -66,7 +66,7 @@ _0805A974: \n\
 /* 0805A97A */ LSLS R1, R1, #1 \n\
 /* 0805A97C */ ADDS R2, #0X68 \n\
 /* 0805A97E */ LDRB R2, [R2] \n\
-/* 0805A980 */ BL func_08001BA4 \n\
+/* 0805A980 */ BL affine_param_set_rot_scale \n\
 /* 0805A984 */ POP {R4, R5, R6} \n\
 /* 0805A986 */ POP {R0} \n\
 /* 0805A988 */ BX R0 \n\

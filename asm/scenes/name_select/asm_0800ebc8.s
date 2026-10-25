@@ -80,14 +80,14 @@ _0800EC12: \n\
 /* 0800EC54 */ ASRS R5, R5, #0X10 \n\
 /* 0800EC56 */ ADDS R1, R5, #0 \n\
 /* 0800EC58 */ ADDS R2, R4, #0 \n\
-/* 0800EC5A */ BL func_08001BA4 \n\
+/* 0800EC5A */ BL affine_param_set_rot_scale \n\
 /* 0800EC5E */ LDR R0, [R7] \n\
 /* 0800EC60 */ MOVS R1, #0XB0 \n\
 /* 0800EC62 */ LSLS R1, R1, #2 \n\
 /* 0800EC64 */ ADDS R0, R1 \n\
 /* 0800EC66 */ ADDS R1, R5, #0 \n\
 /* 0800EC68 */ ADDS R2, R4, #0 \n\
-/* 0800EC6A */ BL func_08001C74 \n\
+/* 0800EC6A */ BL affine_matrix_set_rot_scale_inv \n\
 _0800EC6E: \n\
 /* 0800EC6E */ POP {R4, R5, R6, R7} \n\
 /* 0800EC70 */ POP {R0} \n\

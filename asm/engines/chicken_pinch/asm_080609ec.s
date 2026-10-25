@@ -95,7 +95,7 @@ thumb_func_start func_080609EC \n\
 /* 08060AB6 */ BL __divsi3 \n\
 /* 08060ABA */ ADDS R4, #0X20 \n\
 /* 08060ABC */ STRB R0, [R4] \n\
-/* 08060ABE */ BL func_08001AC0 \n\
+/* 08060ABE */ BL affine_param_alloc \n\
 /* 08060AC2 */ LDR R1, [R5] \n\
 /* 08060AC4 */ STRB R0, [R1, #2] \n\
 /* 08060AC6 */ LDR R2, [R5] \n\
@@ -105,7 +105,7 @@ thumb_func_start func_080609EC \n\
 /* 08060ACE */ LSLS R1, R1, #1 \n\
 /* 08060AD0 */ LDRH R2, [R2, #0X12] \n\
 /* 08060AD2 */ LSRS R2, R2, #8 \n\
-/* 08060AD4 */ BL func_08001BA4 \n\
+/* 08060AD4 */ BL affine_param_set_rot_scale \n\
 /* 08060AD8 */ LDR R0, [R5] \n\
 /* 08060ADA */ ADDS R0, #0X24 \n\
 /* 08060ADC */ MOV R4, SB \n\

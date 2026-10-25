@@ -34,7 +34,7 @@ _080DF72E: \n\
 /* 080DF73C */ LSLS R1, R1, #1 \n\
 /* 080DF73E */ MOVS R3, #0X24 \n\
 /* 080DF740 */ LDRSH R2, [R2, R3] \n\
-/* 080DF742 */ BL func_08001BA4 \n\
+/* 080DF742 */ BL affine_param_set_rot_scale \n\
 _080DF746: \n\
 /* 080DF746 */ LDR R5, _080DF790 \n\
 /* 080DF748 */ LDR R2, [R5] \n\
@@ -69,7 +69,7 @@ _080DF774: \n\
 /* 080DF780 */ MOVS R3, #0X24 \n\
 /* 080DF782 */ LDRSH R2, [R1, R3] \n\
 /* 080DF784 */ ADDS R1, R4, #0 \n\
-/* 080DF786 */ BL func_08001BA4 \n\
+/* 080DF786 */ BL affine_param_set_rot_scale \n\
 _080DF78A: \n\
 /* 080DF78A */ POP {R4, R5} \n\
 /* 080DF78C */ POP {R0} \n\

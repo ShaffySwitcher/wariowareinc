@@ -162,7 +162,7 @@ _080A6954: \n\
 /* 080A6964 */ MOVS R3, #0 \n\
 /* 080A6966 */ LDRSH R1, [R1, R3] \n\
 /* 080A6968 */ MOVS R2, #0 \n\
-/* 080A696A */ BL func_08001BA4 \n\
+/* 080A696A */ BL affine_param_set_rot_scale \n\
 /* 080A696E */ LDR R1, [R4] \n\
 /* 080A6970 */ ADDS R0, R1, #0 \n\
 /* 080A6972 */ ADDS R0, #0X5C \n\
@@ -170,7 +170,7 @@ _080A6954: \n\
 /* 080A6976 */ MOVS R2, #0 \n\
 /* 080A6978 */ LDRSH R1, [R1, R2] \n\
 /* 080A697A */ MOVS R2, #0 \n\
-/* 080A697C */ BL func_08001C74 \n\
+/* 080A697C */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080A6980 */ LDR R5, _080A69E8 \n\
 /* 080A6982 */ LDR R0, [R5] \n\
 /* 080A6984 */ LDR R3, [R4] \n\

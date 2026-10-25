@@ -38,7 +38,7 @@ _0805A8D6: \n\
 /* 0805A8F2 */ LSLS R1, R1, #1 \n\
 /* 0805A8F4 */ ADDS R2, #0X90 \n\
 /* 0805A8F6 */ LDRB R2, [R2] \n\
-/* 0805A8F8 */ BL func_08001BA4 \n\
+/* 0805A8F8 */ BL affine_param_set_rot_scale \n\
 /* 0805A8FC */ POP {R4, R5} \n\
 /* 0805A8FE */ POP {R0} \n\
 /* 0805A900 */ BX R0 \n\

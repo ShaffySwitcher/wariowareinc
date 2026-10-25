@@ -50,7 +50,7 @@ _0805251C: \n\
 /* 08052528 */ ADDS R2, #0X88 \n\
 /* 0805252A */ MOVS R3, #0 \n\
 /* 0805252C */ LDRSH R2, [R2, R3] \n\
-/* 0805252E */ BL func_08001BA4 \n\
+/* 0805252E */ BL affine_param_set_rot_scale \n\
 /* 08052532 */ POP {R0} \n\
 /* 08052534 */ BX R0 \n\
  \n\

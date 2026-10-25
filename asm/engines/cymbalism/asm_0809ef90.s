@@ -74,7 +74,7 @@ _0809EFAC: \n\
 /* 0809F024 */ ASRS R2, R2, #0X10 \n\
 /* 0809F026 */ ADDS R1, R2, #0 \n\
 /* 0809F028 */ MOVS R3, #0 \n\
-/* 0809F02A */ BL func_08001C08 \n\
+/* 0809F02A */ BL affine_param_set_rot_scale_xy \n\
 /* 0809F02E */ MOVS R2, #0X2A \n\
 /* 0809F030 */ ADD R8, R2 \n\
 /* 0809F032 */ LDR R3, _0809F09C \n\
@@ -91,7 +91,7 @@ _0809EFAC: \n\
 /* 0809F048 */ ASRS R2, R2, #0X10 \n\
 /* 0809F04A */ ADDS R1, R2, #0 \n\
 /* 0809F04C */ MOVS R3, #0 \n\
-/* 0809F04E */ BL func_08001CD0 \n\
+/* 0809F04E */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 0809F052 */ LDR R0, =gSpriteHandler \n\
 /* 0809F054 */ LDR R0, [R0] \n\
 /* 0809F056 */ LDR R1, _0809F09C \n\

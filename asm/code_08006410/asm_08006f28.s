@@ -17,7 +17,7 @@ thumb_func_start func_08006F28 \n\
 /* 08006F42 */ BL sprite_handler_create \n\
 /* 08006F46 */ MOVS R0, #0X20 \n\
 /* 08006F48 */ ADDS R1, R4, #0 \n\
-/* 08006F4A */ BL func_08001A70 \n\
+/* 08006F4A */ BL affine_param_init \n\
 /* 08006F4E */ ADD SP, #4 \n\
 /* 08006F50 */ POP {R4} \n\
 /* 08006F52 */ POP {R0} \n\

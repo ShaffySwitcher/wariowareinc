@@ -264,7 +264,7 @@ _08041F24: \n\
 /* 08041F50 */ LSLS R1, R1, #1 \n\
 /* 08041F52 */ ADDS R2, #0X72 \n\
 /* 08041F54 */ LDRB R2, [R2] \n\
-/* 08041F56 */ BL func_08001BA4 \n\
+/* 08041F56 */ BL affine_param_set_rot_scale \n\
 /* 08041F5A */ POP {R3, R4} \n\
 /* 08041F5C */ MOV R8, R3 \n\
 /* 08041F5E */ MOV SB, R4 \n\

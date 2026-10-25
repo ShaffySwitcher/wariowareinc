@@ -180,13 +180,13 @@ _080C661A: \n\
 /* 080C6620 */ LSLS R1, R1, #8 \n\
 /* 080C6622 */ ASRS R1, R1, #0X10 \n\
 /* 080C6624 */ MOVS R2, #0 \n\
-/* 080C6626 */ BL func_08001BA4 \n\
+/* 080C6626 */ BL affine_param_set_rot_scale \n\
 /* 080C662A */ ADDS R0, R6, #4 \n\
 /* 080C662C */ LDR R1, [R6, #0XC] \n\
 /* 080C662E */ LSLS R1, R1, #8 \n\
 /* 080C6630 */ ASRS R1, R1, #0X10 \n\
 /* 080C6632 */ MOVS R2, #0 \n\
-/* 080C6634 */ BL func_08001C74 \n\
+/* 080C6634 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080C6638 */ ADDS R0, R4, #1 \n\
 /* 080C663A */ LSLS R0, R0, #0X10 \n\
 /* 080C663C */ LSRS R1, R0, #0X10 \n\

@@ -19,11 +19,11 @@ glabel func_080ECA94
 /* 080ECAAC */ LSLS R5, R5, #1
 /* 080ECAAE */ ADDS R1, R5, #0
 /* 080ECAB0 */ MOVS R2, #0
-/* 080ECAB2 */ BL func_08001BA4
+/* 080ECAB2 */ BL affine_param_set_rot_scale
 /* 080ECAB6 */ ADDS R0, R4, #4
 /* 080ECAB8 */ ADDS R1, R5, #0
 /* 080ECABA */ MOVS R2, #0
-/* 080ECABC */ BL func_08001C74
+/* 080ECABC */ BL affine_matrix_set_rot_scale_inv
 /* 080ECAC0 */ LDR R0, [R6]
 /* 080ECAC2 */ MOVS R2, #0
 /* 080ECAC4 */ LDRSH R1, [R4, R2]

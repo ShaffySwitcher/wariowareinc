@@ -226,7 +226,7 @@ _0804641C: \n\
 /* 0804644A */ LSLS R1, R1, #1 \n\
 /* 0804644C */ ADDS R2, #0X6C \n\
 /* 0804644E */ LDRB R2, [R2] \n\
-/* 08046450 */ BL func_08001BA4 \n\
+/* 08046450 */ BL affine_param_set_rot_scale \n\
 /* 08046454 */ POP {R4, R5, R6} \n\
 /* 08046456 */ POP {R0} \n\
 /* 08046458 */ BX R0 \n\

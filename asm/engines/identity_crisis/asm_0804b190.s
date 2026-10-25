@@ -225,7 +225,7 @@ _0804B294: \n\
 /* 0804B368 */ ADDS R0, R7, #0 \n\
 /* 0804B36A */ ADDS R0, #0XC9 \n\
 /* 0804B36C */ STRB R4, [R0] \n\
-/* 0804B36E */ BL func_08001AC0 \n\
+/* 0804B36E */ BL affine_param_alloc \n\
 /* 0804B372 */ MOV R3, SB \n\
 /* 0804B374 */ LDR R1, [R3] \n\
 /* 0804B376 */ ADDS R1, #0XCA \n\
@@ -240,7 +240,7 @@ _0804B294: \n\
 /* 0804B388 */ LSLS R0, R0, #0X18 \n\
 /* 0804B38A */ ASRS R0, R0, #0X18 \n\
 /* 0804B38C */ MOVS R2, #0 \n\
-/* 0804B38E */ BL func_08001BA4 \n\
+/* 0804B38E */ BL affine_param_set_rot_scale \n\
 /* 0804B392 */ MOVS R2, #0 \n\
 /* 0804B394 */ MOV SL, SB \n\
 _0804B396: \n\

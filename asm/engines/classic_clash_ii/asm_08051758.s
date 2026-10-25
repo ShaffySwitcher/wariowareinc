@@ -145,7 +145,7 @@ thumb_func_start func_08051758 \n\
 /* 08051890 */ MOVS R1, #0X80 \n\
 /* 08051892 */ LSLS R1, R1, #1 \n\
 /* 08051894 */ MOVS R2, #0 \n\
-/* 08051896 */ BL func_08001BA4 \n\
+/* 08051896 */ BL affine_param_set_rot_scale \n\
 /* 0805189A */ LDR R7, _08051980 \n\
 /* 0805189C */ LDR R0, [R7] \n\
 /* 0805189E */ LDR R1, [R5] \n\

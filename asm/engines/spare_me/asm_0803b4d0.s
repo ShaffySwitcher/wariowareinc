@@ -122,7 +122,7 @@ _0803B56C: \n\
 /* 0803B5BA */ LDRB R2, [R1] \n\
 /* 0803B5BC */ MOVS R1, #0X80 \n\
 /* 0803B5BE */ LSLS R1, R1, #1 \n\
-/* 0803B5C0 */ BL func_08001BA4 \n\
+/* 0803B5C0 */ BL affine_param_set_rot_scale \n\
 _0803B5C4: \n\
 /* 0803B5C4 */ MOVS R1, #0X80 \n\
 /* 0803B5C6 */ LSLS R1, R1, #9 \n\

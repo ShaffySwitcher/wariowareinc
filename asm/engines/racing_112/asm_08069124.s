@@ -205,7 +205,7 @@ _080691E4: \n\
 /* 080692D0 */ LDR R0, [R1] \n\
 /* 080692D2 */ MOVS R1, #0X80 \n\
 /* 080692D4 */ MOVS R2, #0 \n\
-/* 080692D6 */ BL func_08001BA4 \n\
+/* 080692D6 */ BL affine_param_set_rot_scale \n\
 /* 080692DA */ LDR R1, _0806930C \n\
 /* 080692DC */ LDR R0, [R1] \n\
 /* 080692DE */ MOVS R2, #0XB8 \n\

@@ -110,7 +110,7 @@ _0802A008: \n\
 /* 0802A0B4 */ ASRS R1, R1, #0X10 \n\
 /* 0802A0B6 */ ADDS R0, R4, #0 \n\
 /* 0802A0B8 */ MOVS R2, #0 \n\
-/* 0802A0BA */ BL func_08001BA4 \n\
+/* 0802A0BA */ BL affine_param_set_rot_scale \n\
 /* 0802A0BE */ B _0802A118 \n\
  \n\
 .balign 4, 0 \n\

@@ -150,12 +150,12 @@ _080B00BC: \n\
 /* 080B00D4 */ ASRS R4, R4, #0X10 \n\
 /* 080B00D6 */ ADDS R1, R4, #0 \n\
 /* 080B00D8 */ MOVS R2, #0 \n\
-/* 080B00DA */ BL func_08001BA4 \n\
+/* 080B00DA */ BL affine_param_set_rot_scale \n\
 /* 080B00DE */ MOVS R0, #1 \n\
 /* 080B00E0 */ LDRSB R0, [R7, R0] \n\
 /* 080B00E2 */ ADDS R1, R4, #0 \n\
 /* 080B00E4 */ MOVS R2, #0 \n\
-/* 080B00E6 */ BL func_08001BA4 \n\
+/* 080B00E6 */ BL affine_param_set_rot_scale \n\
 /* 080B00EA */ MOV R2, R8 \n\
 /* 080B00EC */ LDR R1, [R2] \n\
 /* 080B00EE */ ADDS R1, R5 \n\

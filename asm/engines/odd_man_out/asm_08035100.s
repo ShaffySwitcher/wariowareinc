@@ -57,7 +57,7 @@ _08035150: \n\
 /* 08035166 */ MOVS R3, #0 \n\
 /* 08035168 */ LDRSH R2, [R4, R3] \n\
 /* 0803516A */ MOVS R3, #0 \n\
-/* 0803516C */ BL func_08001C08 \n\
+/* 0803516C */ BL affine_param_set_rot_scale_xy \n\
 /* 08035170 */ LSLS R0, R7, #3 \n\
 /* 08035172 */ ADDS R0, #0X88 \n\
 /* 08035174 */ ADDS R0, R6, R0 \n\
@@ -66,7 +66,7 @@ _08035150: \n\
 /* 0803517A */ MOVS R3, #0 \n\
 /* 0803517C */ LDRSH R2, [R4, R3] \n\
 /* 0803517E */ MOVS R3, #0 \n\
-/* 08035180 */ BL func_08001CD0 \n\
+/* 08035180 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 08035184 */ MOV R0, R8 \n\
 /* 08035186 */ POP {R3} \n\
 /* 08035188 */ MOV R8, R3 \n\

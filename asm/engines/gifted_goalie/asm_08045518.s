@@ -109,7 +109,7 @@ thumb_func_start func_08045518 \n\
 /* 08045604 */ MOVS R3, #0 \n\
 /* 08045606 */ LDRSH R2, [R1, R3] \n\
 /* 08045608 */ MOV R1, SL \n\
-/* 0804560A */ BL func_08001BA4 \n\
+/* 0804560A */ BL affine_param_set_rot_scale \n\
 /* 0804560E */ LDR R2, [R6] \n\
 /* 08045610 */ ADDS R3, R2, #0 \n\
 /* 08045612 */ ADDS R3, #0X98 \n\
@@ -161,7 +161,7 @@ thumb_func_start func_08045518 \n\
 /* 08045672 */ LDRSH R0, [R2, R3] \n\
 /* 08045674 */ MOV R1, SL \n\
 /* 08045676 */ MOVS R2, #0 \n\
-/* 08045678 */ BL func_08001BA4 \n\
+/* 08045678 */ BL affine_param_set_rot_scale \n\
 /* 0804567C */ MOV R5, SB \n\
 /* 0804567E */ LDR R0, [R5] \n\
 /* 08045680 */ LDR R1, _08045720 \n\

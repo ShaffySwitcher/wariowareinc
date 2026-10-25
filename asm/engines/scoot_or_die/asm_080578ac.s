@@ -104,7 +104,7 @@ _0805791E: \n\
 /* 08057976 */ MOVS R1, #0X80 \n\
 /* 08057978 */ LSLS R1, R1, #1 \n\
 /* 0805797A */ MOVS R2, #0 \n\
-/* 0805797C */ BL func_08001BA4 \n\
+/* 0805797C */ BL affine_param_set_rot_scale \n\
 /* 08057980 */ LDR R0, [R7] \n\
 /* 08057982 */ MOVS R2, #0 \n\
 /* 08057984 */ LDRSH R1, [R5, R2] \n\

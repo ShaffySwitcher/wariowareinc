@@ -466,7 +466,7 @@ _0805ED4C: \n\
 /* 0805ED56 */ LDRH R2, [R2, #0X24] \n\
 /* 0805ED58 */ LSLS R2, R2, #0X10 \n\
 /* 0805ED5A */ ASRS R2, R2, #0X18 \n\
-/* 0805ED5C */ BL func_08001BA4 \n\
+/* 0805ED5C */ BL affine_param_set_rot_scale \n\
 /* 0805ED60 */ ADD SP, #0XC \n\
 /* 0805ED62 */ POP {R3} \n\
 /* 0805ED64 */ MOV R8, R3 \n\

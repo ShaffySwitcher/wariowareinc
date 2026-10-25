@@ -269,7 +269,7 @@ _0803AEF6: \n\
 /* 0803AF24 */ LDRB R2, [R1] \n\
 /* 0803AF26 */ MOVS R1, #0X80 \n\
 /* 0803AF28 */ LSLS R1, R1, #1 \n\
-/* 0803AF2A */ BL func_08001BA4 \n\
+/* 0803AF2A */ BL affine_param_set_rot_scale \n\
 /* 0803AF2E */ LDR R3, _0803AF80 \n\
 /* 0803AF30 */ LDR R1, [R3] \n\
 /* 0803AF32 */ ADDS R0, R1, #0 \n\

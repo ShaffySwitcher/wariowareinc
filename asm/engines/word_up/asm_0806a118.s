@@ -240,7 +240,7 @@ _0806A29E: \n\
 /* 0806A2B6 */ MOVS R3, #0 \n\
 /* 0806A2B8 */ LDRSH R2, [R2, R3] \n\
 /* 0806A2BA */ MOVS R3, #0 \n\
-/* 0806A2BC */ BL func_08001C08 \n\
+/* 0806A2BC */ BL affine_param_set_rot_scale_xy \n\
 /* 0806A2C0 */ ADDS R0, R4, #0 \n\
 /* 0806A2C2 */ BL func_08069EBC \n\
 /* 0806A2C6 */ B _0806A2CE \n\

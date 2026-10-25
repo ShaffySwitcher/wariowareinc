@@ -31,7 +31,7 @@ thumb_func_start func_08057FB4 \n\
 /* 08057FEA */ STR R2, [R3] \n\
 /* 08057FEC */ MOVS R3, #0XFF \n\
 /* 08057FEE */ ANDS R2, R3 \n\
-/* 08057FF0 */ BL func_08001BA4 \n\
+/* 08057FF0 */ BL affine_param_set_rot_scale \n\
 /* 08057FF4 */ POP {R4, R5} \n\
 /* 08057FF6 */ POP {R0} \n\
 /* 08057FF8 */ BX R0 \n\

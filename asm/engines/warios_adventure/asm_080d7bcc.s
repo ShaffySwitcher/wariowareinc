@@ -64,14 +64,14 @@ thumb_func_start func_080D7BCC \n\
 /* 080D7C46 */ LDRH R2, [R4, #0X14] \n\
 /* 080D7C48 */ LSRS R2, R2, #8 \n\
 /* 080D7C4A */ MOV R1, R8 \n\
-/* 080D7C4C */ BL func_08001BA4 \n\
+/* 080D7C4C */ BL affine_param_set_rot_scale \n\
 /* 080D7C50 */ LDR R3, _080D7D48 \n\
 /* 080D7C52 */ ADDS R5, R3 \n\
 /* 080D7C54 */ LDRH R2, [R4, #0X14] \n\
 /* 080D7C56 */ LSRS R2, R2, #8 \n\
 /* 080D7C58 */ ADDS R0, R5, #0 \n\
 /* 080D7C5A */ MOV R1, R8 \n\
-/* 080D7C5C */ BL func_08001C74 \n\
+/* 080D7C5C */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080D7C60 */ MOV R1, SL \n\
 /* 080D7C62 */ LDR R0, [R1] \n\
 /* 080D7C64 */ MOVS R2, #0 \n\

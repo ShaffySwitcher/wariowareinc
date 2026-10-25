@@ -229,7 +229,7 @@ _080CB3CA: \n\
 /* 080CB3E4 */ ADDS R4, R3, #0 \n\
 /* 080CB3E6 */ ADDS R2, R4, #0 \n\
 /* 080CB3E8 */ MOVS R3, #0 \n\
-/* 080CB3EA */ BL func_08001C08 \n\
+/* 080CB3EA */ BL affine_param_set_rot_scale_xy \n\
 /* 080CB3EE */ MOV R0, SB \n\
 /* 080CB3F0 */ LDR R1, [R0] \n\
 /* 080CB3F2 */ ADDS R0, R1, #0 \n\
@@ -241,7 +241,7 @@ _080CB3CA: \n\
 /* 080CB3FE */ ASRS R1, R1, #0X10 \n\
 /* 080CB400 */ ADDS R2, R4, #0 \n\
 /* 080CB402 */ MOVS R3, #0 \n\
-/* 080CB404 */ BL func_08001CD0 \n\
+/* 080CB404 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080CB408 */ LDR R0, _080CB42C \n\
 /* 080CB40A */ LDR R0, [R0] \n\
 /* 080CB40C */ MOV R1, SB \n\

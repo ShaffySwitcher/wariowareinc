@@ -52,7 +52,7 @@ _0801B942:
 /* 0801B95E */ ASRS R4, R4, #0X10
 /* 0801B960 */ ADDS R1, R4, #0
 /* 0801B962 */ MOVS R2, #0
-/* 0801B964 */ BL func_08001BA4
+/* 0801B964 */ BL affine_param_set_rot_scale
 /* 0801B968 */ LSLS R1, R7, #3
 /* 0801B96A */ ADDS R1, #0X4C
 /* 0801B96C */ MOV R2, SB
@@ -60,7 +60,7 @@ _0801B942:
 /* 0801B970 */ ADDS R0, R1
 /* 0801B972 */ ADDS R1, R4, #0
 /* 0801B974 */ MOVS R2, #0
-/* 0801B976 */ BL func_08001C74
+/* 0801B976 */ BL affine_matrix_set_rot_scale_inv
 /* 0801B97A */ MOVS R0, #0XAF
 /* 0801B97C */ LSLS R0, R0, #4
 /* 0801B97E */ ADDS R1, R5, #0

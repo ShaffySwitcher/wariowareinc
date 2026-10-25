@@ -150,7 +150,7 @@ _0805E7D0: \n\
 /* 0805E836 */ LDRH R2, [R2, #0X24] \n\
 /* 0805E838 */ LSLS R2, R2, #0X10 \n\
 /* 0805E83A */ ASRS R2, R2, #0X18 \n\
-/* 0805E83C */ BL func_08001BA4 \n\
+/* 0805E83C */ BL affine_param_set_rot_scale \n\
 /* 0805E840 */ MOV R1, R8 \n\
 /* 0805E842 */ LDR R0, [R1] \n\
 /* 0805E844 */ LDR R1, _0805E940 \n\

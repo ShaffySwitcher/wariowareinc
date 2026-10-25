@@ -6,7 +6,7 @@ thumb_func_start func_08040978 \n\
 /* 0804097A */ LDR R0, =gCurrentSceneVariable \n\
 /* 0804097C */ LDR R0, [R0] \n\
 /* 0804097E */ LDR R0, [R0, #0X64] \n\
-/* 08040980 */ BL func_08001B28 \n\
+/* 08040980 */ BL affine_param_free \n\
 /* 08040984 */ POP {R0} \n\
 /* 08040986 */ BX R0 \n\
  \n\

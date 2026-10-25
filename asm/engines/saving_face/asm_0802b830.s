@@ -45,7 +45,7 @@ _0802B86E: \n\
 /* 0802B878 */ LSLS R2, R2, #1 \n\
 /* 0802B87A */ LDRB R3, [R1, #0X15] \n\
 /* 0802B87C */ ADDS R1, R2, #0 \n\
-/* 0802B87E */ BL func_08001C08 \n\
+/* 0802B87E */ BL affine_param_set_rot_scale_xy \n\
 /* 0802B882 */ CMP R5, #0X85 \n\
 /* 0802B884 */ BLS _0802B894 \n\
 /* 0802B886 */ LDR R0, [R4] \n\

@@ -42,7 +42,7 @@ thumb_func_start func_0800701C \n\
 /* 0800706C */ ASRS R2, R2, #0X10 \n\
 /* 0800706E */ ADDS R1, R4, #0 \n\
 /* 08007070 */ ADDS R3, R5, #0 \n\
-/* 08007072 */ BL func_08001C08 \n\
+/* 08007072 */ BL affine_param_set_rot_scale_xy \n\
 /* 08007076 */ LDR R1, _080070C8 \n\
 /* 08007078 */ LSLS R5, R5, #1 \n\
 /* 0800707A */ ADDS R1, R5, R1 \n\

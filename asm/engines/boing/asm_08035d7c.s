@@ -76,7 +76,7 @@ _08035DF6: \n\
 /* 08035DFE */ LSLS R1, R1, #1 \n\
 /* 08035E00 */ MOVS R3, #0 \n\
 /* 08035E02 */ LDRSH R2, [R2, R3] \n\
-/* 08035E04 */ BL func_08001BA4 \n\
+/* 08035E04 */ BL affine_param_set_rot_scale \n\
 /* 08035E08 */ POP {R4} \n\
 /* 08035E0A */ POP {R0} \n\
 /* 08035E0C */ BX R0 \n\

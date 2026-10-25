@@ -316,7 +316,7 @@ _080EA57A: \n\
 /* 080EA646 */ ASRS R2, R2, #0X10 \n\
 /* 080EA648 */ ADDS R1, R2, #0 \n\
 /* 080EA64A */ MOVS R3, #0 \n\
-/* 080EA64C */ BL func_08001C08 \n\
+/* 080EA64C */ BL affine_param_set_rot_scale_xy \n\
 /* 080EA650 */ LDR R3, _080EA6E8 \n\
 /* 080EA652 */ LDR R1, [R3] \n\
 /* 080EA654 */ ADDS R0, R1, #0 \n\
@@ -328,7 +328,7 @@ _080EA57A: \n\
 /* 080EA660 */ ADDS R1, R4, #0 \n\
 /* 080EA662 */ ADDS R2, R4, #0 \n\
 /* 080EA664 */ MOVS R3, #0 \n\
-/* 080EA666 */ BL func_08001CD0 \n\
+/* 080EA666 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080EA66A */ LDR R1, _080EA6EC \n\
 /* 080EA66C */ LDR R0, [R1] \n\
 /* 080EA66E */ LDR R2, _080EA6E8 \n\

@@ -150,7 +150,7 @@ thumb_func_start func_080342C4 \n\
 /* 08034400 */ ADDS R1, R4, #0 \n\
 /* 08034402 */ MOVS R2, #0 \n\
 /* 08034404 */ MOVS R3, #0 \n\
-/* 08034406 */ BL func_08001D5C \n\
+/* 08034406 */ BL affine_param_set_raw \n\
 /* 0803440A */ LDR R3, _08034538 \n\
 /* 0803440C */ LDR R0, [R3] \n\
 /* 0803440E */ LSLS R5, R5, #0X10 \n\
@@ -234,7 +234,7 @@ thumb_func_start func_080342C4 \n\
 /* 080344B4 */ ADDS R1, R4, #0 \n\
 /* 080344B6 */ MOVS R2, #0 \n\
 /* 080344B8 */ MOVS R3, #0 \n\
-/* 080344BA */ BL func_08001D5C \n\
+/* 080344BA */ BL affine_param_set_raw \n\
 /* 080344BE */ LDR R1, _08034538 \n\
 /* 080344C0 */ LDR R0, [R1] \n\
 /* 080344C2 */ LSLS R5, R5, #0X10 \n\

@@ -248,7 +248,7 @@ _0803B132: \n\
 /* 0803B15E */ LDRB R2, [R1] \n\
 /* 0803B160 */ MOVS R1, #0X80 \n\
 /* 0803B162 */ LSLS R1, R1, #1 \n\
-/* 0803B164 */ BL func_08001BA4 \n\
+/* 0803B164 */ BL affine_param_set_rot_scale \n\
 /* 0803B168 */ LDR R1, [R6] \n\
 /* 0803B16A */ LDR R3, [SP] \n\
 /* 0803B16C */ LSLS R5, R3, #0X10 \n\
@@ -350,7 +350,7 @@ _0803B1F2: \n\
 /* 0803B220 */ LDRB R2, [R1] \n\
 /* 0803B222 */ MOVS R1, #0X80 \n\
 /* 0803B224 */ LSLS R1, R1, #1 \n\
-/* 0803B226 */ BL func_08001BA4 \n\
+/* 0803B226 */ BL affine_param_set_rot_scale \n\
 _0803B22A: \n\
 /* 0803B22A */ MOVS R0, #0X80 \n\
 /* 0803B22C */ LSLS R0, R0, #9 \n\

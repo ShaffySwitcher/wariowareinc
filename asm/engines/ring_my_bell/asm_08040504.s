@@ -44,7 +44,7 @@ thumb_func_start func_08040504 \n\
 /* 08040562 */ BL scene_set_bg_layer_controls \n\
 /* 08040566 */ MOVS R0, #1 \n\
 /* 08040568 */ BL func_0800A0C4 \n\
-/* 0804056C */ BL func_08001AC0 \n\
+/* 0804056C */ BL affine_param_alloc \n\
 /* 08040570 */ MOV R1, R8 \n\
 /* 08040572 */ LDR R2, [R1] \n\
 /* 08040574 */ STR R0, [R2, #0X64] \n\

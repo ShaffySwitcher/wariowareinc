@@ -14,7 +14,7 @@ _080CF1AC: \n\
 /* 080CF1B0 */ MOVS R4, #0X20 \n\
 /* 080CF1B2 */ LDRSH R2, [R0, R4] \n\
 /* 080CF1B4 */ ADDS R0, R3, #0 \n\
-/* 080CF1B6 */ BL func_08001BA4 \n\
+/* 080CF1B6 */ BL affine_param_set_rot_scale \n\
 /* 080CF1BA */ POP {R4} \n\
 /* 080CF1BC */ POP {R0} \n\
 /* 080CF1BE */ BX R0 \n\

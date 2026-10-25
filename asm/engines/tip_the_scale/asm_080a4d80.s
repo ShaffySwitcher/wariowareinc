@@ -66,7 +66,7 @@ _080A4DE6: \n\
 /* 080A4DF0 */ ASRS R2, R2, #8 \n\
 /* 080A4DF2 */ MOVS R3, #0XFF \n\
 /* 080A4DF4 */ ANDS R2, R3 \n\
-/* 080A4DF6 */ BL func_08001BA4 \n\
+/* 080A4DF6 */ BL affine_param_set_rot_scale \n\
 /* 080A4DFA */ LDR R2, [R5] \n\
 /* 080A4DFC */ LDR R0, [R2, #0XC] \n\
 /* 080A4DFE */ CMP R0, #0 \n\

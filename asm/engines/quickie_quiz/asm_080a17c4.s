@@ -86,7 +86,7 @@ _080A1840: \n\
 /* 080A1870 */ MOVS R1, #0X80 \n\
 /* 080A1872 */ LSLS R1, R1, #1 \n\
 /* 080A1874 */ MOVS R2, #0 \n\
-/* 080A1876 */ BL func_08001BA4 \n\
+/* 080A1876 */ BL affine_param_set_rot_scale \n\
 /* 080A187A */ MOVS R6, #0 \n\
 /* 080A187C */ ADDS R7, R5, #0 \n\
 _080A187E: \n\

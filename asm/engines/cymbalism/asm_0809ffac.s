@@ -18,7 +18,7 @@ _0809FFBE: \n\
 /* 0809FFC4 */ LDRB R0, [R0] \n\
 /* 0809FFC6 */ LSLS R0, R0, #0X18 \n\
 /* 0809FFC8 */ ASRS R0, R0, #0X18 \n\
-/* 0809FFCA */ BL func_08001B28 \n\
+/* 0809FFCA */ BL affine_param_free \n\
 /* 0809FFCE */ ADDS R0, R4, #1 \n\
 /* 0809FFD0 */ LSLS R0, R0, #0X18 \n\
 /* 0809FFD2 */ LSRS R4, R0, #0X18 \n\

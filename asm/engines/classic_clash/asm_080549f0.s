@@ -183,7 +183,7 @@ _08054B34: \n\
 /* 08054B3A */ MOVS R3, #0 \n\
 /* 08054B3C */ LDRSH R1, [R1, R3] \n\
 /* 08054B3E */ MOVS R2, #0 \n\
-/* 08054B40 */ BL func_08001BA4 \n\
+/* 08054B40 */ BL affine_param_set_rot_scale \n\
 /* 08054B44 */ LDR R2, [R6] \n\
 /* 08054B46 */ ADDS R1, R2, #0 \n\
 /* 08054B48 */ ADDS R1, #0X84 \n\

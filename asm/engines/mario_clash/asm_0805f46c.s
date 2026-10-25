@@ -156,7 +156,7 @@ _0805F576: \n\
 /* 0805F58A */ ADDS R2, #0X44 \n\
 /* 0805F58C */ MOVS R5, #0 \n\
 /* 0805F58E */ LDRSH R2, [R2, R5] \n\
-/* 0805F590 */ BL func_08001BA4 \n\
+/* 0805F590 */ BL affine_param_set_rot_scale \n\
 /* 0805F594 */ LDR R2, [R6] \n\
 /* 0805F596 */ ADDS R0, R2, #0 \n\
 /* 0805F598 */ ADDS R0, #0X48 \n\
@@ -167,7 +167,7 @@ _0805F576: \n\
 /* 0805F5A2 */ ADDS R2, #0X44 \n\
 /* 0805F5A4 */ MOVS R5, #0 \n\
 /* 0805F5A6 */ LDRSH R2, [R2, R5] \n\
-/* 0805F5A8 */ BL func_08001C74 \n\
+/* 0805F5A8 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0805F5AC */ LDR R4, _0805F600 \n\
 /* 0805F5AE */ LDR R0, [R4] \n\
 /* 0805F5B0 */ LDR R3, [R6] \n\

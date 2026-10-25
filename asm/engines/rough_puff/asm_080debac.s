@@ -57,7 +57,7 @@ _080DEC14: \n\
 /* 080DEC18 */ ADDS R0, R2, #0 \n\
 /* 080DEC1A */ ADDS R2, R4, #0 \n\
 /* 080DEC1C */ MOVS R3, #0 \n\
-/* 080DEC1E */ BL func_08001C08 \n\
+/* 080DEC1E */ BL affine_param_set_rot_scale_xy \n\
 /* 080DEC22 */ LDR R0, [R5] \n\
 /* 080DEC24 */ ADDS R2, R0, #0 \n\
 /* 080DEC26 */ ADDS R2, #0X82 \n\
@@ -71,7 +71,7 @@ _080DEC34: \n\
 /* 080DEC34 */ ADDS R0, R2, #0 \n\
 /* 080DEC36 */ ADDS R2, R4, #0 \n\
 /* 080DEC38 */ MOVS R3, #0 \n\
-/* 080DEC3A */ BL func_08001CD0 \n\
+/* 080DEC3A */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080DEC3E */ LDR R0, [R6] \n\
 /* 080DEC40 */ LDR R3, [R5] \n\
 /* 080DEC42 */ LDR R1, [R3, #0X60] \n\

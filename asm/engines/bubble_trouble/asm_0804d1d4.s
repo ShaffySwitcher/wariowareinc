@@ -21,7 +21,7 @@ _0804D1E6: \n\
 /* 0804D1F2 */ LDRB R0, [R0] \n\
 /* 0804D1F4 */ LSLS R0, R0, #0X18 \n\
 /* 0804D1F6 */ ASRS R0, R0, #0X18 \n\
-/* 0804D1F8 */ BL func_08001B28 \n\
+/* 0804D1F8 */ BL affine_param_free \n\
 /* 0804D1FC */ LDR R0, [R5] \n\
 /* 0804D1FE */ MOVS R1, #0X8A \n\
 /* 0804D200 */ LSLS R1, R1, #2 \n\
@@ -30,7 +30,7 @@ _0804D1E6: \n\
 /* 0804D206 */ LDRB R0, [R0] \n\
 /* 0804D208 */ LSLS R0, R0, #0X18 \n\
 /* 0804D20A */ ASRS R0, R0, #0X18 \n\
-/* 0804D20C */ BL func_08001B28 \n\
+/* 0804D20C */ BL affine_param_free \n\
 /* 0804D210 */ ADDS R4, #1 \n\
 /* 0804D212 */ LSLS R4, R4, #0X10 \n\
 /* 0804D214 */ LSRS R1, R4, #0X10 \n\
@@ -49,14 +49,14 @@ _0804D222: \n\
 /* 0804D22C */ LDRB R0, [R0] \n\
 /* 0804D22E */ LSLS R0, R0, #0X18 \n\
 /* 0804D230 */ ASRS R0, R0, #0X18 \n\
-/* 0804D232 */ BL func_08001B28 \n\
+/* 0804D232 */ BL affine_param_free \n\
 /* 0804D236 */ LDR R0, [R4] \n\
 /* 0804D238 */ LDR R1, _0804D254 \n\
 /* 0804D23A */ ADDS R0, R1 \n\
 /* 0804D23C */ LDRB R0, [R0] \n\
 /* 0804D23E */ LSLS R0, R0, #0X18 \n\
 /* 0804D240 */ ASRS R0, R0, #0X18 \n\
-/* 0804D242 */ BL func_08001B28 \n\
+/* 0804D242 */ BL affine_param_free \n\
 /* 0804D246 */ POP {R4, R5} \n\
 /* 0804D248 */ POP {R0} \n\
 /* 0804D24A */ BX R0 \n\

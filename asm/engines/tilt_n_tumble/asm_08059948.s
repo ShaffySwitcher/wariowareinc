@@ -102,7 +102,7 @@ _080599F6: \n\
 /* 080599FA */ LSLS R1, R1, #1 \n\
 /* 080599FC */ ADDS R2, #0X68 \n\
 /* 080599FE */ LDRB R2, [R2] \n\
-/* 08059A00 */ BL func_08001BA4 \n\
+/* 08059A00 */ BL affine_param_set_rot_scale \n\
 _08059A04: \n\
 /* 08059A04 */ POP {R4} \n\
 /* 08059A06 */ POP {R0} \n\

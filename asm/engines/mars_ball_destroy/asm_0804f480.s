@@ -294,7 +294,7 @@ _0804F682: \n\
 /* 0804F6B2 */ ADDS R0, #0X68 \n\
 /* 0804F6B4 */ ADDS R0, R4 \n\
 /* 0804F6B6 */ STRB R2, [R0] \n\
-/* 0804F6B8 */ BL func_08001AC0 \n\
+/* 0804F6B8 */ BL affine_param_alloc \n\
 /* 0804F6BC */ LDR R2, [R6] \n\
 /* 0804F6BE */ MOVS R1, #0XD4 \n\
 /* 0804F6C0 */ LSLS R1, R1, #2 \n\

@@ -15,7 +15,7 @@ _0806B9A4: \n\
 /* 0806B9AE */ LDRB R0, [R0] \n\
 /* 0806B9B0 */ LSLS R0, R0, #0X18 \n\
 /* 0806B9B2 */ ASRS R0, R0, #0X18 \n\
-/* 0806B9B4 */ BL func_08001B28 \n\
+/* 0806B9B4 */ BL affine_param_free \n\
 /* 0806B9B8 */ ADDS R4, #0X28 \n\
 /* 0806B9BA */ ADDS R5, #1 \n\
 /* 0806B9BC */ CMP R5, #2 \n\

@@ -196,7 +196,7 @@ _080A263A: \n\
 /* 080A26D0 */ SUBS R2, R4, R2 \n\
 /* 080A26D2 */ ASRS R2, R2, #8 \n\
 /* 080A26D4 */ ADDS R1, R5, #0 \n\
-/* 080A26D6 */ BL func_08001BA4 \n\
+/* 080A26D6 */ BL affine_param_set_rot_scale \n\
 /* 080A26DA */ LDR R1, [R7] \n\
 /* 080A26DC */ ADDS R0, R1, #0 \n\
 /* 080A26DE */ ADDS R0, #0X3A \n\
@@ -205,7 +205,7 @@ _080A263A: \n\
 /* 080A26E4 */ ASRS R4, R4, #8 \n\
 /* 080A26E6 */ ADDS R1, R5, #0 \n\
 /* 080A26E8 */ ADDS R2, R4, #0 \n\
-/* 080A26EA */ BL func_08001C74 \n\
+/* 080A26EA */ BL affine_matrix_set_rot_scale_inv \n\
 /* 080A26EE */ LDR R0, [R6] \n\
 /* 080A26F0 */ LDR R3, [R7] \n\
 /* 080A26F2 */ MOVS R2, #0X1E \n\

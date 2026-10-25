@@ -87,7 +87,7 @@ thumb_func_start func_0803C6F0 \n\
 /* 0803C7AC */ MOV R8, R2 \n\
 /* 0803C7AE */ MOV R1, R8 \n\
 /* 0803C7B0 */ MOVS R2, #0X60 \n\
-/* 0803C7B2 */ BL func_08001BA4 \n\
+/* 0803C7B2 */ BL affine_param_set_rot_scale \n\
 /* 0803C7B6 */ MOV R3, SL \n\
 /* 0803C7B8 */ LDR R3, [R3] \n\
 /* 0803C7BA */ MOV IP, R3 \n\
@@ -149,7 +149,7 @@ thumb_func_start func_0803C6F0 \n\
 /* 0803C830 */ STR R0, [R1, #0X60] \n\
 /* 0803C832 */ MOV R1, R8 \n\
 /* 0803C834 */ MOVS R2, #0 \n\
-/* 0803C836 */ BL func_08001BA4 \n\
+/* 0803C836 */ BL affine_param_set_rot_scale \n\
 /* 0803C83A */ LDR R0, [R5] \n\
 /* 0803C83C */ LDR R3, _0803C9A8 \n\
 /* 0803C83E */ MOV IP, R3 \n\

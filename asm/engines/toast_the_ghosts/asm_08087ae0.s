@@ -165,7 +165,7 @@ _08087BDA: \n\
 /* 08087BF4 */ LDRH R3, [R1] \n\
 /* 08087BF6 */ LSRS R3, R3, #8 \n\
 /* 08087BF8 */ ADDS R1, R4, #0 \n\
-/* 08087BFA */ BL func_08001C08 \n\
+/* 08087BFA */ BL affine_param_set_rot_scale_xy \n\
 /* 08087BFE */ LDR R1, [R5] \n\
 /* 08087C00 */ ADDS R0, R1, #0 \n\
 /* 08087C02 */ ADDS R0, #0X50 \n\
@@ -177,7 +177,7 @@ _08087BDA: \n\
 /* 08087C0E */ LDRH R3, [R1] \n\
 /* 08087C10 */ LSRS R3, R3, #8 \n\
 /* 08087C12 */ ADDS R1, R4, #0 \n\
-/* 08087C14 */ BL func_08001CD0 \n\
+/* 08087C14 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 08087C18 */ LDR R4, =gSpriteHandler \n\
 /* 08087C1A */ LDR R0, [R4] \n\
 /* 08087C1C */ LDR R3, [R5] \n\

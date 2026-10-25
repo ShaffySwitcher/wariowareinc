@@ -35,7 +35,7 @@ glabel func_080ED840
 /* 080ED876 */ MOVS R2, #0
 /* 080ED878 */ LDRSH R1, [R1, R2]
 /* 080ED87A */ MOVS R2, #0
-/* 080ED87C */ BL func_08001BA4
+/* 080ED87C */ BL affine_param_set_rot_scale
 /* 080ED880 */ LDR R1, [R6]
 /* 080ED882 */ ADDS R0, R1, #0
 /* 080ED884 */ ADDS R0, #0X82
@@ -43,7 +43,7 @@ glabel func_080ED840
 /* 080ED888 */ MOVS R2, #0
 /* 080ED88A */ LDRSH R1, [R1, R2]
 /* 080ED88C */ MOVS R2, #0
-/* 080ED88E */ BL func_08001C74
+/* 080ED88E */ BL affine_matrix_set_rot_scale_inv
 /* 080ED892 */ LDR R0, _080ED8F0
 /* 080ED894 */ MOV R8, R0
 /* 080ED896 */ LDR R0, [R0]

@@ -26,7 +26,7 @@ glabel func_080260A0
 /* 080260C6 */ LDRB R0, [R0]
 /* 080260C8 */ LSLS R0, R0, #0X18
 /* 080260CA */ ASRS R0, R0, #0X18
-/* 080260CC */ BL func_08001B28
+/* 080260CC */ BL affine_param_free
 /* 080260D0 */ MOVS R7, #0
 /* 080260D2 */ LDR R2, _08026134
 /* 080260D4 */ MOV SB, R2

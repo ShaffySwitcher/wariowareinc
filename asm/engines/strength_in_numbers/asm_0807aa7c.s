@@ -67,7 +67,7 @@ _0807AAD0: \n\
 /* 0807AAF0 */ LSLS R2, R2, #1 \n\
 /* 0807AAF2 */ ADDS R1, R2 \n\
 /* 0807AAF4 */ MOVS R2, #0 \n\
-/* 0807AAF6 */ BL func_08001BA4 \n\
+/* 0807AAF6 */ BL affine_param_set_rot_scale \n\
 /* 0807AAFA */ LDR R2, [R5] \n\
 /* 0807AAFC */ ADDS R2, R4 \n\
 /* 0807AAFE */ LDR R0, [R2] \n\

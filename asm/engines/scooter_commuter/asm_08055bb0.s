@@ -82,7 +82,7 @@ _08055C2E: \n\
 /* 08055C36 */ LDR R2, [R2, #0X2C] \n\
 /* 08055C38 */ LSLS R2, R2, #8 \n\
 /* 08055C3A */ ASRS R2, R2, #0X10 \n\
-/* 08055C3C */ BL func_08001BA4 \n\
+/* 08055C3C */ BL affine_param_set_rot_scale \n\
 /* 08055C40 */ POP {R4, R5} \n\
 /* 08055C42 */ POP {R0} \n\
 /* 08055C44 */ BX R0 \n\

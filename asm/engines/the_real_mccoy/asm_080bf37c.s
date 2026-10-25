@@ -169,7 +169,7 @@ _080BF49C: \n\
 /* 080BF4A6 */ MOVS R1, #0X80 \n\
 /* 080BF4A8 */ LSLS R1, R1, #1 \n\
 /* 080BF4AA */ MOVS R2, #0 \n\
-/* 080BF4AC */ BL func_08001BA4 \n\
+/* 080BF4AC */ BL affine_param_set_rot_scale \n\
 /* 080BF4B0 */ LDR R0, [R4] \n\
 /* 080BF4B2 */ ADDS R5, R0, #0 \n\
 /* 080BF4B4 */ ADDS R5, #0XC \n\

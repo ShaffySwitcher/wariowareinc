@@ -73,7 +73,7 @@ thumb_func_start func_080272F4 \n\
 /* 0802738E */ STRB R2, [R0] \n\
 /* 08027390 */ ADDS R0, #1 \n\
 /* 08027392 */ STRB R2, [R0] \n\
-/* 08027394 */ BL func_08001AC0 \n\
+/* 08027394 */ BL affine_param_alloc \n\
 /* 08027398 */ ADDS R1, R7, #0 \n\
 /* 0802739A */ ADDS R1, #0X68 \n\
 /* 0802739C */ STRB R0, [R1] \n\
@@ -101,7 +101,7 @@ thumb_func_start func_080272F4 \n\
 /* 080273CA */ STRH R4, [R0] \n\
 /* 080273CC */ ADDS R0, #2 \n\
 /* 080273CE */ STRH R5, [R0] \n\
-/* 080273D0 */ BL func_08001AC0 \n\
+/* 080273D0 */ BL affine_param_alloc \n\
 /* 080273D4 */ ADDS R1, R7, #0 \n\
 /* 080273D6 */ ADDS R1, #0X69 \n\
 /* 080273D8 */ STRB R0, [R1] \n\

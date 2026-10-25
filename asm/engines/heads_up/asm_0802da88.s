@@ -227,7 +227,7 @@ _0802DB4A: \n\
 /* 0802DC6C */ MOVS R0, #0X80 \n\
 /* 0802DC6E */ LSLS R0, R0, #6 \n\
 /* 0802DC70 */ STR R0, [R7, #0X7C] \n\
-/* 0802DC72 */ BL func_08001AC0 \n\
+/* 0802DC72 */ BL affine_param_alloc \n\
 /* 0802DC76 */ ADDS R5, R7, #0 \n\
 /* 0802DC78 */ ADDS R5, #0XA0 \n\
 /* 0802DC7A */ STRB R0, [R5] \n\
@@ -276,7 +276,7 @@ _0802DB4A: \n\
 /* 0802DCD4 */ LSLS R1, R1, #8 \n\
 /* 0802DCD6 */ ASRS R1, R1, #0X10 \n\
 /* 0802DCD8 */ MOVS R2, #0 \n\
-/* 0802DCDA */ BL func_08001BA4 \n\
+/* 0802DCDA */ BL affine_param_set_rot_scale \n\
 /* 0802DCDE */ ADDS R1, R7, #0 \n\
 /* 0802DCE0 */ ADDS R1, #0X8C \n\
 /* 0802DCE2 */ MOVS R0, #0XA0 \n\

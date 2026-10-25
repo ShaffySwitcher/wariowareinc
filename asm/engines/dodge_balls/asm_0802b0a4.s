@@ -17,7 +17,7 @@ _0802B0B8: \n\
 /* 0802B0BA */ LDRB R0, [R0] \n\
 /* 0802B0BC */ LSLS R0, R0, #0X18 \n\
 /* 0802B0BE */ ASRS R0, R0, #0X18 \n\
-/* 0802B0C0 */ BL func_08001B28 \n\
+/* 0802B0C0 */ BL affine_param_free \n\
 /* 0802B0C4 */ ADDS R4, #1 \n\
 /* 0802B0C6 */ LDRH R0, [R5] \n\
 /* 0802B0C8 */ CMP R4, R0 \n\

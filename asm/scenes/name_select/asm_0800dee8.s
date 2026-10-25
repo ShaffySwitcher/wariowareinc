@@ -656,7 +656,7 @@ _0800E378: \n\
 /* 0800E3C6 */ MOVS R2, #0 \n\
 /* 0800E3C8 */ STRB R2, [R0] \n\
 /* 0800E3CA */ MOVS R0, #1 \n\
-/* 0800E3CC */ BL func_08001B04 \n\
+/* 0800E3CC */ BL affine_param_alloc_owner \n\
 /* 0800E3D0 */ LDR R1, [R6] \n\
 /* 0800E3D2 */ LDR R3, _0800E584 \n\
 /* 0800E3D4 */ ADDS R1, R3 \n\

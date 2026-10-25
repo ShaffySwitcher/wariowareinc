@@ -105,7 +105,7 @@ _080CEE2E: \n\
 /* 080CEE32 */ LSLS R1, R1, #1 \n\
 /* 080CEE34 */ MOVS R3, #0X28 \n\
 /* 080CEE36 */ LDRSH R2, [R7, R3] \n\
-/* 080CEE38 */ BL func_08001BA4 \n\
+/* 080CEE38 */ BL affine_param_set_rot_scale \n\
 /* 080CEE3C */ LDR R0, _080CEE58 \n\
 /* 080CEE3E */ LDRH R1, [R0] \n\
 /* 080CEE40 */ MOVS R0, #0X40 \n\

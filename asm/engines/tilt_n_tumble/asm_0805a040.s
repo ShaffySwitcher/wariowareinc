@@ -116,7 +116,7 @@ _0805A106: \n\
 /* 0805A10C */ LSLS R1, R1, #1 \n\
 /* 0805A10E */ ADDS R2, #0X68 \n\
 /* 0805A110 */ LDRB R2, [R2] \n\
-/* 0805A112 */ BL func_08001BA4 \n\
+/* 0805A112 */ BL affine_param_set_rot_scale \n\
 /* 0805A116 */ POP {R4} \n\
 /* 0805A118 */ POP {R0} \n\
 /* 0805A11A */ BX R0 \n\

@@ -227,7 +227,7 @@ _08055972: \n\
 /* 08055A9A */ LDR R0, [R1] \n\
 /* 08055A9C */ MOV R1, SL \n\
 /* 08055A9E */ MOVS R2, #0 \n\
-/* 08055AA0 */ BL func_08001BA4 \n\
+/* 08055AA0 */ BL affine_param_set_rot_scale \n\
 /* 08055AA4 */ LDR R0, [R7] \n\
 /* 08055AA6 */ LDR R1, _08055B94 \n\
 /* 08055AA8 */ STR R6, [SP] \n\

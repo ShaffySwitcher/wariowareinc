@@ -138,7 +138,7 @@ _080AB7B0: \n\
 /* 080AB7C4 */ ASRS R1, R1, #0X10 \n\
 /* 080AB7C6 */ ADDS R2, R7, #0 \n\
 /* 080AB7C8 */ MOVS R3, #0 \n\
-/* 080AB7CA */ BL func_08001C08 \n\
+/* 080AB7CA */ BL affine_param_set_rot_scale_xy \n\
 /* 080AB7CE */ ADD SP, #0XC \n\
 /* 080AB7D0 */ POP {R3, R4, R5} \n\
 /* 080AB7D2 */ MOV R8, R3 \n\

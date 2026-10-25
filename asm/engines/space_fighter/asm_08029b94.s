@@ -54,7 +54,7 @@ _08029C00: \n\
 /* 08029C04 */ ADDS R0, #0XB4 \n\
 /* 08029C06 */ ADDS R0, R7 \n\
 /* 08029C08 */ STRB R6, [R0] \n\
-/* 08029C0A */ BL func_08001AC0 \n\
+/* 08029C0A */ BL affine_param_alloc \n\
 /* 08029C0E */ ADDS R4, R0, #0 \n\
 /* 08029C10 */ MOV R2, SB \n\
 /* 08029C12 */ LDR R0, [R2] \n\
@@ -204,7 +204,7 @@ _08029CE6: \n\
 /* 08029D40 */ MOVS R0, #0XA0 \n\
 /* 08029D42 */ SUBS R0, R1 \n\
 /* 08029D44 */ STR R0, [R4, #8] \n\
-/* 08029D46 */ BL func_08001AC0 \n\
+/* 08029D46 */ BL affine_param_alloc \n\
 /* 08029D4A */ LDR R1, [R6] \n\
 /* 08029D4C */ MOVS R2, #0XB1 \n\
 /* 08029D4E */ LSLS R2, R2, #3 \n\

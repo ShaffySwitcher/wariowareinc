@@ -27,13 +27,13 @@ thumb_func_start func_080C4988 \n\
 /* 080C49B8 */ LSLS R2, R2, #1 \n\
 /* 080C49BA */ ADDS R1, R4, #0 \n\
 /* 080C49BC */ ADDS R3, R5, #0 \n\
-/* 080C49BE */ BL func_08001C08 \n\
+/* 080C49BE */ BL affine_param_set_rot_scale_xy \n\
 /* 080C49C2 */ LDR R0, [R6] \n\
 /* 080C49C4 */ ADDS R0, #0XC \n\
 /* 080C49C6 */ ADDS R1, R4, #0 \n\
 /* 080C49C8 */ ADDS R2, R4, #0 \n\
 /* 080C49CA */ ADDS R3, R5, #0 \n\
-/* 080C49CC */ BL func_08001CD0 \n\
+/* 080C49CC */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080C49D0 */ POP {R4, R5, R6} \n\
 /* 080C49D2 */ POP {R0} \n\
 /* 080C49D4 */ BX R0 \n\

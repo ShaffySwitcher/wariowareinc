@@ -217,7 +217,7 @@ _0803E64E: \n\
 /* 0803E666 */ LSRS R2, R2, #8 \n\
 /* 0803E668 */ MOVS R3, #0XFF \n\
 /* 0803E66A */ ANDS R2, R3 \n\
-/* 0803E66C */ BL func_08001BA4 \n\
+/* 0803E66C */ BL affine_param_set_rot_scale \n\
 /* 0803E670 */ BL func_0803E468 \n\
 /* 0803E674 */ B _0803E6CE \n\
  \n\

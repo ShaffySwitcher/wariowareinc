@@ -263,7 +263,7 @@ _080EA948: \n\
 /* 080EA99E */ ADDS R1, #0X94 \n\
 /* 080EA9A0 */ LDRB R3, [R1] \n\
 /* 080EA9A2 */ ADDS R1, R2, #0 \n\
-/* 080EA9A4 */ BL func_08001C08 \n\
+/* 080EA9A4 */ BL affine_param_set_rot_scale_xy \n\
 /* 080EA9A8 */ POP {R4, R5} \n\
 /* 080EA9AA */ POP {R0} \n\
 /* 080EA9AC */ BX R0 \n\

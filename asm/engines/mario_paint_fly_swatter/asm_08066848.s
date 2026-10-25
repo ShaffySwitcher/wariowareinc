@@ -259,7 +259,7 @@ _08066A0E: \n\
 /* 08066A4E */ MOVS R1, #0X80 \n\
 /* 08066A50 */ LSLS R1, R1, #1 \n\
 /* 08066A52 */ MOVS R2, #0 \n\
-/* 08066A54 */ BL func_08001BA4 \n\
+/* 08066A54 */ BL affine_param_set_rot_scale \n\
 /* 08066A58 */ STR R5, [R4, #8] \n\
 /* 08066A5A */ STR R6, [R4, #0XC] \n\
 /* 08066A5C */ MOV R3, R8 \n\

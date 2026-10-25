@@ -477,7 +477,7 @@ _08034F6C: \n\
 /* 08034FBA */ MOVS R7, #0 \n\
 /* 08034FBC */ LDRSH R2, [R3, R7] \n\
 /* 08034FBE */ MOVS R3, #0 \n\
-/* 08034FC0 */ BL func_08001C08 \n\
+/* 08034FC0 */ BL affine_param_set_rot_scale_xy \n\
 /* 08034FC4 */ MOV R0, R8 \n\
 /* 08034FC6 */ MOVS R2, #0 \n\
 /* 08034FC8 */ LDRSH R1, [R0, R2] \n\
@@ -486,7 +486,7 @@ _08034F6C: \n\
 /* 08034FCE */ LDRSH R2, [R3, R7] \n\
 /* 08034FD0 */ ADDS R0, R5, #0 \n\
 /* 08034FD2 */ MOVS R3, #0 \n\
-/* 08034FD4 */ BL func_08001CD0 \n\
+/* 08034FD4 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 08034FD8 */ LDR R1, _08035038 \n\
 /* 08034FDA */ LDR R0, [R1] \n\
 /* 08034FDC */ LDR R2, [SP, #0X5C] \n\

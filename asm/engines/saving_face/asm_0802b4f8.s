@@ -174,7 +174,7 @@ thumb_func_start func_0802B4F8 \n\
 /* 0802B66C */ LSLS R2, R2, #1 \n\
 /* 0802B66E */ LDRB R3, [R1, #0X15] \n\
 /* 0802B670 */ ADDS R1, R2, #0 \n\
-/* 0802B672 */ BL func_08001C08 \n\
+/* 0802B672 */ BL affine_param_set_rot_scale_xy \n\
 /* 0802B676 */ LDR R0, [R7] \n\
 /* 0802B678 */ LDR R1, [R6] \n\
 /* 0802B67A */ MOVS R7, #0XA \n\

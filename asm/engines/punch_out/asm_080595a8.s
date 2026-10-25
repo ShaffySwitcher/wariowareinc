@@ -92,7 +92,7 @@ _080595DC: \n\
 /* 08059658 */ ASRS R1, R1, #0X10 \n\
 /* 0805965A */ ADDS R0, R5, #0 \n\
 /* 0805965C */ MOVS R2, #0 \n\
-/* 0805965E */ BL func_08001BA4 \n\
+/* 0805965E */ BL affine_param_set_rot_scale \n\
 /* 08059662 */ LDR R2, [R7] \n\
 /* 08059664 */ ADDS R0, R2, #0 \n\
 /* 08059666 */ ADDS R0, #0X42 \n\

@@ -74,7 +74,7 @@ _080CBE5E: \n\
 /* 080CBE6E */ ADDS R1, #0X8B \n\
 /* 080CBE70 */ LDRB R3, [R1] \n\
 /* 080CBE72 */ ADDS R1, R2, #0 \n\
-/* 080CBE74 */ BL func_08001C08 \n\
+/* 080CBE74 */ BL affine_param_set_rot_scale_xy \n\
 _080CBE78: \n\
 /* 080CBE78 */ LDR R6, _080CBEE4 \n\
 /* 080CBE7A */ LDR R2, [R6] \n\

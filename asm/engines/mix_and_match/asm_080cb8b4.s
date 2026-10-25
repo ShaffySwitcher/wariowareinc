@@ -96,7 +96,7 @@ _080CB936: \n\
 /* 080CB952 */ ADDS R4, R3, #0 \n\
 /* 080CB954 */ ADDS R2, R4, #0 \n\
 /* 080CB956 */ MOVS R3, #0 \n\
-/* 080CB958 */ BL func_08001C08 \n\
+/* 080CB958 */ BL affine_param_set_rot_scale_xy \n\
 /* 080CB95C */ LDR R1, [R6] \n\
 /* 080CB95E */ ADDS R0, R1, #0 \n\
 /* 080CB960 */ ADDS R0, #0X80 \n\
@@ -107,7 +107,7 @@ _080CB936: \n\
 /* 080CB96A */ ASRS R1, R1, #0X10 \n\
 /* 080CB96C */ ADDS R2, R4, #0 \n\
 /* 080CB96E */ MOVS R3, #0 \n\
-/* 080CB970 */ BL func_08001CD0 \n\
+/* 080CB970 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080CB974 */ LDR R0, [R5] \n\
 /* 080CB976 */ B _080CB9EE \n\
  \n\
@@ -159,7 +159,7 @@ _080CB9AC: \n\
 /* 080CB9C8 */ ADDS R4, R3, #0 \n\
 /* 080CB9CA */ ADDS R2, R4, #0 \n\
 /* 080CB9CC */ MOVS R3, #0 \n\
-/* 080CB9CE */ BL func_08001C08 \n\
+/* 080CB9CE */ BL affine_param_set_rot_scale_xy \n\
 /* 080CB9D2 */ LDR R1, [R6] \n\
 /* 080CB9D4 */ ADDS R0, R1, #0 \n\
 /* 080CB9D6 */ ADDS R0, #0X80 \n\
@@ -170,7 +170,7 @@ _080CB9AC: \n\
 /* 080CB9E0 */ ASRS R1, R1, #0X10 \n\
 /* 080CB9E2 */ ADDS R2, R4, #0 \n\
 /* 080CB9E4 */ MOVS R3, #0 \n\
-/* 080CB9E6 */ BL func_08001CD0 \n\
+/* 080CB9E6 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080CB9EA */ LDR R0, _080CBA0C \n\
 /* 080CB9EC */ LDR R0, [R0] \n\
 _080CB9EE: \n\

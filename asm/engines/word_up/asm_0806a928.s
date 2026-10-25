@@ -14,7 +14,7 @@ _0806A92C: \n\
 /* 0806A938 */ LDRB R0, [R0] \n\
 /* 0806A93A */ LSLS R0, R0, #0X18 \n\
 /* 0806A93C */ ASRS R0, R0, #0X18 \n\
-/* 0806A93E */ BL func_08001B28 \n\
+/* 0806A93E */ BL affine_param_free \n\
 /* 0806A942 */ ADDS R4, #1 \n\
 /* 0806A944 */ LSLS R4, R4, #0X10 \n\
 /* 0806A946 */ LSRS R1, R4, #0X10 \n\

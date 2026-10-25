@@ -92,7 +92,7 @@ thumb_func_start func_080415CC \n\
 /* 0804168A */ ADDS R0, R5, #0 \n\
 /* 0804168C */ ADDS R0, #0X73 \n\
 /* 0804168E */ STRB R7, [R0] \n\
-/* 08041690 */ BL func_08001AC0 \n\
+/* 08041690 */ BL affine_param_alloc \n\
 /* 08041694 */ LDR R1, [R6] \n\
 /* 08041696 */ ADDS R1, #0XBE \n\
 /* 08041698 */ STRB R0, [R1] \n\
@@ -106,7 +106,7 @@ thumb_func_start func_080415CC \n\
 /* 080416A8 */ LSLS R1, R1, #1 \n\
 /* 080416AA */ ADDS R2, #0X72 \n\
 /* 080416AC */ LDRB R2, [R2] \n\
-/* 080416AE */ BL func_08001BA4 \n\
+/* 080416AE */ BL affine_param_set_rot_scale \n\
 /* 080416B2 */ ADD R0, SP, #0X18 \n\
 /* 080416B4 */ MOVS R1, #0 \n\
 /* 080416B6 */ MOVS R2, #6 \n\

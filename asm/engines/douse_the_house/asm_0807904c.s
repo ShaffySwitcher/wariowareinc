@@ -54,7 +54,7 @@ _08079068: \n\
 /* 080790B0 */ LSLS R1, R1, #8 \n\
 /* 080790B2 */ ASRS R1, R1, #0X10 \n\
 /* 080790B4 */ MOVS R2, #0 \n\
-/* 080790B6 */ BL func_08001BA4 \n\
+/* 080790B6 */ BL affine_param_set_rot_scale \n\
 /* 080790BA */ ADDS R0, R4, #0 \n\
 /* 080790BC */ BL func_08078F28 \n\
 /* 080790C0 */ LDR R0, _080790F8 \n\

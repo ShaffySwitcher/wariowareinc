@@ -90,7 +90,7 @@ _080CC056: \n\
 /* 080CC074 */ ADDS R4, R3, #0 \n\
 /* 080CC076 */ ADDS R2, R4, #0 \n\
 /* 080CC078 */ MOVS R3, #0 \n\
-/* 080CC07A */ BL func_08001C08 \n\
+/* 080CC07A */ BL affine_param_set_rot_scale_xy \n\
 /* 080CC07E */ LDR R1, [R5] \n\
 /* 080CC080 */ ADDS R0, R1, #0 \n\
 /* 080CC082 */ ADDS R0, #0X9C \n\
@@ -101,7 +101,7 @@ _080CC056: \n\
 /* 080CC08C */ ASRS R1, R1, #0X10 \n\
 /* 080CC08E */ ADDS R2, R4, #0 \n\
 /* 080CC090 */ MOVS R3, #0 \n\
-/* 080CC092 */ BL func_08001CD0 \n\
+/* 080CC092 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080CC096 */ LDR R0, =gSpriteHandler \n\
 /* 080CC098 */ LDR R0, [R0] \n\
 /* 080CC09A */ LDR R3, [R5] \n\

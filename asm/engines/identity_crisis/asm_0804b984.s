@@ -62,7 +62,7 @@ _0804B9E6: \n\
 /* 0804B9F4 */ MOVS R2, #0 \n\
 /* 0804B9F6 */ LDRSH R1, [R1, R2] \n\
 /* 0804B9F8 */ MOVS R2, #0 \n\
-/* 0804B9FA */ BL func_08001BA4 \n\
+/* 0804B9FA */ BL affine_param_set_rot_scale \n\
 /* 0804B9FE */ ADDS R0, R4, #0 \n\
 /* 0804BA00 */ ADD SP, #0X14 \n\
 /* 0804BA02 */ POP {R4, R5, R6} \n\

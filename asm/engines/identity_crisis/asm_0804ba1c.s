@@ -51,7 +51,7 @@ _0804BA60: \n\
 /* 0804BA6E */ MOVS R2, #0 \n\
 /* 0804BA70 */ LDRSH R1, [R1, R2] \n\
 /* 0804BA72 */ MOVS R2, #0 \n\
-/* 0804BA74 */ BL func_08001BA4 \n\
+/* 0804BA74 */ BL affine_param_set_rot_scale \n\
 /* 0804BA78 */ POP {R4} \n\
 /* 0804BA7A */ POP {R0} \n\
 /* 0804BA7C */ BX R0 \n\

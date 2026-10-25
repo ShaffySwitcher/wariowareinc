@@ -65,7 +65,7 @@ _0805BB7A: \n\
 /* 0805BBCE */ LSLS R1, R1, #0X12 \n\
 /* 0805BBD0 */ ASRS R1, R1, #0X10 \n\
 /* 0805BBD2 */ MOVS R2, #0 \n\
-/* 0805BBD4 */ BL func_08001BA4 \n\
+/* 0805BBD4 */ BL affine_param_set_rot_scale \n\
 /* 0805BBD8 */ LDR R1, [R5, #0XC] \n\
 /* 0805BBDA */ MOVS R0, #0XE0 \n\
 /* 0805BBDC */ LSLS R0, R0, #6 \n\

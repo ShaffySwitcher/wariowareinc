@@ -153,7 +153,7 @@ thumb_func_start func_080580B4 \n\
 /* 080581FE */ ADDS R0, #0X44 \n\
 /* 08058200 */ MOV R7, R8 \n\
 /* 08058202 */ STRH R7, [R0] \n\
-/* 08058204 */ BL func_08001AC0 \n\
+/* 08058204 */ BL affine_param_alloc \n\
 /* 08058208 */ LDR R1, [R5] \n\
 /* 0805820A */ ADDS R1, #0X46 \n\
 /* 0805820C */ STRB R0, [R1] \n\

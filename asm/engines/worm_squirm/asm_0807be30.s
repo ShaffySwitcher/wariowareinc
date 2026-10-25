@@ -351,7 +351,7 @@ _0807C0DC: \n\
 /* 0807C0DE */ LDR R1, [R4] \n\
 /* 0807C0E0 */ MOVS R0, #0 \n\
 /* 0807C0E2 */ STRB R0, [R1, #0X15] \n\
-/* 0807C0E4 */ BL func_08001AC0 \n\
+/* 0807C0E4 */ BL affine_param_alloc \n\
 /* 0807C0E8 */ LDR R1, [R4] \n\
 /* 0807C0EA */ STRB R0, [R1, #0X13] \n\
 /* 0807C0EC */ MOVS R0, #2 \n\

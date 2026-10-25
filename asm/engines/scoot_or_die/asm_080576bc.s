@@ -108,7 +108,7 @@ thumb_func_start func_080576BC \n\
 /* 080577AA */ LSLS R1, R1, #1 \n\
 /* 080577AC */ MOV SB, R1 \n\
 /* 080577AE */ MOVS R2, #0 \n\
-/* 080577B0 */ BL func_08001BA4 \n\
+/* 080577B0 */ BL affine_param_set_rot_scale \n\
 /* 080577B4 */ LDR R0, [R5] \n\
 /* 080577B6 */ MOVS R1, #0X80 \n\
 /* 080577B8 */ LSLS R1, R1, #8 \n\

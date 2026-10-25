@@ -641,13 +641,13 @@ _080DDD0C: \n\
 /* 080DDD20 */ ADDS R1, R4, #0 \n\
 /* 080DDD22 */ ADDS R2, R5, #0 \n\
 /* 080DDD24 */ MOVS R3, #0 \n\
-/* 080DDD26 */ BL func_08001C08 \n\
+/* 080DDD26 */ BL affine_param_set_rot_scale_xy \n\
 /* 080DDD2A */ LDR R0, [R6] \n\
 /* 080DDD2C */ ADDS R0, #0X22 \n\
 /* 080DDD2E */ ADDS R1, R4, #0 \n\
 /* 080DDD30 */ ADDS R2, R5, #0 \n\
 /* 080DDD32 */ MOVS R3, #0 \n\
-/* 080DDD34 */ BL func_08001CD0 \n\
+/* 080DDD34 */ BL affine_matrix_set_rot_scale_inv_xy \n\
 /* 080DDD38 */ ADD SP, #0XC \n\
 /* 080DDD3A */ POP {R3} \n\
 /* 080DDD3C */ MOV R8, R3 \n\

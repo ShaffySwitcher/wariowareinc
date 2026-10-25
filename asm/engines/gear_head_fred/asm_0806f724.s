@@ -78,7 +78,7 @@ _0806F78E: \n\
 /* 0806F7A8 */ ASRS R2, R2, #0X10 \n\
 /* 0806F7AA */ MOVS R1, #0X80 \n\
 /* 0806F7AC */ LSLS R1, R1, #1 \n\
-/* 0806F7AE */ BL func_08001BA4 \n\
+/* 0806F7AE */ BL affine_param_set_rot_scale \n\
 /* 0806F7B2 */ SUBS R4, #1 \n\
 /* 0806F7B4 */ ADDS R5, #0X14 \n\
 /* 0806F7B6 */ CMP R4, #0 \n\

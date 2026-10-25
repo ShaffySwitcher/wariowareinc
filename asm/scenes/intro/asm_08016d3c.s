@@ -13,7 +13,7 @@ _08016D4A: \n\
 /* 08016D50 */ ADDS R1, R5, #0 \n\
 /* 08016D52 */ BL sprite_id_delete \n\
 /* 08016D56 */ ADDS R0, R5, #0 \n\
-/* 08016D58 */ BL func_08001B70 \n\
+/* 08016D58 */ BL affine_param_free_by_owner \n\
 /* 08016D5C */ LSLS R4, R5, #0X10 \n\
 /* 08016D5E */ LSRS R4, R4, #0X10 \n\
 /* 08016D60 */ ADDS R0, R4, #0 \n\

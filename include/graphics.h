@@ -65,16 +65,17 @@ struct AffineOAM {
     u16 objMosaic:1;
     u16 paletteMode:1;
     u16 objShape:2;
-
     // Attribute 1
     u16 xPos:9;
     u16 affineParam:5;
     u16 objSize:2;
-
     // Attribute 2
     u16 tileNum:10;
     u16 priority:2;
     u16 palette:4;
+
+    // Attribute 3 (TO-DO: investigate this)
+    s16 affine; 
 };
 
 typedef u16 AnimationCel;

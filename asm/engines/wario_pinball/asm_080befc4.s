@@ -93,7 +93,7 @@ _080BF042: \n\
 /* 080BF066 */ ASRS R1, R1, #0X10 \n\
 /* 080BF068 */ ADDS R2, R3, #0 \n\
 /* 080BF06A */ MOVS R3, #0 \n\
-/* 080BF06C */ BL func_08001C08 \n\
+/* 080BF06C */ BL affine_param_set_rot_scale_xy \n\
 /* 080BF070 */ POP {R4} \n\
 /* 080BF072 */ POP {R0} \n\
 /* 080BF074 */ BX R0 \n\

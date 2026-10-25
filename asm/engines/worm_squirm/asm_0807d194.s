@@ -446,7 +446,7 @@ _0807D45E: \n\
 /* 0807D47E */ MOVS R1, #0X80 \n\
 /* 0807D480 */ LSLS R1, R1, #1 \n\
 /* 0807D482 */ LDRB R2, [R2, #0X14] \n\
-/* 0807D484 */ BL func_08001BA4 \n\
+/* 0807D484 */ BL affine_param_set_rot_scale \n\
 /* 0807D488 */ POP {R4, R5, R6} \n\
 /* 0807D48A */ POP {R0} \n\
 /* 0807D48C */ BX R0 \n\

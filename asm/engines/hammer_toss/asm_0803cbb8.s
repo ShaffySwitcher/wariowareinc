@@ -144,7 +144,7 @@ _0803CC92: \n\
 /* 0803CCD2 */ LDR R2, [R4, #0X78] \n\
 /* 0803CCD4 */ LSLS R2, R2, #8 \n\
 /* 0803CCD6 */ ASRS R2, R2, #0X10 \n\
-/* 0803CCD8 */ BL func_08001BA4 \n\
+/* 0803CCD8 */ BL affine_param_set_rot_scale \n\
 /* 0803CCDC */ POP {R4, R5} \n\
 /* 0803CCDE */ POP {R0} \n\
 /* 0803CCE0 */ BX R0 \n\

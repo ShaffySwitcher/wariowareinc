@@ -11,7 +11,7 @@ thumb_func_start func_080CECEC \n\
 /* 080CECFA */ MOVS R1, #0X80 \n\
 /* 080CECFC */ LSLS R1, R1, #1 \n\
 /* 080CECFE */ MOVS R2, #0 \n\
-/* 080CED00 */ BL func_08001BA4 \n\
+/* 080CED00 */ BL affine_param_set_rot_scale \n\
 /* 080CED04 */ STR R5, [R4] \n\
 /* 080CED06 */ LDR R0, _080CED78 \n\
 /* 080CED08 */ LDR R0, [R0] \n\

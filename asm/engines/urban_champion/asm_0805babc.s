@@ -46,7 +46,7 @@ _0805BADA: \n\
 /* 0805BB0C */ MOVS R1, #0X80 \n\
 /* 0805BB0E */ LSLS R1, R1, #5 \n\
 /* 0805BB10 */ MOVS R2, #0 \n\
-/* 0805BB12 */ BL func_08001BA4 \n\
+/* 0805BB12 */ BL affine_param_set_rot_scale \n\
 /* 0805BB16 */ LDR R0, _0805BB38 \n\
 /* 0805BB18 */ LDR R0, [R0] \n\
 /* 0805BB1A */ MOVS R2, #4 \n\

@@ -42,7 +42,7 @@ thumb_func_start func_080A4BCC \n\
 /* 080A4C2A */ LSLS R5, R5, #1 \n\
 /* 080A4C2C */ ADDS R1, R5, #0 \n\
 /* 080A4C2E */ MOVS R2, #0 \n\
-/* 080A4C30 */ BL func_08001BA4 \n\
+/* 080A4C30 */ BL affine_param_set_rot_scale \n\
 /* 080A4C34 */ LDR R1, [R6] \n\
 /* 080A4C36 */ MOVS R4, #0 \n\
 /* 080A4C38 */ STR R4, [R1, #8] \n\

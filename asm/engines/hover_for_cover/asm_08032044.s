@@ -88,7 +88,7 @@ thumb_func_start func_08032044 \n\
 /* 080320FC */ ADD R0, SB \n\
 /* 080320FE */ MOV R1, R8 \n\
 /* 08032100 */ STRB R1, [R0] \n\
-/* 08032102 */ BL func_08001AC0 \n\
+/* 08032102 */ BL affine_param_alloc \n\
 /* 08032106 */ MOV R1, SB \n\
 /* 08032108 */ ADDS R1, #0X5D \n\
 /* 0803210A */ STRB R0, [R1] \n\
@@ -152,13 +152,13 @@ _08032114: \n\
 /* 08032182 */ LSLS R4, R4, #1 \n\
 /* 08032184 */ ADDS R1, R4, #0 \n\
 /* 08032186 */ MOVS R2, #0 \n\
-/* 08032188 */ BL func_08001BA4 \n\
+/* 08032188 */ BL affine_param_set_rot_scale \n\
 /* 0803218C */ MOVS R0, #0X8B \n\
 /* 0803218E */ LSLS R0, R0, #3 \n\
 /* 08032190 */ ADD R0, SB \n\
 /* 08032192 */ LDRB R2, [R5] \n\
 /* 08032194 */ ADDS R1, R4, #0 \n\
-/* 08032196 */ BL func_08001C74 \n\
+/* 08032196 */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0803219A */ MOVS R2, #0 \n\
 /* 0803219C */ MOV R8, R2 \n\
 /* 0803219E */ MOV R3, SB \n\
@@ -209,7 +209,7 @@ _080321AA: \n\
 /* 080321FE */ MOV R1, R8 \n\
 /* 08032200 */ CMP R1, #0X1D \n\
 /* 08032202 */ BLS _080321AA \n\
-/* 08032204 */ BL func_08001AC0 \n\
+/* 08032204 */ BL affine_param_alloc \n\
 /* 08032208 */ LDR R2, [SP, #0X18] \n\
 /* 0803220A */ STRB R0, [R2] \n\
 /* 0803220C */ LDR R0, _080322B4 \n\
@@ -407,13 +407,13 @@ _080322F4: \n\
 /* 08032366 */ LSLS R4, R4, #1 \n\
 /* 08032368 */ ADDS R1, R4, #0 \n\
 /* 0803236A */ MOVS R2, #0 \n\
-/* 0803236C */ BL func_08001BA4 \n\
+/* 0803236C */ BL affine_param_set_rot_scale \n\
 /* 08032370 */ MOVS R0, #0X94 \n\
 /* 08032372 */ LSLS R0, R0, #2 \n\
 /* 08032374 */ ADD R0, SB \n\
 /* 08032376 */ LDRB R2, [R5] \n\
 /* 08032378 */ ADDS R1, R4, #0 \n\
-/* 0803237A */ BL func_08001C74 \n\
+/* 0803237A */ BL affine_matrix_set_rot_scale_inv \n\
 /* 0803237E */ LDR R0, =D_083CDFCC \n\
 /* 08032380 */ BL func_0800BBB4 \n\
 /* 08032384 */ ADD SP, #0X1C \n\
