@@ -106,3 +106,111 @@ void scene_hide_sprite(s32 id) {
 #include "asm/scene/asm_0800c8b4.s"
 
 #include "asm/scene/asm_0800c8f4.s"
+
+#include "asm/scene/asm_0800c934.s"
+
+#include "asm/scene/asm_0800c974.s"
+
+#include "asm/scene/asm_0800c9a4.s"
+
+#include "asm/scene/asm_0800c9c0.s"
+
+#include "asm/scene/asm_0800c9ec.s"
+
+#include "asm/scene/asm_0800ca5c.s"
+
+#include "asm/scene/asm_0800ca80.s"
+
+#include "asm/scene/asm_0800caa4.s"
+
+#include "asm/scene/asm_0800cab8.s"
+
+#include "asm/scene/asm_0800cacc.s"
+
+#include "asm/scene/asm_0800cb00.s"
+
+#include "asm/scene/asm_0800cb34.s"
+
+#include "asm/scene/asm_0800cba4.s"
+
+#include "asm/scene/asm_0800cbb4.s"
+
+#include "asm/scene/asm_0800cc4c.s"
+
+#include "asm/scene/asm_0800cc9c.s"
+
+#include "asm/scene/asm_0800ccb4.s"
+
+#include "asm/scene/asm_0800ccc8.s"
+
+#include "asm/scene/asm_0800cd4c.s"
+
+#include "asm/scene/asm_0800cd94.s"
+
+#include "asm/scene/asm_0800cdb0.s"
+
+#include "asm/scene/asm_0800cdcc.s"
+
+#include "asm/scene/asm_0800ce1c.s"
+
+#include "asm/scene/asm_0800ce6c.s"
+
+#include "asm/scene/asm_0800ce90.s"
+
+#include "asm/scene/asm_0800cea4.s"
+
+#include "asm/scene/asm_0800cef8.s"
+
+#include "asm/scene/asm_0800cf08.s"
+
+#include "asm/scene/asm_0800cf3c.s"
+
+#include "asm/scene/asm_0800cf5c.s"
+
+#include "asm/scene/asm_0800cf7c.s"
+
+#include "asm/scene/asm_0800cf9c.s"
+
+#include "asm/scene/asm_0800cfbc.s"
+
+#include "asm/scene/asm_0800cfdc.s"
+
+#include "asm/scene/asm_0800cffc.s"
+
+#include "asm/scene/asm_0800d224.s"
+
+#include "asm/scene/asm_0800d23c.s"
+
+#include "asm/scene/asm_0800d254.s"
+
+#include "asm/scene/asm_0800d320.s"
+
+#include "asm/scene/asm_0800d38c.s"
+
+#include "asm/scene/asm_0800d3b8.s"
+
+#include "asm/scene/asm_0800d3cc.s"
+
+#include "asm/scene/asm_0800d68c.s"
+
+#include "asm/scene/asm_0800d710.s"
+
+#include "asm/scene/asm_0800d75c.s"
+
+#include "asm/scene/asm_0800d764.s"
+
+#include "asm/scene/asm_0800d76c.s"
+
+#include "asm/scene/asm_0800d774.s"
+
+#include "asm/scene/asm_0800d800.s"
+
+#include "asm/scene/asm_0800d9c4.s"
+
+#include "asm/scene/asm_0800da9c.s"
+
+#include "asm/scene/asm_0800dad8.s"
+
+#include "asm/scene/asm_0800daec.s"
+
+#include "asm/scene/asm_0800daf8.s"

@@ -1,0 +1,36 @@
+asm(".syntax unified \n\
+ \n\
+thumb_func_start func_0800CACC \n\
+/* 0800CACC */ PUSH {R4, LR} \n\
+/* 0800CACE */ LDR R3, _0800CAF4 \n\
+/* 0800CAD0 */ LDRB R2, [R3, #1] \n\
+/* 0800CAD2 */ MOVS R1, #0X41 \n\
+/* 0800CAD4 */ RSBS R1, R1, #0 \n\
+/* 0800CAD6 */ ANDS R1, R2 \n\
+/* 0800CAD8 */ LDR R4, _0800CAF8 \n\
+/* 0800CADA */ ADDS R2, R3, R4 \n\
+/* 0800CADC */ MOVS R4, #0 \n\
+/* 0800CADE */ STRH R0, [R2] \n\
+/* 0800CAE0 */ LDR R2, _0800CAFC \n\
+/* 0800CAE2 */ ADDS R0, R3, R2 \n\
+/* 0800CAE4 */ STRH R4, [R0] \n\
+/* 0800CAE6 */ MOVS R0, #0X20 \n\
+/* 0800CAE8 */ ORRS R1, R0 \n\
+/* 0800CAEA */ STRB R1, [R3, #1] \n\
+/* 0800CAEC */ POP {R4} \n\
+/* 0800CAEE */ POP {R0} \n\
+/* 0800CAF0 */ BX R0 \n\
+ \n\
+.balign 4, 0 \n\
+_0800CAF4: \n\
+/* 0800CAF4 */ .word gBeatscriptScene \n\
+ \n\
+.balign 4, 0 \n\
+_0800CAF8: \n\
+/* 0800CAF8 */ .word 0x00001C36 \n\
+ \n\
+.balign 4, 0 \n\
+_0800CAFC: \n\
+/* 0800CAFC */ .word 0x00001C38 \n\
+.ltorg \n\
+.syntax divided");
