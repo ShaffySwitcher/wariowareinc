@@ -50,16 +50,7 @@ SECTIONS {
         build/asm/asm_080039ec.s.o(.text*);
         build/asm/asm_08003a00.s.o(.text*);
         build/asm/asm_08003a0c.s.o(.text*);
-        build/asm/asm_08003a70.s.o(.text*);
-        build/asm/asm_08003b10.s.o(.text*);
-        build/asm/asm_08003b54.s.o(.text*);
-        build/asm/asm_08003b58.s.o(.text*);
-        build/asm/asm_08003d1c.s.o(.text*);
-        build/asm/asm_08003d28.s.o(.text*);
-        build/asm/asm_08003d3c.s.o(.text*);
-        build/asm/asm_08003da0.s.o(.text*);
-        build/asm/asm_08003de0.s.o(.text*);
-        build/asm/asm_08003df4.s.o(.text*);
+        build/src/code_08003a70.c.o(.text);
         build/src/backdrop.c.o(.text);
         build/src/bitmap_font.c.o(.text);
         build/src/task_pool.c.o(.text);
