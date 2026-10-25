@@ -37,15 +37,15 @@ void start_beatscript_scene(u32 mode) {
     }
 
     func_0800C9C0();
-    func_0800CBA4();
-    func_0800CCB4();
+    scene_tempo_interp_stop();
+    scene_music_pitch_interp_stop();
     gBeatscriptScene.musicInterpolationEnabled = TRUE;
 }
 
 void set_beatscript_subscenes(const struct SubScene **subScenes) {
     u32 i;
 
-    D_03006520 = 0x270F;
+    D_03006520 = 9999;
 
     gBeatscriptScene.paused = FALSE;
     gBeatscriptScene.bypassLoops = FALSE;

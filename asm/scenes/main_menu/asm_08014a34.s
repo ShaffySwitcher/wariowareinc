@@ -44,7 +44,7 @@ _08014A66: \n\
 /* 08014A7E */ LDRSH R1, [R1, R2] \n\
 /* 08014A80 */ LDR R2, _08014AA4 \n\
 /* 08014A82 */ MOVS R3, #0 \n\
-/* 08014A84 */ BL func_08011504 \n\
+/* 08014A84 */ BL main_menu_move_cursor_to \n\
 /* 08014A88 */ LDR R0, [R5] \n\
 /* 08014A8A */ ADDS R0, R6 \n\
 /* 08014A8C */ STRB R4, [R0] \n\
@@ -90,7 +90,7 @@ _08014AAC: \n\
 /* 08014ACC */ LDRSH R1, [R1, R2] \n\
 /* 08014ACE */ LDR R2, _08014AE8 \n\
 /* 08014AD0 */ MOVS R3, #0 \n\
-/* 08014AD2 */ BL func_08011504 \n\
+/* 08014AD2 */ BL main_menu_move_cursor_to \n\
 /* 08014AD6 */ LDR R1, [R5] \n\
 /* 08014AD8 */ ADDS R0, R1, R6 \n\
 /* 08014ADA */ LDRB R0, [R0] \n\
@@ -130,7 +130,7 @@ _08014AFA: \n\
 /* 08014B1A */ LDRSH R1, [R1, R2] \n\
 /* 08014B1C */ LDR R2, =func_08014A0C + 1 \n\
 /* 08014B1E */ MOVS R3, #0 \n\
-/* 08014B20 */ BL func_08011504 \n\
+/* 08014B20 */ BL main_menu_move_cursor_to \n\
 /* 08014B24 */ LDR R0, [R5] \n\
 /* 08014B26 */ ADDS R0, R6 \n\
 /* 08014B28 */ MOVS R1, #1 \n\

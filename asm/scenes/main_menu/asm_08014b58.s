@@ -73,7 +73,7 @@ _08014B94: \n\
 /* 08014BE4 */ LDRSH R1, [R1, R5] \n\
 /* 08014BE6 */ LDR R2, _08014C28 \n\
 /* 08014BE8 */ MOVS R3, #0 \n\
-/* 08014BEA */ BL func_08011504 \n\
+/* 08014BEA */ BL main_menu_move_cursor_to \n\
 /* 08014BEE */ LDR R2, [R4] \n\
 /* 08014BF0 */ MOVS R0, #0XB2 \n\
 /* 08014BF2 */ LSLS R0, R0, #1 \n\

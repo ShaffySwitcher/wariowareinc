@@ -57,7 +57,7 @@ thumb_func_start func_08015944 \n\
 /* 080159B2 */ ASRS R1, R1, #0X10 \n\
 /* 080159B4 */ LDR R2, =func_08015760 + 1 \n\
 /* 080159B6 */ MOVS R3, #0 \n\
-/* 080159B8 */ BL func_08011504 \n\
+/* 080159B8 */ BL main_menu_move_cursor_to \n\
 /* 080159BC */ MOVS R0, #4 \n\
 /* 080159BE */ BL scene_show_sprite \n\
 /* 080159C2 */ MOV R1, R8 \n\

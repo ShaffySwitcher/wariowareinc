@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_0800CCB4 \n\
+thumb_func_start scene_music_pitch_interp_stop \n\
 /* 0800CCB4 */ LDR R2, =gBeatscriptScene \n\
 /* 0800CCB6 */ LDRB R1, [R2, #2] \n\
 /* 0800CCB8 */ MOVS R0, #2 \n\

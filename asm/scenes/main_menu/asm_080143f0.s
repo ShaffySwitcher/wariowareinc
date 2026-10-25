@@ -10,7 +10,7 @@ thumb_func_start func_080143F0 \n\
 /* 080143FE */ BL func_080117FC \n\
 /* 08014402 */ BL func_08015C38 \n\
 /* 08014406 */ MOVS R0, #1 \n\
-/* 08014408 */ BL func_08011730 \n\
+/* 08014408 */ BL main_menu_set_dimmed \n\
 /* 0801440C */ LDR R0, =gCurrentSceneData \n\
 /* 0801440E */ LDR R1, [R0] \n\
 /* 08014410 */ ADDS R1, #0XDD \n\

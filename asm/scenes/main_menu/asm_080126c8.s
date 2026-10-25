@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_080126C8 \n\
+thumb_func_start main_menu_return_to_tabs_from_games \n\
 /* 080126C8 */ PUSH {LR} \n\
 /* 080126CA */ MOVS R0, #0 \n\
 /* 080126CC */ BL scene_set_current_thread \n\
@@ -10,7 +10,7 @@ thumb_func_start func_080126C8 \n\
 /* 080126D6 */ BL func_080117FC \n\
 /* 080126DA */ BL func_08015C38 \n\
 /* 080126DE */ MOVS R0, #1 \n\
-/* 080126E0 */ BL func_08011730 \n\
+/* 080126E0 */ BL main_menu_set_dimmed \n\
 /* 080126E4 */ LDR R0, =gCurrentSceneData \n\
 /* 080126E6 */ LDR R1, [R0] \n\
 /* 080126E8 */ ADDS R1, #0XDD \n\

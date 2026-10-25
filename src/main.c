@@ -7,7 +7,7 @@ void func_080001D4(void) {
     func_08002620(); // init_math_sqrt
     mem_heap_init(D_083A3D94 + 0xBF1, 0x38000);
     
-    task_pool_init(); // task_pool_init
+    task_pool_init();
     rle_decompressor_init();
     hdma_reset();
     func_08006F28();

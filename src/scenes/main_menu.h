@@ -34,7 +34,7 @@ enum MainMenuState {
 struct MainMenuSceneData {
     u32 unk0;
     u32 unk4;
-    u8 unk8;
+    u8 inputsEnabled;
     u8 pad9[3];
     u32 *unkC;
     struct BgAnimator unk10;
@@ -80,7 +80,7 @@ struct MainMenuSceneData {
     u32 unkDC_23:1;
     u32 unkDC_24:1;
     u32 unkDC_25:1; // DF
-    u32 unkDC_26:1;
+    u32 isLoadingAssets:1;
     s32 unkDC_27:1;
     u32 unkDC_28:1;
     u32 unkDC_29:4;
@@ -211,8 +211,8 @@ extern u8 D_03006514;
 extern struct MainMenuSelectionState gMainMenuSelectionState;
 
 // FUNCTIONS
-extern void func_08011504(s16 x, s16 y, void (*callback)(void), s32 arg);
-extern void func_080126C8(void);
+extern void main_menu_move_cursor_to(s16 x, s16 y, void (*callback)(void), s32 arg);
+extern void main_menu_return_to_tabs_from_games(void);
 extern void func_080119B8(void);
 extern void main_menu_scene_init_gfx2(void);
 extern void main_menu_scene_init_gfx3(void);

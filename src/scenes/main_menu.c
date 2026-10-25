@@ -1,5 +1,6 @@
 #include "src/scenes/main_menu.h"
 #include "src/beatscript.h"
+#include "src/lib_sprite.h"
 #include "src/backdrop.h"
 #include "src/audio.h"
 #include "src/memory.h"
@@ -27,17 +28,17 @@ void main_menu_reset_selection_state(void) {
     gMainMenuSelectionState.unk5 = 0;
 }
 
-void func_080109CC(void) {
+void main_menu_on_textures_loaded(void) {
     set_pause_beatscript_scene(FALSE);
-    gMainMenu.unkDC_26 = FALSE;
+    gMainMenu.isLoadingAssets = FALSE;
 }
 
 void main_menu_scene_init_gfx3(void) {
     scene_set_current_thread(0);
-    run_func_after_task(start_new_texture_loader((u16)get_current_mem_id(), main_menu_buffered_textures), &func_080109CC, 0);
+    run_func_after_task(start_new_texture_loader((u16)get_current_mem_id(), main_menu_buffered_textures), &main_menu_on_textures_loaded, 0);
 }
 
-void func_08010A18(void) {
+void main_menu_create_stage_icons(void) {
     u32 i, j;
     u32 flags;
     struct Unk083AA0C4* def;
@@ -95,8 +96,8 @@ void main_menu_scene_init_gfx2(void) {
     scene_set_current_thread(0);
     task = start_load_gfx_table_task((u16)get_current_mem_id(), main_menu_gfx_table, 0x3000);
     run_func_after_task(task, main_menu_scene_init_gfx3, 0);
-    func_08010A18();
-    gMainMenu.unkDC_26 = TRUE;
+    main_menu_create_stage_icons();
+    gMainMenu.isLoadingAssets = TRUE;
 }
 
 void main_menu_scene_init_gfx1(void) {
@@ -112,7 +113,7 @@ void main_menu_scene_start(void) {
     u32 category;
     struct Vector2 *pos;
 
-    gMainMenu.unkDC_27 = 1;
+    gMainMenu.unkDC_27 = TRUE;
 
     gMainMenu.unk1B4 = main_menu_try_unlock_stages();
     if (gMainMenu.unk1B4 != 0) {
@@ -227,7 +228,7 @@ void main_menu_scene_start(void) {
     main_menu_scene_init_gfx1();
     sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[category + 1], 0);
 
-    gMainMenu.unk8 = 0;
+    gMainMenu.inputsEnabled = FALSE;
     gMainMenu.unkDC_9 = 0;
     gMainMenu.unkDC_10 = 0;
     gMainMenu.unkDC_11 = 0;
@@ -263,12 +264,12 @@ void main_menu_scene_start(void) {
 
     if (gMainMenuSelectionState.state == 0) {
         if (gMainMenu.unk1B4 != 0) {
-            func_08011730(0);
+            main_menu_set_dimmed(0);
         } else {
-            func_08011730(1);
+            main_menu_set_dimmed(1);
         }
     } else {
-        func_08011730(0);
+        main_menu_set_dimmed(0);
     }
 
     D_03006514 = 1;
@@ -309,7 +310,7 @@ void main_menu_scene_paused(void) {
     func_08015DBC();
 }
 
-void func_08011504(s16 x, s16 y, void (*callback)(), s32 arg) {
+void main_menu_move_cursor_to(s16 x, s16 y, void (*callback)(), s32 arg) {
     s32 temp_r0;
 
     temp_r0 = scene_move_sprite_decelerate(*gCurrentSceneSpritePool, x, y, 0x82);
@@ -354,14 +355,14 @@ u32 func_08011614(void) {
          | gMainMenu.unkDC_23
          | gMainMenu.unkDC_24
          | gMainMenu.unkDC_25
-         | gMainMenu.unkDC_26;
+         | gMainMenu.isLoadingAssets;
 }
 
 u32 main_menu_can_accept_input(void) {
-    if (gMainMenu.unk8 && !gGraphicsBuffer.unk854_2 && func_08011614() == 0) {
-        return 1;
+    if (gMainMenu.inputsEnabled && !gGraphicsBuffer.unk854_2 && func_08011614() == 0) {
+        return TRUE;
     }
-    return 0;
+    return FALSE;
 }
 
 void func_080116D4(void) {
@@ -378,7 +379,7 @@ s32 func_08011708(void) {
     return 0;
 }
 
-void func_08011730(u32 arg0) {
+void main_menu_set_dimmed(u32 arg0) {
     if (arg0 != 0) {
         gGraphicsBuffer.unk50 = 4;
         scene_set_music_volume(179);
@@ -679,7 +680,7 @@ void main_menu_category_handle_input(void) {
         func_08011D5C(category);
         gMainMenuSelectionState.category = category;
         pos = D_083A9CE0[category];
-        func_08011504(pos->x, pos->y, func_080118E0, 0);
+        main_menu_move_cursor_to(pos->x, pos->y, func_080118E0, 0);
         sprite_set_visible(gSpriteHandler, (s16)gCurrentSceneSpritePool[4], FALSE);
         play_sound(&s_BASIC_CURSOR_01_seqData);
     } else if (gPressedKeys & A_BUTTON) {
@@ -687,23 +688,23 @@ void main_menu_category_handle_input(void) {
             case MAIN_MENU_CATEGORY_GAMES:
                 entry = &D_083AA0C4[gMainMenuSelectionState.stage];
                 pos = entry->position;
-                func_08011504(pos->x, pos->y, func_08011920, 0);
-                func_08011730(0);
+                main_menu_move_cursor_to(pos->x, pos->y, func_08011920, 0);
+                main_menu_set_dimmed(0);
                 play_sound(&s_BASIC_BUTTON_A_seqData);
                 break;
             case MAIN_MENU_CATEGORY_GRID:
                 entry = &D_083AA294[gMainMenuSelectionState.stage];
                 pos = entry->position;
-                func_08011504(pos->x, pos->y, func_0801197C, 0);
+                main_menu_move_cursor_to(pos->x, pos->y, func_0801197C, 0);
                 gMainMenu.unkFC = gMainMenuSelectionState.stage;
-                func_08011730(0);
+                main_menu_set_dimmed(0);
                 play_sound(&s_BASIC_BUTTON_A_seqData);
                 break;
             case MAIN_MENU_CATEGORY_OPTIONS:
                 gMainMenu.unkFD = 0;
                 pos = &D_083AB2CC[gMainMenu.unkFD];
-                func_08011504(pos->x, pos->y, func_080119B8, 0);
-                func_08011730(0);
+                main_menu_move_cursor_to(pos->x, pos->y, func_080119B8, 0);
+                main_menu_set_dimmed(0);
                 play_sound(&s_BASIC_BUTTON_A_seqData);
                 break;
         }
@@ -712,8 +713,8 @@ void main_menu_category_handle_input(void) {
 
 void func_08012058(void) {
     struct Vector2* position = (gMainMenuSelectionState.stage + D_083AA0C4)->position; // fake-match of death
-    func_08011504(position->x, position->y, func_08011920, 0);
-    func_08011730(0);
+    main_menu_move_cursor_to(position->x, position->y, func_08011920, 0);
+    main_menu_set_dimmed(0);
 }
 
 void main_menu_state_main(void) {
@@ -724,8 +725,8 @@ void main_menu_state_main(void) {
             gMainMenu.unkFD = 0;
             pos = D_083AB2CC + (gMainMenu.unkFD);
 
-            func_08011504(pos->x, pos->y, func_080119B8, 0);
-            func_08011730(0);
+            main_menu_move_cursor_to(pos->x, pos->y, func_080119B8, 0);
+            main_menu_set_dimmed(0);
             return;
         }
 
@@ -733,8 +734,8 @@ void main_menu_state_main(void) {
             gMainMenu.unkFD = 1;
             pos = D_083AB2CC + (gMainMenu.unkFD);
 
-            func_08011504(pos->x, pos->y, func_080119B8, 0);
-            func_08011730(0);
+            main_menu_move_cursor_to(pos->x, pos->y, func_080119B8, 0);
+            main_menu_set_dimmed(0);
             gMainMenu.unk13C_3 = 0;
             set_pause_beatscript_scene(FALSE);
             return;
@@ -810,7 +811,7 @@ void func_08012700(s32 idx) {
     gMainMenuSelectionState.gridColumn = 0;
 
     if (gMainMenuSelectionState.state == MAIN_MENU_STATE_GAMES) {
-        func_08011504(pos->x, pos->y, func_08012658, 0);
+        main_menu_move_cursor_to(pos->x, pos->y, func_08012658, 0);
     } else {
         func_08012658();
     }
@@ -920,7 +921,7 @@ void main_menu_games_handle_input(void) {
 
             gMainMenu.nextScene = GLOBAL_SCENE_GAMEPLAY;
             set_pause_beatscript_scene(FALSE);
-            gMainMenu.unk8 = 0;
+            gMainMenu.inputsEnabled = FALSE;
             fade_out_sound(gMainMenu.unk84, 0x20);
 
             if (level <= 26 && (level >= why)) {
@@ -938,7 +939,7 @@ void main_menu_games_handle_input(void) {
             play_sound(&s_BASIC_DAME_1_seqData);
         }
     } else if (gPressedKeys & B_BUTTON) {
-        func_08011504(D_083A9CE0[gMainMenuSelectionState.category]->x, D_083A9CE0[gMainMenuSelectionState.category]->y, func_080126C8, 0);
+        main_menu_move_cursor_to(D_083A9CE0[gMainMenuSelectionState.category]->x, D_083A9CE0[gMainMenuSelectionState.category]->y, main_menu_return_to_tabs_from_games, 0);
         sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[6], 1);
         play_sound(&s_BASIC_BUTTON_B_seqData);
         fade_out_sound(gMainMenu.unk84, 0x20);
@@ -1080,7 +1081,7 @@ void func_080137B0(void) {
 
     if (!((x == gMainMenuSelectionState.gridColumn) && (y == gMainMenuSelectionState.gridRow)) && ((x * MAIN_MENU_GRID_ROWS) + y) < gMainMenu.microgameGridItems) {
         func_080136F4(x, y, &func_080136F4_return1, &func_080136F4_return2, &func_080136F4_return3);
-        func_08011504(func_080136F4_return2, func_080136F4_return3, func_08013660, 0);
+        main_menu_move_cursor_to(func_080136F4_return2, func_080136F4_return3, func_08013660, 0);
 
         gMainMenu.unkDC_15 = TRUE;
         gMainMenu.unkF1 = 1;
@@ -1114,7 +1115,7 @@ void func_080137B0(void) {
 
                 gMainMenu.nextScene = GLOBAL_SCENE_GAMEPLAY;
                 set_pause_beatscript_scene(FALSE);
-                gMainMenu.unk8 = 0;
+                gMainMenu.inputsEnabled = FALSE;
                 play_sound(&s_BASIC_BUTTON_A_seqData);
             } else {
                 play_sound(&s_BASIC_DAME_1_seqData);
@@ -1124,7 +1125,7 @@ void func_080137B0(void) {
 
         if(gPressedKeys & B_BUTTON) {
             pos = D_083AA294[gMainMenuSelectionState.stage].position;
-            func_08011504(pos->x, pos->y, func_080136A4, 0);
+            main_menu_move_cursor_to(pos->x, pos->y, func_080136A4, 0);
             sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[6], 1);
             func_08013B88();
             func_08013E44();
@@ -1431,13 +1432,13 @@ s32 main_menu_try_unlock_introduction(void) {
     }
 
     save_unlock_stage(STAGE_INTRODUCTION);
-    return 1 << 0;
+    return 1 << STAGE_INTRODUCTION;
 }
 
 s32 main_menu_try_unlock_jimmy(void) {
     if (!save_is_stage_unlocked(STAGE_JIMMY) && save_is_stage_beaten(STAGE_INTRODUCTION)) {
         save_unlock_stage(STAGE_JIMMY);
-        return 1 << 1;
+        return 1 << STAGE_JIMMY;
     }
     return 0;
 }
@@ -1445,7 +1446,7 @@ s32 main_menu_try_unlock_jimmy(void) {
 s32 main_menu_try_unlock_9_volt(void) {
     if (!save_is_stage_unlocked(STAGE_9_VOLT) && save_is_stage_beaten(STAGE_JIMMY)) {
         save_unlock_stage(STAGE_9_VOLT);
-        return 1 << 2;
+        return 1 << STAGE_9_VOLT;
     }
     return 0;
 }
@@ -1453,7 +1454,7 @@ s32 main_menu_try_unlock_9_volt(void) {
 s32 main_menu_try_unlock_dribble(void) {
     if (!save_is_stage_unlocked(STAGE_DRIBBLE) && save_is_stage_beaten(STAGE_JIMMY)) {
         save_unlock_stage(STAGE_DRIBBLE);
-        return 1 << 3;
+        return 1 << STAGE_DRIBBLE;
     }
     return 0;
 }
@@ -1461,7 +1462,7 @@ s32 main_menu_try_unlock_dribble(void) {
 s32 main_menu_try_unlock_kat(void) {
     if (!save_is_stage_unlocked(STAGE_KAT) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
         save_unlock_stage(STAGE_KAT);
-        return 1 << 4;
+        return 1 << STAGE_KAT;
     }
     return 0;
 }
@@ -1469,7 +1470,7 @@ s32 main_menu_try_unlock_kat(void) {
 s32 main_menu_try_unlock_mona(void) {
     if (!save_is_stage_unlocked(STAGE_MONA) && save_is_stage_beaten(STAGE_JIMMY)) {
         save_unlock_stage(STAGE_MONA);
-        return 1 << 5;
+        return 1 << STAGE_MONA;
     }
     return 0;
 }
@@ -1477,7 +1478,7 @@ s32 main_menu_try_unlock_mona(void) {
 s32 main_menu_try_unlock_dr_crygor(void) {
     if (!save_is_stage_unlocked(STAGE_DR_CRYGOR) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
         save_unlock_stage(STAGE_DR_CRYGOR);
-        return 1 << 6;
+        return 1 << STAGE_DR_CRYGOR;
     }
     return 0;
 }
@@ -1485,7 +1486,7 @@ s32 main_menu_try_unlock_dr_crygor(void) {
 s32 main_menu_try_unlock_orbulon(void) {
     if (!save_is_stage_unlocked(STAGE_ORBULON) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
         save_unlock_stage(STAGE_ORBULON);
-        return 1 << 7;
+        return 1 << STAGE_ORBULON;
     }
     return 0;
 }
@@ -1493,7 +1494,7 @@ s32 main_menu_try_unlock_orbulon(void) {
 s32 main_menu_try_unlock_wario(void) {
     if (!save_is_stage_unlocked(STAGE_WARIO) && save_is_stage_beaten(STAGE_JIMMY_REMIX_2)) {
         save_unlock_stage(STAGE_WARIO);
-        return 1 << 8;
+        return 1 << STAGE_WARIO;
     }
     return 0;
 }
@@ -1501,7 +1502,7 @@ s32 main_menu_try_unlock_wario(void) {
 s32 main_menu_try_unlock_remix_1(void) {
     if (!save_is_stage_unlocked(STAGE_JIMMY_REMIX_1) && (save_is_stage_beaten(STAGE_9_VOLT) && save_is_stage_beaten(STAGE_DRIBBLE) && save_is_stage_beaten(STAGE_MONA))) {
         save_unlock_stage(STAGE_JIMMY_REMIX_1);
-        return 1 << 9;
+        return 1 << STAGE_JIMMY_REMIX_1;
     }
     return 0;
 }
@@ -1509,7 +1510,7 @@ s32 main_menu_try_unlock_remix_1(void) {
 s32 main_menu_try_unlock_remix_2(void) {
     if (!save_is_stage_unlocked(STAGE_JIMMY_REMIX_2) && (save_is_stage_beaten(STAGE_KAT) && save_is_stage_beaten(STAGE_DR_CRYGOR) && save_is_stage_beaten(STAGE_ORBULON))) {
         save_unlock_stage(STAGE_JIMMY_REMIX_2);
-        return 1 << 10;
+        return 1 << STAGE_JIMMY_REMIX_2;
     }
     return 0;
 }
@@ -1519,7 +1520,7 @@ s32 main_menu_try_unlock_easy(void) {
     if (!save_is_stage_unlocked(STAGE_EASY) && (save_is_stage_beaten(STAGE_WARIO))) {
         save_beat_stage(STAGE_EASY);
         save_unlock_stage(STAGE_EASY);
-        return 1 << 11;
+        return 1 << STAGE_EASY;
     }
     return 0;
 }
@@ -1535,7 +1536,7 @@ s32 main_menu_try_unlock_thrilling(void) {
         if (var_r4 != 0) {
             save_beat_stage(STAGE_THRILLING);
             save_unlock_stage(STAGE_THRILLING);
-            return 1 << 12;
+            return 1 << STAGE_THRILLING;
         }
     }
     return 0;
@@ -1552,7 +1553,7 @@ s32 main_menu_try_unlock_hard(void) {
         if (var_r4 != 0) {
             save_beat_stage(STAGE_HARD);
             save_unlock_stage(STAGE_HARD);
-            return 1 << 13;
+            return 1 << STAGE_HARD;
         }
     }
     return 0;
@@ -1562,7 +1563,7 @@ s32 main_menu_try_unlock_total_boss(void) {
     if (!save_is_stage_unlocked(STAGE_TOTAL_BOSS) && save_is_stage_beaten(STAGE_WARIO)) {
         save_beat_stage(STAGE_TOTAL_BOSS);
         save_unlock_stage(STAGE_TOTAL_BOSS);
-        return 1 << 14;
+        return 1 << STAGE_TOTAL_BOSS;
     }
     return 0;
 }
@@ -1570,7 +1571,7 @@ s32 main_menu_try_unlock_total_boss(void) {
 s32 main_menu_try_unlock_fly_swatter(void) {
     if (!save_is_stage_unlocked(STAGE_FLY_SWATTER) && func_08008AA4(STAGE_JIMMY_REMIX_1) >= 25) {
         save_unlock_stage(STAGE_FLY_SWATTER);
-        return 1 << 17;
+        return 1 << STAGE_FLY_SWATTER;
     }
     return 0;
 }
@@ -1578,7 +1579,7 @@ s32 main_menu_try_unlock_fly_swatter(void) {
 s32 main_menu_try_unlock_dr_wario(void) {
     if (!save_is_stage_unlocked(STAGE_DR_WARIO) && func_08008AA4(STAGE_JIMMY) >= 20) {
         save_unlock_stage(STAGE_DR_WARIO);
-        return 1 << 16;
+        return 1 << STAGE_DR_WARIO;
     }
     return 0;
 }
@@ -1586,7 +1587,7 @@ s32 main_menu_try_unlock_dr_wario(void) {
 s32 main_menu_try_unlock_sheriff(void) {
     if (!save_is_stage_unlocked(STAGE_SHERIFF) && func_08008AA4(STAGE_JIMMY_REMIX_2) >= 25) {
         save_unlock_stage(STAGE_SHERIFF);
-        return 1 << 15;
+        return 1 << STAGE_SHERIFF;
     }
     return 0;
 }
@@ -1606,7 +1607,7 @@ s32 main_menu_try_unlock_pyoro(void) {
         }
         if (openedCount > 212) {
             save_unlock_stage(STAGE_PYORO);
-            return 1 << 18;
+            return 1 << STAGE_PYORO;
         }
     }
     return 0;
@@ -1627,7 +1628,7 @@ s32 main_menu_try_unlock_pyoro_2(void) {
         }
         if (beatenCount > 212) {
             save_unlock_stage(STAGE_PYORO_2);
-            return 1 << 19;
+            return 1 << STAGE_PYORO_2;
         }
     }
     return 0;
@@ -1648,7 +1649,7 @@ u32 main_menu_try_unlock_dong_dong(void) {
         }
         if (count) {
             save_unlock_stage(STAGE_DONG_DONG);
-            return 1 << 23;
+            return 1 << STAGE_DONG_DONG;
         }
     }
     return 0;
@@ -1669,7 +1670,7 @@ s32 main_menu_try_unlock_hurdle(void) {
         }
         if (count > 1) {
             save_unlock_stage(STAGE_HURDLE);
-            return 1 << 24;
+            return 1 << STAGE_HURDLE;
         }
     }
     return 0;
@@ -1690,7 +1691,7 @@ s32 main_menu_try_unlock_chiritorie(void) {
         }
         if (count) {
             save_unlock_stage(STAGE_CHIRITORIE);
-            return 1 << 25;
+            return 1 << STAGE_CHIRITORIE;
         }
     }
     return 0;
@@ -1712,7 +1713,7 @@ s32 main_menu_try_unlock_chicken_race(void) {
         }
         if (count > 1) {
             save_unlock_stage(STAGE_CHICKEN_RACE);
-            return 1 << 26;
+            return 1 << STAGE_CHICKEN_RACE;
         }
     }
     return 0;
@@ -1722,7 +1723,7 @@ s32 main_menu_try_unlock_jump_forever(void) {
     if (!save_is_stage_unlocked(STAGE_JUMP_FOREVER) && save_is_stage_beaten(STAGE_JIMMY)) {
         save_beat_stage(STAGE_JUMP_FOREVER);
         save_unlock_stage(STAGE_JUMP_FOREVER);
-        return 1 << 20;
+        return 1 << STAGE_JUMP_FOREVER;
     }
     return 0;
 }
@@ -1731,7 +1732,7 @@ s32 main_menu_try_unlock_paper_plane(void) {
     if (!save_is_stage_unlocked(STAGE_PAPER_PLANE) && save_is_stage_beaten(STAGE_JIMMY_REMIX_2)) {
         save_beat_stage(STAGE_PAPER_PLANE);
         save_unlock_stage(STAGE_PAPER_PLANE);
-        return 1 << 21;
+        return 1 << STAGE_PAPER_PLANE;
     }
     return 0;
 }
@@ -1740,7 +1741,7 @@ s32 main_menu_try_unlock_skating_board(void) {
     if (!save_is_stage_unlocked(STAGE_SKATING_BOARD) && save_is_stage_beaten(STAGE_JIMMY_REMIX_1)) {
         save_beat_stage(STAGE_SKATING_BOARD);
         save_unlock_stage(STAGE_SKATING_BOARD);
-        return 1 << 22;
+        return 1 << STAGE_SKATING_BOARD;
     }
     return 0;
 }
@@ -1749,7 +1750,7 @@ s32 main_menu_try_unlock_staff(void) {
     if (!save_is_stage_unlocked(STAGE_STAFF) && save_is_stage_beaten(STAGE_WARIO)) {
         save_beat_stage(STAGE_STAFF);
         save_unlock_stage(STAGE_STAFF);
-        return 1 << 27;
+        return 1 << STAGE_STAFF;
     }
     return 0;
 }

@@ -118,7 +118,7 @@ _08015480: \n\
 /* 080154C8 */ LDRSH R1, [R6, R2] \n\
 /* 080154CA */ LDR R2, =func_080152A0 + 1 \n\
 /* 080154CC */ MOVS R3, #0 \n\
-/* 080154CE */ BL func_08011504 \n\
+/* 080154CE */ BL main_menu_move_cursor_to \n\
 /* 080154D2 */ BL func_08014FF8 \n\
 /* 080154D6 */ ADD SP, #4 \n\
 /* 080154D8 */ POP {R3, R4} \n\
