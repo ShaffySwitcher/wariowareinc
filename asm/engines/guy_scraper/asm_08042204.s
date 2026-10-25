@@ -47,7 +47,7 @@ _08042244: \n\
 _0804224A: \n\
 /* 0804224A */ MOVS R2, #0X80 \n\
 /* 0804224C */ LSLS R2, R2, #6 \n\
-/* 0804224E */ BL func_08002124 \n\
+/* 0804224E */ BL gfx_table_loader_init \n\
 /* 08042252 */ B _0804226A \n\
  \n\
 .balign 4, 0 \n\
@@ -63,7 +63,7 @@ _0804225C: \n\
 /* 08042260 */ LDR R1, _0804233C \n\
 /* 08042262 */ MOVS R2, #0X80 \n\
 /* 08042264 */ LSLS R2, R2, #6 \n\
-/* 08042266 */ BL func_08002124 \n\
+/* 08042266 */ BL gfx_table_loader_init \n\
 _0804226A: \n\
 /* 0804226A */ MOVS R0, #0 \n\
 /* 0804226C */ BL scene_set_video_mode \n\

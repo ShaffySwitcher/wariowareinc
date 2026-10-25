@@ -10,7 +10,7 @@ void crazy_cars_scene_start(struct CrazyCarsSceneData* data) {
     difficulty = gGameplayData.currentDifficulty;
 
     // Load graphic table
-    func_08002124(data->unk4, crazy_cars_gfx_table, 0x2000);
+    gfx_table_loader_init(data->unk4, crazy_cars_gfx_table, 0x2000);
 
     scene_set_video_mode(0);
     scene_show_bg_layer(1);
@@ -54,7 +54,7 @@ void crazy_cars_scene_start(struct CrazyCarsSceneData* data) {
 }
 
 void crazy_cars_scene_pause(u32 arg) {
-    func_080021C8(arg + 4);
+    gfx_table_loader_update(arg + 4);
 }
 
 void crazy_cars_scene_update(struct CrazyCarsSceneData* data) {

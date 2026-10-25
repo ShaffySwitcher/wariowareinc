@@ -16,7 +16,7 @@ thumb_func_start func_0802ECC0 \n\
 /* 0802ECD8 */ LDR R1, _0802EF00 \n\
 /* 0802ECDA */ MOVS R2, #0X80 \n\
 /* 0802ECDC */ LSLS R2, R2, #6 \n\
-/* 0802ECDE */ BL func_08002124 \n\
+/* 0802ECDE */ BL gfx_table_loader_init \n\
 /* 0802ECE2 */ LDR R0, _0802EF04 \n\
 /* 0802ECE4 */ BL load_gfx_table \n\
 /* 0802ECE8 */ MOVS R0, #0 \n\

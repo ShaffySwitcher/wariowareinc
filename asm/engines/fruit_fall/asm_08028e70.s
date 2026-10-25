@@ -3,7 +3,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_08028E70 \n\
 /* 08028E70 */ PUSH {LR} \n\
-/* 08028E72 */ BL func_080021C8 \n\
+/* 08028E72 */ BL gfx_table_loader_update \n\
 /* 08028E76 */ POP {R0} \n\
 /* 08028E78 */ BX R0 \n\
  \n\

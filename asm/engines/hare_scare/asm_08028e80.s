@@ -19,7 +19,7 @@ thumb_func_start func_08028E80 \n\
 /* 08028E9C */ MOVS R2, #0X80 \n\
 /* 08028E9E */ LSLS R2, R2, #6 \n\
 /* 08028EA0 */ ADDS R0, R6, #0 \n\
-/* 08028EA2 */ BL func_08002124 \n\
+/* 08028EA2 */ BL gfx_table_loader_init \n\
 /* 08028EA6 */ MOVS R0, #0 \n\
 /* 08028EA8 */ BL scene_set_video_mode \n\
 /* 08028EAC */ MOVS R0, #1 \n\

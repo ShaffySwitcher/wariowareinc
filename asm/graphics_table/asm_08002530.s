@@ -7,7 +7,7 @@ thumb_func_start load_gfx_table \n\
 /* 08002536 */ MOVS R2, #0X80 \n\
 /* 08002538 */ LSLS R2, R2, #0XA \n\
 /* 0800253A */ MOV R0, SP \n\
-/* 0800253C */ BL func_08002124 \n\
+/* 0800253C */ BL gfx_table_loader_init \n\
 /* 08002540 */ MOV R0, SP \n\
 /* 08002542 */ LDRB R1, [R0] \n\
 /* 08002544 */ MOVS R0, #1 \n\
@@ -18,7 +18,7 @@ thumb_func_start load_gfx_table \n\
 /* 0800254E */ MOVS R5, #1 \n\
 _08002550: \n\
 /* 08002550 */ MOV R0, SP \n\
-/* 08002552 */ BL func_080021C8 \n\
+/* 08002552 */ BL gfx_table_loader_update \n\
 /* 08002556 */ LDRB R1, [R4] \n\
 /* 08002558 */ ADDS R0, R5, #0 \n\
 /* 0800255A */ ANDS R0, R1 \n\

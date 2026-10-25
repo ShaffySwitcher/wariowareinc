@@ -6,7 +6,7 @@ thumb_func_start func_080489D0 \n\
 /* 080489D2 */ SUB SP, #4 \n\
 /* 080489D4 */ LDR R4, _080489FC \n\
 /* 080489D6 */ LDR R0, [R4] \n\
-/* 080489D8 */ BL func_080021C8 \n\
+/* 080489D8 */ BL gfx_table_loader_update \n\
 /* 080489DC */ LDR R0, [R4] \n\
 /* 080489DE */ LDR R0, [R0, #0X64] \n\
 /* 080489E0 */ LDR R0, [R0] \n\

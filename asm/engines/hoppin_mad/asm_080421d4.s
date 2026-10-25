@@ -5,7 +5,7 @@ thumb_func_start func_080421D4 \n\
 /* 080421D4 */ PUSH {LR} \n\
 /* 080421D6 */ LDR R0, =gCurrentSceneVariable \n\
 /* 080421D8 */ LDR R0, [R0] \n\
-/* 080421DA */ BL func_080021C8 \n\
+/* 080421DA */ BL gfx_table_loader_update \n\
 /* 080421DE */ POP {R0} \n\
 /* 080421E0 */ BX R0 \n\
  \n\

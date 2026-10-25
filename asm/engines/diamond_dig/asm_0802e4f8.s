@@ -21,7 +21,7 @@ thumb_func_start func_0802E4F8 \n\
 /* 0802E518 */ MOVS R2, #0X80 \n\
 /* 0802E51A */ LSLS R2, R2, #6 \n\
 /* 0802E51C */ ADDS R0, R7, #0 \n\
-/* 0802E51E */ BL func_08002124 \n\
+/* 0802E51E */ BL gfx_table_loader_init \n\
 /* 0802E522 */ MOVS R0, #0 \n\
 /* 0802E524 */ BL scene_set_video_mode \n\
 /* 0802E528 */ MOVS R0, #1 \n\

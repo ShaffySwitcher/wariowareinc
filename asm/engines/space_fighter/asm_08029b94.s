@@ -20,7 +20,7 @@ thumb_func_start func_08029B94 \n\
 /* 08029BB2 */ LDR R1, _08029E18 \n\
 /* 08029BB4 */ MOVS R2, #0X80 \n\
 /* 08029BB6 */ LSLS R2, R2, #6 \n\
-/* 08029BB8 */ BL func_08002124 \n\
+/* 08029BB8 */ BL gfx_table_loader_init \n\
 /* 08029BBC */ MOVS R0, #0 \n\
 /* 08029BBE */ BL scene_set_video_mode \n\
 /* 08029BC2 */ MOVS R0, #1 \n\

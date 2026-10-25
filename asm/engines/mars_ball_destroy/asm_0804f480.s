@@ -13,7 +13,7 @@ thumb_func_start func_0804F480 \n\
 /* 0804F490 */ LDR R1, _0804F590 \n\
 /* 0804F492 */ MOVS R2, #0X80 \n\
 /* 0804F494 */ LSLS R2, R2, #6 \n\
-/* 0804F496 */ BL func_08002124 \n\
+/* 0804F496 */ BL gfx_table_loader_init \n\
 /* 0804F49A */ MOVS R0, #0 \n\
 /* 0804F49C */ BL scene_set_video_mode \n\
 /* 0804F4A0 */ MOVS R0, #1 \n\

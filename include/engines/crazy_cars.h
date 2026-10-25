@@ -85,4 +85,4 @@ void crazy_cars_scene_pause(u32);
 void crazy_cars_scene_update(struct CrazyCarsSceneData* data);
 void crazy_cars_scene_stop(void);
 
-void func_08002124(u8*, const struct GraphicsTable *gfxTable, u32);
+void gfx_table_loader_init(u8*, const struct GraphicsTable *gfxTable, u32);

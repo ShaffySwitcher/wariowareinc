@@ -29,5 +29,3 @@ u32 init_update_scene();
 // EXTERNS
 extern s16 D_030035E0;
 extern s16 gCurrentScene;
-
-extern u16 func_08002468(struct GfxTableLoader*);

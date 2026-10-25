@@ -26,7 +26,7 @@ _0804B168: \n\
 /* 0804B174 */ BNE _0804B168 \n\
 _0804B176: \n\
 /* 0804B176 */ LDR R0, [R4] \n\
-/* 0804B178 */ BL func_080021C8 \n\
+/* 0804B178 */ BL gfx_table_loader_update \n\
 /* 0804B17C */ POP {R4} \n\
 /* 0804B17E */ POP {R0} \n\
 /* 0804B180 */ BX R0 \n\

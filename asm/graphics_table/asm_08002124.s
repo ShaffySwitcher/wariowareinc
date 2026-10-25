@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08002124 \n\
+thumb_func_start gfx_table_loader_init \n\
 /* 08002124 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08002126 */ ADDS R5, R0, #0 \n\
 /* 08002128 */ ADDS R4, R1, #0 \n\

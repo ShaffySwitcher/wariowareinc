@@ -32,3 +32,8 @@ struct GfxTableLoader {
     u32 rleDecompressProgress[8];
     struct GFXDecompressProgress gfxDecompressProgress;
 };
+
+// FUNCTIONS
+extern void gfx_table_loader_init(struct GfxTableLoader *loader, const struct GraphicsTable *gfxTable, u32 limit);
+extern void gfx_table_loader_update(struct GfxTableLoader *loader);
+extern u16 func_08002468(struct GfxTableLoader *loader);

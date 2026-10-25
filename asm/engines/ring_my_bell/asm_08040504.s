@@ -14,7 +14,7 @@ thumb_func_start func_08040504 \n\
 /* 08040516 */ LDR R1, _08040668 \n\
 /* 08040518 */ MOVS R2, #0X80 \n\
 /* 0804051A */ LSLS R2, R2, #6 \n\
-/* 0804051C */ BL func_08002124 \n\
+/* 0804051C */ BL gfx_table_loader_init \n\
 /* 08040520 */ MOVS R0, #0 \n\
 /* 08040522 */ BL scene_set_video_mode \n\
 /* 08040526 */ MOVS R0, #1 \n\

@@ -13,7 +13,7 @@ thumb_func_start func_0803A760 \n\
 /* 0803A770 */ LDR R1, _0803A8D4 \n\
 /* 0803A772 */ MOVS R2, #0X80 \n\
 /* 0803A774 */ LSLS R2, R2, #6 \n\
-/* 0803A776 */ BL func_08002124 \n\
+/* 0803A776 */ BL gfx_table_loader_init \n\
 /* 0803A77A */ MOVS R0, #0 \n\
 /* 0803A77C */ BL scene_set_video_mode \n\
 /* 0803A780 */ MOVS R0, #1 \n\

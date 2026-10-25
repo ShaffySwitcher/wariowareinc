@@ -8,7 +8,7 @@ thumb_func_start func_08002568 \n\
 /* 08002572 */ ADDS R5, R0, #0 \n\
 /* 08002574 */ LDR R1, [R4] \n\
 /* 08002576 */ LDR R2, [R4, #4] \n\
-/* 08002578 */ BL func_08002124 \n\
+/* 08002578 */ BL gfx_table_loader_init \n\
 /* 0800257C */ ADDS R0, R5, #0 \n\
 /* 0800257E */ POP {R4, R5} \n\
 /* 08002580 */ POP {R1} \n\

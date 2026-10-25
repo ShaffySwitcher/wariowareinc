@@ -32,7 +32,7 @@ u32 init_update_scene(void) {
 
     if (gInit.state == 0) {
         if (func_08002468(&gInit.unk4)) {
-            func_080021C8(&gInit.unk4);
+            gfx_table_loader_update(&gInit.unk4);
         } else {
             gInit.state = 1;
         }

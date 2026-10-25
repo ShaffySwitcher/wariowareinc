@@ -66,7 +66,7 @@ _080508B8: \n\
 /* 080508C4 */ BGE _080508B8 \n\
 _080508C6: \n\
 /* 080508C6 */ LDR R0, [R5] \n\
-/* 080508C8 */ BL func_080021C8 \n\
+/* 080508C8 */ BL gfx_table_loader_update \n\
 /* 080508CC */ POP {R4, R5} \n\
 /* 080508CE */ POP {R0} \n\
 /* 080508D0 */ BX R0 \n\
