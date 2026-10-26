@@ -1,4 +1,7 @@
 #include "code_08006410.h"
+#include "code_08000f10.h"
+#include "src/affine_param.h"
+#include "lib_sprite.h"
 
 asm(".include \"include/gba.inc\"");
 
@@ -35,36 +38,94 @@ asm(".include \"include/gba.inc\"");
 
 #include "asm/code_08006410/asm_0800695c.s"
 
-#include "asm/code_08006410/asm_080069f4.s"
+void func_080069F4(void) {
+    REG_DISPCNT = 0;
+    PALETTE_RAM[0] = 0;
+}
 
-#include "asm/code_08006410/asm_08006a04.s"
+void func_08006A04(void) {
+    gGraphicsBuffer.updateDisplay = FALSE;
+    gGraphicsBuffer.DISPCNT = 0;
+    gGraphicsBuffer.unk854_2 = FALSE;    
+    gGraphicsBuffer.unk854_4 = FALSE;
+    gGraphicsBuffer.unk854_5 = FALSE;
+    gGraphicsBuffer.modifyPalette = NULL;
+    dma3_fill(0U, gGraphicsBuffer.BG_CNT, 0x50U, 0x20U, 0x100U);
+}
 
-#include "asm/code_08006410/asm_08006a5c.s"
+void flush_graphics_buffer(void) {
+    if(gGraphicsBuffer.updateDisplay) {
+        REG_DISPCNT |= DISPCNT_HBLANK_FORCE_PROC;
 
-#include "asm/code_08006410/asm_08006b00.s"
+        dma3_set(gGraphicsBuffer.BG_CNT, (void*)&REG_BG0CNT, 0x50U, 0x20U, 0x100U);
+        dma3_set(gGraphicsBuffer.oam, (void*)OAMBase, 0x400U, 0x20U, 0x100U);
 
-#include "asm/code_08006410/asm_08006b68.s"
+        if(gGraphicsBuffer.unk854_2 || gGraphicsBuffer.unk854_5) {
+            dma3_set(&D_03003BC0, (void*)PALETTE_RAM, 0x400U, 0x20U, 0x100U);
+        } else {
+            dma3_set(gGraphicsBuffer.bgPalette[0], (void*)PALETTE_RAM, 0x400U, 0x20U, 0x100U);
+        }
 
-#include "asm/code_08006410/asm_08006b90.s"
+        REG_DISPCNT = gGraphicsBuffer.DISPCNT;
+    }
+}
+
+void func_08006B00(void) {
+    if (gGraphicsBuffer.unk854_2 || gGraphicsBuffer.unk854_5) {
+        dma3_set(gGraphicsBuffer.bgPalette[0], D_03003BC0, 0x400U, 0x20U, 0x100U);
+    }
+    if (gGraphicsBuffer.unk854_5 && (gGraphicsBuffer.modifyPalette != NULL)) {
+        gGraphicsBuffer.modifyPalette(D_03003BC0);
+    }
+    func_08006DB8();
+}
+
+void func_08006B68(void) {
+    dma3_fill(0x22222222, gGraphicsBuffer.oam, 0x400, 0x20, 0x100);
+}
+
+void func_08006B90(u16 color) {
+    dma3_fill(color | (color << 16), gGraphicsBuffer.bgPalette, 0x400, 0x20, 0x100);
+}
 
 #include "asm/code_08006410/asm_08006bb8.s"
 
 #include "asm/code_08006410/asm_08006c40.s"
 
-#include "asm/code_08006410/asm_08006cc8.s"
+void func_08006CC8(void) {
+    gGraphicsBuffer.unk854_2 = FALSE;
+    gGraphicsBuffer.unk854_4 = FALSE;
+}
 
 #include "asm/code_08006410/asm_08006ce8.s"
 
 #include "asm/code_08006410/asm_08006db8.s"
 
-#include "asm/code_08006410/asm_08006e94.s"
+void func_08006E94(u32 enable) {
+    gGraphicsBuffer.updateDisplay = enable;
+}
 
-#include "asm/code_08006410/asm_08006eb4.s"
+void func_08006EB4(void (*callback)(Palette pal)) {
+    gGraphicsBuffer.unk854_5 = 1;
+    gGraphicsBuffer.modifyPalette = callback;
+}
 
-#include "asm/code_08006410/asm_08006ee0.s"
+void func_08006EE0(void) {
+    gGraphicsBuffer.unk854_5 = 0;
+    gGraphicsBuffer.modifyPalette = NULL;
+}
 
-#include "asm/code_08006410/asm_08006f04.s"
+void func_08006F04(const void *src, u32 palette, u32 count) {
+    dma3_set(src, gGraphicsBuffer.bgPalette[palette], count * 0x20, 0x20, 0x100);
+}
 
-#include "asm/code_08006410/asm_08006f28.s"
+void func_08006F28(void) {
+    sprite_handler_create(gSpriteHandler, 0x80, gGraphicsBuffer.oam, 0xC8, D_083A3D94 + 0x404); // TO-DO: hardcoded bs
+    affine_param_init(0x20, gGraphicsBuffer.oam);
+}
 
-#include "asm/code_08006410/asm_08006f68.s"
+void func_08006F68(void) {
+    func_08006B68();
+    func_080EFA60(gSpriteHandler);
+    affine_param_copy_to_oam();
+}

@@ -256,11 +256,11 @@ void main_menu_scene_start(void) {
     }
 
     gGraphicsBuffer.DISPCNT |= DISPCNT_ENABLE_WINDOW1;
-    gGraphicsBuffer.unk3E = 0xF0;
-    gGraphicsBuffer.unk42 = 0x90;
-    gGraphicsBuffer.unk44 = 0x3F00;
-    gGraphicsBuffer.unk46 = 0x1F;
-    gGraphicsBuffer.unk4C = 0xFF;
+    gGraphicsBuffer.WIN1H = 0xF0;
+    gGraphicsBuffer.WIN1V = 0x90;
+    gGraphicsBuffer.WININ = 0x3F00;
+    gGraphicsBuffer.WINOUT = 0x1F;
+    gGraphicsBuffer.BLDMOD = 0xFF;
 
     if (gMainMenuSelectionState.state == 0) {
         if (gMainMenu.unk1B4 != 0) {
@@ -381,11 +381,11 @@ s32 func_08011708(void) {
 
 void main_menu_set_dimmed(u32 arg0) {
     if (arg0 != 0) {
-        gGraphicsBuffer.unk50 = 4;
+        gGraphicsBuffer.COLEY = 4;
         scene_set_music_volume(179);
         return;
     }
-    gGraphicsBuffer.unk50 = arg0;
+    gGraphicsBuffer.COLEY = arg0;
     scene_set_music_volume(256);
 }
 
