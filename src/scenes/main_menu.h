@@ -210,8 +210,8 @@ extern struct Vector2 D_03004014;
 extern u8 D_03006514;
 
 extern u16 D_08320EF0[][16];
-extern struct BgAnimScript *D_083A9FA4[];
-extern struct BgAnimScript D_083A9F90; 
+extern BgMapAnim *D_083A9FA4[];
+extern BgMapAnim D_083A9F90[]; 
 
 extern u8 **D_083A404C[]; 
 extern u8 D_08105DCC[];       
