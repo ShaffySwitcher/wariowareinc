@@ -792,7 +792,51 @@ void func_08012274(void) {
 
 #include "asm/scenes/main_menu/asm_080123f4.s"
 
-#include "asm/scenes/main_menu/asm_08012420.s"
+void func_08012420(u32 stage) {
+    struct Animation *textAnim;
+    struct Animation *wobblyAnim;
+    u8 *name;
+    s16 oldSprite;
+    u32 oldPrintedAnim;
+    
+    if (save_is_stage_unlocked(stage)) {
+        dma3_set(D_08320EF0[stage], gGraphicsBuffer.bgPalette[8], 0x20, 0x20, 0x100);
+        bg_anim_play(&gMainMenu.unk10, D_083A9FA4[stage], 0x800, BG_TILESET_BASE(0x3000), 0);
+        func_08006EB4(func_080123F4);
+        gMainMenu.unk88_1 = 1;
+        gMainMenu.unk88_2 = 0x50;
+    } else {
+        bg_anim_play(&gMainMenu.unk10, &D_083A9F90, 0x800, BG_TILESET_BASE(0x3000), 0);
+        func_08006EE0();
+        gMainMenu.unk88_1 = 0;
+    }
+
+    func_08012278(gMainMenu.unkD0, 0x10, 0xC);
+    func_08012B50(stage);
+
+    oldSprite = gMainMenu.unkAC;
+    oldPrintedAnim = gMainMenu.unkB0;
+
+    if (save_is_stage_unlocked(stage)) {
+        name = D_083A404C[get_current_language()][stage];
+        scene_show_sprite(0x1A);
+        sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[0x1A], 0);
+    } else {
+        name = D_08105DCC;
+        scene_hide_sprite(0x1A);
+    }
+
+    textAnim = bmp_font_obj_print_r(gMainMenu.unk4, name, 1, 14);
+    wobblyAnim = bmp_font_obj_print_wobbly(gMainMenu.unk4, textAnim, 4);
+    gMainMenu.unkB0 = (u32)wobblyAnim;
+    gMainMenu.unkAC = sprite_create(gSpriteHandler, wobblyAnim, 0, 0xDE, 0x15, 0x4800, 1, 0, 0);
+    mem_heap_dealloc(textAnim);
+
+    if (oldSprite >= 0) {
+        sprite_delete(gSpriteHandler, oldSprite);
+        bmp_font_obj_delete_printed_anim(gMainMenu.unk4, oldPrintedAnim);
+    }
+}
 
 #include "asm/scenes/main_menu/asm_080125c8.s"
 

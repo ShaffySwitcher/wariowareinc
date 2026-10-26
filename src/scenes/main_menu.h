@@ -51,7 +51,8 @@ struct MainMenuSceneData {
     s16 unk8A[3][3];
     s16 unk9C[8];
     u16 unkAC;
-    u8 padAE[6];
+    u8 padAE[2];
+    u32 unkB0;
     u8 unkB4;
     u8 padB5[3];
     u32 *unkB8;
@@ -208,6 +209,13 @@ extern struct Unk03000E60 D_03000E60;
 extern struct Vector2 D_03004014;
 extern u8 D_03006514;
 
+extern u16 D_08320EF0[][16];
+extern struct BgAnimScript *D_083A9FA4[];
+extern struct BgAnimScript D_083A9F90; 
+
+extern u8 **D_083A404C[]; 
+extern u8 D_08105DCC[];       
+
 extern struct MainMenuSelectionState gMainMenuSelectionState;
 
 // FUNCTIONS
@@ -248,6 +256,8 @@ extern void func_08013E44(void);
 extern void func_08013B88(void);
 extern void func_08013AE0(void);
 extern void func_08012658(void);
+extern void func_08006EB4(u32*);
+extern u32 func_080123F4();
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);
