@@ -1,42 +1,253 @@
 #include "code_08006410.h"
 #include "code_08000f10.h"
+#include "src/task_pool.h"
+#include "src/memory_heap.h"
 #include "src/affine_param.h"
 #include "lib_sprite.h"
 
 asm(".include \"include/gba.inc\"");
 
+void func_08006410(u16 *counter) {
+    (*counter)--;
+}
 
-#include "asm/code_08006410/asm_08006410.s"
+struct Window *func_08006418(u16 heapId, u16 taskHeapId, struct BitmapFontBG *font, struct Bitmap *target,
+                         s16 x, s16 y, const struct WindowDef *def,
+                         struct Bitmap *srcBmp, s16 srcX, s16 srcY, u32 printArg) {
+    struct Window *win = mem_heap_alloc_id(heapId, sizeof(struct Window));
+    const struct WindowText *t;
+ 
+    win->style   = mem_heap_alloc_id(heapId, sizeof(struct WindowStyle));
+    win->content = func_08005F64(heapId, def->width, def->height);
+    win->backup  = func_08005F64(heapId, def->width + 2, def->height + 2);
+    win->font    = font;
+    win->target  = target;
+    win->x       = x;
+    win->y       = y;
+    win->def     = def;
+    win->state   = WINDOW_HIDDEN;
+    win->flags   = 0;
+    win->onShow  = NULL;
+    win->onHide  = NULL;
+ 
+    func_08005CF8(def->styleSrc, win->style, def->styleArg);
 
-#include "asm/code_08006410/asm_08006418.s"
+    if (srcBmp)
+        func_08005E48(srcBmp, srcX, srcY, def->width, def->height, win->content, 0, 0);
+    else
+        func_08005B20(win->content, win->style->fillColor);
 
-#include "asm/code_08006410/asm_0800656c.s"
+    win->pendingPrints = 0;
 
-#include "asm/code_08006410/asm_080065c0.s"
+    if (def->texts) {
+        t = def->texts;
+        for (; t->text != NULL; t++) {
+            if (printArg) {
+                run_func_after_task(func_08005E0C(taskHeapId, win->content, font,
+                                                 t->x, t->y, t->text, t->color, printArg), func_08006410, &win->pendingPrints);
+                win->pendingPrints++;
+            } else {
+                func_08005DE0(win->content, font, t->x, t->y, t->text, t->color);
+            }
+        }
+    }
+    return win;
+}
 
-#include "asm/code_08006410/asm_08006610.s"
+struct Window *func_0800656C(u16 heapId, struct BitmapFontBG *font, struct Bitmap *target, s16 x, s16 y, const struct WindowDef *def, struct Bitmap *srcBmp, s16 srcX, s16 srcY) {
+    return func_08006418(heapId, 0, font, target, x, y, def, srcBmp, srcX, srcY, 0);
+}
 
-#include "asm/code_08006410/asm_08006648.s"
+void func_080065C0(struct Window *win) {
+    const struct WindowText *t;
+    u16 state = win->state;
 
-#include "asm/code_08006410/asm_08006680.s"
+    if (state == WINDOW_SHOWN) {
+        func_08006700(win);
+    }
 
-#include "asm/code_08006410/asm_08006700.s"
+    if (win->def->texts) {
+        t = win->def->texts;
+        for (; t->text != NULL; t++) {
+            bmp_font_bg_delete_printed_data(win->font, t->text);
+        }
+    }
+    func_08005FA0(win->backup);
+    func_08005FA0(win->content);
+    mem_heap_dealloc(win->style);
+    mem_heap_dealloc(win);
+}
 
-#include "asm/code_08006410/asm_08006734.s"
+void func_08006610(struct Window *win) {
+    struct Bitmap *target = win->target;
+    const struct WindowDef *def = win->def;
+    func_08005E48(target, win->x - 1, win->y - 1, def->width + 2, def->height + 2, win->backup, 0, 0);
+}
 
-#include "asm/code_08006410/asm_0800673c.s"
+void func_08006648(struct Window *win) {
+    struct Bitmap *target = win->target;
+    const struct WindowDef *def = win->def;
+    func_08005E48(win->backup, 0, 0, def->width + 2, def->height + 2, target, win->x - 1, win->y - 1);
+}
 
-#include "asm/code_08006410/asm_08006790.s"
+void func_08006680(struct Window* win) {
+    u16 state = win->state;
 
-#include "asm/code_08006410/asm_080067a4.s"
+    if (state == WINDOW_HIDDEN) {
+        const struct WindowDef *def = win->def;
 
-#include "asm/code_08006410/asm_08006828.s"
+        func_08006610(win);
+        func_08005C20(win->target, win->style, win->x - 1, win->y - 1, def->width + 2, def->height + 2, 0);
+        func_08005E48(win->content, 0, 0, def->width, def->height, win->target, win->x, win->y);
+        if(win->onShow) {
+            win->onShow(win, win->onShowArg);
+        }
+        win->state = WINDOW_SHOWN;
+    }
+}
 
-#include "asm/code_08006410/asm_0800687c.s"
+void func_08006700(struct Window* win) {
+    u16 state = win->state;
+    
+    if (state == WINDOW_SHOWN) {
+        func_08006648(win);
+        
+        if (win->onHide) {
+            win->onHide(win, win->onHideArg);
+        }
 
-#include "asm/code_08006410/asm_08006918.s"
+        win->state = WINDOW_HIDDEN;
+    }
+}
 
-#include "asm/code_08006410/asm_0800695c.s"
+u32 func_08006734(struct Window *win) {
+    return win->state;
+}
+
+void func_0800673C(struct Window *win, u16 x, u16 y) {
+    if (win->x != (s16)x || win->y != (s16)y) {
+        u16 state = win->state;
+        switch (state) {
+        case WINDOW_SHOWN:
+            func_08006700(win);
+            win->x = x;
+            win->y = y;
+            func_08006680(win);
+            break;
+        case WINDOW_HIDDEN:
+            win->x = x;
+            win->y = y;
+            break;
+        }
+    }
+}
+
+void func_08006790(struct Window *win, WindowCallback onShow, u32 onShowArg, WindowCallback onHide, u32 onHideArg) {
+    win->onShow = onShow;
+    win->onShowArg = onShowArg;
+    win->onHide = onHide;
+    win->onHideArg = onHideArg;
+}
+
+void func_080067A4(struct WindowAnim *anim) {
+    struct Window *win = anim->win;
+    struct Bitmap *target = win->target;
+    s32 x = win->x + anim->left;
+    s32 y = win->y + anim->top;
+    s32 w = anim->right - anim->left;
+    s32 h = anim->bottom - anim->top;
+
+    func_08005C20(target, win->style, x - 1, y - 1, w + 2, h + 2, 0);
+    func_08005E48(win->content, anim->left, anim->top, w, h, target, x, y);
+}
+
+struct WindowAnim *func_08006828(struct Window *win) {
+    u16 state = win->state;
+    if (state != WINDOW_HIDDEN) {
+        return TASK_FAILED_TO_START;
+    } else {
+        const struct WindowDef *def = win->def;
+        struct WindowAnim *anim = mem_heap_alloc(sizeof(struct WindowAnim));
+
+        anim->win = win;
+        anim->left = anim->right = def->width >> 1;
+        anim->top = anim->bottom = def->height >> 1;
+        func_08006610(win);
+        func_080067A4(anim);
+        win->state = WINDOW_OPENING;
+        return anim;
+    }
+}
+
+u32 func_0800687C(struct WindowAnim *anim) {
+    struct Window *win = anim->win;
+    const struct WindowDef *def = win->def;
+    s32 w, h;
+
+    if (anim->left > 0) anim->left--;
+    if (anim->right < def->width) anim->right++;
+    if (anim->top > 0) anim->top--;
+    if (anim->bottom < def->height) anim->bottom++;
+
+    func_08006648(win);
+    func_080067A4(anim);
+
+    w = anim->right - anim->left;
+    h = anim->bottom - anim->top;
+    if (w == def->width && h == def->height) {
+        win->state = WINDOW_SHOWN;
+        if (win->onShow) {
+            win->onShow(win, win->onShowArg);
+        }
+        return 1;
+    }
+    return 0;
+}
+
+struct WindowAnim *func_08006918(struct Window *win) {
+    u16 state = win->state;
+    if (state != WINDOW_SHOWN) {
+        return (struct WindowAnim *)-1;
+    } else {
+        const struct WindowDef *def = win->def;
+        struct WindowAnim *anim = mem_heap_alloc(sizeof(struct WindowAnim));
+
+        anim->win = win;
+        anim->left = anim->top = 0;
+        anim->right = def->width;
+        anim->bottom = def->height;
+        win->state = WINDOW_CLOSING;
+        return anim;
+    }
+}
+
+u32 func_0800695C(struct WindowAnim *anim) {
+    struct Window *win = anim->win;
+    const struct WindowDef *def = win->def;
+    s32 w, h;
+
+    func_08006648(win);
+
+    w = anim->right - anim->left;
+    h = anim->bottom - anim->top;
+    if (w == 0 && h == 0) {
+        win->state = WINDOW_HIDDEN;
+        if (win->onHide) {
+            win->onHide(win, win->onHideArg);
+        }
+        return TRUE;
+    }
+    {
+        s32 hw = def->width / 2;
+        s32 hh = def->height / 2;
+        if (anim->left < hw) anim->left++;
+        if (anim->right > hw) anim->right--;
+        if (anim->top < hh) anim->top++;
+        if (anim->bottom > hh) anim->bottom--;
+    }
+    func_080067A4(anim);
+    return FALSE;
+}
 
 void func_080069F4(void) {
     REG_DISPCNT = 0;
