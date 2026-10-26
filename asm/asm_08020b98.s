@@ -59,12 +59,12 @@ _08020BE2:
 /* 08020BF0 */ ASRS R5, R4, #0X10
 /* 08020BF2 */ MOVS R2, #0X18
 /* 08020BF4 */ ADDS R3, R5, #0
-/* 08020BF6 */ BL func_08006CE8
+/* 08020BF6 */ BL gfx_palette_blend_toward_color
 /* 08020BFA */ CMP R6, #1
 /* 08020BFC */ BNE _08020C06
 /* 08020BFE */ CMP R5, #0
 /* 08020C00 */ BGT _08020C06
-/* 08020C02 */ BL func_08006EE0
+/* 08020C02 */ BL gfx_clear_palette_effect
 _08020C06:
 /* 08020C06 */ CMP R6, #2
 /* 08020C08 */ BNE _08020C18

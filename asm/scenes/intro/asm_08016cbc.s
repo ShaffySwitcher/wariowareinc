@@ -5,11 +5,11 @@ thumb_func_start func_08016CBC \n\
 /* 08016CBE */ SUB SP, #0X10 \n\
 /* 08016CC0 */ ADDS R4, R0, #0 \n\
 /* 08016CC2 */ BL func_080069F4 \n\
-/* 08016CC6 */ BL func_08006A04 \n\
+/* 08016CC6 */ BL gfx_buffer_init \n\
 /* 08016CCA */ MOVS R0, #0 \n\
-/* 08016CCC */ BL func_08006B90 \n\
-/* 08016CD0 */ BL func_08006B68 \n\
-/* 08016CD4 */ BL func_08006F28 \n\
+/* 08016CCC */ BL gfx_bg_palette_fill \n\
+/* 08016CD0 */ BL gfx_oam_clear \n\
+/* 08016CD4 */ BL init_sprite_handler \n\
 /* 08016CD8 */ BL hdma_reset \n\
 /* 08016CDC */ LDR R0, =func_08016D7C \n\
 /* 08016CDE */ BL func_08000F74 \n\

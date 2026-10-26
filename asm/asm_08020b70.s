@@ -12,7 +12,7 @@ glabel func_08020B70
 /* 08020B78 */ BL func_0800A280
 /* 08020B7C */ B _08020B90
 _08020B7E:
-/* 08020B7E */ BL func_08006EE0
+/* 08020B7E */ BL gfx_clear_palette_effect
 /* 08020B82 */ LDR R0, =gCurrentSceneVariable
 /* 08020B84 */ LDR R2, [R0]
 /* 08020B86 */ LDRB R1, [R2, #0X18]

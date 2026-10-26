@@ -24,7 +24,7 @@ glabel func_0801CBD8
 /* 0801CBFE */ MOVS R3, #0
 /* 0801CC00 */ BL func_0800A2D8
 /* 0801CC04 */ LDR R0, =func_0801CBB0 + 1
-/* 0801CC06 */ BL func_08006EB4
+/* 0801CC06 */ BL gfx_set_palette_effect
 /* 0801CC0A */ ADD SP, #4
 /* 0801CC0C */ POP {R0}
 /* 0801CC0E */ BX R0

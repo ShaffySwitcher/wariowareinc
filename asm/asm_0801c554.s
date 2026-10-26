@@ -20,7 +20,7 @@ _0801C562:
 /* 0801C56C */ RSBS R0, R0, #0
 /* 0801C56E */ ANDS R0, R2
 /* 0801C570 */ STRB R0, [R1]
-/* 0801C572 */ BL func_08006EE0
+/* 0801C572 */ BL gfx_clear_palette_effect
 _0801C576:
 /* 0801C576 */ POP {R0}
 /* 0801C578 */ BX R0

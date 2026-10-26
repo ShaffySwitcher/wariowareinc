@@ -2,7 +2,7 @@ asm(".syntax unified \n\
  \n\
 thumb_func_start func_08016D00 \n\
 /* 08016D00 */ PUSH {LR} \n\
-/* 08016D02 */ BL flush_graphics_buffer \n\
+/* 08016D02 */ BL gfx_buffer_flush \n\
 /* 08016D06 */ BL hdma_run_dma3_now \n\
 /* 08016D0A */ BL update_paused_beatscript_scene \n\
 /* 08016D0E */ BL task_pool_update_constant \n\
@@ -11,8 +11,8 @@ thumb_func_start func_08016D00 \n\
 /* 08016D1A */ BL beatscript_scene_is_inactive \n\
 /* 08016D1E */ CMP R0, #0 \n\
 /* 08016D20 */ BNE _08016D32 \n\
-/* 08016D22 */ BL func_08006F68 \n\
-/* 08016D26 */ BL func_08006B00 \n\
+/* 08016D22 */ BL update_sprite_handler \n\
+/* 08016D26 */ BL gfx_buffer_update_palette \n\
 /* 08016D2A */ BL backdrop_gradient_update \n\
 /* 08016D2E */ MOVS R0, #0 \n\
 /* 08016D30 */ B _08016D38 \n\

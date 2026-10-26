@@ -53,10 +53,10 @@ u32 gameplay_check_collision(struct Vector2 *positionA, struct Rect *hitboxA,
 }
 
 void gameplay_init_scene(void) {
-    func_08006A04();
-    func_08006B90(0);
-    func_08006B68();
-    func_08006F28();
+    gfx_buffer_init();
+    gfx_bg_palette_fill(0);
+    gfx_oam_clear();
+    init_sprite_handler();
     gGameplayData.maxLives = MAX_LIVES;
     dma3_set(D_03003BBC[0]->unk10, &gGameplayData.unk22c, 0x10, 0x10, 0x100);
     gGameplayData.unk0 = D_03003628;
@@ -118,7 +118,7 @@ u32 gameplay_update_scene(void) {
     u32 language = get_current_language();
     u32 i;
 
-    flush_graphics_buffer();
+    gfx_buffer_flush();
     hdma_run_dma3_now();
     bg_anim_write_to_vram(&gGameplayData.unk1f4);
 
@@ -189,7 +189,7 @@ u32 gameplay_update_scene(void) {
                     play_sound(&s_BASIC_PAUSE_OFF_seqData);
                 } else {
                     sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, FALSE);
-                    func_08006C40(0x20, 0);
+                    gfx_fade_out_start(0x20, 0);
                     stop_all_soundplayers();
                     play_sound(&s_BASIC_PAUSE_OFF_seqData);
                     gGameplayData.currentState = GAMEPLAY_STATE_EXITING;
@@ -225,8 +225,8 @@ u32 gameplay_update_scene(void) {
             break;
     }
     bg_anim_update_script(&gGameplayData.unk1f4);
-    func_08006F68();
-    func_08006B00();
+    update_sprite_handler();
+    gfx_buffer_update_palette();
     backdrop_gradient_update();
     return 0;
 }
@@ -359,7 +359,7 @@ void gameplay_stage_init(void) {
     subscenes[0] = unk4->introScene;
     subscenes[1] = NULL;
     if (D_03003634 != 0) {
-        func_08006E94(1);
+        gfx_set_update_enabled(1);
         gGameplayData.unk20 = D_083A4BCC;
         subscenes[0] = NULL;
     }

@@ -62,7 +62,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800DF76 */ MOVS R3, #3 \n\
 /* 0800DF78 */ BL scene_set_bg_layer_controls \n\
 /* 0800DF7C */ MOVS R0, #0 \n\
-/* 0800DF7E */ BL func_08006B90 \n\
+/* 0800DF7E */ BL gfx_bg_palette_fill \n\
 /* 0800DF82 */ LDR R2, _0800E2EC \n\
 /* 0800DF84 */ ADDS R1, R2, #0 \n\
 /* 0800DF86 */ ADDS R1, #0X4C \n\
@@ -106,7 +106,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800DFD4 */ MOVS R3, #0X20 \n\
 /* 0800DFD6 */ BL dma3_fill \n\
 /* 0800DFDA */ MOVS R0, #1 \n\
-/* 0800DFDC */ BL func_08006E94 \n\
+/* 0800DFDC */ BL gfx_set_update_enabled \n\
 /* 0800DFE0 */ LDR R1, _0800E300 \n\
 /* 0800DFE2 */ MOVS R2, #0XC0 \n\
 /* 0800DFE4 */ LSLS R2, R2, #2 \n\
@@ -638,7 +638,7 @@ _0800E378: \n\
 /* 0800E39C */ MOVS R0, #1 \n\
 /* 0800E39E */ MOVS R1, #0 \n\
 /* 0800E3A0 */ MOVS R3, #5 \n\
-/* 0800E3A2 */ BL func_0800656C \n\
+/* 0800E3A2 */ BL window_create \n\
 /* 0800E3A6 */ LDR R1, [R6] \n\
 /* 0800E3A8 */ MOVS R3, #0XB6 \n\
 /* 0800E3AA */ LSLS R3, R3, #2 \n\
@@ -648,7 +648,7 @@ _0800E378: \n\
 /* 0800E3B2 */ LDR R3, _0800E57C \n\
 /* 0800E3B4 */ STR R4, [SP] \n\
 /* 0800E3B6 */ MOVS R2, #0 \n\
-/* 0800E3B8 */ BL func_08006790 \n\
+/* 0800E3B8 */ BL window_set_callbacks \n\
 /* 0800E3BC */ BL func_0801068C \n\
 /* 0800E3C0 */ LDR R0, [R6] \n\
 /* 0800E3C2 */ LDR R1, _0800E580 \n\

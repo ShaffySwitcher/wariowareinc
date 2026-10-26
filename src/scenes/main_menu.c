@@ -5,6 +5,7 @@
 #include "src/audio.h"
 #include "src/memory.h"
 #include "src/task_pool.h"
+#include "src/code_08006410.h"
 #include "graphics/main_menu/main_menu_graphics.h"
 #include "src/code_08000f10.h"
 
@@ -145,9 +146,9 @@ void main_menu_scene_start(void) {
     gMainMenu.unkD4 = *(void **)gMainMenu.unkD0;
     gMainMenu.unkD8 = (void *)(VRAMBase + 0x4800);
     gMainMenu.unkDC_1 = 1;
-    gMainMenu.unk80 = 0x20;
-    gMainMenu.unk82 = 0x20;
-    gMainMenu.unk7C = scene_mem_heap_alloc(0x800);
+    gMainMenu.unk7C.width = 0x20;
+    gMainMenu.unk7C.height = 0x20;
+    gMainMenu.unk7C.data = scene_mem_heap_alloc(0x800);
 
     gMainMenu.unk0 = create_new_bmp_font_bg((u16)get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
     gMainMenu.unk4 = create_new_bmp_font_obj_alt((u16)get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
@@ -761,10 +762,11 @@ void func_080121B8(void) {
     gMainMenu.unkDC_10 = 0;
 }
 
-void func_080121D0(void) {
+void func_080121D0(void)
+{
     u32 i, j;
     u16 val = 0x8180;
-    u16 *ptr = gMainMenu.unk7C + 0x160;
+    u16 *ptr = gMainMenu.unk7C.data + 0xB0;
 
     for (i = 0; i < 7; i++) {
         for (j = 0; j < 12; j++) {
@@ -775,10 +777,10 @@ void func_080121D0(void) {
 
     dma3_fill(-1, BG_TILESET_BASE(0x3000), 0xA80, 0x20, 0x100);
 
-    gMainMenu.unk78 = func_0800656C((u16)get_current_mem_id(), gMainMenu.unk0, gMainMenu.unkD0,
+    gMainMenu.unk78 = window_create((u16)get_current_mem_id(), gMainMenu.unk0, gMainMenu.unkD0,
         0x10, 1, &D_083AA530, &gMainMenu.unk7C, 0x10, 1);
 
-    func_08006790(gMainMenu.unk78, func_0801216C, 0, func_080121B8, 0);
+    window_set_callbacks(gMainMenu.unk78, func_0801216C, 0, func_080121B8, 0);
 }
 
 void func_08012274(void) {
@@ -802,12 +804,12 @@ void func_08012420(u32 stage) {
     if (save_is_stage_unlocked(stage)) {
         dma3_set(D_08320EF0[stage], gGraphicsBuffer.bgPalette[8], 0x20, 0x20, 0x100);
         bg_anim_play(&gMainMenu.unk10, D_083A9FA4[stage], 0x800, BG_TILESET_BASE(0x3000), 0);
-        func_08006EB4(func_080123F4);
+        gfx_set_palette_effect(func_080123F4);
         gMainMenu.unk88_1 = 1;
         gMainMenu.unk88_2 = 0x50;
     } else {
         bg_anim_play(&gMainMenu.unk10, &D_083A9F90, 0x800, BG_TILESET_BASE(0x3000), 0);
-        func_08006EE0();
+        gfx_clear_palette_effect();
         gMainMenu.unk88_1 = 0;
     }
 

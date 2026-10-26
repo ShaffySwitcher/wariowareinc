@@ -25,12 +25,12 @@ void soft_reset_init_scene(void) {
 
 s32 soft_reset_update_scene(void) {
     hdma_start();
-    flush_graphics_buffer();
+    gfx_buffer_flush();
     hdma_run_dma3_now();
 
     switch (gSoftReset.state) {
     case 0:
-        func_08006C40(20, 0);
+        gfx_fade_out_start(20, 0);
         func_08002090(20);
         gSoftReset.state++;
         break;
@@ -51,8 +51,8 @@ s32 soft_reset_update_scene(void) {
         break;
     }
 
-    func_08006F68();
-    func_08006B00();
+    update_sprite_handler();
+    gfx_buffer_update_palette();
     backdrop_gradient_update();
     return GLOBAL_SCENE_INIT;
 }

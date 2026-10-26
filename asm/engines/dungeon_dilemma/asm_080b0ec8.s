@@ -70,7 +70,7 @@ thumb_func_start func_080B0EC8 \n\
 /* 080B0F58 */ STR R4, [SP, #0X18] \n\
 /* 080B0F5A */ MOVS R0, #2 \n\
 /* 080B0F5C */ MOVS R1, #2 \n\
-/* 080B0F5E */ BL func_08006418 \n\
+/* 080B0F5E */ BL window_create_ex \n\
 /* 080B0F62 */ MOV R2, R8 \n\
 /* 080B0F64 */ LDR R1, [R2] \n\
 /* 080B0F66 */ STR R0, [R1, #0X38] \n\
@@ -201,7 +201,7 @@ thumb_func_start func_080B0EC8 \n\
 /* 080B1070 */ STR R1, [SP, #0X18] \n\
 /* 080B1072 */ MOVS R0, #2 \n\
 /* 080B1074 */ MOVS R1, #2 \n\
-/* 080B1076 */ BL func_08006418 \n\
+/* 080B1076 */ BL window_create_ex \n\
 /* 080B107A */ MOV R2, R8 \n\
 /* 080B107C */ LDR R1, [R2] \n\
 /* 080B107E */ STR R0, [R1, #0X3C] \n\

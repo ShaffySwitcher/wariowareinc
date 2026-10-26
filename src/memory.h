@@ -34,7 +34,7 @@ struct SaveBuffer {
 
 // DATA
 extern struct SaveBuffer* D_03003BBC[];
-extern struct SaveBuffer* D_083A3D94;
+extern u8 *D_083A3D94;
 extern u8* main_save_memory_base; // 0x0E000000
 extern u8* backup_save_memory_base; // 0x0E004000
 extern u32 D_083A3DA0; // 0x03003860

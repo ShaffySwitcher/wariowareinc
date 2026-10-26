@@ -10,7 +10,7 @@ thumb_func_start func_08015590 \n\
 /* 0801559E */ LSLS R1, R1, #1 \n\
 /* 080155A0 */ ADDS R0, R1 \n\
 /* 080155A2 */ LDR R0, [R0] \n\
-/* 080155A4 */ BL func_080065C0 \n\
+/* 080155A4 */ BL window_destroy \n\
 /* 080155A8 */ LDR R1, [R4] \n\
 /* 080155AA */ ADDS R1, #0XDE \n\
 /* 080155AC */ LDRB R2, [R1] \n\

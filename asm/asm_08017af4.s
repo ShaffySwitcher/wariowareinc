@@ -34,7 +34,7 @@ _08017B14:
 /* 08017B28 */ LDR R0, [R0]
 /* 08017B2A */ MOVS R1, #0XC
 /* 08017B2C */ MOVS R2, #4
-/* 08017B2E */ BL func_08006F04
+/* 08017B2E */ BL gfx_load_bg_palette
 /* 08017B32 */ LDR R1, [R4]
 /* 08017B34 */ ADDS R0, R1, #0
 /* 08017B36 */ ADDS R0, #0XD6

@@ -9,9 +9,9 @@ glabel func_08020F60
 /* 08020F62 */ SUB SP, #8
 /* 08020F64 */ MOVS R0, #8
 /* 08020F66 */ BL func_0801720C
-/* 08020F6A */ BL func_08006A04
+/* 08020F6A */ BL gfx_buffer_init
 /* 08020F6E */ MOVS R0, #0
-/* 08020F70 */ BL func_08006B90
+/* 08020F70 */ BL gfx_bg_palette_fill
 /* 08020F74 */ LDR R1, _08020FA4
 /* 08020F76 */ MOVS R2, #0XC0
 /* 08020F78 */ LSLS R2, R2, #1

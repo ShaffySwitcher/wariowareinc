@@ -32,7 +32,7 @@ _08020C56:
 /* 08020C56 */ STRH R0, [R1, #0X1A]
 _08020C58:
 /* 08020C58 */ LDR R0, =func_08020B98 + 1
-/* 08020C5A */ BL func_08006EB4
+/* 08020C5A */ BL gfx_set_palette_effect
 /* 08020C5E */ POP {R4}
 /* 08020C60 */ POP {R0}
 /* 08020C62 */ BX R0

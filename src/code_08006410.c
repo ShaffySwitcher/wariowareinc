@@ -5,13 +5,13 @@
 #include "src/affine_param.h"
 #include "lib_sprite.h"
 
-asm(".include \"include/gba.inc\"");
+asm(".include \"include/gba.inc\""); // TO-DO: remove this
 
-void func_08006410(u16 *counter) {
+void window_dec_pending_prints(u16 *counter) {
     (*counter)--;
 }
 
-struct Window *func_08006418(u16 heapId, u16 taskHeapId, struct BitmapFontBG *font, struct Bitmap *target,
+struct Window *window_create_ex(u16 heapId, u16 taskHeapId, struct BitmapFontBG *font, struct Bitmap *target,
                          s16 x, s16 y, const struct WindowDef *def,
                          struct Bitmap *srcBmp, s16 srcX, s16 srcY, u32 printArg) {
     struct Window *win = mem_heap_alloc_id(heapId, sizeof(struct Window));
@@ -44,7 +44,7 @@ struct Window *func_08006418(u16 heapId, u16 taskHeapId, struct BitmapFontBG *fo
         for (; t->text != NULL; t++) {
             if (printArg) {
                 run_func_after_task(func_08005E0C(taskHeapId, win->content, font,
-                                                 t->x, t->y, t->text, t->color, printArg), func_08006410, &win->pendingPrints);
+                                                 t->x, t->y, t->text, t->color, printArg), window_dec_pending_prints, &win->pendingPrints);
                 win->pendingPrints++;
             } else {
                 func_08005DE0(win->content, font, t->x, t->y, t->text, t->color);
@@ -54,16 +54,16 @@ struct Window *func_08006418(u16 heapId, u16 taskHeapId, struct BitmapFontBG *fo
     return win;
 }
 
-struct Window *func_0800656C(u16 heapId, struct BitmapFontBG *font, struct Bitmap *target, s16 x, s16 y, const struct WindowDef *def, struct Bitmap *srcBmp, s16 srcX, s16 srcY) {
-    return func_08006418(heapId, 0, font, target, x, y, def, srcBmp, srcX, srcY, 0);
+struct Window *window_create(u16 heapId, struct BitmapFontBG *font, struct Bitmap *target, s16 x, s16 y, const struct WindowDef *def, struct Bitmap *srcBmp, s16 srcX, s16 srcY) {
+    return window_create_ex(heapId, 0, font, target, x, y, def, srcBmp, srcX, srcY, 0);
 }
 
-void func_080065C0(struct Window *win) {
+void window_destroy(struct Window *win) {
     const struct WindowText *t;
     u16 state = win->state;
 
     if (state == WINDOW_SHOWN) {
-        func_08006700(win);
+        window_hide(win);
     }
 
     if (win->def->texts) {
@@ -78,25 +78,25 @@ void func_080065C0(struct Window *win) {
     mem_heap_dealloc(win);
 }
 
-void func_08006610(struct Window *win) {
+void window_save_backup(struct Window *win) {
     struct Bitmap *target = win->target;
     const struct WindowDef *def = win->def;
     func_08005E48(target, win->x - 1, win->y - 1, def->width + 2, def->height + 2, win->backup, 0, 0);
 }
 
-void func_08006648(struct Window *win) {
+void window_restore_backup(struct Window *win) {
     struct Bitmap *target = win->target;
     const struct WindowDef *def = win->def;
     func_08005E48(win->backup, 0, 0, def->width + 2, def->height + 2, target, win->x - 1, win->y - 1);
 }
 
-void func_08006680(struct Window* win) {
+void window_show(struct Window* win) {
     u16 state = win->state;
 
     if (state == WINDOW_HIDDEN) {
         const struct WindowDef *def = win->def;
 
-        func_08006610(win);
+        window_save_backup(win);
         func_08005C20(win->target, win->style, win->x - 1, win->y - 1, def->width + 2, def->height + 2, 0);
         func_08005E48(win->content, 0, 0, def->width, def->height, win->target, win->x, win->y);
         if(win->onShow) {
@@ -106,11 +106,11 @@ void func_08006680(struct Window* win) {
     }
 }
 
-void func_08006700(struct Window* win) {
+void window_hide(struct Window* win) {
     u16 state = win->state;
     
     if (state == WINDOW_SHOWN) {
-        func_08006648(win);
+        window_restore_backup(win);
         
         if (win->onHide) {
             win->onHide(win, win->onHideArg);
@@ -120,19 +120,19 @@ void func_08006700(struct Window* win) {
     }
 }
 
-u32 func_08006734(struct Window *win) {
+u32 window_get_state(struct Window *win) {
     return win->state;
 }
 
-void func_0800673C(struct Window *win, u16 x, u16 y) {
+void window_set_pos(struct Window *win, u16 x, u16 y) {
     if (win->x != (s16)x || win->y != (s16)y) {
         u16 state = win->state;
         switch (state) {
         case WINDOW_SHOWN:
-            func_08006700(win);
+            window_hide(win);
             win->x = x;
             win->y = y;
-            func_08006680(win);
+            window_show(win);
             break;
         case WINDOW_HIDDEN:
             win->x = x;
@@ -142,14 +142,14 @@ void func_0800673C(struct Window *win, u16 x, u16 y) {
     }
 }
 
-void func_08006790(struct Window *win, WindowCallback onShow, u32 onShowArg, WindowCallback onHide, u32 onHideArg) {
+void window_set_callbacks(struct Window *win, WindowCallback onShow, u32 onShowArg, WindowCallback onHide, u32 onHideArg) {
     win->onShow = onShow;
     win->onShowArg = onShowArg;
     win->onHide = onHide;
     win->onHideArg = onHideArg;
 }
 
-void func_080067A4(struct WindowAnim *anim) {
+void window_anim_draw(struct WindowAnim *anim) {
     struct Window *win = anim->win;
     struct Bitmap *target = win->target;
     s32 x = win->x + anim->left;
@@ -161,7 +161,7 @@ void func_080067A4(struct WindowAnim *anim) {
     func_08005E48(win->content, anim->left, anim->top, w, h, target, x, y);
 }
 
-struct WindowAnim *func_08006828(struct Window *win) {
+struct WindowAnim *window_open_anim_start(struct Window *win) {
     u16 state = win->state;
     if (state != WINDOW_HIDDEN) {
         return TASK_FAILED_TO_START;
@@ -172,14 +172,14 @@ struct WindowAnim *func_08006828(struct Window *win) {
         anim->win = win;
         anim->left = anim->right = def->width >> 1;
         anim->top = anim->bottom = def->height >> 1;
-        func_08006610(win);
-        func_080067A4(anim);
+        window_save_backup(win);
+        window_anim_draw(anim);
         win->state = WINDOW_OPENING;
         return anim;
     }
 }
 
-u32 func_0800687C(struct WindowAnim *anim) {
+u32 window_open_anim_step(struct WindowAnim *anim) {
     struct Window *win = anim->win;
     const struct WindowDef *def = win->def;
     s32 w, h;
@@ -189,8 +189,8 @@ u32 func_0800687C(struct WindowAnim *anim) {
     if (anim->top > 0) anim->top--;
     if (anim->bottom < def->height) anim->bottom++;
 
-    func_08006648(win);
-    func_080067A4(anim);
+    window_restore_backup(win);
+    window_anim_draw(anim);
 
     w = anim->right - anim->left;
     h = anim->bottom - anim->top;
@@ -204,7 +204,7 @@ u32 func_0800687C(struct WindowAnim *anim) {
     return 0;
 }
 
-struct WindowAnim *func_08006918(struct Window *win) {
+struct WindowAnim *window_close_anim_start(struct Window *win) {
     u16 state = win->state;
     if (state != WINDOW_SHOWN) {
         return (struct WindowAnim *)-1;
@@ -221,12 +221,13 @@ struct WindowAnim *func_08006918(struct Window *win) {
     }
 }
 
-u32 func_0800695C(struct WindowAnim *anim) {
+u32 window_close_anim_step(struct WindowAnim *anim) {
     struct Window *win = anim->win;
     const struct WindowDef *def = win->def;
     s32 w, h;
+    s32 hw, hh;
 
-    func_08006648(win);
+    window_restore_backup(win);
 
     w = anim->right - anim->left;
     h = anim->bottom - anim->top;
@@ -237,15 +238,14 @@ u32 func_0800695C(struct WindowAnim *anim) {
         }
         return TRUE;
     }
-    {
-        s32 hw = def->width / 2;
-        s32 hh = def->height / 2;
-        if (anim->left < hw) anim->left++;
-        if (anim->right > hw) anim->right--;
-        if (anim->top < hh) anim->top++;
-        if (anim->bottom > hh) anim->bottom--;
-    }
-    func_080067A4(anim);
+
+    hw = def->width / 2;
+    hh = def->height / 2;
+    if (anim->left < hw) anim->left++;
+    if (anim->right > hw) anim->right--;
+    if (anim->top < hh) anim->top++;
+    if (anim->bottom > hh) anim->bottom--;
+    window_anim_draw(anim);
     return FALSE;
 }
 
@@ -254,7 +254,7 @@ void func_080069F4(void) {
     PALETTE_RAM[0] = 0;
 }
 
-void func_08006A04(void) {
+void gfx_buffer_init(void) {
     gGraphicsBuffer.updateDisplay = FALSE;
     gGraphicsBuffer.DISPCNT = 0;
     gGraphicsBuffer.fadeActive = FALSE;    
@@ -264,7 +264,7 @@ void func_08006A04(void) {
     dma3_fill(0U, gGraphicsBuffer.BG_CNT, 0x50U, 0x20U, 0x100U);
 }
 
-void flush_graphics_buffer(void) {
+void gfx_buffer_flush(void) {
     if(gGraphicsBuffer.updateDisplay) {
         REG_DISPCNT |= DISPCNT_HBLANK_FORCE_PROC;
 
@@ -281,25 +281,25 @@ void flush_graphics_buffer(void) {
     }
 }
 
-void func_08006B00(void) {
+void gfx_buffer_update_palette(void) {
     if (gGraphicsBuffer.fadeActive || gGraphicsBuffer.effect) {
         dma3_set(gGraphicsBuffer.bgPalette[0], D_03003BC0, 0x400U, 0x20U, 0x100U);
     }
     if (gGraphicsBuffer.effect && (gGraphicsBuffer.modifyPalette != NULL)) {
         gGraphicsBuffer.modifyPalette(D_03003BC0);
     }
-    func_08006DB8();
+    gfx_fade_tick();
 }
 
-void func_08006B68(void) {
+void gfx_oam_clear(void) {
     dma3_fill(0x22222222, gGraphicsBuffer.oam, 0x400, 0x20, 0x100);
 }
 
-void func_08006B90(u16 color) {
+void gfx_bg_palette_fill(u16 color) {
     dma3_fill(color | (color << 16), gGraphicsBuffer.bgPalette, 0x400, 0x20, 0x100);
 }
 
-void func_08006BB8(u16 duration, u16 color) {
+void gfx_fade_in_start(u16 duration, u16 color) {
     if(gGraphicsBuffer.fadeActive) {
         gFadeStep = gFadeStep * duration / gFadeDuration;
     } else {
@@ -313,7 +313,7 @@ void func_08006BB8(u16 duration, u16 color) {
     gGraphicsBuffer.fadeActive = TRUE;
 }
 
-void func_08006C40(u16 duration, u16 color) {
+void gfx_fade_out_start(u16 duration, u16 color) {
     if(gGraphicsBuffer.fadeActive) {
         gFadeStep = gFadeStep * duration / gFadeDuration;
     } else {
@@ -327,12 +327,12 @@ void func_08006C40(u16 duration, u16 color) {
     gGraphicsBuffer.fadeActive = TRUE;
 }
 
-void func_08006CC8(void) {
+void gfx_fade_stop(void) {
     gGraphicsBuffer.fadeActive = FALSE;
     gGraphicsBuffer.fadeDone = FALSE;
 }
 
-void func_08006CE8(u32 color, const u16 *mask, u32 duration, u32 step) {
+void gfx_palette_blend_toward_color(u32 color, const u16 *mask, u32 duration, u32 step) {
     u32 i, row;
     s32 tr, tg, tb, factor;
     u16 *pal;
@@ -366,7 +366,7 @@ void func_08006CE8(u32 color, const u16 *mask, u32 duration, u32 step) {
     }
 }
 
-void func_08006DB8(void) {
+void gfx_fade_tick(void) {
     if (gGraphicsBuffer.fadeActive) {
         if (!gGraphicsBuffer.fadeDone) {
             if (gGraphicsBuffer.fadeOut) {
@@ -386,36 +386,36 @@ void func_08006DB8(void) {
                     gGraphicsBuffer.fadeActive = FALSE;
                 }
             }
-            func_08006CE8(gFadeColor, 0, gFadeDuration, gFadeStep);
+            gfx_palette_blend_toward_color(gFadeColor, 0, gFadeDuration, gFadeStep);
         }
     }
 }
 
-void func_08006E94(u32 enable) {
+void gfx_set_update_enabled(u32 enable) {
     gGraphicsBuffer.updateDisplay = enable;
 }
 
-void func_08006EB4(void (*callback)(Palette pal)) {
+void gfx_set_palette_effect(void (*callback)(Palette pal)) {
     gGraphicsBuffer.effect = 1;
     gGraphicsBuffer.modifyPalette = callback;
 }
 
-void func_08006EE0(void) {
+void gfx_clear_palette_effect(void) {
     gGraphicsBuffer.effect = 0;
     gGraphicsBuffer.modifyPalette = NULL;
 }
 
-void func_08006F04(const void *src, u32 palette, u32 count) {
+void gfx_load_bg_palette(const void *src, u32 palette, u32 count) {
     dma3_set(src, gGraphicsBuffer.bgPalette[palette], count * 0x20, 0x20, 0x100);
 }
 
-void func_08006F28(void) {
+void init_sprite_handler(void) {
     sprite_handler_create(gSpriteHandler, 0x80, gGraphicsBuffer.oam, 0xC8, D_083A3D94 + 0x404); // TO-DO: hardcoded bs
     affine_param_init(0x20, gGraphicsBuffer.oam);
 }
 
-void func_08006F68(void) {
-    func_08006B68();
+void update_sprite_handler(void) {
+    gfx_oam_clear();
     func_080EFA60(gSpriteHandler);
     affine_param_copy_to_oam();
 }

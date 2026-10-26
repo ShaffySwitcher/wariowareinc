@@ -10,7 +10,7 @@ void func_080001D4(void) {
     task_pool_init();
     rle_decompressor_init();
     hdma_reset();
-    func_08006F28();
+    init_sprite_handler();
     func_08007EA0();
     load_default_save();
     if (validate_save_main() != 0) {

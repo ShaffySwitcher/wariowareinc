@@ -15,7 +15,7 @@ glabel func_0801CBB0
 /* 0801CBC0 */ LDRSH R3, [R0, R2]
 /* 0801CBC2 */ MOVS R0, #0
 /* 0801CBC4 */ MOVS R2, #0X20
-/* 0801CBC6 */ BL func_08006CE8
+/* 0801CBC6 */ BL gfx_palette_blend_toward_color
 /* 0801CBCA */ POP {R0}
 /* 0801CBCC */ BX R0
 

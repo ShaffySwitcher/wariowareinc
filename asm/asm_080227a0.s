@@ -8,9 +8,9 @@ glabel func_080227A0
 /* 080227A0 */ PUSH {LR}
 /* 080227A2 */ SUB SP, #8
 /* 080227A4 */ BL func_08017238
-/* 080227A8 */ BL func_08006A04
+/* 080227A8 */ BL gfx_buffer_init
 /* 080227AC */ MOVS R0, #0
-/* 080227AE */ BL func_08006B90
+/* 080227AE */ BL gfx_bg_palette_fill
 /* 080227B2 */ LDR R1, _080227E4
 /* 080227B4 */ MOVS R2, #0XC0
 /* 080227B6 */ LSLS R2, R2, #1

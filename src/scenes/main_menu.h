@@ -5,6 +5,7 @@
 #include "scenes.h"
 #include "src/lib_sprite.h"
 #include "src/code_08003a70.h"
+#include "src/code_08005a90.h"
 
 // MACROS
 #define gMainMenu CURRENT_SCENE_DATA(struct MainMenuSceneData)
@@ -41,10 +42,8 @@ struct MainMenuSceneData {
     s16 nextScene; // 0x38
     s16 stageIconSprites[28];
     u8 pad72[0x6];
-    u32 unk78;
-    void* unk7C;
-    u16 unk80;
-    u16 unk82;
+    struct Window *unk78;
+    struct Bitmap unk7C;
     struct SongHeader *unk84;
     u32 unk88_1:1;
     u32 unk88_2:8;
@@ -256,7 +255,6 @@ extern void func_08013E44(void);
 extern void func_08013B88(void);
 extern void func_08013AE0(void);
 extern void func_08012658(void);
-extern void func_08006EB4(u32*);
 extern u32 func_080123F4();
 
 // EXTERNS

@@ -62,7 +62,7 @@ thumb_func_start func_08014FF8 \n\
 /* 08015072 */ STR R6, [SP, #0XC] \n\
 /* 08015074 */ STR R6, [SP, #0X10] \n\
 /* 08015076 */ MOVS R3, #6 \n\
-/* 08015078 */ BL func_0800656C \n\
+/* 08015078 */ BL window_create \n\
 /* 0801507C */ MOV R2, SL \n\
 /* 0801507E */ LDR R1, [R2] \n\
 /* 08015080 */ MOVS R5, #0XBE \n\
@@ -73,7 +73,7 @@ thumb_func_start func_08014FF8 \n\
 /* 0801508A */ LDR R3, _08015220 \n\
 /* 0801508C */ STR R6, [SP] \n\
 /* 0801508E */ MOVS R2, #0 \n\
-/* 08015090 */ BL func_08006790 \n\
+/* 08015090 */ BL window_set_callbacks \n\
 /* 08015094 */ STR R6, [SP] \n\
 /* 08015096 */ MOVS R0, #9 \n\
 /* 08015098 */ STR R0, [SP, #4] \n\

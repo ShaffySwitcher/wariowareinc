@@ -20,7 +20,7 @@ thumb_func_start func_08014C9C \n\
 /* 08014CBE */ STR R4, [SP, #0XC] \n\
 /* 08014CC0 */ STR R4, [SP, #0X10] \n\
 /* 08014CC2 */ MOVS R3, #6 \n\
-/* 08014CC4 */ BL func_0800656C \n\
+/* 08014CC4 */ BL window_create \n\
 /* 08014CC8 */ LDR R1, [R5] \n\
 /* 08014CCA */ MOVS R2, #0XB6 \n\
 /* 08014CCC */ LSLS R2, R2, #1 \n\
@@ -30,7 +30,7 @@ thumb_func_start func_08014C9C \n\
 /* 08014CD4 */ LDR R3, =func_08014C6C + 1 \n\
 /* 08014CD6 */ STR R4, [SP] \n\
 /* 08014CD8 */ MOVS R2, #0 \n\
-/* 08014CDA */ BL func_08006790 \n\
+/* 08014CDA */ BL window_set_callbacks \n\
 /* 08014CDE */ ADD SP, #0X14 \n\
 /* 08014CE0 */ POP {R4, R5} \n\
 /* 08014CE2 */ POP {R0} \n\

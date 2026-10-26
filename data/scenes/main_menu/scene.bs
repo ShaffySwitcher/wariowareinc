@@ -20,7 +20,7 @@ script script_scene_main_menu_main
     run func_08012C64, 0
     run func_080116D4, 0
     rest 12
-    run func_08006E94, 1
+    run gfx_set_update_enabled, 1
     fade_screen FALSE, 12, 0
     rest 12
     set_var_8 0x03003868, 0x01

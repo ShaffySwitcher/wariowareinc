@@ -15,7 +15,7 @@ _08012408: \n\
 /* 08012408 */ LDR R1, =D_083AA568 \n\
 /* 0801240A */ MOVS R0, #0 \n\
 /* 0801240C */ MOVS R2, #0X20 \n\
-/* 0801240E */ BL func_08006CE8 \n\
+/* 0801240E */ BL gfx_palette_blend_toward_color \n\
 /* 08012412 */ POP {R0} \n\
 /* 08012414 */ BX R0 \n\
  \n\

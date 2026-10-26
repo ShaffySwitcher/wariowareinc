@@ -22,7 +22,7 @@ thumb_func_start func_08012350 \n\
 /* 08012378 */ RSBS R0, R0, #0 \n\
 /* 0801237A */ ANDS R0, R2 \n\
 /* 0801237C */ STRB R0, [R1] \n\
-/* 0801237E */ BL func_08006EE0 \n\
+/* 0801237E */ BL gfx_clear_palette_effect \n\
 /* 08012382 */ BL func_08012BB8 \n\
 /* 08012386 */ LDR R0, [R4] \n\
 /* 08012388 */ ADDS R1, R0, #0 \n\

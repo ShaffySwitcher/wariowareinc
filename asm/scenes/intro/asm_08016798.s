@@ -13,7 +13,7 @@ thumb_func_start func_08016798 \n\
 /* 080167AC */ BEQ _080167C4 \n\
 /* 080167AE */ MOVS R0, #0X20 \n\
 /* 080167B0 */ MOVS R1, #0 \n\
-/* 080167B2 */ BL func_08006C40 \n\
+/* 080167B2 */ BL gfx_fade_out_start \n\
 /* 080167B6 */ LDR R0, _080167CC \n\
 /* 080167B8 */ BL play_sound \n\
 /* 080167BC */ LDR R0, =gCurrentSceneData \n\

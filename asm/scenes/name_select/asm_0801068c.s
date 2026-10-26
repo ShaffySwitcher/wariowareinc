@@ -25,7 +25,7 @@ thumb_func_start func_0801068C \n\
 /* 080106B6 */ MOVS R0, #1 \n\
 /* 080106B8 */ MOVS R1, #0 \n\
 /* 080106BA */ MOVS R3, #6 \n\
-/* 080106BC */ BL func_0800656C \n\
+/* 080106BC */ BL window_create \n\
 /* 080106C0 */ LDR R1, [R5] \n\
 /* 080106C2 */ MOVS R2, #0XC3 \n\
 /* 080106C4 */ LSLS R2, R2, #2 \n\
@@ -38,7 +38,7 @@ thumb_func_start func_0801068C \n\
 /* 080106D2 */ STR R4, [SP] \n\
 /* 080106D4 */ MOVS R2, #0 \n\
 /* 080106D6 */ MOV R3, SB \n\
-/* 080106D8 */ BL func_08006790 \n\
+/* 080106D8 */ BL window_set_callbacks \n\
 /* 080106DC */ LDR R0, [R5] \n\
 /* 080106DE */ ADDS R0, R6 \n\
 /* 080106E0 */ LDR R2, [R0] \n\
@@ -52,7 +52,7 @@ thumb_func_start func_0801068C \n\
 /* 080106F0 */ MOVS R0, #1 \n\
 /* 080106F2 */ MOVS R1, #0 \n\
 /* 080106F4 */ MOVS R3, #6 \n\
-/* 080106F6 */ BL func_0800656C \n\
+/* 080106F6 */ BL window_create \n\
 /* 080106FA */ LDR R1, [R5] \n\
 /* 080106FC */ MOVS R2, #0XC4 \n\
 /* 080106FE */ LSLS R2, R2, #2 \n\
@@ -62,7 +62,7 @@ thumb_func_start func_0801068C \n\
 /* 08010706 */ MOV R1, R8 \n\
 /* 08010708 */ MOVS R2, #0 \n\
 /* 0801070A */ MOV R3, SB \n\
-/* 0801070C */ BL func_08006790 \n\
+/* 0801070C */ BL window_set_callbacks \n\
 /* 08010710 */ LDR R0, [R5] \n\
 /* 08010712 */ ADDS R0, R6 \n\
 /* 08010714 */ LDR R2, [R0] \n\
@@ -76,7 +76,7 @@ thumb_func_start func_0801068C \n\
 /* 08010724 */ MOVS R0, #1 \n\
 /* 08010726 */ MOVS R1, #0 \n\
 /* 08010728 */ MOVS R3, #7 \n\
-/* 0801072A */ BL func_0800656C \n\
+/* 0801072A */ BL window_create \n\
 /* 0801072E */ LDR R1, [R5] \n\
 /* 08010730 */ MOVS R2, #0XC5 \n\
 /* 08010732 */ LSLS R2, R2, #2 \n\
@@ -86,7 +86,7 @@ thumb_func_start func_0801068C \n\
 /* 0801073A */ MOV R1, R8 \n\
 /* 0801073C */ MOVS R2, #0 \n\
 /* 0801073E */ MOV R3, SB \n\
-/* 08010740 */ BL func_08006790 \n\
+/* 08010740 */ BL window_set_callbacks \n\
 /* 08010744 */ LDR R0, [R5] \n\
 /* 08010746 */ MOVS R1, #0XC2 \n\
 /* 08010748 */ LSLS R1, R1, #2 \n\

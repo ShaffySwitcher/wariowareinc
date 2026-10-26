@@ -9,7 +9,6 @@ struct WindowText {
     u8 x;
     u8 y;
     u8 color;
-    u8 pad3;
     const char *text;
 };
 
@@ -68,40 +67,40 @@ struct WindowAnim {
 };
 
 // FUNCTIONS
-extern void func_08006410(u16 *counter);
-extern struct Window *func_08006418(u16 heapId, u16 taskHeapId, struct BitmapFontBG *font, struct Bitmap *target, s16 x, s16 y, const struct WindowDef *def, struct Bitmap *srcBmp, s16 srcX, s16 srcY, u32 printArg);
-extern struct Window *func_0800656C(u16 heapId, struct BitmapFontBG *font, struct Bitmap *target, s16 x, s16 y, const struct WindowDef *def, struct Bitmap *srcBmp, s16 srcX, s16 srcY);
-extern void func_080065C0(struct Window *win);
-extern void func_08006610(struct Window *win);
-extern void func_08006648(struct Window *win);
-extern void func_08006680(struct Window *win);
-extern void func_08006700(struct Window *win);
-extern u32 func_08006734(struct Window *win);
-extern void func_0800673C(struct Window *win, u16 x, u16 y);
-extern void func_08006790(struct Window *win, WindowCallback onShow, u32 onShowArg, WindowCallback onHide, u32 onHideArg);
-extern void func_080067A4(struct WindowAnim *anim);
-extern struct WindowAnim *func_08006828(struct Window *win);
-extern u32 func_0800687C(struct WindowAnim *anim);
-extern struct WindowAnim *func_08006918(struct Window *win);
-extern u32 func_0800695C(struct WindowAnim *anim);
+extern void window_dec_pending_prints(u16 *counter);
+extern struct Window *window_create_ex(u16 heapId, u16 taskHeapId, struct BitmapFontBG *font, struct Bitmap *target, s16 x, s16 y, const struct WindowDef *def, struct Bitmap *srcBmp, s16 srcX, s16 srcY, u32 printArg);
+extern struct Window *window_create(u16 heapId, struct BitmapFontBG *font, struct Bitmap *target, s16 x, s16 y, const struct WindowDef *def, struct Bitmap *srcBmp, s16 srcX, s16 srcY);
+extern void window_destroy(struct Window *win);
+extern void window_save_backup(struct Window *win);
+extern void window_restore_backup(struct Window *win);
+extern void window_show(struct Window *win);
+extern void window_hide(struct Window *win);
+extern u32 window_get_state(struct Window *win);
+extern void window_set_pos(struct Window *win, u16 x, u16 y);
+extern void window_set_callbacks(struct Window *win, WindowCallback onShow, u32 onShowArg, WindowCallback onHide, u32 onHideArg);
+extern void window_anim_draw(struct WindowAnim *anim);
+extern struct WindowAnim *window_open_anim_start(struct Window *win);
+extern u32 window_open_anim_step(struct WindowAnim *anim);
+extern struct WindowAnim *window_close_anim_start(struct Window *win);
+extern u32 window_close_anim_step(struct WindowAnim *anim);
 
 extern void func_080069F4(void);
-extern void func_08006A04(void);
-extern void flush_graphics_buffer(void);
-extern void func_08006B00(void);
-extern void func_08006B68(void);
-extern void func_08006B90(u16 color);
-extern void func_08006BB8(u16 duration, u16 color);
-extern void func_08006C40(u16 duration, u16 color);
-extern void func_08006CC8(void);
-extern void func_08006CE8(u32 color, const u16 *mask, u32 duration, u32 step);
-extern void func_08006DB8(void);
-extern void func_08006E94(u32 enable);
-extern void func_08006EB4(void (*callback)(Palette pal));
-extern void func_08006EE0(void);
-extern void func_08006F04(const void *src, u32 palette, u32 count);
-extern void func_08006F28(void);
-extern void func_08006F68(void);
+extern void gfx_buffer_init(void);
+extern void gfx_buffer_flush(void);
+extern void gfx_buffer_update_palette(void);
+extern void gfx_oam_clear(void);
+extern void gfx_bg_palette_fill(u16 color);
+extern void gfx_fade_in_start(u16 duration, u16 color);
+extern void gfx_fade_out_start(u16 duration, u16 color);
+extern void gfx_fade_stop(void);
+extern void gfx_palette_blend_toward_color(u32 color, const u16 *mask, u32 duration, u32 step);
+extern void gfx_fade_tick(void);
+extern void gfx_set_update_enabled(u32 enable);
+extern void gfx_set_palette_effect(void (*callback)(Palette pal));
+extern void gfx_clear_palette_effect(void);
+extern void gfx_load_bg_palette(const void *src, u32 palette, u32 count);
+extern void init_sprite_handler(void);
+extern void update_sprite_handler(void);
 
 // EXTERNS
 
