@@ -28,7 +28,7 @@ _0801F72C:
 /* 0801F73E */ LSRS R0, R0, #0X10
 /* 0801F740 */ MOVS R1, #0X20
 /* 0801F742 */ MOVS R2, #0X20
-/* 0801F744 */ BL func_08005F64
+/* 0801F744 */ BL bitmap_create
 /* 0801F748 */ LDR R1, [R4]
 /* 0801F74A */ STR R0, [R1, #0X14]
 /* 0801F74C */ BL get_current_mem_id
@@ -36,7 +36,7 @@ _0801F72C:
 /* 0801F752 */ LSRS R0, R0, #0X10
 /* 0801F754 */ MOVS R1, #0X20
 /* 0801F756 */ MOVS R2, #0X20
-/* 0801F758 */ BL func_08005F64
+/* 0801F758 */ BL bitmap_create
 /* 0801F75C */ LDR R1, [R4]
 /* 0801F75E */ STR R0, [R1, #0X18]
 /* 0801F760 */ BL get_current_mem_id
@@ -44,7 +44,7 @@ _0801F72C:
 /* 0801F766 */ LSRS R0, R0, #0X10
 /* 0801F768 */ MOVS R1, #0X20
 /* 0801F76A */ MOVS R2, #0X20
-/* 0801F76C */ BL func_08005F64
+/* 0801F76C */ BL bitmap_create
 /* 0801F770 */ LDR R1, [R4]
 /* 0801F772 */ STR R0, [R1, #0X1C]
 /* 0801F774 */ MOVS R0, #0XFC

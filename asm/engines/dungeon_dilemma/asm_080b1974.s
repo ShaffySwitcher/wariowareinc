@@ -25,7 +25,7 @@ thumb_func_start func_080B1974 \n\
 /* 080B199C */ MOVS R1, #4 \n\
 /* 080B199E */ MOVS R2, #0XA \n\
 /* 080B19A0 */ MOVS R3, #0X17 \n\
-/* 080B19A2 */ BL func_08005B70 \n\
+/* 080B19A2 */ BL bitmap_fill_rect \n\
 /* 080B19A6 */ LDR R0, [R4] \n\
 /* 080B19A8 */ LDR R0, [R0, #0X20] \n\
 /* 080B19AA */ BL force_cancel_task \n\

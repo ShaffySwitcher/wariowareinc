@@ -27,7 +27,7 @@ _080B19D2: \n\
 /* 080B19EC */ STR R5, [SP, #4] \n\
 /* 080B19EE */ MOVS R2, #0X11 \n\
 /* 080B19F0 */ MOVS R3, #2 \n\
-/* 080B19F2 */ BL func_08005DE0 \n\
+/* 080B19F2 */ BL bitmap_print_text \n\
 /* 080B19F6 */ MOVS R1, #0 \n\
 /* 080B19F8 */ LDR R5, _080B1A50 \n\
 /* 080B19FA */ LDR R6, _080B1A54 \n\
@@ -101,7 +101,7 @@ _080B1A58: \n\
 /* 080B1A74 */ STR R5, [SP, #4] \n\
 /* 080B1A76 */ MOVS R2, #0X16 \n\
 /* 080B1A78 */ MOVS R3, #2 \n\
-/* 080B1A7A */ BL func_08005DE0 \n\
+/* 080B1A7A */ BL bitmap_print_text \n\
 _080B1A7E: \n\
 /* 080B1A7E */ ADD SP, #0X14 \n\
 /* 080B1A80 */ POP {R4, R5, R6} \n\

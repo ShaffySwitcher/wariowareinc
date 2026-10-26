@@ -29,7 +29,7 @@ thumb_func_start func_0801429C \n\
 /* 080142CE */ ADD R0, SP, #8 \n\
 /* 080142D0 */ MOVS R1, #3 \n\
 /* 080142D2 */ MOVS R3, #0X18 \n\
-/* 080142D4 */ BL func_08005FB8 \n\
+/* 080142D4 */ BL bitmap_set_palette \n\
 /* 080142D8 */ LDR R7, _08014340 \n\
 /* 080142DA */ LDR R0, [R7] \n\
 /* 080142DC */ LSLS R1, R5, #1 \n\

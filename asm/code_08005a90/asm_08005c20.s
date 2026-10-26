@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005C20 \n\
+thumb_func_start bitmap_draw_window \n\
 /* 08005C20 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005C22 */ MOV R7, SL \n\
 /* 08005C24 */ MOV R6, SB \n\
@@ -25,7 +25,7 @@ thumb_func_start func_08005C20 \n\
 /* 08005C4A */ LDR R1, [SP, #8] \n\
 /* 08005C4C */ MOV R2, R8 \n\
 /* 08005C4E */ LDR R3, [SP, #0XC] \n\
-/* 08005C50 */ BL func_08005B70 \n\
+/* 08005C50 */ BL bitmap_fill_rect \n\
 /* 08005C54 */ LDR R0, [SP, #0X3C] \n\
 /* 08005C56 */ ADD R0, R8 \n\
 /* 08005C58 */ SUBS R0, #1 \n\
@@ -37,7 +37,7 @@ thumb_func_start func_08005C20 \n\
 /* 08005C64 */ LDR R1, [SP, #8] \n\
 /* 08005C66 */ MOV R2, SL \n\
 /* 08005C68 */ LDR R3, [SP, #0XC] \n\
-/* 08005C6A */ BL func_08005B70 \n\
+/* 08005C6A */ BL bitmap_fill_rect \n\
 /* 08005C6E */ MOV R0, R8 \n\
 /* 08005C70 */ ADDS R0, #1 \n\
 /* 08005C72 */ STR R0, [SP, #0X14] \n\
@@ -50,7 +50,7 @@ thumb_func_start func_08005C20 \n\
 /* 08005C80 */ MOV R1, SB \n\
 /* 08005C82 */ LDR R2, [SP, #0X14] \n\
 /* 08005C84 */ MOVS R3, #1 \n\
-/* 08005C86 */ BL func_08005B70 \n\
+/* 08005C86 */ BL bitmap_fill_rect \n\
 /* 08005C8A */ ADD R4, SB \n\
 /* 08005C8C */ SUBS R4, #1 \n\
 /* 08005C8E */ STR R5, [SP] \n\
@@ -60,27 +60,27 @@ thumb_func_start func_08005C20 \n\
 /* 08005C96 */ ADDS R1, R4, #0 \n\
 /* 08005C98 */ LDR R2, [SP, #0X14] \n\
 /* 08005C9A */ MOVS R3, #1 \n\
-/* 08005C9C */ BL func_08005B70 \n\
+/* 08005C9C */ BL bitmap_fill_rect \n\
 /* 08005CA0 */ LDRH R3, [R7] \n\
 /* 08005CA2 */ ADDS R0, R6, #0 \n\
 /* 08005CA4 */ MOV R1, SB \n\
 /* 08005CA6 */ MOV R2, R8 \n\
-/* 08005CA8 */ BL func_08005B40 \n\
+/* 08005CA8 */ BL bitmap_set_cell \n\
 /* 08005CAC */ LDRH R3, [R7, #4] \n\
 /* 08005CAE */ ADDS R0, R6, #0 \n\
 /* 08005CB0 */ ADDS R1, R4, #0 \n\
 /* 08005CB2 */ MOV R2, R8 \n\
-/* 08005CB4 */ BL func_08005B40 \n\
+/* 08005CB4 */ BL bitmap_set_cell \n\
 /* 08005CB8 */ LDRH R3, [R7, #0XC] \n\
 /* 08005CBA */ ADDS R0, R6, #0 \n\
 /* 08005CBC */ MOV R1, SB \n\
 /* 08005CBE */ MOV R2, SL \n\
-/* 08005CC0 */ BL func_08005B40 \n\
+/* 08005CC0 */ BL bitmap_set_cell \n\
 /* 08005CC4 */ LDRH R3, [R7, #0X10] \n\
 /* 08005CC6 */ ADDS R0, R6, #0 \n\
 /* 08005CC8 */ ADDS R1, R4, #0 \n\
 /* 08005CCA */ MOV R2, SL \n\
-/* 08005CCC */ BL func_08005B40 \n\
+/* 08005CCC */ BL bitmap_set_cell \n\
 /* 08005CD0 */ LDR R0, [SP, #0X40] \n\
 /* 08005CD2 */ CMP R0, #0 \n\
 /* 08005CD4 */ BEQ _08005CE8 \n\
@@ -91,7 +91,7 @@ thumb_func_start func_08005C20 \n\
 /* 08005CDE */ LDR R1, [SP, #8] \n\
 /* 08005CE0 */ LDR R2, [SP, #0X14] \n\
 /* 08005CE2 */ LDR R3, [SP, #0XC] \n\
-/* 08005CE4 */ BL func_08005B70 \n\
+/* 08005CE4 */ BL bitmap_fill_rect \n\
 _08005CE8: \n\
 /* 08005CE8 */ ADD SP, #0X18 \n\
 /* 08005CEA */ POP {R3, R4, R5} \n\

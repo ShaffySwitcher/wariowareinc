@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005F64 \n\
+thumb_func_start bitmap_create \n\
 /* 08005F64 */ PUSH {R4, R5, R6, LR} \n\
 /* 08005F66 */ MOV R6, R8 \n\
 /* 08005F68 */ PUSH {R6} \n\

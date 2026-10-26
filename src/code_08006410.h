@@ -2,6 +2,7 @@
 
 #include "global.h"
 #include "graphics.h"
+#include "src/code_08005a90.h"
 
 // TYPES
 
@@ -20,14 +21,7 @@ struct WindowDef {
     const void *styleArg;
     const struct WindowText *texts;
 };
- 
 
-struct WindowStyle {
-    u8  unk0[8];
-    u16 fillColor;
-    u8  unkA[10];
-};
- 
 struct Window;
 typedef void (*WindowCallback)(struct Window *win, u32 arg);
  

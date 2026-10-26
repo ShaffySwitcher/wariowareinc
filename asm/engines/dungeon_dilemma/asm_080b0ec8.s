@@ -23,14 +23,14 @@ thumb_func_start func_080B0EC8 \n\
 /* 080B0EEE */ MOVS R0, #2 \n\
 /* 080B0EF0 */ MOVS R1, #0X20 \n\
 /* 080B0EF2 */ MOVS R2, #5 \n\
-/* 080B0EF4 */ BL func_08005F64 \n\
+/* 080B0EF4 */ BL bitmap_create \n\
 /* 080B0EF8 */ MOV R2, R8 \n\
 /* 080B0EFA */ LDR R1, [R2] \n\
 /* 080B0EFC */ STR R0, [R1, #0X30] \n\
 /* 080B0EFE */ MOVS R0, #2 \n\
 /* 080B0F00 */ MOVS R1, #0X20 \n\
 /* 080B0F02 */ MOVS R2, #0X1B \n\
-/* 080B0F04 */ BL func_08005F64 \n\
+/* 080B0F04 */ BL bitmap_create \n\
 /* 080B0F08 */ MOV R4, R8 \n\
 /* 080B0F0A */ LDR R1, [R4] \n\
 /* 080B0F0C */ STR R0, [R1, #0X34] \n\
@@ -38,16 +38,16 @@ thumb_func_start func_080B0EC8 \n\
 /* 080B0F10 */ LDRH R4, [R0] \n\
 /* 080B0F12 */ LDR R0, [R1, #0X30] \n\
 /* 080B0F14 */ ADDS R1, R4, #0 \n\
-/* 080B0F16 */ BL func_08005B20 \n\
+/* 080B0F16 */ BL bitmap_fill \n\
 /* 080B0F1A */ MOV R7, R8 \n\
 /* 080B0F1C */ LDR R0, [R7] \n\
 /* 080B0F1E */ LDR R0, [R0, #0X34] \n\
 /* 080B0F20 */ ADDS R1, R4, #0 \n\
-/* 080B0F22 */ BL func_08005B20 \n\
+/* 080B0F22 */ BL bitmap_fill \n\
 /* 080B0F26 */ MOVS R0, #2 \n\
 /* 080B0F28 */ MOVS R1, #0X20 \n\
 /* 080B0F2A */ MOVS R2, #0X20 \n\
-/* 080B0F2C */ BL func_08005F64 \n\
+/* 080B0F2C */ BL bitmap_create \n\
 /* 080B0F30 */ MOV SL, R0 \n\
 /* 080B0F32 */ LDR R0, _080B10AC \n\
 /* 080B0F34 */ MOV R2, SL \n\

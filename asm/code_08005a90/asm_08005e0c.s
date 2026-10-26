@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005E0C \n\
+thumb_func_start start_bitmap_print_text_task \n\
 /* 08005E0C */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005E0E */ MOV R7, R8 \n\
 /* 08005E10 */ PUSH {R7} \n\

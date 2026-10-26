@@ -141,14 +141,14 @@ void main_menu_scene_start(void) {
         gMainMenuSelectionState.category = 2;
     }
 
-    gMainMenu.unkD0 = func_08005F64((u16)get_current_mem_id(), 0x20, 0x14);
-    func_08005B20(gMainMenu.unkD0, D_0832027C[0]);
+    gMainMenu.unkD0 = bitmap_create((u16)get_current_mem_id(), 0x20, 0x14);
+    bitmap_fill(gMainMenu.unkD0, D_0832027C[0]);
     gMainMenu.unkD4 = *(void **)gMainMenu.unkD0;
     gMainMenu.unkD8 = (void *)(VRAMBase + 0x4800);
     gMainMenu.unkDC_1 = 1;
-    gMainMenu.unk7C.width = 0x20;
-    gMainMenu.unk7C.height = 0x20;
-    gMainMenu.unk7C.data = scene_mem_heap_alloc(0x800);
+    gMainMenu.unk7C.width = 32;
+    gMainMenu.unk7C.height = 32;
+    gMainMenu.unk7C.data = scene_mem_heap_alloc(32 * 32 * 2);
 
     gMainMenu.unk0 = create_new_bmp_font_bg((u16)get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
     gMainMenu.unk4 = create_new_bmp_font_obj_alt((u16)get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
@@ -323,10 +323,8 @@ void main_menu_move_cursor_to(s16 x, s16 y, void (*callback)(), s32 arg) {
 }
 
 void func_08011584(void) {
-    s32 temp_r4;
-
-    temp_r4 = gMainMenu.unk1AC;
-    if (get_task_state(temp_r4) == 1) {
+    s32 temp_r4 = gMainMenu.unk1AC;
+    if (get_task_state(temp_r4) == TASK_STATE_RUNNING) {
         sprite_set_x_y(gSpriteHandler, *gCurrentSceneSpritePool, gMainMenu.unk1B0, gMainMenu.unk1B2);
         force_stop_task(temp_r4);
     }
@@ -360,7 +358,7 @@ u32 func_08011614(void) {
 }
 
 u32 main_menu_can_accept_input(void) {
-    if (gMainMenu.inputsEnabled && !gGraphicsBuffer.fadeActive && func_08011614() == 0) {
+    if (gMainMenu.inputsEnabled && !gGraphicsBuffer.fadeActive && !func_08011614()) {
         return TRUE;
     }
     return FALSE;
@@ -754,7 +752,7 @@ void func_0801214C(void* arg0) {
 
 void func_0801216C(void) {
     gMainMenu.unkDC_10 = 0;
-    func_08005E48(&gMainMenu.unk7C, 15, 0, 14, 2, gMainMenu.unkD0, 15, 0);
+    bitmap_blit(&gMainMenu.unk7C, 15, 0, 14, 2, gMainMenu.unkD0, 15, 0);
     func_08012420(gMainMenuSelectionState.stage);
 }
 

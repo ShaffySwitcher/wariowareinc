@@ -23,7 +23,7 @@ thumb_func_start func_080B1164 \n\
 /* 080B118A */ STR R5, [SP, #4] \n\
 /* 080B118C */ MOVS R2, #5 \n\
 /* 080B118E */ MOVS R3, #2 \n\
-/* 080B1190 */ BL func_08005DE0 \n\
+/* 080B1190 */ BL bitmap_print_text \n\
 /* 080B1194 */ LDR R0, [R4] \n\
 /* 080B1196 */ ADDS R0, #0X40 \n\
 /* 080B1198 */ LDRH R0, [R0] \n\
@@ -37,7 +37,7 @@ thumb_func_start func_080B1164 \n\
 /* 080B11AA */ STR R5, [SP, #4] \n\
 /* 080B11AC */ MOVS R2, #0XC \n\
 /* 080B11AE */ MOVS R3, #2 \n\
-/* 080B11B0 */ BL func_08005DE0 \n\
+/* 080B11B0 */ BL bitmap_print_text \n\
 /* 080B11B4 */ LDR R0, [R4] \n\
 /* 080B11B6 */ ADDS R0, #0X42 \n\
 /* 080B11B8 */ LDRH R0, [R0] \n\
@@ -51,7 +51,7 @@ thumb_func_start func_080B1164 \n\
 /* 080B11CA */ STR R5, [SP, #4] \n\
 /* 080B11CC */ MOVS R2, #0X11 \n\
 /* 080B11CE */ MOVS R3, #2 \n\
-/* 080B11D0 */ BL func_08005DE0 \n\
+/* 080B11D0 */ BL bitmap_print_text \n\
 /* 080B11D4 */ LDR R0, [R4] \n\
 /* 080B11D6 */ ADDS R0, #0X44 \n\
 /* 080B11D8 */ LDRH R0, [R0] \n\
@@ -65,7 +65,7 @@ thumb_func_start func_080B1164 \n\
 /* 080B11EA */ STR R5, [SP, #4] \n\
 /* 080B11EC */ MOVS R2, #0X16 \n\
 /* 080B11EE */ MOVS R3, #2 \n\
-/* 080B11F0 */ BL func_08005DE0 \n\
+/* 080B11F0 */ BL bitmap_print_text \n\
 /* 080B11F4 */ LDR R0, =gSpriteHandler \n\
 /* 080B11F6 */ LDR R0, [R0] \n\
 /* 080B11F8 */ LDR R1, [R4] \n\

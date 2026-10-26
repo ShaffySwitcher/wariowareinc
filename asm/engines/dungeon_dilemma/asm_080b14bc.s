@@ -17,7 +17,7 @@ thumb_func_start func_080B14BC \n\
 /* 080B14D4 */ MOVS R1, #4 \n\
 /* 080B14D6 */ MOVS R2, #0XA \n\
 /* 080B14D8 */ MOVS R3, #0X17 \n\
-/* 080B14DA */ BL func_08005B70 \n\
+/* 080B14DA */ BL bitmap_fill_rect \n\
 /* 080B14DE */ LDR R0, [R4] \n\
 /* 080B14E0 */ LDR R1, [R0, #0X34] \n\
 /* 080B14E2 */ LDR R2, [R0, #0X2C] \n\
@@ -30,7 +30,7 @@ thumb_func_start func_080B14BC \n\
 /* 080B14F0 */ STR R0, [SP, #0XC] \n\
 /* 080B14F2 */ MOVS R0, #2 \n\
 /* 080B14F4 */ MOVS R3, #4 \n\
-/* 080B14F6 */ BL func_08005E0C \n\
+/* 080B14F6 */ BL start_bitmap_print_text_task \n\
 /* 080B14FA */ LDR R1, [R4] \n\
 /* 080B14FC */ STR R0, [R1, #0X20] \n\
 /* 080B14FE */ LDR R1, =func_080B149C + 1 \n\

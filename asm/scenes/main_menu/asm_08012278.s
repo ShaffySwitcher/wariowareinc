@@ -46,7 +46,7 @@ _080122B6: \n\
 /* 080122CC */ MOV R3, R8 \n\
 /* 080122CE */ STR R3, [SP, #0XC] \n\
 /* 080122D0 */ MOVS R3, #0XC \n\
-/* 080122D2 */ BL func_08005E48 \n\
+/* 080122D2 */ BL bitmap_blit \n\
 /* 080122D6 */ ADD SP, #0X10 \n\
 /* 080122D8 */ POP {R3} \n\
 /* 080122DA */ MOV R8, R3 \n\

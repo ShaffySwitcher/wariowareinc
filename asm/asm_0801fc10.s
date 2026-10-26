@@ -21,7 +21,7 @@ glabel func_0801FC10
 /* 0801FC2A */ MOVS R1, #0
 /* 0801FC2C */ MOVS R2, #0
 /* 0801FC2E */ MOVS R3, #0XA
-/* 0801FC30 */ BL func_08005E48
+/* 0801FC30 */ BL bitmap_blit
 /* 0801FC34 */ LDR R2, [R4]
 /* 0801FC36 */ LDRB R0, [R2, #0X10]
 /* 0801FC38 */ MOVS R1, #0X10

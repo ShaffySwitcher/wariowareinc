@@ -466,7 +466,7 @@ thumb_func_start func_0800DEE8 \n\
 /* 0800E2D4 */ MOVS R0, #1 \n\
 /* 0800E2D6 */ MOVS R1, #0X20 \n\
 /* 0800E2D8 */ MOVS R2, #0X14 \n\
-/* 0800E2DA */ BL func_08005F64 \n\
+/* 0800E2DA */ BL bitmap_create \n\
 /* 0800E2DE */ LDR R1, [R6] \n\
 /* 0800E2E0 */ B _0800E378 \n\
  \n\
@@ -624,7 +624,7 @@ _0800E378: \n\
 /* 0800E37E */ STR R0, [R1] \n\
 /* 0800E380 */ LDR R1, _0800E570 \n\
 /* 0800E382 */ LDRH R1, [R1] \n\
-/* 0800E384 */ BL func_08005B20 \n\
+/* 0800E384 */ BL bitmap_fill \n\
 /* 0800E388 */ LDR R0, [R6] \n\
 /* 0800E38A */ ADDS R0, R5 \n\
 /* 0800E38C */ LDR R2, [R0] \n\

@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08006084 \n\
+thumb_func_start bitmap_add_palette \n\
 /* 08006084 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08006086 */ MOV R7, SL \n\
 /* 08006088 */ MOV R6, SB \n\

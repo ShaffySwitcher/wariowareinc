@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005E48 \n\
+thumb_func_start bitmap_blit \n\
 /* 08005E48 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005E4A */ MOV R7, SL \n\
 /* 08005E4C */ MOV R6, SB \n\
@@ -22,7 +22,7 @@ thumb_func_start func_08005E48 \n\
 /* 08005E6C */ MOV R0, R8 \n\
 /* 08005E6E */ ADD R1, SP, #4 \n\
 /* 08005E70 */ ADDS R3, R6, #0 \n\
-/* 08005E72 */ BL func_08005A90 \n\
+/* 08005E72 */ BL bitmap_clip_rect \n\
 /* 08005E76 */ CMP R0, #0 \n\
 /* 08005E78 */ BEQ _08005F52 \n\
 /* 08005E7A */ LDR R0, [SP, #4] \n\
@@ -41,7 +41,7 @@ thumb_func_start func_08005E48 \n\
 /* 08005E94 */ STR R0, [SP] \n\
 /* 08005E96 */ MOV R0, SL \n\
 /* 08005E98 */ ADDS R3, R6, #0 \n\
-/* 08005E9A */ BL func_08005A90 \n\
+/* 08005E9A */ BL bitmap_clip_rect \n\
 /* 08005E9E */ CMP R0, #0 \n\
 /* 08005EA0 */ BEQ _08005F52 \n\
 /* 08005EA2 */ LDR R3, [SP, #0X38] \n\

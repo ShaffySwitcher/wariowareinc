@@ -30,7 +30,7 @@ glabel func_0801FF5C
 /* 0801FF88 */ MOVS R3, #0XD
 /* 0801FF8A */ STR R3, [SP, #0XC]
 /* 0801FF8C */ MOVS R3, #0X12
-/* 0801FF8E */ BL func_08005E48
+/* 0801FF8E */ BL bitmap_blit
 /* 0801FF92 */ LDR R2, [R6]
 /* 0801FF94 */ LDRB R0, [R2, #0X10]
 /* 0801FF96 */ MOVS R1, #0X10

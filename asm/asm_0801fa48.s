@@ -22,7 +22,7 @@ glabel func_0801FA48
 /* 0801FA64 */ STR R1, [SP, #0XC]
 /* 0801FA66 */ ADDS R1, R4, #0
 /* 0801FA68 */ MOVS R3, #0X12
-/* 0801FA6A */ BL func_08005E48
+/* 0801FA6A */ BL bitmap_blit
 /* 0801FA6E */ ADD SP, #0X10
 /* 0801FA70 */ POP {R4}
 /* 0801FA72 */ POP {R0}

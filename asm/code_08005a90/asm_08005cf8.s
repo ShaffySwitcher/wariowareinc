@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005CF8 \n\
+thumb_func_start bitmap_copy_tile \n\
 /* 08005CF8 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005CFA */ SUB SP, #4 \n\
 /* 08005CFC */ ADDS R5, R0, #0 \n\

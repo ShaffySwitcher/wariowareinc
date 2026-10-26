@@ -155,11 +155,11 @@ thumb_func_start func_08048620 \n\
 /* 08048776 */ MOVS R0, #2 \n\
 /* 08048778 */ MOVS R1, #0X20 \n\
 /* 0804877A */ MOVS R2, #0X20 \n\
-/* 0804877C */ BL func_08005F64 \n\
+/* 0804877C */ BL bitmap_create \n\
 /* 08048780 */ LDR R1, [R6] \n\
 /* 08048782 */ STR R0, [R1, #0X64] \n\
 /* 08048784 */ MOVS R1, #0 \n\
-/* 08048786 */ BL func_08005B20 \n\
+/* 08048786 */ BL bitmap_fill \n\
 /* 0804878A */ MOVS R1, #0XC0 \n\
 /* 0804878C */ LSLS R1, R1, #0X13 \n\
 /* 0804878E */ STR R7, [SP] \n\
@@ -208,7 +208,7 @@ thumb_func_start func_08048620 \n\
 /* 080487E8 */ MOVS R0, #4 \n\
 /* 080487EA */ STR R0, [SP, #0XC] \n\
 /* 080487EC */ MOVS R0, #2 \n\
-/* 080487EE */ BL func_08005E0C \n\
+/* 080487EE */ BL start_bitmap_print_text_task \n\
 /* 080487F2 */ ADD SP, #0X18 \n\
 /* 080487F4 */ POP {R3, R4, R5} \n\
 /* 080487F6 */ MOV R8, R3 \n\

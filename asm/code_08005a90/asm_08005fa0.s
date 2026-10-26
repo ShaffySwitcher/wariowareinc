@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005FA0 \n\
+thumb_func_start bitmap_destroy \n\
 /* 08005FA0 */ PUSH {R4, LR} \n\
 /* 08005FA2 */ ADDS R4, R0, #0 \n\
 /* 08005FA4 */ LDR R0, [R4] \n\

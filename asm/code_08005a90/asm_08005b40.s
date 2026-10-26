@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005B40 \n\
+thumb_func_start bitmap_set_cell \n\
 /* 08005B40 */ PUSH {R4, R5, LR} \n\
 /* 08005B42 */ ADDS R4, R0, #0 \n\
 /* 08005B44 */ LSLS R3, R3, #0X10 \n\

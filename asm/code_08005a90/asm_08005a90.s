@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08005A90 \n\
+thumb_func_start bitmap_clip_rect \n\
 /* 08005A90 */ PUSH {R4, R5, R6, R7, LR} \n\
 /* 08005A92 */ MOV R7, SB \n\
 /* 08005A94 */ MOV R6, R8 \n\

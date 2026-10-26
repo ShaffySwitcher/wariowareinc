@@ -92,7 +92,7 @@ _080B1766: \n\
 /* 080B1790 */ MOVS R1, #4 \n\
 /* 080B1792 */ MOVS R2, #0XA \n\
 /* 080B1794 */ MOVS R3, #0X17 \n\
-/* 080B1796 */ BL func_08005B70 \n\
+/* 080B1796 */ BL bitmap_fill_rect \n\
 /* 080B179A */ MOV R2, R8 \n\
 /* 080B179C */ CMP R2, #3 \n\
 /* 080B179E */ BEQ _080B17CA \n\
@@ -276,7 +276,7 @@ _080B18CC: \n\
 /* 080B18E0 */ STR R5, [SP, #4] \n\
 /* 080B18E2 */ MOVS R2, #5 \n\
 /* 080B18E4 */ MOVS R3, #0XA \n\
-/* 080B18E6 */ BL func_08005DE0 \n\
+/* 080B18E6 */ BL bitmap_print_text \n\
 /* 080B18EA */ LDR R2, [R6] \n\
 /* 080B18EC */ LDR R0, [R2, #0X34] \n\
 /* 080B18EE */ LDR R1, [R2, #0X2C] \n\
@@ -288,7 +288,7 @@ _080B18CC: \n\
 /* 080B18FA */ STR R5, [SP, #4] \n\
 /* 080B18FC */ MOVS R2, #5 \n\
 /* 080B18FE */ MOVS R3, #0XC \n\
-/* 080B1900 */ BL func_08005DE0 \n\
+/* 080B1900 */ BL bitmap_print_text \n\
 /* 080B1904 */ LDR R0, =gCurrentSceneData \n\
 /* 080B1906 */ MOV R8, R0 \n\
 /* 080B1908 */ LDR R0, [R0] \n\
@@ -309,7 +309,7 @@ _080B18CC: \n\
 /* 080B1926 */ STR R5, [SP, #4] \n\
 /* 080B1928 */ MOVS R2, #0X11 \n\
 /* 080B192A */ MOVS R3, #0XA \n\
-/* 080B192C */ BL func_08005DE0 \n\
+/* 080B192C */ BL bitmap_print_text \n\
 _080B1930: \n\
 /* 080B1930 */ MOV R1, R8 \n\
 /* 080B1932 */ LDR R0, [R1] \n\
@@ -328,7 +328,7 @@ _080B1930: \n\
 /* 080B194C */ STR R5, [SP, #4] \n\
 /* 080B194E */ MOVS R2, #0X11 \n\
 /* 080B1950 */ MOVS R3, #0XC \n\
-/* 080B1952 */ BL func_08005DE0 \n\
+/* 080B1952 */ BL bitmap_print_text \n\
 _080B1956: \n\
 /* 080B1956 */ MOVS R0, #0 \n\
 _080B1958: \n\

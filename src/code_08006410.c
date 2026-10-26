@@ -18,8 +18,8 @@ struct Window *window_create_ex(u16 heapId, u16 taskHeapId, struct BitmapFontBG 
     const struct WindowText *t;
  
     win->style   = mem_heap_alloc_id(heapId, sizeof(struct WindowStyle));
-    win->content = func_08005F64(heapId, def->width, def->height);
-    win->backup  = func_08005F64(heapId, def->width + 2, def->height + 2);
+    win->content = bitmap_create(heapId, def->width, def->height);
+    win->backup  = bitmap_create(heapId, def->width + 2, def->height + 2);
     win->font    = font;
     win->target  = target;
     win->x       = x;
@@ -30,12 +30,12 @@ struct Window *window_create_ex(u16 heapId, u16 taskHeapId, struct BitmapFontBG 
     win->onShow  = NULL;
     win->onHide  = NULL;
  
-    func_08005CF8(def->styleSrc, win->style, def->styleArg);
+    bitmap_copy_tile(def->styleSrc, win->style, def->styleArg);
 
     if (srcBmp)
-        func_08005E48(srcBmp, srcX, srcY, def->width, def->height, win->content, 0, 0);
+        bitmap_blit(srcBmp, srcX, srcY, def->width, def->height, win->content, 0, 0);
     else
-        func_08005B20(win->content, win->style->fillColor);
+        bitmap_fill(win->content, win->style->fill);
 
     win->pendingPrints = 0;
 
@@ -43,11 +43,11 @@ struct Window *window_create_ex(u16 heapId, u16 taskHeapId, struct BitmapFontBG 
         t = def->texts;
         for (; t->text != NULL; t++) {
             if (printArg) {
-                run_func_after_task(func_08005E0C(taskHeapId, win->content, font,
+                run_func_after_task(start_bitmap_print_text_task(taskHeapId, win->content, font,
                                                  t->x, t->y, t->text, t->color, printArg), window_dec_pending_prints, &win->pendingPrints);
                 win->pendingPrints++;
             } else {
-                func_08005DE0(win->content, font, t->x, t->y, t->text, t->color);
+                bitmap_print_text(win->content, font, t->x, t->y, t->text, t->color);
             }
         }
     }
@@ -72,8 +72,8 @@ void window_destroy(struct Window *win) {
             bmp_font_bg_delete_printed_data(win->font, t->text);
         }
     }
-    func_08005FA0(win->backup);
-    func_08005FA0(win->content);
+    bitmap_destroy(win->backup);
+    bitmap_destroy(win->content);
     mem_heap_dealloc(win->style);
     mem_heap_dealloc(win);
 }
@@ -81,13 +81,13 @@ void window_destroy(struct Window *win) {
 void window_save_backup(struct Window *win) {
     struct Bitmap *target = win->target;
     const struct WindowDef *def = win->def;
-    func_08005E48(target, win->x - 1, win->y - 1, def->width + 2, def->height + 2, win->backup, 0, 0);
+    bitmap_blit(target, win->x - 1, win->y - 1, def->width + 2, def->height + 2, win->backup, 0, 0);
 }
 
 void window_restore_backup(struct Window *win) {
     struct Bitmap *target = win->target;
     const struct WindowDef *def = win->def;
-    func_08005E48(win->backup, 0, 0, def->width + 2, def->height + 2, target, win->x - 1, win->y - 1);
+    bitmap_blit(win->backup, 0, 0, def->width + 2, def->height + 2, target, win->x - 1, win->y - 1);
 }
 
 void window_show(struct Window* win) {
@@ -97,8 +97,8 @@ void window_show(struct Window* win) {
         const struct WindowDef *def = win->def;
 
         window_save_backup(win);
-        func_08005C20(win->target, win->style, win->x - 1, win->y - 1, def->width + 2, def->height + 2, 0);
-        func_08005E48(win->content, 0, 0, def->width, def->height, win->target, win->x, win->y);
+        bitmap_draw_window(win->target, win->style, win->x - 1, win->y - 1, def->width + 2, def->height + 2, 0);
+        bitmap_blit(win->content, 0, 0, def->width, def->height, win->target, win->x, win->y);
         if(win->onShow) {
             win->onShow(win, win->onShowArg);
         }
@@ -157,8 +157,8 @@ void window_anim_draw(struct WindowAnim *anim) {
     s32 w = anim->right - anim->left;
     s32 h = anim->bottom - anim->top;
 
-    func_08005C20(target, win->style, x - 1, y - 1, w + 2, h + 2, 0);
-    func_08005E48(win->content, anim->left, anim->top, w, h, target, x, y);
+    bitmap_draw_window(target, win->style, x - 1, y - 1, w + 2, h + 2, 0);
+    bitmap_blit(win->content, anim->left, anim->top, w, h, target, x, y);
 }
 
 struct WindowAnim *window_open_anim_start(struct Window *win) {
