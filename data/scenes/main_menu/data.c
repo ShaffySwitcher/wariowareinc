@@ -750,3 +750,127 @@ struct SongHeader **D_083AA3C4[] = {
     NULL,
     NULL,
 };
+
+extern char D_08103AD4[];
+extern char D_08103AE0[];
+extern char D_08103B34[];
+extern char D_08103C30[];
+extern char D_08103D30[];
+extern char D_08103DFC[];
+extern char D_08103EBC[];
+extern char D_08103F38[];
+extern char D_08103FB8[];
+extern char D_08104058[];
+extern char D_08104168[];
+extern char D_08104228[];
+extern char D_081042FC[];
+extern char D_081043D0[];
+extern char D_081044C0[];
+extern char D_08104518[];
+extern char D_081045D8[];
+extern char D_081046A0[];
+extern char D_08104770[];
+extern char D_08104858[];
+extern char D_08104948[];
+extern char D_08104A34[];
+extern char D_08104B68[];
+extern char D_08104C64[];
+extern char D_08104D74[];
+extern char D_08104E60[];
+extern char D_08104F48[];
+extern char D_08105044[];
+extern char D_08105148[];
+
+char *D_083AA444[] = {
+    D_08105148,
+    D_08105044,
+    D_08104F48,
+    D_08104E60,
+    D_08104D74,
+    D_08104C64,
+    D_08104B68,
+    D_08104A34,
+    D_08104948,
+    D_08104858,
+    D_08104770,
+    D_081046A0,
+    D_081045D8,
+    D_08104518,
+    D_081044C0,
+    D_081043D0,
+    D_081042FC,
+    D_08104228,
+    D_08104168,
+    D_08104058,
+    D_08103FB8,
+    D_08103F38,
+    D_08103EBC,
+    D_08103DFC,
+    D_08103D30,
+    D_08103C30,
+    D_08103B34,
+    D_08103AE0,
+    D_08103AD4
+};
+
+extern char D_0810524C[];
+extern char D_08105304[];
+extern char D_081053CC[];
+extern char D_081054B4[];
+extern char D_08105590[];
+extern char D_081056A4[];
+extern char D_081057BC[];
+extern char D_081058CC[];
+extern char D_081059B4[];
+extern char D_08105A88[];
+extern char D_08105BC8[];
+extern char D_08105CBC[];
+
+char *D_083AA4B8[] = {
+    D_08105BC8,
+    D_08105A88,
+    D_081059B4,
+    D_081058CC,
+    D_081057BC,
+    D_081056A4,
+    D_08105590,
+    D_081054B4,
+    D_081053CC,
+    D_08105304,
+    D_0810524C,
+    D_08105CBC
+};
+
+char **D_083AA4E8[] = {
+    NULL,
+    D_083AA444,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+};
+
+char **D_083AA500[] = {
+    NULL,
+    D_083AA4B8,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+};
+
+extern char D_08105D7C[];
+extern char D_08105D14[];
+extern char D_08105D0C[];
+extern char D_08105D04[];
+extern char D_08105CFC[];
+extern char D_08105CF4[];
+
+char **D_083AA518[] = {
+    D_08105D7C,
+    D_08105D14,
+    D_08105D0C,
+    D_08105D04,
+    D_08105CFC,
+    D_08105CF4
+};
