@@ -3,6 +3,7 @@
 #include "global.h"
 #include "graphics.h"
 #include "scenes.h"
+#include "src/code_08003a70.h"
 
 // MACROS
 #define gGameplayData CURRENT_SCENE_DATA(struct GameplayData)
@@ -109,9 +110,7 @@ struct GameplayData {
     u8 pad196[0x58]; // 0x196 size:0x58
     s16 unk1ee; // 0x1EE size:0x2
     s32 unk1f0; // 0x1F0 size:0x4
-    struct GameplayData_struct_1f4 unk1f4; // 0x1F4 size:0x4
-    u8 pad1f8[0x20]; // 0x1F8 size:0x20
-    void* unk218; // 0x218 size:0x4
+    struct BgAnimator unk1f4; // 0x1F4 size:0x4
     u32 scoreChanged; // 0x21C size:0x4
     u8 unk220; // 0x220
     u8 unk221; // 0x221

@@ -359,7 +359,7 @@ u32 func_08011614(void) {
 }
 
 u32 main_menu_can_accept_input(void) {
-    if (gMainMenu.inputsEnabled && !gGraphicsBuffer.unk854_2 && func_08011614() == 0) {
+    if (gMainMenu.inputsEnabled && !gGraphicsBuffer.fadeActive && func_08011614() == 0) {
         return TRUE;
     }
     return FALSE;

@@ -36,7 +36,7 @@ s32 soft_reset_update_scene(void) {
         break;
 
     case 1:
-        if (!(gGraphicsBuffer.unk854_2)) {
+        if (!(gGraphicsBuffer.fadeActive)) {
             hdma_disable();
             gSoftReset.state++;
         }

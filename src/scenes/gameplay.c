@@ -2,6 +2,7 @@
 #include "src/audio.h"
 #include "src/affine_param.h"
 #include "src/memory.h"
+#include "src/code_08003a70.h"
 #include "src/memory_heap.h"
 #include "src/task_pool.h"
 #include "src/code_08000f10.h"
@@ -61,8 +62,8 @@ void gameplay_init_scene(void) {
     gGameplayData.unk0 = D_03003628;
     gGameplayData.unk20 = D_03003628->unk8;
     gGameplayData.unk6_3 = 0;
-    gGameplayData.unk1f4.unk0_1 = 0;
-    gGameplayData.unk218 = mem_heap_alloc(0x8000);
+    gGameplayData.unk1f4.active = FALSE;
+    gGameplayData.unk1f4.copiedBG = mem_heap_alloc(0x8000);
     gGameplayData.unk188 = -1;
     gGameplayData.pauseAvailable = FALSE;
     gGameplayData.isPaused = 0;
@@ -106,7 +107,7 @@ void gameplay_stop_scene(void) {
     
     mem_heap_dealloc(gGameplayData.unk288);
     mem_heap_dealloc(gGameplayData.unk28c);
-    mem_heap_dealloc(gGameplayData.unk218);
+    mem_heap_dealloc(gGameplayData.unk1f4.copiedBG);
     mem_heap_dealloc(D_03006524);
     mem_heap_dealloc(D_03006528);
     mem_heap_dealloc(D_0300652C);
@@ -213,7 +214,7 @@ u32 gameplay_update_scene(void) {
             }
             break;
         case GAMEPLAY_STATE_EXITING:
-            if (gGraphicsBuffer.unk854_4) {
+            if (gGraphicsBuffer.fadeDone) {
                 stop_soundplayer(gBeatscriptScene.musicPlayer);
                 task_pool_pause(0);
                 stop_beatscript_scene();

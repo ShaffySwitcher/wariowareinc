@@ -133,10 +133,10 @@ struct GraphicsBuffer {
     u16 objPalette[16][16]; // 0x254
     u32 oam[0x100]; // 0x454
     u16 updateDisplay : 1;           // 0x854
-    u16 unk854_2 : 1;                // 0x854
-    u16 unk854_3 : 1;                // 0x854
-    u16 unk854_4 : 1;                // 0x854
-    u16 unk854_5 : 12;               // 0x854
+    u16 fadeActive : 1;              // 0x854
+    u16 fadeOut : 1;                 // 0x854
+    u16 fadeDone : 1;                // 0x854
+    u16 effect : 12;                 // 0x854
     void (*modifyPalette)(Palette *);// 0x858
 } gGraphicsBuffer;
 

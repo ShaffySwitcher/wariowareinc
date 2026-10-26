@@ -46,9 +46,9 @@ void func_080069F4(void) {
 void func_08006A04(void) {
     gGraphicsBuffer.updateDisplay = FALSE;
     gGraphicsBuffer.DISPCNT = 0;
-    gGraphicsBuffer.unk854_2 = FALSE;    
-    gGraphicsBuffer.unk854_4 = FALSE;
-    gGraphicsBuffer.unk854_5 = FALSE;
+    gGraphicsBuffer.fadeActive = FALSE;    
+    gGraphicsBuffer.fadeDone = FALSE;
+    gGraphicsBuffer.effect = 0;
     gGraphicsBuffer.modifyPalette = NULL;
     dma3_fill(0U, gGraphicsBuffer.BG_CNT, 0x50U, 0x20U, 0x100U);
 }
@@ -60,7 +60,7 @@ void flush_graphics_buffer(void) {
         dma3_set(gGraphicsBuffer.BG_CNT, (void*)&REG_BG0CNT, 0x50U, 0x20U, 0x100U);
         dma3_set(gGraphicsBuffer.oam, (void*)OAMBase, 0x400U, 0x20U, 0x100U);
 
-        if(gGraphicsBuffer.unk854_2 || gGraphicsBuffer.unk854_5) {
+        if(gGraphicsBuffer.fadeActive || gGraphicsBuffer.effect) {
             dma3_set(&D_03003BC0, (void*)PALETTE_RAM, 0x400U, 0x20U, 0x100U);
         } else {
             dma3_set(gGraphicsBuffer.bgPalette[0], (void*)PALETTE_RAM, 0x400U, 0x20U, 0x100U);
@@ -71,10 +71,10 @@ void flush_graphics_buffer(void) {
 }
 
 void func_08006B00(void) {
-    if (gGraphicsBuffer.unk854_2 || gGraphicsBuffer.unk854_5) {
+    if (gGraphicsBuffer.fadeActive || gGraphicsBuffer.effect) {
         dma3_set(gGraphicsBuffer.bgPalette[0], D_03003BC0, 0x400U, 0x20U, 0x100U);
     }
-    if (gGraphicsBuffer.unk854_5 && (gGraphicsBuffer.modifyPalette != NULL)) {
+    if (gGraphicsBuffer.effect && (gGraphicsBuffer.modifyPalette != NULL)) {
         gGraphicsBuffer.modifyPalette(D_03003BC0);
     }
     func_08006DB8();
@@ -88,30 +88,109 @@ void func_08006B90(u16 color) {
     dma3_fill(color | (color << 16), gGraphicsBuffer.bgPalette, 0x400, 0x20, 0x100);
 }
 
-#include "asm/code_08006410/asm_08006bb8.s"
+void func_08006BB8(u16 duration, u16 color) {
+    if(gGraphicsBuffer.fadeActive) {
+        gFadeStep = gFadeStep * duration / gFadeDuration;
+    } else {
+        gFadeStep = duration;
+    }
 
-#include "asm/code_08006410/asm_08006c40.s"
-
-void func_08006CC8(void) {
-    gGraphicsBuffer.unk854_2 = FALSE;
-    gGraphicsBuffer.unk854_4 = FALSE;
+    gFadeDuration = duration;
+    gFadeColor = color;
+    gGraphicsBuffer.fadeOut = FALSE;
+    gGraphicsBuffer.fadeDone = FALSE;
+    gGraphicsBuffer.fadeActive = TRUE;
 }
 
-#include "asm/code_08006410/asm_08006ce8.s"
+void func_08006C40(u16 duration, u16 color) {
+    if(gGraphicsBuffer.fadeActive) {
+        gFadeStep = gFadeStep * duration / gFadeDuration;
+    } else {
+        gFadeStep = 0;
+    }
 
-#include "asm/code_08006410/asm_08006db8.s"
+    gFadeDuration = duration;
+    gFadeColor = color;
+    gGraphicsBuffer.fadeOut = TRUE;
+    gGraphicsBuffer.fadeDone = FALSE;
+    gGraphicsBuffer.fadeActive = TRUE;
+}
+
+void func_08006CC8(void) {
+    gGraphicsBuffer.fadeActive = FALSE;
+    gGraphicsBuffer.fadeDone = FALSE;
+}
+
+void func_08006CE8(u32 color, const u16 *mask, u32 duration, u32 step) {
+    u32 i, row;
+    s32 tr, tg, tb, factor;
+    u16 *pal;
+
+    if (mask == NULL) {
+        mask = &D_083A4A3C;
+    }
+    pal = D_03003BC0;
+
+    factor = FIXED_POINT_DIV(step, duration);
+    tr = color & 0x1F;
+    tg = (color >> 5) & 0x1F;
+    tb = (color >> 10) & 0x1F;
+
+    for (row = 0; row < 32; row++) {
+        u32 bits = *mask++;
+        for (i = 0; i < 16; i++) {
+            if ((bits >> i) & 1) {
+                u16 c = pal[i];
+                s32 r = c & 0x1F;
+                s32 g = (c >> 5) & 0x1F;
+                s32 b = (c >> 10) & 0x1F;
+
+                r += ((tr - r) * factor) >> 8;
+                g += ((tg - g) * factor) >> 8;
+                b += ((tb - b) * factor) >> 8;
+                pal[i] = r | (g << 5) | (b << 10);
+            }
+        }
+        pal += 16;
+    }
+}
+
+void func_08006DB8(void) {
+    if (gGraphicsBuffer.fadeActive) {
+        if (!gGraphicsBuffer.fadeDone) {
+            if (gGraphicsBuffer.fadeOut) {
+                gFadeStep++;
+                if (gFadeStep >= gFadeDuration) {
+                    gFadeStep = gFadeDuration;
+                    gGraphicsBuffer.fadeDone = TRUE;
+                    gGraphicsBuffer.DISPCNT = 0;
+                    dma3_fill(gFadeColor, gGraphicsBuffer.bgPalette, 0x400, 0x10, 0x100);
+                    gGraphicsBuffer.fadeActive = FALSE;
+                }
+            } else {
+                gFadeStep--;
+                if (gFadeStep <= 0) {
+                    gFadeStep = 0;
+                    gGraphicsBuffer.fadeDone = TRUE;
+                    gGraphicsBuffer.fadeActive = FALSE;
+                }
+            }
+            func_08006CE8(gFadeColor, 0, gFadeDuration, gFadeStep);
+        }
+    }
+}
 
 void func_08006E94(u32 enable) {
     gGraphicsBuffer.updateDisplay = enable;
 }
 
 void func_08006EB4(void (*callback)(Palette pal)) {
-    gGraphicsBuffer.unk854_5 = 1;
+    gGraphicsBuffer.effect = 1;
     gGraphicsBuffer.modifyPalette = callback;
 }
 
 void func_08006EE0(void) {
-    gGraphicsBuffer.unk854_5 = 0;
+    gGraphicsBuffer.effect = 0;
     gGraphicsBuffer.modifyPalette = NULL;
 }
 
