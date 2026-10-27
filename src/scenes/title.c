@@ -3,6 +3,7 @@
 #include "src/audio.h"
 #include "src/memory.h"
 #include "src/task_pool.h"
+#include "src/bitmap_font.h"
 #include "graphics/title/title_graphics.h"
 #include "src/code_08000f10.h"
 

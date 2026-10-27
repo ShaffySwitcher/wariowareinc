@@ -106,7 +106,7 @@ void bmp_font_get_glyph(const struct BitmapFontData *font, const char *string, c
     }
 }
 
-struct BitmapFontOBJ *create_new_bmp_font_obj_alt(u16 memID, const struct BitmapFontData *fonts, u32 baseTileNum, u32 maxTileRows) {
+struct BitmapFontOBJ *create_new_bmp_font_obj_alt(u16 memID, const struct BitmapFontData *fonts, u32 baseTileNum, u32 maxTileRows, u32 unused1, u32 unused2) {
     return create_new_bmp_font_obj(memID, fonts, baseTileNum, maxTileRows);
 }
 

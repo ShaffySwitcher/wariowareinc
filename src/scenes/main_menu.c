@@ -1,4 +1,5 @@
 #include "src/scenes/main_menu.h"
+#include "src/bitmap_font.h"
 #include "src/beatscript.h"
 #include "src/lib_sprite.h"
 #include "src/backdrop.h"
@@ -141,7 +142,7 @@ void main_menu_scene_start(void) {
         gMainMenuSelectionState.category = 2;
     }
 
-    gMainMenu.unkD0 = bitmap_create((u16)get_current_mem_id(), 0x20, 0x14);
+    gMainMenu.unkD0 = bitmap_create(get_current_mem_id(), 0x20, 0x14);
     bitmap_fill(gMainMenu.unkD0, D_0832027C[0]);
     gMainMenu.unkD4 = *(void **)gMainMenu.unkD0;
     gMainMenu.unkD8 = (void *)(VRAMBase + 0x4800);
@@ -150,8 +151,8 @@ void main_menu_scene_start(void) {
     gMainMenu.unk7C.height = 32;
     gMainMenu.unk7C.data = scene_mem_heap_alloc(32 * 32 * 2);
 
-    gMainMenu.unk0 = create_new_bmp_font_bg((u16)get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
-    gMainMenu.unk4 = create_new_bmp_font_obj_alt((u16)get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
+    gMainMenu.unk0 = create_new_bmp_font_bg(get_current_mem_id(), &D_083ADB4C, 0, 0x340, 6);
+    gMainMenu.unk4 = create_new_bmp_font_obj_alt(get_current_mem_id(), &D_083ADADC, 0x300, 4, 0x200, 0x40);
 
     import_all_scene_objects(gSpriteHandler, gMainMenu.unk4, &D_083A9B14, gCurrentSceneSpritePool);
     sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[1], D_083A9B60[get_current_language()], 1, 0, 0, 0);
