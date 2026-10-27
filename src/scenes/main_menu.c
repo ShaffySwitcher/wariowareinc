@@ -1327,7 +1327,7 @@ void main_menu_state_prompt(void) {
 void func_08014D6C(void) {
     func_0800A240(&D_083A4A2C, gMainMenu.unk16C, 0, 0);
     scene_show_sprite(0);
-    display_all_scene_objects(gSpriteHandler, gMainMenu.unk4, &D_083AB394, gCurrentSceneSpritePool);
+    delete_all_scene_objects(gSpriteHandler, gMainMenu.unk4, &D_083AB394, gCurrentSceneSpritePool);
     gMainMenu.unkDC_22 = TRUE;
 }
 

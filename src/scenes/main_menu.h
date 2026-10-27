@@ -33,8 +33,8 @@ enum MainMenuState {
 };
 
 struct MainMenuSceneData {
-    u32 unk0;
-    u32 unk4;
+    struct BitmapFontBG *unk0;
+    struct BitmapFontOBJ *unk4;
     u8 inputsEnabled;
     u8 pad9[3];
     u32 *unkC;
@@ -59,7 +59,7 @@ struct MainMenuSceneData {
     u8 padC0[8];
     u32 unkC8;
     u8 padCC[4];
-    void* unkD0;
+    struct Bitmap *unkD0;
     void* unkD4;
     void* unkD8;
     u32 unkDC_1:8; // DC

@@ -19,7 +19,7 @@ thumb_func_start func_080149BC \n\
 /* 080149DC */ LDR R2, _08014A04 \n\
 /* 080149DE */ LDR R3, =gCurrentSceneSpritePool \n\
 /* 080149E0 */ LDR R3, [R3] \n\
-/* 080149E2 */ BL display_all_scene_objects \n\
+/* 080149E2 */ BL delete_all_scene_objects \n\
 /* 080149E6 */ LDR R1, [R4] \n\
 /* 080149E8 */ ADDS R1, #0XDE \n\
 /* 080149EA */ LDRB R0, [R1] \n\

@@ -60,7 +60,7 @@ _080E4864: \n\
 /* 080E4870 */ LDR R2, _080E488C \n\
 /* 080E4872 */ LDR R3, =gCurrentSceneSpritePool \n\
 /* 080E4874 */ LDR R3, [R3] \n\
-/* 080E4876 */ BL display_all_scene_objects \n\
+/* 080E4876 */ BL delete_all_scene_objects \n\
 /* 080E487A */ LDR R0, [R4] \n\
 /* 080E487C */ ADDS R0, #0X21 \n\
 /* 080E487E */ MOVS R1, #1 \n\

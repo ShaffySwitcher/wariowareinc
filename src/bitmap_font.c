@@ -1,114 +1,1234 @@
 #include "bitmap_font.h"
+#include "task_pool.h"
+#include "code_08000f10.h"
 
-asm(".include \"include/gba.inc\"");
+enum FTextLatinCharTypesEnum {
+    F_TEXT_NON_LATIN,
+    F_TEXT_LATIN_FULLWIDTH,
+    F_TEXT_LATIN_HALFWIDTH
+};
+
+// Get printable glyph texture and width.
+void bmp_font_get_glyph(const struct BitmapFontData *font, const char *string, const u16 **textureReq, u32 *widthReq) {
+    const void *textures;
+    const u8 *widths;
+    u32 id;
+
+    textures = NULL;
+    widths = NULL;
+
+    switch (string[0]) {
+        case 0x81:
+            // Fullwidth Japanese Punctuation
+            if ((string[1] >= 0x40) && (string[1] <= 0x7E)) {
+                textures = font->punctuationTextures;
+                widths = font->punctuationWidths;
+                id = string[1] - 0x40;
+                break;
+            }
+            // Fullwidth Japanese Punctuation
+            if ((string[1] >= 0x80) && (string[1] <= 0x9E)) {
+                textures = font->punctuationTextures;
+                widths = font->punctuationWidths;
+                id = string[1] - 0x41;
+                break;
+            }
+            break;
+
+        case 0x82:
+            // Fullwidth Arabic Numerals
+            if ((string[1] >= 0x4F) && (string[1] <= 0x58)) {
+                textures = font->arabicNumeralTextures;
+                widths = font->arabicNumeralWidths;
+                id = string[1] - 0x4F;
+                break;
+            }
+            // Fullwidth Uppercase Latin Alphabet
+            if ((string[1] >= 0x60) && (string[1] <= 0x79)) {
+                textures = font->latinUppercaseTextures;
+                widths = font->latinUppercaseWidths;
+                id = string[1] - 0x60;
+                break;
+            }
+            // Fullwidth Lowercase Latin Alphabet
+            if ((string[1] >= 0x81) && (string[1] <= 0x9A)) {
+                textures = font->latinLowercaseTextures;
+                widths = font->latinLowercaseWidths;
+                id = string[1] - 0x81;
+                break;
+            }
+            // Fullwidth Hiragana
+            if ((string[1] >= 0x9F) && (string[1] <= 0xFC)) {
+                textures = font->hiraganaTextures;
+                widths = font->hiraganaWidths;
+                id = string[1] - 0x9F;
+                break;
+            }
+            break;
+
+        case 0x83:
+            // Fullwidth Katakana
+            if ((string[1] >= 0x40) && (string[1] <= 0x7E)) {
+                textures = font->katakanaTextures;
+                widths = font->katakanaWidths;
+                id = string[1] - 0x40;
+                break;
+            }
+            // Fullwidth Katakana
+            if ((string[1] >= 0x80) && (string[1] <= 0x9E)) {
+                textures = font->katakanaTextures;
+                widths = font->katakanaWidths;
+                id = string[1] - 0x41;
+                break;
+            }
+            break;
+    }
+
+    if (textures == NULL) {
+        if (textureReq != NULL) {
+            *textureReq = NULL;
+        }
+        if (widthReq != NULL) {
+            *widthReq = 0;
+        }
+    } else {
+        if (textureReq != NULL) {
+            *textureReq = textures + (((font->textureWidth * font->textureHeight) / 2) * id);
+        }
+
+        if (widthReq != NULL) {
+            if (widths != NULL) {
+                *widthReq = widths[id];
+            } else {
+                *widthReq = font->textureWidth;
+            }
+        }
+    }
+}
+
+struct BitmapFontOBJ *create_new_bmp_font_obj_alt(u16 memID, const struct BitmapFontData *fonts, u32 baseTileNum, u32 maxTileRows) {
+    return create_new_bmp_font_obj(memID, fonts, baseTileNum, maxTileRows);
+}
+
+struct BitmapFontOBJ *create_new_bmp_font_obj(u16 memID, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows) {
+    struct BitmapFontOBJ *textObj;
+
+    textObj = mem_heap_alloc_id(memID, sizeof(struct BitmapFontOBJ));
+    textObj->memID = memID;
+    textObj->fonts = fonts;
+    textObj->baseTileNum = baseTileNum;
+    textObj->maxAllocatedTileRows = maxTileRows;
+    textObj->printedGlyphs = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u16));
+    textObj->printedGlyphCounts = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u8));
+    textObj->parseString = NULL;
+    textObj->parsedOutput = NULL;
+    bmp_font_obj_clear_print_data(textObj);
+
+    return textObj;
+}
+
+void delete_bmp_font_obj(struct BitmapFontOBJ *textObj) {
+    mem_heap_dealloc(textObj->printedGlyphs);
+    mem_heap_dealloc(textObj->printedGlyphCounts);
+    if (textObj->parsedOutput != NULL) {
+        mem_heap_dealloc(textObj->parsedOutput);
+    }
+    mem_heap_dealloc(textObj);
+}
+
+void bmp_font_obj_set_format_parser(struct BitmapFontOBJ *textObj, void *stringParserFunc, u32 maxOutputLength) {
+    textObj->parseString = stringParserFunc;
+    textObj->parsedOutput = mem_heap_alloc_id(textObj->memID, maxOutputLength);
+}
+
+void bmp_font_obj_set_data(struct BitmapFontOBJ *textObj, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows, u32 unused1, u32 unused2, u16 *printedGlyphs, u8 *printedGlyphCounts) {
+    textObj->fonts = fonts;
+    textObj->baseTileNum = baseTileNum;
+    textObj->maxAllocatedTileRows = maxTileRows;
+    textObj->printedGlyphs = printedGlyphs;
+    textObj->printedGlyphCounts = printedGlyphCounts;
+    bmp_font_obj_clear_print_data(textObj);
+}
+
+void bmp_font_obj_clear_print_data(struct BitmapFontOBJ *textObj) {
+    u32 i;
+
+    for (i = 0; i < (textObj->maxAllocatedTileRows * 16); i++) {
+        textObj->printedGlyphs[i] = 0;
+        textObj->printedGlyphCounts[i] = 0;
+    }
+}
+
+u32 bmp_font_obj_get_anim_total(const char *string) {
+    u32 total = 0;
+
+    for (; string[0] != '\0'; string += 2) {
+        if (string[0] == '.') {
+            continue;
+        }
+
+        if (string[0] == ':') {
+            continue;
+        }
+
+        if (!bmp_font_obj_glyph_is_whitespace(string)) {
+            total++;
+        }
+    }
+
+    return total;
+}
+
+u32 bmp_font_obj_get_glyph_width(const struct BitmapFontData *font, const char *string) {
+    u32 latinSpacingWidth, glyphWidth;
+
+    if (bmp_font_obj_glyph_is_whitespace(string)) {
+        return font->whitespaceWidth;
+    }
+
+    if ((string[0] == '.') || (string[0] == ':')) {
+        return 0;
+    }
+
+    if (bmp_font_obj_get_latin_glyph_type(string) == F_TEXT_LATIN_HALFWIDTH) {
+        latinSpacingWidth = 8;
+        string = bmp_font_obj_convert_latin_hw_to_fw(&string[1]);
+    } else {
+        latinSpacingWidth = 0;
+    }
+
+    bmp_font_get_glyph(font, string, NULL, &glyphWidth);
+    return latinSpacingWidth + glyphWidth;
+}
+
+u8 bmp_font_obj_parse_hex_digit(char c) {
+    if ((c >= '0') && (c <= '9')) {
+        return c - '0';
+    }
+
+    if ((c >= 'a') && (c <= 'f')) {
+        return c - 'a' + 10;
+    }
+
+    if ((c >= 'A') && (c <= 'F')) {
+        return c - 'A' + 10;
+    }
+
+    return 0;
+}
+
+u32 bmp_font_obj_get_string_width(const struct BitmapFontData *font, const char *string) {
+    const struct BitmapFontData *currentFont;
+    s32 width;
+
+    currentFont = font;
+    width = 0;
+
+    for (; string[0] != '\0'; string += 2) {
+        switch (string[0]) {
+            case '.':
+                break;
+
+            case ':':
+                currentFont = &font[bmp_font_obj_parse_hex_digit(string[1])];
+                break;
+
+            default:
+                if (width != 0) {
+                    width += currentFont->spacingWidth;
+                }
+                width += bmp_font_obj_get_glyph_width(currentFont, string);
+                break;
+        }
+    }
+
+    if (width < 0) {
+        width = 0;
+    }
+
+    return width;
+}
+
+void bmp_font_obj_write_glyph_hw(const u16 *texture, u16 *dest) {
+    u32 i;
+ 
+    for (i = 0; i < 2; i++) {
+        dma3_set(texture, dest, 0x20, 0x10, 0x100);
+        texture += 0x20;
+        dest += 0x200;
+    }
+}
+
+void bmp_font_obj_write_glyph_fw(const u16 *texture, u16 *dest) {
+    u32 i;
+ 
+    for (i = 0; i < 2; i++) {
+        dma3_set(texture, dest, 0x40, 0x10, 0x100);
+        texture += 0x20;
+        dest += 0x200;
+    }
+}
+
+u16 bmp_font_obj_print_glyph(struct BitmapFontOBJ *textObj, const char *string, u32 *widthReq) {
+    const u16 *texture;
+    u16 *address;
+    u32 width;
+    u8 glyphDataB0, glyphDataB1;
+    u32 tileX, tileY, tileID;
+    u8 *printed;
+    u32 latinCharType;
+    u32 i, j;
+ 
+    latinCharType = bmp_font_obj_get_latin_glyph_type(string);
+    tileX = 99;
+    printed = (u8 *)textObj->printedGlyphs;
+ 
+    if (latinCharType != F_TEXT_LATIN_HALFWIDTH) {
+        glyphDataB0 = (D_0300068C << 4) | string[0];
+        glyphDataB1 = string[1];
+    } else {
+        glyphDataB0 = ((string[0] - 'a') >> 3) | (D_0300068C << 4) | (1 << 6);
+        glyphDataB1 = ((string[0] - 'a') << 5) | (string[1] - 'a');
+    }
+ 
+    for (i = 0; i < textObj->maxAllocatedTileRows; i++) {
+        for (j = 0; j < 16; j++) {
+            if ((glyphDataB0 == printed[0]) && (glyphDataB1 == printed[1])) {
+                *widthReq = bmp_font_obj_get_glyph_width(&textObj->fonts[D_0300068C], string);
+                textObj->printedGlyphCounts[j + (i * 16)]++;
+                return textObj->baseTileNum + (j * 2) + ((i * 32) * 2);
+            }
+            if ((printed[0] == 0) && (printed[1] == 0)) {
+                tileX = j;
+                tileY = i;
+            }
+            printed += 2;
+        }
+    }
+ 
+    *widthReq = 0;
+ 
+    if (tileX == 99) {
+        return -1;
+    }
+ 
+    tileID = textObj->baseTileNum + (tileX * 2) + ((tileY * 32) * 2);
+    address = (void *)((VRAMBase + 0x10000) + (tileID * 0x20));
+ 
+    if (latinCharType == F_TEXT_LATIN_HALFWIDTH) {
+        for (i = 0; i < 2; i++) {
+            const char *fullwidthString = bmp_font_obj_convert_latin_hw_to_fw(&string[i]);
+            bmp_font_get_glyph(&textObj->fonts[D_0300068C], fullwidthString, &texture, &width);
+            bmp_font_obj_write_glyph_hw(texture, &address[i * 16]);
+            *widthReq += (i != 0) ? width : 8;
+        }
+    } else {
+        bmp_font_get_glyph(&textObj->fonts[D_0300068C], string, &texture, &width);
+        bmp_font_obj_write_glyph_fw(texture, address);
+        *widthReq = width;
+    }
+ 
+    i = tileX + (tileY * 16);
+    printed = (u8 *)&textObj->printedGlyphs[i];
+    printed[0] = glyphDataB0;
+    printed[1] = glyphDataB1;
+    textObj->printedGlyphCounts[i] = 1;
+ 
+    return tileID;
+}
 
 
-#include "asm/bitmap_font/asm_080041cc.s"
+u32 bmp_font_obj_glyph_is_whitespace(const char *string) {
+    if ((string[0] == 0x81) && (string[1] == 0x40)) {
+        return TRUE;
+    }
 
-#include "asm/bitmap_font/asm_080042f4.s"
+    if ((string[0] == ' ') && (string[1] == ' ')) {
+        return TRUE;
+    }
 
-#include "asm/bitmap_font/asm_0800430c.s"
+    return FALSE;
+}
 
-#include "asm/bitmap_font/asm_08004378.s"
+u32 bmp_font_obj_get_latin_glyph_type(const char *string) {
+    // Halfwidth Lowercase Latin Alphabet
+    if ((string[0] >= 'a') && (string[0] <= 'z') && (string[1] >= 'a') && (string[1] <= 'z')) {
+        return F_TEXT_LATIN_HALFWIDTH;
+    }
 
-#include "asm/bitmap_font/asm_080043a0.s"
+    // Fullwidth Lowercase Latin Alphabet
+    if (string[0] == 0x82) {
+        if ((string[1] >= 0x81) && (string[1] <= 0x9A)) {
+            return F_TEXT_LATIN_FULLWIDTH;
+        }
+    }
 
-#include "asm/bitmap_font/asm_080043b8.s"
+    // Other
+    return F_TEXT_NON_LATIN;
+}
 
-#include "asm/bitmap_font/asm_080043d4.s"
 
-#include "asm/bitmap_font/asm_08004400.s"
 
-#include "asm/bitmap_font/asm_0800442c.s"
+const char *bmp_font_obj_convert_latin_hw_to_fw(const char *string) {
+    return &D_083A49E8[(string[0] - 'a') * 2];
+}
 
-#include "asm/bitmap_font/asm_08004480.s"
+struct PrintedTextAnim *bmp_font_obj_print_text(struct BitmapFontOBJ *textObj, const char *string, u32 *widthReq, u32 fontStyle, u32 palette) {
+    struct PrintedTextAnim *anim;
+    u16 *cel, *oam;
+    u32 width, glyphWidth;
+    u16 tileNum;
+    u32 size;
+ 
+    if (textObj->parseString != NULL) {
+        textObj->parseString(textObj->parsedOutput, string);
+        string = textObj->parsedOutput;
+    }
+ 
+    size = (bmp_font_obj_get_anim_total(string) * 6) + 0x12;
+    anim = mem_heap_alloc_id(textObj->memID, size);
+    cel = anim->oam;
+    width = 0;
+    D_0300068C = fontStyle;
+    anim->oam[0] = 0;
+    oam = &anim->oam[1];
+ 
+    for (; string[0] != '\0'; string += 2) {
+        if (string[0] == '.') {
+            palette = bmp_font_obj_parse_hex_digit(string[1]);
+            continue;
+        }
+ 
+        if (string[0] == ':') {
+            D_0300068C = bmp_font_obj_parse_hex_digit(string[1]);
+            continue;
+        }
+ 
+        if (width != 0) {
+            width += textObj->fonts[D_0300068C].spacingWidth;
+        }
+ 
+        if (bmp_font_obj_glyph_is_whitespace(string)) {
+            width += textObj->fonts[D_0300068C].whitespaceWidth;
+            continue;
+        }
+ 
+        tileNum = bmp_font_obj_print_glyph(textObj, string, &glyphWidth);
+        if (tileNum == 0xFFFF) {
+            break;
+        }
+ 
+        ((struct OAM *)oam)->yPos = (bmp_font_obj_get_latin_glyph_type(string) != F_TEXT_NON_LATIN) ? textObj->fonts[D_0300068C].descensionHeight : 0;
+        ((struct OAM *)oam)->affineFlag = 0;
+        ((struct OAM *)oam)->objDisable = 0;
+        ((struct OAM *)oam)->objMode = 0;
+        ((struct OAM *)oam)->objMosaic = 0;
+        ((struct OAM *)oam)->paletteMode = 0;
+        ((struct OAM *)oam)->objShape = 0;
+        ((struct OAM *)oam)->xPos = width;
+        ((struct OAM *)oam)->unused = 0;
+        ((struct OAM *)oam)->hFlip = 0;
+        ((struct OAM *)oam)->vFlip = 0;
+        ((struct OAM *)oam)->objSize = 1;
+        ((struct OAM *)oam)->tileNum = tileNum;
+        ((struct OAM *)oam)->priority = 0;
+        ((struct OAM *)oam)->palette = palette;
+ 
+        width += glyphWidth;
+        oam += 3;
+        cel[0]++;
+    }
+ 
+    anim->frames[0].cel = cel;
+    anim->frames[0].duration = 100;
+    anim->frames[1].cel = NULL;
+    anim->frames[1].duration = 0;
+ 
+    if (widthReq != NULL) {
+        *widthReq = width;
+    }
+ 
+    return anim;
+}
 
-#include "asm/bitmap_font/asm_080044c4.s"
+struct PrintedTextAnim *bmp_font_obj_print_unaligned_default(struct BitmapFontOBJ *textObj, const char *string) {
+    return bmp_font_obj_print_unaligned(textObj, string, 0, 0);
+}
 
-#include "asm/bitmap_font/asm_08004518.s"
+struct PrintedTextAnim *bmp_font_obj_print_unaligned(struct BitmapFontOBJ *textObj, const char *string, u32 fontStyle, u32 palette) {
+    return bmp_font_obj_print_text(textObj, string, NULL, fontStyle, palette);
+}
 
-#include "asm/bitmap_font/asm_0800454c.s"
+struct PrintedTextAnim *bmp_font_obj_print_c_default(struct BitmapFontOBJ *textObj, const char *string) {
+    return bmp_font_obj_print_c(textObj, string, 0, 0);
+}
 
-#include "asm/bitmap_font/asm_08004580.s"
+struct PrintedTextAnim *bmp_font_obj_print_c(struct BitmapFontOBJ *textObj, const char *string, u32 fontStyle, u32 palette) {
+    struct PrintedTextAnim *anim;
+    u16 *cel, *oam;
+    u32 totalWidth, i;
 
-#include "asm/bitmap_font/asm_08004770.s"
+    anim = bmp_font_obj_print_text(textObj, string, &totalWidth, fontStyle, palette);
+    totalWidth /= 2;
+    cel = anim->frames[0].cel;
+    oam = &cel[1];
 
-#include "asm/bitmap_font/asm_08004798.s"
+    for (i = 0; i < cel[0]; i++) {
+        ((struct OAM *)oam)->xPos -= totalWidth;
+        ((struct OAM *)oam)->yPos -= 8;
+        oam += 3;
+    }
 
-#include "asm/bitmap_font/asm_080047d4.s"
+    return anim;
+}
 
-#include "asm/bitmap_font/asm_080047e8.s"
+struct PrintedTextAnim *bmp_font_obj_print_l_default(struct BitmapFontOBJ *textObj, const char *string) {
+    return bmp_font_obj_print_l(textObj, string, 0, 0);
+}
 
-#include "asm/bitmap_font/asm_08004994.s"
+struct PrintedTextAnim *bmp_font_obj_print_l(struct BitmapFontOBJ *textObj, const char *string, u32 fontStyle, u32 palette) {
+    struct PrintedTextAnim *anim;
+    u16 *cel, *oam;
+    u32 i;
 
-#include "asm/bitmap_font/asm_080049a4.s"
+    anim = bmp_font_obj_print_text(textObj, string, NULL, fontStyle, palette);
+    cel = anim->frames[0].cel;
+    oam = &cel[1];
 
-#include "asm/bitmap_font/asm_080049bc.s"
+    for (i = 0; i < cel[0]; i++) {
+        ((struct OAM *)oam)->yPos -= 8;
+        oam += 3;
+    }
 
-#include "asm/bitmap_font/asm_080049cc.s"
+    return anim;
+}
 
-#include "asm/bitmap_font/asm_08004a30.s"
+struct PrintedTextAnim *bmp_font_obj_print_r_default(struct BitmapFontOBJ *textObj, const char *string) {
+    return bmp_font_obj_print_r(textObj, string, 0, 0);
+}
 
-#include "asm/bitmap_font/asm_08004a40.s"
+struct PrintedTextAnim *bmp_font_obj_print_r(struct BitmapFontOBJ *textObj, const char *string, u32 fontStyle, u32 palette) {
+    struct PrintedTextAnim *anim;
+    u16 *cel, *oam;
+    u32 totalWidth, i;
 
-#include "asm/bitmap_font/asm_08004a74.s"
+    anim = bmp_font_obj_print_text(textObj, string, &totalWidth, fontStyle, palette);
+    cel = anim->frames[0].cel;
+    oam = &cel[1];
 
-#include "asm/bitmap_font/asm_08004a84.s"
+    for (i = 0; i < cel[0]; i++) {
+        ((struct OAM *)oam)->xPos -= totalWidth;
+        ((struct OAM *)oam)->yPos -= 8;
+        oam += 3;
+    }
 
-#include "asm/bitmap_font/asm_08004ae0.s"
+    return anim;
+}
 
-#include "asm/bitmap_font/asm_08004b00.s"
+struct PrintedTextAnim *bmp_font_obj_print_to_xy_default(struct BitmapFontOBJ *textObj, const char *string, s16 x, s16 y) {
+    return bmp_font_obj_print_to_xy(textObj, string, x, y, 0, 0);
+}
 
-#include "asm/bitmap_font/asm_08004b78.s"
+struct PrintedTextAnim *bmp_font_obj_print_to_xy(struct BitmapFontOBJ *textObj, const char *string, s16 x, s16 y, u32 fontStyle, u32 palette) {
+    struct PrintedTextAnim *anim;
+    u16 *cel, *oam;
+    u32 i;
 
-#include "asm/bitmap_font/asm_08004bd4.s"
+    anim = bmp_font_obj_print_text(textObj, string, NULL, fontStyle, palette);
+    cel = anim->frames[0].cel;
+    oam = &cel[1];
 
-#include "asm/bitmap_font/asm_08004bf4.s"
+    for (i = 0; i < cel[0]; i++) {
+        ((struct OAM *)oam)->xPos -= x;
+        ((struct OAM *)oam)->yPos -= y;
+        oam += 3;
+    }
 
-#include "asm/bitmap_font/asm_08004c94.s"
+    return anim;
+}
 
-#include "asm/bitmap_font/asm_08004cbc.s"
+void bmp_font_obj_delete_printed_anim(struct BitmapFontOBJ *textObj, struct Animation *anim) {
+    u16 *cel, *oam;
+    u32 i;
 
-#include "asm/bitmap_font/asm_08004ce0.s"
+    if (anim == NULL) {
+        return;
+    }
 
-#include "asm/bitmap_font/asm_08004e28.s"
+    cel = anim->cel;
+    oam = &cel[1];
 
-#include "asm/bitmap_font/asm_08004e48.s"
+    for (i = 0; i < cel[0]; i++) {
+        u32 num;
 
-#include "asm/bitmap_font/asm_08004eac.s"
+        num = ((struct OAM *)oam)->tileNum - textObj->baseTileNum;
+        num = ((num & 0x1F) / 2) + ((num / 64) * 16);
 
-#include "asm/bitmap_font/asm_08004ec8.s"
+        textObj->printedGlyphCounts[num]--;
+        if (textObj->printedGlyphCounts[num] == 0) {
+            textObj->printedGlyphs[num] = 0;
+        }
 
-#include "asm/bitmap_font/asm_08004ee8.s"
+        oam += 3;
+    }
 
-#include "asm/bitmap_font/asm_08004f14.s"
+    mem_heap_dealloc(anim);
+}
 
-#include "asm/bitmap_font/asm_08004f2c.s"
+struct BitmapFontOBJPrinter *bmp_font_obj_init_multi_printer(struct BitmapFontOBJPrinter *inputs) {
+    struct BitmapFontOBJPrinter *info;
 
-#include "asm/bitmap_font/asm_0800504c.s"
+    info = mem_heap_alloc(sizeof(struct BitmapFontOBJPrinter));
+    info->textObj = inputs->textObj;
+    info->animTable = inputs->animTable;
+    info->queue = inputs->queue;
+    info->current = 0;
 
-#include "asm/bitmap_font/asm_08005090.s"
+    return info;
+}
 
-#include "asm/bitmap_font/asm_08005148.s"
+u32 bmp_font_obj_update_multi_printer(struct BitmapFontOBJPrinter *info) {
+    struct BitmapFontQueuedText *data;
+    const char *string;
+    u32 current;
 
-#include "asm/bitmap_font/asm_080051d4.s"
+    current = info->current;
+    data = &info->queue[current];
+    string = data->string;
 
-#include "asm/bitmap_font/asm_08005214.s"
+    if (string == NULL) {
+        return TRUE;
+    }
 
-#include "asm/bitmap_font/asm_08005320.s"
+    if ((s32)string < 0) {
+        string = *((const char **)((s32)string & 0x7fffffff));
+    }
 
-#include "asm/bitmap_font/asm_08005364.s"
+    switch (data->alignment) {
+        case 0:
+            info->animTable[current] = bmp_font_obj_print_unaligned(info->textObj, string, data->fontStyle, data->palette);
+            break;
+        case 1:
+            info->animTable[current] = bmp_font_obj_print_c(info->textObj, string, data->fontStyle, data->palette);
+            break;
+        case 2:
+            info->animTable[current] = bmp_font_obj_print_l(info->textObj, string, data->fontStyle, data->palette);
+            break;
+        case 3:
+            info->animTable[current] = bmp_font_obj_print_r(info->textObj, string, data->fontStyle, data->palette);
+            break;
+    }
 
-#include "asm/bitmap_font/asm_080053b0.s"
+    if (data[1].string == NULL) {
+        return TRUE;
+    } else {
+        info->current = current + 1;
+        return FALSE;
+    }
+}
 
-#include "asm/bitmap_font/asm_08005538.s"
+s32 bmp_font_obj_print_multiple(u16 memID, struct BitmapFontOBJ *textObj, struct PrintedTextAnim **animTable, struct BitmapFontQueuedText *queue) {
+    struct BitmapFontOBJPrinter inputs;
 
-#include "asm/bitmap_font/asm_08005570.s"
+    inputs.textObj = textObj;
+    inputs.animTable = animTable;
+    inputs.queue = queue;
 
-#include "asm/bitmap_font/asm_0800557c.s"
+    return start_new_task(memID, &D_083A49EC, &inputs, NULL, 0);
+}
 
-#include "asm/bitmap_font/asm_0800559c.s"
+void bmp_font_obj_delete_multi_printed_anim(struct BitmapFontOBJ *textObj, struct PrintedTextAnim **animTable, struct BitmapFontQueuedText *queue) {
+    if (queue->string != NULL) {
+        struct BitmapFontQueuedText *strings = queue;
+        struct Animation **anim = (struct Animation **)animTable;
 
-#include "asm/bitmap_font/asm_080055d4.s"
+        while (strings->string != NULL) {
+            bmp_font_obj_delete_printed_anim(textObj, *anim++);
+            strings++;
+        }
+    }
+}
 
-#include "asm/bitmap_font/asm_08005600.s"
+struct WobblyPrintedTextAnim *bmp_font_obj_print_wobbly(struct BitmapFontOBJ *textObj, struct PrintedTextAnim *anim, u8 frameDuration) {
+    struct WobblyPrintedTextAnim *newAnim;
+    u16 *cel, *newCel, *newOam;
+    u32 count, size;
+    u32 i, j;
+ 
+    count = anim->oam[0];
+    cel = &anim->oam[1];
+ 
+    size = (sizeof(struct Animation) * 6) + ((1 + (count * 3)) * sizeof(u16) * 5);
+    newAnim = mem_heap_alloc_id(textObj->memID, size);
+    newCel = newAnim->oam;
+ 
+    for (i = 0; i < (ARRAY_COUNT(newAnim->frames) - 1); i++) {
+        (newAnim->frames + i)->cel = newCel;
+        (newAnim->frames + i)->duration = frameDuration;
+        newCel[0] = count;
+        newOam = (newCel += 1);
+ 
+        for (j = 0; j < (count * 3); j++) {
+            *newCel++ = cel[j];
+        }
+ 
+        if (i == 0) {
+            continue;
+        }
+ 
+        if (i != 4) {
+            for (j = 0; j < count; j++) {
+                ((struct OAM *)newOam)->xPos += get_random_range(2);
+                ((struct OAM *)newOam)->yPos += get_random_range(2);
+ 
+                newOam += 3;
+            }
+        } else {
+            for (j = 0; j < count; j++) {
+                if (get_random_range(2) != 0) {
+                    ((struct OAM *)newOam)->xPos += get_random_range(2);
+                    ((struct OAM *)newOam)->yPos += 1;
+                } else {
+                    ((struct OAM *)newOam)->xPos += 1;
+                    ((struct OAM *)newOam)->yPos += get_random_range(2);
+                }
+ 
+                newOam += 3;
+            }
+        }
+    }
+ 
+    (newAnim->frames + i)->cel = NULL;
+    (newAnim->frames + i)->duration = 0;
+    return newAnim;
+}
+
+
+void bmp_font_obj_wobble_printed_anim(struct BitmapFontOBJ *textObj, struct PrintedTextAnim **anim, u8 frameDuration) {
+    struct WobblyPrintedTextAnim *wobblyText;
+
+    wobblyText = bmp_font_obj_print_wobbly(textObj, *anim, frameDuration);
+    mem_heap_dealloc(*anim);
+    *anim = (struct PrintedTextAnim *)wobblyText;
+}
+
+struct BitmapFontBG *create_new_bmp_font_bg(u16 memID, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows) {
+    struct BitmapFontBG *textObj;
+
+    textObj = mem_heap_alloc_id(memID, sizeof(struct BitmapFontBG));
+    textObj->fonts = fonts;
+    textObj->tilesetID = bgTilesetID;
+    textObj->baseTileNum = baseTileNum;
+    textObj->maxAllocatedTileRows = maxTileRows;
+    textObj->printedGlyphs = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u16));
+    textObj->printedGlyphCounts = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u8));
+    bmp_font_bg_clear_print_data(textObj);
+
+    return textObj;
+}
+
+void delete_bmp_font_bg(struct BitmapFontBG *textObj) {
+    mem_heap_dealloc(textObj->printedGlyphs);
+    mem_heap_dealloc(textObj->printedGlyphCounts);
+    mem_heap_dealloc(textObj);
+}
+
+
+void bmp_font_bg_set_data(struct BitmapFontBG *textObj, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows, u16 *printedGlyphs, u8 *printedGlyphCounts) {
+    textObj->fonts = fonts;
+    textObj->tilesetID = bgTilesetID;
+    textObj->baseTileNum = baseTileNum;
+    textObj->maxAllocatedTileRows = maxTileRows;
+    textObj->printedGlyphs = printedGlyphs;
+    textObj->printedGlyphCounts = printedGlyphCounts;
+    bmp_font_bg_clear_print_data(textObj);
+}
+
+void bmp_font_bg_clear_print_data(struct BitmapFontBG *textObj) {
+    u32 i;
+
+    for (i = 0; i < (textObj->maxAllocatedTileRows * 16); i++) {
+        textObj->printedGlyphs[i] = 0;
+        textObj->printedGlyphCounts[i] = 0;
+    }
+}
+
+void bmp_font_bg_write_glyph(const u16 *texture, u16 *dest) {
+    dma3_set(texture, dest, 0x40, 0x10, 0x100);
+}
+
+u16 bmp_font_bg_print_glyph(struct BitmapFontBG *textObj, const char *string) {
+    const u16 *texture;
+    u16 *address;
+    u8 glyphByte0, glyphByte1;
+    u32 tileX, tileY, tileID;
+    u8 *printed;
+    u32 i, j;
+ 
+    // Fullwidth Whitespace
+    if ((string[0] == 0x81) && (string[1] == 0x40)) {
+        return -1;
+    }
+ 
+    // Halfwidth Whitespace
+    if ((string[0] == ' ') && (string[1] == ' ')) {
+        return -1;
+    }
+ 
+    glyphByte0 = (D_03000690 << 4) | string[0];
+    glyphByte1 = string[1];
+    tileX = 99;
+    printed = (u8 *)textObj->printedGlyphs;
+ 
+    for (i = 0; i < textObj->maxAllocatedTileRows; i++) {
+        for (j = 0; j < 16; j++) {
+            if ((glyphByte0 == printed[0]) && (glyphByte1 == printed[1])) {
+                textObj->printedGlyphCounts[j + (i * 16)]++;
+                return textObj->baseTileNum + (j * 2) + ((i * 16) * 2);
+            }
+            if ((printed[0] == 0) && (printed[1] == 0)) {
+                tileX = j;
+                tileY = i;
+            }
+            printed += 2;
+        }
+    }
+ 
+    // Out of Memory
+    if (tileX == 99) {
+        return -2;
+    }
+ 
+    tileID = textObj->baseTileNum + (tileX * 2) + ((tileY * 16) * 2);
+    address = (void *)(VRAMBase + (textObj->tilesetID * 0x4000) + (tileID * 0x20));
+    bmp_font_get_glyph(&textObj->fonts[D_03000690], string, &texture, NULL);
+    bmp_font_bg_write_glyph(texture, address);
+ 
+    i = tileX + (tileY * 16);
+    printed = (u8 *)&textObj->printedGlyphs[i];
+    printed[0] = glyphByte0;
+    printed[1] = glyphByte1;
+    textObj->printedGlyphCounts[i] = 1;
+ 
+    return tileID;
+}
+
+
+u8 bmp_font_bg_parse_hex_digit(char c) {
+    if ((c >= '0') && (c <= '9')) {
+        return c - '0';
+    }
+
+    if ((c >= 'a') && (c <= 'f')) {
+        return c - 'a' + 10;
+    }
+
+    if ((c >= 'A') && (c <= 'F')) {
+        return c - 'A' + 10;
+    }
+
+    return 0;
+}
+
+void bmp_font_bg_print_text(struct BitmapFontBG *textObj, u16 *bgMap, u32 mapWidth, const char *string, u32 palette) {
+    u16 tileNum;
+    u32 mapX;
+ 
+    D_03000690 = 0;
+    mapX = 0;
+ 
+    while (string[0] != '\0') {
+        switch (string[0]) {
+            case '\n':
+                bgMap += (mapWidth * 2);
+                string += 1;
+                mapX = 0;
+                break;
+ 
+            case '.':
+                palette = bmp_font_bg_parse_hex_digit(string[1]);
+                string += 2;
+                break;
+ 
+            case ':':
+                D_03000690 = bmp_font_bg_parse_hex_digit(string[1]);
+                string += 2;
+                break;
+ 
+            default:
+                tileNum = bmp_font_bg_print_glyph(textObj, string);
+ 
+                if (tileNum < 0x400) {
+                    u16 mapTile;
+ 
+                    mapTile = (palette << 12) | (tileNum & 0x3FF);
+                    bgMap[mapX] = mapTile;
+                    bgMap[mapWidth + mapX] = mapTile + 1;
+                }
+ 
+                string += 2;
+                mapX++;
+                break;
+        }
+    }
+}
+
+
+void bmp_font_bg_delete_printed_data(struct BitmapFontBG *textObj, const char *string) {
+    u8 glyphByte0, glyphByte1;
+    u8 *printed;
+    u32 fontStyle;
+    u32 i;
+
+    fontStyle = 0;
+
+    while (string[0] != '\0') {
+        switch (string[0]) {
+            case '\n':
+                string += 1;
+                break;
+
+            case '.':
+                string += 2;
+                break;
+
+            case ':':
+                fontStyle = bmp_font_bg_parse_hex_digit(string[1]);
+                string += 2;
+                break;
+
+            default:
+                glyphByte0 = (fontStyle << 4) | string[0];
+                glyphByte1 = string[1];
+                printed = (u8 *)textObj->printedGlyphs;
+
+                for (i = 0; i < (textObj->maxAllocatedTileRows * 16); i++) {
+                    if ((printed[0] == glyphByte0) && (printed[1] == glyphByte1)) {
+                        if (--textObj->printedGlyphCounts[i] == 0) {
+                            printed[0] = printed[1] = 0;
+                        }
+                        break;
+                    }
+                    printed += 2;
+                }
+                string += 2;
+                break;
+        }
+    }
+}
+
+struct BitmapFontBGPrinter *bmp_font_bg_init_printer(struct BitmapFontBGPrinter *inputs) {
+    struct BitmapFontBGPrinter *info;
+
+    info = mem_heap_alloc(sizeof(struct BitmapFontBGPrinter));
+    dma3_set(inputs, info, sizeof(struct BitmapFontBGPrinter), 0x20, 0x100);
+    info->fontStyle = 0;
+    info->currentMapX = 0;
+
+    return info;
+}
+
+u32 bmp_font_bg_update_printer(struct BitmapFontBGPrinter *info) {
+    const char *string;
+    u16 *bgMap;
+    u32 mapX, mapWidth, palette, tileNum;
+    u32 processLimit;
+ 
+    processLimit = info->processLimit;
+    D_03000690 = info->fontStyle;
+    bgMap = info->bgMap;
+    mapX = info->currentMapX;
+    mapWidth = info->bgMapWidth;
+    string = info->string;
+    palette = info->palette;
+ 
+    while (string[0] != '\0') {
+        switch (string[0]) {
+            case '\n': // Newline
+                bgMap += (mapWidth * 2);
+                string += 1;
+                mapX = 0;
+                break;
+ 
+            case '.': // Palette
+                palette = bmp_font_bg_parse_hex_digit(string[1]);
+                string += 2;
+                break;
+ 
+            case ':': // Font/Style
+                D_03000690 = bmp_font_bg_parse_hex_digit(string[1]);
+                string += 2;
+                break;
+ 
+            default:
+                tileNum = bmp_font_bg_print_glyph(info->textObj, string);
+ 
+                if (tileNum < 0x400) {
+                    u16 mapTile;
+ 
+                    mapTile = (palette << 12) | (tileNum & 0x3FF);
+                    bgMap[mapX] = mapTile;
+                    bgMap[mapWidth + mapX] = mapTile + 1;
+                }
+ 
+                string += 2;
+                mapX++;
+                processLimit--;
+ 
+                if (processLimit == 0) {
+                    info->fontStyle = D_03000690;
+                    info->bgMap = bgMap;
+                    info->currentMapX = mapX;
+                    info->string = string;
+                    info->palette = palette;
+                    return FALSE;
+                }
+                break;
+        }
+    }
+ 
+    return TRUE;
+}
+
+
+s32 start_bmp_font_bg_printer_task(u16 memID, struct BitmapFontBG *textObj, u16 *bgMapDest, u32 bgMapWidth, const char *string, u32 palette, u32 processLimit) {
+    struct BitmapFontBGPrinter inputs;
+
+    inputs.textObj = textObj;
+    inputs.bgMap = bgMapDest;
+    inputs.bgMapWidth = bgMapWidth;
+    inputs.string = string;
+    inputs.palette = palette;
+    inputs.processLimit = processLimit;
+
+    return start_new_task(memID, &D_083A49FC, &inputs, NULL, 0);
+}
+
+u32 bmp_font_bg_get_total_printable_chars(const char *string) {
+    u32 count = 0;
+
+    while (string[0] != '\0') {
+        if (string[0] < 0x80) {
+            switch (string[0]) {
+                case '\n':
+                    string += 1;
+                    break;
+
+                case '.':
+                    string += 2;
+                    break;
+
+                case ':':
+                    string += 2;
+                    break;
+
+                default:
+                    string += 2;
+                    count++;
+                    break;
+            }
+        } else {
+            while (string[0] >= 0x80) {
+                string += 2;
+                count++;
+            }
+        }
+    }
+
+    return count;
+}
+
+void import_scene_object(struct SpriteHandler *spriteHandler, struct BitmapFontOBJ *bitmapFontOBJ, const union SceneObject object, s16 *spritePool) {
+    u16 sprite;
+    s32 poolID;
+ 
+    poolID = -1;
+ 
+    switch (*object.type) {
+        // Sprite (Immediate XY)
+        case SCENE_OBJECT_TYPE_IMM_XY: {
+            struct SceneSprite *data;
+ 
+            data = object.sprite;
+            poolID = data->poolID;
+            sprite = sprite_create_w_attr(spriteHandler, data->anim,
+                data->unk8, data->x, data->y, data->z,
+                data->unk10, data->unk11, data->unk12, data->unk14);
+            break;
+        }
+ 
+        // Sprite (Vector XY)
+        case SCENE_OBJECT_TYPE_VEC_XY: {
+            struct SceneSpriteVecXY *data;
+ 
+            data = object.spriteVecXY;
+            poolID = data->poolID;
+            sprite = sprite_create_w_attr(spriteHandler, data->anim,
+                data->unk8, data->pos->x, data->pos->y, data->z,
+                data->unk12, data->unk13, data->unk14, data->unk18);
+            break;
+        }
+ 
+        // Static Text Object
+        case SCENE_OBJECT_TYPE_TEXT: {
+            struct PrintedTextAnim *textAnim;
+            struct SceneText *data;
+            const char *string;
+            u32 fontStyle;
+            u32 palette;
+ 
+            if (bitmapFontOBJ == NULL) {
+                break;
+            }
+ 
+            data = object.text;
+            poolID = data->poolID;
+ 
+            if ((s32)data->textTable < 0) {
+                string = *((char **)((u32)data->textTable & 0x7fffffff));
+            } else {
+                string = data->textTable[D_03003FE8];
+            }
+            fontStyle = data->fontStyle;
+            palette = data->palette;
+ 
+            switch (data->alignment) {
+                case 0:
+                    textAnim = bmp_font_obj_print_unaligned(bitmapFontOBJ, string, fontStyle, palette);
+                    break;
+                case 1:
+                    textAnim = bmp_font_obj_print_c(bitmapFontOBJ, string, fontStyle, palette);
+                    break;
+                case 2:
+                    textAnim = bmp_font_obj_print_l(bitmapFontOBJ, string, fontStyle, palette);
+                    break;
+                case 3:
+                    textAnim = bmp_font_obj_print_r(bitmapFontOBJ, string, fontStyle, palette);
+                    break;
+            }
+ 
+            if (data->wobbly == TRUE) {
+                struct WobblyPrintedTextAnim *wobblyAnim;
+ 
+                wobblyAnim = bmp_font_obj_print_wobbly(bitmapFontOBJ, textAnim, 4);
+                mem_heap_dealloc(textAnim);
+                textAnim = (struct PrintedTextAnim *)wobblyAnim;
+            }
+ 
+            sprite = sprite_create_w_attr(spriteHandler, textAnim->frames, 0, data->x, data->y, data->z, 1, 0, 0, data->unk14);
+ 
+            if (!data->display) {
+                sprite_set_visible(spriteHandler, sprite, FALSE);
+            }
+            break;
+        }
+    }
+ 
+    if ((spritePool != NULL) && (poolID >= 0)) {
+        spritePool[poolID] = sprite;
+    }
+}
+
+
+u32 import_all_scene_objects(struct SpriteHandler *spriteHandler, struct BitmapFontOBJ *bitmapFontOBJ, const union SceneObject *objects, s16 *spritePool) {
+    u32 count = 0;
+
+    if (objects->type != NULL) {
+        const union SceneObject *obj = objects;
+
+        while (obj->type != NULL) {
+            import_scene_object(spriteHandler, bitmapFontOBJ, *obj++, spritePool);
+            count++;
+        }
+    }
+
+    return count;
+}
+
+void set_scene_object_current_text_id(u32 textID) {
+    D_03003FE8 = textID;
+}
+
+struct SceneObjectRenderer *init_scene_object_importer(struct SceneObjectRenderer *inputs) {
+    struct SceneObjectRenderer *info;
+
+    info = mem_heap_alloc(sizeof(struct SceneObjectRenderer));
+    info->spriteHandler = inputs->spriteHandler;
+    info->bitmapFontOBJ = inputs->bitmapFontOBJ;
+    info->objects = inputs->objects;
+    info->spritePool = inputs->spritePool;
+
+    return info;
+}
+
+u32 update_scene_object_importer(struct SceneObjectRenderer *info) {
+    const union SceneObject *objects;
+    u32 type;
+
+    objects = info->objects;
+
+    while (objects->type != NULL) {
+        import_scene_object(info->spriteHandler, info->bitmapFontOBJ, *objects, info->spritePool);
+        type = *(objects++)->type;
+        info->objects = objects;
+
+        if (type == 2) {
+            if (objects->type == NULL) {
+                return TRUE;
+            } else {
+                return FALSE;
+            }
+        }
+    }
+
+    return TRUE;
+}
+
+s32 start_new_scene_object_importer(u16 memID, struct SpriteHandler *spriteHandler, struct BitmapFontOBJ *bitmapFontOBJ, const union SceneObject *objects, s16 *spritePool) {
+    struct SceneObjectRenderer inputs;
+
+    inputs.spriteHandler = spriteHandler;
+    inputs.bitmapFontOBJ = bitmapFontOBJ;
+    inputs.objects = objects;
+    inputs.spritePool = spritePool;
+
+    return start_new_task(memID, &D_083A4A0C, &inputs, NULL, 0);
+}
+
+void delete_all_scene_objects(struct SpriteHandler *spriteHandler, struct BitmapFontOBJ *bitmapFontOBJ, const union SceneObject *objects, s16 *spritePool) {
+    while (objects->type != NULL) {
+        switch (*objects->type) {
+            case SCENE_OBJECT_TYPE_IMM_XY: {
+                struct SceneSprite *data;
+ 
+                data = objects->sprite;
+                sprite_delete(spriteHandler, spritePool[data->poolID]);
+                break;
+            }
+ 
+            case SCENE_OBJECT_TYPE_VEC_XY: {
+                struct SceneSpriteVecXY *data;
+ 
+                data = objects->spriteVecXY;
+                sprite_delete(spriteHandler, spritePool[data->poolID]);
+                break;
+            }
+ 
+            case SCENE_OBJECT_TYPE_TEXT: {
+                struct SceneText *data;
+                s16 sprite;
+ 
+                if (bitmapFontOBJ == NULL) {
+                    break;
+                }
+ 
+                data = objects->text;
+                sprite = spritePool[data->poolID];
+                bmp_font_obj_delete_printed_anim(bitmapFontOBJ, (struct Animation *)sprite_get_data(spriteHandler, sprite, 7));
+                sprite_delete(spriteHandler, sprite);
+                break;
+            }
+        }
+        objects++;
+    }
+}
