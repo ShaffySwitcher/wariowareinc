@@ -47,7 +47,6 @@ struct GameplayStageInfo {
 
 struct GameplayData_struct_0 {
     u16 unk0;
-    u8 pad2[2];
     struct GameplayStageInfo* unk4;
     struct GameplayScriptCmd* unk8;
 };
@@ -199,9 +198,41 @@ struct GameplayScriptSelector {
     void** unk8;
 };
 
-enum GameplayCommand {
-    GP_CMD_PLAY_INTRO = 0x0,
+enum GameplayScriptOpcode {
+    GP_CMD_PLAY_INTRO        = 0x01,
+    GP_CMD_PLAY_MICROGAMES   = 0x02,
+    GP_CMD_UNK_03            = 0x03,
+    GP_CMD_UNK_04            = 0x04,
+    GP_CMD_STAGE_CLEAR       = 0x05,
+    GP_CMD_GAME_OVER         = 0x06,
+    GP_CMD_SET_DIFFICULTY    = 0x07,
+    GP_CMD_SET_SELECTOR_MODE = 0x08,
+    GP_CMD_SET_SELECTOR_LIST = 0x09,
+    GP_CMD_SET_SELECTOR_CAT  = 0x0A,
+    GP_CMD_SET_SELECTOR_IDX  = 0x0B,
+    GP_CMD_SET_TEMPO         = 0x0C,
+    GP_CMD_SET_MAX_TEMPO     = 0x0D,
+    GP_CMD_CALL              = 0x0E,
+    GP_CMD_RETURN            = 0x0F,
+    GP_CMD_RESULTS           = 0x10,
+    GP_CMD_LABEL             = 0x11,
+    GP_CMD_GOTO              = 0x12,
+    GP_CMD_END               = 0x13,
+    GP_CMD_SET_UNK270        = 0x14,
+    GP_CMD_SET_PITCH         = 0x15,
+    GP_CMD_UNK_16            = 0x16,
+    GP_CMD_GOTO_IF_BEATEN    = 0x17,
+    GP_CMD_SET_TEMPO_LIMIT   = 0x18,
+    GP_CMD_ADD_TEMPO         = 0x19,
+    GP_CMD_ADD_MAX_TEMPO     = 0x1A,
+    GP_CMD_SET_UNK7_1        = 0x1B,
+    GP_CMD_TEMPO_RAMP        = 0x1C,
+    GP_CMD_SET_UNK282        = 0x1D,
+    GP_CMD_PITCH_RAMP        = 0x1E,
+    GP_CMD_SET_PITCH_LIMIT   = 0x1F,
+    GP_CMD_ADD_PITCH         = 0x20,
 };
+
 
 // DATA
 extern s16 D_030035E0;

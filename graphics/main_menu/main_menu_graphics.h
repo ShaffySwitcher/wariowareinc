@@ -68,5 +68,17 @@ extern struct CompressedData D_0855AE5C;
 extern struct CompressedData D_0854D374;
 extern struct CompressedData D_08558F44;
 
+extern struct CompressedData D_0855D3F0;
+extern struct CompressedData D_0855FE64;
+extern struct CompressedData D_085626B8;
+extern struct CompressedData D_08564ED8;
+extern struct CompressedData D_08567724;
+extern struct CompressedData D_08569FC8;
+extern struct CompressedData D_0856C988;
+extern struct CompressedData D_0856F448;
+extern struct CompressedData D_08571AF0;
+
 extern Palette D_0831FE7C[];
 extern Palette D_0832007C[];
+
+extern void func_08012D7C();

@@ -1260,7 +1260,39 @@ void func_08013B88(void) {
 
 #include "asm/scenes/main_menu/asm_08013b94.s"
 
-#include "asm/scenes/main_menu/asm_08013c60.s"
+void func_08013C60(void) {
+    u32 id;
+    s16 score;
+    s16 x, y;
+
+    id = main_menu_get_selected_microgame_id();
+    if (save_is_microgame_unlocked(id)) {
+        score = save_get_highscore(id);
+        sprite_set_anim_cel(gSpriteHandler, gCurrentSceneSpritePool[30], 0);
+        if (score != 0) {
+            s16 hundreds, tens;
+            sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[27], D_083AB02C[score % 10], 0, 1, 0, 0);
+            tens = score / 10;
+            sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[28], D_083AB02C[tens % 10], 0, 1, 0, 0);
+            hundreds = tens / 10;
+            sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[29], D_083AB02C[hundreds % 10], 0, 1, 0, 0);
+        } else {
+            sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[27], &D_0831FD54, 0, 1, 0, 0);
+            sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[28], &D_0831FD54, 0, 1, 0, 0);
+            sprite_set_anim(gSpriteHandler, gCurrentSceneSpritePool[29], &D_0831FD54, 0, 1, 0, 0);
+        }
+        x = gMainMenuSelectionState.gridColumn * 48;
+        y = gMainMenuSelectionState.gridRow * 32;
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[27], x, y);
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[28], x - 5, y);
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[29], x - 10, y);
+        sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[30], x, y);
+        scene_show_sprite(27);
+        scene_show_sprite(28);
+        scene_show_sprite(29);
+        scene_show_sprite(30);
+    }
+}
 
 void func_08013E44(void) {
     scene_hide_sprite(27);
@@ -1445,9 +1477,53 @@ void func_080153E0(void) {
 
 #include "asm/scenes/main_menu/asm_080156d4.s"
 
-#include "asm/scenes/main_menu/asm_08015760.s"
+void func_08015760(void) {
+    struct Unk083AA0C4 *entry;
+    struct Vector2 *pos;
 
-#include "asm/scenes/main_menu/asm_080157c4.s"
+    scene_set_current_thread((s32)0);
+    entry = &D_083AA294[gMainMenu.unk1C4];
+    pos = entry->position;
+    sprite_set_x_y(gSpriteHandler, gCurrentSceneSpritePool[4], pos->x + 0x4E, pos->y + 6);
+    gMainMenu.unkDC_9 = 0;
+}
+
+void func_080157C4(void) {
+    s16 *cursor = &gMainMenu.unk1C4;
+    struct Unk083AA0C4 *entry = &D_083AA294[*cursor];
+    s32 sel;
+
+    sel = -1;
+    if (gPressedKeys & 0x40) sel = entry->unk4;
+    if (gPressedKeys & 0x80) sel = entry->unk5;
+    if (gPressedKeys & 0x20) sel = entry->unk6;
+    if (gPressedKeys & 0x10) sel = entry->unk7;
+
+    if (sel != -1 && (gSaveBuffer->stageFlags[sel].unlocked || sel <= 8)) {
+        *cursor = sel;
+        entry = &D_083AA294[sel];
+        main_menu_move_cursor_to(entry->position->x + 0x4E,
+                                 entry->position->y + 6,
+                                 func_08015760, 0);
+        play_sound(&s_BASIC_CURSOR_01_seqData);
+    } else if (gPressedKeys & A_BUTTON) {
+        if (save_is_stage_beaten(gMainMenu.unk1C4)) {
+            D_03003848 = gMainMenu.unk1C4;
+            D_03003634 = 1;
+            D_03003628 = D_083AA0C4[D_03003848].unk0;
+            gMainMenu.nextScene = 2;
+            set_pause_beatscript_scene(0);
+            gMainMenu.inputsEnabled = 0;
+            play_sound(&s_BASIC_BUTTON_A1_seqData);
+        } else {
+            play_sound(&s_BASIC_DAME_1_seqData);
+        }
+    } else if (gPressedKeys & B_BUTTON) {
+        main_menu_move_cursor_to(gMainMenu.unk1C6, gMainMenu.unk1C8, func_08015760, 0);
+        func_080156D4();
+        play_sound(&D_083FBBBC);
+    }
+}
 
 void main_menu_state_epilogue_select(void) {
     if (main_menu_can_accept_input()) {

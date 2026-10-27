@@ -1,5 +1,6 @@
 #include "global.h"
 #include "graphics.h"
+#include "language.h"
 #include "src/code_08006410.h"
 #include "src/code_08003a70.h"
 #include "src/palette.h"
@@ -1179,13 +1180,165 @@ struct Unk083AAD70 D_083AACE8[] = {
 };
 
 struct Unk083AAD70 *D_083AAD70[] = {
-    &D_083AACE8,
-    &D_083AA5A8,
-    &D_083AA690,
-    &D_083AA778,
-    &D_083AA860,
-    &D_083AA948,
-    &D_083AAA30,
-    &D_083AAB18,
-    &D_083AAC00,
+    D_083AACE8,
+    D_083AA5A8,
+    D_083AA690,
+    D_083AA778,
+    D_083AA860,
+    D_083AA948,
+    D_083AAA30,
+    D_083AAB18,
+    D_083AAC00,
 };
+
+struct GraphicsTable D_083AAD94[] = {
+    ADD_BG_TEXTURE(&D_0855D3F0, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AADB8[] = {
+    ADD_BG_TEXTURE(&D_0855FE64, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AADDC[] = {
+    ADD_BG_TEXTURE(&D_085626B8, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AAE00[] = {
+    ADD_BG_TEXTURE(&D_08564ED8, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AAE24[] = {
+    ADD_BG_TEXTURE(&D_08567724, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AAE48[] = {
+    ADD_BG_TEXTURE(&D_08569FC8, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AAE6C[] = {
+    ADD_BG_TEXTURE(&D_0856C988, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AAE90[] = {
+    ADD_BG_TEXTURE(&D_0856F448, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable D_083AAEB4[] = {
+    ADD_BG_TEXTURE(&D_08571AF0, 2),
+    ADD_CUSTOM_GFX_LOADER(func_08012D7C, NULL),
+    END_OF_GRAPHICS_TABLE
+};
+
+struct GraphicsTable *D_083AAED8[] = {
+    D_083AAEB4,
+    D_083AAD94,
+    D_083AADB8,
+    D_083AADDC,
+    D_083AAE00,
+    D_083AAE24,
+    D_083AAE48,
+    D_083AAE6C,
+    D_083AAE90,
+};
+
+extern char D_08106568[];
+extern char D_08106454[];
+extern char D_0810637C[];
+extern char D_081062A0[];
+extern char D_081061B4[];
+extern char D_081060B0[];
+extern char D_08105FD0[];
+extern char D_08105EC8[];
+extern char D_08105DD0[];
+
+char *D_083AAEFC[] = {
+    D_08106568,
+    D_08106454,
+    D_0810637C,
+    D_081062A0,
+    D_081061B4,
+    D_081060B0,
+    D_08105FD0,
+    D_08105EC8,
+    D_08105DD0
+};
+
+char **D_083AAF20[LANGUAGE_COUNT] = {
+    NULL,
+    D_083AAEFC,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+};
+
+extern char D_081066E4[];
+extern char D_0810667C[];
+extern char D_08106674[];
+extern char D_0810666C[];
+extern char D_08106664[];
+extern char D_0810665C[];
+
+char *D_083AAF38[] = {
+    D_081066E4,
+    D_0810667C,
+    D_08106674,
+    D_0810666C,
+    D_08106664,
+    D_0810665C
+};
+
+struct WindowDef D_083AAF50 = {
+    0x12, 0x10, { 0, 0 }, { 0xAD, 0xAE, 0xAF, 0xCD, 0xD0CE, 0xCF, 0xED, 0xEE, 0xEF, 0x00 },
+    D_0832027C, NULL
+};
+
+#include "src/scenes/gameplay.h"
+
+struct GameplayStruct6c D_083AAF70 = { 1, 0, 0, &D_03000E60 };
+
+struct GameplayScriptCmd D_083AAF78[] = {
+    { GP_CMD_SET_DIFFICULTY, 0 },
+    { GP_CMD_PLAY_MICROGAMES, (u32)&D_083AAF70 },
+    { GP_CMD_SET_DIFFICULTY, 1 },
+    { GP_CMD_PLAY_MICROGAMES, (u32)&D_083AAF70 },
+    { GP_CMD_SET_DIFFICULTY, 2 },
+    { GP_CMD_PLAY_MICROGAMES, (u32)&D_083AAF70 },
+    { GP_CMD_RETURN, 0 },
+};
+
+struct GameplayScriptCmd D_083AAFB0[] = {
+    { GP_CMD_SET_TEMPO_LIMIT, 0x1F4 },  // 083AAFB0
+    { GP_CMD_SET_PITCH_LIMIT, 0x1800 },  // 083AAFB8
+    { GP_CMD_SET_TEMPO, 0x8C },  // 083AAFC0
+    { GP_CMD_SET_MAX_TEMPO, 0x8C },  // 083AAFC8
+    { GP_CMD_SET_PITCH, 0 },  // 083AAFD0
+    { GP_CMD_LABEL, 0xA },  // 083AAFD8
+    { GP_CMD_CALL, (u32)&D_083AAF78 },  // 083AAFE0
+    { GP_CMD_ADD_TEMPO, 0x19 },  // 083AAFE8
+    { GP_CMD_ADD_MAX_TEMPO, 0x19 },  // 083AAFF0
+    { GP_CMD_ADD_PITCH, 0x100 },  // 083AAFF8
+    { GP_CMD_GOTO, 0xA },  // 083AB000
+    { GP_CMD_LABEL, 0x8000 },  // 083AB008
+    { GP_CMD_LABEL, 0x8001 },  // 083AB010
+    { GP_CMD_END, 0 },  // 083AB018
+};
+
+extern struct GameplayStageInfo *D_083C31D8;
+struct GameplayData_struct_0 D_083AB020 = { 0x8C, &D_083C31D8, &D_083AAFB0 };

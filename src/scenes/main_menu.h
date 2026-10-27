@@ -126,8 +126,10 @@ struct MainMenuSceneData {
     u16 unk1BA;
     u8 pad1BC[4];
     u32 unk1C0;
-    u16 unk1C4;
-    u8 unk1C6[10];
+    s16 unk1C4;
+    s16 unk1C6;
+    s16 unk1C8;
+    u8  pad1CA[6];
     u16 unk1D0;
     u8 pad1D2[0x2];
     s16* unk1D4;
@@ -221,6 +223,9 @@ extern struct Vector2 D_083AA560;
 extern struct Vector2 D_083AA564;
 
 extern u16 D_083AA568[32];
+
+extern struct Animation *D_083AB02C[];
+extern struct Animation D_0831FD54;
 
 extern struct MainMenuSelectionState gMainMenuSelectionState;
 
