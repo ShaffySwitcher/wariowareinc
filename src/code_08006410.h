@@ -17,7 +17,7 @@ struct WindowDef {
     u8 width;
     u8 height;
     u8 pad2[2];
-    u8 styleSrc[0x14];
+    u16 styleSrc[10];
     const void *styleArg;
     const struct WindowText *texts;
 };

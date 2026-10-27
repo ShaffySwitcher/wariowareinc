@@ -776,7 +776,7 @@ void func_080121D0(void)
 
     dma3_fill(-1, BG_TILESET_BASE(0x3000), 0xA80, 0x20, 0x100);
 
-    gMainMenu.unk78 = window_create((u16)get_current_mem_id(), gMainMenu.unk0, gMainMenu.unkD0,
+    gMainMenu.unk78 = window_create(get_current_mem_id(), gMainMenu.unk0, gMainMenu.unkD0,
         0x10, 1, &D_083AA530, &gMainMenu.unk7C, 0x10, 1);
 
     window_set_callbacks(gMainMenu.unk78, func_0801216C, 0, func_080121B8, 0);
@@ -785,13 +785,34 @@ void func_080121D0(void)
 void func_08012274(void) {
 }
 
-#include "asm/scenes/main_menu/asm_08012278.s"
+void func_08012278(struct Bitmap *dst, s32 dx, s32 dy) {
+    u32 stage = gMainMenuSelectionState.stage;
+    struct Vector2 *src = &D_083AA550[D_083A4B58[stage]->unk2];
+
+    if (stage <= 10 && !save_is_stage_beaten(stage)) {
+        src = &D_083AA560;
+    }
+
+    if (!save_is_stage_unlocked(stage)) {
+        src = &D_083AA564;
+    }
+
+    bitmap_blit(&gMainMenu.unk7C, src->x, src->y, 12, 5, dst, dx, dy);
+}
 
 #include "asm/scenes/main_menu/asm_080122fc.s"
 
 #include "asm/scenes/main_menu/asm_08012350.s"
 
-#include "asm/scenes/main_menu/asm_080123f4.s"
+void func_080123F4(Palette pal) {
+    u32 step = gMainMenu.unk88_2 / 2;
+
+    if (step > 32) {
+        step = 32;
+    }
+
+    gfx_palette_blend_toward_color(0, D_083AA568, 32, step);
+}
 
 void func_08012420(u32 stage) {
     struct Animation *textAnim;
@@ -1023,9 +1044,48 @@ void main_menu_state_games(void) {
 
 #include "asm/scenes/main_menu/asm_08012d7c.s"
 
-#include "asm/scenes/main_menu/asm_08012dcc.s"
+void func_08012DCC(void) {
+    u32 i;
 
-#include "asm/scenes/main_menu/asm_08012e04.s"
+    for (i = 0; i < 30; i++) {
+        sprite_set_visible(gSpriteHandler, gMainMenu.unk1D4[i], FALSE);
+    }
+}
+
+void func_08012E04(void) {
+    s16 row;
+    s16 col;
+    u32 spriteIdx;
+    struct Unk083AAD70 *entry;
+    u32 id;
+
+    func_08012DCC();
+
+    spriteIdx = 0;
+    col = 0;
+    row = 0;
+
+    for (entry = D_083AAD70[gMainMenuSelectionState.stage]; entry->unk0 != 0xFF; entry++) {
+        id = entry->unk0;
+
+        if (func_08000700(id)) {
+            s16 sprite = gMainMenu.unk1D4[spriteIdx];
+            sprite_set_x_y(gSpriteHandler, sprite, col * 48, row * 32);
+            sprite_set_visible(gSpriteHandler, sprite, TRUE);
+            spriteIdx++;
+        }
+
+        row++;
+        if (row > 3) {
+            row = 0;
+            col++;
+        }
+
+        if (id > 0xD6) {
+            break;
+        }
+    }
+}
 
 #include "asm/scenes/main_menu/asm_08012ec4.s"
 

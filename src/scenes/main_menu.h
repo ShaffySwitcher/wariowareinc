@@ -174,7 +174,8 @@ struct Unk03000E60 {
 
 struct Unk083AAD70 {
     u8 unk0;
-    u8 pad1[7];
+    u16 unk2;
+    u16 unk4;
 };
 
 // DATA
@@ -192,7 +193,7 @@ extern struct Animation* D_083A9CD4[];
 extern struct Vector2* D_083A9CE0[];
 extern struct Unk083AA0C4 D_083AA0C4[];
 extern struct Unk083AA0C4 D_083AA294[];
-extern void* D_083AA530;
+extern struct WindowDef D_083AA530;
 extern struct Unk083AAD70* D_083AAD70[];
 extern struct GameplayData_struct_0 D_083AB020;
 extern struct Vector2 D_083AB2CC[2];
@@ -213,7 +214,13 @@ extern BgMapAnim *D_083A9FA4[];
 extern BgMapAnim D_083A9F90[]; 
 
 extern u8 **D_083A404C[]; 
-extern u8 D_08105DCC[];       
+extern u8 D_08105DCC[];      
+
+extern struct Vector2 D_083AA550[];
+extern struct Vector2 D_083AA560;
+extern struct Vector2 D_083AA564;
+
+extern u16 D_083AA568[32];
 
 extern struct MainMenuSelectionState gMainMenuSelectionState;
 
@@ -255,7 +262,6 @@ extern void func_08013E44(void);
 extern void func_08013B88(void);
 extern void func_08013AE0(void);
 extern void func_08012658(void);
-extern u32 func_080123F4();
 
 // EXTERNS
 extern s32 schedule_function_call(u16 memID, void *function, s32 param, u32 delay);

@@ -31,7 +31,7 @@ struct CompressedGFX unknown_graphics_0859448c_compressedgfx[] = {
 	/* Size */		0x1,
 	/* Count */		0x1,
 	/* Window 1 */	unknown_graphics_0859448c_window1,
-	/* Window 2 */	(u32 *)0x08594454,
+	/* Window 2 */	unknown_graphics_0859448c_compressedgfx,
 };
 
 // [D_08594464] unknown_graphics_0859448c RLE Data
