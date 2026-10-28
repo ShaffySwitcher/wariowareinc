@@ -101,12 +101,17 @@ struct GameplayData {
     u16 unk17a; // 0x17A size:0x2
     u16 currentScore; // 0x17C size:0x2
     u16 previousScore; // 0x17E size:0x2
-    u32 unk180; // 0x180 size:0x4
-    u8 pad184[4]; // 0x184 size:0x4
+    struct Animation *unk180; // 0x180 size:0x4
+    s16 unk184; // 0x184 size:0x2
+    s16 unk186; // 0x186 size:0x2
     s16 unk188; // 0x188 size:0x2
-    u8 pad18a[11]; // 0x18A size:0xB
+    s16 unk18A;
+    s16 unk18C[4];
+    s8 unk194;
     u8 unk195; // 0x195
-    u8 pad196[0x58]; // 0x196 size:0x58
+    u8 pad196[0x2]; // 0x196 size:0x58
+    struct Animation unk198[3];
+    u8 pad1b0[0x3e];
     s16 unk1ee; // 0x1EE size:0x2
     s32 unk1f0; // 0x1F0 size:0x4
     struct BgAnimator unk1f4; // 0x1F4 size:0x4
