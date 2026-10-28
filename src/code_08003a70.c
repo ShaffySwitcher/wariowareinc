@@ -199,7 +199,7 @@ s32 rle_decompress_bg(struct CompressedData *src, u16 *dest) {
     const u16 *temp_r5;
     s32 retval;
 
-    temp_r1 = func_08007F20(src);
+    temp_r1 = rle_cache_lookup(src);
     src = temp_r1;
     temp_r5 = temp_r1->data;
 

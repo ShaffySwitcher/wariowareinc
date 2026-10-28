@@ -280,7 +280,7 @@ extern struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd*, s32);
 extern u32 gameplay_run_script(void);
 
 // EXTERNS
-extern void func_08007EAC(void);
+extern void rle_cache_free_all(void);
 extern u32 func_0800A098(void);
 extern void func_0800A200(u32);
 extern void func_0800A270(void);

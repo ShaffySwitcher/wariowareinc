@@ -29,7 +29,7 @@ extern void task_pool_init();
 extern void rle_decompressor_init();
 extern void hdma_reset();
 extern void init_sprite_handler();
-extern void func_08007EA0();
+extern void rle_cache_init();
 extern void get_current_language();
 extern void set_scene_object_current_text_id();
 extern void main_menu_reset_selection_state();

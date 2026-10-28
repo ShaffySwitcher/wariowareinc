@@ -3,7 +3,7 @@ asm(".syntax unified \n\
 thumb_func_start func_08007FA4 \n\
 /* 08007FA4 */ PUSH {R4, LR} \n\
 /* 08007FA6 */ ADDS R4, R0, #0 \n\
-/* 08007FA8 */ BL func_08007F48 \n\
+/* 08007FA8 */ BL rle_cache_add \n\
 /* 08007FAC */ ADDS R1, R0, #0 \n\
 /* 08007FAE */ CMP R1, #0 \n\
 /* 08007FB0 */ BEQ _08007FBA \n\

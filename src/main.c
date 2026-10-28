@@ -11,7 +11,7 @@ void func_080001D4(void) {
     rle_decompressor_init();
     hdma_reset();
     init_sprite_handler();
-    func_08007EA0();
+    rle_cache_init();
     load_default_save();
     if (validate_save_main() != 0) {
         if (validate_save_backup() != 0) {

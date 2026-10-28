@@ -1,9 +1,16 @@
 #include "code_08006f84.h"
+#include "lib_sprite.h"
+#include "memory_heap.h"
 
 // "Can be better split": yes.
 
 asm(".include \"include/gba.inc\"");
-#include "asm/code_08006f84/asm_08006f84.s"
+
+void get_sprite_xy(s16 sprite, s16 *xReq, s16 *yReq) {
+    *xReq = sprite_get_data(gSpriteHandler, sprite, 4);
+    *yReq = sprite_get_data(gSpriteHandler, sprite, 5);
+}
+
 
 #include "asm/code_08006f84/asm_08006fc0.s"
 
@@ -87,15 +94,79 @@ asm(".include \"include/gba.inc\"");
 
 #include "asm/code_08006f84/asm_08007e8c.s"
 
-#include "asm/code_08006f84/asm_08007ea0.s"
+/* NODE FUNCTIONS */
 
-#include "asm/code_08006f84/asm_08007eac.s"
+void rle_cache_init(void) {
+    D_0300485C = NULL;
+}
 
-#include "asm/code_08006f84/asm_08007edc.s"
+void rle_cache_free_all(void) {
+    struct RleCacheNode *node = D_0300485C;
 
-#include "asm/code_08006f84/asm_08007f20.s"
+    while (node != NULL) {
+        struct RleCacheNode *next = node->next;
+        mem_heap_dealloc(node->cache.data);
+        mem_heap_dealloc(node);
+        node = next;
+    }
+    D_0300485C = NULL;
+}
 
-#include "asm/code_08006f84/asm_08007f48.s"
+void rle_cache_remove(struct CompressedData *src) {
+    struct RleCacheNode *node = D_0300485C;
+    struct RleCacheNode *prev;
+
+    if (node != NULL) {
+        do {
+            if (node->src == src) {
+                if (node == D_0300485C)
+                    D_0300485C = node->next;
+                else
+                    prev->next = node->next;
+                mem_heap_dealloc(node->cache.data);
+                mem_heap_dealloc(node);
+                break;
+            }
+            prev = node;
+            node = node->next;
+        } while (node != NULL);
+    }
+}
+
+struct CompressedData *rle_cache_lookup(struct CompressedData *src) {
+    struct RleCacheNode *node = D_0300485C;
+
+    while (node != NULL) {
+        if (node->src == src)
+            return &node->cache;
+        node = node->next;
+    }
+    return src;
+}
+
+struct RleCacheNode *rle_cache_add(struct CompressedData *src) {
+    struct RleCacheNode *node;
+
+    if (src->doubleCompressed == 0)
+        return NULL;
+
+    for (node = D_0300485C; node != NULL; node = node->next) {
+        if (node->src == src)
+            return NULL;
+    }
+
+    node = mem_heap_alloc(sizeof(struct RleCacheNode));
+    node->src = src;
+    node->next = D_0300485C;
+    D_0300485C = node;
+
+    node->cache.data = mem_heap_alloc(((struct CompressedGFX *)src->data)->size * 2);
+    node->cache.rleData = src->rleData;
+    node->cache.rleSize = src->rleSize;
+    node->cache.rleOffset = src->rleOffset;
+    node->cache.doubleCompressed = 0;
+    return node;
+}
 
 #include "asm/code_08006f84/asm_08007fa4.s"
 

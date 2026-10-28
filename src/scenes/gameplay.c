@@ -111,7 +111,7 @@ void gameplay_stop_scene(void) {
     mem_heap_dealloc(D_03006524);
     mem_heap_dealloc(D_03006528);
     mem_heap_dealloc(D_0300652C);
-    func_08007EAC();
+    rle_cache_free_all();
 }
 
 u32 gameplay_update_scene(void) {

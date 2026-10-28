@@ -5,8 +5,6 @@
 #include "src/affine_param.h"
 #include "lib_sprite.h"
 
-asm(".include \"include/gba.inc\""); // TO-DO: remove this
-
 void window_dec_pending_prints(u16 *counter) {
     (*counter)--;
 }

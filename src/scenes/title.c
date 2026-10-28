@@ -83,7 +83,7 @@ u32 title_scene_inputs_enabled(void) {
 }
 
 void title_scene_stop(void) {
-    func_08007EAC();
+    rle_cache_free_all();
     hdma_disable();
 }
 

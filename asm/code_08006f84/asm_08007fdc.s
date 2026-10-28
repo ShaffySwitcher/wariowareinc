@@ -14,7 +14,7 @@ _08007FE8: \n\
 /* 08007FEE */ CMP R4, #0 \n\
 /* 08007FF0 */ BEQ _08008018 \n\
 /* 08007FF2 */ ADDS R0, R4, #0 \n\
-/* 08007FF4 */ BL func_08007F48 \n\
+/* 08007FF4 */ BL rle_cache_add \n\
 /* 08007FF8 */ ADDS R1, R0, #0 \n\
 /* 08007FFA */ CMP R1, #0 \n\
 /* 08007FFC */ BEQ _08007FE8 \n\

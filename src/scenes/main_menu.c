@@ -390,7 +390,7 @@ void main_menu_set_dimmed(u32 arg0) {
 }
 
 void main_menu_scene_stop(void) {
-    func_08007EAC();
+    rle_cache_free_all();
     hdma_disable();
 }
 
