@@ -14,8 +14,7 @@ struct SaveStageFlags {
     u8 unlocked : 1;
     u8 unk0_3 : 6;
     u8 pad1;
-    u16 unk2[2];
-    u8 pad[2];
+    u16 unk2[3];
 };
 
 struct SaveBuffer {
@@ -59,7 +58,7 @@ extern u32 save_is_microgame_unlocked(u32 id);
 extern u32 save_unlock_microgame(u32 id);
 extern u32 func_08000700(u32 id);
 extern u32 func_08000728(u32 id);
-extern u16 save_get_highscore(u32 id);
+extern u32 save_get_highscore(u32 id);
 extern void func_0800075C(u32 arg0);
 extern void func_08000778(u32 bit);
 extern void func_0800079C(u32 bit);

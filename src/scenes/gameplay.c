@@ -60,14 +60,14 @@ void gameplay_init_scene(void) {
     gGameplayData.maxLives = MAX_LIVES;
     dma3_set(D_03003BBC[0]->unk10, &gGameplayData.unk22c, 0x10, 0x10, 0x100);
     gGameplayData.unk0 = D_03003628;
-    gGameplayData.unk20 = D_03003628->unk8;
-    gGameplayData.unk6_3 = 0;
+    gGameplayData.unk20 = D_03003628->script;
+    gGameplayData.callStackDepth = 0;
     gGameplayData.unk1f4.active = FALSE;
     gGameplayData.unk1f4.copiedBG = mem_heap_alloc(0x8000);
     gGameplayData.unk188 = -1;
     gGameplayData.pauseAvailable = FALSE;
-    gGameplayData.isPaused = 0;
-    gGameplayData.unk1ee = -1;
+    gGameplayData.isPaused = FALSE;
+    gGameplayData.pauseMenuSprite = -1;
     gGameplayData.unk7_4 = 1;
     gGameplayData.unk288 = mem_heap_alloc(0x200);
     gGameplayData.unk28c = mem_heap_alloc(0x200);
@@ -151,11 +151,11 @@ u32 gameplay_update_scene(void) {
             u8 pauseAvailable = gGameplayData.pauseAvailable;
 
             if (gPressedKeys & START_BUTTON) {
-                if (pauseAvailable != 0) {
-                    gGameplayData.isPaused = 1;
+                if (pauseAvailable) {
+                    gGameplayData.isPaused = TRUE;
                     gGameplayData.pauseSelection = 0;
-                    sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, language * 2);
-                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 1);
+                    sprite_set_anim_cel(gSpriteHandler, gGameplayData.pauseMenuSprite, language * 2);
+                    sprite_set_visible(gSpriteHandler, gGameplayData.pauseMenuSprite, 1);
                     func_08002024(1);
                     sprite_handler_set_global_pause(gSpriteHandler, TRUE);
                     bg_anim_set_pause(&gGameplayData.unk1f4, 1);
@@ -184,11 +184,11 @@ u32 gameplay_update_scene(void) {
                     gGameplayData.pauseSelection = 0;
                 }
                 if (gGameplayData.pauseSelection == 0) {
-                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, FALSE);
+                    sprite_set_visible(gSpriteHandler, gGameplayData.pauseMenuSprite, FALSE);
                     gGameplayData.currentState = GAMEPLAY_STATE_RESUMING;
                     play_sound(&s_BASIC_PAUSE_OFF_seqData);
                 } else {
-                    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, FALSE);
+                    sprite_set_visible(gSpriteHandler, gGameplayData.pauseMenuSprite, FALSE);
                     gfx_fade_out_start(0x20, 0);
                     stop_all_soundplayers();
                     play_sound(&s_BASIC_PAUSE_OFF_seqData);
@@ -196,7 +196,7 @@ u32 gameplay_update_scene(void) {
                 }
             } else if (gPressedKeys & (DPAD_LEFT | DPAD_RIGHT)) {
                 gGameplayData.pauseSelection ^= 1;
-                sprite_set_anim_cel(gSpriteHandler, gGameplayData.unk1ee, gGameplayData.pauseSelection + (language * 2));
+                sprite_set_anim_cel(gSpriteHandler, gGameplayData.pauseMenuSprite, gGameplayData.pauseSelection + (language * 2));
             }
             break;
         case GAMEPLAY_STATE_RESUMING:
@@ -279,11 +279,95 @@ void func_08008940(void) {
     hdma_start();
 }
 
-#include "asm/scenes/gameplay/asm_0800894c.s"
+void func_0800894C(struct MicrogameSequence* sequence, u32 flag, u32 retryOnFail, struct GameplayStruct6c_4* entries) {
+    sequence->count = 0;
+    sequence->unk0_9 = flag;
+    sequence->retryOnFail = retryOnFail;
+    sequence->entries = entries;
 
-#include "asm/scenes/gameplay/asm_0800898c.s"
+    entries->unk0.difficulty = 0xFF;
+    entries->unk0.microgameID = 0;
+    entries->unk4 = NULL;
+}
 
-#include "asm/scenes/gameplay/asm_080089d8.s"
+void func_0800898C(struct MicrogameSequence* sequence, u32 difficulty, u32 microgameID, void* data) {
+    struct GameplayStruct6c_4* entry = sequence->entries;
+
+    while (entry->unk0.difficulty != 0xFF) {
+        entry++;
+    }
+
+    entry->unk0.difficulty = difficulty;
+    entry->unk0.microgameID = microgameID;
+    entry->unk4 = data;
+
+    entry++;
+    entry->unk0.difficulty = 0xFF;
+    entry->unk0.microgameID = 0;
+    entry->unk4 = NULL;
+
+    sequence->count++;
+}
+
+extern u8 D_03003630;
+
+u32 func_080089D8(u32 id, u32 score) {
+    struct Unk083A4B58 *info = D_083A4B58[id];
+    u16 *scores;
+    u32 i;
+
+    if (id == 99) {
+        u32 idx = D_03003630;
+
+        if (save_get_highscore(idx) >= score) {
+            return 3;
+        }
+        gSaveBuffer->highScores[idx] = score;
+        if (score >= gMicrogameTable[idx].targetScore) {
+            func_08000728(idx);
+        }
+        return 0;
+    }
+
+    if (id > 0x1B) {
+        return 3;
+    }
+
+    scores = gSaveBuffer->stageFlags[id].unk2;
+
+    switch (info->unk2) {
+    case 1:
+        for (i = 0; i < 3; i++) {
+            if (scores[i] < score) {
+                u32 j;
+                for (j = 2; j > i; j--) {
+                    scores[j] = scores[j - 1];
+                }
+                scores[i] = score;
+                return i;
+            }
+        }
+        break;
+    case 2: {
+        u32 cur;
+        u16 hi;
+    
+        if (score > 99999999) {
+            score = 99999999;
+        }
+        cur = scores[0] | (scores[1] << 16);
+        if (cur >= score) {
+            break;
+        }
+        hi = score >> 16;
+        scores[0] = score;
+        scores[1] = hi;
+        return 0;
+    }
+    }
+
+    return 3;
+}
 
 u32 func_08008AA4(u32 arg0) {
     struct Unk083A4B58 *entry = D_083A4B58[arg0];
@@ -308,13 +392,13 @@ u32 func_08008AA4(u32 arg0) {
 }
 
 void func_08008AE8(struct GameplayScriptCmd* arg0) {
-    gGameplayData.unk2c[gGameplayData.unk6_3] = arg0;
-    gGameplayData.unk6_3++;
+    gGameplayData.callStack[gGameplayData.callStackDepth] = arg0;
+    gGameplayData.callStackDepth++;
 }
 
 struct GameplayScriptCmd* func_08008B18(void) {
-    gGameplayData.unk6_3--;
-    return gGameplayData.unk2c[gGameplayData.unk6_3];
+    gGameplayData.callStackDepth--;
+    return gGameplayData.callStack[gGameplayData.callStackDepth];
 }
 
 #include "asm/scenes/gameplay/asm_08008b50.s"
@@ -326,8 +410,8 @@ void gameplay_stage_init(void) {
     struct GameplayStageInfo* unk4 = unk0->unk4;
 
     gBeatscriptScene.musicBaseBPM = 140;
-    gGameplayData.maxTempo = unk0->unk0;
-    set_beatscript_tempo(unk0->unk0);
+    gGameplayData.maxTempo = unk0->baseTempo;
+    set_beatscript_tempo(unk0->baseTempo);
     gGameplayData.tempoLimit = 300;
     gGameplayData.pitchLimit = 0xC00;
     gGameplayData.difficultyOffset = 0;
@@ -349,8 +433,8 @@ void gameplay_stage_init(void) {
     gGameplayData.currentScore = 0;
     gGameplayData.previousScore = 0;
     scene_set_current_thread(0);
-    if (unk4->unk0 != 0) {
-        unk4->unk0(D_030049F0);
+    if (unk4->initCallback != 0) {
+        unk4->initCallback(D_030049F0);
     }
     gGameplayData.currentLives = gGameplayData.maxLives;
     gGameplayData.unk6_7 = 0;
@@ -380,7 +464,7 @@ void func_08008DF4(void) {
 
 void gameplay_select_next_microgame(void) {
     struct GameplayStageInfo *stage;
-    struct GameplayStruct6c *scriptTarget;
+    struct MicrogameSequence *sequence;
     struct GameplayStruct6c_4 *entry;
     struct GameplayScriptSelectorList *selectors;
     const struct SubScene *args[3];
@@ -405,20 +489,20 @@ void gameplay_select_next_microgame(void) {
         argsCursor -= sizeof(args[0]);
     } while ((s32)argsCursor >= (s32)&args[0]);
 
-    scriptTarget = gGameplayData.unk6c;
-    progress = gGameplayData.unk70;
+    sequence = gGameplayData.unk6c;
+    progress = gGameplayData.sequenceIndex;
     minTempo = gGameplayData.minTempo;
     maxTempo = gGameplayData.maxTempo;
 
-    if (scriptTarget->unk0_1 > 1) {
-        s32 span = scriptTarget->unk0_1 - 1;
+    if (sequence->count > 1) {
+        s32 span = sequence->count - 1;
         s32 delta = maxTempo - minTempo;
         tempo = minTempo + (delta * (progress * progress)) / (span * span);
     } else {
         tempo = minTempo;
     }
 
-    entry = &scriptTarget->unk4[gGameplayData.unk71[progress]];
+    entry = &sequence->entries[gGameplayData.sequenceOrder[progress]];
     gGameplayData.currentDifficulty = entry->unk0.difficulty;
 
     gameID = entry->unk0.microgameID;
@@ -556,8 +640,8 @@ struct GameplayScriptCmd* func_080091B0(struct GameplayScriptCmd* script, s32 ta
 u32 gameplay_run_script(void) {
     struct GameplayStageInfo *stage;
     struct GameplayScriptCmd *cmd;
-    struct GameplayScriptState *scriptState;
-    struct GameplayStruct6c *scriptTarget;
+    struct BeatscriptThread *scriptState;
+    struct MicrogameSequence *sequence;
     struct SubScene* args[3];
     union FreeType value;
     u32 state;
@@ -569,13 +653,12 @@ u32 gameplay_run_script(void) {
         value.u32++;
     }
  
-    scriptTarget = gGameplayData.unk6c;
- 
+    sequence = gGameplayData.unk6c;
  
     scriptState = &D_030048B8;
     state = gGameplayData.currentOpcode;
  
-    if ((scriptState->unk0 & 1) != 0) {
+    if (scriptState->active) {
         u32 canStop = FALSE;
  
         if (state == GP_CMD_PLAY_INTRO) {
@@ -596,8 +679,8 @@ u32 gameplay_run_script(void) {
                     if (gBeatscriptScene.musicPlayer != 0) {
                         stop_soundplayer(gBeatscriptScene.musicPlayer);
                     }
-                    scriptState->unk8 = D_083A4BE4;
-                    scriptState->unkC = 1;
+                    scriptState->currentCmd = D_083A4BE4;
+                    scriptState->timeUntilNext = 1;
                     set_pause_beatscript_scene(FALSE);
                     gGameplayData.unk6_7 = TRUE;
                     func_0800CE6C();
@@ -631,12 +714,12 @@ u32 gameplay_run_script(void) {
  
                 value.u32 = (gGameplayData.unk23c == 0 ? 0x8000 : 0x8001);
  
-                gGameplayData.unk20 = func_080091B0(gGameplayData.unk0->unk8, value.u32 | 0x80000000);
+                gGameplayData.unk20 = func_080091B0(gGameplayData.unk0->script, value.u32 | 0x80000000);
                 break;
  
             case GP_CMD_PLAY_MICROGAMES:
                 func_08008DF4();
-                if (gGameplayData.unk178 == 1) {
+                if (gGameplayData.microgameFailed == 1) {
                     gGameplayData.currentLives--;
                     if (gGameplayData.currentLives == 0) {
                         gGameplayData.gameOver = TRUE;
@@ -648,7 +731,7 @@ u32 gameplay_run_script(void) {
                 if (gGameplayData.gameOver) {
                     gGameplayData.currentOpcode = GP_CMD_GAME_OVER;
                     func_0800A200(0);
-                    func_0800CC9C(gGameplayData.unk0->unk0, 0x60);
+                    func_0800CC9C(gGameplayData.unk0->baseTempo, 0x60);
                     func_0800CD94(0, 0x60);
                     args[0] = stage->unk2C;
                     args[1] = NULL;
@@ -658,8 +741,8 @@ u32 gameplay_run_script(void) {
  
                 if (gGameplayData.unk172 != 6) {
                     gGameplayData.previousScore = gGameplayData.currentScore;
-                    if (gGameplayData.unk178 == 0 || scriptTarget->unk0_10 == 0) {
-                        gGameplayData.unk70++;
+                    if (!gGameplayData.microgameFailed || !sequence->retryOnFail) {
+                        gGameplayData.sequenceIndex++;
                         gGameplayData.currentScore++;
                         if (gGameplayData.currentScore > MAX_SCORE) {
                             gGameplayData.currentScore = MAX_SCORE;
@@ -667,11 +750,11 @@ u32 gameplay_run_script(void) {
                         gGameplayData.unk221++;
                     }
                 } else {
-                    gGameplayData.unk70++;
+                    gGameplayData.sequenceIndex++;
                     gGameplayData.unk221++;
                 }
  
-                if (gGameplayData.unk70 < scriptTarget->unk0_1) {
+                if (gGameplayData.sequenceIndex < sequence->count) {
                     gameplay_select_next_microgame();
                     return 0;
                 }
@@ -719,7 +802,7 @@ u32 gameplay_run_script(void) {
  
             case GP_CMD_PLAY_MICROGAMES:
                 gGameplayData.gameOver = FALSE;
-                gGameplayData.unk70 = 0;
+                gGameplayData.sequenceIndex = 0;
                 gGameplayData.unk6c = (struct GameplayStruct6c*)value.u32ptr;
                 gGameplayData.minTempo = gBeatscriptScene.scriptBaseBPM;
                 func_08008B50();
@@ -735,13 +818,13 @@ u32 gameplay_run_script(void) {
                 func_080089D8(D_03003848, gGameplayData.currentScore);
                 save_beat_stage(D_03003848);
                 func_0800A270();
-                set_beatscript_tempo(gGameplayData.unk0->unk0);
+                set_beatscript_tempo(gGameplayData.unk0->baseTempo);
                 scene_set_music_pitch(0);
                 args[0] = stage->unk28;
                 break;
  
             case GP_CMD_GAME_OVER:
-                set_beatscript_tempo(gGameplayData.unk0->unk0);
+                set_beatscript_tempo(gGameplayData.unk0->baseTempo);
                 args[0] = stage->unk2C;
                 break;
  

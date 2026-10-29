@@ -28,7 +28,7 @@ struct Unk083A4B58 {
 extern struct Unk083A4B58 *D_083A4B58[];
 
 struct GameplayStageInfo {
-    void (*unk0)(void*);
+    void (*initCallback)(void*);
     void (*unk4)(void*);
     struct SubScene* introScene;
     struct SubScene* unkC;
@@ -46,9 +46,9 @@ struct GameplayStageInfo {
 };
 
 struct GameplayData_struct_0 {
-    u16 unk0;
+    u16 baseTempo;
     struct GameplayStageInfo* unk4;
-    struct GameplayScriptCmd* unk8;
+    struct GameplayScriptCmd* script;
 };
 
 struct GameplayData_struct_1f4 {
@@ -68,7 +68,7 @@ struct GameplayData {
     u32 pauseSelection : 2; // 0x4:13
     u32 pauseAvailable : 1; // 0x4:15
     u32 difficultyOffset : 2; // 0x4:16
-    u32 unk6_3 : 4; // 0x4:18
+    u32 callStackDepth : 4; // 0x4:18
     u32 unk6_7 : 1; // 0x4:22
     u32 unk6_8 : 1; // 0x4:23
     u32 unk7_1 : 1; // 0x4:24
@@ -86,10 +86,10 @@ struct GameplayData {
     struct GameplayScriptCmd* unk20; // 0x20 size:0x4
     u32 currentOpcode; // 0x24 size:0x4
     u32 unk28; // 0x28 size:0x4
-    void* unk2c[16]; // 0x2C size:0x40
-    struct GameplayStruct6c* unk6c; // 0x6C size:0x4
-    u8 unk70; // 0x70
-    u8 unk71[0x100]; // 0x71 size:0x100
+    void* callStack[16]; // 0x2C size:0x40
+    struct MicrogameSequence* unk6c; // 0x6C size:0x4
+    u8 sequenceIndex; // 0x70
+    u8 sequenceOrder[0x100]; // 0x71 size:0x100
     u8 unk171; // 0x171
     u8 unk172; // 0x172
     u8 unk173; // 0x173
@@ -97,7 +97,7 @@ struct GameplayData {
     u8 currentLives; // 0x175
     u8 maxLives; // 0x176
     u8 pad177[1]; // 0x177
-    u16 unk178; // 0x178 size:0x2
+    u16 microgameFailed; // 0x178 size:0x2
     u16 unk17a; // 0x17A size:0x2
     u16 currentScore; // 0x17C size:0x2
     u16 previousScore; // 0x17E size:0x2
@@ -112,7 +112,7 @@ struct GameplayData {
     u8 pad196[0x2]; // 0x196 size:0x58
     struct Animation unk198[3];
     u8 pad1b0[0x3e];
-    s16 unk1ee; // 0x1EE size:0x2
+    s16 pauseMenuSprite; // 0x1EE size:0x2
     s32 unk1f0; // 0x1F0 size:0x4
     struct BgAnimator unk1f4; // 0x1F4 size:0x4
     u32 scoreChanged; // 0x21C size:0x4
@@ -146,13 +146,6 @@ struct GameplayData {
     u8 pad291[3]; // 0x291 size:0x3
 };
 
-struct GameplayScriptState {
-    u8 unk0;
-    u8 pad1[7];
-    void *unk8;
-    u32 unkC;
-};
-
 struct GameplayScriptCmd {
     u32 opcode;
     union FreeType arg;
@@ -177,11 +170,11 @@ struct GameplayStruct6c_4 {
     void* unk4;
 };
 
-struct GameplayStruct6c {
-    u32 unk0_1 : 8;
+struct MicrogameSequence {
+    u32 count : 8;
     u32 unk0_9 : 1;
-    u32 unk0_10 : 23;
-    struct GameplayStruct6c_4* unk4;
+    u32 retryOnFail : 23;
+    struct GameplayStruct6c_4* entries;
 };
 
 struct GameplayRandomMicrogameList {
@@ -246,9 +239,9 @@ extern u8 D_03003634;
 extern s16 gCurrentScene;
 extern u8 D_03004394[]; 
 extern struct BeatscriptLocalData D_030049F0[];
-extern struct GameplayScriptState D_030048B8;
+extern struct BeatscriptThread D_030048B8;
 extern u8 D_03003848;
-extern u8 D_083A4BE4[];
+extern struct Beatscript D_083A4BE4[];
 extern void *D_083FBB44;
 extern void *D_083FBBBC;
 extern void** D_03006524;

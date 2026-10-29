@@ -1,5 +1,6 @@
 #include "engines/crazy_cars.h"
 #include "src/code_08000f10.h"
+#include "src/code_0800b77c.h"
 #include "src/lib_sprite.h"
 
 void crazy_cars_scene_start(struct CrazyCarsSceneData* data) {
@@ -21,7 +22,7 @@ void crazy_cars_scene_start(struct CrazyCarsSceneData* data) {
     scene_set_bg_layer_controls(1, 2, 0x1D, 1);
     scene_set_bg_layer_controls(2, 0, 0x1E, 2);
 
-    gGameplayData.unk178 = 0;
+    gGameplayData.microgameFailed = FALSE;
     
     variant = data->variant = get_random_range(3);
     

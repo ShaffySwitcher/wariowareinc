@@ -1311,7 +1311,7 @@ struct WindowDef D_083AAF50 = {
 
 #include "src/scenes/gameplay.h"
 
-struct GameplayStruct6c D_083AAF70 = { 1, 0, 0, &D_03000E60 };
+struct MicrogameSequence D_083AAF70 = { 1, 0, 0, &D_03000E60 };
 
 struct GameplayScriptCmd D_083AAF78[] = {
     { GP_CMD_SET_DIFFICULTY, 0 },

@@ -393,11 +393,11 @@ void func_0800A160(struct Animation* anim, struct Vector2* pos) {
     u32 memID = sprite_handler_get_mem_id(gSpriteHandler);
     sprite_handler_set_mem_id(gSpriteHandler, get_current_mem_id());
 
-    gGameplayData.unk1ee = sprite_create(gSpriteHandler, anim, 0, pos->x, pos->y, 0x40, 0, 0, 0);
+    gGameplayData.pauseMenuSprite = sprite_create(gSpriteHandler, anim, 0, pos->x, pos->y, 0x40, 0, 0, 0);
     
-    sprite_set_visible(gSpriteHandler, gGameplayData.unk1ee, 0);
-    sprite_set_base_tile(gSpriteHandler, gGameplayData.unk1ee, 0x280);
-    sprite_set_base_palette(gSpriteHandler, gGameplayData.unk1ee, 10);
+    sprite_set_visible(gSpriteHandler, gGameplayData.pauseMenuSprite, 0);
+    sprite_set_base_tile(gSpriteHandler, gGameplayData.pauseMenuSprite, 0x280);
+    sprite_set_base_palette(gSpriteHandler, gGameplayData.pauseMenuSprite, 10);
 
     sprite_handler_set_mem_id(gSpriteHandler, memID);
 }

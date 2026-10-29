@@ -120,7 +120,7 @@ u32 func_08000728(u32 id) {
     gSaveBuffer->microgameFlags[id] |= 2;
 }
 
-u16 save_get_highscore(u32 id) {
+u32 save_get_highscore(u32 id) {
     return gSaveBuffer->highScores[id];
 }
 

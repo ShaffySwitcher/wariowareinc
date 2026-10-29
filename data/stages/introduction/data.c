@@ -18,7 +18,7 @@ extern struct SubScene D_083C3354;
 extern struct SubScene D_083C3414;
 
 struct GameplayStageInfo introduction_stage_info = {
-    .unk0 = &func_08022B54,
+    .initCallback = &func_08022B54,
     .unk4 = &func_08022CF4,
     .introScene = &D_083C3220,
     .unkC = &D_083C2F44,
