@@ -52,7 +52,7 @@ thumb_func_start func_0800FBA8 \n\
 /* 0800FC0C */ ADDS R0, R1 \n\
 /* 0800FC0E */ ADDS R1, R6, #0 \n\
 /* 0800FC10 */ MOVS R2, #2 \n\
-/* 0800FC12 */ BL func_08007AD4 \n\
+/* 0800FC12 */ BL strncpy_no_pad \n\
 /* 0800FC16 */ LDR R0, [R5] \n\
 /* 0800FC18 */ LDR R2, _0800FC44 \n\
 /* 0800FC1A */ ADDS R0, R2 \n\
@@ -62,7 +62,7 @@ thumb_func_start func_0800FBA8 \n\
 /* 0800FC22 */ ADDS R0, R3 \n\
 /* 0800FC24 */ ADDS R1, R6, #2 \n\
 /* 0800FC26 */ MOVS R2, #2 \n\
-/* 0800FC28 */ BL func_08007AD4 \n\
+/* 0800FC28 */ BL strncpy_no_pad \n\
 /* 0800FC2C */ LDR R0, [R5] \n\
 /* 0800FC2E */ LDR R1, _0800FC4C \n\
 /* 0800FC30 */ B _0800FC92 \n\
@@ -101,7 +101,7 @@ _0800FC50: \n\
 /* 0800FC56 */ ADDS R0, R2 \n\
 /* 0800FC58 */ ADDS R1, R6, #4 \n\
 /* 0800FC5A */ MOVS R2, #2 \n\
-/* 0800FC5C */ BL func_08007AD4 \n\
+/* 0800FC5C */ BL strncpy_no_pad \n\
 /* 0800FC60 */ LDR R0, [R5] \n\
 /* 0800FC62 */ LDR R3, _0800FDA4 \n\
 /* 0800FC64 */ ADDS R0, R3 \n\
@@ -111,7 +111,7 @@ _0800FC50: \n\
 /* 0800FC6C */ ADDS R0, R1 \n\
 /* 0800FC6E */ ADDS R1, R6, #0 \n\
 /* 0800FC70 */ MOVS R2, #2 \n\
-/* 0800FC72 */ BL func_08007AD4 \n\
+/* 0800FC72 */ BL strncpy_no_pad \n\
 /* 0800FC76 */ LDR R0, [R5] \n\
 /* 0800FC78 */ LDR R2, _0800FDAC \n\
 /* 0800FC7A */ ADDS R0, R2 \n\
@@ -121,7 +121,7 @@ _0800FC50: \n\
 /* 0800FC82 */ ADDS R0, R3 \n\
 /* 0800FC84 */ ADDS R1, R6, #2 \n\
 /* 0800FC86 */ MOVS R2, #2 \n\
-/* 0800FC88 */ BL func_08007AD4 \n\
+/* 0800FC88 */ BL strncpy_no_pad \n\
 /* 0800FC8C */ LDR R0, [R5] \n\
 /* 0800FC8E */ MOVS R1, #0XC1 \n\
 /* 0800FC90 */ LSLS R1, R1, #2 \n\

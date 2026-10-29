@@ -15,7 +15,7 @@ thumb_func_start func_08015A88 \n\
 /* 08015AA2 */ ADDS R0, #0XB8 \n\
 /* 08015AA4 */ LDR R0, [R0] \n\
 /* 08015AA6 */ LDR R1, _08015B44 \n\
-/* 08015AA8 */ BL func_08007AF8 \n\
+/* 08015AA8 */ BL strcat \n\
 /* 08015AAC */ LDR R0, [R4] \n\
 /* 08015AAE */ ADDS R0, #0XB8 \n\
 /* 08015AB0 */ LDR R0, [R0] \n\

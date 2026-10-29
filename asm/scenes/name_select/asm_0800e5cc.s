@@ -86,7 +86,7 @@ _0800E64C: \n\
 /* 0800E650 */ LDR R1, [R0] \n\
 /* 0800E652 */ ADD R0, SP, #0X14 \n\
 /* 0800E654 */ MOVS R2, #2 \n\
-/* 0800E656 */ BL func_08007AD4 \n\
+/* 0800E656 */ BL strncpy_no_pad \n\
 /* 0800E65A */ ADD R0, SP, #0X14 \n\
 /* 0800E65C */ STRB R7, [R0, #2] \n\
 /* 0800E65E */ LDR R0, _0800E6F4 \n\

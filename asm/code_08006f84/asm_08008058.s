@@ -1,6 +1,6 @@
 asm(".syntax unified \n\
  \n\
-thumb_func_start func_08008058 \n\
+thumb_func_start clamp_int32 \n\
 /* 08008058 */ PUSH {LR} \n\
 /* 0800805A */ CMP R0, R1 \n\
 /* 0800805C */ BGE _08008062 \n\

@@ -94,7 +94,7 @@ _0800EE02: \n\
 /* 0800EE5A */ BEQ _0800EE88 \n\
 /* 0800EE5C */ ADD R0, SP, #0XC \n\
 /* 0800EE5E */ MOVS R2, #2 \n\
-/* 0800EE60 */ BL func_08007AD4 \n\
+/* 0800EE60 */ BL strncpy_no_pad \n\
 /* 0800EE64 */ ADD R0, SP, #0XC \n\
 /* 0800EE66 */ STRB R7, [R0, #2] \n\
 /* 0800EE68 */ MOV R3, SL \n\

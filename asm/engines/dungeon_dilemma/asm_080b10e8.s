@@ -45,7 +45,7 @@ _080B1134: \n\
 /* 080B1140 */ ADDS R0, R5 \n\
 /* 080B1142 */ LDR R1, [R0] \n\
 /* 080B1144 */ ADDS R0, R7, #0 \n\
-/* 080B1146 */ BL func_08007AF8 \n\
+/* 080B1146 */ BL strcat \n\
 /* 080B114A */ ADDS R4, #1 \n\
 /* 080B114C */ LSLS R4, R4, #0X10 \n\
 /* 080B114E */ LSRS R0, R4, #0X10 \n\

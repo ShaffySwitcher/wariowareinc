@@ -540,7 +540,7 @@ _08069C38: \n\
 /* 08069C40 */ ADDS R1, R0 \n\
 /* 08069C42 */ ADD R0, SP, #0X18 \n\
 /* 08069C44 */ MOVS R2, #2 \n\
-/* 08069C46 */ BL func_08007AD4 \n\
+/* 08069C46 */ BL strncpy_no_pad \n\
 /* 08069C4A */ ADD R0, SP, #0X18 \n\
 /* 08069C4C */ MOV R1, SB \n\
 /* 08069C4E */ STRB R1, [R0, #2] \n\
@@ -564,7 +564,7 @@ _08069C5A: \n\
 /* 08069C72 */ ADDS R1, R0 \n\
 /* 08069C74 */ ADD R0, SP, #0X18 \n\
 /* 08069C76 */ MOVS R2, #2 \n\
-/* 08069C78 */ BL func_08007AD4 \n\
+/* 08069C78 */ BL strncpy_no_pad \n\
 /* 08069C7C */ ADD R1, SP, #0X18 \n\
 /* 08069C7E */ MOVS R0, #0 \n\
 /* 08069C80 */ STRB R0, [R1, #2] \n\

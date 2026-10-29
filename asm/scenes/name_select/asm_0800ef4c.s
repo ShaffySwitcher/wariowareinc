@@ -93,7 +93,7 @@ _0800EFAA: \n\
 /* 0800F000 */ BEQ _0800F030 \n\
 /* 0800F002 */ ADD R0, SP, #0XC \n\
 /* 0800F004 */ MOVS R2, #2 \n\
-/* 0800F006 */ BL func_08007AD4 \n\
+/* 0800F006 */ BL strncpy_no_pad \n\
 /* 0800F00A */ ADD R0, SP, #0XC \n\
 /* 0800F00C */ STRB R6, [R0, #2] \n\
 /* 0800F00E */ MOV R3, SB \n\

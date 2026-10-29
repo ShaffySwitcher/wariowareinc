@@ -208,7 +208,7 @@ _0800D14C: \n\
 /* 0800D14E */ LDR R1, [R0] \n\
 _0800D150: \n\
 /* 0800D150 */ ADDS R0, R4, #0 \n\
-/* 0800D152 */ BL func_08007AF8 \n\
+/* 0800D152 */ BL strcat \n\
 /* 0800D156 */ ADDS R0, R4, #0 \n\
 /* 0800D158 */ BL strlen \n\
 /* 0800D15C */ ADDS R4, R4, R0 \n\
@@ -275,7 +275,7 @@ _0800D1B8: \n\
 /* 0800D1C0 */ ADDS R0, R4, #0 \n\
 /* 0800D1C2 */ LDR R1, _0800D1CC \n\
 _0800D1C4: \n\
-/* 0800D1C4 */ BL func_08007AF8 \n\
+/* 0800D1C4 */ BL strcat \n\
 /* 0800D1C8 */ ADDS R4, #2 \n\
 /* 0800D1CA */ B _0800D1DC \n\
  \n\

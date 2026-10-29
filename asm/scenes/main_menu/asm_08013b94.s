@@ -36,7 +36,7 @@ _08013BC0: \n\
 /* 08013BD6 */ ADDS R0, R1 \n\
 /* 08013BD8 */ LDRB R1, [R0, #9] \n\
 /* 08013BDA */ ADDS R0, R4, #0 \n\
-/* 08013BDC */ BL func_08007B98 \n\
+/* 08013BDC */ BL utoa_fullwidth \n\
 /* 08013BE0 */ LDR R1, _08013C4C \n\
 /* 08013BE2 */ MOV R2, SP \n\
 /* 08013BE4 */ LDR R0, [R1] \n\
@@ -45,22 +45,22 @@ _08013BC0: \n\
 /* 08013BEA */ STRB R0, [R2, #4] \n\
 /* 08013BEC */ MOV R0, SP \n\
 /* 08013BEE */ ADDS R1, R5, #0 \n\
-/* 08013BF0 */ BL func_08007AF8 \n\
+/* 08013BF0 */ BL strcat \n\
 /* 08013BF4 */ LDR R1, _08013C50 \n\
 /* 08013BF6 */ MOV R0, SP \n\
-/* 08013BF8 */ BL func_08007AF8 \n\
+/* 08013BF8 */ BL strcat \n\
 /* 08013BFC */ MOV R0, SP \n\
 /* 08013BFE */ ADDS R1, R4, #0 \n\
-/* 08013C00 */ BL func_08007AF8 \n\
+/* 08013C00 */ BL strcat \n\
 /* 08013C04 */ LDR R1, _08013C54 \n\
 /* 08013C06 */ MOV R0, SP \n\
-/* 08013C08 */ BL func_08007AF8 \n\
+/* 08013C08 */ BL strcat \n\
 /* 08013C0C */ MOV R0, SP \n\
 /* 08013C0E */ ADDS R1, R6, #0 \n\
-/* 08013C10 */ BL func_08007AF8 \n\
+/* 08013C10 */ BL strcat \n\
 /* 08013C14 */ LDR R1, _08013C58 \n\
 /* 08013C16 */ MOV R0, SP \n\
-/* 08013C18 */ BL func_08007AF8 \n\
+/* 08013C18 */ BL strcat \n\
 /* 08013C1C */ MOVS R0, #0 \n\
 /* 08013C1E */ MOV R1, SP \n\
 /* 08013C20 */ BL func_0800D224 \n\

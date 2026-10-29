@@ -16,7 +16,7 @@ thumb_func_start func_0800F8A8 \n\
 /* 0800F8C0 */ ADDS R5, R0, #0 \n\
 /* 0800F8C2 */ ADD R0, SP, #0X14 \n\
 /* 0800F8C4 */ MOVS R2, #2 \n\
-/* 0800F8C6 */ BL func_08007AD4 \n\
+/* 0800F8C6 */ BL strncpy_no_pad \n\
 /* 0800F8CA */ ADD R0, SP, #0X14 \n\
 /* 0800F8CC */ MOVS R4, #0 \n\
 /* 0800F8CE */ STRB R4, [R0, #2] \n\
@@ -75,7 +75,7 @@ thumb_func_start func_0800F8A8 \n\
 /* 0800F93E */ ADDS R0, R1 \n\
 /* 0800F940 */ ADD R1, SP, #0X14 \n\
 /* 0800F942 */ MOVS R2, #2 \n\
-/* 0800F944 */ BL func_08007AD4 \n\
+/* 0800F944 */ BL strncpy_no_pad \n\
 /* 0800F948 */ LDR R0, [R7] \n\
 /* 0800F94A */ LDR R1, _0800F980 \n\
 /* 0800F94C */ ADDS R0, R1 \n\

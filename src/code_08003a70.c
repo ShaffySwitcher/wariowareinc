@@ -206,7 +206,7 @@ s32 rle_decompress_bg(struct CompressedData *src, u16 *dest) {
     if (temp_r1->doubleCompressed) {
         const u16 *temp = temp_r5;
         temp_r5 = (dest + temp_r1->rleOffset) - ((struct CompressedGFX *)temp_r5)->size;
-        func_08007E8C(temp, temp_r5);
+        gfx_decompress_all(temp, temp_r5);
     }
 
     retval = D_03003FEC(temp_r5, dest, src->rleData, (src->rleSize << 0x10) | 0x8000);

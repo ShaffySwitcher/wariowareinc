@@ -22,7 +22,7 @@ _0800F9FC: \n\
 /* 0800F9FE */ ADDS R1, R6 \n\
 /* 0800FA00 */ ADDS R0, R4, #0 \n\
 /* 0800FA02 */ MOVS R2, #2 \n\
-/* 0800FA04 */ BL func_08007AD4 \n\
+/* 0800FA04 */ BL strncpy_no_pad \n\
 /* 0800FA08 */ ADDS R6, #3 \n\
 /* 0800FA0A */ ADDS R4, #2 \n\
 /* 0800FA0C */ ADDS R5, #1 \n\
