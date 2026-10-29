@@ -1341,7 +1341,7 @@ struct GameplayScriptCmd D_083AAFB0[] = {
 };
 
 extern struct GameplayStageInfo *D_083C31D8;
-struct GameplayData_struct_0 D_083AB020 = { 0x8C, &D_083C31D8, &D_083AAFB0 };
+struct GameplayData_struct_0 D_083AB020 = { 0x8C, 0, &D_083C31D8, &D_083AAFB0 };
 
 extern struct Animation D_0831FC64;
 extern struct Animation D_0831FC7C;

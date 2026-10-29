@@ -47,6 +47,7 @@ struct GameplayStageInfo {
 
 struct GameplayData_struct_0 {
     u16 baseTempo;
+    u16 unk2;
     struct GameplayStageInfo* unk4;
     struct GameplayScriptCmd* script;
 };
