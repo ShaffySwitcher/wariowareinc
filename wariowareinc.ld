@@ -74,7 +74,7 @@ SECTIONS {
         build/asm/asm_08017200.s.o(.text*);
         build/asm/asm_0801720c.s.o(.text*);
         build/asm/asm_08017238.s.o(.text*);
-        build/asm/asm_0801725c.s.o(.text*);
+        build/src/stages/variety_tower.c.o(.text*);
         build/asm/asm_080172a8.s.o(.text*);
         build/asm/asm_0801743c.s.o(.text*);
         build/asm/asm_0801749c.s.o(.text*);
@@ -101,7 +101,7 @@ SECTIONS {
         build/asm/asm_08017a30.s.o(.text*);
         build/asm/asm_08017a48.s.o(.text*);
         build/asm/asm_08017a54.s.o(.text*);
-        build/asm/asm_08017a58.s.o(.text*);
+        build/src/stages/jimmy.c.o(.text);
         build/asm/asm_08017af4.s.o(.text*);
         build/asm/asm_08017f7c.s.o(.text*);
         build/asm/asm_080180c8.s.o(.text*);
@@ -181,7 +181,7 @@ SECTIONS {
         build/asm/asm_0801a0b4.s.o(.text*);
         build/asm/asm_0801a0cc.s.o(.text*);
         build/asm/asm_0801a0d8.s.o(.text*);
-        build/asm/asm_0801a144.s.o(.text*);
+        build/src/stages/dribble.c.o(.text);
         build/asm/asm_0801a184.s.o(.text*);
         build/asm/asm_0801a534.s.o(.text*);
         build/asm/asm_0801a5b0.s.o(.text*);
@@ -271,7 +271,7 @@ SECTIONS {
         build/asm/asm_0801c2d4.s.o(.text*);
         build/asm/asm_0801c2f4.s.o(.text*);
         build/asm/asm_0801c368.s.o(.text*);
-        build/asm/asm_0801c380.s.o(.text*);
+        build/src/stages/kat.c.o(.text);
         build/asm/asm_0801c3ac.s.o(.text*);
         build/asm/asm_0801c4c8.s.o(.text*);
         build/asm/asm_0801c540.s.o(.text*);
@@ -329,7 +329,7 @@ SECTIONS {
         build/asm/asm_0801d6dc.s.o(.text*);
         build/asm/asm_0801d710.s.o(.text*);
         build/asm/asm_0801d73c.s.o(.text*);
-        build/asm/asm_0801d7ec.s.o(.text*);
+        build/src/stages/mona.c.o(.text);
         build/asm/asm_0801d82c.s.o(.text*);
         build/asm/asm_0801da44.s.o(.text*);
         build/asm/asm_0801dafc.s.o(.text*);
@@ -408,7 +408,7 @@ SECTIONS {
         build/asm/asm_0801f540.s.o(.text*);
         build/asm/asm_0801f620.s.o(.text*);
         build/asm/asm_0801f698.s.o(.text*);
-        build/asm/asm_0801f6b4.s.o(.text*);
+        build/src/stages/9_volt.c.o(.text);
         build/asm/asm_0801f714.s.o(.text*);
         build/asm/asm_0801f964.s.o(.text*);
         build/asm/asm_0801f9ec.s.o(.text*);
@@ -462,7 +462,7 @@ SECTIONS {
         build/asm/asm_080208cc.s.o(.text*);
         build/asm/asm_080208dc.s.o(.text*);
         build/asm/asm_08020968.s.o(.text*);
-        build/asm/asm_08020980.s.o(.text*);
+        build/src/stages/dr_crygor.c.o(.text);
         build/asm/asm_080209a8.s.o(.text*);
         build/asm/asm_08020afc.s.o(.text*);
         build/asm/asm_08020b60.s.o(.text*);
@@ -528,7 +528,7 @@ SECTIONS {
         build/asm/asm_08022050.s.o(.text*);
         build/asm/asm_08022070.s.o(.text*);
         build/asm/asm_08022090.s.o(.text*);
-        build/asm/asm_080220a8.s.o(.text*);
+        build/src/stages/orbulon.c.o(.text);
         build/asm/asm_080220d8.s.o(.text*);
         build/asm/asm_0802225c.s.o(.text*);
         build/asm/asm_080222d0.s.o(.text*);
@@ -572,21 +572,7 @@ SECTIONS {
         build/asm/asm_08022a84.s.o(.text*);
         build/asm/asm_08022ae0.s.o(.text*);
         build/asm/asm_08022b28.s.o(.text*);
-        build/asm/asm_08022b54.s.o(.text*);
-        build/asm/asm_08022b98.s.o(.text*);
-        build/asm/asm_08022c80.s.o(.text*);
-        build/asm/asm_08022ce4.s.o(.text*);
-        build/asm/asm_08022ce8.s.o(.text*);
-        build/asm/asm_08022cf4.s.o(.text*);
-        build/asm/asm_08022d18.s.o(.text*);
-        build/asm/asm_08022d40.s.o(.text*);
-        build/asm/asm_08022d68.s.o(.text*);
-        build/asm/asm_08022df0.s.o(.text*);
-        build/asm/asm_08022e48.s.o(.text*);
-        build/asm/asm_08022e78.s.o(.text*);
-        build/asm/asm_08022ec4.s.o(.text*);
-        build/asm/asm_08022ec8.s.o(.text*);
-        build/asm/asm_08022ee4.s.o(.text*);
+        build/src/stages/introduction.c.o(.text);
         build/asm/asm_08022ef0.s.o(.text*);
         build/asm/asm_08022ffc.s.o(.text*);
         build/asm/asm_08023120.s.o(.text*);
@@ -614,7 +600,7 @@ SECTIONS {
         build/asm/asm_0802342c.s.o(.text*);
         build/asm/asm_0802343c.s.o(.text*);
         build/asm/asm_08023494.s.o(.text*);
-        build/asm/asm_080234b0.s.o(.text*);
+        build/src/stages/wario.c.o(.text);
         build/asm/asm_080234e8.s.o(.text*);
         build/asm/asm_080236f8.s.o(.text*);
         build/asm/asm_0802375c.s.o(.text*);
